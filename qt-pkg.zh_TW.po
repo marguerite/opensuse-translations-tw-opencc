@@ -1,0 +1,1741 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Thruth Wang <lihaow@opera.com>, 2007, 2008.
+# Eric Shan <ericalways@gmail.com>, 2008, 2009, 2012, 2013.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: packages-qt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:39+0200\n"
+"PO-Revision-Date: 2014-06-10 10:31+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: src/YQPackageSelector.cc:315
+msgid "&Update Problems"
+msgstr "更新問題(&U)"
+
+#: src/YQPackageSelector.cc:342
+msgid "Patter&ns"
+msgstr "軟體集(&N)"
+
+#: src/YQPackageSelector.cc:364
+msgid "Package &Groups"
+msgstr "軟體包分組(&G)"
+
+#: src/YQPackageSelector.cc:376
+msgid "&RPM Groups"
+msgstr "&RPM 組"
+
+#: src/YQPackageSelector.cc:389
+msgid "&Languages"
+msgstr "語言(&L)"
+
+#: src/YQPackageSelector.cc:405
+msgid "&Repositories"
+msgstr "軟體源(&R)"
+
+#: src/YQPackageSelector.cc:419
+msgid "S&earch"
+msgstr "搜索(&E)"
+
+#. DEBUG
+#: src/YQPackageSelector.cc:426 src/YQPkgSearchFilterView.cc:113
+msgid "&Keywords"
+msgstr "關鍵字(&K)"
+
+#: src/YQPackageSelector.cc:435
+msgid "&Installation Summary"
+msgstr "安裝摘要(&I)"
+
+#: src/YQPackageSelector.cc:520
+msgid "D&escription"
+msgstr "描述(&E)"
+
+#: src/YQPackageSelector.cc:533
+msgid "&Technical Data"
+msgstr "技術資料(&T)"
+
+#: src/YQPackageSelector.cc:546 src/YQPkgProductDialog.cc:115
+msgid "Dependencies"
+msgstr "依賴關係"
+
+#: src/YQPackageSelector.cc:562
+msgid "&Versions"
+msgstr "版本(&V)"
+
+#: src/YQPackageSelector.cc:580
+msgid "File List"
+msgstr "檔案列表"
+
+#: src/YQPackageSelector.cc:597
+msgid "Change Log"
+msgstr "修訂歷史"
+
+#. "Cancel" button
+#. button #0
+#. text
+#: src/YQPackageSelector.cc:624 src/YQPackageSelectorBase.cc:194
+#: src/YQPackageSelectorBase.cc:249 src/YQPackageSelectorBase.cc:305
+#: src/YQPackageSelectorBase.cc:326 src/YQPatternSelector.cc:259
+#: src/YQPkgConflictDialog.cc:163 src/YQPkgConflictDialog.cc:398
+#: src/YQPkgSearchFilterView.cc:245 src/YQPkgTextDialog.cc:258
+#: src/YQSimplePatchSelector.cc:219
+msgid "&Cancel"
+msgstr "取消(&C)"
+
+#. Translators: "Accept" here refers to licenses or similar
+#: src/YQPackageSelector.cc:634 src/YQPatternSelector.cc:268
+#: src/YQPkgTextDialog.cc:258 src/YQSimplePatchSelector.cc:228
+msgid "&Accept"
+msgstr "接受(&A)"
+
+#: src/YQPackageSelector.cc:677
+msgid "&File"
+msgstr "檔案(&F)"
+
+#: src/YQPackageSelector.cc:679
+msgid "&Import..."
+msgstr "匯入(&I)..."
+
+#: src/YQPackageSelector.cc:680
+msgid "&Export..."
+msgstr "匯出(&E)..."
+
+#: src/YQPackageSelector.cc:684
+msgid "E&xit -- Discard Changes"
+msgstr "退出 -- 丟棄修改(&X)"
+
+#: src/YQPackageSelector.cc:685
+msgid "&Quit -- Save Changes"
+msgstr "退出 -- 儲存修改(&Q)"
+
+#: src/YQPackageSelector.cc:697
+msgid "&Package"
+msgstr "軟體包(&P)"
+
+#: src/YQPackageSelector.cc:737 src/YQPkgPackageKitGroupsFilterView.cc:92
+#: src/YQPkgRepoFilterView.cc:149
+msgid "All Packages"
+msgstr "全部軟體包"
+
+#: src/YQPackageSelector.cc:739 src/YQPkgObjList.cc:430
+msgid "Update if newer version available"
+msgstr "若有較新版本則更新"
+
+#: src/YQPackageSelector.cc:742 src/YQPkgObjList.cc:415
+#: src/YQPkgObjList.cc:436
+msgid "Update unconditionally"
+msgstr "無條件更新"
+
+#: src/YQPackageSelector.cc:756
+msgid "&Patch"
+msgstr "補丁(&P)"
+
+#: src/YQPackageSelector.cc:783
+msgid "Confi&guration"
+msgstr "配置(&G)"
+
+#: src/YQPackageSelector.cc:784
+msgid "&Repositories..."
+msgstr "軟體源(&R)..."
+
+#: src/YQPackageSelector.cc:785
+msgid "&Online Update..."
+msgstr "線上更新(&O)..."
+
+#: src/YQPackageSelector.cc:795
+msgid "&Dependencies"
+msgstr "依賴關係(&D)"
+
+#: src/YQPackageSelector.cc:797
+msgid "&Check Now"
+msgstr "立即檢查(&C)"
+
+#: src/YQPackageSelector.cc:798
+msgid "&Autocheck"
+msgstr "自動檢查(&A)"
+
+#. Translators: Menu for view options (Use a noun, not a verb!)
+#: src/YQPackageSelector.cc:811
+msgid "&Options"
+msgstr "選項(&O)"
+
+#. Translators: This is about packages ending in "-devel", so don't translate that "-devel"!
+#: src/YQPackageSelector.cc:814
+msgid "Show -de&vel Packages"
+msgstr "顯示 -de&vel 開發包"
+
+#. Translators: This is about packages ending in "-debuginfo", so don't translate that "-debuginfo"!
+#: src/YQPackageSelector.cc:823
+msgid "Show -&debuginfo/-debugsource Packages"
+msgstr "顯示 -&debuginfo/-debugsource 偵錯包"
+
+#: src/YQPackageSelector.cc:831
+msgid "&System Verification Mode"
+msgstr "系統校驗模式(&S)"
+
+#: src/YQPackageSelector.cc:836
+msgid "&Ignore Recommended Packages for Already Installed Packages"
+msgstr "忽略已安裝軟體包的推薦軟體包(&I)"
+
+#: src/YQPackageSelector.cc:842
+msgid "&Cleanup when deleting packages"
+msgstr "刪除軟體包時清理(&C)"
+
+#: src/YQPackageSelector.cc:846
+msgid "&Allow vendor change"
+msgstr "允許廠商變化(&A)"
+
+#: src/YQPackageSelector.cc:859
+msgid "E&xtras"
+msgstr "額外(&X)"
+
+#: src/YQPackageSelector.cc:861
+msgid "Show &Products"
+msgstr "顯示產品(&P)"
+
+#: src/YQPackageSelector.cc:862
+msgid "Show P&ackage Changes"
+msgstr "顯示軟體包變動(&A)"
+
+#: src/YQPackageSelector.cc:863
+msgid "Show &History"
+msgstr "顯示歷史(&H)"
+
+#. Translators: This is about packages ending in "-devel", so don't translate that "-devel"!
+#: src/YQPackageSelector.cc:871
+msgid "Install All Matching -&devel Packages"
+msgstr "安裝全部匹配的 -&devel 開發包"
+
+#. Translators: This is about packages ending in "-debuginfo", so don't translate that "-debuginfo"!
+#: src/YQPackageSelector.cc:875
+msgid "Install All Matching -de&buginfo Packages"
+msgstr "安裝全部匹配的 -de&buginfo 偵錯包"
+
+#. Translators: This is about packages ending in "-debugsource", so don't translate that "-debugsource"!
+#: src/YQPackageSelector.cc:878
+msgid "Install All Matching -debug&source Packages"
+msgstr "安裝全部匹配的 -debug&source 偵錯包"
+
+#: src/YQPackageSelector.cc:883
+msgid "Generate Dependency Resolver &Test Case"
+msgstr "生成依賴關係解決器試例(&T)"
+
+#: src/YQPackageSelector.cc:903
+msgid "&Help"
+msgstr "幫助(&H)"
+
+#. Note: The help functions and their texts are moved out
+#. to a separate source file YQPackageSelectorHelp.cc
+#. Menu entry for help overview
+#: src/YQPackageSelector.cc:909
+msgid "&Overview"
+msgstr "概覽(&O)"
+
+#. Menu entry for help about used symbols ( icons )
+#: src/YQPackageSelector.cc:912
+msgid "&Symbols"
+msgstr "符號(&S)"
+
+#. Menu entry for keyboard help
+#: src/YQPackageSelector.cc:915
+msgid "&Keys"
+msgstr "按鍵(&K)"
+
+#: src/YQPackageSelector.cc:1101
+msgid "All package dependencies are OK."
+msgstr "全部軟體包依賴關係均已滿足。"
+
+#: src/YQPackageSelector.cc:1117
+msgid "P&atches"
+msgstr "補丁(&A)"
+
+#. startsWith
+#. filter
+#: src/YQPackageSelector.cc:1179
+msgid "Save Package List"
+msgstr "儲存軟體包列表"
+
+#. Post error popup
+#. parent
+#. Post error popup.
+#. parent
+#: src/YQPackageSelector.cc:1218 src/YQPackageSelector.cc:1312
+#: src/YQPkgConflictDialog.cc:425 src/YQPkgConflictList.cc:201
+#: src/YQPkgList.cc:605
+msgid "Error"
+msgstr "錯誤"
+
+#. caption
+#: src/YQPackageSelector.cc:1219
+msgid "Error exporting package list to %1"
+msgstr "將軟體包列表匯出到 %1 時出錯"
+
+#: src/YQPackageSelector.cc:1231
+msgid "Load Package List"
+msgstr "載入軟體包列表"
+
+#. caption
+#: src/YQPackageSelector.cc:1313
+msgid "Error loading package list from %1"
+msgstr "從 %1 載入軟體包列表時出錯"
+
+#. caption
+#. Translators: %1 is the number of affected packages
+#: src/YQPackageSelector.cc:1415
+msgid "%1 packages will be updated"
+msgstr "將更新 %1 個軟體包"
+
+#: src/YQPackageSelector.cc:1416
+msgid "&Continue"
+msgstr "繼續(&C)"
+
+#: src/YQPackageSelector.cc:1416
+msgid "C&ancel"
+msgstr "取消(&A)"
+
+#: src/YQPackageSelector.cc:1455
+msgid ""
+"<p><small><a href=\"repoupgraderemove:///%1\">Cancel switching</a> system "
+"packages to versions in repository %2</small></p>"
+msgstr ""
+"<p><small><a href=\"repoupgraderemove:///%1\">取消切換</a>系統軟體包到軟體源 "
+"%2 中的版本</small></p>"
+
+#: src/YQPackageSelector.cc:1474
+msgid ""
+"<p><a href=\"repoupgradeadd:///%1\">Switch system packages</a> to the "
+"versions in this repository (%2)</p>"
+msgstr ""
+"<p><a href=\"repoupgradeadd:///%1\">切換系統軟體包</a>到該軟體源 (%2) 中的版"
+"本</p>"
+
+#: src/YQPackageSelector.cc:1697
+msgid "Added Subpackages:"
+msgstr "添加的子軟體包："
+
+#. "OK" button
+#. addHStretch( hbox );
+#. "OK" button
+#: src/YQPackageSelector.cc:1699 src/YQPackageSelectorBase.cc:214
+#: src/YQPkgDescriptionDialog.cc:120 src/YQPkgDiskUsageList.cc:156
+#: src/YQPkgDiskUsageList.cc:165 src/YQPkgProductDialog.cc:135
+#: src/YQPkgTextDialog.cc:71
+msgid "&OK"
+msgstr "好(&O)"
+
+#: src/YQPackageSelectorBase.cc:93
+msgid "Reset &Ignored Dependency Conflicts"
+msgstr "重置忽略的依賴關係衝突(&I)"
+
+#: src/YQPackageSelectorBase.cc:164
+msgid "System dependencies verify OK."
+msgstr "系統依賴關係校驗成功。"
+
+#. Translators: RichText ( HTML-like ) format
+#: src/YQPackageSelectorBase.cc:185
+msgid "Error: Out of disk space!"
+msgstr "錯誤：磁碟空間不足！"
+
+#: src/YQPackageSelectorBase.cc:186
+msgid ""
+"<p>You can choose to install anyway if you know what you are doing, but you "
+"risk getting a corrupted system that requires manual repairs. If you are not "
+"absolutely sure how to handle such a case, press <b>Cancel</b> now and "
+"deselect some packages.</p>"
+msgstr ""
+"<p>您若知道您正在做什麼，您可選擇強行安裝，自行承擔有可能損壞系統而需要手動修"
+"復的風險。若您不能完全確定如何處理這種情況，請立即按<b>取消</b>並反選某些軟體"
+"包。</p>"
+
+#: src/YQPackageSelectorBase.cc:194
+msgid "C&ontinue Anyway"
+msgstr "強行繼續(&O)"
+
+#: src/YQPackageSelectorBase.cc:208
+msgid "The following items will be changed: "
+msgstr "將修改以下項："
+
+#: src/YQPackageSelectorBase.cc:248
+msgid "Abandon all changes?"
+msgstr "放棄全部修改嗎？"
+
+#: src/YQPackageSelectorBase.cc:249
+msgid "&Abandon"
+msgstr "放棄(&A)"
+
+#. Dialog header
+#: src/YQPackageSelectorBase.cc:297 src/YQPkgChangesDialog.cc:116
+msgid "Automatic Changes"
+msgstr "自動變動"
+
+#: src/YQPackageSelectorBase.cc:301
+msgid ""
+"In addition to your manual selections, the following packages have been "
+"changed to resolve dependencies:"
+msgstr "除了您手選的軟體包，還變動了以下軟體包以解決依賴關係："
+
+#: src/YQPackageSelectorBase.cc:305 src/YQPackageSelectorBase.cc:326
+#: src/YQPkgConflictDialog.cc:397
+msgid "C&ontinue"
+msgstr "繼續(&O)"
+
+#. Dialog header
+#: src/YQPackageSelectorBase.cc:318
+msgid "Unsupported Packages"
+msgstr "不支援的軟體包"
+
+#: src/YQPackageSelectorBase.cc:322
+msgid ""
+"Please realize that the following selected software is either unsupported or "
+"requires an additional customer contract for support."
+msgstr "請意識到以下所選軟體要麼系統不支援，要麼需簽署額外客戶合同才能獲得支援。"
+
+#: src/YQPackageSelectorBase.cc:421
+msgid "Not implemented yet. Sorry."
+msgstr "尚未實現。抱歉。"
+
+#. Translators: Headline for help about the package manager in general
+#: src/YQPackageSelectorHelp.cc:62
+msgid "The YaST Package Manager"
+msgstr "YaST 軟體包管理器"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:65
+msgid ""
+"<b>Note:</b> This is a just a short  overview. Refer to the manual for "
+"details."
+msgstr "<b>注意：</b>這隻是個簡短的概覽。細節請參考其使用手冊。"
+
+#. Help specific to online update mode
+#: src/YQPackageSelectorHelp.cc:72
+msgid "In this dialog, select patches to download and install."
+msgstr "在此對話方塊中，選擇要下載並安裝的補丁。"
+
+#: src/YQPackageSelectorHelp.cc:73
+msgid ""
+"The list on the left side contains available patches along with the "
+"respective patch kind (security, recommended, or optional) and the "
+"(estimated) download size."
+msgstr "左側列表顯示可用補丁及相應的補丁類型 (安全、推薦或可選) 與 (預計) 下載大小。"
+
+#: src/YQPackageSelectorHelp.cc:76
+msgid ""
+"This list normally contains only those patches that are not installed on "
+"your system yet. You can change that with the <b>Include Installed Patches</"
+"b> check box below the list."
+msgstr ""
+"此列表通常僅包含尚未安裝在您的系統上的補丁。可用列表下方<b>包含已安裝補丁</b>"
+"核取方塊列出已安裝的補丁。"
+
+#: src/YQPackageSelectorHelp.cc:78
+msgid ""
+"The <b>Patch Description</b> field contains a longer explanation of the "
+"currently selected patch. Click a patch in the list to view its description "
+"here."
+msgstr ""
+"<b>補丁描述</b>欄位包含當前所選補丁較詳細的解釋。點選列表中的補丁可在此檢視其"
+"描述。"
+
+#: src/YQPackageSelectorHelp.cc:80
+msgid ""
+"The package list on the right side shows the contents of the currently "
+"selected patch, i.e., the packages it contains. You cannot install or delete "
+"individual packages from a patch, only the patch as a whole. This is "
+"intentional to avoid system inconsistencies."
+msgstr ""
+"右側軟體包列表顯示當前所選補丁的內容，即它所補綴的軟體包。您不能安裝或刪除補"
+"丁中的單個軟體包，僅能整體應用補丁。蓄意為之是為了避免系統不協調。"
+
+#. Translators: Please keep the reference to "filter views" to distinguish between "filter views" that
+#. affect the amount of visible packages in the package list and "details views" ( below the package list )
+#. that show details about the ( one ) currently selected package in the package list.
+#: src/YQPackageSelectorHelp.cc:88
+msgid ""
+"In addition to <b>Patches</b>, you can also select one of the other filter "
+"views from <b>Filter</b> at the upper left:"
+msgstr "除了<b>補丁</b>，您還可從左上角的<b>過濾器</b>選擇其它過濾檢視之一："
+
+#. Help specific to normal (non-online-update) mode
+#: src/YQPackageSelectorHelp.cc:96
+msgid ""
+"In this dialog, select which packages to install, update, or delete. You can "
+"select individual packages or entire package \"selections\"."
+msgstr ""
+"在此對話方塊中，選擇要安裝、更新或刪除的軟體包。您可選擇單個軟體包或整個軟體包"
+"\"選集\"。"
+
+#: src/YQPackageSelectorHelp.cc:98
+msgid ""
+"Click the status icon for a package or selection to change the status or "
+"right-click it to open a context menu."
+msgstr "點選軟體包或選集的狀態圖示來變更其狀態，或右擊該圖示開啟互動選單。"
+
+#: src/YQPackageSelectorHelp.cc:100
+msgid ""
+"Use the <b>Check Dependencies</b> button to resolve package dependencies. "
+"Some packages require other packages to be installed. Some packages can only "
+"be installed if certain other packages are not installed, too. This check "
+"will automatically mark required packages for installation and it will warn "
+"you if there are dependency conflicts."
+msgstr ""
+"使用<b>檢查依賴關係</b>按鈕解決軟體包依賴關係。某些軟體包需要安裝其它軟體包。"
+"某些軟體包僅有在未安裝其它特定軟體包時才能安裝。此檢查將自動標記安裝所需軟體"
+"包，並在發生依賴關係衝突時示警。"
+
+#: src/YQPackageSelectorHelp.cc:105
+msgid ""
+"When you leave this dialog with <b>Accept</b>, this check will automatically "
+"be performed."
+msgstr "此檢查將在您按<b>接受</b>離開此對話方塊後自動執行。"
+
+#. Translators: Please keep the reference to "filter views" to distinguish between "filter views" that
+#. affect the amount of visible packages in the package list and "details views" (below the package list)
+#. that show details about the (one) currently selected package in the package list.
+#: src/YQPackageSelectorHelp.cc:111
+msgid ""
+"Select one of the available filter views with the <b>Filter</b> combo-box at "
+"the upper left:"
+msgstr "使用左上角的<b>過濾器</b>組合框選擇可用過濾檢視之一："
+
+#: src/YQPackageSelectorHelp.cc:115
+msgid ""
+"<b>Selections</b> shows some predefined sets of packages that logically "
+"belong together."
+msgstr "<b>選集</b>顯示了邏輯上同類的某些預定義軟體包集合。"
+
+#: src/YQPackageSelectorHelp.cc:116
+msgid ""
+"Use the check box next to the selection to select it as a whole. You can "
+"also select or deselect individual packages in the package list at the right."
+msgstr "使用選集旁的核取方塊進行全選。您也可在右側軟體包列表中選擇或反選單個軟體包。"
+
+#. Help common to all modes: Description of the various filter views
+#: src/YQPackageSelectorHelp.cc:124
+msgid ""
+"<b>Package Groups</b> shows packages by category. You can expand and "
+"collapse tree items to refine or generalize categories. Click any category "
+"to display the packages in that category in the package list on the right "
+"side."
+msgstr ""
+"<b>軟體包分組</b>歸類顯示了軟體包。您可展開與摺疊樹項目來詳列或概覽分類。點選"
+"任意分類來在右側軟體包列表中顯示該分類下的軟體包。"
+
+#: src/YQPackageSelectorHelp.cc:127
+msgid ""
+" <b>Hint:</b> There is a \"zzz All\" entry at the very end of the list that "
+"will show all packages. This may take a few seconds on slow machines."
+msgstr ""
+" <b>提示：</b>在顯示全部軟體包的列表最末端有一個 \"zzz 全部\" 項。在龜速計算"
+"機上顯示這些內容可能花費數秒。"
+
+#: src/YQPackageSelectorHelp.cc:130
+msgid ""
+"<b>Search</b> allows you to search for packages that meet various criteria. "
+"This is usually the easiest way to find a package if you know its name."
+msgstr ""
+"<b>搜索</b>允許您搜索滿足不同條件的軟體包。若您知道其名稱，這通常是最便捷的軟"
+"件包查找方法。"
+
+#: src/YQPackageSelectorHelp.cc:132
+msgid ""
+"<b>Hint:</b> You can also use this to find out what package contains a "
+"certain library.  Search in the <b>Provides</b> RPM field."
+msgstr ""
+"<b>提示：</b>您也可用此方法來找出哪個軟體包攜帶了特定的庫。在<b>提供</b> RPM "
+"欄位中搜索即可。"
+
+#: src/YQPackageSelectorHelp.cc:135
+msgid ""
+"<b>Installation Summary</b> by default shows the changes to your system -- "
+"what packages will be installed, deleted, or updated."
+msgstr ""
+"默認情況下，<b>安裝摘要</b>顯示了對您系統的修改 -- 將安裝、刪除或更新哪些軟體"
+"包。"
+
+#: src/YQPackageSelectorHelp.cc:137
+msgid ""
+"It is generally a good idea to use <b>Check Dependencies</b> then switch to "
+"<b>Installation Summary</b> before clicking <b>Accept</b>. This way you can "
+"see all changes that will be made to your system."
+msgstr ""
+"通常在點選<b>接受</b>前先使用<b>檢查依賴關係</b>，然後再切換到<b>安裝摘要</b>"
+"看看是個好習慣。這樣您可以看到將對系統進行的全部修改。"
+
+#: src/YQPackageSelectorHelp.cc:140
+msgid ""
+"You can also explicitly select what packages with what status to see here; "
+"use the check boxes at the left side."
+msgstr "您也可在此顯式選擇檢視具有何種狀態的軟體包；請使用左側核取方塊。"
+
+#: src/YQPackageSelectorHelp.cc:142
+msgid ""
+"<b>Hint:</b> You can also reverse the effect of this filter. You can see "
+"what packages remain the same on your system. Simply check <b>Keep</b> and "
+"uncheck everything else."
+msgstr ""
+"<b>提示：</b>您也可反轉此過濾器的效果。您可檢視哪些包在您的系統上保持不變。僅"
+"需勾選<b>保留</b>並清空其它選項即可。"
+
+#. Make sure all images used here are specified in
+#. helpimages_DATA in include/Makefile.am !
+#. Translators: Headline for help about package status icons
+#: src/YQPackageSelectorHelp.cc:159
+msgid "Symbols Overview"
+msgstr "符號概覽"
+
+#. Translators: Package status short (!) description
+#: src/YQPackageSelectorHelp.cc:166 src/YQPkgStatusFilterView.cc:108
+msgid "Do not install"
+msgstr "不安裝"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:168
+msgid "This package is not installed and it will not be installed."
+msgstr "未安裝此軟體包且不會安裝此軟體包。"
+
+#. Translators: Package status short (!) description
+#: src/YQPackageSelectorHelp.cc:172 src/YQPkgObjList.cc:278
+#: src/YQPkgStatusFilterView.cc:95
+msgid "Install"
+msgstr "安裝"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:174
+msgid "This package will be installed. It is not installed yet."
+msgstr "將安裝此軟體包。目前尚未安裝。"
+
+#. Translators: Package status short (!) description
+#: src/YQPackageSelectorHelp.cc:178 src/YQPkgObjList.cc:279
+#: src/YQPkgStatusFilterView.cc:107
+msgid "Keep"
+msgstr "保留"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:180
+msgid "This package is already installed. Leave it untouched."
+msgstr "已安裝此軟體包。將保持不變。"
+
+#. Translators: Package status short (!) description
+#. Translators: Keyboard action short (!) description
+#: src/YQPackageSelectorHelp.cc:184 src/YQPackageSelectorHelp.cc:293
+#: src/YQPkgObjList.cc:283 src/YQPkgStatusFilterView.cc:96
+msgid "Update"
+msgstr "更新"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:186
+msgid ""
+"This package is already installed. Update it or reinstall it (if the "
+"versions are the same)."
+msgstr "已安裝此軟體包。將更新或重灌此軟體包(若版本相同)。"
+
+#. Translators: Package status short (!) description
+#: src/YQPackageSelectorHelp.cc:191 src/YQPkgObjList.cc:277
+#: src/YQPkgStatusFilterView.cc:94
+msgid "Delete"
+msgstr "刪除"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:193
+msgid "This package is already installed. Delete it."
+msgstr "已安裝此軟體包。將刪除之。"
+
+#. Translators: Package status short (!) description
+#. Translators: Keyboard action short (!) description
+#: src/YQPackageSelectorHelp.cc:197 src/YQPackageSelectorHelp.cc:310
+#: src/YQPkgStatusFilterView.cc:100
+msgid "Taboo"
+msgstr "禁手"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:199
+msgid ""
+"This package is not installed and should not be installed under any "
+"circumstances,  especially not because of unresolved dependencies that other "
+"packages might have or get."
+msgstr ""
+"未安裝此軟體包且在任何情況下都不應安裝此軟體包，尤其是不要出於其它軟體包可能"
+"與此軟體包有未解決的依賴關係而安裝此軟體包。"
+
+#: src/YQPackageSelectorHelp.cc:203 src/YQPackageSelectorHelp.cc:316
+msgid ""
+"Packages set to \"taboo\" are treated as if they did not exist on any "
+"installation media."
+msgstr "將視設為 \"禁手\" 的軟體包為不存在於任何安裝介質上。"
+
+#. Translators: Package status short (!) description
+#: src/YQPackageSelectorHelp.cc:207 src/YQPkgStatusFilterView.cc:101
+msgid "Protected"
+msgstr "受保護"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:209
+msgid ""
+"This package is installed and should not be modified,  especially not "
+"because of unresolved dependencies that other packages might have or get."
+msgstr ""
+"已安裝此軟體包且不應進行修改，尤其是不要出於其它軟體包可能與此軟體包有未解決"
+"的依賴關係而修改此軟體包。"
+
+#: src/YQPackageSelectorHelp.cc:213
+msgid ""
+"Use this status for third-party packages that should not be overwritten by "
+"newer versions that may come with the distribution."
+msgstr "可對不應為發行版可能分發的較新版本所覆蓋的第三方軟體包使用此狀態。"
+
+#. Translators: Package status short (!) description
+#: src/YQPackageSelectorHelp.cc:218 src/YQPkgObjList.cc:275
+#: src/YQPkgStatusFilterView.cc:98
+msgid "Autoinstall"
+msgstr "自動安裝"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:220
+msgid ""
+"This package will be installed automatically because some other package "
+"needs it."
+msgstr "將自動安裝此軟體包，因為某些其它軟體包需要它。"
+
+#: src/YQPackageSelectorHelp.cc:222
+msgid ""
+"<b>Hint:</b> You may have to use \"taboo\" to get rid of such a package."
+msgstr "<b>提示：</b>您可能需要使用 \"禁手\" 來清除這樣的軟體包。"
+
+#. Translators: Package status short (!) description
+#: src/YQPackageSelectorHelp.cc:226 src/YQPkgObjList.cc:276
+#: src/YQPkgStatusFilterView.cc:99
+msgid "Autoupdate"
+msgstr "自動更新"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:228
+msgid ""
+"This package is already installed, but some other package needs a newer "
+"version, so it will automatically be updated."
+msgstr "已安裝此軟體包，但某些其它軟體包需要更新的版本，因此將自動更新此軟體包。"
+
+#. Translators: Package status short (!) description
+#: src/YQPackageSelectorHelp.cc:233 src/YQPkgObjList.cc:274
+#: src/YQPkgStatusFilterView.cc:97
+msgid "Autodelete"
+msgstr "自動刪除"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:235
+msgid ""
+"This package is already installed, but package dependencies require that it "
+"is deleted."
+msgstr "已安裝此軟體包，但軟體包依賴關係要求將其刪除。"
+
+#: src/YQPackageSelectorHelp.cc:236
+msgid "This can happen, for example, if some other package obsoletes this one."
+msgstr "這種情況可能發生在，例如，若某些其它軟體包淘汰了此軟體包時。"
+
+#. Translators: Headline for help about "magic keys" in the package manager
+#: src/YQPackageSelectorHelp.cc:265
+msgid "Special Keys Overview"
+msgstr "特殊鍵概覽"
+
+#. Translators: Additional hint that will be added to any of the following keyboard actions.
+#. Automatic word wrapping.
+#: src/YQPackageSelectorHelp.cc:269
+msgid "In any case, go to the next list item."
+msgstr "不管怎樣啦，我都去下一個列表項了。"
+
+#. Translators: Keyboard action short (!) description
+#: src/YQPackageSelectorHelp.cc:276
+msgid "Add"
+msgstr "添加"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:278
+msgid ""
+"Get this package. Install it if it is not installed yet. Update it to the "
+"latest version if it is installed  and there is a newer version."
+msgstr ""
+"擷取此軟體包。若尚未安裝則安裝此軟體包。若已安裝但有較新版本則更新到最新版"
+"本。"
+
+#. Translators: Keyboard action short (!) description
+#: src/YQPackageSelectorHelp.cc:285
+msgid "Remove"
+msgstr "移除"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:287
+msgid ""
+"Get rid of this package. Mark it as \"do not install\" if it is not "
+"installed yet. Delete it if it is installed."
+msgstr "清除此軟體包。若尚未安裝則將其標記為 \"不安裝\"。若已安裝則將其刪除。"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:295
+msgid ""
+"Update this package if it is installed and there is a newer version. Ignore "
+"packages that are not installed."
+msgstr "若已安裝但有較新版本則更新此軟體包。忽略尚未安裝的軟體包。"
+
+#. Translators: Keyboard action short (!) description
+#: src/YQPackageSelectorHelp.cc:302
+msgid "Undo Update"
+msgstr "撤消更新"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:304
+msgid ""
+"Undo the effect of \">\" above: Set package to \"keep\" if it is currently "
+"set to \"update\". Ignore all other packages."
+msgstr ""
+"撤消上面 \">\" 的效果：若軟體包當前設為 \"更新\"，則將其設為 \"保留\"。忽略全"
+"部其它軟體包。"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:312
+msgid ""
+"Set this package to \"taboo\" if it is not installed: make sure this package "
+"does not get installed, especially not because of unresolved dependencies "
+"that other packages might have or get. "
+msgstr ""
+"若尚未安裝則將此軟體包設定為 \"禁手\"：確保不安裝此軟體包，尤其是不要出於其它"
+"軟體包可能與此軟體包有未解決的依賴關係而安裝此軟體包。"
+
+#. Translators: Keyboard action short (!) description
+#: src/YQPackageSelectorHelp.cc:322
+msgid "Protect"
+msgstr "保護"
+
+#. Translators: Automatic word-wrapping.
+#: src/YQPackageSelectorHelp.cc:324
+msgid ""
+"Set this package to \"protected\" if it is installed: make sure this package "
+"will not be modified, especially not because of unresolved dependencies that "
+"other packages might have or get. "
+msgstr ""
+"若已安裝則將此軟體包設為 \"受保護\"：確保不修改此軟體包，尤其是不要出於其它軟"
+"件包可能與此軟體包有未解決的依賴關係而修改此軟體包。"
+
+#: src/YQPackageSelectorHelp.cc:328
+msgid ""
+"Use this for third-party packages that should not be overwritten by newer "
+"versions that may come with the distribution."
+msgstr "可對不應為發行版可能分發的較新版本所覆蓋的第三方軟體包使用此狀態。"
+
+#: src/YQPatternSelector.cc:180 src/YQPatternSelector.cc:248
+#: src/YQSimplePatchSelector.cc:182 src/YQSimplePatchSelector.cc:208
+msgid "&Details..."
+msgstr "細節(&D)..."
+
+#: src/YQPkgChangeLogView.cc:87 src/YQPkgFileListView.cc:94
+msgid "Information only available for installed packages."
+msgstr "僅有已安裝軟體包的資訊可用。"
+
+#. Dialog title
+#: src/YQPkgChangesDialog.cc:76
+msgid "Changed Packages"
+msgstr "有變動的軟體包"
+
+#. add the items.
+#: src/YQPkgChangesDialog.cc:114
+msgid "All"
+msgstr "全部"
+
+#: src/YQPkgChangesDialog.cc:115
+msgid "Selected by the user"
+msgstr "使用者選擇的"
+
+#. Set the dialog title.
+#.
+#. "Dependency conflict" is already used as the conflict list header just
+#. some pixels below that, so don't use this twice. This dialog title may
+#. or may not be visible, depending on whether or not there is a window
+#. manager running (and configured to show any dialog titles).
+#: src/YQPkgConflictDialog.cc:98
+msgid "Warning"
+msgstr "警告"
+
+#. "OK" button
+#: src/YQPkgConflictDialog.cc:134
+msgid "&OK -- Try Again"
+msgstr "好 -- 重試(&O)"
+
+#. "Expert" menu button
+#: src/YQPkgConflictDialog.cc:145
+msgid "&Expert"
+msgstr "專家(&E)"
+
+#: src/YQPkgConflictDialog.cc:157
+msgid "&Save This List to a File..."
+msgstr "將此列表儲存到檔案(&S)..."
+
+#. Busy popup
+#: src/YQPkgConflictDialog.cc:174
+msgid "Checking Dependencies..."
+msgstr "正在檢查依賴關係..."
+
+#. Heading for popup dialog
+#: src/YQPkgConflictDialog.cc:388
+msgid "Create Dependency Resolver Test Case"
+msgstr "創建依賴關係解決器試例"
+
+#: src/YQPkgConflictDialog.cc:391
+msgid ""
+"<p>Use this to generate extensive logs to help tracking down bugs in the "
+"dependency resolver. The logs will be stored in directory <br><tt>%1</tt></p>"
+msgstr ""
+"<p>使用此選項生成詳盡日誌來幫助跟蹤依賴關係解決器中的故障。這些日誌將儲存在 "
+"<br><tt>%1</tt></p> 資料夾"
+
+#. parent
+#: src/YQPkgConflictDialog.cc:395
+msgid "Solver Test Case"
+msgstr "解決器試例"
+
+#: src/YQPkgConflictDialog.cc:410
+msgid ""
+"<p>Dependency resolver test case written to <br><tt>%1</tt></p><p>Prepare "
+"<tt>y2logs.tgz tar</tt> archive to attach to Bugzilla?</p>"
+msgstr ""
+"<p>已將依賴關係解決器試例寫入 <br><tt>%1</tt></p><p>準備 <tt>y2logs.tgz tar</"
+"tt> 存檔以附加到 Bugzilla 嗎？</p>"
+
+#. parent
+#: src/YQPkgConflictDialog.cc:413
+msgid "Success"
+msgstr "成功"
+
+#. caption
+#: src/YQPkgConflictDialog.cc:426
+msgid ""
+"<p><b>Error</b> creating dependency resolver test case</p><p>Please check "
+"disk space and permissions for <tt>%1</tt></p>"
+msgstr ""
+"<p>創建依賴關係解決器試例時<b>出錯</b></p><p>請檢查 <tt>%1</tt> 的磁碟空間與"
+"許可權</p>"
+
+#. startsWith
+#. filter
+#: src/YQPkgConflictList.cc:180
+msgid "Save Conflicts List"
+msgstr "儲存衝突列表"
+
+#. caption
+#: src/YQPkgConflictList.cc:202 src/YQPkgList.cc:606
+msgid "Cannot open file %1"
+msgstr "無法開啟檔案 %1"
+
+#: src/YQPkgConflictList.cc:292
+msgid "Conflict Resolution:"
+msgstr "衝突解決："
+
+#: src/YQPkgConflictList.cc:329
+msgid "<a href='/'>%1 more...</a>"
+msgstr "<a href='/'>%1 更多...</a>"
+
+#: src/YQPkgDependenciesView.cc:104 src/YQPkgDependenciesView.cc:134
+#: src/YQPkgTechnicalDetailsView.cc:154 src/YQPkgTechnicalDetailsView.cc:196
+msgid "Version:"
+msgstr "版本："
+
+#: src/YQPkgDependenciesView.cc:106 src/YQPkgDependenciesView.cc:136
+msgid "Provides:"
+msgstr "提供："
+
+#: src/YQPkgDependenciesView.cc:107 src/YQPkgDependenciesView.cc:137
+msgid "Prerequires:"
+msgstr "前提："
+
+#: src/YQPkgDependenciesView.cc:108 src/YQPkgDependenciesView.cc:138
+msgid "Requires:"
+msgstr "需要："
+
+#: src/YQPkgDependenciesView.cc:109 src/YQPkgDependenciesView.cc:139
+msgid "Conflicts:"
+msgstr "衝突："
+
+#: src/YQPkgDependenciesView.cc:110 src/YQPkgDependenciesView.cc:140
+msgid "Obsoletes:"
+msgstr "淘汰："
+
+#: src/YQPkgDependenciesView.cc:111 src/YQPkgDependenciesView.cc:141
+msgid "Recommends:"
+msgstr "推薦："
+
+#: src/YQPkgDependenciesView.cc:112 src/YQPkgDependenciesView.cc:142
+msgid "Suggests:"
+msgstr "建議："
+
+#: src/YQPkgDependenciesView.cc:113 src/YQPkgDependenciesView.cc:143
+msgid "Enhances:"
+msgstr "擴展："
+
+#: src/YQPkgDependenciesView.cc:114 src/YQPkgDependenciesView.cc:144
+msgid "Supplements:"
+msgstr "補充："
+
+#: src/YQPkgDependenciesView.cc:127 src/YQPkgTechnicalDetailsView.cc:189
+msgid "<b>Alternate Version</b>"
+msgstr "<b>替代版本</b>"
+
+#: src/YQPkgDependenciesView.cc:128 src/YQPkgTechnicalDetailsView.cc:190
+msgid "<b>Installed Version</b>"
+msgstr "<b>已安裝版本</b>"
+
+#. Dialog title
+#: src/YQPkgDescriptionDialog.cc:72
+msgid "Package Description"
+msgstr "軟體包描述"
+
+#: src/YQPkgDescriptionView.cc:114
+msgid "References:"
+msgstr "參考："
+
+#. Translators: %1 contains the support level like "Level 3", "unsupported" or "unknown"
+#: src/YQPkgDescriptionView.cc:133
+msgid "Supportability: %1"
+msgstr "支援程度：%1"
+
+#: src/YQPkgDescriptionView.cc:262
+msgid "This package contains: "
+msgstr "此軟體包含有："
+
+#: src/YQPkgDiskUsageList.cc:155
+msgid "<b>Error:</b> Out of disk space!"
+msgstr "<b>錯誤：</b>磁碟空間不足！"
+
+#: src/YQPkgDiskUsageList.cc:164
+msgid "<b>Warning:</b> Disk space is running out!"
+msgstr "<b>警告：</b>磁碟空間不足！"
+
+#. Dialog title
+#: src/YQPkgDiskUsageWarningDialog.cc:71
+msgid "Disk Space Warning"
+msgstr "磁碟空間警告"
+
+#. %1 is the total number of files in a file list
+#: src/YQPkgFileListView.cc:130
+msgid "%1 files total"
+msgstr "共 %1 個檔案"
+
+#. Translators: Button with pop-up menu to open a new page (very much like
+#. in a web browser) with another package filter view or to switch to an
+#. existing one if it's open already
+#: src/YQPkgFilterTab.cc:172 src/YQPkgFilterTab.cc:176
+msgid "&View"
+msgstr "檢視(&V)"
+
+#: src/YQPkgFilterTab.cc:530
+msgid "Move page &left"
+msgstr "將頁面左移(&L)"
+
+#: src/YQPkgFilterTab.cc:540
+msgid "Move page &right"
+msgstr "將頁面右移(&R)"
+
+#: src/YQPkgFilterTab.cc:547
+msgid "&Close page"
+msgstr "關閉頁面(&C)"
+
+#. Dialog title
+#: src/YQPkgHistoryDialog.cc:83
+msgid "Package History"
+msgstr "軟體包歷史"
+
+#: src/YQPkgHistoryDialog.cc:98
+msgid "Show History (/var/log/zypp/history)"
+msgstr "顯示歷史 (/var/log/zypp/history)"
+
+#: src/YQPkgHistoryDialog.cc:110
+msgid "Date"
+msgstr "日期"
+
+#: src/YQPkgHistoryDialog.cc:114
+msgid "Action"
+msgstr "動作"
+
+#: src/YQPkgHistoryDialog.cc:114
+msgid "Version/URL"
+msgstr "版本/URL"
+
+#. "OK" button
+#: src/YQPkgHistoryDialog.cc:131
+msgid "&Close"
+msgstr "關閉(&C)"
+
+#. Translators: This is a (short) text indicating that something went
+#. wrong while trying to read history file.
+#: src/YQPkgHistoryDialog.cc:268
+msgid "Unable to read history"
+msgstr "無法讀取歷史"
+
+#. Translators: Table column heading for language ISO code like "de_DE", "en_US"
+#. Please keep this short to avoid stretching the column too wide!
+#: src/YQPkgLangList.cc:70
+msgid "Code"
+msgstr "程式碼"
+
+#. Full (human readable) language / country name like "German (Austria)"
+#: src/YQPkgLangList.cc:73
+msgid "Language"
+msgstr "語言"
+
+#: src/YQPkgList.cc:84 src/YQPkgList.cc:626
+msgid "Package"
+msgstr "軟體包"
+
+#. headers <<  _( "Patch"	);	_nameCol	= numCol++;
+#: src/YQPkgList.cc:85 src/YQPkgList.cc:627 src/YQPkgPatchList.cc:114
+#: src/YQPkgProductList.cc:66
+msgid "Summary"
+msgstr "摘要"
+
+#: src/YQPkgList.cc:90 src/YQPkgList.cc:628
+msgid "Installed (Available)"
+msgstr "已安裝 (可用)"
+
+#: src/YQPkgList.cc:94
+msgid "Avail. Ver."
+msgstr "可用版本"
+
+#: src/YQPkgList.cc:97
+msgid "Inst. Ver."
+msgstr "已安裝版本"
+
+#: src/YQPkgList.cc:103 src/YQPkgProductList.cc:67
+msgid "Version"
+msgstr "版本"
+
+#. headers <<  _( "Source" );	_srpmStatusCol	= numCol++;
+#: src/YQPkgList.cc:108 src/YQPkgList.cc:629
+msgid "Size"
+msgstr "大小"
+
+#: src/YQPkgList.cc:247 src/YQPkgList.cc:517 src/YQPkgObjList.cc:579
+#: src/YQPkgPatchList.cc:436
+msgid "&All in This List"
+msgstr "此列表中全部(&A)"
+
+#: src/YQPkgList.cc:474 src/YQPkgList.cc:495
+msgid "Export This List to &Text File..."
+msgstr "將此列表匯出到文字檔案(&T)..."
+
+#: src/YQPkgList.cc:526
+msgid "&Install Source"
+msgstr "安裝原始碼(&I)"
+
+#: src/YQPkgList.cc:530
+msgid "Do &Not Install Source"
+msgstr "不安裝原始碼(&N)"
+
+#: src/YQPkgList.cc:534
+msgid "&Install All Available Sources"
+msgstr "安裝全部可用原始碼(&I)"
+
+#. key
+#. enabled
+#: src/YQPkgList.cc:540
+msgid "Do &Not Install Any Sources"
+msgstr "不安裝任何原始碼(&N)"
+
+#. startsWith
+#. filter
+#: src/YQPkgList.cc:582
+msgid "Export Package List"
+msgstr "匯出軟體包列表"
+
+#: src/YQPkgList.cc:625
+#, c-format
+msgid "Status"
+msgstr "狀態"
+
+#: src/YQPkgList.cc:887
+msgid "Install Sources"
+msgstr "安裝原始碼"
+
+#: src/YQPkgList.cc:888
+msgid "Do Not Install Sources"
+msgstr "不安裝原始碼"
+
+#: src/YQPkgList.cc:892
+msgid "No Sources Available"
+msgstr "無可用原始碼"
+
+#: src/YQPkgList.cc:907
+msgid "Installed Version: %1"
+msgstr "已安裝版本：%1"
+
+#. Translators: This is the relation between two versions of one package
+#. if both versions are the same, e.g., both "1.2.3-42", "1.2.3-42"
+#: src/YQPkgList.cc:925
+msgid "same"
+msgstr "相同"
+
+#: src/YQPkgList.cc:927
+msgid "newer"
+msgstr "較新"
+
+#: src/YQPkgList.cc:928
+msgid "older"
+msgstr "較舊"
+
+#. Translators: %1 is the version, %2 is one of "newer", "older", "same"
+#: src/YQPkgList.cc:931
+msgid "Available Version: %1 (%2)"
+msgstr "可用版本：%1 (%2)"
+
+#: src/YQPkgList.cc:935
+msgid "Not available for installation"
+msgstr "不可用於安裝"
+
+#: src/YQPkgObjList.cc:280
+msgid "Do Not Install"
+msgstr "不安裝"
+
+#: src/YQPkgObjList.cc:281
+msgid "Protected -- Do Not Modify"
+msgstr "受保護 -- 不修改"
+
+#: src/YQPkgObjList.cc:282
+msgid "Taboo -- Never Install"
+msgstr "禁手 -- 從不安裝"
+
+#: src/YQPkgObjList.cc:422
+msgid "Show solver information"
+msgstr "顯示依賴關係解決器資訊"
+
+#. Translators: Additional hint what caused an auto-status
+#: src/YQPkgObjList.cc:1472
+msgid "(by a software selection)"
+msgstr "(按軟體選集)"
+
+#: src/YQPkgObjList.cc:1474
+msgid "(by dependencies)"
+msgstr "(按依賴關係)"
+
+#. Translators: tool tip for patches / patterns that are installed,
+#. but whose dependencies are broken (no longer satisfied)
+#: src/YQPkgObjList.cc:1490
+msgid "Dependencies broken"
+msgstr "依賴關係破損"
+
+#. Translators: tool tip for patches / patterns that are not installed,
+#. but whose dependencies are satisfied
+#: src/YQPkgObjList.cc:1500
+msgid "All dependencies satisfied"
+msgstr "全部依賴關係均已滿足"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:62
+msgid "Accessibility"
+msgstr "輔助功能"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:63
+msgid "Accessories"
+msgstr "附件"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:64
+msgid "Education"
+msgstr "教育"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:65
+msgid "Games"
+msgstr "遊戲"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:66
+msgid "Graphics"
+msgstr "圖形"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:67
+msgid "Internet"
+msgstr "網際網路"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:68
+msgid "Office"
+msgstr "辦公"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:69
+msgid "Other"
+msgstr "其它"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:70
+msgid "Programming"
+msgstr "程式設計"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:71
+msgid "Multimedia"
+msgstr "多媒體"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:72
+msgid "System"
+msgstr "系統"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:73
+msgid "GNOME Desktop"
+msgstr "GNOME 桌面"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:74
+msgid "KDE Desktop"
+msgstr "KDE 桌面"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:75
+msgid "XFCE Desktop"
+msgstr "XFCE 桌面"
+
+# button label for other/more options
+#: src/YQPkgPackageKitGroupsFilterView.cc:76
+msgid "Other Desktops"
+msgstr "其它桌面"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:77
+msgid "Publishing"
+msgstr "出版"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:78
+msgid "Servers"
+msgstr "伺服器"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:79
+msgid "Fonts"
+msgstr "字型"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:80
+msgid "Admin Tools"
+msgstr "管理工具"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:81
+msgid "Legacy"
+msgstr "中古"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:82
+msgid "Localization"
+msgstr "本地化"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:83
+msgid "Virtualization"
+msgstr "虛擬化"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:84
+msgid "Security"
+msgstr "安全"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:85
+msgid "Power Management"
+msgstr "電源管理"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:86
+msgid "Communication"
+msgstr "通訊"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:87
+msgid "Network"
+msgstr "網路"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:88
+msgid "Maps"
+msgstr "地圖"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:89
+msgid "Software Sources"
+msgstr "軟體原始碼"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:90
+#: src/YQPkgPackageKitGroupsFilterView.cc:102
+msgid "Unknown Group"
+msgstr "未知分組"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:93
+msgid "Suggested Packages"
+msgstr "建議軟體包"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:94
+msgid "Recommended Packages"
+msgstr "推薦軟體包"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:95
+msgid "Orphaned Packages"
+msgstr "孤立軟體包"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:96
+msgid "Unneeded Packages"
+msgstr "不需要的軟體包"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:97
+msgid "Multiversion Packages"
+msgstr "多版本軟體包"
+
+#: src/YQPkgPackageKitGroupsFilterView.cc:197 src/YQPkgRepoFilterView.cc:165
+#: src/YQPkgRpmGroupTagsFilterView.cc:59
+msgid "Package Groups"
+msgstr "軟體包分組"
+
+#: src/YQPkgPatchFilterView.cc:92
+msgid "&Show Patch Category:"
+msgstr "顯示補丁分類(&S)："
+
+#: src/YQPkgPatchFilterView.cc:99
+msgid "Needed Patches"
+msgstr "需要的補丁"
+
+#: src/YQPkgPatchFilterView.cc:100
+msgid "Unneeded Patches"
+msgstr "不需要的補丁"
+
+#: src/YQPkgPatchFilterView.cc:101
+msgid "All Patches"
+msgstr "全部補丁"
+
+#: src/YQPkgPatchFilterView.cc:113
+msgid "Patch Description"
+msgstr "補丁描述"
+
+#. Translators: These are patch categories
+#. Dialog title
+#: src/YQPkgPatchList.cc:614 src/YQPkgTextDialog.cc:100
+msgid "YaST"
+msgstr "YaST"
+
+#: src/YQPkgPatchList.cc:615
+msgid "security"
+msgstr "安全"
+
+#: src/YQPkgPatchList.cc:616
+msgid "recommended"
+msgstr "推薦"
+
+#: src/YQPkgPatchList.cc:617
+msgid "optional"
+msgstr "可選"
+
+#: src/YQPkgPatchList.cc:618
+msgid "document"
+msgstr "文件"
+
+#: src/YQPkgPatternList.cc:170
+msgid "Pattern"
+msgstr "軟體集"
+
+#. Dialog title
+#: src/YQPkgProductDialog.cc:73
+msgid "Products"
+msgstr "產品"
+
+#: src/YQPkgProductList.cc:65
+msgid "Product"
+msgstr "產品"
+
+#: src/YQPkgProductList.cc:68
+msgid "Vendor"
+msgstr "廠商"
+
+#. Translators: This is a combo box where the user can apply a secondary filter
+#. in addition to the primary filter by repository - one of
+#. "All packages", "RPM groups", "search", "summary"
+#.
+#. And yes, the colon really belongs there since this is one of the very
+#. few cases where a combo box label is left to the combo box rather than
+#. above it.
+#: src/YQPkgRepoFilterView.cc:139
+msgid "&Secondary Filter:"
+msgstr "輔助過濾器(&S)："
+
+#: src/YQPkgRepoFilterView.cc:157
+msgid "Unmaintained Packages"
+msgstr "失去維護的軟體包"
+
+#. horizontal
+#. vertical
+#: src/YQPkgRepoFilterView.cc:180
+msgid "Search"
+msgstr "搜索"
+
+#. horizontal
+#. vertical
+#: src/YQPkgRepoFilterView.cc:199
+msgid "Installation Summary"
+msgstr "安裝摘要"
+
+#. Column headers for repository list
+#: src/YQPkgRepoList.cc:76
+msgid "Name"
+msgstr "名稱"
+
+#: src/YQPkgRpmGroupTagsFilterView.cc:63
+msgid "zzz All"
+msgstr "zzz 全部"
+
+#. Search button
+#: src/YQPkgSearchFilterView.cc:92
+msgid "&Search"
+msgstr "搜索(&S)"
+
+#.
+#. Where to search
+#.
+#: src/YQPkgSearchFilterView.cc:105
+msgid "Search in"
+msgstr "搜索範圍"
+
+#: src/YQPkgSearchFilterView.cc:111
+msgid "Nam&e"
+msgstr "名稱(&E)"
+
+#: src/YQPkgSearchFilterView.cc:115
+msgid "Su&mmary"
+msgstr "摘要(&M)"
+
+#: src/YQPkgSearchFilterView.cc:117
+msgid "Descr&iption"
+msgstr "描述(&I)"
+
+#: src/YQPkgSearchFilterView.cc:122
+msgid "RPM \"P&rovides\""
+msgstr "RPM \"提供\"(&R)"
+
+#: src/YQPkgSearchFilterView.cc:124
+msgid "RPM \"Re&quires\""
+msgstr "RPM \"需要\"(&Q)"
+
+#: src/YQPkgSearchFilterView.cc:127
+msgid "File list"
+msgstr "檔案列表"
+
+#.
+#. Search mode
+#.
+#: src/YQPkgSearchFilterView.cc:142
+msgid "Search &Mode:"
+msgstr "搜索模式(&M)："
+
+#. Caution: combo box items must be inserted in the same order as enum SearchMode!
+#: src/YQPkgSearchFilterView.cc:155
+msgid "Contains"
+msgstr "包含"
+
+#: src/YQPkgSearchFilterView.cc:156
+msgid "Begins with"
+msgstr "開始為"
+
+#: src/YQPkgSearchFilterView.cc:157
+msgid "Exact Match"
+msgstr "精確匹配"
+
+#: src/YQPkgSearchFilterView.cc:158
+msgid "Use Wild Cards"
+msgstr "使用通配符"
+
+#: src/YQPkgSearchFilterView.cc:159
+msgid "Use Regular Expression"
+msgstr "使用正規表示式"
+
+#: src/YQPkgSearchFilterView.cc:166
+msgid "Case Sensiti&ve"
+msgstr "區分大小寫(&V)"
+
+#: src/YQPkgSearchFilterView.cc:244
+msgid "Searching..."
+msgstr "正在搜索..."
+
+#: src/YQPkgSearchFilterView.cc:330
+msgid "No Results."
+msgstr "無結果。"
+
+#. Translators: This is a (short) text indicating that something went
+#. wrong while searching for packages. At this point, it is not clear
+#. if it's a user error (e.g., syntax error in regular expression) or
+#. an internal error. But there is a "Details" button that will return
+#. the original (translated) error message.
+#: src/YQPkgSearchFilterView.cc:345
+msgid "Query Error"
+msgstr "查詢出錯"
+
+#: src/YQPkgSelList.cc:64
+msgid "Selection"
+msgstr "選集"
+
+#. Headline
+#: src/YQPkgStatusFilterView.cc:77
+msgid "Changes Overview"
+msgstr "變動概覽"
+
+#.
+#. Packages with what status to show
+#.
+#: src/YQPkgStatusFilterView.cc:87
+msgid "Show packages with status"
+msgstr "顯示軟體包，狀態為"
+
+#. Refresh button
+#: src/YQPkgStatusFilterView.cc:120
+msgid "&Refresh List"
+msgstr "重新整理列表(&R)"
+
+#: src/YQPkgTechnicalDetailsView.cc:155 src/YQPkgTechnicalDetailsView.cc:197
+msgid "Build Time:"
+msgstr "編譯時間："
+
+#: src/YQPkgTechnicalDetailsView.cc:159 src/YQPkgTechnicalDetailsView.cc:198
+msgid "Install Time:"
+msgstr "安裝時間："
+
+#: src/YQPkgTechnicalDetailsView.cc:161 src/YQPkgTechnicalDetailsView.cc:199
+msgid "Package Group:"
+msgstr "軟體包分組："
+
+#: src/YQPkgTechnicalDetailsView.cc:162 src/YQPkgTechnicalDetailsView.cc:200
+msgid "License:"
+msgstr "許可："
+
+#: src/YQPkgTechnicalDetailsView.cc:163 src/YQPkgTechnicalDetailsView.cc:201
+msgid "Installed Size:"
+msgstr "安裝後大小："
+
+#: src/YQPkgTechnicalDetailsView.cc:164 src/YQPkgTechnicalDetailsView.cc:202
+msgid "Download Size:"
+msgstr "下載大小："
+
+#: src/YQPkgTechnicalDetailsView.cc:165 src/YQPkgTechnicalDetailsView.cc:203
+msgid "Distribution:"
+msgstr "發行版："
+
+#: src/YQPkgTechnicalDetailsView.cc:166 src/YQPkgTechnicalDetailsView.cc:204
+msgid "Vendor:"
+msgstr "廠商："
+
+#: src/YQPkgTechnicalDetailsView.cc:167 src/YQPkgTechnicalDetailsView.cc:205
+msgid "Packager:"
+msgstr "打包者："
+
+#: src/YQPkgTechnicalDetailsView.cc:168 src/YQPkgTechnicalDetailsView.cc:206
+msgid "Architecture:"
+msgstr "架構："
+
+#: src/YQPkgTechnicalDetailsView.cc:169 src/YQPkgTechnicalDetailsView.cc:207
+msgid "Build Host:"
+msgstr "編譯主機："
+
+#: src/YQPkgTechnicalDetailsView.cc:170 src/YQPkgTechnicalDetailsView.cc:208
+msgid "URL:"
+msgstr "URL："
+
+#: src/YQPkgTechnicalDetailsView.cc:171 src/YQPkgTechnicalDetailsView.cc:209
+msgid "Source Package:"
+msgstr "原始碼包："
+
+#: src/YQPkgTechnicalDetailsView.cc:172 src/YQPkgTechnicalDetailsView.cc:211
+msgid "Media No.:"
+msgstr "介質編號："
+
+#: src/YQPkgTechnicalDetailsView.cc:173 src/YQPkgTechnicalDetailsView.cc:212
+msgid "Authors:"
+msgstr "作者："
+
+#: src/YQPkgUpdateProblemFilterView.cc:60
+msgid ""
+"<br>\n"
+"<h2>Update Problem</h2>\n"
+"<p>\n"
+"The packages in this list cannot be updated automatically.\n"
+"</p>\n"
+"<p>Possible reasons:</p>\n"
+"<ul>\n"
+"<li>They are obsoleted by other packages\n"
+"<li>There is no newer version to update to on any installation media\n"
+"<li>They are third-party packages\n"
+"</ul>\n"
+"</p>\n"
+"<p>\n"
+"Please choose manually what to do with them.\n"
+"The safest course of action is to delete them.\n"
+"</p>"
+msgstr ""
+"<br>\n"
+"<h2>更新問題</h2>\n"
+"<p>\n"
+"此列表中的軟體包無法自動更新。\n"
+"</p>\n"
+"<p>潛在原因：</p>\n"
+"<ul>\n"
+"<li>它們被其它軟體包淘汰了\n"
+"<li>在任何安裝介質上都沒有可更新的版本\n"
+"<li>它們是第三方軟體包\n"
+"</ul>\n"
+"</p>\n"
+"<p>\n"
+"請手動選擇要對這些軟體包做些什麼。\n"
+"最安全的做法是將它們刪除。\n"
+"</p>"
+
+#: src/YQPkgVersionsView.cc:211
+msgid "%1-%2 from vendor %3 (installed)"
+msgstr "%1-%2 來自廠商 %3 (已安裝)"
+
+#. Translators: %1 is a package version, %2 the package architecture,
+#. %3 describes the repository where it comes from,
+#. %4 is the repository's priority
+#. %5 is the vendor of the package
+#. Examples:
+#. 2.5.23-i568 from Packman with priority 100 and vendor openSUSE
+#. 3.17.4-i386 from openSUSE-11.1 update repository with priority 20 and vendor openSUSE
+#. ^^^^^^ ^^^^      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^               ^^            ^^^^^^^^
+#. %1   %2                %3                                   %4                %5
+#: src/YQPkgVersionsView.cc:365 src/YQPkgVersionsView.cc:402
+msgid "%1-%2 from %3 with priority %4 and vendor %5"
+msgstr "%1-%2 來自 %3 軟體源，優先順序 %4，廠商 %5"
+
+#: src/YQPkgVersionsView.cc:386
+msgid "This version is installed in your system."
+msgstr "系統上已安裝了此版本。"
+
+#: src/YQZyppSolverDialogPluginStub.cc:86
+msgid "Missing package"
+msgstr "缺失軟體包"
+
+#: src/YQZyppSolverDialogPluginStub.cc:87
+msgid "Package libqdialogsolver is required for this feature."
+msgstr "此功能需要 libqdialogsolver 軟體包。"
+
+#~ msgid "Close the current page"
+#~ msgstr "關閉當前頁面"
+
+#~ msgid "Search Packages on &Web..."
+#~ msgstr "線上搜索軟體包(&W)..."
+
+#~ msgid "Enances:"
+#~ msgstr "擴展："
+
+#~ msgid "&Patterns"
+#~ msgstr "模式(&P)"
+
+#~ msgid "&Configuration"
+#~ msgstr "配置(&C)"
+
+#~ msgid "&Name"
+#~ msgstr "名稱(&N)"
+
+#~ msgid "YaST2"
+#~ msgstr "YaST2"
+
+#~ msgid "Searc&h:"
+#~ msgstr "搜索(&H)："
+
+#~ msgid "%1-%2 from %3"
+#~ msgstr "%1-%2 來自 %3"
+
+#~ msgid "&Verify System"
+#~ msgstr "校驗系統(&V)"
+
+#~ msgid "Source RPM:"
+#~ msgstr "源 RPM："
+

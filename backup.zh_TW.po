@@ -1,0 +1,1932 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Thruth Wang <lihaow@opera.com, 2007.
+# Eric Shan <ericalways@gmail.com>, 2008,2009, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: backup\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:37+0200\n"
+"PO-Revision-Date: 2012-07-23 03:37+0800\n"
+"Last-Translator: Marguerite Su\n"
+"Language-Team: Chinese Simplified <kde-i18n-doc@kde.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.4\n"
+
+#. popup dialog header
+#: src/include/backup/functions.rb:41
+msgid "Abort Confirmation"
+msgstr "中止確認"
+
+#. popup dialog question
+#: src/include/backup/functions.rb:43
+msgid "Really abort the backup?"
+msgstr "是否確實要中止備份？"
+
+#. Ask user for some value: display dialog with label, text entry and OK/Cancel buttons.
+#. @param [String] label Displayed text above the text entry in the dialog
+#. @param [String] value Default text in text entry, for empty text set value to "" or nil
+#. @param [Array<String>] values - pre-defined values for combo-box
+#. @param [Array<String>] forbidden_letters - letters that will be filtered out
+#. @return [Hash] Returned map: $[ "text" : string, "clicked" : symbol ]. Value with key text is string entered by user, symbol is `ok or `cancel depending which button was pressed.
+#: src/include/backup/functions.rb:153
+msgid "Select a directory to be included..."
+msgstr "選擇要包含的目錄..."
+
+#. e-mail subject - %1 is profile name
+#: src/include/backup/functions.rb:560
+msgid "YaST Automatic Backup (%1)"
+msgstr "YaST 自動備份 (%1)"
+
+#. text added to the subject if an error occured
+#: src/include/backup/functions.rb:573
+msgid ": FAILED"
+msgstr ": 失敗"
+
+#. header in email body followed by list of files
+#: src/include/backup/functions.rb:584
+msgid "Removed Old Archives:"
+msgstr "已刪除的舊的存檔："
+
+#. header in email body followed by list of files
+#: src/include/backup/functions.rb:597
+msgid "Renamed Old Archives:"
+msgstr "已重新命名的舊的存檔："
+
+#. header in email body
+#: src/include/backup/functions.rb:608
+msgid "Changed Existing Archives:"
+msgstr "已變更的現有的存檔："
+
+#. header in email body
+#: src/include/backup/functions.rb:615
+msgid "Summary:"
+msgstr "摘要："
+
+#. header in email body
+#: src/include/backup/functions.rb:617
+msgid "Details:"
+msgstr "細節："
+
+#. header in email body
+#: src/include/backup/functions.rb:639
+msgid "BACKUP REPORT for Profile %1"
+msgstr "配置檔案 %1 的備份報告"
+
+#. header in email body followed by errors or warnings
+#: src/include/backup/functions.rb:654
+msgid "Problems During Automatic Backup:"
+msgstr "自動備份期間出現問題："
+
+#. Create table content with detected mount points
+#. @param [Array<String>] selected selected mount points to use
+#. @param [Array<String>] all all detected mount points + user defined dirs
+#. @param [Hash{String => map}] description detected mount points
+#. @return [Array] table content
+#: src/include/backup/functions.rb:927
+msgid "Unknown file system"
+msgstr "未知檔案系統"
+
+#. Popup error message, %1 is a directory somewhere under %2, %2 was tested for existency
+#: src/include/backup/functions.rb:1077
+msgid ""
+"Cannot create backup archive in %1.\n"
+"%2 is not a directory.\n"
+"Enter another one or remove %2."
+msgstr ""
+"無法在 %1 中創建備份存檔。\n"
+"%2 不是目錄。\n"
+"請另輸入一個或刪除 %2。"
+
+#. For translators: help text in archive setting dialog - part 1/3
+#: src/include/backup/help_texts.rb:27
+msgid ""
+"<P><B><big>Backup</big></B><BR>To create a backup of your system,\n"
+"enter the absolute path for the file in which to store the backup in \n"
+"<b>Filename</b>. To store the file on an NFS server, select <b>Network</b> \n"
+"as the location and enter the server details."
+msgstr ""
+"<P><B><big>備份</big></B><BR>要創建系統備份，\n"
+"請在<b>檔名</b>中輸入存儲備份的\n"
+"檔案的絕對路徑。要將檔案存儲在 NFS 伺服器上，請選擇<b>網路</b>\n"
+"作為位置，並輸入伺服器細節。"
+
+#. For translators: help text in archive setting dialog - part 2/3
+#: src/include/backup/help_texts.rb:34
+msgid ""
+"<P>The backup module creates a tar archive with changed files and \n"
+"an autoinstallation profile for easy and fast system reinstallation. \n"
+"To store only the names of detected files instead of creating an archive, \n"
+"select <B>Only Create List of Files Found</B>.</P>"
+msgstr ""
+"<P>備份模組將針對已變更檔案創建一個 tar 存檔並創建一個自動安裝配置檔案，\n"
+"以方便使用者快速重安裝系統。\n"
+"若要僅存儲已檢測到檔案的名稱而不創建存檔，\n"
+"請選擇<B>僅創建找到檔案的列表</B>。</P>"
+
+#. For translators: help text in archive setting dialog - part 3/3
+#: src/include/backup/help_texts.rb:41
+msgid ""
+"<P>If you use ACLs (access control lists) for file access and \n"
+"want to back them up, select the subarchive type star.  To create a \n"
+"multivolume archive, for example, for storage on a fixed-size media \n"
+"like CDs, use <b>Options</b> to configure these settings.</P>"
+msgstr ""
+"<P>如果將 ACL(訪問控制列表)用於檔案訪問並要對其進行備份，\n"
+"請選擇子存檔類型 star。要創建多區塊存檔，\n"
+"例如，用於諸如 CD 等的固定大小介質上的存儲，請使用<b>選項</b>來配置這些設定。</P>"
+
+#. For translators: help text in tar options dialog - part 1/3
+#: src/include/backup/help_texts.rb:55
+msgid ""
+"<P><B><BIG>Multivolume Archive</BIG></B><BR>\n"
+"A backup archive can be divided into several smaller parts. This is useful \n"
+"if an archive is larger than the space available on the backup medium.</P>"
+msgstr ""
+"<P><B><BIG>多區塊存檔</BIG></B><BR>\n"
+"備份存檔可以分為多個較小的部分。這在存檔大於備份介質\n"
+"上的可用空間時很有用。</P>"
+
+#. For translators: help text in tar options dialog - part 2/3
+#: src/include/backup/help_texts.rb:61
+msgid ""
+"<P>To create a multivolume archive,  enable that option and \n"
+"select your backup medium.  If your backup medium is not in the list, \n"
+"select <B>Custom</B>.  Then enter the volume size in <b>Custom Size</b>.</P>"
+msgstr ""
+"<P>要創建多區塊存檔，請啟用該選項\n"
+"並選擇您的備份介質。如果您的備份介質不在列表中，\n"
+"請選擇<B>自定義</B>。然後在<b>自定義大小</b>中輸入區塊大小。</P>"
+
+#. For translators: help text in tar options dialog - part 3/3
+#. http://en.wikipedia.org/wiki/Byte
+#: src/include/backup/help_texts.rb:68
+msgid ""
+"<P><B>Note:</B> 1 kB=1000 bytes, 1 KiB=1024 bytes, etc. \n"
+"The entered volume size will be rounded down to a \n"
+"multiple of 2048 bytes.</P>"
+msgstr ""
+"<P><B>注意：</B> 1 kB=1000 位元組，1 kiB=1024 位元組等。\n"
+"輸入的區塊大小將向下舍入為 2048 位元組的倍數。</P>"
+
+#. For translators: help text in backup settings dialog - part 1
+#: src/include/backup/help_texts.rb:81
+msgid "<P><B><BIG>Backup Options</BIG></B><BR>Here, select which parts of the system to search and back up. <B>Archive Description</B> is an optional description of the backup archive.</P>"
+msgstr "<P><B><BIG>備份選項</BIG></B><BR>在此選擇要搜索與備份系統的哪些部分。<B>存檔描述</B>是備份存檔的可選描述。</P>"
+
+#. For translators: help text in backup settings dialog - part 2
+#: src/include/backup/help_texts.rb:85
+msgid ""
+"<P>The archive will contain files from packages that were changed since\n"
+"package installation or upgrade. Files that do not belong to any\n"
+"package can be optionally added to the archive.</P>"
+msgstr ""
+"<P>存檔將包含包中自包安裝或升級後發生變更的\n"
+"檔案。可以將不屬於任何包的檔案有選擇地\n"
+"添加到存檔中。</P>"
+
+#. For translators: help text in backup settings dialog - part 3
+#: src/include/backup/help_texts.rb:91
+msgid "<P>Check <B>Display List of Files</B> to show and edit a list of files found before creating the backup archive.</P>"
+msgstr "<P>檢查<B>顯示檔案列表</B>可在創建備份存檔之前顯示與編輯找到檔案的列表。</P>"
+
+#. For translators: help text in backup settings dialog - part 4
+#: src/include/backup/help_texts.rb:95
+msgid "<P>If you select <b>Check MD5 Sum</b>, the MD5 sum is used to determine if the file was changed. It is more reliable than checking the size or modification time, but takes longer.</P>"
+msgstr "<P>如果選擇<b>檢查 MD5 與</b>，MD5 之與將用於確定檔案是否已變更。這比檢查大小或修改時間更可靠，但需要更長的時間。</P>"
+
+#. TRANSLATORS: help text in backup settings dialog - part 5
+#: src/include/backup/help_texts.rb:99
+msgid ""
+"<p>Select <b>Backup Content of All Packages</b> to back up all files belonging\n"
+"to all installed packages. This option is useful when creating an archive that\n"
+"need not have the same installation repositories or the same packages\n"
+"available in order to restore. It is faster not to use this option.</p>\n"
+msgstr ""
+"<p>選擇<b>備份所有包的內容</b>來備份屬於所有已經安裝的包的檔案。\n"
+"當創建一個不需要有用於恢復的同樣安裝源或安裝包的存檔時，該選項非常有用。\n"
+"不使用這個選項速度會更快。</p>\n"
+
+#. For translators: help text in system backup dialog
+#: src/include/backup/help_texts.rb:114
+msgid ""
+"<P><B><BIG>System Backup</BIG></B><BR>\n"
+"Critical disk system areas can be added to the backup archive. \n"
+"They can be used to restore the system in case of a crash.</P>"
+msgstr ""
+"<P><B><BIG>系統備份</BIG></B><BR>\n"
+"可以將關鍵磁碟系統區域添加到備份存檔中。\n"
+"在系統崩潰時，可以使用它們來恢復系統。</P>"
+
+#. For translators: help text in searching modified dialog - part 1/3
+#: src/include/backup/help_texts.rb:127
+msgid ""
+"<P><B><BIG>Searching</BIG></B><BR>\n"
+"The modified file search is in progress.  This takes several minutes, \n"
+"depending on the speed of your system and the number of installed \n"
+"packages.</P>"
+msgstr ""
+"<P><B><BIG>搜索</BIG></B><BR>\n"
+"正在搜索已修改的檔案。這將需要幾分鐘，\n"
+"所需時間取決於系統的\n"
+"速度與已安裝包的數量。</P>"
+
+#. For translators: help text in searching files dialog - part 1/3
+#: src/include/backup/help_texts.rb:141
+msgid "<P><B><BIG>Searching</BIG></B><BR>The search is in progress for files that do not belong to a package. This takes several minutes, depending on the speed of your system and the size of the file system.</P>"
+msgstr "<P><B><BIG>搜索</BIG></B><BR>正在搜索不屬於某包的檔案。這將需要幾分鐘，所需時間取決於系統的速度與檔案系統的大小。</P>"
+
+#. For translators: help text in file dialog - part 1/2
+#: src/include/backup/help_texts.rb:152
+msgid "<P><B><BIG>Detected Files</BIG></B><BR>This is a list of files found. Select which files to store in the archive.</P>"
+msgstr "<P><B><BIG>檢測到的檔案</BIG></B><BR>這是已找到檔案的列表。選擇要在存檔中存儲哪些檔案。</P>"
+
+#. For translators: help text in file dialog - part 2/2
+#: src/include/backup/help_texts.rb:156
+msgid "<P>A mark in the first column indicates that the file will be backed up.</P>"
+msgstr "<P>第一列中的標記指示將備份該檔案。</P>"
+
+#. For translators: help text in creating archive dialog - part 1/2
+#: src/include/backup/help_texts.rb:167
+msgid "<P><B><BIG>Creating Archive</BIG></B><BR>Archive creation is in progress.</P>"
+msgstr "<P><B><BIG>創建存檔</BIG></B><BR>正在創建存檔。</P>"
+
+#. For translators: help text in summary dialog - part 1/2
+#: src/include/backup/help_texts.rb:178
+msgid ""
+"<P><B><BIG>Summary</BIG></B><BR>This displays the result \n"
+"of the backup. Click <B>Details</B> to see more information.</P>"
+msgstr ""
+"<P><B><BIG>摘要</BIG></B><BR>顯示備份的\n"
+"結果。單擊<B>細節</B>可瞭解更多資訊。</P>"
+
+#. For translators: help text in the automatic backup dialog (1/4)
+#: src/include/backup/help_texts.rb:189
+msgid ""
+"<P><B><BIG>Automatic Backup</BIG></B><BR>\n"
+"The selected profile can be started automatically in the background without \n"
+"any user interaction.</P>"
+msgstr ""
+"<P><B><BIG>自動備份</BIG></B><BR>\n"
+"選定的配置檔案可以在後臺自動啟動，\n"
+"而無需任何使用者干預。</P>"
+
+#. For translators: help text in the automatic backup dialog (2/4)
+#: src/include/backup/help_texts.rb:195
+msgid ""
+"<P>To start the backup automatically with the selected profile, \n"
+"check <b>Start Backup Automatically</b> and set how often and when the \n"
+"backup should be started. Use the 24-hour clock format for <b>Hour</b>.</P>"
+msgstr ""
+"<P>要使用選定的配置檔案自動啟動備份，請選中\n"
+"<b>自動啟動備份</b>並設定應啟動備份\n"
+"的時間與頻率。請對</b>小時</b>值使用 24 小時制格式。</P>"
+
+#. For translators: help text in the automatic backup dialog (3/4)
+#: src/include/backup/help_texts.rb:201
+msgid ""
+"<P>The previous full backup archive, if it exists, will be renamed by \n"
+"putting the date in the form YYYYMMDDHHMMSS at the beginning of the \n"
+"filename. If the number of old archives is greater than the predefined \n"
+"value, the oldest archives are deleted. All archives are stored\n"
+"as <b>full backups</b>.</P>"
+msgstr ""
+"<P>通過把 YYYYMMDDHHMMSS 格式的日期附加在檔名的前面，將重新命名以前的備份存檔(如果存在)\n"
+"。如果舊存檔的數量大於預定義的值，則將刪除一些最早的存檔。所有的存檔都作為 <b>完整備份</b> 存儲。</P>"
+
+#. For translators: help text in automatic backup dialog (4/4)
+#: src/include/backup/help_texts.rb:209
+msgid ""
+"<p>For the root user to receive information about the backup, \n"
+"select <b>Send Summary Mail to User root</b>.  This summary contains \n"
+"information about the files included in the backup and any errors that \n"
+"occur.</p>"
+msgstr ""
+"<p>要讓 root 使用者接收有關備份資訊，請選擇<b>向 root 使用者發送摘要郵件</b>。此摘要包含有關備份\n"
+"中所含檔案的資訊以及發生的任何錯誤。</p>"
+
+#. For translators: help text in profile management dialog - part 1/4
+#: src/include/backup/help_texts.rb:222
+msgid ""
+"<P><B><BIG>System Backup</BIG></B><BR>\n"
+"This backup tool searches files on your system and creates a backup \n"
+"archive from them. It is a small, easy-to-use backup program. \n"
+"If you need advanced features, such as incremental backup or \n"
+"network backup, you should use an expert tool.</P>"
+msgstr ""
+"<P><B><BIG>系統備份</BIG></B><BR>\n"
+"此備份工具搜索系統中的檔案，\n"
+"然後從這些檔案創建備份存檔。這是一個很小的、易於使用的備份程式。\n"
+"如果需要高階功能(如遞增備份或網路備份)，\n"
+"則應使用專家工具。</P>"
+
+#. For translators: help text in profile management dialog - part 2/4
+#: src/include/backup/help_texts.rb:230
+msgid ""
+"<P>This dialog shows the list of currently stored backup \n"
+"profiles. A backup profile is used to name a group of different settings, \n"
+"such as the name of an archive and how to search for files.</P>"
+msgstr ""
+"<P>此對話方塊顯示當前存儲的備份配置檔案\n"
+"的列表。備份配置檔案用於對一組不同的設定進行命名，\n"
+"例如存檔的名稱與搜索檔案的方式。</P>"
+
+#. For translators: help text in profile management dialog - part 3/4
+#: src/include/backup/help_texts.rb:236
+msgid ""
+"<P>You can have a number of profiles, each with a unique name. \n"
+"Using the actions in <B>Profile Management</B>, you can add a new profile \n"
+"based on default values, duplicate an existing profile, change the settings \n"
+"stored in a profile, or delete a profile. Use the <b>Automatic Backup</b> \n"
+"option to configure routine backups of the selected profile.</P>"
+msgstr ""
+"<P>您可以有許多配置檔案，每個配置檔案都具有一個唯一的名稱。\n"
+"使用<B>配置檔案管理</B>中的操作，\n"
+"您可以基於預設值來添加新配置檔案、複製現有的配置檔案、\n"
+"變更配置檔案中存儲的設定或刪除配置檔案。使用<b>自動備份</b>\n"
+"選項可配置選定配置檔案的常規備份。</P>"
+
+#. For translators: help text in profile management dialog - part 4/4
+#: src/include/backup/help_texts.rb:244
+msgid ""
+"<P>Press <B>Create Backup</B> to start the backup using \n"
+"settings stored in the currently selected profile. Press \n"
+"<B>Back Up Manually</B> to use default settings that can be \n"
+"modified before starting the backup process.</P>"
+msgstr ""
+"<P>按<B>創建備份</B>可使用存儲在當前選定\n"
+"配置檔案中的設定啟動備份。按<B>手動備份</B>可使用默認設定，\n"
+"您可以在啟動備份程序前\n"
+"對默認設定進行修改。</P>"
+
+#. For translators: help text in backup expert options dialog - part 1/3
+#: src/include/backup/help_texts.rb:258
+msgid ""
+"<P><BIG><B>Expert Options</B></BIG><BR>Some advanced configuration options\n"
+"can be set in this dialog. Usually there is no need to modify the default values.</P>"
+msgstr ""
+"<P><BIG><B>專家選項</B></BIG><BR>可在此對話方塊中設定某些\n"
+"高階配置選項。通常無需修改預設值。</P>"
+
+#. For translators: help text in backup expert options dialog - part 3/3
+#: src/include/backup/help_texts.rb:262
+msgid "<P>System areas, such as partition table or ext2 image, can be added to the backup archive with <b>Back Up Hard Disk System Areas</b>. These system areas can only be restored from an archive manually.</P>"
+msgstr "<P>使用<b>備份硬碟系統區域</b>可以將系統區域(如分割區表或ext2 映像)添加到備份存檔中。僅能從存檔中手動恢復這些系統區域。</P>"
+
+#. For translators: help text in backup expert options dialog - part 2/3
+#: src/include/backup/help_texts.rb:266
+msgid ""
+"<P>In <B>Temporary Directory</B>, set the location in which parts\n"
+"of the archive are stored before the final archive is created. The temporary directory should have enough\n"
+"free space for the entire archive.</P>\n"
+msgstr ""
+"<P>在<B>臨時目錄</B>中，設定在創建最終存檔前\n"
+"存存儲檔部分的位置。臨時目錄應有足夠的\n"
+"可用空間來存放整個存檔。</P>\n"
+
+#. For translators: help text in exclude directory dialog - part 1/5
+#: src/include/backup/help_texts.rb:278
+msgid ""
+"<p><b>Included Directories</b><br>\n"
+"It is possible to limit the search to back up only selected directories.\n"
+"To add a new directory, click <b>Add</b> and select a directory.\n"
+"To change or delete a directory, select it and click \n"
+"<b>Edit</b> or <b>Delete</b>.\n"
+"If you do not select any directory or if you delete all the already listed ones,\n"
+"the entire file system is searched and backed up.</p>\n"
+msgstr ""
+"<p><big><b>包含的目錄</b></big><br>\n"
+"可以將搜索限制為僅備份選定的目錄。\n"
+"要添加新目錄，請單擊<b>添加</b>並選擇一個目錄。\n"
+"要變更或刪除一個目錄，請選擇它並單擊\n"
+"<b>編輯</b>或<b>刪除</b>。\n"
+"如果不選擇任何目錄，或如果刪除所有已列出的目錄，\n"
+"則會搜索並備份整個檔案系統。</p>\n"
+
+#. For translators: help text in exclude directory dialog - part 2/5
+#: src/include/backup/help_texts.rb:288
+msgid ""
+"<P><BIG><B>Constraints</B></BIG>\n"
+"<BR>It is possible to exclude some files from the backup.\n"
+"Search constraints can be a directory, file system, or regular expression.\n"
+"Use <b>Edit</b> to modify an existing constraint, or\n"
+"<b>Delete</b> to remove the selected constraint.\n"
+"To add a new constraint, click <b>Add</b> then select the type of constraint. </P>"
+msgstr ""
+"<P><BIG><B>限制</B></BIG>\n"
+"<BR>可以將某些檔案排除在備份之外。\n"
+"搜索限制可以是目錄、檔案系統或正規表示式。\n"
+"使用<b>編輯</b>可修改現有限制。\n"
+"<b>刪除</b>將刪除選定的限制。\n"
+"要添加新的限制，請單擊<b>添加</b>，然後選擇限制的類型。</P>"
+
+#. For translators: help text in exclude directory dialog - part 3/5
+#: src/include/backup/help_texts.rb:297
+msgid "<P><B>Directory</B>: All files located in the specified directories will not be backed up.</P>"
+msgstr "<P><B>目錄</B>：指定目錄中的所有檔案將不會備份。</P>"
+
+#. For translators: help text in exclude directory dialog - part 4/5
+#: src/include/backup/help_texts.rb:301
+msgid ""
+"<P><B>File System</B>: It is possible to exclude all files located\n"
+"on a certain type of file system (such as ReiserFS or Ext2).\n"
+"The root directory will always be searched, even if its file system is selected.\n"
+"File systems that cannot be used on a local disk, such as network file systems,\n"
+"are excluded by default.</P>"
+msgstr ""
+"<P><B>檔案系統</B>：可以排除位於某類檔案系統\n"
+"（例如 ReiserFS 或 Ext2）上的所有檔案。\n"
+"將始終搜索根目錄，即使已選定其檔案系統。\n"
+"無法在本地磁碟上使用的檔案系統（如網路檔案系統）\n"
+"默認情況下就會排除。</P>"
+
+#. For translators: help text in exclude directory dialog - part 5/5
+#: src/include/backup/help_texts.rb:309
+msgid "<P><B>Regular Expressions</B>: Any filename that matches any of the regular expressions will not be backed up. Use Perl regular expressions. To exclude, for example, <tt>*.bak</tt> files, add the regular expression <tt>\\.bak$</tt>.</P>"
+msgstr "<P><B>正規表示式</B>：與任何正規表示式匹配的任何檔名將不備份。請使用 perl 正規表示式。例如，要排除 <tt>*.bak</tt> 檔案，請添加正規表示式 <tt>\\.bak$</tt>。</P>"
+
+#. type of item (displayed in the table)
+#: src/include/backup/ui.rb:61
+msgid "File system"
+msgstr "檔案系統"
+
+#. type of item (displayed in the table)
+#: src/include/backup/ui.rb:63
+msgid "Directory"
+msgstr "目錄"
+
+#. type of item (displayed in the table)
+#: src/include/backup/ui.rb:65
+msgid "Regular expression"
+msgstr "正規表示式"
+
+#. headline of a popup message
+#. headline of a popup message
+#. bnc #395835
+#: src/include/backup/ui.rb:212 src/include/backup/ui.rb:258
+#: src/include/backup/ui.rb:5441
+msgid "Warning"
+msgstr "警告"
+
+#. a popup question - no free space, %1 is the name of the directory
+#: src/include/backup/ui.rb:215
+msgid ""
+"There is not enough free space in the temporary directory %1.\n"
+"Continue anyway?"
+msgstr ""
+"臨時目錄 %1 中沒有足夠的可用空間。\n"
+"仍繼續？"
+
+#. a popup error message - no free space, %1 is the name of the directory
+#. a popup error message - no free space, %1 is the name of the directory
+#: src/include/backup/ui.rb:233 src/include/backup/ui.rb:279
+msgid ""
+"There is not enough free space in the backup target directory %1.\n"
+"Aborting the backup."
+msgstr ""
+"備份目標目錄 %1 中沒有足夠的可用空間。\n"
+"正在中止備份。"
+
+#. a popup question - no free space, %1 is the name of the directory
+#: src/include/backup/ui.rb:261
+msgid ""
+"There is not enough free space in the backup target directory %1.\n"
+"Continue anyway?"
+msgstr ""
+"備份目標目錄 %1 中沒有足夠的可用空間。\n"
+"仍繼續？"
+
+#. For translators %1 is archive file name (e.g. /tmp/backup.tar)
+#: src/include/backup/ui.rb:468
+msgid ""
+"File %1 already exists.\n"
+"Overwrite it?"
+msgstr ""
+"檔案 %1 已存在。\n"
+"是否覆蓋它？"
+
+#. dialog header - %1 is profile name
+#: src/include/backup/ui.rb:505
+msgid "Automatic Backup Options for Profile %1"
+msgstr "配置檔案 %1 的自動備份選項"
+
+#. check box label
+#: src/include/backup/ui.rb:515
+msgid "&Start Backup Automatically"
+msgstr "自動啟動備份(&S)"
+
+#. frame label
+#. rwalter please remove this frame
+#. `Frame(_("Frequency"), as you wish
+#: src/include/backup/ui.rb:533
+msgid "&Frequency"
+msgstr "頻率(&F)"
+
+#: src/include/backup/ui.rb:535
+msgid "Daily"
+msgstr "每日"
+
+#: src/include/backup/ui.rb:536
+msgid "Weekly"
+msgstr "每週"
+
+#: src/include/backup/ui.rb:537
+msgid "Monthly"
+msgstr "每月"
+
+#. frame label
+#: src/include/backup/ui.rb:548
+msgid "Backup Start Time"
+msgstr "備份開始時間"
+
+#. combo box label
+#: src/include/backup/ui.rb:554
+msgid "Day of the &Week"
+msgstr "星期幾(&W)"
+
+#. integer field widget label
+#: src/include/backup/ui.rb:559
+msgid "&Day of the Month"
+msgstr "一月中的幾號(&D)"
+
+#. integer field widget label
+#: src/include/backup/ui.rb:572
+msgid "&Hour"
+msgstr "小時(&H)"
+
+#. integer field widget label
+#: src/include/backup/ui.rb:581
+msgid "&Minute"
+msgstr "分鐘(&M)"
+
+#. integer field widget label
+#: src/include/backup/ui.rb:601
+msgid "Ma&ximum Number of Old Full Backups"
+msgstr "舊完整備份的最大數量(&X)"
+
+#. Checkbox label
+#: src/include/backup/ui.rb:613
+msgid "S&end Summary Mail to User root"
+msgstr "向 root 使用者發送摘要郵件(&E)"
+
+#. TRANSLATORS: Popup question, [Yes] means `cancel the profile creation`
+#: src/include/backup/ui.rb:743
+msgid "Really cancel the profile creation?"
+msgstr "是否確實要取消配置檔案創建？"
+
+#. error popup message - NFS mount failed
+#. error popup message - NFS mount failed
+#. error popup message - NFS mount failed
+#: src/include/backup/ui.rb:772 src/include/backup/ui.rb:793
+#: src/include/backup/ui.rb:1160
+msgid "Cannot mount the selected NFS share."
+msgstr "無法裝入選定的 NFS 共享。"
+
+#. For translators %1 is volume file name (e.g. /tmp/01_backup.tar)
+#. For translators %1 is volume file name (e.g. /tmp/01_backup.tar)
+#: src/include/backup/ui.rb:830 src/include/backup/ui.rb:1207
+msgid ""
+"The existing file %1 could become part of new volume set and be overwritten.\n"
+"Really continue?"
+msgstr ""
+"現有檔案 %1 會成為新區塊集的一部分，並被覆蓋。\n"
+"是否繼續？"
+
+#. dialog header
+#: src/include/backup/ui.rb:852
+msgid "Archive Settings"
+msgstr "存檔設定"
+
+#: src/include/backup/ui.rb:862
+msgid "Backup Location"
+msgstr "備份位置"
+
+#. radio button label
+#: src/include/backup/ui.rb:874
+msgid "&Local File"
+msgstr "本地檔案(&L)"
+
+#. radio button label
+#: src/include/backup/ui.rb:884
+msgid "Network (N&FS)"
+msgstr "網路(NFS)(&F)"
+
+#. text entry label
+#: src/include/backup/ui.rb:894
+msgid "I&P Address or Name of NFS Server"
+msgstr "NFS 伺服器的 IP 地址或名稱(&P)"
+
+#. Pushbutton label
+#: src/include/backup/ui.rb:902
+msgid "&Select..."
+msgstr "選擇(&S)..."
+
+#. text entry label
+#: src/include/backup/ui.rb:911
+msgid "&Remote Directory"
+msgstr "遠端目錄(&R)"
+
+#. Pushbutton label
+#: src/include/backup/ui.rb:919
+msgid "S&elect..."
+msgstr "選擇(&E)..."
+
+#. frame label
+#: src/include/backup/ui.rb:931
+msgid "Archive Type"
+msgstr "存檔類型"
+
+#: src/include/backup/ui.rb:941
+msgid "Create Backup Archive"
+msgstr "創建備份存檔"
+
+#. combo box label
+#: src/include/backup/ui.rb:950
+msgid "Archive &Type"
+msgstr "存檔類型(&T)"
+
+#. archive type - combo box item
+#: src/include/backup/ui.rb:953
+msgid "tar with tar-gzip subarchives"
+msgstr "帶 tar-gzip 子存檔的 tar"
+
+#. archive type - combo box item
+#: src/include/backup/ui.rb:955
+msgid "tar with tar-bzip2 subarchives"
+msgstr "帶 tar-bzip2 子存檔的 tar"
+
+#. archive type - combo box item
+#: src/include/backup/ui.rb:957
+msgid "tar with tar subarchives"
+msgstr "帶 tar 子存檔的 tar"
+
+#. archive type - combo box item
+#: src/include/backup/ui.rb:959
+msgid "tar with star-gzip subarchives"
+msgstr "帶 star-gzip 子存檔的 tar"
+
+#. archive type - combo box item
+#: src/include/backup/ui.rb:961
+msgid "tar with star-bzip2 subarchives"
+msgstr "帶 star-bzip2 子存檔的 tar"
+
+#. archive type - combo box item
+#: src/include/backup/ui.rb:963
+msgid "tar with star subarchives"
+msgstr "帶 star 子存檔的 tar"
+
+#. push button label
+#: src/include/backup/ui.rb:970 src/include/backup/ui.rb:4553
+msgid "&Options..."
+msgstr "選項(&O)..."
+
+#. radiobutton label
+#: src/include/backup/ui.rb:980
+msgid "Only Create List of Files Found"
+msgstr "僅創建找到檔案的列表"
+
+#. warning popup message
+#: src/include/backup/ui.rb:1018
+msgid ""
+"You are not logged in as root.\n"
+"Some files can only be read by the user root.\n"
+"Not all files will be backed up,\n"
+"so it will not be possible to restore\n"
+"the system completely later.\n"
+"\n"
+"System areas on hard disks can only\n"
+"be backed up by root.\n"
+msgstr ""
+"您沒有以 root 使用者身份登入。\n"
+"某些檔案僅能由 root 使用者讀取。\n"
+"由於並非將備份所有檔案，\n"
+"因而以後無法完整地恢復\n"
+"系統。\n"
+"\n"
+"硬碟上的系統區域僅能\n"
+"由 root 使用者備份。\n"
+
+#. TRANSLATORS: explanatory headline for UI::AskForExistingFile pop-up
+#: src/include/backup/ui.rb:1041
+msgid "Where would you like to store the backup?"
+msgstr "何處儲存備份？"
+
+#. check NFS server and export name
+#: src/include/backup/ui.rb:1084
+msgid ""
+"A server name is required.\n"
+"Enter the server name to use.\n"
+msgstr ""
+"伺服器名是必填項。\n"
+"請輸入要使用的伺服器名。\n"
+
+#: src/include/backup/ui.rb:1093
+msgid ""
+"A remote directory name is required.\n"
+"Enter the directory name to use.\n"
+msgstr ""
+"遠端目錄名是必填項。\n"
+"請輸入要使用的目錄名。\n"
+
+#. warning popup message
+#: src/include/backup/ui.rb:1117
+msgid ""
+"An archive filename is required.\n"
+"Enter the filename to use.\n"
+msgstr ""
+"存檔檔名是必需的。\n"
+"請輸入要使用的檔名。\n"
+
+#. warning popup message
+#: src/include/backup/ui.rb:1129
+msgid ""
+"Enter the archive filename with\n"
+"its absolute path, as in /tmp/backup.tar."
+msgstr ""
+"請輸入存檔檔名及其\n"
+"絕對路徑(例如 /tmp/backup.tar)。"
+
+#. select NFS export
+#: src/include/backup/ui.rb:1257
+msgid "Enter a server name."
+msgstr "請輸入伺服器名。"
+
+#. combo box item - user defined volume size of archive
+#: src/include/backup/ui.rb:1294
+msgid "Custom"
+msgstr "自定義"
+
+#. dialog header
+#: src/include/backup/ui.rb:1304
+msgid "Archive File Options"
+msgstr "存檔檔案選項"
+
+#. frame label
+#: src/include/backup/ui.rb:1309
+msgid "Multivolume Archive"
+msgstr "多區塊存檔"
+
+#. check box label
+#: src/include/backup/ui.rb:1317
+msgid "&Create a Multivolume Archive"
+msgstr "創建多區塊存檔(&C)"
+
+#. combo box label
+#: src/include/backup/ui.rb:1330
+msgid "&Volume Size"
+msgstr "區塊大小(&V)"
+
+#. text entry label
+#: src/include/backup/ui.rb:1343
+msgid "Custom &Size"
+msgstr "自定義大小(&S)"
+
+#. warning popup message
+#: src/include/backup/ui.rb:1413
+msgid "Volume size must be at least 10240 bytes."
+msgstr "區塊大小必須至少為 10240 個位元組。"
+
+#. dialog header
+#: src/include/backup/ui.rb:1460
+msgid "Backup Options"
+msgstr "備份選項"
+
+#. rwalter consider whether this frame and the next should be eliminated to simplify the dialog
+#. frame label
+#. dialog header
+#: src/include/backup/ui.rb:1466 src/include/backup/ui.rb:2861
+msgid "File Selection"
+msgstr "檔案選擇"
+
+#. check box label
+#: src/include/backup/ui.rb:1474
+msgid "&Back Up Files Not Belonging to Any Package"
+msgstr "備份不屬於任何包的檔案(&B)"
+
+#. check box label
+#: src/include/backup/ui.rb:1483
+msgid "Back up Content of &All Packages"
+msgstr "備份所有包的內容(&A)"
+
+#. check box label
+#: src/include/backup/ui.rb:1492
+msgid "Display List of Files Before &Creating Archive"
+msgstr "在創建存檔之前顯示檔案的列表(&C)"
+
+#. frame label
+#: src/include/backup/ui.rb:1502
+msgid "Search Options"
+msgstr "搜索選項"
+
+#. frame label
+#: src/include/backup/ui.rb:1509
+msgid "Check MD&5 Sum instead of Time or Size"
+msgstr "檢查 MD5 之與而非時間或大小(&5)"
+
+#. multi line widget label
+#: src/include/backup/ui.rb:1520
+msgid "Archive &Description"
+msgstr "存檔描述(&D)"
+
+#: src/include/backup/ui.rb:1524
+msgid "E&xpert..."
+msgstr "專家(&X)..."
+
+#. status message - label
+#: src/include/backup/ui.rb:1570
+msgid "Detecting mounted ext2 file systems..."
+msgstr "正在檢測裝入的 ext2 檔案系統..."
+
+#. dialog header
+#: src/include/backup/ui.rb:1581
+msgid "System Area Backup"
+msgstr "系統區域備份"
+
+#. frame label
+#: src/include/backup/ui.rb:1586
+msgid "Partition Table"
+msgstr "分割區表"
+
+#. check box label
+#: src/include/backup/ui.rb:1593
+msgid "Ba&ck Up Partition Tables"
+msgstr "備份分割區表(&C)"
+
+#. frame label
+#: src/include/backup/ui.rb:1602
+msgid "Ext2 File System Critical Area Backup"
+msgstr "Ext2 檔案系統關鍵區域備份"
+
+#. radio button label
+#: src/include/backup/ui.rb:1612
+msgid "N&one"
+msgstr "無(&O)"
+
+#. radio button label
+#: src/include/backup/ui.rb:1622
+msgid "All &Mounted"
+msgstr "所有裝載的(&M)"
+
+#. radio button label
+#: src/include/backup/ui.rb:1632
+msgid "&Selected"
+msgstr "選定的(&S)"
+
+#. table header
+#: src/include/backup/ui.rb:1642
+msgid "Ext2 Partition"
+msgstr "Ext2 分割區"
+
+#: src/include/backup/ui.rb:1642
+msgid "Mount Point"
+msgstr "裝載點"
+
+#. push button label
+#: src/include/backup/ui.rb:1648
+msgid "A&dd..."
+msgstr "添加(&D)..."
+
+#. push button label
+#. push button label
+#. push button label
+#: src/include/backup/ui.rb:1650 src/include/backup/ui.rb:4578
+#: src/include/backup/ui.rb:5192 src/include/backup/ui.rb:5214
+msgid "&Edit..."
+msgstr "編輯(&E)..."
+
+#. push button label
+#. push button label
+#. push button label
+#: src/include/backup/ui.rb:1652 src/include/backup/ui.rb:5194
+#: src/include/backup/ui.rb:5216
+msgid "De&lete"
+msgstr "刪除(&L)"
+
+#. error popup message, %1 is partition name (e.g. /dev/hda1)
+#. error popup message, %1 is partition name (e.g. /dev/hda1)
+#: src/include/backup/ui.rb:1706 src/include/backup/ui.rb:1774
+msgid "Partition %1 is already in the list."
+msgstr "分割區 %1 已在列表中。"
+
+#. popup dialog header
+#: src/include/backup/ui.rb:1754
+msgid "&Add Ext2 Partition"
+msgstr "添加 Ext2 分割區(&A)"
+
+#. there is no enough space
+#: src/include/backup/ui.rb:1886
+msgid ""
+"There is not enough free space in directory %1.\n"
+"Continue anyway?\n"
+msgstr ""
+"目錄 %1 中沒有足夠的可用空間。\n"
+"是否繼續？\n"
+
+#. may be that there is not enough space
+#: src/include/backup/ui.rb:1896
+msgid ""
+"There may not be enough free space in directory %1.\n"
+"Continue anyway?\n"
+msgstr ""
+"目錄 %1 中可能沒有足夠的可用空間。\n"
+"是否繼續？\n"
+
+#. dialog header
+#: src/include/backup/ui.rb:1967
+msgid "Searching for Modified Files"
+msgstr "搜索已修改的檔案"
+
+#. label text, followed by number of files found so far
+#. label text, followed by value
+#: src/include/backup/ui.rb:1975 src/include/backup/ui.rb:2146
+#: src/include/backup/ui.rb:2271
+msgid "Modified Files: "
+msgstr "已修改的檔案："
+
+#. label text, followed by sizes of files
+#. There's no UI in cron mode
+#. label text, followed by value
+#. part of summary text
+#. part of summary text
+#: src/include/backup/ui.rb:1985 src/include/backup/ui.rb:2140
+#: src/include/backup/ui.rb:2279 src/include/backup/ui.rb:3741
+#: src/include/backup/ui.rb:3764
+msgid "Total Size: "
+msgstr "總大小："
+
+#. label text, followed by name of current package
+#. BNC#756493: Refresh the UI max. once per second
+#. Otherwise it uses too much CPU on faster systems / disks
+#: src/include/backup/ui.rb:1993 src/include/backup/ui.rb:2116
+msgid "Searching in Package: "
+msgstr "在包中搜索："
+
+#. progress bar label
+#: src/include/backup/ui.rb:2008
+msgid "Search"
+msgstr "搜索"
+
+#. label text
+#: src/include/backup/ui.rb:2032
+msgid "Reading packages available at the software repositories..."
+msgstr "正在讀取軟體源中可用的包..."
+
+#. label text
+#: src/include/backup/ui.rb:2220
+msgid "Reading packages files..."
+msgstr "正在讀取包檔案..."
+
+#. label text
+#: src/include/backup/ui.rb:2234
+msgid "Reading list of installed packages..."
+msgstr "正在讀取已安裝包的列表..."
+
+#. dialog header
+#: src/include/backup/ui.rb:2263
+msgid "Searching Files"
+msgstr "正在搜索檔案"
+
+#. label text, followed by current directory name
+#. No update
+#: src/include/backup/ui.rb:2291 src/include/backup/ui.rb:2477
+msgid "Searching in Directory: "
+msgstr "在目錄中搜索："
+
+#. Function might be removed, only for testing memory spent...
+#: src/include/backup/ui.rb:2330
+msgid "User-Defined Scripts Output"
+msgstr "使用者定義的指令碼輸出"
+
+#: src/include/backup/ui.rb:2351
+msgid "Starting script %1...\n"
+msgstr "正在啟動指令碼 %1...\n"
+
+#: src/include/backup/ui.rb:2363
+msgid "Cannot start %1 script\n"
+msgstr "無法啟動 %1 指令碼\n"
+
+#. something might be still in the buffer(s)
+#: src/include/backup/ui.rb:2441 src/include/backup/ui.rb:2459
+msgid "User-Defined Scripts"
+msgstr "使用者定義的指令碼"
+
+#. error popup message
+#: src/include/backup/ui.rb:2523
+msgid ""
+"Could not start the search script.\n"
+"Aborting the backup.\n"
+msgstr ""
+"無法啟動搜索指令碼。\n"
+"正在中止備份。\n"
+
+#. busy message
+#: src/include/backup/ui.rb:2837
+msgid "Adding files to table..."
+msgstr "正在將檔案添加到表中..."
+
+#. label text
+#: src/include/backup/ui.rb:2865
+msgid "Files to Back Up"
+msgstr "要備份的檔案"
+
+#. table header
+#: src/include/backup/ui.rb:2870
+msgid "Filename"
+msgstr "檔名"
+
+#: src/include/backup/ui.rb:2870
+msgid "Package"
+msgstr "包"
+
+#. push button label
+#: src/include/backup/ui.rb:2876
+msgid "Select or Deselect &File"
+msgstr "選擇或取消選擇檔案(&F)"
+
+#. push button label
+#: src/include/backup/ui.rb:2878
+msgid "&Select All"
+msgstr "全選(&S)"
+
+#. push button label
+#: src/include/backup/ui.rb:2880
+msgid "&Deselect All"
+msgstr "全部不選(&D)"
+
+#. Items are pre-defined in the file
+#: src/include/backup/ui.rb:2901
+msgid "Internal error"
+msgstr "內部錯誤"
+
+#. busy message
+#: src/include/backup/ui.rb:2923
+msgid "Deselecting files..."
+msgstr "正在取消選擇檔案..."
+
+#. An informative popup label during selecting all items in the table (can consume a lot of time)
+#: src/include/backup/ui.rb:2985
+msgid "Selecting all items..."
+msgstr "正在選擇所有項目..."
+
+#. An informative popup label during deselecting all items in the table (can consume a lot of time)
+#: src/include/backup/ui.rb:2987
+msgid "Deselecting all items..."
+msgstr "正在取消選擇所有項目..."
+
+#. create Progress bar
+#. progress stage
+#: src/include/backup/ui.rb:3152
+msgid "Store host information"
+msgstr "存儲主機資訊"
+
+#. progress step
+#: src/include/backup/ui.rb:3154
+msgid "Storing host information..."
+msgstr "正在存儲主機資訊..."
+
+#. progress stage
+#: src/include/backup/ui.rb:3168
+msgid "Create system area backup"
+msgstr "創建系統區域備份"
+
+#. progress step
+#: src/include/backup/ui.rb:3170
+msgid "Creating system area backup..."
+msgstr "正在創建系統區域備份..."
+
+#. progress stage
+#: src/include/backup/ui.rb:3199
+msgid "Create package archives"
+msgstr "創建包存檔"
+
+#. progress stage
+#: src/include/backup/ui.rb:3201
+msgid "Create target archive"
+msgstr "創建目標存檔"
+
+#. progress step
+#: src/include/backup/ui.rb:3204
+msgid "Creating package archives..."
+msgstr "正在創建包存檔..."
+
+#. progress step
+#: src/include/backup/ui.rb:3206
+msgid "Creating target archive..."
+msgstr "正在創建目標存檔..."
+
+#. progress stage
+#: src/include/backup/ui.rb:3209
+msgid "Write autoinstallation profile"
+msgstr "寫入自動安裝配置檔案"
+
+#. progress step
+#: src/include/backup/ui.rb:3211
+msgid "Writing autoinstallation profile..."
+msgstr "正在寫入自動安裝配置檔案..."
+
+#. progress
+#: src/include/backup/ui.rb:3222
+msgid "Creating Archive"
+msgstr "正在創建存檔"
+
+#. store comment to file
+#: src/include/backup/ui.rb:3279
+msgid "Cannot write comment to file %1."
+msgstr "無法將註釋寫入檔案 %1。"
+
+#. error popup message
+#: src/include/backup/ui.rb:3323
+msgid ""
+"Could not start archiving script.\n"
+"Aborting the backup.\n"
+msgstr ""
+"無法啟動存檔指令碼。\n"
+"正在中止備份。\n"
+
+#. Translators: text of a popup dialog
+#. double-quote in name breaks backup at several places
+#: src/include/backup/ui.rb:3650 src/include/backup/ui.rb:3673
+msgid "Enter a name for the new profile."
+msgstr "輸入新配置檔案的名稱。"
+
+#. TRANSLATORS: text of a popup dialog, %1 is a profile name to be renamed
+#: src/include/backup/ui.rb:3655
+msgid "Enter a new name for the %1 profile."
+msgstr "為配置檔案 %1 輸入一個新的名稱。"
+
+#. Translators: error popup, %1 is profile name
+#: src/include/backup/ui.rb:3667
+msgid ""
+"A profile %1 already exists.\n"
+"Replace the existing profile?\n"
+msgstr ""
+"配置檔案 %1 已存在。\n"
+"是否替換現有的配置檔案？\n"
+
+#. For translators: %1 is entered archive file name (summary text)
+#: src/include/backup/ui.rb:3722
+msgid "List of files saved to file %1"
+msgstr "已將檔案列表儲存到檔案 %1"
+
+#. part of summary text
+#. summary text
+#: src/include/backup/ui.rb:3727
+msgid "Error storing list of files"
+msgstr "存儲檔案列表時出錯"
+
+#. part of summary text
+#: src/include/backup/ui.rb:3737
+msgid "Modified Files Found: "
+msgstr "找到的已修改檔案："
+
+#. part of summary text
+#: src/include/backup/ui.rb:3757
+msgid "Files Not in a Package Found: "
+msgstr "找到的不在包中的檔案："
+
+#. part of summary text
+#: src/include/backup/ui.rb:3778
+msgid "Selected Files to Back Up: "
+msgstr "要備份的選定檔案："
+
+#. part of summary text
+#: src/include/backup/ui.rb:3799
+msgid "Hostname stored successfully"
+msgstr "成功存儲主機名"
+
+#. part of summary text
+#: src/include/backup/ui.rb:3802
+msgid "Storing hostname failed"
+msgstr "存儲主機名失敗"
+
+#: src/include/backup/ui.rb:3809
+msgid "Date stored successfully"
+msgstr "已成功存儲日期"
+
+#. part of summary text
+#: src/include/backup/ui.rb:3811
+msgid "Storing date failed"
+msgstr "存儲日期失敗"
+
+#: src/include/backup/ui.rb:3816
+msgid "File list stored successfully"
+msgstr "已成功存儲檔案列表"
+
+#. part of summary text
+#: src/include/backup/ui.rb:3818
+msgid "Storing file list failed"
+msgstr "存儲檔案列表失敗"
+
+#: src/include/backup/ui.rb:3823
+msgid "Comment stored successfully"
+msgstr "已成功存儲註釋"
+
+#. part of summary text
+#: src/include/backup/ui.rb:3825
+msgid "Storing comment failed"
+msgstr "存儲註釋失敗"
+
+#. part of summary text
+#: src/include/backup/ui.rb:3831
+msgid "List of installed packages stored successfully"
+msgstr "已成功存儲已安裝包的列表"
+
+#. part of summary text
+#: src/include/backup/ui.rb:3834
+msgid "Storing list of installed packages failed"
+msgstr "存儲已安裝包的列表失敗"
+
+#. part of summary text, 'Details' is button label
+#: src/include/backup/ui.rb:3852
+msgid "Some errors occurred during backup. Press Details for more information."
+msgstr "備份過程中出現某些錯誤。請按“細節”以瞭解更多資訊。"
+
+#. part of summary text
+#: src/include/backup/ui.rb:3867
+msgid "Errors Creating Archive:"
+msgstr "創建存檔時出錯："
+
+#. For translators: %1 file name - part of summary text
+#: src/include/backup/ui.rb:3880
+msgid "Cannot read file %1"
+msgstr "無法讀取檔案 %1"
+
+#. part of summary text
+#: src/include/backup/ui.rb:3903
+msgid "Detecting disk partitions failed"
+msgstr "刪除磁碟分割區失敗"
+
+#. For translators: %1 is device name of disk, e.g. hda - part of summary text
+#: src/include/backup/ui.rb:3918
+msgid "Storing partition table of disk /dev/%1 failed"
+msgstr "存儲磁碟 /dev/%1 的分割區表失敗"
+
+#. For translators: %1 is device name of disk, e.g. hda - part of summary text
+#: src/include/backup/ui.rb:3935
+msgid "Storing partition table of disk /dev/%1 was successful"
+msgstr "已成功存儲磁碟 /dev/%1 的分割區表"
+
+#. For translators: %1 is partition name e.g. /dev/hda1 - part of summary text
+#: src/include/backup/ui.rb:3957
+msgid "Ext2 image of %1 stored successfully"
+msgstr "已成功存儲 %1 的 Ext2 映像"
+
+#. For translators: %1 is partition name e.g. /dev/hda1 - part of summary text
+#: src/include/backup/ui.rb:3972
+msgid "Storing ext2 image of %1 failed"
+msgstr "存儲 %1 的 ext2 映像失敗"
+
+#. part of summary text
+#: src/include/backup/ui.rb:4014
+msgid "Warning: Some files were not backed up"
+msgstr "警告：某些檔案未進行備份"
+
+#. For translators: %1 is entered archive file name - part of summary text
+#: src/include/backup/ui.rb:4030
+msgid "Archive %1 created successfully"
+msgstr "已成功創建存檔 %1"
+
+#. part of summary text
+#: src/include/backup/ui.rb:4035
+msgid "Archive created successfully"
+msgstr "已成功創建存檔"
+
+#. part of summary text - %1 is file name
+#: src/include/backup/ui.rb:4041
+msgid "Autoinstallation profile saved to file %1."
+msgstr "已將自動安裝配置檔案儲存到檔案 %1。"
+
+#: src/include/backup/ui.rb:4045
+msgid "Autoinstallation profile was not saved."
+msgstr "未儲存自動安裝配置檔案。"
+
+#. part of summary text
+#: src/include/backup/ui.rb:4058
+msgid "Archive creation failed"
+msgstr "存檔創建失敗"
+
+#. part of summary text
+#: src/include/backup/ui.rb:4072
+msgid "Total Archived Files: "
+msgstr "已存檔檔案的總數："
+
+#. part of summary text
+#: src/include/backup/ui.rb:4103 src/include/backup/ui.rb:4106
+msgid "&Details..."
+msgstr "細節(&D)..."
+
+#: src/include/backup/ui.rb:4107
+msgid "&Save as Profile..."
+msgstr "另存為配置檔案(&S)..."
+
+#. dialog header
+#: src/include/backup/ui.rb:4127
+msgid "Backup Summary"
+msgstr "備份摘要"
+
+#. popup dialog header
+#: src/include/backup/ui.rb:4154
+msgid "Backup Summary Details"
+msgstr "備份摘要細節"
+
+#. Script type
+#: src/include/backup/ui.rb:4190
+msgid "Run before backup"
+msgstr "在備份之前運行"
+
+#. Script type
+#: src/include/backup/ui.rb:4192
+msgid "Run after backup"
+msgstr "在備份之後運行"
+
+#. adjust UI
+#: src/include/backup/ui.rb:4252
+msgid "Invalid file name."
+msgstr "檔名無效。"
+
+#: src/include/backup/ui.rb:4272
+msgid ""
+"Cannot create file %1.\n"
+"Details: %2"
+msgstr ""
+"無法創建檔案 %1。\n"
+"詳情：%2"
+
+#: src/include/backup/ui.rb:4282
+msgid "Cannot write to %1 file."
+msgstr "不能寫入檔案 %1。"
+
+#. <<<
+#: src/include/backup/ui.rb:4365
+msgid "Edit Backup Helper Script Options"
+msgstr "編輯備份助手指令碼選項"
+
+#: src/include/backup/ui.rb:4366
+msgid "Add Backup Helper Script"
+msgstr "添加備份助手指令碼"
+
+#. a header item
+#: src/include/backup/ui.rb:4375 src/include/backup/ui.rb:4569
+msgid "Script Type"
+msgstr "指令碼類型"
+
+#: src/include/backup/ui.rb:4383
+msgid "&Before Backup"
+msgstr "備份之前(&B)"
+
+#: src/include/backup/ui.rb:4387
+msgid "&After Backup"
+msgstr "備份之後(&A)"
+
+#: src/include/backup/ui.rb:4399
+msgid "Script &Path"
+msgstr "指令碼路徑(&P)"
+
+#: src/include/backup/ui.rb:4412
+msgid "Script &Content"
+msgstr "指令碼內容(&C)"
+
+#. Adjusting UI
+#: src/include/backup/ui.rb:4474
+msgid "Script file name must be set."
+msgstr "必須設定指令碼檔名。"
+
+#. User pressed the [Browse] button
+#: src/include/backup/ui.rb:4518
+msgid "Choose a Script File Name"
+msgstr "選擇一個指令碼檔名"
+
+#. dialog header
+#: src/include/backup/ui.rb:4543
+msgid "Expert Backup Options"
+msgstr "專家備份選項"
+
+#. check box label
+#: src/include/backup/ui.rb:4551
+msgid "Back Up &Hard Disk System Areas"
+msgstr "備份硬碟系統區域(&H)"
+
+#. text entry label
+#: src/include/backup/ui.rb:4560
+msgid "Temporary &Location of Archive Parts"
+msgstr "存檔部分的臨時位置(&L)"
+
+#: src/include/backup/ui.rb:4564
+msgid "Pre and Post-Backup Scripts"
+msgstr "備份之前與之後的指令碼"
+
+#. a header item
+#: src/include/backup/ui.rb:4571
+msgid "Path"
+msgstr "路徑"
+
+#. push button label
+#: src/include/backup/ui.rb:4577 src/include/backup/ui.rb:5190
+msgid "&Add..."
+msgstr "添加(&A)..."
+
+#. Dialog for selection of a profile before backup
+#. @return [Symbol] Symbol for wizard sequencer - pressed button
+#: src/include/backup/ui.rb:4704
+msgid "Name"
+msgstr "名稱"
+
+#: src/include/backup/ui.rb:4705
+msgid "Description"
+msgstr "描述"
+
+#: src/include/backup/ui.rb:4706
+msgid "Automatic Backup"
+msgstr "自動備份"
+
+#: src/include/backup/ui.rb:4709
+msgid "System Backup"
+msgstr "系統備份"
+
+#: src/include/backup/ui.rb:4711
+msgid "Available Profiles"
+msgstr "可用的配置檔案"
+
+#: src/include/backup/ui.rb:4721
+msgid "&Create Backup"
+msgstr "創建備份(&C)"
+
+#: src/include/backup/ui.rb:4723
+msgid "Profile Mana&gement"
+msgstr "配置檔案管理(&G)"
+
+#: src/include/backup/ui.rb:4726
+msgid "&Duplicate..."
+msgstr "複製(&D)..."
+
+#. TRANSLATORS: Menu button selection
+#: src/include/backup/ui.rb:4729
+msgid "Re&name"
+msgstr "重新命名(&N)"
+
+#: src/include/backup/ui.rb:4735
+msgid "Back Up &Manually..."
+msgstr "手動備份(&M)..."
+
+#. remove the selected profile
+#: src/include/backup/ui.rb:4828
+msgid "Remove the selected profile?"
+msgstr "是否刪除選定的配置檔案？"
+
+#. Directory selection dialog
+#. @param [String] label dialog label
+#. @param [String] dir start directory
+#. @return [Hash] result $[ "input" : symbol (user input, `ok or `cancel), "dir" : string (selected directory) ];
+#: src/include/backup/ui.rb:4912
+msgid "&Browse..."
+msgstr "瀏覽(&B)..."
+
+#. title in the file selection dialog
+#: src/include/backup/ui.rb:4931
+msgid "Directory Selection"
+msgstr "目錄選擇"
+
+#. TRANSLATORS: informative text in the multiline select-box
+#: src/include/backup/ui.rb:5095
+msgid "Entire file system will be searched"
+msgstr "將搜索整個檔案系統"
+
+#. busy message
+#: src/include/backup/ui.rb:5160
+msgid "Detecting file system types..."
+msgstr "正在檢測檔案系統類型..."
+
+#. dialog header
+#: src/include/backup/ui.rb:5174
+msgid "Search Constraints"
+msgstr "搜索限制"
+
+#. selection box
+#: src/include/backup/ui.rb:5183
+msgid "&Directories Included in Search"
+msgstr "在搜索中包含的目錄(&D)"
+
+#. table label
+#: src/include/backup/ui.rb:5198
+msgid "Items Excluded from Search"
+msgstr "排除在搜索之外的項目"
+
+#. table header
+#: src/include/backup/ui.rb:5200
+msgid "Value"
+msgstr "值"
+
+#: src/include/backup/ui.rb:5200
+msgid "Type"
+msgstr "類型"
+
+#. push button label
+#: src/include/backup/ui.rb:5206
+msgid "A&dd"
+msgstr "添加(&D)"
+
+#: src/include/backup/ui.rb:5208
+msgid "&Directory..."
+msgstr "目錄(&D)..."
+
+#: src/include/backup/ui.rb:5209
+msgid "&File System..."
+msgstr "檔案系統(&F)..."
+
+#: src/include/backup/ui.rb:5210
+msgid "&Regular Expression..."
+msgstr "正規表示式(&R)..."
+
+#. textentry label
+#: src/include/backup/ui.rb:5239
+msgid "&Add New Expression"
+msgstr "添加新表示式(&A)"
+
+#. error poup message - %1 is an entered regular expression
+#. error popup message
+#: src/include/backup/ui.rb:5250 src/include/backup/ui.rb:5333
+msgid "Expression %1 is already in the list."
+msgstr "表示式 %1 已在列表中。"
+
+#. textentry label
+#. return $[ "text" : text, "clicked" : input ];
+#: src/include/backup/ui.rb:5267 src/include/backup/ui.rb:5432
+msgid "&Add New Directory"
+msgstr "添加新目錄(&A)"
+
+#. error poup message - %1 is a directory name
+#. error popup message
+#: src/include/backup/ui.rb:5277 src/include/backup/ui.rb:5348
+msgid "Directory %1 is already in the list."
+msgstr "目錄 %1 已在列表中。"
+
+#. combobox label
+#: src/include/backup/ui.rb:5292
+msgid "&Add New File System"
+msgstr "添加新檔案系統(&A)"
+
+#. error poup message - %1 is a directory name
+#. error popup message
+#: src/include/backup/ui.rb:5302 src/include/backup/ui.rb:5363
+msgid "File system %1 is already in the list."
+msgstr "檔案系統 %1 已在列表中。"
+
+#: src/include/backup/ui.rb:5443
+msgid ""
+"Directory %1 does not exist.\n"
+"\n"
+"Use it anyway?"
+msgstr ""
+"目錄 %1 不存在。\n"
+"\n"
+"確認使用它麼？"
+
+#: src/include/backup/ui.rb:5450
+msgid "Yes, Use It"
+msgstr "是的, 使用"
+
+#: src/include/backup/ui.rb:5482
+msgid "&Edit Included Directory"
+msgstr "編輯包含的目錄(&E)"
+
+#. TRANSLATORS: name of device (the same as in yast2-tune) - the first device
+#: src/modules/Backup.rb:44
+msgid "Mass storage device"
+msgstr "大容量存儲裝置"
+
+#: src/modules/Backup.rb:47
+msgid "Disk"
+msgstr "磁碟"
+
+#: src/modules/Backup.rb:48
+msgid "Tape"
+msgstr "磁帶"
+
+#: src/modules/Backup.rb:49
+msgid "CD-ROM"
+msgstr "CD-ROM"
+
+#: src/modules/Backup.rb:50
+msgid "Floppy disk"
+msgstr "軟盤"
+
+#. TRANSLATORS: name of device (the same as in yast2-tune) - the last device
+#: src/modules/Backup.rb:52
+msgid "Storage device"
+msgstr "存儲裝置"
+
+#. day names, key is integer used in crontab
+#: src/modules/Backup.rb:68
+msgid "Monday"
+msgstr "星期一"
+
+#: src/modules/Backup.rb:69
+msgid "Tuesday"
+msgstr "星期二"
+
+#: src/modules/Backup.rb:70
+msgid "Wednesday"
+msgstr "星期三"
+
+#: src/modules/Backup.rb:71
+msgid "Thursday"
+msgstr "星期四"
+
+#: src/modules/Backup.rb:72
+msgid "Friday"
+msgstr "星期五"
+
+#: src/modules/Backup.rb:73
+msgid "Saturday"
+msgstr "星期六"
+
+#: src/modules/Backup.rb:74
+msgid "Sunday"
+msgstr "星期日"
+
+#: src/modules/Backup.rb:78
+msgid "1st"
+msgstr "1日"
+
+#: src/modules/Backup.rb:79
+msgid "2nd"
+msgstr "2日"
+
+#: src/modules/Backup.rb:80
+msgid "3rd"
+msgstr "3日"
+
+#: src/modules/Backup.rb:81
+msgid "4th"
+msgstr "4日"
+
+#: src/modules/Backup.rb:82
+msgid "5th"
+msgstr "5日"
+
+#: src/modules/Backup.rb:83
+msgid "6th"
+msgstr "6日"
+
+#: src/modules/Backup.rb:84
+msgid "7th"
+msgstr "7日"
+
+#: src/modules/Backup.rb:85
+msgid "8th"
+msgstr "8日"
+
+#: src/modules/Backup.rb:86
+msgid "9th"
+msgstr "9日"
+
+#: src/modules/Backup.rb:87
+msgid "10th"
+msgstr "10日"
+
+#: src/modules/Backup.rb:88
+msgid "11th"
+msgstr "11日"
+
+#: src/modules/Backup.rb:89
+msgid "12th"
+msgstr "12日"
+
+#: src/modules/Backup.rb:90
+msgid "13th"
+msgstr "13日"
+
+#: src/modules/Backup.rb:91
+msgid "14th"
+msgstr "14日"
+
+#: src/modules/Backup.rb:92
+msgid "15th"
+msgstr "15日"
+
+#: src/modules/Backup.rb:93
+msgid "16th"
+msgstr "16日"
+
+#: src/modules/Backup.rb:94
+msgid "17th"
+msgstr "17日"
+
+#: src/modules/Backup.rb:95
+msgid "18th"
+msgstr "18日"
+
+#: src/modules/Backup.rb:96
+msgid "19th"
+msgstr "19日"
+
+#: src/modules/Backup.rb:97
+msgid "20th"
+msgstr "20日"
+
+#: src/modules/Backup.rb:98
+msgid "21st"
+msgstr "21日"
+
+#: src/modules/Backup.rb:99
+msgid "22nd"
+msgstr "22日"
+
+#: src/modules/Backup.rb:100
+msgid "23rd"
+msgstr "23日"
+
+#: src/modules/Backup.rb:101
+msgid "24th"
+msgstr "24日"
+
+#: src/modules/Backup.rb:102
+msgid "25th"
+msgstr "25日"
+
+#: src/modules/Backup.rb:103
+msgid "26th"
+msgstr "26日"
+
+#: src/modules/Backup.rb:104
+msgid "27th"
+msgstr "27日"
+
+#: src/modules/Backup.rb:105
+msgid "28th"
+msgstr "28日"
+
+#: src/modules/Backup.rb:106
+msgid "29th"
+msgstr "29日"
+
+#: src/modules/Backup.rb:107
+msgid "30th"
+msgstr "30日"
+
+#: src/modules/Backup.rb:108
+msgid "31st"
+msgstr "31日"
+
+#. media description - capacity is maximum file size which fits
+#. to formatted medium using widely used file system (FAT on floppies)
+#. just archiving
+#: src/modules/Backup.rb:283
+msgid "CD-R/RW 650 MB (74 min.)"
+msgstr "CD-R/RW 650 MB(74 分鐘)"
+
+#. exact size is 703.1 MB - remaining space is for ISO fs
+#: src/modules/Backup.rb:288
+msgid "CD-R/RW 700 MB (80 min.)"
+msgstr "CD-R/RW 700 MB(80 分鐘)"
+
+#. exact size is 650.4 MB - remaining space is for ISO fs
+#: src/modules/Backup.rb:296
+msgid "Floppy 1.44 MB"
+msgstr "軟盤 1.44 MB"
+
+#. 1213952B is exact size for FAT fs
+#: src/modules/Backup.rb:301
+msgid "Floppy 1.2 MB"
+msgstr "軟盤 1.2 MB"
+
+#. $[
+#. "label" : _("ZIP 250 MB"),
+#. "symbol" : `zip250,
+#. "capacity" : ?????
+#. ],
+#: src/modules/Backup.rb:315
+msgid "ZIP 100 MB"
+msgstr "ZIP 100 MB"
+
+#. $[
+#. "label" : _("Default Volume Size"),
+#. "symbol" : `default_size,
+#. "capacity" : 1024*1024*1024
+#. ]
+#: src/modules/Backup.rb:342
+msgid "bytes"
+msgstr "位元組"
+
+#. 10^3 bytes
+#: src/modules/Backup.rb:345
+msgid "kB"
+msgstr "kB"
+
+#. 2^10 bytes
+#: src/modules/Backup.rb:351
+msgid "KiB"
+msgstr "KiB"
+
+#. 10^6 bytes
+#: src/modules/Backup.rb:357
+msgid "MB"
+msgstr "MB"
+
+#. 2^20 bytes
+#: src/modules/Backup.rb:363
+msgid "MiB"
+msgstr "MiB"
+
+#. %1 is profile name, %2 is filename
+#: src/modules/Backup.rb:1129
+msgid ""
+"cron settings for profile %1\n"
+"in file %2\n"
+"are not fully supported.\n"
+msgstr ""
+"不完全支援檔案 %2\n"
+"中配置檔案 %1\n"
+"的 cron 設定。\n"
+
+#. %1 is profile name, %2 is file name
+#: src/modules/Backup.rb:1144
+msgid ""
+"Some time values for profile %1\n"
+"in file %2\n"
+"are out of range."
+msgstr ""
+"檔案 %2 中配置檔案 %1\n"
+"的某些時間值\n"
+"超出範圍。"
+
+#. TRANSLATORS: An error popup message
+#. %1 is the file name
+#: src/modules/Backup.rb:1431
+msgid ""
+"Could not store profiles to the file %1.\n"
+"The profile changes will be lost."
+msgstr ""
+"無法將配置檔案存儲到檔案 %1。\n"
+"配置檔案變更將丟失。"
+
+#. hour/minutes time format - set according your local used format
+#. usually used conversion specificators:
+#. %H - hour (0..23), %I - hour (0..12)
+#. %M - minute (0..59), %p - `AM' or `PM'
+#. (see man date for more details)
+#: src/modules/Backup.rb:1782
+msgid "%I:%M %p"
+msgstr "%I:%M %p"
+
+#. table item - specified time is invalid
+#: src/modules/Backup.rb:1801
+msgid "Invalid time"
+msgstr "無效時間"
+
+#. table item - start backup every day (%1 is time)
+#: src/modules/Backup.rb:1804
+msgid "Back up daily at %1"
+msgstr "每日 %1 備份"
+
+#. table item - start backup every week (%1 is day name, %2 is time)
+#: src/modules/Backup.rb:1808
+msgid "Back up weekly (%1 at %2)"
+msgstr "每週備份(%1 的 %2)"
+
+#. table item - start backup once a month (%1 is day (ordinal number, e.g. 5th), %2 is time)
+#: src/modules/Backup.rb:1815
+msgid "Back up monthly (%1 day at %2)"
+msgstr "每月備份(%1 日的 %2)"
+
+#. type of device (cdrom, disk, tape...) was not detected
+#: src/modules/Backup.rb:1960
+msgid "Unknown device type"
+msgstr "未知裝置類型"
+
+#. CD-R or CD-RW writer device
+#: src/modules/Backup.rb:1993
+msgid "CD Writer"
+msgstr "CD 燒錄機"
+
+#. DVD-R, DVD+R... writer device
+#: src/modules/Backup.rb:1999
+msgid "DVD Writer"
+msgstr "DVD 燒錄機"
+
+#. busy message
+#: src/modules/Backup.rb:2145
+msgid "Creating the list of files for the backup..."
+msgstr "正在創建要備份的檔案列表..."
+
+#. a popup error, %1 is as file name
+#. a popup error, %1 is as file name
+#: src/modules/Backup.rb:2190 src/modules/Backup.rb:2220
+msgid "Cannot write the list of selected files to file %1."
+msgstr "無法將選定檔案的列表寫入檔案 %1。"
+
+#~ msgid "&Edit"
+#~ msgstr "編輯(&E)"
+
+#~ msgid "Reading packages available on the installation sources..."
+#~ msgstr "正在讀取安裝源中可用的包..."
+

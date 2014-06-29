@@ -1,0 +1,2147 @@
+# Copyright (C) 2006 SuSE Linux Products GmbH, Nuernberg
+# This file is distributed under the same license as the package.
+#
+# Marguerite Su, 2012, 2013.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: add-on-creator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-24 10:55+0100\n"
+"PO-Revision-Date: 2013-10-31 02:08+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the add-on-creator module
+#: src/clients/add-on-creator.rb:54
+msgid "Creator for add-on products"
+msgstr "附加產品創建器"
+
+#. command line help text for 'create' action
+#: src/clients/add-on-creator.rb:67
+msgid "Create and build a new add-on product."
+msgstr "創建並構建一個新的附加產品。"
+
+#. command line help text for 'clone' action
+#: src/clients/add-on-creator.rb:77
+msgid "Create and build a new add-on product based on an existing one."
+msgstr "基於現有附加產品創建與構建一個新的附加產品。"
+
+#. command line help text for 'sign' action
+#: src/clients/add-on-creator.rb:87
+msgid "Sign unsigned Add-On Product"
+msgstr "簽署未署名的附加產品"
+
+#. command line help text for 'list' action
+#: src/clients/add-on-creator.rb:97
+msgid "List available add-on product configurations."
+msgstr "列出可用的附加產品配置。"
+
+#. command line help text for 'create' action
+#: src/clients/add-on-creator.rb:107
+msgid "Build an add-on product from the selected configuration."
+msgstr "基於所選配置構建一個附加產品。"
+
+#. command line help text for 'create' action
+#: src/clients/add-on-creator.rb:117
+msgid "Delete the selected add-on product configuration."
+msgstr "刪除所選附加產品配置。"
+
+#. command line help text for 'rpm_dir' option
+#: src/clients/add-on-creator.rb:125
+msgid "Path to directory with packages"
+msgstr "存放軟體包的資料夾的路徑"
+
+#. command line help text for 'content' option (do not translate 'content', it's a name)
+#: src/clients/add-on-creator.rb:132
+msgid "Path to content file"
+msgstr "內容檔案路徑"
+
+#. command line help text for 'existing' option
+#: src/clients/add-on-creator.rb:139
+msgid "Path to directory with existing Add-On Product"
+msgstr "存放現有附加產品的資料夾的路徑"
+
+#. command line help text for 'generate_descriptions' option
+#: src/clients/add-on-creator.rb:146
+msgid "Generate new package descriptions (do not copy)"
+msgstr "生成新的軟體包描述 (不復制)"
+
+#. command line help text for 'package_descriptions_dir' option
+#: src/clients/add-on-creator.rb:152
+msgid "Path to directory with package descriptions"
+msgstr "存放軟體包描述的資料夾的路徑"
+
+#. command line help text for 'patterns_dir' option
+#: src/clients/add-on-creator.rb:159
+msgid "Path to directory with patterns definitions"
+msgstr "存放軟體集定義的資料夾的路徑"
+
+#. command line help text for 'output_dir' option
+#: src/clients/add-on-creator.rb:166
+msgid "Path to the output directory"
+msgstr "輸出資料夾的路徑"
+
+#. command line help text for 'create_iso' option
+#: src/clients/add-on-creator.rb:173
+msgid "Create the ISO image"
+msgstr "創建 ISO 映像"
+
+#. command line help text for 'iso_name' option
+#: src/clients/add-on-creator.rb:179
+msgid "Name of the output ISO image"
+msgstr "輸出 ISO 映像的名稱"
+
+#. command line help text for 'output_dir' option
+#: src/clients/add-on-creator.rb:186
+msgid "Path to the output directory for ISO image"
+msgstr "ISO 映像的輸出資料夾的路徑"
+
+#. command line help text for 'do_not_sign' option
+#: src/clients/add-on-creator.rb:193
+msgid "Do not sign the product"
+msgstr "不簽名該產品"
+
+#. command line help text for 'gpg_key' option
+#: src/clients/add-on-creator.rb:199
+msgid "GPG key ID used to sign a product"
+msgstr "用於簽署產品的 GPG 金鑰 ID"
+
+#. command line help text for 'passphrase' option
+#: src/clients/add-on-creator.rb:206
+msgid "Passphrase to unlock GPG key"
+msgstr "解鎖 GPG 金鑰的密碼"
+
+#. command line help text for 'passphrase_file' option
+#: src/clients/add-on-creator.rb:213
+msgid "Path to file with the passphrase for GPG key"
+msgstr "含有 GPG 金鑰解鎖密碼的檔案的路徑"
+
+#. command line help text for 'passphrase' option
+#: src/clients/add-on-creator.rb:220
+msgid "Resign all packages with selected key."
+msgstr "用所選金鑰為全部軟體包重新簽名。"
+
+#. command line help text for 'workflow' option
+#: src/clients/add-on-creator.rb:226
+msgid "Path to workflow definition file (installation.xml)"
+msgstr "工作流程定義檔案 (installatioin.xml) 的路徑"
+
+#. command line help text for 'y2update' option
+#: src/clients/add-on-creator.rb:233
+msgid "Path to workflow dialogs archive (y2update.tgz)"
+msgstr "工作流程對話存檔 (y2update.tgz) 的路徑"
+
+#. command line help text for 'y2update_packages_dir' option
+#: src/clients/add-on-creator.rb:240
+msgid "Path to directory with YaST packages to form the workflow"
+msgstr "存放 YaST 軟體包的資料夾的路徑，這些軟體包將構成工作流程"
+
+#. command line help text for 'license' option
+#: src/clients/add-on-creator.rb:247
+msgid "Path to file with license texts (license.zip or license.tar.gz)"
+msgstr "含有許可證文字的檔案的路徑 (license.zip 或 license.tar.gz)"
+
+#. command line help text for 'info' option
+#: src/clients/add-on-creator.rb:254
+msgid "Path to file with 'info' text (media.1/info.txt)"
+msgstr "含有  'info' 文字的檔案的路徑 (media.1/info.txt)"
+
+#. command line help text for 'extra_prov' option
+#: src/clients/add-on-creator.rb:261
+msgid "Path to file with additional dependencies (EXTRA_PROV)"
+msgstr "指向有額外依賴關係的檔案的路徑 (EXTRA_PROV)"
+
+#. command line help text for 'addon-dir' option
+#: src/clients/add-on-creator.rb:268
+msgid "Path to directory with Add-On Product"
+msgstr "含有附加產品的目錄的路徑"
+
+#. command line help text for 'do_not_build' option
+#: src/clients/add-on-creator.rb:275
+msgid "Do not build the product, only save new configuration."
+msgstr "不構建產品，僅儲存新的配置。"
+
+#. help text for 'number' option; do not translate 'list'
+#: src/clients/add-on-creator.rb:281
+msgid "Number of the selected add-on (see 'list' command for product numbers)."
+msgstr "選中的附加產品標號（用“list”命令檢視產品編號）。"
+
+#. command line help text for 'changelog' option
+#: src/clients/add-on-creator.rb:288
+msgid "Generate a Changelog file."
+msgstr "生成修訂歷史檔案。"
+
+#. command line help text for 'no_release_package' option
+#: src/clients/add-on-creator.rb:294
+msgid "Do not generate the release package."
+msgstr "不生成發行包。"
+
+#. command line help text for 'product_file' option
+#: src/clients/add-on-creator.rb:300
+msgid "Path to file with the product description (*.prod)"
+msgstr "產品描述檔案的路徑 (*.prod)"
+
+#. error message, %1 is path
+#: src/clients/add-on-creator.rb:398
+msgid "File %1 does not exist."
+msgstr "檔案 %1 不存在。"
+
+#. error message, %1 is path
+#: src/clients/add-on-creator.rb:405
+msgid "Directory %1 does not exist."
+msgstr "目錄 %1 不存在。"
+
+#. question on command line
+#: src/clients/add-on-creator.rb:454
+msgid "Passphrase for key %1:"
+msgstr "金鑰 %1 的口令字："
+
+#. error message
+#: src/clients/add-on-creator.rb:475
+msgid "Path to output directory is missing."
+msgstr "缺少指向輸出目錄的路徑。"
+
+#. error message, missing tool
+#: src/clients/add-on-creator.rb:609
+msgid "/usr/bin/unzip does not exists"
+msgstr "/usr/bin/unzip 不存在。"
+
+#. error message
+#: src/clients/add-on-creator.rb:733
+msgid "Path to directory with packages is missing."
+msgstr "缺少包含軟體包的目錄的路徑。"
+
+#. error message
+#: src/clients/add-on-creator.rb:742
+msgid "Path to content file is missing."
+msgstr "缺少內容檔案路徑。"
+
+#. error message
+#: src/clients/add-on-creator.rb:756
+msgid "Path to existing Add-On is missing."
+msgstr "缺少到當前附加產品的路徑"
+
+#. error message
+#: src/clients/add-on-creator.rb:774
+msgid "Path to directory with Add-On is missing."
+msgstr "缺少指向包含附加產品的目錄的路徑。"
+
+#. command line summary, %1 is order, %2 product name
+#: src/clients/add-on-creator.rb:813
+msgid "(%1) Product Name: %2"
+msgstr "(%1)產品名：%2"
+
+#. command line summary
+#: src/clients/add-on-creator.rb:821
+msgid "\tVersion: %1"
+msgstr "\t版本：%1"
+
+#. command line summary
+#: src/clients/add-on-creator.rb:828
+msgid "\tInput directory: %1"
+msgstr "\t輸入目錄：%1"
+
+#: src/clients/add-on-creator.rb:834
+msgid "\tOutput directory: %1"
+msgstr "\t輸出目錄：%1"
+
+#. command line summary, %1 is comma-separated list
+#: src/clients/add-on-creator.rb:842
+msgid "\tPatterns: %1"
+msgstr "\t軟體集：%1"
+
+#. command line message, do not translate 'create', 'clone'
+#: src/clients/add-on-creator.rb:864
+msgid "There is no add-on product configuration present. Create a new one using the 'create' or 'clone' commands."
+msgstr "目前還沒有附加產品的配置。您可以使用“創建”或者“克隆”命令創建一個。"
+
+#. error message
+#: src/clients/add-on-creator.rb:876
+msgid "Specify the add-on product to build."
+msgstr "請指定將要被構建的附加產品。"
+
+#. command line message
+#: src/clients/add-on-creator.rb:917
+msgid "There is no add-on product configuration present."
+msgstr "目前還沒有附加產品的配置。"
+
+#. error message
+#: src/clients/add-on-creator.rb:924
+msgid "Specify the add-on product configuration that should be deleted."
+msgstr "指定需要被刪除的附加產品配置。"
+
+#. dialog caption
+#: src/include/add-on-creator/complex.rb:99
+msgid "Add-on Creator Configuration Overview"
+msgstr "附加產品配置概覽"
+
+#. summary item
+#: src/include/add-on-creator/complex.rb:128
+msgid "Input directory: %1<br>"
+msgstr "輸入目錄：%1<br>"
+
+#. summary item
+#: src/include/add-on-creator/complex.rb:133
+msgid "Output directory: %1<br>"
+msgstr "輸出目錄：%1<br>"
+
+#. summary item, %1 is comma-separated list
+#: src/include/add-on-creator/complex.rb:142
+msgid "Patterns: %1"
+msgstr "軟體集：%1"
+
+#. help text
+#: src/include/add-on-creator/complex.rb:156
+msgid "<p>Start creating a new add-on product configuration with <b>Add</b>.</p>"
+msgstr "<p>使用<b>添加</b>開始創建新的附加產品配置。</p>"
+
+#. help text
+#: src/include/add-on-creator/complex.rb:160
+msgid "<p>Use <b>Edit</b> to modify the selected add-on product configuration.</p>"
+msgstr "<p>使用<b>編輯</b>修改選定附加產品的配置。</p>"
+
+#. help text
+#: src/include/add-on-creator/complex.rb:164
+msgid "<p>Delete the selected configuration using <b>Delete</b>.</p>"
+msgstr "<p>要刪除選定配置，請單擊<b>刪除</b>。</p>"
+
+#. help text
+#: src/include/add-on-creator/complex.rb:166
+msgid "<p>Build the new add-on product based on the selected configuration with <b>Build</b>.</p>"
+msgstr "<p>基於已選擇的配置構建新的附加產品，請單擊<b>構建</b>。</p>"
+
+#. table header item
+#. summary header
+#: src/include/add-on-creator/complex.rb:178
+#: src/include/add-on-creator/complex.rb:2476
+msgid "Product Name"
+msgstr "產品名稱"
+
+#. table header item
+#. input field label
+#. desctiption of pattern keys
+#: src/include/add-on-creator/complex.rb:180
+#: src/include/add-on-creator/complex.rb:1272 src/modules/AddOnCreator.rb:316
+msgid "Version"
+msgstr "版本號"
+
+#. push button label
+#: src/include/add-on-creator/complex.rb:192
+msgid "&Build"
+msgstr "構建(&B)"
+
+#. yes/no popup
+#: src/include/add-on-creator/complex.rb:247
+msgid "Really delete configuration \"%1\"?"
+msgstr "是否確實要刪除配置“%1”？"
+
+#. dialog caption
+#. dialog caption
+#: src/include/add-on-creator/complex.rb:296
+#: src/include/add-on-creator/complex.rb:450
+msgid "Add-On Product Creator"
+msgstr "附加產品創建者"
+
+#. radio button label
+#: src/include/add-on-creator/complex.rb:313
+msgid "Create an Add-On &from the Beginning"
+msgstr "從頭創建附加產品(&F)"
+
+#. radio button label
+#: src/include/add-on-creator/complex.rb:322
+msgid "Create an Add-On Based on an &Existing Add-On"
+msgstr "根據現有附加產品創建附加產品(&E)"
+
+#. text entry label
+#: src/include/add-on-creator/complex.rb:332
+msgid "&Path to Directory of the Existing Add-On Product"
+msgstr "現有附加產品的目錄的路徑(&P)"
+
+#. checkbox label
+#: src/include/add-on-creator/complex.rb:343
+msgid "&Generate Package Descriptions"
+msgstr "生成軟體包描述(&G)"
+
+#. textentry label
+#: src/include/add-on-creator/complex.rb:460
+msgid "&Add-On Product Label"
+msgstr "附加產品標籤(&A)"
+
+#. textentry label
+#. text entry label
+#: src/include/add-on-creator/complex.rb:464
+#: src/include/add-on-creator/patterns.rb:126
+msgid "&Version"
+msgstr "版本(&V)"
+
+#: src/include/add-on-creator/complex.rb:468
+msgid "Required Product"
+msgstr "必需產品"
+
+#. radio button label
+#: src/include/add-on-creator/complex.rb:483
+msgid "SUSE &Linux Enterprise Server 11"
+msgstr "SUSE &Linux Enterprise Server 11(&L)"
+
+#. radio button label
+#: src/include/add-on-creator/complex.rb:492
+msgid "SUSE L&inux Enterprise Desktop 11"
+msgstr "SUSE L&inux Enterprise Desktop 11(&I)"
+
+#. radio button label
+#: src/include/add-on-creator/complex.rb:501
+msgid "S&USE Linux Enterprise 11"
+msgstr "SUSE Linux Enterprise 11(&U)"
+
+#. radio button label
+#: src/include/add-on-creator/complex.rb:510
+msgid "SUSE Linux Enterprise 11 SP3"
+msgstr "SUSE Linux Enterprise 11 SP3"
+
+#. radio button label
+#: src/include/add-on-creator/complex.rb:519
+msgid "openSUSE 12.&3"
+msgstr "OpenSUSE 12.3"
+
+#. radio button label
+#: src/include/add-on-creator/complex.rb:528
+msgid "openSUSE 13.1"
+msgstr "OpenSUSE 13.1"
+
+#. radio button label
+#: src/include/add-on-creator/complex.rb:538
+msgid "&Other"
+msgstr "其它(&O)"
+
+#. text entry label
+#: src/include/add-on-creator/complex.rb:556
+msgid "&Path to Directory with Add-On Packages"
+msgstr "附加軟體包目錄的路徑(&P)"
+
+#. text entry label
+#: src/include/add-on-creator/complex.rb:566
+msgid "Path to Directory with Re&quired Product Packages"
+msgstr "必需產品軟體包目錄的路徑(&Q)"
+
+#. error popup
+#. error popup
+#: src/include/add-on-creator/complex.rb:639
+#: src/include/add-on-creator/complex.rb:647
+msgid "Directory %1 is not accessible."
+msgstr "目錄 %1 無法訪問。"
+
+#. error popup (input validation failed)
+#: src/include/add-on-creator/complex.rb:726
+msgid ""
+"The value of NAME may contain only\n"
+"letters, numbers, and the characters \".~_-\"."
+msgstr ""
+"NAME 的值僅能含有\n"
+"字母、數字與字元“.~_-”。"
+
+#: src/include/add-on-creator/complex.rb:756
+msgid "LABEL"
+msgstr "標籤"
+
+#. combo label
+#: src/include/add-on-creator/complex.rb:758
+msgid "La&nguage Code"
+msgstr "語言程式碼(&N)"
+
+#. textentry label
+#. textentry label
+#. textentry label
+#: src/include/add-on-creator/complex.rb:760
+#: src/include/add-on-creator/complex.rb:1546
+#: src/include/add-on-creator/patterns.rb:172
+msgid "&Value"
+msgstr "值(&V)"
+
+#. Heading for help popup window
+#. Heading for help popup window
+#. Heading for help popup window
+#: src/include/add-on-creator/complex.rb:779
+#: src/include/add-on-creator/complex.rb:1454
+#: src/include/add-on-creator/patterns.rb:246
+msgid "Help"
+msgstr "幫助"
+
+#. dialog caption - 'content' is file name
+#: src/include/add-on-creator/complex.rb:804
+msgid "Product Definition"
+msgstr "產品定義"
+
+#. label
+#: src/include/add-on-creator/complex.rb:896
+msgid "Content File"
+msgstr "內容檔案"
+
+#. table header
+#. table header
+#: src/include/add-on-creator/complex.rb:902
+#: src/include/add-on-creator/complex.rb:941
+msgid "Key"
+msgstr "金鑰"
+
+#. table header
+#. table header
+#. table header 2/2
+#. table header 2/2
+#: src/include/add-on-creator/complex.rb:904
+#: src/include/add-on-creator/complex.rb:943
+#: src/include/add-on-creator/complex.rb:1766
+#: src/include/add-on-creator/patterns.rb:355
+msgid "Value"
+msgstr "值"
+
+#. table header
+#. table header
+#. label for 'Des' pattern key
+#. label for 'Des' key
+#: src/include/add-on-creator/complex.rb:906
+#: src/include/add-on-creator/complex.rb:945 src/modules/AddOnCreator.rb:351
+#: src/modules/AddOnCreator.rb:579
+msgid "Description"
+msgstr "描述"
+
+#. push button label
+#. button label
+#. button label
+#. button label
+#: src/include/add-on-creator/complex.rb:914
+#: src/include/add-on-creator/dialogs.rb:187
+#: src/include/add-on-creator/dialogs.rb:488
+#: src/include/add-on-creator/dialogs.rb:730
+msgid "Im&port"
+msgstr "匯入(&P)"
+
+#. checkbox label
+#: src/include/add-on-creator/complex.rb:920
+msgid "Show &Only Required Keywords"
+msgstr "僅顯示必需關鍵字(&O)"
+
+#. check box label
+#: src/include/add-on-creator/complex.rb:930
+msgid "Generate Release Package"
+msgstr "生成發行包"
+
+#. label
+#: src/include/add-on-creator/complex.rb:935
+msgid "Product File"
+msgstr "產品檔案"
+
+#. push button label
+#. push button label
+#. button label
+#. button label
+#. button label
+#. button label
+#. button label
+#: src/include/add-on-creator/complex.rb:952
+#: src/include/add-on-creator/complex.rb:1590
+#: src/include/add-on-creator/complex.rb:1744
+#: src/include/add-on-creator/dialogs.rb:157
+#: src/include/add-on-creator/dialogs.rb:461
+#: src/include/add-on-creator/dialogs.rb:718
+#: src/include/add-on-creator/patterns.rb:342
+msgid "I&mport"
+msgstr "匯入(&M)"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/complex.rb:1024
+msgid "Choose the Existing Content File"
+msgstr "選擇現有內容檔案"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/complex.rb:1071
+msgid "Choose the Existing Product File"
+msgstr "選擇現有產品檔案"
+
+#. error popup
+#: src/include/add-on-creator/complex.rb:1090
+msgid ""
+"Enter the values for these items:\n"
+"%1"
+msgstr ""
+"輸入以下項的值：\n"
+"%1"
+
+#. table item
+#: src/include/add-on-creator/complex.rb:1148
+msgid "Yes"
+msgstr "是"
+
+#. table item
+#: src/include/add-on-creator/complex.rb:1150
+msgid "No"
+msgstr "否"
+
+#. textentry label
+#: src/include/add-on-creator/complex.rb:1171
+msgid "Value of \"%1\""
+msgstr "“%1”的值"
+
+#. input field label
+#: src/include/add-on-creator/complex.rb:1262
+msgid "Name"
+msgstr "名稱"
+
+#. combo box label
+#: src/include/add-on-creator/complex.rb:1282
+msgid "Flag"
+msgstr "標誌"
+
+#. combo box item
+#: src/include/add-on-creator/complex.rb:1285
+msgid "Equal"
+msgstr "等於"
+
+#. combo box item
+#: src/include/add-on-creator/complex.rb:1287
+msgid "Greater than"
+msgstr "大於"
+
+#. combo box item
+#: src/include/add-on-creator/complex.rb:1289
+msgid "Lower than"
+msgstr "小於"
+
+#. input field label
+#: src/include/add-on-creator/complex.rb:1300 src/modules/AddOnCreator.rb:322
+msgid "Release"
+msgstr "釋出編號"
+
+#. input field label
+#: src/include/add-on-creator/complex.rb:1310
+msgid "Flavor"
+msgstr "類型"
+
+#. input field label
+#. table item label
+#: src/include/add-on-creator/complex.rb:1320 src/modules/AddOnCreator.rb:735
+msgid "Patch level"
+msgstr "補丁級別"
+
+#. MultiSelectionBox label
+#: src/include/add-on-creator/complex.rb:1414
+msgid "&Packages"
+msgstr "軟體包(&P)"
+
+#. check box label
+#: src/include/add-on-creator/complex.rb:1417
+msgid "Select or Deselect &All"
+msgstr "全選或全部取消選擇(&A)"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/complex.rb:1611
+msgid "Choose the file with the text to be imported."
+msgstr "選擇含有要匯入的文字的檔案。"
+
+#. dialog caption
+#: src/include/add-on-creator/complex.rb:1633
+msgid "Package Descriptions"
+msgstr "軟體包描述"
+
+#. combobox label
+#. combobox label
+#: src/include/add-on-creator/complex.rb:1695
+#: src/include/add-on-creator/complex.rb:1731
+msgid "Description File &Language Code"
+msgstr "描述檔案語言程式碼(&L)"
+
+#. button label
+#. button label
+#: src/include/add-on-creator/complex.rb:1704
+#: src/include/add-on-creator/complex.rb:1741
+msgid "Add Lan&guage"
+msgstr "添加語言(&G)"
+
+#. table header
+#. label for 'Pkg' key
+#: src/include/add-on-creator/complex.rb:1754 src/modules/AddOnCreator.rb:575
+msgid "Package"
+msgstr "軟體包"
+
+#. table header 1/2
+#. table header 1/2
+#: src/include/add-on-creator/complex.rb:1764
+#: src/include/add-on-creator/patterns.rb:353
+msgid "Attribute"
+msgstr "屬性"
+
+#. textentry label
+#: src/include/add-on-creator/complex.rb:1782
+msgid "Location of the File with Additional &Dependencies"
+msgstr "附加依賴關係檔案位置"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/complex.rb:1896
+msgid "Choose the New Package Description File"
+msgstr "選擇新軟體包描述檔案"
+
+#. error popup (correct name is 'packages.*')
+#: src/include/add-on-creator/complex.rb:1909
+msgid ""
+"The package description file is named incorrectly.\n"
+"Choose another one."
+msgstr ""
+"軟體包描述檔案命名錯誤。\n"
+"請選擇其他名稱。"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/complex.rb:2044
+msgid "Choose the Path to EXTRA_PROV File"
+msgstr "選取 EXTRA_PROV 檔案路徑"
+
+#. error popup
+#: src/include/add-on-creator/complex.rb:2054
+msgid ""
+"The file '%1' does not exist.\n"
+"Choose another one."
+msgstr ""
+"檔案“%1”不存在。\n"
+"請選擇另一個檔案。"
+
+#. frame label
+#: src/include/add-on-creator/complex.rb:2090
+msgid "Key Type"
+msgstr "金鑰類型"
+
+#. radiobutton label (key type)
+#: src/include/add-on-creator/complex.rb:2104
+msgid "&DSA"
+msgstr "DSA(&D)"
+
+#. radiobutton label (key type)
+#: src/include/add-on-creator/complex.rb:2109
+msgid "&RSA"
+msgstr "RSA(&R)"
+
+#. textentry label
+#: src/include/add-on-creator/complex.rb:2119
+msgid "Key &Size"
+msgstr "金鑰大小(&S)"
+
+#. textentry label
+#: src/include/add-on-creator/complex.rb:2124
+msgid "E&xpiration Date"
+msgstr "失效日期(&X)"
+
+#. textentry label
+#: src/include/add-on-creator/complex.rb:2127
+msgid "&Name"
+msgstr "名稱(&N)"
+
+#. textentry label
+#: src/include/add-on-creator/complex.rb:2129
+msgid "Commen&t"
+msgstr "註釋(&T)"
+
+#. textentry label
+#: src/include/add-on-creator/complex.rb:2134
+msgid "E-&Mail Address"
+msgstr "電子郵件地址(&M)"
+
+#. password widget label
+#. password entry label
+#: src/include/add-on-creator/complex.rb:2137
+#: src/include/add-on-creator/complex.rb:2251
+msgid "&Passphrase"
+msgstr "口令短語(&P)"
+
+#. dialog caption
+#: src/include/add-on-creator/complex.rb:2144
+msgid "New GPG Key"
+msgstr "新建 GPG 金鑰"
+
+#. error popup (see Name, Comment, Email Adress text entries
+#: src/include/add-on-creator/complex.rb:2189
+msgid ""
+"Name, comment, and e-mail address values are empty.\n"
+"You must enter at least one of them to provide user identification.\n"
+msgstr ""
+"名稱、註釋與電子郵件地址值是空的。\n"
+"您必須輸入至少其中一個值，以提供使用者標識。\n"
+
+#. feedback popup headline
+#: src/include/add-on-creator/complex.rb:2197
+msgid "Generating Primary Key Pair"
+msgstr "生成主金鑰對"
+
+#. feedback message
+#: src/include/add-on-creator/complex.rb:2199
+msgid ""
+"If it takes too long, do some other work to give\n"
+"the OS a chance to collect more entropy.\n"
+msgstr ""
+"如果費時太長，做些其他工作，讓\n"
+"作業系統有機會收集更多熵。\n"
+
+#. dialog caption
+#: src/include/add-on-creator/complex.rb:2217
+msgid "Signing the Add-On Product"
+msgstr "正在簽署附加產品"
+
+#. combo box label
+#: src/include/add-on-creator/complex.rb:2237
+msgid "GPG &Key ID"
+msgstr "GPG 金鑰 ID(&K)"
+
+#. button label
+#: src/include/add-on-creator/complex.rb:2244
+msgid "&Create..."
+msgstr "創建(&C)..."
+
+#. password entry label (verification)
+#: src/include/add-on-creator/complex.rb:2258
+msgid "&Passphrase Verification"
+msgstr "口令短語驗證(&P)"
+
+#. checkbox label
+#: src/include/add-on-creator/complex.rb:2265
+msgid "Re&sign all packages with selected key."
+msgstr "用選定金鑰為全部軟體包重新簽名(&S)"
+
+#. error message
+#: src/include/add-on-creator/complex.rb:2302
+msgid "Passwords do not match. Try again."
+msgstr "口令不匹配。請重試。"
+
+#. dialog caption
+#: src/include/add-on-creator/complex.rb:2334
+msgid "Output Settings"
+msgstr "輸出設定"
+
+#. text entry label
+#: src/include/add-on-creator/complex.rb:2358
+msgid "P&ath to Output Directory"
+msgstr "輸出目錄的路徑(&A)"
+
+#. check box label
+#: src/include/add-on-creator/complex.rb:2364
+msgid "Create &ISO Image"
+msgstr "創建 ISO 映像(&I)"
+
+#. text entry label
+#: src/include/add-on-creator/complex.rb:2371
+msgid "Image File Name"
+msgstr "映像檔名"
+
+#. check box label
+#: src/include/add-on-creator/complex.rb:2377
+msgid "&Generate Changelog"
+msgstr "生成修訂歷史(&G)"
+
+#. button label
+#: src/include/add-on-creator/complex.rb:2382
+msgid "&Configure Workflow..."
+msgstr "配置工作流程(&C)..."
+
+#. button label
+#: src/include/add-on-creator/complex.rb:2384
+msgid "O&ptional Files..."
+msgstr "可選檔案(&P)..."
+
+#. error popup
+#: src/include/add-on-creator/complex.rb:2429
+msgid "Enter the path to the directory for the add-on."
+msgstr "輸入附加產品目錄的路徑。"
+
+#. dialog caption
+#: src/include/add-on-creator/complex.rb:2469
+msgid "Overview"
+msgstr "概覽"
+
+#. summary header
+#: src/include/add-on-creator/complex.rb:2480
+msgid "Patterns"
+msgstr "軟體集"
+
+#. summary header
+#: src/include/add-on-creator/complex.rb:2488
+msgid "Input Directory"
+msgstr "輸入目錄"
+
+#. summary header
+#: src/include/add-on-creator/complex.rb:2495
+msgid "Output Directory"
+msgstr "輸出目錄"
+
+#. summary line
+#: src/include/add-on-creator/complex.rb:2505
+msgid "Creating an ISO image in the output directory"
+msgstr "正在輸出目錄中創建 ISO 映像"
+
+#. popup message
+#: src/include/add-on-creator/dialogs.rb:79
+msgid ""
+"A file with this name already exists.\n"
+"Choose a different one."
+msgstr ""
+"該名稱的檔案已存在。\n"
+"請選擇其他名稱。"
+
+#. dialog caption
+#: src/include/add-on-creator/dialogs.rb:98
+msgid "Expert Settings"
+msgstr "專家設定"
+
+#: src/include/add-on-creator/dialogs.rb:136
+msgid "&info.txt File"
+msgstr "info.txt 檔案(&I)"
+
+#. frame label
+#: src/include/add-on-creator/dialogs.rb:141
+msgid "&License Files"
+msgstr "許可檔案(&L)"
+
+#. frame label
+#: src/include/add-on-creator/dialogs.rb:171
+msgid "README Files"
+msgstr "README 檔案"
+
+#. textentry label
+#: src/include/add-on-creator/dialogs.rb:241
+msgid "&Name of the New README File"
+msgstr "新 README 檔案的名稱(&N)"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/dialogs.rb:258
+msgid "Choose the New README File"
+msgstr "選擇新的 README 檔案"
+
+#. textentry label
+#: src/include/add-on-creator/dialogs.rb:300
+msgid "&Language for the New License File"
+msgstr "新的許可檔案的語言(&L)"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/dialogs.rb:320
+msgid "Choose the New License File"
+msgstr "選擇新的許可檔案"
+
+#. dialog caption
+#: src/include/add-on-creator/dialogs.rb:401
+msgid "Expert Settings, Part 2"
+msgstr "專家設定，第 2 部分"
+
+#. frame label
+#: src/include/add-on-creator/dialogs.rb:445
+msgid "&COPYING Files"
+msgstr "COPYING 檔案(&C)"
+
+#. frame label
+#: src/include/add-on-creator/dialogs.rb:472
+msgid "COPY&RIGHT Files"
+msgstr "版權檔案(&R)"
+
+#. textentry label
+#: src/include/add-on-creator/dialogs.rb:541
+msgid "&Language for the New COPYRIGHT File"
+msgstr "新的版權檔案的語言(&L)"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/dialogs.rb:560
+msgid "Choose the New COPYRIGHT File"
+msgstr "選擇新的版權檔案"
+
+#. textentry label
+#: src/include/add-on-creator/dialogs.rb:605
+msgid "&Language for the New COPYING File"
+msgstr "新的 COPYING 檔案的語言(&L)"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/dialogs.rb:624
+msgid "Choose the New COPYING File"
+msgstr "選擇新的 COPYING 檔案"
+
+#. dialog caption
+#: src/include/add-on-creator/dialogs.rb:701
+msgid "Expert Settings, Part 3"
+msgstr "專家設定，第 3 部分"
+
+#: src/include/add-on-creator/dialogs.rb:715
+msgid "products"
+msgstr "產品"
+
+#: src/include/add-on-creator/dialogs.rb:721
+msgid "patches"
+msgstr "補丁"
+
+#. button label
+#: src/include/add-on-creator/dialogs.rb:724
+msgid "&Import"
+msgstr "匯入(&I)"
+
+#: src/include/add-on-creator/dialogs.rb:727
+msgid "media"
+msgstr "介質"
+
+#. dialog caption
+#: src/include/add-on-creator/dialogs.rb:769
+msgid "Workflow Configuration"
+msgstr "工作流程配置"
+
+#. textentry label
+#: src/include/add-on-creator/dialogs.rb:792
+msgid "&Location of the File with the Workflow Description"
+msgstr "工作流程描述檔案的位置(&L)"
+
+#. radiobutton label
+#: src/include/add-on-creator/dialogs.rb:806
+msgid "&No Additional YaST Modules"
+msgstr "無其他 YaST 模組(&N)"
+
+#. radiobutton label
+#: src/include/add-on-creator/dialogs.rb:815
+msgid "&Path to y2update.tgz"
+msgstr "到 y2update.tgz 的路徑(&P)"
+
+#. pushbutton label
+#: src/include/add-on-creator/dialogs.rb:823
+msgid "&Browse"
+msgstr "瀏覽(&B)"
+
+#. radiobutton label
+#: src/include/add-on-creator/dialogs.rb:830
+msgid "&Import the Packages"
+msgstr "匯入軟體包(&I)"
+
+#. table header
+#: src/include/add-on-creator/dialogs.rb:840
+msgid "YaST Module Package"
+msgstr "YaST 模組包"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/dialogs.rb:892
+msgid "Choose the installation.xml File"
+msgstr "選擇 installation.xml 檔案"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/dialogs.rb:911
+msgid "Choose the Path to the y2update.tgz File"
+msgstr "選擇 y2update.tgz 檔案的路徑"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/dialogs.rb:922
+msgid "Choose the YaST Module Package"
+msgstr "選擇 YaST 模組包"
+
+#. Build dialog help
+#: src/include/add-on-creator/helps.rb:36
+msgid ""
+"<p><b><big>Creating the Add-On</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在創建附加產品</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Write dialog help
+#: src/include/add-on-creator/helps.rb:40
+msgid ""
+"<p>Writing the add-on configurations<br>\n"
+"</p>\n"
+msgstr ""
+"<p>正在寫入附加產品配置<br>\n"
+"</p>\n"
+
+#. help text for start menu
+#: src/include/add-on-creator/helps.rb:44
+msgid "<p>This module offers guidance for the creation of an add-on product.</p>"
+msgstr "<p>該模組提供了創建附加產品的指南。</p>"
+
+#. help text for start menu, cont.
+#: src/include/add-on-creator/helps.rb:48
+msgid "<p>Select how to create the new add-on product. You can create it from the beginning or base it on an existing product.</p>"
+msgstr "<p>選擇如何創建新的附加產品。您可以從頭創建，也可以基於已有產品創建。</p>"
+
+#. help text for start menu, cont.
+#: src/include/add-on-creator/helps.rb:52
+msgid "<p>When basing the new product on an existing product, check <b>Generate Package Descriptions</b> to generate new descriptions of packages in the existing product.</p>"
+msgstr "<p>基於已有產品創建新產品時，勾選<b>生成軟體包描述</b>生成已有產品中軟體包的新描述。</p>"
+
+#. help text for initial data (paragraph title)
+#: src/include/add-on-creator/helps.rb:56
+msgid "<p><b>Name and Version</b></p>"
+msgstr "<p><b>名稱與版本</b></p>"
+
+#. help text for initial data, cont.
+#: src/include/add-on-creator/helps.rb:60
+msgid "<p>Enter the name and version of add-on product.</p>"
+msgstr "<p>請輸入附加產品的名稱與版本。</p>"
+
+#. help text for initial data, cont.
+#: src/include/add-on-creator/helps.rb:62
+msgid "<p><b>Required Product</b></p>"
+msgstr "<p><b>所需產品</b></p>"
+
+#. help text for initial data, cont.
+#: src/include/add-on-creator/helps.rb:64
+msgid "<p>Select the product to which the new add-on product can be applied. This selection forms the <b>REQUIRES</b> value of the <tt>content</tt> file.</p>"
+msgstr "<p>選擇新附加產品可應用到的產品。此選擇形成了 <tt>content</tt> 檔案的 <b>REQUIRES</b> 值。</p>"
+
+#. help text for initial data (paragraph title), cont.
+#: src/include/add-on-creator/helps.rb:68
+msgid "<p><b>Add-On Packages</b></p>"
+msgstr "<p><b>附加軟體包</b></p>"
+
+#. help text for initial data, cont.
+#: src/include/add-on-creator/helps.rb:70
+msgid "<p>Choose the path to the directory containing the RPM packages that should form your add-on product.</p>"
+msgstr "<p>選擇存放了應構成您的附加產品的 RPM 軟體包的資料夾的路徑。</p>"
+
+#. help text for initial data (paragraph title), cont.
+#: src/include/add-on-creator/helps.rb:74
+msgid "<p><b>Required Product Packages</b></p>"
+msgstr "<p><b>必需產品軟體包</b></p>"
+
+#. help text for initial data, cont.
+#: src/include/add-on-creator/helps.rb:76
+msgid "<p>Optionally, choose the path to the directory containing the RPM packages from the product the add-on product should be based on. These packages will not be contained in the add-on product, but could be used for creating the patterns later in the workflow.</p>"
+msgstr "<p>也可從附加產品應基於的產品中選擇存放 RPM 軟體包的資料夾的路徑。這些軟體包不會被收錄到附加產品中，但稍後可以用於在工作流程中創建軟體集。</p>"
+
+#. help text for content file editor (<tt>content</tt> is a name of file)
+#: src/include/add-on-creator/helps.rb:80
+msgid "<p>Here, edit the values of the <tt>content</tt> file.</p>"
+msgstr "<p>在此編輯 <tt>content</tt> 檔案的值。</p>"
+
+#. help text for content file editor, cont.
+#: src/include/add-on-creator/helps.rb:84
+msgid "<p>Enter the information required to identify the add-on product. Deselect <b>Show Only Required Keywords</b> to see all attributes of the <tt>content</tt> file.</p>"
+msgstr "<p>輸入識別附加產品所需的資訊。反選<b>僅顯示必需關鍵詞</b>檢視 <tt>content</tt> 檔案的全部屬性。</p>"
+
+#. help text for content file editor, cont.
+#: src/include/add-on-creator/helps.rb:88
+msgid "<p>Use <b>Import</b> to import an existing <tt>content</tt> file.</p>"
+msgstr "<p>使用<b>匯入</b>匯入已有 <tt>content</tt> 檔案。</p>"
+
+#. help text for package description files
+#: src/include/add-on-creator/helps.rb:92
+msgid "<p>Edit the language-specific descriptions of packages (<tt>packages.lang</tt> files) here.</p>"
+msgstr "<p>在此編輯語言相關的軟體包描述 (<tt>packages.lang</tt> 檔案)。</p>"
+
+#. help text for package description files, cont.
+#: src/include/add-on-creator/helps.rb:96
+msgid "<p>Use <b>Add Language</b> to add a description file for a new language. The list of available languages is read from the <b>LINGUAS</b> value of the <tt>content</tt> file. Import an existing file with package descriptions with <b>Import</b>. Delete the description file with <b>Delete</b>.</p>"
+msgstr "<p>使用<b>添加語言</b>添加新語言的描述檔案。可用語言列表是從 <tt>content</tt> 檔案的 <b>LINGUAS</b> 值讀取的。使用<b>匯入</b>匯入已有的軟體包描述檔案。使用<b>刪除</b>刪除描述檔案。</p>"
+
+#. help text for package description files, cont.
+#: src/include/add-on-creator/helps.rb:100
+msgid "<p>Use <b>Add</b> and <b>Edit</b> in the second table to modify description entries for the selected package.</p>"
+msgstr "<p>使用第二張表中的<b>添加</b>與<b>編輯</b>修改所選軟體包的描述項。</p>"
+
+#. help text for package description files, cont.
+#: src/include/add-on-creator/helps.rb:104
+msgid "<p>Optionally, choose the path for the file providing <b>Additional Package Dependencies</b> (EXTRA_PROV).</p>"
+msgstr "<p>另外，還可選擇提供<b>額外軟體包依賴關係</b> (EXTRA_PROV) 的檔案的路徑。</p>"
+
+#. help text for patterns
+#: src/include/add-on-creator/helps.rb:108
+msgid "<p>Create and edit the patterns for the add-on product here.</p>"
+msgstr "<p>在此為附加產品創建與編輯軟體集。</p>"
+
+#. help text for patterns, cont.
+#: src/include/add-on-creator/helps.rb:112
+msgid "<p>Use <b>New</b> to create a new pattern or <b>Import</b> to import an existing one.</p>"
+msgstr "<p>使用<b>新建</b>創建新軟體集或使用<b>匯入</b>匯入已有軟體集。</p>"
+
+#. help text for patterns, cont.
+#: src/include/add-on-creator/helps.rb:116
+msgid "<p>Use <b>Add</b> and <b>Edit</b> in the second table to modify pattern attributes.</p>"
+msgstr "<p>使用第二張表中的<b>添加</b>與<b>編輯</b>修改軟體集屬性。</p>"
+
+#. help text for patterns, cont.
+#: src/include/add-on-creator/helps.rb:120
+msgid ""
+"<p>Check <b>Required pattern</b> to mark the selected pattern as required for\n"
+"the add-on product. Such a pattern will be automatically preselected when the installation of the add-on product is started.</p>"
+msgstr "<p>勾選<b>必需軟體集</b>以標記所選軟體集為附加產品必需。在開始安裝附加產品時將自動預選這樣的軟體集。</p>"
+
+#. help text for the 'various settings' dialog
+#: src/include/add-on-creator/helps.rb:124
+msgid "<p>Specify the path to the directory in which the add-on product should be created. Select <b>Create ISO Image</b> to create the ISO image of the product in the output directory.</p>"
+msgstr "<p>指定創建附加產品的資料夾路徑。選擇<b>創建 ISO 映像</b>在輸出資料夾中創建產品的 ISO 映像。</p>"
+
+#. help text for the 'various settings' dialog
+#: src/include/add-on-creator/helps.rb:128
+msgid "<p>Use <b>Generate Changelog</b> to generate a changelog file containing all changes of packages on the add-on product made in the last two years.</p>"
+msgstr "<p>使用 <b>生成修訂歷史</b> 以生成修訂歷史檔案，記錄附加產品介質上軟體包兩年內所有的修訂。</p>"
+
+#. help text for the 'various settings' dialog
+#: src/include/add-on-creator/helps.rb:132
+msgid "<p>Adapt the workflow of the add-on product with <b>Configure Workflow</b>. Use <b>Optional Files</b> to configure texts of <tt>README</tt> files, licenses, and other optional values.</p>"
+msgstr "<p>用<b>配置工作流程</b>適配附加產品的工作流程。用<b>可選檔案</b>配置 <tt>README</tt> 檔案、許可與其他可選的文字。</p>"
+
+#. workflow help text
+#: src/include/add-on-creator/helps.rb:136
+msgid "<p>Here, you can enter the files necessary for customizing your add-on product workflow.</p>"
+msgstr "<p>您可以在這裡輸入自定義您的附加產品工作流程所必需的檔案。</p>"
+
+#. workflow help text
+#: src/include/add-on-creator/helps.rb:140
+msgid "<p>Enter the location of the file with the workflow description. This file is an alternative to <tt>control.xml</tt> and is saved as <tt>installation.xml</tt> in the add-on product's base directory.</p>"
+msgstr "<p>輸入工作流程描述檔案的位置。該檔案可代替 <tt>control.xml</tt>，在附加產品的基本目錄中儲存為 <tt>installation.xml</tt>。</p>"
+
+#. workflow help text
+#: src/include/add-on-creator/helps.rb:144
+msgid "<p>To use custom YaST modules during the installation of the add-on product, enter the path to the <tt>y2update.tgz</tt> archive where these modules are stored or configure the contents of <tt>y2update.tgz</tt> by specifying the YaST RPM packages in <b>Import the Packages</b>.</p>"
+msgstr "<p>安裝附加產品時如需使用自定義 YaST 模組，請輸入存儲這些模組的 <tt>y2update.tgz</tt> 存檔的路徑，或通過在<b>匯入軟體包</b>中指定 YaST RPM 包配置 <tt>y2update.tgz</tt> 的內容。</p>"
+
+#. help text for expert dialog 1
+#: src/include/add-on-creator/helps.rb:148
+msgid "<p>The optional <tt>info.txt</tt> file gives information about the add-on that should be displayed as a pop-up window with an <b>OK</b> button.</p>"
+msgstr "<p>可選的 <tt>info.txt</tt> 檔案給出了有關應顯示為帶有<b>確定</b>按鈕的彈出視窗的附加相關資訊。</p>"
+
+#. help text for expert dialog 1, cont
+#: src/include/add-on-creator/helps.rb:152
+msgid "<p>The text of the license is displayed in a window with <b>Agree</b> and <b>Disagree</b> buttons before the installation starts. The files with the license texts in different languages are compressed to the <tt>license.zip</tt> archive and stored in the <tt>media.1</tt> directory.</p>"
+msgstr "<p>安裝開始前會在帶有<b>同意</b>與<b>不同意</b>按鈕的視窗中顯示許可文字。不同語言的許可文字檔案壓縮成了 <tt>license.zip</tt> 存檔並儲存在 <tt>media.1</tt> 目錄中。</p>"
+
+#. help text for expert dialog 2
+#: src/include/add-on-creator/helps.rb:156
+msgid "<p>The <tt>COPYRIGHT</tt> and <tt>COPYING</tt> files can have various language modifications and are stored in the root directory of the add-on product.</p>"
+msgstr "<p><tt>版權</tt>與<tt>複製中</tt>檔案可有不同語言的修訂版，儲存在附加產品的根目錄中。</p>"
+
+#. help text for signing dialog
+#: src/include/add-on-creator/helps.rb:160
+msgid "<p>Here, configure the signing of the add-on product. Choose a secret key from the list of keys available or create a new one with <b>Create</b>.</p>"
+msgstr "<p>在此處配置附加產品的簽名。從可用金鑰列表選擇金鑰，或用<b>創建</b>創建新金鑰。</p>"
+
+#. help text for signing dialog, cont.
+#: src/include/add-on-creator/helps.rb:164
+msgid "<p>Enter the passphrase needed to unlock the secret key.</p>"
+msgstr "<p>輸入解鎖金鑰所需的口令短語。</p>"
+
+#. help text for signing dialog, cont.
+#: src/include/add-on-creator/helps.rb:166
+msgid "<p>Decide if you want to <b>Sign All Packages</b> of the add-on product with the selected key. All previous package signatures will be removed.</p>"
+msgstr "<p>如果您希望用選定的金鑰<b>簽署全部軟體包</b>。所有之前的軟體包簽名都會被移除。</p>"
+
+#. help text for generating new key dialog
+#: src/include/add-on-creator/helps.rb:170
+msgid "<p>Enter the values necessary for generating the new primary key pair.</p>"
+msgstr "<p>輸入生成新的主金鑰對所需的值。</p>"
+
+#. help text for generating new key dialog, cont.
+#: src/include/add-on-creator/helps.rb:174
+msgid "<p>The default size of a DSA key is 1024 bits. RSA keys may be between 1024 and 4096 bits long.</p>"
+msgstr "<p>DSA 金鑰的默認大小是 1024 位。RSA 金鑰長度可介於 1024 與 4096 位之間。</p>"
+
+#. help text for generating new key dialog, cont.
+#: src/include/add-on-creator/helps.rb:178
+msgid "<p>As <b>Expiration Date</b>, enter the number of days after which the key expires. If the number is followed by <tt>w</tt>,<tt>m</tt>, or <tt>y</tt>, it indicates the number of weeks, months, or years. Leave the entry empty for a key that never expires.</p>"
+msgstr "<p>至於<b>到期日</b>，請輸入金鑰到期前的天數。如果數字後面跟著 <tt>w</tt>、<tt>m</tt> 或 <tt>y</tt>，則表示週數、月數或年數。對永不過期的金鑰，保留該條目為空白即可。</p>"
+
+#. help text for generating new key dialog, cont.
+#: src/include/add-on-creator/helps.rb:182
+msgid "<p>Use <b>Name</b>, <b>Comment</b>, and <b>E-Mail Address</b> to provide the user identification with which the new key should be associated.</p>"
+msgstr "<p>用<b>姓名</b>、<b>註釋</b>與<b>電子郵件地址</b>提供新金鑰應關聯的使用者標識。</p>"
+
+#. help text for overview dialog
+#: src/include/add-on-creator/helps.rb:186
+msgid "<p>Here, see the overview of data for generating the add-on product.</p>"
+msgstr "<p>在此處可檢視生成附加產品的資料的概覽。</p>"
+
+#. help text for overview dialog, cont.
+#: src/include/add-on-creator/helps.rb:190
+msgid "<p>Press <b>Finish</b> to create the add-on product in the output directory.</p>"
+msgstr "<p>按<b>完成</b>在輸出資料夾中創建附加產品。</p>"
+
+#. text entry label
+#: src/include/add-on-creator/patterns.rb:113
+msgid "&Name of the New Pattern"
+msgstr "新軟體集名稱(&N)"
+
+#. combo box label
+#: src/include/add-on-creator/patterns.rb:118
+msgid "&Architecture"
+msgstr "架構(&A)"
+
+#. text entry label
+#: src/include/add-on-creator/patterns.rb:128
+msgid "&Release"
+msgstr "釋出編號(&R)"
+
+#. popup message
+#: src/include/add-on-creator/patterns.rb:150
+msgid ""
+"Such a pattern already exists.\n"
+"Choose a different name or architecture.\n"
+msgstr ""
+"同名軟體集已存在。\n"
+"清選擇其它名稱或架構。\n"
+
+#: src/include/add-on-creator/patterns.rb:198
+msgid "&Description"
+msgstr "描述(&D)"
+
+#: src/include/add-on-creator/patterns.rb:202
+msgid "&Summary"
+msgstr "摘要(&S)"
+
+#: src/include/add-on-creator/patterns.rb:203
+msgid "Ca&tegory"
+msgstr "分類(&T)"
+
+#. combo label
+#: src/include/add-on-creator/patterns.rb:213
+msgid "&Language Code"
+msgstr "語言程式碼(&L)"
+
+#. popup message
+#: src/include/add-on-creator/patterns.rb:257
+msgid ""
+"A key with this name already exists.\n"
+"Choose a different one."
+msgstr ""
+"同名金鑰已存在。\n"
+"請選擇其他名稱。"
+
+#. dialog caption
+#: src/include/add-on-creator/patterns.rb:319
+msgid "Editor for Patterns"
+msgstr "軟體集編輯器"
+
+#. table header
+#: src/include/add-on-creator/patterns.rb:332
+msgid "Name of the Pattern"
+msgstr "軟體集名稱"
+
+#. table header
+#: src/include/add-on-creator/patterns.rb:334
+msgid "Full Name"
+msgstr "全名"
+
+#. check box label
+#: src/include/add-on-creator/patterns.rb:369
+msgid "R&equired Pattern"
+msgstr "必需軟體集(&E)"
+
+#. popup for file selection dialog
+#: src/include/add-on-creator/patterns.rb:445
+msgid "Existing Pattern"
+msgstr "現有軟體集"
+
+#. error message
+#: src/include/add-on-creator/patterns.rb:601
+msgid ""
+"Such a pattern already exists.\n"
+"Choose a different architecture.\n"
+msgstr ""
+"同名軟體集已存在。\n"
+"清選擇其它架構。\n"
+
+#. busy message
+#: src/include/add-on-creator/wizards.rb:53
+msgid "Importing product..."
+msgstr "正在匯入產品..."
+
+#. label of content file key
+#: src/modules/AddOnCreator.rb:139
+msgid "Content file style"
+msgstr "內容檔案風格"
+
+#. help text for content file CONTENTSTYLE key
+#: src/modules/AddOnCreator.rb:141
+msgid "Must be the first tag of the content file."
+msgstr "必須是內容檔案的首個標籤"
+
+#. label of content file key
+#: src/modules/AddOnCreator.rb:150
+msgid "Product name"
+msgstr "產品名稱"
+
+#. help text for content file 'NAME' key
+#: src/modules/AddOnCreator.rb:152
+msgid "For internal usage. Same restrictions as for package names apply."
+msgstr "內部使用。適用與軟體包名稱同樣的限制規定。"
+
+#. label of content file BASEARCHS key
+#: src/modules/AddOnCreator.rb:160
+msgid "Product architectures"
+msgstr "產品架構"
+
+#. help text for content file 'BASEARCHS' key
+#: src/modules/AddOnCreator.rb:164
+msgid "Space-separated list of product architectures. Matches the available product-release packages architectures. "
+msgstr "使用空格分開的產品架構列表。與可用產品軟體包的架構相匹配。"
+
+#. label of content file 'VERSION' key
+#: src/modules/AddOnCreator.rb:172
+msgid "Product version and release"
+msgstr "產品版本號與釋出編號"
+
+#. help text for content file 'VERSION' key
+#: src/modules/AddOnCreator.rb:176
+msgid "Product version and release as in RPM <tt>major.minor-release</tt>."
+msgstr "產品版本號與釋出編號（按 RPM <tt>major.minor-release</tt> 中所定義）。"
+
+#. table item label
+#. table item label
+#: src/modules/AddOnCreator.rb:185 src/modules/AddOnCreator.rb:720
+msgid "Release number"
+msgstr "釋出編號"
+
+#. label of content file key
+#: src/modules/AddOnCreator.rb:192
+msgid "Distribution name"
+msgstr "發行版名"
+
+#. help text for content file 'DISTRIBUTION' key
+#: src/modules/AddOnCreator.rb:194
+msgid "Some string denoting the distribution. The same string is most probably used in the .rpms to denote the distribution. Usually a composition of the name, version and architecture."
+msgstr "有些字元串表示發行版。同樣的字元串也可能用在 .rpm 中表示發行版。通常是名稱、版本號與架構的一種組合。"
+
+#. label of content file key
+#: src/modules/AddOnCreator.rb:201
+msgid "Package description directory"
+msgstr "軟體包描述目錄"
+
+#. help text for content file 'DESCRDIR' key
+#: src/modules/AddOnCreator.rb:206
+msgid "Package description directory (relative to product directory)."
+msgstr "軟體包描述目錄（相對於產品目錄）。"
+
+#. label of content file key
+#: src/modules/AddOnCreator.rb:214
+msgid "Package data directory"
+msgstr "軟體包資料目錄"
+
+#. help text for content file 'DATADIR' key
+#: src/modules/AddOnCreator.rb:216
+msgid "Package data directory (relative to product directory)."
+msgstr "軟體包資料目錄（相對於產品目錄）。"
+
+#. label of content file key
+#: src/modules/AddOnCreator.rb:225
+msgid "Label"
+msgstr "標籤"
+
+#. help text for content file '' key
+#: src/modules/AddOnCreator.rb:227
+msgid "UTF-8 encoded label. Default label if <b>LINGUAS</b> is omitted or no default language can be determined."
+msgstr "UTF-8 編碼標籤。如果 <b>LINGUAS</b> 省略或無默認語言可確定，將是默認標籤。"
+
+#. label of content file 'LINGUAS' key
+#: src/modules/AddOnCreator.rb:234
+msgid "Languages"
+msgstr "語言"
+
+#. help text for content file 'LINGUAS' key
+#: src/modules/AddOnCreator.rb:236
+msgid "ISO language code or language code_country code."
+msgstr "ISO 語言程式碼或語言程式碼_國家/地區程式碼。"
+
+#. label of content file 'LANGUAGE' key
+#: src/modules/AddOnCreator.rb:243
+msgid "Default language"
+msgstr "默認語言"
+
+#. help text for content file 'LANGUAGE' key
+#: src/modules/AddOnCreator.rb:247
+msgid "Default language code."
+msgstr "默認語言程式碼。"
+
+#. label of content file 'PATTERNS' key
+#: src/modules/AddOnCreator.rb:256
+msgid "Preselected patterns"
+msgstr "預選軟體集"
+
+#. help text for content file 'PATTERNS' key
+#: src/modules/AddOnCreator.rb:260
+msgid "List of patterns preselected by the product."
+msgstr "產品預選軟體集列表。"
+
+#. label of content file key
+#: src/modules/AddOnCreator.rb:267
+msgid "Vendor name"
+msgstr "供應商名稱"
+
+#. help text for content file 'VENDOR' key
+#: src/modules/AddOnCreator.rb:269
+msgid "Vendor name (free form)."
+msgstr "供應商名稱（自由格式）。"
+
+#. label of content file 'RELNOTESURL' key
+#: src/modules/AddOnCreator.rb:277
+msgid "Release notes URL"
+msgstr "釋出說明 URL"
+
+#. help text for content file 'RELNOTESURL' key
+#: src/modules/AddOnCreator.rb:281
+msgid "URL from which to fetch release notes."
+msgstr "可獲取釋出說明的 URL。"
+
+#. label of content file 'UPDATEURLS' key
+#: src/modules/AddOnCreator.rb:288
+msgid "Update URL"
+msgstr "更新 URL"
+
+#. help text for content file 'UPDATEURLS' key
+#: src/modules/AddOnCreator.rb:290
+msgid "URL of the update source."
+msgstr "更新源的 URL。"
+
+#. label of content file LABEL.lang key
+#: src/modules/AddOnCreator.rb:300
+msgid "Language-specific label"
+msgstr "特定於語言的標籤"
+
+#. help text for content file 'LABEL.lang' key
+#: src/modules/AddOnCreator.rb:304
+msgid "UTF-8-encoded <b>LABEL</b>. <tt>lang</tt> has the same syntax as the <b>LINGUAS</b> values. For each language in <b>LINGUAS</b>, a matching <b>LABEL.lang</b> is expected."
+msgstr "UTF-8 編碼的<b>標籤</b>。<tt>lang</tt> 的語法與 <b>LINGUAS</b> 值一樣。對 <b>LINGUAS</b> 中的每種語言，都期望有一個匹配的 <b>LABEL.lang</b>。"
+
+#: src/modules/AddOnCreator.rb:328
+msgid "Architecture"
+msgstr "架構"
+
+#. label for 'Sum' key
+#: src/modules/AddOnCreator.rb:338 src/modules/AddOnCreator.rb:589
+msgid "Summary"
+msgstr "摘要"
+
+#. help text for 'Sum' pattern key
+#: src/modules/AddOnCreator.rb:340
+msgid "One line label in the default language"
+msgstr "默認語言的單行標籤"
+
+#. help text for 'Sum.lang' pattern key
+#: src/modules/AddOnCreator.rb:344
+msgid "One line language-specific label."
+msgstr "特定於語言的單行標籤。"
+
+#. help text for 'Des' pattern key
+#: src/modules/AddOnCreator.rb:354
+msgid "Multiple line description in the default language"
+msgstr "默認語言的多行描述"
+
+#. help text for 'Des.lang' pattern key
+#: src/modules/AddOnCreator.rb:358
+msgid "Multiple line description, language-specific."
+msgstr "特定語言的多行描述。"
+
+#. label for 'Cat' pattern key
+#: src/modules/AddOnCreator.rb:364
+msgid "Category"
+msgstr "分類"
+
+#. help text for 'Cat' pattern key
+#: src/modules/AddOnCreator.rb:366
+msgid "One line category in the default language used to group patterns. Categories are intended for the user and can be specified freely."
+msgstr "默認語言中用於分組軟體集的單行分類。分類是為使用者設計的，可自由指定。"
+
+#. help text for 'Cat.lang' pattern key
+#: src/modules/AddOnCreator.rb:370
+msgid "Language-specific version of the category."
+msgstr "特定語言版本的分類。"
+
+#. label for 'Vis' pattern key
+#: src/modules/AddOnCreator.rb:377
+msgid "Visibility"
+msgstr "可見性"
+
+#. help text for 'Vis' pattern key
+#: src/modules/AddOnCreator.rb:379
+msgid "Set whether the pattern should be visible in the user interface."
+msgstr "設定該軟體集在使用者介面中是否應可見。"
+
+#. label for 'Prq' pattern key
+#: src/modules/AddOnCreator.rb:388
+msgid "Packages"
+msgstr "軟體包"
+
+#. help text for 'Prq' pattern key
+#: src/modules/AddOnCreator.rb:390
+msgid "List of packages to install."
+msgstr "要安裝的軟體包列表。"
+
+#. label for 'Prc' pattern key
+#: src/modules/AddOnCreator.rb:398
+msgid "Recommended packages"
+msgstr "推薦的軟體包"
+
+#. help text for 'Prc' pattern key
+#: src/modules/AddOnCreator.rb:400
+msgid "These packages are installed by default but can be removed without complaint."
+msgstr "默認安裝這些軟體包，但無需說明即可刪除。"
+
+#. label for 'Prs' pattern key
+#: src/modules/AddOnCreator.rb:408
+msgid "Suggested packages"
+msgstr "建議的軟體包"
+
+#. help text for 'Prs' pattern key
+#. help text for 'Sug' pattern key
+#. help text for 'SUGGESTS' key
+#: src/modules/AddOnCreator.rb:410 src/modules/AddOnCreator.rb:503
+#: src/modules/AddOnCreator.rb:712
+msgid "These are just hints for an application and not handled during dependency resolution."
+msgstr "這些僅是為某應用程式生成的提示，在依賴關係解決中並非如此處理。"
+
+#. label for 'Ico' pattern key
+#: src/modules/AddOnCreator.rb:418
+msgid "Icon filename"
+msgstr "圖示檔名"
+
+#. help text for 'Ico' pattern key
+#: src/modules/AddOnCreator.rb:420
+msgid ""
+"If unspecified, the pattern name is used \n"
+" instead (with blanks in the name replaced by underscores). If the filename does not include a .png or .jpg extension, .png is appended. If no path is specified, icons are searched for in the theme icon path (first /usr/share/YaST2/theme/current/icons/32x32/apps/ then /usr/share/YaST2/theme/current/icons/48x48/apps/). Absolute and relative paths (to the theme path /usr/share/YaST2/theme/current/) are allowed."
+msgstr ""
+"若未指定，將轉而使用軟體集名稱\n"
+"（名稱中的空格用下劃線代替）。如果檔名不包括 .png 或 .jpg 副檔名，將附加 .png。如果未指定路徑，將在主題圖示路徑（起初是 /usr/share/YaST2/theme/current/icons/32x32/apps/，然後是 /usr/share/YaST2/theme/current/icons/48x48/apps/）中搜索圖示。絕對路徑與相對路徑（相對於主題路徑 /usr/share/YaST2/theme/current/）都允許。"
+
+#. label for 'Ord' pattern key
+#: src/modules/AddOnCreator.rb:429
+msgid "Pattern Order"
+msgstr "軟體集排序"
+
+#. help text for 'Ord' pattern key
+#: src/modules/AddOnCreator.rb:431
+msgid "This three-digit integer value defines the order of the pattern when listing multiple patterns in the user interface."
+msgstr "該三位整數值定義了在使用者介面中列出多個軟體集時其顯示順序。"
+
+#. label for 'Req' pattern key
+#: src/modules/AddOnCreator.rb:441
+msgid "Required patterns"
+msgstr "必需軟體集"
+
+#. help text for 'Req' pattern key
+#: src/modules/AddOnCreator.rb:443
+msgid "Patterns that need to be installed together with this pattern."
+msgstr "必須與該軟體集一起安裝的軟體集。"
+
+#. label for 'Prv' pattern key
+#: src/modules/AddOnCreator.rb:451
+msgid "Provided patterns"
+msgstr "提供軟體集"
+
+#. help text for 'Prv' pattern key
+#: src/modules/AddOnCreator.rb:453
+msgid "Capabilities this pattern provides. They can be used to match <b>REQUIRES</b> from others. Every resolvable has a provide by default--its own name and edition. For example, package <i>bar-1.42-1</i> provides the capability <tt>bar = 1.42-1</tt>."
+msgstr "該軟體集提供的功能。它們可用於匹配其他的 <b>REQUIRES</b>。每個元件都有一個默認的提供 － 其自身名稱與版本。例如，軟體包 <i>bar-1.42-1</i>提供功能 <tt>bar = 1.42-1</tt>。"
+
+#. label for 'Con' pattern key
+#: src/modules/AddOnCreator.rb:461
+msgid "Conflicting patterns"
+msgstr "衝突軟體集"
+
+#. help text for 'Con' pattern key
+#: src/modules/AddOnCreator.rb:463
+msgid "This pattern cannot be installed if the specified resolvable or one that provides the capability is installed."
+msgstr "若已安裝了指定解析項或提供該功能的軟體集，則無法安裝此軟體集。"
+
+#. label for 'Obs' pattern key
+#: src/modules/AddOnCreator.rb:471
+msgid "Patterns made obsolete"
+msgstr "被淘汰的軟體集"
+
+#. help text for 'Obs' pattern key
+#: src/modules/AddOnCreator.rb:473
+msgid ""
+"When this pattern is installed, it uninstalls any \n"
+"other patterns marked as obsolete here."
+msgstr ""
+"安裝該軟體集時，將解除安裝此處標記為淘汰的任何\n"
+"其它軟體集。"
+
+#. label for 'Rec' pattern key
+#: src/modules/AddOnCreator.rb:481
+msgid "Recommended patterns"
+msgstr "推薦軟體集"
+
+#. help text for 'Rec' pattern key
+#: src/modules/AddOnCreator.rb:483
+msgid "A weak version of REQUIRES. If recommended patterns cannot be installed, no error is shown."
+msgstr "必需軟體集的弱化版本。若無法安裝推薦軟體集，系統也不會報錯。"
+
+#. label for 'Sup' pattern key
+#: src/modules/AddOnCreator.rb:491
+msgid "Supplemented patterns"
+msgstr "補充軟體集"
+
+#. help text for 'Sup' pattern key
+#: src/modules/AddOnCreator.rb:493
+msgid "A reverse <b>Rec</b>. This pattern is installed if the specified capability is provided by an installed resolvable. The dependency resolver installs it. Uninstalling it is silently accepted."
+msgstr "逆向的<b>必需軟體集</b>。若已安裝的解析項提供了指定功能，將安裝此軟體集。依賴關係解決器會安裝它。它的解除安裝將被自動接受而無反饋。"
+
+#. label for 'Sug' pattern key
+#: src/modules/AddOnCreator.rb:501
+msgid "Suggested patterns"
+msgstr "建議軟體集"
+
+#. label for 'Fre' pattern key
+#: src/modules/AddOnCreator.rb:511
+msgid "Freshen"
+msgstr "重新整理"
+
+#. help text for 'Fre' pattern key
+#: src/modules/AddOnCreator.rb:513
+msgid "The current pattern is only considered for installation if the pattern specified here is installed."
+msgstr "僅有已安裝這裡指定的軟體集才會考慮安裝當前軟體集。"
+
+#. label for 'Ext' pattern key
+#: src/modules/AddOnCreator.rb:523
+msgid "Extends"
+msgstr "擴展"
+
+#. label for 'Inc' pattern key
+#: src/modules/AddOnCreator.rb:529
+msgid "Includes"
+msgstr "包含"
+
+#. label for 'Exnh pattern key
+#: src/modules/AddOnCreator.rb:535
+msgid "Enhanced patterns"
+msgstr "擴展軟體集"
+
+#. label for 'Pcn' pattern key
+#: src/modules/AddOnCreator.rb:541
+msgid "Conflicting packages"
+msgstr "有衝突的軟體包"
+
+#. label for 'Pob' pattern key
+#: src/modules/AddOnCreator.rb:547
+msgid "Obsolete packages"
+msgstr "淘汰的軟體包"
+
+#. label for 'Pfr' pattern key
+#: src/modules/AddOnCreator.rb:553
+msgid "Freshened packages"
+msgstr "已重新整理的的軟體包"
+
+#. label for 'Psp' pattern key
+#: src/modules/AddOnCreator.rb:559
+msgid "Supplemented packages"
+msgstr "補充的軟體包"
+
+#. label for 'Pen' pattern key
+#: src/modules/AddOnCreator.rb:565
+msgid "Enhanced packages"
+msgstr "增強的軟體包"
+
+#. help text for 'Des' key
+#: src/modules/AddOnCreator.rb:581
+msgid "Multiple line package description."
+msgstr "多行軟體包描述。"
+
+#. help text for 'Sum' key
+#: src/modules/AddOnCreator.rb:591
+msgid "The package summary (label), a one line description of the package."
+msgstr "軟體包摘要（標籤），軟體包的單行描述。"
+
+#. label for 'Ins' key
+#: src/modules/AddOnCreator.rb:599
+msgid "Installation Notification"
+msgstr "安裝通知"
+
+#. help text for 'Ins' key
+#: src/modules/AddOnCreator.rb:601
+msgid "An informal message shown to the user if the package is selected, such as a test version warning or a commercial license."
+msgstr "選擇軟體包時向使用者顯示的非正式訊息，例如測試版本警告或商業許可。"
+
+#. label for 'Del' key
+#: src/modules/AddOnCreator.rb:608
+msgid "Deletion Notification"
+msgstr "刪除通知"
+
+#. help text for 'Del' key
+#: src/modules/AddOnCreator.rb:610
+msgid "An informal message shown to the user if the package is selected for deletion, such as a warning that the system is unusable without the package."
+msgstr "選擇要刪除的軟體包時向使用者顯示的非正式訊息，例如缺少了該軟體包系統將無法使用的警告。"
+
+#. label for 'Eul' key
+#: src/modules/AddOnCreator.rb:617
+msgid "EULA"
+msgstr "終端使用者許可協議"
+
+#. help text for 'Eul' key
+#: src/modules/AddOnCreator.rb:619
+msgid "Text of the EULA. This text is displayed before the package installation. If the user does not accept the EULA, the package is not installed."
+msgstr "終端使用者許可協議(EULA)的正文，在安裝軟體包前會顯示。如果使用者不接受 EULA，軟體包就不會被安裝。"
+
+#. label of key
+#: src/modules/AddOnCreator.rb:660
+msgid "Products that must be installed"
+msgstr "必須安裝的產品"
+
+#. help text for 'REQUIRES' key
+#: src/modules/AddOnCreator.rb:662
+msgid "<p>Resolvables that must be installed on the system to meet product requirements.</p>"
+msgstr "<p>必須安裝在系統上以滿足產品需要的元件。</p>"
+
+#. label of PROVIDES key
+#: src/modules/AddOnCreator.rb:670
+msgid "Provided products"
+msgstr "提供的產品"
+
+#. help text for 'PROVIDES' key
+#: src/modules/AddOnCreator.rb:672
+msgid "Capabilities this product provides. They can be used to match <b>requires</b> from others."
+msgstr "此產品提供的功能。它們可以用來匹配其它產品的 <b>需要</b>。"
+
+#. label of 'CONFLICTS' key
+#: src/modules/AddOnCreator.rb:680
+msgid "Conflicting products"
+msgstr "衝突的產品"
+
+#. help text for 'CONFLICTS' key
+#: src/modules/AddOnCreator.rb:682
+msgid "This resolvable cannot be installed if the specified resolvable or one that provides the capability is installed."
+msgstr "如果指定元件或提供該功能的元件已安裝，則不能安裝該元件。"
+
+#. label of 'OBSOLETES' key
+#: src/modules/AddOnCreator.rb:690
+msgid "Products made obsolete"
+msgstr "已淘汰的產品"
+
+#. help text for 'OBSOLETES' key
+#: src/modules/AddOnCreator.rb:692
+msgid "When this resolvable is installed, it uninstalls any other resolvable with a name matching this keyword."
+msgstr "安裝該元件時，將解除安裝名稱與該關鍵字匹配的任何其他元件。"
+
+#. label of 'RECOMMENDS' key
+#: src/modules/AddOnCreator.rb:700
+msgid "Recommended products"
+msgstr "推薦的產品"
+
+#. help text for 'RECOMMENDS' key
+#: src/modules/AddOnCreator.rb:702
+msgid "A weak version of <b>requires</b>. An attempt is made to fulfill <b>RECOMMENDS</b>, but they are silently ignored if no match is possible."
+msgstr "<b>REQUIRES</b> 的較弱版本。會嘗試滿足 <b>RECOMMENDS</b>，但如果無匹配，它們將被忽略而無反饋。"
+
+#. label of 'SUGGESTS' key
+#: src/modules/AddOnCreator.rb:710
+msgid "Suggested products"
+msgstr "建議的產品"
+
+#. table item label
+#: src/modules/AddOnCreator.rb:725
+msgid "The URL for release notes RPM"
+msgstr "釋出說明 RPM 的 URL"
+
+#. table item label
+#: src/modules/AddOnCreator.rb:730
+msgid "Product description"
+msgstr "產品描述"
+
+#. table item label
+#: src/modules/AddOnCreator.rb:740
+msgid "Product summary"
+msgstr "產品摘要"
+
+#. table item label
+#: src/modules/AddOnCreator.rb:745
+msgid "Product line"
+msgstr "產品行"
+
+#. help text for 'productline' key
+#: src/modules/AddOnCreator.rb:747
+msgid "A short name for the product, which does not change between service packs and versions."
+msgstr "產品的短名稱，該名稱不隨服務包或版本號變化而變化。"
+
+#. table item label
+#: src/modules/AddOnCreator.rb:754
+msgid "Update repository key"
+msgstr "更新源金鑰"
+
+#. table item label
+#: src/modules/AddOnCreator.rb:759
+msgid "Type of media"
+msgstr "介質類型"
+
+#. help text for media type
+#: src/modules/AddOnCreator.rb:761
+msgid "Type of media that will be used for target product. Possible values are: cd, ftp, dvd5, dvd9."
+msgstr "介質類型將用於目標產品。可用的值有：cd，ftp，dvd5,dvd9。"
+
+#. table item label
+#: src/modules/AddOnCreator.rb:768
+msgid "Product flavor"
+msgstr "產品類型"
+
+#. help text for media type
+#: src/modules/AddOnCreator.rb:770
+msgid "Description of the flavor or variant of a product, e.g. DVD, FTP, Live"
+msgstr "產品類型或產品種類的描述，例如 DVD，FTP，Live"
+
+#. AddOnCreator Build dialog caption
+#: src/modules/AddOnCreator.rb:1694
+msgid "Generating Product Data"
+msgstr "生成產品資料"
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:1698
+msgid "Find package directories"
+msgstr "查找軟體包目錄"
+
+#. Progress step
+#: src/modules/AddOnCreator.rb:1702
+msgid "Looking for package directories..."
+msgstr "正在搜索軟體包目錄..."
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:1709
+msgid "Check package architectures"
+msgstr "檢查軟體包架構"
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:1711
+msgid "Generate content file defaults"
+msgstr "生成內容檔案預設值"
+
+#. Progress step
+#: src/modules/AddOnCreator.rb:1718
+msgid "Checking package architectures..."
+msgstr "正在檢查軟體包架構..."
+
+#. Progress step
+#: src/modules/AddOnCreator.rb:1720
+msgid "Generating content file defaults..."
+msgstr "正在生成內容檔案預設值..."
+
+#. Progress stage
+#. Progress step
+#: src/modules/AddOnCreator.rb:1728 src/modules/AddOnCreator.rb:1735
+msgid "Generate package descriptions"
+msgstr "生成軟體包描述"
+
+#. help text
+#: src/modules/AddOnCreator.rb:1746
+msgid "<b>Wait while generating data for add-on...</b><br/>\n"
+msgstr "<b>生成附加產品的資料，請等待...</b><br>\n"
+
+#. error report
+#: src/modules/AddOnCreator.rb:2730
+msgid ""
+"Failed to install obs-productconverter package.\n"
+"Release package will not be generated."
+msgstr ""
+"無法安裝 obs-productconverter 軟體包。\n"
+"將不會生成發行包。"
+
+#. error popup
+#: src/modules/AddOnCreator.rb:2923
+msgid ""
+"Build of release package failed with\n"
+"'%1'."
+msgstr ""
+"發行包編譯失敗，失敗資訊：\n"
+"'%1'。"
+
+#. error label
+#: src/modules/AddOnCreator.rb:3283
+msgid "Signing of the product failed."
+msgstr "簽署產品失敗。"
+
+#. checkbox label
+#: src/modules/AddOnCreator.rb:3301
+msgid "Try again with different passphrase"
+msgstr "換一個不同的口令再重試"
+
+#. ask for pw now %1 is key id, %2 user name
+#: src/modules/AddOnCreator.rb:3857
+msgid ""
+"Enter passphrase for GPG key %1\n"
+"(%2)"
+msgstr ""
+"輸入 GPG 金鑰 %1 的口令字\n"
+"(%2)"
+
+#. AddOnCreator Build dialog caption
+#: src/modules/AddOnCreator.rb:3879
+msgid "Creating the Add-On"
+msgstr "創建附加產品"
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:3883
+msgid "Write the content file"
+msgstr "寫入內容檔案"
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:3885
+msgid "Create the structure of the add-on"
+msgstr "創建附加產品結構"
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:3887
+msgid "Write the patterns"
+msgstr "寫入軟體集"
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:3889
+msgid "Copy the packages"
+msgstr "複製軟體包"
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:3891
+msgid "Generate the release package"
+msgstr "生成發行包"
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:3893
+msgid "Create MD5 sums"
+msgstr "創建 MD5 與"
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:3895
+msgid "Sign resulting product"
+msgstr "為最終產品簽名"
+
+#. Progress step
+#: src/modules/AddOnCreator.rb:3899
+msgid "Writing the content file..."
+msgstr "正在寫入內容檔案..."
+
+#. Progress step
+#: src/modules/AddOnCreator.rb:3901
+msgid "Creating the structure of the add-on..."
+msgstr "正在創建附加產品結構..."
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:3903
+msgid "Writing the patterns..."
+msgstr "正在寫入軟體集..."
+
+#. Progress step
+#: src/modules/AddOnCreator.rb:3905
+msgid "Copying the packages..."
+msgstr "正在複製軟體包..."
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:3907
+msgid "Generating the release package..."
+msgstr "正在生成發行包..."
+
+#. Progress step
+#: src/modules/AddOnCreator.rb:3909
+msgid "Creating MD5 sums..."
+msgstr "正在創建 MD5 與..."
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:3911
+msgid "Signing resulting product..."
+msgstr "正在為最終產品簽名..."
+
+#. Progress stage
+#: src/modules/AddOnCreator.rb:3916
+msgid "Create ISO image"
+msgstr "創建 ISO 映像"
+
+#. Progress step
+#: src/modules/AddOnCreator.rb:3918
+msgid "Creating ISO image..."
+msgstr "正在創建 ISO 映像..."
+
+#. Progress finished
+#: src/modules/AddOnCreator.rb:3921
+msgid "Finished"
+msgstr "已完成"
+
+#. Error message (do not translate 'content'
+#: src/modules/AddOnCreator.rb:3957
+msgid "Cannot write content file."
+msgstr "無法寫入內容檔案。"
+
+#. Error message
+#: src/modules/AddOnCreator.rb:3978
+msgid "Cannot create the output directory structure."
+msgstr "無法創建輸出目錄結構。"
+
+#~ msgid "openSUSE 11.&4"
+#~ msgstr "OpenSUSE 11.4(&4)"
+
+#~ msgid ""
+#~ "<p>Resolvables that must be installed on the system to meet the needs of this product.</p>\n"
+#~ "<p>This is a space-separated list of names or <tt>kind:name</tt> pairs optionally followed by version constraints. Just a name denotes a dependency to a package, such as <tt>sles-release</tt> or <tt>sles-release-10</tt>. The kind can be package, pattern, or product, such as <tt>pattern:basesystem</tt>.</p>"
+#~ msgstr ""
+#~ "<p>為滿足該產品需要，必須在系統上安裝的元件。</p>\n"
+#~ "<p>這是用空格間隔的名稱列表或<tt>種類:名稱</tt>對列表，後面可以跟版本限制。若僅有名稱，則表示是包的附屬，如 <tt>sles-release</tt> 或 <tt>sles-release-10</tt>。種類可以是包、模式或產品，如 <tt>pattern:basesystem</tt>。</p>"
+
+#~ msgid "Resolvables needed before installation"
+#~ msgstr "安裝前需要的元件"
+
+#~ msgid "Resolvables provided"
+#~ msgstr "提供的元件"
+
+#~ msgid "Capabilities this product provides. They can be used to match <b>REQUIRES</b> from others. Every resolvable has a provides by default- its own name and edition. For example, package <i>bar-1.42-1</i> provides the capability <tt>bar = 1.42-1</tt>."
+#~ msgstr "該產品提供的功能。它們可用於匹配其他軟體包的 <b>需要</b>。每個可解析項都有其默認提供者 － 其自身名稱與版本。例如，軟體包 <i>bar-1.42-1</i> 提供功能 <tt>bar = 1.42-1</tt>。"
+
+#~ msgid "Conflicting resolvables"
+#~ msgstr "元件有衝突"
+
+#~ msgid "Resolvables made obsolete"
+#~ msgstr "已過時的元件"
+
+#~ msgid "Recommended resolvables"
+#~ msgstr "推薦的元件"
+
+#~ msgid "Suggested resolvables"
+#~ msgstr "推薦的元件"
+
+#~ msgid "Supplemented resolvables"
+#~ msgstr "補充元件"
+
+#~ msgid "A reverse <b>RECOMMENDS</b>. This product is installed if the specified capability is provided by an installed resolvable. The dependency resolver installs it. Uninstalling it is silently accepted."
+#~ msgstr "相反的 <b>RECOMMENDS</b>。如果安裝的元件提供了指定功能，將安裝該產品。依賴關係解析程式將安裝它。解除安裝它的指令被接受時無反饋。"
+
+#~ msgid "Enhanced resolvables"
+#~ msgstr "增強元件"
+
+#~ msgid "A reverse <b>SUGGESTS</b>. This product can be installed if this capability is provided by an installed resolvable. It is just a hint for an application. For example, <i>SuSEplugger</i> can suggest packages for installation if specific hardware is found."
+#~ msgstr "相反的 <b>SUGGESTS</b>。如果安裝的元件提供了該功能，可安裝該產品。這隻是應用提示。例如，如果找到了特定硬體，<i>SuSEplugger</i> 會建議安裝包。"
+
+#~ msgid "SUSE &Linux Enterprise Server 10 SP2"
+#~ msgstr "SUSE &Linux Enterprise Server 10 SP2"
+
+#~ msgid "SUSE L&inux Enterprise Desktop 10 SP2"
+#~ msgstr "SUSE L&inux Enterprise Desktop 10 SP2"
+
+#~ msgid "S&USE Linux Enterprise 10 SP2"
+#~ msgstr "S&USE Linux Enterprise 10 SP2"
+
+#~ msgid "Product Definition (content File)"
+#~ msgstr "產品定義（內容檔案）"
+
+#~ msgid "Name of the add-on product"
+#~ msgstr "附加產品的名稱"
+
+#~ msgid "Product-specific capabilities."
+#~ msgstr "特定於產品的功能。"
+
+#~ msgid "Short label"
+#~ msgstr "短標籤"
+
+#~ msgid "Distribution ID (vendor specific). The value of the keyword must not contain spaces. Only letters, numbers, and the characters \".~_-\" are allowed."
+#~ msgstr "釋出 ID（供應商專用）。該關鍵字的值不能含有空格。僅允許使用字母、數字與字元“.~_-”。"
+
+#~ msgid "Distribution version"
+#~ msgstr "釋出版本"
+
+#~ msgid "Distribution version (vendor specific)."
+#~ msgstr "釋出版本（供應商專用）。"
+
+#~ msgid "Minimum architecture base supported"
+#~ msgstr "支援的最低基礎體系結構"
+
+#~ msgid "Minimum architecture base supported by this product. The default is the base architecture if no matching <b>ARCH.base</b> is found."
+#~ msgstr "該產品支援的最低基礎體系結構。如果沒找到匹配的 <b>ARCH.base</b>，默認是基礎體系結構。"
+
+#~ msgid "Allowed architectures"
+#~ msgstr "允許的體系結構"
+
+#~ msgid "&ARCH"
+#~ msgstr "存檔(&A)"
+
+#~ msgid "&Base Architecture"
+#~ msgstr "基礎體系結構(&B)"
+

@@ -1,0 +1,4616 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Eric Shan <ericalways@gmail.com>, 2008.
+# Thruth Wang <lihaow@opera.com>, 2007, 2008, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: printer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:40+0200\n"
+"PO-Revision-Date: 2013-01-31 23:09+0800\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the printer module
+#: src/clients/printer.rb:54
+msgid "Configuration of printer"
+msgstr "列印機配置"
+
+#. Write the AutoYaST related printer settings to the system
+#. according to the Printer::autoyast_printer_settings_import map
+#. which was stored by a previous call of the Import function by AutoYaST
+#. or reset to an empty map by a previous call of the Reset function.
+#: src/clients/printer_auto.rb:244
+msgid "Error: Failed to write /etc/cups/cupsd.conf"
+msgstr "錯誤：無法寫入 /etc/cups/cupsd.conf"
+
+#: src/clients/printer_auto.rb:263
+msgid "Error: Failed to write /etc/cups/client.conf"
+msgstr "錯誤：無法寫入 /etc/cups/client.conf"
+
+#. which is added to its "Summary" text for AutoYaST
+#. where %1 is replaced by the file name which cannot be read.
+#: src/clients/printer_auto.rb:301
+msgid "Warning: Cannot read %1 (file may not exist)."
+msgstr "警告：無法讀取 %1 (檔案可能不存在)。"
+
+#. which is added to its "Summary" text for AutoYaST
+#. where %1 is replaced by the file name which cannot be read.
+#: src/clients/printer_auto.rb:338
+msgid "Error: Failed to read %1 (possibly empty file)."
+msgstr "錯誤：無法讀取 %1 (檔案可能為空)。"
+
+#. which is added to its "Summary" text for AutoYaST
+#. where %1 is replaced by the file name.
+#: src/clients/printer_auto.rb:383
+msgid "Warning: Failed to backup %1 as %1.yast2save"
+msgstr "警告：無法備份 %1 為 %1.yast2save"
+
+#. which is added to its "Summary" text for AutoYaST
+#. where %1 is replaced by the file name.
+#: src/clients/printer_auto.rb:411
+msgid "Warning: Failed to backup %1 as %1.yast2orig"
+msgstr "警告：無法備份 %1 為 %1.yast2orig"
+
+#. Propose configuration for each local printer:
+#. Check if the packages cups-client and cups are installed
+#. and skip the automated queue setup if one of them is missing, see
+#. https://bugzilla.novell.com/show_bug.cgi?id=445719#c13
+#. If cups-client is missing, it would run into an endless sequence of errors.
+#. If cups is missing, there can be no local running cupsd which is
+#. mandatory to set up local print queues.
+#: src/clients/printer_proposal.rb:92
+msgid "Cannot configure printing (required package cups-client is not installed)."
+msgstr "無法配置列印 (未安裝需要的 cups-client 軟體包)。"
+
+#: src/clients/printer_proposal.rb:102
+msgid "Cannot configure local printers (required package cups is not installed)."
+msgstr "無法配置本地列印機 (未安裝需要的軟體包 cups)。"
+
+#. Skip automated queue setup when it is a client-only config:
+#: src/clients/printer_proposal.rb:117
+msgid "No local printer accessible (using remote CUPS server '%1' for printing)."
+msgstr "沒有可訪問的本地列印機 (使用遠端 CUPS 伺服器 %1 列印)。"
+
+#. Wait half a minute for a new started cupsd:
+#. Wait half a minute for a new started cupsd is necessary because
+#. when a client-only config is switched to a "get Browsing info" config
+#. the BrowseInterval in cupsd.conf on remote CUPS servers is by default 30 seconds
+#. so that the local cupsd should listen at least 31 seconds to get Browsing info
+#. before e.g. the Overview dialog can be shown with the right current queues.
+#: src/clients/printer_proposal.rb:162 src/modules/Printerlib.rb:356
+msgid ""
+"Started the CUPS daemon.\n"
+"Waiting half a minute for the CUPS daemon to get ready to operate...\n"
+msgstr ""
+"CUPS 守護精靈已啟動。\n"
+"等待半分鐘，讓它準備好接受操作指令...\n"
+
+#. for the very first time (e.g. on a new installed system)
+#. until the cupsd is actually ready to operate.
+#. E.g. because parsing of thousands of PPDs may need much time.
+#. Therefore enforce waiting one minute now.
+#. (Plain busy message without title.)
+#. for the very first time (e.g. on a new installed system)
+#. until the cupsd is actually ready to operate.
+#. E.g. because parsing of thousands of PPDs may need much time.
+#. Therefore enforce waiting one minute now.
+#. (Plain busy message without title.)
+#: src/clients/printer_proposal.rb:176 src/modules/Printerlib.rb:372
+msgid ""
+"The CUPS daemon is not yet accessible.\n"
+"Waiting one minute so that it is ready to operate..."
+msgstr ""
+"尚不能訪問 CUPS 守護精靈。\n"
+"等待一分鐘讓它準備好接受操作指令..."
+
+#. Skip automated queue setup when the cupsd is not accessible up to now.
+#. A special case is when the cupsd does not listen on the official IANA IPP port (631).
+#. Then Printerlib::GetAndSetCupsdStatus("") returns false because it calls
+#. "lpstat -h localhost -r" which fails ("-h localhost:port" would have to be used).
+#. The YaST printer module does not support when the cupsd listens on a non-official port
+#. so that also in this special case no automated queue setup is done.
+#: src/clients/printer_proposal.rb:196
+msgid "Cannot configure local printers (no local cupsd accessible)."
+msgstr "無法配置本地列印機 (沒有可訪問的本地 cupsd)。"
+
+#. with an empty URI (i.e. no need to test this here)
+#. but Printer::ConnectionItems adds trailing spaces
+#. because the current YaST UI has almost no additional
+#. space between table columns:
+#: src/clients/printer_proposal.rb:223
+msgid "No local printer detected."
+msgstr "未檢測到本地列印機。"
+
+#. Since CUPS 1.4 the new DirtyCleanInterval directive controls
+#. the delay when cupsd updates config files (see basicadd.ycp).
+#. Since CUPS 1.4 the new DirtyCleanInterval directive controls the delay when cupsd updates config files:
+#. Since CUPS 1.4 the new DirtyCleanInterval directive controls the delay when cupsd updates config files:
+#: src/clients/printer_proposal.rb:340 src/include/printer/basicadd.rb:423
+#: src/include/printer/basicadd.rb:814
+msgid "Creating New Printer Setup"
+msgstr "正在創建新的列印機設定"
+
+#: src/clients/printer_proposal.rb:343 src/include/printer/basicadd.rb:426
+#: src/include/printer/basicadd.rb:817
+msgid "New Printer Configuration not yet Stored in the System"
+msgstr "新列印機配置還未儲存到系統中"
+
+#. Explanation details of a Popup::ErrorDetails.
+#: src/clients/printer_proposal.rb:347
+msgid "This may result broken printer configurations."
+msgstr "這可能造成列印機配置損壞。"
+
+#. has almost no additional space between table columns:
+#: src/clients/printer_proposal.rb:389
+msgid "Found existing configuration"
+msgstr "找到已有配置"
+
+#: src/clients/printer_proposal.rb:397
+msgid "Created configuration"
+msgstr "已創建的配置"
+
+#: src/clients/printer_proposal.rb:410
+msgid "No local printer configured."
+msgstr "沒有配置好的本地列印機。"
+
+#. Create titles:
+#: src/clients/printer_proposal.rb:438
+msgid "Printer"
+msgstr "列印機"
+
+#. Menu title for Printer in proposals
+#: src/clients/printer_proposal.rb:440
+msgid "&Printer"
+msgstr "列印機(&P)"
+
+#. CheckBox to trigger an automatic configuration of local connected printers
+#. by calling the YaST printer module autoconfig functionality right now.
+#: src/include/printer/autoconfig.rb:49
+msgid "&Do an automatic configuration of local connected printers now"
+msgstr "立即對本地連線上的列印機進行自動配置(&D)"
+
+#. Header for a dialog section where the user can
+#. specify if USB printers are configured automatically:
+#: src/include/printer/autoconfig.rb:61
+msgid "Specify if automatic USB printer configuration should happen when plug in"
+msgstr "指定是否在插入 USB 列印機時進行自動配置"
+
+#. CheckBox for automatic configuration of USB printers
+#. by installing or removing the RPM package udev-configure-printer.
+#. Do not change or translate "udev-configure-printer", it is a RPM package name.
+#: src/include/printer/autoconfig.rb:75
+msgid "&Use the package udev-configure-printer for automatic USB printer configuration"
+msgstr "使用 udev-configure-printer 軟體包進行自動 USB 列印機配置(&U)"
+
+#. where %1 will be replaced by the server name:
+#. where %1 will be replaced by the server name:
+#. where %1 will be replaced by the server name:
+#. where %1 will be replaced by the server name:
+#. where %1 will be replaced by the server name:
+#: src/include/printer/autoconfig.rb:97 src/include/printer/overview.rb:1101
+#: src/include/printer/policies.rb:135
+#: src/include/printer/printingvianetwork.rb:463
+#: src/include/printer/sharing.rb:639
+msgid "Disable Remote CUPS Server '%1'"
+msgstr "禁用遠端 CUPS 伺服器 '%1'"
+
+#. PopupYesNoHeadline headline
+#. PopupYesNoHeadline body:
+#: src/include/printer/autoconfig.rb:101
+msgid "A remote CUPS server setting conflicts with automatic configuration of printers for the local system."
+msgstr "一個遠端 CUPS 伺服器設定與本地系統的列印機自動配置衝突。"
+
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#. Remove the 'ServerName' entry in /etc/cups/client.conf:
+#: src/include/printer/autoconfig.rb:115 src/include/printer/overview.rb:220
+#: src/include/printer/overview.rb:1118 src/include/printer/policies.rb:153
+#: src/include/printer/printingvianetwork.rb:478
+#: src/include/printer/sharing.rb:657
+msgid "Failed to remove the 'ServerName' entry in /etc/cups/client.conf"
+msgstr "從  /etc/cups/client.conf 移除 'ServerName' 項失敗"
+
+#. There is no "abort" functionality which does a sudden death of the whole module (see dialogs.ycp).
+#. Unfortunately when the YaST package installer is run via Printerlib::TestAndInstallPackage
+#. it leaves a misused "abort" button labeled "Skip Autorefresh" with WidgetID "`abort"
+#. so that this leftover "abort" button must be explicitly hidden here:
+#: src/include/printer/autoconfig.rb:188
+msgid "Failed to install udev-configure-printer."
+msgstr "安裝 udev-configure-printer 失敗。"
+
+#: src/include/printer/autoconfig.rb:201
+msgid "Failed to remove udev-configure-printer."
+msgstr "移除 udev-configure-printer 失敗。"
+
+#. Call the YaST printer module autoconfig functionality:
+#: src/include/printer/autoconfig.rb:247
+msgid "The automated printer configuration was in vain."
+msgstr "自動列印機配置無效。"
+
+#: src/include/printer/autoconfig.rb:252
+msgid "Automated printer configuration results"
+msgstr "自動列印機配置結果"
+
+#. BasicAddDialog dialog
+#. @return dialog result
+#. BasicModifyDialog dialog
+#. @return dialog result
+#: src/include/printer/basicadd.rb:48 src/include/printer/basicmodify.rb:51
+msgid "any model"
+msgstr "任何型號"
+
+#. Caption for the "Add Printer" dialog (BasicAddDialog):
+#: src/include/printer/basicadd.rb:51
+msgid "Add New Printer Configuration"
+msgstr "添加新列印機配置"
+
+#. to avoid that the full list of thousands of PPDs is shown automatically
+#. because it can take a very long time until the user can proceed:
+#. to avoid that the full list of thousands of PPDs is shown automatically
+#. because it can take a very long time until the user can proceed:
+#. to avoid that the full list of thousands of PPDs is shown automatically
+#. because it can take a very long time until the user can proceed:
+#. to avoid that the full list of thousands of PPDs is shown automatically
+#. because it can take a very long time until the user can proceed:
+#: src/include/printer/basicadd.rb:81 src/include/printer/basicadd.rb:536
+#: src/include/printer/basicmodify.rb:330
+#: src/include/printer/basicmodify.rb:994
+msgid "Enter your printer model here."
+msgstr "輸入列印機型號。"
+
+#: src/include/printer/basicadd.rb:87
+msgid "Specify the Connection"
+msgstr "指定連線"
+
+#. Label of a PushButton to restart printer autodetection
+#. to show more available printer connections
+#. in the Table with a list of printer connections:
+#. Label of a PushButton to restart printer autodetection
+#. to show more available printer connections
+#. in the Table with a list of printer connections:
+#: src/include/printer/basicadd.rb:94 src/include/printer/basicmodify.rb:343
+msgid "&Detect More"
+msgstr "檢測更多(&D)"
+
+#. Label of a PushButton to go to the "Connection Wizard"
+#. to specify the printer connection individually:
+#. Label of a PushButton to go to the "Connection Wizard"
+#. to specify the printer connection individually:
+#. Label of a PushButton to go to the "Connection Wizard"
+#. to specify the printer connection individually:
+#: src/include/printer/basicadd.rb:100 src/include/printer/basicmodify.rb:349
+#: src/include/printer/printingvianetwork.rb:195
+msgid "Connection &Wizard"
+msgstr "連線嚮導(&W)"
+
+#. Printer model name:
+#. Printer model name:
+#. Printer model name:
+#. Printer model name:
+#. Printer model name:
+#: src/include/printer/basicadd.rb:116 src/include/printer/basicadd.rb:456
+#: src/include/printer/basicmodify.rb:365
+#: src/include/printer/basicmodify.rb:893
+#: src/include/printer/connectionwizard.rb:545
+msgid "Model"
+msgstr "型號"
+
+#. Header of a Table column with a list of printer connections.
+#. Connection of the printer (e.g. via USB or via parallel port):
+#. Header of a Table column with a list of printer connections.
+#. Connection of the printer (e.g. via USB or via parallel port):
+#. Header of a Table column with a list of printer connections.
+#. Connection of the printer (e.g. via USB or via parallel port):
+#. Header of a Table column with a list of printer connections.
+#. Connection of the printer (e.g. via USB or via parallel port):
+#. Header of a Table column with a list of printer connections.
+#. Connection of the printer (e.g. via USB or via parallel port):
+#: src/include/printer/basicadd.rb:119 src/include/printer/basicadd.rb:459
+#: src/include/printer/basicmodify.rb:336
+#: src/include/printer/basicmodify.rb:368
+#: src/include/printer/basicmodify.rb:896
+#: src/include/printer/connectionwizard.rb:548
+msgid "Connection"
+msgstr "連線"
+
+#. Header of a Table column with a list of printer connections.
+#. Additional description of the printer or its particular connection:
+#. Header of a Table column with a list of printer connections.
+#. Additional description of the printer or its particular connection:
+#. Header of a Table column with a list of printer connections.
+#. Additional description of the printer or its particular connection:
+#. Header of a Table column with a list of printer connections.
+#. Additional description of the printer or its particular connection:
+#. Header of a Table column with a list of printer connections.
+#. Additional description of the printer or its particular connection:
+#. Header of a Table column with a list of print queues.
+#. Print queue description (e.g. model or driver):
+#: src/include/printer/basicadd.rb:122 src/include/printer/basicadd.rb:462
+#: src/include/printer/basicmodify.rb:371
+#: src/include/printer/basicmodify.rb:899
+#: src/include/printer/connectionwizard.rb:551
+#: src/include/printer/overview.rb:86
+msgid "Description"
+msgstr "描述"
+
+#. Header of a Table column with a list of printer connections.
+#: src/include/printer/basicadd.rb:131
+msgid "Find and Assign a Driver"
+msgstr "查找並指定驅動"
+
+#. Label of a PushButton to search a list for a search string
+#. and then show the search result:
+#. Label of a PushButton to search a list for a search string
+#. and then show the search result:
+#. Label of a PushButton to search a list for a search string
+#. and then show the search result:
+#. Label of a PushButton to search a list for a search string
+#. and then show the search result:
+#: src/include/printer/basicadd.rb:147 src/include/printer/basicadd.rb:316
+#: src/include/printer/basicmodify.rb:407
+#: src/include/printer/basicmodify.rb:557
+msgid "&Search for"
+msgstr "搜索(&S)"
+
+#. Label of a PushButton to find and show more available printer drivers:
+#. Label of a PushButton to find and show more available printer drivers:
+#: src/include/printer/basicadd.rb:168 src/include/printer/basicmodify.rb:428
+msgid "&Find More"
+msgstr "查找更多(&F)"
+
+#. Label of a PushButton to go to the "Add Driver" dialog
+#. to install or remove driver packages (and perhaps download it before):
+#. Label of a PushButton to go to the "Add Driver" dialog
+#. to install or remove driver packages (and perhaps download it before):
+#: src/include/printer/basicadd.rb:174 src/include/printer/basicmodify.rb:434
+msgid "Driver &Packages"
+msgstr "驅動包(&P)"
+
+#. By default there is no UserInput()
+#. if only something was selected in the SelectionBox
+#. (without clicking additionally a button)
+#. but the notify option forces UserInput() in this case:
+#. Body of a Popup::AnyMessage when no driver was selected:
+#. Body of a Popup::AnyMessage when no driver was selected:
+#. Body of a Popup::AnyMessage when no driver was selected:
+#. because the first entry in a SelectionBox is always preselected in the GUI
+#. (it does not help to have all items in a SelectionBox with 'false' as third argument).
+#. Do not have this dummy entry preselected (i.e. no 'true' as a third argument)
+#. because in the BasicModifyDialog the currently used driver is additionally prepended
+#. and then the currently used driver must be preselected by default because
+#. the currently used driver is then the very first entry in the SelectionBox.
+#. because the first entry in a SelectionBox is always preselected in the GUI
+#. (it does not help to have all items in a SelectionBox with 'false' as third argument).
+#. Do not have this dummy entry preselected (i.e. no 'true' as a third argument)
+#. because in the BasicModifyDialog the currently used driver is additionally prepended
+#. and then the currently used driver must be preselected by default because
+#. the currently used driver is then the very first entry in the SelectionBox.
+#: src/include/printer/basicadd.rb:187 src/include/printer/basicadd.rb:356
+#: src/include/printer/basicadd.rb:588 src/include/printer/basicmodify.rb:1082
+#: src/modules/Printer.rb:1960 src/modules/Printer.rb:1986
+msgid "Select a driver."
+msgstr "選擇一個驅動。"
+
+#. If the currently used driver is replaced by another driver,
+#. show the same content as in the BasicAddDialog to set the default paper size:
+#: src/include/printer/basicadd.rb:193 src/include/printer/basicmodify.rb:271
+msgid "Default paper size (if printer and driver supports it)"
+msgstr "默認紙張大小(若列印機與驅動都支援)"
+
+#. Header of a TextEntry to enter the queue name:
+#. Header of a TextEntry to enter the queue name:
+#: src/include/printer/basicadd.rb:220 src/include/printer/basicadd.rb:574
+msgid "Set Arbitrary &Name"
+msgstr "設定專有名稱(&N)"
+
+#. CheckBox to set a local print queue to be the default queue:
+#. CheckBox to set a local print queue to be the default queue:
+#: src/include/printer/basicadd.rb:229 src/include/printer/basicmodify.rb:478
+msgid "&Use as Default"
+msgstr "用作默認(&U)"
+
+#. to set up HP printers:
+#: src/include/printer/basicadd.rb:241
+msgid "Alternative setup for HP printers:"
+msgstr "惠普列印機的附加設定："
+
+#. Label of a PushButton to run HPLIP's printer setup tool 'hp-setup'.
+#. Do not change or translate "hp-setup", it is a program name:
+#: src/include/printer/basicadd.rb:249
+msgid "Run &hp-setup"
+msgstr "運行 hp-setup (&H)"
+
+#. printer setup tool 'hp-setup' runs in English language.
+#. Do not change or translate "hp-setup", it is a program name:
+#: src/include/printer/basicadd.rb:256
+msgid "hp-setup runs in English language"
+msgstr "以英文語境運行 hp-setup"
+
+#. nor a driver was selected:
+#. Any queue or class can be tested if it is in "ready" state:
+#. The URI scheme is the first word up to the ':' character in the URI:
+#. Invalidate Printer::current_device_uri so that the Printer::ConnectionItems function
+#. does not set a valid Printer::selected_connections_index so that the BasicAddDialog
+#. does not preselect a connection so that the first connection in the list is preselected
+#. (via Table widget fallback) which is still better than an arbitrary preselected entry:
+#: src/include/printer/basicadd.rb:337 src/include/printer/overview.rb:593
+#: src/include/printer/overview.rb:679 src/include/printer/overview.rb:1153
+msgid "Nothing Selected"
+msgstr "未選擇任何項"
+
+#. Body of a Popup::AnyMessage when neither a connection
+#. nor a driver was selected:
+#: src/include/printer/basicadd.rb:340
+msgid "Select a connection and then assign a driver."
+msgstr "選定一個連線之後指定一款驅動。"
+
+#. exists in the connection_selection table because the Printer::ConnectionItems function
+#. sets Printer::selected_connections_index != -1 only if such an item exists in the table
+#. so that this item can be preselected:
+#. exists in the connection_selection table because the Printer::ConnectionItems function
+#. sets Printer::selected_connections_index != -1 only if such an item exists in the table
+#. so that this item can be preselected:
+#: src/include/printer/basicadd.rb:346 src/include/printer/basicadd.rb:496
+#: src/include/printer/basicmodify.rb:936
+msgid "No Connection Selected"
+msgstr "沒有選定連線"
+
+#. Body of a Popup::AnyMessage when no connection was selected:
+#. Body of a Popup::AnyMessage when no connection was selected:
+#. Body of a Popup::AnyMessage when no connection was selected:
+#: src/include/printer/basicadd.rb:348 src/include/printer/basicadd.rb:498
+#: src/include/printer/basicmodify.rb:938
+msgid "Select a connection."
+msgstr "選擇一個連線。"
+
+#. the widgets to change options for the currently used driver are recreated:
+#: src/include/printer/basicadd.rb:354 src/include/printer/basicadd.rb:586
+#: src/include/printer/basicmodify.rb:1080
+msgid "No Driver Selected"
+msgstr "無選定驅動"
+
+#: src/include/printer/basicadd.rb:365
+msgid "No Queue Name"
+msgstr "無佇列名"
+
+#. Body of a Popup::AnyMessage when no queue name was entered:
+#: src/include/printer/basicadd.rb:367
+msgid "Enter a queue name."
+msgstr "輸入一個佇列名。"
+
+#: src/include/printer/basicadd.rb:377
+msgid "Invalid Queue Name"
+msgstr "無效佇列名"
+
+#. Body of a Popup::AnyMessage when a wrong queue name was entered:
+#: src/include/printer/basicadd.rb:379
+msgid "Only letters (a-z and A-Z), numbers (0-9), and the underscore '_' are allowed for the queue name."
+msgstr "佇列名中僅允許使用字母 (a-z 與 A-Z)，數字 (0-9) 與下劃線 '_' 。"
+
+#. when a queue name is changed to be valid:
+#: src/include/printer/basicadd.rb:389
+msgid "Confirm Validated Queue Name"
+msgstr "確認有效佇列名"
+
+#. Body of a Popup::ContinueCancelHeadline
+#. when a queue name was automatically changed to be valid
+#. where %1 will be replaced by the old invalid queue name
+#. and %2 will be replaced by a new valid queue name
+#: src/include/printer/basicadd.rb:395
+msgid "'%1' is invalid or it exists already. Use '%2' instead?"
+msgstr "'%1' 無效或者已經存在。使用 '%2' 替代麼？"
+
+#. Explanation details of a Popup::ErrorDetails.
+#. The 'next dialog' is the overview dialog where the printer configurations are shown
+#. which has a 'Refresh List' button to update the shown printer configurations:
+#. Explanation details of a Popup::ErrorDetails.
+#. The 'next dialog' is the overview dialog where the printer configurations are shown
+#. which has a 'Refresh List' button to update the shown printer configurations:
+#: src/include/printer/basicadd.rb:430 src/include/printer/basicadd.rb:821
+msgid "If the next dialog does not show the new printer configuration as expected, wait some time and use the 'Refresh List' button."
+msgstr "如果下一個對話方塊未如預期的顯示新列印機配置，請點選 '重新整理列表' 按鈕。"
+
+#. Only a simple message because before the RunHpsetup function was called
+#. and this function would have shown more specific messages.
+#. Do not change or translate "hp-setup", it is a program name:
+#: src/include/printer/basicadd.rb:802
+msgid "Failed to run hp-setup."
+msgstr "運行 hp-setup 失敗。"
+
+#. Title of the Basic Modify Dialog where %1 will be replaced by the queue name.
+#. The actual queue name is a system value which cannot be translated:
+#: src/include/printer/basicmodify.rb:100
+msgid "Modify %1"
+msgstr "修改 %1"
+
+#. Label of a PushButton to go to a dialog
+#. to set all available options for the printer driver
+#. which is currently used for a print queue:
+#: src/include/printer/basicmodify.rb:147
+msgid "All &Options for the Current Driver"
+msgstr "當前驅動所有選項(&O)"
+
+#. DefaultPageSize is required according to the Adobe PPD specification.
+#. Nevertheless we don't rely on correct PPDs (e.g. whatever "third-party" PPDs)
+#. and test if it really exists in the actually used PPD:
+#: src/include/printer/basicmodify.rb:224
+msgid "Default Paper Size of the Current Driver"
+msgstr "當前驅動默認紙張大小"
+
+#. Usually the id in the connection items is the matching index number in the connections list.
+#. Here the id of the current connection is set to -1 because the uri of the current connection
+#. is derived from the queues list and this uri may be not present in the connections list
+#. for example when the queue has a special non-autodetectable DeviceURI (e.g. for iPrint)
+#. or when the queue is for an USB printer which is currently not connected (e.g. a laptop user).
+#. Therefore -1 (which means "invalid index number in the connections list") is used to be safe
+#. and additionally -1 is used to distinguish when the current connection is kept
+#. or when the connection was modified (then the id would be > 0 and valid in the connections list).
+#. The current_connection item is preselected because it is the first entry in the
+#. table of connections via prepend():
+#: src/include/printer/basicmodify.rb:298
+msgid "Current Connection"
+msgstr "當前連線"
+
+#. Do not change or translate "raw", it is a technical term when no driver is used.
+#. Do not change or translate "System V style interface script", it is a technical term.
+#: src/include/printer/basicmodify.rb:315
+msgid "No driver is used (it is a 'raw' queue or a 'System V style interface script' is used)"
+msgstr "沒有使用驅動（在使用一個“原始”佇列或者“System V 風格介面指令碼”）"
+
+#: src/include/printer/basicmodify.rb:323
+msgid "Current Driver"
+msgstr "當前驅動"
+
+#. Header of a Table column with a list of printer connections.
+#: src/include/printer/basicmodify.rb:384
+msgid "Adjust Options of the Current Driver or Assign a Different Driver"
+msgstr "調整當前驅動的選項或指定一個不同的驅動"
+
+#. Label of a TextEntry for a short printer driver description (only one line):
+#: src/include/printer/basicmodify.rb:461
+msgid "Description &Text"
+msgstr "描述文字(&T)"
+
+#. Label of a TextEntry for printer location string:
+#: src/include/printer/basicmodify.rb:469
+msgid "&Location"
+msgstr "位置(&L)"
+
+#. CheckBox to set a local print queue to accept print jobs:
+#: src/include/printer/basicmodify.rb:485
+msgid "Accept Print &Jobs"
+msgstr "接受列印任務(&J)"
+
+#. CheckBox to enable printing for a local print queue:
+#: src/include/printer/basicmodify.rb:492
+msgid "&Enable Printing"
+msgstr "啟用列印(&E)"
+
+#. where %1 will be replaced by the queue name.
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#: src/include/printer/basicmodify.rb:759
+msgid "Failed to modify %1."
+msgstr "修改 %1 失敗。"
+
+#. Since CUPS 1.4 the new DirtyCleanInterval directive controls the delay when cupsd updates config files:
+#: src/include/printer/basicmodify.rb:816
+msgid "Modifying Printer Setup"
+msgstr "正在修改列印機設定"
+
+#: src/include/printer/basicmodify.rb:819
+msgid "Modified Printer Configuration not yet Stored in the System"
+msgstr "修改的列印機配置尚未儲存到系統中"
+
+#. Explanation details of a Popup::WarningDetails.
+#. The 'next dialog' is the overview dialog where the printer configurations are shown
+#. which has a 'Refresh List' button to update the shown printer configurations:
+#: src/include/printer/basicmodify.rb:823
+msgid "If the next dialog does not show the expected modifications, wait some time and use the 'Refresh List' button."
+msgstr "如果下一個對話方塊未如預期顯示修改內容，請點選 '重新整理列表' 按鈕。"
+
+#. Exit this dialog in any case:
+#. Return at least a list with only a fallback string so that the user is informed:
+#. Have the PageSize option topmost:
+#: src/include/printer/basicmodify.rb:853 src/modules/Printer.rb:2211
+#: src/modules/Printer.rb:2341
+msgid "No driver options available"
+msgstr "無可用的驅動選項"
+
+#. Body of a Popup::AnyMessage when "Driver Options" was selected:
+#: src/include/printer/basicmodify.rb:855
+msgid "Possible reasons: Nothing selected or it is a remote configuration."
+msgstr "可能原因：未選定任何項目或是遠端配置。"
+
+#. Header for a ComboBox to keep the printer model or select another manufacturer:
+#: src/include/printer/connectionwizard.rb:416
+msgid "Keep the printer model or select another &manufacturer"
+msgstr "保留列印機型號或選擇另一個生產廠商(&m)"
+
+#. Header for a ComboBox to optionally
+#. keep the printer model or select a printer manufacturer.
+#. Do not change or translate "raw", it is a technical term
+#. when no driver is used for a print queue.
+#: src/include/printer/connectionwizard.rb:432
+msgid "Keep the model or select a &manufacturer if no 'raw queue' should be set up"
+msgstr "如果不應該設定 '原始佇列‘ 的話，保留列印機型號或選擇另一個生產廠商"
+
+#. Header for a ComboBox to select the printer manufacturer:
+#: src/include/printer/connectionwizard.rb:452
+msgid "Select the printer &manufacturer"
+msgstr "選擇列印機生產廠商(&m)"
+
+#. Header for a ComboBox to optionally select the printer manufacturer.
+#. Do not change or translate "raw", it is a technical term
+#. when no driver is used for a print queue.
+#: src/include/printer/connectionwizard.rb:467
+msgid "Select a printer &manufacturer if no 'raw queue' should be set up."
+msgstr "如果不應該設定 '原始佇列‘ 的話，選擇另一個生產廠商(&m)"
+
+#. Header of a Table column with a list of printer connections.
+#. TRANSLATORS: Text entry to fill IP or hostname of remote server
+#: src/include/printer/connectionwizard.rb:560
+#: src/include/printer/connectionwizard.rb:1742
+msgid "&IP Address or Host Name"
+msgstr "IP 地址或主機名(&I)"
+
+#. No URIpercentDecoding/Encondin(hostname) is done
+#. when it contains a '@' because a lpd URI can be of the form
+#. lpd://username@ip-address-or-hostname/...
+#. and a ipp/http URI can be of the form
+#. ipp://username:password@ip-address-or-hostname/...
+#. http://username:password@ip-address-or-hostname/...
+#. see https://bugzilla.novell.com/show_bug.cgi?id=512549
+#. TRANSLATORS: Text entry to fill IP or hostname of remote server
+#: src/include/printer/connectionwizard.rb:569
+#: src/include/printer/connectionwizard.rb:1734
+msgid "&IP Address or Host Name [percent-encoded]"
+msgstr "IP 地址或主機名 [百分號編碼](&I) "
+
+#: src/include/printer/connectionwizard.rb:576
+#: src/include/printer/connectionwizard.rb:1755
+msgid "Look up"
+msgstr "查詢"
+
+#. TRANSLATORS: Button to search for remote servers
+#: src/include/printer/connectionwizard.rb:580
+#: src/include/printer/connectionwizard.rb:1759
+msgid "Look up for All Hosts"
+msgstr "查詢所有主機"
+
+#. TRANSLATORS: InputField for optional Device URI parameters:
+#. TRANSLATORS: InputField for optional Device URI parameters:
+#: src/include/printer/connectionwizard.rb:593
+#: src/include/printer/connectionwizard.rb:1774
+msgid "Optional 'option=value' parameter (usually empty) [percent-encoded]"
+msgstr "額外的 '選項=值' 參數 (通常為空) [百分號編碼]"
+
+#. TRANSLATORS: Button to test remote printer machine
+#. TRANSLATORS: Button to test remote printer machine
+#. TRANSLATORS: Button to test remote printer machine
+#: src/include/printer/connectionwizard.rb:599
+#: src/include/printer/connectionwizard.rb:1596
+#: src/include/printer/connectionwizard.rb:1784
+#: src/include/printer/connectionwizard.rb:1899
+msgid "&Test Connection"
+msgstr "測試連線(&T)"
+
+#. in the Connection Wizard but the RPM package hplip is not installed:
+#: src/include/printer/connectionwizard.rb:639
+msgid ""
+"To access a HP device via the 'hp' backend,\n"
+"the RPM package hplip must be installed."
+msgstr "要通過 'hp' 後端訪問惠普裝置，必須安裝 hplip RPM 軟體包。"
+
+#: src/include/printer/connectionwizard.rb:644
+msgid "The RPM package hplip is not installed."
+msgstr "未安裝 hplip RPM 軟體包。"
+
+#. Label for an editable ComboBox where
+#. a serial device node (e.g. /dev/ttyS0 or /dev/ttyS1)
+#. can be selected or entered:
+#: src/include/printer/connectionwizard.rb:993
+msgid "&Serial device"
+msgstr "序列裝置(&S)"
+
+#. Label for an editable ComboBox where
+#. the baud rate for a serial device
+#. can be selected or entered:
+#: src/include/printer/connectionwizard.rb:1007
+msgid "&Baud rate"
+msgstr "調變解調器傳輸資料速率 (Baud rate)(&B)"
+
+#. Label for an editable ComboBox where
+#. the number of data bits for a serial device
+#. can be selected or entered:
+#: src/include/printer/connectionwizard.rb:1023
+msgid "&Data bits"
+msgstr "資料位(&D)"
+
+#. Label for an editable ComboBox where
+#. the parity checking for a serial device
+#. can be selected or entered:
+#: src/include/printer/connectionwizard.rb:1037
+msgid "&Parity checking"
+msgstr "奇偶校驗(&P)"
+
+#. Label for an editable ComboBox where
+#. the flow control for a serial device
+#. can be selected or entered:
+#: src/include/printer/connectionwizard.rb:1053
+msgid "&Flow control"
+msgstr "流程控制(&F)"
+
+#. Label for an editable ComboBox where
+#. the number of stop bits for a serial device
+#. can be selected or entered:
+#: src/include/printer/connectionwizard.rb:1067
+msgid "S&top bits"
+msgstr "停止位(&T)"
+
+#: src/include/printer/connectionwizard.rb:1076
+msgid "To access a bluetooth printer, the RPM package bluez-cups must be installed."
+msgstr "要訪問藍芽列印機，必須安裝 bluez-cups RPM 軟體包。"
+
+#. The user can also decide during the actual installation not to install it
+#. or the installation may have failed for whatever reason
+#. so that we test again whether or not it is now actually installed:
+#: src/include/printer/connectionwizard.rb:1092
+msgid "The RPM package bluez-cups is not installed."
+msgstr "RPM 軟體包 bluez-cups 未安裝。"
+
+#. Fallback message what the user may run manually when it fails
+#. to generate a valid list of bluetooth device IDs:
+#: src/include/printer/connectionwizard.rb:1098
+msgid ""
+"It seems there are no bluetooth device IDs.\n"
+"Run 'hcitool scan' to get the bluetooth device IDs.\n"
+"Enter the ID without colons like '1A2B3C4D5E6F'."
+msgstr ""
+"似乎沒有藍芽裝置 ID。\n"
+"運行 'hcitool scan' 來獲取藍芽裝置 ID。\n"
+"輸入 ID 時去掉冒號如 '1A2B3C4D5E6F'。"
+
+#. Busy message:
+#. Body of a Popup::ShowFeedback:
+#: src/include/printer/connectionwizard.rb:1107
+msgid "Retrieving bluetooth device IDs..."
+msgstr "正在獲取藍芽裝置 ID..."
+
+#. The command "hcitool scan" might need very much time or hang up.
+#. To kill exactly hcitool there is the workaround via the temporary file because
+#. hcitool scan | grep '...' & sleep 10 ; kill -9 $!
+#. would kill only grep and
+#. ( hcitool scan | grep '...' ) & sleep 10 ; kill -9 $!
+#. would kill only the sub shell.
+#: src/include/printer/connectionwizard.rb:1119
+msgid "Failed to get a list of bluetooth device IDs."
+msgstr "獲取藍芽裝置 ID 列表失敗。"
+
+#. Label for an editable ComboBox where
+#. a bluetooth device ID
+#. can be selected or entered:
+#: src/include/printer/connectionwizard.rb:1212
+msgid "&Bluetooth device ID"
+msgstr "藍芽裝置 ID(&B)"
+
+#: src/include/printer/connectionwizard.rb:1218
+msgid "Currently available bluetooth device IDs"
+msgstr "當前可用的藍芽裝置 ID"
+
+#. TRANSLATORS: List of input field labels,
+#. first for network scan button,
+#. second for the TCP port number:
+#: src/include/printer/connectionwizard.rb:1268
+msgid "Scan for Direct Socket Servers"
+msgstr "掃描直接套接字伺服器"
+
+#: src/include/printer/connectionwizard.rb:1269
+msgid "TCP Port Number"
+msgstr "TCP 埠號"
+
+#. TRANSLATORS: List of input field labels,
+#. first for network scan button,
+#. second for name of printer queue
+#. TRANSLATORS: List of input field labels,
+#. first for network scan button,
+#. second for name of printer queue
+#: src/include/printer/connectionwizard.rb:1326
+#: src/include/printer/connectionwizard.rb:1653
+msgid "Scan for LPD Servers"
+msgstr "掃描行式列印機守護程序協議 (LPD) 伺服器"
+
+#: src/include/printer/connectionwizard.rb:1327
+msgid "Queue Name (see the printer's manual)"
+msgstr "佇列名稱（參見列印機手冊）"
+
+#. TRANSLATORS: Input field label
+#: src/include/printer/connectionwizard.rb:1393
+msgid "URI (see the printer's manual) [percent-encoded]"
+msgstr "URI（參見列印機手冊）[百分號編碼]"
+
+#: src/include/printer/connectionwizard.rb:1402
+msgid "To access a SMB printer share, the RPM package samba-client must be installed."
+msgstr "要訪問 SMB 列印機共享，必須安裝 samba-client RPM 軟體包。"
+
+#. The user can also decide during the actual installation not to install it
+#. or the installation may have failed for whatever reason
+#. so that we test again whether or not it is now actually installed:
+#: src/include/printer/connectionwizard.rb:1418
+msgid "The RPM package samba-client is not installed."
+msgstr "未安裝 RPM 軟體包 samba-client。"
+
+#. TRANSLATORS: Text entry for remote server name
+#: src/include/printer/connectionwizard.rb:1526
+msgid "&Server (NetBIOS Host Name)"
+msgstr "伺服器（NetBIOS 主機名）(&S)"
+
+#. TRANSLATORS: Text entry for printer name
+#: src/include/printer/connectionwizard.rb:1535
+msgid "&Printer (Share Name)"
+msgstr "列印機（共享名）(&P)"
+
+#. TRANSLATORS: Text entry for samba domain
+#: src/include/printer/connectionwizard.rb:1545
+msgid "&Workgroup (Domain Name)"
+msgstr "工作組（域名）(&W)"
+
+#: src/include/printer/connectionwizard.rb:1552
+msgid "Authentication (if needed)"
+msgstr "驗證(若需要)"
+
+#: src/include/printer/connectionwizard.rb:1555
+msgid "Use fixed username and password"
+msgstr "使用固定的使用者名與密碼"
+
+#. TRANSLATORS: Text entry for username (authentication)
+#: src/include/printer/connectionwizard.rb:1565
+msgid "&User"
+msgstr "使用者(&U)"
+
+#. TRANSLATORS: Text entry for password (authentication)
+#: src/include/printer/connectionwizard.rb:1573
+msgid "Pass&word"
+msgstr "密碼(&W)"
+
+#. A CheckBox to support Active Directory (R):
+#: src/include/printer/connectionwizard.rb:1585
+msgid "Support for &Active Directory (R)"
+msgstr "活動目錄伺服器 (R) (&A)"
+
+#. TRANSLATORS: Label for menu to search for remote servers
+#. TRANSLATORS: Text entry for name of remote printer queue
+#: src/include/printer/connectionwizard.rb:1654
+#: src/include/printer/connectionwizard.rb:1765
+#: src/include/printer/connectionwizard.rb:1872
+msgid "Queue Name"
+msgstr "佇列名"
+
+#: src/include/printer/connectionwizard.rb:1757
+msgid "Scan for IPP Servers"
+msgstr "掃描網路列印協議 (IPP) 伺服器"
+
+#: src/include/printer/connectionwizard.rb:1758
+msgid "Scan for IPP Broadcasts"
+msgstr "掃描網路列印協議廣播"
+
+#: src/include/printer/connectionwizard.rb:1792
+msgid "To access an IPX print queue, the RPM package ncpfs must be installed."
+msgstr "要訪問網際網路交換分組協議 (IPX) 列印佇列，必須安裝 ncpfs RPM 軟體包。"
+
+#. The user can also decide during the actual installation not to install it
+#. or the installation may have failed for whatever reason
+#. so that we test again whether or not it is now actually installed:
+#: src/include/printer/connectionwizard.rb:1808
+msgid "The RPM package ncpfs is not installed."
+msgstr "未安裝 RPM 軟體包 ncpfs。"
+
+#. TRANSLATORS: Text entry for IP or hostname of remote server
+#: src/include/printer/connectionwizard.rb:1864
+msgid "IP Address or Host Name"
+msgstr "IP 地址或主機名"
+
+#: src/include/printer/connectionwizard.rb:1878
+msgid "Authenticate as"
+msgstr "驗證身份為"
+
+#. TRANSLATORS: Text entry for username (authentication)
+#: src/include/printer/connectionwizard.rb:1883
+msgid "User"
+msgstr "使用者"
+
+#. TRANSLATORS: Text entry for password (authentication)
+#: src/include/printer/connectionwizard.rb:1889
+msgid "&Password"
+msgstr "密碼(&P)"
+
+#. TRANSLATORS: Text entry for URI (Uniform Resource Identifier)
+#: src/include/printer/connectionwizard.rb:1976
+msgid "URI (Uniform Resource Identifier) [percent-encoded]"
+msgstr "URI（唯一資源標識符）[百分號加密]"
+
+#: src/include/printer/connectionwizard.rb:1985
+msgid "To print via 'pipe', the RPM package cups-backends must be installed."
+msgstr "要通過 '管道 pipe' 列印，必須安裝 cups-backends RPM 軟體包。"
+
+#. The user can also decide during the actual installation not to install it
+#. or the installation may have failed for whatever reason
+#. so that we test again whether or not it is now actually installed:
+#: src/include/printer/connectionwizard.rb:2002
+msgid "The RPM package cups-backends is not installed."
+msgstr "未安裝 RPM 軟體包 cups-backends。"
+
+#. TRANSLATORS: Text entry for program name that will be called via pipe:
+#: src/include/printer/connectionwizard.rb:2034
+msgid "Program (/path/to/command?option=value) [percent-encoded]"
+msgstr "程式 (/到/指令?選項=值/的/路徑) [百分號編碼]"
+
+#. TRANSLATORS: Text entry for device URI (Uniform Resource Identifier)
+#: src/include/printer/connectionwizard.rb:2139
+msgid "Device URI (for which 'beh' should be applied) [percent-encoded]"
+msgstr "裝置 URI ('beh'應被應用於它) [百分號編碼]"
+
+#. TRANSLATORS: Check box
+#: src/include/printer/connectionwizard.rb:2149
+msgid "Never Disable the Queue"
+msgstr "永不禁用佇列"
+
+#. TRANSLATORS: Text entry
+#: src/include/printer/connectionwizard.rb:2157
+msgid "Number of Retries ('0' means infinite retries)"
+msgstr "重試次數（0指無限）"
+
+#. TRANSLATORS: Text entry
+#: src/include/printer/connectionwizard.rb:2165
+msgid "Delay in Seconds Between Two Retries"
+msgstr "兩次重試時間間隔秒數"
+
+#: src/include/printer/connectionwizard.rb:2172
+#: src/include/printer/connectionwizard.rb:2265
+msgid "Select a specific connection type."
+msgstr "選擇一個指定的連線類型。"
+
+#. TRANSLATORS: Label for tree widget description
+#: src/include/printer/connectionwizard.rb:2190
+msgid "&Connection Type"
+msgstr "連線類型(&C)"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2195
+msgid "Directly Connected Device"
+msgstr "直連裝置"
+
+#: src/include/printer/connectionwizard.rb:2198
+msgid "Parallel Port"
+msgstr "並行埠"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2200
+msgid "USB Port"
+msgstr "USB 埠"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2202
+msgid "HP Devices (HPLIP)"
+msgstr "惠普裝置 (HPLIP)"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2204
+msgid "Serial Port"
+msgstr "串列埠"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2206
+msgid "Bluetooth"
+msgstr "藍芽"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2212
+msgid "Access Network Printer or Printserver Box via"
+msgstr "連線網路列印機或列印伺服器盒的方式"
+
+#: src/include/printer/connectionwizard.rb:2215
+msgid "TCP Port (AppSocket/JetDirect)"
+msgstr "TCP 埠 (AppSocket/JetDirect)"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2217
+msgid "Line Printer Daemon (LPD) Protocol"
+msgstr "行式列印機守護精靈(LPD)協議"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2219
+msgid "Internet Printing Protocol (IPP)"
+msgstr "網路列印協議(IPP)"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2225
+msgid "Print via Print Server Machine"
+msgstr "通過列印伺服器列印"
+
+#: src/include/printer/connectionwizard.rb:2228
+msgid "Windows (R) or Samba (SMB/CIFS)"
+msgstr "Windows (R) 或 Samba (SMB/CIFS)"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2230
+msgid "Traditional UNIX Server (LPR/LPD)"
+msgstr "傳統 UNIX 伺服器 (LPR/LPD)"
+
+#. `item( `id(`iprint), _("iPrint (Novell OES)") ),
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2233
+msgid "CUPS Server (IPP)"
+msgstr "通用 UNIX 列印系統伺服器 (網路列印協議)"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2235
+msgid "Novell Netware Print Server (IPX)"
+msgstr "Novell Netware 列印伺服器 (IPX)"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2241
+msgid "Special"
+msgstr "特殊"
+
+#: src/include/printer/connectionwizard.rb:2244
+msgid "Specify Arbitrary Device URI"
+msgstr "指定專有裝置 URI"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2248
+msgid "Send Print Data to Other Program (pipe)"
+msgstr "將列印資料發送到其他程式 (管道 pipe)"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2251
+msgid "Daisy-chain Backend Error Handler (beh)"
+msgstr "Daisy-chain 後端錯誤處理 (beh)"
+
+#. TRANSLATORS: Tree widget item
+#: src/include/printer/connectionwizard.rb:2262
+msgid "Connection Settings"
+msgstr "連線設定"
+
+#. According to the YaST Style Guide (dated Thu, 06 Nov 2008)
+#. there is no longer a "abort" functionality which exits the whole module.
+#. Instead this button is now named "Cancel" and its functionality is
+#. to go back to the Overview dialog (i.e. what the "back" button would do)
+#. because it reads "Cancel - Closes the window and returns to the overview."
+#. In this case the "overview" is not the actual Overview dialog but the dialog
+#. from which this DriverOptionsDialog was called i.e. BasicModifyDialog.
+#. Therefore the button with the "abort" functionality is not shown at all
+#. and the button with the "back" functionality is named "Cancel".
+#. According to the YaST Style Guide (dated Thu, 06 Nov 2008)
+#. the "finish" button in a single (step) configuration dialog must now be named "OK".
+#: src/include/printer/connectionwizard.rb:2285
+msgid "Connection Wizard"
+msgstr "連線嚮導"
+
+#. see https://bugzilla.novell.com/show_bug.cgi?id=580121
+#. and http://www.cups.org/str.php?L3500
+#. i.e. the scsi backend will be dropped.
+#. Therefore in yast2-printer SCSI printer support is also dropped.
+#. Because of the dropped scsi backend there must be a user notification:
+#: src/include/printer/connectionwizard.rb:2338
+msgid "In CUPS version 1.5 SCSI printer support is dropped."
+msgstr "CUPS 1.5 版中移除了微機介面 SCSI 列印機支援。"
+
+#. Popup::ErrorDetails details (for experts only):
+#: src/include/printer/connectionwizard.rb:2340
+msgid ""
+"An untested and insecure workaround might be\n"
+"to set 'FileDevice Yes' in cupsd.conf\n"
+"and use a DeviceURI like 'file:/dev/sg...'"
+msgstr ""
+"一個未經測試與不安全的臨時辦法或許是在 cupsd.conf 中設定 'FileDevice Yes'。\n"
+"並使用像 'file:/dev/sg...' 這樣的裝置 URI"
+
+#. while a Device URI to access a network printer via IPP
+#. does probably not contain "/printers/" so that this is used here
+#. as a best effort attempt to distinguish both cases:
+#: src/include/printer/connectionwizard.rb:2415
+msgid "Select a connection"
+msgstr "選擇一個連線"
+
+#. Body of a Popup::AnyMessage when no connection was selected
+#. because there is no connection available to be selected:
+#: src/include/printer/connectionwizard.rb:2418
+msgid ""
+"If no connection is shown here, it is not possible\n"
+"to access the device via this type of connection.\n"
+"Was the printer connected and switched on all the time?"
+msgstr ""
+"如果這裡沒有顯示連線，就無法使用此類連線訪問裝置。\n"
+"列印機是一直連線並開機的嗎？"
+
+#: src/include/printer/connectionwizard.rb:2426
+msgid "Select a valid connection"
+msgstr "選擇一個有效連線"
+
+#. Body of a Popup::AnyMessage when an invalid connection was selected
+#. because the current connection is no longer valid:
+#: src/include/printer/connectionwizard.rb:2429
+msgid ""
+"When the current connection is no longer valid,\n"
+"it does no longer work to access the device via this connection.\n"
+"Is the printer still connected and switched on?"
+msgstr ""
+"噹噹前連線不再有效時，就不再可以通過此連線訪問裝置。\n"
+"列印機依然連線並開著嗎？"
+
+#: src/include/printer/connectionwizard.rb:2469
+msgid "Serial device and baud rate could not be empty."
+msgstr "串列埠裝置與 baud 比率不能為空。"
+
+#: src/include/printer/connectionwizard.rb:2473
+msgid "The 'space' parity checking is only supported with 7 data bits."
+msgstr "'space' 奇偶校驗僅支援 7 個資料位。"
+
+#: src/include/printer/connectionwizard.rb:2481
+msgid "The 'mark' parity checking is only supported with 7 data bits and 1 stop bit."
+msgstr "'mark' 奇偶校驗僅支援 7 個資料位與一個停止位。"
+
+#: src/include/printer/connectionwizard.rb:2523
+msgid "Bluetooth device ID could not be empty."
+msgstr "藍芽裝置 ID 不能為空。"
+
+#. because special URI characters like ':' or '/' in connection_uri
+#. must stay as is and not be percent encoded because only the values
+#. of the URI parts must be percent encoded but not the whole URI.
+#: src/include/printer/connectionwizard.rb:2536
+msgid "URI could not be empty."
+msgstr "URL 不能為空。"
+
+#: src/include/printer/connectionwizard.rb:2546
+msgid "Servername and printer could not be empty."
+msgstr "伺服器名與列印機不能為空。"
+
+#: src/include/printer/connectionwizard.rb:2552
+msgid "Both user and password must be specified."
+msgstr "必須指定使用者名與密碼。"
+
+#. because special URI characters like '=' or '&' in tcp_uri_options
+#. must stay as is and not be percent encoded because tcp_uri_options
+#. contains all options like 'option1=value1&option2=value2'.
+#: src/include/printer/connectionwizard.rb:2616
+msgid "Servername could not be empty."
+msgstr "伺服器名不能為空。"
+
+#. because special URI characters like '=' or '&' in lpd_uri_options
+#. must stay as is and not be percent encoded because lpd_uri_options
+#. contains all options like 'option1=value1&option2=value2'.
+#. because special URI characters like '=' or '&' in cups_uri_options
+#. must stay as is and not be percent encoded because cups_uri_options
+#. contains all options like 'option1=value1&option2=value2'.
+#: src/include/printer/connectionwizard.rb:2654
+#: src/include/printer/connectionwizard.rb:2693
+#: src/include/printer/connectionwizard.rb:2720
+msgid "Servername and queue name could not be empty."
+msgstr "伺服器名與佇列名不能為空。"
+
+#: src/include/printer/connectionwizard.rb:2747
+msgid "Device URI, number of retries, and delay could not be empty."
+msgstr "裝置 URI，重試次數，與延遲不能為空。"
+
+#. because special URI characters like '/ ? = &' in pipe
+#. must stay as is and not be percent encoded because pipe
+#. contains all like 'path/to/command?option1=value1&option2=value2'
+#: src/include/printer/connectionwizard.rb:2761
+msgid "Could not be empty."
+msgstr "不能為空。"
+
+#. Do not change or translate "raw", it is a technical term
+#. when no driver is used for a print queue.
+#: src/include/printer/connectionwizard.rb:2784
+msgid "Select a manufacturer or 'raw queue'."
+msgstr "選擇生產廠商或 '原始佇列'。"
+
+#: src/include/printer/connectionwizard.rb:2802
+msgid "Look up all hosts in the local network"
+msgstr "查詢本地網路中的所有主機"
+
+#. Body of a Popup::ShowFeedback:
+#. Body of a Popup::ShowFeedback:
+#. Body of a Popup::ShowFeedback:
+#. Body of a Popup::ShowFeedback:
+#. Body of a Popup::ShowFeedback:
+#: src/include/printer/connectionwizard.rb:2804
+#: src/include/printer/connectionwizard.rb:2831
+#: src/include/printer/connectionwizard.rb:2846
+#: src/include/printer/connectionwizard.rb:2861
+#: src/include/printer/connectionwizard.rb:2876
+msgid ""
+"Please wait...\n"
+"This could take more than a minute."
+msgstr ""
+"請稍候...\n"
+"這可能會花一分多鐘的時間。"
+
+#. where %1 will be replaced by the port number:
+#: src/include/printer/connectionwizard.rb:2827
+msgid "Scan for hosts which are accessible via TCP port %1"
+msgstr "掃描可以通過 TCP 埠 %1 訪問的主機"
+
+#. Sleep half a second to let the user notice the Popup::ShowFeedback in any case
+#. before it is removed even when the above SCR::Read finished immediately:
+#: src/include/printer/connectionwizard.rb:2844
+msgid "Scan for hosts which are accessible via Samba (SMB)"
+msgstr "掃描可以通過 Samba (SMB) 訪問的主機"
+
+#. Sleep half a second to let the user notice the Popup::ShowFeedback in any case
+#. before it is removed even when the above SCR::Read finished immediately:
+#: src/include/printer/connectionwizard.rb:2859
+msgid "Scan for hosts which are accessible via port 515 (LPD/LPR)"
+msgstr "掃描可以通過埠 515 (LPD/LPR) 訪問的主機"
+
+#. Sleep half a second to let the user notice the Popup::ShowFeedback in any case
+#. before it is removed even when the above SCR::Read finished immediately:
+#: src/include/printer/connectionwizard.rb:2874
+msgid "Scan for hosts which are accessible via port 631 (CUPS/IPP)"
+msgstr "掃描可以通過埠 631 (CUPS/IPP) 訪問的主機"
+
+#. hosts = (list<string>)filter (string h, hosts, ``{
+#. list queues = (list<string>)SCR::Read (.cups.remote, h);
+#. return size (queues) > 0;
+#. });
+#. Sleep half a second to let the user notice the Popup::ShowFeedback in any case
+#. before it is removed even when the above SCR::Read finished immediately:
+#: src/include/printer/connectionwizard.rb:2901
+msgid ""
+"Scanning in the network did not find any host.\n"
+"(Network issue or firewall active?)"
+msgstr ""
+"掃描網路沒有發現任何主機。\n"
+"(網路問題或防火牆活動中？)"
+
+#. where %1 will be replaced by the port number
+#. and %2 will be replaced by the host name:
+#: src/include/printer/connectionwizard.rb:2941
+msgid "Access test failed for port '%1' on host '%2'."
+msgstr "主機 '%2' 上的埠 '%1' 的訪問測試失敗。"
+
+#. where %1 will be replaced by the queue name
+#. and %2 will be replaced by the host name:
+#. where %1 will be replaced by the queue name
+#. and %2 will be replaced by the host name:
+#. where %1 will be replaced by the queue name
+#. and %2 will be replaced by the host name:
+#: src/include/printer/connectionwizard.rb:2968
+#: src/include/printer/connectionwizard.rb:2994
+#: src/include/printer/connectionwizard.rb:3093
+msgid "Access test failed for queue '%1' on host '%2'."
+msgstr "主機 '%2' 上的佇列 '%1' 的訪問測試失敗。"
+
+#. because there is authentication via Active Directory (R) required:
+#: src/include/printer/connectionwizard.rb:3012
+msgid ""
+"This is only a generic test which may untruly report failures\n"
+"if authentication via Active Directory (R) is required.\n"
+"In this case a user who is allowed to print via Active Directory (R)\n"
+"should log in and test by himself if he can print from Gnome or KDE."
+msgstr ""
+"這隻是一個通用測試，如果需要通過活動目錄 (R) 認證則可能失真地報告失敗。\n"
+"在這種情況下允許通過活動目錄 (R) 列印的使用者應該自己登陸並測試從 Gnome/KDE 列印。"
+
+#. where %1 will be replaced by the SMB share name
+#. and %2 will be replaced by the host name:
+#: src/include/printer/connectionwizard.rb:3043
+msgid "The generic test reports failures for share '%1' on host '%2'."
+msgstr "通用測試報告了主機 '%2' 上的共享 '%1' 的錯誤。"
+
+#. where %1 will be replaced by the SMB share name
+#. and %2 will be replaced by the host name:
+#: src/include/printer/connectionwizard.rb:3063
+msgid "Access test failed for share '%1' on host '%2'."
+msgstr "主機 ‘%2’ 上的共享 ‘%1’ 的訪問測試失敗。"
+
+#. Message of a Popup::ErrorDetails
+#: src/include/printer/connectionwizard.rb:3105
+msgid "Test OK"
+msgstr "測試成功"
+
+#. Without a link name /usr/lib[64]/cups/backend/smb (which is provided by samba-client)
+#. the rest makes no sense (in particular the ln commands would create nonsense links in $PWD):
+#: src/include/printer/connectionwizard.rb:3245
+msgid "To support Active Directory (R), the RPM package samba-krb-printing must be installed."
+msgstr "要訪問活動目錄 (R)，必須安裝 RPM 軟體包 samba-krb-printing。"
+
+#. Show a user notification before it gets disabled:
+#: src/include/printer/connectionwizard.rb:3285
+msgid "Active Directory (R) support will be disabled for all SMB print queues."
+msgstr "所有 SMB 列印佇列的活動目錄 (R) 支援都將禁用。"
+
+#. encoding: utf-8
+#. ------------------------------------------------------------------------------
+#. Copyright (c) 2006 Novell, Inc. All Rights Reserved.
+#.
+#.
+#. This program is free software; you can redistribute it and/or modify it under
+#. the terms of version 2 of the GNU General Public License as published by the
+#. Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful, but WITHOUT
+#. ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#. FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License along with
+#. this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail, you may find
+#. current contact information at www.novell.com.
+#. ------------------------------------------------------------------------------
+#. File:        include/printer/dialogs.ycp
+#. Package:     Configuration of printer
+#. Summary:     DialogTree definition
+#. Authors:     Michal Zugec <mzugec@suse.de>
+#.
+#. $Id: dialogs.ycp 27914 2006-02-13 14:32:08Z locilka $
+#: src/include/printer/dialogs.rb:107 src/include/printer/dialogs.rb:108
+#: src/include/printer/dialogs.rb:109 src/include/printer/dialogs.rb:176
+msgid "Printer Configurations"
+msgstr "列印機配置"
+
+#: src/include/printer/dialogs.rb:114 src/include/printer/dialogs.rb:115
+#: src/include/printer/dialogs.rb:116 src/include/printer/dialogs.rb:183
+msgid "Print via Network"
+msgstr "通過網路列印"
+
+#: src/include/printer/dialogs.rb:121 src/include/printer/dialogs.rb:122
+#: src/include/printer/dialogs.rb:123
+msgid "Share Printers"
+msgstr "共享列印機"
+
+#: src/include/printer/dialogs.rb:128 src/include/printer/dialogs.rb:129
+#: src/include/printer/dialogs.rb:130
+msgid "Policies"
+msgstr "策略"
+
+#: src/include/printer/dialogs.rb:135 src/include/printer/dialogs.rb:136
+#: src/include/printer/dialogs.rb:137
+msgid "Automatic Configuration"
+msgstr "自動配置"
+
+#: src/include/printer/dialogs.rb:175 src/include/printer/dialogs.rb:177
+msgid "AutoYaST Printer Configurations"
+msgstr "AutoYaST 列印機配置"
+
+#: src/include/printer/dialogs.rb:182 src/include/printer/dialogs.rb:184
+msgid "AutoYaST Print via Network Settings"
+msgstr "AutoYaST 通過網路列印的設定"
+
+#: src/include/printer/dialogs.rb:192
+msgid "Detected Printers"
+msgstr "檢測到的列印機"
+
+#. All the dialogs in "ids_order" are single (step) configuration dialogs
+#. and according to the YaST Style Guide (dated Thu, 06 Nov 2008)
+#. there is no longer a "abort" functionality which exits the whole module.
+#. Instead this button is now named "Cancel" and its functionality is
+#. to go back to the Overview dialog (i.e. what the "back" button would do)
+#. because it reads "Cancel - Closes the window and returns to the overview."
+#. Therefore the button with the "abort" functionality is not shown at all
+#. and the button with the "back" functionality is named "Cancel".
+#: src/include/printer/dialogs.rb:222
+msgid "AutoYaST Settings for Printing with CUPS via Network"
+msgstr "通過網路上的通用 UNIX 列印系統列印的 AutoYaST 設定"
+
+#. AddDriver dialog
+#. @return dialog result
+#: src/include/printer/driveradd.rb:47
+msgid "Driver Packages"
+msgstr "驅動包"
+
+#. Header for a dialog section where the user can
+#. add or remove printer driver packages:
+#: src/include/printer/driveradd.rb:98
+msgid "Install or Remove Printer Driver Packages"
+msgstr "安裝或刪除列印機驅動包"
+
+#. CheckBox to select or un-select the printer driver package OpenPrintingPPDs-ghostscript.
+#. There is no need to have the package name "OpenPrintingPPDs-ghostscript" in this text
+#. because it is shown in a separated column to the left of this text.
+#: src/include/printer/driveradd.rb:111
+msgid "Printer Description Files for Ghostscript Drivers"
+msgstr "Ghostscript 驅動的列印描述檔案"
+
+#. CheckBox to select or un-select the printer driver package OpenPrintingPPDs-hpijs.
+#. There is no need to have the package name "OpenPrintingPPDs-hpijs" in this text
+#. because it is shown in a separated column to the left of this text.
+#: src/include/printer/driveradd.rb:122
+msgid "Printer Description Files for some PCL Printers"
+msgstr "一些列印機命令語言 (PCL) 列印機的列印機描述檔案"
+
+#. CheckBox to select or un-select the printer driver package OpenPrintingPPDs-postscript.
+#. There is no need to have the package name "OpenPrintingPPDs-postscript" in this text
+#. because it is shown in a separated column to the left of this text.
+#: src/include/printer/driveradd.rb:133
+msgid "Printer Description Files for PostScript Printers"
+msgstr "PostScript 列印機的列印機描述檔案"
+
+#. CheckBox to select or un-select the printer driver package gutenprint.
+#. There is no need to have the package name "gutenprint" in this text
+#. because it is shown in a separated column to the left of this text.
+#. Do not change or translate "Gutenprint", it is a open source project name.
+#. Do not change or translate "Gimp-Print", it is a open source project name.
+#: src/include/printer/driveradd.rb:146
+msgid "Gutenprint/Gimp-Print Driver"
+msgstr "Gutenprint/Gimp-Print 驅動"
+
+#. CheckBox to select or un-select the printer driver packages hplip and hplip-hpijs.
+#. There is no need to have the package names "hplip" and "hplip-hpijs" in this text
+#. because they are shown in a separated column to the left of this text.
+#: src/include/printer/driveradd.rb:157
+msgid "Driver for HP Printers and HP All-in-One Devices"
+msgstr "惠普列印機與多合一裝置驅動"
+
+#. CheckBox to select or un-select the printer driver package manufacturer-PPDs.
+#. There is no need to have the package name "manufacturer-PPDs" in this text
+#. because it is shown in a separated column to the left of this text.
+#: src/include/printer/driveradd.rb:168
+msgid "Manufacturer's PostScript Printer Description Files"
+msgstr "生產廠商的 PostScript 列印機描述檔案"
+
+#. CheckBox to select or un-select the printer driver package splix.
+#. There is no need to have the package name "splix" in this text
+#. because it is shown in a separated column to the left of this text.
+#: src/include/printer/driveradd.rb:179
+msgid "SpliX Driver for SPL Printers without JBIG"
+msgstr "不帶 JBIG 影象格式支援的 SPL 列印機的 SpliX 驅動"
+
+#. CheckBox to select or un-select the printer driver package m2300w.
+#. There is no need to have the package name "m2300w" in this text
+#. because it is shown in a separated column to the left of this text.
+#: src/include/printer/driveradd.rb:190
+msgid "Driver for Konica Minolta 2300W and 2400W (unmaintained)"
+msgstr "Konica Minolta 2300W 與 2400W 的驅動(失去維護)"
+
+#. CheckBox to select or un-select the printer driver package epson-inkjet-printer-escpr.
+#. There is no need to have the package name "epson-inkjet-printer-escpr" in this text
+#. because it is shown in a separated column to the left of this text.
+#: src/include/printer/driveradd.rb:201
+msgid "Epson ESC/P-R Inkjet Printer Driver"
+msgstr "愛普生 ESC/P-R 噴墨列印機驅動"
+
+#. Header for a dialog section where the user can
+#. make a printer description file (PPD file) available
+#. so that it can be used to set up a print queue with it:
+#: src/include/printer/driveradd.rb:214
+msgid "Make a Printer Description File Available"
+msgstr "使列印機描述檔案可用"
+
+#. TextEntry to specify the full path of a PPD file:
+#: src/include/printer/driveradd.rb:224
+msgid "Printer description &file name with full path where it is located"
+msgstr "包含完整路徑的列印機描述檔名(&f)"
+
+#. Label of a PushButton to open a file selection box
+#. to browse the file system to select a PPD file:
+#: src/include/printer/driveradd.rb:234
+msgid "&Browse"
+msgstr "瀏覽(&B)"
+
+#. Header for a AskForExistingFile popup dialog
+#. to browse the file system to select a PPD file:
+#: src/include/printer/driveradd.rb:273
+msgid "Select a printer description file"
+msgstr "選擇列印機描述檔案"
+
+#. where %1 will be replaced by the file name:
+#: src/include/printer/driveradd.rb:660
+msgid "Cannot access '%1'"
+msgstr "無法訪問 '%1'"
+
+#. Simply exit this dialog because it does not make sense to proceed here
+#. and there is nothing else to be done after this:
+#: src/include/printer/driveradd.rb:679
+msgid "The printer description file is not in compliance with the specification."
+msgstr "列印機描述檔案不符合規格。"
+
+#. when a PPD file is not in compliance:
+#: src/include/printer/driveradd.rb:694
+msgid "Use the printer description file regardless of its errors?"
+msgstr "忽略錯誤繼續使用列印機描述檔案？"
+
+#. Body of a Popup::ContinueCancelHeadline
+#. when PPD file is not in compliance:
+#: src/include/printer/driveradd.rb:699
+msgid "A non-compliant printer description file can lead to arbitrary failures."
+msgstr "一個不相容的列印機描述檔案可能導致任何錯誤。"
+
+#: src/include/printer/driveradd.rb:716
+msgid "Failed to make the printer description file available"
+msgstr "未能將列印機描述檔案設為可用"
+
+#. Title of the Driver Options Dialog where %1 will be replaced by the queue name.
+#. The actual queue name is a system value which cannot be translated:
+#: src/include/printer/driveroptions.rb:55
+msgid "Driver Options for Queue %1"
+msgstr "佇列 %1 的驅動選項"
+
+#. where %1 will be replaced by the queue name.
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#: src/include/printer/driveroptions.rb:138
+msgid "Failed to set driver options for queue %1."
+msgstr "為佇列 %1 設定驅動參數失敗。"
+
+#. Read dialog help 1/1:
+#: src/include/printer/helps.rb:37
+msgid ""
+"<p>\n"
+"<b><big>Initializing printer Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b><big>正在啟始化列印機配置</big></b><br>\n"
+"</p>\n"
+
+#. Write dialog help 1/1:
+#: src/include/printer/helps.rb:44
+msgid ""
+"<p>\n"
+"<b><big>Finishing printer Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b><big>正在完成列印機配置</big></b><br>\n"
+"</p>\n"
+
+#. Overview dialog help 1/7:
+#: src/include/printer/helps.rb:51
+msgid ""
+"<p>\n"
+"<b><big>Print Queue Overview</big></b><br>\n"
+"A printer device is not used directly but via a print queue.<br>\n"
+"When various applications submit print jobs simultaneously,\n"
+"these jobs are put in a queue and are sent one after the other to the printer\n"
+"device.<br>\n"
+"It is possible to have several different print queues for the same printer\n"
+"device.\n"
+"For example a second queue with a monochrome-only driver for a color device\n"
+"or a PostScript queue and a queue with a PCL driver for a PostScript+PCL printer.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b><big>列印佇列概覽</big></b><br>\n"
+"列印機裝置不能直接訪問，需要通過列印佇列訪問。<br>\n"
+"當多種應用程式自發提交列印任務時，這些任務被放佇列，一個接一個的發送到列印機裝置。<br>\n"
+"相同的列印機裝置可以接受一些不同的列印佇列。\n"
+"例如彩色裝置的一個使用黑白驅動的二級佇列或者PostScript+PCL 列印機的一個 PostScript 佇列與一個使用 PCL 驅動的佇列。</p>\n"
+
+#. Overview dialog help 2/7:
+#: src/include/printer/helps.rb:65
+msgid ""
+"<p>\n"
+"<b><big>Using Remote Queues:</big></b><br>\n"
+"Remote queues exist on other hosts in the network,\n"
+"therefore they cannot be changed on this host.<br>\n"
+"The remote queues listed here are known on this host.\n"
+"Usually they can be used directly by applications\n"
+"so there is no need to set up a local queue for a printer\n"
+"that is already available via a remote queue.<br>\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b><big>使用遠端佇列：</big></b><br>\n"
+"遠端佇列存在於網路中的其他主機上，因此他們不能在本主機變更。<br>\n"
+"列示於此的遠端列印佇列是本主機上已知的佇列。\n"
+"通常它們可以被應用程式直接使用，因此不需要再為一個提供了可用的遠端佇列的列印機設定一個本地佇列。<br></p>\n"
+
+#. Overview dialog help 3/7:
+#: src/include/printer/helps.rb:77
+msgid ""
+"<p>\n"
+"<b><big>Configure a printer:</big></b><br>\n"
+"Press <b>Add</b> to set up a new queue for a printer device.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>配置列印機：</big></b><br>\n"
+"按<b>添加</b>為列印裝置設定一個新的佇列。\n"
+"</p>"
+
+#. Overview dialog help 4/7:
+#: src/include/printer/helps.rb:84
+msgid ""
+"<p>\n"
+"<b><big>Change the settings for a queue:</big></b><br>\n"
+"Select a local queue and press <b>Edit</b>.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>修改佇列設定：</big></b><br>\n"
+"選擇一個本地佇列，然後按<b>編輯</b>。\n"
+"</p>"
+
+#. Overview dialog help 5/7:
+#: src/include/printer/helps.rb:91
+msgid ""
+"<p>\n"
+"<b><big>Remove a queue:</big></b><br>\n"
+"Select a local queue and press <b>Delete</b>.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>移除佇列：</big></b><br>\n"
+"選擇一個本地佇列，然後按<b>刪除</b>。\n"
+"</p>"
+
+#. Overview dialog help 6/7:
+#: src/include/printer/helps.rb:98
+msgid ""
+"<p>\n"
+"<b><big>Print a test page:</big></b><br>\n"
+"Select the queue and press <b>Print Test Page</b>.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>列印測試頁：</big></b><br>\n"
+"選擇佇列，然後按<b>列印測試頁</b>。\n"
+"</p>"
+
+#. Overview dialog help 7/7:
+#: src/include/printer/helps.rb:105
+msgid ""
+"<p>\n"
+"<b><big>Refresh the list of queues:</big></b><br>\n"
+"After changes to the network printing settings,\n"
+"the available remote queues may have changed.\n"
+"Usually it takes some time (up to several minutes)\n"
+"until such changes become known to the local host.\n"
+"Press <b>Refresh List</b> after some time to get an \n"
+"up-to-date list of available remote queues.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b><big>重新整理佇列列表：</big></b><br>\n"
+"在修改了網路列印設定後，可用遠端佇列可能發生變化。\n"
+"通常需要一些時間(最多幾分鐘)，本地主機才能獲知這些變更。\n"
+"按下 <b>重新整理列表</b>，過一會兒就能獲得一個最新的可用遠端佇列列表。</p>\n"
+
+#. AutoYaST Overview dialog help 1/1:
+#: src/include/printer/helps.rb:118
+msgid ""
+"<p>\n"
+"<b><big>AutoYaST Print Queue Overview</big></b><br>\n"
+"AutoYaST supports only settings for printing with CUPS via network.<br>\n"
+"There is no AutoYaST support to set up local print queues.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>AutoYaST 列印佇列概覽</big></b><br>\n"
+"AutoYaST 僅支援設定通過網路中的 CUPS 列印。<br>\n"
+"不支援設定本地列印佇列。\n"
+"</p>"
+
+#. BasicAddDialog help 1/7:
+#: src/include/printer/helps.rb:127
+msgid ""
+"<p>\n"
+"<b><big>Set Up a New Queue for a Printer Device</big></b><br>\n"
+"A printer device is not used directly but via a print queue.<br>\n"
+"When various application programs submit print jobs simultaneously,\n"
+"the jobs queue up and are sent one after the other to the printer device.<br>\n"
+"It is possible to have several different print queues for the same printer device.\n"
+"Usually several print queues are needed when several different printer drivers\n"
+"should be used for the same printer device.\n"
+"For example a second queue with a monochrome-only driver\n"
+"to enforce black-only printout on a color device\n"
+"or a PostScript queue and a queue with a PCL driver for a PostScript+PCL printer\n"
+"because printing via the PCL driver is usually faster (but with less quality).\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>為列印裝置設定一個新佇列</big></b><br>\n"
+"列印裝置不能直接使用，需要通過列印佇列使用。<br>\n"
+"當多種應用程式自發提交列印任務時，任務會排隊，一個接一個的發送到列印裝置。<br>\n"
+"相同的列印機裝置可以接受一些不同的列印佇列。\n"
+"通常當同一個列印裝置使用了一些不同的列印機驅動時，就需要一些不同的列印佇列。\n"
+"例如彩色裝置的一個使用黑白驅動來強制黑白輸出的二級佇列或者PostScript+PCL 列印機的一個 PostScript 佇列與一個使用 PCL 驅動的佇列，因為通過 PCL 驅動列印通常更快 (但質量會降低)。</p>"
+
+#. BasicAddDialog help 2/7:
+#: src/include/printer/helps.rb:143
+msgid ""
+"<p>\n"
+"To set up a new queue:<br>\n"
+"Select the connection of the matching printer device,<br>\n"
+"find and assign a suitable printer driver, and<br>\n"
+"set a unique queue name.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"要設定一個新佇列：<br>\n"
+"選擇匹配的列印裝置的連線，<br>\n"
+"查找並指定一個合適的列印機驅動，並<br>\n"
+"設定一個獨一無二的佇列名稱。\n"
+"</p>"
+
+#. BasicAddDialog help 3/7:
+#: src/include/printer/helps.rb:152
+msgid ""
+"<p>\n"
+"The <b>connection</b> determines which way data is sent to the printer device.<br>\n"
+"If a wrong connection is selected, no data can be sent to the device\n"
+"so that there cannot be any printout.<br>\n"
+"If a printer device is accessible via more than one connection type,\n"
+"it is shown for each connection type.<br>\n"
+"In particular HP devices are often accessible both via the 'usb:/...'\n"
+"and the 'hp:/...' connection.\n"
+"The latter is provided by the HP driver package 'hplip'.\n"
+"For plain printing, both kinds of connections should work, but for anything else\n"
+"(e.g. device status via 'hp-toolbox' or scanning with a HP all-in-one device)\n"
+"the 'hp:/...' connection must be used.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b>連線</b>決定資料被髮送到列印機裝置的方式。<br>\n"
+"如果選擇了一個錯誤連線，就沒有資料可以發送到裝置，因此就沒有任何列印輸出。<br>\n"
+"如果一個列印裝置可以通過多種連線類型訪問，它可以顯示在每個連線類型中。<br>\n"
+"尤其是惠普裝置通常既可以通過 'usb:/...' 也可以通過 'hp:/...' 連線訪問。\n"
+"後者是由惠普驅動軟體包 'hplip' 提供的。\n"
+"一般列印可以選擇任何連線類型，但是一些特殊任務 (例如通過 'hp-toolbox' 獲取裝置狀態或\n"
+"使用惠普多合一裝置掃描) 就必須使用 'hp:/...' 連線。\n"
+"</p>\n"
+
+#. BasicAddDialog help 4/7:
+#: src/include/printer/helps.rb:168
+msgid ""
+"<p>\n"
+"The <b>driver</b> determines that the right data is produced for the\n"
+"specific printer model.<br>\n"
+"If a wrong driver is assigned, wrong data is sent to the printer\n"
+"which results bad looking printout, chaotic printout, or no printout at all.<br>\n"
+"Initially the input field for the driver search string is preset\n"
+"with the autodetected model name of the currently selected connection\n"
+"and those drivers where the driver description matches to the model name\n"
+"are shown by default.<br>\n"
+"If driver descriptions match to the autodetected model name\n"
+"and if all matching driver descriptions seem to belong to the same model,\n"
+"the driver descriptions are sorted so that the most reasonable driver\n"
+"should be listed topmost and this one is automatically preselected.\n"
+"If no driver is automatically preselected, you must manually\n"
+"find and select an appropriate driver.<br>\n"
+"On the other hand if a driver was automatically preselected,\n"
+"it does not necessarily mean that this driver is\n"
+"a reasonable driver for your particular needs.\n"
+"Strictly speaking an automatically preselected driver\n"
+"may not work at all for your particular printer model.\n"
+"The reason is that the automated driver selection\n"
+"can only work based upon comparison of strings\n"
+"(the autodetected model name and the driver descriptions)\n"
+"so that the result can be only a best-guess proposal\n"
+"how to set up your particular printer model.<br>\n"
+"Therefore check if the currently preselected values make sense\n"
+"and feel free to play around and modify the settings\n"
+"to what you know what works best for your printer.<br>\n"
+"If no driver description matches to the autodetected model name,\n"
+"it does not necessarily mean that there is no driver available for the model.\n"
+"Often only the model name in the driver descriptions\n"
+"is different from the autodetected model name.\n"
+"Therefore you can enter whatever you like as driver search string\n"
+"and search through all available driver descriptions.<br>\n"
+"Usually the default driver option settings should be reasonable\n"
+"so that the driver works for your particular printer model.\n"
+"Some driver option settings must match to your particular printer.\n"
+"In particular the default paper size setting of the driver\n"
+"must match to the paper which is actually loaded in your printer.\n"
+"You can either explicitly select A4 or Letter as default paper size\n"
+"or select nothing to use the built-in default paper size of the driver\n"
+"which is also the fallback if the driver neither supports A4 nor Letter\n"
+"(for example a driver for a small-format photo printer).\n"
+"If you like to adjust other driver options except A4 or Letter,\n"
+"you must first set up the queue and then in a second step\n"
+"you can adjust all driver options in the 'Edit/Modify' dialog.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b>驅動</b>使指定型號的列印機可以輸出正確的資料。<br>\n"
+"如果指定了錯誤的驅動，會發送錯誤的資料到列印機，這將造成難看的、混亂的列印輸出，或完全沒有列印輸出。<br>\n"
+"驅動搜索的搜索關鍵詞輸入框初始預設為當前選中連線的自動檢測到的型號名稱，那些驅動描述匹配型號名稱的驅動默認自動顯示。<br>\n"
+"如果驅動描述匹配自動檢測到的型號名稱，或所有匹配的驅動描述都屬於同一個型號，驅動描述會被分類，最有可能的驅動列示在最上方並被自動預選中。如果沒有驅動被自動預選中，您必須手動查找與選擇一個合適的驅動。<br>\n"
+"另外如果一個驅動被自動預選中，也不意味著這個驅動就一定是能滿足您特殊需要的最佳驅動。嚴格的說一個自動預選中的驅動可能在您的特殊列印機型號上完全不能用。原因是由於自動驅動選擇僅能基於比較字元串(自動檢測到的型號名與驅動描述)來作業，因此結果僅是如何設定您的特殊列印機型號的最佳猜想的方案。<br>\n"
+"因此請檢查當前預選中的值是否正確，如果您知道您的列印機使用哪種驅動更好的話也可以任意修改設定。<br>\n"
+"如果沒有匹配自動檢測到的型號名的驅動描述，這也不意味著沒有該型號的驅動可用。通常僅是驅動描述中的型號名與自動檢測到的型號名不同。因此您可以輸入您想要的驅動搜索關鍵詞並搜索全部可用驅動描述。<br>\n"
+"通常默認驅動選項設定應該是合理的，所以該驅動可以用於您的列印機型號。一些驅動選項設定必須匹配您的列印機。尤其是驅動的默認紙張大小設定必須匹配您列印機中實際裝載的紙張。您可以明確的選擇 A4 或 Letter 作為默認紙張大小，或者不選以使用驅動內建的默認紙張大小，該內建選項也是當驅動不支援 A4 與 Letter 時的回退選項 (例如小尺寸相片列印機的驅動)。如果您喜歡調整除了 A4 或 Letter 以外的驅動選項，您必須先設定好佇列，然後在下一步的 '編輯/修改' 對話方塊中調整所有驅動選項。\n"
+"</p>"
+
+#. BasicAddDialog help 5/7:
+#: src/include/printer/helps.rb:218
+msgid ""
+"<p>\n"
+"Application programs do not show the actual printer device\n"
+"but its associated <b>queue name</b>.<br>\n"
+"Only letters (a-z and A-Z), numbers (0-9), and the underscore '_'\n"
+"are allowed for the queue name and it must start with a letter.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"應用程式不顯示實際的列印機裝置而是它相關聯的 <b>佇列名稱</b>。<br>\n"
+"佇列名必須以字母開頭，僅允許字母 (a-z 與 A-Z)，數字 (0-9)，與下劃線 '_'。\n"
+"</p>"
+
+#. BasicAddDialog help 6/7:
+#: src/include/printer/helps.rb:227
+msgid ""
+"<p>\n"
+"One of the print queues may be set to be <b>used by default</b>.<br>\n"
+"Application programs should use such a system default print queue\n"
+"if no other print queue was specified by the user.\n"
+"But there is no such thing as the 'one and only' default queue.\n"
+"Beside a system default queue any user can maintain his own\n"
+"default queue setting and furthermore any application program\n"
+"may implement its own particular way of default queue setting\n"
+"(e.g. the application may remember the previously used queue).<br>\n"
+"For details see the openSUSE support database\n"
+"article 'Print Settings with CUPS' at<br>\n"
+"http://en.opensuse.org/SDB:Print_Settings_with_CUPS\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"必須設定一個列印佇列為 <b>默認使用</b>。<br>\n"
+"應用程式應該在使用者沒有指定其他列印佇列時使用系統默認列印佇列。\n"
+"但是沒有類似 '唯一' 默認佇列。\n"
+"除了系統默認佇列之外，任何使用者都可以維護它自己的默認佇列設定，\n"
+"任何應用程式也可以實現它自己的特殊默認佇列設定 (例如應用程式或許會記住上一次使用的佇列)。<br>\n"
+"詳情請見 openSUSE 支援資料庫的 'CUPS 的列印設定' 於<br>\n"
+"http://zh.opensuse.org/SDB:Print_Settings_with_CUPS\n"
+"</p>"
+
+#. BasicAddDialog help 7/7:
+#: src/include/printer/helps.rb:243
+msgid ""
+"<p>\n"
+"An alternative way to set up HP devices is to <b>run hp-setup</b>.<br>\n"
+"HP's own tool 'hp-setup' provides setup support in particular\n"
+"for HP printers and HP all-in-one devices which require\n"
+"a proprietary driver plugin to be downloaded from HP and\n"
+"installed in the right way on a particular end-user's system.\n"
+"Furthermore 'hp-setup' can provide better setup support\n"
+"for HP network printers and HP all-in-one network devices\n"
+"because HP's own tool can implement special handling\n"
+"for special HP network devices.<br>\n"
+"For details see the openSUSE support database\n"
+"article 'How to set-up a HP printer' at<br>\n"
+"http://en.opensuse.org/SDB:How_to_set-up_a_HP_printer\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"另外一種設定惠普裝置的方法是運行 <b>hp-setup</b>。<br>\n"
+"惠普自有工具 'hp-setup' 提供了需要從惠普下載私有驅動插件並在終端使用者系統中正確安裝的惠普列印機與惠普多合一裝置的設定支援。\n"
+"另外 'hp-setup' 可以為惠普的網路列印機與惠普的多合一網路裝置提供更好的支援，因為惠普的自有工具可以實現針對特殊惠普網路裝置的特殊處理。<br>\n"
+"詳情請見 openSUSE 支援資料庫文章 '如何設定惠普列印機' 於<br>\n"
+"http://zh.opensuse.org/SDB:How_to_set_up_a_HP_printer\n"
+"</p>"
+
+#. BasicModifyDialog help 1/4:
+#: src/include/printer/helps.rb:261
+msgid ""
+"<p>\n"
+"<b><big>Modify a Print Queue</big></b><br>\n"
+"To modify a queue, select only what you really want to be changed.<br>\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>修改列印佇列</big></b><br>\n"
+"要修改一個佇列，請僅選中您真心想要改動的條目。<br>\n"
+"</p>"
+
+#. BasicModifyDialog help 2/4:
+#: src/include/printer/helps.rb:268
+msgid ""
+"<p>\n"
+"The <b>connection</b> determines how data is sent to the printer device.<br>\n"
+"If a wrong connection is selected, no data can be sent to the device\n"
+"so that there cannot be any printout.<br>\n"
+"If a printer device is accessible via more than one connection type,\n"
+"it is shown for each connection type.<br>\n"
+"In particular HP devices are often accessible both via the 'usb:/...'\n"
+"and the 'hp:/...' connection.\n"
+"The latter is provided by the HP driver package 'hplip'.\n"
+"For plain printing, both kinds of connections should work, but for anything else\n"
+"(e.g. device status via 'hp-toolbox' or scanning with a HP all-in-one device)\n"
+"the 'hp:/...' connection must be used.<br>\n"
+"When you exchange the currently used connection with another one,\n"
+"the input field for the driver search string is preset\n"
+"with the autodetected model name of the new selected connection.\n"
+"The drivers for which the driver description matches the model name\n"
+"are shown by default.<br>\n"
+"If driver descriptions match the autodetected model name\n"
+"and if all matching driver descriptions seem to belong to the same model,\n"
+"the driver descriptions are sorted so that the most reasonable driver\n"
+"should be listed topmost (but still below the currently used driver).\n"
+"On the other hand, it does not necessarily mean that this driver is\n"
+"a reasonable driver for your particular needs.\n"
+"The topmost listed driver may not work at all for your particular \n"
+"printer model. The automated driver selection\n"
+"compares strings (the autodetected model name and the driver \n"
+"descriptions) so the result can only be a best-guess proposal\n"
+"how to set up your particular printer model.<br>\n"
+"Therefore check if the currently preselected values make sense.\n"
+"Feel free to play around and modify the settings\n"
+"to what you know works best for your printer.<br>\n"
+"If no driver description matches the autodetected model name, it does \n"
+"not necessarily mean that there is no driver available for the model.\n"
+"Often the model name in the driver descriptions\n"
+"is different from the autodetected model name.\n"
+"Therefore you can enter whatever you like as driver search string\n"
+"and search through all available driver descriptions.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b>連線</b>決定資料被髮送到列印機裝置的方式。<br>\n"
+"如果選擇了一個錯誤連線，就沒有資料可以發送到裝置，因此就沒有任何列印輸出。<br>\n"
+"如果一個列印裝置可以通過多種連線類型訪問，它可以顯示在每個連線類型中。<br>\n"
+"尤其是惠普裝置通常既可以通過 'usb:/...' 也可以通過 'hp:/...' 連線訪問。\n"
+"後者是由惠普驅動軟體包 'hplip' 提供的。\n"
+"一般列印可以選擇任何連線類型，但是一些特殊任務 (例如通過 'hp-toolbox' 獲取裝置狀態或\n"
+"使用惠普多合一裝置掃描) 就必須使用 'hp:/...' 連線。\n"
+"當您變更目前使用的連線為另一個時，驅動搜索關鍵詞輸入框將預設為新選擇的連線的自動檢測到型號名。\n"
+"驅動描述匹配型號名稱的驅動也將默認顯示。<br>\n"
+"如果驅動描述匹配自動檢測到的型號名，或者所有匹配的驅動描述屬於同一型號，驅動描述將被分類，最有可能的驅動列示在最頂部 (但依然在當前使用的驅動下面)。另一方面，它並不意味著該驅動能合理的滿足您的特殊需求。最頂部列示的驅動可能在您的列印機型號上完全不能用。自動驅動選擇基於自動檢測到的型號名稱與驅動描述的字元串對比，因此結果僅是如何設定您的列印機型號的最佳猜想方案。<br>\n"
+"因此請檢查當前預選中的值滿足需求，如果您知道哪款驅動最適合您的列印機，請隨意修改設定。<br>\n"
+"如果沒有驅動描述匹配自動檢測到的型號名，它也不意味著該型號沒有驅動。通常是驅動描述中的型號名與自動檢測到的型號名不符。因此您可以輸入你喜歡的驅動搜索字元串並搜索所有可用驅動描述。\n"
+"</p>\n"
+
+#. BasicModifyDialog help 3/4:
+#: src/include/printer/helps.rb:309
+msgid ""
+"<p>\n"
+"The <b>driver</b> determines that the right data is produced for the\n"
+"specific printer model.<br>\n"
+"If a wrong driver is assigned, wrong data is sent to the printer\n"
+"which results bad looking printout, chaotic printout, or no printout at all.<br>\n"
+"You can either select another driver and modify its driver option settings later\n"
+"or keep the currently used driver and modify its driver option settings now.<br>\n"
+"Some driver option settings must match to your particular printer.\n"
+"For example the default paper size setting of the driver\n"
+"must match to the paper which is actually loaded in your printer.<br>\n"
+"For other driver option settings you can choose what you like.\n"
+"For example any choice of the available printing resolutions\n"
+"should work for the particular driver.\n"
+"Nevertheless it may happen that your particular printer fails to print\n"
+"with high resolution. For example when you have a laser printer\n"
+"which has insufficient built-in memory to process high resolution pages.<br>\n"
+"When you exchange the currently used driver by another one,\n"
+"you must first apply this change to the print queue\n"
+"so that the new driver is used for the queue\n"
+"(i.e. you must finish this dialog as a first step)\n"
+"and then in a second step you can adjust all driver options\n"
+"by using this dialog again.<br>\n"
+"Initially the input field for the driver search string is preset\n"
+"with the description of the currently used driver when the connection was not changed.\n"
+"This results usually only one single driver which matches\n"
+"so that you would have to enter a less specific driver search string\n"
+"to get also other drivers or you use the 'Find More' button.\n"
+"If no driver matches, it does not mean that there is no driver available.\n"
+"Therefore you can enter whatever you like as driver search string\n"
+"and search through all available driver descriptions.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b>驅動</b>使指定型號的列印機可以輸出正確的資料。<br>\n"
+"如果指定了錯誤的驅動，會發送錯誤的資料到列印機，這將造成難看的、混亂的列印輸出，或完全沒有列印輸出。<br>\n"
+"您既可以選擇另一款驅動並稍後修改它的驅動選項設定，或者保留當前使用的驅動並立即修改它的驅動選項設定。<br>\n"
+"一些驅動選項設定必須匹配您的列印機。例如驅動的默認紙張大小設定必須匹配您列印機中實際裝載的紙張。\n"
+"其它驅動選項您可以選擇您喜歡的。例如任何可用列印解析度都能夠用在該驅動上。除非您的驅動在高解析度下不能列印。\n"
+"例如鐳射列印機的內建內存不足以處理高解析度的頁面。<br>\n"
+"當您變更了當前使用的驅動到另一個時，您必須先應用此修改到佇列 (例如您必須完成此對話方塊以作為第一步)，然後在第二步您可以再次使用此對話方塊調整所有的驅動選項。<br>\n"
+"通常當連線沒有變更時，驅動搜索字元串輸入框初始預設為當前使用中的驅動的描述。\n"
+"此結果通常是一個匹配的驅動，因此您可以輸入一個更寬泛的驅動搜索字元串來獲取其他驅動，或者可以使用 '查找更多' 按鈕。\n"
+"如果沒有驅動匹配，也不意味著沒有驅動。因此您可以輸入你喜歡的字元串作為驅動搜索字元串並搜索全部可用驅動描述。\n"
+"</p>"
+
+#. BasicModifyDialog help 4/4:
+#: src/include/printer/helps.rb:343
+msgid ""
+"<p>\n"
+"In contrast to connection and driver where you must select the right one,\n"
+"you are free to enter arbitrary strings for <b>description</b> and <b>location</b>.\n"
+"Application programs often show description and location in the print dialog.\n"
+"To make sure that those strings look correct in any language\n"
+"which a particular user of a particular application program may use,\n"
+"it is safe when you use only plain ASCII text without\n"
+"special characters e.g. only ASCII letters (a-z and A-Z),\n"
+"ASCII numbers (0-9), and the ASCII space character (20 hex).\n"
+"Usually the description describes the model and optionally the driver\n"
+"(e.g. 'ACME FunPrinter 1000 using generic PCL driver')\n"
+"and the location describes where the printer is located\n"
+"(e.g. 'Room 123' or 'Front Desk').\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"不同於連線與驅動，您必須選擇正確的哪個，您可以自由的輸入任何字元串來作為 <b>描述</b> 與 <b>位置</b>。\n"
+"應用程式通常在列印對話方塊中顯示描述與位置。n為了確保這些字元串能正確的以任何應用程式的使用者可能使用的語言顯示，您僅使用不帶特殊字元的普通 ASCII 文字會更安全，例如，純 ASCII 字元 (a-z 與 A-Z)，ASCII 數字 (0-9)，與 ASCII 空格字元 (20 hex)。\n"
+"通常描述描述了型號，偶爾也描述驅動 (例如 '使用通用 PCL 驅動的 ACME FunPrinter 1000 ')，位置描述了列印機的物理位置 (例如 '房間 123' 或 '前臺')。\n"
+"</p>"
+
+#. DriverOptionsDialog help 1/3:
+#: src/include/printer/helps.rb:361
+msgid ""
+"<p>\n"
+"<b><big>Set Driver Options</big></b><br>\n"
+"Usually it is best to leave the driver defaults because\n"
+"the defaults should be reasonable for most cases.<br>\n"
+"Additionally, the print dialogs in most applications\n"
+"show the driver options too so that each user can specify\n"
+"driver options for each individual printout.<br>\n"
+"The only setting which should be checked in any case is the paper size,\n"
+"which must be set to what is actually used by default in the printer.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b><big>設定驅動選項</big></b><br>\n"
+"通常最好保留驅動的默認選項，因為默認在大多數情況下都是合理的。<br>\n"
+"另外，大多數應用程式的列印對話方塊也顯示驅動選項，所以使用者可以指定每個列印輸出的驅動選項。<br>\n"
+"任何情況下都應該檢查的唯一設定是紙張大小，該選項必須被設定為列印機實際默認使用的紙張大小。\n"
+"</p>\n"
+
+#. DriverOptionsDialog help 2/3:
+#: src/include/printer/helps.rb:374
+msgid ""
+"<p>\n"
+"Non-default settings may not work in all cases or have unexpected\n"
+"consequences.<br> \n"
+"For example, a high resolution setting may not work for a laser printer\n"
+"when its default built-in memory is insufficient to process high resolution\n"
+"pages.<br> \n"
+"Or a high quality setting may print intolerably slow on an inkjet printer.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"非默認設定可能不能工作於所有情況，或導致非預期後果。<br>\n"
+"例如，一個高解析度設定可能不能在鐳射列印機上工作，因為它的默認內建內存不足以處理高解析度的頁面。<br>\n"
+"或者一個高質量設定在噴墨列印機上可能會列印得讓人忍不了的慢。\n"
+"</p>\n"
+
+#. DriverOptionsDialog help 3/3:
+#: src/include/printer/helps.rb:385
+msgid ""
+"<p>\n"
+"In certain cases printer-specific driver settings\n"
+"must be adjusted to get the full functionality of a printer.<br>\n"
+"In particular, when the printer has optional units installed like\n"
+"a duplex unit or optional paper feeders, the respective driver settings\n"
+"should be checked and adjusted.<br>\n"
+"For example, a duplex unit option must be set to 'installed' or 'true'\n"
+"otherwise the driver may ignore duplex printing option settings.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"在一些情況下列印機特有的驅動設定必須調整以讓列印機獲得完整功能。<br>\n"
+"尤其是，當列印機安裝了額外單元如全雙工單元或者額外的送紙機時，應該檢查與調整相應的驅動設定。<br>\n"
+"例如，全雙工單元選項必須設定為 '已安裝' 或 '真' 否則驅動可能忽略全雙工列印選項設定。\n"
+"</p>\n"
+
+#. AddDriverDialog help 1/2:
+#: src/include/printer/helps.rb:398
+msgid ""
+"<p>\n"
+"<b><big>Add or Remove Printer Driver Packages</big></b><br>\n"
+"If a printer driver package is not marked, it is not installed.\n"
+"Select the package if you want to install it.<br>\n"
+"If a printer driver package is marked, it is installed.\n"
+"Deselect the package if you want to remove it.\n"
+"In the latter case, make sure that there is no printer configuration \n"
+"which needs the driver.<br>\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b><big>添加或移除列印機驅動軟體包</big></b><br>\n"
+"如果列印機驅動包沒有被標記，它就是未安裝的。\n"
+"如果您想要安裝一個包，請選中它。<br>\n"
+"如果列印機驅動包被標記，它就是已安裝的。\n"
+"如果您想要移除一個包，請取消選中它。\n"
+"在後一種情況，確保沒有需要該驅動的列印機配置。<br>\n"
+"</p>\n"
+
+#. AddDriverDialog help 2/2:
+#: src/include/printer/helps.rb:410
+msgid ""
+"<p>\n"
+"<b><big>Add a Printer Description File</big></b><br>\n"
+"To set up a printer configuration, a printer description file\n"
+"(PPD file) is required.<br>\n"
+"If a PPD file is not located in the /usr/share/cups/model/ directory,\n"
+"it is not available to set up a printer configuration with it.\n"
+"Therefore you can specify the full path of a PPD file,\n"
+"which is located elsewhere on your system, to get it installed\n"
+"in the /usr/share/cups/model/ directory.<br>\n"
+"Note that a printer description file is not a driver.<br>\n"
+"For non-PostScript printers the PPD file alone is\n"
+"not sufficient to set up a working printer configuration.\n"
+"In particular, it does not work for non-PostScript printers\n"
+"to download a PPD file from the Internet and then set up\n"
+"the printer with such a PPD file.\n"
+"The plain printer setup would work but actual printing\n"
+"would not work because the driver would be missing.\n"
+"For non-PostScript printers, you need a printer driver\n"
+"and a PPD file which matches exactly the particular driver.\n"
+"Matching PPD files are automatically installed at the right place\n"
+"when you install the above mentioned printer driver packages.<br>\n"
+"Only for PostScript printers, a PPD file alone is usually\n"
+"sufficient to set up a working PostScript printer configuration.\n"
+"In particular, it is sufficient when the PPD file does not\n"
+"contain a 'cupsFilter' entry because such an entry would\n"
+"reference a printer driver.<br>\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b><big>添加一個列印機描述檔案</big></b><br>\n"
+"要設定一個列印機配置，需要一個列印機描述檔案 (PPD 檔案)。<br>\n"
+"如果 PPD 檔案的位置不在 /usr/share/cups/model 目錄，就無法用它設定一個列印機配置。\n"
+"因此若 PPD 檔案的位置在其他目錄，你可以指定 PPD 檔案的完整路徑，來把它安裝到 /usr/share/cups/model 目錄。<br>\n"
+"注意一個列印機描述檔案不是一個驅動。<br>\n"
+"對於非 PostScript 列印機來說，僅有 PPD 檔案是不足以設定一個能夠工作的列印機配置的。\n"
+"尤其是，非 PostScript 列印機無法從網際網路下載 PPD 檔案，然後使用該 PPD 檔案設定列印機。\n"
+"一般列印機可以設定但無法實際列印，因為驅動可能缺失。\n"
+"對於非 PostScript 列印機來說，您需要一個列印機驅動與一個匹配驅動的 PPD 檔案。當您安裝上述列印機驅動包時，匹配的 PPD 檔案會自動安裝到正確的位置.<br>\n"
+"僅有 PostScript 列印機才可以僅用 PPD 檔案設定一個可工作的 PostScript 列印機配置。尤其是當 PPD 檔案不包含 'cupsFilter' 項時，因為這樣的條目會指向一個列印機驅動。<br>\n"
+"</p>\n"
+
+#. ConnectionWizardDialog help 1/7:
+#: src/include/printer/helps.rb:441
+msgid ""
+"<p>\n"
+"<b><big>Specify the Connection</big></b><br>\n"
+"The <b>connection</b> determines how data is sent to the printer device.<br>\n"
+"If a wrong connection is used, no data can be sent to the device\n"
+"so that there cannot be any printout.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b><big>指定連線</big></b><br>\n"
+"<b>連線</b>決定了資料發送到列印機裝置的方式。<br>\n"
+"如果指定了一個錯誤的連線，沒有資料能夠發送到裝置，因此也就沒有任何列印輸出。\n"
+"</p>\n"
+
+#. ConnectionWizardDialog help 2/7:
+#: src/include/printer/helps.rb:450
+msgid ""
+"<p>\n"
+"<b><big>Printer Device URI</big></b><br>\n"
+"A connection is specified as so called <b>device URI</b>.<br>\n"
+"Its first word (the so called URI scheme) specifies the kind of data-transfer,\n"
+"for example 'parallel', 'usb', 'socket', 'lpd', or 'ipp'.<br>\n"
+"After the scheme there are more or less additional components\n"
+"which specify the details for this kind of data-transfer.<br>\n"
+"Space characters are not allowed in an URI.\n"
+"Therefore a space character in a value of an URI component\n"
+"is encoded as '%20' (20 is the hexadecimal value of the space character).<br>\n"
+"The components of an URI are separated by special reserved characters like\n"
+"colon ':', slash '/', question mark '?', ampersand '&amp;', or equals sign '='.<br>\n"
+"Finally there could be optional parameters (separated by a question mark '?')\n"
+"of the form 'option1=value1&amp;option2=value2&amp;option3=value3' so that\n"
+"a full device URI could be for example:<br>\n"
+"ipp://server.domain:631/printers/queuename?waitjob=false&amp;waitprinter=false<br>\n"
+"Some examples:<br>\n"
+"A USB printer model 'Fun Printer 1000+' made by 'ACME'\n"
+"with serial number 'A1B2C3' may have a device URI like:<br>\n"
+"usb://ACME/Fun%20Printer%201000%2B?serial=A1B2C3<br>\n"
+"A network printer with IP 192.168.100.1 which is accessible\n"
+"via port 9100 may have a device URI like:<br>\n"
+"socket://192.168.100.1:9100<br>\n"
+"A network printer with IP 192.168.100.2 which is accessible\n"
+"via LPD protocol with a remote LPD queue name 'LPT1'\n"
+"may have a device URI like:<br>\n"
+"lpd://192.168.100.2/LPT1\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>列印機裝置 URI</big></b><br>\n"
+"指定的連線就是所謂的 <b>device URI</b>。<br>\n"
+"它的第一個詞 (所謂 URI 格式) 指定了資料傳輸的類型，例如 'parallel', 'usb', 'socket', 'lpd', 或者 'ipp'。<br>\n"
+"格式之後有或多或少額外的元件指定了這種資料傳輸類型的細節。<br>\n"
+"URI 中不允許出現空格，因此空格字元以 URI 元件的值出現時是編碼成 '%20' 的 (20 是空格字元的十六進位制值)。<br>\n"
+"URI 的元件之間由特殊的保留字元分隔，保留字元有冒號 ':'，斜線 '/'，問號 '?'，符號 '&amp;'，或者等號 '='。<br>\n"
+"最後可選參數 (由問號 '?' 分隔)  的格式為 'option1=value1&amp;option2=value2&amp;option3=value3'，因此一個完整的裝置 URI 的例子如下：<br>\n"
+"ipp://server.domain:631/printers/queuename?waitjob=false&amp;waitprinter=false<br>\n"
+"其他一些例子：<br>\n"
+"一個由 ‘ACME’ 製造的型號為 ‘Fun Printer 1000+’ 的編號為 'A1B2C3' 的 USB 列印機的裝置 URI 可能是：<br>\n"
+"usb://ACME/Fun%20Printer%201000%2B?serial=A1B2C3<br>\n"
+"一個可通過 9100 埠訪問的 IP 地址為 192.168.100.1 的網路列印機的裝置 URI 可能是：<br>\n"
+"socket://192.168.100.1:9100<br>\n"
+"一個可通過 LPD 埠訪問的 IP 地址為 192.168.100.2 的遠端 LPD 佇列名為 ‘LPT1’ 的網路列印機的裝置 URI 可能是：<br>\n"
+"lpd://192.168.100.2/LPT1\n"
+"</p>"
+
+#. ConnectionWizardDialog help 3/7:
+#: src/include/printer/helps.rb:481
+msgid ""
+"<p>\n"
+"<b><big>Percent Encoding</big></b><br>\n"
+"The issue is complicated.\n"
+"It is recommended to avoid reserved characters and spaces\n"
+"for component values in URIs if the values are under your control\n"
+"(e.g. you cannot avoid it when you must specify such characters\n"
+"in values for an URI to access a remote print queue\n"
+"but the remote print queue is not under your control).\n"
+"Whenever possible use only so called 'unreserved characters'.\n"
+"Unreserved characters are uppercase and lowercase letters,\n"
+"decimal digits, hyphen, period, underscore, and tilde.\n"
+"Even hyphen, period, tilde, and case sensitivity\n"
+"could cause special issues in special cases\n"
+"(e.g. only letters, digits, and underscore are known to work\n"
+"for a CUPS print queue name and case is not significant there).\n"
+"Therefore it is best to use only lowercase letters, digits,\n"
+"and underscore for all values in all URIs if possible.<br>\n"
+"Reserved characters and space characters in the value of a component\n"
+"must be percent-encoded (also known as URL encoding).<br>\n"
+"When an input field in the dialog is intended to enter\n"
+"only a single value for a single component of the URI\n"
+"(e.g. separated input fields for username and password),\n"
+"you must enter spaces and reserved characters literally\n"
+"(i.e. non-percent-encoded).\n"
+"For such input fields all spaces and reserved characters\n"
+"will be automatically percent-encoded.\n"
+"For example if a password is actually 'Foo%20Bar' (non-percent-encoded),\n"
+"it must be entered literally in the password input field in the dialog.\n"
+"The automated percent-encoding results 'Foo%2520Bar' which is how\n"
+"the value of the password component is actually stored in the URI.<br>\n"
+"In contrast when an input field in the dialog is intended to enter\n"
+"more that a single value for a single component of the URI\n"
+"(e.g. a single input field for all optional parameters\n"
+"like 'option1=value1&amp;option2=value2&amp;option3=value3'\n"
+"or a single input field to enter the whole URI),\n"
+"you must enter spaces and reserved characters percent-encoded\n"
+"because an automated percent-encoding is no longer possible.\n"
+"Assume in an optional parameter 'option=value'\n"
+"the value would be 'this&amp;that' so that the whole\n"
+"optional parameter would be 'option=this&amp;that' (literally).\n"
+"But a literal '&amp;' character denotes\n"
+"the separation of different optional parameters\n"
+"so that 'option=this&amp;that' in an URI means\n"
+"a first optional parameter 'option=this' and\n"
+"a second optional parameter which is only 'that'.\n"
+"Therefore a single optional parameter 'option=this&amp;that'\n"
+"must be entered percent-encoded as 'option=this%26that'<br>\n"
+"Input fields which require percent-encoded input\n"
+"are denoted by a '[percent-encoded]' hint.<br>\n"
+"Listing of characters and their percent encoding:<br>\n"
+"space ' ' is percent encoded as %20<br>\n"
+"exclamation mark ! is percent encoded as %21<br>\n"
+"number sign # is percent encoded as %23<br>\n"
+"Dollar sign $ is percent encoded as %24<br>\n"
+"percentage % is percent encoded as %25<br>\n"
+"ampersand &amp; is percent encoded as %26<br>\n"
+"apostrophe / single quotation mark ' is percent encoded as %27<br>\n"
+"left parenthesis ( is percent encoded as %28<br>\n"
+"right parenthesis ) is percent encoded as %29<br>\n"
+"asterisk * is percent encoded as %2A<br>\n"
+"plus sign + is percent encoded as %2B<br>\n"
+"comma , is percent encoded as %2C<br>\n"
+"slash / is percent encoded as %2F<br>\n"
+"colon : is percent encoded as %3A<br>\n"
+"semicolon ; is percent encoded as %3B<br>\n"
+"equals sign = is percent encoded as %3D<br>\n"
+"question mark ? is percent encoded as %3F<br>\n"
+"at sign @ is percent encoded as %40<br>\n"
+"left bracket [ is percent encoded as %5B<br>\n"
+"right bracket ] is percent encoded as %5D<br>\n"
+"For details see 'Uniform Resource Identifier (URI): Generic Syntax' at<br>\n"
+"http://tools.ietf.org/html/rfc3986\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>百分號編碼</big></b><br>\n"
+"該問題很複雜。\n"
+"建議您避免在 URI 中使用保留字元與空格作為元件值，如果您能控制的話 (例如當您必須在 URI 中指定這樣的字元作為值以訪問遠端列印佇列，但遠端列印佇列又不在您控制下時，您就無法避免使用它們)。\n"
+"可能的情況下請僅使用 '非保留值'。\n"
+"非保留值包括大小寫字母，十位數字，連字元，句號，下劃線與波浪號。\n"
+"甚至在特殊情況下，連字元，句號，波浪號與大小寫都會導致特殊問題 (例如，僅有字元，數字與下劃線已知可以用作 CUPS 列印佇列名，它們一般沒有什麼顯著問題)。\n"
+"因此若可能最好僅使用小寫字母，數字，與下劃線作為 URI 中的值。<br>\n"
+"元件中的保留字元與空格字元必須以百分比編碼 (也叫做 URL 編碼)。<br>\n"
+"當對話方塊中輸入框是用來輸入 URI 的一個元件的一個值時 (例如，使用者名與密碼的輸入框是分開的)，您必須按字面輸入空格與保留字元 (非百分比編碼)。這樣的輸入框會自動編碼所有空格與保留字元。\n"
+"例如密碼實際上是 'Foo%20Bar' (非百分比編碼)，您必須在對話方塊中的密碼輸入框中按字面輸入 'Foo%20Bar'。URI 中的密碼元件值實際上儲存的是自動百分比編碼的結果 'Foo%2520Bar'。相反當對話方塊中輸入框是用來輸入 URI 的一個元件的多於一個值時 (例如，一個給所有可選參數如 'option1=value1&amp;option2=value2&amp;option3=value3' 的輸入框或者一個輸入框裡輸入整個 URI)，您必須輸入編碼過的空格與保留字元，因為這時沒有自動編碼。\n"
+"假設一個可選參數 'option=value' 的輸入，value 就應該是 'this&amp;that' 因此整個可選參數應該是 'option=this&amp;that' (字面上)。\n"
+"但是字面上的 '&amp;' 字元意味著不同可選參數的分隔符，因此 URI 中的 'option=this&amp;that' 意思是第一個可選參數是 'option=this'，第二個可選參數僅是 'that'。\n"
+"因此一個單獨的可選參數 'option=this&amp;that' 必須以百分比編碼格式輸入為 'option=this%26%that'。<br>\n"
+"要求百分比編碼輸入的輸入框由 '[percent-encoded]' 提示語表示。<br>\n"
+"下面是字元與它們的百分比編碼的列表：<br>\n"
+"空格 '' 的百分比編碼是 %20<br>\n"
+"感嘆號 ！ 的百分比編碼是 %21<br>\n"
+"數字符號 # 的百分比編碼是 %23<br>\n"
+"美元符號 $ 的百分比編碼是 %24<br>\n"
+"百分號 % 的百分比編碼是 %25<br>\n"
+"符號 &amp; 的百分比編碼是 %26<br>\n"
+"單引號 ‘ 的百分比編碼是 %27<br>\n"
+"左括號 ( 的百分比編碼是 %28<br>\n"
+"右括號 ) 的百分比編碼是 %29<br>\n"
+"星號 * 的百分比編碼是 %2A<br>\n"
+"加號 + 的百分比編碼是 %2B<br>\n"
+"逗號 ， 的百分比編碼是 %2C<br>\n"
+"斜槓 / 的百分比編碼是 %2F<br>\n"
+"冒號 : 的百分比編碼是 %3A<br>\n"
+"分號 ; 的百分比編碼是 %3B<br>\n"
+"等號 = 的百分比編碼是 %3D<br>\n"
+"問號 ? 的百分比編碼是 %3F<br>\n"
+"at 號 @ 的百分比編碼是 %40<br>\n"
+"左大括號 [ 的百分比編碼是 %5B<br>\n"
+"右大括號 ] 的百分比編碼是 %5D<br>\n"
+"詳情見 '統一資源標識符 (URI): 通用語法' 於<br>\n"
+"http://tools.ietf.org/html/rfc3986\n"
+"</p>"
+
+#. ConnectionWizardDialog help 4/7:
+#: src/include/printer/helps.rb:557
+msgid ""
+"<p>\n"
+"<b><big>Device URIs for Directly Connected Devices</big></b><br>\n"
+"Devices which are connected via the parallel port or via USB\n"
+"are autodetected and the appropriate device URI is autogenerated.\n"
+"For example:<br>\n"
+"parallel:/dev/lp0<br>\n"
+"usb://ACME/Fun%20Printer?serial=A1B2C3<br>\n"
+"hp:/usb/HP_LaserJet?serial=1234<br>\n"
+"Usually only the autogenerated device URIs work.\n"
+"When the device is not autodetected, there is usually no communication\n"
+"with the device possible and no data can be sent to the device.<br>\n"
+"To access a HP printer or all-in-one device via the backend 'hp',\n"
+"the RPM package hplip must be installed.\n"
+"The package provides HP's printing and scanning software HPLIP.<br>\n"
+"In contrast devices which are connected via serial port or bluetooth\n"
+"are not autodetected so that the device URI must be manually specified.\n"
+"The serial device URI parameters must comply with\n"
+"what the serial port in the printer requires,\n"
+"see the manual of your serial printer.\n"
+"Example device URIs:<br>\n"
+"serial:/dev/ttyS9?baud=9600+bits=8+parity=none+flow=soft+stop=1<br>\n"
+"bluetooth://1A2B3C4D5E6F<br>\n"
+"To access a device via bluetooth, the RPM package bluez-cups must be installed.\n"
+"The package provides the CUPS backend 'bluetooth' which actually sends the data\n"
+"to a bluetooth printer.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>直連裝置的裝置 URI</big</b><br>\n"
+"通過並口或 USB 連線的裝置能夠自動檢測到並自動生成合適的裝置 URI。\n"
+"例如：<br>\n"
+"parallel:/dev/lp0<br>\n"
+"usb://ACME/Fun%20Printer?serial=A1B2C3<br>\n"
+"hp:/usb/HP_LaserJet?serial=1234<br>\n"
+"通常僅有自動生成的裝置 URI 才能用。\n"
+"當裝置沒有自動檢測到時，通常沒有辦法與裝置建立通訊與發送資料到裝置。<br>\n"
+"要通過後端 'hp' 訪問惠普列印機或多合一裝置，必須安裝 RPM 軟體包 hplip 。\n"
+"該軟體包提供了惠普的列印與掃描軟體 HPLIP。<br>\n"
+"相反通過串列埠或藍芽連線的裝置不能自動檢測到因此裝置 URI 必須手動指定。\n"
+"串列埠裝置 URI 參數必須遵守列印機要求的串列埠埠，詳情見您串列埠列印機的手冊。\n"
+"裝置 URI 例項：<br>\n"
+"serial:/dev/ttyS9?baud=9600+bits=8+parity=none+flow=soft+stop=1<br>\n"
+"bluetooth://1A2B3C4D5E6F<br>\n"
+"要通過藍芽訪問裝置，必須安裝 RPM 軟體包 bluez-cups。\n"
+"該軟體包提供了發送資料到藍芽列印機的 CUPS 後端 'bluetooth'。\n"
+"</p>"
+
+#. ConnectionWizardDialog help 5/7:
+#: src/include/printer/helps.rb:586
+msgid ""
+"<p>\n"
+"<b><big>Device URIs to Access a Network Printer or a Printserver Box</big></b><br>\n"
+"A printserver box is a small device with a network connection\n"
+"and a USB or parallel port connection to connect the actual printer.\n"
+"A network printer has such a device built-in.\n"
+"Access happens via three different network protocols.\n"
+"See the manual of your network printer or printserver box\n"
+"to find out what your particular device supports:<br>\n"
+"<b>TCP Port (AppSocket/JetDirect)</b><br>\n"
+"The IP address and a port number is needed to access it.\n"
+"Often the port number 9100 is the right one.\n"
+"It is the simplest, fastest, and generally the most reliable protocol.\n"
+"The matching device URI is:<br>\n"
+"socket://ip-address:port-number<br>.\n"
+"<b>Line Printer Daemon (LPD) Protocol</b><br>\n"
+"A LPD runs on the device and provides one or more LPD queues.\n"
+"The IP address and a LPD queue name is needed to access it.\n"
+"Almost all network printers and printserver boxes support it.\n"
+"Often an arbitrary queue name or 'LPT1' works.\n"
+"But using a correct LPD queue which does not change\n"
+"the data or add additional formfeeds or banner pages\n"
+"could be essential for reliable printing.\n"
+"The matching device URI is:<br>\n"
+"lpd://ip-address/queue<br>.\n"
+"<b>Internet Printing Protocol (IPP)</b><br>\n"
+"IPP is the native protocol for CUPS running on a real computer,\n"
+"but if IPP is implemented in a small printserver box,\n"
+"it is often not implemented properly. Only use IPP if the vendor\n"
+"actually documents official support for it. \n"
+"The matching device URI is:<br>\n"
+"ipp://ip-address:port-number/resource<br>.\n"
+"What 'port-number' and 'resource' exactly is depends\n"
+"on the particular network printer or printserver box model.<br>\n"
+"For <b>more information</b> have a look at<br>\n"
+"http://www.cups.org/documentation.php/network.html\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b><big>訪問網路列印機或列印伺服器盒的裝置 URI</big></b><br>\n"
+"一個列印伺服器盒是一個通過網路連線與 USB 或並口連線連線到真實列印機的小型裝置。\n"
+"網路列印機內建了該裝置。\n"
+"可通過三種不同的網路協議訪問，查找您網路列印機或列印伺服器盒的手冊來獲知您的裝置支援哪一種：<br>\n"
+"<b>TCP 埠 (AppSocket/JetDirect)</b><br>\n"
+"需要 IP 地址與埠號來訪問。通常埠號為 9100。\n"
+"這是最簡單、快速、與最穩定的協議。\n"
+"匹配的裝置 URI 是：<br>\n"
+"socket://ip地址:埠號<br>。\n"
+"<b>行式列印機守護精靈 (LPD) 協議</b><br>\n"
+"IPP 是運行在真實計算機上的 CUPS 的原生協議，但是如果 IPP 是實現在小型列印伺服器盒中的，那它通常實現的不好。僅有在生產廠商確實提供了官方支援時再使用 IPP。\n"
+"匹配的裝置 URI 是：<br>\n"
+"ipp://ip地址:埠號/資源<br>。\n"
+"埠號與資源由網路列印機與列印伺服器盒的型號而定。<br>\n"
+"詳情參考 http://www.cups.org/documentation.php/network.html\n"
+"</p>\n"
+
+#. ConnectionWizardDialog help 6/7:
+#: src/include/printer/helps.rb:625
+msgid ""
+"<p>\n"
+"<b><big>Device URIs to Print Via a Print Server Machine</big></b><br>\n"
+"In contrast to a printserver box a print server machine\n"
+"means a real computer which offers a print service.<br>\n"
+"Access happens via various different network protocols.\n"
+"Ask your network administrator what which print server machine\n"
+"provides in your particular network:<br>\n"
+"<b>Windows (R) or Samba (SMB/CIFS)</b><br>\n"
+"To access a SMB printer share, the RPM package samba-client must be installed.\n"
+"The package provides the CUPS backend 'smb' which is a link to\n"
+"the <tt>/usr/bin/smbspool</tt> program which actually sends the data\n"
+"to a SMB printer share.<br>\n"
+"A server name and a printer share name and optionally a workgroup name\n"
+"is needed to access it.\n"
+"Furthermore a user name and a password may be required to get access.\n"
+"Have in mind that spaces and special characters in those values\n"
+"must be percent-encoded (see above).<br>\n"
+"By default CUPS runs backends (here smbspool) as user 'lp'.\n"
+"When printing in an Active Directory (R) environment (AD)\n"
+"the user 'lp' is not allowed to print in this environment\n"
+"so that the traditional way to print via smbspool as user 'lp'\n"
+"would not work.<br>\n"
+"For printing in an AD environment additionally\n"
+"the RPM package samba-krb-printing must be installed.\n"
+"In this case the CUPS backend 'smb' link\n"
+"is changed to <tt>/usr/bin/get_printing_ticket</tt>\n"
+"which is a wrapper to run smbspool as the original user\n"
+"who submitted a particular print job.\n"
+"When the Kerberos protocol is used for authentication\n"
+"in an AD environment, a user gets a ticket granting ticket (TGT)\n"
+"via the display manager during login at the Gnome or KDE desktop.\n"
+"When smbspool is run as the original user who submitted\n"
+"a particular print job, it can access the TGT of this user\n"
+"and use it to pass the printing data to the SMB printer share\n"
+"even in an AD environment with Kerberos authentication.\n"
+"In this case neither a fixed user name nor a fixed password\n"
+"has to be specified for authentication.\n"
+"A precondition is that get_printing_ticket runs on the same host\n"
+"where the user who submitted a particular print job is logged in.\n"
+"This means that it must be set up on the workstation\n"
+"for the particular user who will submit such print jobs\n"
+"and the user's workstation must send its printing data\n"
+"directly to the SMB printer share in the AD environment.\n"
+"In particular it does not work on a separated CUPS server machine\n"
+"where users who submit print jobs are not logged in.<br>\n"
+"For the traditional way a matching full device URI is:<br>\n"
+"smb://username:password@workgroup/server/printer<br>\n"
+"For example 'John Doe' with password '@home!' may use something like\n"
+"the following device URI to access a 'Fun Printer 1000+' share:<br>\n"
+"smb://John%20Doe:%40home%21@MYGROUP/homeserver/Fun%20Printer%201000%2B<br>\n"
+"For <b>more information</b> have a look at <tt>man smbspool</tt> and<br>\n"
+"http://en.opensuse.org/SDB:Printing_via_SMB_(Samba)_Share_or_Windows_Share<br>\n"
+"'Windows' and 'Active Directory' are registered trademarks\n"
+"of Microsoft Corporation in the United States and/or other countries.<br>\n"
+"<b>Traditional UNIX Server (LPR)</b><br>\n"
+"A Line Printer Daemon (LPD) runs on a traditional UNIX server\n"
+"and provides one or more LPD queues.\n"
+"The IP address and a LPD queue name is needed to access it.\n"
+"The matching device URI is:<br>\n"
+"lpd://ip-address/queue<br>\n"
+"<b>CUPS Server</b><br>\n"
+"Usually you should not set up a local print queue to access\n"
+"a remote queue on a CUPS server. Instead do the setup\n"
+"in the <b>Print Via Network</b> dialog.\n"
+"Only if you really know that you must set up a local print queue\n"
+"to access a remote queue on a CUPS server proceed here.<br>\n"
+"IPP is the native protocol for CUPS which runs on a server.\n"
+"The official IANA port for IPP is 631.\n"
+"The matching device URI is:<br>\n"
+"ipp://ip-address:631/printers/queue<br>\n"
+"<b>Novell Netware Print Server (IPX)</b><br>\n"
+"To access print queues on a Novell Netware print server,\n"
+"the RPM package ncpfs must be installed.\n"
+"The package provides the CUPS backend 'novell' which runs\n"
+"the <tt>nprint</tt> program which actually sends the data\n"
+"to a Novell Netware print queue.\n"
+"A server name and a printer queue name is needed to access it.\n"
+"Furthermore a user name and a password may be required to get access.\n"
+"The matching device URI is:<br>\n"
+"novell://username:password@server/queue<br>\n"
+"For <b>more information</b> have a look at <tt>man nprint</tt> and\n"
+"the other documentation in the RPM package ncpfs.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>通過列印伺服器列印的裝置 URI</big></b><br>\n"
+"不同於列印伺服器盒，列印伺服器意味著一臺提供列印服務的真實計算機。<br>\n"
+"可以通過多種網路協議訪問。\n"
+"詢問您的網路管理員以獲知您的網路中哪臺計算機是列印伺服器，是哪種列印伺服器：<br>\n"
+"<b>Windows (R) 或 Samba (SMB/CIFS)</b><br>\n"
+"要訪問 SMB 列印機共享，必須安裝 RPM 軟體包 samba-client。\n"
+"該軟體包提供了 CUPS 後端 'smb'，它連結到 <tt>/usr/bin/smbspool</tt> 程式來實際發送資料到 SMB 列印機共享。<br>\n"
+"需要伺服器名稱與列印機共享名稱，可選的工作組名稱來訪問它。\n"
+"還有用來獲得訪問許可權的使用者名與密碼。\n"
+"請記住這些值中的空格與特殊字元必須以百分比編碼 (見上)。<br>\n"
+"默認 CUPS 以使用者 'lp' 運行後端 (這裡是 smbspool)。n當在活動目錄 (R) 環境 (AD) 中列印時，使用者 'lp' 不允許在該環境列印，因此傳統的以 'lp' 使用者身份通過 smbspool 列印的方法行不通。<br>\n"
+"要在活動目錄環境中列印，您必須安裝 RPM 軟體包 samba-krb-printing。它把 CUPS 後端 'smb' 的連結換成了 <tt>/usr/bin/get_printing_ticket</tt>，那是一個以提交列印任務的初始使用者身份執行 smbspool 的封裝。\n"
+"當活動目錄環境 (AD) 使用了 Kerberos 協議認證時，使用者在登陸 GNOME 或 KDE 桌面時會通過顯示管理器得到一個豁免券 (TGT)。\n"
+"當 smbspool 由提交列印任務的初始使用者運行時，即使在使用 Kerberos 驗證的活動目錄 (AD) 環境下，smbspool 依然可以訪問該使用者的豁免券，使用它來向 SMB 列印機共享傳輸列印資料。豁免券免除了您認證固定使用者名或固定密碼的麻煩。\n"
+"這樣做的前提是 get_printing_ticket 要運行在提交列印任務的使用者登入的那臺主機上。這意味著它必須在使用者提交列印任務的工作站上設定，且使用者的這臺工作站必須直接發送列印資料給活動目錄 (AD) 環境中的 SMB 列印機共享。另外它不能運行在提交列印任務的使用者沒有登入的獨立 CUPS 伺服器機上。<br>\n"
+"傳統上一個匹配的完整裝置 URI 是：<br>\n"
+"smb://使用者名:密碼@工作組/伺服器/列印機<br>\n"
+"例如使用者名 '王 小萌'、密碼 '@1234!' 可以使用下面的裝置 URI 來訪問 '惠普 1000+ 列印機' 共享：<br>\n"
+"smb://王%20小萌:%401234%21@MYGROUP/homeserver/惠普%201000%2B%20列印機<br>\n"
+"<b>更多資訊</b>請參考 <tt>man smbspool</tt> 與 <br>\n"
+"http://zh.opensuse.org/SDB:Printing_via_SMB_(Samba)_Share_or_Windows_Share<br>\n"
+"'Windows' 與 '活動目錄' 是美國與/或其他國家的微軟的註冊商標。<br>\n"
+"<b>傳統 UNIX 伺服器 (LPR)</b><br>\n"
+"運行在傳統 UNIX 伺服器上行式列印機守護精靈 (LPD) 可以提供一個或多個 LDP 佇列。\n"
+"需要 IP 地址與 LPD  佇列名來訪問它。\n"
+"匹配的裝置 URI 是：<br>\n"
+"lpd://ip地址/佇列名<br>\n"
+"<b>CUPS 伺服器</b><br>\n"
+"通常您不需要設定本地列印佇列來訪問 CUPS 伺服器上的遠端佇列，而是像 <b>網路列印</b> 對話方塊中那麼設定。\n"
+"除非您真的知道您必須設定一個本地列印佇列來訪問 CUPS 伺服器上的遠端佇列才可以那麼做。<br>\n"
+"IPP 是伺服器上運行的 CUPS 的原生協議。IPP 的官方 IANA 埠是 631。\n"
+"匹配的裝置 URI 是：<br>\n"
+"ipp://ip地址:631/列印機/佇列<br>\n"
+"<b>Novell Netware 列印伺服器 (IPX)</b><br>\n"
+"要訪問 Novell Netware 列印伺服器上的列印佇列，必須安裝 RPM 軟體包 ncpfs。\n"
+"該軟體包提供了 CUPS 後端 'novell'，該後端運行 <tt>nprint</tt> 程式，它真正發送資料給 Novell Netware 列印佇列。\n"
+"需要伺服器名與列印機佇列名來訪問它。還需要用來獲取訪問許可權的使用者名與密碼。\n"
+"匹配的裝置 URI 為：<br>\n"
+"novell://使用者名:密碼@伺服器/佇列<br>\n"
+"<b>更多資訊</b>請參考 <tt>man nprint</tt> 與 RPM 軟體包 ncpfs 的其他文件。\n"
+"</p>"
+
+#. ConnectionWizardDialog help 7/7:
+#: src/include/printer/helps.rb:711
+msgid ""
+"<p>\n"
+"<b><big>Special Device URIs</big></b><br>\n"
+"<b>Specify an Arbitrary Device URI</b>\n"
+"if you know the exact right device URI for your particular case\n"
+"or to modify an existing device URI in a special way.<br>\n"
+"<b>Send Print Data to Other Program (pipe)</b><br>\n"
+"To do this, the RPM package cups-backends must be installed.\n"
+"The package provides the CUPS backend 'pipe' which runs\n"
+"the program that you specified here.\n"
+"The matching device URI is:<br>\n"
+"pipe:/path/to/targetcommand<br>\n"
+"<b>Daisy-chain Backend Error Handler (beh)</b><br>\n"
+"To do this, the RPM package foomatic-filters must be installed.\n"
+"The package provides the CUPS backend 'beh'.<br>\n"
+"The backend 'beh' is a wrapper for the usual backend,\n"
+"which is then called by beh.\n"
+"This way beh can, depending on its configuration,\n"
+"repeat the call of the backend or simply hide the error status\n"
+"of the backend from being seen by the CUPS daemon.\n"
+"The matching device URI is:<br>\n"
+"beh:/nodisable/attempts/delay/originalDeviceURI<br>\n"
+"If nodisable is '1' beh always exits successfully\n"
+"so that the queue gets never disabled but on the other hand\n"
+"print jobs are lost if there is an error.<br>\n"
+"Attempts is the number of attempts to recall the backend\n"
+"in case of an error. '0' means infinite retries.<br>\n"
+"Delay is the number of seconds between two attempts\n"
+"to call the backend.<br>\n"
+"The last parameter is the original URI, which the queue had before.<br>\n"
+"Example:<br>\n"
+"beh:/1/3/5/socket://ip-address:port-number<br>\n"
+"The beh backend tries to access a network printer 3 times with 5 second delay\n"
+"between the attempts. If access still fails, the queue is not disabled\n"
+"and the print job is lost.<br>\n"
+"For <b>more information</b> have a look at <tt>/usr/lib[64]/cups/backend/beh</tt> and<br>\n"
+"http://www.linuxfoundation.org/en/OpenPrinting/Database/BackendErrorHandler\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>特殊裝置 URI</big></b><br>\n"
+"<b>指定一個特殊裝置 URI</b>\n"
+"如果您知道您特殊裝置的絕對正確的裝置 URI 或者用特殊方法修改現有裝置 URI。<br>\n"
+"<b>發送列印資料到其他程式 (管道 pipe)</b><br>\n"
+"必須安裝 RPM 軟體包 cups-backends。\n"
+"該軟體包提供了 CUPS 後端 'pipe'，它能運行您在此指定的程式。\n"
+"匹配的裝置 URI 為:<br>\n"
+"pipe:/目標命令/的/路徑<br>\n"
+"<b>菊鏈後端錯誤處理器 (beh)</b><br>\n"
+"必須安裝 RPM 軟體包 foomatic-filters。\n"
+"該軟體包提供了 CUPS 後端 'beh'。<br>\n"
+"後端 'beh' 是常用後端的一個封裝，使用 beh 呼叫常用後端。通過這種方法，根據 beh 的配置，它可以重複呼叫後端，或對 CUPS 守護精靈簡單隱藏後端的錯誤狀態。\n"
+"匹配的裝置 URI 為:<br>\n"
+"beh://nodisable/嘗試次數/延遲/原始裝置 URI<br>\n"
+"如果 nodisable 是 '1' 的話，beh 總能成功退出因此佇列從不禁用，但另一方面說如果出錯的話整個佇列剩餘的列印任務都會丟失。<br>\n"
+"嘗試次數是出錯時重新呼叫後端的次數。'0' 意味著永遠。<br>\n"
+"延遲是兩次呼叫後端的操作之間的間隔秒數。<br>\n"
+"最後一個參數是原始 URI，就是佇列之前的 URI。<br>\n"
+"例項：<br>\n"
+"beh:/1/3/5/socket://ip地址:埠號<br>\n"
+"beh 後端嘗試訪問網路列印機 3 次，間隔為 5 秒。如果訪問仍然失敗，不禁用列印佇列，丟失列印任務。<br>\n"
+"<b>更多資訊</b>請參考 <tt>/usr/lib[64]/cups/backend/beh</tt> 與<br>\n"
+"http://www.linuxfoundation.org/en/OpenPrinting/Database/BackendErrorHandler\n"
+"</p>"
+
+#. PrintingViaNetworkDialog help 1/4:
+#: src/include/printer/helps.rb:752
+msgid ""
+"<p>\n"
+"<b><big>Printing Via Network</big></b><br>\n"
+"Usually CUPS (Common Unix Printing System) is used to print via network.<br>\n"
+"By default CUPS uses its so called 'Browsing' mode\n"
+"to make printers available via network.<br>\n"
+"In this case remote CUPS servers must publish their printers via network\n"
+"and accordingly on your host the CUPS daemon process (cupsd) must run\n"
+"which is listening for incoming information about published printers.<br>\n"
+"CUPS Browsing information is received via UDP port 631.<br>\n"
+"Regarding firewall:<br>\n"
+"Check if a firewall is active for a network zone\n"
+"in which printers are published via network.\n"
+"By default the SuSEfirewall allows any incoming information\n"
+"via a network interface which belongs to the 'internal zone'\n"
+"because this zone is trusted by default.<br>\n"
+"It does not make sense to do printing in a trusted internal network\n"
+"with a network interface which belongs to the untrusted 'external zone'\n"
+"(the latter is the default setting for network interfaces to be safe).\n"
+"In particular do not disable firewall protection for CUPS\n"
+"(i.e. for IPP which uses TCP port 631 and UDP port 631)\n"
+"for the untrusted 'external zone'.<br>\n"
+"To use remote printers in a trusted internal network\n"
+"and be protected by the firewall against unwanted access\n"
+"from any external network (in particular from the Internet),\n"
+"assign the network interface which belongs to the internal network\n"
+"to the internal zone of the firewall.\n"
+"Use the YaST Firewall setup module to do this fundamental setup\n"
+"to gain security plus usefulness in your network\n"
+"and using remote printers in a trusted internal network\n"
+"will work without any further firewall setup.<br>\n"
+"For details see the openSUSE support database\n"
+"article 'CUPS and SANE Firewall settings' at<br>\n"
+"http://en.opensuse.org/SDB:CUPS_and_SANE_Firewall_settings\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>網路列印</big></b><br>\n"
+"通常使用 CUPS (通用 UNIX 列印系統) 來通過網路列印。<br>\n"
+"默認 CUPS 使用它的所謂 '瀏覽' 模式來向網路釋出列印機。<br>\n"
+"在這種情況下遠端 CUPS 伺服器必須通過網路釋出它的列印機，您的主機必須運行 CUPS 守護精靈程序 (cupsd) 以監聽釋出的列印機的進站資訊。<br>\n"
+"CUPS 瀏覽資訊是通過 UDP 埠 631 來接收的。<br>\n"
+"防火牆相關：<br>\n"
+"檢查防火牆是否監控著列印機發布的網路區域。\n"
+"默認 SuSE 防火牆允許任何通過屬於 '內部區域 的網路介面進站的資訊，因此此區域默認是信任的。<br>\n"
+"通過屬於不信任的 '外部區域' 的網路介面來在信任的內部網路列印是不安全的 (網路介面出於安全考慮默認屬於外部區域)。\n"
+"尤其不要禁用 CUPS 的針對不信任的 '外部區域' 的防火牆保護 (例如 IPP 使用的 TCP 埠 631 與 UDP 埠 631)。<br>\n"
+"要在信任的內部網路使用遠端列印機，且保護其不受任何外部網路的無謂訪問 (尤其是因特網訪問)，請指派屬於內部網路的網路介面到防火牆的內部區域。\n"
+"可以使用 YaST 防火牆設定模組來完成此基礎設定，以獲取網路的安全與易用。在受信任的內部網路使用遠端列印機將不需要額外的防火牆設定。<br>\n"
+"詳情請見 openSUSE 支援資料庫文章 'CUPS 與 SANE 的防火牆設定' 於<br>\n"
+"http://zh.opensuse.org/SDB:CUPS_and_SANE_Firewall_settings\n"
+"</p>"
+
+#. PrintingViaNetworkDialog help 2/4:
+#: src/include/printer/helps.rb:789
+msgid ""
+"<p>\n"
+"If you can access remote CUPS servers for printing\n"
+"but those servers do not publish their printer information via network\n"
+"or when you cannot accept incoming information about published printers\n"
+"(e.g. because you must have firewall protection for the network zone\n"
+"in which printers are published), you can request printer information\n"
+"from CUPS servers (provided the CUPS servers allow your access).<br>\n"
+"For each CUPS server which is requested, a cups-polld process\n"
+"is launched by the CUPS daemon process (cupsd) on your host.\n"
+"By default each cups-polld polls a remote CUPS server\n"
+"every 30 seconds for printer information.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"如果您可以訪問遠端 CUPS 伺服器來列印，但這些伺服器沒有通過網路釋出它們的列印機資訊，\n"
+"或者當您不能接受釋出的列印機發來的進站資訊時 (例如您的防火牆遮蔽了列印機發布到的網路區域)，\n"
+"您可以從 CUPS 伺服器請求列印機資訊 (假設 CUPS 伺服器允許您訪問)。<br>\n"
+"您主機上的 CUPS 守護精靈程序 (cupsd) 會為每個被請求的 CUPS 伺服器啟動一個 cups-polld 程序。\n"
+"默認每個 cups-polld 每隔 30 秒向遠端 CUPS 伺服器查詢一次列印機資訊。\n"
+"</p>"
+
+#. PrintingViaNetworkDialog help 3/4:
+#: src/include/printer/helps.rb:804
+msgid ""
+"<p>\n"
+"If you print only via network and if you use only one single CUPS server,\n"
+"there is no need to use CUPS Browsing and have a CUPS daemon running on your host.\n"
+"Instead it is simpler to specify the CUPS server and access it directly.<br>\n"
+"A possible drawback is that application programs may be delayed\n"
+"for some time (until a timeout happens) when they try\n"
+"to access the CUPS server but it is actually not available\n"
+"(e.g. while traveling with a laptop). Usually it is a host name\n"
+"resolution (DNS) timeout which causes the delay so that it may help\n"
+"to have a hardcoded entry for the CUPS server in the /etc/hosts file.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"如果您僅通過網路列印且您僅使用一個 CUPS 伺服器，沒有必須使用 CUPS 瀏覽模式與在您的主機上運行一個 CUPS 守護精靈。\n"
+"指定 CUPS 伺服器並直接訪問它會更簡單。<br>\n"
+"一個或有缺陷就是應用程式在訪問 CUPS 伺服器但伺服器不可用時 (比如筆記本帶出了公司)，它可能會延遲直到超時 (卡死的文雅說法啦)。通常延遲是由主機名稱解析 (DNS) 超時造成的，因此在 /etc/hosts 檔案中指定一個硬編碼的 CUPS 伺服器條目可能會有幫助。\n"
+"</p>"
+
+#. PrintingViaNetworkDialog help 4/4:
+#: src/include/printer/helps.rb:818
+msgid ""
+"<p>\n"
+"You have to set up an appropriate print queue on your host\n"
+"if there is no CUPS server in your network,\n"
+"or when you must access a network printer directly,\n"
+"or when you use another kind of print server\n"
+"e.g. when printing via a Windows (R) or Samba server\n"
+"or when printing via a traditional Unix server.<br>\n"
+"'Windows' is a registered trademark\n"
+"of Microsoft Corporation in the United States and/or other countries.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"如果您的網路中沒有 CUPS 伺服器，或者您可以直接訪問網路列印機，或您使用另外種類的列印伺服器，例如通過 Windows (R) 或 Samba 伺服器或傳統 UNIX 伺服器列印，您需要在您的主機上設定一個合適的列印佇列。<br>\n"
+"'Windows' 是美國與/或其他國家的微軟的註冊商標 (屁咧)。\n"
+"</p>"
+
+#. SharingDialog help 1/4:
+#: src/include/printer/helps.rb:832
+msgid ""
+"<p>\n"
+"<b><big>Sharing Print Queues and Publish Them Via Network</big></b><br>\n"
+"Usually CUPS (Common Unix Printing System) should be set up to use\n"
+"its so called 'Browsing' mode to make printers available via network.<br>\n"
+"In this case CUPS servers publish their local print queues via network\n"
+"and accordingly on CUPS client systems the CUPS daemon process (cupsd) must run\n"
+"which is listening for incoming information about published printers.<br>\n"
+"CUPS Browsing information is received via UDP port 631.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>通過網路分享與釋出列印佇列</big></b><br>\n"
+"通常 CUPS (通用 UNIX 列印系統) 應該設定使用它所謂的 '瀏覽' 模式來向網路釋出列印機。<br>\n"
+"在這種情況下 CUPS 伺服器通過網路釋出它的本地列印佇列，CUPS 客戶端系統必須運行 CUPS 守護精靈程序 (cupsd) 來監聽釋出的列印機的進站資訊。<br>\n"
+"CUPS 瀏覽資訊是通過 UDP 埠 631 接收的。\n"
+"</p>"
+
+#. SharingDialog help 2/4:
+#: src/include/printer/helps.rb:844
+msgid ""
+"<p>\n"
+"First of all CUPS client systems must be allowed to access the CUPS server.\n"
+"Then specify whether or not printers should be published to the clients.<br>\n"
+"In a local network the usual way to set up CUPS Browsing is\n"
+"to allow remote access for all hosts in the local network\n"
+"and to publish printers to all those hosts.<br>\n"
+"It is not required to publish printers in any case.<br>\n"
+"If you have only one single CUPS server, there is no need to use CUPS Browsing.\n"
+"Instead it is simpler to specify the CUPS server on the client systems\n"
+"(via 'Printing Via Network') so that the clients access the server directly.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"首先 CUPS 客戶端系統必須允許訪問 CUPS 伺服器。\n"
+"然後指定是否釋出列印機給客戶機。<br>\n"
+"在區域網中通常設定 CUPS 瀏覽的方法是允許區域網內所有主機的遠端訪問，並通告列印機給所有這些主機。<br>\n"
+"在區域網中任何情況下都不需要公開發布列印機。<br>\n"
+"如果你僅有一臺 CUPS 伺服器，沒有必要使用 CUPS 瀏覽模式。\n"
+"在客戶端系統上指定 CUPS 伺服器 (通過 '網路列印') 以使客戶機直接訪問伺服器會更簡單一些。\n"
+"</p>"
+
+#. SharingDialog help 3/4:
+#: src/include/printer/helps.rb:858
+msgid ""
+"<p>\n"
+"There are various ways which can coexist how to specify\n"
+"which remote hosts are allowed to access the CUPS server.<br>\n"
+"Allow remote access for computers within the local network\n"
+"will allow access from all hosts in the local network.\n"
+"A remote host is in the local network when it has an IP address\n"
+"that belongs to the same network as the CUPS server\n"
+"and when the network connection of the host\n"
+"uses a non-PPP interface on the CUPS server\n"
+"(an interface whose IFF_POINTOPOINT flag is not set).<br>\n"
+"Alternatively or additionally an explicite list of network interfaces\n"
+"from which remote access is allowed can be specified.<br>\n"
+"Alternatively or additionally an explicite list of\n"
+"allowed IP addresses and/or networks can be specified.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"如何指派哪些遠端主機可以訪問 CUPS 伺服器有多種方法，這些方法可以共存。<br>\n"
+"允許本地網路內的計算機的遠端訪問將允許所有本地網路內的主機訪問。\n"
+"當一個遠端主機擁有屬於 CUPS 伺服器所在網路的 IP 地址時，或主機的網路連線接入了 CUPS 伺服器上的非 PPP 介面 (沒有設定 IFF_POINTTOPOINT 標記的介面)，它就屬於本地網路。<br>\n"
+"另外可以指定一個允許遠端訪問的網路介面白名單。<br>\n"
+"另外也可以指定一個 IP 地址或網路地址的白名單。\n"
+"</p>"
+
+#. SharingDialog help 4/4:
+#: src/include/printer/helps.rb:876
+msgid ""
+"<p>\n"
+"Regarding firewall:<br>\n"
+"A firewall is used to protect running server processes\n"
+"(in this case the CUPS server process 'cupsd')\n"
+"on your host against unwanted access via network.<br>\n"
+"Printing via network happens in a trusted internal network\n"
+"(nobody lets arbitrary users from whatever external network\n"
+"print on his printer) and usually the users need\n"
+"physical printer access to get their paper output.<br>\n"
+"By default the SuSEfirewall lets any network traffic pass\n"
+"via a network interface which belongs to the 'internal zone'\n"
+"because this zone is trusted by default.<br>\n"
+"It does not make sense to do printing in a trusted internal network\n"
+"with a network interface which belongs to the untrusted 'external zone'\n"
+"(the latter is the default setting for network interfaces to be safe).\n"
+"Do not disable firewall protection for CUPS\n"
+"(i.e. for IPP which uses TCP port 631 and UDP port 631)\n"
+"for the untrusted 'external zone'.<br>\n"
+"To make printers accessible in a trusted internal network\n"
+"and be protected by the firewall against unwanted access\n"
+"from any external network (in particular from the Internet),\n"
+"assign the network interface which belongs to the internal network\n"
+"to the internal zone of the firewall.\n"
+"Use the YaST Firewall setup module to do this fundamental setup\n"
+"to gain security plus usefulness in your network and\n"
+"sharing printers in a trusted internal network\n"
+"will work without any further firewall setup.<br>\n"
+"For details see the openSUSE support database\n"
+"article 'CUPS and SANE Firewall settings' at<br>\n"
+"http://en.opensuse.org/SDB:CUPS_and_SANE_Firewall_settings\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"關於防火牆：<br>\n"
+"防火牆用來保護在您的主機上運行的伺服器程序 (本例中是 CUPS 伺服器程序 'cupsd') 不受無謂的網路訪問。<br>\n"
+"網路列印發生在信任的內部網路環境中 (沒人會讓外部網路的任意使用者來在他的列印機上列印)，通常使用者需要能夠接觸物理的列印機來取回他們列印的紙張。<br>\n"
+"SuSE 防火牆默認允許任何來自屬於 '內部區域' 的網路介面的網路流量通過，因為此區域默認是信任的。<br>\n"
+"通過屬於不信任的 '外部區域' 的網路介面來在信任的內部網路列印是不安全的 (網路介面出於安全考慮默認屬於外部區域)。\n"
+"尤其不要禁用 CUPS 的針對不信任的 '外部區域' 的防火牆保護 (例如 IPP 使用的 TCP 埠 631 與 UDP 埠 631)。<br>\n"
+"要在信任的內部網路使用遠端列印機，且保護其不受任何外部網路的無謂訪問 (尤其是因特網訪問)，請指派屬於內部網路的網路介面到防火牆的內部區域。\n"
+"可以使用 YaST 防火牆設定模組來完成此基礎設定，以獲取網路的安全與易用。在受信任的內部網路分享列印機將不需要額外的防火牆設定。<br>\n"
+"詳情請見 openSUSE 支援資料庫文章 'CUPS 與 SANE 的防火牆設定' 於<br>\n"
+"http://zh.opensuse.org/SDB:CUPS_and_SANE_Firewall_settings\n"
+"</p>"
+
+#. Policies help 1/2:
+#: src/include/printer/helps.rb:911
+msgid ""
+"<p>\n"
+"<b><big>CUPS Operation Policy</big></b><br>\n"
+"Operation policies are the rules used for each operation in CUPS.\n"
+"Such operations are for example 'print something', 'cancel a printout',\n"
+"'configure a printer', 'modify or remove a printer configuration',\n"
+"and 'enable or disable printing'.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>CUPS 操作策略</big></b><br>\n"
+"操作策略是 CUPS 中用於每個操作，例如 '列印東西'，'取消列印'，'配置列印機'，'修改或移除列印機配置' 與 '啟用或禁用列印' 的規則。\n"
+"</p>"
+
+#. Policies help 2/2:
+#: src/include/printer/helps.rb:921
+msgid ""
+"<p>\n"
+"<b><big>CUPS Error Policy</big></b><br>\n"
+"The error policy defines the default policy that is used when\n"
+"CUPS fails to send a print job to the printer device.<br>\n"
+"Depending on the particular way how the printer is connected\n"
+"(for example 'parallel', 'usb', 'socket', 'lpd', or 'ipp'),\n"
+"and depending on the actual kind of failure,\n"
+"the CUPS backend which actually sends the data to the printer\n"
+"can overwrite the default error policy\n"
+"and enforce another error policy (see <tt>man backend</tt>).\n"
+"For example it can stop any further printing attempt\n"
+"even when the default error policy is to retry the job.\n"
+"This could happen when any attempt to establish\n"
+"the communication with the printer is useless\n"
+"so that it does no make sense to retry the job.\n"
+"<br>\n"
+"The following error policies exist:<br>\n"
+"Stop the printer and keep the job for future printing.<br>\n"
+"Re-send the job from the beginning after waiting some time (30 seconds by default).<br>\n"
+"Abort and delete the job and proceed with the next job.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>CUPS 錯誤策略</big></b><br>\n"
+"錯誤策略定義了當 CUPS 未能發送列印任務給列印機裝置時的默認策略。<br>\n"
+"根據列印機的連線方式 (例如 'parallel', 'usb', 'socket', 'lpd', 或 'ipp')，與錯誤類型，發送資料到列印機的 CUPS 後端可以覆寫默認錯誤策略並強制執行另一個錯誤策略 (參考 <tt>man backend</tt>)。\n"
+"例如它可以停止任何列印嘗試即使默認錯誤策略是重試任務。這在當任何與列印機建立通訊的嘗試都是無用的，因此沒必要重試任務時會發生。<br>\n"
+"已有如下錯誤策略：<br>\n"
+"停止列印機並保留任務以供未來列印。<br>\n"
+"在等待過後 (默認 30 秒) 重頭重新發送任務。<br>\n"
+"終止並刪除任務，繼續下一個任務。\n"
+"</p>"
+
+#. Autoconfig help 1/2:
+#: src/include/printer/helps.rb:946
+msgid ""
+"<p>\n"
+"<b><big>Automatic Configuration for Local Connected Printers</big></b><br>\n"
+"Check the check box to run YaST's automatic configuration\n"
+"for printers which are connected to the local host.<br>\n"
+"For each autodetected local connected printer,\n"
+"YaST tests if there exists already a configuration.\n"
+"If there is not yet a configuration,\n"
+"YaST tries to find a matching driver for the printer\n"
+"and if one is found, the printer is configured.<br>\n"
+"The resulting configuration is basically the same\n"
+"as if one would have selected an autodetected printer\n"
+"in the 'Add New Printer Configuration' dialog\n"
+"and accepted whatever preselected values there.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>自動配置本地連線上的列印機</big></b><br>\n"
+"選中核取方塊以為自動連線到本地主機的列印機運行 YaST 的自動配置。<br>\n"
+"YaST 為每個自動檢測到的本地連線上的列印機測試是否已有配置。如果沒有，YaST 嘗試為列印機查找一個匹配的驅動以自動配置列印機。<br>\n"
+"最終的配置基本上與使用者在 '添加新列印機配置' 對話方塊中選中了自動檢測到的列印機並接受了預設值的配置相同。\n"
+"</p>"
+
+#. Autoconfig help 2/2:
+#: src/include/printer/helps.rb:963
+msgid ""
+"<p>\n"
+"<b><big>Automatic Configuration for USB Printers</big></b><br>\n"
+"The RPM package 'udev-configure-printer' provides\n"
+"automatic configuration when USB printers are plugged in.<br>\n"
+"When its check box is initially not checked, it is not installed\n"
+"and then you can select it so that it will be installed.<br>\n"
+"When its check box is initially checked, it is already installed\n"
+"and then you can un-select it so that it will be removed.<br>\n"
+"When udev-configure-printer is installed,\n"
+"automatic USB printer configuration happens via the entries\n"
+"in its udev config file /lib/udev/rules.d/70-printers.rules\n"
+"which triggers to run 'udev-configure-printer add'\n"
+"when a USB printer is plugged in\n"
+"and 'udev-configure-printer remove' when it is unplugged.\n"
+"There are no adjustable settings for udev-configure-printer\n"
+"except one changes the 70-printers.rules file manually.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b><big>自動配置 USB 列印機</big></b><br>\n"
+"RPM 軟體包 'udev-configure-printer' 為插入的 USB 列印機提供自動配置。<br>\n"
+"當它的核取方塊初始未選中時，它沒有安裝。當您選中它時，它將被安裝。<br>\n"
+"當它的核取方塊初始選中時，它已經安裝。當您取消選中時，它將被解除安裝。<br>\n"
+"當已安裝了 udev-configure-printer 時，自動 USB 列印機配置通過 udev 配置檔案 /lib/udev/rules.d/70-printers.rules 的條目執行，該條目在有 USB 列印機插入時會觸發運行 'udev-configure-printer add'，有 USB 列印機拔出時會觸發運行 'udev-configure-printer remove'。該檔案沒有可調整的設定，除非使用者手動編輯 70-printers.rules 檔案。\n"
+"</p>"
+
+#. encoding: utf-8
+#. ------------------------------------------------------------------------------
+#. Copyright (c) 2006 Novell, Inc. All Rights Reserved.
+#.
+#.
+#. This program is free software; you can redistribute it and/or modify it under
+#. the terms of version 2 of the GNU General Public License as published by the
+#. Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful, but WITHOUT
+#. ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#. FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License along with
+#. this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail, you may find
+#. current contact information at www.novell.com.
+#. ------------------------------------------------------------------------------
+#. File:        include/printer/overview.ycp
+#. Package:     Configuration of printer
+#. Summary:     Overview dialog definition
+#. Authors:     Johannes Meixner <jsmeix@suse.de>
+#.
+#. $Id: overview.ycp 29363 2006-03-24 08:20:43Z mzugec $
+#: src/include/printer/overview.rb:46
+msgid "Show"
+msgstr "顯示"
+
+#. CheckBox to select local print queues to be listed:
+#: src/include/printer/overview.rb:52
+msgid "&Local"
+msgstr "本地(&L)"
+
+#. CheckBox to select remote print queues to be listed:
+#: src/include/printer/overview.rb:59
+msgid "&Remote"
+msgstr "遠端(&R)"
+
+#. Where the queue configuration exists (local or remote):
+#: src/include/printer/overview.rb:80
+msgid "Configuration"
+msgstr "配置"
+
+#. Header of a Table column with a list of print queues.
+#. Print queue name:
+#: src/include/printer/overview.rb:83
+msgid "Name"
+msgstr "名稱"
+
+#. Header of a Table column with a list of print queues.
+#. Location of the printer (e.g. second floor, room 2.3):
+#: src/include/printer/overview.rb:89
+msgid "Location"
+msgstr "位置"
+
+#. Header of a Table column with a list of print queues.
+#. Whether or not is is the default queue:
+#: src/include/printer/overview.rb:92
+msgid "Default"
+msgstr "預設值"
+
+#. Header of a Table column with a list of print queues.
+#. Queue status (accepting/rejecting and enabled/disabled):
+#: src/include/printer/overview.rb:95
+msgid "Status"
+msgstr "狀態"
+
+#. PushButton label to refresh the list of print queues:
+#: src/include/printer/overview.rb:107
+msgid "Re&fresh List"
+msgstr "重新整理列表(&F)"
+
+#. PushButton label to print a test page:
+#: src/include/printer/overview.rb:112
+msgid "Print &Test Page"
+msgstr "列印測試頁(&T)"
+
+#. Message of a Popup::ErrorDetails
+#. when a local cupsd is required but it is not accessible.
+#. YaST did already run 'lpstat -h localhost -r'
+#. to check whether or not a local cupsd is accessible.
+#. The command is shown here to the user (even if it is a bit technical)
+#. to have him informed what goes on here and what he can do on his own.
+#: src/include/printer/overview.rb:128
+msgid ""
+"A locally running CUPS daemon is required, but it seems to be not accessible.\n"
+"Check with 'lpstat -h localhost -r' whether a local cupsd is accessible.\n"
+"A non-accessible cupsd leads to an endless sequence of further failures.\n"
+msgstr ""
+"需要一個本地運行的 CUPS 守護程式，但看來它不能被訪問。\n"
+"使用 'lpstat -h localhost -r' 檢查本地的 cupsd 是否可以訪問。\n"
+"一個不可訪問的 cupsd 會導致將來出現無盡的錯誤。\n"
+
+#. Message of a Popup::ErrorDetails
+#. when the local cupsd does not use the official IPP port (631).
+#. A rather technical text because this does not happen on normal systems
+#. By default the cupsd uses the official IPP port (631).
+#. If not, the user must have intentionally and manually changed
+#. the port setting for the cupsd in /etc/cups/cupsd.conf
+#: src/include/printer/overview.rb:140
+msgid ""
+"The CUPS daemon seems not to listen on the official IANA IPP port (631).\n"
+"Check with 'netstat -nap | grep cupsd' where the cupsd actually listens.\n"
+"This happens when there is a 'Listen ...:1234' or 'Port 1234' setting\n"
+"(where 1234 means any port number which is not the official port 631)\n"
+"in /etc/cups/cupsd.conf (check also if there is 'BrowsePort 1234').\n"
+"The YaST printer module does not support a non-official port.\n"
+"A non-official port leads to an endless sequence of further failures.\n"
+"If you really must use a non-official port, you cannot use\n"
+"the YaST printer module to configure your printers.\n"
+msgstr ""
+"CUPS 守護精靈似乎沒有監聽官方 IANA IPP 埠 (631)。\n"
+"使用 'netstat -nap | grep cupsd' 來檢查 cupsd 是否在監聽該埠。\n"
+"當 /etc/cups/cupsd.conf 中有 'Listen ....1234' 或者 'Port 1234' 設定 (1234 意味著除了官方埠 631 以外的任何埠號) 時 (也檢查下有沒有 'BrowsePort 1234') 才會發生。\n"
+"YaST 列印機模組不支援非官方埠，使用非官方埠會導致未來無盡的錯誤。\n"
+"如果你真的必須使用非官方埠的話，您就不能使用 YaST 列印機模組來配置您的列印機。\n"
+
+#. Busy message:
+#. Body of a Popup::ShowFeedback
+#: src/include/printer/overview.rb:182
+msgid ""
+"Running several tests regarding CUPS server accessibility...\n"
+"(this might take some time)"
+msgstr ""
+"正在運行一些 CUPS 伺服器連線性測試...\n"
+"(這可能花費一些時間)"
+
+#. where %1 will be replaced by the server name:
+#: src/include/printer/overview.rb:204
+msgid "Do no longer use the inaccessible CUPS server '%1'?"
+msgstr "不再使用無法訪問的 CUPS 伺服器 '%1'？"
+
+#. Popup::YesNoHeadline body recommendation how to answer the headline question
+#. where %1 will be replaced by the server name:
+#: src/include/printer/overview.rb:210
+msgid "To proceed, you should agree that '%1' will be no longer used."
+msgstr "您應該同意不再使用 '%1' 才能繼續進行。"
+
+#. The 'ServerName' entry in /etc/cups/client.conf was removed
+#. so that it is now no longer a real client-only config and
+#. therefore the Printerlib::client_* values must be determined anew:
+#: src/include/printer/overview.rb:226 src/include/printer/overview.rb:237
+msgid "A non-accessible server leads to an endless sequence of delays and failures."
+msgstr "無法訪問的伺服器會導致將來無盡的錯誤。"
+
+#. where %1 will be replaced by the CUPS server name.
+#: src/include/printer/overview.rb:256
+msgid "CUPS Server %1"
+msgstr "CUPS 伺服器 %1"
+
+#. Busy message:
+#. Body of a Popup::ShowFeedback:
+#: src/include/printer/overview.rb:280
+msgid "Testing if CUPS server is accessible..."
+msgstr "正在檢測列印伺服器是否可訪問..."
+
+#. Body of a Popup::AnyMessage when no queue was selected from the list:
+#. Body of a Popup::AnyMessage when no queue was selected from the list:
+#. Body of a Popup::AnyMessage when no queue was selected from the list:
+#: src/include/printer/overview.rb:595 src/include/printer/overview.rb:681
+#: src/include/printer/overview.rb:1155
+msgid "Select an entry."
+msgstr "請選擇一項。"
+
+#: src/include/printer/overview.rb:608
+msgid "Cannot Delete"
+msgstr "無法刪除"
+
+#. Body of a Popup::AnyMessage when a remote queue was selected to be deleted:
+#: src/include/printer/overview.rb:610
+msgid "This is a remote configuration. Only local configurations can be deleted."
+msgstr "這是遠端配置。僅本地配置可以被刪除。"
+
+#: src/include/printer/overview.rb:617
+msgid "Confirm Deletion"
+msgstr "確認刪除"
+
+#. Body of a confirmation popup before a queue will be deleted:
+#: src/include/printer/overview.rb:619
+msgid "The selected configuration would be deleted immediately and cannot be restored."
+msgstr "選定配置會被立即刪除且無法恢復。"
+
+#. 'Yes' button label of a confirmation popup before a queue will be deleted:
+#: src/include/printer/overview.rb:623
+msgid "Delete configuration %1"
+msgstr "刪除配置 %1"
+
+#. 'No' button label of a confirmation popup before a queue will be deleted:
+#: src/include/printer/overview.rb:625
+msgid "Do not delete it"
+msgstr "不刪除"
+
+#. because a class cannot be re-created with the YaST printer module because
+#. the YaST printer module has no support to add or edit classes
+#. because classes are only useful in bigger printing environments
+#. which is out of the scope of the use cases of the YaST printer module.
+#. Nevertheless it is possible to delete a class with the YaST printer module
+#. so that the user can get rid of a class which may have been created by accident
+#. with whatever other setup tool:
+#: src/include/printer/overview.rb:640
+msgid "Confirm Deletion of a Class"
+msgstr "確認刪除一個類"
+
+#. Body of a confirmation popup before a class will be deleted:
+#: src/include/printer/overview.rb:642
+msgid "A deleted class cannot be re-created with this tool."
+msgstr "此工具不能重新創建一個已被刪除的類。"
+
+#: src/include/printer/overview.rb:688
+msgid "Rejecting Print Jobs"
+msgstr "拒絕列印任務"
+
+#. Body of a Popup::AnyMessage when the queue rejects print jobs:
+#: src/include/printer/overview.rb:690
+msgid "The testpage cannot be printed because print jobs are rejected."
+msgstr "無法列印測試頁，列印機任務被拒絕。"
+
+#. Do a refresh of the overview content to be on the safe side.
+#. Perhaps the actual current queue state is no longer "rejecting".
+#. Re-run the OverviewDialog (with re-created queue status) via the sequencer:
+#: src/include/printer/overview.rb:700
+msgid "Printout Disabled"
+msgstr "列印輸出已禁用"
+
+#. Body of a Popup::AnyMessage when printing is disabled for the queue:
+#: src/include/printer/overview.rb:702
+msgid "The testpage cannot be printed because printout is disabled."
+msgstr "無法列印測試頁，因為列印輸出被禁用。"
+
+#. Test whether there are already pending jobs in a local queue.
+#. If yes, the queue is usually currently actively printing because
+#. the test above makes sure that the queue has printing enabled.
+#. When this command fails for whatever reason, it is a safe fallback
+#. to assume that there are no pending jobs in the queue:
+#: src/include/printer/overview.rb:731
+msgid "There are pending print jobs which might be deleted before the testpage is printed."
+msgstr "有可能在列印測試頁前被刪除的等待中的任務。"
+
+#. where %1 will be replaced by the queue name.
+#. where %1 will be replaced by the queue name.
+#: src/include/printer/overview.rb:751 src/include/printer/overview.rb:920
+msgid "Delete Pending Print Jobs For %1"
+msgstr "為 %1 刪除等待中的列印任務"
+
+#. 'Yes' button label of a confirmation popup
+#. before all pending jobs in a queue will be deleted:
+#: src/include/printer/overview.rb:759
+msgid "Delete them before printing testpage"
+msgstr "在列印測試頁前刪除它們"
+
+#. 'No' button label of a confirmation popup
+#. before all pending jobs in a queue will be deleted:
+#: src/include/printer/overview.rb:762
+msgid "Print testpage after the other jobs"
+msgstr "在其它任務完成後列印測試頁"
+
+#. where %1 will be replaced by the queue name.
+#. Only a simple message because this error does not happen on a normal system.
+#. where %1 will be replaced by the queue name.
+#. Only a simple message because this error does not happen on a normal system.
+#: src/include/printer/overview.rb:775 src/include/printer/overview.rb:944
+msgid "Failed to delete all pending jobs for %1."
+msgstr "刪除 %1 所有等待中的任務失敗。"
+
+#. Since CUPS 1.4 there is no longer a readymade PostScript testpage in CUPS, see
+#. https://bugzilla.novell.com/show_bug.cgi?id=520617
+#. Therefore a slightly modified CUPS 1.3.10 testprint.ps was added
+#. to yast2-printer as /usr/share/YaST2/data/testprint.ps
+#. The following modifications
+#. --- cups-1.3.10/data/testprint.ps  2009-01-13 18:27:16.000000000 +0100
+#. +++ data/testprint.ps              2009-07-09 15:25:26.000000000 +0200
+#. @@ -564 +564 @@
+#. -  (Printer Test Page) CENTER           % Show text centered
+#. +  (CUPS Printer Test Page) CENTER      % Show text centered
+#. @@ -570 +570 @@
+#. -  (Printed with CUPS v1.3.x) show
+#. +  (Printed with CUPS) show
+#. make it obvious that it is not a YaST testpage but a CUPS testpage
+#. and it is now independent of the CUPS version.
+#: src/include/printer/overview.rb:802
+msgid "Test printout"
+msgstr "測試列印"
+
+#. Popup::AnyQuestion message:
+#: src/include/printer/overview.rb:804
+msgid "Print one or two pages e.g. to test duplex printing"
+msgstr "列印一到兩頁來測試全雙工列印"
+
+#. Popup::AnyQuestion so called 'yes' (default) button label:
+#: src/include/printer/overview.rb:806
+msgid "Single test page"
+msgstr "單一測試頁"
+
+#. Popup::AnyQuestion so called 'no' button label:
+#: src/include/printer/overview.rb:808
+msgid "Two test pages"
+msgstr "兩張測試頁"
+
+#. where %1 will be replaced by the queue name.
+#. Only a simple message because this error does not happen on a normal system.
+#: src/include/printer/overview.rb:838
+msgid "Failed to print testpage for %1."
+msgstr "為 %1 列印測試頁失敗。"
+
+#. When submitting the testpage to the queue failed (also for non-local queues)
+#. there might be whatever reason (e.g. a remote queue might have been deleted in the meantime)
+#. so that a refresh of the overview content is needed to be on the safe side.
+#. Re-run the OverviewDialog (with re-created queue status) via the sequencer:
+#: src/include/printer/overview.rb:855
+msgid "Wait Until Testpage Printing Finished"
+msgstr "等待列印測試頁完成"
+
+#. Popup::AnyQuestion message regarding testpage printout result
+#. where %1 will be replaced by the queue name.
+#: src/include/printer/overview.rb:859
+msgid "Sent testpage to %1. Printing should start soon."
+msgstr "發送測試頁到 %1。應該很快開始列印。"
+
+#. Popup::AnyQuestion 'Yes' button label
+#. regarding a positive testpage printout result:
+#: src/include/printer/overview.rb:864
+msgid "Testpage printout was successful"
+msgstr "測試頁列印成功"
+
+#. Popup::AnyQuestion 'No' button label
+#. regarding a negative testpage printout result:
+#: src/include/printer/overview.rb:867
+msgid "Testpage printing failed"
+msgstr "測試列印失敗"
+
+#. it seems something went wrong with the testpage printing
+#. so that the user can delete all pending jobs now.
+#. Via the "cancel" command the cupsd sends termination signals
+#. to running filter processes for the queue so that the filters
+#. (in particular the printer driver) could do whatever is needed
+#. to switch an actively printing printer device into a clean state
+#. (e.g. exit its graphics printing mode and switch back to normal mode).
+#. The backend process terminates when the filters have finished.
+#. This helps in usual cases (in particular when a good driver is used)
+#. if something had messed up for an actively printing job but
+#. unfortunately there is no option for the "cancel" command
+#. which lets the cupsd kill the backend process as emergency brake
+#. when something is really wrong e.g. a wrong driver lets the printer
+#. spit out zillions of sheets with nonsense characters.
+#. When this command fails for whatever reason, it is a safe fallback
+#. to assume that there are no pending jobs in the queue:
+#: src/include/printer/overview.rb:900
+msgid "There are pending print jobs which might be deleted now."
+msgstr "有可能立即被刪除的等待中的列印任務。"
+
+#. 'Yes' button label of a confirmation popup
+#. before all pending jobs in a queue will be deleted:
+#: src/include/printer/overview.rb:928
+msgid "Delete all pending jobs"
+msgstr "刪除所有等待中的任務"
+
+#. 'No' button label of a confirmation popup
+#. before all pending jobs in a queue will be deleted:
+#: src/include/printer/overview.rb:931
+msgid "Do not delete them"
+msgstr "不刪除"
+
+#. Ignore an effectively empty test_print_cups_error_log:
+#: src/include/printer/overview.rb:1046
+msgid "For the full log, see the /var/log/cups/error_log file."
+msgstr "完整日誌請見 /var/log/cups/error_log 檔案。"
+
+#: src/include/printer/overview.rb:1051
+msgid "CUPS log information while processing the testpage for %1 (English only)"
+msgstr "處理 %1 的測試頁的 CUPS 日誌資訊 (僅英文)"
+
+#. but the test_print_cups_error_log was effectively empty,
+#. show a very generic info to the user to show at least something:
+#: src/include/printer/overview.rb:1068
+msgid "For CUPS log information, see the /var/log/cups/error_log file."
+msgstr "CUPS 日誌資訊見 /var/log/cups/error_log 檔案。"
+
+#. show a very generic info to the user to show at least something:
+#: src/include/printer/overview.rb:1078
+msgid "When printing via a remote system fails, you may ask an admin of the remote system."
+msgstr "當通過遠端系統列印失敗時，您或許可以詢問遠端系統管理員。"
+
+#. PopupYesNoHeadline body:
+#: src/include/printer/overview.rb:1105
+msgid "A remote CUPS server setting conflicts with adding a configuration."
+msgstr "添加一項配置與遠端 CUPS 伺服器設定相沖突。"
+
+#: src/include/printer/overview.rb:1162
+msgid "Cannot Modify"
+msgstr "無法修改"
+
+#. Body of a Popup::AnyMessage when a remote queue was selected to be modified:
+#: src/include/printer/overview.rb:1164
+msgid "This is a remote configuration. Only local configurations can be modified."
+msgstr "這是遠端配置。僅可以修改本地配置。"
+
+#. An entry for a ComboBox from which the user can select that the CUPS error policy
+#. which is used when it fails to send a job to the printer is to
+#. stop the printer and keep the job for future printing:
+#: src/include/printer/policies.rb:45
+msgid "stop the printer and keep the job for future printing"
+msgstr "停止列印機但保留任務供將來列印"
+
+#. An entry for a ComboBox from which the user can select that the CUPS error policy
+#. which is used when it fails to send a job to the printer is to
+#. re-send the job from the beginning after waiting some time
+#. (the default JobRetryInterval is 30 seconds but this can be changed):
+#: src/include/printer/policies.rb:52
+msgid "re-send the job after waiting some time"
+msgstr "稍候重新發送任務"
+
+#. An entry for a ComboBox from which the user can select that the CUPS error policy
+#. which is used when it fails to send a job to the printer is to
+#. abort and delete the job and proceed with the next job:
+#: src/include/printer/policies.rb:58
+msgid "abort and delete the job and proceed with the next job"
+msgstr "放棄並刪除任務，繼續下一個任務"
+
+#. Header for a ComboBox to specify the CUPS error policy:
+#: src/include/printer/policies.rb:77
+msgid "Specify the &error policy"
+msgstr "指定錯誤策略(&E)"
+
+#. CheckBox to apply the CUPS error policy which is selected in the ComboBox above
+#. to all local printer configurations (i.e. to all local print queues).
+#. When possible we perefer to use the wording "printer configuration"
+#. instead of "print queue" because the latter may sound too technical
+#. but sometimes (e.g. in the Connection Wizard) we must use the exact technical term:
+#: src/include/printer/policies.rb:93
+msgid "&Apply this error policy to all local printer configurations"
+msgstr "應用錯誤策略到所有本地列印機配置(&A)"
+
+#. Header for a ComboBox to specify the CUPS operation policy:
+#: src/include/printer/policies.rb:101
+msgid "Specify the &operation policy"
+msgstr "指定操作策略(&O)"
+
+#. CheckBox to apply the CUPS operation policy which is selected in the ComboBox above
+#. to all local printer configurations (i.e. to all local print queues).
+#. When possible we perefer to use the wording "printer configuration"
+#. instead of "print queue" because the latter may sound too technical
+#. but sometimes (e.g. in the Connection Wizard) we must use the exact technical term:
+#: src/include/printer/policies.rb:113
+msgid "Apply this operation &policy to all local printer configurations"
+msgstr "應用此操作策略到所有本地列印機配置(&P)"
+
+#. PopupYesNoHeadline headline
+#. PopupYesNoHeadline body:
+#: src/include/printer/policies.rb:139
+msgid "A remote CUPS server setting conflicts with setting policies for the local system."
+msgstr "一個遠端 CUPS 伺服器設定與本地系統的設定策略衝突。"
+
+#. where %1 will be replaced by the print queue name.
+#: src/include/printer/policies.rb:331
+msgid "Failed to apply the policy to '%1'"
+msgstr "應用策略到“%1”失敗"
+
+#. where %1 will be replaced by the default operation policy value.
+#. Do not change or translate "DefaultPolicy", it is a system settings name.
+#: src/include/printer/policies.rb:354
+msgid "Failed to set 'DefaultPolicy %1' in /etc/cups/cupsd.conf"
+msgstr "在 /etc/cups/cupsd.conf 中設定 'DefaultPolicy %1' 失敗"
+
+#. where %1 will be replaced by the default error policy value.
+#. Do not change or translate "ErrorPolicy", it is a system settings name.
+#: src/include/printer/policies.rb:373
+msgid "Failed to set 'ErrorPolicy %1' in /etc/cups/cupsd.conf"
+msgstr "在 /etc/cups/cupsd.conf 中設定 'ErrorPolicy %1' 失敗"
+
+#. There is only a "Cancel" functionality (via the "back" button) which goes back one step
+#. and the button with the "abort" functionality is not shown at all (see dialogs.ycp).
+#. Unfortunately when the YaST package installer is run via Printerlib::TestAndInstallPackage
+#. it leaves a misused "abort" button labeled "Skip Autorefresh" with WidgetID "`abort"
+#. so that this case is mapped to the "Cancel" functionality:
+#. There is only a "Cancel" functionality (via the "back" button) which goes back one step
+#. and the button with the "abort" functionality is not shown at all (see dialogs.ycp).
+#. Unfortunately when the YaST package installer is run via Printerlib::TestAndInstallPackage
+#. it leaves a misused "abort" button labeled "Skip Autorefresh" with WidgetID "`abort"
+#. so that this case is mapped to the "Cancel" functionality:
+#. There is only a "Cancel" functionality (via the "back" button) which goes back one step
+#. and the button with the "abort" functionality is not shown at all (see dialogs.ycp).
+#. Unfortunately when the YaST package installer is run via Printerlib::TestAndInstallPackage
+#. it leaves a misused "abort" button labeled "Skip Autorefresh" with WidgetID "`abort"
+#. so that this case is mapped to the "Cancel" functionality:
+#: src/include/printer/policies.rb:414
+#: src/include/printer/printingvianetwork.rb:1102
+#: src/include/printer/sharing.rb:1037
+msgid "Failed to apply the settings to the system."
+msgstr "應用設定到系統失敗。"
+
+#. An entry for a ComboBox from which the user can select
+#. that printer information is not accepted from any remote CUPS servers:
+#: src/include/printer/printingvianetwork.rb:52
+msgid "do not accept any printer announcement"
+msgstr "不接受任何列印機聲明"
+
+#. An entry for a ComboBox from which the user can select
+#. that printer information is accepted from
+#. all remote CUPS servers:
+#: src/include/printer/printingvianetwork.rb:56
+msgid "accept all announcements from anywhere"
+msgstr "接受來自其他位置的所有列印機聲明"
+
+#. An entry for a ComboBox from which the user can select
+#. that printer information is accepted from
+#. remote CUPS servers in the local network:
+#: src/include/printer/printingvianetwork.rb:60
+msgid "accept from all hosts in the local network"
+msgstr "接受本地網路中的所有主機的列印機聲明"
+
+#. An entry for a ComboBox from which the user can select
+#. that printer information is accepted only from
+#. remote CUPS servers with specific addresses
+#. where the specific addresses are specified in a TextEntry below:
+#: src/include/printer/printingvianetwork.rb:67
+msgid "accept only from the specific addresses below"
+msgstr "僅接受如下地址的列印機聲明"
+
+#: src/include/printer/printingvianetwork.rb:74
+msgid "Use CUPS to Print Via Network"
+msgstr "使用 CUPS 通過網路列印"
+
+#. A CheckBox to accept printer information from remote CUPS servers:
+#: src/include/printer/printingvianetwork.rb:81
+msgid "&Accept Printer Announcements from CUPS Servers"
+msgstr "接受來自 CUPS 伺服器的列印機聲明 (&A)"
+
+#. A header for a ComboBox from which the user can select
+#. a usual general setting from which remote CUPS servers
+#. printer information is accepted:
+#: src/include/printer/printingvianetwork.rb:96
+msgid "&General Setting"
+msgstr "常規設定(&G)"
+
+#. A header for a TextEntry where the user can additionally
+#. enter specific IP addresses and/or network/netmask
+#. from where remote printer information is accepted:
+#: src/include/printer/printingvianetwork.rb:121
+msgid "Additional IP Addresses or &Network/Netmask (separated by space)"
+msgstr "可選 IP 地址或網路/網路掩碼（用空格分開）(&N)"
+
+#. A CheckBox to poll printer information from remote CUPS servers:
+#: src/include/printer/printingvianetwork.rb:134
+msgid "&Request Printer Information from CUPS Servers"
+msgstr "向 CUPS 伺服器請求列印機資訊 (&R)"
+
+#. A header for a TextEntry where the user can enter
+#. CUPS server names and/or IP addresses
+#. from where remote printer information is polled:
+#: src/include/printer/printingvianetwork.rb:146
+msgid "Polled CUPS server names or &IP Addresses (separated by space)"
+msgstr "查詢到的 CUPS 伺服器名稱或 IP 地址 (以空格分開) (&I)"
+
+#. A CheckBox to do all printing tasks directly
+#. only via one single remote CUPS server:
+#: src/include/printer/printingvianetwork.rb:158
+msgid "&Do All Printing Directly via One Single CUPS Server"
+msgstr "直接通過一個單一 CUPS 伺服器執行所有列印(&D)"
+
+#. A header for a TextEntry where the user can enter
+#. the one single remote CUPS server which is used
+#. to do all his printing tasks:
+#: src/include/printer/printingvianetwork.rb:170
+msgid "&One single CUPS server name or IP Address"
+msgstr "單一伺服器名或 IP 地址(&O)"
+
+#. A PushButton to test whether or not the one single remote CUPS server
+#. which is used to do all printing tasks is accessible:
+#: src/include/printer/printingvianetwork.rb:178
+msgid "&Test Server"
+msgstr "測試伺服器(&T)"
+
+#. or to set up to use a network printer directly:
+#: src/include/printer/printingvianetwork.rb:189
+msgid "Use Another Print Server or Use a Network Printer Directly"
+msgstr "使用另一個列印伺服器或者直接使用網路列印機"
+
+#. Use the exact same wording "printer announcements from CUPS servers"
+#. as in the matching CheckBox to accept printer information from remote CUPS servers:
+#: src/include/printer/printingvianetwork.rb:208
+msgid "A firewall may reject printer announcements from CUPS servers"
+msgstr "防火牆可能阻止 CUPS 伺服器的列印機聲明"
+
+#. Popup::AnyMessage message:
+#. Popup::AnyMessage message:
+#: src/include/printer/printingvianetwork.rb:210
+#: src/include/printer/sharing.rb:263
+msgid "Regarding firewall setup see the help text of this dialog."
+msgstr "防火牆設定相關請見本對話方塊的幫助文字。"
+
+#. to a client-only config but with an effectively empty server name.
+#. Such a client-only config does not make sense:
+#: src/include/printer/printingvianetwork.rb:364
+msgid "A valid CUPS server name must be entered."
+msgstr "必須輸入一個有效的 CUPS 伺服器名稱。"
+
+#. when a client-only server is not accessible
+#. where %1 will be replaced by the server name:
+#: src/include/printer/printingvianetwork.rb:391
+msgid "Continue regardless that '%1' is not accessible?"
+msgstr "伺服器 %1 不可訪問，仍然繼續？"
+
+#. Header of a Popup::ContinueCancelHeadline
+#. Body of a Popup::ContinueCancelHeadline
+#. when a client-only server is not accessible:
+#: src/include/printer/printingvianetwork.rb:396
+msgid "A non-accessible server leads to an endless sequence of failures."
+msgstr "無法訪問的伺服器會導致將來無盡的錯誤。"
+
+#. where %1 will be replaced by the server name.
+#: src/include/printer/printingvianetwork.rb:430
+msgid "Tried to set 'ServerName %1' in /etc/cups/client.conf."
+msgstr "試圖在 /etc/cups/client.conf 設定 'ServerName %1'。"
+
+#. where %1 will be replaced by the server name.
+#: src/include/printer/printingvianetwork.rb:441
+msgid "Failed to set 'ServerName %1' in /etc/cups/client.conf."
+msgstr "在 /etc/cups/cupsd.conf 中設定 'ServerName %1' 失敗。"
+
+#. PopupYesNoHeadline body:
+#: src/include/printer/printingvianetwork.rb:467
+msgid "The checkbox to do all printing via one CUPS server was disabled."
+msgstr "通過一個 CUPS 伺服器執行所有列印的核取方塊已禁用。"
+
+#. An effectively non-empty current_browse_allow_value requires "Browsing On" in cupsd.conf:
+#. It was initially a BrowsePoll config but the user has
+#. changed the server name values to be effectively empty.
+#. This is the same as to turn off the BrowsePoll config so that
+#. the "BrowsePoll config should be disabled" case below is triggered here:
+#. Having "BrowseAddress" entries requires "Browsing On",
+#. otherwise browsing information would not be sent at all:
+#: src/include/printer/printingvianetwork.rb:548
+#: src/include/printer/printingvianetwork.rb:638
+#: src/include/printer/sharing.rb:575
+msgid "Failed to set 'Browsing On' in /etc/cups/cupsd.conf."
+msgstr "在 /etc/cups/cupsd.conf 中設定 'Browsing On' 失敗。"
+
+#. where %1 will be replaced by the values for BrowseAllow.
+#: src/include/printer/printingvianetwork.rb:569
+msgid "Failed to set BrowseAllow value(s) '%1' in /etc/cups/cupsd.conf."
+msgstr "在 /etc/cups/cupsd.conf 中設定 BrowseAllow value(s) '%1' 失敗。"
+
+#. but now the user has deactivated it
+#. so that the BrowseAllow config should be disabled.
+#. Do not change the global "Browsing On/Off" entry in cupsd.conf
+#. because "Browsing Off" disables also sharing of local printers
+#. which might be needed by the "Share Printers" dialog.
+#. Instead set only "BrowseAllow none" in cupsd.conf:
+#: src/include/printer/printingvianetwork.rb:597
+msgid "Failed to set 'BrowseAllow none' in /etc/cups/cupsd.conf."
+msgstr "在 /etc/cups/cupsd.conf 中設定 'BrowseAllow none' 失敗。"
+
+#. a BrowsePoll config but with effectively empty server names.
+#. Such a BrowsePoll config does not make sense:
+#: src/include/printer/printingvianetwork.rb:615
+msgid "At least one valid CUPS server name must be entered."
+msgstr "至少必須輸入一個有效的 CUPS 伺服器名稱。"
+
+#. where %1 will be replaced by the values for BrowsePoll.
+#: src/include/printer/printingvianetwork.rb:659
+msgid "Failed to set BrowsePoll value(s) '%1' in /etc/cups/cupsd.conf"
+msgstr "在 /etc/cups/cupsd.conf 中設定 BrowsePoll value(s) '%1' 失敗"
+
+#. but now the user has deactivated it
+#. so that the BrowsePoll config should be disabled:
+#. Set only "BrowsePoll none" in cupsd.conf:
+#: src/include/printer/printingvianetwork.rb:684
+msgid "Failed to set 'BrowsePoll none' in /etc/cups/cupsd.conf"
+msgstr "在 /etc/cups/cupsd.conf 中設定 'BrowsePoll none' 失敗"
+
+#. A "accept browsing info" config with a local running cupsd
+#. was switched to a "not accept browsing info" config or
+#. a BrowsePoll config with a local running cupsd was disabled.
+#. A cups-polld polls remote servers for a list of available printer queues.
+#. Those information is then broadcast to the localhost interface (127.0.0.1)
+#. on the specified browse port for reception by the local cupsd.
+#. Theerfore for the cupsd BrowsePoll information is the same
+#. as the usual Browsing information via BrowseAllow.
+#. The default BrowseTimeout value for the local cupsd is 5 minutes.
+#. Therefore it takes by default 5 minutes until printer information
+#. that was previously received by Browsing is removed (via timeout)
+#. from the local cupsd's list.
+#. I assume most users do not like to wait 5 minutes which is no problem
+#. because they can just click the [OK] button to continue but then
+#. they are at least informend why there may be still remote queues:
+#: src/include/printer/printingvianetwork.rb:727
+msgid ""
+"When switching from 'accept printer announcements' to 'not accept announcements'\n"
+"or after 'request printer information from CUPS servers' was disabled\n"
+"it takes usually 5 minutes until already received information faded away..."
+msgstr ""
+"在“接收列印機聲明”與“不接收聲明”間轉換時，或在 '從 CUPS 伺服器請求列印機資訊' 禁用後，\n"
+"一般會花費5分鐘時間使已經接收到的資訊消失..."
+
+#. where %1 will be replaced by the server name.
+#: src/include/printer/printingvianetwork.rb:1144
+msgid "The server '%1' is accessible via port 631 (IPP/CUPS)."
+msgstr "伺服器 '%1' 可以通過埠 631 (IPP/CUPS) 訪問。"
+
+#. A RadioButton label to deny remote access to local print queues:
+#: src/include/printer/sharing.rb:64
+msgid "&Deny Remote Access"
+msgstr "拒絕遠端訪問(&D)"
+
+#. A RadioButton label to allow remote access to local print queues:
+#: src/include/printer/sharing.rb:73
+msgid "&Allow Remote Access"
+msgstr "允許遠端訪問(&A)"
+
+#. A label which explains how the subsequent choices can be used:
+#: src/include/printer/sharing.rb:83
+msgid "There are various ways how to specify which remote hosts are allowed:"
+msgstr "有多種方式指定允許哪些遠端主機："
+
+#. A CheckBox label to allow remote access to local print queues
+#. for computers within the local network:
+#: src/include/printer/sharing.rb:100
+msgid "For computers within the &local network"
+msgstr "本地網路中的計算機(&L)"
+
+#. A CheckBox label to publish local print queues by default within the local network:
+#: src/include/printer/sharing.rb:111
+msgid "&Publish printers within the local network"
+msgstr "在本地網路內釋出列印機(&P)"
+
+#. A caption for a table to allow remote access to local print queues
+#. via network interfaces specified in the table below:
+#: src/include/printer/sharing.rb:121
+msgid "Via network interfaces"
+msgstr "通過網路介面"
+
+#: src/include/printer/sharing.rb:133
+msgid "Interface"
+msgstr "介面"
+
+#. A table column header where the column shows whether or not
+#. local print queues are published by default
+#. via the network interface in the other table column:
+#: src/include/printer/sharing.rb:137
+msgid "Publish printers via this interface"
+msgstr "通過此介面釋出列印機"
+
+#. A PushButton label to add a network interface to the table which shows
+#. the network interfaces to allow remote access to local print queues:
+#: src/include/printer/sharing.rb:148
+msgid "&Add"
+msgstr "添加(&A)"
+
+#. A PushButton label to change a network interface in the table which shows
+#. the network interfaces to allow remote access to local print queues:
+#: src/include/printer/sharing.rb:154
+msgid "&Edit"
+msgstr "編輯(&E)"
+
+#. A PushButton label to delete a network interface from the table which shows
+#. the network interfaces to allow remote access to local print queues:
+#: src/include/printer/sharing.rb:160
+msgid "&Delete"
+msgstr "刪除(&D)"
+
+#. A caption to allow remote access to local print queues
+#. for hosts and/or networks specified in two TextEntries below:
+#: src/include/printer/sharing.rb:169
+msgid "For Specific IP Addresses or Networks"
+msgstr "指定 IP 地址或網路"
+
+#. TextEntry to allow remote access to local print queues
+#. for hosts and/or networks:
+#: src/include/printer/sharing.rb:180
+msgid "Allow access from those IP addresses or &network/netmask (separated by space)"
+msgstr "允許來自這些 IP 地址或網路/網路掩碼的訪問（用空格分開）(&N)"
+
+#. TextEntry to publish local print queues
+#. to IP addresses and/or network broadcast addresses:
+#: src/include/printer/sharing.rb:192
+msgid "Publish to these IP addresses or network &broadcast addresses (separated by space)"
+msgstr "向這些 IP 地址或網路廣播地址釋出列印機（用空格分開）(&B)"
+
+#. A CheckBox label to publish local print queues by default
+#. via a partivular network interface which is shown below.
+#: src/include/printer/sharing.rb:214
+msgid "&Publish printers by default via the network interface below."
+msgstr "默認通過以下網路介面釋出列印機(&P)。"
+
+#. A header for a ComboBox which lists network interfaces:
+#: src/include/printer/sharing.rb:221
+msgid "Available Network &Interfaces:"
+msgstr "可用網路介面(&I)："
+
+#. Use the exact same wording "remote access"
+#. as in the matching RadioButton label to allow remote access to local print queues:
+#: src/include/printer/sharing.rb:261
+msgid "A firewall may prevent remote access"
+msgstr "防火牆可能遮蔽遠端訪問"
+
+#. Do not change or translate "Listen localhost", it is a system settings name.
+#: src/include/printer/sharing.rb:396
+msgid "Failed to set only 'Listen localhost' in /etc/cups/cupsd.conf."
+msgstr "在 /etc/cups/cupsd.conf 設定僅 'Listen localhost' 失敗"
+
+#. Do not change or translate "Allow", it is a system settings name.
+#: src/include/printer/sharing.rb:406
+msgid "Failed to remove 'Allow' entries from /etc/cups/cupsd.conf."
+msgstr "移除 /etc/cups/cupsd.conf 中的“Allow”項失敗。"
+
+#. Do not change or translate "BrowseAddress", it is a system settings name.
+#. Do not change or translate "BrowseAddress", it is a system settings name.
+#: src/include/printer/sharing.rb:424 src/include/printer/sharing.rb:594
+msgid "Failed to remove 'BrowseAddress' entries from /etc/cups/cupsd.conf."
+msgstr "在 /etc/cups/cupsd.conf 移除 'BrowseAddress' 項失敗"
+
+#. where %1 will be replaced by one or more system settings values.
+#. Do not change or translate "Allow", it is a system settings name.
+#: src/include/printer/sharing.rb:536
+msgid "Failed to set 'Allow' entries '%1' in /etc/cups/cupsd.conf."
+msgstr "在 /etc/cups/cupsd.conf 中設定 'Allow' 項 '%1' 失敗。"
+
+#. where %1 will be replaced by one or more system settings values.
+#. Do not change or translate "BrowseAddress", it is a system settings name.
+#: src/include/printer/sharing.rb:560
+msgid "Failed to set 'BrowseAddress' entries '%1' in /etc/cups/cupsd.conf."
+msgstr "在 /etc/cups/cupsd.conf 中設定 'BrowseAddress' 項 '%1' 失敗。"
+
+#. Do not change or translate "Listen *:631", it is a system settings name.
+#: src/include/printer/sharing.rb:613
+msgid "Failed to set 'Listen *:631' in /etc/cups/cupsd.conf."
+msgstr "在 /etc/cups/cupsd.conf 中設定 'Listen *:631' 失敗。"
+
+#. PopupYesNoHeadline headline
+#. PopupYesNoHeadline body:
+#: src/include/printer/sharing.rb:643
+msgid "A remote CUPS server setting conflicts with sharing local printer configurations."
+msgstr "一個遠端 CUPS 伺服器設定與本地列印機共享配置衝突。"
+
+#. Only "Printing via Network" configuration of printer.
+#. For use with autoinstallation.
+#. @return sequence result
+#. Whole configuration of printer but without reading and writing.
+#. For use with proposal at the end of the system installation.
+#. @return sequence result
+#: src/include/printer/wizards.rb:195 src/include/printer/wizards.rb:215
+msgid "Printer Configuration"
+msgstr "列印機配置"
+
+#. Initialization dialog contents
+#. Initialization dialog contents
+#: src/include/printer/wizards.rb:197 src/include/printer/wizards.rb:217
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. Settings:
+#. Define all variables needed for configuration of a printer:
+#. Global variables:
+#. Used by AutoYaST by calling in printer_auto.ycp the "Summary" function.
+#: src/modules/Printer.rb:58
+msgid ""
+"<p>\n"
+"AutoYaST settings for printing with CUPS via network.<br>\n"
+"There is no AutoYaST support for local print queues.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"通過網路上的通用 UNIX 列印系統 (CUPS) 列印的 AutoYaST 設定。<br>\n"
+"AutoYaST 不支援本地列印佇列。\n"
+"</p>"
+
+#. Empty an existing progress file so that the DownloadProgress starts at the beginning.
+#. Don't care if this command is successful. All what matters is if CreateDatabase() works.
+#: src/modules/Printer.rb:367
+msgid "Retrieving printer driver information..."
+msgstr "正在獲取列印機驅動資訊..."
+
+#. Busy message:
+#. Body of a Popup::ShowFeedback:
+#: src/modules/Printer.rb:382
+msgid ""
+"Retrieving printer driver information...\n"
+"(this could take more than a minute)"
+msgstr ""
+"正在獲取列印機驅動資訊...\n"
+"(這可能會花一分多鐘的時間)"
+
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#: src/modules/Printer.rb:396
+msgid "Failed to create PPD database."
+msgstr "無法創建 PostScript 列印機描述 (PPD) 資料庫。"
+
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#: src/modules/Printer.rb:415 src/modules/Printer.rb:541
+#: src/modules/Printer.rb:621 src/modules/Printer.rb:694
+msgid "File %1 does not exist."
+msgstr "檔案 %1 不存在。"
+
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#: src/modules/Printer.rb:437 src/modules/Printer.rb:566
+#: src/modules/Printer.rb:641 src/modules/Printer.rb:714
+msgid "Failed to read %1."
+msgstr "未能讀取 %1。"
+
+#. ExpectedSize to 1 (setting it to 0 results wrong output) by calling
+#. UI::ChangeWidget( `id(`create_database_progress), `ExpectedSize, 1 )
+#. results bad looking output because the DownloadProgress widget is visible re-drawn
+#. first with a small 1% initially starting progress bar which then jumps up to 100%
+#. but what is intended is that the current progress bar jumps directly up to 100%.
+#. Therefore DownloadProgress is not used at all but replaced by a 100% ProgressBar.
+#. Because ProgressBar has a different default width than DownloadProgress,
+#. a MinWidth which is sufficient for both is set above.
+#. The size is measured in units roughly equivalent to the size of a character
+#. in the respective UI (1/80 of the full screen width horizontally,
+#. 1/25 of the full screen width vertically) where full screen size
+#. is 640x480 pixels (y2qt) or 80x25 characters (y2ncurses).
+#: src/modules/Printer.rb:459
+msgid "Retrieved Printer Driver Information"
+msgstr "獲取的列印機驅動資訊"
+
+#. Empty an existing progress file so that the DownloadProgress starts at the beginning.
+#. Don't care if this command is successful.
+#. Busy message:
+#. Body of a Popup::ShowFeedback:
+#: src/modules/Printer.rb:491 src/modules/Printer.rb:508
+msgid "Detecting printers..."
+msgstr "正在檢測列印機..."
+
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#. Do not confuse this error with the case when no printer was autodetected.
+#. The latter results no error.
+#: src/modules/Printer.rb:522
+msgid "Failed to detect printers automatically."
+msgstr "未能自動檢測列印機。"
+
+#. ExpectedSize to 1 results bad looking output (see above).
+#. Therefore DownloadProgress is not used at all but replaced by a 100% ProgressBar
+#. which requires a MinWidth with sufficient size (see above).
+#: src/modules/Printer.rb:579
+msgid "Printer detection finished"
+msgstr "列印機檢測完成"
+
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#. Do not confuse this error with the case when no queue was detected
+#. (e.g. simply because there is no queue). This results no error.
+#: src/modules/Printer.rb:607
+msgid "Failed to detect print queues."
+msgstr "未能檢測到列印佇列。"
+
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#. Do not confuse this error with the case when no queue was detected
+#. (e.g. simply because there is no queue). This results no error.
+#: src/modules/Printer.rb:678
+msgid "Failed to determine driver options for queue %1."
+msgstr "為佇列 %1 確定驅動程式參數失敗。"
+
+#. Initialize printer configuration (checks only the installed packages) see
+#. http://en.opensuse.org/Archive:YaST_Printer_redesign#Basic_Implementation_Principles:
+#. for background information
+#. @return true on success
+#: src/modules/Printer.rb:735
+msgid "Initializing Printer Configuration"
+msgstr "正在啟始化列印機配置"
+
+#: src/modules/Printer.rb:738
+msgid "Check installed packages"
+msgstr "檢查已安裝的包"
+
+#. 1. progress stage name of a Progress::New:
+#: src/modules/Printer.rb:740
+msgid "Checking installed packages..."
+msgstr "正在檢查已安裝的包..."
+
+#. Last progress step progress bar title of a Progress::New:
+#. Last progress step progress bar title of a Progress::New:
+#: src/modules/Printer.rb:742 src/modules/Printer.rb:792
+msgid "Finished"
+msgstr "已完成"
+
+#. Finish printer configuration (does actually nothing except to exit verbosely) see
+#. http://en.opensuse.org/Archive:YaST_Printer_redesign#Basic_Implementation_Principles:
+#. for background information
+#. @return true in any case (because it only exits)
+#: src/modules/Printer.rb:785
+msgid "Finishing Printer Configuration"
+msgstr "正在完成列印機配置"
+
+#: src/modules/Printer.rb:788
+msgid "Finish printer configuration"
+msgstr "完成列印機配置"
+
+#. 1. progress stage name of a Progress::New:
+#: src/modules/Printer.rb:790
+msgid "Finishing printer configuration..."
+msgstr "正在完成列印機配置..."
+
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#. Do not confuse this error with the case when no queue was detected
+#. (e.g. simply because there is no queue). This results no error.
+#: src/modules/Printer.rb:1098
+msgid "Cannot show print queues (failed to detect print queues)."
+msgstr "無法顯示列印佇列（檢測列印佇列失敗）。"
+
+#. Use local variables to have shorter variable names:
+#: src/modules/Printer.rb:1119
+msgid "Local"
+msgstr "本地"
+
+#: src/modules/Printer.rb:1120
+msgid "Class"
+msgstr "類"
+
+#: src/modules/Printer.rb:1121
+msgid "Remote"
+msgstr "遠端"
+
+#: src/modules/Printer.rb:1122
+msgid "Yes"
+msgstr "是"
+
+#. When the queue accepts print jobs and printing is enabled:
+#: src/modules/Printer.rb:1124
+msgid "Ready"
+msgstr "準備就緒"
+
+#: src/modules/Printer.rb:1125
+msgid "Printout disabled"
+msgstr "列印輸出已禁用"
+
+#: src/modules/Printer.rb:1128
+msgid "Rejecting print jobs, printout disabled"
+msgstr "拒絕列印任務，禁用列印輸出"
+
+#: src/modules/Printer.rb:1130
+msgid "Rejecting print jobs"
+msgstr "拒絕列印任務"
+
+#. Show a fallback text if there are no queues:
+#: src/modules/Printer.rb:1167
+msgid "There is no print queue."
+msgstr "沒有列印佇列。"
+
+#. Only a simple message because before the function AutodetectPrinters
+#. was called and this function would have shown more specific messages.
+#: src/modules/Printer.rb:1212
+msgid "Failed to autodetect printers."
+msgstr "未能自動檢測列印機。"
+
+#. Show a fallback text if there are no connections.
+#: src/modules/Printer.rb:1474
+msgid "No connections."
+msgstr "無連線。"
+
+#. A hint what to do if there are no connections.
+#. 'Detect More' and 'Connection Wizard' are
+#. button lables and must be translated accordingly:
+#: src/modules/Printer.rb:1478
+msgid "Try 'Detect More' or use the 'Connection Wizard'."
+msgstr "嘗試 ‘檢測更多’ 或使用 ‘連線嚮導’。"
+
+#. Only a simple message because before the function CreateDatabase
+#. was called and this function would have shown more specific messages.
+#: src/modules/Printer.rb:1496
+msgid "Failed to create the printer driver database."
+msgstr "創建列印機驅動資料庫失敗。"
+
+#. fallback entry for a SelectionBox when no connection is selected.
+#. It will be replaced by real content, when a connection is selected.
+#: src/modules/Printer.rb:1525
+msgid "Select a connection, then matching drivers show up here."
+msgstr "選擇一個連線，之後匹配的驅動將在此處出現。"
+
+#. Busy message:
+#. Body of a Popup::ShowFeedback:
+#: src/modules/Printer.rb:1543
+msgid "Determining matching printer drivers..."
+msgstr "正在確定匹配的驅動程式..."
+
+#. show a meaningful text as fallback entry ('Find More' is a button label).
+#: src/modules/Printer.rb:1594
+msgid "No matching driver found. Change the search string or try 'Find More'."
+msgstr "未找到匹配的驅動。請更換搜索關鍵詞或嘗試 '查找更多'。"
+
+#. Busy message:
+#. Body of a Popup::ShowFeedback:
+#: src/modules/Printer.rb:1619
+msgid "Processing many printer drivers. Please wait..."
+msgstr "正在處理多個驅動。請稍候..."
+
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#: src/modules/Printer.rb:2065
+msgid "Failed to add queue %1."
+msgstr "添加佇列 %1 失敗。"
+
+#. Only a simple message because this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#: src/modules/Printer.rb:2185
+msgid "Failed to delete configuration %1."
+msgstr "刪除配置 %1 失敗。"
+
+#. Only a simple message because this is only a fallback case
+#. which should not happen at all:
+#: src/modules/Printer.rb:2208
+msgid "Failed to determine the driver options."
+msgstr "確定驅動程式參數失敗。"
+
+#. Info for a currently selected item which is to be set as new value in the system:
+#: src/modules/Printer.rb:2215
+msgid "new value"
+msgstr "新值"
+
+#. Info for a current setting which is the currently still saved value in the system:
+#: src/modules/Printer.rb:2217
+msgid "saved value"
+msgstr "儲存值"
+
+#. where %1 will be replaced by the server name.
+#: src/modules/Printer.rb:2366
+msgid "The server '%1' is not accessible via port 631 (IPP/CUPS)."
+msgstr "伺服器 '%1' 無法通過埠 631 (網路列印協議 IPP/通用 UNIX 列印系統 CUPS) 訪問。"
+
+#. where %1 will be replaced by the server name.
+#: src/modules/Printer.rb:2371
+msgid "The server '%1' responds to a 'ping' in the network."
+msgstr "伺服器 '%1' 迴應網路中的 'ping'。"
+
+#. where %1 will be replaced by the server name.
+#: src/modules/Printer.rb:2376
+msgid "The server '%1' does not respond to a 'ping' in the network."
+msgstr "伺服器 '%1' 不對網路中的 'ping' 做出響應。"
+
+#. where %1 will be replaced by the server name.
+#: src/modules/Printer.rb:2381
+msgid "The server name '%1' is known in the network."
+msgstr "伺服器名稱“%1”在網路中已知。"
+
+#. where %1 will be replaced by the server name.
+#: src/modules/Printer.rb:2386
+msgid "The server name '%1' is not known in the network."
+msgstr "伺服器名稱“%1”在網路中未知。"
+
+#. but in most cases TestClientOnlyServer is called
+#. indirectly without a button click by the user
+#. so that even the netcat test is silently skipped
+#. and no negative feedback is shown when netcat is not executable:
+#: src/modules/Printer.rb:2404
+msgid "Cannot execute the program 'netcat'."
+msgstr "無法執行程式 'netcat'。"
+
+#. Popup::ErrorDetails details:
+#: src/modules/Printer.rb:2409
+msgid "The RPM package 'netcat' is required for a meaningful test."
+msgstr "需要 'netcat' RPM 軟體包執行一次有意義的測試。"
+
+#. but it the less meaningful test is not really important
+#. so that the less meaningful test is silently skipped
+#. and no negative feedback is shown when ping is not executable:
+#: src/modules/Printer.rb:2445
+msgid "Cannot execute the program 'ping'."
+msgstr "無法執行程式 'ping'。"
+
+#. Popup::ErrorDetails details:
+#: src/modules/Printer.rb:2454
+msgid "The RPM package 'iputils' is required for a meaningful test."
+msgstr "需要 'iputils' RPM 軟體包執行一次有意義的測試。"
+
+#. where %1 will be replaced by the server name.
+#: src/modules/Printer.rb:2483
+msgid "The server '%1' is not accessible."
+msgstr "伺服器 %1 不可訪問。"
+
+#. but it the last test is not really important
+#. so that the last test is silently skipped
+#. and no negative feedback is shown when host is not executable:
+#: src/modules/Printer.rb:2546
+msgid "Cannot execute the program 'host'."
+msgstr "無法執行程式 'host'。"
+
+#. Popup::ErrorDetails details:
+#: src/modules/Printer.rb:2555
+msgid "The RPM package 'bind-utils' is required for a meaningful test."
+msgstr "需要 'bind-utils' RPM 軟體包執行一次有意義的測試。"
+
+#. where %1 will be replaced by the server name.
+#: src/modules/Printer.rb:2582
+msgid "The server '%1' does not respond in the network."
+msgstr "伺服器 %1 在網路中沒有響應。"
+
+#. where %1 will be replaced by the server name.
+#: src/modules/Printer.rb:2644
+msgid "The server '%1' is unknown."
+msgstr "伺服器“%1”未知。"
+
+#. Message of a Popup::Error when hp-setup should be run.
+#. Do not change or translate "hp-setup", it is a program name.
+#. Do not change or translate "DISPLAY", it is an environment variable name.
+#: src/modules/Printer.rb:2673
+msgid ""
+"Cannot run hp-setup because no graphical display can be opened.\n"
+"This happens in particular when YaST runs in text-only mode,\n"
+"or when the user who runs YaST has no DISPLAY environment variable set,\n"
+"or when the YaST process is not allowed to access the graphical display.\n"
+"In this case you should run hp-setup manually directly as user 'root'.\n"
+msgstr ""
+"無法運行 hp-setup 因為沒有開啟圖形顯示螢幕。\n"
+"這經常在 YaST 運行在文字模式下時發生，或者在\n"
+"運行 YaST 的使用者沒有設定 DISPLAY 環境變數時發生，\n"
+"又或者在 YaST 程序不允許訪問圖形顯示螢幕時發生。\n"
+"在這種情況下您應該直接以 'root' 使用者身份手動運行 hp-setup。\n"
+
+#. Message of a Popup::Error when hp-setup should be run.
+#. Do not change or translate "hp-setup", it is a program name:
+#: src/modules/Printer.rb:2683
+msgid ""
+"Cannot run hp-setup because\n"
+"/usr/bin/hp-setup is not executable\n"
+"or does not exist.\n"
+msgstr ""
+"無法運行 hp-setup 由於\n"
+"/usr/bin/hp-setup 不具有可執行許可權\n"
+"或不存在。\n"
+
+#. Body of a Popup::ShowFeedback.
+#. Do not change or translate "hp-setup", it is a program name:
+#: src/modules/Printer.rb:2691
+msgid ""
+"Launched hp-setup.\n"
+"You must finish hp-setup before you can proceed with the printer configuration.\n"
+msgstr ""
+"hp-setup 已啟動。\n"
+"在繼續配置列印機前，您必須完成 hp-setup。\n"
+
+#. from the BasicAdd dialog but the RPM package hplip is not installed:
+#. Do not change or translate "hp-setup", it is a program name.
+#. Do not change or translate "hplip", it is a package name.
+#. Translate 'Driver Packages' the same as the PushButton name to go to the "Add Driver" dialog:
+#: src/modules/Printer.rb:2725
+msgid ""
+"To run hp-setup, the RPM package hplip must be installed.\n"
+"Use 'Driver Packages' to install it."
+msgstr ""
+"必須安裝 RPM 軟體包 hplip 才能運行 hp-setup。\n"
+"使用 '驅動軟體包' 來安裝它。"
+
+#. Is the package available to be installed?
+#. Package::Available returns nil if no package source is available.
+#: src/modules/Printerlib.rb:179
+msgid "Required package %1 is not installed and there is no package repository available."
+msgstr "未安裝必需的包 %1 且沒有可用的軟體源。"
+
+#. Message of a Popup::Error where %1 will be replaced by the package name:
+#: src/modules/Printerlib.rb:194
+msgid "Required package %1 is not installed and not available in the repository."
+msgstr "未安裝必需的軟體包 %1 且軟體源中沒有該軟體包。"
+
+#. Only a simple message because:
+#. Either the user has explicitly rejected to install the package,
+#. or this error does not happen on a normal system
+#. (i.e. a system which is not totally broken or totally messed up).
+#: src/modules/Printerlib.rb:223
+msgid "Failed to install required package %1."
+msgstr "未能安裝必需的包 %1。"
+
+#. where %1 will be replaced by the package name
+#. when removing package %1 would break dependencies.
+#: src/modules/Printerlib.rb:242
+msgid "Remove package %1?"
+msgstr "移除軟體包 %1？"
+
+#. where %1 will be replaced by the package name.
+#: src/modules/Printerlib.rb:278
+msgid "Removing package %1 would break dependencies."
+msgstr "移除軟體包 %1 將會破壞依賴關係。"
+
+#. where %1 will be replaced by the package name
+#. when removing package %1 would break dependencies.
+#: src/modules/Printerlib.rb:287
+msgid "Remove %1 regardless of breaking dependencies?"
+msgstr "移除 %1，即使會破壞依賴關係？"
+
+#. Header of a Popup::ContinueCancelHeadline
+#. Body of a Popup::ContinueCancelHeadline
+#. when removing package %1 would break dependencies.
+#: src/modules/Printerlib.rb:292
+msgid "Breaking dependencies leads to arbitrary failures elsewhere."
+msgstr "破壞依賴關係會導致其它地方發生任何故障。"
+
+#. where %1 will be replaced by the package name.
+#. Only a simple message because this error does not happen on a normal system.
+#: src/modules/Printerlib.rb:309
+msgid "Failed to remove package %1."
+msgstr "移除軟體包 %1 失敗。"
+
+#. Enforce user confirmation before a new service is started
+#. to be on the safe side that the user knows about it:
+#: src/modules/Printerlib.rb:335
+msgid "Start locally running CUPS daemon"
+msgstr "啟動本地運行中的 CUPS 守護精靈"
+
+#. PopupYesNoHeadline body:
+#: src/modules/Printerlib.rb:337
+msgid "A locally running CUPS daemon is needed."
+msgstr "需要本地運行中的 CUPS 守護精靈。"
+
+#: src/modules/Printerlib.rb:343
+msgid "Failed to start the CUPS daemon"
+msgstr "啟動 CUPS 守護精靈失敗"
+
+#: src/modules/Printerlib.rb:383 src/modules/Printerlib.rb:432
+msgid "No locally running CUPS daemon is accessible."
+msgstr "沒有可訪問的本地運行中的 CUPS 守護精靈。"
+
+#: src/modules/Printerlib.rb:388 src/modules/Printerlib.rb:445
+msgid "Failed to enable starting of the CUPS daemon during system boot"
+msgstr "在系統引導時啟動 CUPS 守護精靈失敗"
+
+#. to be on the safe side regarding complaints in an enterprise environment
+#. because a restart disrupts all currently actively printing jobs:
+#: src/modules/Printerlib.rb:400
+msgid "Restart locally running CUPS daemon"
+msgstr "重啟本地運行中的 CUPS 守護精靈"
+
+#. PopupYesNoHeadline body:
+#: src/modules/Printerlib.rb:402
+msgid "A restart disrupts all currently active print jobs."
+msgstr "重啟會干擾所有當前活動的列印任務。"
+
+#: src/modules/Printerlib.rb:408
+msgid "Failed to restart the CUPS daemon"
+msgstr "重啟 CUPS 守護精靈失敗"
+
+#. Wait half a minute for a restarted cupsd is necessary because
+#. when a "no Browsing info" config is switched to a "get Browsing info" config
+#. the BrowseInterval in cupsd.conf on remote CUPS servers is by default 30 seconds
+#. so that the local cupsd should listen at least 31 seconds to get Browsing info
+#. before e.g. the Overview dialog can be shown with the right current queues.
+#: src/modules/Printerlib.rb:423
+msgid ""
+"Restarted the CUPS daemon.\n"
+"Waiting half a minute for the CUPS daemon to get ready to operate...\n"
+msgstr ""
+"重啟了 CUPS 守護精靈。\n"
+"等待半分鐘讓它準備好接受操作指令...\n"
+
+#. To be on the safe side, ask the user to enable the cupsd
+#. to be started during boot if it is not yet enabled:
+#: src/modules/Printerlib.rb:439
+msgid "Enable starting of the CUPS daemon during system boot"
+msgstr "啟用開機引導時自動啟動 CUPS 守護精靈"
+
+#. PopupYesNoHeadline body:
+#: src/modules/Printerlib.rb:441
+msgid "Currently the CUPS daemon is not started during system boot."
+msgstr "目前 CUPS 守護精靈未隨系統引導而啟動。"
+
+#. to be on the safe side regarding complaints in an enterprise environment
+#. because a stop disrupts all currently actively printing jobs:
+#: src/modules/Printerlib.rb:461
+msgid "Stop locally running CUPS daemon"
+msgstr "停止本地運行中的 CUPS 守護精靈"
+
+#. PopupYesNoHeadline body:
+#: src/modules/Printerlib.rb:463
+msgid "A stop disrupts all currently active print jobs."
+msgstr "停止會干擾所有當前活動的列印任務。"
+
+#. Wait one second to make sure that cupsd has really finished (it may do some cleanup):
+#: src/modules/Printerlib.rb:479
+msgid "A locally running CUPS daemon is still accessible."
+msgstr "本地運行中的 CUPS 守護精靈仍可以訪問。"
+
+#. where %1 will be replaced by the server name.
+#: src/modules/Printerlib.rb:516
+msgid "The CUPS server '%1' is not accessible."
+msgstr "CUPS 伺服器 '%1' 不可訪問。"
+
+#. Label for a ProgressBar while waiting for updated config files:
+#: src/modules/Printerlib.rb:649
+msgid "Updating configuration files..."
+msgstr "正在更新配置檔案..."
+
+#. Label for a PushButton to skip waiting for updated config files:
+#: src/modules/Printerlib.rb:657
+msgid "&Skip waiting"
+msgstr "跳過等待(&S)"
+
+#~ msgid "Look Up"
+#~ msgstr "查詢"
+
+#, fuzzy
+#~ msgid "Specify how USB printers are configured automatically"
+#~ msgstr "請指定 USB 列印機自動配置的方式"
+
+#, fuzzy
+#~ msgid ""
+#~ "No Automatic Configuration\n"
+#~ "&Remove the packages cups-autoconfig and udev-configure-printer."
+#~ msgstr "不用自動配置；移除 cups-autoconfig 軟體包(&R)。"
+
+#, fuzzy
+#~ msgid "There are no settings when udev-configure-printer is used."
+#~ msgstr "沒有 procmail 的設定。"
+
+#, fuzzy
+#~ msgid "Settings for automatic configuration with cups-autoconfig"
+#~ msgstr "不用自動配置；移除 cups-autoconfig 軟體包(&R)。"
+
+#~ msgid "Operation &Policy for Automatically Configured USB Printers"
+#~ msgstr "自動配置 USB 列印機的操作規則(&P)"
+
+#~ msgid "&Disable Printout when Disconnecting an USB Printer"
+#~ msgstr "當斷掉與 USB 列印機連線時禁用列印輸出(&D)"
+
+#, fuzzy
+#~ msgid "&Trigger Automatic Configuration to Run Now"
+#~ msgstr "使用自動配置(&T)"
+
+#, fuzzy
+#~ msgid "not set"
+#~ msgstr "[未設定]"
+
+#~ msgid "Failed to set 'ConfigureNewPrinters=yes' in /etc/cups-autoconfig.conf"
+#~ msgstr "在 /etc/cups-autoconfig.conf 中設定 'ConfigureNewPrinters=yes' 失敗"
+
+#~ msgid "Failed to set 'ConfigureNewPrinters=no' in /etc/cups-autoconfig.conf"
+#~ msgstr "在 /etc/cups-autoconfig.conf 中設定 'ConfigureNewPrinters=no' 失敗"
+
+#~ msgid "Failed to set 'DisablePrintersOnRemoval=yes' in /etc/cups-autoconfig.conf"
+#~ msgstr "在 /etc/cups-autoconfig.conf 中設定 'DisablePrintersOnRemoval=yes' 失敗"
+
+#~ msgid "Failed to set 'DisablePrintersOnRemoval=no' in /etc/cups-autoconfig.conf"
+#~ msgstr "在 /etc/cups-autoconfig.conf 中設定 'DisablePrintersOnRemoval=no' 失敗"
+
+#~ msgid "Failed to set 'DefaultCUPSPolicy=%1' in /etc/cups-autoconfig.conf"
+#~ msgstr "於 /etc/cups-autoconfig.conf 中設定 'DefaultCUPSPolicy=%1' 失敗"
+
+#~ msgid "Automatic configuration failed."
+#~ msgstr "自動配置失敗。"
+
+#~ msgid "Microsoft Windows/SAMBA (SMB/CIFS)"
+#~ msgstr "微軟 Windows/SAMBA (SMB/CIFS)"
+
+#~ msgid "Autoconfig Settings"
+#~ msgstr "自動設定"
+
+#~ msgid "Via network interfaces specified below"
+#~ msgstr "通過以下指定的網路介面"
+
+#~ msgid "Various Standard Drivers"
+#~ msgstr "多種標準驅動"
+
+#~ msgid "The Omni Printer Driver (Unmaintained)"
+#~ msgstr "Omni 列印機驅動（已經不被維護）"
+
+#~ msgid "currently selected"
+#~ msgstr "當前選定"
+
+#~ msgid "current setting of the print queue"
+#~ msgstr "當前列印佇列設定"
+
+#, fuzzy
+#~ msgid "Waiting until the config files are updated..."
+#~ msgstr "配置檔案正在更新, 請稍等..."
+
+#~ msgid "Detected printers"
+#~ msgstr "檢測到的列印機"
+
+#, fuzzy
+#~ msgid "It takes %1 seconds until the config files are updated..."
+#~ msgstr "配置檔案正在更新, 請稍等..."
+
+#, fuzzy
+#~ msgid "It takes half a minute until the config files are updated..."
+#~ msgstr "配置檔案正在更新, 請稍等..."
+
+#~ msgid "Determine Connection"
+#~ msgstr "確定連線"
+
+#~ msgid "&More Connections"
+#~ msgstr "更多連線(&M)"
+
+#~ msgid "&Search"
+#~ msgstr "搜索(&S)"
+
+#, fuzzy
+#~ msgid "More &Drivers"
+#~ msgstr "更多驅動程式選項"
+
+#~ msgid "&Add Driver"
+#~ msgstr "添加驅動(&A)"
+
+#~ msgid "Set &Name"
+#~ msgstr "設定名稱(&N)"
+
+#~ msgid "Descri&ption"
+#~ msgstr "描述(&P)"
+
+#~ msgid "&Default Printer"
+#~ msgstr "默認列印機(&D)"
+
+#, fuzzy
+#~ msgid "&SCSI generic device"
+#~ msgstr "SCSI 裝置 (&S)"
+
+#, fuzzy
+#~ msgid "Currently available SCSI generic devices"
+#~ msgstr "當前可用的服務"
+
+#~ msgid "Program Name"
+#~ msgstr "程式名"
+
+#~ msgid "SCSI"
+#~ msgstr "SCSI"
+
+#, fuzzy
+#~ msgid "SCSI generic device could not be empty."
+#~ msgstr "快取目錄不能為空。"
+
+#~ msgid "Add Driver"
+#~ msgstr "添加驅動程式"
+
+#, fuzzy
+#~ msgid "Accept Printer &Information from the Following Servers"
+#~ msgstr "接受來自下列伺服器的資訊"
+
+#~ msgid "A remote CUPS server setting conflicts with receiving printer information."
+#~ msgstr "一個遠端 CUPS 伺服器設定與接收列印機資訊衝突。"
+
+#, fuzzy
+#~| msgid "<p>To configure Heartbeat, the <b>%1</b> package must be installed.</p>"
+#~ msgid "To use 'beh', the RPM package cups-backends must be installed."
+#~ msgstr "<p>要配置心跳，必須安裝 <b>%1</b> 包。</p>"
+
+#~ msgid "Makeshift Drivers for a Few Non-Standard (GDI) Printers"
+#~ msgstr "一些非標準(GDI)列印機的 Makeshift 驅動"
+
+#~ msgid "all hosts"
+#~ msgstr "所有主機"
+
+#~ msgid "Usual &General Setting"
+#~ msgstr "常規設定(&G)"
+
+#~ msgid "Determine available drivers..."
+#~ msgstr "正在確定可用驅動..."
+
+#~ msgid "No matching driver found."
+#~ msgstr "未找到匹配驅動。"
+
+#~ msgid ""
+#~ "Failed to set up the firewall settings.\n"
+#~ "Use the specific YaST Firewall module."
+#~ msgstr ""
+#~ "設定防火牆設定失敗。\n"
+#~ "使用特定的 YaST 防火牆模組。"
+
+#, fuzzy
+#~ msgid "Search for &Drivers"
+#~ msgstr "搜索使用者的過濾器(&U)"
+
+#~ msgid "&Show Matching Drivers"
+#~ msgstr "顯示匹配驅動(&S)"
+
+#~ msgid "Firewall Settings"
+#~ msgstr "防火牆設定"
+
+#~ msgid "&Hostname / IP Address"
+#~ msgstr "主機名/ IP 地址(&H)"
+
+#~ msgid "Not the Suse Firewall but another firewall is used"
+#~ msgstr "未使用 SUSE 防火牆，但使用了其它防火牆"
+
+#~ msgid "The Suse Firewall is not active"
+#~ msgstr "Suse 防火牆不在活動狀態"
+
+#~ msgid "Allow printer information from the &internal network zone"
+#~ msgstr "允許來自內部區域的訪問與列印機資訊(&I)"
+
+#~ msgid "Printer information from the internal network zone is allowed"
+#~ msgstr "來自內部網路區域的訪問與列印機資訊被允許"
+
+#~ msgid "Deny access and printer information from the &external network zone"
+#~ msgstr "拒絕來自外部網路區域的訪問與列印機資訊(&E)"
+
+#~ msgid "Access and printer information from the external network zone is denied"
+#~ msgstr "來自外部網路區域的訪問與列印機資訊被拒絕"
+
+#~ msgid "Allow access from the &internal network zone"
+#~ msgstr "允許來自內部網路區域的訪問(&I)"
+
+#~ msgid "Access from the internal network zone is allowed"
+#~ msgstr "允許了來自內部網路區域的訪問"
+
+#~ msgid "Deny access from the &external network zone"
+#~ msgstr "拒絕來自外部網路區域的訪問(&E)"
+
+#~ msgid "Access from the external network zone is denied"
+#~ msgstr "拒絕了來自外部網路區域的訪問"
+
+#~ msgid "Driver"
+#~ msgstr "驅動程式"
+
+#~ msgid "Other"
+#~ msgstr "其它"
+

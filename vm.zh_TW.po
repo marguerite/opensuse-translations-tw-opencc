@@ -1,0 +1,266 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:43+0200\n"
+"PO-Revision-Date: 2014-06-10 12:17+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. progress step title
+#: src/clients/vm_finish.rb:69
+msgid "Configuring the virtual machine..."
+msgstr "正在配置虛擬機器..."
+
+#. Main
+#. Definition of command line mode options
+#: src/clients/xen.rb:54
+msgid "Install Hypervisor and Tools"
+msgstr "安裝管理程式與工具"
+
+#. check for kernel-bigsmp
+#: src/modules/VM_XEN.rb:157
+msgid ""
+"x86_64 is the only supported architecture for hosting virtual machines. Your "
+"architecture is "
+msgstr "x86_64 是唯一支援搭建虛擬機器的架構。您的架構是 "
+
+#. we are already in UML, nested virtual machine is not supported
+#: src/modules/VM_XEN.rb:176
+msgid ""
+"Virtual machine installation cannot be started inside the UML machine.\n"
+"Start installation in the host system.\n"
+msgstr ""
+"無法在 UML 機器內啟動虛擬機器安裝。\n"
+"請在主機系統中啟動安裝。\n"
+
+#. progress stage 1/2
+#: src/modules/VM_XEN.rb:193
+msgid "Verify Installed Packages"
+msgstr "校驗已安裝的軟體包"
+
+#. progress stage 2/2
+#: src/modules/VM_XEN.rb:195
+msgid "Network Bridge Configuration"
+msgstr "網橋配置"
+
+#. Headline for management domain installation
+#: src/modules/VM_XEN.rb:210
+msgid "Configuring the VM Server (domain 0)"
+msgstr "正在配置虛擬機器伺服器 (域 0)"
+
+#. xen domain0 installation help text - 1/4
+#: src/modules/VM_XEN.rb:213
+msgid ""
+"<p><big><b>VM Server Configuration</b></big></p><p>Configuration of the VM "
+"Server (domain 0) has two parts.</p>"
+msgstr ""
+"<p><big><b>虛擬機器伺服器配置</b></big></p><p>虛擬機器伺服器 (域 0) 的配置有兩部"
+"分。</p>"
+
+#. xen domain0 installation help text - 2/4
+#: src/modules/VM_XEN.rb:217
+msgid ""
+"<p>The required packages are installed into the system first. Then the boot "
+"loader is switched to GRUB (if not already used) and the Xen section is "
+"added to the boot loader menu if it is missing.</p>"
+msgstr ""
+"<p>首先將安裝必需的軟體包，然後將把引導載入器切換為 GRUB (若尚未使用) 並把 "
+"Xen 啟動項添加到引導選單(若選單中尚無)。</p>"
+
+#. xen domain0 installation help text - 3/4
+#: src/modules/VM_XEN.rb:221
+msgid ""
+"<p>GRUB is needed because it supports the multiboot standard required to "
+"boot Xen and the Linux kernel.</p>"
+msgstr ""
+"<p>需要 GRUB 是因為它支援引導 Xen 與 Linux 核心所需的多重引導標準。</p>"
+
+#. xen domain0 installation help text - 4/4
+#: src/modules/VM_XEN.rb:225
+msgid ""
+"<p>When the configuration has finished successfully, you can boot the VM "
+"Server from the boot loader menu.</p>"
+msgstr "<p>配置成功後，您就可以從引導載入器選單來啟動虛擬機器伺服器了。</p>"
+
+#. error popup
+#: src/modules/VM_XEN.rb:230
+msgid "The installation will be aborted."
+msgstr "安裝將中止。"
+
+#: src/modules/VM_XEN.rb:233
+msgid "Choose Hypervisor(s) to install"
+msgstr "選擇要安裝的虛擬機器管理程式"
+
+#: src/modules/VM_XEN.rb:236
+msgid "Server: Minimal system to get a running Hypervisor"
+msgstr "伺服器：運行虛擬機器管理程式的最小化系統"
+
+#: src/modules/VM_XEN.rb:237
+msgid "Tools: Configure, manage and monitor virtual machines"
+msgstr "工具：配置、管理與監視虛擬機器"
+
+#: src/modules/VM_XEN.rb:250
+msgid "KVM Hypervisor"
+msgstr "KVM 管理程式"
+
+#: src/modules/VM_XEN.rb:252
+msgid "KVM server"
+msgstr "KVM 伺服器"
+
+#: src/modules/VM_XEN.rb:253
+msgid "KVM tools"
+msgstr "KVM 工具"
+
+#: src/modules/VM_XEN.rb:258
+msgid "libvirt LXC containers"
+msgstr "libvirt LXC 容器"
+
+#: src/modules/VM_XEN.rb:260
+msgid "libvirt LXC daemon"
+msgstr "libvirt LXC 守護程序"
+
+#. Generate a pop dialog to allow user selection of Xen or KVM
+#: src/modules/VM_XEN.rb:285
+msgid "Software to connect to Virtualization server"
+msgstr "連線虛擬化伺服器的軟體"
+
+#: src/modules/VM_XEN.rb:287
+msgid "Virtualization client tools"
+msgstr "虛擬化客戶端工具"
+
+#: src/modules/VM_XEN.rb:303
+msgid "Xen Hypervisor"
+msgstr "Xen 管理程式"
+
+#: src/modules/VM_XEN.rb:305
+msgid "Xen server"
+msgstr "Xen 伺服器"
+
+#: src/modules/VM_XEN.rb:306
+msgid "Xen tools"
+msgstr "Xen 工具"
+
+#. SLED doesn't have any installation capabilities (L3 support)
+#: src/modules/VM_XEN.rb:381
+msgid "Package installation failed\n"
+msgstr "軟體包安裝失敗\n"
+
+#: src/modules/VM_XEN.rb:389
+msgid "Package installation failed for lxc\n"
+msgstr "lxc 的軟體包安裝失敗\n"
+
+#: src/modules/VM_XEN.rb:396
+msgid "Package installation failed for sled client pattern\n"
+msgstr "SLED 客戶端軟體集的軟體包安裝失敗\n"
+
+#: src/modules/VM_XEN.rb:407
+msgid "Package installation failed for sles patterns\n"
+msgstr "SLES 軟體集的軟體包安裝失敗\n"
+
+#. Assume python gtk is installed. If in text mode we don't care
+#: src/modules/VM_XEN.rb:420
+msgid "Running in text mode. Install graphical components anyway?"
+msgstr "正以文字模式運行。強行安裝圖形部件嗎？"
+
+#. progressbar title - check whether Xen packages are installed
+#: src/modules/VM_XEN.rb:433
+msgid "Checking packages..."
+msgstr "正在檢查軟體包..."
+
+#. progressbar title - install the required packages
+#: src/modules/VM_XEN.rb:436
+msgid "Installing packages..."
+msgstr "正在安裝軟體包..."
+
+#. error popup
+#. Now see if they really were installed (bnc#508347)
+#: src/modules/VM_XEN.rb:441 src/modules/VM_XEN.rb:448
+msgid "Cannot install required packages."
+msgstr "無法安裝必需的軟體包。"
+
+#. If grub2 is the bootloader and we succesfully installed Xen, update the grub2 files
+#: src/modules/VM_XEN.rb:458
+msgid "Updating grub2 configuration files..."
+msgstr "正在更新 grub2 配置檔案..."
+
+#. Default Bridge stage
+#: src/modules/VM_XEN.rb:469
+msgid "Configuring Default Network Bridge..."
+msgstr "正在配置默認網橋..."
+
+#. Popup yes/no dialog
+#: src/modules/VM_XEN.rb:490
+msgid "Network Bridge."
+msgstr "網橋。"
+
+#: src/modules/VM_XEN.rb:491
+msgid ""
+"<p>For normal network configurations hosting virtual machines, a network "
+"bridge is recommended.</p><p>Configure a default network bridge?</p>"
+msgstr ""
+"<p>要搭建正常的虛擬機器網路配置，推薦使用網橋。</p><p>配置一個默認網橋嗎？</p>"
+
+#. Firewall stage - modify the firewall setting, add the xen bridge to FW_FORWARD_ALWAYS_INOUT_DEV
+#. Progress::NextStage();
+#. Configure firewall to allow xenbr+
+#. success = success && ConfigureFirewall();
+#. if ( success == false ) {
+#. // error popup
+#. Report::Error(_("Failed to configure the firewall to allow the Xen bridge") + "\n" + abortmsg);
+#. return false;
+#. }
+#: src/modules/VM_XEN.rb:551
+msgid "KVM components are installed. Your host is ready to install KVM guests."
+msgstr "KVM 部件已安裝。您的宿主機已準備好安裝 KVM 訪客機了。"
+
+#: src/modules/VM_XEN.rb:554
+msgid ""
+"KVM components are installed. Reboot the machine and select the native "
+"kernel in the boot loader menu to install KVM guests."
+msgstr ""
+"KVM 部件已安裝。請重新引導計算機並在引導載入器選單中選擇原生核心來安裝 KVM 訪"
+"客機。"
+
+#: src/modules/VM_XEN.rb:557
+msgid ""
+"For installing Xen guests, reboot the machine and select the Xen section in "
+"the boot loader menu."
+msgstr "要安裝 Xen 客戶機，需重啟計算機並在引導載入器選單中選擇 Xen 啟動項。"
+
+#: src/modules/VM_XEN.rb:560
+msgid "Xen Hypervisor and tools are installed."
+msgstr "Xen 管理程式與工具已安裝。"
+
+#: src/modules/VM_XEN.rb:561
+msgid "Virtualization client tools are installed."
+msgstr "已安裝虛擬化客戶端工具。"
+
+#: src/modules/VM_XEN.rb:562
+msgid "Libvirt LXC components are installed."
+msgstr "已安裝 Libvirt LXC 部件。"
+
+#~ msgid "Select the virtualization platform to install."
+#~ msgstr "選擇要安裝的虛擬化平臺。"
+
+#~ msgid ""
+#~ "For installing KVM guests, reboot the machine to load the necessary "
+#~ "drivers."
+#~ msgstr "要安裝 KVM 客戶機，需重啟計算機來載入必要的驅動。"
+
+#~ msgid "Xen Network Bridge."
+#~ msgstr "Xen 網橋。"
+

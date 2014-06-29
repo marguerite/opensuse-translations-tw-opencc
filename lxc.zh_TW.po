@@ -1,0 +1,348 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:39+0200\n"
+"PO-Revision-Date: 2013-02-03 19:35+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the Xlxc module
+#: src/clients/lxc.rb:54
+msgid "Configuration of LXC"
+msgstr "LXC 配置"
+
+#. busy message
+#: src/include/lxc/dialogs.rb:55
+msgid "Creating Configuration..."
+msgstr "正在創建配置..."
+
+#. error message
+#: src/include/lxc/dialogs.rb:82
+msgid ""
+"Error occured during configuration:\n"
+"\n"
+"%1"
+msgstr ""
+"配置過程中出錯：\n"
+"\n"
+"%1"
+
+#. add dialog caption
+#: src/include/lxc/dialogs.rb:95
+msgid "Adding New Container"
+msgstr "正在添加新容器"
+
+#. frame label
+#: src/include/lxc/dialogs.rb:105
+msgid "New Container"
+msgstr "新容器"
+
+#. text entry
+#. Table header
+#: src/include/lxc/dialogs.rb:109 src/include/lxc/dialogs.rb:478
+msgid "Name"
+msgstr "名稱"
+
+#. combo box label
+#: src/include/lxc/dialogs.rb:112
+msgid "Template"
+msgstr "模板"
+
+#. frame label
+#: src/include/lxc/dialogs.rb:118
+msgid "Network Settings"
+msgstr "網路設定"
+
+#. text entry label
+#: src/include/lxc/dialogs.rb:124
+msgid "IP Address"
+msgstr "IP 地址"
+
+#. text entry label
+#: src/include/lxc/dialogs.rb:127
+msgid "Subnet"
+msgstr "子網"
+
+#. combo box label
+#. combo box label
+#: src/include/lxc/dialogs.rb:132 src/include/lxc/dialogs.rb:187
+msgid "Bridge"
+msgstr "網橋"
+
+#. push button label
+#: src/include/lxc/dialogs.rb:138
+msgid "Configure Network..."
+msgstr "正在配置網路..."
+
+#. frame label
+#: src/include/lxc/dialogs.rb:147
+msgid "Password Settings"
+msgstr "密碼設定"
+
+#. password entry
+#: src/include/lxc/dialogs.rb:151
+msgid "Root Password"
+msgstr "根使用者密碼"
+
+#. password entry
+#: src/include/lxc/dialogs.rb:153
+msgid "Repeat Password"
+msgstr "重複密碼"
+
+#. button label
+#: src/include/lxc/dialogs.rb:170
+msgid "Create"
+msgstr "創建"
+
+#. error popup
+#: src/include/lxc/dialogs.rb:202
+msgid "Name was not entered."
+msgstr "未輸入名稱。"
+
+#. error message
+#: src/include/lxc/dialogs.rb:214
+msgid "The passwords do not match."
+msgstr "密碼不匹配。"
+
+#. yes/no popup
+#: src/include/lxc/dialogs.rb:227
+msgid ""
+"Configuration with the same name already exist.\n"
+"\n"
+"Do you want to use existing configuration or\n"
+"remove it and use the data you have just entered?\n"
+msgstr ""
+"同名配置已存在。\n"
+"\n"
+"您想要使用已有配置還是刪除它並使用您剛輸入的資料？\n"
+
+#. button label
+#: src/include/lxc/dialogs.rb:234
+msgid "Use Existing Configuration"
+msgstr "使用已有配置"
+
+#: src/include/lxc/dialogs.rb:235
+msgid "Replace With New"
+msgstr "用新配置替換"
+
+#. busy message
+#: src/include/lxc/dialogs.rb:252
+msgid "Creating Container %1..."
+msgstr "正在創建容器 %1..."
+
+#. lxc-create -n <name> -f /root/<name>.config -t <template>
+#: src/include/lxc/dialogs.rb:269
+msgid ""
+"Error occured during container creation:\n"
+"\n"
+"%1"
+msgstr ""
+"容器創建過程中出錯：\n"
+"\n"
+"%1"
+
+#. busy message
+#: src/include/lxc/dialogs.rb:281
+msgid "Saving Root Password..."
+msgstr "正在儲存根使用者密碼..."
+
+#. change the root password in the file /var/lib/lxc/<name>/rootfs/etc/shadow/
+#: src/include/lxc/dialogs.rb:304
+msgid "Container '%1' was successfully created."
+msgstr "已成功創建容器 '%1'。"
+
+#. start container as a deamon, so it survives YaST's exit
+#: src/include/lxc/dialogs.rb:326
+msgid ""
+"Error while starting container:\n"
+"\n"
+"%1"
+msgstr ""
+"啟動容器出錯：\n"
+"\n"
+"%1"
+
+#. message, %1 is a name
+#: src/include/lxc/dialogs.rb:339
+msgid ""
+"The Container '%1' was started in the background.\n"
+"Use 'lxc-console' command to connect to the running Container."
+msgstr ""
+"容器 '%1' 已在後臺啟動。\n"
+"使用 'lxc-console' 命令連線到運行中的容器。"
+
+#. error message
+#: src/include/lxc/dialogs.rb:382
+msgid ""
+"Error while destroying:\n"
+"\n"
+"%1"
+msgstr ""
+"銷燬出錯：\n"
+"\n"
+"%1"
+
+#. LXC overview dialog caption
+#: src/include/lxc/dialogs.rb:405
+msgid "LXC Configuration"
+msgstr "LXC 配置"
+
+#. button label
+#. button label
+#: src/include/lxc/dialogs.rb:425 src/include/lxc/dialogs.rb:494
+msgid "Connect"
+msgstr "連線"
+
+#. button label
+#: src/include/lxc/dialogs.rb:432
+msgid "Disconnect"
+msgstr "斷開"
+
+#. container status
+#: src/include/lxc/dialogs.rb:447
+msgid "Running"
+msgstr "運行中"
+
+#. container status
+#: src/include/lxc/dialogs.rb:449
+msgid "Stopped"
+msgstr "已停止"
+
+#. button label
+#: src/include/lxc/dialogs.rb:473
+msgid "Refresh"
+msgstr "重新整理"
+
+#: src/include/lxc/dialogs.rb:478
+msgid "Status"
+msgstr "狀態"
+
+#. button label
+#: src/include/lxc/dialogs.rb:484
+msgid "&Destroy"
+msgstr "銷燬(&D)"
+
+#. button label
+#: src/include/lxc/dialogs.rb:486
+msgid "&Start"
+msgstr "啟動(&S)"
+
+#. button label
+#: src/include/lxc/dialogs.rb:488
+msgid "Sto&p"
+msgstr "停止(&p)"
+
+#. FIXME timeout + kill -9
+#: src/include/lxc/dialogs.rb:575
+msgid "Are you sure to delete container '%1'?"
+msgstr "您確定要刪除容器 '%1' 嗎？"
+
+#. Read dialog help
+#: src/include/lxc/helps.rb:36
+msgid ""
+"<p><b><big>Initializing LXC Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在啟始化 LXC 配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Overview dialog help, part 1
+#: src/include/lxc/helps.rb:40
+msgid ""
+"<p><b><big>LXC Overview</big></b><br>\n"
+"Here, see the list of configured Linux Containers (LXC) with their current status.\n"
+"<p>Use <b>Create</b> to create new container. Delete existing one with <b>Destroy</b>.\n"
+"</p>"
+msgstr ""
+"<p><b><big>LXC 預覽</big></b><br>\n"
+"在此檢視已配置的 Linux 容器 (LXC) 列表與它們的當前狀態。\n"
+"<p>用<b>創建</b>來創建新容器。用<b>銷燬</b>來刪除已有容器。\n"
+"</p>"
+
+#. Overview dialog help, part 2
+#: src/include/lxc/helps.rb:47
+msgid ""
+"<p>You can start selected container with <b>Start</b>. The container is started in background. You can connect to it using <b>Connect</b> button or manually using <tt>lxc-console</tt> command. Once in console, you can close it from within or using the <b>Disconnect</b> button.</p>\n"
+"<p>Note that <b>Connect</b> option is not available in text mode.</p>"
+msgstr ""
+"<p>您可用<b>啟動</b>啟動所選容器。容器將在後臺啟動。您可用<b>連線</b>按鈕連線或用 <tt>lxc-console</tt> 命令手動連線。一旦開啟了控制檯，您可在其中輸入命令關閉也可用<b>斷開</b>按鈕關閉。</p>\n"
+"<p>請注意命令列模式下沒有<b>連線</b>選項。</p>"
+
+#. Create dialog help, part 1
+#: src/include/lxc/helps.rb:51
+msgid "<p><b><big>Creating New Container</big></b></p>"
+msgstr "<p><b><big>正在創建新容器</big></b></p>"
+
+#. Create dialog help, part 2
+#: src/include/lxc/helps.rb:55
+msgid "<p>Choose a <b>Name</b> for your container, select a base <b>Template</b>, and enter desired network settings.</p>"
+msgstr "<p>為您的容器選擇一個<b>名稱</b>，選擇一個基本<b>模板</b>，並輸入中意的網路設定。</p>"
+
+#. Create dialog help, part 3
+#: src/include/lxc/helps.rb:59
+msgid "<p>Use the value <tt>0.0.0.0</tt> as <b>IP Address</b> to have dynamic address assigned by DHCP. If there's no bridge device configured yet, use the <b>Configure Network</b> button and create one.</p>"
+msgstr "<p>使用 <tt>0.0.0.0</tt> 值作為 <b>IP 地址</b> 來獲得 DHCP 指派的動態地址。若尚未配置橋裝置，請使用<b>配置網路</b>按鈕來創建新裝置。</p>"
+
+#. Create dialog help, part 4
+#: src/include/lxc/helps.rb:63
+msgid "<p>Select a password to use for a system administrator ('root') in the container. If no password is entered, the default value <tt>root</tt> will be used.</p>"
+msgstr "<p>選擇容器中系統管理員 ('root') 使用的密碼。若未輸入密碼，則使用預設值 <tt>root</tt>。</p>"
+
+#. Create dialog help, part 5
+#: src/include/lxc/helps.rb:67
+msgid "<p>Use <b>Create</b> to start the creation process.</p>"
+msgstr "<p>用<b>創建</b>來啟動創建過程。</p>"
+
+#. info label (try to keep the text short)
+#: src/modules/Lxc.rb:226
+msgid "Some problems with LXC configuration were found. Check the documentation for details."
+msgstr "找到了一些 LXC 配置上的問題。詳情請參考文件。"
+
+#. output follows in widget below
+#: src/modules/Lxc.rb:232
+msgid "Output of 'lxc-checkconfig' script:"
+msgstr "'lxc-checkconfig' 指令碼的輸出："
+
+#. Lxc read dialog caption
+#: src/modules/Lxc.rb:249
+msgid "Initializing LXC Configuration"
+msgstr "正在啟始化 LXC 配置"
+
+#. Progress stage
+#: src/modules/Lxc.rb:260
+msgid "Check LXC availability"
+msgstr "檢查 LXC 可用性"
+
+#. Progress stage
+#: src/modules/Lxc.rb:262
+msgid "Read system settings"
+msgstr "讀取系統設定"
+
+#. Progress step
+#: src/modules/Lxc.rb:266
+msgid "Check LXC availability..."
+msgstr "正在檢查 LXC 可用性..."
+
+#. Progress step
+#: src/modules/Lxc.rb:268
+msgid "Reading system settings..."
+msgstr "正在讀取系統設定..."
+
+#. Progress finished
+#: src/modules/Lxc.rb:270
+msgid "Finished"
+msgstr "已完成"
+

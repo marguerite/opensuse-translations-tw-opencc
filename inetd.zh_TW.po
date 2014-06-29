@@ -1,0 +1,720 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Thruth Wang <lihaow@opera.com>, 2007, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: inetd\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:42+0200\n"
+"PO-Revision-Date: 2012-07-20 02:04+0800\n"
+"Last-Translator: Marguerite Su\n"
+"Language-Team: Chinese Simplified <kde-i18n-doc@kde.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.4\n"
+
+#. is this proposal or not?
+#: src/clients/inetd.rb:63
+msgid "Configuration of Network Services (xinetd)"
+msgstr "網路服務配置 (xinetd)"
+
+#. translators: command line help text for "summary" action
+#: src/clients/inetd.rb:87
+msgid "Show the status of current system services"
+msgstr "顯示當前系統服務的狀態"
+
+#. translators: command line help text for "id" option
+#: src/clients/inetd.rb:99
+msgid "Unique identifier"
+msgstr "唯一標識符"
+
+#. translators: command line help text for "service" option
+#: src/clients/inetd.rb:106
+msgid "Service name"
+msgstr "服務名稱"
+
+#. translators: command line help text for "disable" option
+#: src/clients/inetd.rb:113
+msgid "Disable service"
+msgstr "禁用服務"
+
+#. translators: command line help text for "rpc_version" option
+#: src/clients/inetd.rb:121
+msgid "RPC version of RPC service"
+msgstr "RPC 服務的 RPC 版本"
+
+#. translators: command line help text for "socket_type" option
+#: src/clients/inetd.rb:128
+msgid "Socket type"
+msgstr "套接字類型"
+
+#. translators: command line help text for "protocol" option
+#: src/clients/inetd.rb:136
+msgid "Internet (IP) protocols"
+msgstr "因特網協議 (IP)"
+
+#. translators: command line help text for "wait" option
+#: src/clients/inetd.rb:144
+msgid "Wait attribute"
+msgstr "等待屬性"
+
+#. translators: command line help text for "user" option
+#: src/clients/inetd.rb:152
+msgid "Determines the uid for the server process"
+msgstr "確定伺服器程序的 uid"
+
+#. translators: command line help text for "group" option
+#: src/clients/inetd.rb:159
+msgid "Determines the gid for the server process"
+msgstr "確定伺服器程序的 gid"
+
+#. translators: command line help text for "server" option
+#: src/clients/inetd.rb:166
+msgid "Path name of program to execute"
+msgstr "要執行的程式的路徑名"
+
+#. translators: command line help text for "server_args" option
+#: src/clients/inetd.rb:173
+msgid "Parameters for server"
+msgstr "伺服器的參數"
+
+#. translators: command line help text for "comment" option
+#: src/clients/inetd.rb:180
+msgid "User comment"
+msgstr "使用者註釋"
+
+#. translators: error message for command line
+#: src/clients/inetd.rb:345
+msgid "You must specify a service ID."
+msgstr "必須指定服務 ID。"
+
+#. translators: error message for command line
+#: src/clients/inetd.rb:356
+msgid "Specify the service using a 'service' option."
+msgstr "使用\"service\"選項指定服務。"
+
+#. translators: error message for command line
+#. translators: error message for command line
+#: src/clients/inetd.rb:371 src/clients/inetd.rb:391
+msgid "The 'id' option cannot be combined with other options."
+msgstr "\"ID\"選項不能與其它選項結合使用。"
+
+#: src/clients/inetd.rb:401 src/include/inetd/dialogs.rb:353
+msgid "Status"
+msgstr "狀態"
+
+#: src/clients/inetd.rb:402 src/include/inetd/dialogs.rb:354
+msgid "Service"
+msgstr "服務"
+
+#: src/clients/inetd.rb:403
+msgid "Type"
+msgstr "類型"
+
+#: src/clients/inetd.rb:404
+msgid "Prot."
+msgstr "協議"
+
+#: src/clients/inetd.rb:405 src/include/inetd/dialogs.rb:357
+msgid "Wait"
+msgstr "等待"
+
+#: src/clients/inetd.rb:406 src/include/inetd/dialogs.rb:358
+msgid "User"
+msgstr "使用者"
+
+#: src/clients/inetd.rb:407 src/include/inetd/dialogs.rb:359
+msgid "Server"
+msgstr "伺服器"
+
+#. id,
+#. Translators: Service status: On = running, --- = stopped
+#: src/clients/inetd.rb:437 src/include/inetd/routines.rb:191
+msgid "On"
+msgstr "開"
+
+#: src/clients/inetd.rb:438
+msgid "Off"
+msgstr "關"
+
+#. determine wait mode (convert to string)
+#: src/clients/inetd.rb:442 src/include/inetd/dialogs.rb:851
+#: src/include/inetd/routines.rb:211
+msgid "Yes"
+msgstr "是"
+
+#: src/clients/inetd.rb:442 src/include/inetd/dialogs.rb:851
+#: src/include/inetd/routines.rb:213
+msgid "No"
+msgstr "否"
+
+#. create titles
+#: src/clients/inetd_proposal.rb:81
+msgid "Xinetd"
+msgstr "Xinetd"
+
+#: src/clients/inetd_proposal.rb:82
+msgid "&Xinetd"
+msgstr "Xinetd(&X)"
+
+#. Translators: In autoinstallation mode:
+#. The package name is stored in %1. This is Popup::ContinueCancel.
+#: src/include/inetd/dialogs.rb:160
+msgid "Package %1 will be installed during the write process."
+msgstr "在寫入過程中將安裝包 %1。"
+
+#. if (true) { // for debugging
+#. Translators: The package name is stored in %1. This is Popup::Message.
+#: src/include/inetd/dialogs.rb:179
+msgid "Package %1 was not installed. The service cannot be edited."
+msgstr "未安裝包 %1。無法編輯該服務。"
+
+#. Translators: The package name is stored in %1
+#: src/include/inetd/dialogs.rb:201
+msgid "Package %1 was successfully installed."
+msgstr "已成功安裝包 %1。"
+
+#. This is main inetd module dialog.
+#. @return dialog result
+#: src/include/inetd/dialogs.rb:299
+msgid "&Activate All Services"
+msgstr "啟用所有服務(&A)"
+
+#: src/include/inetd/dialogs.rb:300
+msgid "&Deactivate All Services"
+msgstr "取消啟用所有服務(&D)"
+
+#. Translators: Initial and target state of xinetd (or inetd)
+#: src/include/inetd/dialogs.rb:334
+msgid "D&isable"
+msgstr "禁用(&I)"
+
+#: src/include/inetd/dialogs.rb:336
+msgid "Enab&le"
+msgstr "啟用(&L)"
+
+#. Main dialog edit inetd.conf
+#. Translators: Name of table with services (echo, chargen, ...)
+#: src/include/inetd/dialogs.rb:344
+msgid "Currently Available Services"
+msgstr "當前可用的服務"
+
+#. `opt(`notify),
+#. `opt(`keepSorting),
+#: src/include/inetd/dialogs.rb:352
+msgid "Ch"
+msgstr "已變更"
+
+#: src/include/inetd/dialogs.rb:355
+msgid "Type "
+msgstr "類型 "
+
+#: src/include/inetd/dialogs.rb:356
+msgid "Protocol"
+msgstr "協議"
+
+#: src/include/inetd/dialogs.rb:360
+msgid "Server / Args"
+msgstr "伺服器/參數"
+
+#. Translators: Add service
+#: src/include/inetd/dialogs.rb:370
+msgid "&Add"
+msgstr "添加(&A)"
+
+#. Translators: Edit service
+#: src/include/inetd/dialogs.rb:373
+msgid "&Edit"
+msgstr "編輯(&E)"
+
+#. Translators: Delete service
+#: src/include/inetd/dialogs.rb:376
+msgid "&Delete"
+msgstr "刪除(&D)"
+
+#. Translators: Change service status
+#: src/include/inetd/dialogs.rb:384
+msgid "&Toggle Status (On or Off)"
+msgstr "轉換狀態(開或關)(&T)"
+
+#: src/include/inetd/dialogs.rb:396
+msgid "Status for All &Services"
+msgstr "所有服務的狀態(&S)"
+
+#. Inetd configure dialog caption
+#: src/include/inetd/dialogs.rb:410
+msgid "Network Service Configuration (xinetd)"
+msgstr "網路服務配置 (xinetd)"
+
+#. execute dialog
+#. Translators: Caption for EditOrCreateServiceDlg()
+#: src/include/inetd/dialogs.rb:498
+msgid "Add a New Service Entry"
+msgstr "添加一個新的服務項"
+
+#. Translators: Popup::Error
+#: src/include/inetd/dialogs.rb:528
+msgid "Cannot delete the service. It is not installed."
+msgstr "無法刪除服務。沒有安裝該服務。"
+
+#. Translators: Popup::Message
+#: src/include/inetd/dialogs.rb:552
+msgid "To delete a service, select one in the main dialog"
+msgstr "要刪除服務，請在主對話方塊中選擇一個服務。"
+
+#. Translators: Popup::Message
+#: src/include/inetd/dialogs.rb:599
+msgid "To activate or deactivate a service, select one in the main dialog."
+msgstr "要啟用或取消啟用服務，請在主對話方塊中選擇一個服務。"
+
+#. y2milestone("Current line %1", current_line);
+#. Translators: Caption of EditOrCreateServiceDlg()
+#: src/include/inetd/dialogs.rb:736
+msgid "Edit a service entry"
+msgstr "編輯服務項"
+
+#. Translators: Popup::Message
+#: src/include/inetd/dialogs.rb:751
+msgid "To edit a service, select one in the main dialog"
+msgstr "要編輯服務，請在主對話方塊中選擇一個服務。"
+
+#. Translators: Popup::Warning
+#: src/include/inetd/dialogs.rb:782
+msgid ""
+"All services are marked as disabled (locked).\n"
+"Internet super-server will be disabled."
+msgstr ""
+"所有服務都被標記為禁用(鎖定)。\n"
+"將禁用因特網超級伺服器。"
+
+#. service name
+#: src/include/inetd/dialogs.rb:807
+msgid "&Service"
+msgstr "服務(&S)"
+
+#: src/include/inetd/dialogs.rb:809
+msgid "RPC Versio&n"
+msgstr "RPC 版本(&N)"
+
+#. service status (running or stopped)
+#: src/include/inetd/dialogs.rb:815
+msgid "Service is acti&ve."
+msgstr "服務處於活動狀態。(&V)"
+
+#. service socket type
+#: src/include/inetd/dialogs.rb:828
+msgid "Socket T&ype"
+msgstr "套接字類型(&Y)"
+
+#. for protocol option - ediatble ComboBox
+#: src/include/inetd/dialogs.rb:839
+msgid "&Protocol"
+msgstr "協議(&P)"
+
+#. for flags (wait/nowait) - noneditable ComboBox
+#: src/include/inetd/dialogs.rb:850
+msgid "&Wait"
+msgstr "等待(&W)"
+
+#. user and group ComboBoxes
+#: src/include/inetd/dialogs.rb:860
+msgid "&User"
+msgstr "使用者(&U)"
+
+#: src/include/inetd/dialogs.rb:862
+msgid "&Group"
+msgstr "組(&G)"
+
+#. Server arguments
+#: src/include/inetd/dialogs.rb:865
+msgid "S&erver"
+msgstr "伺服器(&E)"
+
+#: src/include/inetd/dialogs.rb:866
+msgid "Server Argumen&ts"
+msgstr "伺服器參數(&T)"
+
+#. Comment above the service line in inetd.conf
+#: src/include/inetd/dialogs.rb:868
+msgid "Co&mment"
+msgstr "註釋(&M)"
+
+#. Translators: Please BE CAREFUL! This text is often used in code! This Translation must be the same.
+#. do not add a "flags" field, it's currently in "unparsed"
+#. Read user names from passwd.
+#. It does not get the NIS entries.
+#. "+" is filtered out.
+#. @return [Array] users
+#. Read group names from  group
+#. It does not get the NIS entries.
+#. "+" is filtered out.
+#. @return [Array] groups
+#: src/include/inetd/dialogs.rb:914 src/include/inetd/dialogs.rb:952
+#: src/include/inetd/dialogs.rb:957 src/include/inetd/dialogs.rb:996
+#: src/include/inetd/routines.rb:333 src/include/inetd/routines.rb:353
+msgid "--default--"
+msgstr "--預設值--"
+
+#. Translators: Popup::Message
+#: src/include/inetd/dialogs.rb:942
+msgid ""
+"Service is empty.\n"
+"Enter valid values.\n"
+msgstr ""
+"服務為空。\n"
+"請輸入有效的值。\n"
+
+#. Error message
+#: src/include/inetd/dialogs.rb:948
+msgid "Service name contains disallowed character \"/\"."
+msgstr "服務名稱包含不允許的字元 \"/\"。"
+
+#. Translators: sformat-ed() 3 strings
+#: src/include/inetd/dialogs.rb:956
+msgid "The user %1 is reserved for internal server processes only."
+msgstr "使用者 %1 僅能用於內部伺服器程序。"
+
+#. Popup::Error
+#: src/include/inetd/helps.rb:38
+msgid "No packages selected. Configuration aborted."
+msgstr "沒有選擇任何包。配置已中止。"
+
+#. Not used!
+#: src/include/inetd/helps.rb:42
+msgid "Selected packages will be installed."
+msgstr "將安裝選定的包。"
+
+#. Read dialog help 1/2
+#: src/include/inetd/helps.rb:46
+msgid ""
+"<p><b><big>Initializing xinetd Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在啟始化 xinetd 配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Read dialog help 2/2
+#: src/include/inetd/helps.rb:50
+msgid ""
+"<p><b><big>Aborting the Initialization Process:</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>\n"
+msgstr ""
+"<p><b><big>中止啟始化程序：</big></b><br>\n"
+"可以按<b>中止</b>立即安全地中止配置工具。</p>\n"
+
+#. Write dialog help 1/2
+#: src/include/inetd/helps.rb:54
+msgid ""
+"<p><b><big>Saving xinetd Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在儲存 xinetd 配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Write dialog help 2/2
+#: src/include/inetd/helps.rb:58
+msgid ""
+"<p><b><big>Aborting the Save Process:</big></b><br>\n"
+"Abort saving by pressing <b>Abort</b>.\n"
+"An additional dialog will inform you whether it is safe to do so.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>中止儲存程序：</big></b><br>\n"
+"按<b>中止</b>將中止儲存。\n"
+"另一個對話方塊將指示這樣操作是否安全。\n"
+"</p>\n"
+
+#. Configure1 dialog help 1/2
+#: src/include/inetd/helps.rb:65
+msgid ""
+"<p><b><big>Network Service Configuration</big></b><br>\n"
+"Click <b>Enable</b> to enable network services managed by a super-server\n"
+"configuration. To stop the super-server, click <b>Disable</b>.</p>\n"
+msgstr ""
+"<p><b><big>網路服務配置</big></b><br>\n"
+"單擊<b>啟用</b>啟用由超級伺服器\n"
+"配置管理的網路服務。要停止超級伺服器，請單擊<b>禁用</b>。</p>\n"
+
+#: src/include/inetd/helps.rb:70
+msgid ""
+"<p><b><big>Configuration Service Status:</big></b><br>\n"
+"All services marked with <b>X</b> in column <b>Ch</b> were edited\n"
+"and will be changed in the system configuration.</p>\n"
+msgstr ""
+"<p><b><big>配置服務狀態：</big></b><br>\n"
+"列<b>已變更</b>中用 <b>X</b> 標記的所有服務都被編輯過，\n"
+"並將在系統配置中進行變更。</p>\n"
+
+#: src/include/inetd/helps.rb:75
+msgid ""
+"<p><b><big>Services Status:</big></b><br>\n"
+"All services marked with <b>---</b> are inactive (locked).\n"
+"All services marked with <b>On</b> are active (unlocked).\n"
+"All services marked with <b>NI</b> are not installed and cannot be "
+"configured.</p>"
+msgstr ""
+"<p><b><big>服務狀態：</big></b><br>\n"
+"用 <b>---</b> 標記的所有服務都處於非活動狀態(鎖定)。\n"
+"用<b>開</b>標記的所有服務都處於活動狀態(未鎖定)。\n"
+"用 <b>NI</b> 標記的所有服務都未安裝，因而無法配置。</p>"
+
+#: src/include/inetd/helps.rb:81
+msgid ""
+"<p><b><big>Changing Service Status:</big></b><br>\n"
+"Select the service to enable or disable and press <b>Toggle Status (On or "
+"Off)</b>.</p>\n"
+msgstr ""
+"<p><b><big>變更服務狀態：</big></b><br>\n"
+"選擇要啟用或禁用的服務，然後按<b>轉換狀態(開或關)</b>。</p>\n"
+
+#: src/include/inetd/helps.rb:84
+msgid ""
+"<p><b><big>Editing Services:</big></b><br>\n"
+"Select the service to edit and press <b>Edit</b>.</p>\n"
+msgstr ""
+"<p><b><big>編輯服務：</big></b><br>\n"
+"選擇要編輯的服務，然後按<b>編輯</b>。</p>\n"
+
+#: src/include/inetd/helps.rb:87
+msgid ""
+"<p><b><big>Deleting Services:</big></b><br>\n"
+"Select the service to delete and press <b>Delete</b>.</p>\n"
+msgstr ""
+"<p><b><big>刪除服務：</big></b><br>\n"
+"選擇要刪除的服務，然後按<b>刪除</b>。</p>\n"
+
+#: src/include/inetd/helps.rb:90
+msgid ""
+"<p><b><big>Adding a New Entry:</big></b>\n"
+"Click <b>Create</b> and complete the form.</p>\n"
+msgstr ""
+"<p><b><big>添加新項：</big></b>\n"
+"單擊<b>創建</b>並完成表格。</p>\n"
+
+#: src/include/inetd/helps.rb:93
+msgid ""
+"<p><b><big>Canceling Configuration:</big></b>\n"
+"Leave the configuration untouched by pressing the <b>Cancel</b> button.\n"
+"If you do so, all your changes will be lost and the original configuration "
+"will remain.</p>\n"
+msgstr ""
+"<p><b><big>中止配置：</big></b>\n"
+"按<b>中止</b>按鈕保持配置不變。\n"
+"如果這樣做，則所有變更都將丟失，最初的配置將保持不變。</p>\n"
+
+#. Help for the EditOrCreateServiceDlg () dialog.
+#. @return The help text.
+#: src/include/inetd/helps.rb:104
+msgid ""
+"\n"
+"<p>To create a valid entry (service) for the super-server,\n"
+"enter</p>\n"
+msgstr ""
+"\n"
+"<p>要為超級伺服器創建有效項(服務)，\n"
+"請輸入</p>\n"
+
+#: src/include/inetd/helps.rb:109
+msgid ""
+"<ul>\n"
+"<li>service name\n"
+"<li>RPC version (optional)\n"
+"<li>socket type\n"
+"<li>protocol\n"
+"<li>wait/nowait\n"
+"<li>user\n"
+"<li>group\n"
+"<li>server program\n"
+"<li>server program arguments\n"
+"</ul>"
+msgstr ""
+"<ul>\n"
+"<li>服務名稱\n"
+"<li>RPC 版本(可選)\n"
+"<li>套接字類型\n"
+"<li>協議\n"
+"<li>等待/不等待\n"
+"<li>使用者\n"
+"<li>組\n"
+"<li>伺服器程式\n"
+"<li>伺服器程式自變數\n"
+"</ul>"
+
+#: src/include/inetd/helps.rb:122
+msgid ""
+"<p>This is a short description. For details, see <b>info xinetd.conf</b>.</"
+"p>\n"
+msgstr "<p>這是簡短描述。有關細節，請參見 <b>info xinetd.conf</b>。</p>\n"
+
+#: src/include/inetd/helps.rb:125
+msgid ""
+"<p>Enter a valid service name into the <b>service</b> field.\n"
+"</p>\n"
+msgstr ""
+"<p>將有效服務名稱輸入<b>服務</b>欄位中。\n"
+"</p>\n"
+
+#: src/include/inetd/helps.rb:128
+msgid ""
+"<p>The <b>socket type</b> should be stream, dgram, raw, or seqpacket,\n"
+"depending on whether the service is stream-based, is datagram-based,\n"
+"requires direct access to IP, or requires reliable sequential datagram\n"
+"transmission.</p>\n"
+msgstr ""
+"<p><b>套接字類型</b>應為 stream、dgram、raw 或 seqpacket，具體\n"
+"取決於服務是基於流、基於資料包文、\n"
+"要求直接訪問 IP 還是要求可靠的有序資料包文\n"
+"傳送。</p>\n"
+
+#: src/include/inetd/helps.rb:134
+msgid ""
+"<p>The <b>protocol</b> must be a valid protocol as specified in /etc/"
+"protocols.\n"
+"Examples include <i>tcp</i>,<i>udp</i>,<i>rpc/tcp</i>, and <i>rpc/udp</i>.\n"
+"</p>\n"
+msgstr ""
+"<p><b>協議</b>必須為 /etc/protocols 中指定的有效協議。\n"
+"例如，<i>tcp</i>、<i>udp</i>、<i>rpc/tcp</i> 與 <i>rpc/udp</i>。\n"
+"</p>\n"
+
+#: src/include/inetd/helps.rb:139
+msgid ""
+"<p>The <b>wait/nowait</b> entry determines if the service is\n"
+"single-threaded or multithreaded and whether xinetd accepts the\n"
+"connection or the server program accepts the connection. If its value is\n"
+"<b>yes</b>, the service is single-threaded. This means that xinetd \n"
+"starts the server then stops handling requests for the service\n"
+"until the server dies and that the server software accepts the\n"
+"connection. If the attribute value is <b>no</b>, the service is\n"
+"multithreaded and xinetd keeps handling new service requests and\n"
+"xinetd accepts the connection. \n"
+"<i>udp/dgram</i> services normally expect the value to be <b>yes</b>,\n"
+"because udp is not connection oriented. <i>tcp/stream</i> servers\n"
+"normally expect the value to be <b>no</b>.</p>\n"
+msgstr ""
+"<p><b>等待/不等待</b>項確定該服務是\n"
+"單執行緒還是多執行緒，以及是 xinetd 接受連線還是伺服器程式\n"
+"接受連線。如果其值為\n"
+"<b>yes</b>，則該服務為單執行緒。這意味著 xinetd\n"
+"啟動伺服器，然後停止處理服務請求，\n"
+"直到該伺服器停止並且伺服器軟體接受\n"
+"連線。如果屬性值為 <b>no</b>，則該服務為\n"
+"多執行緒且 xinetd 將一直處理新服務請求，同時\n"
+"xinetd 接受連線。\n"
+"<i>udp/dgram</i> 服務通常需要該值為 <b>yes</b>，\n"
+"因為 udp 不是面向連線的。<i>tcp/stream</i> 伺服器\n"
+"則通常需要該值為 <b>no</b>。</p>\n"
+
+#: src/include/inetd/helps.rb:153
+msgid ""
+"<p>The server will be run with the permissions of the user selected in\n"
+"<b>User</b>. This is useful to make services run with permissions\n"
+"less than root.\n"
+"</p>\n"
+msgstr ""
+"<p>將使用在<b>使用者</b>中選定的\n"
+"使用者許可權運行伺服器。這可用於限制服務使用比 root 使用者\n"
+"低的許可權運行。\n"
+"</p>\n"
+
+#: src/include/inetd/helps.rb:159
+msgid ""
+"<p>In <b>Server</b>, enter the path name of the program to\n"
+"be executed by the super-server when a request reaches its socket.\n"
+"Parameters for this program can be specified in <b>Server Arguments</b>.\n"
+"\n"
+"</p>\n"
+msgstr ""
+"<p>在<b>伺服器</b>中，請輸入當套接字請求\n"
+"到達時超級伺服器要執行的程式的路徑名。\n"
+"可以在<b>伺服器自變數</b>中指定這個程式的參數。\n"
+"\n"
+"</p>\n"
+
+#. Translators: This string you can leave unchanged
+#: src/include/inetd/routines.rb:194
+msgid "---"
+msgstr "---"
+
+#. Translators: This is used for status "Not Installed".
+#. Please, make the
+#. translation as short as possible.
+#: src/include/inetd/routines.rb:206
+msgid "NI"
+msgstr "未裝"
+
+#. Whole configuration of inetd but without reading and writing.
+#. For use with autoinstallation.
+#. @return sequence result
+#: src/include/inetd/wizards.rb:87
+msgid "Xinetd Configuration"
+msgstr "Xinetd 配置"
+
+#: src/include/inetd/wizards.rb:88
+msgid "Initializing ..."
+msgstr "正在啟始化..."
+
+#. Inetd read dialog caption
+#: src/modules/Inetd.rb:185
+msgid "Initializing inetd Configuration"
+msgstr "正在啟始化 inetd 配置"
+
+#: src/modules/Inetd.rb:193
+msgid "Read the Configuration"
+msgstr "讀取配置"
+
+#: src/modules/Inetd.rb:194
+msgid "Reading the configuration..."
+msgstr "正在讀取配置..."
+
+#. read database
+#: src/modules/Inetd.rb:194 src/modules/Inetd.rb:212 src/modules/Inetd.rb:276
+#: src/modules/Inetd.rb:340
+msgid "Finished"
+msgstr "已完成"
+
+#. Inetd read dialog caption
+#: src/modules/Inetd.rb:267
+msgid "Saving inetd Configuration"
+msgstr "正在儲存 inetd 配置"
+
+#: src/modules/Inetd.rb:275
+msgid "Write the settings"
+msgstr "寫入設定"
+
+#: src/modules/Inetd.rb:276
+msgid "Writing the settings..."
+msgstr "正在寫入設定..."
+
+#. in future: catch errors
+#: src/modules/Inetd.rb:337
+msgid "Cannot write settings!"
+msgstr "無法寫入設定！"
+
+#. "enabled" defaults to true
+#: src/modules/Inetd.rb:607
+msgid "<p><ul><i>All services are marked as stopped.</i></ul></p>"
+msgstr "<p><ul><i>所有服務都被標記為停止。</i></ul></p>"
+
+#. Translators: Summary head, if nothing configured
+#: src/modules/Inetd.rb:618
+msgid "Network services"
+msgstr "網路服務"
+
+#. Translators: Summary head, if something configured
+#: src/modules/Inetd.rb:623
+msgid "Network services are managed via %1"
+msgstr "網路服務通過 %1 進行管理"
+
+#: src/modules/Inetd.rb:627
+msgid "These services will be enabled"
+msgstr "這些服務將被啟用"
+

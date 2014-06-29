@@ -1,0 +1,790 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Thruth Wang <lihaow@opera.com>, 2007, 2008.
+# Eric Shan <ericalways@gmail.com>, 2008, 2012.
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: profile manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:41+0200\n"
+"PO-Revision-Date: 2013-08-16 11:11+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. translators: command line help text for Profile manage module
+#: src/clients/profile-manager.rb:53
+msgid "Profile manager configuration module"
+msgstr "方案管理器配置模組"
+
+#. translators: command line help text for summary action
+#: src/clients/profile-manager.rb:66
+msgid "Configuration summary of profile manager"
+msgstr "方案管理器配置摘要"
+
+#. translators: command line help text for configure action
+#: src/clients/profile-manager.rb:76
+msgid "Change the profile manager settings"
+msgstr "修改方案管理器設定"
+
+#. translators: command line help text for the kdc option
+#: src/clients/profile-manager.rb:84
+msgid "Enable or disable profile switching for non-root users"
+msgstr "為非根使用者啟用或禁用方案切換"
+
+#. summary line
+#: src/clients/profile-manager.rb:131
+msgid "SCPM is enabled."
+msgstr "已啟用 SCPM。"
+
+#. summary line
+#: src/clients/profile-manager.rb:133
+msgid "SCPM is disabled."
+msgstr "已禁用 SCPM。"
+
+#. summary item
+#: src/clients/profile-manager.rb:148
+msgid "Active Resource Groups: %1"
+msgstr "活動的資源組：%1"
+
+#. Dialog caption label:
+#: src/include/profile-manager/complex.rb:64
+msgid "SCPM Configuration"
+msgstr "SCPM 配置"
+
+#. frame label:
+#: src/include/profile-manager/complex.rb:77
+msgid "Status"
+msgstr "狀態"
+
+#. Push button label (state of SCPM)
+#: src/include/profile-manager/complex.rb:90
+msgid "&Enabled"
+msgstr "已啟用(&E)"
+
+#. Push button label (state of SCPM)
+#: src/include/profile-manager/complex.rb:98
+msgid "&Disabled"
+msgstr "已禁用(&D)"
+
+#. frame label:
+#: src/include/profile-manager/complex.rb:110
+msgid "Settings"
+msgstr "設定"
+
+#. combobox label
+#: src/include/profile-manager/complex.rb:120
+msgid "&Switch Mode"
+msgstr "切換模式(&S)"
+
+#. switch mode
+#: src/include/profile-manager/complex.rb:123
+msgid "Normal"
+msgstr "常規"
+
+#. switch mode
+#. switch mode (combo box item)
+#: src/include/profile-manager/complex.rb:125
+#: src/include/profile-manager/complex.rb:138
+msgid "Save Changes"
+msgstr "儲存修改"
+
+#. switch mode
+#. switch mode (combo box item)
+#: src/include/profile-manager/complex.rb:127
+#: src/include/profile-manager/complex.rb:140
+msgid "Drop Changes"
+msgstr "丟棄修改"
+
+#. combobox label
+#: src/include/profile-manager/complex.rb:135
+msgid "B&oot Mode"
+msgstr "引導模式(&O)"
+
+#. checkbox label
+#: src/include/profile-manager/complex.rb:149
+msgid "&Verbose Progress Messages"
+msgstr "詳細進度訊息(&V)"
+
+#. checkbox label
+#: src/include/profile-manager/complex.rb:157
+msgid "&Log Debug Messages"
+msgstr "記錄偵錯訊息(&L)"
+
+#. checkbox label
+#: src/include/profile-manager/complex.rb:166
+msgid "Allow Profile Management for Non-root &Users"
+msgstr "允許非根使用者管理方案(&U)"
+
+#. pushbutton label
+#: src/include/profile-manager/complex.rb:171
+msgid "Co&nfigure..."
+msgstr "配置(&N)..."
+
+#. frame label
+#: src/include/profile-manager/complex.rb:181
+msgid "Resource Groups"
+msgstr "資源組"
+
+#. button label
+#: src/include/profile-manager/complex.rb:188
+msgid "&Configure..."
+msgstr "配置(&C)..."
+
+#. rich text label (list of groups follows)
+#: src/include/profile-manager/complex.rb:225
+msgid "<b>Active: </b>"
+msgstr "<b>活動資源組：</b>"
+
+#. rich text label (no group in the list)
+#: src/include/profile-manager/complex.rb:235
+msgid "none"
+msgstr "無"
+
+#. combo box label
+#: src/include/profile-manager/dialogs.rb:66
+msgid "Available &Services"
+msgstr "可用服務(&S)"
+
+#. yes/no popup
+#: src/include/profile-manager/dialogs.rb:97
+msgid ""
+"Service %1 does not exist.\n"
+"Really add it?"
+msgstr ""
+"服務 %1 不存在。\n"
+"確實要添加它嗎？"
+
+#. button label
+#: src/include/profile-manager/dialogs.rb:127
+msgid "&Browse..."
+msgstr "瀏覽(&B)..."
+
+#. error popup
+#: src/include/profile-manager/dialogs.rb:157
+msgid "File does not exist."
+msgstr "檔案不存在。"
+
+#. resource type (menu entry)
+#: src/include/profile-manager/dialogs.rb:184
+msgid "File"
+msgstr "檔案"
+
+#. resource type (menu entry)
+#: src/include/profile-manager/dialogs.rb:186
+msgid "Service"
+msgstr "服務"
+
+#. textentry label
+#: src/include/profile-manager/dialogs.rb:225
+msgid "Resource &Group"
+msgstr "資源組(&G)"
+
+#. textentry label
+#: src/include/profile-manager/dialogs.rb:228
+msgid "D&escription"
+msgstr "描述(&E)"
+
+#. frame label
+#: src/include/profile-manager/dialogs.rb:232
+msgid "Resources"
+msgstr "資源"
+
+#. Header of the table with resources of one group 1/3
+#. Header of the table with resource groups 1/3
+#: src/include/profile-manager/dialogs.rb:242
+#: src/include/profile-manager/dialogs.rb:574
+msgid "Active"
+msgstr "活動的"
+
+#. Header of the table with resources of one group 2/3
+#. Header of the table with resource groups 2/3
+#: src/include/profile-manager/dialogs.rb:244
+#: src/include/profile-manager/dialogs.rb:576
+msgid "Name"
+msgstr "名稱"
+
+#. Header of the table with resources of one group 3/3
+#: src/include/profile-manager/dialogs.rb:246
+msgid "Type"
+msgstr "類型"
+
+#. Push button label
+#: src/include/profile-manager/dialogs.rb:253
+msgid "Add &Service"
+msgstr "添加服務(&S)"
+
+#. Push button label
+#: src/include/profile-manager/dialogs.rb:255
+msgid "Add &File"
+msgstr "添加檔案(&F)"
+
+#. Push button label
+#. Push button label
+#. Push button label
+#: src/include/profile-manager/dialogs.rb:258
+#: src/include/profile-manager/dialogs.rb:590
+#: src/include/profile-manager/dialogs.rb:888
+msgid "&Delete"
+msgstr "刪除(&D)"
+
+#. Push button label
+#: src/include/profile-manager/dialogs.rb:262
+msgid "&Reset Group"
+msgstr "重置組(&R)"
+
+#. message popup
+#: src/include/profile-manager/dialogs.rb:355
+msgid ""
+"Service\n"
+"%1\n"
+"is already present in this resource group."
+msgstr ""
+"服務\n"
+"%1\n"
+"已存在於此資源組中。"
+
+#. message popup
+#: src/include/profile-manager/dialogs.rb:390
+msgid ""
+"File\n"
+"%1\n"
+"is already present in this resource group."
+msgstr ""
+"檔案\n"
+"%1\n"
+"已存在於此資源組中。"
+
+#. Popup text (wrong data):
+#: src/include/profile-manager/dialogs.rb:419
+msgid ""
+"The name of resource group may contain only \n"
+"letters, digits, \"-\", \"_\", \".\", \"@\" and \"#\"\n"
+"and must begin with a letter or digit.\n"
+"Try again."
+msgstr ""
+"資源組名稱僅可以包含\n"
+"字母、數字、\"-\"、\"_\"、\".\"、\"@\" 與 \"#\"\n"
+"，且必須以字母或數字開頭。\n"
+"請重試。"
+
+#. error message, %1 is group name
+#: src/include/profile-manager/dialogs.rb:434
+msgid ""
+"Resource group %1 already exists.\n"
+"Use another name."
+msgstr ""
+"資源組 %1 已存在。\n"
+"請使用另一個名稱。"
+
+#. Caption of the dialog:
+#: src/include/profile-manager/dialogs.rb:556
+msgid "Configuration of Resource Groups"
+msgstr "資源組配置"
+
+#. frame label:
+#: src/include/profile-manager/dialogs.rb:564
+msgid "Resource Group"
+msgstr "資源組"
+
+#. Header of the table with resource groups 3/3
+#: src/include/profile-manager/dialogs.rb:578
+msgid "Description"
+msgstr "描述"
+
+#. Push button label
+#: src/include/profile-manager/dialogs.rb:585
+msgid "&Add"
+msgstr "添加(&A)"
+
+#. Push button label
+#: src/include/profile-manager/dialogs.rb:587
+msgid "&Edit"
+msgstr "編輯(&E)"
+
+#. Push button label
+#: src/include/profile-manager/dialogs.rb:597
+msgid "&Reset All"
+msgstr "全部重置(&R)"
+
+#. %1 is resource group name
+#: src/include/profile-manager/dialogs.rb:632
+msgid "Delete group %1?"
+msgstr "刪除組 %1 嗎？"
+
+#. continue/cancel popup message, %1 is group name, %2 file(s)
+#: src/include/profile-manager/dialogs.rb:687
+msgid ""
+"The file <b>%2</b> from resource group <i>%1</i>\n"
+"is not available on the system.<br>\n"
+"The resource group is probably not installed.<br>\n"
+"Really select this resource group?"
+msgstr ""
+"資源組 <i>%1</i> 中的檔案 <b>%2</b> \n"
+"在系統中不可用。<br>\n"
+"資源組很可能沒有安裝。<br>\n"
+"真的選擇此資源組嗎？"
+
+#. combo box label
+#. Header of the table with users 1/2
+#: src/include/profile-manager/dialogs.rb:748
+#: src/include/profile-manager/dialogs.rb:876
+msgid "Username"
+msgstr "使用者名"
+
+#. frame label (for radiobutton group)
+#: src/include/profile-manager/dialogs.rb:764
+msgid "Permission"
+msgstr "許可權"
+
+#. radio button label
+#: src/include/profile-manager/dialogs.rb:775
+msgid "&Switch Only"
+msgstr "僅切換(&S)"
+
+#. radio button label
+#: src/include/profile-manager/dialogs.rb:783
+msgid "&Everything"
+msgstr "完全許可權(&E)"
+
+#. error popup (empty user name)
+#: src/include/profile-manager/dialogs.rb:816
+msgid "Enter a valid username."
+msgstr "請輸入一個有效的使用者名。"
+
+#. Dialog caption label:
+#: src/include/profile-manager/dialogs.rb:836
+msgid "User Permissions Configuration"
+msgstr "使用者許可權配置"
+
+#. radio button label (user permission)
+#: src/include/profile-manager/dialogs.rb:845
+msgid "Switch Only"
+msgstr "僅切換"
+
+#. radio button label (user permission)
+#: src/include/profile-manager/dialogs.rb:847
+msgid "Everything"
+msgstr "完全許可權"
+
+#. frame label
+#: src/include/profile-manager/dialogs.rb:866
+msgid "Users"
+msgstr "使用者"
+
+#. Header of the table with users 2/2
+#: src/include/profile-manager/dialogs.rb:878
+msgid "Permissions"
+msgstr "許可權"
+
+#. Read dialog help 1/1
+#: src/include/profile-manager/helps.rb:36
+msgid ""
+"<p><b><big>Initializing Profile Manager Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在啟始化方案管理器配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Main dialog help 1/9
+#: src/include/profile-manager/helps.rb:40
+msgid ""
+"<p><big><b>SCPM Configuration</b></big></p>\n"
+"<p>SCPM (System Configuration Profile Management) enables your system to save different configuration profiles and switch between them.</p>"
+msgstr ""
+"<p><big><b>SCPM 配置</b></big></p>\n"
+"<p>系統配置方案管理 (SCPM) 使您的系統能夠儲存不同的配置方案並在它們之間切換。</p>"
+
+#. main dialog help 2/9
+#: src/include/profile-manager/helps.rb:44
+msgid "<p>Activate and configure SCPM here.  Configure and switch SCPM profiles with the SUMF graphical interface or the <tt>scpm</tt> command.</p>"
+msgstr "<p>在此處啟用與配置 SCPM。可使用 SCPM 通用管理前端 (SUMF) 圖形介面或 <tt>scpm</tt> 命令配置與切換 SCPM 方案。</p>"
+
+#. main dialog help - subsection heading
+#: src/include/profile-manager/helps.rb:48
+msgid "<p><b>Status</b></p>"
+msgstr "<p><b>狀態</b></p>"
+
+#. main dialog help 3/9
+#: src/include/profile-manager/helps.rb:50
+msgid "First, set the SCPM status to <b>Enabled</b>. If disabled later, none of the configuration data in the profiles will be lost. It just continues in the current configuration of your system and you cannot switch to any other profile until you enable it again.</p>"
+msgstr "首先，請將 SCPM 的狀態設為<b>已啟用</b>。若稍後禁用了 SCPM，任何方案中的配置資料都不會丟失。它會繼續使用您系統的當前配置，但在您再次啟用它之前，您無法切換到任何其它方案。</p>"
+
+#. main dialog help - subsection heading
+#: src/include/profile-manager/helps.rb:54
+msgid "<p><b>Settings</b></p>"
+msgstr "<p><b>設定</b></p>"
+
+#. main dialog help 4/9 (SCPM and SUMF are names of applications)
+#: src/include/profile-manager/helps.rb:56
+msgid "<p>The settings apply to the command line interface as well as to the graphical SCPM front-end named SUMF.</p>"
+msgstr "<p>這些設定將應用到命令列介面與名為 SUMF 的圖形 SCPM 前端。</p>"
+
+#. main dialog help 5/9
+#: src/include/profile-manager/helps.rb:60
+msgid ""
+"<p><b>Switch Mode</b> defines the behavior of SCPM when switching\n"
+"profiles. If set to <b>Normal</b> or <b>Save Changes</b>,\n"
+"modified resources are preset for saving before the switch.\n"
+"Setting it to <b>Drop Changes</b> results in presets for ignoring. The effect in the command line SCPM tool is more limited than in SUMF, so check the info page if you intend to use the SCPM tool.</p>\n"
+msgstr ""
+"<p><b>切換模式</b>定義了切換方案時 SCPM 的行為。\n"
+"若設為<b>常規</b>或<b>儲存修改</b>，則切換前已修改的資源會被預置為在切換時自動儲存。\n"
+"若設為<b>丟棄修改</b>將導致對這些資源的修訂被預置為在切換時忽略。\n"
+"命令列 SCPM 工具的效果比 SUMF 更加有限，因此若要使用 SCPM 工具，請先檢視其資訊頁。</p>\n"
+
+#. main dialog help 6/9
+#: src/include/profile-manager/helps.rb:67
+msgid ""
+"<p><b>Boot Mode</b> defines the behavior of SCPM at system boot time.\n"
+"<b>Save Changes</b> applies all changes to the previous profile.\n"
+"<b>Drop Changes</b> discards them.</p>\n"
+msgstr ""
+"<p><b>引導模式</b>定義了在系統引導時 SCPM 的行為。\n"
+"<b>儲存修改</b>將把全部修改應用到之前的方案。\n"
+"<b>丟棄修改</b>將丟棄這些修改。</p>\n"
+
+#. main dialog help 7/9
+#: src/include/profile-manager/helps.rb:73
+msgid ""
+"<p><b>Verbose Messages</b> affects the detail level of progress messages\n"
+"in the progress pop-up. If <b>Log Debug Messages</b> is set, SCPM writes debug messages to its log file (/var/log/scpm by default).</p>"
+msgstr ""
+"<p><b>詳細訊息</b>影響進度彈窗中進度訊息的詳細程度。\n"
+"若設定了<b>記錄偵錯訊息</b>，SCPM 會將偵錯訊息寫入其日誌檔案 (默認為 var/log/scpm)。</p>"
+
+#. main dialog help 8/9
+#: src/include/profile-manager/helps.rb:77
+msgid "<p>SCPM needs root privileges for operation. Check <b>Allow Profile Management for Non-root Users</b> and use <b>Configure</b> to set up users to authorize to use SCPM.</p>"
+msgstr "<p>操作 SCPM 需要根使用者特權。可勾選<b>允許非根使用者管理方案</b>並使用<b>配置</b>來設定授權使用 SCPM 的使用者。</p>"
+
+#. main dialog help - subsection heading
+#: src/include/profile-manager/helps.rb:81
+msgid "<p><b>Resource Groups</b></p>"
+msgstr "<p><b>資源組</b></p>"
+
+#. main dialog help 9/9, i marks special term, use something appropriate for your language
+#: src/include/profile-manager/helps.rb:83
+msgid ""
+"<p>A configuration profile covers only the files and services to change\n"
+"when switching to another profile. In SCPM terminology, these files and\n"
+"services are called resources. Those resources are grouped into logical units,\n"
+"called <i>resource groups</i>. SCPM comes with a predefined set of\n"
+"groups handled by default. This is sufficient for most systems. \n"
+"For a more detailed resource setup, click <b>Configure Resources</b>.</p>\n"
+msgstr ""
+"<p>配置方案僅涵蓋當切換到另一個方案時需要修改的檔案與服務。\n"
+"在 SCPM 術語中，這些檔案與服務被稱為資源。\n"
+"這些資源又被分組為邏輯單元，這些邏輯單元被稱為<i>資源組</i>。\n"
+"SCPM 附帶了一套預定義的資源組。默認將處理這些資源組\n"
+"對於大多數系統，使用默認資源組就足夠了。\n"
+"更加詳盡的資源組設定內容，請點選<b>配置資源</b>。</p>\n"
+
+#. Configure Resources Dialog help 1/3
+#: src/include/profile-manager/helps.rb:92
+msgid ""
+"<p><big><b>Configuring Resources</b></big></p>\n"
+"<p>This list contains all installed resource groups.\n"
+"A resource group usually represents a system service with all needed\n"
+"configuration files. Select which services should be handled by the \n"
+"profile management. Activate or deactivate the groups by\n"
+"double-clicking them.</p>\n"
+msgstr ""
+"<p><big><b>配置資源</b></big></p>\n"
+"<p>此列表包含了全部已安裝的資源組。\n"
+"資源組通常代表一個系統服務及其全部需要的配置檔案。\n"
+"請選擇方案管理應處理的服務。\n"
+"雙擊資源組可啟用或取消啟用該組。</p>\n"
+
+#. Configure Resources Dialog help 2/3
+#: src/include/profile-manager/helps.rb:101
+msgid ""
+"<p>To achive an even more customized setup, create your own\n"
+"resource groups or modify existing ones. With <b>Add</b> or <b>Edit</b>,\n"
+"enter the resource group editor. It allows activation and\n"
+"deactivation of resources and gives the possibility to create additional\n"
+"resources and add them to your groups.</p>\n"
+msgstr ""
+"<p>要存檔更加定製化的設定，可創建您自己的資源組或修改現有資源組。\n"
+"使用<b>添加</b>或<b>編輯</b>，可進入資源組編輯器。\n"
+"它允許啟用與取消啟用資源，並可創建附加資源並將這些資源添加到您的資源組中。</p>\n"
+
+#. Configure Resources Dialog help 3/3
+#: src/include/profile-manager/helps.rb:109
+msgid ""
+"<p>Return all resource groups to their initial states by pressing\n"
+"<b>Reset All</b>.</p>"
+msgstr "<p>按<b>全部重置</b>將把全部資源組回退到其最初狀態。</p>"
+
+#. Users dialog help 1/3 (headline)
+#: src/include/profile-manager/helps.rb:113
+msgid "<p><b><big>Users</big></b></p>"
+msgstr "<p><b><big>使用者</big></b></p>"
+
+#. Users dialog help 2/3
+#. "Switch Only" and "Everything" are values also used in dialogs.ycp (
+#. see "radio button label (user permission)" comments
+#: src/include/profile-manager/helps.rb:119
+msgid ""
+"<p>To allow users of your system to perform profile\n"
+"management operations, add them here. There are two levels of permission:\n"
+"<b>Switch Only</b> means the specified user may switch profiles, but nothing else. <b>Everything</b> means the user may perform any operation,\n"
+"including adding and removing profiles.</p>"
+msgstr ""
+"<p>要允許您系統上的使用者執行方案管理操作，請在此處添加它們。\n"
+"許可權分為兩個級別：\n"
+" <b>僅切換</b>表示指定使用者可以切換方案，但不能執行其它操作。\n"
+"<b>完全許可權</b>表示使用者可以執行任何操作，包括添加與移除方案。</p>"
+
+#. users dialog help 3/3
+#: src/include/profile-manager/helps.rb:126
+msgid "<p>Use <b>Add</b>, <b>Edit</b>, and <b>Delete</b> to modify the list of users with special permissions.</p>"
+msgstr "<p>使用<b>添加</b>、<b>編輯</b>與<b>刪除</b>來修改具有特殊許可權的使用者的列表。</p>"
+
+#. Write dialog help 1/1
+#: src/include/profile-manager/helps.rb:130
+msgid ""
+"<p><b><big>Writing Profile Manager Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在寫入方案管理器配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. busy popup text
+#: src/modules/ProfileManager.rb:384
+msgid "Reading list of users..."
+msgstr "正在讀取使用者列表..."
+
+#. popup label, %1 is required application
+#: src/modules/ProfileManager.rb:540
+msgid ""
+"<p>To use the profile manager, the package <b>%1</b> is required.<br>\n"
+"Install it now?</p>\n"
+msgstr ""
+"<p>必須安裝軟體包 <b>%1</b> 才能使用方案管理器。<br>\n"
+"現在安裝它嗎？</p>\n"
+
+#. popup text
+#: src/modules/ProfileManager.rb:600
+msgid ""
+"SCPM is currently locked and needs recovery. This may be\n"
+"the result of an aborted profile switch or similar. You\n"
+"can have SCPM <b>Recover</b> the last command, which means your\n"
+"database will be updated and outstanding actions will be\n"
+"performed. You can also have SCPM <b>Rollback</b> the command, which means\n"
+"the old system status will be restored if possible.\n"
+msgstr ""
+"SCPM 目前已被鎖定並需要恢復。\n"
+"這可能是由方案切換過程中止或類似問題引起的。\n"
+"您可以讓 SCPM <b>恢復</b>最後一個命令，這表示更新您的資料庫並執行未完成的操作。\n"
+"您還可以讓 SCPM <b>回滾</b>命令，這表示儘可能恢復舊的系統狀態。\n"
+
+#. Push button label
+#: src/modules/ProfileManager.rb:621
+msgid "&Recover"
+msgstr "恢復(&R)"
+
+#. Push button label
+#: src/modules/ProfileManager.rb:624
+msgid "Ro&llback"
+msgstr "回滾(&L)"
+
+#. LogView label:
+#: src/modules/ProfileManager.rb:726
+msgid "Progress Information"
+msgstr "進度資訊"
+
+#. profile-manager Read dialog caption:
+#: src/modules/ProfileManager.rb:799
+msgid "Initializing Profile Manager Configuration"
+msgstr "正在啟始化方案管理器配置"
+
+#. progress stage
+#: src/modules/ProfileManager.rb:809
+msgid "Initialize SCPM"
+msgstr "啟始化 SCPM"
+
+#. progress stage
+#: src/modules/ProfileManager.rb:811
+msgid "Read the SCPM state"
+msgstr "讀取 SCPM 狀態"
+
+#. progress stage
+#: src/modules/ProfileManager.rb:813
+msgid "Read resource groups"
+msgstr "讀取資源組"
+
+#. progress stage
+#: src/modules/ProfileManager.rb:815
+msgid "Read SCPM settings"
+msgstr "讀取 SCPM 設定"
+
+#. progress step
+#: src/modules/ProfileManager.rb:819
+msgid "Initializing SCPM..."
+msgstr "正在啟始化 SCPM..."
+
+#. progress step
+#: src/modules/ProfileManager.rb:821
+msgid "Reading the SCPM state..."
+msgstr "正在讀取 SCPM 狀態..."
+
+#. progress step
+#: src/modules/ProfileManager.rb:823
+msgid "Reading resource groups..."
+msgstr "正在讀取資源組..."
+
+#. progress step
+#: src/modules/ProfileManager.rb:825
+msgid "Reading SCPM settings..."
+msgstr "正在讀取 SCPM 設定..."
+
+#. progress step
+#. progress stage
+#. progress step:
+#. progress stage
+#: src/modules/ProfileManager.rb:827 src/modules/ProfileManager.rb:916
+#: src/modules/ProfileManager.rb:1028 src/modules/ProfileManager.rb:1070
+msgid "Finished"
+msgstr "已完成"
+
+#. Error message: %1 is special error message
+#: src/modules/ProfileManager.rb:839
+msgid ""
+"Cannot initialize SCPM:\n"
+"%1"
+msgstr ""
+"無法啟始化 SCPM：\n"
+"%1"
+
+#. Error message: %1 is special error message
+#: src/modules/ProfileManager.rb:849
+msgid ""
+"Cannot read SCPM status:\n"
+"%1"
+msgstr ""
+"無法讀取 SCPM 狀態：\n"
+"%1"
+
+#. error popup
+#: src/modules/ProfileManager.rb:858
+msgid "Reinitialization is needed."
+msgstr "需要重新啟始化。"
+
+#. yes/no popup
+#: src/modules/ProfileManager.rb:863
+msgid ""
+"SCPM is currently locked because your system installation has changed.  \n"
+"This is usually caused by a system update. Therefore, the data saved in\n"
+"your profiles may be inconsistent, making it necessary to reinitialize SCPM. \n"
+"The saved profiles will be lost and need to be set up again from scratch.  \n"
+"Perform the reinitialization now?\n"
+msgstr ""
+"SCPM 目前已被鎖定，因為您安裝的系統有所變化。\n"
+"這通常是由系統更新引起的。\n"
+"因此，儲存在您的方案中的資料可能不一致，使得有必要重新啟始化 SCPM。\n"
+"將丟失儲存的方案並需要再次從零開始設定。\n"
+"現在執行重新啟始化嗎？\n"
+
+#. error popup
+#: src/modules/ProfileManager.rb:879
+msgid "Recovery or rollback is needed."
+msgstr "需要恢復或者回滾。"
+
+#. error message (%1 is additional error message)
+#: src/modules/ProfileManager.rb:901
+msgid ""
+"Cannot read resource groups:\n"
+"%1"
+msgstr ""
+"無法讀取資源組：\n"
+"%1"
+
+#. Error message. %1 is error report
+#: src/modules/ProfileManager.rb:958
+msgid ""
+"Writing SCPM status was not successful:\n"
+"%1"
+msgstr ""
+"未成功寫入 SCPM 狀態：\n"
+"%1"
+
+#. Error popup text, %1 is additional error text
+#: src/modules/ProfileManager.rb:992
+msgid ""
+"Saving resource groups failed:\n"
+"%1"
+msgstr ""
+"儲存資源組失敗：\n"
+"%1"
+
+#. profile-manager Write dialog caption:
+#: src/modules/ProfileManager.rb:1005
+msgid "Writing Profile Manager Configuration"
+msgstr "正在寫入方案管理器配置"
+
+#. progress stage:
+#: src/modules/ProfileManager.rb:1009
+msgid "Write the SCPM database"
+msgstr "寫入 SCPM 資料庫"
+
+#. progress stage:
+#: src/modules/ProfileManager.rb:1011
+msgid "Write SCPM status"
+msgstr "寫入 SCPM 狀態"
+
+#. progress stage:
+#: src/modules/ProfileManager.rb:1013
+msgid "Write resource groups"
+msgstr "寫入資源組"
+
+#. progress stage:
+#: src/modules/ProfileManager.rb:1015
+msgid "Write SCPM settings"
+msgstr "寫入 SCPM 設定"
+
+#. progress step:
+#: src/modules/ProfileManager.rb:1020
+msgid "Writing the SCPM database..."
+msgstr "正在寫入 SCPM 資料庫..."
+
+#. progress step:
+#: src/modules/ProfileManager.rb:1022
+msgid "Writing SCPM status..."
+msgstr "正在寫入 SCPM 狀態..."
+
+#. progress step:
+#: src/modules/ProfileManager.rb:1024
+msgid "Writing resource groups..."
+msgstr "正在寫入資源組..."
+
+#. progress step:
+#: src/modules/ProfileManager.rb:1026
+msgid "Writing SCPM settings..."
+msgstr "正在寫入 SCPM 設定..."
+
+#. Error message, %1 is extra error text
+#: src/modules/ProfileManager.rb:1049
+msgid ""
+"Cannot write SCPM database:\n"
+"%1"
+msgstr ""
+"無法寫入 SCPM 資料庫：\n"
+"%1"
+
+#. Error message:
+#: src/modules/ProfileManager.rb:1059
+msgid "Cannot write SCPM settings."
+msgstr "無法寫入 SCPM 設定。"
+

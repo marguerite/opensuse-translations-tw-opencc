@@ -1,0 +1,1013 @@
+# Copyright (C) 2006 SuSE Linux Products GmbH, Nuernberg
+# This file is distributed under the same license as the package.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: sudo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:42+0200\n"
+"PO-Revision-Date: 2013-02-04 16:40+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the Xsudo module
+#: src/clients/sudo.rb:54
+msgid "Configuration of sudo"
+msgstr "sudo 配置"
+
+#. encoding: utf-8
+#. ------------------------------------------------------------------------------
+#. Copyright (c) 2006 Novell, Inc. All Rights Reserved.
+#.
+#.
+#. This program is free software; you can redistribute it and/or modify it under
+#. the terms of version 2 of the GNU General Public License as published by the
+#. Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful, but WITHOUT
+#. ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#. FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License along with
+#. this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail, you may find
+#. current contact information at www.novell.com.
+#. ------------------------------------------------------------------------------
+#. File:	include/sudo/complex.ycp
+#. Package:	Configuration of sudo
+#. Summary:	Dialogs definitions
+#. Authors:	Bubli <kmachalkova@suse.cz>
+#.
+#. $Id: complex.ycp 29363 2006-03-24 08:20:43Z mzugec $
+#: src/include/sudo/complex.rb:72
+msgid ""
+"A valid netmask is either in dotted quad notation \n"
+"(4 integers in the range 128 - 255 separated by dots) \n"
+"or single integer in the range 0 - 32"
+msgstr ""
+"有效的掩碼要麼是用句號分隔的四個數字\n"
+"（範圍在 128 - 255 內的四個整數，用小數點分隔）\n"
+"或範圍在 0 - 32 內的單個整數"
+
+#: src/include/sudo/complex.rb:95
+msgid "Add New Host to the Alias"
+msgstr "向別名添加新主機"
+
+#: src/include/sudo/complex.rb:99
+msgid "Hostname or Network"
+msgstr "主機名或網路"
+
+#: src/include/sudo/complex.rb:136
+msgid "Add New User to the Alias"
+msgstr "向新使用者到別名"
+
+#: src/include/sudo/complex.rb:142
+msgid "Local and System Users (Groups)"
+msgstr "本地與系統使用者（組）"
+
+#: src/include/sudo/complex.rb:176
+msgid "File, directory or command alias '%1' does not exist."
+msgstr "檔案、目錄或命令別名 %1 不存在。"
+
+#: src/include/sudo/complex.rb:195
+msgid "Add new command with optional parameters"
+msgstr "添加帶有可選參數的新命令"
+
+#: src/include/sudo/complex.rb:202 src/include/sudo/dialog-cmnd.rb:52
+#: src/include/sudo/dialog-spec.rb:82
+msgid "Command"
+msgstr "命令"
+
+#: src/include/sudo/complex.rb:204
+msgid "Browse"
+msgstr "瀏覽"
+
+#: src/include/sudo/complex.rb:206
+msgid "Parameters (optional)"
+msgstr "參數（可選）"
+
+#. yes-no popup - an error occured when saving the configuration
+#: src/include/sudo/complex.rb:291
+msgid "Saving sudoer's configuration failed. Change the settings?"
+msgstr "儲存 sudoer 配置失敗。是否變更設定？"
+
+#. encoding: utf-8
+#: src/include/sudo/dialog-cmnd.rb:40
+msgid "New Command Alias"
+msgstr "新命令別名"
+
+#: src/include/sudo/dialog-cmnd.rb:44
+msgid "Existing Command Alias"
+msgstr "現有命令別名"
+
+#: src/include/sudo/dialog-cmnd.rb:48 src/include/sudo/dialog-host.rb:52
+#: src/include/sudo/dialog-runas.rb:58 src/include/sudo/dialog-user.rb:59
+msgid "Alias Name (in CAPITALS)"
+msgstr "別名(大寫字母)"
+
+#: src/include/sudo/dialog-cmnd.rb:49
+msgid "Command Names or Directories in the Alias"
+msgstr "別名中的命令名或目錄"
+
+#: src/include/sudo/dialog-cmnd.rb:52 src/include/sudo/dialog-spec.rb:82
+msgid "Parameters"
+msgstr "參數"
+
+#. next
+#. next
+#. next
+#. next
+#: src/include/sudo/dialog-cmnd.rb:101 src/include/sudo/dialog-host.rb:102
+#: src/include/sudo/dialog-runas.rb:109 src/include/sudo/dialog-user.rb:108
+msgid "Alias name must not be empty."
+msgstr "別名名稱不能為空。"
+
+#: src/include/sudo/dialog-cmnd.rb:109 src/include/sudo/dialog-host.rb:110
+#: src/include/sudo/dialog-runas.rb:117 src/include/sudo/dialog-user.rb:116
+msgid "Alias with name %1 already exists"
+msgstr "名稱為 %1 的別名已存在"
+
+#. Sudo::RemoveHostAlias(current_alias_name);
+#: src/include/sudo/dialog-cmnd.rb:118 src/include/sudo/dialog-host.rb:121
+#: src/include/sudo/dialog-runas.rb:126 src/include/sudo/dialog-user.rb:125
+msgid "Alias must have at least one member."
+msgstr "別名必須有至少一個成員。"
+
+#. encoding: utf-8
+#: src/include/sudo/dialog-host.rb:44
+msgid "New Host Alias"
+msgstr "新主機別名"
+
+#: src/include/sudo/dialog-host.rb:48
+msgid "Existing Host Alias"
+msgstr "現有主機別名"
+
+#: src/include/sudo/dialog-host.rb:53
+msgid "Hostnames or Networks in the Alias"
+msgstr "別名中的主機名或網路"
+
+#: src/include/sudo/dialog-host.rb:54
+msgid "Hostnames/Networks"
+msgstr "主機名/網路"
+
+#. encoding: utf-8
+#: src/include/sudo/dialog-runas.rb:47
+msgid "New RunAs Alias"
+msgstr "新 RunAs 別名"
+
+#: src/include/sudo/dialog-runas.rb:54
+msgid "Existing RunAs Alias"
+msgstr "現有的 RunAs 別名"
+
+#: src/include/sudo/dialog-runas.rb:64 src/include/sudo/dialog-user.rb:64
+msgid "Alias Members"
+msgstr "別名成員"
+
+#. encoding: utf-8
+#: src/include/sudo/dialog-spec.rb:47
+msgid "New Sudo Rule"
+msgstr "新的 Sudo 規則"
+
+#. Setting default values
+#: src/include/sudo/dialog-spec.rb:50
+msgid "Existing Sudo Rule "
+msgstr "現有的 Sudo 規則"
+
+#: src/include/sudo/dialog-spec.rb:60
+msgid "User, Group or User Alias"
+msgstr "使用者、組或使用者別名"
+
+#: src/include/sudo/dialog-spec.rb:68
+msgid "Host or Host Alias"
+msgstr "主機或主機別名"
+
+#: src/include/sudo/dialog-spec.rb:76
+msgid "RunAs or RunAs Alias"
+msgstr "RunAs 或 RunAs 別名"
+
+#: src/include/sudo/dialog-spec.rb:80
+msgid "No Password"
+msgstr "無口令"
+
+#: src/include/sudo/dialog-spec.rb:81
+msgid "Commands to Run"
+msgstr "要運行的命令"
+
+#. next
+#: src/include/sudo/dialog-spec.rb:152
+msgid "Username must not be empty."
+msgstr "使用者名不能為空。"
+
+#: src/include/sudo/dialog-spec.rb:157
+msgid "Hostname must not be empty."
+msgstr "主機名不能為空。"
+
+#: src/include/sudo/dialog-spec.rb:166
+msgid "Command list must have at least one entry."
+msgstr "命令列表必須至少有一個條目。"
+
+#. encoding: utf-8
+#: src/include/sudo/dialog-user.rb:47
+msgid "New User Alias"
+msgstr "新建使用者別名"
+
+#: src/include/sudo/dialog-user.rb:54
+msgid "Existing User Alias"
+msgstr "現有使用者別名"
+
+#. encoding: utf-8
+#. ------------------------------------------------------------------------------
+#. Copyright (c) 2006 Novell, Inc. All Rights Reserved.
+#.
+#.
+#. This program is free software; you can redistribute it and/or modify it under
+#. the terms of version 2 of the GNU General Public License as published by the
+#. Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful, but WITHOUT
+#. ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#. FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License along with
+#. this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail, you may find
+#. current contact information at www.novell.com.
+#. ------------------------------------------------------------------------------
+#. File:	include/sudo/dialogs.ycp
+#. Package:	Configuration of sudo
+#. Summary:	Dialogs definitions
+#. Authors:	Bubli <kmachalkova@suse.cz>
+#.
+#. $Id: dialogs.ycp 27914 2006-02-13 14:32:08Z locilka $
+#: src/include/sudo/dialogs.rb:44
+msgid "Sudo Configuration"
+msgstr "Sudo 配置"
+
+#: src/include/sudo/dialogs.rb:109
+msgid "Users"
+msgstr "使用者"
+
+#: src/include/sudo/dialogs.rb:110 src/include/sudo/dialogs.rb:224
+msgid "Hosts"
+msgstr "主機"
+
+#: src/include/sudo/dialogs.rb:111
+msgid "RunAs"
+msgstr "RunAs"
+
+#: src/include/sudo/dialogs.rb:112
+msgid "NOPASSWD"
+msgstr "NOPASSWD"
+
+#: src/include/sudo/dialogs.rb:113 src/include/sudo/dialogs.rb:259
+msgid "Commands"
+msgstr "命令"
+
+#: src/include/sudo/dialogs.rb:118
+msgid "Up"
+msgstr "向上"
+
+#: src/include/sudo/dialogs.rb:119
+msgid "Down"
+msgstr "向下"
+
+#: src/include/sudo/dialogs.rb:144
+msgid "Rules for sudo"
+msgstr "sudo 規則"
+
+#: src/include/sudo/dialogs.rb:146
+msgid "Rules for sudo "
+msgstr "sudo 規則"
+
+#: src/include/sudo/dialogs.rb:154 src/include/sudo/dialogs.rb:189
+#: src/include/sudo/dialogs.rb:224 src/include/sudo/dialogs.rb:259
+msgid "Alias Name"
+msgstr "別名"
+
+#: src/include/sudo/dialogs.rb:154 src/include/sudo/dialogs.rb:189
+msgid "Members"
+msgstr "成員"
+
+#: src/include/sudo/dialogs.rb:179 src/include/sudo/dialogs.rb:181
+msgid "User Aliases"
+msgstr "使用者別名"
+
+#: src/include/sudo/dialogs.rb:214 src/include/sudo/dialogs.rb:216
+msgid "RunAs Aliases"
+msgstr "RunAs 別名"
+
+#: src/include/sudo/dialogs.rb:249 src/include/sudo/dialogs.rb:251
+msgid "Host Aliases"
+msgstr "主機別名"
+
+#: src/include/sudo/dialogs.rb:284 src/include/sudo/dialogs.rb:286
+msgid "Command Aliases"
+msgstr "命令別名"
+
+#: src/include/sudo/dialogs.rb:442
+msgid "Yes"
+msgstr "是"
+
+#: src/include/sudo/dialogs.rb:442
+msgid "No"
+msgstr "否"
+
+#. current_alias_name = "";
+#: src/include/sudo/dialogs.rb:486
+msgid ""
+"Host alias %1 is being used in one of the sudo rules.\n"
+"Deleting it may result in an inconsistent sudo configuration file. Really delete it?\n"
+msgstr ""
+"主機別名 %1 被用在一個 sudo 規則中。\n"
+"刪除它可能導致 sudo 配置檔案不一致。確實要刪除嗎？\n"
+
+#. No alias name set so far
+#: src/include/sudo/dialogs.rb:549
+msgid ""
+"User alias %1 is being used in one of the sudo rules.\n"
+"Deleting it may result in an inconsistent sudo configuration file. Really delete it?\n"
+msgstr ""
+"使用者別名 %1 被用在一個 sudo 規則中。\n"
+"刪除它可能導致 sudo 配置檔案不一致。確實要刪除嗎？\n"
+
+#. No alias name set so far
+#: src/include/sudo/dialogs.rb:612
+msgid ""
+"RunAs alias %1 is being used in one of the sudo rules.\n"
+"Deleting it may result in an inconsistent sudo configuration file. Really delete it?\n"
+msgstr ""
+"RunAs 別名 %1 被用在一個 sudo 規則中。\n"
+"刪除它可能導致 sudo 配置檔案不一致。確實要刪除嗎？\n"
+
+#. No alias name set so far
+#: src/include/sudo/dialogs.rb:674
+msgid ""
+"Command alias %1 is being used in one of the sudo rules.\n"
+"Deleting it may result in an inconsistent sudo configuration file. Really delete it?\n"
+msgstr ""
+"命令別名 %1 被用在一個 sudo 規則中。\n"
+"刪除它可能導致 sudo 配置檔案不一致。確實要刪除嗎？\n"
+
+#. Read dialog help 1/2
+#: src/include/sudo/helps.rb:36
+msgid ""
+"<p><b><big>Initializing sudo Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在啟始化 sudo 配置</big></b><br>\n"
+"</p>\n"
+
+#. Read dialog help 2/2
+#: src/include/sudo/helps.rb:40
+msgid ""
+"<p><b><big>Aborting Initialization:</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>\n"
+msgstr ""
+"<p><b><big>終止啟始化:</big></b><br>\n"
+"請您現在點選<b>終止</b>, 以便安全中斷配置工具。</p>\n"
+
+#. Write dialog help 1/2
+#: src/include/sudo/helps.rb:44
+msgid ""
+"<p><b><big>Saving sudo Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在儲存 sudo 配置</big></b><br>\n"
+"</p>\n"
+
+#. Write dialog help 2/2
+#: src/include/sudo/helps.rb:48
+msgid ""
+"<p><b><big>Aborting Saving:</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.\n"
+"An additional dialog informs whether it is safe to do so.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>中斷儲存:</big></b><br>\n"
+"請點選<B>中斷</B>,以便中斷儲存.\n"
+"一個附加對話方塊將告訴您這樣做是否安全.\n"
+"</p>\n"
+
+#. User Specification help 1/6
+#: src/include/sudo/helps.rb:55
+msgid ""
+"<p><b><big>Rules for sudo</big></b><br>\n"
+"\tRules for sudo basically determine which commands an user may run \n"
+"\ton specified hosts (optionally also as what user). Each rule\n"
+"\tis a tuple consisting of user, host and list of commands, with optional \n"
+"\tRunAs specification and additional tags. These are summarized \n"
+"\tin the following table. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b><big>sudo 規則</big></b><br>\n"
+"\tsudo 規則基本上確定在指定的主機（也可指定使用者）\n"
+"\t上一個使用者可運行哪些命令。每個規則\n"
+"\t是一組相關的使用者、主機與命令列表，\n"
+"\t以及可選的 RunAs 規範與其他標記。在下表中\n"
+"\t有一個總結。\n"
+"\t</p>\n"
+"\t"
+
+#. User Specification help 2/6
+#: src/include/sudo/helps.rb:66
+msgid ""
+"<p><b>Users</b> column denotes local or system user or user alias. \n"
+"\t<b>Hosts</b> column determines, on which hosts, or group \n"
+"\tof hosts referred to by host alias an user may run specified commands.\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b>使用者</b>列指示本地、系統使用者或使用者別名。\n"
+"\t<b>主機</b>列確定在主機別名所指的哪些主機或主機\n"
+"\t組上使用者可運行指定的命令。\n"
+"\t</p>\n"
+"\t"
+
+#. User Specification help 3/6
+#: src/include/sudo/helps.rb:74
+msgid ""
+"<b>RunAs</b> column is an\n"
+"\toptional parameter, containing user name (or alias) whose access privileges\n"
+"\twill be used to run commands. <b>NOPASSWD</b> is a tag, determining whether\n"
+"\tusers need to authorize themselves before running commands.\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<b>RunAs</b> 列是\n"
+"\t可選參數，包含使用者名（或別名），其訪問特權\n"
+"\t將用於運行命令。<b>NOPASSWD</b> 是個標記，它確定使用者運行命令前是否\n"
+"\t需要授權。\n"
+"\t</p>\n"
+"\t"
+
+#. User Specification help 4/6
+#: src/include/sudo/helps.rb:83
+msgid ""
+"<p>A set of commands that user can run on specified hosts is summarized \n"
+"\tin <b>Commands</b> column.  \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p>使用者可在指定主機上運行的命令總結在\n"
+"\t<b>命令</b>列中。\n"
+"\t</p>\n"
+"\t"
+
+#. User Specification help 5/6
+#: src/include/sudo/helps.rb:90
+msgid ""
+"<p> To add a new rule, click on <b>Add</b> button and fill in appropriate \n"
+"\tentries. User name, hostname and command list must not be empty.\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p> 要添加新的規則，請單擊<b>添加</b>按鈕並填充相應的\n"
+"\t條目。使用者名、主機名與命令列表不能為空。\n"
+"\t</p>\n"
+"\t"
+
+#. User Specification help 5/6
+#: src/include/sudo/helps.rb:97
+msgid ""
+"<p>To edit existing rule, select an entry from the table and click on \n"
+"\t<b>Edit</b> button. To delete selected entry, click on <b>Delete</b> button.\n"
+"\t</p> \n"
+"\t"
+msgstr ""
+"<p>要編輯現有規則，請從表中選擇條目並單擊\n"
+"\t<b>編輯</b>按鈕。要刪除選定條目，請單擊<b>刪除</b>按鈕。\n"
+"\t</p> \n"
+"\t"
+
+#. Single User Specification help 1/4
+#: src/include/sudo/helps.rb:104
+msgid ""
+"<p><b>User Name or Alias</b> may be specified by single username (e.g.foo), group name prefixed\n"
+"\twith '%' (e.g. %bar), or user alias name. If \n"
+"\tkeyword 'ALL' is used, it stands for any user. Select from existing users, groups and aliases \n"
+"\tin drop-down menu, or enter your own value. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b>使用者名或別名</b>可用單一使用者名（例如 foo）、組名加字首\n"
+"\t“%”（例如 %bar）或使用者別名名稱來指定。如果使用了\n"
+"\t關鍵字“ALL”，將代表任何使用者。從下拉選單中的現有使用者、組與別名中選擇\n"
+"\t，或輸入您自己的值。\n"
+"\t</p>\n"
+"\t"
+
+#: src/include/sudo/helps.rb:112
+msgid ""
+"<p><b>Hostname or Alias</b> entry consists of either hostname(e.g. www.example.com), single IP \n"
+"\taddress (e.g. 192.168.0.1), IP address combined with netmask, or host alias. If commands may be\n"
+"\trun on any host, use keyword 'ALL'. Hostname or IP address is matched against your own hostname\n"
+"\tor IP address, so if you don't intend to share one /etc/sudoers file between multiple machines, \n"
+"\t'ALL' or 'localhost' entry will be sufficient for almost all purposes. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b>主機名或別名</b>條目由主機名（如 www.example.com）、單一 IP \n"
+"\t地址（如 192.168.0.1）、IP 地址結合掩碼或主機別名組成。如果命令可能在\n"
+"\t任何主機上運行，請使用關鍵字“ALL”。主機名或 IP 地址是與您自己的主機名\n"
+"\t或 IP 地址匹配的，因此如果您不想在多臺計算機上共享一個 /etc/sudoers 檔案，\n"
+"\t則“ALL”或“localhost”條目對多數應用都足夠了。\n"
+"\t</p>\n"
+"\t"
+
+#. Single User Specification help 2/4
+#: src/include/sudo/helps.rb:122
+msgid ""
+"<p><b>RunAs Username or Alias</b> is an optional parameter specifying an user, \n"
+"\twhose access privileges \n"
+"\twill be used to execute particular command. If empty, user <b>root</b> is the default\n"
+"\tone. It can be again single username, groupname prefixed with '%' or run_as alias name\n"
+"\tSelect from existing users, groups and aliases in drop-down menu, or enter your own value.\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b>RunAs 使用者名或別名</b>是指定其\n"
+"\t訪問特權\n"
+"\t將用來執行特定命令的使用者的可選參數。如果為空，默認是使用者 <b>root</b>\n"
+"\t。它也可以是單一使用者名、組名加字首“%”或 run_as 別名名稱\n"
+"\t從下拉選單中的現有使用者、組與別名中選擇，或輸入您自己的值。\n"
+"\t</p>\n"
+"\t"
+
+#. Single User Specification help 3/4
+#: src/include/sudo/helps.rb:132
+msgid ""
+"<p><b>No Password</b> is an optional tag. Normally, users have to authenticate\n"
+"\tthemselves (i.e. supply their own password, not root's one) before running particular \n"
+"\tcommand. Set No Password tag to 'Yes' if you want to\n"
+"\tdisable this authentication\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b>無口令</b>是可選標誌。通常，使用者在運行特定\n"
+"\t命令前必須經過\n"
+"\t驗證（即提供自己的口令，而不是根口令）。如果您想\n"
+"\t禁用該驗證，請將“無口令”標記設定為“是”。\n"
+"\t</p>\n"
+"\t"
+
+#. Single User Specification help 4/4
+#: src/include/sudo/helps.rb:141
+msgid ""
+"<p><b>Commands to Run</b> table is a list of commands (optionally with\n"
+"\tparameters), directories and command aliases that particular user will be allowed \n"
+"\tto run. If a directory name is used, any command in that directory can be run. \n"
+"\tAgain, keyword 'ALL' stands for any command, so use it with care.\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b>可運行命令</b>表是允許特定使用者\n"
+"\t運行的命令（可帶有\n"
+"\t參數）、目錄與命令別名列表。如果使用了目錄名，該目錄中的任何命令都可運行。\n"
+"\t再次重申，關鍵字“ALL”表示任何命令，因此要謹慎使用它。\n"
+"\t</p>\n"
+"\t"
+
+#: src/include/sudo/helps.rb:149
+msgid ""
+"To add a new command, click on <b>Add</b> button, fill in command name with optional\n"
+"\tparameters and click <b>OK</b>. To remove command, select appropriate entry from the table\n"
+"\tand click on <b>Delete</b> button.\n"
+"\t"
+msgstr ""
+"要添加新命令，請單擊<b>添加</b>按鈕，填充命令名與可選的\n"
+"\t參數，單擊<b>確定</b>。要刪除命令，請從表中選擇相應條目\n"
+"\t並單擊<b>刪除</b>按鈕。\n"
+"\t"
+
+#. User Aliases help 1/3
+#: src/include/sudo/helps.rb:156
+msgid ""
+"<p><b><big>User Aliases</big></b><br>\n"
+"\tIn this dialog, you can configure user aliases. User alias is a set of users that is given\n"
+"\tan unique name. This name is later used to refer to all users in this set in sudo configuration. \n"
+"\t</p> \n"
+"\t"
+msgstr ""
+"<p><b><big>使用者別名</big></b><br>\n"
+"\t您可在此對話方塊中配置使用者別名。使用者別名是被賦予\n"
+"\t唯一名稱的一組使用者。該名稱以後將用於指代該組 sudo 配置中的所有使用者。\n"
+"\t</p> \n"
+"\t"
+
+#. User Aliases help 2/3
+#: src/include/sudo/helps.rb:164
+msgid ""
+"<p>To add a new user alias, click on <b>Add</b> button and fill in appropriate entries. \n"
+"\tAlias name and list of users in the alias must not be empty. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p> 要添加新的使用者別名，請單擊<b>添加</b>按鈕並填充相應的\n"
+"\t條目。別名中的別名名稱與使用者列表不能為空。\n"
+"\t</p>\n"
+"\t"
+
+#. User Aliases help 3/3
+#: src/include/sudo/helps.rb:171
+msgid ""
+"<p>To edit existing user alias, select an entry from the table and click on <b>Edit</b>\n"
+"\tbutton. To delete selected entry, click on <b>Delete</b> button. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p>要編輯現有使用者別名，請從表中選擇條目並單擊<b>編輯</b>\n"
+"\t按鈕。要刪除選定條目，請單擊<b>刪除</b>按鈕。\n"
+"\t</p>\n"
+"\t"
+
+#. Host Aliases help 1/3
+#: src/include/sudo/helps.rb:178
+msgid ""
+"<p><b><big>Host Aliases</big></b><br>\n"
+"\tIn this dialog, you can configure host aliases. Host alias is a set of hosts that is given\n"
+"\tan unique name. This name is later used to refer to all hosts in this set in sudo configuration. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b><big>主機別名</big></b><br>\n"
+"\t您可在此對話方塊中配置主機別名。主機別名是被賦予\n"
+"\t唯一名稱的一組主機。該名稱以後將用於指代該組 sudo 配置中的所有主機。\n"
+"\t</p>\n"
+"\t"
+
+#. Host Aliases help 2/3
+#: src/include/sudo/helps.rb:186
+msgid ""
+"<p>To add a new host alias, click on <b>Add</b> button and fill in appropriate entries. \n"
+"\tAlias name and list of hosts in the alias must not be empty. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p>要添加新的主機別名，單擊<b>添加</b>按鈕並填充相應條目。\n"
+"\t別名中的別名名稱與主機列表不能為空。\n"
+"\t</p>\n"
+"\t"
+
+#. Host Aliases help 3/3
+#: src/include/sudo/helps.rb:193
+msgid ""
+"<p>To edit existing host alias, select an entry from the table and click on <b>Edit</b>\n"
+"\tbutton. To delete selected entry, click on <b>Delete</b> button. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p>要編輯現有主機別名，請從表中選擇條目，單擊<b>編輯</b>\n"
+"\t按鈕。要刪除選定條目，單擊<b>刪除</b>按鈕。\n"
+"\t</p>\n"
+"\t"
+
+#. RunAs Aliases help 1/3
+#: src/include/sudo/helps.rb:200
+msgid ""
+"<p><b><big>RunAs Aliases</big></b><br>\n"
+"\tIn this dialog, you can configure RunAs aliases. RunAs alias is a set of users that is given\n"
+"\tan unique name. This name is later used to refer to all users in this set in sudo configuration. \n"
+"\t</p> \n"
+"\t"
+msgstr ""
+"<p><b><big>RunAs 別名</big></b><br>\n"
+"\t您可在此對話方塊中配置 RunAs 別名。RunAs 別名是被賦予\n"
+"\t唯一名稱的一組使用者。該名稱以後將用於指代該組 sudo 配置中的所有使用者。\n"
+"\t</p> \n"
+"\t"
+
+#. RunAs Aliases help 2/3
+#: src/include/sudo/helps.rb:208
+msgid ""
+"<p>To add a new RunAs alias, click on <b>Add</b> button and fill in appropriate entries. \n"
+"\tAlias name and list of users in the alias must not be empty. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p>要添加新的 RunAs 別名，單擊<b>添加</b>按鈕並填充相應條目。\n"
+"\t別名中的別名名稱與使用者列表不能為空。\n"
+"\t</p>\n"
+"\t"
+
+#. RunAs Aliases help 3/3
+#: src/include/sudo/helps.rb:215
+msgid ""
+"<p>To edit existing RunAs alias, select an entry from the table and click on <b>Edit</b>\n"
+"\tbutton. To delete selected entry, click on <b>Delete</b> button. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p>要編輯現有 RunAs 別名，請從表中選擇條目並單擊<b>編輯</b>\n"
+"\t按鈕。要刪除選定條目，請單擊<b>刪除</b>按鈕。\n"
+"\t</p>\n"
+"\t"
+
+#. Command Aliases help 1/3
+#: src/include/sudo/helps.rb:222
+msgid ""
+"<p><b><big>Command Aliases</big></b><br>\n"
+"\tIn this dialog, you can configure command aliases. Command alias is a set of commands \n"
+"\t(optionally with parameters) that is given an unique name. This name is then used to refer\n"
+"\tto all commands in this set in sudo configuration. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b><big>命令別名</big></b><br>\n"
+"\t在此對話方塊中，您可以配置命令別名。命令別名是被賦予唯一名稱的一組命令\n"
+"\t（可帶有參數）。該名稱以後將用來指代\n"
+"\t該 sudo 配置中的所有命令。\n"
+"\t</p>\n"
+"\t"
+
+#. Command Aliases help 2/3
+#: src/include/sudo/helps.rb:231
+msgid ""
+"<p>To add a new command alias, click on <b>Add</b> button and fill in appropriate entries. \n"
+"\tAlias name and list of commands in the alias must not be empty. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p>要添加新的命令別名，單擊<b>添加</b>按鈕並填充相應條目。\n"
+"\t別名中的別名名稱與命令列表不能為空。\n"
+"\t</p>\n"
+"\t"
+
+#. Command Aliases help 3/3
+#: src/include/sudo/helps.rb:238
+msgid ""
+"<p>To edit existing command alias, select an entry from the table and click on <b>Edit</b>\n"
+"\tbutton. To delete selected entry, click on <b>Delete</b> button. \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p>要編輯現有命令別名，請從表中選擇條目，單擊<b>編輯</b>\n"
+"\t按鈕。要刪除選定條目，請單擊<b>刪除</b>按鈕。\n"
+"\t</p>\n"
+"\t"
+
+#. Single User Alias Help 1/2
+#: src/include/sudo/helps.rb:245
+msgid ""
+"<p><b><big>User Alias</big></b><br>\n"
+"\tUser alias consists of one or more users, system groups (prefixed with '%') or other\n"
+"\tuser aliases. It is given single name (must contain uppercase letters, numbers and underscore\tonly), which is then used to refer to all users in this alias.\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b><big>使用者別名</big></b><br>\n"
+"\t使用者別名由一個或多個使用者、系統組（字首為“%”）或其他\n"
+"\t使用者別名組成。它被賦予唯一名稱（僅能含有\t大寫字母、數字與下劃線），隨即用於指代該別名中的所有使用者。\n"
+"\t</p>\n"
+"\t"
+
+#. Single User Alias Help 2/3
+#. Single User Alias Help 2/3
+#: src/include/sudo/helps.rb:253 src/include/sudo/helps.rb:306
+msgid ""
+"<p>Enter unique name into <b>Alias Name</b> text entry. To add users or groups to the\n"
+"\talias, select user or group name from the drop-down menu and click on <b>Add</b> button.\n"
+"\tTo remove user from the alias, select appropriate entry from the table, and click on\n"
+"\t<b>Remove</b> button. To finish the configuration, click <b>OK</b>.\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p>向<b>別名名稱</b>文字條目中輸入唯一名稱。要向\n"
+"\t別名中添加使用者或組，請從下拉選單中選擇使用者名或組名，單擊<b>添加</b>按鈕。\n"
+"\t要從別名中刪除使用者，請從表中選擇相應條目，單擊\n"
+"\t<b>刪除</b>按鈕。要結束配置，單擊<b>確定</b>。\n"
+"\t</p>\n"
+"\t"
+
+#. Single User Alias Help 3/3
+#. Single Host Alias Help 4/4
+#. Single User Alias Help 2/3
+#. Single Command Alias Help 4/4
+#: src/include/sudo/helps.rb:262 src/include/sudo/helps.rb:292
+#: src/include/sudo/helps.rb:315 src/include/sudo/helps.rb:346
+msgid ""
+"<b>Note:</b> Alias name must not be empty. Each alias must have at least one member.\n"
+"\t"
+msgstr ""
+"<b>請注意：</b>別名名稱不能為空白。每個別名至少必須有一個編號。\n"
+"\t"
+
+#. Single Host Alias Help 1/4
+#: src/include/sudo/helps.rb:266
+msgid ""
+"<p><b><big>Host Alias</big></b><br>\n"
+"\tHost alias consists of one or more hostnames, single IP addresses, IP addresses\n"
+"\tcombined with netmask id dotted quad notation (e.g. 192.168.0.0/255.255.255.0) or\n"
+"\tCIDR number of bits notation (e.g. 192.168.0.0/24), or other host aliases. It is \n"
+"\tgiven single name (must contain uppercase letters, numbers and underscore only), which \n"
+"\tis then used to refer to all hosts in this alias.\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b><big>主機別名</big></b><br>\n"
+"\t主機別名由一個或多個主機名、單一 IP 地址、IP 地址\n"
+"\t結合掩碼 ID 用小數點分隔的四數字組（例如 192.168.0.0/255.255.255.0）或\n"
+"\t數字組的 CIDR 編號（例如 192.168.0.0/24）或其他主機別名組成。它被賦予\n"
+"\t單一名稱(僅能含有大寫字母、數字與下劃線），\n"
+"\t隨即用於指代該別名中的所有主機。\n"
+"\t</p>\n"
+"\t"
+
+#. Single Host Alias Help 2/4
+#: src/include/sudo/helps.rb:277
+msgid ""
+"<p>Enter unique name into <b>Alias Name</b> text entry. To add hosts to the\n"
+"\talias, click on <b>Add</b> button. A pop-up window will appear, where you can enter\n"
+"\tvalid hostname or IP address and then click <b>OK</b>.\n"
+"\t<p>\n"
+"\t"
+msgstr ""
+"<p>在<b>別名名稱</b>文字條目中輸入唯一名稱。要向\n"
+"\t別名中添加主機，單擊<b>添加</b>按鈕。將出現一個彈出視窗，您可在其中輸入\n"
+"\t有效的主機名或 IP 地址，然後單擊<b>確定</b>。\n"
+"\t<p>\n"
+"\t"
+
+#. Single Host Alias Help 3/4
+#: src/include/sudo/helps.rb:285
+msgid ""
+"To remove host from the alias, select appropriate entry from the table, and click on\n"
+"\t<b>Remove</b> button. To finish the configuration, click <b>OK</b>.\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"要從別名中刪除主機，請從表中選擇相應條目，單擊\n"
+"\t<b>刪除</b>按鈕。要結束配置，請單擊<b>確定</b>。\n"
+"\t</p>\n"
+"\t"
+
+#. Single RunAs Alias Help 1/2
+#: src/include/sudo/helps.rb:296
+msgid ""
+"<p><b><big>RunAs Alias</big></b><br>\n"
+"\tRunAs alias is very similar to User Alias. It consists of one or more users, system groups \n"
+"\t(prefixed with '%') or other RunAs aliases. It is given single name (must contain \n"
+"\tuppercase letters, numbers and underscore only), which is then used to refer to all users \n"
+"\tin this alias.\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b><big>RunAs 別名</big></b><br>\n"
+"\tRunAs 別名與使用者別名很相似。它由一個或多個使用者、系統組\n"
+"\t（字首為“%”）或其他 RunAs 別名組成。它被賦予唯一名稱（僅能含有\n"
+"\t大寫字母、數字與下劃線），隨即用於指代該別名中的\n"
+"\t所有使用者。\n"
+"\t</p>\n"
+"\t"
+
+#. Single Command Alias Help 1/4
+#: src/include/sudo/helps.rb:319
+msgid ""
+"<p><b><big>Command Alias</big></b><br>\n"
+"\tCommand Alias is a list of one or more commands (with optional parameters), directories, or\n"
+"\tother command aliases. It is given single name (must contain uppercase letters, numbers and\n"
+"\tunderscore only), which is \n"
+"\tthen used to refer to all commands in this alias. A command can optionally have one or more\n"
+"\tparameters specified. If so, users can run the command with these parameters only. If a \n"
+"\tdirectory name is used, any command in that directory can be run.  \n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"<p><b><big>命令別名</big></b><br>\n"
+"\t“命令別名”是一個或多個命令（帶可選參數）、目錄或\n"
+"\t其他命令別名的列表。它被賦予單一名稱（僅能含有大寫字母、數字與\n"
+"\t下劃線），它隨即用於\n"
+"\t指代該別名中的所有命令。命令可選擇指定一個或多個\n"
+"\t參數。如果指定了，使用者僅能用這些參數運行命令。如果使用了\n"
+"\t目錄名稱，該目錄中的任何命令皆可運行。\n"
+"\t</p>\n"
+"\t"
+
+#. Single Command Alias Help 2/4
+#: src/include/sudo/helps.rb:331
+msgid ""
+"<p>Enter unique name into <b>Alias Name</b> text entry. To add a new command to the alias,\n"
+"\tclick on <b>Add</b> button.A pop-up window will appear, where you can enter command name\n"
+"\t(or select one from file browser by clicking on <b>Browse</b> button. Additionally, you can\n"
+"\tspecify command parameters in <b>Parameters</b> text entry\n"
+"\t"
+msgstr ""
+"<p>在<b>別名名稱</b>文字項中輸入唯一的名稱。要向別名中添加新命令，\n"
+"\t請點選<b>添加</b>按鈕。將顯示一個彈出視窗，您可在其中輸入命令名稱\n"
+"\t(或點選<b>瀏覽</b>按鈕從檔案瀏覽器中選一個)。另外您還可在<b>參數</b>文字項中\n"
+"\t指定命令參數\n"
+"\t"
+
+#. Single Command Alias Help 3/4
+#: src/include/sudo/helps.rb:339
+msgid ""
+"To remove command from the alias, select appropriate entry from the table, and click on\n"
+"\t<b>Remove</b> button. To finish the configuration, click <b>OK</b>.\n"
+"\t</p>\n"
+"\t"
+msgstr ""
+"要從別名中刪除命令，請從表中選擇相應項，並點選\n"
+"\t<b>移除</b>按鈕。要結束配置，請點選<b>確定</b>。\n"
+"\t</p>\n"
+"\t"
+
+#. if(issubstring(line[3]:"","NOPASSWD:")) {
+#. m["no_passwd"] = (boolean) true;
+#. }
+#. else {
+#. m["no_passwd"] = (boolean) false;
+#. }
+#: src/modules/Sudo.rb:400
+msgid "This rule is a system rule necessary for correct functionality of sudo.\n"
+msgstr "此規則為保證 sudo 功能正確的必要系統規則。\n"
+
+#: src/modules/Sudo.rb:407
+msgid ""
+"After deleting it, some applications may no longer work.\n"
+"Really delete?"
+msgstr ""
+"刪除後，一些程式可能不再運行。\n"
+"確定刪除？"
+
+#: src/modules/Sudo.rb:414
+msgid ""
+"If you change it, some applications may no longer work.\n"
+"Really edit? "
+msgstr ""
+"改變後，一些程式可能不再運行。\n"
+"確定編輯？"
+
+#. end Commands
+#: src/modules/Sudo.rb:545
+msgid "All changes will be lost. Really quit sudo configuration without saving?"
+msgstr "所有變更都將丟失。確實要退出 sudo 配置而不儲存嗎？"
+
+#. Error message
+#: src/modules/Sudo.rb:573
+msgid "An error occurred while reading users and groups."
+msgstr "讀取使用者與組時出錯。"
+
+#. Sudo read dialog caption
+#: src/modules/Sudo.rb:605
+msgid "Saving sudo Configuration"
+msgstr "正在儲存 sudo 配置"
+
+#. Progress stage 1/1
+#: src/modules/Sudo.rb:620
+msgid "Write the settings"
+msgstr "寫入設定"
+
+#. Progress step 1/1
+#: src/modules/Sudo.rb:624
+msgid "Writing the settings..."
+msgstr "正在寫入設定..."
+
+#. Error message
+#: src/modules/Sudo.rb:638
+msgid "Cannot write settings."
+msgstr "無法寫入設定。"
+
+#~ msgid ""
+#~ "<p><b><big>Saving sudo Configuration</big></b><br>\n"
+#~ "Please wait...<br></p>\n"
+#~ msgstr ""
+#~ "<p><b><big>正在儲存 sudo 配置</big></b><br>\n"
+#~ "請等待...<br></p>\n"
+
+#~ msgid "Initializing sudo Configuration"
+#~ msgstr "正在啟始化 sudo 配置"
+
+#~ msgid "Read sudo settings"
+#~ msgstr "讀取 sudo 設定"
+
+#~ msgid "Read local users and groups"
+#~ msgstr "讀取本地使用者與組"
+
+#~ msgid "Reading sudo settings..."
+#~ msgstr "正在讀取 sudo 設定..."
+
+#~ msgid "Reading local users and groups..."
+#~ msgstr "正在讀取本地使用者與組..."
+
+#~ msgid "Cannot read /etc/passwd."
+#~ msgstr "無法讀取 /etc/passwd。"
+
+#~ msgid "New User Specification"
+#~ msgstr "新建使用者規範"
+
+#~ msgid "Existing User Specification"
+#~ msgstr "現有使用者規範"
+
+#~ msgid "User Specification"
+#~ msgstr "使用者規範"
+

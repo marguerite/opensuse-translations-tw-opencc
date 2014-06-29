@@ -1,0 +1,645 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Eric Shan <ericalways@gmail.com>, 2008, 2012.
+# Marguerite Su <i@marguerite.su>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: RPM\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-04 11:08+0100\n"
+"PO-Revision-Date: 2012-07-19 07:33+0800\n"
+"Last-Translator: Marguerite Su\n"
+"Language-Team: Chinese Simplified <kde-i18n-doc@kde.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.4\n"
+
+msgid "3D"
+msgstr "三維"
+
+msgid "3D Editors"
+msgstr "三維編輯器"
+
+msgid "Action"
+msgstr "動作"
+
+msgid "Amusements"
+msgstr "娛樂"
+
+msgid "AOLInstantMessenger"
+msgstr "AOL 即時通訊程式"
+
+msgid "Arcade"
+msgstr "街機"
+
+msgid "Archie"
+msgstr "射擊"
+
+msgid "Archiving"
+msgstr "存檔"
+
+msgid "Astronomy"
+msgstr "天文學"
+
+msgid "Background"
+msgstr "背景"
+
+msgid "Backup"
+msgstr "備份"
+
+msgid "Base"
+msgstr "基本"
+
+msgid "Benchmark"
+msgstr "評測"
+
+msgid "Bitmap Editors"
+msgstr "點陣圖編輯器"
+
+msgid "Board"
+msgstr "棋類"
+
+msgid "Boot"
+msgstr "引導"
+
+msgid "Breakout"
+msgstr "方塊"
+
+msgid "Browsers"
+msgstr "瀏覽器"
+
+msgid "Building"
+msgstr "構建"
+
+msgid "CAD"
+msgstr "計算機輔助繪圖(CAD)"
+
+msgid "Camera"
+msgstr "照相機"
+
+msgid "C and C++"
+msgstr "C 與 C++"
+
+msgid "Card"
+msgstr "牌類"
+
+msgid "CD"
+msgstr "CD"
+
+msgid "Chemistry"
+msgstr "化學"
+
+msgid "Chess"
+msgstr "象棋"
+
+msgid "Chinese"
+msgstr "中文"
+
+msgid "Clients"
+msgstr "客戶機"
+
+msgid "Clocks"
+msgstr "時鐘"
+
+msgid "Clustering"
+msgstr "叢集"
+
+msgid "Compression"
+msgstr "壓縮"
+
+msgid "Computing"
+msgstr "計算"
+
+msgid "Console"
+msgstr "控制檯"
+
+msgid "Convertors"
+msgstr "轉換器"
+
+msgid "Cross"
+msgstr "跨平臺"
+
+msgid "Daemons"
+msgstr "守護精靈"
+
+msgid "Databases"
+msgstr "資料庫"
+
+msgid "Debuggers"
+msgstr "偵錯程式"
+
+msgid "Development"
+msgstr "開發"
+
+msgid "Diagnostic"
+msgstr "診斷"
+
+msgid "Dictionary"
+msgstr "字典"
+
+msgid "Displaymanagers"
+msgstr "顯示管理器"
+
+msgid "DNS"
+msgstr "DNS"
+
+msgid "DocBook"
+msgstr "DocBook"
+
+msgid "Doc Generators"
+msgstr "文件生成器"
+
+msgid "Documentation"
+msgstr "文件"
+
+msgid "Editors"
+msgstr "編輯器"
+
+msgid "Editors and Convertors"
+msgstr "編輯器與轉換器"
+
+msgid "Electronics"
+msgstr "電子學"
+
+msgid "Emacs"
+msgstr "Emacs"
+
+msgid "Email"
+msgstr "電子郵件"
+
+msgid "Emulators"
+msgstr "模擬器"
+
+msgid "Fax"
+msgstr "傳真"
+
+msgid "Fhs"
+msgstr "Fhs"
+
+msgid "File-Sharing"
+msgstr "檔案共享"
+
+msgid "Filesystems"
+msgstr "檔案系統"
+
+msgid "File utilities"
+msgstr "檔案工具"
+
+msgid "Finance"
+msgstr "財務"
+
+msgid "Fonts"
+msgstr "字型"
+
+msgid "Fortran"
+msgstr "Fortran"
+
+msgid "Frontends"
+msgstr "前端"
+
+msgid "Ftp"
+msgstr "Ftp"
+
+msgid "Games"
+msgstr "遊戲"
+
+msgid "GNOME"
+msgstr "GNOME"
+
+msgid "Grabbers"
+msgstr "採集器"
+
+msgid "Graph"
+msgstr "圖表"
+
+msgid "Graphics"
+msgstr "圖形"
+
+msgid "GUI"
+msgstr "圖形介面"
+
+msgid "GUI Builders"
+msgstr "圖形介面生成器"
+
+msgid "H323"
+msgstr "H323"
+
+msgid "HA"
+msgstr "高可用性"
+
+msgid "Hamradio"
+msgstr "業餘無線電"
+
+msgid "Hardware"
+msgstr "硬體"
+
+msgid "Howto"
+msgstr "教程"
+
+msgid "HTML"
+msgstr "HTML 網頁"
+
+msgid "I18n"
+msgstr "本地化"
+
+msgid "Icons"
+msgstr "圖示"
+
+msgid "ICQ"
+msgstr "ICQ"
+
+msgid "IDE"
+msgstr "整合開發環境"
+
+msgid "Instant Messenger"
+msgstr "即時通訊"
+
+msgid "IRC"
+msgstr "網際網路延遲聊天"
+
+msgid "ISDN"
+msgstr "綜合業務數字網"
+
+msgid "Japanese"
+msgstr "日語"
+
+msgid "Java"
+msgstr "Java"
+
+msgid "Joystick"
+msgstr "遊戲手柄"
+
+msgid "KDE"
+msgstr "KDE"
+
+msgid "Kernel"
+msgstr "核心"
+
+msgid "Korean"
+msgstr "韓語"
+
+msgid "Language"
+msgstr "語言"
+
+msgid "Languages"
+msgstr "語言"
+
+msgid "LDAP"
+msgstr "輕量級目錄訪問協議"
+
+msgid "Libraries"
+msgstr "庫"
+
+msgid "Localization"
+msgstr "本地化"
+
+msgid "Logging"
+msgstr "日誌記錄"
+
+msgid "Logic"
+msgstr "邏輯"
+
+msgid "Mailinglists"
+msgstr "郵件列表"
+
+msgid "Man"
+msgstr "Man 幫助手冊"
+
+msgid "Management"
+msgstr "管理"
+
+msgid "Math"
+msgstr "數學"
+
+msgid "Mathematics"
+msgstr "數學"
+
+msgid "Metapackages"
+msgstr "元軟體包"
+
+msgid "Midi"
+msgstr "Midi"
+
+msgid "Mixers"
+msgstr "混音器"
+
+msgid "Mobile"
+msgstr "移動"
+
+msgid "Modem"
+msgstr "調變解調器"
+
+msgid "Monitoring"
+msgstr "監視"
+
+msgid "Mono"
+msgstr "Mono"
+
+msgid "Morse"
+msgstr "摩爾斯電碼"
+
+msgid "Multimedia"
+msgstr "多媒體"
+
+msgid "Napster"
+msgstr "Napster"
+
+msgid "Navigators"
+msgstr "導航器"
+
+msgid "Networking"
+msgstr "網路"
+
+msgid "News"
+msgstr "新聞"
+
+msgid "NFS"
+msgstr "網路檔案系統"
+
+msgid "NIS"
+msgstr "網路資訊服務"
+
+msgid "Novell"
+msgstr "諾維爾"
+
+msgid "Office"
+msgstr "辦公"
+
+msgid "Organizers"
+msgstr "管理器"
+
+msgid "Other"
+msgstr "其它"
+
+msgid "Packages"
+msgstr "軟體包"
+
+msgid "Packet"
+msgstr "包"
+
+msgid "Palm"
+msgstr "Palm"
+
+msgid "Parallel"
+msgstr "並行"
+
+msgid "PC"
+msgstr "個人計算機"
+
+msgid "PDA"
+msgstr "個人數字助理"
+
+msgid "PDF"
+msgstr "PDF"
+
+msgid "Perl"
+msgstr "Perl"
+
+msgid "PHP"
+msgstr "PHP"
+
+msgid "Physics"
+msgstr "物理學"
+
+msgid "Players"
+msgstr "播放器"
+
+msgid "Pool"
+msgstr "池"
+
+msgid "PPP"
+msgstr "PPP"
+
+msgid "Presentation"
+msgstr "演示"
+
+msgid "Printing"
+msgstr "列印"
+
+msgid "Productivity"
+msgstr "生產力"
+
+msgid "Proxy"
+msgstr "代理"
+
+msgid "PS"
+msgstr "PS"
+
+msgid "Psion"
+msgstr "Psion"
+
+msgid "Psk31"
+msgstr "Psk31"
+
+msgid "Publishing"
+msgstr "出版"
+
+msgid "Puzzle"
+msgstr "智力遊戲"
+
+msgid "Python"
+msgstr "Python"
+
+msgid "Race"
+msgstr "賽車"
+
+msgid "Radio"
+msgstr "廣播"
+
+msgid "Radius"
+msgstr "半徑"
+
+msgid "Raytracers"
+msgstr "光跡跟蹤"
+
+msgid "Real Time"
+msgstr "實時"
+
+msgid "Record"
+msgstr "錄音"
+
+msgid "Remote Desktop"
+msgstr "遠端桌面"
+
+msgid "Routing"
+msgstr "路由"
+
+msgid "RPG"
+msgstr "角色扮演"
+
+msgid "Ruby"
+msgstr "Ruby"
+
+msgid "Samba"
+msgstr "Samba"
+
+msgid "Satellite"
+msgstr "衛星"
+
+msgid "Scanner"
+msgstr "掃描器"
+
+msgid "Scheme"
+msgstr "方案"
+
+msgid "Scientific"
+msgstr "科學"
+
+msgid "Screensavers"
+msgstr "螢幕保護程式"
+
+msgid "Security"
+msgstr "安全性"
+
+msgid "Servers"
+msgstr "伺服器"
+
+msgid "SGML"
+msgstr "SGML"
+
+msgid "Shells"
+msgstr "Shell"
+
+msgid "Shoot"
+msgstr "射擊"
+
+msgid "Simulation"
+msgstr "模擬"
+
+msgid "SIP"
+msgstr "SIP"
+
+msgid "Sound"
+msgstr "聲音"
+
+msgid "Sound Daemons"
+msgstr "聲音守護精靈"
+
+msgid "Sources"
+msgstr "源"
+
+msgid "Spell"
+msgstr "拼寫"
+
+msgid "Spreadsheets"
+msgstr "電子表格"
+
+msgid "SSH"
+msgstr "SSH"
+
+msgid "Strategy"
+msgstr "策略"
+
+msgid "Suite"
+msgstr "套裝"
+
+msgid "SUSE"
+msgstr "SUSE"
+
+msgid "SUSE internal"
+msgstr "SUSE 內部"
+
+msgid "System"
+msgstr "系統"
+
+msgid "Talk"
+msgstr "聊天"
+
+msgid "Tcl"
+msgstr "Tcl"
+
+msgid "Teaching"
+msgstr "教學"
+
+msgid "Telephony"
+msgstr "電話"
+
+msgid "Terminals"
+msgstr "終端"
+
+msgid "TeX"
+msgstr "TeX"
+
+msgid "Texinfo"
+msgstr "Texinfo"
+
+msgid "Text"
+msgstr "文字"
+
+msgid "Tools"
+msgstr "工具"
+
+msgid "Toys"
+msgstr "玩具"
+
+msgid "Troff"
+msgstr "Troff"
+
+msgid "Turn Based"
+msgstr "回合制"
+
+msgid "TV"
+msgstr "電視"
+
+msgid "UPS"
+msgstr "不間斷電源"
+
+msgid "Utilities"
+msgstr "實用程式"
+
+msgid "Vector Editors"
+msgstr "向量編輯器"
+
+msgid "Version Control"
+msgstr "版本控制"
+
+msgid "Vi"
+msgstr "Vi"
+
+msgid "Video"
+msgstr "視訊"
+
+msgid "Viewers"
+msgstr "檢視器"
+
+msgid "Visualization"
+msgstr "虛擬化"
+
+msgid "Web"
+msgstr "網路"
+
+msgid "Wifi"
+msgstr "無線"
+
+msgid "Word"
+msgstr "字處理"
+
+msgid "Word Processor"
+msgstr "文書處理軟體"
+
+msgid "X11"
+msgstr "X11"
+
+msgid "XF86_3"
+msgstr "XF86_3"
+
+msgid "XF86_4"
+msgstr "XF86_4"
+
+msgid "XFCE"
+msgstr "XFCE"
+
+msgid "XML"
+msgstr "XML"
+
+msgid "YaST"
+msgstr "YaST"
+

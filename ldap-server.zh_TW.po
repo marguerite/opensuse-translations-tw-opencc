@@ -1,0 +1,3289 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:35+0200\n"
+"PO-Revision-Date: 2014-06-18 19:52+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the Xldap-server module
+#: src/clients/ldap-server.rb:37
+msgid "Configuration of LDAP server"
+msgstr "LDAP 伺服器配置"
+
+#: src/clients/ldap-server.rb:49
+msgid "Enable/Disable the service"
+msgstr "啟用/禁用服務"
+
+#: src/clients/ldap-server.rb:53
+msgid "Add a new database"
+msgstr "添加新資料庫"
+
+#: src/clients/ldap-server.rb:60
+msgid "Show a list of currently available databases"
+msgstr "顯示當前可用資料庫列表"
+
+#: src/clients/ldap-server.rb:64
+msgid "Show a list of currently configured schemas"
+msgstr "顯示當前已配置方案列表"
+
+#: src/clients/ldap-server.rb:68
+msgid "Add a schema to the list"
+msgstr "向列表中添加方案"
+
+#: src/clients/ldap-server.rb:72
+msgid "Enable the service"
+msgstr "啟用服務"
+
+#: src/clients/ldap-server.rb:73
+msgid "Disable the service"
+msgstr "禁用服務"
+
+#: src/clients/ldap-server.rb:75
+msgid "Database type (\"hdb\" or \"bdb\")"
+msgstr "資料庫類型 (\"hdb\" 或 \"bdb\")"
+
+#: src/clients/ldap-server.rb:79
+msgid "Base DN for the database"
+msgstr "資料庫基本判別名"
+
+#: src/clients/ldap-server.rb:83
+msgid "DN for the administrator login"
+msgstr "管理員登入判別名"
+
+#: src/clients/ldap-server.rb:87
+msgid "Administrator password"
+msgstr "管理員密碼"
+
+#: src/clients/ldap-server.rb:95
+msgid "Directory for the database"
+msgstr "資料庫目錄"
+
+#: src/clients/ldap-server.rb:98
+msgid "File"
+msgstr "檔案"
+
+#: src/clients/ldap-server.rb:99
+msgid "Position"
+msgstr "位置"
+
+#. map<string, any> edb = LdapServer::ReadDatabase();
+#. y2milestone("DBs: %1", edb);
+#.
+#: src/clients/ldap-server.rb:192
+msgid "No base DN provided\n"
+msgstr "未提供基本判別名\n"
+
+#: src/clients/ldap-server.rb:209
+msgid "Database cannot be created when the service is not enabled"
+msgstr "服務未啟用時無法創建資料庫"
+
+#. y2milestone("db-options : %1", db);
+#: src/clients/ldap-server.rb:219
+msgid "Error while adding the database"
+msgstr "添加資料庫時出錯。"
+
+#. error popup
+#. error popup
+#: src/clients/ldap-server_proposal.rb:58
+#: src/clients/ldap-server_proposal.rb:228
+msgid ""
+"The LDAP database has already been created. You can change the settings later "
+"in the installed system."
+msgstr "LDAP 資料庫已創建。稍後您可在安裝好的系統中修改其設定。"
+
+#. y2error( "sysconfig var is '%1'", SCR::Read( .sysconfig.openldap.OPENLDAP_REGISTER_SLP ) );
+#: src/clients/ldap-server_proposal.rb:101
+msgid "[root password]"
+msgstr "[根密碼]"
+
+#: src/clients/ldap-server_proposal.rb:103
+msgid "[manually set]"
+msgstr "[手動設定]"
+
+#: src/clients/ldap-server_proposal.rb:106
+msgid ""
+"Unable to retrieve the system root password.  Set an LDAP server password to "
+"continue."
+msgstr "不能擷取系統根密碼。請設定一個 LDAP 伺服器密碼以繼續。"
+
+#: src/clients/ldap-server_proposal.rb:112
+msgid "Setting up LDAP Master Server:"
+msgstr "正在設定 LDAP 主伺服器："
+
+#: src/clients/ldap-server_proposal.rb:114
+msgid "Setting up standalone LDAP Server:"
+msgstr "正在設定獨立 LDAP 伺服器："
+
+#: src/clients/ldap-server_proposal.rb:121
+msgid "Base DN: "
+msgstr "基本判別名："
+
+#: src/clients/ldap-server_proposal.rb:125
+msgid "Root DN: "
+msgstr "根判別名："
+
+#: src/clients/ldap-server_proposal.rb:128
+msgid "LDAP Password: "
+msgstr "LDAP 密碼："
+
+#: src/clients/ldap-server_proposal.rb:135
+msgid "Setting up LDAP Slave Server"
+msgstr "正在設定 LDAP 從屬伺服器"
+
+#: src/clients/ldap-server_proposal.rb:143
+msgid "Provider: "
+msgstr "提供者："
+
+#. all known interfaces for testing
+#: src/clients/ldap-server_proposal.rb:185
+msgid "Open Port in Firewall"
+msgstr "開啟防火牆中的埠"
+
+#: src/clients/ldap-server_proposal.rb:188
+#: src/clients/ldap-server_proposal.rb:203
+msgid "YES"
+msgstr "是"
+
+#: src/clients/ldap-server_proposal.rb:190
+#: src/clients/ldap-server_proposal.rb:204
+#: src/clients/ldap-server_proposal.rb:212
+msgid "NO"
+msgstr "否"
+
+#: src/clients/ldap-server_proposal.rb:194
+msgid "Firewall is disabled"
+msgstr "防火牆已禁用"
+
+#: src/clients/ldap-server_proposal.rb:200
+msgid "Register at SLP Daemon: "
+msgstr "於 SLP 守護程式中註冊："
+
+#: src/clients/ldap-server_proposal.rb:212 src/modules/LdapServer.pm:1245
+#: src/modules/LdapServer.pm:1259
+msgid "Start LDAP Server: "
+msgstr "啟動 LDAP 伺服器："
+
+#. Rich text title for LdapServer in proposals
+#: src/clients/ldap-server_proposal.rb:253
+msgid "OpenLDAP Server"
+msgstr "OpenLDAP 伺服器"
+
+#. Menu title for LdapServer in proposals
+#: src/clients/ldap-server_proposal.rb:257
+msgid "Open&LDAP Server"
+msgstr "Open&LDAP 伺服器"
+
+#. translators: error popup before aborting the module
+#. translators: error popup before aborting the module
+#: src/clients/ldap-server_proposal.rb:280
+#: src/include/ldap-server/complex.rb:53
+msgid ""
+"The package '%1' is not available.\n"
+"YaST2 cannot continue the configuration\n"
+"without installing the package."
+msgstr ""
+"未安裝軟體包 '%1'。\n"
+"不安裝該軟體包 YaST2 就無法繼續配置。"
+
+#. translators: error popup before aborting the module
+#. translators: error popup before aborting the module
+#: src/clients/ldap-server_proposal.rb:291
+#: src/include/ldap-server/complex.rb:64
+msgid ""
+"YaST2 cannot continue the configuration\n"
+"without installing the required packages."
+msgstr "未安裝必需軟體包，YaST2 無法繼續配置。"
+
+#: src/clients/ldap-server_proposal.rb:309
+msgid ""
+"OpenLDAP Replication Setup failed. Reconfigure after the installation has "
+"finished."
+msgstr "OpenLDAP 複製設定失敗。已完成安裝後的重新配置。"
+
+#: src/clients/ldap-server_proposal.rb:344
+msgid ""
+"OpenLDAP Server: Common server certificate not available.\n"
+"StartTLS is disabled."
+msgstr ""
+"OpenLDAP 伺服器：通用伺服器證書不可用。\n"
+"已禁用 StartTLS。"
+
+#. Command line help text for the Xldap-server module
+#: src/clients/openldap-mirrormode.rb:34
+msgid "Configuration of OpenLDAP MirrorMode replication"
+msgstr "OpenLDAP 映象模式複製配置"
+
+#. Start new config wizward
+#: src/include/ldap-server/complex.rb:104
+msgid "Existing configuration detected."
+msgstr "檢測到已有配置。"
+
+#: src/include/ldap-server/complex.rb:105
+msgid ""
+"You have an existing configuration, but the LDAP server is currently not "
+"running.\n"
+"Do you want to start the server now and re-read its configuration data or do "
+"you \n"
+"want to create a new configuration from scratch?"
+msgstr ""
+"您有一個已有配置，但 LDAP 伺服器目前並未運行。\n"
+"您想要立即啟動伺服器並重新讀取它的配置資料，還是想要從頭創建一個新配置？"
+
+#: src/include/ldap-server/complex.rb:110
+#: src/include/ldap-server/dialogs.rb:201
+msgid "Restart"
+msgstr "重啟"
+
+#: src/include/ldap-server/complex.rb:112
+#: src/include/ldap-server/dialogs.rb:202
+msgid "New Configuration"
+msgstr "新配置"
+
+#. Start new config wizward
+#: src/include/ldap-server/complex.rb:133
+msgid ""
+"Your system is currently configured to use the configuration file\n"
+"/etc/openldap/slapd.conf. YaST only supports the dynamic configuration\n"
+"database of OpenLDAP (back-config). Do you want to migrate your existing\n"
+"configuration to the configuration database?\n"
+msgstr ""
+"您的系統當前配置為使用 /etc/openldap/sladp.conf 配置檔案。\n"
+"YaST 僅支援 OpenLDAP 的動態配置資料庫 (back-config)。\n"
+"您想要遷移已有配置到配置資料庫嗎？\n"
+
+#: src/include/ldap-server/complex.rb:146
+msgid "Migrate existing configuration"
+msgstr "遷移已有配置"
+
+#: src/include/ldap-server/complex.rb:149
+msgid "Create a new configuration from scratch"
+msgstr "從頭創建一個新配置"
+
+#. LdapServer summary dialog caption
+#: src/include/ldap-server/complex.rb:230
+msgid "LDAP Server Configuration Summary"
+msgstr "LDAP 伺服器配置摘要"
+
+#. heading for all dialogs
+#. FIXME: adapt to your needs
+#. Initialization dialog caption
+#. Initialization dialog caption
+#. Initialization dialog caption
+#: src/include/ldap-server/dialogs.rb:31 src/include/ldap-server/wizards.rb:52
+#: src/include/ldap-server/wizards.rb:110
+#: src/include/ldap-server/wizards.rb:179
+#: src/include/ldap-server/wizards.rb:272
+msgid "LDAP Server Configuration"
+msgstr "LDAP 伺服器配置"
+
+#. *********************
+#. * dialog functions **
+#. ********************
+#: src/include/ldap-server/dialogs.rb:47
+msgid "General Settings"
+msgstr "常規設定"
+
+#. list of valid encoding methods for password inputs, used by add database and edit database
+#. dialogs
+#: src/include/ldap-server/dialogs.rb:51 src/include/ldap-server/widgets.rb:41
+msgid "&Start LDAP Server"
+msgstr "啟動 LDAP 伺服器(&S)"
+
+#: src/include/ldap-server/dialogs.rb:76 src/include/ldap-server/widgets.rb:60
+msgid "Register at an &SLP Daemon"
+msgstr "於 &SLP 守護程式中註冊"
+
+#. `HWeight(1, `PushButton( `id( `pb_interface_ldaps), "Interfaces ...")),
+#: src/include/ldap-server/dialogs.rb:87
+#: src/include/ldap-server/widgets.rb:105
+msgid "Firewall Settings"
+msgstr "防火牆設定"
+
+#. create new item
+#: src/include/ldap-server/dialogs.rb:197
+msgid "The LDAP Server is not running."
+msgstr "LDAP 伺服器未運行。"
+
+#: src/include/ldap-server/dialogs.rb:198
+msgid ""
+"Do you want to start it now to re-read its configuration data or do you want "
+"to create a new configuration from scratch?"
+msgstr "您想要立即啟動並重新讀取它的配置資料，還是想要從頭創建一個新配置？"
+
+#. get helps page
+#: src/include/ldap-server/dialogs.rb:226
+msgid "help page for item <b>"
+msgstr "該項的幫助頁面 <b>"
+
+#: src/include/ldap-server/dialogs.rb:227
+msgid "</b> not available"
+msgstr "</b> 不可用"
+
+#: src/include/ldap-server/dialogs.rb:325
+msgid "Server Type"
+msgstr "伺服器類型"
+
+#: src/include/ldap-server/dialogs.rb:336
+msgid "Stand-alone server"
+msgstr "獨立伺服器"
+
+#: src/include/ldap-server/dialogs.rb:344
+msgid "Master server in a replication setup"
+msgstr "複製設定中的主伺服器"
+
+#: src/include/ldap-server/dialogs.rb:352
+msgid "Replica (slave) server.\n"
+msgstr "副本 (從屬) 伺服器。\n"
+
+#: src/include/ldap-server/dialogs.rb:353
+msgid "All data, including configuration, is replicated from a remote server."
+msgstr "包含配置在內的全部資料都是從遠端伺服器複製的。"
+
+#: src/include/ldap-server/dialogs.rb:384
+msgid ""
+"YaST was not able to determine the fully qualified hostname of this\n"
+"computer. \n"
+msgstr "YaST 未能探明此計算機的完全限定主機名。\n"
+
+#: src/include/ldap-server/dialogs.rb:387
+msgid "Setting up a replication master is currently not possible."
+msgstr "目前不能設定複製主伺服器。"
+
+#. tree widget headline
+#: src/include/ldap-server/dialogs.rb:484
+msgid "Configuration:"
+msgstr "配置："
+
+#. ############## input handler ################
+#: src/include/ldap-server/dialogs.rb:608
+msgid "LDAP Authentication failed. Try again?\n"
+msgstr "LDAP 認證失敗。重試嗎？\n"
+
+#: src/include/ldap-server/dialogs.rb:609
+msgid "Error message: "
+msgstr "錯誤訊息： "
+
+#: src/include/ldap-server/dialogs.rb:641
+msgid "Create new account in the first database"
+msgstr "在首個資料庫中創建新帳號"
+
+#: src/include/ldap-server/dialogs.rb:655
+msgid "User Id"
+msgstr "使用者 ID"
+
+#: src/include/ldap-server/dialogs.rb:662
+msgid "Container Object"
+msgstr "容器物件"
+
+#: src/include/ldap-server/dialogs.rb:668
+msgid "Browse"
+msgstr "瀏覽"
+
+#: src/include/ldap-server/dialogs.rb:675
+msgid "Generate a Random Password"
+msgstr "生成一個隨機密碼"
+
+#: src/include/ldap-server/dialogs.rb:687
+msgid "Use the \"cn=config\" Account for Replication"
+msgstr "使用 \"cn=config\" 賬戶用於複製"
+
+#: src/include/ldap-server/dialogs.rb:702
+msgid "Configure Account for Replication"
+msgstr "配置複製賬戶"
+
+#: src/include/ldap-server/dialogs.rb:752 src/modules/LdapDatabase.rb:914
+#: src/modules/LdapDatabase.rb:1173
+msgid "is not a valid LDAP DN"
+msgstr "不是一個有效的 LDAP 判別名"
+
+#: src/include/ldap-server/dialogs.rb:763 src/modules/LdapDatabase.rb:1679
+msgid "Password"
+msgstr "密碼"
+
+#: src/include/ldap-server/dialogs.rb:768
+msgid "Validate Password"
+msgstr "驗證密碼"
+
+#: src/include/ldap-server/dialogs.rb:788
+#: src/include/ldap-server/dialogs.rb:1260
+#: src/include/ldap-server/tree_structure.rb:897
+#: src/include/ldap-server/widgets.rb:398
+msgid "Enter a password"
+msgstr "請輸入密碼"
+
+#: src/include/ldap-server/dialogs.rb:796
+#: src/include/ldap-server/dialogs.rb:1265
+#: src/include/ldap-server/tree_structure.rb:903
+#: src/include/ldap-server/widgets.rb:408
+msgid "The passwords you have entered do not match. Try again."
+msgstr "您輸入的密碼不匹配。請重試。"
+
+#: src/include/ldap-server/dialogs.rb:826
+msgid "Provider Details"
+msgstr "提供者細節"
+
+#: src/include/ldap-server/dialogs.rb:834 src/modules/LdapDatabase.rb:1607
+#: src/modules/LdapDatabase.rb:1702
+msgid "Protocol"
+msgstr "協議"
+
+#: src/include/ldap-server/dialogs.rb:841
+msgid "Provider Hostname"
+msgstr "提供者主機名"
+
+#: src/include/ldap-server/dialogs.rb:848 src/modules/LdapDatabase.rb:1624
+msgid "Use StartTLS"
+msgstr "使用 StartTLS"
+
+#: src/include/ldap-server/dialogs.rb:857
+msgid "Administration Password for the \"cn=config\" Database"
+msgstr "\"cn=config\" 資料庫的管理密碼"
+
+#: src/include/ldap-server/dialogs.rb:866
+#: src/include/ldap-server/widgets.rb:239
+msgid "C&A Certificate File (PEM Format)"
+msgstr "C&A 證書檔案 (PEM 格式)"
+
+#: src/include/ldap-server/dialogs.rb:869
+#: src/include/ldap-server/widgets.rb:242
+msgid "Bro&wse..."
+msgstr "瀏覽(&W)..."
+
+#. file selection headline
+#: src/include/ldap-server/dialogs.rb:926
+#: src/include/ldap-server/tree_structure.rb:557
+msgid "Select CA Certificate File"
+msgstr "請選擇 CA 證書檔案"
+
+#. ****************************
+#. * tls handlers
+#. ***************************
+#: src/include/ldap-server/dialogs.rb:932
+#: src/include/ldap-server/tree_structure.rb:448
+msgid "Select a Valid CA Certificate File"
+msgstr "請選擇一個有效的 CA 證書檔案"
+
+#. Doing these checks during installation will
+#. most probably fail
+#: src/include/ldap-server/dialogs.rb:972
+msgid ""
+"Failed to open connection to the \"cn=config\" database on the provider "
+"server.\n"
+msgstr "未能開啟到提供者伺服器上的 \"cn=config\" 資料庫的連線。\n"
+
+#: src/include/ldap-server/dialogs.rb:975
+msgid ""
+"Verify that the provider server allows remote connections to the \n"
+"\"cn=config\" database and that you entered the correct password.\n"
+msgstr ""
+"請驗證提供者伺服器是否允許到“cn=config”資料庫的遠端連線\n"
+"以及您是否輸入了正確的密碼。\n"
+
+#: src/include/ldap-server/dialogs.rb:982
+msgid "The following error messages were returned:"
+msgstr "返回了以下錯誤訊息："
+
+#: src/include/ldap-server/dialogs.rb:997
+msgid "An error occurred while verifying the TLS/SSL configuration."
+msgstr "驗證 TLS/SSL 配置時出錯。"
+
+#: src/include/ldap-server/dialogs.rb:1009
+msgid "Do you want to import a different CA/Server Certificate?"
+msgstr "您想要匯入一個不同的 CA/伺服器證書嗎？"
+
+#. Check if the syncrepl config of cn=config makes sense
+#: src/include/ldap-server/dialogs.rb:1020
+msgid "The replication configuration on the provider server is missing.\n"
+msgstr "提供者伺服器的複製配置缺失。\n"
+
+#: src/include/ldap-server/dialogs.rb:1023
+msgid "Click Continue to create it now."
+msgstr "點選繼續來立即創建它。"
+
+#. this test needs only be done in a non-MirrorMode setup
+#: src/include/ldap-server/dialogs.rb:1075
+msgid ""
+"The replication configuration on the master server indicates that\n"
+"it is already acting as a replication consumer.\n"
+msgstr "主伺服器上的複製配置表明它已經扮演著複製使用者的角色了。\n"
+
+#: src/include/ldap-server/dialogs.rb:1078
+msgid ""
+"Setting up cascaded replication of the cn=config is currently not supported."
+msgstr "目前不支援設定 cn=config 的層疊複製。"
+
+#. 2. Verify that the binddn/credential combination acutally works
+#: src/include/ldap-server/dialogs.rb:1105
+msgid ""
+"Checking the authentication credentials defined in the replication "
+"configuration on the provider server failed.\n"
+msgstr "檢查提供者伺服器上的複製配置中定義的認證機要資料失敗。\n"
+
+#: src/include/ldap-server/dialogs.rb:1108 src/modules/LdapDatabase.rb:1971
+#: src/modules/LdapDatabase.rb:1998
+msgid "The test returned the following error messages:"
+msgstr "測試返回了以下錯誤訊息："
+
+#: src/include/ldap-server/dialogs.rb:1119
+msgid "Click \"Continue\" to correct this now."
+msgstr "請點選 \"繼續\" 來立即修改它。"
+
+#. ReplicatonSummary dialog
+#. @return dialog result
+#: src/include/ldap-server/dialogs.rb:1214
+msgid "Replication Master setup"
+msgstr "複製主伺服器設定"
+
+#: src/include/ldap-server/dialogs.rb:1217
+msgid ""
+"To act as a master server for replication, the configuration database needs\n"
+"to be remotely accessible. Set a password for the configuration database.\n"
+msgstr ""
+"要作為複製主伺服器，配置資料庫需要能夠被遠端訪問。\n"
+"請為配置資料庫設定一個密碼。\n"
+
+#: src/include/ldap-server/dialogs.rb:1220
+msgid ""
+"\n"
+"(Remote access to the Configuration database will be restricted to encrypted\n"
+"LDAP Connections.)\n"
+msgstr ""
+"\n"
+"(到配置資料庫的遠端訪問將被限制為加密 LDAP 連線。)\n"
+
+#: src/include/ldap-server/dialogs.rb:1227
+msgid "Enter new &Password"
+msgstr "輸入新密碼(&P)"
+
+#: src/include/ldap-server/dialogs.rb:1232
+#: src/include/ldap-server/tree_structure.rb:951
+#: src/include/ldap-server/tree_structure.rb:993
+#: src/include/ldap-server/widgets.rb:383 src/modules/LdapDatabase.rb:219
+msgid "&Validate Password"
+msgstr "驗證密碼(&V)"
+
+#: src/include/ldap-server/dialogs.rb:1238
+msgid "Prepare for MirrorMode replication (generates the serverId attribute)"
+msgstr "準備映象模式複製 (生成 serverID 屬性)"
+
+#. The "Startup Configuration node for the main tree widget
+#: src/include/ldap-server/helps.rb:17
+msgid "<h3>Startup Configuration</h3>"
+msgstr "<h3>啟動配置</h3>"
+
+#: src/include/ldap-server/helps.rb:20
+msgid "<h4>Start LDAP Server</h4>"
+msgstr "<h4>啟動 LDAP 伺服器</h4>"
+
+#: src/include/ldap-server/helps.rb:21
+msgid ""
+"<p>Select <b>Yes</b> if the LDAP server should be started automatically as \n"
+"part of the boot process. Select <b>No</b> if the LDAP server should not be "
+"started. Note:\n"
+"After selecting <b>No</b>, you cannot change the OpenLDAP configuration.</p>\n"
+msgstr ""
+"<p>若 LDAP 伺服器應作為引導過程的一部分被自動啟動，請選擇<b>是</b>。\n"
+"若 LDAP 伺服器不應被啟動，請選擇<b>否</b>。\n"
+"注意：選擇<b>否</b>後，您將無法修改 OpenLDAP 配置。</p>\n"
+
+#: src/include/ldap-server/helps.rb:26
+msgid "<h4>Protocol Listeners</h4>"
+msgstr "<h4>協議監聽器</h4>"
+
+#: src/include/ldap-server/helps.rb:27
+msgid "<p>Enable and disable the various protocol listeners of OpenLDAP.</p>"
+msgstr "<p>啟動與禁用 OpenLDAP 的多種協議監聽器。</p>"
+
+#: src/include/ldap-server/helps.rb:30
+msgid ""
+"<p><b>LDAP</b> is the standard LDAP interface on Port 389. TLS/SSL secured "
+"communication\n"
+"is possible with the StartTLS operation when you have a server certificate "
+"configured.</p>"
+msgstr ""
+"<p><b>LDAP</b> 是埠 389 之上的標準 LDAP 介面。當您配置了伺服器證書時，也可以\n"
+"通過 StartTLS 作業使用 TLS/SSL 安全通訊。</p>"
+
+#: src/include/ldap-server/helps.rb:33
+msgid ""
+"<p><b>LDAPS</b> enables the \"LDAP over SSL (ldaps)\" interface for SSL "
+"protected\n"
+"connections on port 636. This only works if you have a server certificate "
+"configured (see \"Global Settings\"/\"TLS Settings\").\n"
+msgstr ""
+"<p><b>LDAPS</b> 在埠 636 上為 SSL 安全連線啟用了 \"LDAP over SSL (ldaps)\" 介面。\n"
+"此選項僅在您配置了伺服器證書 (見 \"全局設定\"/\"TLS 設定\") 時才有效。\n"
+
+#: src/include/ldap-server/helps.rb:36
+msgid ""
+"<p><b>LDAPI</b> enables the \"LDAP over IPC\" interface for accessing the\n"
+"LDAP server via a Unix Domain Socket. Do not disable the LDAPI interface \n"
+"as YaST uses it to communicate with the server.</p>\n"
+msgstr ""
+"<p><b>LDAPI</b> 為通過 Unix 域套接字訪問 LDAP 伺服器開啟了 \"LDAP over IPC\"。\n"
+"請不要禁用 LDAPI 介面因為 YaST 也使用它來與伺服器通訊。</p>\n"
+
+#: src/include/ldap-server/helps.rb:41
+msgid "<h4>Firewall Settings</h4>"
+msgstr "<h4>防火牆設定</h4>"
+
+#: src/include/ldap-server/helps.rb:42
+msgid ""
+"<p>Select whether SuSEFirewall should allow access on the LDAP-related\n"
+"network ports or not.</p>\n"
+msgstr "<p>選擇 SuSE 防火牆是否應允許訪問 LDAP 相關網路埠。</p>\n"
+
+#. First part of the Add Database Widget
+#: src/include/ldap-server/helps.rb:46
+msgid "<h3>Basic Database Settings</h3>"
+msgstr "<h3>基本資料庫設定</h3>"
+
+#: src/include/ldap-server/helps.rb:49
+msgid ""
+"<p>Choose the <b>Database</b> from <b>hdb</b> and <b>bdb</b>. <b>Hdb</b> is "
+"a\n"
+"variant of the <b>bdb</b> backend that uses a hierarchical database layout "
+"and\n"
+"supports subtree renames. Otherwise it is identical to <b>bdb</b>. A\n"
+"<b>hdb</b>-Database needs a larger <b>idlcachesize</b> than a\n"
+"<b>bdb</b>-Database for a good search performance.</p>\n"
+msgstr ""
+"<p>從 <b>hdb</b> 與 <b>bdb</b> 中選擇資料庫。\n"
+"<b>Hdb</b> 是 <b>bdb</b> 後端的一個變種，使用分層資料庫佈局並支援子樹重新命名。除此之外它與 <b>bdb</b>無甚差別。\n"
+"<b>hdb</b> 資料庫需要比 <b>bdb</b> 資料庫更大的 <b>idlcachesize</b> 以提升搜索效能。</p>\n"
+
+#: src/include/ldap-server/helps.rb:56
+msgid ""
+"<p>The <b>Base DN</b> option specifies the name of the root entry \n"
+"of the database being created.</p>"
+msgstr "<p><b>基本判別名</b> 選項指定了正被創建的資料庫的根條目名稱。</p>"
+
+#: src/include/ldap-server/helps.rb:59
+msgid ""
+"<p>The <b>Administrator DN</b> along with a <b>LDAP Administrator Password</b>"
+" \n"
+"specifies a superuser identity for the database, surpassing all ACLs and "
+"other \n"
+"administrative limit restrictions. Checking <b>Append Base DN</b> appends the "
+"\n"
+"<b>Base DN</b> entered above, for example, a base DN of <tt>"
+"dc=example,dc=com</tt>\n"
+"and Administrator DN of <tt>c=Admin</tt> would combine to an effective "
+"Administrator DN\n"
+"of <tt>c=Admin,dc=example,dc=com</tt>.</p> "
+msgstr ""
+"<p><b>管理員判別名</b>連同 <b>LDAP 管理員密碼</b>一起為資料庫指定了一個超級使用者身份，覆蓋了全部訪問控制列表與其他管理限制的限制。\n"
+"勾選<b>追加基本判別名</b>將追加前面輸入的<b>基本判別名</b>，例如，基本判別名 <tt>dc=example,dc=com</tt> "
+"與管理員判別名 <tt>c=Admin</tt>將混合成一個有效的管理員判別名 <tt>c=Admin,dc=example,dc=com</tt>。<"
+"/p>"
+
+#: src/include/ldap-server/helps.rb:67
+msgid ""
+"<p>If this wizard was started during installation, the \n"
+"<b>LDAP Administrator Password</b> is initially set to the system's root "
+"password\n"
+"entered earlier in the installation process.</p> "
+msgstr "<p>若在安裝時啟動此嚮導，<b>LDAP 管理員密碼</b>將被初始設為安裝過程之前輸入的系統根密碼。</p>"
+
+#: src/include/ldap-server/helps.rb:72
+msgid ""
+"<p>To use this database as default for the OpenLDAP client tools \n"
+"(e.g. ldapsearch), check <b>Use this database as the default for OpenLDAP\n"
+"clients</b>. This will result in the hostname \"localhost\" and the above \n"
+"entered <b>Base DN</b> being written to the OpenLDAP client configuration \n"
+"file <tt>/etc/openldap/ldap.conf</tt>. This checkbox is selected by default\n"
+"when creating the first database on a server.</p>\n"
+msgstr ""
+"<p>要使用此資料庫作為 OpenLDAP 客戶端工具 (例如 ldapsearch) 的默認資料庫，請勾選<b>使用此資料庫作為 OpenLDAP "
+"客戶端默認資料庫</b>。\n"
+"這將把主機名 \"localhost\" 與上面輸入的<b>基本判別名</b>寫入到 OpenLDAP 客戶端配置檔案  <tt>"
+"/etc/openldap/ldap.conf</tt> 中。\n"
+"在伺服器上創建首個資料庫時該核取方塊默認是選中的。</p>\n"
+
+#: src/include/ldap-server/helps.rb:80
+msgid ""
+"YaST currently does not support this database. You can not \n"
+"change any configuration settings here.\n"
+msgstr "YaST 目前不支援此資料庫。您無法在此修改任何配置設定。\n"
+
+#: src/include/ldap-server/helps.rb:83
+msgid ""
+"<p>To enable or disable plaintext authentication (LDAP Simple Bind)\n"
+"for the configuration database, click the associated checkbox. Plaintext \n"
+"authentication to the configuration database will only be allowed when \n"
+"using sufficiently protected (e.g. SSL/TLS encrypted) connections.</p>\n"
+msgstr ""
+"<p>要為配置資料庫啟用或禁用明文認證 (LDAP 簡單繫結)，請點選關聯的核取方塊。\n"
+"明文認證配置資料庫僅在使用了足夠安全的 (如 SSL/TLS 加密連線) 連線時才會被允許。</p>\n"
+
+#: src/include/ldap-server/helps.rb:89
+msgid ""
+"<p>To change the administration password for the configuration database, \n"
+"click <b>Change Password</b>. \n"
+"A Popup will prompt you to enter the new password and select the \n"
+"<b>Password Encryption</b>. \n"
+"The password fields are initially empty even if a password has already been \n"
+"set in the configuration.</p>\n"
+msgstr ""
+"<p>要修改配置資料庫的管理密碼，請點選<b>修改密碼</b>。\n"
+"一個彈窗將提示您輸入新密碼並選擇<b>密碼加密</b>。\n"
+"密碼框初始為空，即使配置中已設定了密碼。</p>\n"
+
+#: src/include/ldap-server/helps.rb:97
+msgid "<h3>Edit BDB Database</h3>"
+msgstr "<h3>編輯 BDB 資料庫</h3>"
+
+#: src/include/ldap-server/helps.rb:98
+msgid "<p>Change basic settings of BDB and HDB Databases.</p>"
+msgstr "<p>修改 BDB 與 HDB 資料庫的基本設定。</p>"
+
+#: src/include/ldap-server/helps.rb:99
+msgid ""
+"<p>Enter the complete DN or only the first part and append the base DN "
+"automatically\n"
+"with <b>Append Base DN</b>.</p>"
+msgstr "<p>輸入完整判別名或僅輸入第一部分然後使用<b>追加基本判別名</b>自動追加基本判別名。</p>"
+
+#: src/include/ldap-server/helps.rb:102
+msgid ""
+"<p>To change the password for the administrator account, click <b>Change "
+"Password</b>.\n"
+"A Popup will prompt you to enter the new password and select the <b>Password "
+"Encryption</b>.\n"
+"The password fields are initially empty even if a password has already been "
+"set in the configuration.</p>\n"
+msgstr ""
+"<p>要修改管理員賬戶的密碼，請點選<b>修改密碼</b>。\n"
+"一個彈窗會提示您輸入新密碼並選擇<b>密碼加密</b>。\n"
+"密碼框初始為空，即使配置中已設定了密碼。 </p>\n"
+
+#: src/include/ldap-server/helps.rb:107
+msgid ""
+"<p>With the <b>Entry Cache</b> and <b>Index Cache (IDL cache)</b> you can "
+"adjust\n"
+"the sizes of OpenLDAP's internal caches. The <b>Entry Cache</b> defines the "
+"number of entries\n"
+"that are kept in OpenLDAP's in-memory entry cache. If it is possible (enough "
+"RAM) this number\n"
+"should be large enough to keep the whole database in memory. The <b>Index "
+"Cache (IDL cache)</b> \n"
+"is used to speed up searches on indexed attributes. In general especially "
+"HDB-Databases require a\n"
+"large IDL cache for good search performance (three times the size of the "
+"entry cache as a rule of\n"
+"thumbs).</p>"
+msgstr ""
+"<p>您可以通過<b>條目快取</b>與<b>索引快取 (IDL 快取)</b>調整 OpenLDAP 內部快取的大小。\n"
+"<b>條目快取</b>定義了 OpenLADP 在內存中儲存的條目快取的數目。若可行的話 (內存夠用)，此數目應大到足夠在內存中儲存整個資料庫。\n"
+"<b>索引快取 (IDL 快取)</b>用於加速對已索引屬性的搜索。通常，尤其是 HDB 資料庫需要一個很大的 IDL "
+"快取來提升搜索效能。(慣例是三倍於條目快取的大小)。</p>"
+
+#: src/include/ldap-server/helps.rb:116
+msgid "<h3>Password Policy Settings</h3>"
+msgstr "<h3>密碼策略設定</h3>"
+
+#: src/include/ldap-server/helps.rb:117
+msgid ""
+"<p>To make use of password policies for this database, enable \n"
+"<b>Enable Password Policies</b>.</p>"
+msgstr "<p>要為此資料庫啟用密碼策略，請啟用<b>啟用密碼策略</b>。</p>"
+
+#: src/include/ldap-server/helps.rb:120
+msgid ""
+"<p>Check <b>Hash Clear Text Passwords</b> to specify that the OpenLDAP "
+"server\n"
+"should encrypt clear text passwords present in add and modify requests before "
+"storing them\n"
+"in the database. Note that this violates the  X.500/LDAP information model, "
+"but may be\n"
+"needed to compensate for LDAP clients that do not use the password modify "
+"extended operation \n"
+"to manage passwords.</p> "
+msgstr ""
+"<p>勾選<b>加密明文密碼</b>將指定 OpenLDAP 伺服器應先加密出現在添加與修改請求中的明文密碼然後再存儲進資料庫中。\n"
+"注意這樣做違背了 X.500/LDAP 資訊模型，但可能需要這麼做以補償未使用密碼修改擴展作業來管理密碼的 LDAP 客戶端帶來的安全風險。"
+
+#: src/include/ldap-server/helps.rb:127
+msgid ""
+"<p>If <b>Disclose \"Account Locked\" Status</b> is enabled, users trying to\n"
+"authenticate to a locked account are notified that their account is\n"
+"locked. This notification might provide useful information to an\n"
+"attacker. Sites sensitive to security issues should not enable this\n"
+"option.</p> \n"
+msgstr ""
+"<p>若啟用了<b>公開\"帳戶鎖定\"狀態</b>，試圖認證鎖定帳號的使用者會被告知其帳號已鎖。\n"
+"此通知可能會為攻擊者提供有價值的資訊。對安全問題敏感的站點不應該啟用此選項。</p>\n"
+
+#: src/include/ldap-server/helps.rb:134
+msgid ""
+"<p>Enter the name of the default policy object in <b>Default Policy Object "
+"DN</b>.</p>"
+msgstr "<p>請在<b>默認策略物件判別名</b>中輸入默認策略物件的名稱。</p>"
+
+#: src/include/ldap-server/helps.rb:137
+msgid ""
+"<p>Create or change the default policy by clicking <b>Edit Policy</b>. You "
+"may\n"
+"be asked to enter the LDAP administrator password afterwards to allow the\n"
+"Policy Object being read from the server.</p>\n"
+msgstr ""
+"<p>點選 <b>編輯策略</b>來創建或修改默認策略。\n"
+"之後可能會請求您輸入 LDAP 管理員密碼以允許從伺服器讀取策略物件。</p>\n"
+
+#: src/include/ldap-server/helps.rb:142
+msgid "<h3>Index Configuration</h3>"
+msgstr "<h3>索引配置</h3>"
+
+#: src/include/ldap-server/helps.rb:143
+msgid "<p>Change the indexing options of a hdb of bdb-Database.</p>"
+msgstr "<p>修改 hdb 或 bdb 資料庫的索引選項。</p>"
+
+#: src/include/ldap-server/helps.rb:144
+msgid ""
+"<p>The table displays a list of attributes which currently have an index "
+"defined.</p>"
+msgstr "<p>該表格顯示了當前已定義了索引的屬性列表。</p>"
+
+#: src/include/ldap-server/helps.rb:147
+msgid ""
+"<p>Indexes are used by OpenLDAP to improve search performance on specific\n"
+"types of searches. Indexes should be configured corresponding to the most\n"
+"common searches on a database. YaST allows you to setup three different "
+"types\n"
+"of indexes.</p>\n"
+msgstr ""
+"<p>索引被 OpenLDAP 用於改進指定類型的搜索的效能。索引應根據資料庫中最常用的搜索來配置。\n"
+"YaST 允許您設定三種不同類型的索引。</p>\n"
+
+#: src/include/ldap-server/helps.rb:153
+msgid ""
+"<p><b>Presence</b>: This index is used for searches with presence filters\n"
+"(i.e. <tt>(attributeType=*)</tt>). Presence indexes should only be "
+"configured\n"
+"for attributes that occur rarely in the database.</p>\n"
+msgstr ""
+"<p><b>模糊匹配</b>：此類索引用於帶模糊匹配過濾器的搜索\n"
+"(例如 <tt>(attributeType=*)</tt>)。\n"
+"模糊索引應該僅配置用於資料庫中極少出現的屬性。</p>\n"
+
+#: src/include/ldap-server/helps.rb:158
+msgid ""
+"<p><b>Equality</b>: This index is used for searches with equality filters \n"
+"(i.e.(<tt>(attributeType=&lt;exact values&gt;)</tt>). An <b>Equality</b> "
+"index\n"
+"should always be configured with the <tt>objectclass</tt> attribute.</p>\n"
+msgstr ""
+"<p><b>精確匹配</b>：此類索引用於帶有精確匹配過濾器的搜索\n"
+"(例如 <tt>(attributeType=&lt;精確值&gt;)</tt>。<b>精確匹配</b>\n"
+"索引應總是配置有 <tt>objectclass</tt> 屬性。</p>\n"
+
+#: src/include/ldap-server/helps.rb:163
+msgid ""
+"<p><b>Substring</b>: This index is used for searches with substring filters\n"
+"(i.e. <tt>(attributeType=&lt;substring&gt;*)</tt>)</p>\n"
+msgstr ""
+"<p><b>子字元串</b>：此類索引用於帶字元串過濾器的搜索\n"
+"(例如 <tt>(attributeType=&lt;substring&gt;*)</tt>)</p>\n"
+
+#: src/include/ldap-server/helps.rb:166
+msgid ""
+"<p>Use <b>Add</b> to define indexing options for a new attribute,\n"
+"<b>Delete</b> to delete an existing index and <b>Edit</b> to change the\n"
+"indexing options of an already indexed attribute.</p>\n"
+msgstr ""
+"<p>用<b>添加</b>定義新屬性的索引選項，<b>刪除</b>刪除一個已有索引，\n"
+"<b>編輯</b>來修改一個已索引屬性的索引選項。</p>\n"
+
+#: src/include/ldap-server/helps.rb:171
+msgid ""
+"<p>Note: Depending on the database size it can take a while until newly "
+"added\n"
+"indexes will get active on a database. After the configuration has been\n"
+"written to the server, a background task will start to generate the indexing\n"
+"information for the database.</p>\n"
+msgstr ""
+"<p>注意：取決於資料庫的大小，新添加的索引可能需要一會兒才能在資料庫上生效。\n"
+"在配置被寫入到伺服器後，會啟動一個後臺任務來生成資料庫的索引資訊。</p>\n"
+
+#: src/include/ldap-server/helps.rb:177
+msgid "<h3>Access Control Configuration</h3>"
+msgstr "<h3>訪問控制配置</h3>"
+
+#: src/include/ldap-server/helps.rb:180
+msgid ""
+"<p>This table gives you an overview of all Access Control rules that are\n"
+"currently configured for the selected database</p>\n"
+msgstr "<p>此表格給出了所選資料庫上當前配置的全部訪問控制規則的概覽</p>\n"
+
+#: src/include/ldap-server/helps.rb:183
+msgid ""
+"<p>For each rule, you can see which target objects it matches. To see a more\n"
+"detailed view of a rule or to change one, select the rule in the table and\n"
+"click <b>Edit</b>.</p>\n"
+msgstr ""
+"<p>您可以看到每條規則的匹配目標物件。要檢視某條規則的更加詳細的檢視或修改某條規則，請在表格中訊中規則並點選<b>編輯</b>。</p>\n"
+
+#: src/include/ldap-server/helps.rb:188
+msgid ""
+"<p>Use <b>Add</b> to create new access control rules and <b>Delete</b> to\n"
+"delete an access control rule.</p>\n"
+msgstr "<p>使用<b>添加</b>創建新訪問控制規則，<b>刪除</b>刪除訪問控制規則。</p>\n"
+
+#: src/include/ldap-server/helps.rb:191
+msgid ""
+"<p>OpenLDAP's access control evaluation stops at the first rule whose target\n"
+"definition (DN, filter and attributes) matches the entry being\n"
+"accessed. Therefore you should order the rules according to your needs, "
+"using\n"
+"the <b>Up</b> and <b>Down</b> buttons.</p>\n"
+msgstr ""
+"<p>OpenLDAP 的訪問控制評估在碰到第一條物件定義 (判別名、過濾器與屬性) 匹配正在被訪問的項的規則時停止。\n"
+"因此您應根據您的需要使用<b>上</b>與<b>下</b>按鈕排列規則。</p>\n"
+
+#: src/include/ldap-server/helps.rb:197
+msgid "<h3>Replication Provider Settings</h3>"
+msgstr "<h3>複製提供者設定</h3>"
+
+#: src/include/ldap-server/helps.rb:200
+msgid ""
+"<p>Select the \"<b>Enable ldapsync provider for this database</b>\" checkbox, "
+"if you want to \n"
+"be able to replicate the currently selected database to another server.</p>"
+msgstr ""
+"<p>若您想要能夠複製當前所選資料庫到另一個伺服器，請選擇 \"<b>啟用此資料庫作為 ldapsync 提供者</b>\" 核取方塊。</p>"
+
+#: src/include/ldap-server/helps.rb:203
+msgid "<h4>Checkpoint Settings</h4>"
+msgstr "<h4>檢查點設定</h4>"
+
+#: src/include/ldap-server/helps.rb:204
+msgid ""
+"<p>Here you can specify how often the synchronization state indicator "
+"(stored\n"
+"in the \"<i>contextCSN</i>\"-Attribute) is written to the database. It is "
+"synced\n"
+"to the database after the number of write \"<i>Operations</i>\" you specify "
+"or\n"
+"after more than the specified \"<i>Minutes</i>\" have passed since the "
+"indicator\n"
+"has last been written. By default (both values are '0') the state indicator "
+"is\n"
+"only written after a clean shutdown. Writing it more often can result in\n"
+"a faster startup time after an unclean shutdown but might result in a small\n"
+"performance hit in environments with many LDAP write operations.</p>\n"
+msgstr ""
+"<p>此處您可以指定同步狀態指示器 (儲存在 \"<i>contextCSN</i>\" 屬性) 寫入資料庫的週期。\n"
+"它可以在超過您指定的寫\"<i>操作</i>\"數後，或者在自指示器上一次寫入起超過了指定的\"<i>分鐘</i>\"後\n"
+"同步到資料庫。狀態指示器默認 (上面兩種值都為 '0'）僅在完全關機後寫入。\n"
+"太頻繁的寫入將導致在非完全關機後啟動得更快但可能導致由於太多 LDAP 寫操作造成的輕微效能下降。</p>\n"
+
+#: src/include/ldap-server/helps.rb:214
+msgid "<h4>Session log</h4>"
+msgstr "<h4>會話日誌</h4>"
+
+#: src/include/ldap-server/helps.rb:215
+msgid ""
+"<p>Configures an in-memory session log for recording information about write "
+"operations\n"
+"made on the database. Specify how many write operation should be recorded in "
+"the session log. \n"
+"Configuring a session log is only useful for \"<i>refreshOnly</i>\" "
+"replication. In \n"
+"such a case it can speed up replication and reduce the load on the master "
+"server.</p>"
+msgstr ""
+"<p>配置一個內存會話日誌以記錄資料庫寫操作的資訊。在會話日誌中指定應記錄多少寫操作。\n"
+"僅有在“<i>僅能重新整理</i>”複製模式下配置會話日誌才有用。在這種情況下它可以加速複製與\n"
+"降低主伺服器的負載。</p>"
+
+#: src/include/ldap-server/helps.rb:221
+msgid "<h3>Replication Consumer Settings</h3>"
+msgstr "<h3>複製使用者設定</h3>"
+
+#: src/include/ldap-server/helps.rb:224
+msgid ""
+"<p>Select \"<b>This database is a Replication Consumer</b>\" if you want the\n"
+"database to be a replica of a database on another server.</p>\n"
+msgstr ""
+"<p>若您想要資料庫作為另一個伺服器上的資料庫的副本，\n"
+"請選擇\"<b>此資料庫是一個複製使用者</b>\"。</p>\n"
+
+#: src/include/ldap-server/helps.rb:227
+msgid "<h4>Provider</h4>"
+msgstr "<h4>提供者</h4>"
+
+#: src/include/ldap-server/helps.rb:228
+msgid ""
+"Enter the connection details for the replication connection to the master\n"
+"server here. Select the protocol to use (<b>ldap</b> or <b>ldaps</b>) and\n"
+"enter the fully qualified hostname of the master server. It is important to\n"
+"use the fully qualified hostname to verify the master server's TLS/SSL\n"
+"certificate. Adjust the port number if the master server is using "
+"non-standard\n"
+"ldap ports.\n"
+msgstr ""
+"在此輸入到主伺服器的複製連線的連線細節。選擇要使用的協議 (<b>ldap</b> 或 <b>ldaps</b>)\n"
+"並輸入主伺服器的完全限定主機名。使用完全限定主機名來驗證主機伺服器的 TLS/SSL 證書是\n"
+"非常重要的。若主伺服器使用了非標準的 ldap 埠請調整埠號。\n"
+
+#: src/include/ldap-server/helps.rb:236
+msgid "<h4>Replication Type</h4>"
+msgstr "<h4>複製類型</h4>"
+
+#: src/include/ldap-server/helps.rb:237
+msgid "<p>OpenLDAP supports different modes of replication:</p>"
+msgstr "<p>OpenLDAP 支援多種模式的複製：</p>"
+
+#: src/include/ldap-server/helps.rb:238
+msgid ""
+"<p><b>refreshOnly</b>: The slave server will periodically open a new\n"
+"connection, trigger a synchronization and close the connection again. The\n"
+"interval how often this synchronization happens can be configured via the\n"
+"<b>Replication Interval</b> setting.</p>\n"
+msgstr ""
+"<p><b>僅能重新整理</b>：從屬伺服器將定期開啟一個新連線，觸發一次同步然後關閉連線。\n"
+"可以通過<b>複製週期</b>設定配置同步週期。</p>\n"
+
+#: src/include/ldap-server/helps.rb:244
+msgid ""
+"<p><b>refreshAndPersist</b>: The slave server will open a persistent\n"
+"connection to the master server for synchronization. Updated entries on the\n"
+"master server are immediately sent to the slave via this connection.</p>\n"
+msgstr ""
+"<p><b>重新整理並維持</b>：從屬伺服器將開啟一個到主伺服器的用於同步的永久連線。\n"
+"主伺服器上的更新條目將通過此連線立即發送到從屬伺服器。</p>\n"
+
+#: src/include/ldap-server/helps.rb:249
+msgid "<h4>Authentication</h4>"
+msgstr "<h4>認證</h4>"
+
+#: src/include/ldap-server/helps.rb:250
+msgid ""
+"<p>Specify a DN and password which the slave server should use to "
+"authenticate against the master.\n"
+"The specified DN needs to have read access to all entries in the replicated "
+"database on the master.</p>\n"
+msgstr ""
+"<p>指定從屬伺服器應用於同主伺服器認證的判別名與密碼。\n"
+"指定的判別名要有主伺服器上被複制資料庫全部條目的讀取許可權。</p>\n"
+
+#: src/include/ldap-server/helps.rb:253
+msgid "<h4>Update Referral</h4>"
+msgstr "<h4>更新轉發</h4>"
+
+#: src/include/ldap-server/helps.rb:254
+msgid ""
+"<p>As the slave database is readonly, the slave server will answer write\n"
+"operations with an LDAP referral. \n"
+"By default, this referral points the client to the master server. You can "
+"configure a different update referral here.\n"
+"This is e.g. useful in a cascaded replication setup where the provider for "
+"the\n"
+"slave server is as slave server too. </p>\n"
+msgstr ""
+"<p>由於從屬資料庫是隻讀的，從屬伺服器將以 LDAP 轉發迴應寫入操作。\n"
+"默認該轉發指引客戶端到主伺服器。您可以在此配置一個不同的更新轉發。\n"
+"這在，例如層疊複製設定中會有用，因為層疊複製設定中從屬伺服器的提供者也是一個從屬伺服器。</p>\n"
+
+#. Read dialog help
+#: src/include/ldap-server/helps.rb:262
+msgid "<p><b><big>Initializing LDAP Server Configuration</big></b></p>"
+msgstr "<p><b><big>正在啟始化 LDAP 伺服器配置</big></b></p>"
+
+#: src/include/ldap-server/helps.rb:265
+msgid ""
+"<p><b><big>Aborting Initialization:</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>"
+msgstr ""
+"<p><b><big>中止啟始化：</big></b><br>\n"
+"現在按<b>中止</b>可安全地中止配置工具。</p>"
+
+#. Write dialog help
+#: src/include/ldap-server/helps.rb:269
+msgid "<p><b><big>Saving LDAP Server Configuration</big></b></p> \n"
+msgstr "<p><b><big>正在儲存 LDAP 伺服器配置</big></b></p>\n"
+
+#: src/include/ldap-server/helps.rb:272
+msgid ""
+"<p><b><big>Aborting Saving:</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>. An additional dialog\n"
+"informs you whether it is safe to do so.</p>\n"
+msgstr ""
+"<p><b><big>中止儲存：</big></b><br>\n"
+"按<b>中止</b>中止儲存過程。\n"
+"另一個對話方塊將告之您這樣做是否安全。</p>\n"
+
+#. Summary dialog help 1/3
+#: src/include/ldap-server/helps.rb:278
+msgid "<h3>LDAP Server Configuration Summary</h3>"
+msgstr "<h3>LDAP 伺服器配置摘要</h3>"
+
+#: src/include/ldap-server/helps.rb:281
+msgid ""
+"<p>This dialog provides a short summary about the configuration you have\n"
+"created. Click <b>Finish</b> to write the configuration and leave the LDAP\n"
+"Server module.</p>\n"
+msgstr ""
+"<p>該對話方塊提供了關於您創建的配置的簡短摘要。點選<b>完成</b>來寫入配置\n"
+"並離開 LDAP 伺服器模組。</p>\n"
+
+#. Configuration Wizard Step 1
+#: src/include/ldap-server/helps.rb:287
+msgid ""
+"<p>With <b>Start LDAP Server Yes or No</b>, start or stop the LDAP server.</p>"
+" "
+msgstr "<p>使用<b>啟動 LDAP 伺服器 \"是\" 或 \"否\"</b>啟動或停止 LDAP 伺服器。</p> "
+
+#: src/include/ldap-server/helps.rb:290
+msgid ""
+"<p>If you select <b>Yes</b>, click <b>Next</b> to start the configuration "
+"wizard.</p>"
+msgstr "<p>若您選擇了 <b>是</b>，請點選<b>下一步</b>啟動配置嚮導。</p>"
+
+#: src/include/ldap-server/helps.rb:293
+msgid ""
+"<p>If the Firewall is enabled, open the required network ports\n"
+"for OpenLDAP by checking the corresponding checkbox.</p>\n"
+msgstr "<p>若防火牆已啟用，請通過選中相關核取方塊為 OpenLDAP 開啟需要的網路埠。</p>\n"
+
+#. Configuration Wizard Step 2
+#: src/include/ldap-server/helps.rb:297
+msgid ""
+"<p>Select the type of LDAP server you want to setup. The following scenarios "
+"are available:</p>"
+msgstr "<p>選擇您想要設定的 LDAP 伺服器類型。有以下場景可用：</p>"
+
+#: src/include/ldap-server/helps.rb:300
+msgid ""
+"<p><b>Stand-alone server</b>: Setup a single stand-alone OpenLDAP server "
+"with\n"
+"no preparations for replication.</p>\n"
+msgstr "<p><b>獨立伺服器</b>：設定一個無需準備複製的單一獨立 OpenLDAP 伺服器。</p>\n"
+
+#: src/include/ldap-server/helps.rb:303
+msgid ""
+"<p><b>Master server in a replication setup</b>: Create an OpenLDAP setup\n"
+"prepared to act as a master server (provider) in a replication setup.</p>\n"
+msgstr ""
+"<p><b>複製設定中的主伺服器</b>：創建一個在複製設定中\n"
+"準備作為主伺服器 (提供者) 的 OpenLDAP 設定。</p>\n"
+
+#: src/include/ldap-server/helps.rb:306
+msgid ""
+"<p><b>Replica slave server</b>: Setup an OpenLDAP slave server that "
+"replicates all its data,\n"
+"including configuration, from a master server.</p>"
+msgstr "<p><b>副本 (從屬 )伺服器</b>：設定一個從主伺服器複製包括配置在內的全部資料的 OpenLDAP 從屬伺服器。</p>"
+
+#. Configuration Wizard Step 3
+#: src/include/ldap-server/helps.rb:310
+msgid "<h3>TLS Settings</h3>"
+msgstr "<h3>TLS 設定</h3>"
+
+#: src/include/ldap-server/helps.rb:313
+msgid "<h4>Basic Settings</h4>"
+msgstr "<h4>基本設定</h4>"
+
+#: src/include/ldap-server/helps.rb:314
+msgid ""
+"<p>To enable encryption via TLS/SSL, check the <b>Enabled TLS</b>\n"
+"checkbox. Additionally you need to configure a certificate for the Server \n"
+"to use.</p>\n"
+msgstr "<p>要啟用通過 TLS/SSL 加密，請勾選<b>啟用 TLS</b>核取方塊。另外您需要為伺服器配置使用一個證書。</p>\n"
+
+#: src/include/ldap-server/helps.rb:319
+msgid ""
+"<p>Check <b>Enable LDAP over SSL (ldaps) interface</b>, to enable the server\n"
+"to accept LDAPS connections on port 636. If not checked, OpenLDAP will only\n"
+"support TLS encrypted connections through the StartTLS extended operation.</p>"
+"\n"
+msgstr ""
+"<p>勾選<b>啟用 LDAP over SSL (ldaps) 介面</b>，來使伺服器接受埠 636 上的 LDAPS 連線。\n"
+"若未勾選，OpenLDAP 將僅支援通過 StartTLS 擴展操作的 TLS 加密連線。</p>\n"
+
+#: src/include/ldap-server/helps.rb:324
+msgid ""
+"<p>If you already have a common server certificate installed using the\n"
+"corresponding YaST Module, check <b>Use common Server Certificate</b> so "
+"that\n"
+"the OpenLDAP server uses this certificate.</p>\n"
+msgstr ""
+"<p>若您已經通過相關 YaST 模組安裝了通用伺服器證書，請勾選<b>使用通用伺服器證書</b>以讓 OpenLDAP 伺服器使用此證書。</p>\n"
+
+#: src/include/ldap-server/helps.rb:329
+msgid "<h4>Import Certificate</h4>"
+msgstr "<h4>匯入證書</h4>"
+
+#: src/include/ldap-server/helps.rb:330
+msgid ""
+"<p>If you have no common server certificate or you want OpenLDAP to use a\n"
+"different certificate, enter the file names of the <b>CA Certificate File</b>"
+",\n"
+"<b>Certificate File</b> and <b>Certificate Key File</b> into the "
+"corresponding\n"
+"textfields.</p>\n"
+msgstr ""
+"<p>若您沒有通用伺服器證書或者您想要 OpenLDAP 使用一個不同的證書，請輸入 <b>CA 證書檔案</b>、<b>證書檔案</b>與<b>"
+"證書金鑰檔案</b>的檔名到相關文字框。</p>\n"
+
+#: src/include/ldap-server/helps.rb:336
+msgid ""
+"<p>To create a new CA or certificate, launch the CA management module by\n"
+"clicking <b>Launch CA Management Module</b>.</p>\n"
+msgstr "<p>要創建一個新的 CA 或證書，請點選<b>啟動 CA 管理模組</b>啟動 CA 管理模組。</p>\n"
+
+#. Tree Item Dialog "global" 1/1
+#: src/include/ldap-server/helps.rb:340
+msgid "<p>Below this item, configure some global parameters.</p>"
+msgstr "<p>在此項的下面配置一些全局參數。</p>"
+
+#. Tree Item Dialog "schema" 1/
+#: src/include/ldap-server/helps.rb:344
+msgid ""
+"<p>Add schema files in this dialog. Press <b>Add</b> to open a file dialog in "
+"which to choose\n"
+"a new schema. Note: OpenLDAP (when used with back-config) does currently not "
+"support the removal of \n"
+"Schema Data</p>"
+msgstr ""
+"<p>在此對話方塊中添加方案檔案。\n"
+"按<b>添加</b>開啟一個檔案對話方塊，在其中選擇新方案。\n"
+"注意：OpenLDAP (通常配合 back-config 使用) 目前不支援刪除方案資料</p>"
+
+#. Tree Item Dialog "loglevel"
+#: src/include/ldap-server/helps.rb:350
+msgid ""
+"<p>Select the subsystems that should log debugging statements and statistics\n"
+"to syslog.</p>"
+msgstr "<p>選擇應記錄偵錯語句與統計到 syslog 的子系統。</p>"
+
+#. Tree Item Dialog "allow" 1/1
+#: src/include/ldap-server/helps.rb:354
+msgid ""
+"<p>Select which special features the OpenLDAP Server should allow or "
+"disallow:</p>"
+msgstr "<p>選擇 OpenLDAP 伺服器應允許或不允許的特殊功能：</p>"
+
+#: src/include/ldap-server/helps.rb:357
+msgid "<h3>Select Allow Flags</h3>"
+msgstr "<h3>選擇允許旗標</h3>"
+
+#: src/include/ldap-server/helps.rb:358
+msgid ""
+"<p><b>LDAPv2 Bind Requests</b>: To let the server accept LDAPv2 bind "
+"requests.\n"
+"Note that OpenLDAP does not truly implement LDAPv2.</p>\n"
+msgstr ""
+"<p><b>LDAPv2 繫結請求</b>：使伺服器接受 LDAPv2 繫結請求。\n"
+"注意 OpenLDAP 沒有真正的實現 LDAPv2。</p>\n"
+
+#: src/include/ldap-server/helps.rb:361
+msgid ""
+"<p><b>Anonymous Bind when credentials not empty</b>: To allow anonymous bind "
+"when \n"
+"credentials are not empty (i.e. password is present but bind DN is not "
+"present) </p>"
+msgstr ""
+"<p><b>當機要資料非空時允許匿名繫結</b>：當機要資料非空時 (例如提供了密碼但未提供繫結判別名)\n"
+"允許匿名繫結</p>"
+
+#: src/include/ldap-server/helps.rb:364
+msgid ""
+"<p><b>Unauthenticated Bind when DN not empty</b>: To allow unauthenticated \n"
+"(anonymous) binds when DN is not empty</p>"
+msgstr "<p><b>當判別名非空時允許未認證繫結</b>：當判別名非空時允許未認證 (匿名) 繫結</p>"
+
+#: src/include/ldap-server/helps.rb:367
+msgid ""
+"<p><b>Unauthenticated Update Operations to process</b>: To allow "
+"unauthenticated\n"
+"(anonymous) update operations to be processed. They are still subject to\n"
+"access controls and other administrative limits.</p>\n"
+msgstr "<p><b>允許處理未認證更新操作</b>：允許處理未認證 (匿名) 更新操作。它們依然會受到訪問控制與其它管理限制。</p>\n"
+
+#: src/include/ldap-server/helps.rb:372
+msgid "<h3>Select Disallow Flags</h3>"
+msgstr "<h3>選擇允許旗標</h3>"
+
+#: src/include/ldap-server/helps.rb:373
+msgid ""
+"<p><b>Disable acceptance of anonymous Bind Requests</b>: The Server will\n"
+"not accept anonymous bind requests. Note that this does not generally\n"
+"prohibit anonymous directory access.</p>\n"
+msgstr ""
+"<p><b>禁用接受匿名繫結請求</b>：伺服器將不接受匿名繫結請求。注意這通常\n"
+"不會禁用匿名資料夾訪問。</p>\n"
+
+#: src/include/ldap-server/helps.rb:378
+msgid ""
+"<p><b>Disable Simple Bind authentication</b>: Completely disable Simple Bind\n"
+"authentication</p>\n"
+msgstr "<p><b>禁用簡單繫結認證</b>：完全禁用簡單繫結認證</p>\n"
+
+#: src/include/ldap-server/helps.rb:381
+msgid ""
+"<p><b>Disable forcing session to anonymous status upon StartTLS operation\n"
+"receipt</b>: The server will no longer force an authenticated connection "
+"back\n"
+"to the anonymous state when receiving the StartTLS operation.</p>\n"
+msgstr ""
+"<p><b>禁用收到 StartTLS 操作時將會話強制為匿名狀態</b>：伺服器在接收 StartTLS 操作時不再強制認證的連線回到匿名狀態。</p>"
+"\n"
+
+#: src/include/ldap-server/helps.rb:386
+msgid ""
+"<p><b>Disallow the StartTLS operation if authenticated</b>:\n"
+"The server will not allow the StartTLS operation on already authenticated\n"
+"connections.</p>\n"
+msgstr ""
+"<p><b>認證後不允許 StartTLS 操作</b>：\n"
+"伺服器將不允許在已認證的連線上的 StartTLS 操作。</p>\n"
+
+#. Tree Item Dialog "databases"
+#: src/include/ldap-server/helps.rb:392
+msgid ""
+"<p>This lists shows all configured databases. The databases with the type\n"
+"\"frontend\" and \"config\" represent special internal databases. The "
+"\"Frontend\"\n"
+"database is use to configure global access control restrictions and overlays\n"
+"that apply to all databases. The \"Config\" database holds the configuration "
+"of\n"
+"the LDAP server itself.</p>\n"
+msgstr ""
+"<p>此列表顯示了全部配置過的資料庫。類型為 \"前端\" 與 \"配置\" 的資料庫代表特殊內部資料庫。\n"
+"\"前端\" 資料庫用於配置應用於全部資料庫上的全局訪問控制限制與覆蓋。\n"
+"\"配置\" 資料庫持有 LDAP 伺服器自身的配置。</p>\n"
+
+#. Tree Item Dialog "databases" 2/2
+#: src/include/ldap-server/helps.rb:400
+msgid "<p>To add a new database, press <b>Add Database...</b>.</p>"
+msgstr "<p>要添加新的資料庫，請按<b>添加資料庫...</b>。</p>"
+
+#: src/include/ldap-server/helps.rb:401
+msgid ""
+"<p>To delete a database, select a database from the list and press <b>Delete "
+"Database...</b>.\n"
+"You cannot delete the \"config\" and \"frontend\" databases.</p>\n"
+msgstr ""
+"<p>要刪除資料庫，請從列表中選擇資料庫並按<b>刪除資料庫...</b>。\n"
+"您不可以刪除 \"配置\" 與 \"前端\" 資料庫。</p>\n"
+
+#: src/include/ldap-server/helps.rb:404
+msgid ""
+"<p>Enter a password for the configuration database (\"<i>cn=config</i>\") "
+"here. This is required to make\n"
+"the configuration database accessible remotely.</p>"
+msgstr "<p>在此輸入配置資料庫 (\"<i>cn=config</i>\") 的密碼。這是讓配置資料庫可遠端訪問必須的。</p>"
+
+#: src/include/ldap-server/helps.rb:407
+msgid ""
+"<p>If the server is supposed to participate in a MirrorMode setup, select the "
+"\"<b>Prepare for MirrorMode replication</b>\"\n"
+"checkbox. This will ensure that the serverId attribute is generated as needed "
+"for MirrorMode replication.</p>\n"
+msgstr ""
+"<p>若伺服器應該參與映象模式設定，請選擇 \"<b>準備映象模式複製</b>\" 核取方塊。\n"
+"這會確保生成映象模式複製需要的 serverID 屬性。</p>\n"
+
+#: src/include/ldap-server/helps.rb:410
+msgid ""
+"<p>To setup a slave server some details need to be queried from the master "
+"server. Please enter the master\n"
+"server's hostname, adjust the protocol (either \"<i>ldap</i>\" or \"<i>ldaps<"
+"/i>\") and port number as needed and enter the password\n"
+"for the master's configuration database (\"<i>cn=config</i>\").</p>"
+msgstr ""
+"<p>為設定從屬伺服器需要從主伺服器查詢一些細節。請輸入主伺服器的主機名，按需調整協議 (\"<i>ldap</i>\" 或 \"<i>ldaps</i>"
+"\") 與埠號並輸入主伺服器配置資料庫 (\"<i>cn=config</i>\") 的密碼。</p>"
+
+#. encoding: utf-8
+#. File:	include/ldap-server/mirrormode-wizard.ycp
+#. Package:	Configuration of ldap-server
+#. Summary:	Wizards definitions
+#. Authors:	Andreas Bauer <abauer@suse.de>
+#. Ralf Haferkamp <rhafer@suse.de>
+#.
+#. $Id$
+#: src/include/ldap-server/mirrormode-wizard.rb:28
+msgid "MirrorMode Node List"
+msgstr "映象模式節點列表"
+
+#: src/include/ldap-server/mirrormode-wizard.rb:38
+msgid "Server ID"
+msgstr "伺服器 ID"
+
+#: src/include/ldap-server/mirrormode-wizard.rb:38
+msgid "Server URI"
+msgstr "伺服器 URI"
+
+#: src/include/ldap-server/mirrormode-wizard.rb:50
+msgid ""
+"This server is not setup as a MirrorMode Node. Click \"Next\" to launch the "
+"standard OpenLDAP configuration wizard."
+msgstr "伺服器沒有設為映象模式節點。點選 \"下一步\" 啟動標準 OpenLDAP 配置嚮導。"
+
+#: src/include/ldap-server/mirrormode-wizard.rb:85
+msgid "OpenLDAP MirrorMode Overview"
+msgstr "OpenLDAP 映象模式概覽"
+
+#: src/include/ldap-server/mirrormode-wizard.rb:127
+msgid ""
+"Deleting the host on which you started this YaST Module is not possible.\n"
+msgstr "不能刪除您啟動此 YaST 模組的主機。\n"
+
+#: src/include/ldap-server/mirrormode-wizard.rb:130
+msgid "Start yast2 openldap-mirrormode on a different MirrorMode server."
+msgstr "請在一個不同的映象模式伺服器上啟動 yast2 openldap-mirrormode。"
+
+#: src/include/ldap-server/mirrormode-wizard.rb:140
+msgid "Do you really want to remove \"%1\" from the MirrorMode setup?\n"
+msgstr "您真的想要從映象模式設定中移除 \"%1\" 嗎？\n"
+
+#: src/include/ldap-server/mirrormode-wizard.rb:145
+msgid "Changes will take effect immediately after clicking \"Yes\""
+msgstr "按 \"是\" 後修改將立即生效"
+
+#. Initialization dialog contents
+#. Initialization dialog contents
+#. Initialization dialog contents
+#. Initialization dialog contents
+#: src/include/ldap-server/mirrormode-wizard.rb:175
+#: src/include/ldap-server/wizards.rb:53
+#: src/include/ldap-server/wizards.rb:112
+#: src/include/ldap-server/wizards.rb:181
+#: src/include/ldap-server/wizards.rb:274
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. #-#-#-#-#  ldap-server.rxgettext.pot (PACKAGE VERSION)  #-#-#-#-#
+#. ****************************************
+#. *     tree structure definition       **
+#. ***************************************
+#: src/include/ldap-server/tree_structure.rb:53 src/modules/LdapServer.pm:1244
+#: src/modules/LdapServer.pm:1258
+msgid "Startup Configuration"
+msgstr "啟動配置"
+
+#. Tree item
+#: src/include/ldap-server/tree_structure.rb:62
+msgid "Global Settings"
+msgstr "全局設定"
+
+#. Tree item
+#: src/include/ldap-server/tree_structure.rb:67
+msgid "Schema Files"
+msgstr "方案檔案"
+
+#. Tree item
+#: src/include/ldap-server/tree_structure.rb:75
+msgid "Log Level Settings"
+msgstr "日誌級別設定"
+
+#. Tree item
+#: src/include/ldap-server/tree_structure.rb:83
+msgid "Allow/Disallow Features"
+msgstr "允許/禁止功能"
+
+#. Tree item
+#: src/include/ldap-server/tree_structure.rb:91
+#: src/include/ldap-server/widgets.rb:196
+msgid "TLS Settings"
+msgstr "TLS 設定"
+
+#. Tree item
+#: src/include/ldap-server/tree_structure.rb:100
+msgid "Databases"
+msgstr "資料庫"
+
+#: src/include/ldap-server/tree_structure.rb:108
+msgid "Suffix DN"
+msgstr "字尾判別名"
+
+#: src/include/ldap-server/tree_structure.rb:108
+#: src/modules/LdapDatabase.rb:173
+msgid "Database Type"
+msgstr "資料庫類型"
+
+#. widget_map["g_schema","inclist"] = l;
+#: src/include/ldap-server/tree_structure.rb:218
+msgid "Your TLS/SSL Configuration seems to be incomplete."
+msgstr "您的 TLS/SSL 配置看上去不完整。"
+
+#: src/include/ldap-server/tree_structure.rb:219
+msgid "Do you really want to enable the \"ldaps\" protocol listener?"
+msgstr "您真的想要啟用 \"ldaps\" 協議監聽器嗎？"
+
+#. add a new file to the list
+#. file dialog heading
+#: src/include/ldap-server/tree_structure.rb:255
+msgid "Select New Schema File"
+msgstr "選擇新方案檔案"
+
+#. error popup
+#: src/include/ldap-server/tree_structure.rb:262
+msgid "The schema file is already in the list."
+msgstr "該方案檔案已在列表中。"
+
+#: src/include/ldap-server/tree_structure.rb:452
+msgid "Select a valid Certificate File"
+msgstr "選擇有效的證書檔案"
+
+#: src/include/ldap-server/tree_structure.rb:456
+msgid "Select a valid Certificate Key File"
+msgstr "選擇有效的證書金鑰檔案"
+
+#: src/include/ldap-server/tree_structure.rb:545
+msgid "A common server certificate is not available."
+msgstr "通用伺服器證書不可用。"
+
+#. file selection headline
+#: src/include/ldap-server/tree_structure.rb:565
+msgid "Select Certificate File"
+msgstr "選擇證書檔案"
+
+#. file selection headline
+#: src/include/ldap-server/tree_structure.rb:573
+msgid "Select Certificate Key File"
+msgstr "選擇證書金鑰檔案"
+
+#. ****************************************
+#. * handlers for database parent widget
+#. ***************************************
+#: src/include/ldap-server/tree_structure.rb:707
+msgid "Cannot delete Frontend database"
+msgstr "無法刪除前端資料庫"
+
+#: src/include/ldap-server/tree_structure.rb:709
+msgid "Cannot delete Config database"
+msgstr "無法刪除配置資料庫"
+
+#: src/include/ldap-server/tree_structure.rb:711
+msgid "Do you really want to delete the database?"
+msgstr "您真的想要刪除該資料庫嗎？"
+
+#. Error Popup
+#. Error Popup
+#: src/include/ldap-server/tree_structure.rb:740
+#: src/include/ldap-server/tree_structure.rb:874
+msgid "Unable to write settings for the current database."
+msgstr "無法寫入當前資料庫的設定。"
+
+#: src/include/ldap-server/tree_structure.rb:794
+#: src/include/ldap-server/tree_structure.rb:931
+msgid "Unable to read settings for the current database."
+msgstr "無法讀取當前資料庫的設定。"
+
+#: src/include/ldap-server/tree_structure.rb:949
+#: src/include/ldap-server/tree_structure.rb:991
+#: src/include/ldap-server/widgets.rb:381
+msgid "New Administrator &Password"
+msgstr "新管理員密碼(&P)"
+
+#: src/include/ldap-server/tree_structure.rb:955
+#: src/include/ldap-server/tree_structure.rb:997
+#: src/include/ldap-server/widgets.rb:385
+msgid "Password &Encryption"
+msgstr "密碼加密(&E)"
+
+#: src/include/ldap-server/tree_structure.rb:1005
+#: src/include/ldap-server/widgets.rb:346
+msgid "Change Administration Password"
+msgstr "修改管理密碼"
+
+#: src/include/ldap-server/tree_structure.rb:1028
+#: src/include/ldap-server/tree_structure.rb:1029
+#: src/include/ldap-server/tree_structure.rb:1030
+#: src/include/ldap-server/tree_structure.rb:1031
+#: src/modules/LdapServer.pm:1246 src/modules/LdapServer.pm:1259
+#: src/modules/LdapServer.pm:1260
+msgid "No"
+msgstr "否"
+
+#: src/include/ldap-server/tree_structure.rb:1033
+#: src/include/ldap-server/tree_structure.rb:1034
+#: src/include/ldap-server/tree_structure.rb:1035
+#: src/modules/LdapServer.pm:1246 src/modules/LdapServer.pm:1259
+#: src/modules/LdapServer.pm:1260
+msgid "Yes"
+msgstr "是"
+
+#. skip attribute that already have an index defined
+#: src/include/ldap-server/tree_structure.rb:1178
+msgid "Multiple Replication Consumers not supported currently"
+msgstr "目前不支援多個複製使用者"
+
+#. ****************************************
+#. tree generation functions       **
+#. ***************************************
+#: src/include/ldap-server/tree_structure.rb:1280
+msgid "Index Configuration"
+msgstr "索引配置"
+
+#: src/include/ldap-server/tree_structure.rb:1288
+msgid "Password Policy Configuration"
+msgstr "密碼策略配置"
+
+#: src/include/ldap-server/tree_structure.rb:1297
+msgid "Access Control Configuration"
+msgstr "訪問控制配置"
+
+#: src/include/ldap-server/tree_structure.rb:1306
+msgid "Replication Provider"
+msgstr "複製提供者"
+
+#: src/include/ldap-server/tree_structure.rb:1315
+msgid "Replication Consumer"
+msgstr "複製使用者"
+
+#: src/include/ldap-server/widgets.rb:72
+msgid "Protocol Listeners"
+msgstr "協議監聽器"
+
+#: src/include/ldap-server/widgets.rb:78
+msgid "LDAP"
+msgstr "輕量目錄訪問協議 (LDAP)"
+
+#. `HWeight(1, `PushButton( `id( `pb_interface_ldap), "Interfaces ...")),
+#: src/include/ldap-server/widgets.rb:90
+msgid "LDAP over SSL (ldaps)"
+msgstr "通過安全套接字層的輕量目錄訪問協議 (ldaps)"
+
+#: src/include/ldap-server/widgets.rb:119
+msgid "Included &Schema Files"
+msgstr "已包含方案檔案(&S)"
+
+#: src/include/ldap-server/widgets.rb:130
+msgid "Select &Log Level Flags:"
+msgstr "選擇日誌級別旗標(&L)："
+
+#: src/include/ldap-server/widgets.rb:132
+msgid "Trace Function Calls"
+msgstr "跟蹤函數呼叫"
+
+#: src/include/ldap-server/widgets.rb:133
+msgid "Debug Packet Handling"
+msgstr "偵錯資料包處理"
+
+#: src/include/ldap-server/widgets.rb:134
+msgid "Heavy Trace Debugging (function args)"
+msgstr "高度跟蹤偵錯 (函數參數)"
+
+#: src/include/ldap-server/widgets.rb:135
+msgid "Connection Management"
+msgstr "連線管理"
+
+#: src/include/ldap-server/widgets.rb:136
+msgid "Print Packets Sent and Received"
+msgstr "列印已發送與接收的資料包"
+
+#: src/include/ldap-server/widgets.rb:137
+msgid "Search Filter Processing"
+msgstr "搜索過濾器處理中"
+
+#: src/include/ldap-server/widgets.rb:138
+msgid "Configuration File Processing"
+msgstr "配置檔案處理中"
+
+#: src/include/ldap-server/widgets.rb:139
+msgid "Access Control List Processing"
+msgstr "訪問控制列表處理中"
+
+#: src/include/ldap-server/widgets.rb:140
+msgid "Log Connections, Operations, and Result"
+msgstr "日誌連線、操作與結果"
+
+#: src/include/ldap-server/widgets.rb:141
+msgid "Log Entries Sent"
+msgstr "已發送的日誌條目"
+
+#: src/include/ldap-server/widgets.rb:142
+msgid "Print Communication with Shell Back-Ends"
+msgstr "列印與命令列後端的通訊"
+
+#: src/include/ldap-server/widgets.rb:143
+msgid "Entry Parsing"
+msgstr "條目解析中"
+
+#: src/include/ldap-server/widgets.rb:144
+msgid "LDAPSync Replication"
+msgstr "LDAPSync 複製"
+
+#: src/include/ldap-server/widgets.rb:145
+msgid "None"
+msgstr "無"
+
+#: src/include/ldap-server/widgets.rb:152
+msgid "Select &Allow Flags:"
+msgstr "選擇允許旗標(&A)："
+
+#: src/include/ldap-server/widgets.rb:154
+msgid "LDAPv2 Bind Requests"
+msgstr "LDAPv2 繫結請求"
+
+#: src/include/ldap-server/widgets.rb:157
+msgid "Anonymous Bind when Credentials Not Empty"
+msgstr "當機要資料非空時允許匿名繫結"
+
+#: src/include/ldap-server/widgets.rb:161
+msgid "Unauthenticated Bind when DN Not Empty"
+msgstr "當判別名非空時允許未認證繫結"
+
+#: src/include/ldap-server/widgets.rb:165
+msgid "Unauthenticated Update Operations to Process"
+msgstr "允許處理未認證更新操作"
+
+#: src/include/ldap-server/widgets.rb:171
+msgid "Select &Disallow Flags:"
+msgstr "選擇禁用旗標(&D)："
+
+#: src/include/ldap-server/widgets.rb:175
+msgid ""
+"Disable acceptance of anonymous Bind Requests (does not prohibit anonymous "
+"directory access)"
+msgstr "禁用接受匿名繫結請求 (不禁止匿名資料夾訪問)"
+
+#: src/include/ldap-server/widgets.rb:179
+msgid "Disable Simple Bind authentication"
+msgstr "禁用簡單繫結認證"
+
+#: src/include/ldap-server/widgets.rb:182
+msgid ""
+"Disable forcing session to anonymous status upon StartTLS operation receipt"
+msgstr "禁用收到 StartTLS 操作時將會話強制為匿名狀態"
+
+#: src/include/ldap-server/widgets.rb:188
+msgid "Disallow the StartTLS operation if authenticated"
+msgstr "認證後不允許 StartTLS 操作"
+
+#: src/include/ldap-server/widgets.rb:199
+msgid "Basic Settings"
+msgstr "基本設定"
+
+#: src/include/ldap-server/widgets.rb:205
+msgid "Enable TLS"
+msgstr "啟用 TLS"
+
+#: src/include/ldap-server/widgets.rb:212
+msgid "Enable LDAP over SSL (ldaps) interface"
+msgstr "啟用 LDAP over SSL (ldaps) 介面"
+
+#: src/include/ldap-server/widgets.rb:220
+msgid "Use common Server Certificate"
+msgstr "使用通用伺服器證書"
+
+#: src/include/ldap-server/widgets.rb:232
+msgid "Import Certificate"
+msgstr "匯入證書"
+
+#: src/include/ldap-server/widgets.rb:251
+msgid "Certificate &File (PEM Format)"
+msgstr "證書檔案(PEM 格式)(&F)"
+
+#: src/include/ldap-server/widgets.rb:254 src/modules/LdapDatabase.rb:234
+msgid "&Browse..."
+msgstr "瀏覽(&B)..."
+
+#: src/include/ldap-server/widgets.rb:263
+msgid "Certificate &Key File (PEM Format - Unencrypted)"
+msgstr "證書金鑰檔案(PEM 格式 - 未加密)(&K)"
+
+#: src/include/ldap-server/widgets.rb:266
+msgid "B&rowse..."
+msgstr "瀏覽(&R)..."
+
+#: src/include/ldap-server/widgets.rb:273
+msgid "Launch CA Management Module"
+msgstr "啟動 CA 管理模組"
+
+#: src/include/ldap-server/widgets.rb:279 src/modules/LdapDatabase.rb:178
+msgid "&Base DN"
+msgstr "基本判別名(&B)"
+
+#: src/include/ldap-server/widgets.rb:283
+msgid "Administrator DN"
+msgstr "管理員判別名"
+
+#: src/include/ldap-server/widgets.rb:285 src/modules/LdapDatabase.rb:81
+msgid "&Append Base DN"
+msgstr "追加基本判別名(&A)"
+
+#: src/include/ldap-server/widgets.rb:287
+msgid "Change Password"
+msgstr "修改密碼"
+
+#: src/include/ldap-server/widgets.rb:295
+msgid "Edit BDB Database"
+msgstr "編輯 BDB 資料庫"
+
+#: src/include/ldap-server/widgets.rb:302
+msgid "Entry Cache"
+msgstr "條目快取"
+
+#: src/include/ldap-server/widgets.rb:308
+msgid "Index Cache (IDL cache)"
+msgstr "索引快取 (IDL 快取)"
+
+#: src/include/ldap-server/widgets.rb:319 src/modules/LdapDatabase.rb:2102
+msgid "Checkpoint Settings"
+msgstr "檢查點設定"
+
+#: src/include/ldap-server/widgets.rb:322
+msgid "kilobytes"
+msgstr "千位元組"
+
+#: src/include/ldap-server/widgets.rb:324
+msgid "minutes"
+msgstr "分鐘"
+
+#: src/include/ldap-server/widgets.rb:332
+msgid "Change Configuration Database Settings"
+msgstr "修改配置資料庫設定"
+
+#: src/include/ldap-server/widgets.rb:337
+msgid "Allow Plaintext Authentication (Simple Bind) for this Database. "
+msgstr "允許此資料庫使用明文認證 (簡單繫結)。"
+
+#: src/include/ldap-server/widgets.rb:340
+msgid "(Remote Connection needs to be encrypted)"
+msgstr "(遠端連線需要加密)"
+
+#: src/include/ldap-server/widgets.rb:352
+msgid "Edit Database"
+msgstr "編輯資料庫"
+
+#: src/include/ldap-server/widgets.rb:354
+msgid "Database type not currently supported."
+msgstr "目前不支援該資料庫類型。"
+
+#: src/include/ldap-server/widgets.rb:359
+msgid "Indexing Configuration"
+msgstr "索引配置"
+
+#: src/include/ldap-server/widgets.rb:362
+msgid "Attribute"
+msgstr "屬性"
+
+#: src/include/ldap-server/widgets.rb:362
+#: src/include/ldap-server/widgets.rb:430
+msgid "Presence"
+msgstr "模糊匹配"
+
+#: src/include/ldap-server/widgets.rb:362
+#: src/include/ldap-server/widgets.rb:431
+msgid "Equality"
+msgstr "精確匹配"
+
+#: src/include/ldap-server/widgets.rb:362
+#: src/include/ldap-server/widgets.rb:432
+msgid "Substring"
+msgstr "子字元串"
+
+#: src/include/ldap-server/widgets.rb:380
+msgid "Change Administrator Password"
+msgstr "修改管理員密碼"
+
+#: src/include/ldap-server/widgets.rb:425
+msgid "Add Index"
+msgstr "添加索引"
+
+#. encoding: utf-8
+#: src/modules/LdapDatabase.rb:40 src/modules/LdapDatabase.rb:2239
+msgid "Password Policy Settings"
+msgstr "密碼策略設定"
+
+#: src/modules/LdapDatabase.rb:47
+msgid "Enable Password Policies"
+msgstr "啟用密碼策略"
+
+#: src/modules/LdapDatabase.rb:55
+msgid "Hash Clear Text Passwords"
+msgstr "加密明文密碼"
+
+#: src/modules/LdapDatabase.rb:63
+msgid "Disclose \"Account Locked\" Status"
+msgstr "公開 \"帳戶鎖定\" 狀態"
+
+#: src/modules/LdapDatabase.rb:73
+msgid "Default Policy Object DN"
+msgstr "默認策略物件判別名"
+
+#: src/modules/LdapDatabase.rb:89
+msgid "Edit Policy"
+msgstr "編輯策略"
+
+#: src/modules/LdapDatabase.rb:100
+msgid "All Entries"
+msgstr "全部條目"
+
+#: src/modules/LdapDatabase.rb:101
+msgid "All Entries in the Subtree"
+msgstr "子樹中的全部條目"
+
+#: src/modules/LdapDatabase.rb:102
+msgid "The Entry with the DN"
+msgstr "具有判別名的條目"
+
+#: src/modules/LdapDatabase.rb:106
+msgid "Everybody"
+msgstr "所有人"
+
+#: src/modules/LdapDatabase.rb:107
+msgid "Authenticated Clients"
+msgstr "認證客戶機"
+
+#: src/modules/LdapDatabase.rb:108
+msgid "Anonymous Clients"
+msgstr "匿名客戶機"
+
+#: src/modules/LdapDatabase.rb:109
+msgid "The accessed Entry (self)"
+msgstr "被訪問條目 (自身)"
+
+#: src/modules/LdapDatabase.rb:110
+msgid "The user with the DN"
+msgstr "具有判別名的使用者"
+
+#: src/modules/LdapDatabase.rb:111
+msgid "All entries in the subtree"
+msgstr "該子樹中的全部條目"
+
+#: src/modules/LdapDatabase.rb:112
+msgid "All members of the group"
+msgstr "該組的全部成員"
+
+#: src/modules/LdapDatabase.rb:125
+msgid "<empty>"
+msgstr "<空>"
+
+#: src/modules/LdapDatabase.rb:126
+msgid "No Access"
+msgstr "無訪問權"
+
+#: src/modules/LdapDatabase.rb:128
+msgid "No Access (but disclose information on error)"
+msgstr "無訪問權 (但在錯誤訊息中反饋一些資訊)"
+
+#: src/modules/LdapDatabase.rb:131
+msgid "Authenticate"
+msgstr "認證"
+
+#: src/modules/LdapDatabase.rb:132
+msgid "Compare"
+msgstr "對比"
+
+#: src/modules/LdapDatabase.rb:133
+msgid "Read"
+msgstr "讀取"
+
+#: src/modules/LdapDatabase.rb:134
+msgid "Write"
+msgstr "寫入"
+
+#: src/modules/LdapDatabase.rb:135
+msgid "Manage (full access)"
+msgstr "管理 (完全訪問)"
+
+#. don't count frontend and Config DB
+#: src/modules/LdapDatabase.rb:167
+msgid "New Database"
+msgstr "新建資料庫"
+
+#: src/modules/LdapDatabase.rb:170
+msgid "Basic Database Settings"
+msgstr "基本資料庫設定"
+
+#: src/modules/LdapDatabase.rb:189
+msgid "&Administrator DN"
+msgstr "管理員判別名(&A)"
+
+#: src/modules/LdapDatabase.rb:197
+msgid "A&ppend Base DN"
+msgstr "追加基本判別名(&P)"
+
+#: src/modules/LdapDatabase.rb:211
+msgid "LDAP Administrator &Password"
+msgstr "LDAP 管理員密碼(&P)"
+
+#: src/modules/LdapDatabase.rb:230
+msgid "&Database Directory"
+msgstr "資料庫資料夾(&D)"
+
+#: src/modules/LdapDatabase.rb:240
+msgid "Use this database as the default for OpenLDAP clients"
+msgstr "使用此資料庫作為 OpenLDAP 客戶端默認資料庫"
+
+#: src/modules/LdapDatabase.rb:311
+msgid "Select Database Directory"
+msgstr "選擇資料庫資料夾"
+
+#. check values
+#: src/modules/LdapDatabase.rb:350
+msgid "Base DN must be set."
+msgstr "必須設定基本判別名。"
+
+#: src/modules/LdapDatabase.rb:359
+msgid "A database with this Base DN already exists."
+msgstr "具有此基本判別名的資料庫已存在。"
+
+#: src/modules/LdapDatabase.rb:399
+msgid "Root DN must be set if a password is given."
+msgstr "若給定密碼則必須設定根判別名。"
+
+#: src/modules/LdapDatabase.rb:405
+msgid "Password validation failed."
+msgstr "密碼校驗失敗。"
+
+#: src/modules/LdapDatabase.rb:435
+msgid ""
+"The Base Object: \"%1\" cannot be auto created by YaST:\n"
+"%2"
+msgstr ""
+"基礎物件：\"%1\" 無法被 YaST 自動創建：\n"
+"%2"
+
+#: src/modules/LdapDatabase.rb:451
+msgid "A directory must be specified."
+msgstr "必須指定資料夾。"
+
+#: src/modules/LdapDatabase.rb:458
+msgid "The directory does not exist. Create it?"
+msgstr "該資料夾不存在。創建它嗎？"
+
+#. try to read the ppolicy from the server
+#: src/modules/LdapDatabase.rb:637
+msgid "Authentication failed. The password is probably incorrect.\n"
+msgstr "認證失敗。密碼可能不正確。\n"
+
+#: src/modules/LdapDatabase.rb:640
+msgid "The error message was: '"
+msgstr "錯誤訊息為：'"
+
+#: src/modules/LdapDatabase.rb:645
+msgid "Try again?"
+msgstr "重試嗎？"
+
+#. PasswordPolicyDialog only returns the changes made to the original
+#. Entry, try to merge them here
+#: src/modules/LdapDatabase.rb:720
+msgid "Available Attribute Types"
+msgstr "可用屬性類型"
+
+#: src/modules/LdapDatabase.rb:724
+msgid "Selected Attribute Types"
+msgstr "所選屬性類型"
+
+#. Popup to add/edit the acl "by" clauses
+#: src/modules/LdapDatabase.rb:813 src/modules/LdapDatabase.rb:985
+msgid "Who should this rule apply to"
+msgstr "此規則適用物件"
+
+#: src/modules/LdapDatabase.rb:819 src/modules/LdapDatabase.rb:946
+#: src/modules/LdapDatabase.rb:989 src/modules/LdapDatabase.rb:1227
+msgid "Entry DN"
+msgstr "條目判別名"
+
+#: src/modules/LdapDatabase.rb:820 src/modules/LdapDatabase.rb:990
+msgid "Select"
+msgstr "選擇"
+
+#: src/modules/LdapDatabase.rb:826
+msgid "Define the Access Level"
+msgstr "定義訪問級別"
+
+#: src/modules/LdapDatabase.rb:836
+msgid "Stop access control evaluation here (default)"
+msgstr "在此停止訪問控制評估 (默認)"
+
+#: src/modules/LdapDatabase.rb:843
+msgid "Continue with next access control rule (\"break\")"
+msgstr "繼續下一條訪問控制規則 (\"中斷\")"
+
+#: src/modules/LdapDatabase.rb:849
+msgid "Continue evaluation of this rule (\"continue\")"
+msgstr "繼續評估此規則 (\"繼續\")"
+
+#: src/modules/LdapDatabase.rb:904
+msgid "Please enter a DN in the textfield"
+msgstr "請在文字框中輸入一個判別名"
+
+#: src/modules/LdapDatabase.rb:948 src/modules/LdapDatabase.rb:1090
+#: src/modules/LdapDatabase.rb:1225
+msgid "Subtree DN"
+msgstr "子樹判別名"
+
+#: src/modules/LdapDatabase.rb:950
+msgid "Group DN"
+msgstr "組判別名"
+
+#: src/modules/LdapDatabase.rb:973
+msgid "Edit Access Control Rule"
+msgstr "編輯訪問控制規則"
+
+#: src/modules/LdapDatabase.rb:978
+msgid "Target Objects"
+msgstr "目標物件"
+
+#: src/modules/LdapDatabase.rb:999
+msgid "Matching the filter:"
+msgstr "匹配過濾器："
+
+#: src/modules/LdapDatabase.rb:1006
+msgid "LDAP Filter"
+msgstr "LDAP 過濾器"
+
+#: src/modules/LdapDatabase.rb:1016
+msgid "Apply this rule only to the listed attribute"
+msgstr "僅應用此規則到列出的屬性"
+
+#: src/modules/LdapDatabase.rb:1021 src/modules/LdapDatabase.rb:1315
+msgid "Attributes"
+msgstr "屬性"
+
+#: src/modules/LdapDatabase.rb:1023
+msgid "Edit"
+msgstr "編輯"
+
+#: src/modules/LdapDatabase.rb:1029 src/modules/LdapDatabase.rb:1041
+msgid "Access Level"
+msgstr "訪問級別"
+
+#: src/modules/LdapDatabase.rb:1039
+msgid "Who"
+msgstr "物件"
+
+#: src/modules/LdapDatabase.rb:1040 src/modules/LdapDatabase.rb:1315
+msgid "DN"
+msgstr "判別名"
+
+#: src/modules/LdapDatabase.rb:1042
+msgid "Flow Control"
+msgstr "流程控制"
+
+#: src/modules/LdapDatabase.rb:1047 src/modules/LdapDatabase.rb:1319
+msgid "Up"
+msgstr "向上"
+
+#: src/modules/LdapDatabase.rb:1048 src/modules/LdapDatabase.rb:1320
+msgid "Down"
+msgstr "向下"
+
+#. FIXME: Validate attribute types
+#: src/modules/LdapDatabase.rb:1185
+msgid "Enter a list of valid attributes in the <b>Attributes</b> textfield"
+msgstr "在<b>屬性</b>文字框中輸入有效屬性列表"
+
+#: src/modules/LdapDatabase.rb:1197
+msgid "Enter valid a LDAP filter in the textfield"
+msgstr "在文字框中輸入有效的 LDAP 過濾器"
+
+#: src/modules/LdapDatabase.rb:1203
+msgid "You must add at least one item to the \"Access Level\" list."
+msgstr "您必須添加至少一個條目到 \"訪問級別\" 列表。"
+
+#: src/modules/LdapDatabase.rb:1315
+msgid "Target"
+msgstr "目標"
+
+#: src/modules/LdapDatabase.rb:1315
+msgid "Filter"
+msgstr "過濾器"
+
+#: src/modules/LdapDatabase.rb:1347
+msgid ""
+"The selected database contains access control rules that are currently\n"
+"not supported by YaST. The Access Control Dialog will be disabled.\n"
+msgstr "選中的資料庫包含目前 YaST 不支援的訪問控制規則。將禁用訪問控制對話方塊。\n"
+
+#: src/modules/LdapDatabase.rb:1594
+msgid "This database is a Replication Consumer."
+msgstr "資料庫是一個複製使用者。"
+
+#: src/modules/LdapDatabase.rb:1614
+msgid "Provider Name"
+msgstr "提供者名稱"
+
+#: src/modules/LdapDatabase.rb:1619 src/modules/LdapDatabase.rb:1716
+msgid "Port"
+msgstr "埠"
+
+#: src/modules/LdapDatabase.rb:1637
+msgid "Replication Type"
+msgstr "複製類型"
+
+#: src/modules/LdapDatabase.rb:1644
+msgid "Replication Interval"
+msgstr "複製週期"
+
+#: src/modules/LdapDatabase.rb:1647
+msgid "Days"
+msgstr "天"
+
+#: src/modules/LdapDatabase.rb:1651
+msgid "Hours"
+msgstr "小時"
+
+#: src/modules/LdapDatabase.rb:1655 src/modules/LdapDatabase.rb:2118
+msgid "Minutes"
+msgstr "分鐘"
+
+#: src/modules/LdapDatabase.rb:1659
+msgid "Seconds"
+msgstr "秒"
+
+#: src/modules/LdapDatabase.rb:1672
+msgid "Authentication DN"
+msgstr "認證判別名"
+
+#: src/modules/LdapDatabase.rb:1693
+msgid "Custom update referral"
+msgstr "自定義更新轉發"
+
+#: src/modules/LdapDatabase.rb:1709
+msgid "Target Host"
+msgstr "目標主機"
+
+#. no updateref
+#: src/modules/LdapDatabase.rb:1929
+msgid "Invalid replication interval specified"
+msgstr "指定了無效的複製週期"
+
+#. test connection
+#: src/modules/LdapDatabase.rb:1965
+msgid "Checking LDAP connectivity to the provider failed."
+msgstr "檢查提供者的 LDAP 連通性失敗。"
+
+#: src/modules/LdapDatabase.rb:1980 src/modules/LdapDatabase.rb:2007
+msgid "Do you still want to continue?"
+msgstr "您仍然想要繼續嗎？"
+
+#: src/modules/LdapDatabase.rb:1989
+msgid "Checking the LDAPsync capabilities of the provider failed."
+msgstr "檢查提供者的 LDAPsync 能力失敗。"
+
+#: src/modules/LdapDatabase.rb:1995
+msgid ""
+"Please verify that the target server is enabled to be a LDAPsync provider"
+msgstr "請驗證目標伺服器已啟用為一個 LDAPsync 提供者"
+
+#: src/modules/LdapDatabase.rb:2094
+msgid "Enable ldapsync provider for this database"
+msgstr "啟用此資料庫作為 ldapsync 提供者"
+
+#: src/modules/LdapDatabase.rb:2108 src/modules/LdapDatabase.rb:2144
+msgid "Operations"
+msgstr "操作"
+
+#: src/modules/LdapDatabase.rb:2131
+msgid "Session Log"
+msgstr "會話日誌"
+
+#: src/modules/LdapDatabase.rb:2137
+msgid "Enable Session Log"
+msgstr "啟用會話日誌"
+
+#: src/modules/LdapDatabase.rb:2271
+msgid "Replication Settings"
+msgstr "複製設定"
+
+#: src/modules/LdapServer.pm:221
+msgid "Reading Startup Configuration"
+msgstr "正在讀取啟動配置"
+
+#: src/modules/LdapServer.pm:222
+msgid "Reading Configuration Backend"
+msgstr "正在讀取配置後端"
+
+#: src/modules/LdapServer.pm:223
+msgid "Reading Configuration Data"
+msgstr "正在讀取配置資料"
+
+#: src/modules/LdapServer.pm:224
+msgid "Initializing LDAP Server Configuration"
+msgstr "正在啟始化 LDAP 伺服器配置"
+
+#: src/modules/LdapServer.pm:260
+msgid ""
+"Error while initializing configuration.\n"
+"Is the LDAPI listener enabled?\n"
+msgstr ""
+"啟始化配置時出錯。\n"
+"啟用了 LDAPI 監聽器嗎？\n"
+
+#. service was disabled during this session, just disable the service
+#. in the system, stop it and ignore any configuration changes.
+#: src/modules/LdapServer.pm:646
+msgid "Enabling LDAP Server"
+msgstr "正在啟用 LDAP 伺服器"
+
+#: src/modules/LdapServer.pm:647 src/modules/LdapServer.pm:659
+msgid "Starting LDAP Server"
+msgstr "正在啟動 LDAP 伺服器"
+
+#: src/modules/LdapServer.pm:649
+msgid "Activating OpenLDAP Server"
+msgstr "正在啟用 OpenLDAP 伺服器"
+
+#: src/modules/LdapServer.pm:660
+msgid "Restarting OpenLDAP Server"
+msgstr "正在重啟 OpenLDAP 伺服器"
+
+#: src/modules/LdapServer.pm:685
+msgid "Writing Startup Configuration"
+msgstr "正在寫入啟動配置"
+
+#: src/modules/LdapServer.pm:686
+msgid "Cleaning up config directory"
+msgstr "正在清理配置資料夾"
+
+#: src/modules/LdapServer.pm:687
+msgid "Creating Configuration"
+msgstr "正在創建配置"
+
+#: src/modules/LdapServer.pm:688
+msgid "Starting OpenLDAP Server"
+msgstr "正在啟動 OpenLDAP 伺服器"
+
+#: src/modules/LdapServer.pm:689
+msgid "Creating Base Objects"
+msgstr "正在創建基礎物件"
+
+#: src/modules/LdapServer.pm:690
+msgid "Writing OpenLDAP Server Configuration"
+msgstr "正在寫入 OpenLDAP 伺服器配置"
+
+#: src/modules/LdapServer.pm:698 src/modules/LdapServer.pm:1598
+msgid "Switch from slapd.conf to config backend failed."
+msgstr "從 slapd.conf 切換到配置後端失敗。"
+
+#: src/modules/LdapServer.pm:706
+msgid "Enabling the LDAPI Protocol listener failed."
+msgstr "啟用 LDAPI 協議監聽器失敗。"
+
+#: src/modules/LdapServer.pm:730
+msgid "Config Directory cleanup failed."
+msgstr "清理配置資料夾失敗。"
+
+#: src/modules/LdapServer.pm:768
+msgid "Error while populating the configurations database with \"slapadd\"."
+msgstr "使用 \"slapadd\" 填注配置資料庫時出錯。"
+
+#: src/modules/LdapServer.pm:788
+msgid "Enabling the LDAP Service failed."
+msgstr "啟用 LDAP 服務失敗。"
+
+#: src/modules/LdapServer.pm:804 src/modules/LdapServer.pm:1629
+msgid "Starting the LDAP service failed."
+msgstr "啟動 LDAP 服務失敗。"
+
+#. service was disabled during this session, just disable the service
+#. in the system, stop it and ignore any configuration changes.
+#: src/modules/LdapServer.pm:862
+msgid "Stopping LDAP Server"
+msgstr "正在停止 LDAP 伺服器"
+
+#: src/modules/LdapServer.pm:863
+msgid "Disabling LDAP Server"
+msgstr "正在禁用 LDAP 伺服器"
+
+#: src/modules/LdapServer.pm:865
+msgid "De-activating OpenLDAP Server"
+msgstr "正在取消啟用 OpenLDAP 伺服器"
+
+#: src/modules/LdapServer.pm:878
+msgid "Writing Sysconfig files"
+msgstr "正在寫入 Sysconfig 檔案"
+
+#: src/modules/LdapServer.pm:879
+msgid "Applying changes to Configuration Database"
+msgstr "正在應用修改到配置資料庫"
+
+#: src/modules/LdapServer.pm:880
+msgid "Applying changes to /etc/openldap/ldap.conf"
+msgstr "正在應用修改到 /etc/openldap/ldap.conf"
+
+#: src/modules/LdapServer.pm:881
+msgid "Creating Base Objects for newly created databases"
+msgstr "正在為新建資料庫創建基本物件"
+
+#: src/modules/LdapServer.pm:882
+msgid "Updating Default Password Policy Objects"
+msgstr "正在更新默認密碼策略物件"
+
+#: src/modules/LdapServer.pm:883
+msgid ""
+"Waiting for OpenLDAP background indexing tasks to complete (this might take "
+"some minutes)"
+msgstr "正在等待 OpenLDAP 後臺索引任務完成 (這可能花費幾分鐘)"
+
+#: src/modules/LdapServer.pm:884
+msgid "Restarting OpenLDAP Server if required"
+msgstr "正在評估是否要求重啟並按要求重啟 OpenLDAP"
+
+#: src/modules/LdapServer.pm:887
+msgid "Writing OpenLDAP Configuration"
+msgstr "正在寫入 OpenLDAP 配置"
+
+#: src/modules/LdapServer.pm:985
+msgid "Creating base objects failed."
+msgstr "創建基本物件失敗。"
+
+#: src/modules/LdapServer.pm:993
+msgid "Creating Password Policy objects failed."
+msgstr "創建密碼策略物件失敗。"
+
+#: src/modules/LdapServer.pm:1006
+msgid ""
+"An error occurred while waiting for the OpenLDAP database indexer to finish.\n"
+msgstr "等待 OpenLDAP 資料庫索引完成時出錯。\n"
+
+#: src/modules/LdapServer.pm:1007
+msgid "Restart OpenLDAP manually."
+msgstr "手動重啟 OpenLDAP。"
+
+#: src/modules/LdapServer.pm:1250
+msgid "Create initial database with the following parameters:"
+msgstr "使用以下參數創建首個資料庫："
+
+#: src/modules/LdapServer.pm:1251 src/modules/LdapServer.pm:1266
+msgid "Database Suffix: "
+msgstr "資料庫字尾： "
+
+#: src/modules/LdapServer.pm:1252
+msgid "Administrator DN: "
+msgstr "管理員判別名："
+
+#: src/modules/LdapServer.pm:1260
+msgid "Register at SLP Service: "
+msgstr "在 SLP 服務註冊："
+
+#: src/modules/LdapServer.pm:1261
+msgid "Create the following databases:"
+msgstr "創建以下資料庫："
+
+#: src/modules/LdapServer.pm:1267
+msgid "Database Type: "
+msgstr "資料庫類型："
+
+#: src/modules/LdapServer.pm:1273
+msgid "Not configured yet."
+msgstr "尚未配置。"
+
+#: src/modules/LdapServer.pm:1503
+msgid "CA Certificate file does not exist."
+msgstr "CA 證書檔案不存在。"
+
+#: src/modules/LdapServer.pm:1508
+msgid "Certificate File does not exist"
+msgstr "證書檔案不存在"
+
+#. error message
+#: src/modules/LdapServer.pm:1513 src/modules/YaPI/LdapServer.pm:1752
+msgid "Certificate key file does not exist."
+msgstr "證書金鑰檔案不存在。"
+
+#: src/modules/LdapServer.pm:1520 src/modules/LdapServer.pm:1552
+msgid "Can not set a filesystem ACL on the private key."
+msgstr "無法在私鑰上設定檔案系統訪問控制列表。"
+
+#: src/modules/LdapServer.pm:1522
+msgid "Do you have filesystem acl support disabled?"
+msgstr "您禁用了檔案訪問控制列表支援嗎？"
+
+#: src/modules/LdapServer.pm:1574
+msgid "Cleaning up directory for config database"
+msgstr "正在清理配置資料庫資料夾"
+
+#: src/modules/LdapServer.pm:1575
+msgid "Converting slapd.conf to config database"
+msgstr "正在轉換 slapd.conf 為配置資料庫"
+
+#: src/modules/LdapServer.pm:1576
+msgid "Switching startup configuration to use config database"
+msgstr "正在切換啟動配置以使用配置資料庫"
+
+#: src/modules/LdapServer.pm:1577
+msgid "Restarting LDAP Server"
+msgstr "正在重啟 LDAP 伺服器"
+
+#: src/modules/LdapServer.pm:1578
+msgid "Migrating LDAP Server Configuration"
+msgstr "正在遷移 LDAP 伺服器配置"
+
+#: src/modules/LdapServer.pm:1588
+msgid "Output of \"slaptest\":\n"
+msgstr "\"slaptest\" 的輸出：\n"
+
+#: src/modules/LdapServer.pm:1589
+msgid "Migration of existing configuration failed."
+msgstr "遷移已有配置失敗。"
+
+#: src/modules/LdapServer.pm:1608 src/modules/LdapServer.pm:1616
+msgid "Enabling LDAPI listener failed."
+msgstr "啟用 LDAPI 監聽器失敗。"
+
+#: src/modules/LdapServer.pm:1738
+msgid "Common server certificate not available. StartTLS is disabled."
+msgstr "通用伺服器證書不可用。StartTLS 已禁用。"
+
+#: src/modules/LdapServer.pm:1821
+msgid "Could not create database directory."
+msgstr "無法創建資料庫資料夾。"
+
+#: src/modules/LdapServer.pm:1828 src/modules/LdapServer.pm:2637
+#: src/modules/YaPI/LdapServer.pm:498
+msgid "Could not adjust ownership of database directory."
+msgstr "無法調整資料庫資料夾所有權。"
+
+#: src/modules/LdapServer.pm:1873
+msgid "Could not determine own fully qualified hostname."
+msgstr "無法確定自身的完整限定主機名。"
+
+#: src/modules/LdapServer.pm:1874
+msgid ""
+"A master server for replication cannot work correctly without knowing its own "
+"fully qualified hostname."
+msgstr "複製主伺服器不能在不知道它自身的完全限定主機名的情況下正常工作。"
+
+#: src/modules/LdapServer.pm:2510 src/modules/LdapServer.pm:2520
+msgid "is not a valid LDAP DN."
+msgstr "不是一個有效的 LDAP 判別名。"
+
+#: src/modules/LdapServer.pm:2515 src/modules/LdapServer.pm:2525
+msgid "has multivalued RDNs."
+msgstr "有多值根判別名。"
+
+#: src/modules/LdapServer.pm:2557
+#, perl-format
+msgid "Invalid LDAP DN: \"%s\", cannot extract RDN values"
+msgstr "無效的 LDAP 判別名：\"%s\"，無法提取相對判別名 (RDN) 值"
+
+#: src/modules/LdapServer.pm:2565
+msgid ""
+"The value of the \"c\" attribute must contain a valid ISO-3166 country "
+"2-letter code."
+msgstr "\"c\" 屬性的值必須包含一個有效的 ISO-3166 國家/地區的 2 字母程式碼。"
+
+#. parameter check failed
+#: src/modules/LdapServer.pm:2572 src/modules/YaPI/LdapServer.pm:373
+msgid "First part of suffix must be c=, st=, l=, o=, ou= or dc=."
+msgstr "字尾的第一部分必須為 c=、st=、l=、o=、ou= 或 dc=。"
+
+#: src/modules/LdapServer.pm:2584
+#, perl-format
+msgid "Base DN \"%s\" is not a valid LDAP DN."
+msgstr "基本判別名 \"%s\" 不是一個有效的 LDAP 判別名。"
+
+#: src/modules/LdapServer.pm:2589
+#, perl-format
+msgid "Base DN \"%s\" has multivalued RDNs (not supported by YaST)."
+msgstr "基本判別名 \"%s\" 有多重賦值的相對判別名 (不為 YaST 所支援)。"
+
+#: src/modules/LdapServer.pm:2598
+#, perl-format
+msgid "Root DN \"%s\" is not a valid LDAP DN."
+msgstr "根判別名 \"%s\" 不是一個有效的 LDAP 判別名。"
+
+#: src/modules/LdapServer.pm:2603
+#, perl-format
+msgid "Root DN \"%s\" has multivalued RDNs (not supported by YaST)."
+msgstr "根判別名 \"%s\" 有多重賦值的相對判別名 (不為 YaST 所支援)。"
+
+#: src/modules/LdapServer.pm:2610
+msgid "The Root DN must be a child object of the Base DN."
+msgstr "根判別名必須為基本判別名的一個子物件。"
+
+#: src/modules/LdapServer.pm:2630 src/modules/YaPI/LdapServer.pm:484
+msgid "Could not create directory."
+msgstr "無法創建資料夾。"
+
+#: src/modules/LdapServer.pm:3404
+#, perl-format
+msgid "CA Certificate File: \"%s\" does not exist."
+msgstr "CA 證書檔案：\"%s\" 不存在。"
+
+#: src/modules/LdapServer.pm:3414
+msgid ""
+"Error while trying to verify the server certificate of the provider server.\n"
+msgstr "嘗試驗證提供者伺服器的伺服器證書時出錯。\n"
+
+#: src/modules/LdapServer.pm:3415
+#, perl-format
+msgid ""
+"Please make sure that \"%s\" contains the correct\n"
+"CA file to verify the remote Server Certificate."
+msgstr "請確保 \"%s\" 包含了正確的 CA 檔案以驗證遠端伺服器證書。"
+
+#: src/modules/LdapServer.pm:3423
+#, perl-format
+msgid "Certificate File: \"%s\" does not exist."
+msgstr "證書檔案：\"%s\" 不存在。"
+
+#: src/modules/LdapServer.pm:3428
+#, perl-format
+msgid "Certificate Key File: \"%s\" does not exist."
+msgstr "證書金鑰檔案：\"%s\" 不存在。"
+
+#. error at paramter check
+#: src/modules/YaPI/LdapServer.pm:301
+#, perl-format
+msgid "Database type '%s' is not supported. Allowed are 'bdb' and 'hdb'."
+msgstr "不支援資料庫類型 '%s'。允許類型為 \"bdb\" 與 \"hdb\"。"
+
+#. parameter check failed
+#: src/modules/YaPI/LdapServer.pm:347
+msgid "The countryName must be an ISO-3166 country 2-letter code."
+msgstr "國家名稱必須為一個 ISO-3166 國家/地區的 2 字母程式碼。"
+
+#. parameter check failed
+#: src/modules/YaPI/LdapServer.pm:391 src/modules/YaPI/LdapServer.pm:726
+msgid "Invalid 'rootdn'."
+msgstr "'rootdn' 無效。"
+
+#. parameter check failed
+#: src/modules/YaPI/LdapServer.pm:400 src/modules/YaPI/LdapServer.pm:734
+msgid "'rootdn' must be below the 'suffix'."
+msgstr "'rootdn' 必須在 'suffix' 的下面。"
+
+#. parameter check failed
+#: src/modules/YaPI/LdapServer.pm:415
+msgid "To set a password, you must define 'rootdn'."
+msgstr "您必須先定義 'rootdn' 才能設定密碼。"
+
+#. parameter check failed
+#: src/modules/YaPI/LdapServer.pm:422
+msgid "Define 'rootpw'."
+msgstr "請定義 'rootpw'。"
+
+#. parameter check failed
+#: src/modules/YaPI/LdapServer.pm:435 src/modules/YaPI/LdapServer.pm:768
+#, perl-format
+msgid "'%s' is an unsupported crypt method."
+msgstr "'%s' 是一種不支援的加密方法。"
+
+#. parameter check failed
+#: src/modules/YaPI/LdapServer.pm:475
+msgid "Define 'directory'."
+msgstr "請定義 'directory'。"
+
+#: src/modules/YaPI/LdapServer.pm:489
+msgid "The directory does not exist."
+msgstr "該資料夾不存在。"
+
+#: src/modules/YaPI/LdapServer.pm:511 src/modules/YaPI/LdapServer.pm:526
+msgid "Invalid cache size value."
+msgstr "快取大小值無效。"
+
+#: src/modules/YaPI/LdapServer.pm:547
+msgid "Invalid checkpoint value."
+msgstr "檢查點值無效。"
+
+#. parameter check failed
+#: src/modules/YaPI/LdapServer.pm:753 src/modules/YaPI/LdapServer.pm:758
+msgid "Define 'passwd'."
+msgstr "請定義 'passwd'。"
+
+#: src/modules/YaPI/LdapServer.pm:805
+msgid "Database edit failed."
+msgstr "資料庫編輯失敗。"
+
+#. error message at parameter check
+#: src/modules/YaPI/LdapServer.pm:865 src/modules/YaPI/LdapServer.pm:938
+#: src/modules/YaPI/LdapServer.pm:1086 src/modules/YaPI/LdapServer.pm:1129
+msgid "Missing parameter 'suffix'."
+msgstr "缺少參數 'suffix'。"
+
+#: src/modules/YaPI/LdapServer.pm:1533
+msgid "Cannot restart the service."
+msgstr "無法重啟服務。"
+
+#: src/modules/YaPI/LdapServer.pm:1540
+msgid "Cannot stop the service."
+msgstr "無法停止服務。"
+
+#. error message
+#: src/modules/YaPI/LdapServer.pm:1703
+msgid "CA certificate file does not exist."
+msgstr "CA 證書檔案不存在。"
+
+#. error message
+#: src/modules/YaPI/LdapServer.pm:1719
+msgid "CA certificate path does not exist."
+msgstr "CA 證書路徑不存在。"
+
+#. error message
+#: src/modules/YaPI/LdapServer.pm:1735
+msgid "Certificate file does not exist."
+msgstr "證書檔案不存在。"
+
+#. error message
+#: src/modules/YaPI/LdapServer.pm:1770
+msgid "Invalid value for 'TLSVerifyClient'."
+msgstr "'TLSVerifyClient' 值無效。"
+
+#: src/modules/YaPI/LdapServer.pm:1779
+msgid "Writing failed."
+msgstr "寫入失敗。"
+
+#: src/modules/YaPI/LdapServer.pm:1944
+msgid "Missing 'ServerCertificateFile' parameter."
+msgstr "缺少 'ServerCertificateFile' 參數。"
+
+#: src/modules/YaPI/LdapServer.pm:1950
+msgid "Cannot read certificate file."
+msgstr "無法讀取證書檔案。"
+
+#: src/modules/YaPI/LdapServer.pm:1955
+msgid "Missing 'ServerCertificateData' parameter."
+msgstr "缺少 'ServerCertificateData' 參數。"
+
+#: src/modules/YaPI/LdapServer.pm:1962 src/modules/YaPI/LdapServer.pm:1987
+#: src/modules/YaPI/LdapServer.pm:2003 src/modules/YaPI/LdapServer.pm:2012
+msgid "Corrupt PEM data."
+msgstr "損壞的 PEM 資料。"
+
+#: src/modules/YaPI/LdapServer.pm:1969
+msgid "Missing 'ServerKeyFile' parameter."
+msgstr "缺少 'ServerKeyFile' 參數。"
+
+#: src/modules/YaPI/LdapServer.pm:1975
+msgid "Cannot read key file."
+msgstr "無法讀取金鑰檔案。"
+
+#: src/modules/YaPI/LdapServer.pm:1980
+msgid "Missing 'ServerKeyData' parameter."
+msgstr "缺少 'ServerKeyData' 參數。"
+
+#: src/modules/YaPI/LdapServer.pm:1998
+msgid "Cannot read CA certificate file."
+msgstr "無法讀取 CA 證書檔案。"
+
+#: src/modules/YaPI/LdapServer.pm:2021
+msgid "Cannot write certificate file."
+msgstr "無法寫入證書檔案。"
+
+#: src/modules/YaPI/LdapServer.pm:2027
+msgid "Cannot write key file."
+msgstr "無法寫入金鑰檔案。"
+
+#: src/modules/YaPI/LdapServer.pm:2046
+msgid "Cannot write CA certificate file."
+msgstr "無法寫入 CA 證書檔案。"
+
+#~ msgid "The Base Object: \""
+#~ msgstr "基礎物件：\""
+
+#~ msgid "Invalid LDAP DN: \""
+#~ msgstr "無效 LDAP 判別名：\""
+
+#~ msgid "Base DN"
+#~ msgstr "基本判別名"
+
+#~ msgid "Root DN"
+#~ msgstr "根判別名"
+
+#~ msgid "CA Certificate File: \""
+#~ msgstr "CA 證書檔案：\""
+
+#~ msgid "\" does not exist."
+#~ msgstr "\" 不存在。"
+
+#~ msgid "Please make sure that \""
+#~ msgstr "請確保 \""
+
+#~ msgid "Certificate File: \""
+#~ msgstr "證書檔案：\""
+
+#~ msgid " does not exist."
+#~ msgstr " 不存在。"
+
+#~ msgid "Certificate Key File: \""
+#~ msgstr "證書金鑰檔案: \""
+
+#~ msgid "from the MirrorMode setup?\n"
+#~ msgstr "從映象模式設定？\n"
+
+#~ msgid "LDAP over IPC (ldapi)"
+#~ msgstr "程序間通訊中的輕量目錄訪問協議 (ldapi)"
+
+#, fuzzy
+#~ msgid "Password Policy settings"
+#~ msgstr "口令策略設定"
+
+#, fuzzy
+#~ msgid "Please enter a password"
+#~ msgstr "請輸入關鍵字："
+
+#, fuzzy
+#~| msgid "Slave Server Setup"
+#~ msgid "Slave server setup"
+#~ msgstr "從屬伺服器設定"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p><b><big>Saving LDAP Server Configuration</big></b><br>\n"
+#~ "Please wait...<br></p> "
+#~ msgstr ""
+#~ "<p><b><big>正在儲存 LDAP 伺服器配置</big></b><br>\n"
+#~ "請稍候... <br></p>\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p><b><big>Aborting Saving:</big></b><br>\n"
+#~ "Abort the save procedure by pressing <b>Abort</b>. An additional dialog informs whether it\n"
+#~ "is safe to do so.  </p> "
+#~ msgstr ""
+#~ "<p><b><big>正在中斷儲存：</big></b><br>\n"
+#~ "請點選<B>中斷</B>, 以便中斷儲存過程.\n"
+#~ "一個附加對話方塊將告訴您這樣做是否安全。</P>"
+
+#, fuzzy
+#~ msgid "Please select a valid CA Certificate File"
+#~ msgstr "選擇 CA 證書檔案"
+
+#, fuzzy
+#~ msgid "Database type"
+#~ msgstr "資料庫路徑"
+
+#~ msgid "Add"
+#~ msgstr "添加"
+
+#~ msgid "Delete"
+#~ msgstr "刪除"
+
+#, fuzzy
+#~| msgid "Please select directory..."
+#~ msgid "Please select Server type"
+#~ msgstr "請選擇目錄..."
+
+#~ msgid "A&dd Database..."
+#~ msgstr "添加資料庫(&D)..."
+
+#, fuzzy
+#~ msgid "Delete Database"
+#~ msgstr "資料庫"
+
+#, fuzzy
+#~ msgid "Attrbute"
+#~ msgstr "特性"
+
+#, fuzzy
+#~ msgid "Syncprov settings"
+#~ msgstr "寫入代理設定"
+
+#~ msgid "LDAP Server Configuration:"
+#~ msgstr "LDAP 伺服器配置："
+
+#, fuzzy
+#~ msgid "Base DN \""
+#~ msgstr "基本 DN："
+
+#, fuzzy
+#~ msgid "Root DN \""
+#~ msgstr "根 DN："
+
+#, fuzzy
+#~ msgid "Please enter a password for the configuration user (cn=config)"
+#~ msgstr "選擇其中之一進行配置。"
+
+#, fuzzy
+#~ msgid "New &Password"
+#~ msgstr "新密碼(&N)"
+
+#, fuzzy
+#~ msgid "You have an existing configuration but the LDAP Server is not currently running."
+#~ msgstr "您的計算機被配置為 LDAP 客戶端，而 LDAP 伺服器不在本地。"
+
+#~ msgid "Delete a schema from the list"
+#~ msgstr "從列表刪除所選綱要嗎？"
+
+#~ msgid ""
+#~ "<p><b><big>Aborting Saving:</big></b><br>\n"
+#~ "Abort the save procedure by pressing <b>Abort</b>.\n"
+#~ "An additional dialog informs whether it is safe to do so.\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p><b><big>中止儲存：</big></b><br>\n"
+#~ "按<b>中止</b>，中止該儲存過程。\n"
+#~ "另一個對話方塊將指示這樣操作是否安全。\n"
+#~ "</p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>LDAP Server Configuration Overview</big></b><br>\n"
+#~ "Obtain an overview of installed LDAP servers. Additionally\n"
+#~ "edit their configuration.<br></p>\n"
+#~ msgstr ""
+#~ "<p><b><big>LDAP 伺服器配置概述</big></b><br>\n"
+#~ "獲取已安裝的 LDAP 伺服器的概況。另外，\n"
+#~ "還可以編輯其配置。<br></p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Adding an LDAP Server:</big></b><br>\n"
+#~ "Press <b>Add</b> to configure an LDAP server.</p>\n"
+#~ msgstr ""
+#~ "<p><b><big>添加 LDAP 伺服器：</big></b><br>\n"
+#~ "按<b>添加</b>，配置 LDAP 伺服器。</p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Editing or Deleting:</big></b><br>\n"
+#~ "Choose an LDAP server to change or remove.\n"
+#~ "Then press <b>Edit</b> or <b>Delete</b> as desired.</p>\n"
+#~ msgstr ""
+#~ "<p><b><big>編輯或刪除：</big></b><br>\n"
+#~ "選擇要變更或刪除的 LDAP 伺服器。\n"
+#~ "然後根據需要按<b>編輯</b>或<b>刪除</b>。</p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Configuration Part One</big></b><br>\n"
+#~ "Press <b>Next</b>.\n"
+#~ "<br></p>\n"
+#~ msgstr ""
+#~ "<p><b><big>配置的第一部分</big></b><br>\n"
+#~ "按<b>下一步</b>。\n"
+#~ "<br></p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Selecting something:</big></b><br>\n"
+#~ "It is not possible, you must code it first :-)\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p><b><big>選擇某個物件：</big></b><br>\n"
+#~ "這是不可能的，您必須先對其進行編碼 :-)\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p><b><big>Configuration Part Two</big></b><br>\n"
+#~ "Press <b>Next</b>.\n"
+#~ "<br></p>\n"
+#~ msgstr ""
+#~ "<p><b><big>配置的第二部分</big></b><br>\n"
+#~ "按<b>下一步</b>。\n"
+#~ "<br></p>\n"
+
+#~ msgid ""
+#~ "<p>Select a schema file in the list and press <b>Delete</b> to remove it from the\n"
+#~ "configuration file.</p>"
+#~ msgstr ""
+#~ "<p>從列表中選擇一個綱要檔案，然後按<b>刪除</b>，將它從\n"
+#~ "配置檔案中刪除。</p>"
+
+#~ msgid ""
+#~ "<p>With the <b>Up</b> and <b>Down</b> buttons, change the position of the\n"
+#~ "selected schema file. Keep in mind that some schema files depend on others. An incorrect\n"
+#~ "order causes the LDAP server not to start.</p>\n"
+#~ msgstr ""
+#~ "<p>使用<b>向上</b>與<b>向下</b>按鈕，變更\n"
+#~ "選定綱要檔案的位置。切記，有些綱要檔案要依賴於其它綱要檔案。如果綱要檔案的順序不正確，\n"
+#~ "會導致 LDAP 伺服器無法啟動。</p>\n"
+
+#~ msgid "<p>Here, enable or disable a set of special features.</p>"
+#~ msgstr "<p>在此啟用或禁用一組特殊的功能。</p>"
+
+#~ msgid "<p>If TLS is active, view the current settings here.</p>"
+#~ msgstr "<p>如果 TLS 處於活動狀態，在此可檢視當前設定。</p>"
+
+#~ msgid "<p>With <b>Select Certificate...</b>, configure new certificates for this service.</p>"
+#~ msgstr "<p>利用<b>選擇證書...</b>，為該服務配置新證書。</p>"
+
+#~ msgid "<p>In this dialog, edit some parameters of this database.<p>"
+#~ msgstr "<p>在此對話方塊中，編輯該資料庫的某些參數。<p>"
+
+#~ msgid "<p>With <b>Root DN</b>, change the DN for the administrator."
+#~ msgstr "<p>使用<b>根 DN</b>，變更管理員的 DN。"
+
+#~ msgid "<p>To change the password for the root account, enter a new one and select the <b>Encryption</b>.</p>"
+#~ msgstr "<p>要變更 root 帳戶的密碼，請輸入新密碼，然後選擇<b>加密</b>。</p>"
+
+#~ msgid "<p>The password fields are initially empty, even if a password is already set in the configuration file.</p>"
+#~ msgstr "<p>密碼欄位最初是空的，即使已在配置檔案中設定了密碼。</p>"
+
+#, fuzzy
+#~ msgid "Proxy Cache"
+#~ msgstr "代理"
+
+#, fuzzy
+#~ msgid "ppolicy settings"
+#~ msgstr "顯示設定"
+
+#~ msgid "Advanced Configuration"
+#~ msgstr "高階配置"
+
+#, fuzzy
+#~ msgid "Please enter a password for the Administrator user"
+#~ msgstr "輸入 root 使用者的口令(&E)："
+
+#~ msgid ""
+#~ "<p><b><big>LDAP Server Configuration</big></b><br>\n"
+#~ "Change the settings of the initial LDAP database here.</p>\n"
+#~ msgstr ""
+#~ "<p><b><big>LDAP 伺服器配置</big></b><br>\n"
+#~ "在此變更初始 LDAP 資料庫的設定。</p>\n"
+
+#~ msgid ""
+#~ "<p>The <b>Root Password</b> is initially set to the system root password\n"
+#~ "entered earlier in the installation process. Change it in the\n"
+#~ "edit fields. Change the password encryption method in the relevant field.</p>\n"
+#~ msgstr ""
+#~ "<p>該<b>根密碼</b>最初被設定為\n"
+#~ "安裝過程前期輸入的系統根密碼。請在\n"
+#~ "編輯欄位中變更該密碼。在相關欄位中變更該密碼的加密方法。</p>\n"
+
+#~ msgid ""
+#~ "<p>Checking the <b>Activate StartTLS</b> option enables the LDAP server to\n"
+#~ "process incoming StartTLS requests. This requires the common server certificate\n"
+#~ "that can be set up in the <b>CA Management</b> YaST module.</p>\n"
+#~ msgstr ""
+#~ "<p>選中<b>啟用 StartTLS</b> 選項可以使 LDAP 伺服器\n"
+#~ "處理進來的 StartTLS 請求。這就要求可以在\n"
+#~ "<b>CA 管理</b> YaST 模組中設定普通伺服器證書。</p>\n"
+
+#~ msgid ""
+#~ "<p>If <b>Register at an SLP Daemon</b> is checked, the LDAP server tries\n"
+#~ "to find a running SLP daemon at which to register.</p>\n"
+#~ msgstr ""
+#~ "<p>如果選中<b>在 SLP 守護程式註冊</b>，LDAP 伺服器將嘗試\n"
+#~ "查找正在運行的 SLP 守護程式，在該程式中進行註冊。</p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>LDAP Server Configuration</big></b><br>\n"
+#~ "Configure an LDAP server here.<br></p>\n"
+#~ msgstr ""
+#~ "<p><b><big>LDAP 伺服器配置</big></b><br>\n"
+#~ "在此配置 LDAP 伺服器。<br></p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Adding an LDAP Server:</big></b><br>\n"
+#~ "Choose an LDAP server from the list of detected LDAP servers.\n"
+#~ "If your LDAP server was not autodetected, use <b>Other (not detected)</b>.\n"
+#~ "Then press <b>Configure</b>.</p>\n"
+#~ msgstr ""
+#~ "<p><b><big>添加 LDAP 伺服器：</big></b><br>\n"
+#~ "從檢測到的 LDAP 伺服器列表中選擇一臺 LDAP 伺服器。\n"
+#~ "如果未自動檢測您的 LDAP 伺服器，請使用<b>其它(未檢測)</b>。\n"
+#~ "然後按<b>配置</b>。</p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Editing or Deleting:</big></b><br>\n"
+#~ "If you press <b>Edit</b>, an additional dialog in which to change\n"
+#~ "the configuration opens.</p>\n"
+#~ msgstr ""
+#~ "<p><b><big>編輯或刪除:</big></b><br>\n"
+#~ "如果您點選<b>編輯</b>, 將開啟一個對話方塊,\n"
+#~ "在這個對話方塊裡, 您可以變更您的設定.</p>\n"
+
+#~ msgid "<p>Click <b>Configure...</p> to configure the LDAP server.</p>"
+#~ msgstr "<p>單擊<b>配置...</p>，配置該 LDAP 伺服器。</p>"
+
+#~ msgid "Enable/disable the service"
+#~ msgstr "啟用/禁用該服務"
+
+#~ msgid "Available Databases:"
+#~ msgstr "可用的資料庫："
+
+#, fuzzy
+#~ msgid "Database is read-only"
+#~ msgstr "資料庫目錄(&D)"
+
+#, fuzzy
+#~ msgid "Enable Monitoring"
+#~ msgstr "監視"
+
+#, fuzzy
+#~ msgid "Edit Index Configuration"
+#~ msgstr "Xinetd 配置"
+
+#~ msgid "Invalid suffix."
+#~ msgstr "字尾無效。"
+
+#~ msgid "Invalid directory path."
+#~ msgstr "目錄路徑無效。"
+
+#~ msgid "Invalid password."
+#~ msgstr "密碼無效。"
+
+#~ msgid "Read the database list"
+#~ msgstr "讀取資料庫列表"
+
+#~ msgid "Read the databases"
+#~ msgstr "讀取資料庫"
+
+#~ msgid "Read global options"
+#~ msgstr "讀取全局選項"
+
+#~ msgid "Reading the database list..."
+#~ msgstr "正在讀取資料庫列表..."
+
+#~ msgid "Reading the databases..."
+#~ msgstr "正在讀取資料庫..."
+
+#~ msgid "Reading global options..."
+#~ msgstr "正在讀取全局選項..."
+
+#~ msgid "Finished"
+#~ msgstr "已完成"
+
+#~ msgid "Cannot read the database list."
+#~ msgstr "無法讀取資料庫列表。"
+
+#~ msgid "Cannot read the database '%s'."
+#~ msgstr "無法讀取資料庫 '%s'。"
+
+#~ msgid "Cannot read the allow list."
+#~ msgstr "無法讀取允許列表。"
+
+#~ msgid "Cannot read the log level."
+#~ msgstr "無法讀取日誌級別。"
+
+#~ msgid "Cannot read the schema include list."
+#~ msgstr "無法讀取綱要包含列表。"
+
+#~ msgid "Cannot read the TLS settings."
+#~ msgstr "無法讀取 TLS 設定。"
+
+#~ msgid "Write global settings"
+#~ msgstr "寫入全局設定"
+
+#~ msgid "Add new databases"
+#~ msgstr "添加新資料庫"
+
+#~ msgid "Edit databases"
+#~ msgstr "編輯資料庫"
+
+#~ msgid "Cannot write 'allow list'."
+#~ msgstr "無法寫入 'allow list'。"
+
+#~ msgid "Cannot write 'loglevel'."
+#~ msgstr "無法寫入 'loglevel'。"
+
+#~ msgid "Cannot write schema include list."
+#~ msgstr "無法寫入綱要包含列表。"
+
+#~ msgid "Cannot write to '/etc/sysconfig/openldap'."
+#~ msgstr "無法寫入 '/etc/sysconfig/openldap'。"
+
+#~ msgid "Cannot write 'TLS Settings'."
+#~ msgstr "無法寫入 'TLS Settings'。"
+
+#~ msgid "Cannot add new database '%s'."
+#~ msgstr "無法添加新的資料庫 '%s'。"
+
+#~ msgid "Cannot write the database '%s'."
+#~ msgstr "無法寫入資料庫 '%s'。"
+
+#~ msgid "Check password policy objects"
+#~ msgstr "檢查口令策略物件"
+
+#~ msgid ""
+#~ "The default password policy object for\n"
+#~ "'%s' does not exist.\n"
+#~ "\n"
+#~ "Create that object now?\n"
+#~ msgstr ""
+#~ "“%s”的默認口令策略物件\n"
+#~ "不存在。\n"
+#~ "\n"
+#~ " 立即創建該物件嗎？\n"
+
+#~ msgid "LDAP Server to Configure"
+#~ msgstr "要配置的 LDAP 伺服器"
+
+#~ msgid "Number"
+#~ msgstr "編號"
+
+#~ msgid "&Configure..."
+#~ msgstr "配置(&C)..."
+
+#~ msgid "OpenLDAP Server Settings"
+#~ msgstr "OpenLDAP 伺服器設定"
+
+#~ msgid "LDAP &Password"
+#~ msgstr "LDAP 密碼(&P)"
+
+#~ msgid "&Encryption"
+#~ msgstr "加密(&E)"
+
+#~ msgid "Activate Start&TLS with Common Server Certificate"
+#~ msgstr "啟用具有普通伺服器證書的 StartTLS(&T)"
+
+#~ msgid ""
+#~ "Changing anything in this dialog disables the automatic\n"
+#~ "generation of base DN, root DN, and LDAP password.\n"
+#~ msgstr ""
+#~ "變更此對話方塊中的任何內容都將禁用\n"
+#~ "基本 DN、根 DN 與 LDAP 密碼的自動生成功能。\n"
+
+#~ msgid ""
+#~ "No basedn provided or a database with the provided basedn does already \n"
+#~ "exist"
+#~ msgstr ""
+#~ "沒有提供 basedn ，或一個資料庫提供的 basedn 並不\n"
+#~ "存在"
+
+#~ msgid "The value for pos must be a positive integer."
+#~ msgstr "位置值必須為正整數。"
+
+#~ msgid "The file '%1' is not a schema file."
+#~ msgstr "檔案 '%1' 不是綱要檔案。"
+
+#~ msgid "Choose a certificate if you want to activate TLS."
+#~ msgstr "要啟用 TLS，請選擇一個證書。"
+
+#~ msgid "Current Configuration:"
+#~ msgstr "當前配置："
+
+#~ msgid "The following changes will be made:"
+#~ msgstr "將進行如下變更："
+
+#~ msgid "Configuring Common Server Certificate"
+#~ msgstr "正在配置普通伺服器證書"
+
+#~ msgid "Importing the Following Certificates:"
+#~ msgstr "正在匯入以下證書："
+
+#~ msgid "An internal error occurred. View the log file."
+#~ msgstr "發生內部錯誤。請檢視日誌檔案。"
+
+#~ msgid "Dialog not found"
+#~ msgstr "未找到對話"
+
+#~ msgid "Server certificate file is required."
+#~ msgstr "伺服器證書檔案是必需的。"
+
+#~ msgid "Server key file is required."
+#~ msgstr "伺服器金鑰檔案是必需的。"
+
+#~ msgid "Allow Settings"
+#~ msgstr "允許設定"
+
+#~ msgid "TLS Active"
+#~ msgstr "TLS 處於活動狀態"
+
+#~ msgid "&Select Certificate..."
+#~ msgstr "選擇證書(&S)..."
+
+#~ msgid "Select Type"
+#~ msgstr "選擇類型"
+
+#~ msgid "&Import Certificates"
+#~ msgstr "匯入證書(&I)"
+
+#~ msgid "Add Database"
+#~ msgstr "添加資料庫"
+
+#~ msgid "basedn exists or not available"
+#~ msgstr "base不存在或不可用"
+

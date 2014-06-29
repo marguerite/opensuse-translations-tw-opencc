@@ -1,0 +1,1292 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:39+0200\n"
+"PO-Revision-Date: 2013-12-03 00:24+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. translator: byte shorthand
+#: src/YGProgressBar.cc:25
+msgid "B"
+msgstr "B"
+
+#: src/YGProgressBar.cc:26
+msgid "KB"
+msgstr "KB"
+
+#: src/YGProgressBar.cc:27
+msgid "MB"
+msgstr "MB"
+
+#: src/YGProgressBar.cc:28
+msgid "GB"
+msgstr "GB"
+
+#: src/YGProgressBar.cc:29
+msgid "TB"
+msgstr "TB"
+
+#: src/YGProgressBar.cc:115
+msgid "of"
+msgstr "共"
+
+#: src/YGTreeView.cc:119
+msgid "Total selected:"
+msgstr "總選："
+
+#: src/YGTreeView.cc:358
+msgid "No entries."
+msgstr "無條目。"
+
+#: src/YGUI.cc:28
+msgid "Error"
+msgstr "錯誤"
+
+#: src/YGUI.cc:132
+msgid ""
+"Command line options for the YaST2 UI (GTK plugin):\n"
+"\n"
+"--noborder    no window manager border for main dialogs\n"
+"--fullscreen  use full screen for main dialogs\n"
+"--nothreads   run without additional UI threads\n"
+"--help        prints this help text\n"
+"\n"
+msgstr ""
+"YaST2 圖形介面 (GTK 插件) 的命令列選項：\n"
+"\n"
+"-noborder 主對話方塊無視窗管理器邊框\n"
+"-fullscreen 對主對話方塊使用全屏模式\n"
+"-nothreads 沒有額外的圖形介面程序\n"
+"--help 列印此幫助文字\n"
+"\n"
+
+#: src/YGUI.cc:327
+msgid "Open Macro file"
+msgstr "開啟宏檔案"
+
+#: src/YGUI.cc:343
+msgid "Macro recording done."
+msgstr "宏錄製完成。"
+
+#: src/YGUI.cc:349
+msgid "Save Macro"
+msgstr "儲存宏"
+
+#: src/YGUI.cc:358
+msgid "Save y2logs"
+msgstr "儲存 y2log"
+
+#: src/YGUI.cc:368
+#, c-format
+msgid "Could not run: '%s' (exit value: %d)"
+msgstr "無法運行：'%s' (退出值：%d)"
+
+#: src/YGUI.cc:394
+msgid "No dialog to take screenshot of."
+msgstr "沒有可截圖的對話方塊。"
+
+#: src/YGUI.cc:409
+msgid "Could not take screenshot."
+msgstr "無法截圖。"
+
+#: src/YGUI.cc:450
+msgid "Save screenshot"
+msgstr "儲存截圖"
+
+#: src/YGUI.cc:462
+msgid "Could not save to:"
+msgstr "無法儲存至："
+
+#: src/YGUI.cc:505
+msgid "Select"
+msgstr "選擇"
+
+#: src/YGUtils.cc:626
+msgid "Apply"
+msgstr "應用"
+
+#: src/YGUtils.cc:627
+msgid "Accept"
+msgstr "接受"
+
+#: src/YGUtils.cc:628
+msgid "Install"
+msgstr "安裝"
+
+#: src/YGUtils.cc:629
+msgid "OK"
+msgstr "好"
+
+#: src/YGUtils.cc:630
+msgid "Cancel"
+msgstr "取消"
+
+#: src/YGUtils.cc:631
+msgid "Abort"
+msgstr "中止"
+
+#: src/YGUtils.cc:632 src/ygtkwizard.c:155
+msgid "Close"
+msgstr "關閉"
+
+#: src/YGUtils.cc:633
+msgid "Yes"
+msgstr "是"
+
+#: src/YGUtils.cc:634
+msgid "No"
+msgstr "否"
+
+#: src/YGUtils.cc:635
+msgid "Add"
+msgstr "添加"
+
+#: src/YGUtils.cc:636
+msgid "Edit"
+msgstr "編輯"
+
+#: src/YGUtils.cc:637
+msgid "Delete"
+msgstr "刪除"
+
+#: src/YGUtils.cc:638
+msgid "Up"
+msgstr "向上"
+
+#: src/YGUtils.cc:639
+msgid "Down"
+msgstr "向下"
+
+#: src/YGUtils.cc:640
+msgid "Enable"
+msgstr "啟用"
+
+#: src/YGUtils.cc:641
+msgid "Disable"
+msgstr "禁用"
+
+#: src/YGUtils.cc:642
+msgid "Exit"
+msgstr "退出"
+
+#: src/YGUtils.cc:643
+msgid "Back"
+msgstr "後退"
+
+#: src/YGUtils.cc:644
+msgid "Next"
+msgstr "下一步"
+
+#: src/ygtksteps.c:75
+msgid "Current step"
+msgstr "當前步驟"
+
+#: src/ygtktreeview.c:135
+msgid "Loading..."
+msgstr "正在載入..."
+
+#: src/ygtktreeview.c:214
+msgid "&Show column"
+msgstr "顯示分欄(&S)"
+
+#: src/ygtkwizard.c:83
+msgid "Clear"
+msgstr "清除"
+
+#: src/ygtkwizard.c:107 src/ygtkwizard.c:617
+msgid "Help"
+msgstr "幫助"
+
+#: src/ygtkwizard.c:161
+msgid "&Find:"
+msgstr "查找(&F)："
+
+#: src/ygtkwizard.c:448
+msgid "more"
+msgstr "更多"
+
+#~ msgid "Name"
+#~ msgstr "名稱"
+
+#~ msgid "Version"
+#~ msgstr "版本"
+
+#~ msgid "Size"
+#~ msgstr "大小"
+
+#~ msgid "Action"
+#~ msgstr "動作"
+
+#~ msgid "Repository"
+#~ msgstr "軟體源"
+
+#~ msgid "Supportability"
+#~ msgstr "支援程度"
+
+#~ msgid "Package _listing:"
+#~ msgstr "軟體包清單："
+
+#~ msgid ""
+#~ "<h1><img src=\"gtk-dialog-info\" />Overview</h1><p>Press a patch in the "
+#~ "list to see more information about it.</p><p>To install a patch, just "
+#~ "click on its \"checkbox\".</p>"
+#~ msgstr ""
+#~ "<h1><img src=\"gtk-dialog-info\" />概覽</h1><p>按列表中的補丁可檢視其更多"
+#~ "資訊。</p><p>要安裝一個補丁，僅需點選其 \"核取方塊\"。</p>"
+
+#~ msgid ""
+#~ "<h1><img src=\"gtk-dialog-info\" />Overview</h1><p>Browse packages using "
+#~ "the groups list on the left.</p><p>Press a package in the list to see "
+#~ "more information about it.</p><p>To install or remove a package, just "
+#~ "click on its \"checkbox\".</p>"
+#~ msgstr ""
+#~ "<h1><img src=\"gtk-dialog-info\" />概覽</h1><p>使用左側的分組列表瀏覽軟體"
+#~ "包。</p><p>按列表中的軟體包可檢視其更多資訊。</p><p>要安裝或移除一個軟體"
+#~ "包，僅需點選其 \"核取方塊\"。</p>"
+
+#~ msgid "Priorities"
+#~ msgstr "優先順序"
+
+#~ msgid "Repositories"
+#~ msgstr "軟體源"
+
+#~ msgid "Groups"
+#~ msgstr "分組"
+
+#~ msgid "RPM Groups"
+#~ msgstr "RPM 組"
+
+#~ msgid "Support"
+#~ msgstr "支援"
+
+#~ msgid "Patterns"
+#~ msgstr "軟體集"
+
+#~ msgid "Languages"
+#~ msgstr "語言"
+
+#~ msgid "License Agreement"
+#~ msgstr "許可協議"
+
+#~ msgid "Do you accept the terms of this license?"
+#~ msgstr "您接受此許可條款嗎？"
+
+#~ msgid "Warning Message"
+#~ msgstr "警告訊息"
+
+#~ msgid "Install anyway?"
+#~ msgstr "強制安裝嗎？"
+
+#~ msgid ""
+#~ "There are some conflicts on the transaction that must be solved manually."
+#~ msgstr "在處理過程中有一些衝突需要手動解決。"
+
+#~ msgid "Changes not saved!"
+#~ msgstr "修改未儲存！"
+
+#~ msgid "Quit anyway?"
+#~ msgstr "依然退出嗎？"
+
+#~ msgid "Unsupported packages"
+#~ msgstr "不支援的軟體包"
+
+#~ msgid ""
+#~ "Please realize that the following software is either unsupported or "
+#~ "requires an additional customer contract for support."
+#~ msgstr ""
+#~ "請意識到下列軟體要麼系統不支援，要麼需簽署額外客戶合同才能獲得支援。"
+
+#~ msgid "Online Update"
+#~ msgstr "線上更新"
+
+#~ msgid "Software Manager"
+#~ msgstr "軟體管理器"
+
+#~ msgid "Please wait..."
+#~ msgstr "請稍候..."
+
+#~ msgid ""
+#~ "<h1>Purpose</h1><p>This tool lets you install, remove, and update "
+#~ "applications.</p><p>Software in &product; is broken down and distributed "
+#~ "in the form of packages. This way, if multiple applications require a "
+#~ "common system file, this system file is shipped in its own package and is "
+#~ "installed only once if needed. The user need not be concerned about such "
+#~ "underlying <i>dependencies</i>. Likewise, the plugins and other non-"
+#~ "essential data of a given application may be shipped in their own "
+#~ "packages, so the user may install them only if needed.</p>"
+#~ msgstr ""
+#~ "<h1>宗旨</h1><p>此工具讓您可以安裝，移除與更新應用程式。</p><p>&product 中"
+#~ "的軟體是拆分成軟體包，以軟體包形式分發的。這種方法下，若多個應用程式依賴了"
+#~ "某個通用的系統檔案，該系統檔案將在它自身的軟體包中分發，需要時僅需安裝一"
+#~ "次。使用者不需要關心這樣的底層<i>依賴關係</i>。同樣，某給定應用程式的插件與"
+#~ "非必要資料也可能在它們自身的軟體包中分發，這樣使用者才可以按需安裝。</p>"
+
+#~ msgid ""
+#~ "<p>Common suffixes for complementary packages:</p><ul><li><b>-plugin-</"
+#~ "b>: extends the application with extra functionality.</li><li><b>-devel</"
+#~ "b>: headers for software development.</li><li><b>-debuginfo</b>: debug "
+#~ "symbols for software testing.</li><li><b>-fr</b>, <b>-pl</b> or other "
+#~ "language siglas: translation files (your language will be marked for "
+#~ "installation automatically when needed).</li></ul>"
+#~ msgstr ""
+#~ "<p>補充軟體包的常見字尾：</p><ul><li><b>-plugin-</b>：為應用程式擴展額外功"
+#~ "能。</li><li><b>-devel</b>：軟體開發用標頭檔案。</li><li><b>-debuginfo-</"
+#~ "b>：軟體測試用偵錯符號。</li><li><b>-fr</b>,<b>-pl</b> 或其它語言縮寫：翻"
+#~ "譯檔案 (當需要時會標記並自動安裝您的語言)。</li></ul>"
+
+#~ msgid ""
+#~ "<p>Both the packages that are installed on your system, and the packages "
+#~ "that are available from the <i>repositories</i> you have configured will "
+#~ "be listed together. <i>Status</i> filters are available in the right-"
+#~ "bottom box.</p>"
+#~ msgstr ""
+#~ "<p>您系統上安裝的軟體包，與您已配置的<i>軟體源</i>中可用的軟體包將列示在一"
+#~ "起。<i>狀態</i>過濾器在右下角。</p>"
+
+#~ msgid ""
+#~ "<blockquote>A repository is a packages media; it can either be local "
+#~ "(such as the installation CD), or a remote internet server. You can find "
+#~ "an utility to setup repositories on the YaST control center, which can "
+#~ "also be accessed via the <b>Configuration > Repositories</b> menu item.</"
+#~ "blockquote>"
+#~ msgstr ""
+#~ "<blockquote>軟體源是一個軟體包介質; 它可以是本地的 (比如安裝 CD)，也可以是"
+#~ "遠端網際網路伺服器。您可以在 YaST 控制中心找到一個設定軟體源的工具，該工具也"
+#~ "可通過<b>配置 > 軟體源</b>選單項訪問。</blockquote>"
+
+#~ msgid "<h1>Usage</h1>"
+#~ msgstr "<h1>用法</h1>"
+
+#~ msgid ""
+#~ "<h2>Install, Upgrade, Remove, Undo tab pages</h2><p>All packages are "
+#~ "listed together unless you have selected a <i>status</i> filter from the "
+#~ "right-bottom box. The check-box next to the package name indicates "
+#~ "whether the package is installed or not. If a more recent version of an "
+#~ "installed package is available, the version text will be highlighted in "
+#~ "blue and an upgrade button conveniently placed next to it. It is "
+#~ "highlighted red if the version installed is no longer being made "
+#~ "available in any configured repository.</p><p>The context menu (right "
+#~ "click on a package) provides extra options. The <b>Undo</b> option can be "
+#~ "used to revert any changes you have made. Multiple packages may be "
+#~ "selected (using the Control key) and modified together.</p><p>Use the "
+#~ "<b>Version</b> list over the description box to select a specific version "
+#~ "of a package.</p><p>Press the <b>Apply</b> button when you want your "
+#~ "changes to be performed.</p>"
+#~ msgstr ""
+#~ "<h2>安裝、升級、移除、撤銷標籤頁</h2><p>除非您從右下角選擇了一個<i>狀態</"
+#~ "i>過濾器，否則全部軟體包均列在一起。挨著軟體包名稱的核取方塊指示了該軟體包是"
+#~ "否安裝。若某個已安裝軟體包有更新版本可用，版本文字會以藍色高亮並在旁邊貼心"
+#~ "地放置了一個升級按鈕。若已安裝的版本不再屬於任何已配置的源，版本文字會以紅"
+#~ "色高亮。</p><p>互動選單 (右鍵點選軟體包) 提供了額外的選項。<b>撤銷</b> 選"
+#~ "項可用於復原您做出的任何修改。也可以選中多個軟體包 (使用 Ctrl 鍵) 並統一修"
+#~ "改。</p><p>可使用描述框上的<b>版本</b>列表標籤頁選擇軟體包的指定版本。</"
+#~ "p><p>當您想要執行您所做出的改動時請按按<b>應用</b>按鈕。</p>"
+
+#~ msgid ""
+#~ "<h2>Lock software</h2><p>Packages can be locked against automatic changes "
+#~ "via the context menu.</p><p>Locking is only useful in very unusual cases: "
+#~ "for instance, you may not want to install a given driver because it "
+#~ "interferes with your system, yet you want to install some collection that "
+#~ "includes it. Locks can be applied whether the package is installed or not."
+#~ "</p>"
+#~ msgstr ""
+#~ "<h2>鎖定軟體</h2><p>可通過互動選單鎖定軟體包以避免自動變動。</p><p>鎖定僅"
+#~ "在極其非正常情況下才有用：例如，您可能不想安裝一個給定驅動，因為它擾亂了您"
+#~ "的系統，但您又想安裝一些包含了它的集合。不管軟體安裝沒安裝都可以對它應用鎖"
+#~ "定。</p>"
+
+#~ msgid "<h2>Filters</h2>"
+#~ msgstr "<h2>過濾器</h2>"
+
+#~ msgid ""
+#~ "<h3>Search</h3><p>Enter free text into the search-field to match their "
+#~ "names and descriptions. (a search for 'office' will bring up the "
+#~ "'LibreOffice' packages as well as 'AbiWord' which carries the word "
+#~ "'office' in its description). You can search for multiple keywords by "
+#~ "separating the with a white space (e.g. 'spread sheet' would return "
+#~ "'libreoffice-calc').You may use the search combined with a filter, like "
+#~ "searching for a package in a given repository. Other search attributes "
+#~ "are provided, such as to search for a given file.</p>"
+#~ msgstr ""
+#~ "<h3>搜索</h3><p>可輸入任意文字到搜索框來搜索匹配這個名稱與描述的軟體包。"
+#~ "(搜索 'office' 會得到 'LibreOffice' 與 'Abiword'，因為後者的描述中有關鍵"
+#~ "詞 'office')。您可通過空格分隔以搜索多個關鍵詞 (例如，'spread sheet' 會返"
+#~ "回 'libreoffice-calc')。您也可以結合過濾器使用搜索，比如在給定軟體源中搜索"
+#~ "某個軟體包。也可以搜索其它屬性，諸如某個給定檔案。</p>"
+
+#~ msgid ""
+#~ "<h3>Groups</h3><p>Software for &product; is indexed so that you can find "
+#~ "software for a specific task when you are not aware of the software "
+#~ "selection available. A more detailed, hierarchical classification is "
+#~ "provided by the <b>RPM Groups</b> filter.</p>"
+#~ msgstr ""
+#~ "<h3>分組</h3><p>&product 中的全部軟體均索引於此，因此當您不清楚有哪些軟體"
+#~ "包可供選擇時，您可在此查找用於特定任務的軟體。更加具體、分層的分類是由 "
+#~ "<b>RPM 組</b>過濾器提供的。</p>"
+
+#~ msgid ""
+#~ "<h3>Patterns and Languages</h3><p><b>Patterns</b> are task-oriented "
+#~ "collections of multiple packages that install like one. The installation "
+#~ "of the <i>File Server</i> pattern, for example, will install various "
+#~ "packages needed for running such a server.</p><p>If you want to install a "
+#~ "particular language, you may want to do so via the <b>Language</b> tool "
+#~ "from the YaST control center.</p>"
+#~ msgstr ""
+#~ "<h3>軟體集與語言</h3><p><b>軟體集</b>是任務導向的多個軟體包集合，可以像一"
+#~ "個軟體包一樣安裝。例如，安裝<i>檔案伺服器</i>軟體集將安裝多個運行檔案服務"
+#~ "器所需的軟體包。</p><p>若您想要安裝一個特定語言，您可以通過 YaST 控制中心"
+#~ "的<b>語言</b>工具來安裝語言集合。</p>"
+
+#~ msgid ""
+#~ "<h2>Software details in the box below</h2><p>Explore the available "
+#~ "information about the package in the box below. Note that more "
+#~ "information is available for installed packages than for those only "
+#~ "available from a repository.</p><p>You can also pick a specific version "
+#~ "of the package to install from this box.</p>"
+#~ msgstr ""
+#~ "<h2>下框中的軟體細節</h2><p>可在下框中發掘軟體包的可用資訊。注意已安裝軟體"
+#~ "包的資訊比源中未安裝的軟體包多。</p><p>您也可以在此框中選擇安裝軟體包的指"
+#~ "定版本。</p>"
+
+#~ msgid ""
+#~ "<h1>Purpose</h1><p>This tool gives you control on overviewing and picking "
+#~ "patches. You may also reverse patches that have been applied to the "
+#~ "system.</p>"
+#~ msgstr ""
+#~ "<h1>宗旨</h1><p>這個工具賦予了您概覽與挑選補丁所需的控制力。您也可以解除安裝已"
+#~ "應用到系統上的補丁。</p>"
+
+#~ msgid ""
+#~ "<h1>Usage</h1><h2>Categories</h2><p>Patches are grouped as follows:</"
+#~ "p><ul><li><b>Security</b>: patches a software flaw that could be "
+#~ "exploited to gain restricted privilege.</li><li><b>Recommended</b>: fixes "
+#~ "non-security related flaws (e.g. data corruption, performance slowdown)</"
+#~ "li><li><b>Optional</b>: ones that only apply to few users.</"
+#~ "li><li><b>Documentation</b>: fixes documentation errors.</li><li><b>YaST</"
+#~ "b>: patches for the YaST control center tools.</li></ul>"
+#~ msgstr ""
+#~ "<h1>用法</h1><h2>分類</h2><p>補丁分組如下：</p><ul><li><b>安全</b>：補綴可"
+#~ "能被利用來獲得受限特權的軟體缺陷。</li><li><b>推薦</b>：修復非安全相關的缺"
+#~ "陷 (例如，資料損壞，運行緩慢)</li><li><b>可選</b>：僅適用於少數使用者的補"
+#~ "丁。</li><li><b>文件</b>：修復文件錯誤。</li><li><b>YaST</b>：YaST 控制中"
+#~ "心工具的補丁。</li></ul>"
+
+#~ msgid ""
+#~ "<p>Only patches that apply to your system will be visible. You can be "
+#~ "sure that the decision to make a patch available is not done trivially.</"
+#~ "p><p>If you are looking for applications enhancements, you should check "
+#~ "for <i>upgrades</i> on the <b>Software Manager</b>.</p>"
+#~ msgstr ""
+#~ "<p>僅有適合您系統的補丁才可見。您可以確定的是哪些補丁「適合」您的系統這種"
+#~ "決定不是隨隨便便就做出的，這要經過我們社群專業維護團隊層層遴選。很抱歉我們"
+#~ "在未經您同意的情況下默認拿走了一些東西，誰都不想的。但真心說安全漏洞/軟體"
+#~ "缺陷/故障並不是桌布，無法隨便置喙。否則您僅會裝上系統上根本沒有裝的軟體的"
+#~ "補丁，甚至修壞您正常運行的系統。當然若您已經達到了專家級，您仍可使用 "
+#~ "`zypper lp` 檢視全部補丁，同時也歡迎您加入我們的團隊，一起為小白使用者們把家"
+#~ "門守牢。</p><p>若您正在尋找應用程式擴展，您應該檢查的是<b>軟體管理器</b>上"
+#~ "的<i>升級</i>選項。</p>"
+
+#~ msgid "Information only available for installed packages."
+#~ msgstr "僅有已安裝軟體包的資訊可用。"
+
+#~ msgid "Several selected"
+#~ msgstr "選中了一些軟體包"
+
+#~ msgid "Web site:"
+#~ msgstr "網站："
+
+#~ msgid "Patch issued:"
+#~ msgstr "釋出的補丁："
+
+#~ msgid "as"
+#~ msgstr "作為"
+
+#~ msgid "Details"
+#~ msgstr "細節"
+
+#~ msgid "Size:"
+#~ msgstr "大小："
+
+#~ msgid "License:"
+#~ msgstr "許可："
+
+#~ msgid "Versions"
+#~ msgstr "版本"
+
+#~ msgid "Installed"
+#~ msgstr "已安裝"
+
+#~ msgid "Remove"
+#~ msgstr "移除"
+
+#~ msgid "Upgrade"
+#~ msgstr "升級"
+
+#~ msgid "Downgrade"
+#~ msgstr "降級"
+
+#~ msgid "Re-install"
+#~ msgstr "重灌"
+
+#~ msgid "Undo"
+#~ msgstr "撤銷"
+
+#~ msgid "Supportability:"
+#~ msgstr "支援程度："
+
+#~ msgid "Dependencies"
+#~ msgstr "依賴關係"
+
+#~ msgid "Installed Version:"
+#~ msgstr "已安裝版本："
+
+#~ msgid "Available Version:"
+#~ msgstr "可用版本："
+
+#~ msgid "File list"
+#~ msgstr "檔案列表"
+
+#~ msgid "Changelog"
+#~ msgstr "修訂歷史"
+
+#~ msgid "Changelog applies only to the installed version."
+#~ msgstr "修訂歷史僅對已安裝的軟體包可用。"
+
+#~ msgid "Authors"
+#~ msgstr "作者"
+
+#~ msgid "Attribute not-specified."
+#~ msgstr "未指定屬性。"
+
+#~ msgid "Developed by:"
+#~ msgstr "開發者："
+
+#~ msgid "Packaged by:"
+#~ msgstr "打包者："
+
+#~ msgid "Applies to"
+#~ msgstr "應用於"
+
+#~ msgid "Available"
+#~ msgstr "可用"
+
+#~ msgid "Modified"
+#~ msgstr "已修改"
+
+#~ msgid "All packages"
+#~ msgstr "全部軟體包"
+
+#~ msgid "Not installed"
+#~ msgstr "未安裝"
+
+#~ msgid "Upgrades"
+#~ msgstr "升級"
+
+#~ msgid "Locked"
+#~ msgstr "已鎖定"
+
+#~ msgid "Only Upgrade Patches"
+#~ msgstr "僅升級補丁"
+
+#~ msgid "Upgrade All"
+#~ msgstr "升級全部"
+
+#~ msgid "(uploaded last 7 days)"
+#~ msgstr " (最近 7 天內上傳)"
+
+#~ msgid "All repositories"
+#~ msgstr "全部軟體源"
+
+#~ msgid "None"
+#~ msgstr "無"
+
+#~ msgid "Repository not refreshed in a long time."
+#~ msgstr "軟體源很久未重新整理了。"
+
+#~ msgid "Switch installed packages to the versions in this repository"
+#~ msgstr "切換已安裝軟體包到此軟體源中的版本"
+
+#~ msgid "Edit Repositories"
+#~ msgstr "編輯軟體源"
+
+#~ msgid "All patches"
+#~ msgstr "全部補丁"
+
+#~ msgid "automatic"
+#~ msgstr "自動"
+
+#~ msgid "user:"
+#~ msgstr "使用者："
+
+#~ msgid "install"
+#~ msgstr "安裝"
+
+#~ msgid "upgrade"
+#~ msgstr "升級"
+
+#~ msgid "remove"
+#~ msgstr "移除"
+
+#~ msgid "downgrade"
+#~ msgstr "降級"
+
+#~ msgid "re-install"
+#~ msgstr "重灌"
+
+#~ msgid "patch"
+#~ msgstr "補丁"
+
+#~ msgid "auto"
+#~ msgstr "自動"
+
+#~ msgid "add repository"
+#~ msgstr "添加軟體源"
+
+#~ msgid "remove repository"
+#~ msgstr "移除軟體源"
+
+#~ msgid "change repository alias"
+#~ msgstr "修改軟體源別名"
+
+#~ msgid "change repository url"
+#~ msgstr "修改軟體源 URL"
+
+#~ msgid "Save to"
+#~ msgstr "儲存至"
+
+#~ msgid "Version / URL"
+#~ msgstr "版本 / URL"
+
+#~ msgid "Requested by"
+#~ msgstr "被需要"
+
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgid "Show History (%s)"
+#~ msgstr "顯示歷史 (%s)"
+
+#~ msgid "Save to File"
+#~ msgstr "儲存到檔案"
+
+#~ msgid "&Install"
+#~ msgstr "安裝(&I)"
+
+#~ msgid "&Upgrade"
+#~ msgstr "升級(&U)"
+
+#~ msgid "&Re-install"
+#~ msgstr "重灌(&R)"
+
+#~ msgid "&Remove"
+#~ msgstr "移除(&R)"
+
+#~ msgid "&Undo"
+#~ msgstr "撤銷(&U)"
+
+#~ msgid "&Unlock"
+#~ msgstr "解鎖(&U)"
+
+#~ msgid "&Lock"
+#~ msgstr "鎖定(&L)"
+
+#~ msgid "No matches."
+#~ msgstr "無匹配。"
+
+#~ msgid "modify"
+#~ msgstr "修改"
+
+#~ msgid "locked: right-click to unlock"
+#~ msgstr "已鎖定：右擊解鎖"
+
+#~ msgid "To install"
+#~ msgstr "待安裝"
+
+#~ msgid "To remove"
+#~ msgstr "待移除"
+
+#~ msgid "(upgrade available)"
+#~ msgstr "(可升級)"
+
+#~ msgid "status changed by the dependencies resolver"
+#~ msgstr "狀態已被依賴關係解決器修改"
+
+#~ msgid "Installed packages"
+#~ msgstr "已安裝軟體包"
+
+#~ msgid "Import from"
+#~ msgstr "匯入自"
+
+#~ msgid "Could not open:"
+#~ msgstr "無法開啟："
+
+#~ msgid "Export to"
+#~ msgstr "匯出至"
+
+#~ msgid ""
+#~ "Use this to generate extensive logs to help tracking down bugs in the "
+#~ "dependencies resolver."
+#~ msgstr "用這個來生成詳盡日誌來幫助跟蹤依賴關係解決器中的故障。"
+
+#~ msgid "The logs will be saved to the directory:"
+#~ msgstr "日誌將被儲存至以下資料夾："
+
+#~ msgid "Generate Dependencies Resolver Testcase"
+#~ msgstr "生成依賴關係解決器試例"
+
+#~ msgid "Success"
+#~ msgstr "成功"
+
+#~ msgid "Dependencies resolver test case written to:"
+#~ msgstr "依賴關係解決器試例已寫入至："
+
+#~ msgid "Also create a <tt>y2logs.tgz</tt> tar archive to attach to bugzilla?"
+#~ msgstr "也創建 <tt>y2logs.tgz tar</tt> 存檔以便附到 Bugzilla 嗎？"
+
+#~ msgid ""
+#~ "Failed to create dependencies resolver testcase.\n"
+#~ "Please check disk space and permissions for:"
+#~ msgstr ""
+#~ "創建依賴關係解決器試例失敗。\n"
+#~ "請檢查磁碟空間與許可權："
+
+#~ msgid "F&ile"
+#~ msgstr "檔案(&I)"
+
+#~ msgid "&Import..."
+#~ msgstr "匯入(&I)..."
+
+#~ msgid "&Export..."
+#~ msgstr "匯出(&E)..."
+
+#~ msgid "&Configuration"
+#~ msgstr "配置(&C)"
+
+#~ msgid "&Repositories..."
+#~ msgstr "軟體源(&R)..."
+
+#~ msgid "&Online Update..."
+#~ msgstr "線上更新(&O)..."
+
+#~ msgid "&Dependencies"
+#~ msgstr "依賴關係(&D)"
+
+#~ msgid "&Check Now"
+#~ msgstr "立刻檢查(&C)"
+
+#~ msgid "&Autocheck"
+#~ msgstr "自動檢查(&A)"
+
+#~ msgid "&Options"
+#~ msgstr "選項(&O)"
+
+#~ msgid "Show -de&vel Packages"
+#~ msgstr "顯示 -de&vel 開發包"
+
+#~ msgid "Show -&debuginfo/-debugsource Packages"
+#~ msgstr "顯示 -&debuginfo/-debugsource 偵錯包"
+
+#~ msgid "&System Verification Mode"
+#~ msgstr "系統校驗模式(&S)"
+
+#~ msgid "&Ignore recommended packages for already installed packages"
+#~ msgstr "忽略已安裝軟體包的推薦軟體包(&I)"
+
+#~ msgid "&Cleanup when deleting packages"
+#~ msgstr "刪除軟體包時清理(&C)"
+
+#~ msgid "&Allow vendor change"
+#~ msgstr "允許廠商變化(&A)"
+
+#~ msgid "E&xtras"
+#~ msgstr "額外(&X)"
+
+#~ msgid "Show &Products"
+#~ msgstr "顯示產品(&P)"
+
+#~ msgid "Show &Changes"
+#~ msgstr "顯示變動(&C)"
+
+#~ msgid "Show &History"
+#~ msgstr "顯示歷史(&H)"
+
+#~ msgid "Show &Unneeded Dependencies"
+#~ msgstr "顯示不需要的依賴(&U)"
+
+#~ msgid "Install All Matching -&devel Packages"
+#~ msgstr "安裝全部匹配的 -&devel 開發包"
+
+#~ msgid "Install All Matching -debug-&info Packages"
+#~ msgstr "安裝全部匹配的 -debug&info 偵錯包"
+
+#~ msgid "Install All Matching -debug-&source Packages"
+#~ msgstr "安裝全部匹配的 -debug&source 偵錯包"
+
+#~ msgid "Generate Dependencies Resolver &Testcase"
+#~ msgstr "生成依賴關係解決器試例(&T)"
+
+#~ msgid "Reset &Ignored Dependencies Conflicts"
+#~ msgstr "重置已忽略的依賴關係衝突(&I)"
+
+#~ msgid "Remove: cannot remove patterns"
+#~ msgstr "移除：無法移除軟體集"
+
+#~ msgid ""
+#~ "Installed: cannot remove a pattern.\n"
+#~ "\n"
+#~ "You must manually remove the individual packages you no longer want to "
+#~ "keep."
+#~ msgstr ""
+#~ "已安裝：無法移除一個軟體集。\n"
+#~ "\n"
+#~ "您必須手動移除您不想保留的軟體包。"
+
+#~ msgid "Candidate provides:"
+#~ msgstr "候選包提供了："
+
+#~ msgid "Installed provides:"
+#~ msgstr "已安裝軟體包提供了："
+
+#~ msgid "Vendor"
+#~ msgstr "廠商"
+
+#~ msgid "Products Listing"
+#~ msgstr "產品列表"
+
+#~ msgid ""
+#~ "<b>Package search:</b> Use spaces to separate your keywords.\n"
+#~ "(usage example: a name search for \"yast dhcp\" would match yast dhcpd "
+#~ "tool)"
+#~ msgstr ""
+#~ "<b>軟體包搜索</b>使用空格分隔關鍵詞。\n"
+#~ "(使用例項：搜索 \"yast dhcp\" 將會匹配 yast 的 dhcpd 工具)"
+
+#~ msgid "Name & Summary"
+#~ msgstr "名稱摘要(&S)"
+
+#~ msgid "Description"
+#~ msgstr "描述"
+
+#~ msgid "File name"
+#~ msgstr "檔名"
+
+#~ msgid "by"
+#~ msgstr "由"
+
+#~ msgid "%sPatterns are available%s that correspond to your search criteria."
+#~ msgstr "對應您的搜索條件有 %s集合可用%s 。"
+
+#~ msgid "Search by file name only reliable for installed packages."
+#~ msgstr "按檔名搜索僅對已安裝軟體包可靠。"
+
+#~ msgid "view all changes"
+#~ msgstr "檢視全部變動"
+
+#~ msgid "<b>%s</b> %d preselected packages"
+#~ msgstr "<b>%s</b> %d 個預選的軟體包"
+
+#~ msgid "plus 1 dependency"
+#~ msgstr "還有 1 個依賴"
+
+#~ msgid "plus %d dependencies"
+#~ msgstr "還有 %d 個依賴"
+
+#~ msgid "No changes to perform"
+#~ msgstr "沒有要執行的修改"
+
+#~ msgid "To install:"
+#~ msgstr "待安裝："
+
+#~ msgid "To upgrade:"
+#~ msgstr "待升級："
+
+#~ msgid "To remove:"
+#~ msgstr "待移除："
+
+#~ msgid "Space available:"
+#~ msgstr "可用空間："
+
+#~ msgid "Disk space required:"
+#~ msgstr "所需磁碟空間："
+
+#~ msgid "Download size:"
+#~ msgstr "下載大小："
+
+#~ msgid "Partition %s is %s over-capacity"
+#~ msgstr "分割區 %s 已過載 %s"
+
+#~ msgid "%s filled out of %s"
+#~ msgstr "%s 溢位了 %s"
+
+#~ msgid "Close software manager when done"
+#~ msgstr "完成時關閉軟體管理器"
+
+#~ msgid "Revert?"
+#~ msgstr "復原嗎？"
+
+#~ msgid "Summary of changes"
+#~ msgstr "變動摘要"
+
+#~ msgid "Review the changes to perform."
+#~ msgstr "請複核要執行的修改。"
+
+#~ msgid "See History"
+#~ msgstr "檢視歷史"
+
+#~ msgid "Show Unneeded Dependencies"
+#~ msgstr "顯示不需要的依賴"
+
+#~ msgid ""
+#~ "This is a listing of dependencies no longer used. It is neither accurate, "
+#~ "nor comprehensive. Use with care."
+#~ msgstr "這是一個不再需要的依賴列表。它既不準確，也不全面。請小心使用。"
+
+#~ msgid "Remove All"
+#~ msgstr "全部移除"
+
+#~ msgid "Education"
+#~ msgstr "教育"
+
+#~ msgid "Games"
+#~ msgstr "遊戲"
+
+#~ msgid "Graphics"
+#~ msgstr "圖形"
+
+#~ msgid "Office"
+#~ msgstr "辦公"
+
+#~ msgid "Programming"
+#~ msgstr "程式設計"
+
+#~ msgid "Multimedia"
+#~ msgstr "多媒體"
+
+#~ msgid "System"
+#~ msgstr "系統"
+
+#~ msgid "Desktop (GNOME)"
+#~ msgstr "桌面 (GNOME)"
+
+#~ msgid "Desktop (KDE)"
+#~ msgstr "桌面 (KDE)"
+
+#~ msgid "Desktop (XFCE)"
+#~ msgstr "桌面 (XFCE)"
+
+#~ msgid "Desktop (Others)"
+#~ msgstr "桌面 (其它)"
+
+#~ msgid "Publishing"
+#~ msgstr "出版"
+
+#~ msgid "Admin Tools"
+#~ msgstr "管理工具"
+
+#~ msgid "Localization"
+#~ msgstr "本地化"
+
+#~ msgid "Security"
+#~ msgstr "安全"
+
+#~ msgid "Communication"
+#~ msgstr "通訊"
+
+#~ msgid "Network"
+#~ msgstr "網路"
+
+#~ msgid "Documentation"
+#~ msgstr "文件"
+
+#~ msgid "Utilities"
+#~ msgstr "工具"
+
+#~ msgid "Unknown"
+#~ msgstr "未知"
+
+#~ msgid "Suggested"
+#~ msgstr "建議"
+
+#~ msgid "Recommended"
+#~ msgstr "推薦"
+
+#~ msgid "Unmaintained"
+#~ msgstr "失去維護"
+
+#~ msgid "Recent"
+#~ msgstr "當前"
+
+#~ msgid "Multiversion"
+#~ msgstr "多版本"
+
+#~ msgid "Installed:"
+#~ msgstr "已安裝："
+
+#~ msgid "Reboot required:"
+#~ msgstr "需要重啟："
+
+#~ msgid ""
+#~ "the system will have to be restarted in order for this patch to take "
+#~ "effect."
+#~ msgstr "需要重啟系統以使此補丁生效。"
+
+#~ msgid "Relogin required:"
+#~ msgstr "需要重登入："
+
+#~ msgid "you must logout and login again for this patch to take effect."
+#~ msgstr "您必須重新登入以使此補丁生效。"
+
+#~ msgid "Optional"
+#~ msgstr "可選"
+
+#~ msgid "Other"
+#~ msgstr "其它"
+
+#~ msgid ""
+#~ "<p>Common suffixes for complementory packages:</p><ul><li><b>-plugin-</"
+#~ "b>: extends the application with extra functionality.</li><li><b>-devel</"
+#~ "b>: headers for software development.</li><li><b>-debuginfo</b>: debug "
+#~ "symbols for software testing.</li><li><b>-fr</b>, <b>-pl</b> or other "
+#~ "language siglas: translation files (your language will be marked for "
+#~ "installation automatically when needed).</li></ul>"
+#~ msgstr ""
+#~ "<p>補充軟體包的常用字尾：</p><ul><li><b>-plugin-</b>：為應用程式擴展額外功"
+#~ "能。</li><li><b>-devel</b>：軟體開發的標頭檔案。</li><li><b>-debuginfo-</"
+#~ "b>：軟體測試的偵錯符號。</li><li><b>-fr</b>,<b>-pl</b> 或其他語言的縮寫："
+#~ "翻譯檔案 (當需要時您的語言會被標記並自動安裝)。</li></ul>"
+
+#~ msgid "Search Packages on &Web..."
+#~ msgstr "從網路上搜索軟體包(&W)..."
+
+#~ msgid "Install All Matching -debug-&sinfo Packages"
+#~ msgstr "安裝全部匹配的 -debuginfo 偵錯包(&s)"
+
+#~ msgid "_Cancel"
+#~ msgstr "取消(_C)"
+
+#~ msgid "_Apply"
+#~ msgstr "應用(_A)"
+
+#, fuzzy
+#~ msgid "Package is locked"
+#~ msgstr "未找到軟體包"
+
+#~ msgid "_Install"
+#~ msgstr "安裝(_I)"
+
+#~ msgid "_Upgrade"
+#~ msgstr "升級(_U)"
+
+#~ msgid "_Remove"
+#~ msgstr "移除(_R)"
+
+#~ msgid "_Undo"
+#~ msgstr "撤銷(_U)"
+
+#~ msgid "_Lock"
+#~ msgstr "鎖定(_L)"
+
+#, fuzzy
+#~| msgid "File"
+#~ msgid "F_ile"
+#~ msgstr "檔案"
+
+#, fuzzy
+#~| msgid "Import..."
+#~ msgid "_Import..."
+#~ msgstr "匯入..."
+
+#, fuzzy
+#~ msgid "_Export..."
+#~ msgstr "匯出(&E)..."
+
+#, fuzzy
+#~| msgid "Configuration"
+#~ msgid "_Configuration"
+#~ msgstr "配置"
+
+#, fuzzy
+#~ msgid "_Repositories..."
+#~ msgstr "安裝源(&R)..."
+
+#, fuzzy
+#~ msgid "_Online Update..."
+#~ msgstr "線上更新(&O)..."
+
+#, fuzzy
+#~ msgid "Search Packages on _Web..."
+#~ msgstr "從網路上搜索軟體包(&W)..."
+
+#, fuzzy
+#~| msgid "Dependencies"
+#~ msgid "_Dependencies"
+#~ msgstr "依賴關係"
+
+#, fuzzy
+#~ msgid "_Check Now"
+#~ msgstr "立刻檢查(&C)"
+
+#, fuzzy
+#~ msgid "_Autocheck"
+#~ msgstr "自動檢查(&A)"
+
+#, fuzzy
+#~| msgid "Options"
+#~ msgid "_Options"
+#~ msgstr "選項"
+
+#, fuzzy
+#~| msgid "Show -de&vel Packages"
+#~ msgid "Show -de_vel Packages"
+#~ msgstr "顯示 -devel 開發包(&V)"
+
+#, fuzzy
+#~ msgid "Show -_debuginfo/-debugsource Packages"
+#~ msgstr "顯示 -debuginfo/-debugsource 軟體包(&D)"
+
+#, fuzzy
+#~ msgid "_System Verification Mode"
+#~ msgstr "系統驗證方式(&S)"
+
+#, fuzzy
+#~ msgid "Show _Products"
+#~ msgstr "顯示產品(&P)"
+
+#, fuzzy
+#~| msgid "Unsatisfied Dependencies:"
+#~ msgid "Show _Unneeded Dependencies"
+#~ msgstr "不令人滿意的相關性"
+
+#, fuzzy
+#~ msgid "Install All Matching -_devel Packages"
+#~ msgstr "安裝相應的 -devel 軟體包(&D)"
+
+#, fuzzy
+#~ msgid "Install All Matching -debug-_source Packages"
+#~ msgstr "安裝全部與 -debugsource 匹配的軟體包(&S)"
+
+#, fuzzy
+#~| msgid "Generate Dependency Resolver &Test Case"
+#~ msgid "Generate Dependencies Resolver _Testcase"
+#~ msgstr "生成依賴關係解析試例(&T)"
+
+#, fuzzy
+#~ msgid "Select Macro File to Play"
+#~ msgstr "選擇要裝載的檔案。"
+
+#, fuzzy
+#~ msgid "Select Macro File to Record to"
+#~ msgstr "選擇要裝載的檔案。"
+
+#~ msgid "Couldn't save screenshot to file "
+#~ msgstr "不能儲存截屏"
+
+#~ msgid "Choose"
+#~ msgstr "選擇"
+
+#, fuzzy
+#~ msgid "<i>Information only available for installed packages.</i>"
+#~ msgstr "僅有已安裝的包的資訊可用。"
+
+#, fuzzy
+#~ msgid "_Open"
+#~ msgstr "開啟"
+
+#~ msgid "Provides:"
+#~ msgstr "提供："
+
+#, fuzzy
+#~ msgid "Pre-requires:"
+#~ msgstr "前提條件："
+
+#~ msgid "Requires:"
+#~ msgstr "需要："
+
+#~ msgid "Conflicts:"
+#~ msgstr "衝突："
+
+#~ msgid "Obsoletes:"
+#~ msgstr "已過時："
+
+#, fuzzy
+#~ msgid "Recommends:"
+#~ msgstr "推薦"
+
+#, fuzzy
+#~ msgid "Suggests:"
+#~ msgstr "建議"
+
+#, fuzzy
+#~ msgid "Enhances:"
+#~ msgstr "財務"
+
+#, fuzzy
+#~ msgid "Supplements:"
+#~ msgstr "補充模式"
+
+#, fuzzy
+#~ msgid "<i>Not specified.</i>"
+#~ msgstr "未指定 IP。"
+
+#, fuzzy
+#~ msgid "Apply Patches"
+#~ msgstr "所有補丁"
+
+#~ msgid "Import"
+#~ msgstr "匯入"
+
+#, fuzzy
+#~ msgid "Could not load package list: '%s'"
+#~ msgstr "不能載入軟體包列表，來源："
+
+#, fuzzy
+#~ msgid "Could not export package list: '%s'"
+#~ msgstr "不能將軟體包列表儲存到："
+
+#, fuzzy
+#~ msgid ""
+#~ "Use this to generate extensive logs to help tracking down bugs in the "
+#~ "dependency solver.\n"
+#~ "The logs will be stored in directory: "
+#~ msgstr ""
+#~ "用這個來生成擴充日誌，以便定位依賴關係解析器的錯誤。這些日誌將儲存在目錄："
+
+#, fuzzy
+#~ msgid "Create Dependency Solver Test Case"
+#~ msgstr "創建依賴關係解析程式試例"
+
+#, fuzzy
+#~ msgid "Dependency solver test case written to"
+#~ msgstr "依賴關係解析器測試例子寫到"
+
+#, fuzzy
+#~ msgid ""
+#~ "Failed to create dependency solver test case.\n"
+#~ "Please check disk space and permissions for"
+#~ msgstr ""
+#~ "未能創建依賴關係解析器測試例子。\n"
+#~ "請檢查磁碟空間與許可權："
+
+#, fuzzy
+#~ msgid "Show -devel packages"
+#~ msgstr "顯示 -devel 開發包(&V)"
+
+#, fuzzy
+#~ msgid "Generate Dependency Solver Test Case"
+#~ msgstr "生成依賴性解析程式測試用例"
+

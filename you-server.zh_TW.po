@@ -1,0 +1,349 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-01-30 16:34+0100\n"
+"PO-Revision-Date: 2013-02-04 15:50+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. default name for the server
+#: src/you_server.ycp:33
+msgid "Local YOU Server"
+msgstr "本地 YaST 線上更新伺服器"
+
+#: src/you_server.ycp:57
+msgid "Unable to write /etc/sysconfig/apache2"
+msgstr "無法寫入 /etc/sysconfig/apache2"
+
+#: src/you_server.ycp:61
+msgid "'SuSEconfig --module apache2' failed."
+msgstr "'SuSEconfig --module apache2' 失敗。"
+
+#: src/you_server.ycp:74
+msgid "Starting YOU server..."
+msgstr "正在啟動 YaST 線上更新伺服器..."
+
+#: src/you_server.ycp:75
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#: src/you_server.ycp:82
+msgid ""
+"The YOU server requires an HTTP server.\n"
+"The 'apache2' package is required.\n"
+"Install the package now?"
+msgstr ""
+"YaST 線上更新伺服器需要一個 HTTP 伺服器。\n"
+"因此需要 'apache2' 軟體包。\n"
+"立即安裝該軟體包嗎？"
+
+#. text of a popup
+#: src/you_server.ycp:92
+msgid ""
+"The HTTP server 'apache' is already\n"
+"in use. The YOU server needs 'apache2'.\n"
+"Disable 'apache' and install\n"
+"and use 'apache2' or cancel the installation?  "
+msgstr ""
+"HTTP 伺服器 'apache' 正在使用中。\n"
+"YaST 線上更新伺服器需要 'apache2'。\n"
+"您是想要禁用 'apache' 並安裝使用\n"
+"'apache2'，還是取消安裝？"
+
+#: src/you_server.ycp:103
+msgid "Installing HTTP server..."
+msgstr "正在安裝 HTTP 伺服器..."
+
+#: src/you_server.ycp:108 src/you_server.ycp:204
+msgid "Failed to install required packages."
+msgstr "無法安裝必需的軟體包。"
+
+#: src/you_server.ycp:120
+msgid "Adapting configuration..."
+msgstr "正在調整配置..."
+
+#: src/you_server.ycp:128
+msgid "Starting server..."
+msgstr "正在啟動伺服器..."
+
+#. popup error message
+#: src/you_server.ycp:133
+msgid "Error starting apache."
+msgstr "啟動 apache 出錯。"
+
+#. headline of a popup
+#: src/you_server.ycp:141
+msgid "Question"
+msgstr "問題"
+
+#. text of a popup
+#. user decision required whether to stop or restart
+#: src/you_server.ycp:144
+msgid ""
+"Shut down the HTTP server\n"
+"(apache2) or restart without\n"
+"providing the YOU patches?"
+msgstr ""
+"是要關閉 HTTP 伺服器 (apache2)\n"
+"還是在不提供 YaST 線上更新補丁的情況下重啟？"
+
+#. button label
+#: src/you_server.ycp:148
+msgid "&Restart"
+msgstr "重啟(&R)"
+
+#. button label
+#: src/you_server.ycp:150
+msgid "S&hut Down"
+msgstr "關閉(&H)"
+
+#: src/you_server.ycp:155
+msgid "Restarting YOU server ..."
+msgstr "正在重啟 YaST 線上更新伺服器..."
+
+#: src/you_server.ycp:157
+msgid "Stopping YOU server..."
+msgstr "正在停止 YaST 線上更新伺服器..."
+
+#: src/you_server.ycp:196
+msgid ""
+"The installation of the package 'openslp'\n"
+"is required.\n"
+"Install the package now?"
+msgstr ""
+"需要安裝 'openslp' 軟體包。\n"
+"立即安裝該軟體包嗎？"
+
+#. popup warning message
+#: src/you_server.ycp:212
+msgid ""
+"The HTTP server is not running.\n"
+"Start the server first."
+msgstr ""
+"HTTP 伺服器未運行。\n"
+"請先啟動伺服器。"
+
+#. popup error message
+#: src/you_server.ycp:238
+msgid "Error starting slpd."
+msgstr "啟動 slpd 出錯。"
+
+#. popup error message
+#: src/you_server.ycp:243
+msgid "Error writing SLP registration file."
+msgstr "寫入 SLP 註冊檔案出錯。"
+
+#: src/you_server.ycp:313
+msgid "Product Name"
+msgstr "產品名稱"
+
+#: src/you_server.ycp:314 src/you_server.ycp:628
+msgid "Version"
+msgstr "版本"
+
+#: src/you_server.ycp:315 src/you_server.ycp:628
+msgid "Architecture"
+msgstr "架構"
+
+#: src/you_server.ycp:316 src/you_server.ycp:629
+msgid "Synchronization URL"
+msgstr "同步 URL"
+
+#: src/you_server.ycp:320
+msgid "Au&thentication"
+msgstr "認證(&T)"
+
+#: src/you_server.ycp:323
+msgid "&Anonymous"
+msgstr "匿名(&A)"
+
+#: src/you_server.ycp:326
+msgid "&User Name"
+msgstr "使用者名(&U)"
+
+#: src/you_server.ycp:329
+msgid "&Password"
+msgstr "密碼(&P)"
+
+#: src/you_server.ycp:411
+msgid "Syncing server..."
+msgstr "正在與伺服器同步..."
+
+#. text of an error popup - list of all product which cannot be synchronized follows
+#: src/you_server.ycp:459
+msgid "Synchronization failed for:"
+msgstr "以下產品同步失敗："
+
+#: src/you_server.ycp:460
+msgid ""
+"Check whether the requested server is up. If yes,\n"
+"make sure that the user name and the password\n"
+"are set correctly (see 'Edit' dialog)."
+msgstr ""
+"檢查所需伺服器是否已啟動。若已啟動，\n"
+"請確保正確設定了使用者名與密碼 (見 '編輯' 對話方塊)。"
+
+#: src/you_server.ycp:466
+msgid "Server synced."
+msgstr "已同步伺服器。"
+
+#. status information
+#: src/you_server.ycp:481
+msgid "Server status: unused"
+msgstr "伺服器狀態：未使用"
+
+#. push button
+#: src/you_server.ycp:484
+msgid "Start Server"
+msgstr "啟動伺服器"
+
+#. status information
+#: src/you_server.ycp:490
+msgid "Server status: running"
+msgstr "伺服器狀態：運行中"
+
+#. push button
+#: src/you_server.ycp:493
+msgid "Stop Server"
+msgstr "停止伺服器"
+
+#: src/you_server.ycp:533
+msgid "No sync up to now."
+msgstr "目前沒有可同步的內容。"
+
+#: src/you_server.ycp:590
+msgid "Server Name"
+msgstr "伺服器名"
+
+#. frame label
+#: src/you_server.ycp:614
+msgid "Server &Control"
+msgstr "伺服器控制(&C)"
+
+#. check box
+#: src/you_server.ycp:618
+msgid "&SLP Registration Enabled"
+msgstr "已啟用 &SLP 註冊"
+
+#. push button
+#: src/you_server.ycp:622
+msgid "Ed&it Name"
+msgstr "編輯名稱(&I)"
+
+#. table header item(s)
+#: src/you_server.ycp:628
+msgid "Product"
+msgstr "產品"
+
+#. push button
+#: src/you_server.ycp:632
+msgid "&Add"
+msgstr "添加(&A)"
+
+#. push button
+#: src/you_server.ycp:634
+msgid "&Edit"
+msgstr "編輯(&E)"
+
+#. push button
+#: src/you_server.ycp:637
+msgid "&Remove"
+msgstr "移除(&R)"
+
+#. frame label
+#: src/you_server.ycp:640
+msgid "Synchronization"
+msgstr "同步"
+
+#. informative text, followed by a time from the last synchronization
+#: src/you_server.ycp:644
+msgid "Last Synchronization: "
+msgstr "上次同步："
+
+#. time from the last synchronization
+#: src/you_server.ycp:647
+msgid "10 days ago"
+msgstr "十天前"
+
+#. help text for the YOU Server Configuration dialog
+#: src/you_server.ycp:660
+msgid ""
+"<p>This module is used to set up and control a local YOU\n"
+"server.</p>"
+msgstr "<p>此模組用於設定及控制本地 YaST 線上更新伺服器。</p>"
+
+#. help text continues
+#: src/you_server.ycp:663
+msgid "<p>Enable the <b>SLP registration</b> to announce the YOU server via the 'Service Location Protocol'."
+msgstr "<p>啟用 <b>SLP 註冊</b>來通過 '服務位置協議' (SLP) 聲明 YaST 線上更新伺服器。"
+
+#. help text continues
+#: src/you_server.ycp:665
+msgid "<p>Press<b> Synchronize Now</b> to get the current patches for all products.</p>"
+msgstr "<p>按<b>立即同步</b>可獲得當前可用於全部產品的補丁。</p>"
+
+#. help text continues
+#: src/you_server.ycp:667
+msgid ""
+"<p>The YOU server is added to the server list of a client if <b>SLP_ENABLED</b> in\n"
+"<tt>/etc/sysconfig/onlineupdate</tt> is set to <tt>yes</tt>.</p>"
+msgstr ""
+"<p>若 <tt>/etc/sysconfig/onlineupdate</tt> 中的 <b>SLP_ENABLED</b> 設為\n"
+"<tt>yes</tt>，則將 YaST 線上更新伺服器添加到客戶機的伺服器列表中。</p>"
+
+#: src/you_server.ycp:674
+msgid "YaST Online Update Server Configuration"
+msgstr "YaST 線上更新伺服器配置"
+
+#. current progress information
+#: src/you_server.ycp:690
+msgid "Getting product information..."
+msgstr "正在獲取產品資訊..."
+
+#. dialog caption
+#: src/you_server_autosync.ycp:82
+msgid "YOU Server Automatic Synchronization Setup"
+msgstr "YaST 線上更新伺服器自動同步設定"
+
+#: src/you_server_autosync.ycp:84
+msgid ""
+"The automatic synchronization is executed by a daily cron job. \n"
+"A network connection must be available when\n"
+"the synchronization takes place."
+msgstr ""
+"自動同步由一個每日 cron 任務執行。\n"
+"同步時必須有可用的網路連線。"
+
+#. check box
+#: src/you_server_autosync.ycp:103
+msgid "Enable Automatic Update"
+msgstr "啟用自動更新"
+
+#. headline connected with "Hour" and "Minute"
+#: src/you_server_autosync.ycp:116
+msgid "Synchronization Time"
+msgstr "同步時間"
+
+#. Synchronization Time - Hour
+#: src/you_server_autosync.ycp:123
+msgid "Hour"
+msgstr "小時"
+
+#. Synchronization Time - Minute
+#: src/you_server_autosync.ycp:125
+msgid "Minute"
+msgstr "分鐘"
+

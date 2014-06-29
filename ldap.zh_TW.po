@@ -1,0 +1,432 @@
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: opensuse-i 18n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:39+0200\n"
+"PO-Revision-Date: 2014-04-17 10:22+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. hint to error message
+#: src/Ldap.rb:252
+msgid "Verify that the LDAP Server is running and reachable."
+msgstr "請驗證 LDAP 伺服器正在運行且可訪問。"
+
+#. hint to error message
+#: src/Ldap.rb:256
+msgid ""
+"Failed to establish TLS encryption.\n"
+"Verify that the correct CA Certificate is installed and the Server "
+"Certificate is valid."
+msgstr ""
+"建立 TLS 加密失敗。\n"
+"請驗證是否安裝了正確的 CA 證書並且伺服器證書是否有效。"
+
+#. hint to error message
+#: src/Ldap.rb:260
+msgid ""
+"Failed to establish TLS encryption.\n"
+"Verify that the Server has StartTLS support enabled."
+msgstr ""
+"建立 TLS 加密失敗。\n"
+"請驗證伺服器是否啟用了 StartTLS 支援。"
+
+#. error message:
+#: src/Ldap.rb:530
+msgid ""
+"\n"
+"The server could be down or unreachable.\n"
+msgstr ""
+"\n"
+"伺服器可能是下線或無法訪問了。\n"
+
+#. error message:
+#: src/Ldap.rb:534
+msgid ""
+"\n"
+"The value of DN is missing or invalid.\n"
+msgstr ""
+"\n"
+"判別名的值缺失或無效。\n"
+
+#. error message:
+#: src/Ldap.rb:538
+msgid ""
+"\n"
+"Attribute type not found.\n"
+msgstr ""
+"\n"
+"未找到屬性類型。\n"
+
+#. error message:
+#: src/Ldap.rb:540
+msgid ""
+"\n"
+"Object class not found.\n"
+msgstr ""
+"\n"
+"未找到物件類。\n"
+
+#. error message, more specific description follows
+#. error message
+#. error message
+#: src/Ldap.rb:545 src/Ldap.rb:782 src/Ldap.rb:848
+msgid "Connection to the LDAP server cannot be established."
+msgstr "無法建立到 LDAP 伺服器的連線。"
+
+#. error message, more specific description follows
+#: src/Ldap.rb:549
+msgid "A problem occurred while connecting to the LDAP server."
+msgstr "連線到 LDAP 伺服器時發生了一個問題。"
+
+#. error message, more specific description follows
+#: src/Ldap.rb:553
+msgid "A problem occurred while reading data from the LDAP server."
+msgstr "從 LDAP 伺服器讀取資料時發生了一個問題。"
+
+#. error message, more specific description follows
+#: src/Ldap.rb:557
+msgid "A problem occurred while writing LDAP users."
+msgstr "寫入 LDAP 使用者時發生了一個問題。"
+
+#. error message, more specific description follows
+#: src/Ldap.rb:561
+msgid "A problem occurred while writing LDAP groups."
+msgstr "寫入 LDAP 組時發生了一個問題。"
+
+#. error message, more specific description follows
+#: src/Ldap.rb:565
+msgid "A problem occurred while writing data to the LDAP server."
+msgstr "寫入資料到 LDAP 伺服器時發生了一個問題。"
+
+#. error message, more specific description follows
+#: src/Ldap.rb:569
+msgid "A problem occurred while reading schema from the LDAP server."
+msgstr "從 LDAP 伺服器讀取方案時發生了一個問題。"
+
+#. default error message
+#: src/Ldap.rb:594
+msgid "An unknown LDAP error occurred."
+msgstr "發生了一個未知 LDAP 錯誤。"
+
+#. checkbox label
+#. checkbox label
+#. checkbox label
+#: src/Ldap.rb:604 src/Ldap.rb:791 src/Ldap.rb:857
+msgid "&Show Details"
+msgstr "顯示細節(&S)"
+
+#. error message
+#. error message
+#. error message
+#: src/Ldap.rb:722 src/Ldap.rb:742 src/Ldap.rb:912
+msgid "Unknown error. Perhaps 'yast2-ldap' is not available."
+msgstr "未知錯誤。或許 'yast2-ldap' 不可用。"
+
+#. question following error message (yes/no buttons follow)
+#: src/Ldap.rb:800
+msgid "Really keep this configuration?"
+msgstr "真的保留此配置嗎？"
+
+#. question following error message (yes/no buttons follow)
+#: src/Ldap.rb:865
+msgid ""
+"A possible reason for the failed connection may be that your client is\n"
+"configured for TLS/SSL but the server does not support it.\n"
+"\n"
+"Retry connection without TLS/SSL?\n"
+msgstr ""
+"連線失敗的可能原因有您的客戶端配置了 TLS/SSL 但伺服器並不支援它們。\n"
+"\n"
+"真的不使用 TLS/SSL 連線嗎？\n"
+
+#. Asks user for bind_dn and password to LDAP server
+#. @param anonymous if anonymous access could be allowed
+#. @return password
+#: src/Ldap.rb:973
+msgid "BindDN"
+msgstr "繫結判別名"
+
+#. password entering label
+#. password entering label
+#: src/Ldap.rb:975 src/ldap_browser.rb:155
+msgid "&LDAP Server Password"
+msgstr "&LDAP 伺服器密碼"
+
+#. label
+#: src/Ldap.rb:979
+msgid "Server: %1:%2"
+msgstr "伺服器：%1:%2"
+
+#. button label
+#: src/Ldap.rb:988
+msgid "&Anonymous Access"
+msgstr "匿名訪問(&A)"
+
+#. error message, %1 is DN
+#: src/Ldap.rb:1330
+msgid ""
+"A direct parent for DN '%1' \n"
+"does not exist in the LDAP directory.\n"
+"The object with the selected DN cannot be created.\n"
+msgstr ""
+"LDAP 目錄中不存在判別名 '%1' 的直接父元素。\n"
+"無法創建所選判別名的物件。\n"
+
+#. yes/no popup, %1 is value of DN
+#: src/Ldap.rb:1634
+msgid ""
+"No entry with DN '%1'\n"
+"exists on the LDAP server. Create it now?\n"
+msgstr ""
+"LDAP 伺服器上不存在判別名 '%1' 的條目。\n"
+"現在創建它嗎？\n"
+
+#. button label
+#. button label
+#: src/LdapPopup.rb:75 src/ldap_browser.rb:547
+msgid "&Open"
+msgstr "開啟(&O)"
+
+#. help text 1/3
+#: src/LdapPopup.rb:262
+msgid "<p>Set the new value for the current attribute.</p>"
+msgstr "<p>請為當前屬性設定新值。</p>"
+
+#. help text 2/3
+#: src/LdapPopup.rb:264
+msgid ""
+"<p>If the attribute can have more values, add new entries\n"
+"with <b>Add Value</b>. Sometimes the button contains the list of\n"
+"possible values to use for the current attribute.\n"
+"If the value of the edited attribute should be a distinguished name (DN),\n"
+"it is possible to choose it from the LDAP tree using <b>Browse</b>.\n"
+"</p>\n"
+msgstr ""
+"<p>若屬性可擁有多個值，請使用<b>添加值</b>添加新條目。\n"
+"有時按鈕會包含可用於當前屬性的值的列表。\n"
+"若編輯的屬性的值應為一個判別名 (DN)，則可以使用<b>瀏覽</b>\n"
+"從 LDAP 樹中選擇。</p>\n"
+
+#. help text 3/3, %1 is attribute name, description follows.
+#. The description will be not translated: maybe add a note
+#. "available only in english" to the sentence for other languages?
+#. Example:
+#. "<p>The description of attribute \"%1\"<br>(available only in english):</p>"
+#. or:
+#. "<p>The description (only in english) of attribute \"%1\":<br></p>"
+#: src/LdapPopup.rb:287
+msgid "<p>The description of attribute \"%1\":<br></p>"
+msgstr "<p>屬性 \"%1\" 的描述：<br></p>"
+
+#. textentry label
+#: src/LdapPopup.rb:311
+msgid "&Value of \"%1\" Attribute"
+msgstr "屬性 \"%1\" 的值(&V)"
+
+#. textentry label
+#: src/LdapPopup.rb:322
+msgid "&Values of \"%1\" Attribute"
+msgstr "屬性 \"%1\" 的值(&V)"
+
+#. button label
+#. button label
+#: src/LdapPopup.rb:346 src/LdapPopup.rb:356
+msgid "&Add Value"
+msgstr "添加值(&A)"
+
+#. menubutton item (default value)
+#: src/LdapPopup.rb:350
+msgid "&Empty Entry"
+msgstr "空條目(&E)"
+
+#: src/LdapPopup.rb:351
+msgid "Bro&wse"
+msgstr "瀏覽(&W)"
+
+#. error popup
+#: src/LdapPopup.rb:437
+msgid ""
+"The value '%1' already exists.\n"
+"Please select another one."
+msgstr ""
+"值 '%1' 已存在。\n"
+"請選擇另一個值。"
+
+#. description of configuration object
+#: src/LdapPopup.rb:465
+msgid "Configuration of user management tools"
+msgstr "使用者管理工具配置"
+
+#. description of configuration object
+#: src/LdapPopup.rb:469
+msgid "Configuration of group management tools"
+msgstr "組管理工具配置"
+
+#. label
+#: src/LdapPopup.rb:474
+msgid "Object Class of New Module"
+msgstr "新模組的物件類"
+
+#. textentry label, do not translate "cn"
+#: src/LdapPopup.rb:502
+msgid "&Name of New Module (\"cn\" Value)"
+msgstr "新模組名稱(&N)(\"cn\" 值)"
+
+#. error popup
+#: src/LdapPopup.rb:528
+msgid ""
+"The entered value already exists.\n"
+"Select another one.\n"
+msgstr ""
+"輸入的值已存在。\n"
+"請選擇另一個值。\n"
+
+#. error popup
+#: src/LdapPopup.rb:534
+msgid "Enter the module name."
+msgstr "請輸入模組名稱。"
+
+#. help text 1/3
+#: src/LdapPopup.rb:553
+msgid ""
+"<p>Here, set the values of attributes belonging\n"
+"to an object using the current template. Such values are used as defaults "
+"when\n"
+"the new object is created.</p>\n"
+msgstr ""
+"<p>在此，設定屬於正在使用當前模板的物件的屬性值。\n"
+"這些值將在創建新物件時用於默認。</p>\n"
+
+#. // help text 2/3 do not translate "defaultObjectClass"
+#. _("<p>The list of attributes provided in <b>Attribute Name</b> is the
+#. list of allowed attributes for objects described in the \"defaultObjectClass\"
+#. entry of the current template.</p>
+#. ") +
+#. help text 3/3 do not translate "homedirectory"
+#: src/LdapPopup.rb:565
+msgid ""
+"<p>You can use special syntax to create attribute\n"
+"values from existing ones. The expression <i>%attr_name</i> will be "
+"replaced\n"
+"with the value of attribute \"attr_name\" (for example, use \"/home/%uid\"\n"
+"as a value of \"homeDirectory\").</p>\n"
+msgstr ""
+"<p>您可以使用特殊語法從已有屬性值創建屬性值。\n"
+"表示式 <i>%attr_name</i> 將被替換為 \"attr_name\" 的屬性值\n"
+"(例如，使用 \"/home/%uid\" 作為 \"homeDirectory\" 的值)。</p>\n"
+
+#. combobox label
+#: src/LdapPopup.rb:588
+msgid "Attribute &Name"
+msgstr "屬性名稱(&N)"
+
+#. textentry label
+#: src/LdapPopup.rb:594
+msgid "Attribute &Value"
+msgstr "屬性值(&V)"
+
+#. general help text for LDAP browser
+#: src/ldap_browser.rb:62
+msgid "<p>Browse the LDAP tree in the left part of the dialog.</p>"
+msgstr "<p>在對話方塊左側部分瀏覽 LDAP 樹。</p>"
+
+#. help text for LDAP browser
+#: src/ldap_browser.rb:64
+msgid ""
+"<p>Once the LDAP object is selected in the tree, the table shows the object "
+"data. Use <b>Edit</b> to change the value of the selected attribute. Use "
+"<b>Save</b> to save your changes to LDAP.</p>"
+msgstr ""
+"<p>一旦在樹中選擇了 LDAP 物件，表格將顯示物件資料。\n"
+"使用<b>編輯</b>來修改所選屬性的值。\n"
+"使用<b>儲存</b>來將您的修改儲存到 LDAP。</p>"
+
+#. popup question (Continue/Cancel follows)
+#: src/ldap_browser.rb:69
+msgid ""
+"There are unsaved changes in the current entry.\n"
+"Discard these changes?\n"
+msgstr ""
+"當前條目中有未儲存的修改。\n"
+"丟棄這些修改嗎？\n"
+
+#. dialog caption
+#: src/ldap_browser.rb:85
+msgid "LDAP Browser"
+msgstr "LDAP 瀏覽器"
+
+#. combobox item
+#: src/ldap_browser.rb:101
+msgid "Current LDAP Client settings"
+msgstr "當前 LDAP 客戶端設定"
+
+#. combo box label
+#. combo box label
+#: src/ldap_browser.rb:135 src/ldap_browser.rb:747
+msgid "LDAP Connections"
+msgstr "LDAP 連線"
+
+#. textentry label
+#: src/ldap_browser.rb:146
+msgid "LDAP Server"
+msgstr "LDAP 伺服器"
+
+#. textentry label
+#: src/ldap_browser.rb:152
+msgid "Administrator DN"
+msgstr "管理員判別名"
+
+#. check box label
+#: src/ldap_browser.rb:162
+msgid "L&DAP TLS"
+msgstr "L&DAP TLS"
+
+#. button label
+#: src/ldap_browser.rb:168
+msgid "A&nonymous Access"
+msgstr "匿名訪問(&N)"
+
+#. InputField label
+#: src/ldap_browser.rb:230
+msgid "Enter the name of the new LDAP connection"
+msgstr "請輸入新 LDAP 連線的名稱"
+
+#. error popup, %1 is attribute name
+#: src/ldap_browser.rb:452
+msgid ""
+"The \"%1\" attribute is mandatory.\n"
+"Enter a value."
+msgstr ""
+"\"%1\" 屬性是必需的。\n"
+"請輸入一個值。"
+
+#. button label
+#: src/ldap_browser.rb:550
+msgid "&Reload"
+msgstr "過載(&R)"
+
+#. table header 1/2
+#: src/ldap_browser.rb:691
+msgid "Attribute"
+msgstr "屬性"
+
+#. table header 2/2
+#: src/ldap_browser.rb:693
+msgid "Value"
+msgstr "值"
+
+#~ msgid ""
+#~ "An object with the selected DN exists, but it is not a template object.\n"
+#~ "Select another one.\n"
+#~ msgstr ""
+#~ "已存在一個所選判別名的物件，但它不是一個模板物件。\n"
+#~ "請選擇另一個物件。\n"
+

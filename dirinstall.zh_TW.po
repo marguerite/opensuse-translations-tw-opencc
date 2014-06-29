@@ -1,0 +1,284 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:38+0200\n"
+"PO-Revision-Date: 2013-02-02 14:31+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the dirinstall module
+#: src/clients/dirinstall.rb:29
+msgid "Installation into Directory"
+msgstr "安裝到目錄"
+
+#. open the dialog
+#. progres bar label
+#: src/clients/dirinstall.rb:43 src/clients/dirinstall.rb:74
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. progress bar item
+#: src/clients/dirinstall.rb:56
+msgid "Initialize the Software Manager"
+msgstr "啟始化軟體包管理器"
+
+#. progress bar item
+#: src/clients/dirinstall.rb:58
+msgid "Select Software"
+msgstr "選擇軟體"
+
+#. progress bar item
+#: src/clients/dirinstall.rb:60
+msgid "Initialize the Target System"
+msgstr "啟始化目標系統"
+
+#. progress bar item
+#: src/clients/dirinstall.rb:65
+msgid "Initializing the Software Manager..."
+msgstr "正在啟始化軟體包管理器..."
+
+#. progress bar item
+#: src/clients/dirinstall.rb:67
+msgid "Selecting Software..."
+msgstr "正在選取軟體..."
+
+#. progress bar item
+#: src/clients/dirinstall.rb:69
+msgid "Initializing the Target System..."
+msgstr "正在啟始化目標系統..."
+
+#. progres bar label
+#. progres bar label
+#: src/clients/dirinstall.rb:80 src/include/dirinstall/ui.rb:85
+msgid "Please wait..."
+msgstr "請稍候..."
+
+#. error report
+#: src/clients/dirinstall.rb:100
+msgid "Could not read package information."
+msgstr "無法讀取軟體包資訊。"
+
+#. screen title for installation into directory options
+#: src/clients/dirinstall_options.rb:26
+msgid "Directory Install Options"
+msgstr "目錄安裝選項"
+
+#. text entry
+#: src/clients/dirinstall_options.rb:38
+msgid "&Root Directory (not \"/\"):"
+msgstr "根目錄(非 \"/\")(&R)："
+
+#. check box
+#: src/clients/dirinstall_options.rb:46
+msgid "Run &YaST and SuSEconfig on First Boot"
+msgstr "在首次啟動時運行 &YaST 與 SuSEconfig"
+
+#: src/clients/dirinstall_options.rb:54
+msgid "Get Software Selection from AutoYaST Profile"
+msgstr "從 AutoYaST 方案獲取軟體選集"
+
+#. text entry
+#: src/clients/dirinstall_options.rb:63
+msgid "&AutoYaST Profile"
+msgstr "AutoYaST 方案(&A)"
+
+#. check box
+#: src/clients/dirinstall_options.rb:78
+msgid "Create Ima&ge"
+msgstr "創建映像(&G)"
+
+#. text entry
+#: src/clients/dirinstall_options.rb:84
+msgid "Ima&ge Name:"
+msgstr "映像名稱(&G)："
+
+#. text entry
+#: src/clients/dirinstall_options.rb:91
+msgid "&Image Directory:"
+msgstr "映像目錄(&I)："
+
+#. push button
+#: src/clients/dirinstall_options.rb:97
+msgid "Select &Directory"
+msgstr "選擇目錄(&D)"
+
+#. help text for dirinstall options 1/2
+#: src/clients/dirinstall_options.rb:105
+msgid ""
+"<p>Choose a directory to which to install. Depending on the software selection, make sure\n"
+"enough space is available.</p>\n"
+msgstr ""
+"<p>選擇安裝目錄。根據軟體選集的不同，請確保有足夠的\n"
+"空間。</p>\n"
+
+#. help text for dirinstall options 2/2
+#: src/clients/dirinstall_options.rb:111
+msgid ""
+"<p>Additionally, you can create an archive image of the directory using tar. To create an \n"
+"image, specify the name and the location in the respective fields.</p>\n"
+msgstr ""
+"<p>另外，您可使用 tar 創建目錄的存檔映像。要創建映像，\n"
+"請在相應的欄位中指定名稱與位置。</p>\n"
+
+#. directory selection header
+#: src/clients/dirinstall_options.rb:152
+msgid "Select Directory"
+msgstr "選擇目錄"
+
+#: src/clients/dirinstall_options.rb:166
+msgid "Select AutoYaST Profile"
+msgstr "選擇 AutoYaST 方案"
+
+#. warning text when selecting packages. %1 is a list of package names
+#: src/clients/dirinstall_options.rb:225
+msgid ""
+"These packages could not be found in the software repositories:\n"
+"%1"
+msgstr ""
+"無法在軟體源中找到這些軟體包：\n"
+"%1"
+
+#: src/clients/dirinstall_options.rb:267
+msgid "Failed to read the AutoYaST profile."
+msgstr "未能讀取 AutoYaST 方案。"
+
+#. popup message
+#: src/clients/dirinstall_options.rb:278
+msgid "Specify a root directory. This does not mean /"
+msgstr "請指定根目錄。不一定是 /"
+
+#. this is a heading
+#: src/clients/dirinstall_options_proposal.rb:62
+msgid "Options"
+msgstr "選項"
+
+#. this is a menu entry
+#: src/clients/dirinstall_options_proposal.rb:64
+msgid "&Options"
+msgstr "選項(&O)"
+
+#. progress stages
+#: src/clients/inst_dirinstall_finish.rb:33
+msgid "Finalize system configuration"
+msgstr "完成系統配置"
+
+#. progress stages
+#: src/clients/inst_dirinstall_finish.rb:35
+msgid "Prepare system for initial boot"
+msgstr "為首次啟動準備系統"
+
+#. progress stage
+#: src/clients/inst_dirinstall_finish.rb:43
+msgid "Create image file"
+msgstr "創建映像檔案"
+
+#. help text
+#: src/clients/inst_dirinstall_finish.rb:51
+msgid "<p>Please wait while the system is being configured.</p>"
+msgstr "<p>正在配置系統，請稍候。</p>"
+
+#. Headline for last dialog of base installation: Install LILO etc.
+#: src/clients/inst_dirinstall_finish.rb:55
+msgid "Finishing Directory Installation"
+msgstr "正在完成目錄安裝"
+
+#. progress title
+#: src/clients/inst_dirinstall_finish.rb:66
+msgid "Configuring installed system"
+msgstr "正在配置安裝好的系統"
+
+#. progress title
+#: src/clients/inst_dirinstall_finish.rb:149
+msgid "Building directory image..."
+msgstr "正在構建目錄映像..."
+
+#. progress bar item
+#: src/include/dirinstall/ui.rb:65
+msgid "Finish the Software Manager"
+msgstr "結束軟體管理器"
+
+#. progress bar item
+#: src/include/dirinstall/ui.rb:67
+msgid "Clean Up"
+msgstr "清理"
+
+#. progress bar item
+#: src/include/dirinstall/ui.rb:72
+msgid "Finishing the Software Manager..."
+msgstr "正在結束軟體包管理器..."
+
+#. progress bar item
+#: src/include/dirinstall/ui.rb:74
+msgid "Cleaning up..."
+msgstr "正在清理..."
+
+#. progres bar label
+#: src/include/dirinstall/ui.rb:79
+msgid "Finishing..."
+msgstr "正在完成..."
+
+#. Proposal for dirinstall installation
+#: src/modules/DirInstall.rb:94
+msgid "Target Directory: %1"
+msgstr "目標目錄：%1"
+
+#. Proposal for backup during update
+#: src/modules/DirInstall.rb:103
+msgid "Run YaST and SuSEconfig at First Boot: %1"
+msgstr "首次啟動時運行 YaST 與 SuSEconfig：%1"
+
+#. part of label in proposal
+#: src/modules/DirInstall.rb:107 src/modules/DirInstall.rb:119
+msgid "Yes"
+msgstr "是"
+
+#. part of label in proposal
+#: src/modules/DirInstall.rb:109 src/modules/DirInstall.rb:119
+msgid "No"
+msgstr "否"
+
+#. Proposal for dirinstall installation
+#: src/modules/DirInstall.rb:118
+msgid "Create Image: %1"
+msgstr "創建映像：%1"
+
+#. Proposal for dirinstall installation
+#: src/modules/DirInstall.rb:127
+msgid "Load software selection from %1"
+msgstr "從 %1 載入軟體選集"
+
+#~ msgid "Directory Installation"
+#~ msgstr "目錄安裝"
+
+#~ msgid "Installation"
+#~ msgstr "安裝"
+
+#~ msgid "Settings"
+#~ msgstr "設定"
+
+#~ msgid "Prepare Installation"
+#~ msgstr "準備安裝"
+
+#~ msgid "Install Packages"
+#~ msgstr "安裝軟體包"
+
+#~ msgid "Finish Installation"
+#~ msgstr "完成安裝"
+
+#~ msgid "Finish the Package Manager"
+#~ msgstr "結束軟體包管理程式"
+

@@ -1,0 +1,983 @@
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: opensuse-i 18n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:40+0200\n"
+"PO-Revision-Date: 2014-06-10 11:00+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the Xsupport module
+#: src/clients/support.rb:56
+msgid "Configuration of support"
+msgstr "支援配置"
+
+#. Rich text title for Support in proposals
+#: src/clients/support_proposal.rb:83
+msgid "Support"
+msgstr "支援"
+
+#. Menu title for Support in proposals
+#: src/clients/support_proposal.rb:87
+msgid "&Support"
+msgstr "支援(&S)"
+
+#. Command line parameters dialog caption
+#: src/include/support/dialogs.rb:46
+msgid "Supportconfig Overview Dialog"
+msgstr "Supportconfig 概覽對話方塊"
+
+#. Support configure1 dialog contents
+#: src/include/support/dialogs.rb:53
+msgid "Open SUSE Support Center"
+msgstr "開啟 SUSE 支援中心"
+
+#: src/include/support/dialogs.rb:58
+msgid "This will start a browser connecting to the SUSE Support Center Portal."
+msgstr "這將啟動瀏覽器並連線至 SUSE 支援中心門戶。"
+
+#: src/include/support/dialogs.rb:68
+msgid "Open"
+msgstr "開啟"
+
+#: src/include/support/dialogs.rb:79
+msgid "Collect Data"
+msgstr "蒐集資料"
+
+#: src/include/support/dialogs.rb:84
+msgid "This will create a tarball containing the collected log files."
+msgstr "這將創建一個囊括了所蒐集的日誌檔案的壓縮包。"
+
+#: src/include/support/dialogs.rb:96
+msgid "Create report tarball"
+msgstr "創建報告壓縮包"
+
+#: src/include/support/dialogs.rb:108
+msgid "Upload Data"
+msgstr "上傳資料"
+
+#: src/include/support/dialogs.rb:112
+msgid "This will upload the collected logs to the specified URL."
+msgstr "這將上傳所蒐集的日誌到指定 URL。"
+
+#: src/include/support/dialogs.rb:119
+msgid "Upload"
+msgstr "上傳"
+
+#: src/include/support/dialogs.rb:149
+msgid "Could not find any installed browser."
+msgstr "無法找到任何已安裝的瀏覽器。"
+
+#: src/include/support/dialogs.rb:159
+msgid ""
+"YaST will run a Web browser as superuser. Consider\n"
+"running it as a non-provileged user and entering the URL\n"
+"%1.\n"
+"Start Web browser?\n"
+msgstr ""
+"YaST 將以超級使用者運行瀏覽器。\n"
+"請考慮以非特權使用者運行一個瀏覽器並輸入 URL\n"
+"%1。\n"
+"啟動網頁瀏覽器嗎？\n"
+
+#: src/include/support/dialogs.rb:201
+msgid "Supportconfig Upload Dialog"
+msgstr "Supportconfig 上傳對話方塊"
+
+#. Support configure1 dialog contents
+#: src/include/support/dialogs.rb:226
+msgid "Save as"
+msgstr "另存為"
+
+#: src/include/support/dialogs.rb:229
+msgid "Directory to Save"
+msgstr "要儲存到的資料夾"
+
+#: src/include/support/dialogs.rb:239
+msgid "Package with log files"
+msgstr "日誌檔案壓縮包"
+
+#: src/include/support/dialogs.rb:253
+msgid "Upload log files tarball to URL"
+msgstr "上傳日誌檔案壓縮包到 URL"
+
+#: src/include/support/dialogs.rb:255 src/include/support/dialogs.rb:756
+msgid "Upload Target"
+msgstr "上傳目的地"
+
+#. }
+#: src/include/support/dialogs.rb:327
+msgid "Cannot write settings"
+msgstr "無法寫入設定"
+
+#: src/include/support/dialogs.rb:343
+msgid "Cannot write settings."
+msgstr "無法寫入設定。"
+
+#: src/include/support/dialogs.rb:389
+msgid "Choose Directory Where to Save Tarball"
+msgstr "請選擇要儲存壓縮包的資料夾"
+
+#. Support::log_files["tmp_dir"]=save_dir;
+#: src/include/support/dialogs.rb:401
+msgid "Choose Log Files Tarball File"
+msgstr "請選擇日誌檔案壓縮包檔案"
+
+#. Command line parameters dialog caption
+#: src/include/support/dialogs.rb:421
+msgid "Supportconfig Parameters Configuration"
+msgstr "Supportconfig 參數配置"
+
+#: src/include/support/dialogs.rb:426
+msgid "Create a full file listing from '/'"
+msgstr "創建一個從 '/' 開始的完整檔案列表"
+
+#: src/include/support/dialogs.rb:431
+msgid "Exclude detailed disk info and scans"
+msgstr "排除詳細磁碟資訊與掃描"
+
+#: src/include/support/dialogs.rb:436
+msgid "Search root filesystem for eDirectory instances"
+msgstr "在根檔案系統中搜索 eDirectory 例項"
+
+#: src/include/support/dialogs.rb:441
+msgid "Include full SLP service lists"
+msgstr "包含完整的 SLP 服務列表"
+
+#: src/include/support/dialogs.rb:446
+msgid "Performs an rpm -V for each installed rpm"
+msgstr "為每個已安裝的 rpm 執行一次 rpm -V"
+
+#: src/include/support/dialogs.rb:451
+msgid "Include all log file lines, gather additional rotated logs"
+msgstr "包含全部日誌檔案行，蒐集額外的拆分開的日誌"
+
+#. Support configure1 dialog contents
+#: src/include/support/dialogs.rb:465
+msgid "Use Defaults (ignore /etc/supportconfig.conf)"
+msgstr "使用默認 (忽略 /etc/supportconfig.conf)"
+
+#: src/include/support/dialogs.rb:472
+msgid "Activates all support functions"
+msgstr "啟用全部支援功能"
+
+#: src/include/support/dialogs.rb:479
+msgid "Only gather a minimum amount of info"
+msgstr "僅蒐集最少量資訊"
+
+#: src/include/support/dialogs.rb:487
+msgid "Use Custom (Expert) Settings"
+msgstr "使用自定義 (專家) 設定"
+
+#: src/include/support/dialogs.rb:489
+msgid "Expert Settings"
+msgstr "專家設定"
+
+#: src/include/support/dialogs.rb:495
+msgid "Options"
+msgstr "選項"
+
+#. Support overview dialog caption
+#: src/include/support/dialogs.rb:584
+msgid "Supportconfig Expert Configuration"
+msgstr "Supportconfig 專家配置"
+
+#. FIXME table header
+#: src/include/support/dialogs.rb:614
+msgid "Default Options"
+msgstr "默認選項"
+
+#. Support configure2 dialog caption
+#: src/include/support/dialogs.rb:680
+msgid "Supportconfig Contact Configuration"
+msgstr "Supportconfig 聯繫人配置"
+
+#. Support configure2 dialog contents
+#: src/include/support/dialogs.rb:685
+msgid "Contact Information"
+msgstr "聯繫人資訊"
+
+#: src/include/support/dialogs.rb:690
+msgid "Company"
+msgstr "公司"
+
+#: src/include/support/dialogs.rb:701
+msgid "Email Address"
+msgstr "電子郵件"
+
+#: src/include/support/dialogs.rb:708
+msgid "Name"
+msgstr "姓名"
+
+#: src/include/support/dialogs.rb:715
+msgid "Phone Number"
+msgstr "電話號碼"
+
+#: src/include/support/dialogs.rb:722
+msgid "Store ID"
+msgstr "商店 ID"
+
+#: src/include/support/dialogs.rb:733
+msgid "Terminal ID"
+msgstr "終端 ID"
+
+#: src/include/support/dialogs.rb:744
+msgid "GPG UID"
+msgstr "GPG UID"
+
+#: src/include/support/dialogs.rb:751
+msgid "Upload Information"
+msgstr "上傳資訊"
+
+#: src/include/support/dialogs.rb:770
+msgid "11-digit service request number"
+msgstr "11 位服務請求編號"
+
+#. abort?
+#: src/include/support/dialogs.rb:847
+msgid "The SR number must be 11 digits"
+msgstr "服務請求編號必須是 11 位"
+
+#: src/include/support/dialogs.rb:865
+msgid "Collecting Data"
+msgstr "正在蒐集資料"
+
+#: src/include/support/dialogs.rb:866
+msgid "Progress"
+msgstr "進度"
+
+#: src/include/support/dialogs.rb:931
+msgid "Collected Data Review"
+msgstr "複核所蒐集資料"
+
+#. FIXME use list of generated files, as well as directory prefix
+#. `MultiLineEdit (`id (`file), `opt (`read_only), _("File Contents"))
+#: src/include/support/dialogs.rb:978 src/include/support/dialogs.rb:1026
+msgid "File Name"
+msgstr "檔名"
+
+#: src/include/support/dialogs.rb:984
+msgid "Remove from Data"
+msgstr "從資料中移除"
+
+#. Read dialog help 1/2
+#: src/include/support/helps.rb:36
+msgid ""
+"<p><b><big>Initializing Support Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在啟始化支援配置</big></b><br>\n"
+"</p>\n"
+
+#. Read dialog help 2/2
+#: src/include/support/helps.rb:40
+msgid ""
+"<p><b><big>Aborting Initialization:</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>\n"
+msgstr ""
+"<p><b><big>中止啟始化：</big></b><br>\n"
+"現在按<b>中止</b>可安全地中止配置工具。</p>\n"
+
+#. Write dialog help 1/2
+#: src/include/support/helps.rb:44
+msgid ""
+"<p><b><big>Saving Support Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在儲存支援配置</big></b><br>\n"
+"</p>\n"
+
+#. Write dialog help 2/2
+#: src/include/support/helps.rb:48
+msgid ""
+"<p><b><big>Aborting Saving:</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.\n"
+"An additional dialog informs whether it is safe to do so.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>中止儲存：</big></b><br>\n"
+"按<b>中止</b>可中止儲存過程。\n"
+"另一個對話方塊將告之這樣做是否安全。\n"
+"</p>\n"
+
+#. Summary dialog help 1/3
+#: src/include/support/helps.rb:55
+msgid ""
+"<p><b><big>Support Configuration</big></b><br>\n"
+"Configure support here.<br></p>\n"
+msgstr ""
+"<p><b><big>支援配置</big></b><br>\n"
+"在此配置支援。<br></p>\n"
+
+#. Summary dialog help 2/3
+#: src/include/support/helps.rb:59
+msgid ""
+"<p><b><big>Adding a support:</big></b><br>\n"
+"Choose a support from the list of detected supports.\n"
+"If your support was not detected, use <b>Other (not detected)</b>.\n"
+"Then press <b>Configure</b>.</p>\n"
+msgstr ""
+"<p><b><big>添加一項支援</big></b><br>\n"
+"從檢測到的支援服務列表中選擇一項支援服務。\n"
+"若未檢測到屬於您的支援服務，請使用<b>其它(未檢測到)</b>。\n"
+"然後按<b>繼續</b>。</p>\n"
+
+#. Summary dialog help 3/3
+#: src/include/support/helps.rb:66
+msgid ""
+"<p><b><big>Editing or Deleting:</big></b><br>\n"
+"If you press <b>Edit</b>, an additional dialog in which to change\n"
+"the configuration opens.</p>\n"
+msgstr ""
+"<p><b><big>編輯或刪除：</big></b><br>\n"
+"若您按下<b>編輯</b>，將開啟另一個可在其中修改配置的對話方塊。</p>\n"
+
+#. Ovreview dialog help 1/3
+#: src/include/support/helps.rb:72
+msgid ""
+"\n"
+"<p><b><big>Opening SUSE Support Center</big></b><br>\n"
+"To start a Web browser that opens the SUSE Support Center Portal, use "
+"<b>Open SUSE Support Center</b>.\n"
+"You can then open a Service Request with Global Technical Support. Make sure "
+"you write down\n"
+"the Service Request number to include in the supportconfig data upload.</p>\n"
+msgstr ""
+"\n"
+"<p><b><big>開啟 SUSE 支援中心</big></b><br>\n"
+"要啟動網頁瀏覽器並開啟 SUSE 支援中心門戶，請使用<b>開啟 SUSE 支援中心</"
+"b>。\n"
+"然後您就可以向全球技術支援提交服務請求了。\n"
+"請別忘了寫下服務請求編號來包含到上傳的 supportconfig 資料中。</p>\n"
+
+#. Ovreview dialog help 2/3
+#: src/include/support/helps.rb:80
+msgid ""
+"<p><b><big>Collecting Data</big></b><br>\n"
+"To run the supportconfig data collection tool, use <b>Collect Data</b></p>"
+msgstr ""
+"<p><b><big>蒐集資料</big></b><br>\n"
+"要運行 supportconfig 資料蒐集工具，請使用<b>蒐集資料</b></p>"
+
+#. Ovreview dialog help 3/3
+#: src/include/support/helps.rb:84
+msgid ""
+"<p><b><big>Uploading Collected Data</big></b><br>\n"
+"To upload the data already collected to a server, use <b>Upload Data</b>.\n"
+"The server may or may not be Global Technical Support.</p>"
+msgstr ""
+"<p><b><big>上傳所蒐集的資料</big></b><br>\n"
+"要上傳已蒐集的資料到伺服器，請使用 <b>上傳資料</b>。\n"
+"伺服器可以是也可以不是全球技術支援伺服器。</p>"
+
+#. Configure1 dialog help 1/3
+#: src/include/support/helps.rb:90
+msgid ""
+"<p><b><big>Supportconfig Options</big></b><br>\n"
+"Select an option to override the defaults. You can use the default "
+"settings,\n"
+"gather the most data or only gather a minimum amount of data."
+msgstr ""
+"<p><b><big>Supportconfig 選項</big></b><br>\n"
+"請選擇一個選項來覆蓋默認選項。您可以使用默認設定、\n"
+"蒐集最多資料或僅蒐集最少量的資料。"
+
+#. Configure1 dialog help 2/3
+#: src/include/support/helps.rb:96
+msgid ""
+"<p><b><big>Expert Settings</big></b><br>\n"
+"Select <b>Use Custom</b> and click the <b>Expert Settings</b> button\n"
+"to select specific data sets to collect.</p>\n"
+msgstr ""
+"<p><b><big>專家設定</big></b><br>\n"
+"選擇<b>使用自定義</b>並點選<b>專家設定</b>按鈕\n"
+"來選擇要蒐集的特定資料集合。</p>\n"
+
+#. Configure1 dialog help 3/3
+#: src/include/support/helps.rb:102
+msgid ""
+"<p><b><big>Options</big></b><br>\n"
+"Collect additional information. Usually these options are not\n"
+"necessary, but can be included if circumstances require more information.</"
+"p>\n"
+msgstr ""
+"<p><b><big>選型</big></b><br>\n"
+"蒐集額外資訊。通常這些選項是不必要的，\n"
+"但形勢需要更多資訊時也可被囊括進來。</p>\n"
+
+#. Expert dialog help 1/1
+#: src/include/support/helps.rb:108
+msgid ""
+"<p><big><b>Default Options</b></big><br>\n"
+"Select or deselect each of the data sets you would like to include in the "
+"supportconfig tarball.</p>"
+msgstr ""
+"<p><big><b>默認選項</b></big><br>\n"
+"選擇或反選您想要包含在 supportconfig 壓縮包中的每種資料集合。</p>"
+
+#. Contact dialog help 1/4
+#: src/include/support/helps.rb:112
+msgid ""
+"<p><big><b>Contact Information</b></big><br>\n"
+"Fill in each of the contact information fields that you would like to "
+"include\n"
+"in the supportconfig tarball. The fields are saved in the basic-environment."
+"txt file.</p>"
+msgstr ""
+"<p><big><b>聯繫資訊</b></big><br>\n"
+"請填寫您願意包含在 supportconfig 壓縮包中的每項聯繫資訊欄位。\n"
+"欄位內容儲存在 basic-environment.txt 檔案中。</p>"
+
+#. Contact dialog help 2/4
+#: src/include/support/helps.rb:118
+msgid ""
+"<p><b><big>Upload Information</big></b><br>\n"
+"The upload target is the supportconfig tarball's destination URI. Supported "
+"upload services include\n"
+"ftp, http, https, scp. If you need to include the supportconfig tarball "
+"filename in your upload target,\n"
+"use the <i>tarball</i> keyword. This will get replaced with the actual "
+"tarball filename.\n"
+"See <i>man supportconfig(1)</i> for further details.</p>"
+msgstr ""
+"<p><b><big>上傳資訊</big></b><br>\n"
+"上傳目的地是 supportconfig 壓縮包的目標 URI。支援的上傳服務包括\n"
+"ftp，http，https，scp。若您需要將 supportconfig 壓縮包檔名包含\n"
+"進您的上傳目的地中，請使用<i>tarball</i>關鍵詞。這將被替換為真實\n"
+"的壓縮包檔名。\n"
+"進一步細節請參考 <i>man supportconfig(1)</i>。</p>"
+
+#. Contact dialog help 3/4
+#: src/include/support/helps.rb:126
+msgid ""
+"<p><b><big>Upload Target Examples</big></b><br>\n"
+"https://secure-www.novell.com/upload?appname=supportconfig&file=<i>tarball</"
+"i><br>\n"
+"ftp://ftp.novell.com/incoming<br>\n"
+"scp://central.server.foo.com/supportconfig/archives</p>"
+msgstr ""
+"<p><b><big>上傳目的地示例</big></b><br>\n"
+"https://secure-www.novell.com/upload?appname=supportconfig&file=<i>tarball</"
+"i><br>\n"
+"ftp://ftp.novell.com/incoming<br>\n"
+"scp://central.server.foo.com/supportconfig/archives</p>"
+
+#. Contact dialog help 4/4
+#: src/include/support/helps.rb:133
+msgid ""
+"<p><b>Note:</b> If you are uploading a supportconfig tarball to Global "
+"Technical Support,\n"
+"make sure you include the 11-digit service request number from your open "
+"service request.\n"
+msgstr ""
+"<p><b>注意：</b>若您正在上傳一份 supportconfig 壓縮包到全球技術支援，\n"
+"請確保您的公開服務請求包含了 11 位服務請求編號。\n"
+
+#. Collecting data dialkog help 1/1
+#: src/include/support/helps.rb:137
+msgid ""
+"<p><b><big>Collecting Data</big></b>><br>\n"
+"Data is being collected.</p>\n"
+msgstr ""
+"<p><b><big>正在蒐集資料</big></b>><br>\n"
+"正在蒐集資料中。</p>\n"
+
+#. Data review dialog help 1/1
+#: src/include/support/helps.rb:141
+msgid ""
+"<p><b><big>Collected Data Review</big></b><br>\n"
+"Review the data collected by supportconfig. If you do not want to share some "
+"of the collected data,\n"
+"use <b>Remove from Data</b> and the selected file will be removed.</p>\n"
+msgstr ""
+"<p><b><big>蒐集資料複核</big></b><br>\n"
+"複核 supportconfig 所蒐集的資料。若您不想要分享某些蒐集到的資料，\n"
+"可使用<b>從資料移除</b>將所選檔案移除。</p>\n"
+
+#. Configure1 dialog help 1/3
+#: src/include/support/helps.rb:148
+msgid ""
+"<p><b><big>Upload supportconfig tarball to Global Technical Support</big></"
+"b><br>\n"
+"If you want to store a copy of the supportconfig tarball, select the target\n"
+"directory and make sure that this option is checked.\n"
+"<br></p>\n"
+msgstr ""
+"<p><b><big>上傳 supportconfig 壓縮包到全球技術支援</big></b><br>\n"
+"若您想要存儲一份 supportconfig 壓縮包的副本，\n"
+"請選擇目標資料夾並確保勾選了此選項。\n"
+"<br></p>\n"
+
+#. Configure1 dialog help 2/3
+#. Configure1 dialog help 2/3
+#: src/include/support/helps.rb:155 src/include/support/helps.rb:180
+msgid ""
+"<p><b><big>Upload URL</big></b><br>\n"
+"This option has the location to which the supportconfig tarball will be "
+"uploaded\n"
+"as default value.\n"
+"Change this value only in special cases.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>上傳 URL</big></b><br>\n"
+"此選項以 supportconfig 壓縮包將上傳至的位置為預設值。\n"
+"請僅在特殊情況下才修改此值。\n"
+"</p>\n"
+
+#. Configure1 dialog help 3/3, %1 is a URL
+#. Configure1 dialog help 3/3
+#: src/include/support/helps.rb:164 src/include/support/helps.rb:189
+msgid ""
+"<p><b><big>Privacy Policy</big></b><br>\n"
+"Find SUSE's privacy policy at\n"
+"<i>%1</i>.</p>\n"
+msgstr ""
+"<p><b><big>隱私策略</big></b><br>\n"
+"可在 <i>%1</i> 找到 SUSE 的隱私策略。</p>\n"
+
+#: src/include/support/helps.rb:173
+msgid ""
+"<p><b><big>Upload supportconfig tarball to Global Technical Support</big></"
+"b><br>\n"
+"If you have already created the supportconfig tarball, write the full path\n"
+"into the <i>Package with log files</i> field.\n"
+"<br></p>\n"
+msgstr ""
+"<p><b><big>上傳 supportconfig 壓縮包到全球技術支援</big></b><br>\n"
+"若您已創建了 supportconfig 壓縮包，請將完整路徑寫入到<i>日誌檔案包</i>字"
+"段。\n"
+"<br></p>\n"
+
+#. Configure2 dialog help 1/2
+#: src/include/support/helps.rb:198
+msgid ""
+"<p><b><big>Configuration Part Two</big></b><br>\n"
+"Press <b>Next</b> to continue.\n"
+"<br></p>\n"
+msgstr ""
+"<p><b><big>配置第二部分</big></b><br>\n"
+"按<b>下一步</b>繼續。\n"
+"<br></p>\n"
+
+#. Configure2 dialog help 2/2
+#: src/include/support/helps.rb:204
+msgid ""
+"<p><b><big>Selecting Something</big></b><br>\n"
+"It is not possible. You must code it first. :-)\n"
+"</p>"
+msgstr ""
+"<p><b><big>選擇點兒東西</big></b><br>\n"
+"這是不可能滴。您必須先寫這部分的程式碼呦。:-)\n"
+"</p>"
+
+#. encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2008 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#: src/include/support/supportconfig_conf.rb:30
+msgid "AppArmor information. security-apparmor.txt"
+msgstr "AppArmor 資訊。security-apparmor.txt"
+
+#: src/include/support/supportconfig_conf.rb:33
+msgid "autofs information. fs-autofs.txt"
+msgstr "autofs 資訊。fs-autofs.txt"
+
+#: src/include/support/supportconfig_conf.rb:36
+msgid "Information related to booting and the kernel. boot.txt"
+msgstr "引導與核心相關資訊。boot.txt"
+
+#: src/include/support/supportconfig_conf.rb:39
+msgid "Current system service states. chkconfig.txt"
+msgstr "當前系統服務狀態。chkconfig.txt"
+
+#: src/include/support/supportconfig_conf.rb:42
+msgid "Information related to capturing a system core dump. crash.txt"
+msgstr "抓取系統核心轉儲相關資訊。crash.txt"
+
+#: src/include/support/supportconfig_conf.rb:45
+msgid "Information related to cron and at. cron.txt"
+msgstr "cron 與 at 相關資訊。cron.txt"
+
+#: src/include/support/supportconfig_conf.rb:48
+msgid "Disk, file system mounts and partition information. fs-diskio.txt"
+msgstr "磁碟、檔案系統裝載點與分割區資訊。fs-diskio.txt"
+
+#: src/include/support/supportconfig_conf.rb:51
+msgid "Domain Name Service information. dns.txt"
+msgstr "域名服務資訊。dns.txt"
+
+#: src/include/support/supportconfig_conf.rb:54
+msgid "Novell eDirectory health check information. novell-edir.txt"
+msgstr "Novell eDirectory 健康檢測資訊。novell-edir.txt"
+
+#: src/include/support/supportconfig_conf.rb:57
+msgid ""
+"System environment information, including sysctl and root's environment. env."
+"txt"
+msgstr "系統環境資訊，包括 sysctl 與根使用者環境。env.txt"
+
+#: src/include/support/supportconfig_conf.rb:60
+msgid ""
+"Recursively gets *.conf files, along with various other configuration files "
+"in /etc. etc.txt"
+msgstr "遞迴獲取 /etc 中的 *.conf 檔案與許多其它配置檔案。etc.txt"
+
+#: src/include/support/supportconfig_conf.rb:63
+msgid "Enterprise Volume Management System-related information. evms.txt"
+msgstr "企業區塊管理系統相關資訊。evms.txt"
+
+#: src/include/support/supportconfig_conf.rb:66
+msgid "Heartbeat/high availabilty cluster information. ha.txt"
+msgstr "心跳/高可用性叢集資訊。ha.txt"
+
+#: src/include/support/supportconfig_conf.rb:69
+msgid "iSCSI target and initiator information. fs-iscsi.txt"
+msgstr "iSCSI 目標與發起端資訊。fs-iscsi.txt"
+
+#: src/include/support/supportconfig_conf.rb:72
+msgid "LDAP related information, including a root DSE search. ldap.txt"
+msgstr "LDAP 相關資訊，包括一個根 DSE 搜索。ldap.txt"
+
+#: src/include/support/supportconfig_conf.rb:75
+msgid ""
+"Novell Linux User Management-related information, including a root DSE, UNIX "
+"Config and workstation object searches. novell-lum.txt"
+msgstr ""
+"Novell Linux 使用者管理相關資訊，包括一個根 DSE，UNIX 配置與工作站物件搜索。"
+"novell-lum.txt"
+
+#: src/include/support/supportconfig_conf.rb:78
+msgid "Linux Volume Management-related information. lvm.txt"
+msgstr "Linux 區塊管理相關資訊。lvm.txt"
+
+#: src/include/support/supportconfig_conf.rb:81
+msgid "Memory-related information. memory.txt"
+msgstr "內存相關資訊。memory.txt"
+
+#: src/include/support/supportconfig_conf.rb:84
+msgid "System kernel module information. modules.txt"
+msgstr "系統核心模組資訊。modules.txt"
+
+#: src/include/support/supportconfig_conf.rb:87
+msgid "Native device mapper multipathing information. mpio.txt"
+msgstr "原生裝置對映器多路徑資訊。mpio.txt"
+
+#: src/include/support/supportconfig_conf.rb:90
+msgid "Novell Core Protocol-related information. novell-ncp.txt"
+msgstr "Novell 核心協議相關資訊。novell-ncp.txt"
+
+#: src/include/support/supportconfig_conf.rb:93
+msgid "Novell Cluster Services-related information. novell-ncs.txt"
+msgstr "Novell 叢集服務相關資訊。novell-ncs.txt"
+
+#: src/include/support/supportconfig_conf.rb:96
+msgid "Network-related information, including firewall rules. network.txt"
+msgstr "網路相關資訊，包括防火牆規則。network.txt"
+
+#: src/include/support/supportconfig_conf.rb:99
+msgid "Network File System-related information. nfs.txt"
+msgstr "網路檔案系統相關資訊。nfs.txt"
+
+#: src/include/support/supportconfig_conf.rb:102
+msgid "Novell Storage Services-related information. novell-nss.txt"
+msgstr "Novell 存儲服務相關資訊。novell-nss.txt"
+
+#: src/include/support/supportconfig_conf.rb:105
+msgid "Network Time Protocol-related information. ntp.txt"
+msgstr "網路時間協議相關資訊。ntp.txt"
+
+#: src/include/support/supportconfig_conf.rb:108
+msgid "OCFS2 file system-related information. ocfs2.txt"
+msgstr "OCFS2 檔案系統相關資訊。ocfs2.txt"
+
+#: src/include/support/supportconfig_conf.rb:111
+msgid "List of all open files using lsof. open-files.txt"
+msgstr "使用 lsof 列出全部開啟的檔案。open-files.txt"
+
+#: src/include/support/supportconfig_conf.rb:114
+msgid "OpenWBEM-related information. openwbem.txt"
+msgstr "OpenWBEM 相關資訊。openwbem.txt"
+
+#: src/include/support/supportconfig_conf.rb:117
+msgid ""
+"Pluggable Authentication Module-related information, including user account "
+"information. pam.txt"
+msgstr "可插拔認證模組相關資訊，包括使用者賬戶資訊。pam.txt"
+
+#: src/include/support/supportconfig_conf.rb:120
+msgid "Printing and CUPS-related information. print.txt"
+msgstr "列印與 CUPS 相關資訊。print.txt"
+
+#: src/include/support/supportconfig_conf.rb:123
+msgid "Includes key /proc file content. proc.txt"
+msgstr "包括核心 /proc 檔案內容。proc.txt"
+
+#: src/include/support/supportconfig_conf.rb:126
+msgid "Update daemon-related information. updates-daemon.txt"
+msgstr "更新守護程式相關資訊。updates-daemon.txt"
+
+#: src/include/support/supportconfig_conf.rb:129
+msgid "Update client related information. updates.txt"
+msgstr "更新客戶端相關資訊。updates.txt"
+
+#: src/include/support/supportconfig_conf.rb:132
+msgid ""
+"System Activity Reporting-related information, including copies of the SAR "
+"data files. sar.txt"
+msgstr "系統活動報告相關資訊，包括 SAR 資料檔案的副本。sar.txt"
+
+#: src/include/support/supportconfig_conf.rb:135
+msgid "SLES Real Time kernel-related information. slert.txt"
+msgstr "SLES 實時核心相關資訊。slert.txt"
+
+#: src/include/support/supportconfig_conf.rb:138
+msgid "Service Location Protocol related information. slp.txt"
+msgstr "服務定位協議相關資訊。slp.txt"
+
+#: src/include/support/supportconfig_conf.rb:141
+msgid ""
+"Self-Monitoring, Analysis, and Reporting Technology-related information for "
+"hard disks. WARNING: Some hard disk controllers and drives do not\n"
+"behave nicely. Probing SMART data has been known to change file systems to "
+"read only mode or even hang the server. Make sure probing SMART data\n"
+"works in your environment before enabling this option. fs-smartmon.txt\n"
+msgstr ""
+"硬碟自我監控、分析與報告技術相關的資訊。警告：有些硬碟控制器與驅動器表現並不"
+"好。\n"
+"已知檢測 SMART 資料將導致檔案系統變為僅讀模式甚至造成伺服器僵死。在啟用此選項"
+"前\n"
+"請確保檢測 SMART 資料在您的環境下是可用的。fs-smartmon.txt\n"
+
+#: src/include/support/supportconfig_conf.rb:146
+msgid "Samba and CIFS-related information. samba.txt"
+msgstr "Samba 與 CIFS 相關資訊。samba.txt"
+
+#: src/include/support/supportconfig_conf.rb:149
+msgid "Software RAID-related information. fs-softraid.txt"
+msgstr "軟體 RAID 相關資訊。fs-softraid.txt"
+
+#: src/include/support/supportconfig_conf.rb:152
+msgid "Secure Shell server information. ssh.txt"
+msgstr "安全殼層伺服器資訊。ssh.txt"
+
+#: src/include/support/supportconfig_conf.rb:155
+msgid "Configuration files found in /etc/sysconfig. sysconfig.txt"
+msgstr "在 /etc/sysconfig 中找到的配置檔案。sysconfig.txt"
+
+#: src/include/support/supportconfig_conf.rb:158
+msgid "UDEV device manager-related information. udev.txt"
+msgstr "UDEV 裝置管理器相關資訊。udev.txt"
+
+#: src/include/support/supportconfig_conf.rb:161
+msgid "X graphical system-related information. x.txt"
+msgstr "X 圖形系統相關資訊。x.txt"
+
+#: src/include/support/supportconfig_conf.rb:164
+msgid "XEN virtualization-related information. xen.txt"
+msgstr "XEN 虛擬化相關資訊。xen.txt"
+
+#: src/include/support/supportconfig_conf.rb:167
+msgid ""
+"Tells supportconfig to search the file system for all eDirectory instances "
+"files. If set, ADD_OPTION_FSLIST is automatically set as well. -e"
+msgstr ""
+"通知 supportconfig 在檔案系統中搜索全部 eDirectory 例項檔案。若設定了本選項，"
+"ADD_OPTION_FSLIST 也將自動設定。-e"
+
+#: src/include/support/supportconfig_conf.rb:170
+msgid ""
+"A full file list using find from the root of the filesytem. -L, fs-files.txt"
+msgstr "使用 find 從檔案系統根目錄得到的完整檔案列表。-L, fs-files.txt"
+
+#: src/include/support/supportconfig_conf.rb:173
+msgid ""
+"Includes the entire log file, including comments, instead of just "
+"VAR_OPTION_LINE_COUNT lines of it. Additional rotated logs are included if "
+"available. -l"
+msgstr ""
+"包含整個日誌檔案，包括註釋，而不是僅從該檔案擷取 VAR_OPTION_LINE_COUNT 數目的"
+"行。若有的話也將包含額外的拆分開的日誌。-l"
+
+#: src/include/support/supportconfig_conf.rb:176
+msgid "Minimizes the amount of disk information and detailed scanning. -d"
+msgstr "最小化了磁碟資訊與詳細掃描的量。-d"
+
+#: src/include/support/supportconfig_conf.rb:179
+msgid ""
+"Normally all of the /var/log/YaST2/* logs are included. This option "
+"minimizes the amount of each file retrieved."
+msgstr ""
+"通常會包含全部 /var/log/YaST2/* 日誌。這個選項最小化了從每個檔案擷取的日誌"
+"量。"
+
+#: src/include/support/supportconfig_conf.rb:182
+msgid ""
+"Runs an rpm -V on every installed RPM package. This takes some time to "
+"complete. -v, rpm-verify.txt"
+msgstr ""
+"為每個已安裝的 RPM 軟體包運行一次 rpm -V。這要過一會兒才能完成。-v, rpm-"
+"verify.txt"
+
+#: src/include/support/supportconfig_conf.rb:185
+msgid ""
+"Normally only the base SLP service types are listed. This option allows you "
+"to query each of the discovered service types individually. -s, slp.txt"
+msgstr ""
+"通常僅會列出基本 SLP 服務類型。這個選項允許您單獨查詢每個所發現的服務類型。-"
+"s, slp.txt"
+
+#: src/include/support/supportconfig_conf.rb:188
+msgid "Company name to include in the basic-environment.txt"
+msgstr "將包含在 basic-environment.txt 中的公司名稱"
+
+#: src/include/support/supportconfig_conf.rb:191
+msgid "Contact's email address to include in the basic-environment.txt"
+msgstr "將包含在 basic-environment.txt 中的聯繫人電子郵件地址"
+
+#: src/include/support/supportconfig_conf.rb:194
+msgid "Contact's name to include in the basic-environment.txt"
+msgstr "將包含在 basic-environment.txt 中的聯繫人姓名"
+
+#: src/include/support/supportconfig_conf.rb:197
+msgid "Contact's phone number to include in the basic-environment.txt"
+msgstr "將包含在 basic-environment.txt 中的聯繫人電話號碼"
+
+#: src/include/support/supportconfig_conf.rb:200
+msgid ""
+"The number of lines to include when getting a log file. Zero means get the "
+"entire file."
+msgstr "獲取某個日誌檔案時要包含的行數。零表示獲取整個檔案。"
+
+#: src/include/support/supportconfig_conf.rb:203
+msgid ""
+"The supportconfig tarball location. The first valid location in the list is "
+"always used."
+msgstr "supportconfig 壓縮包的位置。將總是使用列表中的第一個有效位置。"
+
+#: src/include/support/supportconfig_conf.rb:206
+msgid ""
+"The maximum number of /var/log/messages lines to get. Zero means get the "
+"entire file."
+msgstr "要獲取的 /var/log/messages 的最大行數。零表示獲取整個檔案。"
+
+#: src/include/support/supportconfig_conf.rb:209
+msgid ""
+"The maximum number of heartbeat policy engine log files to include in the "
+"supportconfig tarball."
+msgstr "要包含在 supportconfig 壓縮包中的心跳策略引擎日誌檔案的最大數目。"
+
+#: src/include/support/supportconfig_conf.rb:212
+msgid ""
+"The maximum number of SAR data files to include in the supportconfig tarball."
+msgstr "要包含在 supportconfig 壓縮包中的 SAR 資料檔案的最大數目。"
+
+#: src/include/support/supportconfig_conf.rb:215
+msgid ""
+"When set to 1, supportconfig runs in quiet mode. This option is useful if "
+"you\n"
+"plan on running supportconfig regularly in a cron job for example. Set with -"
+"Q."
+msgstr ""
+"當設為 1 時，supportconfig 將運行在靜默模式下。當您打算 -- 例如使用 cron 任務"
+"定期\n"
+"運行 supportconfig -- 時此選項是很有幫助的。使用 -Q 設定。"
+
+#: src/include/support/supportconfig_conf.rb:218
+msgid ""
+"Used to specify where the supportconfig tarball will be uploaded, when using "
+"the -u srnum startup option. You can specify any FTP server that supports "
+"anonymous uploads. The default is SUSE's public ftp server."
+msgstr ""
+"當使用 -u srnum 啟動選項時用於指定 supportconfig 壓縮包的上傳位置。您可以指定"
+"任何支援匿名上傳的 FTP 伺服器。默認是 SUSE 的公共 FTP 伺服器。"
+
+#. Initialization dialog caption
+#: src/include/support/wizards.rb:147
+msgid "Support Configuration"
+msgstr "支援配置"
+
+#. Initialization dialog contents
+#: src/include/support/wizards.rb:149
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. global string created_directory="";
+#: src/modules/Support.rb:143
+msgid "To continue, enter root password"
+msgstr "請輸入 root 密碼繼續"
+
+#: src/modules/Support.rb:144
+msgid "root Password"
+msgstr "root 密碼"
+
+#: src/modules/Support.rb:163
+msgid "Password incorrect"
+msgstr "密碼不正確"
+
+#. Support read dialog caption
+#: src/modules/Support.rb:267
+msgid "Initializing Support Configuration"
+msgstr "正在啟始化支援配置"
+
+#. Support read dialog caption
+#: src/modules/Support.rb:313
+msgid "Saving Support Configuration"
+msgstr "正在儲存支援配置"
+
+#. Progress stage 1/2
+#: src/modules/Support.rb:329
+msgid "Write the settings"
+msgstr "寫入設定"
+
+#. Progress stage 2/2
+#: src/modules/Support.rb:331
+msgid "Run SuSEconfig"
+msgstr "運行 SuSEconfig"
+
+#. Progress step 1/2
+#: src/modules/Support.rb:335
+msgid "Writing the settings..."
+msgstr "正在寫入設定..."
+
+#. Progress step 2/2
+#: src/modules/Support.rb:337
+msgid "Running SuSEconfig..."
+msgstr "正在運行 SuSEconfig..."
+
+#. Progress finished
+#: src/modules/Support.rb:339
+msgid "Finished"
+msgstr "已完成"
+
+#. TODO FIXME: your code here...
+#. Configuration summary text for autoyast
+#: src/modules/Support.rb:438
+msgid "Configuration summary..."
+msgstr "配置摘要..."
+
+

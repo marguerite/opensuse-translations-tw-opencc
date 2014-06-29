@@ -1,0 +1,427 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:42+0200\n"
+"PO-Revision-Date: 2013-02-03 16:26+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the Xisns module
+#: src/clients/isns.rb:35
+msgid "Configuration of an isns service"
+msgstr "iSNS 服務配置"
+
+#. progress step title
+#: src/clients/isns_finish.rb:44
+msgid "Saving iSCSI configuration..."
+msgstr "正在儲存 iSCSI 配置..."
+
+#. Rich text title for IsnsServer in proposals
+#: src/clients/isns_proposal.rb:65
+msgid "iSCSI Initiator"
+msgstr "iSCSI 發起端"
+
+#. Menu title for IsnsServer in proposals
+#: src/clients/isns_proposal.rb:69
+msgid "&iSCSI Initiator"
+msgstr "&iSCSI 發起端"
+
+#. first tab - service status and firewall
+#: src/include/isns/dialogs.rb:34
+msgid "Service"
+msgstr "服務"
+
+#. second tab - iSCSI Nodes
+#: src/include/isns/dialogs.rb:57 src/include/isns/dialogs.rb:132
+msgid "iSCSI Nodes"
+msgstr "iSCSI 節點"
+
+#. third tab - Discovery Domains
+#: src/include/isns/dialogs.rb:67 src/include/isns/dialogs.rb:150
+msgid "Discovery Domains"
+msgstr "發現域"
+
+#. fourth tab - discovery domain sets
+#: src/include/isns/dialogs.rb:77 src/include/isns/dialogs.rb:211
+msgid "Discovery Domains Sets"
+msgstr "發現域集"
+
+#: src/include/isns/dialogs.rb:99
+msgid "When &Booting"
+msgstr "引導時(&B)"
+
+#: src/include/isns/dialogs.rb:100
+msgid "&Manually"
+msgstr "手工(&M)"
+
+#: src/include/isns/dialogs.rb:103
+msgid "When Booting"
+msgstr "引導時"
+
+#: src/include/isns/dialogs.rb:104
+msgid "Manually"
+msgstr "手工"
+
+#: src/include/isns/dialogs.rb:115
+msgid "Address of iSNS Server"
+msgstr "iSNS 伺服器地址"
+
+#: src/include/isns/dialogs.rb:135 src/include/isns/dialogs.rb:186
+#: src/include/isns/widgets.rb:164
+msgid "iSCSI Node Name"
+msgstr "iSCSI 節點名稱"
+
+#: src/include/isns/dialogs.rb:135 src/include/isns/dialogs.rb:186
+#: src/include/isns/widgets.rb:206
+msgid "Node Type"
+msgstr "節點類型"
+
+#: src/include/isns/dialogs.rb:138 src/include/isns/dialogs.rb:163
+#: src/include/isns/dialogs.rb:224
+msgid "Delete"
+msgstr "刪除"
+
+#: src/include/isns/dialogs.rb:156 src/include/isns/dialogs.rb:247
+#: src/include/isns/widgets.rb:32
+msgid "Discovery Domain Name"
+msgstr "發現域名稱"
+
+#: src/include/isns/dialogs.rb:162
+msgid "Create Discovery Domain"
+msgstr "創建發現域"
+
+#: src/include/isns/dialogs.rb:181
+msgid "Discovery Domain Members"
+msgstr "發現域成員"
+
+#: src/include/isns/dialogs.rb:192
+msgid "Add Existing iSCSI Node"
+msgstr "添加現有的 iSCSI 節點"
+
+#: src/include/isns/dialogs.rb:193
+msgid "Create iSCSI Node Member"
+msgstr "創建 iSCSI 節點成員"
+
+#: src/include/isns/dialogs.rb:194 src/include/isns/dialogs.rb:254
+msgid "Remove"
+msgstr "移除"
+
+#: src/include/isns/dialogs.rb:217 src/include/isns/widgets.rb:122
+msgid "Discovery Domain Set Name"
+msgstr "發現域集名稱"
+
+#: src/include/isns/dialogs.rb:223
+msgid "Create Discovery Domain Set"
+msgstr "創建發現域集"
+
+#: src/include/isns/dialogs.rb:242
+msgid "Discovery Domain Set Members"
+msgstr "發現域整合員"
+
+#: src/include/isns/dialogs.rb:253 src/include/isns/widgets.rb:252
+msgid "Add Discovery Domain"
+msgstr "添加發現域"
+
+#. Summary dialog
+#. @return dialog result
+#. Main dialog - tabbed
+#: src/include/isns/dialogs.rb:275
+msgid "iSNS Service"
+msgstr "iSNS 服務"
+
+#. curr_target = "";
+#: src/include/isns/dialogs.rb:289
+msgid "<h1>iSNS Service</h1>"
+msgstr "<h1>iSNS 服務</h1>"
+
+#. Read dialog help 1/2
+#: src/include/isns/helps.rb:17
+msgid ""
+"<p><b><big>Initializing iSNS daemon configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在啟始化 iSNS 守護精靈配置</big></b><br>\n"
+"</p>\n"
+
+#. Read dialog help 2/2
+#: src/include/isns/helps.rb:21
+msgid ""
+"<p><b><big>Aborting Initialization</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>\n"
+msgstr ""
+"<p><b><big>正在中止啟始化</big></b><br>\n"
+"現在按<b>中止</b>安全地中止配置工具。</p>\n"
+
+#. Write dialog help 1/2
+#: src/include/isns/helps.rb:25
+msgid ""
+"<p><b><big>Saving iSNS Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在儲存 iSNS 配置</big></b><br>\n"
+"</p>\n"
+
+#. Write dialog help 2/2
+#: src/include/isns/helps.rb:29
+msgid ""
+"<p><b><big>Aborting Saving:</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.\n"
+"An additional dialog informs whether it is safe to do so.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>中斷儲存:</big></b><br>\n"
+"按<B>中斷</B>可中斷儲存。\n"
+"另一個對話方塊將告之您這樣做是否安全。\n"
+"</p>\n"
+
+#. Summary dialog help 1/3
+#: src/include/isns/helps.rb:36
+msgid ""
+"<p><b><big>iSNS Configuration</big></b><br>\n"
+"Configure an iSNS server.<br></p>\n"
+msgstr ""
+"<p><b><big>iSNS 配置</big></b><br>\n"
+"配置一個 iSNS 伺服器。<br></p>\n"
+
+#: src/include/isns/helps.rb:39
+msgid ""
+"<b><big>iSNS Server location</big></b><br>The DNS name or the IP address of "
+"the iSNS service can be entered as the iSNS address.\n"
+msgstr ""
+"<b><big>iSNS 伺服器位置</big></b><br> iSNS 服務的 DNS 名稱或 IP 地址可以作為 "
+"iSNS 地址輸入。\n"
+
+#: src/include/isns/helps.rb:42
+msgid ""
+"<p>The list of all available iSCSI nodes registered with the iSNS service "
+"are displayed.</p> <p>Nodes are registered by iSCSI initiators and iSCSI "
+"targets.</p> <p> It is only possible to <b>delete</b> them.  Deleting a node "
+"removes it from the iSNS database.</p>"
+msgstr ""
+"<p>顯示了全部與 iSNS 服務註冊的可用 iSCSI 節點列表</p> <p>節點由 iSCSI 發起端"
+"與 iSCSI 目標端註冊。</p> <p>僅能<b>刪除</b>它們。刪除一個節點將從 iSNS 資料"
+"庫移除它。</p>"
+
+#. discovery domains
+#: src/include/isns/helps.rb:46
+msgid ""
+"A list of all discovery domains is displayed. It is possible to <b>Create</"
+"b> a discovery domain or <b>Delete</b> one. <p>Deleting a domain removes the "
+"members from the domain but does not delete the iSCSI node members.</p>"
+msgstr ""
+"顯示了全部發現域列表。可以<b>創建</b>或<b>刪除</b>一個發現域。<p>刪除一個發現"
+"域將從此域移除成員但不會刪除 iSCSI 節點成員本身。</p>"
+
+#: src/include/isns/helps.rb:49
+msgid ""
+"A list of all iSCSI nodes are displayed by discovery domain.  Selecting "
+"another discovery domain refreshes the list with members from that discovery "
+"domain.  It is possible to <b>Add</b> an iSCSI node to a discovery domain or "
+"<b>Delete</b> the node.  <p>Deleting a node removes it from the domain but "
+"does not delete the iSCSI node</p> <p>Creating an iSCSI node allows a not "
+"yet registered node to be added as a member of the discovery domain.  When "
+"the initiator or target registers this node then it becomes part of this "
+"domain</p>  <p>When an iSCSI initiator does a discovery request, the iSNS "
+"service returns all iSCSI node targets that are members of the same "
+"Discovery Domains.</p> "
+msgstr ""
+"發現域顯示了全部 iSCSI 節點列表。選擇另一個發現域將重新整理那個發現域的成員列表。"
+"可以<b>添加</b>一個 iSCSI 節點到一個發現域，或從一個發現域<b>刪除</b>一個 "
+"iSCSI 節點</p> <p>創建一個 iSCSI 節點允許添加一個尚未註冊的節點為發現域的成"
+"員。當發起端或目標端註冊了此節點時，此節點就變成了此域的一部分</p> <p>當一個 "
+"iSCSI 發起端做出域發現請求時，iSNS 服務將返回屬於同一發現域的全部 iSCSI 節點"
+"目標。</p>"
+
+#. dds table dialog
+#: src/include/isns/helps.rb:53
+msgid ""
+"At the top a list of all Discovery Domain Sets are displayed.  Discovery "
+"Domains belong to Discovery Domain Sets. <p>A Discovery Domain must be a "
+"member of a Discovery Domain Set in order to be active. </p><p>In an iSNS "
+"database, a Discovery Domain Set contains Discovery Domains and Discovery "
+"Domains contain iSCSI Node members.</p>"
+msgstr ""
+"在列表上部顯示了全部發現域集。發現域屬於發現域集。<p>一個發現域必須是一個發現"
+"域集的成員才能處於活動狀態。</p><p>在一個 iSNS 資料庫中，發現域集包含發現域，"
+"發現域包含 iSCSI 節點成員。</p>"
+
+#: src/include/isns/helps.rb:56
+msgid ""
+"<p>The discovery domain set members list is refreshed whenever a different "
+"discovery domain set is selected.</p>"
+msgstr "<p>當選擇了不同的發現域集時，將重新整理發現域整合員列表。</p>"
+
+#. **************** global funcions and variables *****
+#: src/include/isns/widgets.rb:28
+msgid "Create New Discovery Domain"
+msgstr "創建新發現域"
+
+#: src/include/isns/widgets.rb:39
+msgid "Select discovery domain set to which discovery domain will be added."
+msgstr "選擇發現域將被添加到的發現域集"
+
+#: src/include/isns/widgets.rb:43
+msgid "Discovery Domain Name Set"
+msgstr "發現域名稱集"
+
+#: src/include/isns/widgets.rb:200
+msgid "Add iSCSI node to discovery domain"
+msgstr "添加 iSCSI 節點到發現域"
+
+#: src/include/isns/widgets.rb:203
+msgid "Available Nodes to Add"
+msgstr "可供添加的節點"
+
+#: src/include/isns/widgets.rb:206 src/include/isns/widgets.rb:249
+msgid "Name"
+msgstr "名稱"
+
+#: src/include/isns/widgets.rb:210
+msgid "Add Node"
+msgstr "添加節點"
+
+#: src/include/isns/widgets.rb:211 src/include/isns/widgets.rb:253
+msgid "Done"
+msgstr "完畢"
+
+#: src/include/isns/widgets.rb:245
+msgid "Add Discovery Domain to Set"
+msgstr "添加發現域到集"
+
+#: src/include/isns/widgets.rb:248
+msgid "Available Discovery Domains"
+msgstr "可用發現域"
+
+#: src/include/isns/widgets.rb:297 src/include/isns/widgets.rb:320
+msgid "Target or Initiator"
+msgstr "目標端或發起端"
+
+#. IsnsServer::addDD(address, add_map["VALUE"]:"");
+#: src/include/isns/widgets.rb:506 src/include/isns/widgets.rb:586
+msgid "Really delete the selected item?"
+msgstr "真的刪除所選項嗎？"
+
+#: src/include/isns/widgets.rb:541
+msgid "Really delete this domain?"
+msgstr "真的刪除此域嗎？"
+
+#. boolean display = true;
+#. Report::DisplayErrors(display,10);
+#: src/include/isns/widgets.rb:711
+msgid "Unable to connect to iSNS server. Check iSNS server address."
+msgstr "無法連線到 iSNS 伺服器。請檢查 iSNS 伺服器地址。"
+
+#. Initialization dialog caption
+#: src/include/isns/wizards.rb:70
+msgid "isns Daemon Configuration"
+msgstr "iSNS 守護精靈配置"
+
+#. Initialization dialog contents
+#: src/include/isns/wizards.rb:72
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. test if required package ("open-isns") is installed
+#: src/modules/IsnsServer.rb:172
+msgid ""
+"<p>To configure the isns service, the <b>%1</b> package must be installed.</"
+"p>"
+msgstr "<p>必須安裝  <b>%1</b> 軟體包才能配置 iSNS 服務。</p>"
+
+#: src/modules/IsnsServer.rb:175
+msgid "<p>Install it now?</p>"
+msgstr "<p>現在安裝它嗎？</p>"
+
+#. IsnsServer read dialog caption
+#: src/modules/IsnsServer.rb:569
+msgid "Initializing isns daemon configuration"
+msgstr "正在啟始化 iSNS 守護精靈配置"
+
+#. Progress stage 1/3
+#: src/modules/IsnsServer.rb:585
+msgid "Read the database"
+msgstr "讀取資料庫"
+
+#. Progress stage 2/3
+#: src/modules/IsnsServer.rb:587
+msgid "Read the previous settings"
+msgstr "讀取以前的設定"
+
+#. Progress stage 3/3
+#: src/modules/IsnsServer.rb:589
+msgid "Detect the devices"
+msgstr "檢測裝置"
+
+#. Progress step 1/3
+#: src/modules/IsnsServer.rb:593
+msgid "Reading the database..."
+msgstr "正在讀取資料庫..."
+
+#. Progress step 2/3
+#: src/modules/IsnsServer.rb:595
+msgid "Reading the previous settings..."
+msgstr "正在讀取以前的設定..."
+
+#. Progress step 3/3
+#: src/modules/IsnsServer.rb:597
+msgid "Detecting the devices..."
+msgstr "正在檢測裝置..."
+
+#. Progress finished
+#. Progress finished
+#: src/modules/IsnsServer.rb:599 src/modules/IsnsServer.rb:677
+msgid "Finished"
+msgstr "已完成"
+
+#. IsnsServer write dialog caption
+#: src/modules/IsnsServer.rb:651
+msgid "Saving isns Configuration"
+msgstr "正在儲存 iSNS 配置"
+
+#. Progress stage 1/2
+#: src/modules/IsnsServer.rb:667
+msgid "Write the settings"
+msgstr "寫入設定"
+
+#. Progress stage 2/2
+#: src/modules/IsnsServer.rb:669
+msgid "Run SuSEconfig"
+msgstr "運行 SuSEconfig"
+
+#. Progress step 1/2
+#: src/modules/IsnsServer.rb:673
+msgid "Writing the settings..."
+msgstr "正在寫入設定..."
+
+#. Progress step 2/2
+#: src/modules/IsnsServer.rb:675
+msgid "Running SuSEconfig..."
+msgstr "正在運行 SuSEconfig..."
+
+#. write configuration (/etc/isns.conf)
+#: src/modules/IsnsServer.rb:689
+msgid "Cannot write settings."
+msgstr "無法寫入設定。"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p><b><big>Saving iSNS Configuration</big></b><br>\n"
+#~ "Please wait...<br></p>\n"
+#~ msgstr ""
+#~ "<p><b><big>正在儲存 VPN 配置</big></b><br>\n"
+#~ "請稍候...<br></p>\n"
+

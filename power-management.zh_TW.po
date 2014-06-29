@@ -1,0 +1,562 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:40+0200\n"
+"PO-Revision-Date: 2013-02-04 15:52+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. command line help text for power management module
+#: src/include/power-management/commandline.rb:43
+msgid "Power management configuration module"
+msgstr "電源管理配置模組"
+
+#. command line help text for an action
+#: src/include/power-management/commandline.rb:59
+msgid "Display current settings"
+msgstr "顯示當前設定"
+
+#. command line help text for an action
+#: src/include/power-management/commandline.rb:66
+msgid "Set general settings"
+msgstr "設定常規設定"
+
+#. command line help text for an option
+#: src/include/power-management/commandline.rb:75
+msgid "Display only specified profile"
+msgstr "僅顯示指定的方案"
+
+#. command line help text for an option
+#: src/include/power-management/commandline.rb:81
+msgid "Display only profile selected for use"
+msgstr "僅顯示選中並要使用的方案"
+
+#. command line help text for an option
+#: src/include/power-management/commandline.rb:87
+msgid "Profile to be used"
+msgstr "要使用的方案"
+
+#. command line help text for an option
+#: src/include/power-management/commandline.rb:94
+msgid "The profile name"
+msgstr "方案名稱"
+
+#. command line help text for an option
+#: src/include/power-management/commandline.rb:101
+msgid "Add a new profile"
+msgstr "添加新方案"
+
+#. command line help text for an option
+#: src/include/power-management/commandline.rb:107
+msgid "Edit an existing profile"
+msgstr "編輯已有方案"
+
+#. command line help text for an option
+#: src/include/power-management/commandline.rb:113
+msgid "Remove an existing profile"
+msgstr "移除已有方案"
+
+#. command line help text for an option
+#: src/include/power-management/commandline.rb:119
+msgid "The description of the profile"
+msgstr "方案描述"
+
+#. command line help text for an option
+#: src/include/power-management/commandline.rb:126
+msgid "The profile to clone"
+msgstr "要複製的方案"
+
+#. command line help text for an option
+#: src/include/power-management/commandline.rb:133
+msgid "Option of a profile to modify"
+msgstr "要修改的方案選項"
+
+#. command line help text for an option
+#: src/include/power-management/commandline.rb:140
+msgid "Value of the specified option to set"
+msgstr "要設定的指定選項值"
+
+#. command line help text for an option
+#: src/include/power-management/commandline.rb:147
+msgid "New name of the profile to rename"
+msgstr "要重新命名的方案新名稱"
+
+#. header for commandline output
+#: src/include/power-management/commandline.rb:207
+msgid "Power Saving Profiles:\n"
+msgstr "省電方案：\n"
+
+#: src/include/power-management/commandline.rb:209
+msgid "Default Profile"
+msgstr "默認方案"
+
+#. summary text, %1 is scheme name
+#: src/include/power-management/commandline.rb:217
+#: src/modules/PowerManagement.rb:456
+msgid "Selected Profile: %1"
+msgstr "所選方案：%1"
+
+#. cmdline about power saving schemes, %1 is list of schemes,
+#: src/include/power-management/commandline.rb:225
+msgid "Available Profiles: %1"
+msgstr "可用方案：%1"
+
+#. error report
+#: src/include/power-management/commandline.rb:253
+msgid "Specified profile not found."
+msgstr "未找到指定的方案。"
+
+#. error report
+#: src/include/power-management/commandline.rb:270
+msgid "Operation with the profile not specified."
+msgstr "未指定對方案的操作。"
+
+#. error report
+#: src/include/power-management/commandline.rb:275
+msgid "Profile name not specified."
+msgstr "未指定方案名稱。"
+
+#. yes-no popup
+#: src/include/power-management/dialogs.rb:83
+msgid ""
+"If you abort writing now, the saved\n"
+"settings may be inconsistent.\n"
+"Really abort?"
+msgstr ""
+"若您立即中止寫入，儲存的設定\n"
+"可能會不一致。\n"
+"真的中止嗎？"
+
+#. dialog caption
+#: src/include/power-management/dialogs.rb:123
+msgid "Power Management Settings"
+msgstr "電源管理設定"
+
+#. dialog caption
+#. dialog caption
+#. dialog caption
+#: src/include/power-management/dialogs.rb:153
+#: src/include/power-management/dialogs.rb:182
+#: src/include/power-management/dialogs.rb:211
+msgid "Power Management Profile Setup"
+msgstr "電源管理方案設定"
+
+#. Read dialog help 1/2
+#: src/include/power-management/helps.rb:38
+msgid ""
+"<p><b><big>Initializing Power Management Configuration</big></b><br>\n"
+"Please wait...<br></p>"
+msgstr ""
+"<p><b><big>正在啟始化電源管理配置</big></b><br>\n"
+"請稍候...<br></p>"
+
+#. Read dialog help 2/2
+#: src/include/power-management/helps.rb:42
+msgid ""
+"<p><b><big>Aborting Initialization</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>"
+msgstr ""
+"<p><b><big>正在中止啟始化</big></b><br>\n"
+"現在按<b>中止</b>安全地中止配置工具。</p>"
+
+#. Write dialog help 1/2
+#: src/include/power-management/helps.rb:46
+msgid ""
+"<p><b><big>Saving Power Management Configuration</big></b><br>\n"
+"Please wait...<br></p>"
+msgstr ""
+"<p><b><big>正在儲存電源管理配置</big></b><br>\n"
+"請稍候...<br></p>"
+
+#. Write dialog help 2/2
+#: src/include/power-management/helps.rb:50
+msgid ""
+"<p><b><big>Aborting Saving</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.</p>"
+msgstr ""
+"<p><b><big>中止儲存</big></b><br>\n"
+"按<b>中止</b>中止儲存過程。</p>"
+
+#. Main dialog help 1/3
+#: src/include/power-management/helps.rb:54
+msgid ""
+"<p><b><big>Energy Saving Profiles</big></b><br>\n"
+"Use <b>Selected Profile</b> to adjust the energy saving profile to use.</p>"
+msgstr ""
+"<p><b><big>省電方案</big></b><br>\n"
+"使用<b>所選方案</b>來調整要使用的省電方案。</p>"
+
+#. Main dialog help 2/3
+#: src/include/power-management/helps.rb:58
+msgid "<p>Below the selected profile, its description is displayed.</p>"
+msgstr "<p>在所選方案的下面是它的描述。</p>"
+
+#. Main dialog help 3/3
+#: src/include/power-management/helps.rb:60
+msgid ""
+"<p>To read more about pm-profiler and to learn how to create or modify\n"
+"the power saving profiles, refer to the\n"
+"<i>/usr/share/doc/packages/pm-profiler/README</i> file.</p>"
+msgstr ""
+"<p>要閱讀更多關於 pm-profiler 的內容，學習如何創建或修改\n"
+"省電方案，請參考 \n"
+"<i>/usr/share/doc/packages/pm-profiler/README</i> 檔案。</p>"
+
+#. +
+#. // Main dialog help 3/5
+#. _("<p><b><big>Adjusting Energy Saving Profiles</big></b><br>
+#. To adjust energy saving profiles, delete existing ones, or create new ones,
+#. use <b>Edit Profiles</b>.</p>")
+#. Schemes list dialog 1/3
+#: src/include/power-management/helps.rb:75
+msgid ""
+"<p><b><big>Profile Setup</big></b><br>\n"
+"Adjust the energy saving profiles. To modify a profile, select\n"
+"it and click <b>Edit</b>.</p>\n"
+msgstr ""
+"<p><b><big>方案設定</big></b><br>\n"
+"在此調整省電方案。要修改某個方案，請選中它\n"
+"並點選<b>編輯</b>。</p>\n"
+
+#. Schemes list dialog 2/3
+#: src/include/power-management/helps.rb:81
+msgid ""
+"<p>To add a new profile, select a profile to clone then click\n"
+"<b>Add</b>. To delete an existing profile, select it and click \n"
+"<b>Delete</b>.</p>"
+msgstr ""
+"<p>要添加新方案，請選擇一個要複製的方案，然後點選\n"
+"<b>添加</b>。要刪除已有方案，請選中它並點選\n"
+"<b>刪除</b>。</p>"
+
+#. Profiles list dialog 3/3
+#: src/include/power-management/helps.rb:87
+msgid ""
+"<p>In the main dialog, assign profiles to use when you \n"
+"work on battery or AC power.</p>"
+msgstr ""
+"<p>在主對話方塊中，指派在用電池\n"
+"或交流電源工作時要使用的方案。</p>"
+
+#. Profile editation dialog 1 help 1/6
+#: src/include/power-management/helps.rb:91
+msgid ""
+"<p><big><b>Profile Setup</b></big>\n"
+"Configure the settings of the profile. Enter its name in <b>Profile Name</b>\n"
+"and optionally a description in <b>Profile Description</b>.</p>"
+msgstr ""
+"<p><big><b>方案設定</b></big>\n"
+"配置方案的設定。在<b>方案名稱</b>\n"
+"中輸入它的名稱並在<b>方案描述</b>中輸入可選描述。</p>"
+
+#. Profile editation dialog 2 help 1/2
+#: src/include/power-management/helps.rb:100
+msgid ""
+"<p><b><big>Hard Disk Settings</big></b><br>\n"
+"Use <b>Standby Policy</b> to adjust the power saving policy of the hard disks.\n"
+"Remember that more power saving also means waiting more often until the disk\n"
+"drive is ready.\n"
+"Use <b>Acoustic Policy</b> to adjust the acoustic policy of the disk. The noise\n"
+"produced by the disk may be lowered by moving disk heads more slowly. Not all\n"
+"disks support this feature.</p>"
+msgstr ""
+"<p><b><big>硬碟設定</big></b><br>\n"
+"用<b>待機策略</b>來調整硬碟省電策略。\n"
+"應注意的是，省電越多同時也意味著更頻繁地等待磁碟驅動器就緒。\n"
+"用<b>聲音策略</b>來調整磁碟的聲音策略。通過降低磁頭的轉速，可降低磁碟產生的\n"
+"噪音。不是全部磁碟都支援此功能。</p>"
+
+#. Profile editation dialog 2 help 2/2
+#: src/include/power-management/helps.rb:110
+msgid ""
+"<p><b><big>Cooling Policy</big></b><br>\n"
+"Use the cooling policy <b>Status</b> to adjust the active or passive cooling policy.\n"
+"Active means that the cooling fan is\n"
+"turned on if the system starts overheating.\n"
+"If the system continues overheating, the CPU frequency and voltage are\n"
+"reduced. Passive means that the system first reduces frequency then, if\n"
+"that does not help, turns the cooling fan on.</p>\n"
+"<p>To specify actions to perform when the system overheats\n"
+"or reaches critical temperature, use <b>Overheat Temperature Action</b> and\n"
+"<b>Critical Temperature Action</b>.</p>"
+msgstr ""
+"<p><b><big>冷卻策略</big></b><br>\n"
+"用冷卻策略<b>狀態</b>來調整主動冷卻策略或被動冷卻策略。\n"
+"主動意味著若系統開始過熱就開啟冷卻風扇。\n"
+"若系統繼續升溫，則降低 CPU 頻率與電壓。\n"
+"被動意味著系統將先降低頻率，\n"
+"若未起作用再開啟冷卻風扇。</p>\n"
+"<p>要指定當系統過熱或達到臨界溫度時\n"
+"執行的動作，請使用<b>過熱溫度動作</b>與\n"
+"<b>臨界溫度操作</b>。</p>"
+
+#. scheme selection widget
+#. Handle function of a widget
+#. @param [String] key string widget id
+#. @param [Hash] event map event that will be handled
+#. @return [Symbol] for wizard sequencer
+#: src/include/power-management/widgets.rb:80
+msgid "Default system settings"
+msgstr "默認系統設定"
+
+#. fallback scheme description, displayed in a rich text
+#. but without HTML tags!!!
+#. fallback scheme description, table entre
+#: src/include/power-management/widgets.rb:93
+#: src/include/power-management/widgets.rb:208
+msgid "No profile description available"
+msgstr "無可用的方案描述"
+
+#. Init function of a widget
+#. @param [String] key string widget id
+#: src/include/power-management/widgets.rb:110
+msgid "Default"
+msgstr "默認"
+
+#. combo box
+#: src/include/power-management/widgets.rb:118
+msgid "&Selected Profile"
+msgstr "所選方案(&S)"
+
+#. frame
+#: src/include/power-management/widgets.rb:150
+msgid "Energy Saving Profiles"
+msgstr "省電方案"
+
+#. combo box
+#: src/include/power-management/widgets.rb:162
+msgid "&AC Powered"
+msgstr "交流供電(&A)"
+
+#. popup message
+#. popup message
+#: src/include/power-management/widgets.rb:248
+#: src/include/power-management/widgets.rb:272
+msgid "No profile selected."
+msgstr "未選擇任何方案。"
+
+#. popup message
+#: src/include/power-management/widgets.rb:255
+msgid ""
+"The selected profile cannot be modified.\n"
+"Add a new one instead."
+msgstr ""
+"無法修改所選方案。\n"
+"請添加新方案。"
+
+#. table header
+#: src/include/power-management/widgets.rb:324
+msgid "Profile Name"
+msgstr "方案名稱"
+
+#. table header
+#: src/include/power-management/widgets.rb:326
+msgid "Profile Description"
+msgstr "方案描述"
+
+#. popup message
+#: src/include/power-management/widgets.rb:374
+msgid "Profile name must be set."
+msgstr "必須設定方案名稱。"
+
+#. popup message
+#: src/include/power-management/widgets.rb:383
+msgid "The specified profile name is not unique."
+msgstr "指定的方案名稱不唯一。"
+
+#. pop-up message
+#: src/include/power-management/widgets.rb:389
+msgid "The profile name must not be longer than 32 characters."
+msgstr "方案名稱不能超過 32 個字元。"
+
+#. text entry
+#: src/include/power-management/widgets.rb:442
+msgid "S&cheme Name"
+msgstr "方案名稱(&C)"
+
+#. text entry
+#: src/include/power-management/widgets.rb:487
+msgid "Profile &Description"
+msgstr "方案描述(&D)"
+
+#. frame,
+#: src/include/power-management/widgets.rb:527
+msgid "SATA Power Management"
+msgstr "SATA 電源管理"
+
+#. combo box
+#: src/include/power-management/widgets.rb:538
+msgid "Aggressive Link Power Management"
+msgstr "積極 Link 電源管理"
+
+#. combo box item
+#. combo box item
+#: src/include/power-management/widgets.rb:543
+#: src/include/power-management/widgets.rb:692
+msgid "Maximum Power Saving"
+msgstr "最大省電"
+
+#. combo box item
+#: src/include/power-management/widgets.rb:548
+msgid "Medium Power Saving"
+msgstr "適中省電"
+
+#. combo box item
+#. combo box item
+#: src/include/power-management/widgets.rb:553
+#: src/include/power-management/widgets.rb:697
+msgid "Maximum Performance"
+msgstr "最大效能"
+
+#. frame,
+#: src/include/power-management/widgets.rb:676
+msgid "CPU Power Management"
+msgstr "CPU 電源管理"
+
+#. combo box
+#: src/include/power-management/widgets.rb:687
+msgid "CPU Frequency Governor"
+msgstr "CPU 頻率控制器"
+
+#. combo box item
+#: src/include/power-management/widgets.rb:702
+msgid "On Demand"
+msgstr "按需"
+
+#. combo box item
+#: src/include/power-management/widgets.rb:707
+msgid "User Space"
+msgstr "使用者空間"
+
+#: src/include/power-management/widgets.rb:716
+msgid "Load Checking Interval"
+msgstr "負載檢查間隔"
+
+#: src/include/power-management/widgets.rb:726
+msgid "Lower Frequency by (percent)"
+msgstr "按百分比降低頻率"
+
+#: src/include/power-management/widgets.rb:734
+msgid "Balance Load between CPU Cores"
+msgstr "CPU 核心間平衡負載"
+
+#. Initialization dialog caption
+#: src/include/power-management/wizards.rb:139
+msgid "Power Management Configuration"
+msgstr "電源管理配置"
+
+#. Initialization dialog contents
+#: src/include/power-management/wizards.rb:141
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. PowerManagement read dialog caption
+#: src/modules/PowerManagement.rb:155
+msgid "Initializing Configuration"
+msgstr "正在啟始化配置"
+
+#. Progress stage 1/3
+#: src/modules/PowerManagement.rb:172
+msgid "Check the environment"
+msgstr "檢查環境"
+
+#. Progress stage 2/3
+#: src/modules/PowerManagement.rb:174
+msgid "Read general settings"
+msgstr "讀取常規設定"
+
+#. Progress stage 3/3
+#: src/modules/PowerManagement.rb:176
+msgid "Read power saving profiles"
+msgstr "讀取省電方案"
+
+#. Progress step 1/3
+#: src/modules/PowerManagement.rb:180
+msgid "Checking the environment..."
+msgstr "正在檢查環境..."
+
+#. Progress step 2/3
+#: src/modules/PowerManagement.rb:182
+msgid "Reading general settings..."
+msgstr "正在讀取常規設定..."
+
+#. Progress step 3/3
+#: src/modules/PowerManagement.rb:184
+msgid "Reading power saving profiles..."
+msgstr "正在讀取省電方案..."
+
+#. Progress finished
+#. Progress finished
+#: src/modules/PowerManagement.rb:186 src/modules/PowerManagement.rb:312
+msgid "Finished"
+msgstr "已完成"
+
+#. Error message
+#: src/modules/PowerManagement.rb:230
+msgid "Cannot read the general settings."
+msgstr "無法讀取常規設定。"
+
+#. Error message
+#: src/modules/PowerManagement.rb:256
+msgid "Cannot read power saving profiles."
+msgstr "無法讀取省電方案。"
+
+#. PowerManagement read dialog caption
+#: src/modules/PowerManagement.rb:281
+msgid "Saving Configuration"
+msgstr "省電配置"
+
+#. Progress stage 1/3
+#. _("Write profiles"),
+#. Progress stage 2/3
+#: src/modules/PowerManagement.rb:300
+msgid "Write general settings"
+msgstr "寫入常規設定"
+
+#. Progress stage 3/3
+#: src/modules/PowerManagement.rb:302
+msgid "Restart pm-profiler daemon"
+msgstr "重啟 pm-profiler 守護精靈"
+
+#. Progress step 1/3
+#. _("Writing profiles..."),
+#. Progress step 2/3
+#: src/modules/PowerManagement.rb:308
+msgid "Writing general settings..."
+msgstr "正在寫入常規設定..."
+
+#. Progress step 3/3
+#: src/modules/PowerManagement.rb:310
+msgid "Restarting pm-profiler daemon..."
+msgstr "正在重啟 pm-profiler 守護精靈..."
+
+#. Error message
+#: src/modules/PowerManagement.rb:383
+msgid "Cannot write general settings."
+msgstr "無法寫入常規設定。"
+
+#. Error message
+#: src/modules/PowerManagement.rb:405
+msgid "Cannot restart the pm-profiler daemon."
+msgstr "無法重啟 pm-profiler 守護精靈。"
+
+#. Create a textual summary and a list of unconfigured cards
+#. @return summary of the current configuration
+#: src/modules/PowerManagement.rb:445
+msgid "Default settings"
+msgstr "默認設定"
+

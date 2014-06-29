@@ -1,0 +1,2016 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:40+0200\n"
+"PO-Revision-Date: 2014-06-10 11:46+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the Xcontroller module
+#: src/clients/dasd.rb:49
+msgid "Configuration of DASD"
+msgstr "可直接訪問存儲裝置 (DASD) 配置"
+
+#. text for installation summary
+#: src/clients/dasd_proposal.rb:46
+msgid "No DASD disk detected"
+msgstr "未檢測到可直接訪問存儲裝置 (DASD) 磁碟"
+
+#. section name in proposal dialog
+#: src/clients/dasd_proposal.rb:71
+msgid "DASD"
+msgstr "可直接訪問存儲裝置 (DASD)"
+
+#. section name in proposal - menu item
+#: src/clients/dasd_proposal.rb:73 src/include/s390/dump/ui.rb:110
+msgid "&DASD"
+msgstr "可直接訪問存儲裝置 (&DASD)"
+
+#. Command line help text for the Xcontroller module
+#: src/clients/dump.rb:48
+msgid "Creation of S/390 dump devices"
+msgstr "創建 S/390 轉儲裝置"
+
+#. Command line help text for the Xcontroller module
+#: src/clients/iucvterminal-server.rb:44
+msgid "Configuration of IUCV terminal server"
+msgstr "使用者間通訊載體 (IUCV) 終端伺服器配置"
+
+#. Command line help text for the Xcontroller module
+#: src/clients/iucvterminal.rb:44
+msgid "Configuration of IUCV terminal settings"
+msgstr "使用者間通訊載體 (IUCV) 終端設定配置"
+
+#. Command line help text for the Xirda module
+#: src/clients/onpanic.rb:52
+msgid "Configuration of OnPanic"
+msgstr "核心恐慌時應急處理配置"
+
+#. popup label
+#: src/clients/s390-disk-controller.rb:49
+msgid "Detecting Available Controllers"
+msgstr "正在檢測可用控制器"
+
+#. Initialization dialog caption
+#: src/clients/s390-disk-controller.rb:72
+msgid "S/390 Disk Controller Configuration"
+msgstr "S/390 磁碟控制器配置"
+
+#. push button
+#: src/clients/s390-disk-controller.rb:84
+msgid "Configure &DASD Disks"
+msgstr "配置可直接訪問存儲裝置 (&DASD) 磁碟"
+
+#. push button
+#: src/clients/s390-disk-controller.rb:94
+msgid "Configure &ZFCP Disks"
+msgstr "配置光纖通道協議 (&zFCP) 磁碟"
+
+#. Initialization dialog contents
+#. Initialization dialog contents
+#: src/clients/s390-disk-controller.rb:103
+#: src/include/s390/dasd/wizards.rb:102 src/include/s390/zfcp/wizards.rb:98
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. Command line help text for the Xcontroller module
+#: src/clients/zfcp.rb:49
+msgid "Configuration of ZFCP"
+msgstr "光纖通道協議 (zFCP) 配置"
+
+#. text for installation summary
+#: src/clients/zfcp_proposal.rb:46
+msgid "No zFCP device configured"
+msgstr "未配置光纖通道協議 (zFCP) 裝置"
+
+#. section name in proposal dialog
+#: src/clients/zfcp_proposal.rb:71
+msgid "zFCP"
+msgstr "光纖通道協議(zFCP)"
+
+#. section name in proposal - menu item
+#: src/clients/zfcp_proposal.rb:73
+msgid "&zFCP"
+msgstr "光纖通道協議(&zFCP)"
+
+#. menu button id
+#: src/include/s390/dasd/dialogs.rb:170
+msgid "&Activate"
+msgstr "啟用(&A)"
+
+#. menu button id
+#: src/include/s390/dasd/dialogs.rb:172
+msgid "&Deactivate"
+msgstr "取消啟用(&D)"
+
+#. menu button id
+#. menu button id
+#: src/include/s390/dasd/dialogs.rb:174 src/include/s390/dasd/dialogs.rb:183
+msgid "Set DIAG O&n"
+msgstr "開啟診斷 (DIAG)(&N)"
+
+#. menu button id
+#. menu button id
+#: src/include/s390/dasd/dialogs.rb:176 src/include/s390/dasd/dialogs.rb:185
+msgid "Set DIAG O&ff"
+msgstr "關閉診斷 (DIAG)(&F)"
+
+#. menu button id
+#: src/include/s390/dasd/dialogs.rb:178
+msgid "&Format"
+msgstr "格式化(&F)"
+
+#. menu button id
+#: src/include/s390/dasd/dialogs.rb:187
+msgid "Set Format On"
+msgstr "開啟格式化"
+
+#. menu button id
+#: src/include/s390/dasd/dialogs.rb:189
+msgid "Set Format Off"
+msgstr "關閉格式化"
+
+#. error popup message
+#. error popup message
+#. error popup message
+#: src/include/s390/dasd/dialogs.rb:200 src/include/s390/dasd/dialogs.rb:677
+#: src/include/s390/zfcp/dialogs.rb:471
+msgid "No disk selected."
+msgstr "未選擇磁碟。"
+
+#. 8 means disk is not formatted
+#. unformtted disk, manual (not AutoYaS)
+#: src/include/s390/dasd/dialogs.rb:229 src/modules/DASDController.rb:161
+msgid "Device %1 is not formatted. Format device now?"
+msgstr "裝置 %1 未格式化。現在格式化裝置嗎？"
+
+#: src/include/s390/dasd/dialogs.rb:231 src/modules/DASDController.rb:163
+msgid "There are %1 unformatted devices. Format them now?"
+msgstr "有 %1 個未格式化裝置。現在格式化它們嗎？"
+
+#. for autoinst, format unformatted disks later
+#: src/include/s390/dasd/dialogs.rb:242
+msgid "Couldn't find device for channel %1."
+msgstr "無法為頻道 %1 找到裝置。"
+
+#. error report, %1 is device identification
+#: src/include/s390/dasd/dialogs.rb:294
+msgid "Disk %1 is not active."
+msgstr "磁碟 %1 不是活動的。"
+
+#. error report, %1 is device identification
+#: src/include/s390/dasd/dialogs.rb:300
+msgid "Disk %1 is not accessible for writing."
+msgstr "磁碟 %1 不可寫入。"
+
+#. integer field (count of disks formatted at parallely)
+#: src/include/s390/dasd/dialogs.rb:318
+msgid "&Parallel Formatted Disks"
+msgstr "並行格式化的磁碟(&P)"
+
+#. popup question
+#: src/include/s390/dasd/dialogs.rb:343
+msgid ""
+"Formatting these disks destroys all data on them.<br>\n"
+"Really format the following disks?<br>\n"
+"%1"
+msgstr ""
+"格式化這些磁碟會銷燬全部位於其上的資料。<br>\n"
+"真的格式化以下磁碟嗎？<br>\n"
+"%1"
+
+#. Dialog caption
+#: src/include/s390/dasd/dialogs.rb:406
+msgid "DASD Disk Management"
+msgstr "可直接訪問存儲裝置 (DASD) 磁碟管理"
+
+#. table header
+#. table header
+#. table header
+#. table header
+#: src/include/s390/dasd/dialogs.rb:413 src/include/s390/dasd/dialogs.rb:422
+#: src/include/s390/zfcp/dialogs.rb:120 src/include/s390/zfcp/dialogs.rb:129
+msgid "Channel ID"
+msgstr "通道 ID"
+
+#. table header
+#: src/include/s390/dasd/dialogs.rb:415
+msgid "Format"
+msgstr "格式化"
+
+#. table header
+#. table header
+#: src/include/s390/dasd/dialogs.rb:417 src/include/s390/dasd/dialogs.rb:430
+msgid "Use DIAG"
+msgstr "使用診斷 (DIAG)"
+
+#. table header
+#. table header
+#: src/include/s390/dasd/dialogs.rb:424 src/include/s390/zfcp/dialogs.rb:135
+msgid "Device"
+msgstr "裝置"
+
+#. table header
+#. table header
+#: src/include/s390/dasd/dialogs.rb:426
+#: src/include/s390/iucvterminal-server/ui.rb:242
+msgid "Type"
+msgstr "類型"
+
+#. table header
+#: src/include/s390/dasd/dialogs.rb:428
+msgid "Access Type"
+msgstr "訪問類型"
+
+#. table header
+#: src/include/s390/dasd/dialogs.rb:432
+msgid "Formatted"
+msgstr "已格式化"
+
+#. table header
+#: src/include/s390/dasd/dialogs.rb:434
+msgid "Partition Information"
+msgstr "分割區資訊"
+
+#. text entry
+#. text entry
+#: src/include/s390/dasd/dialogs.rb:445 src/include/s390/zfcp/dialogs.rb:146
+msgid "Mi&nimum Channel ID"
+msgstr "最小通道 ID(&N)"
+
+#. text entry
+#. text entry
+#: src/include/s390/dasd/dialogs.rb:452 src/include/s390/zfcp/dialogs.rb:153
+msgid "Ma&ximum Channel ID"
+msgstr "最大通道 ID(&X)"
+
+#. push button
+#. push button
+#: src/include/s390/dasd/dialogs.rb:458 src/include/s390/zfcp/dialogs.rb:159
+msgid "&Filter"
+msgstr "過濾器(&F)"
+
+#. menu button
+#. menu button
+#: src/include/s390/dasd/dialogs.rb:468 src/include/s390/dasd/dialogs.rb:475
+msgid "Perform &Action"
+msgstr "執行動作(&A)"
+
+#: src/include/s390/dasd/dialogs.rb:471
+msgid "&Select All"
+msgstr "全部選中(&S)"
+
+#: src/include/s390/dasd/dialogs.rb:472
+msgid "&Deselect All"
+msgstr "全部反選(&D)"
+
+#. error popup
+#. error popup
+#: src/include/s390/dasd/dialogs.rb:543 src/include/s390/zfcp/dialogs.rb:221
+msgid "Invalid filter channel IDs."
+msgstr "無效的過濾器通道 ID。"
+
+#. Dialog caption
+#: src/include/s390/dasd/dialogs.rb:587
+msgid "Add New DASD Disk"
+msgstr "添加新的可直接訪問存儲裝置 (DASD) 磁碟"
+
+#. text entry
+#. combo box
+#: src/include/s390/dasd/dialogs.rb:598 src/include/s390/zfcp/dialogs.rb:301
+msgid "&Channel ID"
+msgstr "通道 ID(&C)"
+
+#. check box
+#: src/include/s390/dasd/dialogs.rb:602
+msgid "Format the Disk"
+msgstr "格式化磁碟"
+
+#. check box
+#: src/include/s390/dasd/dialogs.rb:605
+msgid "Use &DIAG"
+msgstr "使用診斷 (&DIAG)"
+
+#. yes-no popup
+#: src/include/s390/dasd/dialogs.rb:627
+msgid ""
+"Really leave the DASD disk configuration without saving?\n"
+"All changes will be lost."
+msgstr ""
+"真的離開可直接訪問存儲裝置 (DASD) 磁碟配置而不儲存嗎？\n"
+"全部修改都將不復存在。"
+
+#. error popup
+#. error popup
+#. error popup
+#. error popup
+#: src/include/s390/dasd/dialogs.rb:638 src/include/s390/zfcp/dialogs.rb:347
+#: src/include/s390/zfcp/dialogs.rb:364 src/include/s390/zfcp/dialogs.rb:400
+msgid "Not a valid channel ID."
+msgstr "不是一個有效的通道 ID。"
+
+#. error popup
+#. error popup
+#: src/include/s390/dasd/dialogs.rb:648 src/include/s390/zfcp/dialogs.rb:428
+msgid "Device already exists."
+msgstr "裝置已存在。"
+
+#. Read dialog help 1/2
+#: src/include/s390/dasd/helps.rb:36
+msgid ""
+"<p><b><big>Initializing Controller Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在啟始化控制器配置</big></b><br>\n"
+"</p>\n"
+
+#. Read dialog help 2/2
+#. Read dialog help 2/2
+#: src/include/s390/dasd/helps.rb:40 src/include/s390/zfcp/helps.rb:40
+msgid ""
+"<p><b><big>Aborting Initialization:</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>"
+msgstr ""
+"<p><b><big>中止啟始化：</big></b><br>\n"
+"現在按<b>中止</b>可安全地中止配置工具。</p>"
+
+#. Write dialog help 1/2
+#: src/include/s390/dasd/helps.rb:44
+msgid ""
+"<p><b><big>Saving Controller Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在儲存控制器配置</big></b><br>\n"
+"</p>\n"
+
+#. Write dialog help 2/2
+#. Write dialog help 2/2
+#: src/include/s390/dasd/helps.rb:48 src/include/s390/zfcp/helps.rb:48
+msgid ""
+"<p><b><big>Aborting Saving:</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.\n"
+"An additional dialog will inform you whether it is safe to do so.</p>\n"
+msgstr ""
+"<p><b><big>中止儲存：</big></b><br>\n"
+"按<b>中止</b>可中止儲存過程。\n"
+"另一個對話方塊將告知您這樣做是否安全。</p>\n"
+
+#. Disk selection dialog help 1/4
+#. Disk selection dialog help 1/4
+#: src/include/s390/dasd/helps.rb:54 src/include/s390/dasd/helps.rb:68
+msgid ""
+"<p><b><big>Configured DASD Disks</big></b><br>\n"
+"In this dialog, manage DASD disks on your system.</p>"
+msgstr ""
+"<p><b><big>已配置的可直接訪問存儲裝置 (DASD) 磁碟</big></b><br>\n"
+"在此對話窗中管理您系統上的可直接訪問存儲裝置 (DASD) 磁碟。</p>"
+
+#. Disk selection dialog help 2/4
+#. Disk selection dialog help 2/4
+#: src/include/s390/dasd/helps.rb:58 src/include/s390/dasd/helps.rb:72
+msgid ""
+"<p>To filter the displayed disks, set the <b>Minimum Channel ID</b> and \n"
+"the <b>Maximum Channel ID</b> and click <b>Filter</b>.</p>\n"
+msgstr ""
+"<p>要過濾顯示的磁碟，請設定<b>最小通道 ID</b> 與<b>最大通道 ID</b> 並點選<b>"
+"過濾</b>。</p>\n"
+
+#. Disk selection dialog help 4/4
+#: src/include/s390/dasd/helps.rb:62
+msgid "<p>To configure a new DASD disk, click <b>Add</b>.</p>"
+msgstr "<p>要配置一個新的可直接訪問存儲裝置 (DASD) 磁碟，請點選<b>添加</b>。</p>"
+
+#. Disk selection dialog help 4/4
+#: src/include/s390/dasd/helps.rb:64
+msgid ""
+"<p>To remove a configured DASD disk, select it and click\n"
+"<b>Delete</b>.</p>"
+msgstr ""
+"<p>要移除一個已配置的可直接訪問存儲裝置 (DASD) 磁碟，請選擇它並點選<b>刪除</"
+"b>。</p>"
+
+#. Disk selection dialog help 3/4
+#: src/include/s390/dasd/helps.rb:76
+msgid ""
+"<p>To perform actions on multiple disks at once, mark these disks. To select "
+"all displayed disk (possibly after applying a filter), click\n"
+"<b>Select All</b> or <b>Deselect All</b>.</p>\n"
+msgstr ""
+"<p>要同時在多個磁碟上執行動作，請標記這些磁碟。要選擇全部顯示的磁碟 (可能是在"
+"應用了某個過濾器後)，請點選<b>全部選中</b>或<b>全部反選</b>。</p>\n"
+
+#. Disk selection dialog help 4/4
+#: src/include/s390/dasd/helps.rb:80
+msgid ""
+"<p>To perform an action on the selected disks, use <b>Perform Action</b>.\n"
+"The action will be performed immediately!</p>"
+msgstr ""
+"<p>要在所選磁碟上執行一個動作，請使用<b>執行動作</b>。\n"
+"動作將被立即執行！</p>"
+
+#. Disk add help 1/3
+#: src/include/s390/dasd/helps.rb:84
+msgid ""
+"<p><b><big>Add New DASD Disk</big></b><br>\n"
+"To add a disk, enter the <b>Channel ID</b> of the DASD disk as\n"
+"identifier.</p>"
+msgstr ""
+"<p><b><big>添加新的可直接訪問存儲裝置 (DASD) 磁碟</big></b><br>\n"
+"要添加磁碟, 請輸入可直接訪問存儲裝置 (DASD) 磁碟的<b>通道 ID</b>作為標識符。"
+"</p>"
+
+#. Disk add help 1/3
+#: src/include/s390/dasd/helps.rb:90
+msgid ""
+"<p>If the disk should be formatted,\n"
+"use <b>Format the Disk</b>.</p>\n"
+msgstr "<p>若應格式化磁碟，請使用<b>格式化磁碟</b>。</p>\n"
+
+#. Disk add help 3/3
+#: src/include/s390/dasd/helps.rb:94
+msgid "<p>To use DIAG mode, select <b>Use DIAG</b>.</p>\n"
+msgstr "<p>要使用診斷 (DIAG) 模式，請選擇<b>使用診斷 (DIAG)</b>。</p>\n"
+
+#. Initialization dialog caption
+#. Initialization dialog caption
+#: src/include/s390/dasd/wizards.rb:100 src/include/s390/zfcp/wizards.rb:96
+msgid "Controller Configuration"
+msgstr "控制器配置"
+
+#. Run the dialog for Dump
+#. @param what symbol a
+#. @return [Symbol] EditDumpDialog that was edited
+#: src/include/s390/dump/ui.rb:47
+msgid "Create Dump Device"
+msgstr "創建轉儲裝置"
+
+#. Dump dialog help 1/8
+#: src/include/s390/dump/ui.rb:50
+msgid "<p><b>Prepare one or more volumes for use as S/390 dump device.</b></p>"
+msgstr "<p><b>準備一個或更多的子區塊以用作 S/390 轉儲裝置。</b></p>"
+
+#. Dump dialog help 2/8
+#: src/include/s390/dump/ui.rb:54
+msgid ""
+"<p>Supported devices are ECKD DASD and ZFCP disks, while multi-volumes are "
+"limited to DASD.<br>"
+msgstr ""
+"<p>支援的裝置有 ECKD、可直接訪問存儲裝置 (DASD) 與光纖通道協議 (zFCP) 磁碟，"
+"但多子區塊僅能使用可直接訪問存儲裝置 (DASD)。<br>"
+
+#. Dump dialog help 3/8
+#: src/include/s390/dump/ui.rb:58
+msgid ""
+"Only whole disks can be used, no partitions. If the device is incompatibly\n"
+"formatted or partitioned, activate the checkbox <b>Force overwrite of disk</"
+"b>.</p>"
+msgstr ""
+"僅可以使用整個磁碟，沒有分割區。若裝置使用不相容的格式格式化過或分過區，請啟用"
+"核取方塊<b>強制覆寫磁碟</b>。</p>"
+
+#. Dump dialog help 4/8
+#: src/include/s390/dump/ui.rb:62
+msgid ""
+"<p>To use DASD and ZFCP devices activate them in the respective YaST DASD or "
+"ZFCP dialog.<br>"
+msgstr ""
+"<p>要使用可直接訪問存儲裝置 (DASD) 或光纖通道協議 (zFCP) 裝置請至相應的 YaST "
+"DASD 或 zFCP 對話方塊中啟用它們。<br>"
+
+#. Dump dialog help 5/8
+#: src/include/s390/dump/ui.rb:66
+msgid ""
+"Devices which are in use or have mounted partitions will not be shown.</p>"
+msgstr "使用中或有分割區已被裝載的裝置將不會顯示。</p>"
+
+#. Dump dialog help 6/8
+#: src/include/s390/dump/ui.rb:70
+msgid ""
+"<p><b>dumpdevice</b> after a disk indicates that it is a usable dump\n"
+"device. Multi-volume dump devices are indicated by a list of DASD IDs.</p>"
+msgstr ""
+"<p>磁碟後的<b>轉儲裝置</b>表示它是一個可用的轉儲裝置。多區塊轉儲裝置由可直接訪"
+"問存儲裝置 (DASD) ID 列表表示。</p>"
+
+#. Dump dialog help 7/8
+#: src/include/s390/dump/ui.rb:74
+msgid "<p>ZFCP columns: Device, Size, ID, WWPN, LUN, Dump<br>"
+msgstr "<p>光纖通道協議 (zFCP) 列：裝置，大小，ID，萬維埠號，邏輯單元編號，轉儲<br>"
+
+#. Dump dialog help 8/8
+#: src/include/s390/dump/ui.rb:76
+msgid "DASD columns: Device, Size, ID, Dump</p>"
+msgstr "可直接訪問存儲裝置 (DASD) 列：裝置，大小，ID，轉儲</p>"
+
+#. Dialog content
+#: src/include/s390/dump/ui.rb:95
+msgid "&ZFCP"
+msgstr "光纖通道協議(&zFCP)"
+
+#: src/include/s390/dump/ui.rb:121
+msgid "&Force overwrite of disk"
+msgstr "強制覆寫磁碟(&F)"
+
+#. prevent leading space
+#: src/include/s390/dump/ui.rb:185
+msgid "You haven't selected any device."
+msgstr "您尚未選擇任何裝置。"
+
+#. warn only in case of force
+#: src/include/s390/dump/ui.rb:193
+msgid ""
+"The disk %1 will be formatted as a dump device. All data on this device will "
+"be lost! Continue?"
+msgstr "磁碟 %1 將被格式化為轉儲裝置。此裝置上的全部資料都將不復存在！繼續嗎？"
+
+#. don't quit in case of failures, error messages are reported by FormatDisk()
+#: src/include/s390/dump/ui.rb:203
+msgid "Operation successful. Initialize another dump device?"
+msgstr "操作成功。啟始化另一個轉儲裝置嗎？"
+
+#. z/VM IDs dialog help 1/1
+#: src/include/s390/iucvterminal-server/helps.rb:36
+msgid "<p><b><big>z/VM IDs</big></b></p>"
+msgstr "<p><b><big>z/VM ID</big></b></p>"
+
+#: src/include/s390/iucvterminal-server/helps.rb:39
+msgid ""
+"<p>To configure the IUCV terminal server, specify the z/VM IDs to be used.\n"
+"<br>They are separated by line breaks.</p>\n"
+msgstr ""
+"<p>要配置使用者間通訊載體 (IUCV) 終端伺服器，請指定要使用的 z/VM ID。\n"
+"<br>它們由換行符分隔。</p>\n"
+
+#. TS-Shell dialog help 1/5
+#: src/include/s390/iucvterminal-server/helps.rb:43
+msgid "<p><b><big>TS-Shell</big></b></p>"
+msgstr "<p><b><big>TS-Shell</big></b></p>"
+
+#: src/include/s390/iucvterminal-server/helps.rb:46
+msgid ""
+"<p>TS-Shell allows to specify <b>Authorization</b> for every TS-Shell user "
+"and group. The rights of a group are inherited by its members.</p>"
+msgstr ""
+"<p>TS-Shell 允許為每個 TS-Shell 使用者與組指定<b>認證</b>。使用者組的許可權由其成員"
+"繼承。</p>"
+
+#. TS-Shell dialog help 2/5
+#: src/include/s390/iucvterminal-server/helps.rb:50
+msgid ""
+"<p>Each allowed z/VM ID can be selected manually under <b>Selection</b>, "
+"defined by a <b>Regex</b> or loaded from a <b>File</b> which contains all "
+"allowed z/VM IDs separated by line breaks.</p>"
+msgstr ""
+"<p>每個允許的 z/VM ID 均可在<b>選擇</b>下手選，由<b>正規表示式</b>定義或從包"
+"含全部以換行符分隔的允許的 z/VM ID 的<b>檔案</b>中載入。</p>"
+
+#. TS-Shell dialog help 3/5
+#: src/include/s390/iucvterminal-server/helps.rb:54
+msgid ""
+"<p>Click on <b>New User</b> to create new TS-Shell users or <b>Delete\n"
+"User</b> to remove users.</p>"
+msgstr "<p>點選<b>新使用者</b>創建新 TS-Shell 使用者或點選<b>刪除</b>移除使用者。</p>"
+
+#. TS-Shell dialog help 4/5
+#: src/include/s390/iucvterminal-server/helps.rb:58
+msgid ""
+"<p>To add or remove groups from the TS-Shell authorization table or to "
+"change\n"
+"the membership of users, go to <b>Manage Groups</b>.</p>"
+msgstr ""
+"<p>要向 TS-Shell 認證表單添加或移除組，或修改使用者的成員資格，請至<b>管理組</"
+"b>。</p>"
+
+#. TS-Shell dialog help 5/5
+#: src/include/s390/iucvterminal-server/helps.rb:62
+msgid ""
+"<p>With <b>Audited IDs</b> specify the z/VM IDs from which transcripts "
+"should be gathered.</p>"
+msgstr "<p>使用<b>審計過的 ID</b>指定應嵬集其副本的 z/VM ID。</p>"
+
+#. TS-Shell User creation dialog help 1/3
+#: src/include/s390/iucvterminal-server/helps.rb:66
+msgid "<p><b><big>New TS-Shell User</big></b></p>"
+msgstr "<p><b><big>新 TS-Shell 使用者</big></b></p>"
+
+#: src/include/s390/iucvterminal-server/helps.rb:69
+msgid ""
+"<p>To create new TS-Shell user the <b>Username</b>, <b>Home Directory</b> "
+"and <b>Password</b> has to be provided.\n"
+"\t<br>It is also possible to specify <b>Additional Groups</b> by selecting "
+"them on the right.</p>"
+msgstr ""
+"<p>要創建新 TS-Shell 使用者必須提供<b>使用者名</b>，<b>主資料夾</b>與<b>密碼</"
+"b>。\n"
+"\t<br>也可以在右邊選擇並指定<b>附加組</b>。</p>"
+
+#. TS-Shell User creation dialog help 2/3
+#: src/include/s390/iucvterminal-server/helps.rb:73
+msgid ""
+"<p>To ensure that the user changes his password after the first login, "
+"activate <b>Force Password Change</b>.</p>"
+msgstr "<p>要確保使用者在首次登入後修改其密碼，請啟用 <b>強制修改密碼</b>。</p>"
+
+#. TS-Shell User creation dialog help 3/3
+#: src/include/s390/iucvterminal-server/helps.rb:77
+msgid ""
+"<p>You can specify the same home directory for every TS-Shell user since no\n"
+"data will be stored there.</p>"
+msgstr ""
+"<p>您可以為每個 TS-Shell 使用者指定相同的主資料夾，因為沒有資料會存儲到那裡。</"
+"p>"
+
+#. TS-Shell Managing Groups dialog help 1/5
+#: src/include/s390/iucvterminal-server/helps.rb:81
+msgid "<p><b><big>Manage Groups for TS-Authorization</big></b></p>"
+msgstr "<p><b><big>管理 TS-Authorization 組</big></b></p>"
+
+#: src/include/s390/iucvterminal-server/helps.rb:84
+msgid ""
+"<p>Define TS-Shell authorizations per group if you want every TS-Shell \n"
+"member of this groups to inherit the same rights.</p>"
+msgstr ""
+"<p>若您想要此組的每個 TS-Shell 成員繼承相同許可權，請為每組定義 TS-Shell 認證。"
+"</p>"
+
+#. TS-Shell Managing Groups dialog help 2/5
+#: src/include/s390/iucvterminal-server/helps.rb:88
+msgid ""
+"<p>Existing groups can be added to or removed from the TS-Shell\n"
+"authorization. Select the groups in the table and click on <b>Select or "
+"Deselect</b>. The current status is shown in the column <b>TS-Auth</b>.</p>"
+msgstr ""
+"<p>已有的組可以添加到 TS-Shell 認證或從 TS-Shell 認證中移除。\n"
+"選擇表中的組並點選<b>選擇或反選</b>。當前狀態顯示在列 <b>TS-Auth</b> 中。</p>"
+
+#. TS-Shell Managing Groups dialog help 3/5
+#: src/include/s390/iucvterminal-server/helps.rb:92
+msgid ""
+"<p>Change TS-Shell members of a selected group in the <b>TS-Members</b>\n"
+"selection.</p>"
+msgstr "<p>在 <b>TS-Members</b> 部分修改所選組的 TS-Shell 成員。</p>"
+
+#. TS-Shell Managing Groups dialog help 4/5
+#: src/include/s390/iucvterminal-server/helps.rb:96
+msgid ""
+"<p>New groups could be created by entering the name in the <b>New Group</b> "
+"input field and confirming with <b>Create</b>.\n"
+"\t<br>To delete previously created groups the <b>YaST users</b> dialog has "
+"to be used.</p>"
+msgstr ""
+"<p>可在 <b>新組</b>輸入框中輸入名稱並使用<b>創建</b>確認來創建新組。\n"
+"\t<br>要刪除之前創建的組必須使用 <b>YaST 使用者</b>對話方塊。</p>"
+
+#. TS-Shell Managing Groups dialog help 5/5
+#: src/include/s390/iucvterminal-server/helps.rb:100
+msgid "<p>Undo changes in this dialog by clicking the <b>Back</b> button.</p>"
+msgstr "<p>點選<b>後退</b>按鈕可撤銷此對話方塊中的修改。</p>"
+
+#. IUCVConn on Login dialog help 1/2
+#: src/include/s390/iucvterminal-server/helps.rb:104
+msgid "<p><b><big>IUCVConn on Login</big></b></p>"
+msgstr "<p><b><big>登入時運行 IUCVConn</big></b></p>"
+
+#: src/include/s390/iucvterminal-server/helps.rb:107
+msgid ""
+"<p>IUCVConn on Login needs one user for every z/VM ID. To create these users "
+"a <b>password</b> and <b>home directory</b> has to be provided."
+msgstr ""
+"<p>登入時運行 IUCVConn 需要每個 z/VM ID 都有一個使用者。要創建這些使用者需要提供"
+"<b>密碼</b>與<b>主資料夾</b>。"
+
+#. IUCVConn on Login dialog help 2/2
+#: src/include/s390/iucvterminal-server/helps.rb:111
+msgid ""
+"<p>It is possible to sync the users manually by clicking on <b>Sync</b> or "
+"just confirming the changes with <b>Ok</b> while <b>IUCVConn on Login</b> is "
+"enabled. </p>"
+msgstr ""
+"<p>可點選<b>同步</b>手動同步使用者，或僅需在啟用了<b>登入時運行 IUCVConn</b> 後"
+"點選<b>好的</b>確認修改。</p>"
+
+#. Text approval
+#: src/include/s390/iucvterminal-server/ui.rb:54
+msgid "Yes"
+msgstr "是"
+
+#. Text disapproval
+#: src/include/s390/iucvterminal-server/ui.rb:57
+msgid "No"
+msgstr "否"
+
+#. Text for category user
+#: src/include/s390/iucvterminal-server/ui.rb:60
+msgid "user"
+msgstr "使用者"
+
+#. Text for category group
+#: src/include/s390/iucvterminal-server/ui.rb:63
+msgid "group"
+msgstr "組"
+
+#. filter non ts users
+#: src/include/s390/iucvterminal-server/ui.rb:200
+msgid "z/&VM IDs (auto-sorted)"
+msgstr "z/&VM ID (自動排序)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:219
+msgid "&Enable TS-Shell"
+msgstr "啟用 TS-Shell(&E)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:229
+msgid "Authorization"
+msgstr "認證"
+
+#. table header
+#. table header
+#: src/include/s390/iucvterminal-server/ui.rb:244
+#: src/include/s390/iucvterminal-server/ui.rb:545
+msgid "Name"
+msgstr "名稱"
+
+#. table header
+#: src/include/s390/iucvterminal-server/ui.rb:246
+msgid "UID/GID"
+msgstr "使用者 ID/組 ID"
+
+#. table header
+#: src/include/s390/iucvterminal-server/ui.rb:248
+msgid "Groups/Members"
+msgstr "組/成員"
+
+#: src/include/s390/iucvterminal-server/ui.rb:253
+msgid "&New User"
+msgstr "新使用者(&N)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:255
+msgid "&Delete User"
+msgstr "刪除使用者(&D)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:259
+msgid "&Manage Groups"
+msgstr "管理組(&M)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:270
+msgid "Allowed z/VM IDs"
+msgstr "允許的 z/VM ID"
+
+#: src/include/s390/iucvterminal-server/ui.rb:285
+msgid "&Selection"
+msgstr "選擇(&S)"
+
+#. force min size to make it easier readable in terminals
+#: src/include/s390/iucvterminal-server/ui.rb:306
+msgid "&Regex"
+msgstr "正規表示式(&R)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:323
+msgid "&File"
+msgstr "檔案(&F)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:339
+msgid "Bro&wse"
+msgstr "瀏覽(&W)"
+
+#. force min size to make it easier readable in terminals
+#: src/include/s390/iucvterminal-server/ui.rb:366
+msgid "&Audited IDs"
+msgstr "審計過的 ID(&A)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:388
+msgid "&Enable IUCVConn on Login"
+msgstr "啟用登入時運行 IUCVConn(&E)"
+
+#. table header
+#: src/include/s390/iucvterminal-server/ui.rb:401
+msgid "Login"
+msgstr "登入"
+
+#. table header
+#: src/include/s390/iucvterminal-server/ui.rb:403
+msgid "UID"
+msgstr "使用者 ID"
+
+#. table header
+#: src/include/s390/iucvterminal-server/ui.rb:405
+msgid "Home"
+msgstr "主資料夾"
+
+#. table header
+#: src/include/s390/iucvterminal-server/ui.rb:407
+msgid "Shell"
+msgstr "殼層"
+
+#: src/include/s390/iucvterminal-server/ui.rb:415
+msgid "Settings for new Users"
+msgstr "新使用者設定"
+
+#: src/include/s390/iucvterminal-server/ui.rb:421
+#: src/include/s390/iucvterminal-server/ui.rb:496
+msgid "&Password"
+msgstr "密碼(&P)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:430
+#: src/include/s390/iucvterminal-server/ui.rb:502
+msgid "Co&nfirm Password"
+msgstr "確認密碼(&N)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:445
+#: src/include/s390/iucvterminal-server/ui.rb:487
+msgid "&Home Directory"
+msgstr "主資料夾(&H)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:448
+#: src/include/s390/iucvterminal-server/ui.rb:491
+msgid "B&rowse"
+msgstr "瀏覽(&B)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:452
+msgid "&Sync"
+msgstr "同步(&S)"
+
+#. initialize list with additional groups
+#: src/include/s390/iucvterminal-server/ui.rb:479
+msgid "&Username"
+msgstr "使用者名(&U)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:509
+msgid "&Force Password Change"
+msgstr "強制修改密碼(&F)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:522
+msgid "&Additonal Groups"
+msgstr "附加組(&A)"
+
+#. table header
+#: src/include/s390/iucvterminal-server/ui.rb:547
+msgid "TS-Auth"
+msgstr "TS-Auth"
+
+#. table header
+#: src/include/s390/iucvterminal-server/ui.rb:549
+msgid "GID"
+msgstr "組 ID"
+
+#. table header
+#: src/include/s390/iucvterminal-server/ui.rb:551
+msgid "TS-Members"
+msgstr "TS-Members"
+
+#: src/include/s390/iucvterminal-server/ui.rb:556
+msgid "&Select or Deselect"
+msgstr "選擇或反選(&S)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:558
+msgid "C&reate"
+msgstr "創建(&R)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:560
+msgid "&New Group"
+msgstr "新組(&N)"
+
+#: src/include/s390/iucvterminal-server/ui.rb:570
+msgid "TS-&Members"
+msgstr "TS-&Members"
+
+#. draw active tab
+#: src/include/s390/iucvterminal-server/ui.rb:595
+msgid "&z/VM IDs"
+msgstr "&z/VM ID"
+
+#: src/include/s390/iucvterminal-server/ui.rb:596
+msgid "&TS-Shell"
+msgstr "&TS-Shell"
+
+#: src/include/s390/iucvterminal-server/ui.rb:597
+msgid "&IUCVConn"
+msgstr "&IUCVConn"
+
+#. check and commit password
+#: src/include/s390/iucvterminal-server/ui.rb:711
+msgid "The passwords do not match or are invalid."
+msgstr "密碼不匹配或無效。"
+
+#. check if the user specifcation is valid and if the name does already exist
+#: src/include/s390/iucvterminal-server/ui.rb:717
+msgid "The username is not valid!"
+msgstr "使用者名無效！"
+
+#: src/include/s390/iucvterminal-server/ui.rb:721
+msgid "A home directory has to be specified!"
+msgstr "必須指定主資料夾！"
+
+#: src/include/s390/iucvterminal-server/ui.rb:757
+msgid "Adding the user has failed."
+msgstr "添加使用者失敗。"
+
+#. delete group entry if disabled
+#: src/include/s390/iucvterminal-server/ui.rb:861
+msgid "Configure IUCV Terminal Server Settings"
+msgstr "配置使用者間通訊載體 (IUCV) 終端伺服器設定"
+
+#. update screen
+#: src/include/s390/iucvterminal-server/ui.rb:881
+msgid "New TS-Shell User"
+msgstr "新 TS-Shell 使用者"
+
+#: src/include/s390/iucvterminal-server/ui.rb:894
+msgid "Manage Groups for TS-Authorization"
+msgstr "管理 TS-Authorization 組"
+
+#. since alnum allows umlauts too the id is checked against the user name specification
+#: src/include/s390/iucvterminal-server/ui.rb:1020
+msgid "Wrong z/VM ID \"%1\" in line %2, only letters and numbers are allowed."
+msgstr "錯誤的 z/VM ID \"%1\" 於行 %2，僅允許字母與數字。"
+
+#: src/include/s390/iucvterminal-server/ui.rb:1032
+msgid ""
+"Wrong z/VM ID \"%1\" in line %2, numbers at the beginning are not allowed."
+msgstr "錯誤的 z/VM ID \"%1\" 於行 %2，不允許以數字開頭。"
+
+#: src/include/s390/iucvterminal-server/ui.rb:1044
+msgid ""
+"Wrong z/VM ID \"%1\" in line %2, more than eight characters are not allowed."
+msgstr "錯誤的 z/VM ID \"%1\" 於行 %2，不允許多於八個字元。"
+
+#. only the last entry is allowed to be empty
+#: src/include/s390/iucvterminal-server/ui.rb:1057
+msgid "Wrong z/VM ID \"%1\" in line %2, at least one letter is required."
+msgstr "錯誤的 z/VM ID \"%1\" 於行 %2，至少需要一個字母。"
+
+#. check password
+#: src/include/s390/iucvterminal-server/ui.rb:1081
+msgid "A correctly entered password to sync IUCVConn users is required."
+msgstr "需要輸入正確的密碼以同步 IUCVConn 使用者。"
+
+#. check home directory
+#: src/include/s390/iucvterminal-server/ui.rb:1087
+msgid "The specified IUCVConn home directory is invalid."
+msgstr "指定的 IUCVConn 主資料夾無效。"
+
+#. update ts member selection
+#: src/include/s390/iucvterminal-server/ui.rb:1437
+msgid "The group name is not valid!"
+msgstr "組名無效！"
+
+#. change tab selection back
+#. check for z/VM ID entries
+#: src/include/s390/iucvterminal-server/ui.rb:1497
+#: src/include/s390/iucvterminal-server/ui.rb:1598
+msgid "Cannot configure the terminal server without valid z/VM IDs."
+msgstr "沒有有效的 z/VM ID，無法配置終端伺服器。"
+
+#. Check the "Allowed Terminal Server list" field for validity.
+#. @return true for valid inputs
+#: src/include/s390/iucvterminal/ui.rb:55
+msgid ""
+"Wrong input, only lower case letters, numbers and for separation commas are "
+"allowed."
+msgstr "錯誤輸入，僅允許小寫字母，數字與用於分隔的逗號。"
+
+#: src/include/s390/iucvterminal/ui.rb:60
+msgid "Comma is only a separator."
+msgstr "逗號僅是分隔符。"
+
+#: src/include/s390/iucvterminal/ui.rb:62
+msgid "z/VM IDs do not allow more than eight characters."
+msgstr "z/VM ID 不允許多於八個字元。"
+
+#. Terminal id counting starts with 0
+#: src/include/s390/iucvterminal/ui.rb:79
+msgid "Wrong IUCV ID, only lower case letters are allowed."
+msgstr "錯誤的使用者間通訊載體 (IUCV) ID，僅允許小寫字母。"
+
+#: src/include/s390/iucvterminal/ui.rb:83
+msgid "IUCV IDs cannot be longer than %1 chars."
+msgstr "使用者間通訊載體 (IUCV) ID 不能長於 %1 個字元。"
+
+#. IUCVTerminal dialog help 1/10
+#: src/include/s390/iucvterminal/ui.rb:121
+msgid "<p><h2>Configure Local Terminal System Settings</h2></p>"
+msgstr "<p><h2>配置本地終端系統設定</h2></p>"
+
+#. IUCVTerminal dialog help 2/11
+#: src/include/s390/iucvterminal/ui.rb:123
+msgid "<p><b>IUCVtty</b></p>"
+msgstr "<p><b>IUCVtty</b></p>"
+
+#. IUCVTerminal dialog help 3/11
+#: src/include/s390/iucvterminal/ui.rb:125
+msgid ""
+"<p>Several <b>IUCVtty instances</b> can run to provide multiple terminal "
+"devices. The instances are distinguished by a terminal ID, which is a "
+"combination of the <b>Terminal ID Prefix</b> and the number of the instance."
+"<br>"
+msgstr ""
+"<p>可運行多個 <b>IUCVtty 例項</b>來提供多個終端裝置。例項由終端 ID 區分，終"
+"端 ID 是<b>終端 ID 字首</b>與例項編號的組合。<br>"
+
+#. IUCVTerminal dialog help 4/11
+#: src/include/s390/iucvterminal/ui.rb:129
+msgid ""
+"For example, if you define ten instances with the prefix &quot;<i>lxterm</"
+"i>&quot;, the terminal IDs from <i>lxterm0</i> to <i>lxterm9</i> are "
+"available.</p>"
+msgstr ""
+"例如，若您使用字首 &quot;<i>lxterm</i>&quot; 定義了十個例項，可用的終端 ID 將"
+"為從 <i>lxterm0</i> 到 <i>lxterm9</i>。</p>"
+
+#. IUCVTerminal dialog help 5/11
+#: src/include/s390/iucvterminal/ui.rb:133
+msgid "<p><b>HVC</b></p>"
+msgstr "<p><b>虛擬機器管理程式控制臺 (HVC)</b></p>"
+
+#. IUCVTerminal dialog help 6/11
+#: src/include/s390/iucvterminal/ui.rb:135
+msgid ""
+"<p>The z/VM IUCV HVC device driver is a kernel module and uses device nodes "
+"to enable up to eight HVC terminal devices to communicate with getty and "
+"login programs.</p>"
+msgstr ""
+"<p>z/VM 使用者間通訊載體 (IUCV) 虛擬機器管理程式控制臺 (HVC) 裝置驅動是一個核心模"
+"塊，使用裝置節點來啟用最多八個虛擬機器管理程式控制臺 (HVC) 終端裝置來與 getty "
+"與登入程式通訊。</p>"
+
+#. IUCVTerminal dialog help 7/11
+#: src/include/s390/iucvterminal/ui.rb:139
+msgid ""
+"<p>With <b>restrict access</b>, allow only connections from certain "
+"<b>terminal servers</b>.</p>"
+msgstr "<p>使用<b>限制訪問</b>，僅允許來自特定<b>終端伺服器</b>的連線。</p>"
+
+#. IUCVTerminal dialog help 8/11
+#: src/include/s390/iucvterminal/ui.rb:143
+msgid ""
+"<p>Define the emulation for all instances at once or for each one separately."
+"</p>"
+msgstr "<p>為全部例項一次性定義模擬或分別為每個例項定義模擬。</p>"
+
+#. IUCVTerminal dialog help 9/11
+#: src/include/s390/iucvterminal/ui.rb:147
+msgid ""
+"<p>Activate <b>route kernel messages to hvc0</b> to route kernel messages "
+"to\n"
+"the hvc0 device instead of ttyS0.<br>"
+msgstr ""
+"<p>啟用<b>中轉核心訊息到 hvc0</b>來將核心訊息中轉到 hvc0 裝置而不是 ttyS0。"
+"<br>"
+
+#. IUCVTerminal dialog help 10/11
+#: src/include/s390/iucvterminal/ui.rb:151
+msgid ""
+"Should kernel messages still be shown on ttyS0, manually add "
+"<b>console=ttyS0</b> to the current boot selection kernel parameter in the "
+"<b>YaST bootloader module</b>.</p>"
+msgstr ""
+"若核心訊息仍應顯示在 ttyS0，請在 <b>YaST 引導載入器模組</b>中將 "
+"<b>console=ttyS0</b> 手動添加到當前引導選區的核心參數。</p>"
+
+#. IUCVTerminal dialog help 11/11
+#: src/include/s390/iucvterminal/ui.rb:155
+msgid ""
+"<h3>Warning: HVC Terminals stay logged on without a manual logout through "
+"the shortcut: ctrl _ d</h3>"
+msgstr ""
+"<h3>警告：若不通過快捷鍵 ctrl _ d 手動登出，虛擬機器管理程式控制臺 (HVC) 終端將"
+"保持登入</h3>"
+
+#. Dialog content
+#: src/include/s390/iucvterminal/ui.rb:168
+msgid "&IUCVtty"
+msgstr "&IUCVtty"
+
+#: src/include/s390/iucvterminal/ui.rb:176
+msgid "Terminal ID &Prefix"
+msgstr "終端 ID 字首(&P)"
+
+#: src/include/s390/iucvterminal/ui.rb:182
+msgid "I&UCVtty instances"
+msgstr "I&UCVtty 例項"
+
+#: src/include/s390/iucvterminal/ui.rb:196
+msgid "HVC"
+msgstr "虛擬機器管理程式控制臺 (HVC)"
+
+#: src/include/s390/iucvterminal/ui.rb:206
+msgid "H&VC instances"
+msgstr "虛擬機器管理程式控制臺 (H&VC) 例項"
+
+#: src/include/s390/iucvterminal/ui.rb:217
+msgid "Restrict &access to"
+msgstr "限制訪問到(&A)"
+
+#: src/include/s390/iucvterminal/ui.rb:223
+msgid "Allowed Terminal &Servers"
+msgstr "允許的終端伺服器(&S)"
+
+#: src/include/s390/iucvterminal/ui.rb:231
+msgid "route &kernel messages to hvc0"
+msgstr "中轉核心訊息到 hvc0(&K)"
+
+#. if settings were changed don't exit without asking
+#: src/include/s390/iucvterminal/ui.rb:324
+msgid "Really leave without saving?"
+msgstr "真的不儲存就離開嗎？"
+
+#. check iucv id
+#: src/include/s390/iucvterminal/ui.rb:333
+msgid "The IUCV ID is not valid."
+msgstr "使用者間通訊載體 (IUCV) ID 無效。"
+
+#. check restrict_hvc_to_srvs and make sure they doesn't end with a comma
+#: src/include/s390/iucvterminal/ui.rb:343
+msgid "The Terminal Servers are not valid."
+msgstr "終端伺服器無效。"
+
+#. check if the bootloader settings need to be adjusted
+#: src/include/s390/iucvterminal/ui.rb:366
+msgid "The system has to be rebooted for some changes to take effect."
+msgstr "必須重新引導系統以使一些修改生效。"
+
+#. only five lines are allowed, remove every additional line
+#: src/include/s390/onpanic/ui.rb:63
+msgid "Only %1 lines are allowed for VMCMD."
+msgstr "VMCMD 僅允許 %1 行。"
+
+#. For translators: Caption of the dialog
+#: src/include/s390/onpanic/ui.rb:109
+msgid "On Panic Configuration"
+msgstr "核心恐慌時應急處理配置"
+
+#. OnPanic dialog help 1/11
+#: src/include/s390/onpanic/ui.rb:112
+msgid ""
+"<p><b>Configure the actions to be taken if a kernel panic occurs</b></p>"
+msgstr "<p><b>配置發生核心恐慌時要執行的動作</b></p>"
+
+#. OnPanic dialog help 2/11
+#: src/include/s390/onpanic/ui.rb:116
+msgid ""
+"<p>The <b>Dumpconf</b> daemon needs to be enabled to influence the behavior "
+"during kernel panics.</p>"
+msgstr "<p>需要啟用<b>Dumpconf</b>守護程式以在核心恐慌期間影響其行為。</p>"
+
+#. OnPanic dialog help 3/11
+#: src/include/s390/onpanic/ui.rb:120
+msgid "<p>The following <b>Panic Actions</b> are possible:<br>"
+msgstr "<p>有以下<b>核心恐慌時應急處理動作</b>可行：<br>"
+
+#. OnPanic dialog help 4/11
+#: src/include/s390/onpanic/ui.rb:122
+msgid "<b>stop</b> Stop Linux (default).<br>"
+msgstr "<b>stop</b> 停止 Linux (默認)。<br>"
+
+#. OnPanic dialog help 5/11
+#: src/include/s390/onpanic/ui.rb:124
+msgid "<b>dump</b> Dump Linux and stop system.<br>"
+msgstr "<b>dump</b> 轉儲 Linux 並停止系統。<br>"
+
+#. OnPanic dialog help 6/11
+#: src/include/s390/onpanic/ui.rb:126
+msgid "<b>reipl</b> Reboot Linux.<br>"
+msgstr "<b>reipl</b> 重啟 Linux。<br>"
+
+#. OnPanic dialog help 7/11
+#: src/include/s390/onpanic/ui.rb:128
+msgid ""
+"<b>dump_reipl</b> Dump Linux and reboot system. This option is only "
+"available\n"
+"on LPAR with z9(r) machines and later and on z/VMversion 5.3 and later.<br>"
+msgstr ""
+"<b>dump_reipl</b> 轉儲 Linux 並重引導系統。此選項僅在帶 z9(r) 的 LPAR 機器及"
+"其後續型號與 z/VMversion 5.3 及其後續型號上可用。<br>"
+
+#. OnPanic dialog help 8/11
+#: src/include/s390/onpanic/ui.rb:132
+msgid "<b>vmcmd</b> Execute specified CP commands and stop system.</p>"
+msgstr "<b>vmcmd</b> 執行指定的 CP 命令並停止系統。</p>"
+
+#. OnPanic dialog help 9/11
+#: src/include/s390/onpanic/ui.rb:134
+msgid ""
+"<p>The time defined in <b>Delay Minutes</b> defers activating the specified "
+"panic action for a newly started system to prevent loops. If the system "
+"crashes before the time has elapsed the default action (stop) is performed.</"
+"p>"
+msgstr ""
+"<p><b>延遲分鐘</b>中定義的時間會延緩啟用新啟動的系統上的指定核心恐慌時應急處"
+"理動作以避免迴圈 (loop)。若系統在該時間流逝前崩潰則執行默認動作 (stop)。</p>"
+
+#. OnPanic dialog help 10/11
+#: src/include/s390/onpanic/ui.rb:138
+msgid ""
+"<p>The device for dumping the memory can be set with <b>Dump Device</b>. If "
+"no device is shown you have to create one with the <b>YaST Dump Devices</b> "
+"dialog.</p>"
+msgstr ""
+"<p>可使用<b>轉儲裝置</b>設定用來轉儲內存的裝置。若未顯示任何裝置您需要使用 "
+"<b>YaST 轉儲裝置</b>對話方塊來創建一個。</p>"
+
+#. OnPanic dialog help 11/11
+#: src/include/s390/onpanic/ui.rb:143
+msgid ""
+"<p>With <b>VMCMD</b> specify CP commands to be executed before the Linux "
+"system is stopped. Only %1 lines and a total of %2 chars are allowed.</p>"
+msgstr ""
+"<p>使用 <b>VMCMD</b> 指定要在 Linux 系統停止前執行的 CP 命令。僅允許 %1 行與"
+"總計 %2 個字元。</p>"
+
+#. radio button label
+#: src/include/s390/onpanic/ui.rb:166
+msgid "Do No&t Start Dumpconf"
+msgstr "不啟動 Dumpconf(&T)"
+
+#. radio button label
+#: src/include/s390/onpanic/ui.rb:175
+msgid "&Start Dumpconf"
+msgstr "啟動 Dumpconf(&S)"
+
+#. combobox label
+#: src/include/s390/onpanic/ui.rb:189
+msgid "&Panic Action"
+msgstr "核心恐慌時應急處理動作(&P)"
+
+#: src/include/s390/onpanic/ui.rb:192
+msgid "Delay &Minutes"
+msgstr "延遲分鐘(&M)"
+
+#. combobox label
+#: src/include/s390/onpanic/ui.rb:202
+msgid "&Dump Device"
+msgstr "轉儲裝置(&D)"
+
+#: src/include/s390/onpanic/ui.rb:206
+msgid "&VMCMD"
+msgstr "&VMCMD"
+
+#. don't allow dumps if no device is available
+#: src/include/s390/onpanic/ui.rb:267
+msgid "It is not possible to enable the dump process without a dump device."
+msgstr "沒有轉儲裝置就啟用轉儲程序是不可行的。"
+
+#. don't allow vmcmd without at least one command
+#: src/include/s390/onpanic/ui.rb:281
+msgid "It is not possible to use vmcmd  without defining at least one command."
+msgstr "未定義至少一條命令就使用 vmcmd 是不可行的。"
+
+#. Dialog caption
+#: src/include/s390/zfcp/dialogs.rb:113
+msgid "Configured ZFCP Devices"
+msgstr "已配置的光纖通道協議 (zFCP) 裝置"
+
+#. table header
+#. table header
+#: src/include/s390/zfcp/dialogs.rb:122 src/include/s390/zfcp/dialogs.rb:131
+msgid "WWPN"
+msgstr "萬維埠號 (WWPN)"
+
+#. table header
+#. table header
+#: src/include/s390/zfcp/dialogs.rb:124 src/include/s390/zfcp/dialogs.rb:133
+msgid "LUN"
+msgstr "邏輯單元編號 (LUN)"
+
+#. yes-no popup
+#. yes-no popup
+#: src/include/s390/zfcp/dialogs.rb:238 src/include/s390/zfcp/dialogs.rb:387
+msgid ""
+"Really leave the ZFCP device configuration without saving?\n"
+"All changes will be lost."
+msgstr ""
+"真的不儲存就離開光纖通道協議 (zFCP) 裝置配置嗎？\n"
+"全部修改都將不復存在。"
+
+#. dialog caption
+#: src/include/s390/zfcp/dialogs.rb:259
+msgid "Add New ZFCP Device"
+msgstr "添加新的光纖通道協議 (zFCP) 裝置"
+
+#. combo box
+#: src/include/s390/zfcp/dialogs.rb:307
+msgid "&WWPN"
+msgstr "萬維埠號(&WWPN)"
+
+#. push button
+#: src/include/s390/zfcp/dialogs.rb:311
+msgid "Get WWPNs"
+msgstr "獲得萬維埠號 (WWPN)"
+
+#. combobox
+#: src/include/s390/zfcp/dialogs.rb:316
+msgid "&LUN"
+msgstr "邏輯單元編號(&LUN)"
+
+#. push button
+#: src/include/s390/zfcp/dialogs.rb:320
+msgid "Get LUNs"
+msgstr "獲得邏輯單元編號 (LUN)"
+
+#. error popup
+#. error popup
+#: src/include/s390/zfcp/dialogs.rb:372 src/include/s390/zfcp/dialogs.rb:408
+msgid "The entered WWPN is invalid."
+msgstr "輸入的萬維埠號 (WWPN) 無效。"
+
+#. error popup
+#: src/include/s390/zfcp/dialogs.rb:416
+msgid "The entered LUN is invalid."
+msgstr "輸入的邏輯單元編號 (LUN) 無效。"
+
+#. Read dialog help 1/2
+#: src/include/s390/zfcp/helps.rb:36
+msgid ""
+"<p><b><big>Initializing ZFCP Device Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在啟始化光纖通道協議 (zFCP) 裝置配置</big></b><br>\n"
+"</p>\n"
+
+#. Write dialog help 1/2
+#: src/include/s390/zfcp/helps.rb:44
+msgid ""
+"<p><b><big>Saving ZFCP Device Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在儲存光纖通道協議 (zFCP) 裝置配置</big></b><br>\n"
+"</p>\n"
+
+#. Disk selection dialog help 1/3
+#: src/include/s390/zfcp/helps.rb:54
+msgid ""
+"<p><b><big>Configured ZFCP Devices</big></b><br>\n"
+"Manage ZFCP devices on your system.</p>\n"
+msgstr ""
+"<P><B><BIG>已配置的光纖通道協議 (zFCP) 裝置</BIG></B><BR>\n"
+"管理您系統上的光纖通道協議 (zFCP) 裝置。</P>\n"
+
+#. Disk selection dialog help 2/3
+#: src/include/s390/zfcp/helps.rb:58
+msgid "<p>To configure a new ZFCP device, click <b>Add</b>.</p>"
+msgstr "<p>要配置一個新的光纖通道協議 (zFCP) 裝置，請點選<b>添加</b>。</p>"
+
+#. Disk selection dialog help 3/3
+#: src/include/s390/zfcp/helps.rb:60
+msgid ""
+"<p>To remove a configured ZFCP device, select it and click\n"
+"<b>Delete</b>.</p>"
+msgstr ""
+"<p>要移除一個已配置的光纖通道協議 (zFCP) 裝置，請選中它並點選<b>刪除</b>。</"
+"p>"
+
+#. Disk selection dialog Warning
+#. Disk selection dialog Warning
+#: src/include/s390/zfcp/helps.rb:64 src/include/s390/zfcp/helps.rb:87
+msgid "<h1>Warning</h1>"
+msgstr "<h1>警告</h1>"
+
+#: src/include/s390/zfcp/helps.rb:65 src/include/s390/zfcp/helps.rb:88
+msgid ""
+"<p>When accessing a ZFCP device\n"
+"<b>READ</b>/<b>WRITE</b>, make sure that this access is exclusive.\n"
+"Otherwise there is a potential risk of data corruption.</p>"
+msgstr ""
+"<p>當<b>讀</b>/<b>寫</b>訪問一個光纖通道協議 (zFCP) 裝置時，\n"
+"請確保此訪問是排它的。否則會有潛在的資料損壞風險。</p>"
+
+#. Disk add help 1/2
+#: src/include/s390/zfcp/helps.rb:71
+msgid ""
+"<p><b><big>Add New ZFCP Device</big></b><br>\n"
+"Enter the identifier of the device to add, the\n"
+"<b>Channel ID</b> of the ZFCP controller, the worldwide port number\n"
+"(<b>WWPN</b>) and the <b>LUN</b> number.</p>\n"
+msgstr ""
+"<p><b><big>增加新的光纖通道協議 (zFCP) 裝置</big></b><br>\n"
+"請輸入要增加的裝置的標識符，光纖通道協議 (zFCP) 控制器的<b>通道 ID</b>，\n"
+"<b>萬維埠號 (WWPN)</b> 與<b>邏輯單元編號 (LUN)</b>。</p>\n"
+
+#. Disk add help 2/2, This is HTML, so finally "&lt;devno&gt;" is displayed as "<devno>"
+#: src/include/s390/zfcp/helps.rb:78
+msgid ""
+"<p>The <b>Channel ID</b> must be entered with lowercase letters in a sysfs "
+"conforming\n"
+"format 0.0.&lt;devno&gt;, such as <tt>0.0.5c51</tt>.</p>\n"
+"<p>The WWPN must be entered with lowercase letters as a 16-digit hex value, "
+"such as\n"
+"<tt>0x5005076300c40e5a</tt>.</p>\n"
+"<p>The LUN must be entered with lowercase letters as a 16-digit hex value "
+"with\n"
+"all trailing zeros, such as <tt>0x52ca000000000000</tt>.</p>"
+msgstr ""
+"<p><b>通道 ID</b>必須以小寫字母按順應 sysfs 的格式 0.0.&lt;devno&gt; 輸入，\n"
+"諸如 <tt>0.0.5c51</tt>。</p>\n"
+"<p>萬維埠號 (WWPN) 必須以小寫字母作為 16 位 16 進位制值輸入，\n"
+"諸如 <tt>0x5005076300c40e5a</tt>。</p>\n"
+"<p>邏輯單元編號 (LUN) 必須以小寫字母作為 16 位 16 進位制值且帶上結尾全部的零輸"
+"入，\n"
+"諸如 <tt>0x52ca000000000000</tt>。</p>"
+
+#. popup label
+#. popup label
+#: src/modules/DASDController.rb:188 src/modules/ZFCPController.rb:161
+msgid "Running mkinitrd."
+msgstr "正在運行 mkinitrd。"
+
+#. Create a textual summary and a list of configured devices
+#. @return summary of the current configuration
+#: src/modules/DASDController.rb:318
+msgid "Channel ID: %1, Format: %2, DIAG: %3"
+msgstr "通道 ID：%1，格式：%2，診斷 (DIAG)：%3"
+
+#: src/modules/DASDController.rb:331
+msgid "Channel ID: %1, Device: %2, DIAG: %3"
+msgstr "通道 ID：%1，裝置：%2，診斷 (DIAG)：%3"
+
+#. popup label
+#: src/modules/DASDController.rb:366
+msgid "Reading Configured DASD Disks"
+msgstr "正在讀取已配置的可直接訪問存儲裝置 (DASD) 磁碟"
+
+#. error report, %1 is device identification
+#. error report, %1 is device identification
+#. error report, %1 is device identification
+#: src/modules/DASDController.rb:457 src/modules/ZFCPController.rb:422
+#: src/modules/ZFCPController.rb:516
+msgid "%1: sysfs not mounted."
+msgstr "%1：sysfs 未裝載。"
+
+#. error report, %1 is device identification
+#. error report, %1 is device identification
+#. error report, %1 is device identification
+#: src/modules/DASDController.rb:465 src/modules/ZFCPController.rb:430
+#: src/modules/ZFCPController.rb:524
+msgid "%1: Invalid status for <online>."
+msgstr "%1：無效的<線上>狀態。"
+
+#. error report, %1 is device identification
+#. error report, %1 is device identification
+#: src/modules/DASDController.rb:473 src/modules/ZFCPController.rb:438
+msgid "%1: No device found for <ccwid>."
+msgstr "%1：未找到 <ccwid> 裝置。"
+
+#. error report, %1 is device identification
+#: src/modules/DASDController.rb:481
+msgid "%1: Could not change state of the device."
+msgstr "%1：無法修改裝置狀態。"
+
+#. error report, %1 is device identification
+#: src/modules/DASDController.rb:490
+msgid "%1: Device is not a DASD."
+msgstr "%1：裝置不是可直接訪問存儲裝置 (DASD)。"
+
+#. error report, %1 is device identification
+#: src/modules/DASDController.rb:499
+msgid "%1: Could not load module."
+msgstr "%1：無法裝載模組。"
+
+#. error report, %1 is device identification
+#: src/modules/DASDController.rb:508
+msgid "%1: Failed to activate DASD."
+msgstr "%1：啟用可直接訪問存儲裝置 (DASD) 失敗。"
+
+#. error report, %1 is device identification
+#: src/modules/DASDController.rb:517
+msgid "%1: DASD is not formatted."
+msgstr "%1：可直接訪問存儲裝置 (DASD) 未格式化。"
+
+#. error report, %1 is device identification, %2 is integer code
+#. error report, %1 is device identification, %2 is integer code
+#. error report, %1 is device identification, %2 is integer code
+#: src/modules/DASDController.rb:525 src/modules/ZFCPController.rb:494
+#: src/modules/ZFCPController.rb:564
+msgid "%1: Unknown error %2."
+msgstr "%1：未知錯誤 %2。"
+
+#. progress bar
+#: src/modules/DASDController.rb:638
+msgid "Formatting %1:"
+msgstr "正在格式化 %1："
+
+#. error report, %1 is exit code of the command (integer)
+#. error report, %1 is exit code of the command (integer)
+#: src/modules/DASDController.rb:667 src/modules/DASDController.rb:764
+msgid "Disks formatting failed. Exit code: %1."
+msgstr "磁碟格式化失敗。退出程式碼：%1。"
+
+#. progress bar, %1 is device name, %2 and %3
+#. integers,
+#. eg. Formatting /dev/dasda: cylinder 123 of 12334 done
+#: src/modules/DASDController.rb:735
+msgid "Formatting %1: cylinder %2 of %3 done"
+msgstr "正在格式化 %1：柱面 %2 已完成共 %3"
+
+#. Get a List of available Disks of type
+#. @return [Array<String>] of disks
+#: src/modules/Dump.rb:67
+msgid "Checking Disks"
+msgstr "正在檢查磁碟"
+
+#. Progress stage 1/2
+#: src/modules/Dump.rb:76
+msgid "Checking DASD disks"
+msgstr "正在檢查可直接訪問存儲裝置 (DASD) 磁碟"
+
+#. Progress stage 2/2
+#: src/modules/Dump.rb:78
+msgid "Checking ZFCP disks"
+msgstr "正在檢查光纖通道協議 (zFCP) 磁碟"
+
+#. Progress step 1/2
+#: src/modules/Dump.rb:82
+msgid "Checking DASD disks..."
+msgstr "正在檢查可直接訪問存儲裝置 (DASD) 磁碟..."
+
+#. Progress step 2/2
+#: src/modules/Dump.rb:84
+msgid "Checking ZFCP disks..."
+msgstr "正在檢查光纖通道協議 (zFCP) 磁碟..."
+
+#. Progress finished
+#. Progress finished
+#. Progress finished
+#. Progress finished
+#. Progress finished
+#. Progress finished
+#. Progress finished
+#. Progress finished
+#: src/modules/Dump.rb:86 src/modules/Dump.rb:121
+#: src/modules/IUCVTerminal.rb:165 src/modules/IUCVTerminal.rb:246
+#: src/modules/IUCVTerminalServer.rb:334 src/modules/IUCVTerminalServer.rb:478
+#: src/modules/OnPanic.rb:234 src/modules/OnPanic.rb:276
+msgid "Finished"
+msgstr "已完成"
+
+#. Format a disk as DUMP device
+#. @param [String] dev string the disk device node
+#. @param [Boolean] force boolean true to append the -f parameter
+#. @return [Boolean] true on success
+#: src/modules/Dump.rb:106
+msgid "Creating Dump Device"
+msgstr "正在創建轉儲裝置"
+
+#. Progress stage 1/1
+#: src/modules/Dump.rb:115
+msgid "Creating dump device"
+msgstr "正在創建轉儲裝置"
+
+#. Progress step 1/1
+#: src/modules/Dump.rb:119
+msgid "Creating dump device. This process might take some minutes."
+msgstr "正在創建轉儲裝置。此過程可能花費幾分鐘。"
+
+#. error description
+#: src/modules/Dump.rb:148
+msgid "Invalid or unusable disk (fatal)."
+msgstr "無效或不可用的磁碟 (致命錯誤)。"
+
+#. error description
+#: src/modules/Dump.rb:151
+msgid "Incompatible formatting or partitioning, correct with Force."
+msgstr "不相容格式或分割區，將強行糾正。"
+
+#. error description
+#: src/modules/Dump.rb:156
+msgid "Missing support programs."
+msgstr "缺少支援程式。"
+
+#. error description
+#: src/modules/Dump.rb:159
+msgid "Missing or wrong parameters."
+msgstr "缺失或錯誤的參數。"
+
+#. error description
+#: src/modules/Dump.rb:162
+msgid "Access problem."
+msgstr "訪問出錯。"
+
+#. error description, %1 is error code (integer)
+#: src/modules/Dump.rb:165
+msgid "Error code from support program: %1."
+msgstr "來自支援程式的錯誤程式碼：%1。"
+
+#. error report, %1 is device name, %2 error description
+#: src/modules/Dump.rb:169
+msgid ""
+"Cannot create dump device %1:\n"
+"%2"
+msgstr ""
+"無法創建轉儲裝置 %1：\n"
+"%2"
+
+#. Read all settings
+#. @return true on success
+#: src/modules/IUCVTerminal.rb:142
+msgid "Loading IUCV Terminal Configuration"
+msgstr "正在載入使用者間通訊載體 (IUCV) 終端配置"
+
+#. Progress stage 1/3
+#: src/modules/IUCVTerminal.rb:151
+msgid "Check IUCVtty entries"
+msgstr "檢查 IUCVtty 項"
+
+#. Progress stage 2/3
+#: src/modules/IUCVTerminal.rb:153
+msgid "Check HVC entries"
+msgstr "檢查虛擬機器管理程式控制臺 (HVC) 項"
+
+#. Progress stage 3/3
+#: src/modules/IUCVTerminal.rb:155
+msgid "Read kernel parameters"
+msgstr "讀取核心參數"
+
+#. Progress step 1/3
+#: src/modules/IUCVTerminal.rb:159
+msgid "Checking IUCVtty entries..."
+msgstr "正在檢查 IUCVtty 項..."
+
+#. Progress step 2/3
+#: src/modules/IUCVTerminal.rb:161
+msgid "Checking HVC entries..."
+msgstr "正在檢查虛擬機器管理程式控制臺 (HVC) 項..."
+
+#. Progress step 3/3
+#: src/modules/IUCVTerminal.rb:163
+msgid "Reading kernel parameters..."
+msgstr "正在讀取核心參數..."
+
+#. Inittab write dialog caption
+#: src/modules/IUCVTerminal.rb:223
+msgid "Saving IUCV Terminal Configuration"
+msgstr "正在儲存使用者間通訊載體 (IUCV) 終端配置"
+
+#. Progress stage 1/4
+#: src/modules/IUCVTerminal.rb:232
+msgid "Write IUCVtty settings"
+msgstr "寫入 IUCVtty 設定"
+
+#. Progress stage 2/4
+#: src/modules/IUCVTerminal.rb:234
+msgid "Write HVC settings"
+msgstr "寫入虛擬機器管理程式控制臺 (HVC) 設定"
+
+#. Progress stage 3/4
+#: src/modules/IUCVTerminal.rb:236
+msgid "Write kernel parameters"
+msgstr "寫入核心參數"
+
+#. Progress step 1/4
+#: src/modules/IUCVTerminal.rb:240
+msgid "Writing IUCVtty settings..."
+msgstr "正在寫入 IUCVtty 設定..."
+
+#. Progress step 2/4
+#: src/modules/IUCVTerminal.rb:242
+msgid "Writing HVC settings..."
+msgstr "正在寫入虛擬機器管理程式控制臺 (HVC) 設定..."
+
+#. Progress step 3/4
+#: src/modules/IUCVTerminal.rb:244
+msgid "Writing kernel parameters..."
+msgstr "正在寫入核心參數..."
+
+#. Text to select all
+#: src/modules/IUCVTerminalServer.rb:43
+msgid "<ALL>"
+msgstr "<全部>"
+
+#. Read all settings
+#. @return true on success
+#: src/modules/IUCVTerminalServer.rb:315
+msgid "Loading IUCV Terminal Server Configuration"
+msgstr "正在載入使用者間通訊載體 (IUCV) 終端伺服器配置"
+
+#. Progress stage 1/2
+#: src/modules/IUCVTerminalServer.rb:324
+msgid "Read configuration files"
+msgstr "讀取配置檔案"
+
+#. Progress stage 2/2
+#: src/modules/IUCVTerminalServer.rb:326
+msgid "Load user/group settings"
+msgstr "載入使用者/組設定"
+
+#. Progress step 1/2
+#: src/modules/IUCVTerminalServer.rb:330
+msgid "Reading configuration files..."
+msgstr "正在讀取配置檔案..."
+
+#. Progress step 2/2
+#: src/modules/IUCVTerminalServer.rb:332
+msgid "Loading user/group settings..."
+msgstr "正在載入使用者/組設定..."
+
+#. no need to write anything if unmodified
+#: src/modules/IUCVTerminalServer.rb:459
+msgid "Saving IUCV Terminal Server Configuration"
+msgstr "正在儲存使用者間通訊載體 (IUCV) 終端伺服器配置"
+
+#. Progress stage 1/2
+#: src/modules/IUCVTerminalServer.rb:468
+msgid "Write configuration files"
+msgstr "寫入配置檔案"
+
+#. Progress stage 2/2
+#: src/modules/IUCVTerminalServer.rb:470
+msgid "Update user settings"
+msgstr "更新使用者設定"
+
+#. Progress step 1/2
+#: src/modules/IUCVTerminalServer.rb:474
+msgid "Writing configuration files..."
+msgstr "正在寫入配置檔案..."
+
+#. Progress step 2/2
+#: src/modules/IUCVTerminalServer.rb:476
+msgid "Updating user settings..."
+msgstr "正在更新使用者設定..."
+
+#. Dumpconf read dialog caption
+#: src/modules/OnPanic.rb:215
+msgid "Reading Dumpconf Configuration"
+msgstr "正在讀取 Dumpconf 配置"
+
+#. Progress stage 1/2
+#: src/modules/OnPanic.rb:224
+msgid "Checking dump devices"
+msgstr "正在檢查轉儲裝置"
+
+#. Progress stage 2/2
+#: src/modules/OnPanic.rb:226
+msgid "Reading settings"
+msgstr "正在讀取設定"
+
+#. Progress step 1/2
+#: src/modules/OnPanic.rb:230
+msgid "Checking dump devices..."
+msgstr "正在檢查轉儲裝置..."
+
+#. Progress step 2/2
+#: src/modules/OnPanic.rb:232
+msgid "Reading the settings..."
+msgstr "正在讀取設定..."
+
+#. Dumpconf write dialog caption
+#: src/modules/OnPanic.rb:257
+msgid "Saving Dumpconf Configuration"
+msgstr "正在儲存 Dumpconf 配置"
+
+#. Progress stage 1/2
+#: src/modules/OnPanic.rb:266
+msgid "Write the settings"
+msgstr "寫入設定"
+
+#. Progress stage 2/2
+#: src/modules/OnPanic.rb:268
+msgid "Restart the service"
+msgstr "重啟服務"
+
+#. Progress step 1/2
+#: src/modules/OnPanic.rb:272
+msgid "Writing the settings..."
+msgstr "正在寫入設定..."
+
+#. Progress step 2/2
+#: src/modules/OnPanic.rb:274
+msgid "Restarting service..."
+msgstr "正在重啟服務..."
+
+#. Create a textual summary and a list of configured devices
+#. @return summary of the current configuration
+#: src/modules/ZFCPController.rb:302
+msgid "Channel ID: %1, WWPN: %2, LUN: %3"
+msgstr "通道 ID：%1，萬維埠號：%2，邏輯單元編號：%3"
+
+#: src/modules/ZFCPController.rb:311
+msgid "Channel ID: %1, WWPN: %2, LUN: %3, Device: %4"
+msgstr "通道 ID：%1，萬維埠號：%2，邏輯單元編號：%3，裝置：%4"
+
+#. popup label
+#: src/modules/ZFCPController.rb:367
+msgid "Reading Configured ZFCP Devices"
+msgstr "正在讀取已配置的光纖通道協議 (zFCP) 裝置"
+
+#. error report, %1 is device identification
+#: src/modules/ZFCPController.rb:446
+msgid "%1: WWPN invalid."
+msgstr "%1：萬維埠號 (WWPN) 無效。"
+
+#. error report, %1 is device identification
+#: src/modules/ZFCPController.rb:454
+msgid "%1: Could not activate WWPN for adapter %1."
+msgstr "%1：無法為介面卡 %1 啟用萬維埠號 (WWPN)。"
+
+#. error report, %1 is device identification
+#: src/modules/ZFCPController.rb:462
+msgid "%1: Could not activate ZFCP device."
+msgstr "%1：無法啟用光纖通道協議 (zFCP) 裝置。"
+
+#. error report, %1 is device identification
+#: src/modules/ZFCPController.rb:470
+msgid "%1: SCSI disk could not be deactivated."
+msgstr "%1：無法取消啟用 SCSI 磁碟。"
+
+#. error report, %1 is device identification
+#: src/modules/ZFCPController.rb:478
+msgid "%1: LUN could not be unregistered."
+msgstr "%1：無法取消註冊邏輯單元編號 (LUN)。"
+
+#. error report, %1 is device identification
+#: src/modules/ZFCPController.rb:486
+msgid "%1: WWPN could not be unregistered."
+msgstr "%1：無法取消註冊萬維埠號 (WWPN)。"
+
+#. error report, %1 is device identification
+#: src/modules/ZFCPController.rb:532
+msgid "%1: Device <ccwid> does not exist."
+msgstr "%1：裝置 <ccwid> 不存在。"
+
+#. error report, %1 is device identification
+#: src/modules/ZFCPController.rb:540
+msgid "%1: Module zfcp could not be loaded."
+msgstr "%1：無法載入模組 zfcp。"
+
+#. error report, %1 is device identification
+#: src/modules/ZFCPController.rb:548
+msgid "%1: Adapter status could not be changed."
+msgstr "%1：無法修改介面卡狀態。"
+
+#. error report, %1 is device identification
+#: src/modules/ZFCPController.rb:556
+msgid "%1: WWPN ports still active."
+msgstr "%1：萬維埠號 (WWPN) 埠仍是活動的。"
+
+#~ msgid "Select I&nstance"
+#~ msgstr "選擇例項(&N)"
+
+#~ msgid "Select &Emulation"
+#~ msgstr "選擇模擬(&E)"
+
+#~ msgid "<all>"
+#~ msgstr "<全部>"
+
+#~ msgid "<don't change>"
+#~ msgstr "<不修改>"
+
+#~ msgid "Initialize Init"
+#~ msgstr "啟始化 Init"
+
+#~ msgid "Initializing Init..."
+#~ msgstr "正在啟始化 Init..."
+
+#~ msgid ""
+#~ "Device %1 is not formatted. Format device now?\n"
+#~ "If you want to format multiple devices in parallel,\n"
+#~ "press 'Cancel' and select 'Perform Action', 'Format' later on.\n"
+#~ msgstr ""
+#~ "裝置 %1 未格式化，現在格式化裝置嗎？\n"
+#~ "您若想要並行格式化多個裝置，請按 '取消' 並稍後選擇 '執行動作'，'格式"
+#~ "化'。\n"
+
+#~ msgid "&Write the Volume Label"
+#~ msgstr "寫入區塊標(&W)"
+
+#, fuzzy
+#~| msgid "Firewall configuration"
+#~ msgid "ZFCP configuration"
+#~ msgstr "防火墻設定"
+
+#~ msgid "Sel."
+#~ msgstr "所選"
+
+#~ msgid "A&dd New Disk"
+#~ msgstr "增加新磁碟(&D)"
+
+#~ msgid "De&lete Disk"
+#~ msgstr "刪除磁碟(&L)"
+
+#~ msgid "&Channel Number"
+#~ msgstr "通道號(&C)"
+
+#~ msgid "%1: Invalid status for <online>"
+#~ msgstr "%1: 無效的 <online> 狀態"
+
+#~ msgid "%1: No device found for <ccwid>"
+#~ msgstr "%1: 沒有找到 <ccwid> 的裝置"
+
+#~ msgid "%1: Unknown error %2"
+#~ msgstr "%1: 未知的錯誤 %2"
+
+#~ msgid "Channel Number"
+#~ msgstr "通道號"
+
+#~ msgid "zfcp-LUN"
+#~ msgstr "zfcp-LUN"
+
+#, fuzzy
+#~| msgid "Remove disk %1?"
+#~ msgid "Remove device %1?"
+#~ msgstr "刪除磁碟 %1?"
+
+#~ msgid "&FCP-LUN"
+#~ msgstr "FCP-LUN(&F)"
+
+#, fuzzy
+#~| msgid "Configuration of printer"
+#~ msgid "Configuration of controller"
+#~ msgstr "列印機配置"
+
+#~ msgid "Dump Device Management"
+#~ msgstr "轉儲裝置管理"
+
+#~ msgid "Loader Section Label"
+#~ msgstr "裝載區標籤"
+
+#~ msgid "Add New Dump Device"
+#~ msgstr "添加新的轉儲裝置"
+
+#~ msgid "Install Dump Record Even If Disk Already &Formatted"
+#~ msgstr "即使磁碟已格式化，仍安裝轉儲記錄(&F)"
+
+#~ msgid "Really leave the dump device configuration?"
+#~ msgstr "確實要放棄轉儲裝置配置嗎？"
+
+#~ msgid "Add another dump device?"
+#~ msgstr "是否添加另一個轉儲裝置？"
+
+#~ msgid ""
+#~ "<p><b><big>Initializing Dump Device Configuration</big></b>\n"
+#~ "<br>\n"
+#~ "Please wait...<br></p>\n"
+#~ msgstr ""
+#~ "<p><b><big>正在啟始化 Dump 裝置配置</big></b>\n"
+#~ "<br>\n"
+#~ "請稍候...<br></p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Saving Dump Device Configuration</big></b><br>\n"
+#~ "Please wait...<br></p>"
+#~ msgstr ""
+#~ "<p><b><big>正在儲存轉儲裝置配置</big></b><br>\n"
+#~ "請稍候...<br></p>"
+
+#~ msgid ""
+#~ "<p><b><big>Configured Dump Devices</big></b><br>\n"
+#~ "This dialog shows configured dump devices for your system.</p>"
+#~ msgstr ""
+#~ "<p><b><big>已配置的轉儲裝置</big></b><br>\n"
+#~ "此對話方塊顯示系統的已配置轉儲裝置。</p>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>To add and configure a new dump device, click <b>Add</b>. To edit an\n"
+#~ "already configured dump device, select it and click <b>Edit</b>.\n"
+#~ "To remove a configured dump device, select it and click <b>Delete</b>.</p>"
+#~ msgstr ""
+#~ "<p>要添加新的 dump 裝置，請單擊<b>添加</b>。要對已配置的\n"
+#~ "dump 裝置進行編輯，請選擇該 dump 裝置，然後單擊 <b>編輯</b>。\n"
+#~ "要去除某個已配置的 dump 裝置，請選擇該裝置，然後單擊<b>刪除</b>。</p>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p><b><big>Add New Dump Device</big></b><br>\n"
+#~| "Prepare a device for use as an S/390 dump device. Supported devices are\n"
+#~| "ECKD DASD and zfcp disks. Set <b>Dump Device</b> to select the device\n"
+#~| "to format. If the device is already formatted\n"
+#~| "or configured, setting\n"
+#~| "<b>Install Dump Record Even If Disk Already &Formatted</b> is required.</"
+#~| "p>"
+#~ msgid ""
+#~ "<p><b><big>Add New Dump Device</big></b><br>\n"
+#~ "Prepare a device for use as an S/390 dump device. Supported devices are\n"
+#~ "ECKD DASD. Set <b>Dump Device</b> to select the device\n"
+#~ "to format. If the device is already formatted\n"
+#~ "or configured, setting\n"
+#~ "<b>Install Dump Record Even If Disk Already &Formatted</b> is required.</"
+#~ "p>"
+#~ msgstr ""
+#~ "<p><b><big>添加新的轉儲裝置</big></b><br>\n"
+#~ "準備一個裝置以用作 S/390 轉儲裝置。支援的裝置是\n"
+#~ " ECKD DASD 與 zfcp 磁碟。設定<b>轉儲裝置</b>以選擇要格式化的\n"
+#~ "裝置。如果裝置已格式化\n"
+#~ "或已配置，則需要\n"
+#~ " <b>即使磁碟已格式化，仍安裝轉儲記錄(&F)</b>設定。</p>"
+
+#~ msgid "Disk unusable."
+#~ msgstr "磁碟不可用。"
+
+#~ msgid "Support program not installed."
+#~ msgstr "未安裝支援程式。"
+
+#~ msgid "Error code from support program."
+#~ msgstr "支援程式的錯誤程式碼。"
+

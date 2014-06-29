@@ -1,0 +1,604 @@
+# Copyright (C) 2006 SuSE Linux Products GmbH, Nuernberg
+# This file is distributed under the same license as the package.
+#
+# Marguerite Su, 2012, 2013.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: add-on\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:41+0200\n"
+"PO-Revision-Date: 2013-02-02 22:16+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. TRANSLATORS: commandline help
+#: src/clients/add-on.rb:41
+msgid ""
+"\n"
+"Add-on Module Help\n"
+"------------------\n"
+"\n"
+"To add a new add-on product via the command-line, use this syntax:\n"
+"    /sbin/yast2 add-on URL\n"
+"URL is the path to the add-on source.\n"
+"\n"
+"Examples of URL:\n"
+"http://server.name/directory/Lang-AddOn-10.2-i386/\n"
+"ftp://server.name/directory/Lang-AddOn-10.2-i386/\n"
+"nfs://server.name/directory/SDK1-SLE-i386/\n"
+"disk://dev/sda5/directory/Product/CD1/\n"
+"cd://\n"
+"dvd://\n"
+msgstr ""
+"\n"
+"附加產品模組幫助\n"
+"------------------\n"
+"\n"
+"要通過命令列添加一個新的附加產品，請用此語法：\n"
+"    /sbin/yast2 add-on URL\n"
+"URL 是指向附加資源的路徑。\n"
+"\n"
+"URL 舉例：\n"
+"http://server.name/directory/Lang-AddOn-10.2-i386/\n"
+"ftp://server.name/directory/Lang-AddOn-10.2-i386/\n"
+"nfs://server.name/directory/SDK1-SLE-i386/\n"
+"disk://dev/sda5/directory/Product/CD1/\n"
+"cd://\n"
+"dvd://\n"
+
+#: src/clients/add-on.rb:64
+msgid ""
+"Target file name ('xmlfile' option) is missing. Use "
+"xmlfile=<target_XML_file> command line option."
+msgstr ""
+"缺失目標檔名 ('xmlfile' 選項)。請用 xmlfile=<目標_XML_檔案> 命令列選項。"
+
+#. dialog caption
+#. this is a heading
+#. Cleanup UI - Prepare it for progress callbacks
+#: src/clients/add-on.rb:105 src/clients/add-on_proposal.rb:76
+#: src/include/add-on/add-on-workflow.rb:1877
+msgid "Add-On Products"
+msgstr "附加產品"
+
+#. busy message (dialog)
+#. TRANSLATORS: dialog content - a very simple label
+#: src/clients/add-on.rb:107 src/clients/inst_language_add-on.rb:155
+#: src/include/add-on/add-on-workflow.rb:1878
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. help
+#. TRANSLATORS: help text
+#: src/clients/add-on.rb:109 src/clients/inst_language_add-on.rb:157
+#: src/include/add-on/add-on-workflow.rb:1879
+msgid "<p>Initializing add-on products...</p>"
+msgstr "<p>正在啟始化附加產品...</p>"
+
+#. Create a summary
+#. return string
+#: src/clients/add-on_auto.rb:70
+msgid "<li>Media: %1, Path: %2, Product: %3</li>\n"
+msgstr "<li> 媒體： %1，路徑： %2，產品： %3</li>\n"
+
+#. error report
+#: src/clients/add-on_auto.rb:185
+msgid "Failed to add add-on product."
+msgstr "未能添加附加產品。"
+
+#: src/clients/add-on_auto.rb:193
+msgid "Make the add-on \"%1\" available via \"%2\"."
+msgstr "請讓附加產品 \"%1\" 可通過 \"%2\" 使用。"
+
+#. placeholder for unknown path
+#. summary item, %1 is product name, %2 media URL, %3 directory on media
+#. placeholder for unknown directory
+#. place holder for unknown URL
+#. placeholder for unknown path
+#. placeholder for unknown URL
+#: src/clients/add-on_proposal.rb:35 src/clients/add-on_proposal.rb:41
+#: src/include/add-on/add-on-workflow.rb:371
+#: src/include/add-on/add-on-workflow.rb:381
+#: src/include/add-on/add-on-workflow.rb:937
+#: src/include/add-on/add-on-workflow.rb:946
+msgid "Unknown"
+msgstr "未知"
+
+#. summary string
+#: src/clients/add-on_proposal.rb:47
+msgid "No add-on product selected for installation"
+msgstr "未選擇要安裝的附加產品"
+
+#. this is a menu entry
+#: src/clients/add-on_proposal.rb:78
+msgid "Add-&on Products"
+msgstr "附加產品(&o)"
+
+#. TRANSLATORS: popup message
+#: src/clients/inst_language_add-on.rb:114
+msgid "Installation of the Language Extension has been finished."
+msgstr "語言擴展安裝完成。"
+
+#. TRANSLATORS: dialog caption
+#. TRANSLATORS: dialog caption
+#. main screen heading
+#: src/clients/inst_language_add-on.rb:153
+#: src/clients/inst_language_add-on.rb:212
+#: src/include/add-on/add-on-workflow.rb:909
+msgid "Add-On Product Installation"
+msgstr "附加產品安裝"
+
+#. TRANSLATORS:: multi-selection box
+#: src/clients/inst_language_add-on.rb:219
+msgid "&Select Language Extensions to Be Installed"
+msgstr "選擇要安裝的語言擴展(&S)"
+
+#. TRANSLATORS: help text
+#: src/clients/inst_language_add-on.rb:226
+msgid ""
+"<p>Select the language extensions to be installed then click <b>OK</b>.</p>"
+msgstr "<p>選擇要安裝的語言擴展並點選<b>好</b>。</p>"
+
+#. TRANSLATORS: popup question
+#: src/clients/inst_language_add-on.rb:245
+msgid "Are you sure you want to abort the add-on product installation?"
+msgstr "您確定要中止附加產品安裝嗎？"
+
+#: src/clients/inst_language_add-on.rb:260
+msgid ""
+"There are no selected languages to be installed.\n"
+"Are you sure you want to abort the installation?"
+msgstr ""
+"沒有選擇要安裝的語言。\n"
+"您確定您想要中止安裝嗎？"
+
+#. TRANSLATORS: multiselection box item, %1 stands for 'ar', 'mk', 'zh_TW'
+#. it used only as a fallback
+#: src/clients/inst_language_add-on.rb:329
+msgid "Language %1"
+msgstr "語言 %1"
+
+#. TRANSLATORS: error message - the module does not provide command line interface
+#: src/clients/vendor.rb:34
+msgid "There is no user interface available for this module."
+msgstr "此模組沒有可用的使用者介面。"
+
+#. VENDOR: main screen heading
+#: src/clients/vendor.rb:64
+msgid "Vendor Driver CD"
+msgstr "廠商驅動程式 CD"
+
+#. VENDOR: cant mount /dev/cdrom popup
+#: src/clients/vendor.rb:84
+msgid "Please insert the vendor CD-ROM"
+msgstr "請插入廠商 CD-ROM"
+
+#. VENDOR: vendor cd contains wrong data
+#. VENDOR: vendor cd contains wrong data
+#. VENDOR: vendor cd contains wrong data
+#: src/clients/vendor.rb:130 src/clients/vendor.rb:145
+#: src/clients/vendor.rb:202
+msgid ""
+"Could not find driver data on the CD-ROM.\n"
+"Aborting now."
+msgstr ""
+"在 CD-ROM 上未找到驅動程式資料。\n"
+"將立即中止。"
+
+#. VENDOR: vendor cd doesn't contain data for current system and linux version
+#: src/clients/vendor.rb:177
+msgid ""
+"The CD-ROM data does not match the running Linux system.\n"
+"Aborting now.\n"
+msgstr ""
+"CD-ROM 上的資料與運行中的 Linux 系統不符。\n"
+"將立即中止。\n"
+
+#. VENDOR: dialog heading
+#: src/clients/vendor.rb:262
+msgid "Installing driver..."
+msgstr "正在安裝驅動程式..."
+
+#. VENDOR: popup if installation of driver failed
+#: src/clients/vendor.rb:273
+msgid ""
+"The installation failed.\n"
+"Contact the address on the CD-ROM.\n"
+msgstr ""
+"安裝失敗。\n"
+"請與 CD-ROM 上的地址聯繫。\n"
+
+#. VENDOR: message box with number of drivers installed
+#: src/clients/vendor.rb:287
+msgid "Installed %1 drivers from CD"
+msgstr "已從 CD 上安裝了 %1 驅動程式"
+
+#. VENDOR: message box with error text
+#: src/clients/vendor.rb:292
+msgid ""
+"No driver data found on the CD-ROM.\n"
+"Aborting now."
+msgstr ""
+"在 CD-ROM 上未找到驅動程式資料。\n"
+"將立即中止。"
+
+#. table cell
+#. table cell
+#. List of all selected repositories
+#.
+#.
+#. **Structure:**
+#.
+#. add_on_products = [
+#. $[
+#. "media" : 4, // ID of the source
+#. "product_dir" : "/",
+#. "product" : "openSUSE version XX.Y",
+#. "autoyast_product" : "'PRODUCT' tag for AutoYaST Export",
+#. "media_url" : "Zypp URL of the product",
+#. ],
+#. ...
+#. ]
+#: src/include/add-on/add-on-workflow.rb:163
+#: src/include/add-on/add-on-workflow.rb:582
+#: src/include/add-on/add-on-workflow.rb:1592
+#: src/include/add-on/add-on-workflow.rb:1604
+msgid "No product found in the repository."
+msgstr "在軟體源中未找到產品。"
+
+#. error report
+#: src/include/add-on/add-on-workflow.rb:316
+msgid "No software repository found on medium."
+msgstr "在介質中未找到軟體源。"
+
+#. busy message
+#: src/include/add-on/add-on-workflow.rb:335
+msgid "Initializing new source..."
+msgstr "正在啟始化新資源..."
+
+#: src/include/add-on/add-on-workflow.rb:376
+msgid "URL: %1, Directory: %2"
+msgstr "URL： %1，目錄： %2"
+
+#. dialog caption
+#: src/include/add-on/add-on-workflow.rb:389
+msgid "Software Repository Selection"
+msgstr "軟體源選擇"
+
+#. help text
+#: src/include/add-on/add-on-workflow.rb:391
+msgid ""
+"<p><big><b>Software Repository Selection</b></big><br>\n"
+"Multiple repositories were found on the selected medium.\n"
+"Select the repository to use.</p>\n"
+msgstr ""
+"<p><big><b>軟體源選擇</b></big><br>\n"
+"所選媒體中找到了多個軟體源。\n"
+"請選擇要使用的軟體源。</p>\n"
+
+#: src/include/add-on/add-on-workflow.rb:401
+msgid "Repositories &Found"
+msgstr "找到的軟體源(&F)"
+
+#. if (Stage::initial())
+#. {
+#. if (Popup::ConfirmAbort (`painless))
+#. break;
+#. }
+#. else
+#. {
+#. yes-no popup
+#: src/include/add-on/add-on-workflow.rb:413
+#: src/include/add-on/add-on-workflow.rb:740
+msgid "Really abort add-on product installation?"
+msgstr "真的要中止附加產品安裝嗎？"
+
+#. popup message
+#: src/include/add-on/add-on-workflow.rb:424
+msgid "Select a repository."
+msgstr "請選擇一個軟體源。"
+
+#. message popup
+#: src/include/add-on/add-on-workflow.rb:629
+msgid "Dependencies of the add-on product cannot be fulfilled."
+msgstr "無法滿足附加產品的依賴關係。"
+
+#. dialog caption
+#: src/include/add-on/add-on-workflow.rb:710
+msgid "Product Selection"
+msgstr "產品選擇"
+
+#. multi selection list
+#: src/include/add-on/add-on-workflow.rb:716
+msgid "Available Products"
+msgstr "可用產品"
+
+#. help text
+#: src/include/add-on/add-on-workflow.rb:722
+msgid ""
+"<p><b><big>Product Selection</big></b><br/>\n"
+"Multiple products were found in the repository. Select the products\n"
+"to install.</p>\n"
+msgstr ""
+"<p><b><big>產品選擇</big></b><br>\n"
+"軟體源中找到了多個產品。請選擇要\n"
+"安裝的產品。</p>\n"
+
+#. message popup
+#: src/include/add-on/add-on-workflow.rb:790
+msgid "Dependencies of the selected add-on products cannot be fulfilled."
+msgstr "無法滿足所選附加產品的依賴關係。"
+
+#. Help for add-on products
+#: src/include/add-on/add-on-workflow.rb:912
+msgid ""
+"<p><big><b>Add-On Product Installation</b></big><br/>\n"
+"Here see all add-on products that are selected for installation.\n"
+"To add a new product, click <b>Add</b>. To remove an already added one,\n"
+"select it and click <b>Delete</b>.</p>"
+msgstr ""
+"<p><big><b>附加產品安裝</b></big></br>\n"
+"此處可以檢視選擇安裝的全部附加產品。\n"
+"要添加新產品，請點選<b>添加</b>。要移除已添加的產品，\n"
+"請選擇它並點選<b>刪除</b>。</p>"
+
+#. table cell, %1 is URL, %2 is directory name
+#: src/include/add-on/add-on-workflow.rb:941
+msgid "%1, Directory: %2"
+msgstr "%1，目錄： %2"
+
+#. table header
+#: src/include/add-on/add-on-workflow.rb:967
+msgid "Product"
+msgstr "產品"
+
+#. table header
+#: src/include/add-on/add-on-workflow.rb:969
+msgid "Media"
+msgstr "介質"
+
+#. message report
+#: src/include/add-on/add-on-workflow.rb:1124
+msgid "Select a product to delete."
+msgstr "選擇要刪除的產品。"
+
+#. TRANSLATORS: busy message
+#: src/include/add-on/add-on-workflow.rb:1132
+msgid "Removing selected add-on..."
+msgstr "正在移除所選附加產品..."
+
+#. TRANSLATORS: dialog caption
+#: src/include/add-on/add-on-workflow.rb:1259
+msgid "Installed Add-on Products"
+msgstr "已安裝的附加產品"
+
+#. TRANSLATORS: table header item
+#: src/include/add-on/add-on-workflow.rb:1266
+msgid "Add-on Product"
+msgstr "附加產品"
+
+#. TRANSLATORS: table header item
+#: src/include/add-on/add-on-workflow.rb:1268
+msgid "URL"
+msgstr "URL"
+
+#. TRANSLATORS: push button
+#: src/include/add-on/add-on-workflow.rb:1282
+msgid "Run &Software Manager..."
+msgstr "運行軟體管理器(&S)..."
+
+#. TRANSLATORS: dialog help adp/1
+#: src/include/add-on/add-on-workflow.rb:1286
+msgid "<p>All add-on products installed on your system are displayed.</p>"
+msgstr "<p>這裡顯示了您系統中安裝的全部附加產品.</p>"
+
+#. TRANSLATORS: dialog help adp/2
+#: src/include/add-on/add-on-workflow.rb:1288
+msgid ""
+"<p>Click <b>Add</b> to add a new add-on product, or <b>Delete</b> to remove "
+"an add-on which is in use.</p>"
+msgstr ""
+"<p>用<b>添加</b>來添加一個新的附加產品，或<b>刪除</b>來刪除一個使用中的附近產"
+"品。</p>"
+
+#. no items
+#: src/include/add-on/add-on-workflow.rb:1341
+msgid "<b>Vendor:</b> %1<br>"
+msgstr "<b>廠商：</b> %1<br>"
+
+#: src/include/add-on/add-on-workflow.rb:1342
+msgid "Unknown vendor"
+msgstr "未知廠商"
+
+#: src/include/add-on/add-on-workflow.rb:1345
+msgid "<b>Version:</b> %1<br>"
+msgstr "<b>版本：</b> %1<br>"
+
+#: src/include/add-on/add-on-workflow.rb:1346
+msgid "Unknown version"
+msgstr "未知版本"
+
+#: src/include/add-on/add-on-workflow.rb:1349
+msgid "<b>Repository URL:</b> %1<br>"
+msgstr "<b>軟體源 URL：</b> %1<br>"
+
+#: src/include/add-on/add-on-workflow.rb:1355
+msgid "Unknown repository URL"
+msgstr "未知軟體源 URL"
+
+#: src/include/add-on/add-on-workflow.rb:1362
+msgid "<b>Repository Alias:</b> %1<br>"
+msgstr "<b>軟體源別名：</b> %1<br>"
+
+#. Removes the currently selected Add-On
+#.
+#. @return [Boolean] whether something has changed its state
+#: src/include/add-on/add-on-workflow.rb:1642
+#: src/include/add-on/add-on-workflow.rb:1695
+msgid "Unknown product"
+msgstr "未知產品"
+
+#: src/include/add-on/add-on-workflow.rb:1645
+msgid "Unknown URL"
+msgstr "未知 URL"
+
+#: src/include/add-on/add-on-workflow.rb:1701
+msgid ""
+"Deleting the add-on product %1 may result in removing all the packages\n"
+"installed from this add-on.\n"
+"\n"
+"Are sure you want to delete it?"
+msgstr ""
+"刪除附加產品 %1 可能導致移除從此附加產品安裝的全部軟體包。\n"
+"\n"
+"您確定想要刪除它嗎？"
+
+#. TRANSLATORS: busy popup message
+#: src/include/add-on/add-on-workflow.rb:1718
+msgid "Removing product dependencies..."
+msgstr "正在移除產品依賴..."
+
+#. TRANSLATORS: pop-up headline
+#: src/include/add-on/misc.rb:72
+msgid "Warning: Not enough memory!"
+msgstr "警告：內存不足！"
+
+#. TRANSLATORS: pop-up question
+#: src/include/add-on/misc.rb:74
+msgid ""
+"Your system does not seem to have enough memory to use add-on products\n"
+"during installation. You can enable add-on products later when the\n"
+"system is running.\n"
+"\n"
+"Do you want to skip using add-on products?"
+msgstr ""
+"您的系統似乎沒有足夠的內存在安裝過程中使用附加產品。\n"
+"您可稍後在系統運行時啟用附加產品安裝。\n"
+"\n"
+"您想要跳過使用附加產品嗎？"
+
+#~ msgid "&Select Language Extensions to be Installed"
+#~ msgstr "選擇要安裝的語言擴展(&S)"
+
+#~ msgid ""
+#~ "<p>Select the language extensions to be installed and then click the "
+#~ "<b>OK</b> button.</p>"
+#~ msgstr "<p>選擇要安裝的語言擴展，然後單擊<b>接受</b>按鈕。</p>"
+
+#~ msgid "Reading packages available at the installation repositories..."
+#~ msgstr "正在讀取安裝源中可用的軟體包..."
+
+#~ msgid "Failed to initialize the software repository."
+#~ msgstr "啟始化軟體安裝源失敗。"
+
+#~ msgid ""
+#~ "The product on the media is already installed\n"
+#~ "or selected for installation."
+#~ msgstr ""
+#~ "媒體上的產品已安裝\n"
+#~ "或已選擇進行安裝。"
+
+#~ msgid "Add-On &Products"
+#~ msgstr "擴充產品(&P)"
+
+#, fuzzy
+#~ msgid "Run &Package Manager..."
+#~ msgstr "包管理器(&K)"
+
+#~ msgid "&Scan Using SLP..."
+#~ msgstr "使用 SLP 掃描(&S)..."
+
+#~ msgid "&FTP..."
+#~ msgstr "FTP(&F)..."
+
+#~ msgid "&HTTP..."
+#~ msgstr "HTTP(&H)..."
+
+#~ msgid "HTT&PS..."
+#~ msgstr "HTTPS(&P)..."
+
+#~ msgid "&SMB/CIFS"
+#~ msgstr "SMB/CIFS(&S)"
+
+#~ msgid "&NFS..."
+#~ msgstr "NFS(&N)..."
+
+#~ msgid "&CD..."
+#~ msgstr "CD(&C)..."
+
+#~ msgid "&DVD..."
+#~ msgstr "DVD(&D)..."
+
+#~ msgid "&Local Directory..."
+#~ msgstr "本地目錄(&L)..."
+
+#~ msgid "Specify &URL..."
+#~ msgstr "指定 URL(&U)..."
+
+#~ msgid "Add-On Product Media"
+#~ msgstr "附加產品媒體"
+
+#~ msgid ""
+#~ "<p><big><b>Software Repository</b></big><br>\n"
+#~ "Add-on products can be installed from CD, over a\n"
+#~ "network, or from the hard disk.</p>\n"
+#~ msgstr ""
+#~ "<p><big><b>軟體安裝源</b></big><br>\n"
+#~ "附加產品可以從 CD、網路\n"
+#~ "或硬碟進行安裝。</p>\n"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "To install add-on product from <b>CD</b>,\n"
+#~ "have the product CD set or the DVD available.</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "要從 <b>CD</b> 安裝附加產品，\n"
+#~ "應有產品 CD 集或 DVD 可用。</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "The product CDs can be copied to the hard disk.\n"
+#~ "Insert the path where the first\n"
+#~ "CD is located, for example, /data1/<b>CD1</b>.\n"
+#~ "Only the base path is required if all CDs are copied\n"
+#~ "into one directory.</p>\n"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "可將產品 CD 複製到硬碟上。\n"
+#~ " 插入第一張 CD 所在的\n"
+#~ " 路徑，例如 /data1/<b>CD1</b>。\n"
+#~ " 如果將所有 CD 都複製進一個目錄，\n"
+#~ "僅需要基本路徑。</p>\n"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "Network installation requires a working network connection.\n"
+#~ "Specify the directory where the packages from\n"
+#~ "the first CD are located, such as /data1/CD1.</p>\n"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "網路安裝需要有效的網路連線。\n"
+#~ "指定第一張 CD 中的包所在的\n"
+#~ " 目錄，例如 /data1/CD1。</p>\n"
+
+#~ msgid ""
+#~ "Cannot search for SLP installation repositories\n"
+#~ "without having %1 package installed"
+#~ msgstr ""
+#~ "沒有安裝 %1 軟體包\n"
+#~ "就無法搜索 SLP 安裝源"
+
+#~ msgid "Insert the add-on product CD"
+#~ msgstr "插入附加產品 CD"
+
+#~ msgid "Insert the add-on product DVD"
+#~ msgstr "插入附加產品 DVD"
+

@@ -1,0 +1,139 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-01-30 16:33+0100\n"
+"PO-Revision-Date: 2013-02-01 21:02+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: src/dialogs.ycp:77 src/texts.ycp:97
+msgid "Send Profile"
+msgstr "發送方案"
+
+#: src/dialogs.ycp:78 src/texts.ycp:98
+msgid "Show Profile"
+msgstr "顯示方案"
+
+#. (bnc#441221) fix typo
+#: src/dialogs.ycp:115
+msgid "An error occurred while gathering system information."
+msgstr "蒐集系統資訊時出錯。"
+
+#: src/dialogs.ycp:116
+msgid "Make sure that the smolt package is installed."
+msgstr "請確認已經安裝了 smolt 軟體包。"
+
+#: src/dialogs.ycp:126
+msgid "System profile has been successfully sent."
+msgstr "系統方案發送成功。"
+
+#: src/dialogs.ycp:127
+msgid ""
+"At the end of the system profile details, find a URL and your password to edit\n"
+"and comment your profile online.\n"
+msgstr "在方案細節的最後，找到一個 URL 與您的密碼來線上編輯與評論您的方案。\n"
+
+#: src/texts.ycp:56
+msgid "Automatically send system profile monthly (recommended)"
+msgstr "按月自動發送系統方案 (推薦)"
+
+#: src/texts.ycp:62
+msgid ""
+"Driver development is prioritized according to hardware popularity.\n"
+"Please send your system profile to influence this work.\n"
+msgstr ""
+"驅動開發是根據硬體歡迎度來決定優先順序的。\n"
+"請發送您的系統方案以影響開發優先順序。\n"
+
+#: src/texts.ycp:65
+msgid ""
+"Driver development is prioritized according to hardware popularity.\n"
+"Please send your system profile to a community database to help\n"
+"creating current statistics.\n"
+msgstr ""
+"驅動開發是根據硬體歡迎度來決定優先順序的。\n"
+"請發送您的系統方案到社群資料庫來幫助創建當前統計。\n"
+
+#: src/texts.ycp:69
+msgid ""
+"Driver development is prioritized according to hardware popularity.\n"
+"The community project Smolt creates statistics from contributed\n"
+"system profiles. Please send your system profile to support Smolt.\n"
+msgstr ""
+"驅動開發是根據硬體歡迎度來決定優先順序的。\n"
+"社群項目 Smolt 從貢獻的系統方案裡創建統計。\n"
+"請發送您的系統方案以支援 Smolt。\n"
+
+#: src/texts.ycp:80
+msgid "Smolt"
+msgstr "Smolt"
+
+#: src/texts.ycp:81
+msgid "Smolt Project"
+msgstr "Smolt 項目"
+
+#: src/texts.ycp:82
+msgid "System Profile"
+msgstr "系統方案"
+
+#: src/texts.ycp:83
+msgid "Send System Profile"
+msgstr "發送系統方案"
+
+#: src/texts.ycp:90
+msgid "<p>Linux driver development is prioritized according to hardware popularity. You can submit your system profile to a community database to influence this work.</p>"
+msgstr "<p>Linux 驅動開發是根據硬體歡迎度來決定優先順序的。您可以提交您的系統方案到社群資料庫來影響開發優先順序。</p>"
+
+#: src/texts.ycp:91
+msgid "<p>To keep your system profile updated in this database, activate sending the data monthly.</p>"
+msgstr "<p>為了保持您的系統方案在此資料庫中的最新狀態，請啟用按月發送資料。</p>"
+
+#: src/texts.ycp:92
+msgid "<p>Your system profile will be transmitted to the smolt project. Visit <b>http://smolts.org</b> for details.</p>"
+msgstr "<p>您的系統方案將被傳輸到 smolt 項目。詳情訪問<b>http://smolts.org</b>。</p>"
+
+#: src/texts.ycp:93
+msgid "<p>Once you sent your profile manually, you will receive a URL and a password to edit and comment your profile online. Press <b>Send Profile</b> to send the profile manually.</p>"
+msgstr "<p>一旦您手動發送了方案，您會收到一個 URL 與密碼以線上編輯與評論您的方案。按<b>發送方案</b>來手動發送方案。</p>"
+
+#: src/texts.ycp:99
+msgid "Send Profile Now"
+msgstr "立即發送方案"
+
+#: src/texts.ycp:100
+msgid "Send Profile Once"
+msgstr "發送一次方案"
+
+#: src/texts.ycp:101
+msgid "Send profile monthly."
+msgstr "按月發送方案。"
+
+#: src/texts.ycp:102
+msgid "Do not send profile monthly."
+msgstr "不按月發送方案。"
+
+#: src/texts.ycp:103
+msgid "An error occurred and the system profile has not been sent."
+msgstr "出現錯誤，系統方案沒有發送。"
+
+#: src/texts.ycp:104
+msgid "Maybe your network is disconnected or the target server is down."
+msgstr "可能您的網路沒有連線或者目標伺服器怠機了。"
+
+#~ msgid "An error occrred while gathering system information."
+#~ msgstr "蒐集系統資訊時發生錯誤。"
+

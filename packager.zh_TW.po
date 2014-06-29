@@ -1,0 +1,3119 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Thruth Wang <lihaow@opera.com>, 2007, 2008.
+# Eric Shan <ericalways@gmail.com>, 2008, 2012, 2013.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: packager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:43+0200\n"
+"PO-Revision-Date: 2014-06-24 15:12+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. module description
+#: src/clients/checkmedia.rb:37
+msgid "Check CD or DVD media integrity"
+msgstr "檢查 CD 或 DVD 介質完整性"
+
+#. dialog caption
+#: src/clients/do_not_show_again_editor.rb:67
+msgid "Editor for 'Do Not Show Again'"
+msgstr "\"不要再次顯示\" 編輯器"
+
+#. help text
+#: src/clients/do_not_show_again_editor.rb:70
+msgid ""
+"<p>Remove entries by selecting them in the table and clicking the \n"
+"<b>Delete</b> button. The entries will be removed immediately from \n"
+"the current configuration.</p>\n"
+msgstr "<p>在表中選擇項，點選<b>刪除</b>按鈕可立即從當前配置中移除該項。</p>\n"
+
+#: src/clients/do_not_show_again_editor.rb:79
+msgid "Type"
+msgstr "類型"
+
+#: src/clients/do_not_show_again_editor.rb:79
+msgid "Popup Ident."
+msgstr "彈出身份"
+
+#: src/clients/do_not_show_again_editor.rb:79
+msgid "Additional Info"
+msgstr "額外資訊"
+
+#. FIXME: Add filter
+#. `PushButton(`id(`filter), _("&Filter...")),
+#. `HSpacing(2),
+#: src/clients/do_not_show_again_editor.rb:86
+msgid "&Delete"
+msgstr "刪除(&D)"
+
+#. error popup
+#: src/clients/inst_custom_packages.rb:36
+msgid "Could not read package information."
+msgstr "無法讀取軟體包資訊。"
+
+#. explanation text for GNOME
+#: src/clients/inst_desktop.rb:55
+msgid ""
+"GNOME is a powerful and intuitive desktop\n"
+"environment that uses Evolution as mailer,\n"
+"Firefox as browser, and Nautilus as file manager.\n"
+msgstr ""
+"GNOME 是一個強大且直觀的桌面環境，\n"
+"它使用 Evolution 作為郵件應用，Firefox 作為瀏覽器，Nautilus 作為檔案管理"
+"器。\n"
+
+#. explanation text for KDE
+#: src/clients/inst_desktop.rb:63
+msgid ""
+"KDE is a powerful and intuitive desktop\n"
+"environment that uses Kontact as mailer,\n"
+"Dolphin as file manager, and offers\n"
+"both Firefox and Konqueror as Web browsers.\n"
+msgstr ""
+"KDE 是一個強大且直觀的桌面環境，\n"
+"它使用 Kontact 作為郵件應用，Dolphin 作為檔案管理器，\n"
+"並同時提供 Firefox 與 Konqueror 作為網路瀏覽器。\n"
+
+#. help text 1/3
+#: src/clients/inst_desktop.rb:71
+msgid ""
+"<p>Both <b>KDE</b> and <b>GNOME</b> are powerful and intuitive\n"
+"desktop environments. They combine ease of use\n"
+"and attractive graphical interfaces with their\n"
+"own sets of perfectly integrated applications.</p>"
+msgstr ""
+"<p><b>KDE</b> 與 <b>GNOME</b> 都是強大且直觀的桌面環境，\n"
+"它們將易用性、誘人的圖形介面與它們自身完美整合的應用程式結合了起來。</p>"
+
+#. help text 2/3
+#: src/clients/inst_desktop.rb:78
+msgid ""
+"<p>Choosing the default <b>GNOME</b> or <b>KDE</b> desktop\n"
+"environment installs a broad set of the\n"
+"most important desktop applications on your\n"
+"system.</p>"
+msgstr ""
+"<p>選擇默認的 <b>GNOME</b> 或 <b>KDE</b> 桌面環境\n"
+"將在您的系統上安裝一大籃子最關鍵的桌面應用程式。\n"
+"</p>"
+
+#. help text 3/3
+#: src/clients/inst_desktop.rb:85
+msgid ""
+"<p>Choose <b>Other</b> then select from\n"
+"an alternative, such as a text-only system or a minimal graphical\n"
+"system with a basic window manager.</p>"
+msgstr ""
+"<p>選擇<b>其它</b>然後選擇一個替代桌面，\n"
+"諸如命令列系統或攜帶一個基本視窗管理器的最小圖形系統。</p>"
+
+#. radio button
+#: src/clients/inst_desktop.rb:97
+msgid "&KDE"
+msgstr "&KDE"
+
+#. radio button
+#: src/clients/inst_desktop.rb:124
+msgid "&GNOME"
+msgstr "&GNOME"
+
+#. radio button
+#: src/clients/inst_desktop.rb:162
+msgid "&Other"
+msgstr "其它(&O)"
+
+#. dialog caption
+#: src/clients/inst_desktop.rb:185
+msgid "Desktop Selection"
+msgstr "桌面選擇"
+
+#. by default, nothing is selected, enabling next
+#. handling [Next] button
+#: src/clients/inst_desktop.rb:220
+msgid ""
+"No desktop was selected. Select the\n"
+"desktop to install."
+msgstr "未選擇桌面。請選擇要安裝的桌面。"
+
+#. radio button
+#: src/clients/inst_desktop.rb:273
+msgid "&Minimal Graphical System"
+msgstr "最小圖形系統(&M)"
+
+#. radio button
+#: src/clients/inst_desktop.rb:282
+msgid "&Text Mode"
+msgstr "文字模式(&T)"
+
+#. an error popup
+#. an error popup
+#. an error popup
+#. an error popup
+#: src/clients/inst_kickoff.rb:490 src/clients/inst_kickoff.rb:573
+#: src/clients/inst_kickoff.rb:649 src/clients/inst_kickoff.rb:706
+msgid "Backup of %1 failed. See %2 for details."
+msgstr "備份 %1 失敗。細節請參考 %2。"
+
+#. dialog heading
+#: src/clients/inst_mediacopy.rb:49
+msgid "Copy Installation Media"
+msgstr "複製安裝介質"
+
+#. help text
+#: src/clients/inst_mediacopy.rb:51
+msgid ""
+"<p>The installation CDs will be copied into the system\n"
+"to create a repository that can be used to install\n"
+"other systems.</p>\n"
+msgstr "<p>安裝 CD 將被複制到系統中以創建一個可用於安裝其它系統的軟體源。</p>\n"
+
+#. label for showing repositories
+#: src/clients/inst_mediacopy.rb:57
+msgid "Registered Repositories"
+msgstr "已註冊軟體源"
+
+#. force minimum width
+#. table header - name of the repo
+#. table header - name of the repo
+#: src/clients/inst_mediacopy.rb:65 src/clients/repositories.rb:674
+#: src/clients/repositories.rb:687
+#: src/include/packager/key_manager_dialogs.rb:306
+msgid "Name"
+msgstr "名稱"
+
+#: src/clients/inst_mediacopy.rb:65
+msgid "Version"
+msgstr "版本"
+
+#. feedback popup 1/2
+#: src/clients/inst_mediacopy.rb:118
+msgid "Copying CD contents to a local directory..."
+msgstr "正在將 CD 內容複製到本地資料夾..."
+
+#. feedback popup 2/2
+#: src/clients/inst_mediacopy.rb:120
+msgid "Please wait..."
+msgstr "請稍候..."
+
+#. TRANSLATORS: popup header
+#. TRANSLATORS: popup header
+#: src/clients/inst_productsources.rb:268
+#: src/clients/inst_productsources.rb:1343
+msgid "Aborting Configuration of Online Repository"
+msgstr "中止線上軟體源配置"
+
+#. TRANSLATORS: popup question
+#. TRANSLATORS: popup question
+#: src/clients/inst_productsources.rb:270
+#: src/clients/inst_productsources.rb:1345
+msgid "Are you sure you want to abort the configuration?"
+msgstr "您確定您想要中止配置嗎？"
+
+#. TRANSLATORS: popup header
+#: src/clients/inst_productsources.rb:302
+msgid "Network is not configured."
+msgstr "網路尚未配置。"
+
+#. TRANSLATORS: popup question
+#: src/clients/inst_productsources.rb:304
+msgid ""
+"Online sources defined by product require an Internet connection.\n"
+"\n"
+"Would you like to configure it?"
+msgstr ""
+"產品定義的線上資源需要一個網際網路連線。\n"
+"\n"
+"您想要配置網路嗎？"
+
+#. TRANSLATORS: progress step
+#: src/clients/inst_productsources.rb:643
+msgid "Check network configuration"
+msgstr "檢查網路配置"
+
+#. TRANSLATORS: progress step
+#: src/clients/inst_productsources.rb:645
+msgid "Download list of online repositories"
+msgstr "下載線上軟體源列表"
+
+#. TRANSLATORS: progress step
+#: src/clients/inst_productsources.rb:650
+msgid "Checking network configuration..."
+msgstr "正在檢查網路配置..."
+
+#. TRANSLATORS: progress step
+#: src/clients/inst_productsources.rb:652
+msgid "Downloading list of online repositories..."
+msgstr "正在下載線上軟體源列表..."
+
+#. TRANSLATORS: progress step
+#: src/clients/inst_productsources.rb:661
+msgid "Initialize the repository manager"
+msgstr "啟始化軟體源管理器"
+
+#. TRANSLATORS: progress step
+#: src/clients/inst_productsources.rb:666
+msgid "Initializing the repository manager..."
+msgstr "正在啟始化軟體源管理器..."
+
+#. TRANSLATORS: dialog caption
+#: src/clients/inst_productsources.rb:676
+msgid "Reading List of Online Repositories"
+msgstr "讀取線上軟體源列表"
+
+#. TRANSLATORS: dialog help
+#: src/clients/inst_productsources.rb:682
+msgid ""
+"<p>The packager is being initialized and \n"
+"the list of servers downloaded from the Web.</p>\n"
+msgstr "<p>正在啟始化包管理器並從網路下載伺服器列表。</p>\n"
+
+#. TRANSLATORS: error report
+#: src/clients/inst_productsources.rb:714
+msgid ""
+"Cannot download list of repositories,\n"
+"no network configured."
+msgstr "無法下載軟體源列表，尚未配置網路。"
+
+#. TRANSLATORS: light-warning message
+#: src/clients/inst_productsources.rb:792
+msgid ""
+"No product URL defined from which to download\n"
+"list of repositories.\n"
+msgstr "未定義從其下載軟體源列表的產品 URL。\n"
+
+#. TRANSLATORS: warning message
+#: src/clients/inst_productsources.rb:806
+msgid ""
+"Unable to download list of repositories\n"
+"or no repositories defined."
+msgstr "無法下載軟體源列表或尚未定義軟體源。"
+
+#. TRANSLATORS: HTML-formatted summary text
+#. %1 is replaced with "Yes" (currently only "Yes")
+#. see *4
+#: src/clients/inst_productsources.rb:912
+msgid "<b>Recommended:</b> %1<br>"
+msgstr "<b>推薦：</b>%1<br>"
+
+#. TRANSLATORS: used for "Recommended: Yes" (see *4)
+#: src/clients/inst_productsources.rb:914
+msgid "Yes"
+msgstr "是"
+
+#. TRANSLATORS: This is a complex HTML-formatted information about selecetd external repository
+#. It contains "key: value" pair, one per line, separated by <br> tags
+#. %1 is replaced with an URL of the selected repository
+#. %2 is replaced with an URL from which we've got this repository information
+#. %3 is replaced with a summary text for the selected repository
+#. %4 is replaced with a description text for the selected repository
+#. %5 is replaced with an emty string or "Recommended: Yes" (*4)
+#: src/clients/inst_productsources.rb:926
+msgid ""
+"<p>\n"
+"<b>URL:</b> %1<br>\n"
+"<b>Linked from:</b> %2<br>\n"
+"<b>Summary:</b> %3<br>\n"
+"<b>Description:</b> %4<br>\n"
+"%5\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b>URL：</b> %1<br>\n"
+"<b>連結自：</b> %2<br>\n"
+"<b>摘要：</b> %3<br>\n"
+"<b>描述：</b> %4<br>\n"
+"%5\n"
+"</p>"
+
+#. TRANSLATORS: dialog caption
+#: src/clients/inst_productsources.rb:1234
+msgid "List of Online Repositories"
+msgstr "線上軟體源列表"
+
+#. TRANSLATORS: push button
+#. push button
+#: src/clients/inst_productsources.rb:1241 src/modules/SourceManagerSLP.rb:111
+msgid "&Filter"
+msgstr "過濾器(&F)"
+
+#. TRANSLATORS: multi-selection box
+#: src/clients/inst_productsources.rb:1251
+msgid "&List of Repositories"
+msgstr "軟體源列表(&L)"
+
+#. TRANSLATORS: Rich-text widget (HTML)
+#: src/clients/inst_productsources.rb:1257
+msgid "Repository Description"
+msgstr "軟體源描述"
+
+#. TRANSLATORS: dialog help 1/3
+#: src/clients/inst_productsources.rb:1261
+msgid ""
+"<p>List of default online repositories.\n"
+"Click on a repository for details.</p>\n"
+msgstr ""
+"<p>默認線上軟體源列表。\n"
+"點選軟體源可顯示細節。</p>\n"
+
+#. TRANSLATORS: dialog help 2/3 (version for installation)
+#: src/clients/inst_productsources.rb:1266
+msgid ""
+"<p>Select the online repositories you want to use then click <b>Next</b>.</"
+"p>\n"
+msgstr "<p>選擇您想要使用的線上軟體源並點選<b>下一步</b>。</p>\n"
+
+#. TRANSLATORS: dialog help 2/3 (version for running system)
+#: src/clients/inst_productsources.rb:1270
+msgid ""
+"<p>Select the online repositories you want to use then click <b>Finish</b>.</"
+"p>\n"
+msgstr "<p>選擇您想要使用的線上軟體源並點選<b>完成</b>。</p>\n"
+
+#. TRANSLATORS: dialog help 3/3
+#: src/clients/inst_productsources.rb:1275
+msgid "<p>To remove a used repository, simply deselect it.</p>"
+msgstr "<p>要移除一個用過的軟體源，僅需反選它。</p>"
+
+#. TRANSLATORS: dialog caption
+#: src/clients/inst_productsources.rb:1371
+msgid "Writing List of Online Repositories"
+msgstr "寫入線上軟體源列表"
+
+#. TRANSLATORS: dialog help
+#. TRANSLATORS: dialog help
+#: src/clients/inst_productsources.rb:1377
+#: src/include/packager/repositories_include.rb:91
+msgid "<p>The repository manager is downloading repository details...</p>"
+msgstr "<p>軟體源管理器正在下載軟體源詳情...</p>"
+
+#. TRANSLATORS: pop-up error message
+#. %1 is replaced with a repository name or URL
+#. TRANSLATORS: pop-up error message
+#. %1 is replaced with a repository name or URL
+#. TRANSLATORS: pop-up error message
+#. %1 is replaced with a repository name or URL
+#: src/clients/inst_productsources.rb:1469
+#: src/clients/inst_productsources.rb:1493
+#: src/clients/inst_productsources.rb:1511
+msgid "Adding repository %1 failed."
+msgstr "添加軟體源 %1 失敗。"
+
+#. TRANSLATORS: progress step
+#: src/clients/inst_productsources.rb:1588
+msgid "Delete deselected online repositories"
+msgstr "刪除未選的線上軟體源"
+
+#. TRANSLATORS: progress step
+#: src/clients/inst_productsources.rb:1590
+msgid "Deleting deselected online repositories..."
+msgstr "正在刪除未選的線上軟體源..."
+
+#. TRANSLATORS: progress step
+#: src/clients/inst_productsources.rb:1598
+msgid "Add all selected online repositories"
+msgstr "添加全部所選線上軟體源"
+
+#. TRANSLATORS: progress step
+#: src/clients/inst_productsources.rb:1603
+msgid "Adding all selected online repositories..."
+msgstr "正在添加全部所選線上軟體源..."
+
+#. TRANSLATORS: progress step
+#. %1 is replaced with repository name or URL
+#: src/clients/inst_productsources.rb:1612
+msgid "Add repository: %1"
+msgstr "添加軟體源: %1"
+
+#. TRANSLATORS: progress step,
+#. %1 is replaced with repository name or URL
+#: src/clients/inst_productsources.rb:1621
+msgid "Adding repository: %1 ..."
+msgstr "正在添加軟體源：%1..."
+
+#. less than LOW_MEMORY_MIB RAM
+#: src/clients/inst_productsources.rb:1733
+msgid ""
+"Low memory detected.\n"
+"\n"
+"Using online repositories during initial installation with less than\n"
+"%dMiB system memory is not recommended.\n"
+"\n"
+"The installer may crash or freeze if the additional package data\n"
+"need too much memory.\n"
+"\n"
+"Using the online repositories later in the installed system is\n"
+"recommended in this case."
+msgstr ""
+"檢測到內存過小。\n"
+"\n"
+"若系統內存小於 %dMib 則不推薦在初始安裝期間使用線上軟體源。\n"
+"\n"
+"若額外軟體包資料需要太多內存則安裝器可能崩潰或僵死。\n"
+"\n"
+"在這種情況下推薦稍候在安裝好的系統上再使用線上軟體源。"
+
+#. continue-cancel popup
+#: src/clients/inst_rpmcopy.rb:81
+msgid "Initializing the target directory failed."
+msgstr "啟始化目標資料夾失敗。"
+
+#. re-initialize package information
+#. force reinitialization
+#: src/clients/inst_rpmcopy.rb:129 src/clients/sw_single.rb:744
+msgid "Installing Packages..."
+msgstr "正在安裝軟體包..."
+
+#. error report, %1 is number
+#: src/clients/inst_rpmcopy.rb:322
+msgid "Failed to select %1 packages for installation."
+msgstr "未能選擇安裝 %1 個軟體包。"
+
+#. set SoftLock to avoid the installation of recommended patterns (#159466)
+#: src/clients/inst_rpmcopy.rb:358
+msgid "Could not set patterns: %1."
+msgstr "無法設定軟體集：%1。"
+
+#. Solve dependencies
+#: src/clients/inst_rpmcopy.rb:368
+msgid ""
+"The package resolver run failed. Check your software section in the AutoYaST "
+"profile."
+msgstr "軟體包依賴關係解決器運行失敗。 請檢查您的 AutoYaST 方案中的軟體部分。"
+
+#. error message - displayed in a scrollable text area
+#. %1 - an error message (details)
+#: src/clients/inst_rpmcopy.rb:416
+msgid ""
+"Installation failed.\n"
+"\n"
+"Details:\n"
+"%1\n"
+"\n"
+"Package installation will be aborted.\n"
+msgstr ""
+"安裝失敗。\n"
+"\n"
+"細節：\n"
+"%1\n"
+"\n"
+"將中止軟體包安裝。\n"
+
+#. dialog caption
+#. dialog caption
+#. dialog caption
+#: src/clients/key_manager.rb:70 src/clients/repositories.rb:1809
+#: src/modules/AddOnProduct.rb:668
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. intermediate popup while initializing internal packagemanagement
+#: src/clients/media_proposal.rb:39
+msgid "Reading package information..."
+msgstr "正在讀取軟體包資訊..."
+
+#. Proposal for system to update, part of the richtext
+#: src/clients/media_proposal.rb:52
+msgid "No Valid Installation Media"
+msgstr "無有效安裝介質"
+
+#. this is a heading
+#: src/clients/media_proposal.rb:87
+msgid "Installation Media"
+msgstr "安裝介質"
+
+#. this is a menu entry
+#: src/clients/media_proposal.rb:89
+msgid "&Media"
+msgstr "介質(&M)"
+
+#. progress step title
+#: src/clients/pkg_finish.rb:50
+msgid "Saving the software manager configuration..."
+msgstr "正在儲存軟體管理器配置..."
+
+#. default (minimal) priority of a repository
+#: src/clients/repositories.rb:55
+msgid "&Priority"
+msgstr "優先順序(&P)"
+
+#: src/clients/repositories.rb:57
+msgid "Keep Downloaded Packages"
+msgstr "保留已下載的軟體包"
+
+#. Command line help text for the repository module, %1 is "zypper"
+#: src/clients/repositories.rb:72
+msgid ""
+"Installation Repositories - This module does not support the command line "
+"interface, use '%1' instead."
+msgstr "安裝軟體源 － 此模組不支援命令列介面，請使用 '%1' 代替。"
+
+#. pad to 3 characters
+#: src/clients/repositories.rb:166
+msgid "Default"
+msgstr "默認"
+
+#. unkown name (alias) of the source
+#. get the editable propertis from 'source' parameter,
+#. get the fixed propertis from the package manager
+#: src/clients/repositories.rb:195 src/clients/repositories.rb:260
+msgid "Unknown Name"
+msgstr "未知名稱"
+
+#. displaye only repositories from the selected service
+#: src/clients/repositories.rb:326 src/clients/repositories.rb:362
+#: src/clients/repositories.rb:368 src/modules/SourceManager.rb:436
+msgid "Unknown"
+msgstr "未知"
+
+#. label to be used instead of URL if not found
+#: src/clients/repositories.rb:328 src/clients/repositories.rb:361
+#: src/modules/AddOnProduct.rb:1308
+msgid "URL: %1"
+msgstr "URL：%1"
+
+#. heading - in case repo name not found
+#: src/clients/repositories.rb:357
+msgid "Unknown Repository Name"
+msgstr "未知軟體源名稱"
+
+#. label, %1 is repo category (eg. YUM)
+#: src/clients/repositories.rb:367
+msgid "Category: %1"
+msgstr "分類：%1"
+
+#. label, %1 is repo category (eg. YUM)
+#: src/clients/repositories.rb:377
+msgid "Service: %1"
+msgstr "服務：%1"
+
+#. #176013
+#: src/clients/repositories.rb:625
+msgid "All repositories"
+msgstr "全部軟體源"
+
+#: src/clients/repositories.rb:628
+msgid "All services"
+msgstr "全部服務"
+
+#: src/clients/repositories.rb:637
+msgid "Service '%1'"
+msgstr "服務 '%1'"
+
+#. combobox label
+#: src/clients/repositories.rb:652
+msgid "View"
+msgstr "檢視"
+
+#. table header - priority of the repository - keep the translation as short as possible!
+#: src/clients/repositories.rb:667
+msgid "Priority"
+msgstr "優先順序"
+
+#. table header - is the repo enabled? - keep the translation as short as possible!
+#. table header - is the repo enabled? - keep the translation as short as possible!
+#. status info, to be used inside summary
+#: src/clients/repositories.rb:669 src/clients/repositories.rb:682
+#: src/modules/SourceManager.rb:393
+msgid "Enabled"
+msgstr "已啟用"
+
+#. table header - is autorefresh enabled for the repo?
+#. keep the translation as short as possible!
+#. table header - is autorefresh enabled for the repo?
+#. keep the translation as short as possible!
+#: src/clients/repositories.rb:672 src/clients/repositories.rb:685
+msgid "Autorefresh"
+msgstr "自動重新整理"
+
+#. table header - service to which the repo belongs
+#: src/clients/repositories.rb:676
+msgid "Service"
+msgstr "服務"
+
+#. table header - URL of the repo
+#. table header - URL of the repo
+#: src/clients/repositories.rb:678 src/clients/repositories.rb:689
+msgid "URL"
+msgstr "URL"
+
+#. push button - change URL of the selected repository
+#: src/clients/repositories.rb:789
+msgid "&Replace..."
+msgstr "替換(&R)..."
+
+#. push button - refresh the selected repository now
+#: src/clients/repositories.rb:791
+msgid "Re&fresh Selected"
+msgstr "重新整理所選(&F)"
+
+#. push button - disable/enable the selected repository
+#: src/clients/repositories.rb:793
+msgid "Status &on or off"
+msgstr "狀態(開或關)(&O)"
+
+#. push button - disable/enable automatic refresh of the selected repository
+#: src/clients/repositories.rb:795
+msgid "Refre&sh on or off"
+msgstr "自動重新整理或禁止重新整理(&S)"
+
+#. push button - set name of the selected repository
+#: src/clients/repositories.rb:797
+msgid "Set &Name..."
+msgstr "設定名稱(&N)..."
+
+#. label
+#: src/clients/repositories.rb:804
+msgid "Properties"
+msgstr "屬性"
+
+#. check box
+#: src/clients/repositories.rb:809
+msgid "&Enabled"
+msgstr "已啟用(&E)"
+
+#. check box
+#: src/clients/repositories.rb:815
+msgid "Automatically &Refresh"
+msgstr "自動重新整理(&R)"
+
+#. push button label
+#: src/clients/repositories.rb:853
+msgid "&GPG Keys..."
+msgstr "&GPG 金鑰..."
+
+#. menu button label
+#: src/clients/repositories.rb:858
+msgid "Refresh"
+msgstr "重新整理"
+
+#. menu button label
+#: src/clients/repositories.rb:862
+msgid "Refresh all Autor&efreshed"
+msgstr "重新整理全部自動重新整理的軟體源(&E)"
+
+#. menu button label
+#: src/clients/repositories.rb:864
+msgid "Refresh all &Enabled"
+msgstr "重新整理全部啟用的軟體源(&E)"
+
+#. dialog caption
+#: src/clients/repositories.rb:871
+msgid "Configured Software Repositories"
+msgstr "已配置軟體源"
+
+#. help
+#: src/clients/repositories.rb:874
+msgid ""
+"<p>\n"
+"Manage configured software repositories and services.</p>\n"
+msgstr ""
+"<p>\n"
+"管理已配置的軟體源與服務。</p>\n"
+
+#: src/clients/repositories.rb:880
+msgid ""
+"<P>A <B>service</B> or <B>Repository Index Service (RIS) </B> is a protocol "
+"for package repository management. A service can offer one or more software "
+"repositories which can be dynamically changed by the service administrator.</"
+"P>"
+msgstr ""
+"<P><B>服務</B>或<B>軟體源索引服務(RIS)</B>是軟體源管理的一種協議。一個服務可"
+"提供一個或多個軟體源，它們都可被服務管理員動態調整。</P>"
+
+#: src/clients/repositories.rb:887
+msgid ""
+"<p>\n"
+"<b>Adding a new Repository or a Service</b><br>\n"
+"To add a new repository, use <b>Add</b> and specify the software repository "
+"or service.\n"
+"YaST will automatically detect whether a service or a repository is "
+"available at the entered location.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b>添加新的軟體源或服務</b><br>\n"
+"要添加新的軟體源，請使用<b>添加</b>並指定軟體源或服務。\n"
+"YaST 將自動檢測輸入的位置是服務還是軟體源。\n"
+"</p>\n"
+
+#. help, continued
+#: src/clients/repositories.rb:899
+msgid ""
+"<p>\n"
+"To install packages from <b>CD</b>,\n"
+"have the CD set or the DVD available.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"要從 <b>CD</b> 安裝軟體包，\n"
+"請準備好 CD 集或 DVD。\n"
+"</p>\n"
+
+#. help, continued
+#: src/clients/repositories.rb:910
+msgid ""
+"<p>\n"
+"The CDs can be copied to <b>hard disk</b>\n"
+"and then used as a repository.\n"
+"Insert the path name where the first\n"
+"CD is located, for example, /data1/<b>CD1</b>.\n"
+"Only the base path is required if all CDs are copied\n"
+"into one directory.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"可將 CD 複製到<b>硬碟</b>上，然後使用該硬碟作為軟體源。\n"
+"請輸入第一張 CD 所在的路徑名，例如，/data1/<b>CD1</b>。\n"
+"若已將全部 CD 複製進了一個資料夾，則僅需輸入其基本路徑。\n"
+"</p>\n"
+
+#. help, continued
+#: src/clients/repositories.rb:926
+msgid ""
+"<p>\n"
+"<b>Modifying Status of a Repository or a Service</b><br>\n"
+"To change a repository location, use <b>Edit</b>. To remove a repository, "
+"use\n"
+"<b>Delete</b>. To enable or disable the repository or to change the refresh "
+"status at initialization time, select the repository in the table and use "
+"the check boxes below.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b>修改軟體源或服務狀態</b><br>\n"
+"要修改軟體源位置，請使用<b>編輯</b>。要移除軟體源，請使用<b>刪除</b>。\n"
+"要啟用或禁用軟體源，或者設定啟始化時是否重新整理，請在表中選中軟體源並使用下面的"
+"核取方塊。\n"
+"</p>\n"
+
+#. help text, continued
+#: src/clients/repositories.rb:938
+msgid ""
+"<P><B>Priority of a Repository</B><BR>\n"
+"Priority of a repository is an integer value between 0 (the highest "
+"priority) and 200 (the lowest priority). Default is 99. If a package is "
+"available in more repositories, the repository with the highest priority is "
+"used.</P>\n"
+msgstr ""
+"<P><B>軟體源優先順序</B><BR>\n"
+"軟體源優先順序是一個介於 0 (最高優先順序) 到 200 (最低優先順序) 之間的整數值。默認"
+"優先順序為 99。若多個軟體源提供了同一個軟體包，將使用優先順序最高的軟體源。</P>\n"
+
+#. help text, continued
+#: src/clients/repositories.rb:946
+msgid ""
+"<P>Select the appropriate option on top of the window for navigation in "
+"repositories and services.</P>"
+msgstr "<P>請在軟體源與服務中的導航視窗頂部選擇合適的選項。</P>"
+
+#. help text, continued
+#: src/clients/repositories.rb:954
+msgid ""
+"<P><B>Keep Downloaded Packages</B><BR>Check this option to keep downloaded\n"
+"packages in a local cache so they can be reused later when the packages are\n"
+"reinstalled. If not checked, the downloaded packages are deleted after "
+"installation.</P>"
+msgstr ""
+"<P><B>保留已下載的軟體包</B><BR>選中此選項以在本地快取中保留已下載的軟體包，"
+"從而可在稍後重灌軟體包時重複使用它們。若未選中，已下載的軟體包將在安裝後被刪"
+"除。</P>"
+
+#: src/clients/repositories.rb:960
+msgid ""
+"<P>The default local cache is located in directory <B>/var/cache/zypp/"
+"packages</B>. Change the location in <B>/etc/zypp/zypp.conf</B> file.</P>"
+msgstr ""
+"<P>默認本地快取位於 <B>/var/cache/zypp/packages</B> 資料夾中。可在 <B>/etc/"
+"zypp/zypp.conf</B> 檔案中修改該位置。</P>"
+
+#. popup message part 1
+#: src/clients/repositories.rb:1005
+msgid ""
+"Unable to save changes to the repository\n"
+"configuration."
+msgstr "無法將修改儲存到軟體源配置。"
+
+#. popup message part 2 followed by other info
+#. popup message, after message header, header of details
+#: src/clients/repositories.rb:1011 src/modules/Packages.rb:1200
+#: src/modules/SourceManager.rb:162 src/modules/SourceManager.rb:310
+msgid "Details:"
+msgstr "細節："
+
+#. popup message part 3
+#. end of popup message, question
+#. end of popup message, question
+#: src/clients/repositories.rb:1013 src/modules/Packages.rb:1208
+#: src/modules/SourceManager.rb:164 src/modules/SourceManager.rb:312
+msgid "Try again?"
+msgstr "重試嗎？"
+
+#. popup headline
+#: src/clients/repositories.rb:1030
+msgid "Abort Repository Configuration"
+msgstr "中止軟體源配置"
+
+#. popup message
+#: src/clients/repositories.rb:1032
+msgid ""
+"Abort the repository configuration?\n"
+"All changes will be lost."
+msgstr ""
+"中止軟體源配置嗎？\n"
+"全部修改將不復存在。"
+
+#. refresh also the combobox widget
+#: src/clients/repositories.rb:1328
+msgid ""
+"There is no service at URL:\n"
+"%1"
+msgstr ""
+"該 URL 沒有服務：\n"
+"%1"
+
+#. TODO: add help text
+#: src/clients/repositories.rb:1439
+msgid "Refreshing Repositories"
+msgstr "正在重新整理軟體源"
+
+#: src/clients/repositories.rb:1440
+msgid "Refreshing Services"
+msgstr "正在重新整理服務"
+
+#: src/clients/repositories.rb:1445
+msgid "Refresh Repositories"
+msgstr "重新整理軟體源"
+
+#: src/clients/repositories.rb:1446
+msgid "Refresh Services"
+msgstr "重新整理服務"
+
+#. progress bar label
+#: src/clients/repositories.rb:1478
+msgid "Refreshing Repository %1..."
+msgstr "正在重新整理軟體源 %1..."
+
+#. refreshing services
+#. progress bar label
+#: src/clients/repositories.rb:1504
+msgid "Refreshing Service %1..."
+msgstr "正在重新整理服務 %1..."
+
+#. yes-no popup
+#: src/clients/repositories.rb:1523
+msgid "Delete the selected repository from the list?"
+msgstr "從列表中刪除所選軟體源嗎？"
+
+#. yes-no popup
+#: src/clients/repositories.rb:1537
+msgid ""
+"Delete service %1\n"
+"and its repositories?"
+msgstr "刪除服務 %1 及其軟體源嗎？"
+
+#. popup message
+#: src/clients/repositories.rb:1605
+msgid ""
+"For the selected repository, refresh\n"
+"cannot be set."
+msgstr "無法設定所選軟體源的重新整理狀態。"
+
+#. popup question, %1 is repository URL
+#: src/clients/repositories.rb:1767
+msgid ""
+"Repository %1\n"
+"has been already added. Each repository should be added only once.\n"
+"\n"
+"Really add the repository again?"
+msgstr ""
+"軟體源 %1 早已添加過了。每個軟體源僅應添加一次。\n"
+"\n"
+"真的再次添加該軟體源嗎？"
+
+#. Error popup
+#: src/clients/repositories.rb:1835
+msgid "<p>Errors occurred while restoring the repository configuration.</p>\n"
+msgstr "<p>恢復軟體源配置時出錯。</p>\n"
+
+#. the language_changed flag has NOT been set by the NLD frame
+#. the language_changed flag has NOT been set by the NLD frame
+#: src/clients/software_proposal.rb:93
+#: src/clients/software_simple_proposal.rb:48
+msgid "The software proposal is reset to the default values."
+msgstr "軟體提案已重置為預設值。"
+
+#. warning text
+#. warning text
+#: src/clients/software_proposal.rb:103
+#: src/clients/software_simple_proposal.rb:58
+msgid ""
+"Cannot solve dependencies automatically. Manual intervention is required."
+msgstr "無法自動解決依賴關係。需手工干預。"
+
+#. this is a heading
+#: src/clients/software_proposal.rb:145
+msgid "Software"
+msgstr "軟體"
+
+#. this is a menu entry
+#: src/clients/software_proposal.rb:147
+msgid "&Software"
+msgstr "軟體(&S)"
+
+#. Command line help text for the software management module, %1 is "zypper"
+#: src/clients/sw_single.rb:64
+msgid ""
+"Software Installation - This module does not support the command line "
+"interface, use '%1' instead."
+msgstr "軟體安裝 － 此模組不支援命令列介面，請使用 '%1' 代替。"
+
+#. error message (%1 is a package file name)
+#: src/clients/sw_single.rb:194
+msgid "Error: Cannot copy package %1 to temporary repository."
+msgstr "錯誤：無法將軟體包 %1 複製到臨時軟體源。"
+
+#. error message
+#: src/clients/sw_single.rb:216
+msgid "Error: Cannot add a temporary directory, packages cannot be installed."
+msgstr "錯誤：無法添加臨時資料夾，不能安裝軟體包。"
+
+#. error message
+#. error message
+#: src/clients/sw_single.rb:243 src/clients/sw_single.rb:266
+msgid "Error: Cannot query package file %1."
+msgstr "錯誤：無法查詢軟體包檔案 %1。"
+
+#. Error message:
+#. %1 = package name (may include complete RPM file name)
+#. %2 = error message
+#: src/clients/sw_single.rb:299
+msgid ""
+"Package %1 could not be installed.\n"
+"\n"
+"Details:\n"
+"%2\n"
+msgstr ""
+"無法安裝軟體包 %1。\n"
+"\n"
+"細節：\n"
+"%2\n"
+
+#. error popup, %1 is the name of the .rpm package
+#: src/clients/sw_single.rb:313
+msgid "Package %1 was not found on the medium."
+msgstr "在介質上未找到軟體包 %1。"
+
+#. start package manager
+#: src/clients/sw_single.rb:362
+msgid "An error occurred during repository initialization."
+msgstr "軟體源啟始化時出錯。"
+
+#: src/clients/sw_single.rb:369
+msgid ""
+"No repository is defined.\n"
+"Only installed packages are displayed."
+msgstr ""
+"未定義軟體源。\n"
+"僅顯示了已安裝的軟體包。"
+
+#. a stage in the progress dialog
+#: src/clients/sw_single.rb:501
+msgid "Initialize the Target System"
+msgstr "啟始化目標系統"
+
+#: src/clients/sw_single.rb:502
+msgid "Load the Configured Repositories"
+msgstr "載入已配置軟體源"
+
+#. %1 is path to the target system (e.g. /tmp/dirinstall
+#: src/clients/sw_single.rb:510
+msgid "Reset the target system to %1"
+msgstr "重置目標系統到 %1"
+
+#. a stage in the progress dialog
+#: src/clients/sw_single.rb:516
+msgid "Starting the Software Manager"
+msgstr "正在啟動軟體管理器"
+
+#. reset summary
+#: src/clients/sw_single.rb:580
+msgid ""
+"During the last package installation\n"
+"several packages failed to install.\n"
+"Install them now?\n"
+msgstr ""
+"上次安裝軟體包時，一些軟體包安裝失敗了。\n"
+"現在還安裝它們嗎？\n"
+
+#. start the repository manager
+#: src/clients/sw_single.rb:619
+msgid ""
+"Cannot configure online update repository \n"
+"without having package %1 installed"
+msgstr "未安裝 %1 軟體包無法配置線上更新軟體源"
+
+#: src/clients/sw_single.rb:645
+msgid ""
+"Cannot search packages in online repositories\n"
+"without having package %1 installed"
+msgstr "未安裝 %1 軟體包無法在線上軟體源中搜索軟體包"
+
+#. error report, %1 is a list of packages
+#: src/clients/sw_single.rb:673
+msgid ""
+"The following packages have not been found on the medium:\n"
+"%1\n"
+msgstr ""
+"在介質上未找到以下軟體包：\n"
+"%1\n"
+
+#. rich text message, %1 = CD identification
+#: src/include/checkmedia/ui.rb:94
+msgid "<BIG><B>%1</B></BIG>"
+msgstr "<BIG><B>%1</B></BIG>"
+
+#. rich text message, %1 medium number, e.g. CD1,CD2...
+#: src/include/checkmedia/ui.rb:99
+msgid "<UL><LI>Medium: %1</LI></UL>"
+msgstr "<UL><LI>介質：%1</LI></UL>"
+
+#. rich text message, %1 = size of the medium
+#: src/include/checkmedia/ui.rb:103
+msgid "<UL><LI>Size: %1</LI></UL>"
+msgstr "<UL><LI>大小：%1</LI></UL>"
+
+#. rich text message, %1 = result of the check
+#. the check has been canceled
+#: src/include/checkmedia/ui.rb:107 src/include/checkmedia/ui.rb:529
+msgid "<UL><LI>Result: %1</LI></UL>"
+msgstr "<UL><LI>結果：%1</LI></UL>"
+
+#. rich text -  error message
+#: src/include/checkmedia/ui.rb:112
+msgid "The drive does not contain a medium or the ISO file system is broken."
+msgstr "驅動器中沒有介質或 ISO 檔案系統已損壞。"
+
+#. result of the check - success
+#: src/include/checkmedia/ui.rb:122
+msgid "<B>OK</B> -- The medium has been successfully verified."
+msgstr "<B>好的</B> -- 介質校驗成功。"
+
+#. wrong MD5
+#: src/include/checkmedia/ui.rb:126
+msgid ""
+"<B>Error</B> -- MD5 sum does not match<BR>This medium should not be used."
+msgstr "<B>錯誤</B> -- MD5 校驗與不匹配<BR>不應使用此介質。"
+
+#. the correct MD5 is unknown
+#: src/include/checkmedia/ui.rb:131
+msgid "<B>Unknown</B> -- The correct MD5 sum of the medium is unknown."
+msgstr "<B>未知</B> -- 該介質的正確 MD5 校驗與未知。"
+
+#. warning popup - the CD/DVD drive doesn't contain the first medium (CD1/DVD1)
+#: src/include/checkmedia/ui.rb:251
+msgid "Insert the first installation medium."
+msgstr "請插入第一個安裝介質。"
+
+#. dialog header
+#: src/include/checkmedia/ui.rb:299
+msgid "Media Check"
+msgstr "介質檢查"
+
+#. help text - media check (header) 1/8
+#: src/include/checkmedia/ui.rb:302
+msgid "<P><B>Media Check</B></P>"
+msgstr "<P><B>介質檢查</B></P>"
+
+#. help text - media check 2/8
+#: src/include/checkmedia/ui.rb:304
+msgid ""
+"<P>When you have a problem with\n"
+"the installation and you are using a CD or DVD installation medium, you "
+"should check\n"
+"whether the medium is broken.</P>\n"
+msgstr "<P>若您使用 CD 或 DVD 介質安裝時遇到了問題，您應檢查介質是否損壞。</P>\n"
+
+#. help text - media check 3/8
+#: src/include/checkmedia/ui.rb:310
+msgid ""
+"<P>Select a drive, insert a medium into the drive and press <B>Start Check</"
+"B>\n"
+"or use <B>Check ISO File</B> and select an ISO file.\n"
+"The check can take several minutes depending on speed of the\n"
+"drive and size of the medium. The check verifies the MD5 checksum.</P> "
+msgstr ""
+"<P>選擇驅動器，將介質插入驅動器並按<B>開始檢查</B>\n"
+"或者使用<B>檢查 ISO 檔案</B>並選擇一個 ISO 檔案。\n"
+"取決於驅動器的速度與介質的大小，檢查可能需要幾分鐘。\n"
+"該檢查將校驗 MD5 校驗與。</P>"
+
+#. help text - media check 4/8
+#: src/include/checkmedia/ui.rb:317
+msgid ""
+"<P>If the check of the medium fails, you should not continue the "
+"installation.\n"
+"It may fail or you may lose your data. Better replace the broken medium.</"
+"P>\n"
+msgstr ""
+"<P>若介質檢查失敗，則不應繼續安裝。\n"
+"繼續安裝可能失敗或導致丟失資料。您最好更換損壞的介質。</P>\n"
+
+#. help text - media check 5/8
+#: src/include/checkmedia/ui.rb:321
+msgid ""
+"After the check, insert the next medium and start the procedure again. \n"
+"The order of the media is irrelevant.\n"
+msgstr ""
+"檢查後，插入下一張介質並重復以上過程。\n"
+"介質的順序無關緊要。\n"
+
+#. help text - media check 6/8
+#: src/include/checkmedia/ui.rb:325
+msgid ""
+"<P><B>Note:</B> You cannot change the medium while it is used by the system."
+"</P>"
+msgstr "<P><B>注意：</B> 當介質正被系統使用時，您不能更換它。</P>"
+
+#. help text - media check 7/8
+#: src/include/checkmedia/ui.rb:329
+msgid ""
+"<P>To check media before the installation, use the media check item in the "
+"boot menu.</P>"
+msgstr "<P>要在開始安裝前檢查介質，請使用引導選單中的介質檢查一項。<P>"
+
+#. help text - media check 8/8
+#: src/include/checkmedia/ui.rb:333
+msgid ""
+"<P>If you burn the media yourself, use the <B>pad</B> option in your "
+"recording\n"
+"software. It avoids read errors at the end of the media during the check.</"
+"P>\n"
+msgstr ""
+"<P>若自行燒錄介質，請使用燒錄軟體中的 <B>pad</B> 選項。它可避免在檢查過程中介"
+"質末尾出現讀取錯誤。</P>\n"
+
+#. advice check of the media
+#. for translators: split the message to more lines if needed, use max. 50 characters per line
+#: src/include/checkmedia/ui.rb:339
+msgid ""
+"It is recommended to check all installation media\n"
+"to avoid installation problems. To skip this step press 'Next'"
+msgstr "推薦檢查全部安裝介質以避免出現安裝問題。要跳過此步驟請按 '下一步'"
+
+#. combo box
+#: src/include/checkmedia/ui.rb:352
+msgid "&CD or DVD Drive"
+msgstr "&CD 或 DVD 驅動器"
+
+#. push button label
+#: src/include/checkmedia/ui.rb:360
+msgid "&Start Check"
+msgstr "開始檢查(&S)"
+
+#: src/include/checkmedia/ui.rb:361 src/modules/SourceManager.rb:694
+msgid "&Eject"
+msgstr "彈出(&E)"
+
+#. push button label
+#: src/include/checkmedia/ui.rb:367
+msgid "Check ISO File..."
+msgstr "檢查 ISO 檔案..."
+
+#. widget label
+#: src/include/checkmedia/ui.rb:370
+msgid "Status Information"
+msgstr "狀態資訊"
+
+#. progress bar label
+#: src/include/checkmedia/ui.rb:374
+msgid "Progress"
+msgstr "進度"
+
+#. window title - open file dialog
+#: src/include/checkmedia/ui.rb:421
+msgid "Select an ISO File to Check"
+msgstr "選擇要檢查的 ISO"
+
+#. error message: the medium cannot be read or no medium in the drive; %1 = drive, e.g. /dev/hdc
+#: src/include/checkmedia/ui.rb:461
+msgid "Cannot read medium in drive %1."
+msgstr "無法讀取驅動器 %1 中的介質。"
+
+#: src/include/checkmedia/ui.rb:471
+msgid ""
+"The medium does not contain a MD5 checksum.\n"
+"The content of the medium cannot be verified.\n"
+"\n"
+"Only readability of the medium will be checked.\n"
+msgstr ""
+"介質不包含 MD5 檢驗與。\n"
+"無法校驗介質內容。\n"
+"\n"
+"將僅檢查介質的可讀性。\n"
+
+#: src/include/checkmedia/ui.rb:530
+msgid "<B>Canceled</B>"
+msgstr "<B>已取消</B>"
+
+#. escape <> characters in the key name
+#. translators: %1 is GPG key name (e.g. 'SuSE Package Signing Key <build@suse.de>')
+#: src/include/packager/key_manager_dialogs.rb:48
+msgid "Name: %1"
+msgstr "名稱：%1"
+
+#. %1 is a GPG Key fingerprint (e.g. '79C179B2E1C820C1890F9994A84EDAE89C800ACA')
+#: src/include/packager/key_manager_dialogs.rb:56
+msgid "Finger Print: %1"
+msgstr "指紋：%1"
+
+#. %1 is the date when the GPG key was generated (e.g. '9.10.2000')
+#: src/include/packager/key_manager_dialogs.rb:63
+msgid "Created: %1"
+msgstr "創建於：%1"
+
+#. %1 is the date when the GPG key expired (e.g. '10.6.2005'), display the date in red
+#: src/include/packager/key_manager_dialogs.rb:70
+msgid "Expires: <font color = \"red\">%1</font> (The key is expired.)"
+msgstr "失效於：<font color = \"red\">%1</font> (該金鑰已經失效。)"
+
+#. summary string - the GPG key never expires
+#: src/include/packager/key_manager_dialogs.rb:75
+msgid "The key never expires."
+msgstr "該金鑰永不失效。"
+
+#. %1 is the date when the GPG key expires (e.g. '21.3.2015') or "Never"
+#: src/include/packager/key_manager_dialogs.rb:78
+msgid "Expires: %1"
+msgstr "失效於：%1"
+
+#: src/include/packager/key_manager_dialogs.rb:95
+msgid "Key: %1"
+msgstr "金鑰：%1"
+
+#. Display a dialog for adding a GPG key
+#: src/include/packager/key_manager_dialogs.rb:164
+msgid "Select a GPG Key"
+msgstr "選擇 GPG 金鑰"
+
+#: src/include/packager/key_manager_dialogs.rb:178
+msgid "Properties of the GPG Key"
+msgstr "GPG 金鑰屬性"
+
+#: src/include/packager/key_manager_dialogs.rb:185
+msgid "Key ID: "
+msgstr "金鑰 ID："
+
+#: src/include/packager/key_manager_dialogs.rb:186
+msgid "Name: "
+msgstr "名稱："
+
+#: src/include/packager/key_manager_dialogs.rb:187
+msgid "Finger Print: "
+msgstr "指紋："
+
+#: src/include/packager/key_manager_dialogs.rb:188
+msgid "Created: "
+msgstr "創建於："
+
+#: src/include/packager/key_manager_dialogs.rb:189
+msgid "Expires: "
+msgstr "失效於："
+
+#. dialog caption
+#: src/include/packager/key_manager_dialogs.rb:205
+msgid "Adding a GPG Public Key"
+msgstr "添加 GPG 公共金鑰"
+
+#. help
+#. help
+#: src/include/packager/key_manager_dialogs.rb:208
+#: src/include/packager/key_manager_dialogs.rb:281
+msgid ""
+"<p>\n"
+"Manage known GPG public keys.</p>\n"
+msgstr ""
+"<p>\n"
+"管理已知 GPG 公共金鑰。</p>\n"
+
+#: src/include/packager/key_manager_dialogs.rb:212
+msgid ""
+"<p>\n"
+"<b>Adding a New GPG Key</b><br>\n"
+"To add a new GPG key, specify the path to the key file.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b>添加一個新 GPG 金鑰</b><br>\n"
+"要添加一個新 GPG 金鑰，請指定金鑰檔案的路徑。\n"
+"</p>\n"
+
+#. header in file selection popup
+#: src/include/packager/key_manager_dialogs.rb:235
+msgid "Select a GPG Key To Import"
+msgstr "選擇要匯入的 GPG 金鑰"
+
+#. validate the entered file
+#: src/include/packager/key_manager_dialogs.rb:255
+msgid "Enter a filename"
+msgstr "輸入檔名"
+
+#. dialog caption
+#: src/include/packager/key_manager_dialogs.rb:278
+msgid "GPG Public Key Management"
+msgstr "GPG 公共金鑰管理"
+
+#: src/include/packager/key_manager_dialogs.rb:285
+msgid ""
+"<p>\n"
+"<b>Adding a New GPG Key</b><br>\n"
+"To add a new GPG key, use <b>Add</b> and specify the path to the key file.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"<b>添加新 GPG 金鑰</b><br>\n"
+"要添加新 GPG 金鑰，請使用<b>添加</b>並指定金鑰檔案路徑。\n"
+"</p>"
+
+#. help, continued
+#: src/include/packager/key_manager_dialogs.rb:296
+msgid ""
+"<p>\n"
+"<b>Modifying a GPG Key Status</b>\n"
+"To modify the trusted flag, use <b>Edit</b>. To remove a GPG key, use\n"
+"<b>Delete</b>.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b>修改 GPG 金鑰狀態</b>\n"
+"要修改信任旗標，請使用<b>編輯</b>。要移除 GPG 金鑰，請使用\n"
+"<b>刪除</b>。\n"
+"</p>\n"
+
+#. table header
+#: src/include/packager/key_manager_dialogs.rb:306
+msgid "Key ID"
+msgstr "金鑰 ID"
+
+#. remove the key
+#: src/include/packager/key_manager_dialogs.rb:338
+msgid ""
+"Really delete key '%1'\n"
+"'%2'?"
+msgstr "真的刪除金鑰 '%1' '%2' 嗎？"
+
+#. TRANSLATORS: dialog caption
+#: src/include/packager/repositories_include.rb:77
+msgid "Adding a New Repository"
+msgstr "添加新軟體源"
+
+#: src/include/packager/repositories_include.rb:81
+msgid "Check Repository Type"
+msgstr "檢查軟體源類型"
+
+#: src/include/packager/repositories_include.rb:82
+msgid "Add Repository"
+msgstr "添加軟體源"
+
+#: src/include/packager/repositories_include.rb:83
+msgid "Read Repository License"
+msgstr "讀取軟體源許可"
+
+#: src/include/packager/repositories_include.rb:86
+msgid "Checking Repository Type"
+msgstr "正在檢查軟體源類型"
+
+#: src/include/packager/repositories_include.rb:87
+msgid "Adding Repository"
+msgstr "正在添加軟體源"
+
+#: src/include/packager/repositories_include.rb:88
+msgid "Reading Repository License"
+msgstr "正在讀取軟體源許可"
+
+#. add at least one product if the scan result is empty (no product info available)
+#: src/include/packager/repositories_include.rb:152
+msgid "Repository"
+msgstr "軟體源"
+
+#. continue-back popup
+#. continue-back popup
+#: src/include/packager/repositories_include.rb:224
+#: src/modules/SourceManager.rb:330
+msgid ""
+"There is no product information available at the given location.\n"
+"If you expected to to point a product, go back and enter\n"
+"the correct location.\n"
+"To make rpm packages located at the specified location available\n"
+"in the packages selection, continue.\n"
+msgstr ""
+"給定位置無可用產品資訊。\n"
+"若期望指明產品，請返回並輸入正確的位置。\n"
+"要使位於指定位置的 rpm 包在軟體包選擇中可用，請繼續。\n"
+
+#. popup message part 1
+#. Import GPG keys found in the inst-sys
+#: src/include/packager/repositories_include.rb:319
+#: src/modules/Packages.rb:1195 src/modules/SourceManager.rb:306
+msgid ""
+"Unable to create repository\n"
+"from URL '%1'."
+msgstr "無法從 URL '%1' 創建軟體源。"
+
+#. error message
+#: src/include/packager/repositories_include.rb:331
+msgid ""
+"Using an ISO image over ftp or http protocol is not possible.\n"
+"Change the protocol or unpack the ISO image on the server side."
+msgstr ""
+"不能通過 FTP 或 HTTP 協議使用 ISO 映像。\n"
+"請修改協議或在伺服器端解壓 ISO 映像。"
+
+#. popup message part 2
+#: src/include/packager/repositories_include.rb:341
+msgid "Change the URL and try again?"
+msgstr "修改 URL 並重試嗎？"
+
+#. popup error message, %1 is the package name
+#: src/include/packager/repositories_include.rb:418
+msgid ""
+"Cannot search for SLP repositories\n"
+"without having %1 package installed.\n"
+msgstr "未安裝 %1 軟體包無法搜索 SLP 軟體源。\n"
+
+#. New add-on product might add also new agents.
+#. Functions Rereads all available agents.
+#.
+#. @see bugzilla #239055, #245508
+#. error report
+#. popup error
+#. popup error
+#: src/modules/AddOnProduct.rb:502 src/modules/AddOnProduct.rb:604
+#: src/modules/ProductLicense.rb:582 src/modules/ProductLicense.rb:773
+msgid "An error occurred while preparing the installation system."
+msgstr "準備安裝系統時出錯。"
+
+#. error report
+#: src/modules/AddOnProduct.rb:639
+msgid "Control file %1 not found on media."
+msgstr "在介質上未找到控制檔案 %1。"
+
+#. TRANSLATORS: error report
+#. TRANSLATORS: error report
+#: src/modules/AddOnProduct.rb:1235 src/modules/AddOnProduct.rb:1399
+msgid "Unable to use additional products."
+msgstr "無法使用附加產品。"
+
+#. fill up internal map (used later when item selected)
+#: src/modules/AddOnProduct.rb:1286 src/modules/AddOnProduct.rb:1292
+msgid "%1, URL: %2"
+msgstr "%1，URL：%2"
+
+#: src/modules/AddOnProduct.rb:1302
+msgid "URL: %1, Path: %2"
+msgstr "URL：%1，路徑：%2"
+
+#. TRANSLATORS: popup heading
+#: src/modules/AddOnProduct.rb:1333
+msgid "Additional Products"
+msgstr "附加產品"
+
+#. TRANSLATORS: additional dialog information
+#: src/modules/AddOnProduct.rb:1339
+msgid ""
+"The installation repository also contains the listed additional "
+"repositories.\n"
+"Select the ones you want to use.\n"
+msgstr ""
+"安裝軟體源還包含了下面列出的額外軟體源。\n"
+"請選擇您想要使用的軟體源。\n"
+
+#: src/modules/AddOnProduct.rb:1350
+msgid "Additional Products to Select"
+msgstr "供選擇的附加產品"
+
+#. push button label
+#: src/modules/AddOnProduct.rb:1357
+msgid "Add Selected &Products"
+msgstr "添加所選產品(&P)"
+
+#. %1 is either "CD" or "DVD"
+#: src/modules/AddOnProduct.rb:1488
+msgid "Insert the addon %1 medium"
+msgstr "請插入附加的 %1 介質"
+
+#. %1 is the product name, %2 is either "CD" or "DVD"
+#: src/modules/AddOnProduct.rb:1493
+msgid "Insert the %1 %2 medium"
+msgstr "請插入 %1 %2 介質"
+
+#. TRANSLATORS: error message, %1 is replaced with product URL
+#: src/modules/AddOnProduct.rb:1545
+msgid "Unable to add product %1."
+msgstr "無法添加產品 %1。"
+
+#. adding the product to the list of products (BNC #269625)
+#. no such products
+#: src/modules/AddOnProduct.rb:1737 src/modules/AddOnProduct.rb:1743
+#: src/modules/Packages.rb:459
+msgid "Unknown Product"
+msgstr "未知產品"
+
+#. update the trusted flag
+#: src/modules/KeyManager.rb:214
+msgid ""
+"File '%1'\n"
+"does not contain a valid GPG key.\n"
+msgstr ""
+"檔案 '%1'\n"
+"未包含有效的 GPG 金鑰。\n"
+
+#. %1 is key ID (e.g. A84EDAE89C800ACA), %2 is key name (e.g. "SuSE Package Signing Key <build@suse.de>")
+#: src/modules/KeyManager.rb:235
+msgid ""
+"Key '%1'\n"
+"'%2'\n"
+"is already known, it cannot be added again."
+msgstr ""
+"金鑰 '%1'\n"
+"'%2'\n"
+"已知。不能重複添加。"
+
+#. copy the key to the temporary directory (in fact the keys are imported in Write())
+#: src/modules/KeyManager.rb:279
+msgid "Cannot copy the key to the temporary directory."
+msgstr "無法將金鑰複製到臨時資料夾。"
+
+#. button label
+#: src/modules/PackageInstallation.rb:53
+msgid "&Show Failed Packages List"
+msgstr "顯示失敗軟體包列表(&S)"
+
+#. button label
+#: src/modules/PackageInstallation.rb:62
+msgid "&Show Full Log"
+msgstr "顯示完整日誌(&S)"
+
+#. dialog headline
+#: src/modules/PackageInstallation.rb:74
+msgid "Installation of some Packages Failed"
+msgstr "某些軟體包安裝失敗了"
+
+#. collect and set installation summary data
+#: src/modules/PackageInstallation.rb:206
+msgid "Installation aborted by user."
+msgstr "使用者中止了安裝。"
+
+#. the string is follwed by a media number, e.g. "Medium 1"
+#: src/modules/PackageSlideShow.rb:50
+msgid "Medium %1"
+msgstr "介質 %1"
+
+#. Overflow (indicated by negative value)
+#. When data throughput goes downhill (stalled network connection etc.),
+#. cut off the predicted time at a reasonable maximum.
+#. "%1" is a predefined maximum time.
+#: src/modules/PackageSlideShow.rb:204
+msgid ">%1"
+msgstr ">%1"
+
+#. Nothing more to install from this CD (very concise - little space!!)
+#. Nothing more to install from this CD (very concise - little space!!)
+#: src/modules/PackageSlideShow.rb:222 src/modules/PackageSlideShow.rb:237
+msgid "Done."
+msgstr "完畢。"
+
+#. Status line informing about the next CD that will be used
+#. %1: Media type ("CD" / "DVD", ???)
+#. %2: Media name ("SuSE Linux Professional CD 2" )
+#. %3: Time remaining until this media will be needed
+#: src/modules/PackageSlideShow.rb:262
+msgid "Next: %1 -- %2"
+msgstr "下一個：%1 - %2"
+
+#. Status line informing about the next CD that will be used
+#. %1: Media type ("CD" / "DVD", ???)
+#. %2: Media name ("SuSE Linux Professional CD 2" )
+#: src/modules/PackageSlideShow.rb:279
+msgid "Next: %1"
+msgstr "下一個：%1"
+
+#. Add "Total" item - at the top so it is visible by default even if there are many items
+#.
+#. List column header for total remaining MB and time to install
+#: src/modules/PackageSlideShow.rb:989
+msgid "Total"
+msgstr "總計"
+
+#. do not show the average download rate if the space is limited
+#. Update the current slide if applicable
+#.
+#. message in the installatino log, %1 is package name,
+#. %2 is package size
+#: src/modules/PackageSlideShow.rb:1116 src/modules/PackageSlideShow.rb:1368
+#: src/modules/PackageSlideShow.rb:1420
+msgid "Downloading %1 (download size %2)"
+msgstr "正在下載 %1 (下載大小 %2)"
+
+#: src/modules/PackageSlideShow.rb:1146
+msgid " (Remaining: %1%2 packages)"
+msgstr " (還剩：%1%2 個軟體包)"
+
+#. display download progress in DownloadInAdvance mode
+#. translations: progress message (part1)
+#: src/modules/PackageSlideShow.rb:1179
+msgid "Downloading Packages..."
+msgstr "正在下載軟體包..."
+
+#. progress message (part2)
+#: src/modules/PackageSlideShow.rb:1182
+msgid " (Downloaded %1 of %2 packages)"
+msgstr " (已下載 %1/%2 個軟體包)"
+
+#. Heading for the progress bar for the current package
+#. while it is deleted. "%1" is the package name.
+#: src/modules/PackageSlideShow.rb:1318
+msgid "Deleting %1"
+msgstr "正在刪除 %1"
+
+#. package installation - summary text
+#. %1 is RPM name, %2 is installed (unpacked) size (e.g. 6.20MB)
+#: src/modules/PackageSlideShow.rb:1325
+msgid "Installing %1 (installed size %2)"
+msgstr "正在安裝 %1 (安裝後大小 %2)"
+
+#. message in the installatino log, %1 is package name,
+#. %2 is package size
+#: src/modules/PackageSlideShow.rb:1403
+msgid "Applying delta RPM: %1"
+msgstr "正在應用增量 RPM：%1"
+
+#. warning text
+#: src/modules/Packages.rb:299
+msgid ""
+"Your computer is a 64-bit x86-64 system, but you are trying to install a 32-"
+"bit distribution."
+msgstr "您的計算機是 64 位 x86-64 系統，但是您正試圖安裝 32 位發行版。"
+
+#. help text for software proposal
+#: src/modules/Packages.rb:315
+msgid ""
+"<P>The pattern list states which functionality will be available after "
+"installing the system.</P>"
+msgstr "<P>該軟體集列表說明了安裝系統後可用的功能。</P>"
+
+#. (see bnc#178357 why these numbers)
+#. translators: help text for software proposal
+#: src/modules/Packages.rb:327
+msgid ""
+"<P>The proposal reports the total size of files which will be installed to "
+"the system. However, the system will contain some other files (temporary and "
+"working files) so the used space will be slightly larger than the proposed "
+"value. Therefore it is a good idea to have at least 25% (or about 300MB) "
+"free space before starting the installation.</P>"
+msgstr ""
+"<P>該提案彙報了將安裝到系統的檔案總大小。然而，系統將包含一些其它檔案 (快取與"
+"工作檔案) 所以所用空間將會比提案中的值稍微大一些。因此最好在啟動安裝前有至少 "
+"25% (或大約 300 MB) 的空閒空間。<P>"
+
+#. help text for software proposal
+#: src/modules/Packages.rb:332
+msgid ""
+"<P>The total 'size to download' is the size of the packages which will be\n"
+"downloaded from remote (network) repositories. This value is important if "
+"the connection is slow or if there is a data limit for downloading.</P>\n"
+msgstr ""
+"<P>總'下載大小'是指將從遠端 (網路) 軟體源中下載的軟體包大小。\n"
+"若網速慢或有資料流量限制，該數值至關重要。</P>\n"
+
+#. help text for software proposal - header
+#: src/modules/Packages.rb:341
+msgid "<P><B>Software Proposal</B></P>"
+msgstr "<P><B>軟體提案</B></P>"
+
+#. installation proposal - SW summary, %1 is name of the installed product
+#. (e.g. openSUSE 10.3, SUSE Linux Enterprise ...)
+#: src/modules/Packages.rb:358
+msgid "Product: %1"
+msgstr "產品：%1"
+
+#. installation proposal - SW summary, %1 is name of the selected desktop or system type (e.g. KDE)
+#: src/modules/Packages.rb:372
+msgid "System Type: %1"
+msgstr "系統類型：%1"
+
+#: src/modules/Packages.rb:383
+msgid "Patterns:<br>"
+msgstr "軟體集：<br>"
+
+#. installation proposal - SW summary, %1 is size of the selected packages (in MB or GB)
+#: src/modules/Packages.rb:393
+msgid "Size of Packages to Install: %1"
+msgstr "待安裝軟體包大小：%1"
+
+#. installation proposal - SW summary, %1 is download size of the selected packages
+#. which will be installed from an ftp or http repository (in MB or GB)
+#: src/modules/Packages.rb:406
+msgid "Downloading from Remote Repositories: %1"
+msgstr "正在從遠端軟體源中下載：%1"
+
+#: src/modules/Packages.rb:468
+msgid "These add-on products have been marked for auto-removal: %1"
+msgstr "這些附加產品已被標記為待自動移除：%1"
+
+#. Warning message when some add-ons are marked to be removed automatically
+#: src/modules/Packages.rb:492
+msgid ""
+"Contact the vendors of these add-ons to provide you with new installation "
+"media."
+msgstr "請聯繫這些附加產品的廠商為您提供新的安裝介質。"
+
+#. Warning message when some add-ons are marked to be removed automatically
+#: src/modules/Packages.rb:496
+msgid ""
+"Contact the vendor of the add-on to provide you with a new installation "
+"media."
+msgstr "請聯繫這些附加產品的廠商為您提供新的安裝介質。"
+
+#. error message: %1: e.g. "/usr", %2: "/dev/sda2"
+#: src/modules/Packages.rb:537
+msgid ""
+"Error: Cannot check free space in basic directory %1 (device %2), cannot "
+"start installation."
+msgstr "錯誤：無法檢查基礎資料夾 %1 (裝置 %2) 中的空閒空間，無法啟動安裝。"
+
+#. error message: %1: e.g. "/local", %2: "/dev/sda2"
+#: src/modules/Packages.rb:557
+msgid "Warning: Cannot check free space in directory %1 (device %2)."
+msgstr "警告：無法檢查資料夾 %1 (裝置 %2) 中的空閒空間。"
+
+#. summary warning
+#: src/modules/Packages.rb:600
+msgid "Not enough disk space."
+msgstr "磁碟空間不足。"
+
+#. summary warning
+#: src/modules/Packages.rb:602
+msgid "Not enough disk space. Remove some packages in the single selection."
+msgstr "磁碟空間不足。請從孤立軟體包選集中移除一些軟體包。"
+
+#. add a backslash if it's missing
+#: src/modules/Packages.rb:623
+msgid "Only %1 (%2%%) free space available on partition %3.<BR>"
+msgstr "分割區 %3 上僅有 %1 (%2%%) 的空閒空間。<BR>"
+
+#. error in proposal, %1 is URL
+#: src/modules/Packages.rb:1216
+msgid "No repository found at '%1'."
+msgstr "在 '%1' 下找不到軟體源。"
+
+#. TRANSLATORS: beginning of the rich text with the release notes
+#: src/modules/Packages.rb:1489
+msgid ""
+"<p><b>The release notes for the initial release are part of the "
+"installation\n"
+"media. If an Internet connection is available during configuration, you can\n"
+"download updated release notes from the SUSE Linux Web server.</b></p>\n"
+msgstr ""
+"<p><b>初始釋出時的版本資訊是安裝介質的一部分。\n"
+"安裝期間若網際網路連線可用，您可從 SUSE Linux 網路伺服器下載更新的版本資訊。</"
+"b></p>\n"
+
+#. popup - information label
+#: src/modules/Packages.rb:1516
+msgid "Integrating booted media..."
+msgstr "正在整合已引導的介質..."
+
+#. close the popup in order to be able to ask about the license
+#: src/modules/Packages.rb:1538
+msgid "Failed to integrate the service pack repository."
+msgstr "整合服務包軟體源失敗。"
+
+#. popup - information label
+#: src/modules/Packages.rb:1571
+msgid "Initializing repositories..."
+msgstr "正在啟始化軟體源..."
+
+#. message popup, %1 is product name
+#: src/modules/Packages.rb:1803
+msgid "Insert %1 CD 1"
+msgstr "請插入 %1 CD 1"
+
+#: src/modules/Packages.rb:1805
+msgid "%1 CD 1 not found"
+msgstr "%1 未找到 CD 1"
+
+#. an error message
+#: src/modules/Packages.rb:1915
+msgid ""
+"Error while initializing package descriptions.\n"
+"Check the log file %1 for more details."
+msgstr ""
+"啟始化軟體包描述時出錯。\n"
+"更多細節請檢查日誌檔案 %1。"
+
+#. bnc #436925
+#: src/modules/Packages.rb:2176
+msgid ""
+"The software selection has been changed externally.\n"
+"Software proposal will be called again."
+msgstr ""
+"軟體選集被外界變動了。\n"
+"將再次調出軟體提案。"
+
+#. popup label
+#: src/modules/Packages.rb:2194
+msgid "Evaluating package selection..."
+msgstr "正在評估軟體包選集..."
+
+#. Error message, %{pattern_name} is replaced with the missing pattern name in runtime
+#: src/modules/Packages.rb:2469
+msgid ""
+"Failed to select default product pattern %{pattern_name}.\n"
+"Pattern has not been found."
+msgstr ""
+"選擇默認產品集合 %{pattern_name} 失敗。\n"
+"未找到該集合。"
+
+#. Sets that the license (file) has been already accepted
+#.
+#. @param string filename
+#: src/modules/ProductLicense.rb:192 src/modules/ProductLicense.rb:199
+msgid "Cannot read license file %1"
+msgstr "無法讀取許可檔案 %1"
+
+#: src/modules/ProductLicense.rb:193
+msgid ""
+"To show the product license properly, put the license.tar.gz file to the "
+"root of the live media when building the image."
+msgstr ""
+"要正確顯示產品許可，請在構建映像時把 license.tar.gz 檔案放到 live 介質的根目"
+"錄。"
+
+#. combo box
+#: src/modules/ProductLicense.rb:337
+msgid "&Language"
+msgstr "語言(&L)"
+
+#. check box label
+#: src/modules/ProductLicense.rb:389
+msgid "I &Agree to the License Terms."
+msgstr "是，我的大斧已經飢渴難耐了。(&A)"
+
+#. %{license_url} is an URL where the displayed license can be found
+#: src/modules/ProductLicense.rb:429
+msgid ""
+"If you want to print this EULA, you can download it from\n"
+"%{license_url}"
+msgstr "若想列印此終端使用者許可協議，您可從 %{license_url} 下載全文。"
+
+#. TRANSLATORS: addition license information
+#. %1 is replaced with the filename
+#: src/modules/ProductLicense.rb:435
+msgid ""
+"If you want to print this EULA, you can find it\n"
+"on the first media in the file %1"
+msgstr "若想列印此終端使用者許可協議，您可在第一個介質的 %1 檔案中找到許可全文。"
+
+#. help text
+#: src/modules/ProductLicense.rb:451
+msgid ""
+"<p>Read the license agreement carefully and select\n"
+"one of the available options. If you do not agree to the license agreement,\n"
+"the configuration will be aborted.</p>\n"
+msgstr ""
+"<p>請仔細閱讀許可協議並在可用選項中擇一。\n"
+"當然若您不同意該許可協議 (<del>傲嬌的霸王條款</del>...才沒有啦)，配置會立即中"
+"止。\n"
+"您亦無法暢享 openSUSE 這一最低調奢華有內涵的 Linux 發行版。\n"
+"這會是人生中怎樣遺憾的事啊！為了避免您的人生有所缺憾，請選擇是。這隻是您電腦"
+"生涯中的一小步，卻會是您精彩人生中的一大步！</p>\n"
+
+#. dialog title
+#. dialog caption
+#: src/modules/ProductLicense.rb:461 src/modules/ProductLicense.rb:1290
+msgid "License Agreement"
+msgstr "許可協議"
+
+#. popup question
+#: src/modules/ProductLicense.rb:1083
+msgid "Really abort the add-on product installation?"
+msgstr "真的中止附加產品安裝嗎？"
+
+#. text asking whether to refuse a license (Yes-No popup)
+#: src/modules/ProductLicense.rb:1103
+msgid ""
+"Refusing the license agreement cancels the installation.\n"
+"Really refuse the agreement?"
+msgstr ""
+"拒絕許可協議將取消安裝。\n"
+"真的拒絕協議嗎？你一定會後悔的！"
+
+#. text asking whether to refuse a license (Yes-No popup)
+#: src/modules/ProductLicense.rb:1107
+msgid ""
+"Refusing the license agreement cancels the add-on\n"
+"product installation. Really refuse the agreement?"
+msgstr ""
+"拒絕許可協議將取消安裝附加產品。\n"
+"真的拒絕協議嗎？"
+
+#. timed ok/cancel popup
+#: src/modules/ProductLicense.rb:1124
+msgid "The system is shutting down..."
+msgstr "系統正在關機..."
+
+#. popup yes-no
+#: src/modules/SlideShowCallbacks.rb:59
+msgid ""
+"Do you really want\n"
+"to quit the installation?"
+msgstr "您真的想要退出安裝嗎？"
+
+#. Mode::update (), Stage::cont ()
+#: src/modules/SlideShowCallbacks.rb:71
+msgid "Aborted"
+msgstr "已中止"
+
+#. message in the installation log widget, %1 is a patch name which contains the script
+#: src/modules/SlideShowCallbacks.rb:143
+msgid "Starting script %1"
+msgstr "正在啟動指令碼 %1"
+
+#. label, %1 is patch name with version and architecture
+#: src/modules/SlideShowCallbacks.rb:198
+msgid ""
+"Patch %1\n"
+"\n"
+msgstr ""
+"補丁 %1\n"
+"\n"
+
+#. warning popup - %1 is directory name (e.g. /boot)
+#: src/modules/SlideShowCallbacks.rb:333
+msgid ""
+"The disk space in partition %1 is nearly exhausted.\n"
+"Continue with the installation?"
+msgstr ""
+"分割區 %1 的磁碟空間幾乎用光。\n"
+"繼續安裝嗎？"
+
+#. yes-no popup
+#: src/modules/SlideShowCallbacks.rb:367
+msgid ""
+"The disk space is nearly exhausted.\n"
+"Continue with the installation?"
+msgstr ""
+"磁碟空間幾乎用光。\n"
+"繼續安裝嗎？"
+
+#. remote
+#: src/modules/SlideShowCallbacks.rb:443
+msgid "Downloading delta RPM %1 (download size %2)"
+msgstr "正在下載增量 RPM %1 (下載大小 %2)"
+
+#. remote
+#: src/modules/SlideShowCallbacks.rb:461
+msgid "Downloading patch RPM %1 (download size %2)"
+msgstr "正在下載補丁 RPM %1 (下載大小 %2)"
+
+#. error in installation log, %1 is detail error description
+#: src/modules/SlideShowCallbacks.rb:483
+msgid "Failed to download delta RPM: %1"
+msgstr "下載增量 RPM 失敗：%1"
+
+#. error in installation log, %1 is detail error description
+#: src/modules/SlideShowCallbacks.rb:492
+msgid "Failed to apply delta RPM: %1"
+msgstr "應用增量 RPM 失敗：%1"
+
+#. error in installation log, %1 is detail error description
+#: src/modules/SlideShowCallbacks.rb:501
+msgid "Failed to download patch RPM: %1"
+msgstr "下載補丁 RPM 失敗：%1"
+
+#. radio button
+#: src/modules/SourceDialogs.rb:30
+msgid "&Scan Using SLP..."
+msgstr "使用 SLP 掃描(&S)..."
+
+#. radio button
+#: src/modules/SourceDialogs.rb:32
+msgid "Commun&ity Repositories"
+msgstr "社群軟體源(&I)"
+
+#. radio button
+#: src/modules/SourceDialogs.rb:34
+msgid "Specify &URL..."
+msgstr "指定 &URL..."
+
+#. radio button
+#: src/modules/SourceDialogs.rb:36
+msgid "&FTP..."
+msgstr "&FTP..."
+
+#. radio button
+#: src/modules/SourceDialogs.rb:38
+msgid "&HTTP..."
+msgstr "&HTTP..."
+
+#. radio button
+#: src/modules/SourceDialogs.rb:40
+msgid "HTT&PS..."
+msgstr "HTT&PS..."
+
+#. radio button
+#. radio button
+#: src/modules/SourceDialogs.rb:42 src/modules/SourceDialogs.rb:1711
+msgid "&SMB/CIFS"
+msgstr "&SMB/CIFS"
+
+#. radio button
+#: src/modules/SourceDialogs.rb:44
+msgid "&NFS..."
+msgstr "&NFS..."
+
+#. radio button
+#: src/modules/SourceDialogs.rb:46
+msgid "&CD..."
+msgstr "&CD..."
+
+#. radio button
+#: src/modules/SourceDialogs.rb:48
+msgid "&DVD..."
+msgstr "&DVD..."
+
+#. radio button
+#: src/modules/SourceDialogs.rb:50
+msgid "&Hard Disk..."
+msgstr "硬碟(&H)..."
+
+#. radio button
+#: src/modules/SourceDialogs.rb:52
+msgid "&USB Mass Storage (USB Stick, Disk)..."
+msgstr "&USB 大容量存儲 (USB 記憶棒、磁碟)..."
+
+#. radio button
+#: src/modules/SourceDialogs.rb:54
+msgid "&Local Directory..."
+msgstr "本地資料夾(&L)..."
+
+#. radio button
+#: src/modules/SourceDialogs.rb:56
+msgid "&Local ISO Image..."
+msgstr "本地 ISO 映像(&L)..."
+
+#. check box
+#: src/modules/SourceDialogs.rb:58
+msgid "&Download repository description files"
+msgstr "下載軟體源描述檔案(&D)"
+
+#. Help text suffix for some types of the media
+#: src/modules/SourceDialogs.rb:106
+msgid ""
+"<p>If the location is a file holding an ISO image\n"
+"of the media, set <b>ISO Image</b>.</p>"
+msgstr "<p>若該位置是儲存介質 ISO 映像的檔案，請設定 <b>ISO 映像</b>。</p>"
+
+#. Help text suffix for some types of the media
+#: src/modules/SourceDialogs.rb:111
+msgid ""
+"<p>If the repository is on multiple media,\n"
+"set the location of the first media of the set.</p>\n"
+msgstr "<p>若該軟體源位於多個介質上，請設定該組介質的第一個介質的位置。</p>\n"
+
+#. text entry
+#: src/modules/SourceDialogs.rb:120
+msgid "&Server Name"
+msgstr "伺服器名稱(&S)"
+
+#. text entry
+#. text entry
+#: src/modules/SourceDialogs.rb:128 src/modules/SourceDialogs.rb:1575
+msgid "&Path to Directory or ISO Image"
+msgstr "資料夾或 ISO 映像路徑(&P)"
+
+#. checkbox label
+#: src/modules/SourceDialogs.rb:136
+msgid "&ISO Image"
+msgstr "&ISO 映像"
+
+#. checkbox label
+#: src/modules/SourceDialogs.rb:138
+msgid "N&FS v4 Protocol"
+msgstr "N&FS v4 協議"
+
+#: src/modules/SourceDialogs.rb:144
+msgid "Mount Options"
+msgstr "裝載選項"
+
+#. TRANSLATORS: "(default)" - is a combobox value and means default libzypp
+#. NFS mount option (users can change it to anything else, the field is editable)
+#: src/modules/SourceDialogs.rb:148
+msgid "(default)"
+msgstr "(默認)"
+
+#: src/modules/SourceDialogs.rb:159
+msgid "URL of the Repository"
+msgstr "軟體源 URL"
+
+#. frame
+#: src/modules/SourceDialogs.rb:168
+msgid "P&rotocol"
+msgstr "協議(&R)"
+
+#. input field label
+#: src/modules/SourceDialogs.rb:178
+msgid "&URL of the Repository"
+msgstr "軟體源 &URL"
+
+#. label / dialog caption
+#. bugzilla #219759
+#. service label can be empty (not defined)
+#: src/modules/SourceDialogs.rb:193 src/modules/SourceManagerSLP.rb:323
+msgid "Repository URL"
+msgstr "軟體源 URL"
+
+#. label / dialog caption
+#: src/modules/SourceDialogs.rb:195
+msgid "NFS Server"
+msgstr "NFS 伺服器"
+
+#. label / dialog caption
+#. label / dialog caption
+#: src/modules/SourceDialogs.rb:197 src/modules/SourceDialogs.rb:199
+msgid "CD or DVD Media"
+msgstr "CD 或 DVD 介質"
+
+#. label / dialog caption
+#: src/modules/SourceDialogs.rb:201
+msgid "Hard Disk"
+msgstr "硬碟"
+
+#. label / dialog caption
+#: src/modules/SourceDialogs.rb:203
+msgid "USB Stick or Disk"
+msgstr "USB 記憶棒或磁碟"
+
+#. label / dialog caption
+#. dialog caption
+#: src/modules/SourceDialogs.rb:205 src/modules/SourceDialogs.rb:880
+msgid "Local Directory"
+msgstr "本地資料夾"
+
+#. label / dialog caption
+#: src/modules/SourceDialogs.rb:207
+msgid "Local ISO Image"
+msgstr "本地 ISO 映像"
+
+#. label / dialog caption
+#. label / dialog caption
+#. label / dialog caption
+#. label / dialog caption
+#. label / dialog caption
+#: src/modules/SourceDialogs.rb:209 src/modules/SourceDialogs.rb:211
+#: src/modules/SourceDialogs.rb:213 src/modules/SourceDialogs.rb:215
+#: src/modules/SourceDialogs.rb:217
+msgid "Server and Directory"
+msgstr "伺服器與資料夾"
+
+#. popup message
+#: src/modules/SourceDialogs.rb:432
+msgid "The name of the repository cannot be empty."
+msgstr "軟體源名稱不能為空。"
+
+#. text entry
+#: src/modules/SourceDialogs.rb:444
+msgid "&Repository Name"
+msgstr "軟體源名稱(&R)"
+
+#. help text
+#: src/modules/SourceDialogs.rb:459
+msgid ""
+"<p><big><b>Repository Name</b></big><br>\n"
+"Use <b>Repository Name</b> to specify the name of the repository. If it is "
+"empty, YaST will use the product name (if available) or the URL as the name."
+"</p>\n"
+msgstr ""
+"<p><big><b>軟體源名稱</b></big><br>\n"
+"使用<b>軟體源名稱</b>指定軟體源名稱。若留空，YaST 將使用產品名 (若有) 或 URL "
+"作為其名稱。</p>\n"
+
+#. text entry
+#: src/modules/SourceDialogs.rb:473
+msgid "&Service Name"
+msgstr "服務名稱(&S)"
+
+#. help text
+#: src/modules/SourceDialogs.rb:481
+msgid ""
+"<p><big><b>Service Name</b></big><br>\n"
+"Use <b>Service Name</b> to specify the name of the service. If it is empty, "
+"YaST will use part of the service URL as the name.</p>\n"
+msgstr ""
+"<p><big><b>服務名稱</b></big><br>\n"
+"使用<b>服務名稱</b>指定服務名。若留空，YaST 將使用服務 URL 的一部分作為其名"
+"稱。</p>\n"
+
+#. popup message
+#: src/modules/SourceDialogs.rb:516
+msgid "URL cannot be empty."
+msgstr "URL 不能為空。"
+
+#. text entry
+#: src/modules/SourceDialogs.rb:529
+msgid "&URL"
+msgstr "&URL"
+
+#. help text
+#: src/modules/SourceDialogs.rb:543
+msgid ""
+"<p><big><b>Repository URL</b></big><br>\n"
+"Use <b>URL</b> to specify the URL of the repository.</p>"
+msgstr ""
+"<p><big><b>軟體源 URL</b></big><br>\n"
+"請使用 <b>URL</b> 指定軟體源的 URL。<p>"
+
+#. Get widget description map
+#. @return widget description map
+#. Get widget description map
+#. @return widget description map
+#: src/modules/SourceDialogs.rb:716 src/modules/SourceDialogs.rb:1843
+msgid "Edit Parts of the URL"
+msgstr "編輯部分 URL"
+
+#: src/modules/SourceDialogs.rb:723 src/modules/SourceDialogs.rb:1850
+msgid "Edit Complete URL"
+msgstr "編輯完整 URL"
+
+#. help text
+#: src/modules/SourceDialogs.rb:735
+msgid ""
+"<p><big><b>NFS Server</b></big><br>\n"
+"Use <b>Server Name</b> and <b>Path to Directory or ISO Image</b>\n"
+"to specify the NFS server host name and path on the server.</p>"
+msgstr ""
+"<p><big><b>NFS 伺服器</b></big><br>\n"
+"使用<b>伺服器名稱</b>與<b>資料夾或 ISO 映像路徑</b>\n"
+"指定 NFS 伺服器主機名與伺服器上的路徑。<p>"
+
+#: src/modules/SourceDialogs.rb:742
+msgid ""
+"<p><big><b>Mount Options</b></big><br>\n"
+"You can specify extra options used for mounting the NFS volume.\n"
+"This is an expert option, keeping the default value is recommened. See "
+"<b>man 5 nfs</b>\n"
+"for details and the list of supported options."
+msgstr ""
+"<p><big><b>裝載選項</b></big><br>\n"
+"您可指定用於裝載 NFS 區塊的額外選項。\n"
+"這是一個專家選項，推薦保持預設值。細節與支援選項列表請參考 <b>man 5 nfs</b>。"
+
+#. radio button
+#: src/modules/SourceDialogs.rb:797
+msgid "&CD-ROM"
+msgstr "&CD-ROM"
+
+#. radio button
+#: src/modules/SourceDialogs.rb:799
+msgid "&DVD-ROM"
+msgstr "&DVD-ROM"
+
+#: src/modules/SourceDialogs.rb:804
+msgid ""
+"<p><big><b>CD or DVD Media</b></big><br>\n"
+"Set <b>CD-ROM</b> or <b>DVD-ROM</b> to specify the type of media.</p>"
+msgstr ""
+"<p><big><b>CD 或 DVD 介質</b></big><br>\n"
+"設定 <b>CD-ROM</b> 或 <b>DVD-ROM</b> 以指定介質類型。</p>"
+
+#. dialog caption
+#: src/modules/SourceDialogs.rb:895
+msgid "ISO Image File"
+msgstr "ISO 映像檔案"
+
+#. error popup - the entered path is not a directory
+#: src/modules/SourceDialogs.rb:918
+msgid ""
+"The entered path is not a directory\n"
+"or the directory does not exist.\n"
+msgstr "輸入路徑不是一個資料夾或該資料夾不存在。\n"
+
+#. error popup - the entered path is not a regular file
+#: src/modules/SourceDialogs.rb:948
+msgid ""
+"The entered path is not a file\n"
+"or the file does not exist.\n"
+msgstr "輸入路徑不是一個檔案或該檔案不存在。\n"
+
+#. continue/cancel popup, %1 is a file name
+#: src/modules/SourceDialogs.rb:972
+msgid ""
+"File '%1'\n"
+"does not seem to be an ISO image.\n"
+"Use it anyway?\n"
+msgstr ""
+"檔案 '%1'\n"
+"好像不是一個 ISO 映像。\n"
+"仍然使用它嗎？\n"
+
+#. text entry
+#: src/modules/SourceDialogs.rb:993
+msgid "&Path to Directory"
+msgstr "資料夾路徑(&P)"
+
+#. checkbox label
+#: src/modules/SourceDialogs.rb:1001 src/modules/SourceDialogs.rb:1259
+#: src/modules/SourceDialogs.rb:1326
+msgid "&Plain RPM Directory"
+msgstr "純 RPM 資料夾(&P)"
+
+#: src/modules/SourceDialogs.rb:1016
+msgid ""
+"<p><big><b>Local Directory</b></big><br>\n"
+"Use <b>Path to Directory</b> to specify the path to the\n"
+"directory. If the directory contains only RPM packages without\n"
+"any metadata (i.e. there is no product information), then check option\n"
+"<b>Plain RPM Directory</b>.</p>\n"
+msgstr ""
+"<p><big><b>本地資料夾</b></big><br>\n"
+"使用<b>資料夾路徑</b>指定資料夾路徑。\n"
+"若資料夾中僅有 RPM 軟體包而無任何後設資料\n"
+"(如，無產品資訊) 則可勾選\n"
+"<b>純 RPM 資料夾</b>選項。</p>\n"
+
+#. `opt(`hstretch),
+#: src/modules/SourceDialogs.rb:1252
+msgid "&USB Mass Storage Device"
+msgstr "&USB 大容量存儲裝置"
+
+#. the spacing is added to make the widget wider
+#: src/modules/SourceDialogs.rb:1257 src/modules/SourceDialogs.rb:1324
+msgid "&File System"
+msgstr "檔案系統(&F)"
+
+#: src/modules/SourceDialogs.rb:1258 src/modules/SourceDialogs.rb:1325
+msgid "Dire&ctory"
+msgstr "資料夾(&C)"
+
+#: src/modules/SourceDialogs.rb:1263
+msgid ""
+"<p><big><b>USB Stick or Disk</b></big><br>\n"
+"Select the USB device on which the repository is located.\n"
+"Use <b>Path to Directory</b> to specify the directory of the repository.\n"
+"If the path is omitted, the system will use the root directory of the disk.\n"
+"If the directory contains only RPM packages without\n"
+"any metadata (i.e. there is no product information), then check option\n"
+"<b>Plain RPM Directory</b>.</p>\n"
+msgstr ""
+"<p><big><b>USB 記憶棒或磁碟</b></big><br>\n"
+"選擇軟體源所在的 USB 裝置。\n"
+"使用<b>資料夾路徑</b>指定軟體源的資料夾。\n"
+"若省略路徑，系統將使用磁碟根目錄。\n"
+"若資料夾中僅有 RPM 軟體包而無任何後設資料\n"
+"(如，無產品資訊) 則可勾選\n"
+"<b>純 RPM 資料夾</b>選項。</p>\n"
+
+#. 'auto' is a value in the combo box widget, do not translate it!
+#. 'auto' is a value in the combo box widget, do not translate it!
+#: src/modules/SourceDialogs.rb:1273 src/modules/SourceDialogs.rb:1340
+msgid ""
+"<p>The file system used on the device will be detected automatically\n"
+"if you select file system 'auto'. If the detection fails or you\n"
+"want to use a certain file system, select it from the list.</p>\n"
+msgstr ""
+"<p>若選擇檔案系統為 'auto'，將自動檢測裝置上使用的檔案系統。\n"
+"若檢測失敗，或您想要使用特定檔案系統，還可從列表中選擇。</p>\n"
+
+#. combobox title
+#: src/modules/SourceDialogs.rb:1323
+msgid "&Disk Device"
+msgstr "磁碟裝置(&D)"
+
+#: src/modules/SourceDialogs.rb:1330
+msgid ""
+"<p><big><b>Disk</b></big><br>\n"
+"Select the disk on which the repository is located.\n"
+"Use <b>Path to Directory</b> to specify the directory of the repository.\n"
+"If the path is omitted, the system will use the root directory of the disk.\n"
+"If the directory contains only RPM packages without\n"
+"any metadata (i.e. there is no product information), then check option\n"
+"<b>Plain RPM Directory</b>.</p>\n"
+msgstr ""
+"<p><big><b>磁碟</b></big><br>\n"
+"選擇軟體源所在的磁碟。\n"
+"使用<b>資料夾路徑</b>指定軟體源的資料夾。\n"
+"若省略路徑，系統將使用磁碟根目錄。\n"
+"若資料夾中僅有 RPM 軟體包而無任何後設資料 (如，無產品資訊) 則可勾選\n"
+"<b>純 RPM 資料夾</b>選項。</p>\n"
+
+#. text entry
+#: src/modules/SourceDialogs.rb:1356
+msgid "&Path to ISO Image"
+msgstr "ISO 映像路徑(&P)"
+
+#. push button
+#: src/modules/SourceDialogs.rb:1376
+msgid ""
+"<p><big><b>Local ISO Image</b></big><br>\n"
+"Use <b>Path to ISO Image</b> to specify the path to the\n"
+"ISO image file.</p>"
+msgstr ""
+"<p><big><b>本地 ISO 映像</b></big><br>\n"
+"使用<b>ISO 映像路徑</b>指定 ISO 映像檔案的路徑。</p>"
+
+#. text entry
+#: src/modules/SourceDialogs.rb:1557
+msgid "Server &Name"
+msgstr "伺服器名稱(&N)"
+
+#: src/modules/SourceDialogs.rb:1561
+msgid "&Port"
+msgstr "埠(&P)"
+
+#. text entry
+#: src/modules/SourceDialogs.rb:1566
+msgid "&Share"
+msgstr "共享(&S)"
+
+#. checkbox label
+#: src/modules/SourceDialogs.rb:1579
+msgid "ISO &Image"
+msgstr "&ISO 映像"
+
+#. text entry
+#: src/modules/SourceDialogs.rb:1582
+msgid "&Directory on Server"
+msgstr "伺服器上的資料夾(&D)"
+
+#. frame
+#: src/modules/SourceDialogs.rb:1587
+msgid "Au&thentication"
+msgstr "認證(&T)"
+
+#. check box
+#: src/modules/SourceDialogs.rb:1594
+msgid "&Anonymous"
+msgstr "匿名(&A)"
+
+#. text entry
+#: src/modules/SourceDialogs.rb:1603
+msgid "&Workgroup or Domain"
+msgstr "工作組或域(&W)"
+
+#. text entry
+#: src/modules/SourceDialogs.rb:1612
+msgid "&User Name"
+msgstr "使用者名(&U)"
+
+#. password entry
+#: src/modules/SourceDialogs.rb:1619
+msgid "&Password"
+msgstr "密碼(&P)"
+
+#. radio button
+#: src/modules/SourceDialogs.rb:1694
+msgid "&FTP"
+msgstr "&FTP"
+
+#. radio button
+#: src/modules/SourceDialogs.rb:1697
+msgid "H&TTP"
+msgstr "H&TTP"
+
+#. radio button
+#: src/modules/SourceDialogs.rb:1704
+msgid "HTT&PS"
+msgstr "HTT&PS"
+
+#. help text - server dialog
+#: src/modules/SourceDialogs.rb:1874
+msgid ""
+"<p><big><b>Server and Directory</b></big><br>\n"
+"Use <b>Server Name</b> and <b>Path to Directory or ISO Image</b>\n"
+"to specify the NFS server host name and path on the server.\n"
+"To enable authentication, uncheck <b>Anonymous</b> and specify the\n"
+"<b>User Name</b> and the <b>Password</b>.</p>\n"
+"<p>\n"
+"For the SMB/CIFS repository, specify <b>Share</b> name and <b>Path to "
+"Directory\n"
+"or ISO Image</b>. \n"
+"If the location is a file holding an ISO image\n"
+"of the media, set <b>ISO Image</b>.</p>\n"
+msgstr ""
+"<p><big><b>伺服器與資料夾</b></big><br>\n"
+"使用<b>伺服器名稱</b>與<b>資料夾或 ISO 映像路徑</b>指定 NFS 伺服器主機名與在"
+"伺服器上的路徑。\n"
+"要啟用認證，請反選<b>匿名</b>並指定<b>使用者名</b>與<b>密碼</b>。<p>\n"
+"<p>\n"
+"要啟用 SMB/CIFS 軟體源，請指定<b>共享</b>名與<b>資料夾或 ISO 映像路徑</b>。\n"
+"若該位置是儲存介質 ISO 映像的檔案，請設定 <b>ISO 映像</b>。</p>\n"
+
+#. help text - server dialog, there is a "Port" widget
+#: src/modules/SourceDialogs.rb:1887
+msgid ""
+"<p>It is possible to set the <b>Port</b> number for a HTTP/HTTPS "
+"repository.\n"
+"Leave it empty to use the default port.</p>\n"
+msgstr ""
+"<p>可為 HTTP/HTTPS 軟體源設定<b>埠</b>號。\n"
+"留空將使用默認埠。</p>\n"
+
+#. Returns whether Community Repositories are defined in the control file.
+#.
+#. @return [Boolean] whether defined
+#: src/modules/SourceDialogs.rb:1949
+msgid "I would like to install an additional Add On Product"
+msgstr "我想要安裝一個額外的附加產品"
+
+#. help text
+#: src/modules/SourceDialogs.rb:2067
+msgid ""
+"<p><big><b>Media Type</b></big><br>\n"
+"The software repository can be located on CD, on a network server,\n"
+"or on the hard disk.</p>"
+msgstr ""
+"<p><big><b>介質類型</b></big><br>\n"
+"軟體源可位於 CD、網路伺服器或硬碟上。</p>"
+
+#. help, continued
+#: src/modules/SourceDialogs.rb:2076
+msgid ""
+"<p>\n"
+"To add  <b>CD</b> or <b>DVD</b>,\n"
+"have the product CD set or the DVD available.</p>"
+msgstr ""
+"<p>\n"
+"要添加 <b>CD</b> 或 <b>DVD</b>，\n"
+"請準備好產品 CD 集或 DVD。</p>"
+
+#. help, continued
+#: src/modules/SourceDialogs.rb:2086
+msgid ""
+"<p>\n"
+"The product CDs can be copied to the hard disk.\n"
+"Enter the path to the first CD, for example, /data1/<b>CD1</b>.\n"
+"Only the base path is required if all CDs are copied\n"
+"into the same directory.</p>\n"
+msgstr ""
+"<p>\n"
+"可將產品 CD 複製到硬碟上。\n"
+"請輸入第一張 CD 所在的路徑，例如 /data1/<b>CD1</b>。\n"
+"若已將全部 CD 複製進了相同資料夾，則僅需輸入基本路徑。</p>\n"
+
+#. help, continued
+#: src/modules/SourceDialogs.rb:2098
+msgid ""
+"<p>\n"
+"Network installation requires a working network connection.\n"
+"Specify the directory in which the packages from\n"
+"the first CD are located, such as /data1/CD1.</p>\n"
+msgstr ""
+"<p>\n"
+"網路安裝需要連通的網路連線。\n"
+"請指定第一張 CD 中的軟體包所在的資料夾，諸如 /data1/CD1。</p>\n"
+
+#. error popup
+#: src/modules/SourceDialogs.rb:2113
+msgid "Select the media type"
+msgstr "選擇介質類型"
+
+#: src/modules/SourceDialogs.rb:2119
+msgid "Insert the add-on product CD"
+msgstr "請插入附加產品 CD"
+
+#: src/modules/SourceDialogs.rb:2120
+msgid "Insert the add-on product DVD"
+msgstr "請插入附加產品 DVD"
+
+#. ask for a medium
+#: src/modules/SourceDialogs.rb:2138
+msgid "No USB disk was detected."
+msgstr "未檢測到 USB 磁碟。"
+
+#. TODO: disable "download" option when CD or DVD source is selected
+#: src/modules/SourceDialogs.rb:2333
+msgid ""
+"<p><b>Download Files</b><br>\n"
+"Each repository has description files which describe the content of the\n"
+"repository. Check <b>Download repository description files</b> to download "
+"the\n"
+"files when closing this YaST module. If the option is unchecked, YaST will\n"
+"automatically download the files when it needs them later. </p>\n"
+msgstr ""
+"<p><b>下載檔案</b><br>\n"
+"每個軟體源都有描述源中內容的描述檔案。\n"
+"勾選<b>下載軟體源描述檔案</b>以在關閉此 YaST 模組時下載這些檔案。\n"
+"若不選該選項，則 YaST 將在稍後需要這些檔案時自動下載它們。</p>\n"
+
+#. dialog caption
+#: src/modules/SourceDialogs.rb:2552
+msgid "Media Type"
+msgstr "介質類型"
+
+#. dialog caption
+#: src/modules/SourceDialogs.rb:2576
+msgid "Add On Product"
+msgstr "附加產品"
+
+#. SourceManager read dialog caption
+#: src/modules/SourceManager.rb:100
+msgid "Initializing Available Repositories"
+msgstr "正在啟始化可用軟體源"
+
+#. Progress stage 1/3
+#: src/modules/SourceManager.rb:112
+msgid "Read configured repositories"
+msgstr "讀取已配置軟體源"
+
+#. Progress stage 2/3
+#: src/modules/SourceManager.rb:114
+msgid "Detect available repositories via SLP"
+msgstr "通過服務定位協議檢測可用的軟體源"
+
+#. Progress step 1/3
+#: src/modules/SourceManager.rb:118
+msgid "Reading configured repositories..."
+msgstr "正在讀取已配置軟體源..."
+
+#. Progress step 2/3
+#: src/modules/SourceManager.rb:120
+msgid "Detecting available repositories..."
+msgstr "正在檢測可用軟體源..."
+
+#. Progress finished
+#. Progress finished
+#: src/modules/SourceManager.rb:122 src/modules/SourceManager.rb:200
+msgid "Finished"
+msgstr "已完成"
+
+#. Error message
+#: src/modules/SourceManager.rb:133
+msgid "Cannot read repositories."
+msgstr "無法讀取軟體源。"
+
+#. Error message
+#: src/modules/SourceManager.rb:141
+msgid "Cannot detect available repositories."
+msgstr "無法檢測可用軟體源。"
+
+#. popup message header
+#: src/modules/SourceManager.rb:160
+msgid "Unable to save changes to the repository.\n"
+msgstr "無法儲存對軟體源的修改。\n"
+
+#. SourceManager read dialog caption
+#: src/modules/SourceManager.rb:183
+msgid "Saving Repository Configuration"
+msgstr "正在儲存軟體源配置"
+
+#. Progress stage 1/1
+#: src/modules/SourceManager.rb:194
+msgid "Write repository settings"
+msgstr "寫入軟體源設定"
+
+#. Progress step 1/1
+#: src/modules/SourceManager.rb:198
+msgid "Writing the settings..."
+msgstr "正在寫入設定..."
+
+#. Create a repository from an URL
+#: src/modules/SourceManager.rb:296
+msgid "Adding repository..."
+msgstr "正在添加軟體源..."
+
+#. status info, to be used inside summary
+#: src/modules/SourceManager.rb:395
+msgid "Disabled"
+msgstr "已禁用"
+
+#. translators: name of a repository if no other idenfication found
+#: src/modules/SourceManager.rb:407
+msgid "unknown"
+msgstr "未知"
+
+#. corresponds to the "Enable/Disable" button
+#: src/modules/SourceManager.rb:430
+msgid "On"
+msgstr "開"
+
+#. corresponds to the "Enable/Disable" button
+#: src/modules/SourceManager.rb:432
+msgid "Off"
+msgstr "關"
+
+#. summary header
+#: src/modules/SourceManager.rb:472
+msgid "Configured Repositories"
+msgstr "已配置軟體源"
+
+#: src/modules/SourceManager.rb:680
+msgid "&Drive to eject"
+msgstr "要彈出的驅動器(&D)"
+
+#. translators: popup heading (progress popup)
+#: src/modules/SourceManagerSLP.rb:51
+msgid "SLP Search"
+msgstr "通過服務定位協議搜索"
+
+#. progress information
+#. progress information
+#: src/modules/SourceManagerSLP.rb:57 src/modules/SourceManagerSLP.rb:81
+msgid "Scanning network for installation services..."
+msgstr "正在掃描網路以發現安裝服務..."
+
+#. frame label
+#: src/modules/SourceManagerSLP.rb:106
+msgid "Filter Form"
+msgstr "過濾表單"
+
+#. translators: popup heading
+#: src/modules/SourceManagerSLP.rb:158
+msgid "Choose SLP Repository"
+msgstr "選擇 SLP 軟體源"
+
+#. tree label (tree of available products)
+#: src/modules/SourceManagerSLP.rb:171
+msgid "Available Installation &Products"
+msgstr "可用安裝產品(&P)"
+
+#: src/modules/SourceManagerSLP.rb:176
+msgid "&Details..."
+msgstr "細節(&D)..."
+
+#. error popup
+#. message popup
+#: src/modules/SourceManagerSLP.rb:211 src/modules/SourceManagerSLP.rb:217
+msgid "No details are available."
+msgstr "無可用細節。"
+
+#. min Y in UI
+#: src/modules/SourceManagerSLP.rb:274
+msgid "Repository Details"
+msgstr "軟體源細節"
+
+#. table header item
+#: src/modules/SourceManagerSLP.rb:281
+msgid "Key"
+msgstr "鍵"
+
+#. table header item
+#: src/modules/SourceManagerSLP.rb:283
+msgid "Value"
+msgstr "值"
+
+#. message popup
+#: src/modules/SourceManagerSLP.rb:403
+msgid ""
+"Select one of the offered options.\n"
+"More repositories are available for this product.\n"
+msgstr ""
+"請選擇提供的選項之一。\n"
+"本產品有更多軟體源可用。\n"
+
+#. popup error
+#: src/modules/SourceManagerSLP.rb:423
+msgid ""
+"An internal error occurred.\n"
+"The selected repository has no URL."
+msgstr ""
+"發生了一個內部錯誤。\n"
+"所選軟體源沒有 URL。"
+
+#. progress information, %1 stands for number of services
+#: src/modules/SourceManagerSLP.rb:520
+msgid "Collecting information of %1 services found..."
+msgstr "正在嵬集發現的 %1 服務的資訊..."
+
+#. error popup
+#: src/modules/SourceManagerSLP.rb:618
+msgid ""
+"No SLP repositories have been found on your network.\n"
+"This could be caused by a running SuSEfirewall2,\n"
+"which probably blocks the network scanning."
+msgstr ""
+"沒有在您的網路上發現 SLP 軟體源。\n"
+"這可能是由運行中的 SuSEfirewall2 導致的，\n"
+"它可能阻斷了網路掃描。"
+
+#. error popup
+#: src/modules/SourceManagerSLP.rb:627
+msgid "No SLP repositories have been found on your network."
+msgstr "沒有在您的網路上發現 SLP 軟體源。"
+
+#. Warning message, e.g.: Partition /usr needs 35 MB more disk space
+#: src/modules/SpaceCalculation.rb:936
+msgid "Partition \"%1\" needs %2 more disk space."
+msgstr "分割區 \"%1\" 需要 %2 更多磁碟空間。"
+
+#. popup message
+#: src/modules/SpaceCalculation.rb:956
+msgid ""
+"Deselect packages or delete data or temporary files\n"
+"before updating the system.\n"
+msgstr "在更新系統前請反選一些軟體包或者刪除一些資料或臨時檔案。\n"
+
+#. popup message
+#: src/modules/SpaceCalculation.rb:965
+msgid "Deselect some packages."
+msgstr "請反選一些軟體包。"
+
+#~ msgid "N&o, I Do not Agree"
+#~ msgstr "否，歲月很長就此別過(&O)"
+
+#~ msgid "&USB Stick or Disk..."
+#~ msgstr "&USB 記憶棒或磁碟..."
+
+#~ msgid ""
+#~ "<p>All registered repositories are shown here.\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p>在此顯示全部已註冊的軟體源。\n"
+#~ "</p>\n"
+
+#~ msgid "All changes will be lost. Really exit?"
+#~ msgstr "全部修改將不復存在。真心退出嗎？"
+
+#~ msgid "Search expression must not be empty!"
+#~ msgstr "搜索表示式不能為空！"
+
+#~ msgid "<b>Repository URL:</b> %1<br>"
+#~ msgstr "<b>軟體源 URL：</b> %1<br>"
+
+#~ msgid "<b>Version:</b> %1<br>"
+#~ msgstr "<b>版本：</b> %1<br>"
+
+#~ msgid "<b>Architecture:</b> %1<br>"
+#~ msgstr "<b>架構：</b> %1<br>"
+
+#~ msgid "Check Network Configuration"
+#~ msgstr "檢查網路配置"
+
+#~ msgid "Initialize Software Manager"
+#~ msgstr "啟始化軟體管理器"
+
+#~ msgid "Checking Network Configuration ..."
+#~ msgstr "正在檢查網路配置..."
+
+#~ msgid "Initializing Software Manager ... "
+#~ msgstr "正在啟始化軟體管理器..."
+
+#~ msgid "Reading Package Search Setup..."
+#~ msgstr "正在讀取軟體包搜索設定..."
+
+#~ msgid "<p>Packager is initializing...</p>"
+#~ msgstr "<p>正在啟始化軟體包管理器...</p>"
+
+#~ msgid "Package Search"
+#~ msgstr "軟體包搜索"
+
+#~ msgid "Search &Expression"
+#~ msgstr "搜索表示式(&E)"
+
+#~ msgid "&Search"
+#~ msgstr "搜索(&S)"
+
+#~ msgid "Search &in"
+#~ msgstr "搜索範圍(&I)"
+
+#~ msgid "Description"
+#~ msgstr "描述"
+
+#~ msgid "Contents"
+#~ msgstr "內容"
+
+#~ msgid "&Found Packages"
+#~ msgstr "找到軟體包(&F)"
+
+#~ msgid "&All Selected Packages"
+#~ msgstr "全部所選軟體包(&A)"
+
+#~ msgid "Package Description"
+#~ msgstr "軟體包描述"
+
+#~ msgid ""
+#~ "<p><big><b>Package Search</b></big><br>\n"
+#~ "Use the functionality of <i>Webpin package search</i> to search in all "
+#~ "known openSUSE build-service and openSUSE community repositories.</p>\n"
+#~ msgstr ""
+#~ "<p><big><b>軟體包搜索</b></big><br>\n"
+#~ "使用<i>Webpin 軟體包搜索</i>功能來搜索全部已知的 openSUSE 編譯服務與社群軟"
+#~ "件源。</p>\n"
+
+#~ msgid ""
+#~ "<p><big><b>Security</b></big><br> The software found is often not part of "
+#~ "the\n"
+#~ "distribution itself. You need to decide whether to trust the source of a\n"
+#~ "package. We do not take any responsibility for installing such software.</"
+#~ "p>\n"
+#~ msgstr ""
+#~ "<p><big><b>安全性</b></big><br>找到的軟體通常不是發行版自身的一部分。您需"
+#~ "要決定是否信任軟體包的來源。我們不為安裝了這樣的軟體導致的問題負責。</p>\n"
+
+#~ msgid "Select packages to install."
+#~ msgstr "選擇要安裝的軟體包。"
+
+#~ msgid "Searching for packages..."
+#~ msgstr "正在搜索軟體包..."
+
+#~ msgid "<p><b>Search failed</b></p>"
+#~ msgstr "<p><b>搜索失敗</b></p>"
+
+#~ msgid "<p><b>No packages matching entered criteria were found.</b></p>"
+#~ msgstr "<p><b>未找到匹配輸入關鍵詞的軟體包。</b></p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "<b>Adding a New GPG Key</b><br>\n"
+#~ "To add a new GPG key, specify the path to the key file.\n"
+#~ "Check the <B>Trusted</B> check box if the key is trusted.\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "<b>添加新 GPG 金鑰</b><br>\n"
+#~ "要添加新 GPG 金鑰，請指定金鑰檔案路徑。\n"
+#~ "若金鑰可信，請勾選<B>信任</B>選框。\n"
+#~ "</p>\n"
+
+#~ msgid "No further information available."
+#~ msgstr "沒有進一步的資訊。"
+
+#~ msgid "Unknown repository"
+#~ msgstr "未知軟體源"
+
+#~ msgid "No further information available, use at your own risk."
+#~ msgstr "沒有進一步的資訊，使用風險自負。"
+
+#~ msgid ""
+#~ "Search failed.\n"
+#~ "Remote server returned error code %1"
+#~ msgstr ""
+#~ "搜索失敗。\n"
+#~ "遠端伺服器返回錯誤程式碼 %1"
+
+#~ msgid ""
+#~ "<p>If you want one or more online repositories to be used,\n"
+#~ "select those you want and click <b>Next</b>.</p>\n"
+#~ msgstr ""
+#~ "<p>如果您希望使用一個或者更多線上軟體安裝源，\n"
+#~ "請選取您想要的並點選<b>下一步</b>。</p>\n"
+
+#~ msgid "Reading package information. One moment please..."
+#~ msgstr "正在讀取包資訊。請稍候..."
+
+#~ msgid "There was an error in the repository initialization."
+#~ msgstr "安裝源啟始化過程中發生錯誤。"
+
+#~ msgid "Search &In"
+#~ msgstr "搜索範圍(&I)"
+
+#~ msgid ""
+#~ "<p><b>These are the release notes made for the first initial release. "
+#~ "They are\n"
+#~ "part of the installation media. During the configuration steps, if a "
+#~ "connection\n"
+#~ "to the Internet is available, you can download updated release notes\n"
+#~ "from the SUSE Linux Web server.</b></p>"
+#~ msgstr ""
+#~ "<p><b>這些是為第一次發行時編寫的發行說明。\n"
+#~ "它們是安裝介質的一部分。在安裝期間，如果因特網\n"
+#~ "連線可用，則您可以從 SUSE Linux 全球資訊網伺服器下載\n"
+#~ "最新的發行說明。</b></p>"
+
+#~ msgid "Add-On Product Installation"
+#~ msgstr "附加產品安裝"
+
+#~ msgid "Adding software that fits your system."
+#~ msgstr "正在添加適合您系統的軟體。"
+
+#~ msgid "No package has been selected for installation."
+#~ msgstr "沒有選擇任何要安裝的包。"
+
+#~ msgid ""
+#~ "The following packages will be installed:\n"
+#~ "\n"
+#~ "%1\n"
+#~ "\n"
+#~ "Continue installation?"
+#~ msgstr ""
+#~ "將安裝以下軟體包：\n"
+#~ "\n"
+#~ "%1\n"
+#~ "\n"
+#~ "繼續安裝嗎？"
+
+#~ msgid "Selections:<br>"
+#~ msgstr "選擇：<br>"
+
+#~ msgid "Medium"
+#~ msgstr "介質"
+
+#~ msgid "Next %1: %2 -- %3"
+#~ msgstr "下一個 %1：%2 -- %3"
+
+#~ msgid "Re&fresh Now"
+#~ msgstr "立即重新整理(&F)"
+
+#~ msgid "Accept or decline the license agreement."
+#~ msgstr "接受或拒絕該許可協議。"
+
+#~ msgid ""
+#~ "Repository synchronization with ZMD failed.\n"
+#~ "Save changes anyway?"
+#~ msgstr ""
+#~ "與 ZMD 同步源失敗。\n"
+#~ "是否要儲存變更？"
+
+#~ msgid "Synchronize Changes with &ZENworks"
+#~ msgstr "與 ZENworks 同步變更(&Z)"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "<b>Synchronize Changes with ZENworks</b> will also call <tt>rug</tt>\n"
+#~ "to perform the changes in that package management system.</p>\n"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "<b>與 ZENworks 同步變更</b>將呼叫 <tt>rug</tt>\n"
+#~ "以執行在包管理系統中的變更。</p>\n"
+
+#~ msgid " On "
+#~ msgstr " 開 "
+
+#~ msgid "Synchronizing with ZENworks"
+#~ msgstr "正在與 ZENworks 同步"
+
+#~ msgid ""
+#~ "Your service was added successfully in YaST, but could not be "
+#~ "synchronized with ZENworks."
+#~ msgstr "您的服務已使用 YaST 成功添加，但無法與 ZenWorks 同步。"
+
+#~ msgid ""
+#~ "Your service was deleted successfully in YaST, but could not be "
+#~ "synchronized with ZENworks."
+#~ msgstr "您的服務已使用 YaST 成功刪除，但無法與 ZenWorks 同步。"
+
+#~ msgid "Command timed out after %1 milliseconds."
+#~ msgstr "%1 微秒後命令超時。"
+
+#~ msgid "Command timed out after %1 seconds."
+#~ msgstr "%1 秒後命令超時。"
+
+#~ msgid "Services"
+#~ msgstr "服務"
+
+#~ msgid "Repositories"
+#~ msgstr "安裝源"
+

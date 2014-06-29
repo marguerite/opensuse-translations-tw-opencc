@@ -1,0 +1,981 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:37+0200\n"
+"PO-Revision-Date: 2013-02-05 22:44+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the audit-laf module
+#. Initialization dialog caption
+#. Initialization dialog caption
+#: src/clients/audit-laf.rb:55 src/include/audit-laf/wizards.rb:180
+#: src/include/audit-laf/wizards.rb:228
+msgid "Configuration of Linux Audit Framework (LAF)"
+msgstr "Linux 審計框架 (LAF) 配置"
+
+#. translators: command line help text for show action
+#: src/clients/audit-laf.rb:68
+msgid "Show information about audit settings"
+msgstr "顯示審計設定的資訊"
+
+#. translators: command line help text for set action
+#: src/clients/audit-laf.rb:81
+msgid "Set the specified option"
+msgstr "設定指定選項"
+
+#. translators: command line help text for 'show logfile'
+#: src/clients/audit-laf.rb:89
+msgid "Show log file settings"
+msgstr "顯示日誌檔案設定"
+
+#. translators: command line help text for 'show diskspace'
+#: src/clients/audit-laf.rb:95
+msgid "Show disk space settings"
+msgstr "顯示磁碟空間設定"
+
+#. translators: command line help text for 'show dispatcher'
+#: src/clients/audit-laf.rb:101
+msgid "Show dispatcher settings"
+msgstr "顯示排程程式設定"
+
+#. translators: command line help text for log_file option
+#: src/clients/audit-laf.rb:107
+msgid "Name of the log file (full path name)"
+msgstr "日誌檔名稱 (完整路徑名)"
+
+#. translators: command line help text for log_format option
+#: src/clients/audit-laf.rb:114
+msgid "Log format"
+msgstr "日誌格式"
+
+#. translators: command line help text for flush option
+#: src/clients/audit-laf.rb:122
+msgid "How to write data to disk"
+msgstr "如何寫入資料到磁碟"
+
+#. translators: command line help text for frequency option
+#: src/clients/audit-laf.rb:130
+msgid "How many records to write before a flush to disk is issued"
+msgstr "一次寫入磁碟的記錄條數"
+
+#. translators: command line help text for max_log_file option
+#: src/clients/audit-laf.rb:137
+msgid "Maximal size (in MByte) of the log file"
+msgstr "日誌檔案最大尺寸 (以 MB 計)"
+
+#. translators: command line help text for max_log_file_action option
+#: src/clients/audit-laf.rb:144
+msgid "Action if max_log_file is reached"
+msgstr "當 max_log_file 達到時的操作"
+
+#. translators: command line help text for num_logs option
+#: src/clients/audit-laf.rb:152
+msgid "Number of log files to keep"
+msgstr "要保留的日誌檔案數目"
+
+#. translators: command line help text for name_format option
+#: src/clients/audit-laf.rb:159
+msgid "Computer name format"
+msgstr "計算機名稱格式"
+
+#. translators: command line help text for name_format option
+#: src/clients/audit-laf.rb:167
+msgid "Computer name (used if format is set to USER)"
+msgstr "計算機名稱 (當格式設定為 USER 時使用)"
+
+#. translators: command line help text for space_left option
+#: src/clients/audit-laf.rb:174
+msgid "Space left on log partition (in MByte) when system starts to run low"
+msgstr "當系統空間開始過低時，日誌分割區上剩餘的空間 (以 MB 計)"
+
+#. translators: command line help text for space_left_action option
+#: src/clients/audit-laf.rb:181
+msgid "Action if space_left is reached"
+msgstr "當 space_left 達到時的操作"
+
+#. translators: command line help text for space_left_script option
+#: src/clients/audit-laf.rb:196
+msgid "Script to execute (full path name) if space_left is reached"
+msgstr "當 space_left 達到時執行的指令碼 (完整路徑名)"
+
+#. translators: command line help text for admin_space_left
+#: src/clients/audit-laf.rb:203
+msgid "Space left on log partition (in MByte) when system is running low"
+msgstr "當系統空間過低時，日誌分割區剩餘空間 (以 MB 計)"
+
+#. command line help text for admin_space_left_action option
+#: src/clients/audit-laf.rb:210
+msgid "Action if admin_space_left is reached"
+msgstr "當 admin_space_left 達到時的操作"
+
+#. translators: command line help text for admin_space_left_script option
+#: src/clients/audit-laf.rb:225
+msgid "Script to execute (full path name) if admin_space_left is reached"
+msgstr "當 admin_space_left 達到時執行的指令碼 (完整路徑名)"
+
+#. command line help text for action_mail_acct option
+#: src/clients/audit-laf.rb:232
+msgid "Mail sent to this account (if space_left_action set to EMAIL)"
+msgstr "郵件已發送到此賬戶 (如果 space_left_action 設定為 EMAIL)"
+
+#. command line help text for disk_full_action option
+#: src/clients/audit-laf.rb:239
+msgid "Action to perform if disk is full"
+msgstr "磁碟已滿時執行的操作"
+
+#. translators: command line help text for admin_space_left_script option
+#: src/clients/audit-laf.rb:247
+msgid "Script to execute (full path name) if disk is full"
+msgstr "磁碟已滿時執行的指令碼 (完整路徑名)"
+
+#. command line help text for disk_error_action option
+#: src/clients/audit-laf.rb:254
+msgid "Action to perform on disk error"
+msgstr "磁碟出錯時執行的操作"
+
+#. translators: command line help text for script on disk error option
+#: src/clients/audit-laf.rb:262
+msgid "Script to execute (full path name) on disk error"
+msgstr "磁碟出錯時執行的指令碼 (完整路徑名)"
+
+#. command line help text for communication control option
+#: src/clients/audit-laf.rb:269
+msgid "How to communicate between dispatcher and the audit daemon"
+msgstr "排程程式與審計守護精靈間的通訊方式"
+
+#. command line help text for dispatcher option
+#: src/clients/audit-laf.rb:277
+msgid "Dispatcher program (full path name)"
+msgstr "排程程式 (完整路徑名)"
+
+#. Rich text title for AuditLaf in proposals
+#: src/clients/audit-laf_proposal.rb:82
+msgid "AuditLaf"
+msgstr "AuditLaf"
+
+#. Menu title for AuditLaf in proposals
+#: src/clients/audit-laf_proposal.rb:86
+msgid "&AuditLaf"
+msgstr "AuditLaf(&A)"
+
+#. Handle actions of log file dialog (button 'Select file')
+#: src/include/audit-laf/complex.rb:126
+msgid "Select the log file"
+msgstr "選擇日誌檔案"
+
+#. Store all values in SETTINGS
+#: src/include/audit-laf/complex.rb:178
+msgid ""
+"The 'User Defined Name' is NOT set although\n"
+"the 'Computer Name Format' is set to 'USER'.\n"
+"Setting the format to 'NONE' (default)."
+msgstr ""
+"雖然 '計算機名稱格式' 已設定為 '使用者'，但 '使用者定義的名稱' 沒有設定。\n"
+"設定格式為 '無' (默認)。"
+
+#. Handle actions of dispatcher dialog (button 'Select file')
+#: src/include/audit-laf/complex.rb:223
+msgid "Select the dispatcher program"
+msgstr "選擇排程程式"
+
+#. Second part of an error message: the value won't be changed because of previous error
+#: src/include/audit-laf/complex.rb:338
+msgid "Value of '%1' remains unchanged."
+msgstr "“%1”的值保持不變。"
+
+#: src/include/audit-laf/complex.rb:342
+msgid "%1 doesn't exist.\n"
+msgstr "%1 不存在。\n"
+
+#: src/include/audit-laf/complex.rb:348
+msgid "%1 is not a regular file.\n"
+msgstr "檔案 '%1' 不是正常檔案。\n"
+
+#: src/include/audit-laf/complex.rb:355
+msgid "%1 not owned by root.\n"
+msgstr "%1 的所有者不是 root。\n"
+
+#. check permissions
+#: src/include/audit-laf/complex.rb:371
+msgid "File permissions of %1 NOT set to -rwxr-x---.\n"
+msgstr "%1 的檔案許可權沒有設定為 -rwxr-x--。\n"
+
+#. Warning - the audit configuration is locked, reset impossible
+#: src/include/audit-laf/complex.rb:461
+msgid ""
+"The rules are already locked, a reset is impossible.\n"
+"\n"
+"If you want to unlock, set the enabled flag accordingly and\n"
+"finish the configuration. Afterwards a reboot is required."
+msgstr ""
+"規則已經鎖定，無法重置。\n"
+"\n"
+"如果您想要解鎖，請相應設定啟用標識，並完成配置。之後需要重啟。"
+
+#. Report success
+#: src/include/audit-laf/complex.rb:488
+msgid "Rules successfully restored"
+msgstr "已成功恢復規則"
+
+#. Report error - error during reset
+#: src/include/audit-laf/complex.rb:492
+msgid "Cannot reset rules. Check /etc/audit/audit.rules."
+msgstr "無法重置規則。請檢查 /etc/audit/audit.rules。"
+
+#. Handle actions of rules dialog
+#: src/include/audit-laf/complex.rb:560
+msgid ""
+"The rules are already locked.\n"
+"\n"
+"A test is impossible because sending new rules\n"
+"will cause an error.\n"
+msgstr ""
+"規則已經鎖定。n\n"
+"測試是不可能的，因為發送新規則會觸發錯誤。\n"
+
+#: src/include/audit-laf/complex.rb:573
+msgid ""
+"Lock is set in audit.rules (-e 2).\n"
+"\n"
+"It makes no sense to continue, because the rules will\n"
+"be locked until next boot.\n"
+msgstr ""
+"audit.rules 已設定鎖定 (-e 2)。\n"
+"\n"
+"繼續是無意義的，因為規則將持續鎖定到下一次重啟。\n"
+
+#: src/include/audit-laf/complex.rb:606
+msgid "Success"
+msgstr "成功"
+
+#: src/include/audit-laf/complex.rb:609
+msgid "Cannot create tmp file for rules."
+msgstr "不能為規則創建臨時檔案。"
+
+#: src/include/audit-laf/complex.rb:616
+msgid "Select an example"
+msgstr "請選擇一個例項"
+
+#. Called if 'Abort' button is pressed in main dialog.
+#. If the rules are changed by a syntax check the changes will be reseted.
+#: src/include/audit-laf/complex.rb:666
+msgid "Lock set"
+msgstr "鎖定設定"
+
+#: src/include/audit-laf/complex.rb:667
+msgid ""
+"The audit configuration is locked (option -e 2).\n"
+"This means the rules are locked until next boot!\n"
+"If you really want this, make sure '-e 2' is the last entry\n"
+"in the rules file. If not, either enable or disable auditing.\n"
+"To check or change the rules, go back to the rules editor.\n"
+msgstr ""
+"審計配置已鎖定 (選項 -e 2)。這意味著規則被鎖定直到下次重啟！\n"
+"如果您真的想要這麼做，確保 '-e 2' 是規則檔案的最後一條。如果不想，請啟用或禁用審計。\n"
+"要檢查或變更規則，回到規則編輯器。\n"
+
+#. Frame label
+#: src/include/audit-laf/dialogs.rb:69
+msgid "General Settings"
+msgstr "常規設定"
+
+#. InputField label
+#. Header of tab in tab widget
+#: src/include/audit-laf/dialogs.rb:74 src/include/audit-laf/wizards.rb:117
+msgid "&Log File"
+msgstr "日誌檔案(&L)"
+
+#. PushButton label
+#. PushButton label
+#: src/include/audit-laf/dialogs.rb:79 src/include/audit-laf/dialogs.rb:222
+msgid "Select Fi&le"
+msgstr "選擇檔案(&L)"
+
+#. ComboBox label - select format of logging
+#: src/include/audit-laf/dialogs.rb:90
+msgid "&Format"
+msgstr "格式化(&F)"
+
+#. ComboBox label - select how to flush data on disk
+#: src/include/audit-laf/dialogs.rb:103
+msgid "Fl&ush"
+msgstr "重新整理(&u)"
+
+#. InputField label - enter how many records to write before flush data to disk
+#: src/include/audit-laf/dialogs.rb:119
+msgid "Fre&quency (Number of Records)"
+msgstr "頻率（記錄數）(&Q)"
+
+#. Frame label - data regarding size of log file and action to perform
+#: src/include/audit-laf/dialogs.rb:132
+msgid "Size and Action"
+msgstr "大小與操作"
+
+#. InputField label
+#: src/include/audit-laf/dialogs.rb:137
+msgid "Ma&x File Size (MB)"
+msgstr "最大檔案大小 (MB)(&X)"
+
+#. ComboBox label
+#: src/include/audit-laf/dialogs.rb:145
+msgid "M&aximum File Size Action"
+msgstr "最大檔案大小操作(&A)"
+
+#. InputField label
+#: src/include/audit-laf/dialogs.rb:162
+msgid "&Number of Log Files"
+msgstr "日誌檔案數(&N)"
+
+#. Frame label - data regarding how to write computer names to the log file
+#: src/include/audit-laf/dialogs.rb:173
+msgid "Computer Names"
+msgstr "計算機名"
+
+#. ComboBox label
+#: src/include/audit-laf/dialogs.rb:181
+msgid "&Computer Name Format"
+msgstr "計算機名稱格式(&C)"
+
+#. InputField label
+#: src/include/audit-laf/dialogs.rb:192
+msgid "User Defined Name"
+msgstr "使用者定義的名稱"
+
+#. Frame label - settings of the dispatcher program
+#: src/include/audit-laf/dialogs.rb:208
+msgid "Dispatcher Settings"
+msgstr "排程設定"
+
+#. InputField label
+#: src/include/audit-laf/dialogs.rb:216
+msgid "Dispatcher Program"
+msgstr "排程程式"
+
+#. ComboBox label - communication between the audit daemon and the dispatcher program
+#: src/include/audit-laf/dialogs.rb:230
+msgid "C&ommunication"
+msgstr "通訊(&O)"
+
+#. Frame label - keep it short!
+#: src/include/audit-laf/dialogs.rb:252
+msgid "Value and Action for Space Is Starting to Run Low"
+msgstr "空間大小與操作開始不足"
+
+#. InputField label - space on disk is starting to run low if the entered value is reached
+#: src/include/audit-laf/dialogs.rb:257
+msgid "&Space Left on Disk (MB)"
+msgstr "磁碟剩餘空間(MB)(&S)"
+
+#. ComboBox label - select an action which is performed if space on disk is low
+#: src/include/audit-laf/dialogs.rb:266
+msgid "&Action"
+msgstr "操作(&A)"
+
+#. InputField label - enter the path to a script (which will be executed)
+#. InputField label - enter the path to a script (which will be executed)
+#. InputField label - enter the path to a script (which will be executed)
+#. InputField label - enter the path to a script (which will be executed)
+#: src/include/audit-laf/dialogs.rb:274 src/include/audit-laf/dialogs.rb:305
+#: src/include/audit-laf/dialogs.rb:332 src/include/audit-laf/dialogs.rb:350
+msgid "Path to Script"
+msgstr "指令碼路徑"
+
+#. Frame label - keep it short!
+#: src/include/audit-laf/dialogs.rb:281
+msgid "Value and Action for Space Is Running Low"
+msgstr "空間大小與操作不足"
+
+#. InputField label - space on disk is running low if the entered value is reached
+#: src/include/audit-laf/dialogs.rb:286
+msgid "&Admin Space Left (MB) "
+msgstr "管理員剩餘空間(MB)(&A)"
+
+#. ComboBox label - select an action which is performed if space on disk is running low
+#: src/include/audit-laf/dialogs.rb:295
+msgid "Ac&tion"
+msgstr "操作(&T)"
+
+#: src/include/audit-laf/dialogs.rb:311
+msgid "Action Mail Account"
+msgstr "操作郵件帳戶"
+
+#. Frame label - keep it short!
+#: src/include/audit-laf/dialogs.rb:315
+msgid "Action on Error or Disk Full"
+msgstr "錯誤或磁碟已滿時的操作"
+
+#. ComboBox label - select an action which is performed if disk is full
+#: src/include/audit-laf/dialogs.rb:324
+msgid "Disk &Full Action"
+msgstr "磁碟已滿操作(&F)"
+
+#. ComboBox label - select an action which is performed on error
+#: src/include/audit-laf/dialogs.rb:342
+msgid "Disk &Error Action"
+msgstr "磁碟錯誤操作(&E)"
+
+#. label of a combo box with the possibilitiy to enable/disable auditing or lock the rules
+#: src/include/audit-laf/dialogs.rb:374
+msgid "&Set Enabled Flag"
+msgstr "設定啟用標識(&S)"
+
+#. combo box item
+#: src/include/audit-laf/dialogs.rb:377 src/modules/AuditLaf.rb:233
+msgid "Auditing enabled"
+msgstr "審計已啟用"
+
+#. combo box item
+#: src/include/audit-laf/dialogs.rb:379 src/modules/AuditLaf.rb:235
+msgid "Auditing disabled"
+msgstr "審計已禁用"
+
+#. combo box item
+#: src/include/audit-laf/dialogs.rb:381
+msgid "Rules are locked (until next boot)"
+msgstr "規則已經鎖定（直至下次啟動）"
+
+#. Label - describes what can be done in the editor
+#: src/include/audit-laf/dialogs.rb:393
+msgid "Edit the rules for the audit subsystem here:"
+msgstr "在此編輯審計子系統規則："
+
+#. label of a push button (please keep it short)
+#: src/include/audit-laf/dialogs.rb:401
+msgid "&Check Syntax"
+msgstr "檢查語法(&C)"
+
+#. label of push button  (please keep it short)
+#: src/include/audit-laf/dialogs.rb:404
+msgid "&Restore 'audit.rules'"
+msgstr "恢復“audit.rules”(&R)"
+
+#. label of push button  (please keep it short)
+#: src/include/audit-laf/dialogs.rb:407
+msgid "R&estore and Reset"
+msgstr "恢復與重置(&E)"
+
+#. label of a push button
+#: src/include/audit-laf/dialogs.rb:410
+msgid "&Load "
+msgstr "載入(&L)"
+
+#. Read dialog help 1/2
+#: src/include/audit-laf/helps.rb:35
+msgid ""
+"<p><b><big>Initializing Configuration of Linux Audit Framework</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在啟始化 Linux 審計框架配置</big></b><br>\n"
+"</p>\n"
+
+#. Read dialog help 2/2
+#: src/include/audit-laf/helps.rb:39
+msgid ""
+"<p><b><big>Aborting Initialization:</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>\n"
+msgstr ""
+"<p><b><big>終止啟始化:</big></b><br>\n"
+"請您現在點選<b>終止</b>, 以便安全中斷配置工具。</p>\n"
+
+#. Write dialog help 1/2
+#: src/include/audit-laf/helps.rb:43
+msgid ""
+"<p><b><big>Saving auditd Configuration and Rules</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在儲存 auditd 配置與規則</big></b><br>\n"
+"</p>\n"
+
+#. Write dialog help 2/2
+#: src/include/audit-laf/helps.rb:47
+msgid ""
+"<p><b><big>Aborting Saving:</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.\n"
+"An additional dialog informs whether it is safe to do so.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>中斷儲存:</big></b><br>\n"
+"請點選<B>中斷</B>,以便中斷儲存.\n"
+"一個附加對話方塊將告訴您這樣做是否安全.\n"
+"</p>\n"
+
+#. logfile_settings dialog help 1/8
+#: src/include/audit-laf/helps.rb:54
+msgid ""
+"<p><b><big>Auditd Log File Configuration</big></b><br>\n"
+"The audit daemon is the component of the Linux Auditing System which is responsible for writing all relevant audit events to the log file <i>/var/log/audit/audit.log</i> (default).\n"
+"Events may come from the <i>apparmor</i> kernel module, from applications which use <i>libaudit</i> (e.g. PAM) or incidents caused by rules (e.g. file watches).</p>"
+msgstr ""
+"<p><b><big>Auditd 日誌檔案配置</big></b><br>\n"
+"審計守護精靈是 LInux 審計系統的元件，該系統負責寫入所有相關的審計事件到日誌檔案 <i>/var/log/audit/audit.log</i> (默認)。\n"
+"事件可能來自 <i>apparmor</i> 核心模組、使用 <i>libaudit</i> 的應用程式 (例如 PAM) 或者由規則觸發的事件 (例如檔案監視)。</p>"
+
+#. logfile_settings dialog help 2/8
+#: src/include/audit-laf/helps.rb:60
+msgid ""
+"<p>The <b>Rules for auditctl</b> dialog offers more information about rules and the possibility to add rules.\n"
+"Detailed information about the log file settings can be obtained from the manual page ('man auditd.conf').</p>"
+msgstr ""
+"<p><b>auditctl 規則</b> 對話方塊提供了關於規則與添加規則的可能性的更多資訊。\n"
+"關於日誌檔案設定的詳細資訊可以從 'man auditd.conf' 幫助手冊頁面獲取。</p>"
+
+#. logfile_settings dialog help 3/8
+#: src/include/audit-laf/helps.rb:64
+msgid ""
+"<p><b>Log File</b>: Enter the full path name to the log file\n"
+"(or use <b>Select File</b>.)</p>"
+msgstr "<p><b>日誌檔案</b>：輸入日誌檔案的完整路徑 (或使用 <b>選擇檔案</b>)。</p>"
+
+#. logfile_settings dialog help 4/8
+#: src/include/audit-laf/helps.rb:68
+msgid ""
+"<p><b>Format</b>: set <i>RAW</i> to log all data (store in a format exactly as the kernel\n"
+"sends it) or <i>NOLOG</i> to discard all audit information instead of writing it on disk (does not affect\n"
+"data sent to the dispatcher).</p> "
+msgstr ""
+"<p><b>格式</b>：設定 <i>原始</i> 將記錄所有資料 (用與核心發送的格式相同的格式來存儲) 或者\n"
+"<i>無日誌</i> 來丟棄所有審計資訊而不是將它們寫入到磁碟 (不影響發送給排程程式的資料)。</p>"
+
+#. logfile_settings dialog help 5/8
+#: src/include/audit-laf/helps.rb:74
+msgid ""
+"<p><b>Flush</b>: describes how to write the data to disk. If set to <i>INCREMENTAL</i> the\n"
+"<b>Frequency</b> parameter tells how many records to write before issuing an explicit flush to disk.\n"
+"<i>NONE</i> means: no special effort is made to flush data, <i>DATA</i>: keep data portion synced,\n"
+"<i>SYNC</i>: keep data and meta-data fully synced.</p>"
+msgstr ""
+"<p><b>重新整理</b>：描述瞭如何把資料寫到磁碟。如果設定為 <i>增量</i>，<b>頻率</b> 參數將定義\n"
+"在明確重新整理磁碟前寫入多少記錄。\n"
+"<i>無</i> 意味著不重新整理資料，<i>資料</i>: 保持資料部分同步, <i>同步</i>：保持資料與後設資料完全同步。</p>"
+
+#. logfile_settings dialog help 6/8
+#: src/include/audit-laf/helps.rb:81
+msgid ""
+"<p>Configure the maximum log file size (in megabytes) and the action to take when this\n"
+"value is reached via <b>Size and Action</b>.</p>\n"
+msgstr "<p>通過 <b>大小與操作</b> 配置最大日誌檔案大小 (以 MB 計) 與當此大小達到時的操作。</p>\n"
+
+#. logfile_settings dialog help 7/8
+#: src/include/audit-laf/helps.rb:85
+msgid ""
+"<p>If the action is set to <i>ROTATE</i> the <b>Number of Log Files</b> specifies the number\n"
+"of files to keep. Set to <i>SYSLOG</i>, the audit daemon will write a warning\n"
+"to /var/log/messages. With <i>SUSPEND</i> the daemon stops writing records to\n"
+"disk. <i>IGNORE</i> means do nothing, <i>KEEP_LOGS</i> is similar\n"
+"to ROTATE, but log files are not overwritten.</p>\n"
+msgstr ""
+"<p>如果操作設定為 <i>輪轉</i>，<b>日誌檔案數量</b>指定了要保留的檔案數目。\n"
+"設定為 <i>系統日誌</i>，審計守護精靈會將警告寫入到 /var/log/messages。設定為\n"
+"<i>掛起</i>守護精靈停止向磁碟寫入記錄。<i>忽略</i>意味著什麼都不做。<i>保留日誌</i>\n"
+"與 <i>輪轉</i> 差不多，但日誌檔案不會被覆寫。</p>\n"
+
+#. logfile_settings dialog help 8/8
+#: src/include/audit-laf/helps.rb:93
+msgid ""
+"<p><b>Computer Name Format</b> describes how to write the computer name to the\n"
+"log file.  If <i>USER</i> is set, the <b>User Defined Name</b> is\n"
+"used. <i>NONE</i> means no computer name is inserted. <i>HOSTNAME</i> uses the\n"
+"name returned by the 'gethostname' syscall.  <i>FQD</i> uses the fully qualified\n"
+"domain name.</p>\n"
+msgstr ""
+"<p><b>計算機名稱格式</b>描述瞭如何將計算機名寫入到日誌檔案。\n"
+"如果設定了 <i>使用者</i>，將使用 <b>使用者定義的名稱</b>。<i>無</i>意味著不插入計算機名稱。\n"
+"<i>主機名</i>使用 'gethostname' 系統呼叫所返回的名稱。<i>FQD</i> 使用完全限定域名。</p>\n"
+
+#. dispatcher dialog help 1/5
+#: src/include/audit-laf/helps.rb:101
+msgid ""
+"<p><b><big>Auditd Dispatcher Configuration</big></b><br>\n"
+"Detailed information about the dispatcher settings can be obtained from the manual page\n"
+"('man auditd.conf').</p>"
+msgstr ""
+"<p><b><big>Auditd 排程程式配置</big></b><br>\n"
+"關於排程程式設定的詳細資訊可以從 'man auditd.conf' 幫助手冊頁面獲得。</p>"
+
+#. dispatcher dialog help 2/5
+#: src/include/audit-laf/helps.rb:107
+msgid ""
+"<p><b>Dispatcher</b>: The dispatcher program is started by the audit daemon and\n"
+"gets all audit events on stdin.</p>"
+msgstr "<p><b>排程程式</b>：排程程式由審計守護精靈啟動並從系統輸入獲得全部審計事件。</p>"
+
+#. dispatcher dialog help 3/5
+#: src/include/audit-laf/helps.rb:111
+msgid ""
+"<p><b>Communication</b>: Controls the communication between the daemon and the dispatcher\n"
+"program. A <i>lossy</i> communication means that events going to the dispatcher are discarded\n"
+"when the queue (a 128kB buffer) is full. Choose <i>lossless</i> if you want a blocking/lossless\n"
+"communication.</p>"
+msgstr ""
+"<p><b>通訊</b>：控制守護精靈與排程程式之間的通訊。\n"
+"一個 <i>有損</i> 通訊意味著當佇列 (一個 128KB 的緩衝塊) 已滿時，去往排程程式的事件將被丟棄。\n"
+"如果您想要阻塞/無損通訊的話，請選擇 <i>無損</i>。</p>"
+
+#. dispatcher dialog help 4/5
+#: src/include/audit-laf/helps.rb:118
+msgid ""
+"<p>The dispatcher 'audispd' is an audit event multiplexor.\n"
+"For more information see the manual pages ('man audispd' and 'man audispd.conf').</p>"
+msgstr ""
+"<p>排程程式 'audispd' 是一個審計事件多路複用器。\n"
+"詳細資訊請參考 'man audispd' 與 'man audispd.conf' 幫助手冊頁面。</p>"
+
+#. dispatcher dialog help 5/5
+#: src/include/audit-laf/helps.rb:122
+msgid ""
+"<p><b>Note:</b> The dispatcher program must be owned by 'root', have '0750'\n"
+" file permissions, and the full path name has to be entered.</p>\n"
+msgstr "<p><b>注意：</b> 排程程式必須被 'root' 所有，有 '0750' 檔案許可權與完整路徑名。</p>\n"
+
+#. disk space dialog help 1/6
+#: src/include/audit-laf/helps.rb:126
+msgid ""
+"<p><b><big>Auditd Disk Space Configuration</big></b><br>\n"
+"The settings made here refer to disk space on log partition.\n"
+"For detailed information, refer to the manual page ('man auditd.conf').</p>\n"
+msgstr ""
+"<p><b><big>Auditd 磁碟空間配置</big></b><br>\n"
+"這裡的設定是日誌所在分割區的磁碟空間。\n"
+"詳細資訊可以從 'man auditd.conf' 幫助手冊頁面獲得。</p>\n"
+
+#. disk space dialog help 2/6
+#: src/include/audit-laf/helps.rb:132
+msgid ""
+"<p><b>Space Left</b> (in megabytes) tells the audit daemon when to perform an <b>Action</b> because\n"
+"the system is starting to run low on space.</p>"
+msgstr "<p><b>磁碟剩餘</b> (以 MB 計) 當系統空間過低時通知審計守護精靈執行 <b>操作</b>。</p>"
+
+#. disk space dialog help 3/6
+#: src/include/audit-laf/helps.rb:136
+msgid ""
+"<p>The value for <b>Admin Space Left</b> should be lower than above. The system <b>is running\n"
+"low</b> on disk space if the value is reached and the specified <b>Action</b> will be performed.</p>"
+msgstr ""
+"<p><b>管理空間剩餘</b>的值應該低於上面的。如果達到該值，則系統磁碟 <b>將滿</b>，\n"
+"指定 <b>操作</b> 會被執行。</p>"
+
+#. disk space dialog hep 4/6
+#: src/include/audit-laf/helps.rb:140
+msgid ""
+"<p>If an action is set to <i>EMAIL</i>, a warning mail will be sent to the\n"
+"account specified in <b>Action Mail Account</b>.<br> <i>SYSLOG</i> means the\n"
+"disk space warning will be written to /var/log/messages. <i>IGNORE</i> means\n"
+"do nothing. <i>EXEC</i> runs the script specified in <b>Path to\n"
+"Script</b>. <i>SUSPEND</i> stops writing records to disk. <i>SINGLE</i>\n"
+"switches the system to single user mode. <i>HALT</i> shuts down the\n"
+"system.</p>\n"
+msgstr ""
+"<p>如果一個操作被設定為 <i>電子郵件</i>，會發送一封警告郵件給在 <b>操作郵件賬戶</b> 中指定的賬戶。<br>\n"
+"<i>系統日誌</i>意味著磁碟空間警告會被寫入到 /var/log/messages。<i>忽略</i>意味著什麼都不做。<i>執行</i>\n"
+"將運行在 <b>指令碼路徑</b> 中指定的指令碼。<i>掛起</i>停止向磁碟寫入。<i>單使用者</i>切換系統到單使用者模式。\n"
+"<i>關機<i>關閉系統。</p>\n"
+
+#. disk space dialog help 5/6
+#: src/include/audit-laf/helps.rb:150
+msgid ""
+"<p>You can also specify a <b>Disk Full Action</b> (disk has become full already) and\n"
+"a <b>Disk Error Action</b> (performed whenever an error is detected while writing to disk).\n"
+"Available actions are the same as above (except for <i>EMAIL</i>).</p>"
+msgstr ""
+"<p>您也可以指定一個 <b>磁碟已滿操作</b> (磁碟已經寫滿) 與一個 <b>磁碟錯誤操作</b> (當寫入磁碟出錯時執行)。\n"
+"可用操作同上 (除了 <i>電子郵件</i>)。</p>"
+
+#. disk space dialog help 5/6
+#: src/include/audit-laf/helps.rb:156
+msgid ""
+"<p><b>Note:</b> All scripts specified for <i>EXEC</i> must be owned\n"
+"by 'root', have '0750' file permissions, and the full path name has to be entered.</p>\n"
+msgstr "<p><b>注意：</b>所有 <i>執行</i> 程式碼必須由 'root' 擁有，有 '0750' 檔案選項，與完整路徑名。</p>\n"
+
+#. rules dialog help 1/6
+#: src/include/audit-laf/helps.rb:160
+msgid ""
+"<p><b><big>Rules for auditctl</big></b><br>\n"
+"This dialog offers the possibility to enable or to disable the syscall\n"
+"auditing as well as to lock the audit configuration.\n"
+"The selected flag from <b>Set Enabled Flag</b> will be added to the rules.</p>"
+msgstr ""
+"<p><b><big>auditctl 規則</big></b><br>\n"
+"本對話方塊提供了啟用或禁用 syscall 審計與鎖定審計配置的可能性。\n"
+"從 <b>設定啟用標識</b> 中的選定標識會添加進規則。</p>"
+
+#. rules dialog help 2/6
+#: src/include/audit-laf/helps.rb:167
+msgid "<p><b>Note:</b><br>Locking the rules means they cannot be changed until next reboot.</p>"
+msgstr "<p><b>注意：</b><br>鎖定規則意味著它們在下次重啟前不能修改。</p>"
+
+#. rules dialog help 3/6
+#: src/include/audit-laf/helps.rb:171
+msgid ""
+"<p>Enabling auditing without additional rules will cause the\n"
+" applications which use <i>libaudit</i>, e.g. PAM to log to /var/log/audit/audit.log (default).</p> "
+msgstr "<p>不帶附加規則啟用審計會造成使用 <i>libaudit</i> 的應用程式，例如 PAM，記錄日誌到 /var/log/audit/audit.log (默認)。</p>"
+
+#. rules dialog help 4/6
+#: src/include/audit-laf/helps.rb:175
+msgid ""
+"<p>You can also edit the rules manually, which we only recommended for advanced users.<br>\n"
+"For more information about all options, see 'man auditctl'.</p>\n"
+msgstr ""
+"<p>您也可以手動編輯規則，僅推薦高階使用者這麼做。<br>\n"
+"關於所有選項的詳細資訊，見 'man auditctl'。</p>\n"
+
+#. rules dialog help 5/6
+#: src/include/audit-laf/helps.rb:179
+msgid "<p><b>Check Syntax</b> sends the rules via <i>auditctl</i> to the audit subsystem and checks the syntax.<br><b>Restore</b> restores the settings from /etc/audit/audit.rules.</p>\n"
+msgstr "<p><b>檢查語法</b> 通過 <i>auditctl</i> 發送規則給審計子系統並檢查語法。<br><b>恢復</b>從 /etc/audit/audit.rules 恢復設定。</p>\n"
+
+#. rules dialog help 6/6
+#: src/include/audit-laf/helps.rb:183
+msgid ""
+"<p>Click <b>Restore and Reset</b> to restore the rules and reset\n"
+"the changes (from previous syntax checks) by calling <i>auditctl</i>.<br>\n"
+"Click <b>Load</b> to open a file selection dialog in which you can load\n"
+"an example rules file.</p>\n"
+msgstr ""
+"<p>點選 <b>恢復與重置</b> 通過呼叫 <i>auditctl</i> 來恢復規則與重置修改 (從上一次語法檢查起)。<br>\n"
+"點選 <b>載入</b> 來開啟一個檔案選擇對話方塊，從那裡您可以載入一個規則例項檔案。</p>\n"
+
+#. Header of tab in tab widget
+#: src/include/audit-laf/wizards.rb:123
+msgid "&Dispatcher"
+msgstr "排程程式(&D)"
+
+#. Header of tab in tab widget
+#: src/include/audit-laf/wizards.rb:129
+msgid "Disk &Space"
+msgstr "磁碟空間(&S)"
+
+#. Header of tab in tab widget
+#. (auditctl is a program which sends the rules to the audit subsystem)
+#: src/include/audit-laf/wizards.rb:136
+msgid "&Rules for 'auditctl'"
+msgstr "'auditctl' 規則(&R)"
+
+#. Initialization dialog contents
+#: src/include/audit-laf/wizards.rb:230
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. Do not check UI when running in CommandLine mode
+#: src/modules/AuditLaf.rb:231
+msgid "The rules for auditctl are locked."
+msgstr "auditctl 規則已鎖定。"
+
+#. skip it during initial and second stage or when create AY profile
+#: src/modules/AuditLaf.rb:318
+msgid "<p>To continue the configuration of Linux Auditing, the package <b>%1</b> must be installed.</p>"
+msgstr "<p>要繼續配置 Linux 審計，必須安裝 <b>%1</b> 軟體包。</p>"
+
+#: src/modules/AuditLaf.rb:321
+msgid "<p>Install it now?</p>"
+msgstr "<p>是否立即安裝？</p>"
+
+#. additionally save initial settings
+#: src/modules/AuditLaf.rb:357
+msgid ""
+"Cannot start the audit daemon.\n"
+"Please check /var/log/messages for auditd errors.\n"
+"You can use the module 'System Log' from group\n"
+"'Miscellaneous' in YaST Control Center."
+msgstr ""
+"無法啟動審計守護精靈。\n"
+"請到 /var/log/messages 中檢查 auditd 錯誤。\n"
+"您可以在 YaST 控制中心的 ‘雜項’ 組中使用 ‘系統日誌’ 模組。"
+
+#. AuditLaf read dialog caption
+#: src/modules/AuditLaf.rb:376
+msgid "Initializing Audit Configuration"
+msgstr "正在啟始化審計配置"
+
+#. Progress stage 1/4
+#: src/modules/AuditLaf.rb:391
+msgid "Check for installed packages"
+msgstr "檢查已安裝的軟體包"
+
+#. Progress stage 2/4
+#: src/modules/AuditLaf.rb:393
+msgid "Read the configuration of auditd"
+msgstr "讀取 auditd 配置"
+
+#. Progress stage 3/4
+#: src/modules/AuditLaf.rb:395
+msgid "Read the rules file"
+msgstr "讀取規則檔案"
+
+#. Progress stage 4/4
+#: src/modules/AuditLaf.rb:397
+msgid "Check status of auditd"
+msgstr "檢查 auditd 狀態"
+
+#. Progress stage 1/4
+#: src/modules/AuditLaf.rb:401
+msgid "Checking for packages..."
+msgstr "正在檢查軟體包..."
+
+#. Progress step 2/4
+#: src/modules/AuditLaf.rb:403
+msgid "Reading the configuration..."
+msgstr "正在讀取配置..."
+
+#. Progress step 3/4
+#: src/modules/AuditLaf.rb:405
+msgid "Reading the rules file..."
+msgstr "正在讀取規則檔案..."
+
+#. Progress step 4/4
+#: src/modules/AuditLaf.rb:407
+msgid "Checking status..."
+msgstr "正在檢查狀態..."
+
+#. Report error
+#: src/modules/AuditLaf.rb:434
+msgid "Cannot read auditd.conf."
+msgstr "無法讀取 auditd.conf。"
+
+#. Error message
+#: src/modules/AuditLaf.rb:444
+msgid "Cannot read audit.rules."
+msgstr "無法讀取 audit.rules。"
+
+#. Error message
+#: src/modules/AuditLaf.rb:471
+msgid ""
+"The audit daemon doesn't run.\n"
+"Do you want to start it now?"
+msgstr ""
+"審計守護精靈未運行。\n"
+"您是否要立即啟動它？"
+
+#: src/modules/AuditLaf.rb:476
+msgid ""
+" The 'apparmor' kernel module is loaded.\n"
+"The kernel uses a running audit daemon to log audit\n"
+"events to /var/log/audit/audit.log (default). \n"
+"Do you want to start the daemon now?"
+msgstr ""
+" ‘apparmor’ 核心模組已載入。\n"
+"核心使用一個運行中的審計守護精靈來記錄審計事件到\n"
+"/var/log/audit/audit.log (默認)。\n"
+"您想要立即啟動守護精靈嗎？"
+
+#: src/modules/AuditLaf.rb:484
+msgid "Audit daemon not running."
+msgstr "審計守護精靈未運行。"
+
+#: src/modules/AuditLaf.rb:489
+msgid "Cannot start the audit daemon."
+msgstr "無法啟動審計守護精靈。"
+
+#: src/modules/AuditLaf.rb:490
+msgid ""
+"The rules may be locked.\n"
+"Continue to check the rules. You can change\n"
+"the 'Enabled Flag', but to activate the change\n"
+"a reboot is required afterwards.\n"
+msgstr ""
+"規則可能被鎖定。\n"
+"繼續檢查規則。您可以變更 '啟用標識'，但稍後需要重啟才能啟用變更。\n"
+
+#. Auditd read dialog caption
+#: src/modules/AuditLaf.rb:546
+msgid "Saving Audit Configuration"
+msgstr "正在儲存審計配置"
+
+#. Progress stage 1/2
+#: src/modules/AuditLaf.rb:562
+msgid "Write the settings"
+msgstr "寫入設定"
+
+#. Progress stage 2/2
+#: src/modules/AuditLaf.rb:564
+msgid "Write the rules"
+msgstr "寫入規則"
+
+#. Progress step 1/2
+#: src/modules/AuditLaf.rb:568
+msgid "Writing the settings..."
+msgstr "正在寫入設定..."
+
+#. Progress step 2/2
+#: src/modules/AuditLaf.rb:570
+msgid "Writing the rules..."
+msgstr "正在寫入規則..."
+
+#. check first whether rules are already locked
+#: src/modules/AuditLaf.rb:586
+msgid "The rules are already locked."
+msgstr "規則已經鎖定。"
+
+#: src/modules/AuditLaf.rb:587
+msgid ""
+"Do you want to change the 'Enabled Flag'?\n"
+"If yes, the new rules will be written to /etc/audit/audit.rules.\n"
+"Reboot the system afterwards for the change to take effect.\n"
+msgstr ""
+"您想要變更 '啟用標識' 嗎？\n"
+"如果是，新規則將會寫入到 /etc/audit/audit.rules。\n"
+"之後重啟系統以讓變更生效。\n"
+
+#. Error message
+#: src/modules/AuditLaf.rb:612
+msgid "Restart of the audit daemon failed."
+msgstr "重啟 audit 守護精靈失敗。"
+
+#. Error message
+#: src/modules/AuditLaf.rb:619
+msgid "Cannot write settings to auditd.conf."
+msgstr "無法將配置寫入 auditd.conf。"
+
+#. Error message, rules cannot be set
+#: src/modules/AuditLaf.rb:650
+msgid "Start yast2-audit-laf again and check the rules."
+msgstr "請再次啟動 yast2-audit-laf 並檢查規則。"
+
+#: src/modules/AuditLaf.rb:656
+msgid "Cannot write settings to auditd.rules."
+msgstr "無法將設定寫入 auditd.rules。"
+
+#. Create a textual summary and a list of unconfigured cards
+#. @return summary of the current configuration
+#: src/modules/AuditLaf.rb:705
+msgid "Log file"
+msgstr "日誌檔案"
+
+#, fuzzy
+#~ msgid "Unknown option"
+#~ msgstr "未知選項。"
+
+#~ msgid ""
+#~ "Really exit?\n"
+#~ "All changes will be lost."
+#~ msgstr ""
+#~ "是否確實要退出？\n"
+#~ "所有變更都將丟失。"
+
+#~ msgid "Configuration summary..."
+#~ msgstr "配置摘要..."
+
+#, fuzzy
+#~ msgid "Configuration of audit-laf"
+#~ msgstr "autofs 的配置"
+
+#, fuzzy
+#~ msgid "Disk &Space on Log Partion"
+#~ msgstr "磁碟空間警告"
+

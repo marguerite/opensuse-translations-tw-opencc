@@ -1,0 +1,545 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:40+0200\n"
+"PO-Revision-Date: 2014-06-10 11:39+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. The main ()
+#: src/clients/snapper.rb:53
+msgid "Configuration of system snapshots"
+msgstr "系統快照配置"
+
+#. text entry label
+#. text entry label
+#: src/include/snapper/dialogs.rb:130 src/include/snapper/dialogs.rb:251
+#: src/include/snapper/dialogs.rb:490
+msgid "Description"
+msgstr "描述"
+
+#. text entry label
+#. text entry label
+#: src/include/snapper/dialogs.rb:136 src/include/snapper/dialogs.rb:297
+msgid "User data"
+msgstr "使用者資料"
+
+#. combo box label
+#. text entry label
+#: src/include/snapper/dialogs.rb:144 src/include/snapper/dialogs.rb:302
+msgid "Cleanup algorithm"
+msgstr "清理演算法"
+
+#. popup label, %1 is number
+#: src/include/snapper/dialogs.rb:158
+msgid "Modify Snapshot %1"
+msgstr "修訂快照 %1"
+
+#. popup label, %1, %2 are numbers (range)
+#: src/include/snapper/dialogs.rb:166
+msgid "Modify Snapshots %1 - %2"
+msgstr "修訂快照 %1 - %2"
+
+#. label
+#: src/include/snapper/dialogs.rb:169
+msgid "Pre (%1)"
+msgstr "前期快照 (%1)"
+
+#. label
+#: src/include/snapper/dialogs.rb:173
+msgid "Post (%1)"
+msgstr "後期快照 (%1)"
+
+#. popup label
+#: src/include/snapper/dialogs.rb:249
+msgid "Create New Snapshot"
+msgstr "創建新快照"
+
+#. radio button label
+#: src/include/snapper/dialogs.rb:262
+msgid "Single snapshot"
+msgstr "單一快照"
+
+#. radio button label
+#. 0 means there's no post
+#: src/include/snapper/dialogs.rb:271 src/include/snapper/dialogs.rb:435
+msgid "Pre"
+msgstr "前期快照"
+
+#. radio button label, snapshot selection will follow
+#: src/include/snapper/dialogs.rb:281
+msgid "Post, paired with:"
+msgstr "後期快照，配對為："
+
+#. yes/no popup question
+#: src/include/snapper/dialogs.rb:352
+msgid "Really delete snapshot '%1'?"
+msgstr "真的刪除快照 '%1' 嗎？"
+
+#. summary dialog caption
+#: src/include/snapper/dialogs.rb:365
+msgid "Snapshots"
+msgstr "快照"
+
+#. generate list of snapshot table items
+#: src/include/snapper/dialogs.rb:394
+msgid "Single"
+msgstr "單一快照"
+
+#. pre canot be 0
+#: src/include/snapper/dialogs.rb:419
+msgid "Pre & Post"
+msgstr "前後快照"
+
+#. busy popup message
+#: src/include/snapper/dialogs.rb:454
+msgid "Reading list of snapshots..."
+msgstr "正在讀取快照列表..."
+
+#. combo box label
+#: src/include/snapper/dialogs.rb:475
+msgid "Current Configuration"
+msgstr "當前配置"
+
+#. table header
+#: src/include/snapper/dialogs.rb:486
+msgid "ID"
+msgstr "ID"
+
+#: src/include/snapper/dialogs.rb:487
+msgid "Type"
+msgstr "類型"
+
+#: src/include/snapper/dialogs.rb:488
+msgid "Start Date"
+msgstr "開始日期"
+
+#: src/include/snapper/dialogs.rb:489
+msgid "End Date"
+msgstr "結束日期"
+
+#: src/include/snapper/dialogs.rb:491
+msgid "User Data"
+msgstr "使用者資料"
+
+#. button label
+#: src/include/snapper/dialogs.rb:497
+msgid "Show Changes"
+msgstr "顯示修改"
+
+#. button label
+#: src/include/snapper/dialogs.rb:500
+msgid "Modify"
+msgstr "修訂"
+
+#. popup message
+#: src/include/snapper/dialogs.rb:542
+msgid ""
+"This 'Pre' snapshot is not paired with any 'Post' one yet.\n"
+"Showing differences is not possible."
+msgstr ""
+"此前期快照未與任何後期快照配對。\n"
+"無法顯示差異。"
+
+#. dialog caption
+#: src/include/snapper/dialogs.rb:588
+msgid "Selected Snapshot Overview"
+msgstr "所選快照概覽"
+
+#. '%1: %2' means 'ID: description', adapt the order if necessary
+#: src/include/snapper/dialogs.rb:626
+msgid "%1: %2"
+msgstr "%1：%2"
+
+#. busy popup message
+#: src/include/snapper/dialogs.rb:645
+msgid "Calculating changed files..."
+msgstr "正在計算有變化的檔案..."
+
+#. busy popup message
+#: src/include/snapper/dialogs.rb:742
+msgid "Calculating file modifications..."
+msgstr "正在計算檔案修改..."
+
+#. label
+#: src/include/snapper/dialogs.rb:750
+msgid "New file was created."
+msgstr "已創建新檔案。"
+
+#. label
+#: src/include/snapper/dialogs.rb:754
+msgid "File was removed."
+msgstr "已移除檔案。"
+
+#. label
+#: src/include/snapper/dialogs.rb:759
+msgid "File content was not changed."
+msgstr "未變動檔案內容。"
+
+#. label
+#: src/include/snapper/dialogs.rb:765
+msgid "File does not exist in either snapshot."
+msgstr "檔案在任何快照中都不存在。"
+
+#. label
+#: src/include/snapper/dialogs.rb:771
+msgid "File content was modified."
+msgstr "已修訂檔案內容。"
+
+#. text label, %1, %2 are file modes (like '-rw-r--r--')
+#: src/include/snapper/dialogs.rb:781
+msgid "File mode was changed from '%1' to '%2'."
+msgstr "檔案模式已從 '%1' 變為 '%2'。"
+
+#. text label, %1, %2 are user names
+#: src/include/snapper/dialogs.rb:796
+msgid "File user ownership was changed from '%1' to '%2'."
+msgstr "檔案使用者所有權已從 '%1' 變為 '%2'。"
+
+#. text label, %1, %2 are group names
+#: src/include/snapper/dialogs.rb:812
+msgid "File group ownership was changed from '%1' to '%2'."
+msgstr "檔案組所有權已經從 '%1' 變為 '%2'。"
+
+#. button label
+#: src/include/snapper/dialogs.rb:847
+msgid "R&estore from First"
+msgstr "從第一個快照恢復(&E)"
+
+#. button label
+#: src/include/snapper/dialogs.rb:849
+msgid "Restore"
+msgstr "恢復"
+
+#: src/include/snapper/dialogs.rb:872
+msgid "Res&tore from Second"
+msgstr "從第二個快照恢復(&T)"
+
+#. radio button label
+#: src/include/snapper/dialogs.rb:909
+msgid "Show the difference between snapshot and current system"
+msgstr "顯示快照與當前系統間的差異"
+
+#. radio button label, snapshot selection will follow
+#: src/include/snapper/dialogs.rb:921
+msgid "Show the difference between current and selected snapshot:"
+msgstr "顯示當前系統與所選快照間的差異："
+
+#. radio button label
+#: src/include/snapper/dialogs.rb:968
+msgid "Show the difference between first and second snapshot"
+msgstr "顯示第一個與第二個快照間的差異"
+
+#. radio button label
+#: src/include/snapper/dialogs.rb:979
+msgid "Show the difference between first snapshot and current system"
+msgstr "顯示第一個快照與當前系統間的差異"
+
+#. radio button label
+#: src/include/snapper/dialogs.rb:990
+msgid "Show the difference between second snapshot and current system"
+msgstr "顯示第二個快照與當前系統間的差異"
+
+#. label, date string will follow at the end of line
+#: src/include/snapper/dialogs.rb:1031
+msgid "Time of taking the first snapshot:"
+msgstr "第一個快照耗時："
+
+#. label, date string will follow at the end of line
+#: src/include/snapper/dialogs.rb:1036
+msgid "Time of taking the second snapshot:"
+msgstr "第二個快照耗時："
+
+#. label, date string will follow at the end of line
+#: src/include/snapper/dialogs.rb:1044
+msgid "Time of taking the snapshot:"
+msgstr "快照耗時："
+
+#. button label
+#: src/include/snapper/dialogs.rb:1066
+msgid "&Open"
+msgstr "開啟(&O)"
+
+#. button label
+#: src/include/snapper/dialogs.rb:1112
+msgid "Restore Selected"
+msgstr "恢復所選內容"
+
+#. yes/no question, %1 is file name, %2 is number
+#: src/include/snapper/dialogs.rb:1186
+msgid ""
+"Do you want to delete the file\n"
+"\n"
+"%1\n"
+"\n"
+"from current system?"
+msgstr ""
+"您想要從當前系統中刪除檔案\n"
+"\n"
+"%1\n"
+"\n"
+"嗎？"
+
+#. yes/no question, %1 is file name, %2 is number
+#. yes/no question, %1 is file name, %2 is number
+#: src/include/snapper/dialogs.rb:1206 src/include/snapper/dialogs.rb:1224
+msgid ""
+"Do you want to copy the file\n"
+"\n"
+"%1\n"
+"\n"
+"from snapshot '%2' to current system?"
+msgstr ""
+"您想要從快照 '%2' 中複製檔案\n"
+"\n"
+"%1\n"
+"\n"
+"到當前系統嗎？"
+
+#. popup message
+#: src/include/snapper/dialogs.rb:1259
+msgid "No file was selected for restoring"
+msgstr "未選擇要恢復的檔案"
+
+#. popup headline
+#: src/include/snapper/dialogs.rb:1264
+msgid "Restoring files"
+msgstr "正在恢復檔案"
+
+#. popup message, %1 is snapshot number, %2 list of files
+#: src/include/snapper/dialogs.rb:1267
+msgid ""
+"<p>These files will be restored from snapshot '%1':</p>\n"
+"<p>\n"
+"%2\n"
+"</p>\n"
+"<p>Files existing in original snapshot will be copied to current system.</"
+"p>\n"
+"<p>Files that did not exist in the snapshot will be deleted.</p>Are you sure?"
+msgstr ""
+"<p>這些檔案將從快照 '%1' 中恢復：</p>\n"
+"<p>\n"
+"%2\n"
+"</p>\n"
+"<p>原始快照中存在的檔案會被複制到當前系統。</p>\n"
+"<p>快照中不存在的檔案將被刪除。</p>您確定嗎？"
+
+#. Read dialog help
+#: src/include/snapper/helps.rb:36
+msgid ""
+"<p><b><big>Reading the list of snapshots</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在讀取快照列表</big></b><br>\n"
+"</p>\n"
+
+#. Summary dialog help:
+#: src/include/snapper/helps.rb:40
+msgid ""
+"<p><b><big>Snapshots Configuration</big></b><p>\n"
+"<p>The table shows a list of root filesystem snapshots. There are three "
+"types\n"
+"of snapshots, <b>single</b>, <b>pre</b> and <b>post</b>. Single snapshots "
+"are\n"
+"used for storing the file system state in a certain time, while Pre and Post "
+"are used to define the changes done by special operation performed between "
+"taking those two snapshots. Pre and Post snapshots are coupled together in "
+"the table.</p>\n"
+"<p>Select a snapshot or snapshot couple and click <b>Show Changes</b> to see "
+"the\n"
+"new file system changes in the specified snapshot.</p>\n"
+msgstr ""
+"<p><b><big>快照配置</big></b></p>\n"
+"<p>該表格顯示了一份根檔案系統快照列表。\n"
+"有三種類型的快照，<b>單一</b>，<b>前期</b>與<b>後期</b>。\n"
+"\"單一\" 類型的快照用於存儲某一特定時間點的檔案系統狀態，\n"
+"而 \"前期\" 與 \"後期\" 類型的快照用於定位在兩次快照期間執行的某特殊操作造成"
+"的修改。\n"
+"\"前期\" 與 \"後期\" 類型的快照在表格中是成對顯示的。</p>\n"
+"<p>選擇一個快照或快照對，點選<b>顯示修改</b>來檢視指定快照中新的檔案系統修"
+"改。</p>\n"
+
+#. Show snapshot dialog help
+#: src/include/snapper/helps.rb:49
+msgid ""
+"<p><b><big>Snapshot Overview</big></b><p>\n"
+"<p>\n"
+"The tree shows all the files that were modified between creating the first "
+"('pre') and second ('post') snapshot. On the right side, you see the "
+"description generated when the first snapshot was created and the time of "
+"creation for both snapshots.\n"
+"</p>\n"
+"<p>\n"
+"When a file is selected in the tree, you see the changes done to it. By "
+"default, changes between selected coupled snapshots are shown, but it is "
+"possible to compare the file with different versions.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>快照概覽</big></b></p>\n"
+"<p>該樹形結構顯示了創建第一個 ('前期') 與第二個 ('後期') 快照期間被修改的全部"
+"檔案。在右側，您可以看到第一個快照創建時生成的描述與兩個快照的創建時間。</"
+"p>\n"
+"<p>當選中該樹形結構中的某個檔案時，您可以看到其修改。默認顯示了所選快照對之間"
+"的差異，但也可以比較該檔案的不同版本。</p>\n"
+
+#. Show snapshot dialog help, alternative for single snapshots
+#: src/include/snapper/helps.rb:59
+msgid ""
+"<p><b><big>Snapshot Overview</big></b><p>\n"
+"<p>\n"
+"The tree shows all the files that differ in a selected snapshot and the "
+"current system. On the right side, you see the snapshot description and time "
+"of its creation.\n"
+"</p>\n"
+"<p>\n"
+"When a file is selected in the tree, you can see the its difference between "
+"snapshot version and current system.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>快照概覽</big></b></p>\n"
+"<p>該樹形結構顯示了所選快照中與當前系統有所不同的全部檔案。在右側，您可以看到"
+"快照描述與其創建時間。</p>\n"
+"<p>當選中該樹形結構中的某個檔案時，您可以看到快照版本與當前系統的不同之處。</"
+"p>\n"
+
+#. popup error
+#: src/modules/Snapper.rb:91
+msgid "Snapshot '%1' was not found."
+msgstr "未找到快照 '%1'。"
+
+#. Initialize snapper agent
+#. Return true on success
+#. Delete existing snapshot
+#. Return true on success
+#. Modify existing snapshot
+#. Return true on success
+#. Create new snapshot
+#. Return true on success
+#: src/modules/Snapper.rb:236 src/modules/Snapper.rb:264
+#: src/modules/Snapper.rb:284 src/modules/Snapper.rb:303
+msgid "Reason not known."
+msgstr "原因未知。"
+
+#: src/modules/Snapper.rb:238
+msgid "Configuration not found."
+msgstr "未找到配置。"
+
+#: src/modules/Snapper.rb:240
+msgid "Configuration is not valid."
+msgstr "配置無效。"
+
+#. error popup
+#: src/modules/Snapper.rb:247
+msgid ""
+"Failed to initialize snapper library:\n"
+"%1"
+msgstr ""
+"啟始化 Snapper 庫失敗：\n"
+"%1"
+
+#: src/modules/Snapper.rb:266
+msgid "Snapshot was not found."
+msgstr "未找到快照。"
+
+#. error popup
+#: src/modules/Snapper.rb:271
+msgid ""
+"Failed to delete snapshot:\n"
+"%1"
+msgstr ""
+"刪除快照失敗：\n"
+"%1"
+
+#. error popup
+#: src/modules/Snapper.rb:289
+msgid ""
+"Failed to modify snapshot:\n"
+"%1"
+msgstr ""
+"修訂快照失敗：\n"
+"%1"
+
+#: src/modules/Snapper.rb:306
+msgid "Wrong snapshot type given."
+msgstr "給定了錯誤的快照類型。"
+
+#: src/modules/Snapper.rb:308
+msgid "'Pre' snapshot was not given."
+msgstr "未給定前期快照。"
+
+#: src/modules/Snapper.rb:310
+msgid "Given 'Pre' snapshot was not found."
+msgstr "未找到給定的前期快照。"
+
+#. error popup
+#: src/modules/Snapper.rb:316
+msgid ""
+"Failed to create new snapshot:\n"
+"%1"
+msgstr ""
+"創建新快照失敗：\n"
+"%1"
+
+#. Snapper read dialog caption
+#: src/modules/Snapper.rb:326
+msgid "Initializing Snapper"
+msgstr "正在啟始化 Snapper"
+
+#. Progress stage 1/3
+#: src/modules/Snapper.rb:337
+msgid "Read the list of snapshots"
+msgstr "讀取快照列表"
+
+#. Progress step 1/3
+#: src/modules/Snapper.rb:341
+msgid "Reading the database..."
+msgstr "正在讀取資料庫..."
+
+#. Progress finished
+#: src/modules/Snapper.rb:343
+msgid "Finished"
+msgstr "已完成"
+
+#. error popup
+#: src/modules/Snapper.rb:352
+msgid ""
+"No snapper configurations exist. You have to create one or more\n"
+"configurations to use yast2-snapper. The snapper command line\n"
+"tool can be used to create configurations."
+msgstr ""
+"沒有 snapper 配置存在。您必須創建一些配置\n"
+"才能使用 yast2-snapper。可使用 snapper 命令\n"
+"行工具來創建配置。"
+
+#. label for log window
+#: src/modules/Snapper.rb:395
+msgid "Restoring Files..."
+msgstr "正在恢復檔案..."
+
+#. log entry (%1 is file name)
+#: src/modules/Snapper.rb:424
+msgid "Deleted %1\n"
+msgstr "已刪除 %1\n"
+
+#. log entry (%1 is file name)
+#: src/modules/Snapper.rb:477
+msgid "%1 skipped\n"
+msgstr "已跳過 %1\n"
+
+#~ msgid "File /etc/sysconfig/snapper is not available."
+#~ msgstr "檔案 /etc/sysconfig/snapper 不可用。"
+

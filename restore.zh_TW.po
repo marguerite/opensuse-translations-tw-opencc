@@ -1,0 +1,875 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Eric Shan <ericalways@gmail.com>, 2008, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: restore\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:41+0200\n"
+"PO-Revision-Date: 2013-02-01 01:20+0800\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. popup dialog text part 1
+#: src/clients/restore_auto.rb:155
+msgid "Archive file cannot be read."
+msgstr "無法讀取存檔檔案。"
+
+#. popup dialog text part 1
+#: src/clients/restore_auto.rb:157
+msgid "Archive volume cannot be read."
+msgstr "無法讀取存檔區塊。"
+
+#. popup dialog text part 2
+#: src/clients/restore_auto.rb:159
+msgid ""
+"\n"
+"Select it manually?\n"
+msgstr ""
+"\n"
+"是否手動選擇它？\n"
+
+#. For translators: archive selection dialog help (part 1)
+#: src/include/restore/helps.rb:51
+msgid "<P><B><BIG>Restore Module</BIG></B><BR>The restore module can restore your system from a backup archive.</P>"
+msgstr "<P><B><BIG>恢復模組</BIG></B><BR>恢復模組可以從備份存檔恢復系統。</P>"
+
+#. For translators: archive selection dialog help, (part 2)
+#: src/include/restore/helps.rb:55
+msgid "<P>Archive can be read from:</P>"
+msgstr "<P>可以從以下位置處讀取存檔：</P>"
+
+#. For translators: archive selection dialog help, (part 3)
+#: src/include/restore/helps.rb:57
+msgid "<P><B>Local File</B>: The archive is already available in the system. It is on a mounted file system.</P>"
+msgstr "<P><B>本地檔案</B>：存檔已在系統中可用。它位於裝載的檔案系統上。</P>"
+
+#. For translators: archive selection dialog help, (part 4)
+#: src/include/restore/helps.rb:61
+msgid "<P><B>Network</B>: The backup archive can be read from network using NFS.</P>"
+msgstr "<P><B>網路</B>：可以使用 NFS 從網路讀取備份存檔。</P>"
+
+#. For translators: archive selection dialog help, (part 5)
+#: src/include/restore/helps.rb:65
+msgid ""
+"<P><B>Removable Device</B>: The archive is on a removable device or\n"
+"on an unmounted file system. The device can be selected from a list or you can enter the device filename\n"
+"(for example, /dev/hdc) if not listed.</P>\n"
+msgstr ""
+"<P><B>可移除裝置：</B>存檔在可移除裝置上或\n"
+"在未裝載的檔案系統上。可以從列表中選擇裝置，如果未列出裝置，則可以\n"
+"輸入裝置檔名(例如 /dev/hdc)。</P>\n"
+
+#. For translators: archive selection dialog help, (part 6)
+#: src/include/restore/helps.rb:71
+msgid ""
+"<P>If you press <B>Select</B>, the device is mounted\n"
+"and you can select the file from a dialog.</P>\n"
+msgstr ""
+"<P>如果按<B>選擇</B>，則將裝載該裝置，\n"
+"您可以從對話方塊中選擇檔案。</P>\n"
+
+#. For translators: archive selection dialog help (part 7)
+#: src/include/restore/helps.rb:75
+msgid "<P>Note: If you have a multivolume archive, select the first volume.</P>"
+msgstr "<P>注意：如果您具有多區塊存檔，請選擇第一個區塊。</P>"
+
+#. multi volume archive selection help text 1/2
+#: src/include/restore/helps.rb:86
+msgid ""
+"<P><B><BIG>Multivolume Archive</BIG></B><BR>The backup archive has more than\n"
+"one volume.  In this dialog, enter volumes that belong to the backup archive.</P>\n"
+msgstr ""
+"<P><B><BIG>多區塊歸檔</BIG></B><BR>備份歸檔有多個區塊。\n"
+"  在此對話方塊中，輸入屬於備份存檔的區塊。</P>\n"
+
+#. multi volume archive selection help text 2/2
+#: src/include/restore/helps.rb:90
+msgid ""
+"<P>After the volume is read, the filename is automatically changed to the\n"
+"next volume name. Press <B>Next</B> to\n"
+"continue to the next volume.</P>\n"
+msgstr ""
+"<P>讀取區塊後，檔名將被自動變更為\n"
+"下一個區塊名。按<B>下一步</B>\n"
+"繼續到下一個區塊。</P>\n"
+
+#. For translators: archive property dialog help
+#: src/include/restore/helps.rb:103
+msgid ""
+"<P><B><BIG>Archive Properties</BIG></B><BR>Information about the backup archive\n"
+"is displayed here.  Press <B>Archive Contents</B> to\n"
+"show the contents of the archive.  Press <B>Expert Options</B> to set advanced restore\n"
+"options.  If the archive is a multivolume archive, \n"
+"select more volumes after pressing <B>Next</B>.</P>"
+msgstr ""
+"<P><B><BIG>存檔屬性</BIG></B><BR>在此顯示有關備份存檔\n"
+"的資訊。按<B>存檔內容</B>\n"
+"顯示存檔的內容。按<B>專家選項</B>設定高階恢復\n"
+"選項。如果存檔是多區塊存檔，\n"
+"則在按<B>下一步</B>後選擇多個區塊。</P>"
+
+#. For translators: archive property dialog help
+#: src/include/restore/helps.rb:118
+msgid ""
+"<P><B><BIG>Archive Contents</BIG></B><BR>\n"
+"The packages and files in the backup archive are displayed here.</P>\n"
+msgstr ""
+"<P><B><BIG>存檔內容</BIG></B><BR>\n"
+"在此顯示備份存檔中的包與檔案。</P>\n"
+
+#. For translators: option dialog help (part 1)
+#: src/include/restore/helps.rb:129
+msgid ""
+"<P><B><BIG>Restore Options</BIG></B><BR>These options are intended for\n"
+"expert users. The default values are usually appropriate.</P>\n"
+msgstr ""
+"<P><B><BIG>恢復選項</BIG></B><BR>這些選項供\n"
+"專家使用者使用。通常，使用預設值比較合適。</P>\n"
+
+#. For translators: option dialog help (part 2)
+#: src/include/restore/helps.rb:133
+msgid ""
+"<p>Select <B>Activate Boot Loader Configuration</B> to reinstall the boot loader.\n"
+"Some boot loaders, such as LILO, must be reinstalled if configuration files or files needed at system boot are changed.</p>\n"
+msgstr ""
+"<p>選擇<B>啟用引導載入器配置</B>來重灌引導載入器。\n"
+"某些引導載入器，如 LILO，若變更了配置檔案或系統引導所需檔案，則必須重灌。</p>\n"
+
+#. For translators: package restoration note (used in more dialogs)
+#: src/include/restore/helps.rb:144
+msgid "<P><B><BIG>Package Restoration</BIG></B><BR>Restore the set of installed packages to the state at the time of backup.</P>"
+msgstr "<P><B><BIG>包恢復</BIG></B><BR>將已安裝的包恢復到備份時的狀態。</P>"
+
+#. For translators: package installation help
+#: src/include/restore/helps.rb:157
+msgid ""
+"<P>There is a list with uninstalled packages in the table. These packages\n"
+"were installed at backup time, but are now missing.  To obtain the same system \n"
+"configuration as at the time of backup, select all packages.  <b>X</b> in \n"
+"the first column means that the package will be installed.</P>"
+msgstr ""
+"<P>表中有未安裝包的列表。在備份時\n"
+"已安裝了這些包，但現在缺少這些包。要獲得與備份時相同的系統\n"
+"配置，請選擇所有這些包。第 1 列\n"
+"中的 <b>X</b> 表示將安裝此包。</P>"
+
+#. For translators: package uninstallation help
+#: src/include/restore/helps.rb:175
+msgid "<P>Packages in the table were not installed at the time of backup, but are now.  To obtain the same system configuration as at backup time, uninstall all packages. </P>"
+msgstr "<P>在備份時未安裝表中的包，但現在已安裝了這些包。要獲得與備份時相同的系統配置，請解除安裝所有這些包。</P>"
+
+#. For translators: package uninstallation help (part 2)
+#: src/include/restore/helps.rb:180
+msgid ""
+"<P><b>X</b> in the first column means that the package will be \n"
+"uninstalled. To leave a package installed, deselect it.</P>"
+msgstr ""
+"<P>第 1 列中的 <b>X</b>表示將\n"
+"解除安裝此包。要不解除安裝某個包，請不要選擇該包。</P>"
+
+#. For translators: restore selection help 1/5
+#: src/include/restore/helps.rb:193
+msgid ""
+"<P><B><BIG>Selection</BIG></B><BR>\n"
+"Select which packages to restore from the backup archive.</P>\n"
+msgstr ""
+"<P><B><BIG>選擇</BIG></B><BR>\n"
+"選擇要從備份存檔中恢復的包。</P>\n"
+
+#. For translators: restore selection help 2/5
+#: src/include/restore/helps.rb:197
+msgid "<P>The first column displays the restoration status of the package. It can be <b>X</b> (package will be restored) or empty (package will not be restored).</P>"
+msgstr "<P>第 1 列顯示包的恢復狀態。此狀態可以為 <b>X</b>(將恢復此包)，也可以為空(不恢復此包)。</P>"
+
+#. For translators: restore selection help 3/5
+#: src/include/restore/helps.rb:202
+msgid "<P><b>P</b> means that a package will be restored only partially. Press <B>Select Files</B> to restore a package partially.</P>"
+msgstr "<P><b>P</b> 表示僅部分地恢復包。按<B>選擇檔案</B>對包進行部分恢復。</P>"
+
+#. For translators: restore selection help 4/5
+#: src/include/restore/helps.rb:207
+msgid "<P>The number of selected files to restore from the archive is in the second column.</P>"
+msgstr "<P>將從存檔中恢復的選定檔案的數量顯示在第 2 列中。</P>"
+
+#. For translators: restore selection help 5/5
+#: src/include/restore/helps.rb:211
+msgid ""
+"<p>If you deleted the RPM database by mistake or if it is badly\n"
+"corrupted, select <b>Restore RPM Database</b>.\n"
+"The database is then restored if it is available in the backup archive.\n"
+"In other cases, leave this option unchecked.</p>"
+msgstr ""
+"<p>如果您誤刪除了 RPM 資料庫或者該資料庫已嚴重損壞，\n"
+"則選擇<B>恢復 RPM 資料庫</B>。\n"
+"如果該資料庫在備份存檔中可用，則資料庫將被恢復。\n"
+"在其它情況下，不用選該選項。</p>"
+
+#. For translators: file selection help (part 1)
+#: src/include/restore/helps.rb:225
+msgid ""
+"<P><B><BIG>File Selection</BIG></B><BR>\n"
+"Select which files to restore.\n"
+"</P>\n"
+msgstr ""
+"<P><B><BIG>檔案選擇</BIG></B><BR>\n"
+"選擇要恢復的檔案。\n"
+"</P>\n"
+
+#. progress bar help text
+#: src/include/restore/helps.rb:238
+msgid ""
+"<P><B><BIG>Restoring</BIG></B><BR>\n"
+"Files are being restored from the backup archive now.\n"
+"It will take some time, depending on the size and number of restored files.\n"
+"</P>\n"
+msgstr ""
+"<P><B><BIG>正在恢復</BIG></B><BR>\n"
+"目前正在從備份存檔恢復檔案。\n"
+"這將需要一段時間，取決於恢復檔案的大小與數量。\n"
+"</P>\n"
+
+#. summary dialog help text 1/3
+#: src/include/restore/helps.rb:252
+msgid ""
+"<P><B><BIG>Summary</BIG></B><BR>\n"
+"This is a summary of the restoration process. To see more details, select\n"
+"<B>Show Details</B>. To save the summary to a file, select <B>Save to File</B>.\n"
+"</P>\n"
+"\n"
+msgstr ""
+"<P><B><BIG>摘要</BIG></B><BR>\n"
+"這是恢復過程的摘要。要檢視細節，請選擇\n"
+"<B>顯示細節</B>。要將摘要儲存到檔案，請選擇<B>儲存到檔案</B>。\n"
+"</P>\n"
+"\n"
+
+#. summary dialog help text 2/3
+#: src/include/restore/helps.rb:260
+msgid ""
+"<P><B>Note:</B> Displaying the detailed summary can \n"
+"take a long time depending on the number\n"
+"of restored files.\n"
+"</P>\n"
+msgstr ""
+"<P><B>注意：</B>顯示細節摘要可能需要很長時間，\n"
+"具體時間取決於恢復檔案的數量。\n"
+"\n"
+"</P>\n"
+
+#. summary dialog help text 3/3
+#: src/include/restore/helps.rb:267
+msgid ""
+"<P>Some changes, such as a kernel update, made by the restore \n"
+"module can be activated only after a system\n"
+"reboot. It is recommended to reboot the system after\n"
+"restoration.</P>\n"
+msgstr ""
+"<P>恢復模組所進行的某些變更(例如核心更新)\n"
+"僅能在系統重引導後被啟用。\n"
+" 建議在恢復後\n"
+"重引導系統。</P>\n"
+
+#. push button label
+#: src/include/restore/summary_dialog.rb:134
+msgid "&Show Details"
+msgstr "顯示細節(&S)"
+
+#. push button label
+#: src/include/restore/summary_dialog.rb:139
+msgid "Sa&ve to File..."
+msgstr "儲存到檔案(&V)..."
+
+#: src/include/restore/summary_dialog.rb:165
+msgid "Save Summary to File"
+msgstr "將摘要儲存到檔案"
+
+#. floppy disk drive - combo box item
+#: src/include/restore/ui.rb:125
+msgid "Floppy"
+msgstr "軟盤"
+
+#. frame label
+#. Summary text header
+#: src/include/restore/ui.rb:398 src/modules/Restore.rb:2175
+msgid "Backup Archive"
+msgstr "備份存檔"
+
+#: src/include/restore/ui.rb:398
+msgid "Multivolume Archive"
+msgstr "多區塊存檔"
+
+#. radio button label
+#: src/include/restore/ui.rb:410
+msgid "&Local File"
+msgstr "本地檔案(&L)"
+
+#. text entry label
+#: src/include/restore/ui.rb:421
+msgid "Archive Filena&me"
+msgstr "存檔檔名(&M)"
+
+#. push button label
+#: src/include/restore/ui.rb:427
+msgid "&Select..."
+msgstr "選擇(&S)..."
+
+#. radio button label
+#: src/include/restore/ui.rb:436
+msgid "Network (N&FS)"
+msgstr "網路 (NFS)(&F)"
+
+#. text entry label
+#: src/include/restore/ui.rb:447
+msgid "I&P Address or Name of NFS Server"
+msgstr "NFS 伺服器的 IP 地址或名稱(&P)"
+
+#. push button label
+#: src/include/restore/ui.rb:453
+msgid "Select &Host..."
+msgstr "選擇主機(&H)..."
+
+#. text entry label
+#: src/include/restore/ui.rb:459
+msgid "&Archive Filename"
+msgstr "存檔檔名(&A)"
+
+#. radio button label
+#: src/include/restore/ui.rb:467
+msgid "Rem&ovable Device"
+msgstr "可移動裝置(&O)"
+
+#. combo box label
+#: src/include/restore/ui.rb:478
+msgid "&Device"
+msgstr "裝置(&D)"
+
+#. text entry label
+#: src/include/restore/ui.rb:490
+msgid "Archi&ve Filename"
+msgstr "存檔檔名(&V)"
+
+#. push button label
+#: src/include/restore/ui.rb:496
+msgid "S&elect..."
+msgstr "選擇(&E)..."
+
+#. dialog header
+#: src/include/restore/ui.rb:510
+msgid "Archive Selection"
+msgstr "存檔選擇"
+
+#: src/include/restore/ui.rb:511
+msgid "Multivolume Archive Selection"
+msgstr "多區塊存檔選擇"
+
+#. file selection from removable device - mount device
+#: src/include/restore/ui.rb:530 src/include/restore/ui.rb:561
+msgid "Select Archive File"
+msgstr "選擇存檔檔案"
+
+#. error message - selected file is out of mounted file system
+#: src/include/restore/ui.rb:569
+msgid "The selected file is not on the mounted device."
+msgstr "選定的檔案不在裝載的裝置上。"
+
+#. error message
+#. error message
+#: src/include/restore/ui.rb:585 src/modules/Restore.rb:936
+msgid "Cannot mount file system."
+msgstr "無法裝載檔案系統。"
+
+#. error message - file name is missing
+#: src/include/restore/ui.rb:597
+msgid "Enter a valid filename."
+msgstr "輸入有效的檔名。"
+
+#. error message - file or server name is missing
+#: src/include/restore/ui.rb:608
+msgid "Enter a valid server and filename."
+msgstr "輸入有效的伺服器與檔名。"
+
+#. error message - file or device name is missing
+#: src/include/restore/ui.rb:622
+msgid "Enter a valid device and filename."
+msgstr "輸入有效的裝置與檔名。"
+
+#. popup question
+#: src/include/restore/ui.rb:637
+msgid ""
+"Detailed configuration requires reading the archive.\n"
+"If an archive is not read, full restoration will be configured.\n"
+"\n"
+"Read the selected archive?\n"
+msgstr ""
+"詳細配置需要讀取存檔。\n"
+"如果未讀取存檔，則將配置完整恢復。\n"
+"\n"
+"是否讀取選定的存檔？\n"
+
+#. progress message
+#: src/include/restore/ui.rb:664
+msgid "Reading archive contents..."
+msgstr "正在讀取存檔內容..."
+
+#. error message - %1 is archive file name
+#: src/include/restore/ui.rb:686
+msgid "Cannot read backup archive file %1."
+msgstr "無法讀取備份存檔檔案 %1。"
+
+#. error message - multi volume archive consistency check failed
+#: src/include/restore/ui.rb:731
+msgid ""
+"Test of all volumes failed.\n"
+"\tAn archive file is probably corrupted.\n"
+"\t"
+msgstr ""
+"測試所有區塊失敗。\n"
+"\t一個存檔檔案可能已損壞。\n"
+"\t"
+
+#. Display archive property - date of backup, user comment...
+#. @return [Symbol] UI::UserInput() result
+#. Convert boolean value to translated "yes" or "no" string
+#. @param [Boolean] b input value
+#. @return [String] translated Yes/No string
+#: src/include/restore/ui.rb:778 src/modules/Restore.rb:2160
+msgid "Yes"
+msgstr "是"
+
+#: src/include/restore/ui.rb:778 src/modules/Restore.rb:2161
+msgid "No"
+msgstr "否"
+
+#. label text
+#: src/include/restore/ui.rb:787
+msgid "Archive Filename:"
+msgstr "存檔檔名："
+
+#. label text
+#: src/include/restore/ui.rb:796
+msgid "Date of Backup:"
+msgstr "備份日期："
+
+#. label text
+#: src/include/restore/ui.rb:805
+msgid "Backup Hostname:"
+msgstr "備份主機名："
+
+#. label text
+#: src/include/restore/ui.rb:814
+msgid "Multivolume Archive:"
+msgstr "多區塊存檔："
+
+#. multi line widget label
+#: src/include/restore/ui.rb:821
+msgid "Archive &Description:"
+msgstr "存檔描述(&D)："
+
+#. push button label
+#: src/include/restore/ui.rb:825
+msgid "&Archive Content..."
+msgstr "存檔內容(&A)..."
+
+#. push button label
+#: src/include/restore/ui.rb:828
+msgid "E&xpert Options..."
+msgstr "專家選項(&X)..."
+
+#. dialog header
+#: src/include/restore/ui.rb:836
+msgid "Archive Properties"
+msgstr "存檔屬性"
+
+#. package name for files not owned by any package
+#. name for "no package" - files not owned by any package
+#. package name "none" - files not owned by any package
+#: src/include/restore/ui.rb:876 src/include/restore/ui.rb:1439
+#: src/include/restore/ui.rb:1643 src/modules/Restore.rb:2230
+msgid "--No package--"
+msgstr "-- 無包 --"
+
+#. tree label
+#: src/include/restore/ui.rb:904
+msgid "Archive &Contents"
+msgstr "存檔內容(&C)"
+
+#. dialog header
+#: src/include/restore/ui.rb:916
+msgid "Archive Contents"
+msgstr "存檔內容"
+
+#. check box label - restore option
+#: src/include/restore/ui.rb:946
+msgid "Activate &Boot Loader Configuration after Restoration"
+msgstr "恢復後啟用引導載入器配置(&B)"
+
+#. check box label - restore option
+#: src/include/restore/ui.rb:955
+msgid "Target Directory"
+msgstr "目標目錄"
+
+#. dialog header
+#. Summary text header
+#: src/include/restore/ui.rb:968 src/modules/Restore.rb:2185
+msgid "Restore Options"
+msgstr "恢復選項"
+
+#. error message - entered directory is empty or doesn't start with / character
+#: src/include/restore/ui.rb:986
+msgid "The target directory is invalid or the path is not absolute."
+msgstr "目標目錄無效或路徑不是絕對路徑。"
+
+#. table header
+#. table header
+#: src/include/restore/ui.rb:1057 src/include/restore/ui.rb:1216
+#: src/include/restore/ui.rb:1546
+msgid "Package"
+msgstr "軟體包"
+
+#: src/include/restore/ui.rb:1058 src/include/restore/ui.rb:1216
+#: src/include/restore/ui.rb:1547
+msgid "Version"
+msgstr "版本"
+
+#: src/include/restore/ui.rb:1059
+msgid "Installed Version"
+msgstr "已安裝的版本"
+
+#: src/include/restore/ui.rb:1060 src/include/restore/ui.rb:1216
+#: src/include/restore/ui.rb:1548
+msgid "Description"
+msgstr "描述"
+
+#. push button label
+#. push button label
+#. push button label
+#. push button label
+#: src/include/restore/ui.rb:1071 src/include/restore/ui.rb:1226
+#: src/include/restore/ui.rb:1555 src/include/restore/ui.rb:1873
+msgid "&Select All"
+msgstr "全選(&S)"
+
+#. push button label
+#. push button label
+#. push button label
+#: src/include/restore/ui.rb:1073 src/include/restore/ui.rb:1228
+#: src/include/restore/ui.rb:1556 src/include/restore/ui.rb:1875
+msgid "&Deselect All"
+msgstr "全不選(&D)"
+
+#. dialog header
+#: src/include/restore/ui.rb:1082
+msgid "Package Restoration: Installation"
+msgstr "包恢復：安裝"
+
+#. dialog header
+#: src/include/restore/ui.rb:1237
+msgid "Package Restoration: Uninstallation"
+msgstr "包恢復：解除安裝"
+
+#. Headline
+#: src/include/restore/ui.rb:1355
+msgid "Error"
+msgstr "錯誤"
+
+#. Error message
+#: src/include/restore/ui.rb:1358
+msgid ""
+"Package %1 is not available on any of the subscribed repositories.\n"
+"Would you like to got back and deselect the package or skip it?\n"
+msgstr ""
+"在任何訂閱的軟體源中都找不到軟體包 %1。\n"
+"您想要後退並取消選擇該軟體包還是跳過它？\n"
+
+#: src/include/restore/ui.rb:1363
+msgid "Yes, Go &Back"
+msgstr "是，後退(&B)"
+
+#: src/include/restore/ui.rb:1364
+msgid "&Skip"
+msgstr "跳過(&S)"
+
+#. Remove all unavailable packages from list of packages to install
+#: src/include/restore/ui.rb:1399
+msgid "Installation or removal of some packages has failed."
+msgstr "安裝或刪除某些包失敗。"
+
+#. all files selected for restoration
+#. files are selected to restore - all
+#: src/include/restore/ui.rb:1425 src/include/restore/ui.rb:1665
+msgid "All"
+msgstr "全部"
+
+#. selected %1 (number of files) of %2 (number of files)
+#: src/include/restore/ui.rb:1433
+msgid "%1 of %2"
+msgstr "%2 中的 %1"
+
+#. popup question - %1 is package name
+#: src/include/restore/ui.rb:1468
+msgid ""
+"Package %1 is not installed in your system.\n"
+"Install it?\n"
+msgstr ""
+"在系統中未安裝包 %1。\n"
+"是否安裝它？\n"
+
+#. Packages (and files) for restoration can be selected in this archive.
+#. @return [Symbol] UI::UserInput() result
+#: src/include/restore/ui.rb:1492
+msgid "S&elect Files"
+msgstr "選擇檔案(&E)"
+
+#. table header
+#: src/include/restore/ui.rb:1545
+msgid "Files"
+msgstr "檔案"
+
+#. check box label - restore option
+#: src/include/restore/ui.rb:1564
+msgid "Restore RPM &Database (if present in archive)"
+msgstr "恢復 RPM 資料庫(如果存在於存檔中)(&D)"
+
+#. description of symbols in the table 1/2
+#: src/include/restore/ui.rb:1573
+msgid "X: Restore all files from backup, P: Partial restore of manually selected files"
+msgstr "X：從備份恢復所有檔案，P：部分恢復手動選定的檔案"
+
+#. description of symbols in the table 2/2
+#: src/include/restore/ui.rb:1580
+msgid "<P>To select files to restore from the archive, press <B>Select Files</B>.</P>"
+msgstr "<P>要選擇從存檔恢復的檔案，請按<B>選擇檔案</B>。</P>"
+
+#. dialog header
+#. summary text heading
+#: src/include/restore/ui.rb:1587 src/modules/Restore.rb:2220
+msgid "Packages to Restore"
+msgstr "要恢復的包"
+
+#. user selected to restore all packages,
+#. but some packages are not installed
+#. ask to restore them
+#: src/include/restore/ui.rb:1707
+msgid ""
+"Some packages are not installed.\n"
+"Select them for restoration?\n"
+msgstr ""
+"某些包未安裝。\n"
+"是否選擇它們進行恢復？\n"
+
+#. user selected to restore all packages,
+#. but some installed packages have different version than at backup
+#. ask to restore them
+#: src/include/restore/ui.rb:1727
+msgid ""
+"Some installed packages have a different\n"
+"version than in the backup archive.\n"
+"Select them for restoration?\n"
+msgstr ""
+"某些已安裝包的版本與\n"
+"備份存檔中的版本不同。\n"
+"是否選擇它們進行恢復？\n"
+
+#. display warning
+#: src/include/restore/ui.rb:1786
+msgid "Restoring the RPM database is recommended."
+msgstr "建議恢復 RPM 資料庫。"
+
+#: src/include/restore/ui.rb:1788
+msgid "Not restoring the RPM database is recommended."
+msgstr "建議不恢復 RPM 資料庫。"
+
+#. RPMoption is nil
+#: src/include/restore/ui.rb:1792
+msgid ""
+"There is a conflict between selected\n"
+"packages and the RPM database restoration option.\n"
+"Try changing the selection or the RPM database restoration status."
+msgstr ""
+"選定的包與 RPM 資料庫\n"
+"恢復選項之間存在衝突。\n"
+"請嘗試變更選擇或 RPM 資料庫恢復狀態。"
+
+#. multi selection box label
+#: src/include/restore/ui.rb:1863
+msgid "&Files to Restore"
+msgstr "要恢復的檔案(&F)"
+
+#. dialog header - %1 is name of package (e.g. "aaa_base")
+#: src/include/restore/ui.rb:1886
+msgid "File Selection: Package %1"
+msgstr "檔案選擇：包 %1"
+
+#. abort popup question
+#: src/include/restore/ui.rb:1968
+msgid "Abort Confirmation"
+msgstr "中止確認"
+
+#: src/include/restore/ui.rb:1969
+msgid "Really abort restore?"
+msgstr "是否確實要中止恢復？"
+
+#. dialog header
+#: src/include/restore/ui.rb:1980
+msgid "Restoring Files"
+msgstr "正在恢復檔案"
+
+#. program return status - program was not started
+#: src/include/restore/ui.rb:2023
+msgid "Not started"
+msgstr "未啟動"
+
+#. program return status - success
+#: src/include/restore/ui.rb:2027
+msgid "OK"
+msgstr "確定"
+
+#. program return status - failed
+#: src/include/restore/ui.rb:2030
+msgid "Failed"
+msgstr "已失敗"
+
+#. summary information texts
+#: src/include/restore/ui.rb:2052
+msgid "Number of Installed Packages: "
+msgstr "已安裝包的數量："
+
+#: src/include/restore/ui.rb:2057
+msgid "Number of Uninstalled Packages: "
+msgstr "已卸裝包的數量："
+
+#: src/include/restore/ui.rb:2063
+msgid "Total Restored Packages: "
+msgstr "已恢復包的總數："
+
+#: src/include/restore/ui.rb:2069
+msgid "Total Restored Files: "
+msgstr "已恢復檔案的總數："
+
+#. summary information text - header
+#: src/include/restore/ui.rb:2082
+msgid "Failed Files"
+msgstr "失敗的檔案"
+
+#. summary information texts - details
+#: src/include/restore/ui.rb:2117
+msgid "Details:"
+msgstr "細節："
+
+#: src/include/restore/ui.rb:2118
+msgid "Boot Loader Configuration: "
+msgstr "引導載入器配置："
+
+#: src/include/restore/ui.rb:2123
+msgid "Restored Files:"
+msgstr "已恢復的檔案："
+
+#. dialog header
+#: src/include/restore/ui.rb:2137
+msgid "Summary of Restoration"
+msgstr "恢復摘要"
+
+#. error message
+#: src/modules/Restore.rb:966
+msgid ""
+"Cannot read archive file.\n"
+"It is not a tar archive or it is broken.\n"
+msgstr ""
+"無法讀取存檔檔案。\n"
+"它不是 tar 存檔檔案或已損壞。\n"
+
+#. error message: copy failed
+#: src/modules/Restore.rb:989
+msgid ""
+"Cannot copy archive file\n"
+"to temporary directory.\n"
+msgstr ""
+"無法將存檔檔案複製\n"
+"到臨時目錄。\n"
+
+#. error message
+#: src/modules/Restore.rb:1023
+msgid ""
+"The archive does not contain the required files.\n"
+"It was probably not created by the backup module.\n"
+msgstr ""
+"存檔不包含所需的檔案。\n"
+"它可能不是由備份模組創建的。\n"
+
+#. decription of files not owned by any package
+#: src/modules/Restore.rb:1195
+msgid "Files not owned by any package"
+msgstr "不屬於任何包的檔案"
+
+#. error popup message
+#: src/modules/Restore.rb:1384
+msgid "Boot loader configuration failed."
+msgstr "引導載入器配置失敗。"
+
+#. error message, %1 is directory
+#: src/modules/Restore.rb:1415
+msgid "Invalid target directory (%1)."
+msgstr "目標目錄 (%1) 無效。"
+
+#. progress bar label
+#: src/modules/Restore.rb:1548
+msgid "Restoring files not owned by any package..."
+msgstr "正在恢復不屬於任何包的檔案..."
+
+#. progress bar label - %1 is package name
+#: src/modules/Restore.rb:1550
+msgid "Restoring package %1..."
+msgstr "正在恢復包 %1..."
+
+#. popup message text - ask to install 'star' package
+#. %1 is translated 'Continue' label
+#: src/modules/Restore.rb:1854
+msgid ""
+"Package star is needed to extract\n"
+"files from the archive.\n"
+"Press %1 to install this package.\n"
+msgstr ""
+"需要包 star 來\n"
+"從存檔中抽取檔案。\n"
+"按 %1安裝此包。\n"
+
+#. error popup message
+#: src/modules/Restore.rb:1891
+msgid ""
+"Package star is not installed.\n"
+"Press OK to exit.\n"
+msgstr ""
+"未安裝包 star。\n"
+"按\"確定\"退出。\n"
+
+#. progess bar label
+#: src/modules/Restore.rb:2032
+msgid "Configuring boot loader..."
+msgstr "正在配置引導載入器..."
+
+#: src/modules/Restore.rb:2197
+msgid "Activate &boot loader configuration after restoration"
+msgstr "恢復後啟用引導載入器配置(&B)"
+
+#: src/modules/Restore.rb:2209
+msgid "Restore RPM &database (if present in archive)"
+msgstr "恢復 RPM 資料庫(如果存在於存檔中)(&D)"
+
+#. part of the summary text
+#: src/modules/Restore.rb:2226
+msgid "<I>Restore all files from the archive</I>"
+msgstr "<I>恢復存檔中的所有檔案</I>"
+

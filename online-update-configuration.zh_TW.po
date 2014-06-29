@@ -1,0 +1,216 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012, 2013.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-24 10:56+0100\n"
+"PO-Revision-Date: 2014-04-16 14:58+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. support basic command-line output (bnc#439050)
+#: src/clients/online_update_configuration.rb:59
+msgid "Online Update Configuration Module Help"
+msgstr "線上更新配置模組幫助"
+
+#. inst_source was renamed to repositories (bnc#828139)
+#: src/clients/online_update_configuration.rb:256
+msgid "The registration module is not available."
+msgstr "註冊模組不可用。"
+
+#: src/clients/online_update_configuration.rb:257
+msgid "Please install yast2-registration and try again."
+msgstr "請安裝 yast2-registration 並重試。"
+
+#. module title
+#: src/include/online-update-configuration/OUCDialogs.rb:41
+msgid "Online Update Configuration"
+msgstr "線上更新配置"
+
+#. translators: (default), meaning: "Current Update Repository: http://xyz/  (default)"
+#: src/include/online-update-configuration/OUCDialogs.rb:43
+msgid "(default)"
+msgstr "(默認)"
+
+#. translators: (none), meaning "Current Update Repository: (none)"
+#: src/include/online-update-configuration/OUCDialogs.rb:45
+msgid "(none)"
+msgstr "(無)"
+
+#. frame title
+#: src/include/online-update-configuration/OUCDialogs.rb:48
+msgid "Update Repository"
+msgstr "更新源"
+
+#. frame title
+#: src/include/online-update-configuration/OUCDialogs.rb:50
+msgid "Automatic Online Update"
+msgstr "自動線上更新"
+
+#. translators: "Set Default" meaning:  Set the Update Repository to the default one
+#: src/include/online-update-configuration/OUCDialogs.rb:53
+msgid "Set Default"
+msgstr "設為默認"
+
+#. translators: a short button label called "Advanced"
+#: src/include/online-update-configuration/OUCDialogs.rb:55
+msgid "Advanced"
+msgstr "高階"
+
+#. for category filter
+#: src/include/online-update-configuration/OUCDialogs.rb:58
+msgid "Filter by Category"
+msgstr "按分類過濾"
+
+#. for category filter //translators: means: categories of patches
+#: src/include/online-update-configuration/OUCDialogs.rb:60
+msgid "Patch Categories"
+msgstr "補丁分類"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:62
+msgid "enabled"
+msgstr "已啟用"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:63
+msgid "disabled"
+msgstr "已禁用"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:65
+msgid "Edit Software Repositories"
+msgstr "編輯軟體源"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:66
+msgid "Register for support and get update repository"
+msgstr "註冊以獲得支援與更新源"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:67
+msgid "Send hardware information to the smolt project"
+msgstr "發送硬體資訊到 smolt 項目"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:68
+msgid "Interval"
+msgstr "更新週期"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:69
+msgid "Skip Interactive Patches"
+msgstr "跳過互動式補丁"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:70
+msgid "Agree with Licenses"
+msgstr "接受許可"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:71
+msgid "Include Recommended Packages"
+msgstr "包含推薦的軟體包"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:72
+msgid "Use delta rpms"
+msgstr "使用增量 RPM"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:73
+msgid "Current Update Repository:"
+msgstr "當前更新源："
+
+#: src/include/online-update-configuration/OUCDialogs.rb:74
+msgid ""
+"In order to add the default update repository\n"
+"you have to register this product."
+msgstr "您必須先註冊本產品才能添加默認更新源。"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:77
+msgid "Do you want to perform the registration now?"
+msgstr "您想要現在註冊嗎？"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:81
+msgid "<p>In <b>%1</b> the current update repository is shown.</p>"
+msgstr "<p>當前更新源在 <b>%1</b> 中顯示。</p>"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:85
+msgid "<p>Press <b>%1</b> to use the default update repository.</p>"
+msgstr "<p>按 <b>%1</b> 使用默認更新源。</p>"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:89
+msgid "<p>Find related actions in the <b>%1</b> menu.</p>"
+msgstr "<p>在 <b>%1</b> 選單中查找相關動作。</p>"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:93
+msgid "<p>In <b>%1</b> set up the automatic online update.</p>"
+msgstr "<p>在 <b>%1</b> 中設定自動線上更新。</p>"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:97
+msgid ""
+"<p>Select an update interval and specify if interactive patches should be "
+"ignored and if licenses should be automatically agreed with.</p>"
+msgstr "<p>選擇一個更新週期並指定是否忽略互動補丁與是否自動同意許可。</p>"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:102
+msgid ""
+"<p>All packages that are recommended by an updated package will be installed "
+"when <b>%1</b> is enabled.</p>"
+msgstr "<p>啟用了 <b>%1</b> 後，將安裝全部由某個更新的軟體包推薦的軟體包。</p>"
+
+#: src/include/online-update-configuration/OUCDialogs.rb:108
+msgid ""
+"<p>Category filter for patches can be configured in the section <b>%1</b>. "
+"Only patches of the listed categories will be installed. Others will be "
+"skipped.</p>"
+msgstr "<p>補丁分類過濾器可在 <b>%1</b> 部分配置。僅有屬於已列出分類的補丁才會被安裝。其它的將被跳過。</p>"
+
+#. cache the base product details
+#: src/modules/OnlineUpdateConfiguration.rb:73
+msgid "daily"
+msgstr "按日"
+
+#: src/modules/OnlineUpdateConfiguration.rb:74
+msgid "weekly"
+msgstr "按周"
+
+#: src/modules/OnlineUpdateConfiguration.rb:75
+msgid "monthly"
+msgstr "按月"
+
+#. translators: this name is a (technical) category for an update package
+#: src/modules/OnlineUpdateConfiguration.rb:82
+msgid "Packagemanager and YaST"
+msgstr "軟體包管理器與 YaST"
+
+#. translators: this name is a (technical) category for an update package
+#: src/modules/OnlineUpdateConfiguration.rb:87
+msgid "Security"
+msgstr "安全"
+
+#. translators: this name is a (technical) category for an update package
+#: src/modules/OnlineUpdateConfiguration.rb:92
+msgid "Recommended"
+msgstr "推薦"
+
+#. translators: this name is a (technical) category for an update package
+#: src/modules/OnlineUpdateConfiguration.rb:97
+msgid "Optional"
+msgstr "可選"
+
+#. translators: this name is a (technical) category for an update package: Document, meaning Documentation
+#: src/modules/OnlineUpdateConfiguration.rb:102
+msgid "Document"
+msgstr "文件"
+
+#. translators: this name is a (technical) category for an update package
+#: src/modules/OnlineUpdateConfiguration.rb:107
+msgid "Other"
+msgstr "其它"
+
+#~ msgid "<p>In <b>%1</b> set up the automatic online update. Choose the interval to use and if interactive patches should be ignored, otherwise the updater will use the default answers.</p>"
+#~ msgstr "<p>在 <b>%1</b> 中設定自動線上更新。選擇要使用的週期，是否忽略要與使用者互動的補丁，否則升級掛件會使用默認。</p>"
+

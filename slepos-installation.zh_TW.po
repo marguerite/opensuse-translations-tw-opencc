@@ -1,0 +1,386 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012, 2013.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-06-23 15:59+0200\n"
+"PO-Revision-Date: 2013-02-03 19:32+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. TRANSLATORS: Table item (file type)
+#: src/clients/inst_slepos_data_migration.ycp:199
+msgid "Directory"
+msgstr "目錄"
+
+#. TRANSLATORS: Table item (file type)
+#: src/clients/inst_slepos_data_migration.ycp:210
+msgid "File"
+msgstr "檔案"
+
+#. TRANSLATORS: Dialog caption
+#: src/clients/inst_slepos_data_migration.ycp:222
+#: src/clients/inst_slepos_data_migration.ycp:960
+msgid "Migration Assistant"
+msgstr "遷移助手"
+
+#. TRANSLATORS: Radio button
+#: src/clients/inst_slepos_data_migration.ycp:229
+msgid "&Skip Migration"
+msgstr "跳過遷移(&S)"
+
+#. TRANSLATORS: Radio button
+#: src/clients/inst_slepos_data_migration.ycp:231
+msgid "&Do Migrate"
+msgstr "執行遷移(&D)"
+
+#. TRANSLATORS: informative text
+#: src/clients/inst_slepos_data_migration.ycp:240
+msgid "These directories and files will be migrated"
+msgstr "將遷移這些目錄與檔案"
+
+#. TRANSLATORS: Table header item
+#: src/clients/inst_slepos_data_migration.ycp:245
+msgid "Type"
+msgstr "類型"
+
+#. TRANSLATORS: Table header item
+#: src/clients/inst_slepos_data_migration.ycp:247
+msgid "From"
+msgstr "從"
+
+#. TRANSLATORS: Table header item
+#: src/clients/inst_slepos_data_migration.ycp:249
+msgid "To"
+msgstr "到"
+
+#. TRANSLATORS: Push button
+#: src/clients/inst_slepos_data_migration.ycp:255
+msgid "&Migration Details..."
+msgstr "遷移細節(&M)..."
+
+#. TRANSLATORS: informative text
+#: src/clients/inst_slepos_data_migration.ycp:260
+msgid ""
+"Note: Migration can take very long time according to the current size of your "
+"data."
+msgstr "注意：根據當前的資料大小，遷移可能佔用很長的時間。"
+
+#. TRANSLATORS: Dialog help
+#: src/clients/inst_slepos_data_migration.ycp:263
+msgid ""
+"<p>The default choice is <b>Skip Migration</b> in case no files for migration "
+"were found.<br>\n"
+"\t    The files and directories to be migrated are listed in the table.<br>\n"
+"\t    You can find detailed choices in the <b>Migration Details</b> pop-up "
+"menu. Here you can choose \n"
+"            to make a complete Backup of your system (tar.bz2).<br>\n"
+"\t    By pressing <b>Next</b> you start the migration and possible backup "
+"processes (if you have chosen \n"
+"            to backup your system in the <b>Migration Details</b> menu).<br>\n"
+"\t    The whole procedure may take a long time depending on the size of your "
+"data.</p>"
+msgstr ""
+"<p>若找不到要遷移的檔案，將默認選擇<b>跳過遷移</b>。<br>\n"
+"\t    要遷移的檔案與目錄會列在表中。<br>\n"
+" \t    您可在<b>遷移細節</b>彈出選單中找到詳細的選項。在此您可選擇\n"
+"             製作完整的系統備份 (tar.bz2)。<br>\n"
+"\t    按<b>下一步</b>您將啟動遷移與可能的備份過程（若您在<b>遷移細節</b>選單中\n"
+"             選擇了備份系統）。<br>\n"
+" \t    根據您的資料大小，整個過程可能佔用很長的時間。</p>"
+
+#. TRANSLATORS: Pop-up dialog caption
+#: src/clients/inst_slepos_data_migration.ycp:288
+msgid "Warning"
+msgstr "警告"
+
+#. TRANSLATORS: Warning dialog message, %1 is replaced with a filename
+#: src/clients/inst_slepos_data_migration.ycp:290
+#, ycp-format
+msgid ""
+"Archive %1 already exists.\n"
+"Do you really want to overwrite it?"
+msgstr ""
+"已存在存檔 %1。\n"
+"您真的想要覆蓋它嗎？"
+
+#. TRANSLATORS: Push button
+#: src/clients/inst_slepos_data_migration.ycp:293
+msgid "&Yes, Overwrite"
+msgstr "是，覆蓋(&Y)"
+
+#. TRANSLATORS: Error pop-up message, %1 is replaced with a filename
+#: src/clients/inst_slepos_data_migration.ycp:301
+#, ycp-format
+msgid ""
+"Archive %1 is a directory.\n"
+"Expecting file name instead."
+msgstr ""
+"存檔 %1 是一個目錄。\n"
+"但期望的是一個檔名。"
+
+#. TRANSLATORS: Error pop-up message, %1 is replaced with a file name
+#. %2 is replaced with a file name type
+#: src/clients/inst_slepos_data_migration.ycp:310
+#, ycp-format
+msgid ""
+"The file %1 is type '%2'.\n"
+"It cannot be used for creating any backup archive."
+msgstr ""
+"檔案 %1 的類型為“%2”。\n"
+"它不能用於創建備份存檔。"
+
+#. TRANSLATORS: Pop-up dialog caption
+#: src/clients/inst_slepos_data_migration.ycp:352
+msgid "Migration Details"
+msgstr "遷移細節"
+
+#. TRANSLATORS: Informative text
+#: src/clients/inst_slepos_data_migration.ycp:355
+msgid ""
+"We recommend creating a backup copy of your data\n"
+"before the migration starts."
+msgstr ""
+"我們推薦在開始遷移前\n"
+"先創建一個資料備份。"
+
+#. TRANSLATORS: Check box
+#: src/clients/inst_slepos_data_migration.ycp:359
+msgid "Create a Backup &Archive"
+msgstr "創建備份存檔(&A)"
+
+#. TRANSLATORS: Text entry
+#: src/clients/inst_slepos_data_migration.ycp:362
+msgid "Archive &Location"
+msgstr "存檔位置(&L)"
+
+#. TRANSLATORS: Push button
+#: src/clients/inst_slepos_data_migration.ycp:367
+msgid "&Browse..."
+msgstr "瀏覽(&B)..."
+
+#. TRANSLATORS: Error message
+#: src/clients/inst_slepos_data_migration.ycp:401
+msgid "Please, select a directory or an archive file."
+msgstr "請選擇一個目錄或存檔檔案。"
+
+#. TRANSLATORS: File-browse dialog caption
+#: src/clients/inst_slepos_data_migration.ycp:415
+msgid "Backup Archive File Location"
+msgstr "備份存檔檔案位置"
+
+#. TRANSLATORS: Dialog caption
+#: src/clients/inst_slepos_data_migration.ycp:484
+msgid "Migration in Progress"
+msgstr "正在遷移中"
+
+#. TRANSLATORS: Dialog help
+#: src/clients/inst_slepos_data_migration.ycp:492
+msgid ""
+"<p>In case you have chosen to <b>Backup</b> your data you will see the backup "
+"\n"
+"\t    progress in this window.<br>\n"
+"\t    After the <b>Backup</b> is finished you will see the progress of the "
+"migration \n"
+"\t    with the following information :<br>\n"
+"\t    Total files: Number of processed files.<br>\n"
+"\t    Total size: Size of migrated data.<br></p>\n"
+"\t    <p>When the whole migration process is ready you will see a <b>Done</b> "
+"message.</p>"
+msgstr ""
+"<p>您若選擇了<b>備份</b>資料，則會在此視窗看到備份\n"
+" \t    程序。<br>\n"
+"\t    <b>備份</b>完成後，可以看到遷移程序\n"
+" \t    程序資訊如下：<br>\n"
+"\t    總檔案數：已處理檔案數。<br>\n"
+"\t    總大小：已遷移資料大小。<br></p>\n"
+"\t    <p>當整個遷移程序完畢時，您將看到<b>完畢</ b>訊息。</p>"
+
+#. TRANSLATORS: Dialog informative text
+#: src/clients/inst_slepos_data_migration.ycp:546
+#: src/clients/inst_slepos_data_migration.ycp:568
+msgid "Backup statistics:"
+msgstr "備份統計："
+
+#. TRANSLATORS: Dialog informative text
+#. %1 is replaced with the current file name just being archived
+#. %2 is replaced with total number of directories archived
+#. %3 is replaced with total number of files archived
+#: src/clients/inst_slepos_data_migration.ycp:553
+#, ycp-format
+msgid ""
+"Current: %1\n"
+"Total directories: %2\n"
+"Total files: %3"
+msgstr ""
+"當前：%1\n"
+"總目錄數：%2\n"
+"總檔案數： %3"
+
+#. TRANSLATORS: Dialog informative text
+#. %1 is replaced with total number of directories archived
+#. %2 is replaced with total number of files archived
+#: src/clients/inst_slepos_data_migration.ycp:574
+#, ycp-format
+msgid ""
+"Total directories: %1\n"
+"Total files: %2"
+msgstr ""
+"總目錄數：%1\n"
+"總檔案數： %2"
+
+#. TRANSLATORS: Dialog informative text (progress)
+#: src/clients/inst_slepos_data_migration.ycp:580
+#: src/clients/inst_slepos_data_migration.ycp:639
+msgid "Done"
+msgstr "完畢"
+
+#. TRANSLATORS: informative text (headline)
+#: src/clients/inst_slepos_data_migration.ycp:605
+#: src/clients/inst_slepos_data_migration.ycp:627
+#: src/clients/inst_slepos_data_migration.ycp:649
+msgid "Migration statistics:"
+msgstr "遷移統計："
+
+#. TRANSLATORS: Dialog informative text
+#. %1 is replaced with the current file name just being migrated
+#. %2 is replaced with total number of files migrated
+#. %3 is replaced with total size of files migrated
+#: src/clients/inst_slepos_data_migration.ycp:612
+#, ycp-format
+msgid ""
+"Current: %1\n"
+"Total files: %2\n"
+"Total size: %3"
+msgstr ""
+"當前：%1\n"
+"總檔案數：%2\n"
+"總大小： %3"
+
+#. TRANSLATORS: Dialog informative text
+#. %1 is replaced with total number of files migrated
+#. %2 is replaced with total size of files migrated
+#: src/clients/inst_slepos_data_migration.ycp:633
+#, ycp-format
+msgid ""
+"Total files: %1\n"
+"Total size: %2"
+msgstr ""
+"總檔案數：%1\n"
+"總大小： %2"
+
+#: src/clients/inst_slepos_data_migration.ycp:652
+#, ycp-format
+msgid "Total files: %1"
+msgstr "總檔案數： %1"
+
+#. TRANSLATORS: Dialog informative text (progress)
+#: src/clients/inst_slepos_data_migration.ycp:657
+msgid "Aborted"
+msgstr "已中止"
+
+#. TRANSLATORS: Dialog informative text (progress)
+#: src/clients/inst_slepos_data_migration.ycp:686
+msgid "Creating backup archive..."
+msgstr "正在創建備份存檔..."
+
+#. TRANSLATORS: Dialog informative text (progress)
+#: src/clients/inst_slepos_data_migration.ycp:862
+msgid "Migrating data..."
+msgstr "正在遷移資料..."
+
+#. TRANSLATORS: Dialog informative text (progress)
+#: src/clients/inst_slepos_data_migration.ycp:963
+msgid "Running post-migration script..."
+msgstr "正在運行遷移後指令碼..."
+
+#. TRANSLATORS: Dialog help
+#: src/clients/inst_slepos_data_migration.ycp:966
+msgid "<p>The last migration step - a cleaning script is triggered.</p>"
+msgstr "<p>最後遷移步驟 － 觸發清理指令碼。</p>"
+
+#. TRANSLATORS: Pop-up error message
+#: src/clients/inst_slepos_data_migration.ycp:1013
+#, ycp-format
+msgid "Unable to read migration configuration from %1"
+msgstr "無法從 %1 中讀取遷移配置"
+
+#. TRANSLATORS: A name of pattern, used as RadioButton label
+#: src/clients/inst_slepos_server_selection.ycp:26
+msgid "Admin Server Installation"
+msgstr "管理伺服器安裝"
+
+#. TRANSLATORS: A name of pattern, used as RadioButton label
+#: src/clients/inst_slepos_server_selection.ycp:32
+msgid "Branch Server Installation"
+msgstr "分支伺服器安裝"
+
+#. TRANSLATORS: A name of pattern, used as RadioButton label
+#: src/clients/inst_slepos_server_selection.ycp:38
+msgid "Image Server Installation"
+msgstr "映像伺服器安裝"
+
+#. TRANSLATORS: Error message
+#: src/clients/inst_slepos_server_selection.ycp:225
+msgid ""
+"An error occured in pattern selection\n"
+"Starting manual detailed selection."
+msgstr ""
+"選擇軟體集時出錯\n"
+"正在啟動手工詳細選擇。"
+
+#. TRANSLATORS: Error message, %1 is replaced with the name of the pattern
+#: src/clients/inst_slepos_server_selection.ycp:232
+#, ycp-format
+msgid ""
+"Unable to select pattern '%1'.\n"
+"Detailed selection needs to be used."
+msgstr ""
+"無法選擇軟體集 '%1'。\n"
+"需要使用詳細選擇。"
+
+#. TRANSLATORS: Radio button
+#: src/clients/inst_slepos_server_selection.ycp:282
+msgid "Detailed Selection"
+msgstr "詳細選擇"
+
+#. TRANSLATORS: Dialog caption
+#: src/clients/inst_slepos_server_selection.ycp:289
+msgid "Server Pattern Selection"
+msgstr "伺服器軟體集選擇"
+
+#. TRANSLATORS: Dialog help
+#: src/clients/inst_slepos_server_selection.ycp:296
+msgid ""
+"<p>Please choose what type of server you would like to install and \n"
+"\tpress <b>Next</b>.</p><br>\n"
+"\tIn case you would like to make a detailed choice or install more services\n"
+"\ton one server please choose <b>Detailed Selection</b>.<br>\n"
+"\t<p>The installation will automatically start upon pressing <b>Next</b>.<br>"
+"\n"
+" \tWhen the installation is complete the <b>Migration Assistant</b> window "
+"will \n"
+"\topen and guide you through the migration process.</p>"
+msgstr ""
+"<p>請選擇您希望安裝的伺服器類型，然後\n"
+"\t按<b>下一步</b>。</p><br>\n"
+"\t您若希望進行詳細的選擇或在一臺伺服器上安裝更多服務，\n"
+"\t請選擇<b>詳細選擇</b>。<br>\n"
+"\t<p>按<b>下一步</b>將自動啟動安裝。<br>\n"
+"  \t安裝完成後，將開啟<b>遷移助手</b>視窗，\n"
+"\t指引您完成整個遷移過程。</p>"
+
+
+

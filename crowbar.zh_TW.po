@@ -1,0 +1,304 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:37+0200\n"
+"PO-Revision-Date: 2013-02-02 02:23+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the Xcrowbar module
+#: src/clients/crowbar.rb:56
+msgid "Configuration of crowbar"
+msgstr "Crowbar 配置"
+
+#. textentry label
+#: src/include/crowbar/complex.rb:71
+msgid "Password for Crowbar Administrator"
+msgstr "Crowbar 系統管理員密碼"
+
+#. help text
+#: src/include/crowbar/complex.rb:75
+msgid "<p>Enter the password for Crowbar administrator.</p>"
+msgstr "<p>請輸入 Crowbar 系統管理員密碼。</p>"
+
+#. textentry label
+#: src/include/crowbar/complex.rb:97
+msgid "Repeat the Password"
+msgstr "重複密碼"
+
+#. textentry label
+#: src/include/crowbar/complex.rb:104
+msgid "Mode"
+msgstr "模式"
+
+#. textentry label
+#: src/include/crowbar/complex.rb:113
+msgid "Bonding Policy"
+msgstr "繫結策略"
+
+#. table header
+#: src/include/crowbar/complex.rb:139
+msgid "Network"
+msgstr "網路"
+
+#: src/include/crowbar/complex.rb:140
+msgid "Subnet Address"
+msgstr "子網地址"
+
+#: src/include/crowbar/complex.rb:141
+msgid "Network Mask"
+msgstr "網路掩碼"
+
+#: src/include/crowbar/complex.rb:142
+msgid "VLAN"
+msgstr "虛擬區域網"
+
+#. checkbox label
+#: src/include/crowbar/complex.rb:159
+msgid "Use VLAN"
+msgstr "使用虛擬區域網"
+
+#. textentry label
+#: src/include/crowbar/complex.rb:169
+msgid "VLAN ID"
+msgstr "虛擬區域網 ID"
+
+#. textentry label
+#: src/include/crowbar/complex.rb:179
+msgid "Router"
+msgstr "路由器"
+
+#. textentry label
+#: src/include/crowbar/complex.rb:201
+msgid "Subnet"
+msgstr "子網"
+
+#. textentry label
+#: src/include/crowbar/complex.rb:224
+msgid "Netmask"
+msgstr "網路掩碼"
+
+#: src/include/crowbar/complex.rb:246
+msgid "Broadcast"
+msgstr "廣播"
+
+#. checkbox label
+#: src/include/crowbar/complex.rb:256
+msgid "Add Bridge"
+msgstr "添加網橋"
+
+#. push button label
+#: src/include/crowbar/complex.rb:265
+msgid "&Edit Ranges..."
+msgstr "編輯地址段(&E)..."
+
+#. error popup
+#: src/include/crowbar/complex.rb:391
+msgid ""
+"The passwords do not match.\n"
+"Try again."
+msgstr ""
+"密碼不匹配。\n"
+"請重試。"
+
+#. table entry (VLAN status)
+#: src/include/crowbar/complex.rb:426
+msgid "disabled"
+msgstr "已禁用"
+
+#. error popup
+#: src/include/crowbar/complex.rb:527
+msgid ""
+"The netmask '%1' is invalid.\n"
+"%2"
+msgstr ""
+"子網掩碼 '%1' 無效。\n"
+"%2"
+
+#. error popup
+#: src/include/crowbar/complex.rb:540
+msgid ""
+"The IP address '%1' is invalid.\n"
+"%2"
+msgstr ""
+"IP 地址 '%1' 無效。\n"
+"%2"
+
+#. error popup
+#: src/include/crowbar/complex.rb:552
+msgid ""
+"The router address '%1' is invalid.\n"
+"%2"
+msgstr ""
+"路由器地址 '%1' 無效。\n"
+"%2"
+
+#. error popup
+#: src/include/crowbar/complex.rb:564
+msgid "The router address '%1' is not part of network '%2'."
+msgstr "路由器地址 '%1' 不是網路 '%2' 的一部分。"
+
+#. popup message
+#: src/include/crowbar/complex.rb:585
+msgid ""
+"Some address ranges are not part of network '%1'.\n"
+"Adapt them using 'Edit ranges' button."
+msgstr ""
+"一些地址段不是網路 '%1' 的一部分。\n"
+"請使用 '編輯地址段' 按鈕來調整它們。"
+
+#. inputfield label
+#: src/include/crowbar/complex.rb:687
+msgid "Min IP Address"
+msgstr "最小 IP 地址"
+
+#. inputfield label
+#: src/include/crowbar/complex.rb:694
+msgid "Max IP Address"
+msgstr "最大 IP 地址"
+
+#: src/include/crowbar/complex.rb:761
+msgid "The address '%1' is not part of network '%2'."
+msgstr "地址 '%1' 不是網路 '%2' 的一部分。"
+
+#. error message
+#: src/include/crowbar/complex.rb:777
+msgid "The lowest address must be lower than the highest one."
+msgstr "最低地址必須低於最高地址。"
+
+#. error message
+#: src/include/crowbar/complex.rb:810
+msgid "Ranges '%1' and '%2' are overlapping."
+msgstr "地址段 '%1' 與 '%2' 有重疊。"
+
+#. tab header
+#: src/include/crowbar/complex.rb:841
+msgid "Administration Settings"
+msgstr "管理設定"
+
+#. tab header
+#: src/include/crowbar/complex.rb:851
+msgid "Network Mode"
+msgstr "網路模式"
+
+#. tab header
+#: src/include/crowbar/complex.rb:861
+msgid "Networks"
+msgstr "網路"
+
+#. popup message %1 is FQDN
+#: src/include/crowbar/complex.rb:925
+msgid ""
+"The SUSE Cloud Admin Server has been deployed. Changing the network is\n"
+"currently not supported.\n"
+"\n"
+"You can visit the Crowbar web UI on http://%1:3000/"
+msgstr ""
+"已經部署 SuSE 雲管理伺服器。目前還不支援變更網路。\n"
+"\n"
+"您可通過 http://%1:3000/ 訪問 Crowbar 網頁使用者介面。"
+
+#. default dialog caption
+#: src/include/crowbar/complex.rb:943
+msgid "Crowbar Configuration Overview"
+msgstr "Crowbar 配置概覽"
+
+#. Read dialog help
+#: src/include/crowbar/helps.rb:37
+msgid ""
+"<p><b><big>Initializing Crowbar Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在啟始化 Crowbar 配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Write dialog help
+#: src/include/crowbar/helps.rb:41
+msgid ""
+"<p><b><big>Saving Crowbar Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在儲存 Crowbar 配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Overview dialog help
+#: src/include/crowbar/helps.rb:45
+msgid ""
+"<p><b>Crowbar Configuration Overview</b>\n"
+"<br></p>"
+msgstr ""
+"<p><b>Crowbar 配置概覽</b>\n"
+"<br></p>"
+
+#. Ovreview dialog help
+#: src/include/crowbar/helps.rb:49
+msgid ""
+"<p>\n"
+"See the SUSE Cloud deployment guide for details on the network\n"
+"configuration and on using this YaST module.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"網路配置與本 YaST 模組用法細節請參考 SuSE 雲部署指南。\n"
+"</p>"
+
+#. Initialization dialog caption
+#: src/include/crowbar/wizards.rb:89
+msgid "Crowbar Configuration"
+msgstr "Crowbar 配置"
+
+#. Initialization dialog contents
+#: src/include/crowbar/wizards.rb:91
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. Crowbar read dialog caption
+#: src/modules/Crowbar.rb:114
+msgid "Initializing crowbar Configuration"
+msgstr "正在啟始化 Crowbar 配置"
+
+#. Progress stage
+#: src/modules/Crowbar.rb:125
+msgid "Read the configuraton"
+msgstr "讀取配置"
+
+#. Progress step
+#: src/modules/Crowbar.rb:129
+msgid "Reading the configuration..."
+msgstr "正在讀取配置..."
+
+#. Progress finished
+#. Progress finished
+#: src/modules/Crowbar.rb:131 src/modules/Crowbar.rb:200
+msgid "Finished"
+msgstr "已完成"
+
+#. Crowbar read dialog caption
+#: src/modules/Crowbar.rb:183
+msgid "Saving crowbar Configuration"
+msgstr "正在儲存 Crowbar 配置"
+
+#. Progress stage 1/2
+#: src/modules/Crowbar.rb:194
+msgid "Write the settings"
+msgstr "寫入設定"
+
+#. Progress step 1/2
+#: src/modules/Crowbar.rb:198
+msgid "Writing the settings..."
+msgstr "正在寫入設定..."
+

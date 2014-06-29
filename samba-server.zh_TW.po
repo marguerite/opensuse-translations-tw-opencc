@@ -1,0 +1,1866 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Thruth Wang <lihaow@opera.com>, 2007.
+# Eric Shan <ericalways@gmail.com>, 2008, 2012.
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: Samba Server\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:40+0200\n"
+"PO-Revision-Date: 2014-06-18 19:43+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. translators: command line help text for samba-server module
+#: src/clients/samba-server.rb:66
+msgid "Samba server configuration module (see Samba documentation for details)"
+msgstr "Samba 伺服器配置模組(細節請參考 Samba 文件)"
+
+#. translators: command line help text for share action
+#: src/clients/samba-server.rb:79
+msgid "Manipulate a single share"
+msgstr "操控單個共享"
+
+#. translators: command line help text for list action
+#: src/clients/samba-server.rb:89
+msgid "Show the list of available shares"
+msgstr "顯示可用共享列表"
+
+#. translators: command line help text for role action
+#: src/clients/samba-server.rb:99
+msgid "Set the role of the server"
+msgstr "設定伺服器角色"
+
+#. translators: command line help text for backend selection action
+#: src/clients/samba-server.rb:109
+msgid "Set the back-end for storing user information"
+msgstr "設定使用者資訊存儲後端"
+
+#. translators: command line help text for service activation action
+#: src/clients/samba-server.rb:119
+msgid "Enable or disable the Samba services (smb and nmb)"
+msgstr "啟用或禁用 Samba 服務 (smb 與 nmb)"
+
+#. translators: command line help text for configure action
+#: src/clients/samba-server.rb:129
+msgid "Change the global settings of the Samba server"
+msgstr "修改 Samba 伺服器全局設定"
+
+#. translators: command line help text for enable option
+#: src/clients/samba-server.rb:137
+msgid "Enable the share or a service"
+msgstr "啟用共享或服務"
+
+#. translators: command line help text for disable option
+#: src/clients/samba-server.rb:143
+msgid "Disable the share or a service"
+msgstr "禁用共享或服務"
+
+#. translators: command line help text for delete share option
+#: src/clients/samba-server.rb:149
+msgid "Remove the share from the configuration file"
+msgstr "將共享從配置檔案中移除"
+
+#. translators: command line help text for share name option
+#: src/clients/samba-server.rb:155
+msgid "The name of a share"
+msgstr "共享名稱"
+
+#. translators: command line help text for "share add" subaction
+#: src/clients/samba-server.rb:162
+msgid "Add a new share"
+msgstr "添加新共享"
+
+#. translators: command line help text for "share options" subaction
+#: src/clients/samba-server.rb:168
+msgid "Change options of a share"
+msgstr "修改共享選項"
+
+#. translators: command line help text for "share show" subaction
+#: src/clients/samba-server.rb:174
+msgid "Show the options of a share"
+msgstr "顯示共享選項"
+
+#. translators: command line help text for share comment option
+#: src/clients/samba-server.rb:180
+msgid "The comment of a share"
+msgstr "共享註釋"
+
+#. translators: command line help text for share path option
+#: src/clients/samba-server.rb:187
+msgid "The path (directory) to share"
+msgstr "欲共享路徑(資料夾)"
+
+#. translators: command line help text for share printable option
+#: src/clients/samba-server.rb:194
+msgid "Flag if the share should act as a printer"
+msgstr "若共享應作為列印機時的旗標"
+
+#. translators: command line help text for share read_list option
+#: src/clients/samba-server.rb:201
+msgid "A comma-separated list of users allowed to read from the share"
+msgstr "以逗號分隔的有權從共享讀取資訊的使用者的列表"
+
+#. translators: command line help text for share write_list option
+#: src/clients/samba-server.rb:208
+msgid "A comma-separated list of users allowed to write to the share"
+msgstr "以逗號分隔的有權向共享寫入資訊的使用者的列表"
+
+#. translators: command line help text for share browseable option
+#: src/clients/samba-server.rb:215
+msgid "Flag if the share should be visible when browsing the LAN"
+msgstr "若當瀏覽區域網時共享應可見時的旗標"
+
+#. translators: command line help text for share guest_ok option
+#: src/clients/samba-server.rb:222
+msgid "Flag if the share should allow guest access"
+msgstr "若共享應允許來賓訪問時的旗標"
+
+#. translators: command line help text for share valid_users option
+#: src/clients/samba-server.rb:229
+msgid "A comma-separated list of users allowed to access the share"
+msgstr "以逗號分隔的允許訪問共享的使用者的列表"
+
+#. translators: command line help text for PDC role option
+#: src/clients/samba-server.rb:236
+msgid "Server should act as a primary domain controller"
+msgstr "伺服器應充當主域控制器"
+
+#. translators: command line help text for BDC role option
+#: src/clients/samba-server.rb:242
+msgid "Server should act as a backup domain controller"
+msgstr "伺服器應充當備份域控制器"
+
+#. translators: command line help text for Domain Member role option
+#: src/clients/samba-server.rb:248
+msgid "Server should act as a domain member"
+msgstr "伺服器應充當域成員"
+
+#. translators: command line help text for standalone server role option
+#: src/clients/samba-server.rb:254
+msgid "Server should provide shares, but should not allow domain logins"
+msgstr "伺服器應提供共享，但不應允許域登入。"
+
+#. translators: command line help text for smbpasswd option
+#: src/clients/samba-server.rb:260
+msgid "Use the 'smbpasswd' file to store user information"
+msgstr "使用 'smbpasswd' 檔案存儲使用者資訊"
+
+#. translators: command line help text for tdbsam option
+#: src/clients/samba-server.rb:266
+msgid "Use the 'passdb.tdb' file to store user information"
+msgstr "使用 'passdb.tdb' 檔案存儲使用者資訊"
+
+#. translators: command line help text for ldapsam option
+#: src/clients/samba-server.rb:272
+msgid "Use the LDAP server to store user information"
+msgstr "使用 LDAP 伺服器存儲使用者資訊"
+
+#. translators: command line help text for password option
+#: src/clients/samba-server.rb:278
+msgid "Password for the LDAP server"
+msgstr "LDAP 伺服器密碼"
+
+#. translators: command line help text for workgroup option
+#: src/clients/samba-server.rb:284
+msgid "The name of a workgroup"
+msgstr "工作組名稱"
+
+#. translators: command line help text for description option
+#: src/clients/samba-server.rb:291
+msgid "The human-readable description of the Samba server"
+msgstr "Samba 伺服器的人類可讀描述"
+
+#. translators: command line help text for ldap_suffix option
+#: src/clients/samba-server.rb:298
+msgid ""
+"The LDAP suffix DN for manipulating the user information on the LDAP server"
+msgstr "用於操控 LDAP 伺服器上使用者資訊的 LDAP 字尾判別名"
+
+#. translators: command line help text for ldap_admin_dn option
+#: src/clients/samba-server.rb:305
+msgid ""
+"The LDAP DN for modifying contents of the LDAP server (for example, changing "
+"passwords)"
+msgstr "用於修改 LDAP 伺服器內容(例如修改密碼)的 LDAP 判別名"
+
+#. translators: error message for share command line action
+#. must provide the share name
+#: src/clients/samba-server.rb:374
+msgid "Specify the share name."
+msgstr "請指定共享名。"
+
+#. translators: error message for "share add" command line action, %1 is share name
+#: src/clients/samba-server.rb:380
+msgid "The share %1 does not exist."
+msgstr "共享 %1 不存在。"
+
+#. translators: error message for "add share" command line action
+#: src/clients/samba-server.rb:394
+msgid "Provide the path of a directory to share."
+msgstr "請提供要共享的資料夾路徑。"
+
+#. translators: error message for "add share" command line action, %1 is share name
+#. translators: popup error message for "add share", %1 is share name
+#: src/clients/samba-server.rb:400 src/include/samba-server/dialogs.rb:1070
+msgid "Share %1 already exists."
+msgstr "共享 %1 已存在。"
+
+#. translators: heading for "list" shares command line action
+#. try to keep alignment
+#: src/clients/samba-server.rb:450
+msgid ""
+"Status  \tType\tName\n"
+"=============================="
+msgstr ""
+"狀態  \t類型\t名稱\n"
+"=============================="
+
+#. translators: share is a disk. %1 is the status, %2 comment
+#: src/clients/samba-server.rb:460
+msgid "%1\tDisk\t%2"
+msgstr "%1\t磁碟\t%2"
+
+#. translators: share status
+#. translators: share status
+#: src/clients/samba-server.rb:463 src/clients/samba-server.rb:481
+#: src/include/samba-server/dialogs.rb:145
+msgid "Disabled"
+msgstr "已禁用"
+
+#. translators: share status
+#. translators: share status
+#. check if given path has a corresponding snapper configuration
+#: src/clients/samba-server.rb:465 src/clients/samba-server.rb:483
+#: src/include/samba-server/dialogs.rb:145
+msgid "Enabled"
+msgstr "已啟用"
+
+#. translators: share is a printer. %1 is the status, %2 comment
+#: src/clients/samba-server.rb:478
+msgid "%1\tPrinter\t%2"
+msgstr "%1\t列印機\t%2"
+
+#. TRANSLATORS: a popup message
+#: src/include/samba-server/complex.rb:88
+msgid ""
+"Because users are currently connected to this Samba server,\n"
+"the server configuration has been reloaded instead of restarted.\n"
+"To confirm that all settings are applied despite possibly disconnecting the "
+"users,\n"
+"run '/etc/init.d/smb restart' and '/etc/init.d/nmb restart'"
+msgstr ""
+"由於目前有使用者連線到了此 Samba 伺服器，\n"
+"系統過載了伺服器配置而沒有重啟伺服器。\n"
+"即使可能讓使用者斷線也要確認應用了全部修改，\n"
+"請運行 '/etc/init.d/smb restart' 與 '/etc/init.d/nmb restart'"
+
+#. table entry description for smbpasswd-based SAM
+#: src/include/samba-server/dialogs-items.rb:146
+msgid "smbpasswd file"
+msgstr "smbpasswd 檔案"
+
+#. table entry description for LDAP-based SAM
+#. Unknown passdb backend
+#. // translators: passdb backend radio button
+#. `Left (`RadioButton ( `id("mysql"), `opt (`notify),_("MySQL Database") ) )
+#. translators: passdb backend radio button
+#: src/include/samba-server/dialogs-items.rb:155
+#: src/include/samba-server/dialogs-items.rb:598
+msgid "LDAP"
+msgstr "LDAP"
+
+#. table entry description for TDB-based SAM
+#: src/include/samba-server/dialogs-items.rb:169
+msgid "TDB database"
+msgstr "TDB 資料庫"
+
+#. TRANSLATORS: popup error
+#: src/include/samba-server/dialogs-items.rb:261
+msgid "Optional value must not begin with a space character."
+msgstr "可選值不能以空格字元開頭。"
+
+#. TRANSLATORS: popup error
+#: src/include/samba-server/dialogs-items.rb:279
+msgid "Multiple optional values for one backend must be quoted."
+msgstr "一個後端的多個可選值必須被引用起來。"
+
+#. TRANSLATORS: popup error, %1 is replaced with some URL
+#. TRANSLATORS: popup error, %1 is replaced with some URL
+#: src/include/samba-server/dialogs-items.rb:291
+#: src/include/samba-server/dialogs-items.rb:300
+msgid "The entered URL '%1' is invalid"
+msgstr "輸入的 URL '%1' 無效。"
+
+#. message popup
+#. message popup
+#: src/include/samba-server/dialogs-items.rb:352
+#: src/include/samba-server/dialogs-items.rb:405
+msgid "Delete the selected entry?"
+msgstr "刪除所選項嗎？"
+
+#. we are already initialized
+#: src/include/samba-server/dialogs-items.rb:481
+msgid "At least one backend must be specified."
+msgstr "必須指定至少一個後端。"
+
+#. if (size (passdb_backends) == 1)
+#. {
+#. // error message if user tries to delete the last passdb backend
+#. Report::Error (_("At least one back-end must be specified.
+#.
+#. The back-end cannot be deleted.
+#. "));
+#. return false;
+#. }
+#. message popup
+#: src/include/samba-server/dialogs-items.rb:568
+msgid "Delete the selected back-end?"
+msgstr "刪除所選後端嗎？"
+
+#. translators: frame text when adding a passdb backend
+#: src/include/samba-server/dialogs-items.rb:583
+msgid "Back-End Type"
+msgstr "後端類型"
+
+#. translators: passdb backend radio button
+#: src/include/samba-server/dialogs-items.rb:592
+msgid "smbpasswd File"
+msgstr "smbpasswd 檔案"
+
+#. translators: passdb backend radio button
+#: src/include/samba-server/dialogs-items.rb:600
+msgid "TDB Database"
+msgstr "TDB 資料庫"
+
+#. translators: textentry label to enter details for the selected passdb backend
+#: src/include/samba-server/dialogs-items.rb:605
+msgid "&Details"
+msgstr "細節(&D)"
+
+#. translators: error message, if the MySQL backend
+#. is selected, but no details are entered
+#: src/include/samba-server/dialogs-items.rb:648
+msgid ""
+"An identifier must be provided\n"
+"in details \n"
+"for the MySQL passdb back-end.\n"
+"\n"
+"Consult the Samba HOWTO collection for\n"
+"further information.\n"
+msgstr ""
+"必須為 MySQL passdb 後端提供一個詳細的識別碼。\n"
+"\n"
+"更多資訊請諮詢 Samba 指南集。\n"
+
+#. encoding: utf-8
+#. ------------------------------------------------------------------------------
+#. Copyright (c) 2006-2012 Novell, Inc. All Rights Reserved.
+#.
+#.
+#. This program is free software; you can redistribute it and/or modify it under
+#. the terms of version 2 of the GNU General Public License as published by the
+#. Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful, but WITHOUT
+#. ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#. FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License along with
+#. this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail, you may find
+#. current contact information at www.novell.com.
+#. ------------------------------------------------------------------------------
+#. File:	include/samba-server/dialogs.ycp
+#. Package:	Configuration of samba-server
+#. Summary:	Dialogs definitions
+#. Authors:	Stanislav Visnovsky <stanislav.visnovsky@suse.cz>
+#. Lukas Ocilka <locilka@suse.cz>
+#.
+#. $Id$
+#: src/include/samba-server/dialogs.rb:68
+msgid "&Primary Domain Controller (PDC)"
+msgstr "主域控制器 (PDC)(&P)"
+
+#: src/include/samba-server/dialogs.rb:69
+msgid "B&ackup Domain Controller (BDC)"
+msgstr "備份域控制器 (BDC)(&A)"
+
+#: src/include/samba-server/dialogs.rb:70
+msgid "Not a Domain &Controller"
+msgstr "非域控制器(&C)"
+
+#. Samba LDAP Settings Misc Widget
+#. /////////////////////////////////////////////////////////////////////////
+#. translators: combo box value
+#: src/include/samba-server/dialogs.rb:152
+#: src/include/samba-server/dialogs.rb:155
+#: src/include/samba-server/ldap-widget.rb:76
+msgid "Yes"
+msgstr "是"
+
+#. Samba LDAP Settings Security Widget
+#. /////////////////////////////////////////////////////////////////////////
+#. translators: combo box value
+#. translators: combo box value
+#: src/include/samba-server/dialogs.rb:152
+#: src/include/samba-server/dialogs.rb:155
+#: src/include/samba-server/ldap-widget.rb:65
+#: src/include/samba-server/ldap-widget.rb:78
+msgid "No"
+msgstr "否"
+
+#: src/include/samba-server/dialogs.rb:170
+#: src/include/samba-server/dialogs.rb:235
+msgid "Samba Installation"
+msgstr "Samba 安裝"
+
+#: src/include/samba-server/dialogs.rb:170
+msgid "Step 1 of 2"
+msgstr "步驟 1 (共 2 步)"
+
+#. `ComboBox ( `id( "workgroups" ), `opt( `editable ), _("&Workgroup or Domain Name"), workgroups )
+#. TRANSLATORS: text entry
+#. `ComboBox(`id("workgroup_domainname"), `opt(`editable, `hstretch), _("&Workgroup or Domain Name"),
+#. SambaNmbLookup::GetAvailableNeighbours(nil)),
+#: src/include/samba-server/dialogs.rb:190
+#: src/include/samba-server/dialogs.rb:1187
+msgid "&Workgroup or Domain Name"
+msgstr "工作組或域名稱(&W)"
+
+#: src/include/samba-server/dialogs.rb:235
+msgid "Step 2 of 2"
+msgstr "步驟 2 (共 2 步)"
+
+#. header of status-like information. followed by domain name
+#: src/include/samba-server/dialogs.rb:244
+msgid "Current Domain Name:"
+msgstr "當前域名稱："
+
+#: src/include/samba-server/dialogs.rb:249
+msgid "Samba Server Type"
+msgstr "Samba 伺服器類型"
+
+#. appears on new line after Primary Domain Controller radio button
+#: src/include/samba-server/dialogs.rb:262
+msgid "Not available because a PDC is present."
+msgstr "由於已存在主域控制器所以不可用。"
+
+#. TRANSLATORS: dialog caption
+#: src/include/samba-server/dialogs.rb:583
+msgid "Rename Share"
+msgstr "重新命名共享"
+
+#. TRANSLATORS: text entry
+#: src/include/samba-server/dialogs.rb:592
+msgid "New Share &Name"
+msgstr "新共享名(&N)"
+
+#. TRANSLATORS: popup error message
+#: src/include/samba-server/dialogs.rb:621
+msgid "Enter a new share name."
+msgstr "請輸入新共享名。"
+
+#. TRANSLATORS: popup error message, %1 is a variable share name
+#: src/include/samba-server/dialogs.rb:630
+msgid ""
+"Share '%1' already exists.\n"
+"Choose another share name.\n"
+msgstr ""
+"共享 '%1' 已存在。\n"
+"請輸入其它共享名稱。\n"
+
+#. confirmation dialog before deleting a share
+#: src/include/samba-server/dialogs.rb:726
+msgid ""
+"If you delete share %1,\n"
+"all its settings will be lost.\n"
+"Really delete it?"
+msgstr ""
+"您若刪除共享 %1，則其全部設定均將不復存在。\n"
+"真的刪除它嗎？"
+
+#. rwalter I couldn't make this one show up. Please make sure my deletions didn't make it too confusing.
+#: src/include/samba-server/dialogs.rb:756
+msgid "Trusted &Domain"
+msgstr "可信域(&D)"
+
+#. text entry label
+#: src/include/samba-server/dialogs.rb:757
+#: src/include/samba-server/dialogs.rb:1721
+msgid "&Password"
+msgstr "密碼(&P)"
+
+#: src/include/samba-server/dialogs.rb:778
+msgid "Domain name cannot be empty."
+msgstr "域名稱不能為空。"
+
+#: src/include/samba-server/dialogs.rb:784
+msgid "Cannot establish trusted domain relationship."
+msgstr "無法建立可信域關係。"
+
+#. issue a warning, if not already done so
+#: src/include/samba-server/dialogs.rb:800
+msgid ""
+"The password for trusted domains\n"
+"is stored in the autoinstallation control file. The password\n"
+"is stored as plain text. This can be considered\n"
+"a security threat."
+msgstr ""
+"可信域密碼存儲在自動安裝控制檔案中。\n"
+"該密碼以明文形式存儲。因此可視為一個安全隱患。"
+
+#. SambaTrustDom::List() might return 'nil'
+#: src/include/samba-server/dialogs.rb:822
+#: src/include/samba-server/dialogs.rb:1219
+#: src/include/samba-server/dialogs.rb:1335
+msgid "&Trusted Domains"
+msgstr "可信域(&T)"
+
+#. confirmation
+#: src/include/samba-server/dialogs.rb:843
+msgid ""
+"Really abandon trust relationship\n"
+"to trusted domain %1?"
+msgstr "真的放棄與可信域 %1 的信任關係嗎？"
+
+#. dialog caption
+#: src/include/samba-server/dialogs.rb:863
+msgid "Share %1"
+msgstr "共享 %1"
+
+#. dialog caption
+#: src/include/samba-server/dialogs.rb:887
+msgid "Expert Global Settings Configuration"
+msgstr "專家全局設定配置"
+
+#. frame label
+#: src/include/samba-server/dialogs.rb:919
+msgid "Identification"
+msgstr "標識"
+
+#. text entry label
+#: src/include/samba-server/dialogs.rb:921
+msgid "Share &Name"
+msgstr "共享名稱(&N)"
+
+#. text entry label
+#: src/include/samba-server/dialogs.rb:923
+msgid "Share &Description"
+msgstr "共享描述(&D)"
+
+#. frame label
+#: src/include/samba-server/dialogs.rb:927
+msgid "Share Type"
+msgstr "共享類型"
+
+#. radio button label
+#: src/include/samba-server/dialogs.rb:932
+msgid "&Printer"
+msgstr "列印機(&P)"
+
+#. radio button label
+#: src/include/samba-server/dialogs.rb:934
+msgid "&Directory"
+msgstr "資料夾(&D)"
+
+#. translators: text entry label
+#: src/include/samba-server/dialogs.rb:938
+msgid "Share &Path"
+msgstr "共享路徑(&P)"
+
+#. translators: checkbox label, setting for share
+#: src/include/samba-server/dialogs.rb:945
+msgid "&Read-Only"
+msgstr "僅讀(&R)"
+
+#. checkbox label
+#: src/include/samba-server/dialogs.rb:947
+msgid "&Inherit ACLs"
+msgstr "繼承訪問控制列表(&I)"
+
+#. checkbox label
+#: src/include/samba-server/dialogs.rb:949
+msgid "Expose Snapshots"
+msgstr "暴露快照"
+
+#. checkbox label
+#: src/include/samba-server/dialogs.rb:951
+msgid "Utilize Btrfs Features"
+msgstr "利用 Btrfs 特性"
+
+#. translators: dialog caption
+#: src/include/samba-server/dialogs.rb:960
+msgid "New Share"
+msgstr "新建共享"
+
+#. translators: file selection dialog title
+#: src/include/samba-server/dialogs.rb:1006
+msgid "Path for a Share"
+msgstr "共享路徑"
+
+#. translators: error message
+#: src/include/samba-server/dialogs.rb:1030
+msgid "Share name cannot be empty."
+msgstr "共享名稱不能為空。"
+
+#. translators: error message
+#: src/include/samba-server/dialogs.rb:1035
+msgid "Share path cannot be empty."
+msgstr "共享路徑不能為空。"
+
+#: src/include/samba-server/dialogs.rb:1088
+msgid "Available Shares"
+msgstr "可用共享"
+
+#: src/include/samba-server/dialogs.rb:1092
+msgid "&Filter"
+msgstr "過濾器(&F)"
+
+#: src/include/samba-server/dialogs.rb:1094
+msgid "Show &All Shares"
+msgstr "顯示全部共享(&A)"
+
+#: src/include/samba-server/dialogs.rb:1097
+msgid "Do Not Show &System Shares"
+msgstr "不顯示系統共享(&S)"
+
+#. translators: table header texts
+#: src/include/samba-server/dialogs.rb:1108
+msgid "Status"
+msgstr "狀態"
+
+#: src/include/samba-server/dialogs.rb:1109
+msgid "Read-Only"
+msgstr "僅讀"
+
+#: src/include/samba-server/dialogs.rb:1110
+msgid "Name"
+msgstr "名稱"
+
+#: src/include/samba-server/dialogs.rb:1111
+msgid "Path"
+msgstr "路徑"
+
+#: src/include/samba-server/dialogs.rb:1112
+#: src/include/samba-server/dialogs.rb:1123
+msgid "Guest Access"
+msgstr "Guest 訪問"
+
+#: src/include/samba-server/dialogs.rb:1113
+msgid "Comment"
+msgstr "註釋"
+
+#: src/include/samba-server/dialogs.rb:1122
+msgid "&Rename..."
+msgstr "重新命名(&R)..."
+
+#: src/include/samba-server/dialogs.rb:1124
+msgid "&Toggle Status"
+msgstr "切換狀態(&T)"
+
+#: src/include/samba-server/dialogs.rb:1142
+msgid "WINS Server Support"
+msgstr "WINS 伺服器支援"
+
+#: src/include/samba-server/dialogs.rb:1149
+msgid "Remote WINS Server"
+msgstr "遠端 WINS 伺服器"
+
+#: src/include/samba-server/dialogs.rb:1154
+msgid "Na&me"
+msgstr "名稱(&M)"
+
+#. TRANSLATORS: check box
+#: src/include/samba-server/dialogs.rb:1164
+msgid "Use WINS for Hostname Resolution"
+msgstr "使用 WINS 解析主機名"
+
+#. translators: combobox item
+#: src/include/samba-server/dialogs.rb:1169
+msgid "Not a DC"
+msgstr "非域控制器"
+
+#. translators: combobox item
+#: src/include/samba-server/dialogs.rb:1171
+msgid "Primary (PDC)"
+msgstr "主域控制器 (PDC)"
+
+#. translators: combobox item
+#: src/include/samba-server/dialogs.rb:1175
+msgid "Backup (BDC)"
+msgstr "備份域控制器 (BDC)"
+
+#: src/include/samba-server/dialogs.rb:1178
+msgid "Base Settings"
+msgstr "基本設定"
+
+#. translators: combobox label
+#: src/include/samba-server/dialogs.rb:1193
+msgid "Domain &Controller"
+msgstr "域控制器(&C)"
+
+#: src/include/samba-server/dialogs.rb:1203
+msgid "Advanced Settings..."
+msgstr "高階設定..."
+
+#: src/include/samba-server/dialogs.rb:1205
+msgid "&Expert Global Settings"
+msgstr "專家全局設定(&E)"
+
+#: src/include/samba-server/dialogs.rb:1206
+msgid "&User Authentication Sources"
+msgstr "使用者認證來源(&U)"
+
+#: src/include/samba-server/dialogs.rb:1236
+msgid "Samba Configuration"
+msgstr "Samba 配置"
+
+#. tab label
+#: src/include/samba-server/dialogs.rb:1241
+msgid "Start-&Up"
+msgstr "啟動(&U)"
+
+#: src/include/samba-server/dialogs.rb:1250
+msgid "Firewall Settings"
+msgstr "防火牆設定"
+
+#: src/include/samba-server/dialogs.rb:1259
+msgid "&Shares"
+msgstr "共享(&S)"
+
+#. BNC #579993, Allow guest access
+#: src/include/samba-server/dialogs.rb:1282
+msgid "I&dentity"
+msgstr "身份(&D)"
+
+#: src/include/samba-server/dialogs.rb:1297
+msgid "WINS"
+msgstr "WINS"
+
+#: src/include/samba-server/dialogs.rb:1340
+msgid "&LDAP Settings"
+msgstr "&LDAP 設定"
+
+#. BNC #247344, BNC #541958 (comment #18)
+#: src/include/samba-server/dialogs.rb:1463
+msgid "NetBIOS &Hostname"
+msgstr "NetBIOS 主機名(&H)"
+
+#. dialog caption
+#: src/include/samba-server/dialogs.rb:1564
+msgid "User Information Sources"
+msgstr "使用者資訊來源"
+
+#. try to create it
+#. first, ask for password
+#: src/include/samba-server/dialogs.rb:1618
+msgid ""
+"For a proper function, Samba server needs an\n"
+"administrative account (root).\n"
+"It will be created now."
+msgstr ""
+"為了正常服務，Samba 伺服器需要一個管理賬戶 (root)。\n"
+"現在將創建它。"
+
+#: src/include/samba-server/dialogs.rb:1624
+msgid "Samba root &Password"
+msgstr "Samba 根密碼(&P)"
+
+#: src/include/samba-server/dialogs.rb:1625
+msgid "&Verify Password"
+msgstr "校驗密碼(&V)"
+
+#. TRANSLATORS: popup error message
+#: src/include/samba-server/dialogs.rb:1645
+msgid ""
+"The first and the second version\n"
+"of the password do not match."
+msgstr "兩次輸入的密碼不匹配。"
+
+#. TRANSLATORS: popup error message, %1 is a username
+#: src/include/samba-server/dialogs.rb:1662
+msgid "Cannot create account for user %1."
+msgstr "無法為使用者 %1 創建帳戶。"
+
+#. translators: popup to fill in the domain joining info; %1 is the domain name
+#: src/include/samba-server/dialogs.rb:1704
+msgid ""
+"Enter the username and the password\n"
+"for joining the domain %1."
+msgstr "請輸入使用者名與密碼加入域 %1。"
+
+#: src/include/samba-server/dialogs.rb:1711
+msgid ""
+"To join the domain anonymously, leave the\n"
+"text entries empty."
+msgstr "要匿名加入域，請將文字項留空。"
+
+#. text entry label
+#: src/include/samba-server/dialogs.rb:1719
+msgid "&Username"
+msgstr "使用者名(&U)"
+
+#. translators: button label to skip joining to domain
+#: src/include/samba-server/dialogs.rb:1724
+msgid "Do &Not Join"
+msgstr "不加入(&N)"
+
+#. Translators: Information popup, %1 is the name of the domain
+#: src/include/samba-server/dialogs.rb:1756
+msgid "Domain %1 joined successfully."
+msgstr "成功加入域 %1。"
+
+#. Read dialog help 1/2
+#: src/include/samba-server/helps.rb:37
+msgid ""
+"<p><b><big>Initializing Samba Server Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在啟始化 Samba 伺服器配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Read dialog help 2/2
+#: src/include/samba-server/helps.rb:41
+msgid ""
+"<p><b><big>Aborting Initialization</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>\n"
+msgstr ""
+"<p><b><big>中止啟始化</big></b><br>\n"
+"現在按<b>中止</b>可安全地中止配置工具。</p>\n"
+
+#. Write dialog help 1/2
+#: src/include/samba-server/helps.rb:45
+msgid ""
+"<p><b><big>Saving Samba Server Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在儲存 Samba 伺服器配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Write dialog help 2/2
+#: src/include/samba-server/helps.rb:49
+msgid ""
+"<p><b><big>Aborting Saving</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.\n"
+"An additional dialog will inform you whether it is safe to do so.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>中止儲存</big></b><br>\n"
+"按<b>中止</b>可中止儲存過程。\n"
+"另一個對話方塊將告知您這樣做是否安全。\n"
+"</p>\n"
+
+#. Samba selecting workgroup or domain 1/1 - Installation step 1
+#: src/include/samba-server/helps.rb:56
+msgid ""
+"<p><b><big>Workgroup or Domain Selection</big></b><br>\n"
+"Select existing name of workgroup or domain or type your own new name and "
+"click <b>Next</b>.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>工作組或域選擇</big></b><br>\n"
+"選擇已有工作組或域名稱，或輸入您自己的新名稱並點選<b>下一步</b>。\n"
+"</p>\n"
+
+#. Samba select Samba Server type - Installation step 2
+#: src/include/samba-server/helps.rb:62
+msgid ""
+"<p><b><big>Samba Server Type</big></b></p>\n"
+"<p>A domain controller allows Windows clients to log in to a Windows NT "
+"style domain.</p>\n"
+"<p>The backup controller uses another domain controller for validation.\n"
+"The primary controller uses its own information about users and their "
+"passwords.</p>\n"
+"<p>The options available in the configuration dialogs depend on the settings "
+"in this selection. Windows NT style domain controller functionality will be "
+"phased out in future releases.</p>"
+msgstr ""
+"<p><b><big>Samba 伺服器類型</big></b></p>\n"
+"<p>域控制器允許 Windows 客戶端登入到 Windows NT 風格的域。</p>\n"
+"<p>備份控制器使用另一個域控制器來進行校驗。\n"
+"主控制器使用其自身關於使用者及其密碼的資訊。</p>\n"
+"<p>配置對話方塊中可用的選項取決於此選擇中的設定。\n"
+"Windows NT 風格的域控制器功能將在未來版本中淘汰。</p>"
+
+#. Samba select Samba Server type - Installation step 2
+#: src/include/samba-server/helps.rb:73
+msgid ""
+"<p><b><big>Samba Server Type</big></b></p>\n"
+"<p>A domain controller allows Windows clients to log in to a Windows domain."
+"</p>\n"
+"<p>The options available in the configuration dialogs \n"
+"depend on the settings in this selection.</p>"
+msgstr ""
+"<p><b><big>Samba 伺服器類型</big></b></p>\n"
+"<p>域控制器允許 Windows 客戶端登入到 Windows 域。</p>\n"
+"<p>配置對話方塊中的可用選項取決於此選擇中的設定。</p>"
+
+#. Share list dialog help 1/4
+#: src/include/samba-server/helps.rb:80
+msgid "<p><b><big>Shares</big></b></p>"
+msgstr "<p><b><big>共享</big></b></p>"
+
+#: src/include/samba-server/helps.rb:83
+msgid ""
+"<p>This is a list of already configured shares, whether they \n"
+"are enabled or disabled, and some basic information about them.<br></p>"
+msgstr ""
+"<p>這是一個已配置共享的列表，不管它們啟用沒啟用，以及有關這些共享的一些基本信"
+"息。<br></p>"
+
+#. Share list dialog help 2/4
+#: src/include/samba-server/helps.rb:87
+msgid ""
+"<p>A share can be enabled or disabled.\n"
+"A disabled share is not accessible, but its\n"
+"configuration is still written into the configuration file.\n"
+"So the share can be later enabled again.\n"
+"</p>"
+msgstr ""
+"<p>共享可以是啟用的也可以是禁用的。\n"
+"一個禁用的共享是無法訪問的，但是它的配置仍會寫入到配置檔案中。\n"
+"以便於稍後可再次啟用該共享。\n"
+"</p>"
+
+#. Share list dialog help 3/4
+#: src/include/samba-server/helps.rb:95
+msgid ""
+"<p>Some of the shares are special. For example, the share\n"
+"Homes is a special system share for accessing home directories\n"
+"of users. The system shares can be hidden from the table\n"
+"by selecting <b>Do Not Show System Shares</b> in the <b>Filter</b>\n"
+"menu.</p>\n"
+msgstr ""
+"<p>有些共享比較特殊。例如，Homes 共享就是一個特殊的系統共享，用於訪問使用者主文"
+"件夾。\n"
+"可通過在<b>過濾器</b>選單選擇<b>不顯示系統共享</b>來從表中隱藏系統共享。</"
+"p>\n"
+
+#. Share list dialog help 4/4
+#: src/include/samba-server/helps.rb:103
+msgid ""
+"<p>Use <b>Add</b> to add a new share, <b>Edit</b> to modify\n"
+"already existing share, and <b>Delete</b> to \n"
+"remove the information about a share.</p>\n"
+msgstr ""
+"<p>使用<b>添加</b>添加新共享，<b>編輯</b>修改已有共享，<b>刪除</b>移除有關某"
+"共享的資訊。</p>\n"
+
+#. Identity dialog help 1/5
+#: src/include/samba-server/helps.rb:109
+msgid ""
+"<p><b><big>Identity</big></b><br>\n"
+"These options allow setup of the identity of the server and its\n"
+"primary role in the network.</p>\n"
+msgstr ""
+"<p><b><big>身份</big></b><br>\n"
+"這些選項允許設定伺服器身份與它在網路中的主要角色。</p>\n"
+
+#. Samba role dialog help 2/5
+#: src/include/samba-server/helps.rb:115
+msgid ""
+"<p>The base settings set up the domain and the\n"
+"server role. <b>Backup Domain Controller</b> and <b>Primary Domain "
+"Controller</b> allow Windows clients to log in to a Windows domain. The "
+"backup controller \n"
+"uses another domain controller for validation. The primary controller\n"
+"uses its own information about users and their passwords.\n"
+"If the server should not participate as a domain controller, choose the\n"
+"<b>Not a DC</b> value.</p>\n"
+msgstr ""
+"<p>基本設定設定了域與伺服器角色。\n"
+"<b>備份域控制器</b>與<b>主域控制器</b>允許 Windows 客戶端登入到 Windows "
+"域。\n"
+"備份控制器使用另一個域控制器來進行校驗。\n"
+"主控制器使用其自身關於使用者及其密碼的資訊。\n"
+"若該伺服器不應作為域控制器參與，請選擇<b>非域控制器</b>值。</p>\n"
+
+#. Samba role dialog help 2/5
+#: src/include/samba-server/helps.rb:124
+msgid ""
+"<p>The <b>Base Settings</b> set up the domain and the\n"
+"server role. <b>Primary Domain Controller</b> allows Windows clients\n"
+"to log in to a Windows domain. If the server should not participate\n"
+"as a domain controller, choose <b>Not a DC</b>.</p>\n"
+msgstr ""
+"<p><b>基本設定</b>設定了域與伺服器角色。\n"
+"<b>主域控制器</b>允許 Windows 客戶端登入到 Windows 域。\n"
+"若伺服器不應作為域控制器參與，請選擇<b>非域控制器</b>。</p>\n"
+
+#. Samba role dialog help 3/5
+#: src/include/samba-server/helps.rb:131
+msgid ""
+"<p><b>WINS</b> is a network protocol for mapping low-level\n"
+"network identification of a host (for example, IP address) to\n"
+"a NetBIOS name. The Samba server can be a \n"
+"WINS server or can use another server for its\n"
+"queries. In the latter case, choose <b>Remote WINS Server</b>\n"
+"and enter the IP address of the WINS server.</p>\n"
+msgstr ""
+"<p><b>WINS</b>是一種用於將主機的低階網路標識(例如 IP 地址)對映到 NetBIOS 名稱"
+"的網路協議。\n"
+"Samba 伺服器可以是一臺 WINS 伺服器，也可以使用另一臺伺服器來執行其查詢。\n"
+"若是後者，請選擇<b>遠端 WINS 伺服器</b>並輸入該 WIN 伺服器的 IP 地址。</p>\n"
+
+#. Samba role dialog help 4/5
+#: src/include/samba-server/helps.rb:140
+msgid ""
+"<p>Optionally, set a <b>Server NetBIOS Name</b>. The\n"
+"NetBIOS name is the name the server uses in the SMB network.</p>"
+msgstr ""
+"<p>(可選)設定<b>伺服器 NetBIOS 名稱</b>。\n"
+"NetBIOS 名稱就是伺服器在 SMB 網路中使用的名稱。</p>"
+
+#. Samba role dialog help 5/5
+#: src/include/samba-server/helps.rb:144
+msgid ""
+"<p><b>Advanced Settings</b> provides access to \n"
+"detailed configuration, user authentication sources, and expert global "
+"settings.</p>\n"
+msgstr "<p><b>高階設定</b>提供了對詳細配置、使用者認證來源與專家全局設定的訪問。</p>\n"
+
+#: src/include/samba-server/helps.rb:147
+msgid ""
+"<p><b><big>Trusted Domains</big></b><br>\n"
+"NT-style trusted domains represent a possibility to assign\n"
+"access rights to users from another domain.\n"
+"Here, create a list of domains for which \n"
+"the Samba server should provide access.</p>\n"
+msgstr ""
+"<p><b><big>可信域</big></b><br>\n"
+"NT 式可信域意味著可以為來自其它域的使用者指派訪問許可權。\n"
+"在此，創建一個 Samba 伺服器應提供訪問的域列表。</p>\n"
+
+#: src/include/samba-server/helps.rb:154
+msgid ""
+"<p>To add a new domain into the list, press <b>Add</b>.\n"
+"Enter the name of the domain to trust\n"
+"and a password in the dialog that opens. The password is used by the Samba\n"
+"server to access the trusted domain. After <b>OK</b> is pressed,\n"
+"the trust relationship is established. To delete a domain,\n"
+"choose it in the list and press <b>Delete</b>.</p>\n"
+msgstr ""
+"<p>要向該列表中添加新的域，請按<b>添加</b>。\n"
+"在隨即開啟的對話方塊中輸入要信任的域名稱與密碼。\n"
+"Samba 伺服器將使用該密碼訪問該可信域。\n"
+"按<b>確認</b>後，信任關係就建立起來了。\n"
+"要刪除某域，請在列表中選擇它並按<b>刪除</b>。</p>\n"
+
+#: src/include/samba-server/helps.rb:162
+msgid ""
+"<p>For more details about how trusted domains work,\n"
+"see the Samba HOWTO collection.</p>\n"
+msgstr "<p>更多關於可信域工作原理的細節，請參考 Samba 指南集。</p>\n"
+
+#. Single share editing dialog help 1/2
+#: src/include/samba-server/helps.rb:166
+msgid ""
+"<p><b><big>Edit a Share</big></b><br>\n"
+"Here, fine-tune the options of a share.</p>\n"
+msgstr ""
+"<p><b><big>編輯單個共享</big></b><br>\n"
+"在此，微調某共享的選項。</p>\n"
+
+#. Single share editing dialog help 2/2
+#: src/include/samba-server/helps.rb:170
+msgid ""
+"<p>Use <b>Add</b> to add a new configuration option, <b>Edit</b> to modify\n"
+"an existing option, and <b>Delete</b> to delete an option.</p>\n"
+msgstr ""
+"<p>使用<b>添加</b>添加新的配置選項，<b>編輯</b>修改已有選項，<b>刪除</b>刪除"
+"某選項。</p>\n"
+
+#. Global settings editing dialog help 1/2
+#: src/include/samba-server/helps.rb:174
+msgid ""
+"<p><b><big>Expert Global Settings Configuration</big></b><br>\n"
+"Here, fine-tune the global options of the server.</p>\n"
+msgstr ""
+"<p><b><big>專家全局設定配置</big></b><br>\n"
+"在此，微調伺服器的全局選項。</p>\n"
+
+#. Global settings editing dialog help 2/2
+#: src/include/samba-server/helps.rb:178
+msgid ""
+"<p>Use <b>Add</b> to add a new configuration option, <b>Edit</b> to modify\n"
+"already existing option, and <b>Delete</b> to delete an option.</p>\n"
+msgstr ""
+"<p>使用<b>添加</b>添加新的配置選項，<b>編輯</b>修改已有選項，<b>刪除</b>刪除"
+"某選項。</p>\n"
+
+#. Advanced SAMBA configuration dialog help 1/3
+#: src/include/samba-server/helps.rb:182
+msgid ""
+"<p><b><big>LDAP Samba Server Options</big></b><br>\n"
+"Here, set up details about use of LDAP by the Samba\n"
+"server.</p>\n"
+msgstr ""
+"<p><b><big>LDAP Samba 伺服器選項</big></b><br>\n"
+"在此，設定 Samba 伺服器使用 LDAP 的細節。</p>\n"
+
+#. Advanced SAMBA configuration dialog help 2/3
+#: src/include/samba-server/helps.rb:188
+msgid ""
+"<p><b>Search Base DN</b> (distinguished name) is\n"
+"the base at which to start searching the information. <b>Administration DN</"
+"b> is used when\n"
+"creating new users and groups. If the administration DN requires\n"
+"a password for write access, set the password using\n"
+"<b>Set LDAP Administration Password</b>.</p>\n"
+msgstr ""
+"<p><b>搜索基礎判別名</b>(判別名) 是開始搜索資訊的原點。\n"
+"<b>管理判別名</b> 在創建新使用者與組時要用到。\n"
+"若管理判別名要求設定寫訪問密碼，請使用<b>設定 LDAP 管理密碼</b>設定該密碼。</"
+"p>\n"
+
+#. Advanced SAMBA configuration dialog help 3/3
+#: src/include/samba-server/helps.rb:196
+msgid ""
+"<p><b>Note:</b> Settings are saved before the LDAP administration password "
+"is set.</p>\n"
+msgstr "<p><b>注意：</b>設定在 LDAP 管理密碼設定前即被儲存。</p>\n"
+
+#. passdb backend configuration dialog help 1
+#: src/include/samba-server/helps.rb:200
+msgid ""
+"<p><b><big>User Authentication Information Backends</big></b><br>\n"
+"Choose where the Samba server should look for the authentication\n"
+"information. Samba does not support multiple backends at once anymore,\n"
+"only one is allowed.</p>\n"
+msgstr ""
+"<p><b><big>使用者認證資訊後端</big></b><br>\n"
+"選擇 Samba 伺服器應從何處查找認證資訊。\n"
+"Samba 不再支援同時使用多個後端，現在僅允許設定一個後端。</p>\n"
+
+#. passdb backend configuration dialog help 2
+#: src/include/samba-server/helps.rb:207
+msgid ""
+"<p>If you want to change the user authentication source, remove the current "
+"one first\n"
+"by pressing <b>Delete</b> and add a new one with <b>Add</b>.</p>\n"
+msgstr ""
+"<p>若您想要修改使用者認證來源，請先按<b>刪除</b>移除當前使用者認證來源並使用<b>添"
+"加</b>添加一個新的。</p>\n"
+
+#. passdb backend configuration dialog help 3
+#: src/include/samba-server/helps.rb:211
+msgid ""
+"<p><b>smbpasswd file</b> is the file using the same format as\n"
+"the previous versions of Samba. Its layout is similar to the\n"
+"passwd file. It is possible to have a multiple files in this \n"
+"format.</p>\n"
+msgstr ""
+"<p><b>smbpasswd 檔案</b>是使用與之前版本的 Samba 相同格式的一個檔案。\n"
+"它的格局與 passwd 檔案相近。此格式中可以有多個檔案。</p>\n"
+
+#. passdb backend configuration dialog help 4
+#: src/include/samba-server/helps.rb:218
+msgid ""
+"<p><b>LDAP</b> is a URL of an LDAP server to check for\n"
+"the information.</p>\n"
+msgstr "<p><b>LDAP</b> 是用於檢索資訊的 LDAP 伺服器 URL。</p>\n"
+
+#. passdb backend configuration dialog help 5
+#: src/include/samba-server/helps.rb:222
+msgid ""
+"<p><b>TDB database</b> uses an internal Samba database binary format\n"
+"to store and look up the information.</p>\n"
+msgstr ""
+"<p><b>TDB 資料庫</b>使用一個內部 Samba 資料庫二進位制格式來存儲與查找資訊。</"
+"p>\n"
+
+#. we don't seem to support mysql anymore
+#. /* passdb backend configuration dialog help 5/7 */
+#. _("<p><b>MySQL database</b> uses an external MySQL database to
+#. to store and look up the information.</p>
+#. ") +
+#. not in UI anymore
+#. passdb backend configuration dialog help 6/7
+#. _("<p>Use <b>Add</b> to add a new configuration option, <b>Edit</b> to modify
+#. an existing option, and <b>Delete</b> to delete an option.
+#. Use <b>Up</b> and <b>Down</b> to change the order
+#. of the back-ends.</p>
+#. "),
+#. no such button there
+#. /* passdb backend configuration dialog help 7/7 */
+#. _("<p>The <b>LDAP</b> button gives access to
+#. details of an LDAP configuration and also allows
+#. checking a connection to an LDAP server for the currently
+#. selected LDAP back-end.</p>
+#. "),
+#. add new share dialog help 1/3
+#: src/include/samba-server/helps.rb:248
+msgid ""
+"<p><b><big>Add a New Share</big></b><br>\n"
+"Here, enter the basic information about a share to add.</p>\n"
+msgstr ""
+"<p><b><big>添加新共享</big></b><br>\n"
+"在此，輸入要添加的共享的基本資訊。</p>\n"
+
+#. add new share dialog help 2/3
+#: src/include/samba-server/helps.rb:252
+msgid ""
+"<p><b>Share Name</b> is used for accessing\n"
+"the share from clients. <b>Share Description</b> describes the\n"
+"purpose of the share.</p>"
+msgstr ""
+"<p><b>共享名稱</b>用於從客戶端訪問共享。\n"
+"<b>共享描述</b>描述了共享的用途。</p>"
+
+#. add new share dialog help 3/3
+#: src/include/samba-server/helps.rb:258
+msgid ""
+"<p>There are two types of shares. A <b>Printer</b> share\n"
+"is presented as a printer to clients. A <b>Directory</b> share \n"
+"is presented as a network disk. <b>Share Path</b> must be\n"
+"entered for a directory share.</p>\n"
+msgstr ""
+"<p>共享類型有兩種。<b>列印機</b>共享對客戶端呈現為列印機。\n"
+"<b>資料夾</b>共享呈現為網路磁碟。資料夾共享必須輸入<b>共享路徑</b>。</p>\n"
+
+#. add new share dialog help 4/3
+#: src/include/samba-server/helps.rb:265
+msgid ""
+"<p>If <b>Read-Only</b> is checked, users\n"
+"of a service may not create or modify files in the service's\n"
+"directory.</p>\n"
+msgstr "<p>若選中了<b>僅讀</b>，服務使用者可能無法創建或修改服務資料夾中的檔案。</p>\n"
+
+#: src/include/samba-server/helps.rb:270
+msgid ""
+"<p><b>Inherit ACLS</b> can be used to ensure\n"
+"that if default ACLs exist on parent directories, they are always\n"
+"honored when creating a subdirectory.</p>\n"
+msgstr ""
+"<p><b>繼承訪問控制列表</b>可用於確保若父資料夾上存在默認訪問控制列表，則當創"
+"建子資料夾時總是尊重它們。</p>\n"
+
+#. add new share dialog help
+#: src/include/samba-server/helps.rb:276
+msgid ""
+"<p>With <b>Expose Snapshots</b> selected, Samba exposes snapshots created by "
+"Snapper for access and manipulation by CIFS/SMB clients. This option is only "
+"available if Samba offers Snapper support, and the Share Path corresponds to "
+"a Btrfs backed Snapper configuration subvolume.<br> Relevant permissions "
+"must also be granted, see Samba's <b>vfs_snapper(8)</b> man page for further "
+"details.</p>"
+msgstr ""
+"<p>若選中了<b>暴露快照</b>，Samba 將暴露出 Snapper 創建的快照以供 CIFS/SMB 客"
+"戶端訪問與操控。\n"
+"此選項僅有當 Samba 提供了 Snapper 支援，且共享路徑對應到了一個使用 Btrfs 後端"
+"的 Snapper 配置子區塊時才可用。<br>"
+"也必須授予相關許可權，進一步細節請參考 Samba 的 <b>vfs_snapper(8)</b> 手冊頁。</p>"
+
+#: src/include/samba-server/helps.rb:283
+msgid ""
+"<p><b>Utilize Btrfs Features</b> instructs Samba to take advantage of "
+"features specific to the Btrfs filesystem. This option is only available if "
+"Samba offers Btrfs support, and the Share Path is a Btrfs subvolume. See "
+"Samba's <b>vfs_btrfs(8)</b> man page for further details.</p>"
+msgstr ""
+"<p><b>利用 Btrfs 特性</b>可引導 Samba 利用 Btrfs 檔案系統獨有的特性。\n"
+"此選項僅有當 Samba 提供了 Btrfs 支援且共享路徑為一個 Btrfs 子區塊時才可用。"
+"進一步細節請參考 Samba 的 <b>vfs_btrfs(8)</b> 手冊頁。</p>"
+
+#. help for LDAP Settings dialog
+#: src/include/samba-server/helps.rb:289
+msgid ""
+"<p><b><big>LDAP Settings</big></b><br>\n"
+"Here, determine the LDAP server to use for authentication.\n"
+"</p>\n"
+"<p>\n"
+"Setting <b>LDAP Password Back-End</b> allows storing user information in the "
+"LDAP tree specified by the URL. With <b>LDAP Idmap Back-End</b>, store SID/"
+"uid/gid mapping tables in LDAP.\n"
+"</p><p>\n"
+"In the Authentication section, set the credentials for the LDAP server, "
+"including full Administrator DN.\n"
+"</p>\n"
+"<b>Search Base DN</b> is the LDAP suffix appended to Samba-specific LDAP "
+"objects.\n"
+"</p><p>\n"
+"To test the connection to your LDAP server, click <b>Test Connection</b>. To "
+"set expert LDAP settings or use default values, click <b>Advanced Settings</"
+"b>.<p>"
+msgstr ""
+"<p><b><big>LDAP 設定</big></b><br>\n"
+"在此，決定 LDAP 伺服器是否使用認證。\n"
+"</p>\n"
+"<p>\n"
+"設定<b>LDAP 密碼後端</b>將允許在通過 URL 指定的 LDAP 樹中存儲使用者資訊。使用 "
+"<b>LDAP ldmap 後端</b>可在 LDAP 中存儲 SID/uid/gid 對映表。\n"
+"</p><p>\n"
+"在認證部分，設定 LDAP 伺服器的機要資料，包括完整的管理員判別名。\n"
+"</p>\n"
+"<b>搜索基礎判別名</b>是追加到 Samba 相關的 LDAP 物件的 LDAP 字尾。\n"
+"</p><p>\n"
+"要測試連線到您的 LDAP 伺服器，請點選<b>測試連線</b>。\n"
+"要設定專家 LDAP 設定或使用預設值，請點選<b>高階設定</b>。</p>"
+
+#. help for SambaLDAPSettingsSuffixesWidget
+#: src/include/samba-server/helps.rb:303
+msgid ""
+"<p><b>User Suffix</b> specifies where users are added to the LDAP tree. The "
+"value is pre-pended to the value of <b>Search Base DN</b>. Similarly, "
+"<b>Group Suffix</b> specifies the place for groups, <b>Machine Suffix</b> "
+"for machines and <b>Idmap Suffix</b> for idmap mappings.</p>"
+msgstr ""
+"<p><b>使用者字尾</b>指定了是否將使用者添加到 LDAP 樹。該值將附加到<b>搜索基礎判別"
+"名</b>的值的前面。類似地，<b>組字尾</b>指定了組的位置，<b>機器字尾</b>指定了"
+"機器名，<b>ldmap 字尾</b>指定了 idmap 對映的位置。</p>"
+
+#. help for SambaLDAPSettingsTimeoutsWidget
+#: src/include/samba-server/helps.rb:307
+msgid ""
+"<p><b>Replication Sleep</b> is the amount of milliseconds Samba will wait "
+"after writing to the LDAP server, so LDAP replicas can catch up.</p>\n"
+"<p><b>Time-Out</b> specifies the timeout for LDAP operations (in seconds).</"
+"p>"
+msgstr ""
+"<p><b>複製睡眠</>是在寫入 LDAP 伺服器後 Samba 等待的毫秒數，以便 LDAP 副本可"
+"以及時同步。</p>\n"
+"<p><b>超時</b>指定了 LDAP 操作超時的秒數。</p>"
+
+#. help for SambaLDAPSettingsSecurityWidget
+#: src/include/samba-server/helps.rb:311
+msgid ""
+"<p>Define whether to use SSL for LDAP connection with <b>Use SSL or TLS</b>."
+"</p>"
+msgstr "<p>使用<b>使用 SSL 或 TLS</b>定義是否為 LDAP 連線使用 SSL。</p>"
+
+#. help for SambaLDAPSettingsMiscWidget
+#: src/include/samba-server/helps.rb:315
+msgid ""
+"<p><b>Delete DN</b> specifies if the delete operation deletes the complete "
+"LDAP entry or only the Samba-specific attributes.</p>\n"
+"<p>With <b>Synchronize Passwords</b>, define possible synchronization of the "
+"LDAP password with the NT and LM hashes. See the <tt>smb.conf</tt> manual "
+"page for details.</p>"
+msgstr ""
+"<p><b>刪除判別名</b>指定了刪除操作是刪除整個 LDAP 項還是隻刪除 Samba 特殊屬"
+"性。</p>\n"
+"<p><b>同步密碼</b>定義了以 NT 還是 LM 雜湊加密法同步 LDAP 密碼。細節請參考 "
+"<tt>smb.conf</tt> 手冊頁。</p>"
+
+#. translators: warning text
+#: src/include/samba-server/helps.rb:322
+msgid ""
+"If you change the NetBIOS Hostname, Samba creates a\n"
+"service identifier (SID) for your server with the first client\n"
+"connection.  Because the new SID is not equal to the old one, clients can\n"
+"no longer authenticate as domain members.\n"
+msgstr ""
+"若您修改了 NetBIOS 主機名，Samba 將會在第一次客戶端連線時為您的伺服器創建一個"
+"服務識別碼 (SID)。由於新的 SID 與舊的不相同，客戶端將不再能夠作為域成員認"
+"證。\n"
+
+#. translators: warning text
+#: src/include/samba-server/helps.rb:329
+msgid ""
+"Consider that /tmp and /var/tmp are publicly accessible\n"
+"directories and a scheduled clean job might remove files after a\n"
+"configured period. See MAX_DAYS_IN_TMP and TMP_DIRS_TO_CLEAR in\n"
+"/etc/sysconfig/cron.\n"
+msgstr ""
+"請考慮到 /tmp 與 /var/tmp 是公共訪問資料夾並且預定的清理任務可能會在配置的時"
+"間段後移除檔案。\n"
+"請檢視 /etc/sysconfig/cron 中的 MAX_DAYS_IN_TMP 與 TMP_DIRS_TO_CLEAR。\n"
+
+#. translators: warning text
+#: src/include/samba-server/helps.rb:336
+msgid ""
+"Exporting /var might lead to security problems. The\n"
+"directory includes many secrets of your system.\n"
+msgstr ""
+"匯出 /var 可能會導致安全問題。\n"
+"該資料夾包含了您系統的許多機密。\n"
+
+#. translators: warning text
+#: src/include/samba-server/helps.rb:340
+msgid ""
+"Exporting /etc might lead to security problems. The\n"
+"directory includes many secrets of your system.\n"
+msgstr ""
+"匯出 /etc 可能會導致安全問題。\n"
+"該資料夾包含了您系統的許多機密。\n"
+
+#. translators: warning text
+#: src/include/samba-server/helps.rb:346
+msgid ""
+"Exporting / might lead to security problems because it makes your\n"
+"entire file system browsable from Samba clients.\n"
+msgstr "匯出 / 可能會導致安全問題，因為這會讓 Samba 客戶端能瀏覽您的整個檔案系統。\n"
+
+#: src/include/samba-server/helps.rb:350
+msgid ""
+"<p><b>Advanced Settings</b> provides access to \n"
+"detailed configuration, such as LDAP settings, user authentication sources, "
+"and\n"
+"expert global settings.</p>\n"
+msgstr ""
+"<p><b>高階設定</b>提供了對詳細配置的訪問，諸如 LDAP 設定，使用者認證來源與專家"
+"全局設定。</p>\n"
+
+#. translators: combo box value
+#: src/include/samba-server/ldap-widget.rb:67
+msgid "TLS"
+msgstr "TLS"
+
+#. translators: combo box value (updata password? Yes/No/Only = Only update the LDAP password and let the LDAP server do the rest)
+#: src/include/samba-server/ldap-widget.rb:82
+msgid "Only"
+msgstr "僅"
+
+#. translators: popup warning message about empty text entry
+#: src/include/samba-server/ldap-widget.rb:166
+msgid "Enter the server URL."
+msgstr "請輸入伺服器 URL。"
+
+#. translators: inform text
+#: src/include/samba-server/ldap-widget.rb:181
+#: src/include/samba-server/ldap-widget.rb:289
+msgid "Passwords do not match."
+msgstr "密碼不匹配。"
+
+#. translators: inform text
+#: src/include/samba-server/ldap-widget.rb:300
+msgid "Passwords match."
+msgstr "密碼匹配。"
+
+#. Propose default values
+#. translators: popup message
+#: src/include/samba-server/ldap-widget.rb:351
+#: src/include/samba-server/ldap-widget.rb:369
+msgid ""
+"All current LDAP-related values will be rewritten.\n"
+"Continue?\n"
+msgstr ""
+"將覆蓋全部當前 LDAP 相關值。\n"
+"繼續嗎？\n"
+
+#. translators: popup message
+#: src/include/samba-server/ldap-widget.rb:364
+msgid "Connection successful."
+msgstr "連線成功。"
+
+#. translators: text entry label
+#: src/include/samba-server/ldap-widget.rb:432
+msgid "&Search Base DN"
+msgstr "搜索基礎判別名(&S)"
+
+#: src/include/samba-server/ldap-widget.rb:435
+msgid "Authentication"
+msgstr "認證"
+
+#. translators: text entry label
+#: src/include/samba-server/ldap-widget.rb:438
+msgid "&Administration DN"
+msgstr "管理判別名(&A)"
+
+#. TODO: if Mode::config() => no ask for pssword
+#. translators: password enrty label
+#: src/include/samba-server/ldap-widget.rb:447
+msgid "Administration &Password"
+msgstr "管理密碼(&P)"
+
+#. translators: reenter password entry label
+#: src/include/samba-server/ldap-widget.rb:453
+msgid "Administration Password (A&gain)"
+msgstr "管理密碼(再輸一次)(&G)"
+
+#. translators: frame title (passdb == password database)
+#: src/include/samba-server/ldap-widget.rb:464
+msgid "Passdb Back-End"
+msgstr "Passdb 後端"
+
+#. translators: check box label
+#: src/include/samba-server/ldap-widget.rb:471
+msgid "Use LDAP Password &Back-End"
+msgstr "使用 LDAP 密碼後端(&B)"
+
+#. translators: text entry label
+#: src/include/samba-server/ldap-widget.rb:475
+msgid "LDAP Server &URL"
+msgstr "LDAP 伺服器 &URL"
+
+#. translators: frame title (idmap = user id mapping)
+#: src/include/samba-server/ldap-widget.rb:483
+msgid "Idmap Back-End"
+msgstr "Idmap 後端"
+
+#. translators: check box label
+#: src/include/samba-server/ldap-widget.rb:490
+msgid "Use LDAP &Idmap Back-End"
+msgstr "使用 LDAP &Idmap 後端"
+
+#. translators: text entry label
+#: src/include/samba-server/ldap-widget.rb:494
+msgid "LDAP Server U&RL"
+msgstr "LDAP 伺服器 U&RL"
+
+#: src/include/samba-server/ldap-widget.rb:517
+msgid "&Test Connection"
+msgstr "測試連線(&T)"
+
+#: src/include/samba-server/ldap-widget.rb:520
+msgid "Advanced &Settings..."
+msgstr "高階設定(&S)..."
+
+#. translators: dialog caption
+#: src/include/samba-server/ldap-widget.rb:522
+#: src/include/samba-server/ldap-widget.rb:820
+msgid "Expert LDAP Settings"
+msgstr "專家 LDAP 設定"
+
+#: src/include/samba-server/ldap-widget.rb:523
+msgid "Default Values"
+msgstr "預設值"
+
+#. translators: frame label
+#: src/include/samba-server/ldap-widget.rb:587
+msgid "Suffixes"
+msgstr "字尾"
+
+#. translators: text entry label
+#: src/include/samba-server/ldap-widget.rb:590
+msgid "&User Suffix"
+msgstr "使用者字尾(&U)"
+
+#. translators: text entry label
+#: src/include/samba-server/ldap-widget.rb:592
+msgid "&Group Suffix"
+msgstr "組字尾(&G)"
+
+#. translators: text entry label
+#: src/include/samba-server/ldap-widget.rb:594
+msgid "&Machine Suffix"
+msgstr "計算機字尾(&M)"
+
+#. translators: text entry label
+#: src/include/samba-server/ldap-widget.rb:596
+msgid "&Idmap Suffix"
+msgstr "&Idmap 字尾"
+
+#. translators: frame label
+#: src/include/samba-server/ldap-widget.rb:641
+msgid "Time-Outs"
+msgstr "超時"
+
+#. translators: integer field label
+#: src/include/samba-server/ldap-widget.rb:647
+msgid "&Replication Sleep"
+msgstr "複製睡眠(&R)"
+
+#. translators: integer field label
+#: src/include/samba-server/ldap-widget.rb:654
+msgid "&Time-Out"
+msgstr "超時(&T)"
+
+#. translators: frame label
+#: src/include/samba-server/ldap-widget.rb:693
+msgid "Security"
+msgstr "安全"
+
+#. translators: combo box label
+#: src/include/samba-server/ldap-widget.rb:699
+msgid "&Use SSL or TLS"
+msgstr "使用 SSL 或 TLS(&U)"
+
+#. translators: frame label
+#: src/include/samba-server/ldap-widget.rb:747
+msgid "Other Settings"
+msgstr "其它設定"
+
+#. No such option, bug 169194
+#. translators: text entry label
+#. `Left(`TextEntry(`id("ldap filter"), _("Search &Filter"))),
+#. translators: combo box label
+#: src/include/samba-server/ldap-widget.rb:757
+msgid "&Delete DN"
+msgstr "刪除判別名(&D)"
+
+#. translators: combo box label
+#: src/include/samba-server/ldap-widget.rb:767
+msgid "&Synchronize Passwords"
+msgstr "同步密碼(&S)"
+
+#. Initialization dialog caption
+#: src/include/samba-server/wizards.rb:167
+msgid "Samba Server Configuration"
+msgstr "Samba 伺服器配置"
+
+#. Initialization dialog contents
+#: src/include/samba-server/wizards.rb:169
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. translators: in error message, followed by server error
+#: src/modules/SambaBackendLDAP.pm:261
+msgid "Additional Information:"
+msgstr "附加資訊："
+
+#. translators: unknown error message
+#: src/modules/SambaBackendLDAP.pm:265
+msgid "Unknown error. Perhaps yast2-ldap is not available."
+msgstr "未知錯誤。或許 yast2-ldap 不可用。"
+
+#: src/modules/SambaBackendLDAP.pm:338
+msgid "Unknown Class:"
+msgstr "未知類："
+
+#: src/modules/SambaBackendLDAP.pm:338
+msgid "Only dcObject (dc) and organizationalUnit (ou) classes are supported."
+msgstr "僅支援 dcObject(dc) 與 organizationalUnit(ou) 類。"
+
+#. translators: warning message, %s is LDAP server name/IP
+#: src/modules/SambaBackendLDAP.pm:624
+#, perl-format
+msgid ""
+"It seems that there is no functional\n"
+"LDAP server at %s.\n"
+msgstr "看起來 %s 上沒有正常運行的 LDAP 伺服器。\n"
+
+#. translators: server role name
+#: src/modules/SambaRole.pm:50
+msgid "File and Printer Sharing"
+msgstr "檔案與列印機共享"
+
+#. translators: server role name
+#: src/modules/SambaRole.pm:52
+msgid "Backup Domain Controller"
+msgstr "備份域控制器"
+
+#. translators: server role name
+#: src/modules/SambaRole.pm:54
+msgid "Primary Domain Controller"
+msgstr "主域控制器"
+
+#. translators: server role name
+#: src/modules/SambaRole.pm:56
+msgid "Domain Member Server"
+msgstr "域成員伺服器"
+
+#. Samba-server read dialog caption
+#: src/modules/SambaServer.pm:120
+msgid "Initializing Samba Server Configuration"
+msgstr "正在啟始化 Samba 伺服器配置"
+
+#. translators: progress stage
+#: src/modules/SambaServer.pm:125
+msgid "Read global Samba settings"
+msgstr "讀取全局 Samba 設定"
+
+#. translators: progress stage
+#: src/modules/SambaServer.pm:127
+msgid "Read Samba secrets"
+msgstr "讀取 Samba 機密"
+
+#. translators: progress stage
+#: src/modules/SambaServer.pm:129
+msgid "Read Samba service settings"
+msgstr "讀取 Samba 服務設定"
+
+#. translators: progress stage
+#: src/modules/SambaServer.pm:131
+msgid "Read Samba accounts"
+msgstr "讀取 Samba 帳戶"
+
+#. translators: progress stage
+#: src/modules/SambaServer.pm:133
+msgid "Read the back-end settings"
+msgstr "讀取後端設定"
+
+#. translators: progress stage
+#: src/modules/SambaServer.pm:135
+msgid "Read the firewall settings"
+msgstr "讀取防火牆設定"
+
+#. translators: progress stage
+#: src/modules/SambaServer.pm:137
+msgid "Read Samba service role settings"
+msgstr "讀取 Samba 服務角色設定"
+
+#. translators: progress step
+#: src/modules/SambaServer.pm:140
+msgid "Reading global Samba settings..."
+msgstr "正在讀取全局 Samba 設定..."
+
+#. translators: progress step
+#: src/modules/SambaServer.pm:142
+msgid "Reading Samba secrets..."
+msgstr "正在讀取 Samba 機密..."
+
+#. translators: progress step
+#: src/modules/SambaServer.pm:144
+msgid "Reading Samba service settings..."
+msgstr "正在讀取 Samba 服務設定..."
+
+#. translators: progress step
+#: src/modules/SambaServer.pm:146
+msgid "Reading Samba accounts..."
+msgstr "正在讀取 Samba 帳戶..."
+
+#. translators: progress step
+#: src/modules/SambaServer.pm:148
+msgid "Reading the back-end settings..."
+msgstr "正在讀取後端設定..."
+
+#. translators: progress step
+#: src/modules/SambaServer.pm:150
+msgid "Reading the firewall settings..."
+msgstr "正在讀取防火牆設定..."
+
+#. translators: progress stage
+#: src/modules/SambaServer.pm:152
+msgid "Reading Samba service role settings..."
+msgstr "正在讀取 Samba 服務角色設定..."
+
+#. translators: progress finished
+#. translators: write progress step
+#: src/modules/SambaServer.pm:154 src/modules/SambaServer.pm:264
+msgid "Finished"
+msgstr "已完成"
+
+#. Samba-server read dialog caption
+#: src/modules/SambaServer.pm:234
+msgid "Saving Samba Server Configuration"
+msgstr "正在儲存 Samba 伺服器配置"
+
+#. translators: write progress stage
+#: src/modules/SambaServer.pm:239
+msgid "Write global settings"
+msgstr "寫入全局設定"
+
+#. translators: write progress stage
+#: src/modules/SambaServer.pm:241
+msgid "Disable Samba services"
+msgstr "禁用 Samba 服務"
+
+#. translators: write progress stage
+#: src/modules/SambaServer.pm:243
+msgid "Enable Samba services"
+msgstr "啟用 Samba 服務"
+
+#. translators: write progress stage
+#: src/modules/SambaServer.pm:245
+msgid "Write back-end settings"
+msgstr "寫入後端設定"
+
+#. translators: write progress stage
+#: src/modules/SambaServer.pm:247
+msgid "Write Samba accounts"
+msgstr "寫入 Samba 帳戶"
+
+#. translators: write progress stage
+#: src/modules/SambaServer.pm:249
+msgid "Save firewall settings"
+msgstr "儲存防火牆設定"
+
+#. translators: write progress step
+#: src/modules/SambaServer.pm:252
+msgid "Writing global settings..."
+msgstr "正在寫入全局設定..."
+
+#. translators: write progress step
+#: src/modules/SambaServer.pm:254
+msgid "Disabling Samba services..."
+msgstr "正在禁用 Samba 服務..."
+
+#. translators: write progress step
+#: src/modules/SambaServer.pm:256
+msgid "Enabling Samba services..."
+msgstr "正在啟用 Samba 服務..."
+
+#. translators: write progress step
+#: src/modules/SambaServer.pm:258
+msgid "Writing back-end settings..."
+msgstr "正在寫入後端設定..."
+
+#. translators: write progress step
+#: src/modules/SambaServer.pm:260
+msgid "Writing Samba accounts..."
+msgstr "正在寫入 Samba 帳戶..."
+
+#. translators: write progress step
+#: src/modules/SambaServer.pm:262
+msgid "Saving firewall settings..."
+msgstr "正在儲存防火牆設定..."
+
+#. /etc/samba/smb.conf is filename
+#: src/modules/SambaServer.pm:288
+msgid "Cannot write settings to /etc/samba/smb.conf."
+msgstr "無法將設定寫入到 /etc/samba/smb.conf。"
+
+#. summary item: configured workgroup/domain
+#: src/modules/SambaServer.pm:385
+msgid "Global Configuration:"
+msgstr "全局配置："
+
+#: src/modules/SambaServer.pm:387
+#, perl-format
+msgid "Workgroup or Domain: %s"
+msgstr "工作組或域：%s"
+
+#. summary item: selected role for the samba server
+#: src/modules/SambaServer.pm:391
+#, perl-format
+msgid "Role: %s"
+msgstr "角色：%s"
+
+#. summary item: status of the samba service
+#: src/modules/SambaServer.pm:394
+msgid "Samba server is disabled"
+msgstr "Samba 伺服器已禁用"
+
+#. summary heading: configured shares
+#: src/modules/SambaServer.pm:398
+msgid "Share Configuration:"
+msgstr "共享配置："
+
+#. summary item: no configured shares
+#: src/modules/SambaServer.pm:404
+msgid "None"
+msgstr "無"
+
+#~ msgid "Snapper Support"
+#~ msgstr "Snapper 支援"
+
+#~ msgid "Please enter a new share name."
+#~ msgstr "請輸入一個新的共享名。"
+
+#~ msgid ""
+#~ "Share '%1' already exists.\n"
+#~ "Please choose another share name."
+#~ msgstr ""
+#~ "共享“%1”已存在。\n"
+#~ "請選擇其他共享名。"
+
+#~ msgid "SSL"
+#~ msgstr "SSL"
+
+#~ msgid ""
+#~ "<p>Use <b>Add</b> to add a new configuration option, <b>Edit</b> to "
+#~ "modify\n"
+#~ "an existing option, and <b>Delete</b> to delete an option.\n"
+#~ "Use <b>Up</b> and <b>Down</b> to change the order\n"
+#~ "of the back-ends.</p>\n"
+#~ msgstr ""
+#~ "<p><b>添加</b>可用於添加新的配置選項，<b>編輯</b>可用於修改\n"
+#~ "存在的選項，<b>刪除</b>可用於刪除某選項。\n"
+#~ "<b>向上</b>與<b>向下</b>可用於變更後端的\n"
+#~ "順序。</p>\n"
+

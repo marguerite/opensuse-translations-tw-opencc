@@ -1,0 +1,208 @@
+# Copyright (C) 2006 SuSE Linux Products GmbH, Nuernberg
+# This file is distributed under the same license as the package.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: pkg-bindings\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:43+0200\n"
+"PO-Revision-Date: 2013-02-01 21:40+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: src/GPGMap.cc:54
+msgid "Never"
+msgstr "從不"
+
+#. help text
+#: src/HelpTexts.h:36
+msgid ""
+"<P><BIG><B>Loading Available Packages</B></BIG></P><P>Loading available "
+"objects from the configured repositories is in progress. This may take a "
+"while...</P>"
+msgstr ""
+"<P><BIG><B>正在載入可用軟體包</B></BIG></P><P>正在從已配置的軟體源中載入可用"
+"軟體包。這可能要一會兒...</P>"
+
+#. help text
+#: src/HelpTexts.h:42
+msgid ""
+"<P><BIG><B>Loading Installed Packages</B></BIG></P><P>The package manager is "
+"reading installed packages...</P>"
+msgstr ""
+"<P><BIG><B>正在載入已安裝的軟體包</B><BIG></P><P>軟體包管理器正在讀取已安裝的"
+"軟體包...</P>"
+
+#. help text
+#: src/HelpTexts.h:47
+msgid ""
+"<P><BIG><B>Registering a New Repository</B></BIG></P><P>A new repository is "
+"being registered. The package manager is reading the list of available "
+"packages in the repository...</P>"
+msgstr ""
+"<P><BIG><B>正在註冊新軟體源</B></BIG></P><P>正在註冊一個新軟體源。軟體包管理"
+"器正在讀取其中可用的軟體包列表...</P>"
+
+#: src/HelpTexts.h:52
+msgid ""
+"<P><BIG><B>Saving Repositories</B></BIG></P><P>The package manager is "
+"updating configured repositories...</P>"
+msgstr ""
+"<P><BIG><B>正在儲存軟體源</B></BIG></P><P>軟體包管理器正在更新已配置的軟體"
+"源...</P>"
+
+#: src/HelpTexts.h:55
+msgid ""
+"<P><BIG><B>Refreshing the Repository</B></BIG></P><P>The package manager is "
+"updating the repository content...</P>"
+msgstr ""
+"<P><BIG><B>正在重新整理軟體源</B></BIG></P><P>軟體包管理器正在更新軟體源內容...</"
+"P>"
+
+#. error message
+#: src/Package.cc:651
+msgid "The package cannot be selected to install."
+msgstr "不能選擇安裝該軟體包。"
+
+#. error message
+#: src/Package.cc:657
+msgid "The package is not available."
+msgstr "軟體包不可用。"
+
+#. still not initialized, throw an exception
+#. translators: this is an error message
+#: src/PkgFunctions.cc:128
+msgid "Cannot connect to the package manager"
+msgstr "無法連線軟體包管理器"
+
+#: src/Source_Callbacks.cc:129
+msgid "Refreshing repository "
+msgstr "正在重新整理軟體源"
+
+#: src/Source_Callbacks.cc:150
+msgid "Probing repository "
+msgstr "正在檢測軟體源"
+
+#: src/Source_Create.cc:52
+msgid "Scanning products in "
+msgstr "正在掃描產品於 "
+
+#: src/Source_Create.cc:581
+msgid "Search Available Products"
+msgstr "搜索可用產品"
+
+#: src/Source_Create.cc:586
+msgid "Probe Source Type"
+msgstr "檢測資源類型"
+
+#: src/Source_Create.cc:589
+msgid "Download Descriptions"
+msgstr "下載描述"
+
+#: src/Source_Create.cc:590 src/Source_Download.cc:402 src/Source_Load.cc:155
+#: src/Source_Load.cc:479
+msgid "Rebuild Cache"
+msgstr "重建快取"
+
+#: src/Source_Create.cc:594 src/Source_Load.cc:156 src/Source_Load.cc:480
+#: src/Source_Set.cc:76
+msgid "Load Data"
+msgstr "載入資料"
+
+#: src/Source_Create.cc:597
+msgid "Adding the Repository..."
+msgstr "正在添加軟體源..."
+
+#: src/Source_Download.cc:56 src/Source_Download.cc:320
+msgid "Downloading "
+msgstr "正在下載 "
+
+#. stages: "download", "build cache"
+#: src/Source_Download.cc:401
+msgid "Refresh Metadata"
+msgstr "重新整理後設資料"
+
+#. 3 steps per repository (download, cache rebuild, load resolvables)
+#: src/Source_Download.cc:409
+msgid "Refreshing Repository..."
+msgstr "正在重新整理軟體源..."
+
+#. error message (followed by directory name)
+#: src/Source_Installation.cc:73
+msgid "Target is not a directory: "
+msgstr "目標不是一個目錄： "
+
+#. error message (followed by directory name)
+#: src/Source_Installation.cc:103
+msgid "Cannot create directory "
+msgstr "無法創建目錄 "
+
+#. error message (followed by directory name)
+#: src/Source_Installation.cc:112
+msgid "Cannot check status of directory "
+msgstr "無法檢查目錄狀態 "
+
+#. error message (followed by detailed description)
+#: src/Source_Installation.cc:190 src/Source_Installation.cc:216
+msgid "Error: Cannot copy the cache to the target directory\n"
+msgstr "錯誤：無法將快取複製到目標目錄\n"
+
+#. error message
+#: src/Source_Installation.cc:193
+msgid "Copying failed"
+msgstr "複製失敗"
+
+#. error message, service name and URL is appened at the end of the string
+#: src/Source_Load.cc:109
+msgid "Error refreshing service"
+msgstr "重新整理服務出錯"
+
+#: src/Source_Load.cc:154 src/Source_Load.cc:478
+msgid "Refresh Sources"
+msgstr "重新整理資源"
+
+#. 3 steps per repository (download, cache rebuild, load resolvables)
+#: src/Source_Load.cc:161 src/Source_Load.cc:483 src/Source_Set.cc:83
+#: src/Target_Load.cc:74 src/Target_Load.cc:204
+msgid "Loading the Package Manager..."
+msgstr "正在載入軟體包管理器..."
+
+#: src/Source_Load.cc:477
+msgid "Load Sources"
+msgstr "載入資源"
+
+#. TODO: improve the error message
+#: src/Source_Misc.cc:70
+msgid "Cannot find source"
+msgstr "未找到資源"
+
+#: src/Source_Save.cc:132
+msgid "Remove Repositories"
+msgstr "移除軟體源"
+
+#. stages: "download", "build cache"
+#: src/Source_Save.cc:137
+msgid "Save Repositories"
+msgstr "儲存軟體源"
+
+#. start the process
+#: src/Source_Save.cc:145
+msgid "Saving Repositories..."
+msgstr "正在儲存軟體源..."
+
+#: src/Target_Load.cc:70
+msgid "Initialize the Target System"
+msgstr "啟始化目標系統"
+
+#: src/Target_Load.cc:71 src/Target_Load.cc:200
+msgid "Read Installed Packages"
+msgstr "讀取已安裝的軟體包"
+

@@ -1,0 +1,604 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: Nis\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-24 10:56+0100\n"
+"PO-Revision-Date: 2013-02-04 15:48+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. translators: command line help text for Ldap client module
+#: src/clients/nis.rb:74
+msgid "NIS client configuration module."
+msgstr "NIS 客戶端配置模組。"
+
+#. command line help text for 'enable' action
+#: src/clients/nis.rb:84
+msgid "Enable your machine as NIS client"
+msgstr "啟用計算機作為 NIS 客戶端"
+
+#. command line help text for 'disable' action
+#: src/clients/nis.rb:91
+msgid "Disable the NIS client"
+msgstr "禁用 NIS 客戶端"
+
+#. command line help text for 'summary' action
+#: src/clients/nis.rb:98
+msgid "Configuration summary of NIS client"
+msgstr "NIS 客戶端配置摘要"
+
+#. command line help text for 'configure' action
+#: src/clients/nis.rb:109
+msgid "Change the global settings of NIS client"
+msgstr "修改 NIS 客戶端全局設定"
+
+#. command line help text for 'find' action
+#: src/clients/nis.rb:116
+msgid "Show available NIS servers for given domain"
+msgstr "顯示給定域的可用 NIS 伺服器"
+
+#. command line help text for the 'server' option
+#: src/clients/nis.rb:124
+msgid "NIS server name or address"
+msgstr "NIS 伺服器名或地址"
+
+#. command line help text for the 'domain' option
+#: src/clients/nis.rb:131
+msgid "NIS domain"
+msgstr "NIS 域"
+
+#. help text for the 'automounter' option
+#: src/clients/nis.rb:138
+msgid "Start or stop automounter"
+msgstr "啟動或停止自動裝載器"
+
+#. help text for the 'broadcast' option
+#: src/clients/nis.rb:146
+msgid "Set or unset broadcast search"
+msgstr "設定或取消設定廣播搜索"
+
+#. Print summary of basic options
+#. @return [Boolean] false
+#. summary header
+#: src/clients/nis.rb:260 src/modules/Nis.rb:862
+msgid "Automounter enabled"
+msgstr "已啟用自動裝載器"
+
+#. summary item: an option is turned on
+#. summary item: an option is turned on
+#. summary item: an option is turned on
+#. summary item: an option is turned on
+#. summary item: an option is turned on
+#: src/clients/nis.rb:261 src/modules/Nis.rb:831 src/modules/Nis.rb:844
+#: src/modules/Nis.rb:853 src/modules/Nis.rb:857 src/modules/Nis.rb:864
+#: src/modules/Nis.rb:892
+msgid "Yes"
+msgstr "是"
+
+#: src/clients/nis.rb:261 src/modules/Nis.rb:892
+msgid "No"
+msgstr "否"
+
+#. Translators: network broadcast address
+#: src/include/nis/ui.rb:62
+msgid ""
+"<p>The <b>Broadcast</b> option enables searching\n"
+"in the local network to find a server after the specified servers\n"
+"fail to respond. It is a security risk.</p>\n"
+msgstr ""
+"<p><b>廣播</b>選項可在指定伺服器\n"
+"失去響應後啟用本地網路\n"
+"搜索來查找伺服器。這存在安全風險。</p>\n"
+
+#. Translators: short for Expert settings
+#: src/include/nis/ui.rb:71
+msgid ""
+"<p><b>Expert</b> gives access to some\n"
+"less frequently used settings.</p>\n"
+msgstr ""
+"<p><b>專家</b>選項允許訪問某些\n"
+"不常使用的設定。</p>\n"
+
+#. pushbutton label
+#. Select all items (in this case NIS servers) of a list
+#: src/include/nis/ui.rb:135
+msgid "Select &All"
+msgstr "全選(&A)"
+
+#. pushbutton label
+#. Deselect all items (in this case NIS servers) of a list
+#: src/include/nis/ui.rb:138
+msgid "Select &None"
+msgstr "全部不選(&N)"
+
+#. popup window
+#. LAN: local area network
+#: src/include/nis/ui.rb:190
+msgid "Scanning for NIS servers in domain %1 on this LAN..."
+msgstr "正在此區域網的域 %1 中掃描 NIS 伺服器..."
+
+#. selection box label
+#: src/include/nis/ui.rb:209
+msgid "&NIS Servers in Domain %1"
+msgstr "域 %1 中的 &NIS 伺服器"
+
+#. firewall openning help
+#: src/include/nis/ui.rb:228
+msgid ""
+"<p><b>Firewall Settings</b><br>\n"
+"To open the firewall to allow accessing the 'ypbind' service\n"
+"from remote computers, set <b>Open Port in Firewall</b>.\n"
+"To select interfaces on which to open the port, click <b>Firewall Details</b>.\n"
+"This option is only available if the firewall is enabled.</p>\n"
+msgstr ""
+"<p><b>防火牆設定</b><br>\n"
+"要開啟防火牆以便遠端計算機訪問 \"ypbind\" 服務，\n"
+"請設定<b>開啟防火牆中的埠</b>。\n"
+"要選擇將在其上開啟埠的介面，請點選<b>防火牆細節</b>。\n"
+"此選項僅有在啟用了防火牆後才可用。</p>\n"
+
+#. help text
+#: src/include/nis/ui.rb:240
+msgid ""
+"<p>Enter your NIS domain, such as example.com,\n"
+" and the NIS server's address, such as nis.example.com or 10.20.1.1.</p>\n"
+msgstr ""
+"<p>輸入您的 NIS 域，例如 example.com，\n"
+"與 NIS 伺服器地址，例如 nis.example.com 或 10.20.1.1。</p>\n"
+
+#. help text for netconfig part
+#: src/include/nis/ui.rb:244
+msgid ""
+"<p>Select the way how the NIS configuration will be modified. Normally, it is\n"
+"handled by the netconfig script, which merges the data statically defined here\n"
+"with dynamically obtained data (e.g. from DHCP client, NetworkManager\n"
+"etc.). This is the Default Policy and sufficient for most configurations. \n"
+"By choosing Only Manual Changes, netconfig will no longer be allowed to modify\n"
+"the configuration. You can, however, edit the file manually. By choosing\n"
+"Custom Policy, you can specify a custom policy string, which consists of a\n"
+"space-separated list of interface names, including wildcards, with\n"
+"STATIC/STATIC_FALLBACK as predefined special values. For more information, see\n"
+"the netconfig manual page.</p>\n"
+msgstr ""
+"<p>選擇修改 NIS 配置的方式。通常，它由 netconfig 指令碼處理，指令碼會合並靜態定義的資料與動態獲取的資料 (例如從 DHCP 客戶端，NetworkManager 等)。這是默認策略，對大多數配置來說足夠。\n"
+"通過選擇僅手動修改，將不允許 netconfig 修改配置。然而，您可以手動編輯檔案。通過選擇自定義策略，您可以指定一個自定義策略字元串，\n"
+"其包含一個由空格分隔的介面名列表，與通配符，並使用 STATIC/STATIC_FALLBACK 作為其預定義的特殊值。更多資訊，請見 netconfig 幫助手冊。</p>\n"
+
+#. help text
+#: src/include/nis/ui.rb:260
+msgid ""
+"<p>Specify multiple servers\n"
+"by separating their addresses with spaces.</p>\n"
+msgstr ""
+"<p>指定多臺伺服器，\n"
+"伺服器地址間用空格分隔。</p>\n"
+
+#. help text
+#: src/include/nis/ui.rb:271
+msgid ""
+"<p><b>Automounter</b> is a daemon that mounts directories automatically,\n"
+"such as users' home directories.\n"
+"It is assumed that its configuration files (auto.*) already exist,\n"
+"either locally or over NIS.</p>"
+msgstr ""
+"<p><b>自動裝載器</b>是一個守護精靈，\n"
+"它會自動裝載目錄，例如使用者的主目錄。\n"
+"它假定在本地或 NIS 中已存在其配置\n"
+"檔案 (auto.*)。</p>"
+
+#. help text
+#: src/include/nis/ui.rb:279
+msgid "<p>NFS Settings which affects how the automounter operates could be set in NFS Client, which can be configured using <b>NFS Configuration</b> button.</p>"
+msgstr "<p>影響自動裝載器運行方式的 NFS 設定可在 NFS 客戶端中設定，可用<b>NFS 配置</b>按鈕配置。</p>"
+
+#. radio button label
+#: src/include/nis/ui.rb:333
+msgid "Au&tomatic Setup (Via NetworkManager and DHCP)"
+msgstr "自動設定(通過 NetworkManager 與 DHCP)(&T)"
+
+#. radio button label
+#: src/include/nis/ui.rb:335
+msgid "Au&tomatic Setup (via DHCP)"
+msgstr "自動設定(通過 DHCP)(&T)"
+
+#. frame label
+#. frame label
+#: src/include/nis/ui.rb:342 src/include/nis/ui.rb:1026
+msgid "NIS client"
+msgstr "NIS 客戶端"
+
+#. combo box label
+#: src/include/nis/ui.rb:352
+msgid "Netconfig NIS &Policy"
+msgstr "Netconfig NIS 策略(&P)"
+
+#. combo box item
+#: src/include/nis/ui.rb:355
+msgid "Only Manual Changes"
+msgstr "僅手動修改"
+
+#. combo box item
+#: src/include/nis/ui.rb:357
+msgid "Default Policy"
+msgstr "默認策略"
+
+#. combo box item
+#: src/include/nis/ui.rb:359
+msgid "Custom Policy"
+msgstr "自定義策略"
+
+#. text entry label
+#: src/include/nis/ui.rb:367
+msgid "C&ustom Policy"
+msgstr "自定義策略(&u)"
+
+#. text entry label
+#: src/include/nis/ui.rb:377 src/include/nis/ui.rb:393
+msgid "N&IS Domain"
+msgstr "NIS 域(&I)"
+
+#. text entry label
+#: src/include/nis/ui.rb:384 src/include/nis/ui.rb:401
+msgid "&Addresses of NIS servers"
+msgstr "NIS 伺服器地址(&A)"
+
+#. check box label
+#: src/include/nis/ui.rb:411
+msgid "Br&oadcast"
+msgstr "廣播(&O)"
+
+#. pushbutton label, find nis servers
+#. Shortcut must not conflict with Finish and Next (#29960)
+#. pushbutton label, find nis servers
+#. Shortcut must not conflict with Finish and Next (#29960)
+#: src/include/nis/ui.rb:417 src/include/nis/ui.rb:862
+msgid "Fin&d"
+msgstr "查找(&D)"
+
+#: src/include/nis/ui.rb:421
+msgid "Additional NIS Domains"
+msgstr "附加 NIS 域"
+
+#. button label
+#: src/include/nis/ui.rb:435
+msgid "&Edit"
+msgstr "編輯(&E)"
+
+#. radio button label
+#: src/include/nis/ui.rb:459
+msgid "Do &not use NIS"
+msgstr "不使用 NIS(&N)"
+
+#. radio button label
+#: src/include/nis/ui.rb:468
+msgid "&Use NIS"
+msgstr "使用 NIS(&U)"
+
+#. checkbox label
+#: src/include/nis/ui.rb:482
+msgid "Start Auto&mounter"
+msgstr "啟動自動裝載器(&m)"
+
+#. button label (short for Expert settings)
+#: src/include/nis/ui.rb:489
+msgid "E&xpert..."
+msgstr "專家(&X)..."
+
+#. button label
+#: src/include/nis/ui.rb:495
+msgid "NFS Configuration..."
+msgstr "網路檔案系統配置..."
+
+#. dialog title
+#. dialog title
+#: src/include/nis/ui.rb:506 src/include/nis/ui.rb:1034
+msgid "Configuration of NIS client"
+msgstr "NIS 客戶端配置"
+
+#. Message popup. The user wants to Find servers
+#. but the domain is unknown.
+#. Message popup. The user wants to Find servers
+#. but the domain is unknown.
+#: src/include/nis/ui.rb:573 src/include/nis/ui.rb:902
+msgid "Finding servers works only when the domain is known."
+msgstr "查找伺服器僅在域名已知的情況下才能進行。"
+
+#. yes-no popup
+#: src/include/nis/ui.rb:591
+msgid ""
+"When you configure your machine as a NIS client,\n"
+"you cannot retrieve the user data from LDAP.\n"
+"Are you sure?"
+msgstr ""
+"您若將計算機配置為 NIS 客戶端，\n"
+"則無法從 LDAP 獲取使用者資料。\n"
+"您確定嗎？"
+
+#. help text 1/4
+#: src/include/nis/ui.rb:674
+msgid "<p>Normally, it is possible for any host to query which server a client is using. Disabling <b>Answer Remote Hosts</b> restricts this only to the local host.</p>"
+msgstr "<p>通常，任何主機都可查詢客戶端正在使用哪個伺服器。禁用<b>應答遠端主機</b>限制僅有本地主機才能使用此功能。</p>"
+
+#. help text 2/4
+#. Check, ie. turn on a check box
+#: src/include/nis/ui.rb:682
+msgid "<p>Check <b>Broken server</b> if answers from servers running on an unprivileged port should be accepted. It is a security risk and it is better to replace such a server.</p>"
+msgstr "<p>如果應接受運行在非特權埠上的伺服器的回答，請選中<b>伺服器容錯</b>。這存在安全風險，最好替換這種伺服器。</p>"
+
+#. help text 3/4
+#: src/include/nis/ui.rb:690
+msgid "<p>See <b>man ypbind</b> for details on other options.</p>"
+msgstr "<p>其它選項細節請參見 <b>man ypbind</b>。</p>"
+
+#. frame label
+#. dialog title
+#: src/include/nis/ui.rb:701 src/include/nis/ui.rb:729
+msgid "Expert settings"
+msgstr "專家設定"
+
+#. check box label
+#: src/include/nis/ui.rb:706
+msgid "Ans&wer Remote Hosts"
+msgstr "應答遠端主機(&W)"
+
+#. check box label
+#: src/include/nis/ui.rb:710
+msgid "Br&oken server"
+msgstr "伺服器容錯(&O)"
+
+#. text entry label (do not translate 'ypbind')
+#: src/include/nis/ui.rb:717
+msgid "Other &ypbind options"
+msgstr "其它 &ypbind 選項"
+
+#. Translators: multilineedit label
+#. comma: ","
+#: src/include/nis/ui.rb:844
+msgid "&Servers (separated by spaces or commas)"
+msgstr "伺服器(用空格或逗號分隔)(&S)"
+
+#. checkbox label
+#: src/include/nis/ui.rb:851
+msgid "&Broadcast"
+msgstr "廣播(&B)"
+
+#. checkbox label
+#: src/include/nis/ui.rb:857
+msgid "&SLP"
+msgstr "&SLP"
+
+#. Translators: popup dialog heading
+#: src/include/nis/ui.rb:872
+msgid "Domain Settings"
+msgstr "域設定"
+
+#. Add a domain, Adding a domain? Edit...
+#. Translators: text entry label
+#: src/include/nis/ui.rb:875
+msgid "&Domain name"
+msgstr "域名(&D)"
+
+#. Translators: error message
+#: src/include/nis/ui.rb:930
+msgid "This domain is already defined."
+msgstr "已定義了此域。"
+
+#. Translators: error message
+#: src/include/nis/ui.rb:935
+msgid "The format of server address '%1' is not correct."
+msgstr "伺服器地址 \"%1\" 的格式不正確。"
+
+#. error message, 'Broadcast' and 'SLP' are checkboxes
+#: src/include/nis/ui.rb:944
+msgid ""
+"Enabling both Broadcast and SLP options\n"
+"does not make any sense. Select just one option."
+msgstr ""
+"同時啟用廣播與 SLP 選項\n"
+"沒有意義。請僅選擇一個選項。"
+
+#. help text
+#: src/include/nis/ui.rb:977
+msgid "<p>Specify the servers for additional domains.</p>"
+msgstr "<p>為附加域指定伺服器。</p>"
+
+#. help text
+#: src/include/nis/ui.rb:985
+msgid "<p>The Service Location Protocol (<b>SLP</b>) can be used to find NIS server.</p>"
+msgstr "<p>服務定位協議 (<b>SLP</b>) 可用於查找 NIS 伺服器。</p>"
+
+#. dialog label
+#. dialog subtitle
+#: src/include/nis/ui.rb:997 src/include/nis/ui.rb:1036
+msgid "Additional Domains"
+msgstr "附加域"
+
+#. table header
+#. summary item
+#: src/include/nis/ui.rb:1003 src/modules/Nis.rb:889
+msgid "Domain"
+msgstr "域"
+
+#. table header
+#. summary header
+#: src/include/nis/ui.rb:1005 src/modules/Nis.rb:842
+msgid "Broadcast"
+msgstr "廣播"
+
+#. table header - Service Location Protocol
+#: src/include/nis/ui.rb:1007
+msgid "SLP"
+msgstr "服務定位協議"
+
+#. table header
+#. summary item
+#: src/include/nis/ui.rb:1009 src/modules/Nis.rb:887
+msgid "Servers"
+msgstr "伺服器"
+
+#. button label
+#: src/include/nis/ui.rb:1015
+msgid "A&dd"
+msgstr "添加(&D)"
+
+#. Translators: a yes-no popup
+#: src/include/nis/ui.rb:1121
+msgid "Really delete this domain?"
+msgstr "真的刪除此域嗎？"
+
+#. popup text FIXME better...
+#: src/include/nis/ui.rb:1251
+msgid "NIS is now enabled."
+msgstr "現在已啟用了 NIS。"
+
+#. Translators: do not translate (none)!
+#: src/modules/Nis.rb:580
+msgid ""
+"A NIS domain name must not be empty,\n"
+"it must not be \"(none)\",\n"
+"and it must be at most 64 characters long.\n"
+msgstr ""
+"NIS 域名不能為空，\n"
+"它不能是\"(無)\"，\n"
+"並且不能超過 64 個字元。\n"
+
+#. message popup
+#: src/modules/Nis.rb:600
+msgid ""
+"Only an IP address can be used\n"
+"because host names are resolved using NIS.\n"
+"\n"
+msgstr ""
+"因為使用 NIS 解析主機名，\n"
+"所以僅能使用 IP 地址。\n"
+"\n"
+
+#. Translators: popup message part, ends with a newline
+#: src/modules/Nis.rb:647
+msgid "The automounter package will be installed.\n"
+msgstr "將安裝 Automounter 軟體包。\n"
+
+#. summary: Domain or servers are retrieved by the
+#. Dynamic Host Configuration Protocol.
+#. Will be placed after NIS Domain/NIS Servers instead of the
+#. actual settings.
+#: src/modules/Nis.rb:826
+msgid "by DHCP"
+msgstr "由 DHCP"
+
+#. summary header
+#: src/modules/Nis.rb:829
+msgid "NIS Client enabled"
+msgstr "已啟用 NIS 客戶端"
+
+#. summary header
+#: src/modules/Nis.rb:833
+msgid "NIS Domain"
+msgstr "NIS 域"
+
+#. summary header
+#: src/modules/Nis.rb:836
+msgid "NIS Servers"
+msgstr "NIS 伺服器"
+
+#. TODO: a full list
+#: src/modules/Nis.rb:848
+msgid "Other domains"
+msgstr "其它域"
+
+#. summary header
+#: src/modules/Nis.rb:851
+msgid "Answer to local host only"
+msgstr "僅回答本地主機"
+
+#. summary header
+#: src/modules/Nis.rb:855
+msgid "Broken server"
+msgstr "伺服器容錯"
+
+#. summary header
+#: src/modules/Nis.rb:859
+msgid "ypbind options"
+msgstr "ypbind 選項"
+
+#. summary item (yes/no follows)
+#: src/modules/Nis.rb:892
+msgid "Client Enabled"
+msgstr "已啟用客戶端"
+
+#. dialog label
+#: src/modules/Nis.rb:1208
+msgid "Writing NIS Configuration..."
+msgstr "正在寫入 NIS 配置..."
+
+#. progress stage label
+#: src/modules/Nis.rb:1213
+msgid "Stop services"
+msgstr "停止服務"
+
+#. progress stage label
+#: src/modules/Nis.rb:1215
+msgid "Start services"
+msgstr "啟動服務"
+
+#. progress step label
+#: src/modules/Nis.rb:1219
+msgid "Stopping services..."
+msgstr "正在停止服務..."
+
+#. progress step label
+#: src/modules/Nis.rb:1221
+msgid "Starting services..."
+msgstr "正在啟動服務..."
+
+#. final progress step label
+#: src/modules/Nis.rb:1223
+msgid "Finished"
+msgstr "已完成"
+
+#. help text
+#: src/modules/Nis.rb:1229
+msgid "Writing NIS client settings"
+msgstr "正在寫入 NIS 客戶端設定"
+
+#. error popup message
+#: src/modules/Nis.rb:1254
+msgid "Error while running ypclient."
+msgstr "運行 ypclient 時出錯。"
+
+#. error popup message
+#: src/modules/Nis.rb:1262
+msgid "NIS server not found."
+msgstr "未找到 NIS 伺服器。"
+
+#~ msgid "<p>If you are using <b>DHCP</b> and the server provides the NIS domain name or servers, you can enable their use here. DHCP itself can be set up in the network module.</p>"
+#~ msgstr "<p>如果您正在使用 <b>DHCP</b> 並且伺服器提供 NIS 域名或伺服器，則可以在此使用它們。DHCP 本身可以在網路模組中進行設定。</p>"
+
+#~ msgid "Error while running portmapper."
+#~ msgstr "運行 Portmapper 時出錯。"
+
+#~ msgid ""
+#~ "NIS configuration is not currently provided by DHCP.\n"
+#~ "Change the DHCP server configuration to provide it.\n"
+#~ msgstr ""
+#~ "DHCP 當前不提供 NIS 配置。\n"
+#~ "請變更 DHCP 伺服器配置以提供該配置。\n"
+
+#~ msgid "&Static Setup"
+#~ msgstr "靜態設定(&S)"
+

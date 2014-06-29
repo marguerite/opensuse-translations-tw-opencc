@@ -1,0 +1,93 @@
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: opensuse-i 18n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:40+0200\n"
+"PO-Revision-Date: 2014-06-10 11:40+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. TODO implement behaviour if force_reset parameter provided
+#: src/clients/services_proposal.rb:52
+msgid "&Services"
+msgstr "服務(&S)"
+
+#: src/clients/services_proposal.rb:53
+msgid "Services"
+msgstr "服務"
+
+#: src/clients/services_proposal.rb:116
+msgid ""
+"<p><big><b>Services</b></big><br>\n"
+"The current setup does not provide any functionality now.</p>"
+msgstr ""
+"<p><big><b>服務</b></big><br>\n"
+"當前設定目前並未提供任何功能。</p>"
+
+#: src/clients/services_proposal.rb:121
+msgid ""
+"<p><big><b>Services</b></big><br>\n"
+"This installation proposal allows you to start and enable a service  from "
+"the \n"
+" list of services.</p>\n"
+"<p>It may also open ports in the firewall for a service if firewall is "
+"enabled\n"
+"and a particular service requires opening them.</p>\n"
+msgstr ""
+"<p><big><b>服務</b></big><br>\n"
+"此安裝提議允許您從服務列表中啟動並啟用一項服務。</p>\n"
+"<p>若啟用了防火牆且某項特定服務需要開啟防火牆埠，則也將在防火牆上開啟相應端"
+"口。</p>\n"
+
+#: src/clients/services_proposal.rb:145
+msgid ""
+"Service %service will be %toggled and port in firewall will be %switched "
+"%link"
+msgstr "服務 %service 將被 %toggled 並且防火牆上的埠將被 %switched %link"
+
+#: src/clients/services_proposal.rb:160
+msgid "Service %service will be %toggled %link"
+msgstr "服務 %service 將被 %toggled %link"
+
+#: src/clients/services_proposal.rb:258
+msgid "Package %1 is not available"
+msgstr "軟體包 %1 不可用"
+
+#: src/clients/services_proposal.rb:268
+msgid ""
+"Installation of required packages has failed; \n"
+"enabling and starting the services may also fail"
+msgstr ""
+"安裝必需軟體包失敗;\n"
+"服務的啟用與啟動可能也會失敗"
+
+#: src/clients/services_proposal.rb:283
+msgid "Cannot enable service %1"
+msgstr "無法啟用服務 %1"
+
+#: src/data/services-manager/autoyast_summary.erb:5
+msgid "Services Manager"
+msgstr "服務管理器"
+
+#: src/data/services-manager/autoyast_summary.erb:6
+msgid "Default Target"
+msgstr "默認物件"
+
+#: src/data/services-manager/autoyast_summary.erb:9
+msgid "Enabled Services"
+msgstr "啟動服務"
+
+#. Name of the systemd default target unit. Suffix '.target' is optional.
+#. @return [String] if the target has been specified in the profile. Can be nil.
+#: src/lib/services-manager/services_manager_profile.rb:104
+msgid "Unknown autoyast services profile schema for 'services-manager'"
+msgstr "未知的用於 'services-manager' 的 autoyast 服務方案樣板"
+
+

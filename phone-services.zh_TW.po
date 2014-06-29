@@ -1,0 +1,421 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Thruth Wang <lihaow@opera.com>, 2007.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: phone services\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:40+0200\n"
+"PO-Revision-Date: 2013-02-02 23:08+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. translators: command line help text for answering_machine module
+#: src/clients/answering_machine.rb:37
+msgid "Answering machine configuration."
+msgstr "應答機配置。"
+
+#. command line help text for 'summary' action
+#: src/clients/answering_machine.rb:50
+msgid "Answering machine configuration summary."
+msgstr "應答機配置摘要。"
+
+#. command line summary handler
+#. command line summary handler
+#. Table header 1/5
+#. Table header 1/6
+#: src/clients/answering_machine.rb:104 src/clients/fax.rb:103
+#: src/include/phone-services/answering_machine.rb:41
+#: src/include/phone-services/fax.rb:40
+msgid "User"
+msgstr "使用者"
+
+#. Table header 2/5
+#: src/clients/answering_machine.rb:105
+#: src/include/phone-services/answering_machine.rb:43
+msgid "Phone Numbers"
+msgstr "電話號碼"
+
+#. Table header 3/5
+#: src/clients/answering_machine.rb:106
+#: src/include/phone-services/answering_machine.rb:45
+msgid "Delay"
+msgstr "延遲"
+
+#. Table header 4/5
+#: src/clients/answering_machine.rb:107
+#: src/include/phone-services/answering_machine.rb:47
+msgid "Duration"
+msgstr "持續時間"
+
+#. Table header 5/5
+#. Table header 4/6
+#: src/clients/answering_machine.rb:108 src/clients/fax.rb:106
+#: src/include/phone-services/answering_machine.rb:49
+#: src/include/phone-services/fax.rb:46
+msgid "Action"
+msgstr "動作"
+
+#. translators: command line help text for fax module
+#: src/clients/fax.rb:38
+msgid "Fax configuration."
+msgstr "傳真配置。"
+
+#. command line help text for 'summary' action
+#: src/clients/fax.rb:48
+msgid "Fax configuration summary."
+msgstr "傳真配置摘要。"
+
+#. Table header 2/6
+#: src/clients/fax.rb:104 src/include/phone-services/fax.rb:42
+msgid "Fax Numbers"
+msgstr "傳真號碼"
+
+#. Table header 3/6
+#: src/clients/fax.rb:105 src/include/phone-services/fax.rb:44
+msgid "MSN"
+msgstr "MSN"
+
+#. Table header 5/6
+#: src/clients/fax.rb:107 src/include/phone-services/fax.rb:48
+msgid "StationID"
+msgstr "基站 ID"
+
+#. Table header 6/6
+#: src/clients/fax.rb:108 src/include/phone-services/fax.rb:50
+msgid "Headline"
+msgstr "標題"
+
+#. encoding: utf-8
+#. File:	include/phone-services/answering_machine.ycp
+#. Package:	Communication
+#. Summary:     phone answering machine dialogs
+#. Authors:	Karsten Keil <kkeil@suse.de>
+#.
+#. $Id$
+#.
+#.
+#. encoding: utf-8
+#. File:	include/phone-services/fax.ycp
+#. Package:	Communication
+#. Summary:     Fax machine dialogs
+#. Authors:	Karsten Keil <kkeil@suse.de>
+#.
+#. $Id$
+#.
+#: src/include/phone-services/answering_machine.rb:25
+#: src/include/phone-services/fax.rb:24
+msgid "MailAndSave"
+msgstr "發送並儲存"
+
+#: src/include/phone-services/answering_machine.rb:26
+#: src/include/phone-services/fax.rb:25
+msgid "SaveOnly"
+msgstr "僅儲存"
+
+#. dialog caption
+#: src/include/phone-services/answering_machine.rb:35
+msgid "Answering Machine Configuration"
+msgstr "應答機配置"
+
+#. Answering machine general help 1/2
+#: src/include/phone-services/answering_machine.rb:53
+msgid ""
+"<p>An answering machine for one or more users can be\n"
+"set up in this dialog. Each user must have at least one unique phone\n"
+"number configured. Refer to the telecommunication chapter in the manuals\n"
+"for further details.</p>\n"
+msgstr ""
+"<p>可以在此對話方塊中為一個或多個使用者\n"
+"設定應答機。必須為每個使用者配置至少一個\n"
+"唯一的電話號碼。進一步細節請參考手冊中\n"
+"有關電信的章節。</p>\n"
+
+#. Answering machine general help 2/2
+#: src/include/phone-services/answering_machine.rb:60
+msgid ""
+"<p>When adding or editing a user, a dialog will be shown with\n"
+"the following details:</p>"
+msgstr ""
+"<p>在添加或編輯使用者時，\n"
+"將顯示一個包含以下細節的對話方塊：</p>"
+
+#. Answering machine help for options 1/6
+#: src/include/phone-services/answering_machine.rb:64
+msgid ""
+"<p><b>User</b>: The system user who wants to receive calls with the\n"
+"answering machine.</p>"
+msgstr ""
+"<p><b>使用者</b>：要通過應答機接收呼叫的\n"
+"系統使用者。</p>"
+
+#. Answering machine help for options 2/6
+#: src/include/phone-services/answering_machine.rb:68
+msgid ""
+"<p><b>Phone Numbers</b>: One or more phone numbers (separated by\n"
+"commas) that belong (only) to this user. You can also enter <tt>*</tt>,\n"
+"which means the user will get <b>any</b> call.</p>\n"
+msgstr ""
+"<p><b>電話號碼</b>：(僅)屬於此使用者的一個或多個\n"
+"電話號碼(用逗號分隔)。您也可輸入 <tt>*</tt>，\n"
+"表示該使用者將接收<b>任何</b>呼叫。</p>\n"
+
+#. Answering machine help for options 3/6
+#: src/include/phone-services/answering_machine.rb:74
+msgid ""
+"<p><b>Delay</b>: Delay in seconds before the answering machine responds\n"
+"to the call.</p>"
+msgstr ""
+"<p><b>延遲</b>：應答機響應呼叫前的\n"
+"延遲秒數。</p>"
+
+#. Answering machine help for options 4/6
+#: src/include/phone-services/answering_machine.rb:78
+msgid "<p><b>Duration</b>: Maximum record length for one call.</p>"
+msgstr "<p><b>持續時間</b>：一個呼叫的最大錄音長度。</p>"
+
+#. Answering machine help for options 5/6
+#: src/include/phone-services/answering_machine.rb:80
+msgid ""
+"<p><b>Action</b>: By using the default <tt>MailAndSave</tt>, recorded\n"
+"calls are sent to the user as mail and saved to disk. To\n"
+"disable the mails, set this to <tt>SaveOnly</tt>. <tt>None</tt> forbids\n"
+"recording -- the answering machine only plays the announcement.</p>\n"
+msgstr ""
+"<p><b>動作</b>：使用默認的<tt>發送並儲存</tt>動作，錄製的呼叫將作為郵件\n"
+"發送給使用者並儲存到磁碟。要\n"
+"禁用郵件，請將此設為<tt>僅儲存</tt>。<tt>無</tt>將禁用\n"
+"錄音 -- 應答機僅播放應答內容。</p>\n"
+
+#. Answering machine help for options 6/6
+#: src/include/phone-services/answering_machine.rb:87
+msgid "<p><b>Pin</b>: Identification code for the remote inquiry function.</p>"
+msgstr "<p><b>Pin</b>：遠端查詢功能的標識程式碼。</p>"
+
+#. main dialog contents
+#. `VStretch()
+#. `VStretch(),
+#. Frame title
+#: src/include/phone-services/answering_machine.rb:123
+#: src/include/phone-services/fax.rb:137
+msgid "&User Table"
+msgstr "使用者表(&U)"
+
+#. ComboBox label
+#. ComboBox label
+#: src/include/phone-services/answering_machine.rb:340
+#: src/include/phone-services/fax.rb:313
+msgid "&User"
+msgstr "使用者(&U)"
+
+#. TextEntry label
+#: src/include/phone-services/answering_machine.rb:346
+msgid "&Phone Numbers"
+msgstr "電話號碼(&P)"
+
+#. ComboBox label
+#: src/include/phone-services/answering_machine.rb:353
+msgid "&Delay"
+msgstr "延遲(&D)"
+
+#. ComboBox label
+#: src/include/phone-services/answering_machine.rb:360
+msgid "D&uration"
+msgstr "持續時間(&U)"
+
+#. ComboBox label
+#. ComboBox label
+#: src/include/phone-services/answering_machine.rb:367
+#: src/include/phone-services/fax.rb:349
+msgid "&Action"
+msgstr "動作(&A)"
+
+#. TextEntry label
+#: src/include/phone-services/answering_machine.rb:374
+msgid "P&in"
+msgstr "P&in"
+
+#. Popup::Error text
+#. Popup::Error text
+#: src/include/phone-services/answering_machine.rb:419
+#: src/include/phone-services/fax.rb:389
+msgid "User must be set."
+msgstr "必須設定使用者。"
+
+#. Popup::Error text
+#: src/include/phone-services/answering_machine.rb:428
+msgid "Phone numbers must not be empty."
+msgstr "電話號碼不能為空。"
+
+#. Popup::Error text
+#: src/include/phone-services/answering_machine.rb:437
+msgid "Delay is invalid."
+msgstr "延遲無效。"
+
+#. Popup::Error text
+#. Popup::Error text
+#: src/include/phone-services/answering_machine.rb:450
+#: src/include/phone-services/fax.rb:433
+msgid "Action is invalid."
+msgstr "動作無效。"
+
+#. dialog caption
+#: src/include/phone-services/fax.rb:34
+msgid "Fax Machine Configuration"
+msgstr "傳真機配置"
+
+#. Fax dialog general help 1/3
+#: src/include/phone-services/fax.rb:54
+msgid ""
+"<p>The fax system for one or more users can be\n"
+"set up in this dialog. Each user must have at least one unique fax\n"
+"number configured. Refer to the telecommunication chapter in the\n"
+"manuals for further details.</p>\n"
+msgstr ""
+"<p>可以在此對話方塊中為一個或多個使用者\n"
+"設定傳真系統。必須為每個使用者配置至少一個\n"
+"唯一的傳真號碼。有關細節，請參考手冊中\n"
+"有關電信的章節。</p>\n"
+
+#. Fax dialog general help 2/3
+#: src/include/phone-services/fax.rb:61
+msgid ""
+"<p><b>Prefix</b>: Only for users behind a PBX. Enter the\n"
+"prefix number for getting a public line. This number will be dialed\n"
+"before any destination number.</p>\n"
+msgstr ""
+"<p><b>字首</b>：僅用於位於交換機後的使用者。輸入用於\n"
+"獲取公共線路的字首號碼。將在撥任何目標號碼前\n"
+"先撥這個號碼。</p>\n"
+
+#. Fax dialog general help 3/3
+#: src/include/phone-services/fax.rb:67
+msgid ""
+"<p>When adding or editing a user, a dialog will be shown with\n"
+"the following fields:</p>"
+msgstr ""
+"<p>在添加或編輯使用者時，\n"
+"將顯示一個包含以下欄位的對話方塊：</p>"
+
+#. Fax dialog help for options 1/6
+#: src/include/phone-services/fax.rb:71
+msgid "<p><b>User</b>: The system user to which this fax account belongs.</p> \n"
+msgstr "<p><b>使用者</b>：此傳真帳戶所屬的系統使用者。</p> \n"
+
+#. Fax dialog help for options 2/6
+#: src/include/phone-services/fax.rb:75
+msgid ""
+"<p><b>Fax Numbers</b>: The numbers (separated by commas)\n"
+"on which faxes should be received for this user. If you enter\n"
+"<tt>*</tt>, the user gets <b>any</b> call. Leave\n"
+"this empty for a send-only account.</p>\n"
+msgstr ""
+"<p><b>傳真號碼</b>：此使用者用於接收傳真的\n"
+"號碼(用逗號分隔)。若輸入\n"
+"<tt>*</tt>，則使用者將接收<b>任何</b>呼叫。對於\n"
+"僅用於發送的帳戶，請將此留空。</p>\n"
+
+#. Fax dialog help for options 3/6
+#: src/include/phone-services/fax.rb:82
+msgid ""
+"<p><b>Outgoing MSN</b>: The number to use for outgoing calls. If\n"
+"empty, the first number of <b>Fax Numbers</b> is used.</p>\n"
+msgstr ""
+"<p><b>外發 MSN</b>：用於外發呼叫的號碼。若\n"
+"留空，則使用<b>傳真號碼</b>的第一個號碼。</p>\n"
+
+#. Fax dialog help for options 4/6
+#: src/include/phone-services/fax.rb:86
+msgid ""
+"<p><b>StationID</b>: The fax station ID. Set it to the external\n"
+"number in international format, such as <tt>+49 89 12345</tt>.</p>\n"
+msgstr ""
+"<p><b>基站 ID</b>：傳真基站 ID。請將其設為\n"
+"採用國際格式的外部號碼，例如 <tt>+49 89 12345</tt>。</p>\n"
+
+#. Fax dialog help for options 5/6
+#: src/include/phone-services/fax.rb:90
+msgid ""
+"<p><b>Headline</b>: The headline used for sending faxes -- normally\n"
+"a string containing some name.</p>\n"
+msgstr ""
+"<p><b>標題</b>：用於發送傳真的標題 -- 通常是\n"
+"包含某個名稱的字元串。</p>\n"
+
+#. Fax dialog help for options 6/6
+#: src/include/phone-services/fax.rb:94
+msgid ""
+"<p><b>Action</b>: By using the default <tt>MailAndSave</tt>,\n"
+"received faxes are sent to the user as mail and saved to disk.\n"
+"To disable the mails, set this to <tt>SaveOnly</tt>.</p>\n"
+msgstr ""
+"<p><b>動作</b>：使用默認的<tt>發送並儲存</tt>動作，\n"
+"接收的傳真將作為郵件發送給使用者並儲存到磁碟。\n"
+"要禁用郵件，請將此設為<tt>僅儲存</tt>。</p>\n"
+
+#. TextEntry label
+#: src/include/phone-services/fax.rb:156
+msgid "&Prefix"
+msgstr "字首(&P)"
+
+#. TextEntry label
+#: src/include/phone-services/fax.rb:320
+msgid "&Fax Numbers"
+msgstr "傳真號碼(&F)"
+
+#. TextEntry label
+#: src/include/phone-services/fax.rb:327
+msgid "Outgoing &MSN"
+msgstr "外發 &MSN"
+
+#. TextEntry label
+#: src/include/phone-services/fax.rb:334
+msgid "&StationID"
+msgstr "基站 ID(&S)"
+
+#. TextEntry label
+#: src/include/phone-services/fax.rb:341
+msgid "&Headline"
+msgstr "標題(&H)"
+
+#. Popup::Error text
+#: src/include/phone-services/fax.rb:399
+msgid "Fax Numbers and Outgoing MSN must not both be empty"
+msgstr "傳真號碼與外發 MSN 不能同時為空"
+
+#. Popup::Error text
+#: src/include/phone-services/fax.rb:409
+msgid "StationID is invalid."
+msgstr "基站 ID 無效。"
+
+#. Popup::Error text
+#: src/include/phone-services/fax.rb:414
+msgid "The maximum length for a StationID is twenty."
+msgstr "基站 ID 的最大長度為 20。"
+
+#. Popup::Error text
+#: src/include/phone-services/fax.rb:424
+msgid "The maximum length for a headline is fifty."
+msgstr "標題的最大長度為 50。"
+
+#~ msgid "Ad&d"
+#~ msgstr "添加(&D)"
+
+#~ msgid "&Edit"
+#~ msgstr "編輯(&E)"
+
+#~ msgid "De&lete"
+#~ msgstr "刪除(&L)"
+

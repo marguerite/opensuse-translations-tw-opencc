@@ -1,0 +1,1575 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+#
+# Thruth Wang <lihaow@opera.com>, 2007, 2008.
+# margurite <i@marguerite.su>, 2012, 2013.
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:43+0200\n"
+"PO-Revision-Date: 2014-06-24 15:07+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Traditional <opensuse-zh@opensuse.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. popup heading (in bold)
+#: src/clients/discover_registration_services.rb:34
+msgid "Local Registration Servers"
+msgstr "本地註冊伺服器"
+
+#: src/clients/discover_registration_services.rb:36
+msgid ""
+"Select a detected registration server from the list\n"
+"or the default SUSE registration server."
+msgstr ""
+"請從列表中選擇一個檢測到的註冊伺服器\n"
+"或使用默認的 SUSE 註冊伺服器。"
+
+#. error popup
+#: src/clients/discover_registration_services.rb:63
+msgid "No registration server selected."
+msgstr "未選擇註冊伺服器。"
+
+#. %s is the default SCC URL
+#: src/clients/discover_registration_services.rb:98
+msgid "SUSE Customer Center (%s)"
+msgstr "SUSE 客服中心(&s)"
+
+#. popup message
+#: src/clients/inst_scc.rb:55
+msgid "Contacting the Registration Server"
+msgstr "正在連線註冊伺服器"
+
+#. reset the user input in case an exception is raised
+#. register the system
+#: src/clients/inst_scc.rb:149 src/clients/scc_auto.rb:164
+msgid "Registering the System..."
+msgstr "正在註冊系統..."
+
+#. then register the product(s)
+#. then register the product(s)
+#. %s is name of given product
+#: src/clients/inst_scc.rb:158 src/clients/inst_scc.rb:201
+#: src/clients/inst_scc.rb:470
+msgid "Registering %s ..."
+msgstr "正在註冊 %s ..."
+
+#. display the registration update dialog
+#. dialog title
+#. dialog title
+#. Translators: Text for UI Label - capitalized
+#: src/clients/inst_scc.rb:214 src/clients/inst_scc.rb:308
+#: src/clients/inst_scc.rb:555 src/clients/inst_scc.rb:587
+#: src/clients/scc_auto.rb:371
+msgid "Registration"
+msgstr "註冊"
+
+#: src/clients/inst_scc.rb:215
+msgid "Registration is being updated..."
+msgstr "正在更新註冊..."
+
+#. automatic registration refresh during system upgrade failed, register from scratch
+#: src/clients/inst_scc.rb:230
+msgid ""
+"Automatic registration upgrade failed.\n"
+"You can manually register the system from scratch."
+msgstr ""
+"自動註冊升級失敗。\n"
+"您可以從頭開始手動註冊該系統。"
+
+#. TODO FIXME: still not the final text
+#. label text describing the registration (1/2)
+#. use \n to split to more lines if needed (use max. 76 chars/line)
+#: src/clients/inst_scc.rb:245
+msgid ""
+"Please enter a registration or evaluation code for this product and your\n"
+"User Name/EMail from the SUSE Customer Center in the fields below.\n"
+"Access to security and general software updates is only possible on\n"
+"a registered system."
+msgstr ""
+"請在下面欄位為此產品輸入一個註冊/評估碼以及您在 SUSE 客服中心的使用者名/電子郵"
+"件。\n"
+"僅有已註冊的系統才能夠獲得安全與常規軟體更新。"
+
+#. label text describing the registration (2/2),
+#. not displayed in installed system
+#. use \n to split to more lines if needed (use max. 76 chars/line)
+#: src/clients/inst_scc.rb:257
+msgid ""
+"If you skip the registration now be sure to do so in the installed system."
+msgstr "若您現在跳過註冊請一定要在安裝好的系統中註冊呀。"
+
+#: src/clients/inst_scc.rb:264
+msgid "Network Configuration..."
+msgstr "網路配置..."
+
+#: src/clients/inst_scc.rb:273 src/clients/inst_scc.rb:542
+msgid "The system is already registered."
+msgstr "系統已註冊。"
+
+#: src/clients/inst_scc.rb:280 src/clients/scc_auto.rb:373
+msgid "&Email"
+msgstr "郵件(&E)"
+
+#: src/clients/inst_scc.rb:282 src/clients/scc_auto.rb:239
+#: src/clients/scc_auto.rb:375
+msgid "Registration &Code"
+msgstr "註冊碼(&C)"
+
+#. button label
+#: src/clients/inst_scc.rb:288
+msgid "&Local Registration Server..."
+msgstr "本地註冊伺服器(&L)..."
+
+#. button label
+#: src/clients/inst_scc.rb:291
+msgid "&Skip Registration"
+msgstr "跳過註冊(&S)"
+
+#. TODO: improve the help text
+#: src/clients/inst_scc.rb:300
+msgid ""
+"Enter SUSE Customer Center credentials here to register the system to get "
+"updates and add-on products."
+msgstr "在此輸入 SUSE 客服中心賬戶資訊來註冊系統以獲得更新與附加產品。"
+
+#. not set yet?
+#: src/clients/inst_scc.rb:333
+msgid ""
+"Registration added some update repositories.\n"
+"\n"
+"Do you want to install the latest available\n"
+"on-line updates during installation?"
+msgstr ""
+"註冊程式添加了一些更新源。\n"
+"\n"
+"您想要在安裝期間安裝最新可用的線上更新嗎？"
+
+#. round the half up (more items in the first column for odd number of items)
+#: src/clients/inst_scc.rb:391
+msgid "The extension you selected needs a separate registration code."
+msgid_plural "The extensions you selected need separate registration codes."
+msgstr[0] "您所選的擴展需要單獨的註冊碼。"
+
+#: src/clients/inst_scc.rb:396
+msgid "Enter the registration code into the field below."
+msgid_plural "Enter the registration codes into the fields below."
+msgstr[0] "請將註冊碼輸入到下面欄位。"
+
+#. cache the available addons
+#: src/clients/inst_scc.rb:421
+msgid "Loading Available Add-on Products and Extensions..."
+msgstr "正在載入可用附加產品與擴展..."
+
+#. dialog title
+#: src/clients/inst_scc.rb:503
+msgid "Register Extensions and Modules"
+msgstr "註冊擴展與模組"
+
+#. dialog title
+#: src/clients/inst_scc.rb:516
+msgid "Extension and Module Registration Codes"
+msgstr "擴展與模組註冊碼"
+
+#. Popup question: confirm skipping the registration
+#: src/clients/inst_scc.rb:531
+msgid ""
+"If you do not register your system we will not be able\n"
+"to grant you access to the update repositories.\n"
+"\n"
+"You can register after the installation or visit our\n"
+"Customer Center for online registration.\n"
+"\n"
+"Really skip the registration now?"
+msgstr ""
+"若您未註冊您的系統，我們將無法保證您能夠訪問更新軟體源。\n"
+"\n"
+"您可以安裝後再註冊或訪問我們的客服中心線上註冊。\n"
+"\n"
+"現在真的要跳過註冊嗎？"
+
+#. button label
+#: src/clients/inst_scc.rb:545
+msgid "Register Again"
+msgstr "再次註冊"
+
+#. button label
+#: src/clients/inst_scc.rb:548
+msgid "Select Extensions"
+msgstr "選擇擴展"
+
+#. error message
+#: src/clients/inst_scc.rb:581
+msgid ""
+"The base product was not found,\n"
+"check your system."
+msgstr "未找到基礎產品，請檢查您的系統。"
+
+#. Command line help text for the repository module, %1 is "SUSEconnect"
+#: src/clients/scc.rb:42
+msgid "Use '%s' instead of this YaST module."
+msgstr "使用 '%s' 而不是這個 YaST 模組。"
+
+#: src/clients/scc_auto.rb:165 src/clients/scc_auto.rb:174
+#: src/clients/scc_auto.rb:194
+msgid "Contacting the SUSE Customer Center server"
+msgstr "正在聯絡 SUSE 客服中心伺服器"
+
+#. register the base product
+#. register addons
+#: src/clients/scc_auto.rb:173 src/clients/scc_auto.rb:193
+msgid "Registering Product..."
+msgid_plural "Registering Products..."
+msgstr[0] "正在註冊產品..."
+
+#. popup message: registration finished properly
+#: src/clients/scc_auto.rb:213
+msgid "Registration was successfull."
+msgstr "註冊成功。"
+
+#. ---------------------------------------------------------
+#: src/clients/scc_auto.rb:238
+msgid "Add-on &Name"
+msgstr "附加元件名稱(&N)"
+
+#: src/clients/scc_auto.rb:267
+msgid "Really delete add-on '%s'?"
+msgstr "真的刪除附加元件 '%s' 嗎？"
+
+#: src/clients/scc_auto.rb:301
+msgid "Name"
+msgstr "名稱"
+
+#: src/clients/scc_auto.rb:301
+msgid "Registration Code"
+msgstr "註冊碼"
+
+#. TODO FIXME: add a help text
+#: src/clients/scc_auto.rb:312
+msgid "Register Optional Add-ons"
+msgstr "註冊可選附加元件"
+
+#: src/clients/scc_auto.rb:349 src/data/registration/autoyast_summary.erb:5
+msgid "Product Registration"
+msgstr "產品註冊"
+
+#: src/clients/scc_auto.rb:351
+msgid ""
+"<p>Product registration includes your product in SUSE Customer Center "
+"database,\n"
+"enabling you to get online updates and technical support.\n"
+"To register while installing automatically, select <b>Run Product "
+"Registration</b>.</p>"
+msgstr ""
+"<p>產品註冊會將您的產品收納在 SUSE 客服中心資料庫中，\n"
+"使您能夠獲得線上更新與技術支援。\n"
+"要在自動安裝期間註冊，請選擇<b>運行產品註冊</b>。</p>"
+
+#: src/clients/scc_auto.rb:356
+msgid ""
+"<p>If your network deploys a custom registration server, set the correct URL "
+"of the server\n"
+"and the location of the SMT certificate in <b>SMT Server Settings</b>. "
+"Refer\n"
+"to your SMT manual for further assistance.</p>"
+msgstr ""
+"<p>若您的網路部署了一個自定義註冊伺服器，請設定正確的伺服器 URL\n"
+"以及在<b>SMT 伺服器設定</b>中設定 SMT 證書的位置。進一步協助請參考您的 SMT 手"
+"冊。</p>"
+
+#: src/clients/scc_auto.rb:364
+msgid "Register the Product"
+msgstr "註冊產品"
+
+#: src/clients/scc_auto.rb:379
+msgid "Install Available Patches from Update Repositories"
+msgstr "安裝來自更新軟體源的可用補丁"
+
+#. Translators: Text for UI Label - capitalized
+#: src/clients/scc_auto.rb:387
+msgid "Server Settings"
+msgstr "伺服器設定"
+
+#: src/clients/scc_auto.rb:391
+msgid "Find Registration Server Using SLP Discovery"
+msgstr "使用 SLP 探索查找註冊伺服器"
+
+#. Translators: Text for UI Label - capitalized
+#: src/clients/scc_auto.rb:396
+msgid "Use Specific Server URL Instead of the Default"
+msgstr "使用特定伺服器 URL 而非默認"
+
+#. Translators: Text for UI Label - capitalized
+#: src/clients/scc_auto.rb:403
+msgid "Optional Server Certificate"
+msgstr "可選伺服器證書"
+
+#: src/clients/scc_auto.rb:421
+msgid "Register Add-ons..."
+msgstr "註冊附加元件..."
+
+#. remove possible duplicates
+#: src/clients/scc_auto.rb:478
+msgid "SLP discovery failed, no server found"
+msgstr "SLP 探索失敗，未找到伺服器"
+
+#: src/data/registration/autoyast_summary.erb:9
+msgid "Run registration during autoinstallation"
+msgstr "自動安裝期間運行註冊"
+
+#: src/data/registration/autoyast_summary.erb:10
+msgid "Skip registration during autoinstallation"
+msgstr "自動安裝期間跳過註冊"
+
+#: src/data/registration/autoyast_summary.erb:15
+msgid "Registration Settings"
+msgstr "註冊設定"
+
+#: src/data/registration/autoyast_summary.erb:17
+msgid "Email: %s"
+msgstr "郵件：%s"
+
+#: src/data/registration/autoyast_summary.erb:19
+msgid "Registration Code is Configured"
+msgstr "已配置註冊碼"
+
+#: src/data/registration/autoyast_summary.erb:23
+msgid "Install Available Patches"
+msgstr "安裝可用補丁"
+
+#: src/data/registration/autoyast_summary.erb:27
+msgid "Registration Server"
+msgstr "註冊伺服器"
+
+#: src/data/registration/autoyast_summary.erb:30
+#: src/data/registration/autoyast_summary.erb:32
+msgid "Server URL: %s"
+msgstr "伺服器 URL：%s"
+
+#: src/data/registration/autoyast_summary.erb:32
+msgid "Use SLP discovery"
+msgstr "使用 SLP 探索"
+
+#: src/data/registration/autoyast_summary.erb:36
+msgid "Server Certificate: %s"
+msgstr "伺服器證書：%s"
+
+#: src/data/registration/autoyast_summary.erb:40
+msgid "Addon Products"
+msgstr "附加產品"
+
+#: src/data/registration/certificate_summary.erb:6
+msgid "Secure Connection Error"
+msgstr "安全連線錯誤"
+
+#: src/data/registration/certificate_summary.erb:10
+msgid "Details:"
+msgstr "細節："
+
+#: src/data/registration/certificate_summary.erb:14
+msgid "Failed Certificate Details"
+msgstr "失敗證書細節"
+
+#: src/data/registration/certificate_summary.erb:16
+#: src/lib/registration/connect_helpers.rb:153
+msgid "Issued To"
+msgstr "簽發給"
+
+#. label followed by the SSL certificate identification
+#: src/data/registration/certificate_summary.erb:19
+#: src/data/registration/certificate_summary.erb:28
+#: src/lib/registration/connect_helpers.rb:178
+msgid "Common Name (CN): "
+msgstr "通用名 (CN)："
+
+#. label followed by the SSL certificate identification
+#: src/data/registration/certificate_summary.erb:20
+#: src/data/registration/certificate_summary.erb:29
+#: src/lib/registration/connect_helpers.rb:180
+msgid "Organization (O): "
+msgstr "組織 (O)："
+
+#. label followed by the SSL certificate identification
+#: src/data/registration/certificate_summary.erb:21
+#: src/data/registration/certificate_summary.erb:30
+#: src/lib/registration/connect_helpers.rb:182
+msgid "Organization Unit (OU): "
+msgstr "組織單位 (OU)："
+
+#: src/data/registration/certificate_summary.erb:25
+#: src/lib/registration/connect_helpers.rb:156
+msgid "Issued By"
+msgstr "簽發人"
+
+#: src/data/registration/certificate_summary.erb:34
+msgid "Validity"
+msgstr "有效性"
+
+#: src/data/registration/certificate_summary.erb:38
+msgid "Issued On: "
+msgstr "簽發於："
+
+#: src/data/registration/certificate_summary.erb:41
+msgid "WARNING: The certificate is not valid yet!"
+msgstr "警告：證書還不是有效的！"
+
+#. label followed by the certificate expiration date
+#: src/data/registration/certificate_summary.erb:45
+msgid "Expires On: "
+msgstr "過期於： "
+
+#: src/data/registration/certificate_summary.erb:48
+msgid "WARNING: The certificate has expired!"
+msgstr "警告：證書已過期！"
+
+#: src/data/registration/certificate_summary.erb:56
+msgid "Serial Number: "
+msgstr "序列號："
+
+#: src/data/registration/certificate_summary.erb:57
+#: src/lib/registration/connect_helpers.rb:159
+msgid "SHA1 Fingerprint: "
+msgstr "SHA1 指紋: "
+
+#: src/data/registration/certificate_summary.erb:59
+#: src/lib/registration/connect_helpers.rb:161
+msgid "SHA256 Fingerprint: "
+msgstr "SHA256 指紋: "
+
+#. Error popup
+#: src/lib/registration/connect_helpers.rb:65
+msgid ""
+"Network is not configured, the registration server cannot be reached.\n"
+"Do you want to configure the network now?"
+msgstr ""
+"未配置網路，無法訪問註冊伺服器。\n"
+"您想要現在配置網路嗎？"
+
+#: src/lib/registration/connect_helpers.rb:71
+msgid "Network error, check the network configuration."
+msgstr "網路錯誤，請檢查網路配置。"
+
+#. Error popup
+#: src/lib/registration/connect_helpers.rb:76
+msgid "Connection time out."
+msgstr "連線超時。"
+
+#. Error popup
+#: src/lib/registration/connect_helpers.rb:83
+msgid ""
+"The email address is not known or\n"
+"the registration code is not valid."
+msgstr "電子郵件地址未知或註冊碼無效。"
+
+#: src/lib/registration/connect_helpers.rb:85
+msgid "Registration client error."
+msgstr "註冊客戶端錯誤。"
+
+#: src/lib/registration/connect_helpers.rb:87
+msgid ""
+"Registration server error.\n"
+"Retry registration later."
+msgstr ""
+"註冊伺服器錯誤。\n"
+"請稍候重新註冊。"
+
+#: src/lib/registration/connect_helpers.rb:89
+#: src/lib/registration/connect_helpers.rb:126
+msgid "Registration failed."
+msgstr "註冊失敗。"
+
+#. try to use a translatable message first, if not found then use
+#. the original error message from openSSL
+#: src/lib/registration/connect_helpers.rb:119
+msgid "Secure connection error: %s"
+msgstr "安全連線錯誤：%s"
+
+#. %s are error details
+#: src/lib/registration/connect_helpers.rb:143
+msgid "Details: %s"
+msgstr "細節：%s"
+
+#. label follwed by a certificate description
+#: src/lib/registration/connect_helpers.rb:152
+msgid "Certificate:"
+msgstr "證書："
+
+#. progress label
+#: src/lib/registration/connect_helpers.rb:196
+msgid "Importing the SSL certificate"
+msgstr "匯入 SSL 證書"
+
+#: src/lib/registration/connect_helpers.rb:197
+msgid "Importing '%s' certificate..."
+msgstr "正在匯入 '%s' 證書..."
+
+#. progress step title
+#: src/lib/registration/finish_dialog.rb:34
+msgid "Storing Registration Configuration..."
+msgstr "正在存儲註冊配置..."
+
+#. return the boot command line parameter
+#: src/lib/registration/helpers.rb:228
+msgid "Searching..."
+msgstr "搜索中..."
+
+#: src/lib/registration/helpers.rb:228
+msgid "Looking up local registration servers..."
+msgstr "正在查找本地註冊伺服器..."
+
+#. create UI label for a base product
+#. @param [Hash] Product (hash from pkg-bindings)
+#. @return [String] UI Label
+#: src/lib/registration/sw_mgmt.rb:108
+msgid "Unknown product"
+msgstr "未知產品"
+
+#. error message
+#: src/lib/registration/sw_mgmt.rb:139
+msgid "Saving repository configuration failed."
+msgstr "儲存軟體源配置失敗。"
+
+#. # error message
+#: src/lib/registration/sw_mgmt.rb:177
+msgid "Updating service '%s' failed."
+msgstr "更新服務 '%s' 失敗。"
+
+#. error message
+#: src/lib/registration/sw_mgmt.rb:183
+msgid "Adding service '%s' failed."
+msgstr "添加服務 '%s' 失敗。"
+
+#. error message
+#: src/lib/registration/sw_mgmt.rb:190
+msgid "Saving service '%s' failed."
+msgstr "儲存服務 '%s' 失敗。"
+
+#. error message
+#: src/lib/registration/sw_mgmt.rb:195
+msgid "Refreshing service '%s' failed."
+msgstr "重新整理服務 '%s' 失敗。"
+
+#. dialog title
+#: src/lib/registration/ui/addon_eula_dialog.rb:43
+msgid "License Agreement"
+msgstr "許可協議"
+
+#: src/lib/registration/ui/addon_eula_dialog.rb:44
+msgid "Downloading Licenses..."
+msgstr "正在下載許可證..."
+
+#. ask user to accept an addon EULA
+#. @param addon [SUSE::Connect::Product] the addon
+#. @return [Boolean] true if the EULA has been accepted
+#: src/lib/registration/ui/addon_eula_dialog.rb:74
+msgid "Downloading License Agreement..."
+msgstr "正在下載許可協議..."
+
+#. %s is an extension name, e.g. "SUSE Linux Enterprise Software Development Kit"
+#: src/lib/registration/ui/addon_eula_dialog.rb:86
+msgid ""
+"Downloading the license for\n"
+"%s\n"
+"failed."
+msgstr ""
+"下載用於\n"
+"%s\n"
+"的許可證失敗。"
+
+#. %s is an extension name, e.g. "SUSE Linux Enterprise Software Development Kit"
+#: src/lib/registration/ui/addon_eula_dialog.rb:96
+msgid "%s License Agreement"
+msgstr "%s 許可協議"
+
+#. dialog title
+#: src/lib/registration/ui/addon_selection_dialog.rb:39
+msgid "Extension and Module Selection"
+msgstr "擴展與模組選擇"
+
+#. FIXME make parameters
+#: src/lib/registration/ui/addon_selection_dialog.rb:59
+msgid "Available Extensions and Modules"
+msgstr "可用擴展與模組"
+
+#: src/lib/registration/ui/addon_selection_dialog.rb:61
+msgid "Details"
+msgstr "細節"
+
+#: src/lib/registration/ui/addon_selection_dialog.rb:64
+msgid "Select an extension or a module to show details here"
+msgstr "選擇一個擴展或模組並在此顯示其細節"
+
+#. checkbox label for an unavailable extension
+#. (%s is an extension name)
+#: src/lib/registration/ui/addon_selection_dialog.rb:123
+msgid "%s (not available)"
+msgstr "%s (不可用)"
+
+#. check the addons requiring a reg. code
+#: src/lib/registration/ui/addon_selection_dialog.rb:203
+msgid "YaST allows to select at most %s addons."
+msgstr "YaST 允許選擇最多 %s 個附加元件。"
+
+#. SSL error message
+#: src/lib/registration/ui/import_certificate_dialog.rb:26
+msgid "Self signed certificate"
+msgstr "自簽名證書"
+
+#. SSL error message
+#: src/lib/registration/ui/import_certificate_dialog.rb:28
+msgid "Self signed certificate in certificate chain"
+msgstr "證書鏈中自簽名的證書"
+
+#. push button
+#: src/lib/registration/ui/import_certificate_dialog.rb:95
+msgid "&Trust and Import"
+msgstr "信任與匯入(&T)"
+
+#. help text (RichText) for importing a SSL certificate (1/5)
+#: src/lib/registration/ui/import_certificate_dialog.rb:124
+msgid ""
+"<p>Secure connection (HTTPS) uses SSL certificates for verifying the "
+"authenticity of the server and for encrypting the transferred data.</p>"
+msgstr "<p>安全連線 (HTTPS) 使用 SSL 證書來校驗伺服器的權威性與加密所傳輸的資料。</p>"
+
+#. help text (RichText) for importing a SSL certificate (2/5)
+#: src/lib/registration/ui/import_certificate_dialog.rb:128
+msgid ""
+"<p>You can choose to import the certificate it into the list of known "
+"certificate autohorities (CA), meaning that you trust the subject and the "
+"issuer of the unknown certificate.</p>"
+msgstr ""
+"<p>您可以選擇匯入該證書到已知證書籤發機構 (CA) 列表中，這意味著您信任該未知證"
+"書的主體與簽發人。</p>"
+
+#. help text (RichText) for importing a SSL certificate (3/5)
+#: src/lib/registration/ui/import_certificate_dialog.rb:133
+msgid ""
+"<p>Importing a certificate will allow to use for example a self-signed "
+"certificate.</p>"
+msgstr "<p>匯入證書將允許使用例如自簽名的證書。</p>"
+
+#. help text (RichText) for importing a SSL certificate (4/5)
+#: src/lib/registration/ui/import_certificate_dialog.rb:137
+msgid ""
+"<p><b>Important:</b> You should verify the fingerprint of the certificate to "
+"be sure you import the genuine certificate from the requested server.</p>"
+msgstr ""
+"<p><b>重要：</b>您應該校驗該證書的指紋來確保您從所請求的伺服器匯入了真正的證"
+"書。</p>"
+
+#. help text (RichText) for importing a SSL certificate (5/5)
+#: src/lib/registration/ui/import_certificate_dialog.rb:142
+msgid ""
+"<p><b>Importing an unknown certificate without verification is a big "
+"security risk.</b></p>"
+msgstr "<p><b>未校驗即匯入一個未知證書是一個巨大的安全風險。</b></p>"
+
+#. error message, the entered URL is not valid
+#: src/lib/registration/ui/local_server_dialog.rb:51
+msgid "Invalid URL."
+msgstr "無效 URL。"
+
+#. input field label
+#: src/lib/registration/ui/local_server_dialog.rb:78
+msgid "&Local Registration Server URL"
+msgstr "本地註冊伺服器 URL(&L)"
+
+#~ msgid "SUSE Customer Center Registration"
+#~ msgstr "SUSE 客服中心註冊"
+
+#~ msgid ""
+#~ "You can manually change the repository states,\n"
+#~ "select repositories which will be used for installation."
+#~ msgstr ""
+#~ "您可以手動修改軟體源狀態，\n"
+#~ "選擇將使用哪些軟體源來進行安裝。"
+
+#~ msgid "Repository State"
+#~ msgstr "軟體源狀態"
+
+#~ msgid "In&clude Add-on Products from Separate Media"
+#~ msgstr "包含來自獨立介質的附加產品(&C)"
+
+#~ msgid "<p><b>A Registration Key is Required</b></p>"
+#~ msgstr "<p><b>需要一個註冊金鑰</b></p>"
+
+#~ msgid ""
+#~ "Automatically selecting '%s'\n"
+#~ "dependencies:\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr ""
+#~ "正在自動選擇 '%s'\n"
+#~ "依賴：\n"
+#~ "\n"
+#~ "%s"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "To install an add-on product from separate media together with &product;, "
+#~ "select\n"
+#~ "<b>Include Add-on Products from Separate Media</b>.</p>\n"
+#~ "<p>If you need specific hardware drivers for installation, see <i>%s</i> "
+#~ "site.</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "要與 &product; 一起安裝某個來自獨立介質的附加產品，請選擇\n"
+#~ "<b>包含來自獨立介質的附加產品</b>。</p>\n"
+#~ "<p>若您需要安裝特定硬體驅動，請參考 <i>%s</i> 站點。</p>"
+
+#~ msgid "Registering Selected Add-on Products and Extensions"
+#~ msgstr "正在註冊所選附加產品與擴展"
+
+#~ msgid "Enter Registration Keys for Selected Add-on Products and Extensions"
+#~ msgstr "請為所選附加產品與擴展輸入註冊金鑰"
+
+#~ msgid "Registration &Key"
+#~ msgstr "註冊金鑰(&K)"
+
+#~ msgid "Registration key"
+#~ msgstr "註冊金鑰"
+
+#~ msgid "Online Update Configuration"
+#~ msgstr "線上更新配置"
+
+#~ msgid "Support Registration"
+#~ msgstr "註冊支援服務"
+
+#~ msgid ""
+#~ "Get technical support and product updates and\n"
+#~ "manage subscriptions with Novell Customer Center."
+#~ msgstr "通過 Novell 客服中心獲得技術支援與產品更新並管理訂閱。"
+
+#~ msgid ""
+#~ "Get technical support and product updates\n"
+#~ "by registering this installation."
+#~ msgstr "註冊此計算機以獲得技術支援與產品更新。"
+
+#~ msgid "Configure Now (Recommended)"
+#~ msgstr "立即配置 (推薦)"
+
+#~ msgid "Configure Later"
+#~ msgstr "稍後配置"
+
+#~ msgid "Register Now (Recommended)"
+#~ msgstr "立即註冊 (推薦)"
+
+#~ msgid "Register Later"
+#~ msgstr "稍後註冊"
+
+#~ msgid "Include for Convenience"
+#~ msgstr "為方便起見而包含"
+
+#~ msgid "Hardware Profile"
+#~ msgstr "硬體方案"
+
+#~ msgid "Optional Information"
+#~ msgstr "可選資訊"
+
+#~ msgid "Registration and Privacy Details"
+#~ msgstr "註冊與隱私細節"
+
+#~ msgid "Your configuration was successful."
+#~ msgstr "您已配置成功。"
+
+#~ msgid "Your registration was successful."
+#~ msgstr "您已成功註冊。"
+
+#~ msgid "An update server has been added to your configuration."
+#~ msgstr "已將一個更新伺服器添加到了您的配置中。"
+
+#~ msgid "No update server could be added to your configuration."
+#~ msgstr "沒有更新伺服器可被添加到您的配置中。"
+
+#~ msgid "No software repository needed to be changed."
+#~ msgstr "沒有需要變更的軟體源。"
+
+#~ msgid "Software repositories did not need to be changed."
+#~ msgstr "無需變更軟體源。"
+
+#~ msgid "New Update Server"
+#~ msgstr "新更新伺服器"
+
+#~ msgid "Updated software repositories"
+#~ msgstr "更新的軟體源"
+
+#~ msgid "Manual Interaction Required"
+#~ msgstr "需要手動干預"
+
+#~ msgid "Needed Information"
+#~ msgstr "所需資訊"
+
+#~ msgid "Continue"
+#~ msgstr "繼續"
+
+#~ msgid ""
+#~ "A Web browser will start in which to complete\n"
+#~ "the configuration on the opened Web site."
+#~ msgstr "將啟動一個網路瀏覽器，請在其開啟的網站中完成配置。"
+
+#~ msgid "Regularly Synchronize with the Customer Center"
+#~ msgstr "定期與客服中心同步"
+
+#~ msgid "Registration and Privacy Information"
+#~ msgstr "註冊與隱私資訊"
+
+#~ msgid ""
+#~ "The server requires additional system information. Activating \n"
+#~ "submission of the hardware profile automatically."
+#~ msgstr ""
+#~ "伺服器需要額外的系統資訊。\n"
+#~ "正在自動啟用硬體方案的提交。"
+
+#~ msgid "Update Source Issues"
+#~ msgstr "更新來源問題"
+
+#~ msgid ""
+#~ "Registering as a regular user does not include the update source\n"
+#~ "in the Online Update YaST module. If you continue and later want \n"
+#~ "to update with Online Update, the source must be added manually.\n"
+#~ "Other tools, such as Software Updater in the panel, can still be \n"
+#~ "used. Alternatively, cancel then register through YaST as root \n"
+#~ "so the sources are available to all tools."
+#~ msgstr ""
+#~ "以普通使用者身份註冊將不會把更新來源包含進 YaST 線上更新模組中。\n"
+#~ "您若選擇繼續，稍後又想要使用線上更新來更新，您必須手動添加來源。\n"
+#~ "但您仍可以使用其它工具，諸如面板上的軟體更新器。\n"
+#~ "或者，先取消，然後以根使用者身份通過 YaST 重新註冊，這樣更新來源才可\n"
+#~ "供全部工具所用。"
+
+#~ msgid "Error: Data received is invalid."
+#~ msgstr "錯誤：收到的資料無效。"
+
+#~ msgid "Error: Could not retrieve data."
+#~ msgstr "錯誤：無法擷取資料。"
+
+#~ msgid ""
+#~ "No Web browser available.\n"
+#~ "Run the suse_register command manually."
+#~ msgstr ""
+#~ "沒有可用的網路瀏覽器。\n"
+#~ "請手動運行 suse_register 命令。"
+
+#~ msgid ""
+#~ "No product found to be registered.\n"
+#~ "You do not need to register this installation.\n"
+#~ "Please add update sources yourself."
+#~ msgstr ""
+#~ "未找到要註冊的產品。\n"
+#~ "您無需註冊此計算機。\n"
+#~ "請自行添加更新來源。"
+
+#~ msgid ""
+#~ "Your registration requires interactive input that is not\n"
+#~ "supported in text mode. Run YaST2 in the graphical mode or\n"
+#~ "run the suse_register command manually."
+#~ msgstr ""
+#~ "註冊需要互動輸入，但文字模式不支援互動輸入。\n"
+#~ "請以圖形模式運行 YaST2 或手動運行 suse_register 命令。"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "Configure your system to enable online updates by registering it with "
+#~ "Novell.\n"
+#~ "To do this now, select <b>Configure Now</b>. Delay the registration with\n"
+#~ "<b>Configure Later</b>.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "向 Novell 註冊您的系統後可配置並啟用線上更新。\n"
+#~ "要立即執行此操作，請選擇<b>立即配置</b>。使用<b>稍後配置</b>可推遲註冊。\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "To simplify the registration process, include information from your "
+#~ "system\n"
+#~ "with <b>Optional Information</b> and <b>Hardware Profile</b>. \n"
+#~ "<b>Details</b> shows the maximum amount of information that can be "
+#~ "involved\n"
+#~ " in your registration. To obtain this information, it contacts the "
+#~ "Novell\n"
+#~ "server to query what information is needed for your product. Only the "
+#~ "identity\n"
+#~ "of the installed product is sent in this initial exchange.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "要簡化註冊流程，可使用<b>可選資訊</b>與<b>硬體方案</b>從您的系統中採集信"
+#~ "息。\n"
+#~ "<b>細節</b>可顯示註冊過程中可能涉及的最多資訊。為獲取此資訊，註冊程式會聯"
+#~ "系\n"
+#~ "Novell 伺服器查詢您產品所需的資訊。本次初始交換僅會發送已安裝產品的身"
+#~ "份。\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "If you purchased your copy of this product, enable <b>Registration Code</"
+#~ "b>\n"
+#~ "so you are prompted for your product code. \n"
+#~ "This registers you for the installation support included with your "
+#~ "product.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "若您已購買了本產品的副本，請啟用<b>註冊碼</b>以便提示您輸入產品註冊碼。\n"
+#~ "這將為您註冊產品所含的安裝支援。\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "No information is passed to anyone outside Novell. The data is used for\n"
+#~ "statistical purposes and to enhance your convenience regarding driver "
+#~ "support\n"
+#~ "and your Web account. Find a detailed privacy policy in <b>Details</b>. "
+#~ "View\n"
+#~ "the transmitted information in the log file <tt>~/.suse_register.log</"
+#~ "tt>.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "沒有資訊會被轉讓給 Novell 以外的任何人。該資料用於統計目的，為了在驅動支援"
+#~ "與網路賬戶方面為您提供更多方便。\n"
+#~ "您可在<b>細節</b>中找到詳細的隱私策略。您可在日誌檔案 <tt>~/."
+#~ "suse_register.log</tt> 中檢視已傳輸的資訊。\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "<b>Regularly Synchronize with the Customer Center</b> checks that your "
+#~ "update \n"
+#~ "sources are still valid and adds any new ones that may be available.\n"
+#~ "It additionally sends any modifications to your included data to Novell, "
+#~ "such \n"
+#~ "as hardware information if <b>Hardware Information</b> is activated.\n"
+#~ "This option does not remove any sources added manually.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "<b>定期與客服中心同步</b>會檢查您的更新來源是否仍然有效並添加任何可用的新"
+#~ "來源。\n"
+#~ "它還會把對從您系統上採集的資料的任何修訂發送到 Novell，比如啟用了<b>硬體信"
+#~ "息</b>\n"
+#~ "時的硬體資訊。該選項不會移除任何手動添加的來源。\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "The registration process will contact a Novell server (or a local "
+#~ "registration server if your company provides one).\n"
+#~ "Make sure that the network and proxy settings are correct.\n"
+#~ "You can go back to the network setup to check or change the settings.\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "註冊程序將聯繫一個 Novell 伺服器 (或者您公司提供的本地註冊伺服器)。\n"
+#~ "請確保網路與代理設定正確。您可以回退到網路設定來檢查或修改設定。\n"
+#~ "</p>\n"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "Configure your system to enable online updates by registering it with "
+#~ "Open-SLX.\n"
+#~ "To do this now, select <b>Configure Now</b>. Delay the registration with\n"
+#~ "<b>Configure Later</b>.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "向 Open-SLX 註冊您的系統後可配置並啟用線上更新。\n"
+#~ "要立即執行此操作，請選擇<b>立即配置</b>。使用<b>稍後配置</b>可推遲註冊。\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "To simplify the registration process, include information from your "
+#~ "system\n"
+#~ "with <b>Optional Information</b> and <b>Hardware Profile</b>. \n"
+#~ "<b>Details</b> shows the maximum amount of information that can be "
+#~ "involved\n"
+#~ " in your registration. To obtain this information, it contacts the Open-"
+#~ "SLX\n"
+#~ "server to query what information is needed for your product. Only the "
+#~ "identity\n"
+#~ "of the installed product is sent in this initial exchange.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "要簡化註冊流程，可使用<b>可選資訊</b>與<b>硬體方案</b>從您的系統中採集信"
+#~ "息。\n"
+#~ "<b>細節</b>可顯示註冊過程中可能涉及的最多資訊。為獲取此資訊，註冊程式會聯"
+#~ "系\n"
+#~ "Open-SLX 伺服器查詢您產品所需的資訊。本次初始交換僅會發送已安裝產品的身"
+#~ "份。\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "No information is passed to anyone outside Open-SLX. The data is used "
+#~ "for\n"
+#~ "statistical purposes and to enhance your convenience regarding driver "
+#~ "support\n"
+#~ "and your Web account. Find a detailed privacy policy in <b>Details</b>. "
+#~ "View\n"
+#~ "the transmitted information in the log file <tt>~/.suse_register.log</"
+#~ "tt>.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "沒有資訊會被轉讓給 Open-SLX 以外的任何人。該資料用於統計目的，為了驅動器支"
+#~ "持與網路帳戶方面為您提供更多方便。\n"
+#~ "您可在<b>細節</b>中找到詳細的隱私策略。您可在日誌檔案 <tt>~/."
+#~ "suse_register.log</tt> 中檢視已傳輸的資訊。\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "<b>Regularly Synchronize with the Customer Center</b> checks that your "
+#~ "update \n"
+#~ "sources are still valid and adds any new ones that may be available.\n"
+#~ "It additionally sends any modifications to your included data to Open-"
+#~ "SLX, such \n"
+#~ "as hardware information if <b>Hardware Information</b> is activated.\n"
+#~ "This option does not remove any sources added manually.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "<b>定期與客服中心同步</b>會檢查您的更新來源是否仍然有效並添加任何可用的新"
+#~ "來源。\n"
+#~ "它還會把對從您系統上採集的資料的任何修訂發送到 Open-SLX，比如啟用了<b>硬體"
+#~ "資訊</b>\n"
+#~ "時的硬體資訊。該選項不會移除任何手動添加的來源。\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "The registration process will contact an Open-SLX server (or a local "
+#~ "registration server if your company provides one).\n"
+#~ "Please make sure that the network and proxy settings are correct.\n"
+#~ "You can step back to the network setup to check or change the settings.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "註冊程序將聯繫一個 Open-SLX  伺服器 (或者您公司提供的本地註冊伺服器)。\n"
+#~ "請確保網路與代理設定正確。您可以回退到網路設定來檢查或修改設定。\n"
+#~ "</p>"
+
+#~ msgid "Error"
+#~ msgstr "錯誤"
+
+#~ msgid "An error occurred while connecting to the server."
+#~ msgstr "連線伺服器時出錯。"
+
+#~ msgid "Starting browser..."
+#~ msgstr "正在啟動瀏覽器..."
+
+#~ msgid ""
+#~ "Initialization failed.\n"
+#~ "Can not interact with the package system."
+#~ msgstr ""
+#~ "啟始化失敗。\n"
+#~ "無法與軟體包系統互動。"
+
+#~ msgid ""
+#~ "In order to register properly the system\n"
+#~ "needs to install the following packages."
+#~ msgstr "為了正確註冊，系統需要安裝以下軟體包。"
+
+#~ msgid "active"
+#~ msgstr "已啟用"
+
+#~ msgid "expired"
+#~ msgstr "已過期"
+
+#~ msgid "returned or refunded"
+#~ msgstr "已退貨或退款"
+
+#~ msgid "full version"
+#~ msgstr "完整版本"
+
+#~ msgid "evaluation"
+#~ msgstr "評估版本"
+
+#~ msgid "provisional"
+#~ msgstr "臨時版本"
+
+#~ msgid "Registration is successful."
+#~ msgstr "註冊成功。"
+
+#~ msgid "Subscription is expired."
+#~ msgstr "訂閱已過期。"
+
+#~ msgid "Registration code is missing."
+#~ msgstr "缺少註冊碼。"
+
+#~ msgid "Registration code does not match mail address."
+#~ msgstr "註冊碼不匹配郵件地址。"
+
+#~ msgid "Registration Status at: <b>%1</b>"
+#~ msgstr "註冊狀態於：<b>%1</b>"
+
+#~ msgid "Product: <b>%1</b> (%2, %3)"
+#~ msgstr "產品：<b>%1</b> (%2, %3)"
+
+#~ msgid "Subscription: <b>%1</b> (%2)"
+#~ msgstr "訂閱：<b>%1</b> (%2)"
+
+#~ msgid "Message: %1"
+#~ msgstr "訊息：%1"
+
+#~ msgid "No status information about registered products available."
+#~ msgstr "沒有關於已註冊的產品的狀態資訊可用。"
+
+#~ msgid "Registration status is not available."
+#~ msgstr "註冊狀態不可用。"
+
+#~ msgid "Advanced"
+#~ msgstr "高階"
+
+#~ msgid "Xen Dom0 detected. The following package needs to be installed."
+#~ msgstr "檢測到 Xen Dom0。需要安裝以下軟體包。"
+
+#~ msgid "Xen DomU detected."
+#~ msgstr "檢測到 Xen DomU。"
+
+#~ msgid "The following package needs to be installed."
+#~ msgstr "需要安裝以下軟體包。"
+
+#~ msgid ""
+#~ "To count this installation correctly the package %1 needs to be installed."
+#~ msgstr "<p>為了正確統計此計算機，需要安裝軟體包 %1。</p>"
+
+#~ msgid "Therefore the following package needs to be removed first."
+#~ msgstr "因此需要先移除以下軟體包。"
+
+#~ msgid "The package %1 should have been installed and %2 removed."
+#~ msgstr "應該已經安裝了軟體包 %1 並移除了軟體包 %2。"
+
+#~ msgid ""
+#~ "Registration will continue now although the registration server may "
+#~ "miscount this installation."
+#~ msgstr "即使註冊伺服器或許漏計了此計算機，註冊也將立即繼續進行。"
+
+#~ msgid "Setting up online update source..."
+#~ msgstr "正在設定線上更新來源..."
+
+#~ msgid "Updating software repositories..."
+#~ msgstr "正在更新軟體源..."
+
+#~ msgid "Registration failed partially."
+#~ msgstr "註冊部分失敗。"
+
+#~ msgid "No products found to be registered."
+#~ msgstr "未找到要註冊的產品。"
+
+#~ msgid "unknown status"
+#~ msgstr "未知狀態"
+
+#~ msgid "%1 item of registration data"
+#~ msgstr "%1 項註冊資料"
+
+#~ msgid "Included Information"
+#~ msgstr "採集的資訊"
+
+#~ msgid "Hardware profile"
+#~ msgstr "硬體方案"
+
+#~ msgid "Optional information"
+#~ msgstr "可選資訊"
+
+#~ msgid "SMT Certificate: %1"
+#~ msgstr "SMT 證書: %1"
+
+#~ msgid "&Key"
+#~ msgstr "鍵(&K)"
+
+#~ msgid "&Value"
+#~ msgstr "值(&V)"
+
+#~ msgid "Key is invalid."
+#~ msgstr "無效鍵。"
+
+#~ msgid ""
+#~ "<p>Get more information about the registration process with "
+#~ "<tt>suse_register -h</tt>.</p>"
+#~ msgstr ""
+#~ "<p>請使用 <tt>suse_register -h</tt> 獲得有關注冊過程的更多資訊。</p>"
+
+#~ msgid ""
+#~ "<p>Other information used for registration is shown in <b>Registration\n"
+#~ "Data</b>.<br>To add a new key and value pair, press <b>Add</b> then enter "
+#~ "the\n"
+#~ "appropriate values. These parameters are the ones that can be passed with "
+#~ "<tt>suse_register\n"
+#~ "-a</tt>.<br>Get more information with <tt>suse_register -p</tt>. Remove "
+#~ "a\n"
+#~ "key-value pair with <b>Delete</b> or modify an existing pair with "
+#~ "<b>Edit</b>.</p>"
+#~ msgstr ""
+#~ "<p>用於註冊的其他資訊顯示在<b>註冊資料</b>中。<br>要添加新鍵值對，請按<b>"
+#~ "添加</b>，然後輸入適當的值。這些參數也可通過 <tt>suse_register -a</tt> 傳"
+#~ "遞。<br>可使用 <tt>suse_register -p</tt> 獲得更多資訊。可使用<b>刪除</b>移"
+#~ "除鍵值對或使用<b>編輯</b>修改現有鍵值對。</p>"
+
+#~ msgid "SMT Server"
+#~ msgstr "SMT 伺服器"
+
+#~ msgid "Run Product Registration"
+#~ msgstr "運行產品註冊"
+
+#~ msgid "Include in Registration"
+#~ msgstr "包含在註冊中"
+
+#~ msgid "Registration Data to Use"
+#~ msgstr "要使用的註冊資料"
+
+#~ msgid "Key"
+#~ msgstr "鍵"
+
+#~ msgid "Value"
+#~ msgstr "值"
+
+#~ msgid "Ad&d"
+#~ msgstr "添加(&D)"
+
+#~ msgid "&Edit"
+#~ msgstr "編輯(&E)"
+
+#~ msgid "De&lete"
+#~ msgstr "刪除(&L)"
+
+#~ msgid "SMT Server URL must start with https://"
+#~ msgstr "SMT 伺服器 URL 必須以 https:// 開頭"
+
+#~ msgid ""
+#~ "Location of SMT Certificate invalid.\n"
+#~ "See your SMT documentation.\n"
+#~ msgstr ""
+#~ "SMT 證書位置無效。\n"
+#~ "請查閱您的 SMT 文件。\n"
+
+#~ msgid "Contacting server..."
+#~ msgstr "正在聯繫伺服器..."
+
+#~ msgid "This may take a while"
+#~ msgstr "這或許要花費一點時間"
+
+#~ msgid "Please wait..."
+#~ msgstr "請稍候..."
+
+#~ msgid "Updating software repositories"
+#~ msgstr "正在更新軟體源"
+
+#~ msgid ""
+#~ "The software repositories have been updated.\n"
+#~ "Find details in the Software Repositories module."
+#~ msgstr ""
+#~ "軟體源已更新。\n"
+#~ "細節請到軟體源模組中查找。"
+
+#~ msgid "The software repositories have been updated."
+#~ msgstr "軟體源已更新。"
+
+#~ msgid "Find details in the Software Repositories module."
+#~ msgstr "細節請到軟體源模組中查找。"
+
+#~ msgid "No software repositories have been updated."
+#~ msgstr "沒有軟體源被更新。"
+
+#~ msgid "The default update repository has been restored."
+#~ msgstr "已恢復默認更新源。"
+
+#~ msgid "The default update repository has been added."
+#~ msgstr "已添加默認更新源。"
+
+#~ msgid ""
+#~ "To add the default update repository,\n"
+#~ "you have to register this product.\n"
+#~ msgstr "您必須註冊本產品才能添加默認更新源。\n"
+
+#~ msgid "Do you want to perform the registration now?"
+#~ msgstr "您想要現在執行註冊嗎？"
+
+#~ msgid "You can register for installation support."
+#~ msgstr "您可以註冊安裝支援。"
+
+#~ msgid "Server CA certificate location:"
+#~ msgstr "伺服器 CA 證書位置："
+
+#~ msgid "Custom Registration Server"
+#~ msgstr "自定義註冊伺服器"
+
+#~ msgid "URL invalid"
+#~ msgstr "URL 無效"
+
+#~ msgid "The registration server URL has to start with https://"
+#~ msgstr "註冊伺服器 URL 必須以 https:// 開頭"
+
+#~ msgid ""
+#~ "Server CA certificate location is invalid.\n"
+#~ "For details, see the help text.\n"
+#~ msgstr ""
+#~ "伺服器 CA 證書位置無效。\n"
+#~ "詳情請參閱幫助文字。\n"
+
+#~ msgid "Add custom registration data"
+#~ msgstr "添加自定義註冊資料"
+
+#~ msgid "Add key value pairs:"
+#~ msgstr "添加鍵值對："
+
+#~ msgid "See the help text for details."
+#~ msgstr "詳情請參閱幫助文字。"
+
+#~ msgid ""
+#~ "<p>To register this installation at a local registration server, "
+#~ "configure the URL and optionally the server's CA certificate via the "
+#~ "<b>Advanced</b> menu.</p>"
+#~ msgstr ""
+#~ "<p>要在本地註冊伺服器上註冊此計算機，請配置 URL，可能還要通過<b>高階</b>菜"
+#~ "單配置伺服器 CA 證書。</p>"
+
+#~ msgid ""
+#~ "<p>The registration server URL has to start with <i>https://</i> whereas "
+#~ "the location of its CA certificate may be a URL of the format <i>http://</"
+#~ "i>, <i>https://</i> or <i>ftp://</i>. Furthermore valid locations are <i>/"
+#~ "path/on/local/disk</i>, <b>floppy</b><i>/path/on/floppy-disk</i> and the "
+#~ "keyword <i>done</i>. The latter indicates that no CA certificate handling "
+#~ "needs to be done in order to trust the registration server.</p>"
+#~ msgstr ""
+#~ "<p>註冊伺服器 URL 必須以 <i>https://</i> 開頭而其 CA 證書的位置可以是 "
+#~ "<i>http://</i>、<i>https://</i> 或 <i>ftp://</i> 格式的 URL。此外有效的位"
+#~ "置為 <i>/patch/on/local/disk</i>，<b>floppy</b><i>/path/on/floppy-disk</"
+#~ "i> 與關鍵詞 <i>done</i>。後者表示不需要處理 CA 證書即可信任該註冊伺服器。"
+#~ "</p>"
+
+#~ msgid "Do you want to skip registration?"
+#~ msgstr "您想要跳過註冊嗎？"
+
+#~ msgid ""
+#~ "If you select %1, registration will most likely fail.\n"
+#~ "You can copy the certificate file to the system manually\n"
+#~ "and then specify its path by choosing %2.\n"
+#~ msgstr ""
+#~ "若您選擇 %1，註冊將很可能失敗。\n"
+#~ "您可以手動複製證書檔案到系統然後選擇 %2 指定其路徑。\n"
+
+#~ msgid "Could not load the SMT certificate file from floppy disk."
+#~ msgstr "無法從軟盤載入 SMT 證書檔案。"
+
+#~ msgid "Could not download the SMT certificate file from specified URL."
+#~ msgstr "無法從指定的 URL 下載 SMT 證書檔案。"
+
+#~ msgid "Could not find the SMT certificate file in specified path."
+#~ msgstr "無法在指定路徑中找到 SMT 證書檔案。"
+
+#~ msgid "Unknown error occurred while retrieving SMT certificate file."
+#~ msgstr "擷取 SMT 證書檔案時發生未知錯誤。"
+
+#~ msgid "Skip"
+#~ msgstr "跳過"
+
+#~ msgid "The registration server URL could not be validated as URL."
+#~ msgstr "註冊伺服器 URL 無法驗證為 URL。"
+
+#~ msgid "Change the URL and retry."
+#~ msgstr "請修改 URL 並重試。"
+
+#~ msgid ""
+#~ "The current registration server URL is\n"
+#~ "%1"
+#~ msgstr ""
+#~ "當前註冊伺服器 URL 為：\n"
+#~ "%1"
+
+#~ msgid "Could not mount floppy disk"
+#~ msgstr "無法裝載軟盤"
+
+#~ msgid "Could not read file on floppy disk"
+#~ msgstr "無法讀取軟盤中的檔案"
+
+#~ msgid "Could not find SMT certificate file in local path"
+#~ msgstr "無法在本地路徑中找到 SMT 證書"
+
+#~ msgid "Do you really want to cancel and thereby skip registration?"
+#~ msgstr "您真的想要取消從而跳過註冊嗎？"
+
+#~ msgid "Could not copy certificate file"
+#~ msgstr "無法複製證書檔案。"
+
+#~ msgid "Do you want to retry?"
+#~ msgstr "您想要重試嗎？"
+
+#~ msgid "Do you want to trust this certificate?"
+#~ msgstr "您想要信任此證書嗎？"
+
+#~ msgid ""
+#~ "This certificate will be used to connect to the SMT server.\n"
+#~ "You have to trust this certificate to continue with the registration.\n"
+#~ msgstr ""
+#~ "此證書將用於連線系統維護技術員 (SMT) 伺服器。\n"
+#~ "您必須信任此證書以繼續註冊。\n"
+
+#~ msgid "<p><b>Issued For:</b></p>"
+#~ msgstr "<p><b>簽發物件：</b></p>"
+
+#~ msgid "<p><b>Subject:</b></p>"
+#~ msgstr "<p><b>主題：</b></p>"
+
+#~ msgid "<p><b>Validity:</b></p>"
+#~ msgstr "<p><b>有效期:</b></p>"
+
+#~ msgid "Valid from: "
+#~ msgstr "有效於： "
+
+#~ msgid "Trust"
+#~ msgstr "信任"
+
+#~ msgid "Reject"
+#~ msgstr "拒絕"
+
+#~ msgid ""
+#~ "Installation of the SMT certificates failed.\n"
+#~ "See the logs for further information.\n"
+#~ msgstr ""
+#~ "系統維護技術員 (SMT) 證書安裝失敗。\n"
+#~ "更多資訊請查閱日誌。\n"
+
+#~ msgid "Enabled catalog: %1 (%2)"
+#~ msgstr "已啟用分類：%1 (%2)"
+
+#~ msgid "Disabled catalog: %1 (%2)"
+#~ msgstr "已禁用分類：%1 (%2)"
+
+#~ msgid "Added Source: %1"
+#~ msgstr "已添加來源：%1"
+
+#~ msgid "Deleted Source: %1"
+#~ msgstr "已刪除來源：%1"
+
+#~ msgid "Added Service: %1"
+#~ msgstr "已添加服務：%1"
+
+#~ msgid "Deleted Service: %1"
+#~ msgstr "已刪除服務：%1"
+
+#, fuzzy
+#~ msgid "Online Update Configuration Module Help"
+#~ msgstr "線上更新配置"
+
+#~ msgid "(default)"
+#~ msgstr "(默認)"
+
+#~ msgid "(none)"
+#~ msgstr "(沒有)"
+
+#, fuzzy
+#~ msgid "Automatic Online Update"
+#~ msgstr "啟用線上更新"
+
+#~ msgid "Set Default"
+#~ msgstr "設定預設值"
+
+#, fuzzy
+#~ msgid "<p>Press <b>%1</b> to use the default update repository.</p>"
+#~ msgstr "<p>按<b>完成</b>在輸出目錄中創建附加產品。</p>"
+
+#, fuzzy
+#~ msgid "Edit Software Repositories"
+#~ msgstr "附加軟體安裝源"
+
+#, fuzzy
+#~ msgid "Send hardware information to the smolt project"
+#~ msgstr "所選網卡的硬體資訊"
+
+#, fuzzy
+#~ msgid "Interval"
+#~ msgstr "介面"
+
+#~ msgid "Skip Interactive Patches"
+#~ msgstr "跳過互動式補丁"
+
+#, fuzzy
+#~ msgid "Agree with Licenses"
+#~ msgstr "我接受許可協議(&A)。"
+
+#, fuzzy
+#~ msgid "Current Update Repository:"
+#~ msgstr "正在創建安裝源 %1"
+
+#~ msgid "enabled"
+#~ msgstr "已啟用"
+
+#~ msgid "disabled"
+#~ msgstr "已禁用"
+
+#, fuzzy
+#~ msgid "daily"
+#~ msgstr "每日"
+
+#, fuzzy
+#~ msgid "weekly"
+#~ msgstr "每週"
+
+#, fuzzy
+#~ msgid "monthly"
+#~ msgstr "每月"
+
+#~ msgid ""
+#~ "The SMT server URL could not be validated as URL.\n"
+#~ "Registration can not be performed. Please modify /etc/suseRegister.conf "
+#~ "and run Registration manually.\n"
+#~ "The SMT server URL that was configured was\n"
+#~ "%1"
+#~ msgstr ""
+#~ "SMT 伺服器的 URL 無法被驗證為 URL。\n"
+#~ "無法進行註冊。請修改 /etc/suseRegister.conf 並手動運行註冊。\n"
+#~ "被配置的 SMT 伺服器 URL 是\n"
+#~ "%1"
+
+#~ msgid ""
+#~ "Registering as a regular user does not include the update repository\n"
+#~ "in the Online Update YaST module. If you continue and later want \n"
+#~ "to update with Online Update, the repository must be added manually.\n"
+#~ "Other tools, such as Software Updater in the panel, can still be \n"
+#~ "used. Alternatively, cancel then register through YaST as root \n"
+#~ "so the repositories are available to all tools."
+#~ msgstr ""
+#~ "作為普通使用者註冊就不會在線上更新 YaST \n"
+#~ "模組中包含更新軟體源。如果繼續並在稍後要\n"
+#~ "使用線上更新來更新，必須手動添加軟體源。\n"
+#~ "其他工具，例如面板中的軟體更新仍然可用。\n"
+#~ "您也可以先取消，通過 YaST 作為 root 使用者註冊，\n"
+#~ "以使軟體源可用於所有工具。"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "<b>Regularly Synchronize with the Customer Center</b> checks that your "
+#~ "update \n"
+#~ "repositories are still valid and adds any new ones that may be "
+#~ "available.\n"
+#~ "It additionally sends any modifications to your included data to Novell, "
+#~ "such \n"
+#~ "as hardware information if <b>Hardware Information</b> is activated.\n"
+#~ "This option does not remove any repositories added manually.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "<b>定期與 Customer Center 同步</b>檢查更新\n"
+#~ "源是否仍然有效並添加任何可用的新源。\n"
+#~ "它還將對使用者所包含資料的任何修改發送到 Novell，比\n"
+#~ "如啟用<b>硬體資訊</b>時的硬體資訊。\n"
+#~ "此選項不會去除任何手動添加的源。\n"
+#~ " </p>"
+

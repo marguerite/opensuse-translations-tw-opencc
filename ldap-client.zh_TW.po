@@ -1,0 +1,1675 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+# Thruth Wang <lihaow@opera.com>
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005, 2012, 2013.
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: ldap client\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:42+0200\n"
+"PO-Revision-Date: 2014-06-18 19:44+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. translators: command line help text for Ldap client module
+#: src/clients/ldap.rb:53
+msgid "LDAP client configuration module"
+msgstr "LDAP 客戶端配置模組"
+
+#. translators: command line help text for pam action
+#: src/clients/ldap.rb:66
+msgid "Enable or disable authentication with LDAP"
+msgstr "啟用或禁用 LDAP 認證"
+
+#. translators: command line help text for summary action
+#: src/clients/ldap.rb:73
+msgid "Configuration summary of the LDAP client"
+msgstr "LDAP 客戶端配置摘要"
+
+#. translators: command line help text for configure action
+#: src/clients/ldap.rb:83
+msgid "Change the global settings of the LDAP client"
+msgstr "修改 LDAP 客戶端全局設定"
+
+#. translators: command line help text for pam enable option
+#: src/clients/ldap.rb:91
+msgid "Enable the service"
+msgstr "啟用服務"
+
+#. translators: command line help text for pam disable option
+#: src/clients/ldap.rb:97
+msgid "Disable the service"
+msgstr "禁用服務"
+
+#. translators: command line help text for the server option
+#: src/clients/ldap.rb:103
+msgid "The LDAP server name"
+msgstr "LDAP 伺服器名稱"
+
+#. translators: command line help text for the base option
+#: src/clients/ldap.rb:110
+msgid "Distinguished name (DN) of the search base"
+msgstr "搜索基址判別名 (DN)"
+
+#. command line help text for the 'createconfig' option
+#: src/clients/ldap.rb:117
+msgid "Create default configuration objects."
+msgstr "創建默認配置物件。"
+
+#. command line help text for the 'ldappw' option
+#: src/clients/ldap.rb:123
+msgid "LDAP Server Password"
+msgstr "LDAP 伺服器密碼"
+
+#. help text for the 'automounter' option
+#: src/clients/ldap.rb:130
+msgid "Start or stop automounter"
+msgstr "啟動或停止自動裝載器"
+
+#. help text for the 'mkhomedir' option
+#: src/clients/ldap.rb:138
+msgid "Create Home Directory on Login"
+msgstr "在登入時創建家資料夾"
+
+#. help text for the 'tls' option
+#: src/clients/ldap.rb:146
+msgid "Encrypted connection (StartTLS)"
+msgstr "加密連線 (StartTLS)"
+
+#. help text for the 'sssd' option
+#: src/clients/ldap.rb:154
+msgid "Use System Security Services Daemon (SSSD)"
+msgstr "使用系統安全服務守護程式 (SSSD)"
+
+#. help text for the 'cache_credentials' option
+#: src/clients/ldap.rb:162
+msgid "SSSD Offline Authentication"
+msgstr "SSSD 離線認證"
+
+#. command line help text for the 'realm' option
+#: src/clients/ldap.rb:170
+msgid "Kerberos Realm"
+msgstr "Kerberos 領域"
+
+#. command line help text for the 'kdc' option
+#: src/clients/ldap.rb:177
+msgid "KDC Server Address"
+msgstr "KDC 伺服器地址"
+
+#. password entering label
+#: src/clients/ldap.rb:313
+msgid "LDAP Server Password:"
+msgstr "LDAP 伺服器密碼："
+
+#. popup text
+#: src/include/ldap/ui.rb:88
+msgid "Really abort the writing process?"
+msgstr "真的中止寫入過程嗎？"
+
+#. help text
+#: src/include/ldap/ui.rb:96
+msgid "Writing LDAP Client Settings"
+msgstr "正在寫入 LDAP 客戶端設定"
+
+#. popup window
+#: src/include/ldap/ui.rb:130
+msgid "Scanning for LDAP servers provided by SLP..."
+msgstr "正在掃描 SLP 提供的 LDAP 伺服器..."
+
+#. multiselection box label
+#: src/include/ldap/ui.rb:152
+msgid "LDAP &Servers Provided by SLP"
+msgstr "SLP 提供的 LDAP 伺服器(&S)"
+
+#. warning popup
+#: src/include/ldap/ui.rb:206
+msgid "The certificate file does not seem to have valid format."
+msgstr "證書檔案格式似乎不是有效的。"
+
+#. Popup for TLS/SSL related stuff
+#: src/include/ldap/ui.rb:248
+msgid "SSL/TLS Configuration"
+msgstr "SSL/TLS 配置"
+
+#: src/include/ldap/ui.rb:255
+msgid "Use SSL/TLS"
+msgstr "使用 SSL/TLS"
+
+#: src/include/ldap/ui.rb:264
+msgid "Protocols"
+msgstr "協議"
+
+#: src/include/ldap/ui.rb:278
+msgid "StartTLS"
+msgstr "StartTLS"
+
+#: src/include/ldap/ui.rb:286
+msgid "LDAPS"
+msgstr "LDAPS"
+
+#: src/include/ldap/ui.rb:300
+msgid "TLS Options"
+msgstr "TLS 選項"
+
+#: src/include/ldap/ui.rb:310
+msgid "Request server certificate"
+msgstr "需要伺服器證書"
+
+#: src/include/ldap/ui.rb:320
+msgid "Certificates"
+msgstr "證書"
+
+#. inputfield label
+#: src/include/ldap/ui.rb:330
+msgid "Cer&tificate Directory"
+msgstr "證書資料夾(&T)"
+
+#. button label
+#: src/include/ldap/ui.rb:336
+msgid "B&rowse"
+msgstr "瀏覽(&B)"
+
+#. inputfield label
+#: src/include/ldap/ui.rb:345
+msgid "CA Cert&ificate File"
+msgstr "CA 證書檔案(&I)"
+
+#. button label
+#: src/include/ldap/ui.rb:351
+msgid "Brows&e"
+msgstr "瀏覽(&E)"
+
+#. inputfield label
+#: src/include/ldap/ui.rb:360
+msgid "CA Certificate URL for Download"
+msgstr "CA 證書下載 URL"
+
+#. push button label
+#: src/include/ldap/ui.rb:365
+msgid "Do&wnload CA Certificate"
+msgstr "下載 CA 證書(&W)"
+
+#. popup label
+#: src/include/ldap/ui.rb:425
+msgid "Choose the directory with certificates"
+msgstr "選擇證書資料夾"
+
+#. popup label
+#: src/include/ldap/ui.rb:437
+msgid "Choose the certificate file"
+msgstr "選擇證書檔案"
+
+#. error message
+#: src/include/ldap/ui.rb:462
+msgid "Could not download the certificate file from specified URL."
+msgstr "無法從指定 URL 下載證書檔案。"
+
+#. popup message, %1 is file name, %2 directory
+#: src/include/ldap/ui.rb:497
+msgid ""
+"The downloaded certificate file\n"
+"\n"
+"'%1'\n"
+"\n"
+"has been copied to '%2' directory.\n"
+msgstr ""
+"下載的證書檔案\n"
+"\n"
+"'%1'\n"
+"\n"
+"已複製到 '%2' 資料夾。\n"
+
+#. help text 1/9
+#: src/include/ldap/ui.rb:533
+msgid "<p>Set up your machine as an LDAP client.</p>\n"
+msgstr "<p>將您的計算機設定為 LDAP 客戶端。</p>\n"
+
+#. help text 2/9
+#: src/include/ldap/ui.rb:535
+msgid ""
+"<p>To authenticate your users with an OpenLDAP server, select <b>Use LDAP</"
+"b>. NSS and PAM will be configured accordingly.</p>"
+msgstr ""
+"<p>要與 OpenLDAP 伺服器認證您的使用者，請選擇<b>使用 LDAP</b>。相應地還將配置 "
+"NSS 與 PAM。</p>"
+
+#. help text 3/9
+#: src/include/ldap/ui.rb:539
+msgid ""
+"<p>To deactivate LDAP services, click <b>Do Not Use LDAP</b>.\n"
+"If you deactivate LDAP, the current LDAP entry for passwd in /etc/nsswitch."
+"conf\n"
+"will be removed. The PAM configuration will be modified and the LDAP entry\n"
+"removed.</p>"
+msgstr ""
+"<p>要取消啟用 LDAP 服務，請點選<b>不使用 LDAP</b>。\n"
+"若您取消啟用了 LDAP，則將移除 /etc/nsswitch.conf 中的當前 LDAP 密碼項。\n"
+"PAM 配置將被修改並且 LDAP 項將被移除。</p>"
+
+#. help text 3.5/9
+#: src/include/ldap/ui.rb:546
+msgid ""
+"<p>To activate LDAP but forbid users from logging in to this machine, select "
+"<b>Enable LDAP Users but Disable Logins</b>.</p>"
+msgstr ""
+"<p>要啟用 LDAP 但禁止使用者登入到此計算機，請選擇<b>啟用 LDAP 使用者但禁用登入</"
+"b>。</p>"
+
+#. help text
+#: src/include/ldap/ui.rb:550
+msgid ""
+"<p>Check <b>Use System Security Services Daemon</b> if you want the system "
+"to use SSSD instead of nss_ldap.</p>"
+msgstr ""
+"<p>若您想要系統使用 SSSD 而不是 nss_ldap，請勾選<b>使用系統安全服務守護程式</"
+"b>。</p>"
+
+#. help text 4/9
+#: src/include/ldap/ui.rb:554
+msgid ""
+"<p>Enter the LDAP server's address (such as ldap.example.com or 10.20.0.2) "
+"in <b>Addresses</b> and the distinguished name of the search base (<b>Base "
+"DN</b>, such as dc=example,dc=com). Specify multiple servers\n"
+"by separating their addresses with spaces. It must be possible to resolve "
+"the\n"
+"addresses without using LDAP. You can also specify the port on which the "
+"server is running using the syntax \"server:port\", for example, <tt>ldap."
+"example.com:379</tt>.\n"
+"</p>\n"
+msgstr ""
+"<p>請在<b>地址</b>中輸入 LDAP 伺服器的地址 (諸如 ldap.example.com 或 "
+"10.20.0.2) 與搜索基址的判別名 (<b>基本判別名</b>，如 dc=example,dc=com)。\n"
+"指定多個伺服器時請使用空格分隔它們的地址。\n"
+"地址必須在不使用 LDAP 的情況下也能解析。\n"
+"您也可以使用語法 \"伺服器:埠\" 來指定伺服器運行的埠，\n"
+"例如，<tt>ldap.example.com:379</tt>。\n"
+"</p>\n"
+
+#. help text 5/9
+#: src/include/ldap/ui.rb:561
+msgid ""
+"<p>With <b>Find</b>, select the LDAP server from the list provided by the "
+"service location protocol (SLP). Using <b>Fetch DN</b>, read the base DN "
+"from server.</p>"
+msgstr ""
+"<p>通過<b>查找</b>可從服務定位協議 (SLP) 提供的列表中選擇 LDAP 伺服器。使用"
+"<b>提取判別名</b>可從伺服器讀取基本判別名。</p>"
+
+#. help text 6/9
+#: src/include/ldap/ui.rb:565
+msgid ""
+"<p>Some LDAP servers support StartTLS (RFC2830).\n"
+"If your server supports it and it is configured, activate <b>LDAP TLS/SSL</"
+"b>\n"
+"to encrypt your communication with the LDAP server. You may download a CA\n"
+"certificate file in PEM format from a given URL.</p>\n"
+msgstr ""
+"<p>有些 LDAP 伺服器支援 StartTLS (RFC2830)。\n"
+"若您的伺服器支援並已配置了 StartTLS，請啟用 <b>LDAP TLS/SSL</b> 以加密您與 "
+"LDAP 伺服器的通訊。\n"
+"您或許需要從給定 URL 下載一個 PEM 格式的 CA 證書檔案。</p>\n"
+
+#: src/include/ldap/ui.rb:571
+msgid ""
+"<p>A TLS session may require special client configuration. One of the "
+"config\n"
+"           options is TLS_REQCERT which specifies what checks to perform on "
+"server certificates.\n"
+"           The value is the <b>level</b> that can be specified with keywords "
+"<i>never</i>, <i>allow</i>,\n"
+"           <i>try</i> and <i>demand</i>. In the <b>SSL/TLS Configuration</b> "
+"dialog there is\n"
+"           the option <b>Request server certificate</b> which will set the "
+"TLS_REQCERT\n"
+"           configuration option to <i>demand</i> if it's enabled or to "
+"<i>allow</i> if it's disabled.</p>\n"
+msgstr ""
+"<p>TLS 會話可能需要特殊的客戶端配置。\n"
+"           配置選項之一是 TLS_REQCERT 其指定了要對伺服器證書執行哪些檢查。\n"
+"           該值為 <b>level</b> 可以使用關鍵字 <i>never</i>、<i>allow</i>、\n"
+"           <i>try</i> 與 <i>demand</i> 指定。在 <b>SSL/TLS 配置</b> 對話方塊"
+"中\n"
+"           有一個 <b>請求伺服器證書</b> 選項，若啟用則其將把 TLS_REQCERT\n"
+"           配置選項設為 <i>demand</i>，若禁用則設為 <i>allow</i>。</p>\n"
+
+#: src/include/ldap/ui.rb:579
+msgid ""
+"<p>In addition to LDAP URLs and TLS/SSL encryption, LDAP supports LDAPS "
+"URLs.\n"
+"          LDAPS URLs use SSL connections instead of plain connections. They "
+"have a syntax\n"
+"          similar to LDAP URLs except the schemes are different and the "
+"default port for LDAPS URLs\n"
+"          is 636 instead of 389.</p>\n"
+msgstr ""
+"<p>除了 LDAP URLs 與 TLS/SSL 加密外，LDAP 也支援 LDAPS URLs。\n"
+"            LDAPS URLs 使用 SSL 連線而非普通連線。\n"
+"            它們的語法與 LDAP URLs 很相似除了樣式有所不同\n"
+"            且 LDAPS URLs 的默認埠是 636 而非 389。</p>\n"
+
+#. help text 8/9
+#: src/include/ldap/ui.rb:586
+msgid ""
+"<p>To configure advanced LDAP settings, click\n"
+"<b>Advanced Configuration</b>.</p>\n"
+"<p>To configure security settings, click\n"
+"<b>SSL/TLS Configuration</b>.</p>\n"
+msgstr ""
+"<p>要配置高階 LDAP 設定，請點選<b>高階配置</b>。</p>\n"
+"<p>要配置安全設定，請點選<b>SSL/TLS 配置</b>。</p>\n"
+
+#. help text 9/9 (additional)
+#: src/include/ldap/ui.rb:591
+msgid ""
+"<p><b>Automounter</b> is a daemon that automatically mounts directories, "
+"such\n"
+"as users' home directories. Its configuration files (auto.*) should already\n"
+"exist locally or over LDAP. If the automounter is not installed yet but you\n"
+"want to use it, it will be installed automatically.</p>\n"
+msgstr ""
+"<p><b>自動裝載器</b>是一個自動裝載資料夾，例如使用者的家資料夾，的守護程式。\n"
+"其配置檔案 (auto.*) 應已存在於本地或通過 LDAP 存在。\n"
+"若尚未安裝自動裝載器，而您又想要使用它，那麼將自動安裝它。</p>\n"
+
+#. check box label
+#: src/include/ldap/ui.rb:614
+msgid "Start Auto&mounter"
+msgstr "啟動自動裝載器(&M)"
+
+#. checkbox label
+#: src/include/ldap/ui.rb:625
+msgid "C&reate Home Directory on Login"
+msgstr "登入時創建家資料夾(&R)"
+
+#. checkbox label
+#: src/include/ldap/ui.rb:635
+msgid "Disable User &Logins"
+msgstr "禁用使用者登入(&L)"
+
+#. frame label
+#: src/include/ldap/ui.rb:648
+msgid "User Authentication"
+msgstr "使用者認證"
+
+#. radio button label
+#: src/include/ldap/ui.rb:663
+msgid "Do &Not Use LDAP"
+msgstr "不使用 LDAP(&N)"
+
+#. radio button label
+#: src/include/ldap/ui.rb:672
+msgid "&Use LDAP"
+msgstr "使用 LDAP(&U)"
+
+#. frame label
+#: src/include/ldap/ui.rb:687
+msgid "LDAP Client"
+msgstr "LDAP 客戶端"
+
+#. text entry label
+#: src/include/ldap/ui.rb:697
+msgid "Addresses of LDAP &Servers"
+msgstr "LDAP 伺服器地址(&S)"
+
+#. push button label
+#: src/include/ldap/ui.rb:703
+msgid "F&ind"
+msgstr "查找(&I)"
+
+#. text entry label
+#: src/include/ldap/ui.rb:711
+msgid "LDAP Base &DN"
+msgstr "LDAP 基本判別名(&D)"
+
+#. push button label
+#: src/include/ldap/ui.rb:717
+msgid "F&etch DN"
+msgstr "提取判別名(&E)"
+
+#. pushbutton label
+#: src/include/ldap/ui.rb:731
+msgid "SSL/TLS Configuration..."
+msgstr "SSL/TLS 配置..."
+
+#. pushbutton label
+#: src/include/ldap/ui.rb:733
+msgid "&Advanced Configuration..."
+msgstr "高階配置(&A)..."
+
+#. dialog title
+#. dialog label
+#: src/include/ldap/ui.rb:742 src/include/ldap/wizards.rb:90
+msgid "LDAP Client Configuration"
+msgstr "LDAP 客戶端配置"
+
+#. question popup
+#: src/include/ldap/ui.rb:765
+msgid ""
+"Previous LDAP client configuration was detected.\n"
+"\n"
+"Current configuration does not use SSSD but nss_ldap.\n"
+"Only SSSD based configurations are supported by YaST.\n"
+"Do you want to continue and use SSSD or cancel to keep the old configuration?"
+msgstr ""
+"檢測到之前的 LDAP 客戶端配置。\n"
+"\n"
+"當前配置沒有使用 SSSD，而是用了 nss_ldap。\n"
+"YaST 僅支援基於 SSSD 的配置。\n"
+"您想要繼續並使用 SSSD 還是取消並保留舊配置？"
+
+#. error popup label
+#: src/include/ldap/ui.rb:838
+msgid "Enter an LDAP base DN."
+msgstr "請輸入 LDAP 基本判別名。"
+
+#. error popup label
+#: src/include/ldap/ui.rb:845
+msgid "Enter at least one address of an LDAP server."
+msgstr "請至少輸入一個 LDAP 伺服器地址。"
+
+#. error popup label
+#: src/include/ldap/ui.rb:853
+msgid "The LDAP server address is invalid."
+msgstr "LDAP 伺服器地址無效。"
+
+#. popup question: user enabled LDAP now, but probably has
+#. enabled NIS client before
+#: src/include/ldap/ui.rb:871
+msgid ""
+"When you configure your machine as an LDAP client,\n"
+"you cannot retrieve data with NIS. Really use LDAP instead of NIS?\n"
+msgstr ""
+"若您將您的計算機配置為了 LDAP 客戶端，\n"
+"您將無法使用 NIS 擷取資料。真的使用 LDAP 而不是 NIS 嗎？\n"
+
+#. popup text
+#: src/include/ldap/ui.rb:941
+msgid "LDAP is now enabled."
+msgstr "LDAP 現已啟用。"
+
+#. message popup, part 1/2
+#: src/include/ldap/ui.rb:947
+msgid ""
+"This change only affects newly created processes and not already\n"
+"running services. Restart your services manually or reboot \n"
+"the machine to enable it for all services.\n"
+msgstr ""
+"此修改隻影響新創建的程序與尚未運行的服務。\n"
+"請手動重啟服務或重啟計算機以為全部服務啟用它。\n"
+
+#. message popup, part 1/2
+#: src/include/ldap/ui.rb:958
+msgid ""
+"\n"
+"To enable remote login for LDAP users, sshd is\n"
+"restarted automatically by YaST.\n"
+msgstr ""
+"\n"
+"為啟用 LDAP 使用者遠端登入，YaST 將自動重啟 sshd。\n"
+
+#. yes/no question
+#: src/include/ldap/ui.rb:970
+msgid ""
+"The security connection is enabled, but server certificate verification is "
+"disabled.\n"
+"Enable certificate checks now?"
+msgstr ""
+"已啟用了安全連線，但伺服器證書校驗被禁用。\n"
+"現在啟用證書檢查嗎？"
+
+#. help text caption 1
+#: src/include/ldap/ui.rb:1015
+msgid "<p><b>Advanced LDAP Client Settings</b></p>"
+msgstr "<p><b>高階 LDAP 客戶端設定</b></p>"
+
+#. help text 1/3
+#: src/include/ldap/ui.rb:1017
+msgid ""
+"<p>If Kerberos authentication should be used, specify the <b>realm</b> and "
+"<b>KDC Address</b>.\n"
+"Determine if user credentials should be cached locally by checking <b>SSSD "
+"Offline Authentication</b>.\n"
+"For more info about SSSD settings, check the man page of <tt>sssd.conf</tt>."
+"</p>\n"
+msgstr ""
+"<p>若應使用 Kerberos 認證，請指定<b>領域</b>與 <b>KDC 地址</b>。\n"
+"通過點選 <b>SSSD 離線認證</b>來決定是否本地快取使用者機要資料。\n"
+"更多 SSSD 設定資訊，請參考 <tt>sssd.conf</tt> 的 man 頁面。</p>\n"
+
+#. help text 2/3
+#: src/include/ldap/ui.rb:1023
+msgid ""
+"<p><b>Password Change Protocol</b> refers to the pam_password attribute of "
+"the\n"
+"<tt>/etc/ldap.conf</tt> file. See <tt>man pam_ldap</tt> for an explanation "
+"of its values.</p>"
+msgstr ""
+"<p><b>密碼修改協議</b>指的是 <tt>/etc/ldap.conf</tt> 檔案的 pam_password 屬"
+"性。請參考 <tt>man pam_ldap</tt> 瞭解其值的解釋。</p>"
+
+#. help text 3/3, %1 is attribute name
+#: src/include/ldap/ui.rb:1028
+msgid ""
+"<p>Set the type of LDAP groups to use.\n"
+"The default value for <b>Group Member Attribute</b> is <i>%1</i>.</p>\n"
+msgstr ""
+"<p>請設定要使用的 LDAP 組類型。\n"
+"<b>組成員屬性</b>的預設值為 <i>%1</i>。</p>\n"
+
+#: src/include/ldap/ui.rb:1034
+msgid ""
+"<p>If secure connection requires certificate checking, specify where your\n"
+"certificate file is located. Enter either a directory containing "
+"certificates\n"
+"or the explicit path to one certificate file.</p>"
+msgstr ""
+"<p>若安全連線要求證書檢查，請指定您證書檔案的位置。請輸入包含證書的資料夾或一"
+"個證書檔案的明確路徑。</p>"
+
+#. help text caption 2
+#: src/include/ldap/ui.rb:1042
+msgid "<p><b>Access to Server</b></p>"
+msgstr "<p><b>伺服器訪問</b></p>"
+
+#. help text 1/4
+#: src/include/ldap/ui.rb:1044
+msgid ""
+"<p>First, set <b>Configuration Base DN</b>.\n"
+"This is the base for storing your configuration data on the LDAP\n"
+"server.</p>\n"
+msgstr ""
+"<p>首先請設定<b>配置基本判別名</b>。\n"
+"它是 LDAP 伺服器上存儲您的配置資料的基礎。</p>\n"
+
+#. help text 2/4
+#: src/include/ldap/ui.rb:1050
+msgid ""
+"<p>To access the data stored on the server, enter the\n"
+"<b>Administrator DN</b>.\n"
+"You can enter the full DN (for example, cn=Administrator,dc=mydomain,dc=com) "
+"or \n"
+"the relative DN (for example, cn=Administrator). The LDAP base DN is "
+"appended automatically if the appropriate option is checked.</p>\n"
+msgstr ""
+"<p>要訪問存儲在伺服器上的資料，請輸入<b>管理員判別名</b>。\n"
+"您可以輸入完整判別名 (例如 cn=Administrator,dc=mydomain,dc=com)，也可以僅輸入"
+"相對判別名 (例如 cn=Administrator)。\n"
+"若勾選了適當的選項則會自動追加 LDAP 基本判別名。</p>\n"
+
+#. help text 3/4
+#: src/include/ldap/ui.rb:1057
+msgid ""
+"<p>To create the default configuration objects for LDAP users and groups,\n"
+"check <b>Create Default Configuration Objects</b>. The objects are only "
+"created when they do not already exist.</p>\n"
+msgstr ""
+"<p>要為 LDAP 使用者與組創建默認的配置物件，請勾選<b>創建默認配置物件</b>。\n"
+"僅有在不存在時才會創建這些物件。</p>\n"
+
+#. help text 4/4
+#: src/include/ldap/ui.rb:1061
+msgid ""
+"<p>Press <b>Configure</b> to configure settings stored on the\n"
+"LDAP server. You will be asked for the password if you are not connected yet "
+"or\n"
+"have changed your configuration.</p>\n"
+msgstr ""
+"<p>按<b>配置</b>配置存儲在 LDAP 伺服器上的設定。\n"
+"若您尚未連線或已修改了配置，系統將請求您輸入密碼。</p>\n"
+
+#. help text 1/1
+#: src/include/ldap/ui.rb:1068
+msgid ""
+"<p>Specify the search bases to use for specific maps (users or groups) if "
+"they are different from the base DN. These values are\n"
+"set to the ldap_user_search_base, ldap_group_search_base and "
+"ldap_autofs_search_base attributes in /etc/sssd/sssd.conf file.</p>\n"
+msgstr ""
+"<p>若特定對映 (使用者或組) 的搜索基址與基本判別名不同請指定用於特定對映的搜索基"
+"址。\n"
+"這些值將被設定到 /etc/sssd/sssd.conf 檔案中的 ldap_user_search_base 與 "
+"ldap_group_search_base 與 ldap_autofs_search_base 屬性。</p>\n"
+
+#. tab label
+#: src/include/ldap/ui.rb:1142
+msgid "C&lient Settings"
+msgstr "客戶端設定(&L)"
+
+#. tab label
+#: src/include/ldap/ui.rb:1144
+msgid "Ad&ministration Settings"
+msgstr "管理設定(&M)"
+
+#. tab label
+#: src/include/ldap/ui.rb:1146
+msgid "Naming Contexts"
+msgstr "命名環境"
+
+#. textentry label
+#: src/include/ldap/ui.rb:1180
+msgid "&User Map"
+msgstr "使用者對映(&U)"
+
+#. button label
+#: src/include/ldap/ui.rb:1186
+msgid "&Browse"
+msgstr "瀏覽(&B)"
+
+#. textentry label
+#: src/include/ldap/ui.rb:1194
+msgid "&Group Map"
+msgstr "組對映(&G)"
+
+#. button label
+#. button label
+#. button label
+#: src/include/ldap/ui.rb:1200 src/include/ldap/ui.rb:1214
+#: src/include/ldap/ui.rb:1332
+msgid "Bro&wse"
+msgstr "瀏覽(&W)"
+
+#. textentry label
+#: src/include/ldap/ui.rb:1208
+msgid "&Autofs Map"
+msgstr "&Autofs 對映"
+
+#. checkbox label
+#: src/include/ldap/ui.rb:1240
+msgid "&Use Kerberos"
+msgstr "使用 Kerberos(&U)"
+
+#. textentry label
+#: src/include/ldap/ui.rb:1248
+msgid "Default Real&m"
+msgstr "默認領域(&M)"
+
+#. textentry label
+#: src/include/ldap/ui.rb:1250
+msgid "&KDC Server Address"
+msgstr "&KDC 伺服器地址"
+
+#. combobox label
+#: src/include/ldap/ui.rb:1257
+msgid "LDAP Schema"
+msgstr "LDAP 方案"
+
+#. checkbox label
+#: src/include/ldap/ui.rb:1269
+msgid "Enable user and group enumeration"
+msgstr "啟用使用者與組列舉"
+
+#. check box label
+#: src/include/ldap/ui.rb:1281
+msgid "SSSD O&ffline Authentication"
+msgstr "SSSD 離線認證(&F)"
+
+#. combobox label
+#: src/include/ldap/ui.rb:1291
+msgid "Passwor&d Change Protocol"
+msgstr "密碼修改協議(&D)"
+
+#. combobox label
+#: src/include/ldap/ui.rb:1298
+msgid "Group Member &Attribute"
+msgstr "組成員屬性(&A)"
+
+#. textentry label
+#: src/include/ldap/ui.rb:1326
+msgid "Configuration &Base DN"
+msgstr "配置基本判別名(&B)"
+
+#. textentry label
+#: src/include/ldap/ui.rb:1341
+msgid "Administrator &DN"
+msgstr "管理員判別名(&D)"
+
+#. checkbox label
+#: src/include/ldap/ui.rb:1347
+msgid "A&ppend Base DN"
+msgstr "追加基本判別名(&P)"
+
+#. checkbox label
+#: src/include/ldap/ui.rb:1355
+msgid "Crea&te Default Configuration Objects"
+msgstr "創建默認配置物件(&T)"
+
+#. pushbutton label
+#: src/include/ldap/ui.rb:1364
+msgid "Configure User Management &Settings..."
+msgstr "配置使用者管理設定(&S)..."
+
+#. dialog label
+#: src/include/ldap/ui.rb:1384
+msgid "Advanced Configuration"
+msgstr "高階配置"
+
+#. error popup label
+#: src/include/ldap/ui.rb:1500
+msgid "Enter the DN used for binding to the LDAP server."
+msgstr "輸入用於繫結到 LDAP 伺服器的判別名。"
+
+#. error popup label
+#: src/include/ldap/ui.rb:1507
+msgid "Enter the configuration base DN."
+msgstr "請輸入配置基本判別名。"
+
+#. yes/no popup
+#: src/include/ldap/ui.rb:1592
+msgid ""
+"If you reread settings from the server,\n"
+"all changes will be lost. Really reread?\n"
+msgstr "若您從伺服器重新讀取設定將丟失全部修改。真的重新讀取嗎？\n"
+
+#. help text 1/3
+#: src/include/ldap/ui.rb:1616
+msgid ""
+"<p>Configure the template used for creating \n"
+"new objects (like users or groups).</p>\n"
+msgstr "<p>配置用於創建新物件 (如使用者或組) 的模板。</p>\n"
+
+#. help text 2/3
+#: src/include/ldap/ui.rb:1620
+msgid ""
+"<p>Edit the template attribute values with <b>Edit</b>.\n"
+"Changing the <b>cn</b> value renames the template.</p>\n"
+msgstr ""
+"<p>使用<b>編輯</b>編輯模板屬性值。\n"
+"修改 <b>CN</b> 值可重新命名模板。</p>\n"
+
+#. help text 3/3
+#: src/include/ldap/ui.rb:1624
+msgid ""
+"<p>The second table contains a list of <b>default values</b> used\n"
+"for new objects. Modify the list by adding new values, editing or\n"
+"removing current ones.</p>\n"
+msgstr ""
+"<p>第二個表包含一個用於新物件的<b>預設值</b>列表。可以通過添加新值、編輯或刪"
+"除當前值修改該列表。</p>\n"
+
+#. table header 1/2
+#. table header 1/2
+#: src/include/ldap/ui.rb:1693 src/include/ldap/ui.rb:2033
+msgid "Attribute"
+msgstr "屬性"
+
+#. table header 2/2
+#. table header 2/2
+#: src/include/ldap/ui.rb:1695 src/include/ldap/ui.rb:2035
+msgid "Value"
+msgstr "值"
+
+#. label (table folows)
+#: src/include/ldap/ui.rb:1701
+msgid "Default Values for New Objects"
+msgstr "新物件預設值"
+
+#. table header 1/2
+#: src/include/ldap/ui.rb:1707
+msgid "Attribute of Object"
+msgstr "物件屬性"
+
+#. table header 2/2
+#: src/include/ldap/ui.rb:1709
+msgid "Default Value"
+msgstr "預設值"
+
+#. button label (with non-default shortcut)
+#: src/include/ldap/ui.rb:1715
+msgid "A&dd"
+msgstr "添加(&D)"
+
+#. button label
+#: src/include/ldap/ui.rb:1717
+msgid "&Edit"
+msgstr "編輯(&E)"
+
+#. dialog label
+#: src/include/ldap/ui.rb:1729
+msgid "Object Template Configuration"
+msgstr "物件模板配置"
+
+#. yes/no popup, %1 is name
+#: src/include/ldap/ui.rb:1832
+msgid "Really delete default attribute \"%1\"?"
+msgstr "真的刪除默認屬性 \"%1\" 嗎？"
+
+#. error popup, %1 is attribute name
+#. error popup, %1 is attribute name
+#: src/include/ldap/ui.rb:1865 src/include/ldap/ui.rb:2090
+msgid ""
+"The \"%1\" attribute is mandatory.\n"
+"Enter a value."
+msgstr ""
+"'%1' 屬性是必需的。\n"
+"請輸入一個值。"
+
+#. helptext 1/4
+#: src/include/ldap/ui.rb:1886
+msgid "<p>Manage the configuration stored in the LDAP directory.</p>"
+msgstr "<p>管理存儲在 LDAP 資料夾中的配置。</p>"
+
+#. helptext 2/4
+#: src/include/ldap/ui.rb:1890
+msgid ""
+"<p>Each configuration set is called a \"configuration module.\" If there\n"
+"is no configuration module in the provided location (base configuration),\n"
+"create one with <b>New</b>. Delete the current module\n"
+"using <b>Delete</b>.</p>\n"
+msgstr ""
+"<p>每個配置集都被稱為一個 \"配置模組\"。\n"
+"若給定位置中沒有配置模組 (基本配置)，請使用<b>新建</b>創建一個。\n"
+"使用<b>刪除</b>刪除當前模組。</p>\n"
+
+#. helptext 3/4
+#: src/include/ldap/ui.rb:1897
+msgid ""
+"<p>Edit the values of attributes in the table with <b>Edit</b>.\n"
+"Some values have special meanings, for example, changing the <b>cn</b> value "
+"renames the\n"
+"current module.</p>\n"
+msgstr ""
+"<p>使用<b>編輯</b>編輯表中屬性的值。\n"
+"某些值具有特殊含義，例如修改 <b>cn</b> 值可以重新命名當前模組。</p>\n"
+
+#. helptext 4/4
+#: src/include/ldap/ui.rb:1903
+msgid ""
+"<p>To configure the default template of the current module,\n"
+"click <b>Configure Template</b>.\n"
+"</p>\n"
+msgstr ""
+"<p>要配置當前模組的默認模板，請點選<b>配置模板</b>。\n"
+"</p>\n"
+
+#. combobox label
+#: src/include/ldap/ui.rb:1983
+msgid "Configuration &Module"
+msgstr "配置模組(&M)"
+
+#. button label
+#: src/include/ldap/ui.rb:2007
+msgid "C&onfigure Template"
+msgstr "配置模板(&O)"
+
+#. dialog label
+#: src/include/ldap/ui.rb:2051
+msgid "Module Configuration"
+msgstr "模組配置"
+
+#. yes/no popup, %1 is name
+#: src/include/ldap/ui.rb:2118
+msgid "Really delete module \"%1\"?"
+msgstr "真的刪除模組 \"%1\" 嗎？"
+
+#. message
+#: src/include/ldap/ui.rb:2154
+msgid ""
+"You currently have a configuration module of each \n"
+"type, therefore you cannot add a new one.\n"
+msgstr "您當前已經有了每種類型的配置模組，因此您不能添加新模組。\n"
+
+#. label (init dialog)
+#: src/include/ldap/wizards.rb:92
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#~ msgid "<p>Browse the LDAP tree in the left part of the dialog.</p>"
+#~ msgstr "<p>在對話方塊左側瀏覽 LDAP 樹。</p>"
+
+#~ msgid ""
+#~ "<p>Once the LDAP object is selected in the tree, the table shows the "
+#~ "object data. Use <b>Edit</b> to change the value of the selected "
+#~ "attribute. Use <b>Save</b> to save your changes to LDAP.</p>"
+#~ msgstr ""
+#~ "<p>一旦在樹中選中 LDAP 物件，表格將顯示該物件資料。使用<b>編輯</b>修改所選"
+#~ "屬性的值。使用<b>儲存</b>將修改儲存到 LDAP。</p>"
+
+#~ msgid ""
+#~ "There are unsaved changes in the current entry.\n"
+#~ "Discard these changes?\n"
+#~ msgstr ""
+#~ "當前項中有未儲存的修改。\n"
+#~ "放棄這些修改嗎？\n"
+
+#~ msgid "LDAP Browser"
+#~ msgstr "LDAP 瀏覽器"
+
+#~ msgid "Current LDAP Client settings"
+#~ msgstr "當前 LDAP 客戶端設定"
+
+#~ msgid "LDAP Connections"
+#~ msgstr "LDAP 連線"
+
+#~ msgid "Administrator DN"
+#~ msgstr "管理員判別名"
+
+#~ msgid "&LDAP Server Password"
+#~ msgstr "&LDAP 伺服器密碼"
+
+#~ msgid "L&DAP TLS"
+#~ msgstr "L&DAP TLS"
+
+#~ msgid "A&nonymous Access"
+#~ msgstr "匿名訪問(&N)"
+
+#~ msgid "Enter the name of the new LDAP connection"
+#~ msgstr "輸入新 LDAP 連線的名稱。"
+
+#~ msgid "&Open"
+#~ msgstr "開啟(&O)"
+
+#~ msgid "&Reload"
+#~ msgstr "過載(&R)"
+
+#~ msgid "Use TLS for Identity Resolve"
+#~ msgstr "使用 TLS 進行身份解析"
+
+#~ msgid "Verify that the LDAP Server is running and reachable."
+#~ msgstr "確認 LDAP 伺服器正在運行並可連線。"
+
+#~ msgid ""
+#~ "Failed to establish TLS encryption.\n"
+#~ "Verify that the correct CA Certificate is installed and the Server "
+#~ "Certificate is valid."
+#~ msgstr ""
+#~ "建立 TLS 加密失敗。\n"
+#~ "請確認安裝了正確的 CA 證書並使用了有效的伺服器證書。"
+
+#~ msgid ""
+#~ "Failed to establish TLS encryption.\n"
+#~ "Verify that the Server has StartTLS support enabled."
+#~ msgstr ""
+#~ "建立 TLS 加密失敗。\n"
+#~ "請確認伺服器啟用了 StartTLS 支援。"
+
+#~ msgid "LDAP Client Enabled"
+#~ msgstr "LDAP 客戶端已啟用"
+
+#~ msgid "Yes"
+#~ msgstr "是"
+
+#~ msgid "LDAP Domain"
+#~ msgstr "LDAP 域"
+
+#~ msgid "LDAP TLS/SSL"
+#~ msgstr "LDAP TLS/SSL"
+
+#~ msgid "System Security Services Daemon (SSSD) Set"
+#~ msgstr "系統安全服務守護程式 (SSSD) 集"
+
+#~ msgid "<b>Servers</b>:%1<br>"
+#~ msgstr "<b>伺服器</b>：%1<br>"
+
+#~ msgid "<b>Base DN</b>:%1<br>"
+#~ msgstr "<b>基本判別名</b>：%1<br>"
+
+#~ msgid "<b>Client Enabled</b>:%1"
+#~ msgstr "<b>已啟用客戶端</b>：%1"
+
+#~ msgid "No"
+#~ msgstr "否"
+
+#~ msgid "Automounter Configured"
+#~ msgstr "自動裝載器已配置"
+
+#~ msgid "LDAP TLS/SSL Configured"
+#~ msgstr "LDAP TLS/SSL 已配置"
+
+#~ msgid ""
+#~ "\n"
+#~ "The server could be down or unreachable.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "伺服器可能正怠機或無法連線。\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "The value of DN is missing or invalid.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "判別名值缺失或無效。\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Attribute type not found.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "未找到屬性類型。\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Object class not found.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "未找到物件類。\n"
+
+#~ msgid "Connection to the LDAP server cannot be established."
+#~ msgstr "無法建立到 LDAP 伺服器的連線。"
+
+#~ msgid "A problem occurred while connecting to the LDAP server."
+#~ msgstr "連線到 LDAP 伺服器時出現問題。"
+
+#~ msgid "A problem occurred while reading data from the LDAP server."
+#~ msgstr "從 LDAP 伺服器讀取資料時出現問題。"
+
+#~ msgid "A problem occurred while writing LDAP users."
+#~ msgstr "寫入 LDAP 使用者時出現問題。"
+
+#~ msgid "A problem occurred while writing LDAP groups."
+#~ msgstr "寫入 LDAP 組時出現問題。"
+
+#~ msgid "A problem occurred while writing data to the LDAP server."
+#~ msgstr "寫入資料到 LDAP 伺服器時出現問題。"
+
+#~ msgid "A problem occurred while reading schema from the LDAP server."
+#~ msgstr "從 LDAP 伺服器讀取方案時出現問題。"
+
+#~ msgid "An unknown LDAP error occurred."
+#~ msgstr "發生了未知的 LDAP 錯誤。"
+
+#~ msgid "&Show Details"
+#~ msgstr "顯示細節(&S)"
+
+#~ msgid "Unknown error. Perhaps 'yast2-ldap' is not available."
+#~ msgstr "未知錯誤。或許 'yast2-ldap' 不可用。"
+
+#~ msgid "Really keep this configuration?"
+#~ msgstr "真的保留此配置嗎？"
+
+#~ msgid ""
+#~ "A possible reason for the failed connection may be that your client is\n"
+#~ "configured for TLS/SSL but the server does not support it.\n"
+#~ "\n"
+#~ "Retry connection without TLS/SSL?\n"
+#~ msgstr ""
+#~ "連線失敗的一個可能原因或許是您的客戶端被配置為使用 TLS/SSL 但伺服器並不支"
+#~ "持。\n"
+#~ "\n"
+#~ "不使用 TLS/SSL 重試嗎？\n"
+
+#~ msgid "Server: %1:%2"
+#~ msgstr "伺服器：%1:%2"
+
+#~ msgid "Administrator: %1"
+#~ msgstr "管理員：%1"
+
+#~ msgid "&Anonymous Access"
+#~ msgstr "匿名訪問(&A)"
+
+#~ msgid ""
+#~ "A direct parent for DN '%1' \n"
+#~ "does not exist in the LDAP directory.\n"
+#~ "The object with the selected DN cannot be created.\n"
+#~ msgstr ""
+#~ "LDAP 資料夾中不存在判別名 '%1' 的直接父項。\n"
+#~ "無法創建具有所選判別名的物件。\n"
+
+#~ msgid ""
+#~ "An object with the selected DN exists, but it is not a template object.\n"
+#~ "Select another one.\n"
+#~ msgstr ""
+#~ "已存在帶有所選判別名的物件，但它不是模板物件。\n"
+#~ "請選擇另一個物件。\n"
+
+#~ msgid "Writing LDAP Configuration..."
+#~ msgstr "正在寫入 LDAP 配置..."
+
+#~ msgid "Stop services"
+#~ msgstr "停止服務"
+
+#~ msgid "Update configuration files"
+#~ msgstr "更新配置檔案"
+
+#~ msgid "Start services"
+#~ msgstr "啟動服務"
+
+#~ msgid "Update configuration in LDAP directory"
+#~ msgstr "更新 LDAP 資料夾中的配置"
+
+#~ msgid "Stopping services..."
+#~ msgstr "正在停止服務..."
+
+#~ msgid "Updating configuration files..."
+#~ msgstr "正在更新配置檔案..."
+
+#~ msgid "Starting services..."
+#~ msgstr "正在啟動服務..."
+
+#~ msgid "Updating configuration in LDAP directory..."
+#~ msgstr "正在更新 LDAP 資料夾中的配置..."
+
+#~ msgid "Finished"
+#~ msgstr "已完成"
+
+#~ msgid ""
+#~ "No entry with DN '%1'\n"
+#~ "exists on the LDAP server. Create it now?\n"
+#~ msgstr "LDAP 伺服器中不存在具有判別名 '%1' 的項。現在創建它嗎？\n"
+
+#~ msgid "<p>Set the new value for the current attribute.</p>"
+#~ msgstr "<p>為當前屬性設定新值。</p>"
+
+#~ msgid ""
+#~ "<p>If the attribute can have more values, add new entries\n"
+#~ "with <b>Add Value</b>. Sometimes the button contains the list of\n"
+#~ "possible values to use for the current attribute.\n"
+#~ "If the value of the edited attribute should be a distinguished name "
+#~ "(DN),\n"
+#~ "it is possible to choose it from the LDAP tree using <b>Browse</b>.\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p>若該屬性可具有更多值，請使用<b>添加值</b>添加新項。\n"
+#~ "有時該按鈕會包含可用於當前屬性的可行值的列表。\n"
+#~ "若所編輯屬性的值應該是一個判別名 (DN)，則可使用<b>瀏覽</b>從 LDAP 樹選擇該"
+#~ "值。\n"
+#~ "</p>\n"
+
+#~ msgid "<p>The description of attribute \"%1\":<br></p>"
+#~ msgstr "<p>屬性 \"%1\" 的描述：<br></p>"
+
+#~ msgid "&Value of \"%1\" Attribute"
+#~ msgstr "'%1' 屬性的值(&V)"
+
+#~ msgid "&Values of \"%1\" Attribute"
+#~ msgstr "'%1' 屬性的值(&V)"
+
+#~ msgid "&Add Value"
+#~ msgstr "添加值(&A)"
+
+#~ msgid "&Empty Entry"
+#~ msgstr "清空項(&E)"
+
+#~ msgid ""
+#~ "The value '%1' already exists.\n"
+#~ "Please select another one."
+#~ msgstr ""
+#~ "值 '%1' 已存在。\n"
+#~ "請選擇另一個值。"
+
+#~ msgid "Configuration of user management tools"
+#~ msgstr "使用者管理工具配置"
+
+#~ msgid "Configuration of group management tools"
+#~ msgstr "組管理工具配置"
+
+#~ msgid "Object Class of New Module"
+#~ msgstr "新模組物件類"
+
+#~ msgid "&Name of New Module (\"cn\" Value)"
+#~ msgstr "新模組名稱 (\"cn\" 值)(&N)"
+
+#~ msgid ""
+#~ "The entered value already exists.\n"
+#~ "Select another one.\n"
+#~ msgstr ""
+#~ "輸入值已存在。\n"
+#~ "請選擇另一個值。\n"
+
+#~ msgid "Enter the module name."
+#~ msgstr "請輸入模組名稱。"
+
+#~ msgid ""
+#~ "<p>Here, set the values of attributes belonging\n"
+#~ "to an object using the current template. Such values are used as defaults "
+#~ "when\n"
+#~ "the new object is created.</p>\n"
+#~ msgstr ""
+#~ "<p>在此，使用當前模板設定屬於某個物件的屬性的值。\n"
+#~ "這些值在創建新物件時將用作預設值。</p>\n"
+
+#~ msgid ""
+#~ "<p>You can use special syntax to create attribute\n"
+#~ "values from existing ones. The expression <i>%attr_name</i> will be "
+#~ "replaced\n"
+#~ "with the value of attribute \"attr_name\" (for example, use \"/home/%uid"
+#~ "\"\n"
+#~ "as a value of \"homeDirectory\").</p>\n"
+#~ msgstr ""
+#~ "<p>您可以使用特殊語法從已有值創建屬性值。\n"
+#~ "表示式 <i>%attr_name</i> 將被屬性 \"attr_name\" 的值替換\n"
+#~ "(例如，將 \"/home/%uid\" 用作 \"homeDirectory\" 的值)。</p>\n"
+
+#~ msgid "Attribute &Name"
+#~ msgstr "屬性名稱(&N)"
+
+#~ msgid "Attribute &Value"
+#~ msgstr "屬性值(&V)"
+
+#~ msgid "LDAP Version 2"
+#~ msgstr "LDAP 版本 2"
+
+#~ msgid "There was a problem with writing LDAP users."
+#~ msgstr "寫入 LDAP 使用者時出現問題。"
+
+#~ msgid "There was a problem with writing LDAP groups."
+#~ msgstr "寫入 LDAP 組時出現問題。"
+
+#~ msgid "There was a problem with writing data to the LDAP server."
+#~ msgstr "將資料寫入 LDAP 伺服器時出現問題。"
+
+#~ msgid ""
+#~ "<p>Select the <b>Password Change Policies</b>, <b>Password Aging "
+#~ "Policies</b>, and <b>Lockout Policies</b> tabs to choose LDAP password "
+#~ "policy groups of attributes to configure.</p>"
+#~ msgstr ""
+#~ "<p>請選擇<b>密碼變更策略</b>、<b>密碼過期策略</b>與<b>鎖定策略</b>選項卡，"
+#~ "以選擇要配置屬性的 LDAP 密碼策略組。</p>"
+
+#~ msgid ""
+#~ "<p>Specify the <b>Maximum Number of Passwords Stored in History</b> to "
+#~ "set how many previously used passwords should be saved. Saved passwords "
+#~ "may not be used.</p>"
+#~ msgstr ""
+#~ "<p>請指定<b>歷史中儲存密碼的最大數量</b>，以設定應儲存的以前所用密碼的數"
+#~ "量。不能使用已儲存的密碼。</p>"
+
+#~ msgid ""
+#~ "<p>Check <b>User Must Change Password after Reset</b> to force users to "
+#~ "change their passwords after the the password is reset or changed by an "
+#~ "administrator.</p>"
+#~ msgstr ""
+#~ "<p>請選中<b>使用者必須在重置後變更密碼</b>，以強制使用者在管理員重置或變更密碼"
+#~ "後變更其密碼。</p>"
+
+#~ msgid ""
+#~ "<p>Check <b>User Can Change Password</b> to allow users to change their "
+#~ "passwords.</p>"
+#~ msgstr "<p>請選中<b>使用者可以變更密碼</b>，以允許使用者變更其密碼。</p>"
+
+#~ msgid ""
+#~ "<p>If the existing password must be provided along with the new password, "
+#~ "check <b>Old Password Required for Password Change</b>.</p>"
+#~ msgstr ""
+#~ "<p>如果提供新密碼的同時還必須提供現有密碼，則選中<b>變更密碼時要求提供舊密"
+#~ "碼</b>。</p>"
+
+#~ msgid ""
+#~ "<p>Select whether the password quality should be verified while passwords "
+#~ "are modified or added. Select <b>No Checking</b> if passwords should not "
+#~ "be checked at all. With <b>Accept Uncheckable Passwords</b>, passwords "
+#~ "are accepted even if the check cannot be performed, for example, if the "
+#~ "user has provided an encrypted password. With <b>Only Accept Checked "
+#~ "Passwords</b> passwords are refused if the quality test fails or the "
+#~ "password cannot be checked.</p>"
+#~ msgstr ""
+#~ "<p>請選擇修改或添加密碼時是否應校驗密碼的強度。如果根本不用檢查密碼，請選"
+#~ "擇<b>不檢查</b>。如果選擇了<b>接受不可檢查的密碼</b>，則即使無法執行檢查"
+#~ "（例如，使用者提供的密碼是加密的），密碼也將被接受。如果選擇<b>僅接受已檢查"
+#~ "的密碼</b>，則當密碼強度測試失敗或無法檢查密碼時，將拒絕該密碼。<p>"
+
+#~ msgid ""
+#~ "Set the minimum number of characters that must be used in a password in "
+#~ "<b>Minimum Password Length</b>.</p>"
+#~ msgstr "在<b>最小密碼長度</b>中設定密碼必須使用的字元的最小數量。</p>"
+
+#~ msgid ""
+#~ "<p><b>Minimum Password Age</b> sets how much time must pass between "
+#~ "modifications to the password.</p>"
+#~ msgstr "<p><b>最小密碼有效期</b>設定修改密碼的最小時間間隔。</p>"
+
+#~ msgid ""
+#~ "<p><b>Maximum Password Age</b> sets how long after modification a "
+#~ "password expires.</p>"
+#~ msgstr "<p><b>最大密碼有效期</b>用於設定密碼在修改後多長時間過期。</p>"
+
+#~ msgid ""
+#~ "<p>In <b>Time before Password Expiration to Issue Warning</b> set how "
+#~ "long before a password is due to expire that an expiration warning "
+#~ "messages should be given to an authenticating user.</p>"
+#~ msgstr ""
+#~ "<p><b>提前多長時間發出密碼失效警告</b>設定在密碼失效前多長時間向正在驗證的"
+#~ "使用者發出失效警告訊息。</p>"
+
+#~ msgid ""
+#~ "<p>Set the number of times an expired password can be used to "
+#~ "authenticate in <b>Allowed Uses of an Expired Password</b>.</p>"
+#~ msgstr ""
+#~ "<p>在<b>失效密碼的允許使用次數</b>中設定允許使用失效密碼進行驗證的次數。</"
+#~ "p>"
+
+#~ msgid ""
+#~ "<p>Check <b>Enable Password Locking</b> to forbid use of a password after "
+#~ "a specified number of consecutive failed bind attempts.</p>"
+#~ msgstr ""
+#~ "<p>選中<b>啟用密碼鎖定</b>，以禁止在指定次數的連續聯結嘗試失敗後使用密碼。"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p>Set the number of consecutive failed bind  attempts after which the "
+#~ "password may not be used to authenticate in <b>Bind Failures to Lock the "
+#~ "Password</b>.</p>"
+#~ msgstr ""
+#~ "<p>在<b>鎖定密碼的聯結失敗次數</b>中設定在多少次連續聯結嘗試失敗後禁止使用"
+#~ "密碼進行驗證。</p>"
+
+#~ msgid ""
+#~ "<p>Set how long the password cannot be used in <b>Password Lock Duration</"
+#~ "b>.</p>"
+#~ msgstr "<p>在<b>密碼鎖定持續時間</b>中設定無法使用密碼的持續時間。</p>"
+
+#~ msgid ""
+#~ "<p><b>Bind Failures Cache Duration</b> sets how long before password "
+#~ "failures are purged from the failure counter even though no successful "
+#~ "authentication has occurred.</p>"
+#~ msgstr ""
+#~ "<p><b>聯結失敗快取持續時間</b>設定從失敗計數器清除密碼失敗次數的時間間隔"
+#~ "（即使未成功驗證）。</p>"
+
+#~ msgid "&Password Change Policies"
+#~ msgstr "密碼變更策略(&P)"
+
+#~ msgid "Pa&ssword Aging Policies"
+#~ msgstr "密碼過期策略(&S)"
+
+#~ msgid "&Lockout Policies"
+#~ msgstr "鎖定策略(&L)"
+
+#~ msgid "Ma&ximum Number of Passwords Stored in History"
+#~ msgstr "歷史中儲存密碼的最大數量(&X)"
+
+#~ msgid "U&ser Must Change Password after Reset"
+#~ msgstr "重置後使用者必須變更密碼(&S)"
+
+#~ msgid "&User Can Change Password"
+#~ msgstr "使用者可以變更密碼(&U)"
+
+#~ msgid "&Old Password Required for Password Change"
+#~ msgstr "變更密碼時要求提供舊密碼(&O)"
+
+#~ msgid "Password Quality Checking"
+#~ msgstr "密碼強度檢查"
+
+#~ msgid "&No Checking"
+#~ msgstr "不檢查(&N)"
+
+#~ msgid "Acc&ept Uncheckable Passwords"
+#~ msgstr "接受不可檢查的密碼(&E)"
+
+#~ msgid "&Only Accept Checked Passwords"
+#~ msgstr "僅接受已檢查的密碼(&O)"
+
+#~ msgid "&Minimum Password Length"
+#~ msgstr "最小密碼長度(&M)"
+
+#~ msgid "Days"
+#~ msgstr "天"
+
+#~ msgid "Hours"
+#~ msgstr "小時"
+
+#~ msgid "Minutes"
+#~ msgstr "分鐘"
+
+#~ msgid "Seconds"
+#~ msgstr "秒"
+
+#~ msgid "Minimum Password Age"
+#~ msgstr "最小密碼有效期"
+
+#~ msgid "Maximum Password Age"
+#~ msgstr "最大密碼有效期"
+
+#~ msgid "Time before Password Expiration to Issue Warning"
+#~ msgstr "提前多長時間發出密碼失效警告"
+
+#~ msgid "Allowed Uses of an Expired Password"
+#~ msgstr "失效密碼的允許使用次數"
+
+#~ msgid "Enable Password Locking"
+#~ msgstr "啟用密碼鎖定"
+
+#~ msgid "Bind Failures to Lock the Password"
+#~ msgstr "鎖定密碼的聯結失敗次數"
+
+#~ msgid "Password Lock Duration"
+#~ msgstr "密碼鎖定持續時間"
+
+#~ msgid "Bind Failures Cache Duration"
+#~ msgstr "聯結失敗快取持續時間"
+
+#~ msgid "Password Policy Configuration"
+#~ msgstr "密碼策略配置"
+
+#~ msgid ""
+#~ "<p>Here, your machine can be set up as an\n"
+#~ "LDAP client.</p>\n"
+#~ msgstr ""
+#~ "<p>在此處，可將計算機設定為\n"
+#~ "LDAP 客戶機。</p>\n"
+
+#~ msgid ""
+#~ "<p>Some LDAP servers support StartTLS (RFC2830).\n"
+#~ "If your server supports it and it is configured, activate <b>LDAP TLS/"
+#~ "SSL</b>\n"
+#~ "to encrypt your communication with the LDAP server. You may download CA "
+#~ "certificate file in PEM format from given URL.</p>\n"
+#~ msgstr ""
+#~ "<p>有些 LDAP 伺服器支援 StartTLS (RFC2830)。\n"
+#~ "如果伺服器支援 StartTLS 並且 StartTLS 已配置，請啟用 <b>LDAP TLS/SSL</b>\n"
+#~ "，以對與 LDAP 伺服器的通訊進行加密。您或許可以從給出的 URL 下載 PEM 格式"
+#~ "的 CA 證書。</p>\n"
+
+#~ msgid ""
+#~ "<p>For configuration of advanced LDAP settings, click\n"
+#~ "<b>Advanced Configuration</b>.</p>\n"
+#~ msgstr ""
+#~ "<p>要配置高階 LDAP 設定，請單擊\n"
+#~ "<b>高階配置</b>。</p>\n"
+
+#~ msgid ""
+#~ "<p><b>Automounter</b> is a daemon that automatically mounts directories,\n"
+#~ "such as users' home directories.\n"
+#~ "It is assumed that its configuration files (auto.*) already exist\n"
+#~ "locally or over LDAP.\n"
+#~ "If it is not installed and you want to use it, it is installed\n"
+#~ "automatically.</p>\n"
+#~ msgstr ""
+#~ "<p><b>自動裝載</b> 是一種自動裝載目錄的守護精靈，\n"
+#~ "例如使用者的主目錄。\n"
+#~ "假定其配置檔案 (auto.*) 已經存在於\n"
+#~ "本地或通過 LDAP 存在。\n"
+#~ "如果尚未安裝該程式，而您又需要使用它，那麼將\n"
+#~ "自動安裝。</p>\n"
+
+#~ msgid "Do N&ot Use LDAP"
+#~ msgstr "不使用 LDAP(&O)"
+
+#~ msgid "Use LDAP but Disable &Logins"
+#~ msgstr "使用 LDAP 但禁用登入(&L)"
+
+#~ msgid "Secure Connection"
+#~ msgstr "安全連線"
+
+#~ msgid "LDAP &TLS/SSL"
+#~ msgstr "LDAP TLS/SSL(&T)"
+
+#~ msgid "Download CA Certificate"
+#~ msgstr "下載 CA 證書"
+
+#~ msgid ""
+#~ "The downloaded certificate file\n"
+#~ "\n"
+#~ "'%1'\n"
+#~ "\n"
+#~ "was copied to '%2' directory"
+#~ msgstr ""
+#~ "下載的證書檔案\n"
+#~ "\n"
+#~ "'%1'\n"
+#~ "\n"
+#~ "已被複制到 '%2' 目錄"
+
+#~ msgid ""
+#~ "<p><b>Password Change Protocol</b> refers to the pam_password attribute "
+#~ "of the <tt>/etc/ldap.conf</tt> file. See <tt>man pam_ldap</tt> for the "
+#~ "meaning of its values.</p>"
+#~ msgstr ""
+#~ "<p><b>密碼變更協議</b>指的是 <tt>/etc/ldap.conf</tt> 檔案的 pam_password "
+#~ "屬性。請參閱<tt>《pam_ldap 手冊》</tt>以瞭解該屬性的值的含義。</p>"
+
+#~ msgid ""
+#~ "<p>If secure connection requires certificate checking, you may specify "
+#~ "where is your certificate file located. It is possible to enter either "
+#~ "directory with certificates, or the explicit path to one certificate file."
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>如果安全連線要求證書檢查，您可以指定您證書檔案的位置。可以輸入證書所在"
+#~ "的目錄或一個證書檔案的絕對路徑。</p>"
+
+#~ msgid ""
+#~ "<p>Normally, the LDAP version 3 protocol is used. If you have\n"
+#~ "an LDAP server using protocol 2 (for example, OpenLDAP v1), activate\n"
+#~ "<b>LDAP Version 2</b>.</p>\n"
+#~ msgstr ""
+#~ "<p>通常情況下使用 LDAP 版本 3 協議。如果具有\n"
+#~ "使用協議 2（例如，OpenLDAP  v1）的 LDAP 伺服器，則啟用\n"
+#~ "<b>LDAP 版本 2</b>。</p>\n"
+
+#~ msgid ""
+#~ "<p>First, set <b>Configuration Base DN</b>.\n"
+#~ "It is the base for storing your configuration data, which is saved on the "
+#~ "LDAP\n"
+#~ "server.</p>\n"
+#~ msgstr ""
+#~ "<p>首先，設定<b>配置基礎判別名</b>。\n"
+#~ "它是存儲配置資料的基礎，這些資料儲存在 LDAP \n"
+#~ "伺服器上。</p>\n"
+
+#~ msgid ""
+#~ "<p>To access the data stored on the server, enter the\n"
+#~ "<b>Administrator DN</b>.\n"
+#~ "You can enter the full DN (for example, cn=Administrator,dc=mydomain,"
+#~ "dc=com) or just\n"
+#~ "the relative DN (for example, cn=Administrator). The LDAP base DN is "
+#~ "appended automatically if the appropriate option is checked.</p>\n"
+#~ msgstr ""
+#~ "<p>要訪問存儲在伺服器上的資料，請輸入\n"
+#~ "<b>管理員判別名</b>。\n"
+#~ "可輸入完整判別名（例如 cn=Administrator,dc=mydomain,dc=com），也可以僅輸"
+#~ "入\n"
+#~ "相對判別名（例如 cn=Administrator）。如果選中了適當的選項，則會自動追加 "
+#~ "LDAP 基礎判別名。</p>\n"
+
+#~ msgid "<p><b>Home Directories</b></p>"
+#~ msgstr "<p><b>主目錄</b></p>"
+
+#~ msgid ""
+#~ "<p>If home directories of users should be stored on this machine,\n"
+#~ "check the appropriate option. Changing this value does not cause any "
+#~ "direct\n"
+#~ "action.  It is only information for the YaST users module, which can "
+#~ "manage\n"
+#~ "user home directories.</p>\n"
+#~ msgstr ""
+#~ "<p>如果使用者的主目錄應存儲在該機器上，\n"
+#~ "請選擇相應的選項。變更該值不會直接引起任何\n"
+#~ "操作。它僅是有關 YaST 使用者模組的資訊，該模組可以管理\n"
+#~ "使用者主目錄。</p>\n"
+
+#~ msgid "<p><b>Password Policy</b></p>"
+#~ msgstr "<p><b>密碼策略</b></p>"
+
+#~ msgid ""
+#~ "<p>Configure the selected password policy with <b>Edit</b>. Use <b>Add</"
+#~ "b> to add a new password policy. The configuration is only possible,\n"
+#~ "  if the password policies are already enabled on the LDAP server.</p>"
+#~ msgstr ""
+#~ "<p>使用<b>編輯</b>配置選中的密碼策略。使用<b>添加</b>可添加新的密碼策略。"
+#~ "僅僅在 LDAP 伺服器上啟用密碼策略的情況下，配置才會生效。</p>"
+
+#~ msgid "&Password Map"
+#~ msgstr "密碼對映(&P)"
+
+#~ msgid "Brow&se"
+#~ msgstr "瀏覽(&s)"
+
+#~ msgid "Certificate Directory"
+#~ msgstr "證書目錄"
+
+#~ msgid "LDAP &Version 2"
+#~ msgstr "LDAP 版本 2(&V)"
+
+#~ msgid "&Home Directories on This Machine"
+#~ msgstr "本機主目錄(&H)"
+
+#~ msgid "Password Policy"
+#~ msgstr "密碼策略"
+
+#~ msgid "Name of Password Policy Object"
+#~ msgstr "密碼策略物件的名稱"
+
+#~ msgid "Suffix:"
+#~ msgstr "字尾："
+
+#~ msgid "Change Suffix"
+#~ msgstr "變更字尾"
+
+#~ msgid ""
+#~ "The Policy '%1' already exists.\n"
+#~ "Please select another one."
+#~ msgstr ""
+#~ "策略“%1”已存在。\n"
+#~ "請選擇其他策略。"
+
+#~ msgid ""
+#~ "<p>Here, configure the template used for\n"
+#~ "creating new objects (like users or groups).</p>\n"
+#~ msgstr ""
+#~ "<p>在此，配置用於\n"
+#~ "創建新物件(使用者或組)的模板。</p>\n"
+
+#~ msgid ""
+#~ "<p>The second table contains a list of <b>default values</b>, used\n"
+#~ "for new objects. Modify the list by adding new values and editing or\n"
+#~ "removing current ones.</p>\n"
+#~ msgstr ""
+#~ "<p>第二個表包含一個用於\n"
+#~ "新物件的<b>預設值</b>的列表。可以通過添加新值、編輯或\n"
+#~ "刪除當前值修改該列表。</p>\n"
+
+#~ msgid "<p>Here, manage the configuration stored in LDAP directory.</p>"
+#~ msgstr "<p>在此，管理存儲在 LDAP 目錄中的配置。</p>"
+
+#~ msgid ""
+#~ "You currently have configuration modules\n"
+#~ "of each type, so you cannot add a new one."
+#~ msgstr ""
+#~ "當前您已擁有各種類型的配置模組，\n"
+#~ "因此無法添加新模組。"
+
+#, fuzzy
+#~| msgid "Basic Settings"
+#~ msgid "Basic SSSD Settings"
+#~ msgstr "基本設定"
+
+#~ msgid "Basic Kerberos Settings"
+#~ msgstr "基本 Kerberos 設定"
+
+#~ msgid "Br&owse"
+#~ msgstr "瀏覽(&O)"
+
+#~ msgid "Pa&ssword Change Protocol"
+#~ msgstr "密碼變更協議(&S)"
+
+#~ msgid ""
+#~ "<p>Edit attributes of the selected LDAP object in the <b>Entry Data</b> "
+#~ "tab.</p>"
+#~ msgstr "<p>在<b>項資料</b>選項卡中編輯所選 LDAP 物件的屬性。</p>"
+
+#~ msgid "LDAP &Tree"
+#~ msgstr "LDAP 樹(&T)"
+
+#~ msgid "Entry &Data"
+#~ msgstr "項資料(&D)"
+

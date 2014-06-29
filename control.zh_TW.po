@@ -1,0 +1,499 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+# Thruth Wang <lihaow@opera.com>
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Eric Shan <ericalways@gmail.com>, 2008.
+# margurite <i@marguerite.su>, 2012, 2013.
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: control\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:43+0200\n"
+"PO-Revision-Date: 2014-06-08 16:22+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: control/control.SLES.glade.translations.glade:3
+msgid ""
+"\n"
+"<p>\n"
+"The installation has completed successfully.\n"
+"Your system is ready for use.\n"
+"Click Finish to log in to the system.\n"
+"</p>\n"
+"<p>\n"
+"Please visit us at http://www.suse.com/.\n"
+"</p>\n"
+"        "
+msgstr ""
+"\n"
+"<p>\n"
+"已成功完成安裝。\n"
+"您的系統已經可以使用了。\n"
+"請點選完成來登入系統。\n"
+"</p>\n"
+"<p>\n"
+"歡迎訪問我們的站點 http://www.suse.com/。\n"
+"</p>\n"
+"        "
+
+#: control/control.SLES.glade.translations.glade:14
+msgid "CIM Server"
+msgstr "通用資訊模型 (CIM) 伺服器"
+
+#: control/control.SLES.glade.translations.glade:15
+#: control/control.SLES.glade.translations.glade:16
+#: control/control.SLES.glade.translations.glade:17
+#: control/control.SLES.glade.translations.glade:22
+#: control/control.SLES.glade.translations.glade:23
+#: control/control.SLES.glade.translations.glade:58
+#: control/control.SLES.glade.translations.glade:59
+msgid "Installation Settings"
+msgstr "安裝設定"
+
+#: control/control.SLES.glade.translations.glade:18
+msgid "Overview"
+msgstr "概覽"
+
+#: control/control.SLES.glade.translations.glade:19
+msgid "Expert"
+msgstr "專家"
+
+#: control/control.SLES.glade.translations.glade:20
+msgid "Live Installation Settings"
+msgstr "Live 安裝設定"
+
+#: control/control.SLES.glade.translations.glade:21
+msgid "Update Settings"
+msgstr "更新設定"
+
+#: control/control.SLES.glade.translations.glade:24
+#: control/control.SLES.glade.translations.glade:25
+msgid "Network Configuration"
+msgstr "網路配置"
+
+#: control/control.SLES.glade.translations.glade:26
+msgid "Network Services Configuration"
+msgstr "網路服務配置"
+
+#: control/control.SLES.glade.translations.glade:27
+#: control/control.SLES.glade.translations.glade:28
+#: control/control.SLES.glade.translations.glade:29
+msgid "Hardware Configuration"
+msgstr "硬體配置"
+
+#: control/control.SLES.glade.translations.glade:30
+#: control/control.SLES.glade.translations.glade:65
+#: control/control.SLES.glade.translations.glade:91
+msgid "Preparation"
+msgstr "準備"
+
+#: control/control.SLES.glade.translations.glade:31
+#: control/control.SLES.glade.translations.glade:52
+#: control/control.SLES.glade.translations.glade:66
+msgid "Load Linuxrc Network Configuration"
+msgstr "載入 Linuxrc 網路配置"
+
+#: control/control.SLES.glade.translations.glade:32
+#: control/control.SLES.glade.translations.glade:53
+#: control/control.SLES.glade.translations.glade:67
+msgid "Network Autosetup"
+msgstr "自動網路設定"
+
+#: control/control.SLES.glade.translations.glade:33
+#: control/control.SLES.glade.translations.glade:54
+#: control/control.SLES.glade.translations.glade:68
+msgid "Welcome"
+msgstr "歡迎"
+
+#: control/control.SLES.glade.translations.glade:34
+#: control/control.SLES.glade.translations.glade:55
+#: control/control.SLES.glade.translations.glade:69
+msgid "Network Activation"
+msgstr "網路啟用"
+
+#: control/control.SLES.glade.translations.glade:35
+#: control/control.SLES.glade.translations.glade:70
+msgid "Disk Activation"
+msgstr "磁碟啟用"
+
+#: control/control.SLES.glade.translations.glade:36
+#: control/control.SLES.glade.translations.glade:37
+#: control/control.SLES.glade.translations.glade:71
+#: control/control.SLES.glade.translations.glade:92
+msgid "System Analysis"
+msgstr "系統分析"
+
+#: control/control.SLES.glade.translations.glade:38
+#: control/control.SLES.glade.translations.glade:73
+msgid "Add-On Products"
+msgstr "附加產品"
+
+#: control/control.SLES.glade.translations.glade:39
+#: control/control.SLES.glade.translations.glade:56
+msgid "Disk"
+msgstr "磁碟"
+
+#: control/control.SLES.glade.translations.glade:40
+#: control/control.SLES.glade.translations.glade:57
+msgid "Time Zone"
+msgstr "時區"
+
+#: control/control.SLES.glade.translations.glade:41
+#: control/control.SLES.glade.translations.glade:51
+msgid "Installation"
+msgstr "安裝"
+
+#: control/control.SLES.glade.translations.glade:42
+msgid "Installation Summary"
+msgstr "安裝摘要"
+
+#: control/control.SLES.glade.translations.glade:43
+#: control/control.SLES.glade.translations.glade:44
+#: control/control.SLES.glade.translations.glade:45
+#: control/control.SLES.glade.translations.glade:46
+#: control/control.SLES.glade.translations.glade:47
+#: control/control.SLES.glade.translations.glade:48
+#: control/control.SLES.glade.translations.glade:49
+#: control/control.SLES.glade.translations.glade:50
+#: control/control.SLES.glade.translations.glade:60
+#: control/control.SLES.glade.translations.glade:61
+#: control/control.SLES.glade.translations.glade:62
+#: control/control.SLES.glade.translations.glade:63
+#: control/control.SLES.glade.translations.glade:64
+#: control/control.SLES.glade.translations.glade:85
+#: control/control.SLES.glade.translations.glade:86
+#: control/control.SLES.glade.translations.glade:87
+#: control/control.SLES.glade.translations.glade:88
+#: control/control.SLES.glade.translations.glade:89
+#: control/control.SLES.glade.translations.glade:90
+#: control/control.SLES.glade.translations.glade:105
+#: control/control.SLES.glade.translations.glade:106
+#: control/control.SLES.glade.translations.glade:107
+msgid "Perform Installation"
+msgstr "執行安裝"
+
+#: control/control.SLES.glade.translations.glade:72
+#: control/control.SLES.glade.translations.glade:93
+msgid "System for Update"
+msgstr "待更新系統"
+
+#: control/control.SLES.glade.translations.glade:74
+#: control/control.SLES.glade.translations.glade:96
+msgid "Update"
+msgstr "更新"
+
+#: control/control.SLES.glade.translations.glade:75
+msgid "Update Summary"
+msgstr "更新摘要"
+
+#: control/control.SLES.glade.translations.glade:76
+#: control/control.SLES.glade.translations.glade:77
+#: control/control.SLES.glade.translations.glade:78
+#: control/control.SLES.glade.translations.glade:79
+#: control/control.SLES.glade.translations.glade:80
+#: control/control.SLES.glade.translations.glade:98
+#: control/control.SLES.glade.translations.glade:99
+#: control/control.SLES.glade.translations.glade:100
+#: control/control.SLES.glade.translations.glade:101
+#: control/control.SLES.glade.translations.glade:102
+#: control/control.SLES.glade.translations.glade:103
+#: control/control.SLES.glade.translations.glade:104
+#: control/control.SLES.glade.translations.glade:110
+#: control/control.SLES.glade.translations.glade:111
+msgid "Perform Update"
+msgstr "執行更新"
+
+#: control/control.SLES.glade.translations.glade:81
+msgid "Base Installation"
+msgstr "基本安裝"
+
+#: control/control.SLES.glade.translations.glade:82
+#: control/control.SLES.glade.translations.glade:83
+#: control/control.SLES.glade.translations.glade:84
+#: control/control.SLES.glade.translations.glade:94
+#: control/control.SLES.glade.translations.glade:95
+#: control/control.SLES.glade.translations.glade:97
+msgid "AutoYaST Settings"
+msgstr "AutoYaST 設定"
+
+#: control/control.SLES.glade.translations.glade:108
+#: control/control.SLES.glade.translations.glade:112
+msgid "Configuration"
+msgstr "配置"
+
+#: control/control.SLES.glade.translations.glade:109
+#: control/control.SLES.glade.translations.glade:113
+msgid "System Configuration"
+msgstr "系統配置"
+
+#~ msgid "Add-On Product Installation"
+#~ msgstr "附加產品安裝"
+
+#~ msgid "Language Installation"
+#~ msgstr "語言安裝"
+
+#~ msgid ""
+#~ "\n"
+#~ "<p>\n"
+#~ "The installation has completed successfully.\n"
+#~ "Your system is ready for use.\n"
+#~ "Click <b>Finish</b> to log in to the system.\n"
+#~ "</p>\n"
+#~ "<p>\n"
+#~ "Please visit us at http://www.suse.com/.\n"
+#~ "</p>\n"
+#~ "\t"
+#~ msgstr ""
+#~ "\n"
+#~ "<p>\n"
+#~ "已成功完成安裝。\n"
+#~ "您的系統已經可以使用了。\n"
+#~ "請點選<b>完成</b>來登入系統。\n"
+#~ "</p>\n"
+#~ "<p>\n"
+#~ "歡迎訪問我們的站點 http://www.suse.com/。\n"
+#~ "</p>\n"
+#~ "\t"
+
+#~ msgid "Initialization..."
+#~ msgstr "啟始化..."
+
+#~ msgid "Configuring network..."
+#~ msgstr "正在配置網路..."
+
+#~ msgid "Configuring hardware..."
+#~ msgstr "正在配置硬體..."
+
+#~ msgid "Finishing configuration..."
+#~ msgstr "正在完成配置..."
+
+#~ msgid "User Settings"
+#~ msgstr "使用者設定"
+
+#~ msgid "Installation Overview"
+#~ msgstr "安裝概覽"
+
+#~ msgid "Repair"
+#~ msgstr "修復"
+
+#~ msgid "System Information"
+#~ msgstr "系統資訊"
+
+#~ msgid "Perform Repair"
+#~ msgstr "執行修復"
+
+#~ msgid "Language"
+#~ msgstr "語言"
+
+#~ msgid "Network"
+#~ msgstr "網路"
+
+#~ msgid "Customer Center"
+#~ msgstr "客戶中心"
+
+#~ msgid "Online Update"
+#~ msgstr "線上更新"
+
+#~ msgid "Release Notes"
+#~ msgstr "版本資訊"
+
+#~ msgid "Automatic Configuration"
+#~ msgstr "自動配置"
+
+#~ msgid "root Password"
+#~ msgstr "根使用者密碼"
+
+#~ msgid "Check Installation"
+#~ msgstr "檢查安裝"
+
+#~ msgid "Hostname"
+#~ msgstr "主機名"
+
+#~ msgid "Users"
+#~ msgstr "使用者"
+
+#~ msgid "Clean Up"
+#~ msgstr "清理"
+
+#~ msgid "Server Base Scenario"
+#~ msgstr "伺服器基本場景"
+
+#~ msgid ""
+#~ "SUSE Linux Enterprise Server offers several base scenarios.\n"
+#~ "Choose the one that matches your server the best."
+#~ msgstr ""
+#~ "SUSE Linux 企業伺服器針對一些基本使用場景提供了不同的方案。\n"
+#~ "請選擇最適合您伺服器的類型。"
+
+#~ msgid "Physical Machine (Also for Fully Virtualized Guests)"
+#~ msgstr "物理計算機 (也適用於全虛擬的訪客計算機)"
+
+#~ msgid "Virtual Machine (For Paravirtualized Environments Like Xen)"
+#~ msgstr "虛擬機器 (適用於像 Xen 這樣的半虛擬化環境)"
+
+#~ msgid "Xen Virtualization Host (Local X11 Not Configured by Default)"
+#~ msgstr "Xen 虛擬化主機 (默認未配置本地 X11 視窗系統)"
+
+#~ msgid "Server Scenario"
+#~ msgstr "伺服器場景"
+
+#~ msgid "Service"
+#~ msgstr "服務"
+
+#~ msgid "KVM Virtualization Host (Local X11 Not Configured by Default)"
+#~ msgstr "KVM 虛擬化主機 (默認未配置本地 X11 視窗系統)"
+
+#~ msgid "Desktop Selection"
+#~ msgstr "桌面選擇"
+
+#~ msgid "Root Password"
+#~ msgstr "根使用者密碼"
+
+#~ msgid ""
+#~ "\n"
+#~ "<p><b>Congratulations!</b></p>\n"
+#~ "<p>The installation of openSUSE on your machine is complete.\n"
+#~ "After clicking <b>Finish</b>, you can log in to the system.</p>\n"
+#~ "<p>Visit us at %1.</p>\n"
+#~ "<p>Have a lot of fun!<br>Your openSUSE Development Team</p>\n"
+#~ "\t    "
+#~ msgstr ""
+#~ "\n"
+#~ "<p><b>恭喜！</b></p>\n"
+#~ "<p>openSUSE 已在您的計算機上安裝完畢。\n"
+#~ "點選<b>完成</b>後，您就可以登入系統了。</p>\n"
+#~ "<p>歡迎訪問我們的站點：%1。</p>\n"
+#~ "<p>祝您使用愉快！<br>您的 openSUSE 開發團隊</p>\n"
+#~ "\t    "
+
+#~ msgid ""
+#~ "The desktop environment on your computer provides the graphical user\n"
+#~ "interface for your computer, as well as a suite of applications for\n"
+#~ "email, Web browsing, office productivity, games, and utilities to\n"
+#~ "manage your computer.\n"
+#~ "\n"
+#~ "openSUSE offers a choice of desktop environments.  The most widely\n"
+#~ "used desktop environments are GNOME and KDE, and they are equally\n"
+#~ "supported under openSUSE. Both desktop environments are easy to use,\n"
+#~ "highly integrated, and have an attractive look and feel. Each desktop\n"
+#~ "environment has a distinct style, so personal taste determines which\n"
+#~ "is the most appropriate desktop for you."
+#~ msgstr ""
+#~ "您計算機上的桌面環境為您的計算機提供了圖形使用者介面，以及用於\n"
+#~ "電子郵件、網路瀏覽、辦公生產、遊戲的一套應用程式\n"
+#~ "與管理計算機的實用工具。\n"
+#~ "\n"
+#~ "openSUSE 提供了幾種桌面環境供您選擇。使用最廣泛的\n"
+#~ "桌面環境是 GNOME 與 KDE，它們在 openSUSE 下有著平等\n"
+#~ "的支援。兩者均易於使用、高度整合、外觀誘人。\n"
+#~ "每種桌面環境都有獨特的風格，因此個人品味決定了哪款\n"
+#~ "桌面最適合您。"
+
+#~ msgid "GNOME Desktop"
+#~ msgstr "GNOME 桌面"
+
+#~ msgid "KDE Desktop"
+#~ msgstr "KDE 桌面"
+
+#~ msgid "XFCE Desktop"
+#~ msgstr "XFCE 桌面"
+
+#~ msgid "LXDE Desktop"
+#~ msgstr "LXDE 桌面"
+
+#~ msgid "Minimal X Window"
+#~ msgstr "極簡 X 視窗系統"
+
+#~ msgid "Enlightenment Desktop"
+#~ msgstr "Enlightenment 桌面"
+
+#~ msgid "Minimal Server Selection (Text Mode)"
+#~ msgstr "極簡伺服器選集 (文字模式)"
+
+#~ msgid "Online Repositories"
+#~ msgstr "線上軟體源"
+
+#~ msgid ""
+#~ "\n"
+#~ "<p><b>Congratulations!</b></p>\n"
+#~ "<p>The installation of &product; on your machine is complete.\n"
+#~ "After clicking <b>Finish</b>, you can log in to the system.</p>\n"
+#~ "<p>Visit us at %1.</p>\n"
+#~ "<p>Have a lot of fun!<br>Your SUSE Development Team</p>\n"
+#~ "\t"
+#~ msgstr ""
+#~ "\n"
+#~ "<p><b>恭喜！</b></p>\n"
+#~ "<p>&product; 已在您的計算機上成功安裝。\n"
+#~ "單擊<b>完成</b>後，您就可以登入系統了。</p>\n"
+#~ "<p>歡迎訪問 %1。</p>\n"
+#~ "<p>祝使用愉快！<br>SUSE 開發團隊</p>\n"
+#~ "\t"
+
+#~ msgid ""
+#~ "openSUSE offers you a choice of user interfaces. The two major complete \n"
+#~ "desktops are KDE and GNOME. Both provide an easy-to-use desktop with a "
+#~ "full \n"
+#~ "suite of applications including email, a file manager, games and "
+#~ "utilities. \n"
+#~ " \n"
+#~ "As desktop selection is a matter of taste, we do not give a "
+#~ "recommendation."
+#~ msgstr ""
+#~ "openSUSE 讓您選擇使用者介面。兩種完整的桌面環境是\n"
+#~ "KDE 與 GNOME。兩者都很易用，並帶有一整套應用程式，\n"
+#~ "包括 Email、檔案管理器、遊戲與各種工具等。\n"
+#~ "\n"
+#~ "桌面選擇，事關品味，我們不給推薦。"
+
+#~ msgid "GNOME"
+#~ msgstr "GNOME"
+
+#~ msgid "KDE"
+#~ msgstr "KDE"
+
+#, fuzzy
+#~ msgid ""
+#~ "GNOME 2.28 is the latest desktop from the GNOME Project. \n"
+#~ "It combines stability and maturity with incremental innovations."
+#~ msgstr ""
+#~ "GNOME 2.24 是 GNOME 項目最新的桌面。\n"
+#~ "在不斷創新的基礎上，具有穩定性與成熟性。"
+
+#, fuzzy
+#~ msgid ""
+#~ "KDE 4.3 is the latest stable desktop released by the KDE Project.\n"
+#~ "It delivers an innovative, highly integrated desktop environment\n"
+#~ "with a modern look and feel."
+#~ msgstr ""
+#~ "KDE 4.1 是 KDE 項目最新的桌面穩定版。\n"
+#~ "這是一個創新的高度整合的桌面環境，\n"
+#~ "並且有著新潮的感觀。"
+
+#~ msgid "KDE 4.1"
+#~ msgstr "KDE 4.1"
+
+#~ msgid "KDE 3.5"
+#~ msgstr "KDE 3.5"
+
+#~ msgid "Physical Machine"
+#~ msgstr "物理機"
+
+#~ msgid "Virtual Machine"
+#~ msgstr "虛擬機器"
+
+#~ msgid "XEN Virtualization Host"
+#~ msgstr "XEN 虛擬主機"
+

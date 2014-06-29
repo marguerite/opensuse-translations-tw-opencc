@@ -1,0 +1,173 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: irda\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:39+0200\n"
+"PO-Revision-Date: 2013-02-06 04:30+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the Xirda module
+#: src/clients/irda.rb:52
+msgid "Configuration of IrDA"
+msgstr "IrDA 配置"
+
+#. command line help text for 'enable' action
+#: src/clients/irda.rb:62
+msgid "Enable IrDA"
+msgstr "啟用 IrDA"
+
+#. command line help text for 'disable' action
+#: src/clients/irda.rb:69
+msgid "Disable IrDA"
+msgstr "禁用 IrDA"
+
+#. command line help text for 'configure' action
+#: src/clients/irda.rb:79
+msgid "Change the IrDA configuration"
+msgstr "修改 IrDA 配置"
+
+#. command line help text for the 'port' option
+#: src/clients/irda.rb:87
+msgid "Serial port"
+msgstr "串列埠"
+
+#. Wait text label
+#: src/include/irda/ui.rb:104
+msgid "Initializing -- please wait..."
+msgstr "正在啟始化 -- 請稍候..."
+
+#. Popup label (heading)
+#: src/include/irda/ui.rb:135
+msgid "IrDA Test"
+msgstr "IrDA 測試"
+
+#. log view label (log will contain english messages)
+#: src/include/irda/ui.rb:142
+msgid "Discovery log (kernel diagnostics)"
+msgstr "探索日誌 (核心診斷)"
+
+#. error text
+#: src/include/irda/ui.rb:179
+msgid "The testing application is not responding."
+msgstr "測試應用程式無響應。"
+
+#. For translators: Caption of the dialog
+#: src/include/irda/ui.rb:215
+msgid "IrDA Configuration"
+msgstr "IrDA 配置"
+
+#. help text for IrDA 1/4
+#: src/include/irda/ui.rb:218
+msgid "<p>Here, configure an infrared interface (<b>IrDA</b>) for your computer.</p>"
+msgstr "<p>在此為您的計算機配置紅外線介面 (<b>IrDA</b>)。</p>"
+
+#. help text for IrDA 2/4
+#: src/include/irda/ui.rb:222
+msgid "<p>Choose the correct serial port for <b>Port</b>. Refer to your BIOS setup to find out which is correct.</p>"
+msgstr "<p>為<b>埠</b>選擇正確的串列埠。請參見 BIOS 設定以找出正確的埠。</p>"
+
+#. help text for IrDA 3/4
+#: src/include/irda/ui.rb:226
+msgid "<p>To test if it works, put your IrDA device (phone, PDA, etc.) in range of your infrared port and push <b>Test</b>.</p>"
+msgstr "<p>要測試紅外線埠是否工作，請將您的 IrDA 裝置 (電話、PDA 等) 放在紅外線埠的作用範圍內並按<b>測試</b>。</p>"
+
+#. help text for IrDA 4/4
+#: src/include/irda/ui.rb:230
+msgid "<p>For some mobile phones, the speed of the infrared connection must be limited. Try setting <b>Maximum Baud Rate</b> if you encounter problems.</p>"
+msgstr "<p>對於某些行動電話，必須限制其紅外線連線的速度。若您遇到問題，請嘗試設定<b>最大波特率</b>。</p>"
+
+#. radio button label
+#: src/include/irda/ui.rb:256
+msgid "Do No&t Start IrDA"
+msgstr "不啟動 IrDA(&T)"
+
+#. radio button label
+#: src/include/irda/ui.rb:265
+msgid "&Start IrDA"
+msgstr "啟動 IrDA(&S)"
+
+#. frame label
+#: src/include/irda/ui.rb:276
+msgid "Basic IrDA Settings"
+msgstr "基本 IrDA 設定"
+
+#. combobox label
+#: src/include/irda/ui.rb:285
+msgid "&Port"
+msgstr "埠(&P)"
+
+#. button label
+#: src/include/irda/ui.rb:291
+msgid "&Test"
+msgstr "測試(&T)"
+
+#. frame label
+#: src/include/irda/ui.rb:301
+msgid "Baud Rate Limit"
+msgstr "波特率限制"
+
+#. checkbox label
+#: src/include/irda/ui.rb:311
+msgid "&Limit Baud Rate"
+msgstr "限制波特率(&L)"
+
+#. combobox label
+#: src/include/irda/ui.rb:320
+msgid "&Maximum Baud Rate"
+msgstr "最大波特率(&M)"
+
+#. Irda read dialog caption
+#: src/modules/Irda.rb:87
+msgid "Saving IrDA Configuration"
+msgstr "正在儲存 IrDA 配置"
+
+#. Progress stage 1/2
+#: src/modules/Irda.rb:96
+msgid "Write the settings"
+msgstr "寫入設定"
+
+#. Progress stage 2/2
+#: src/modules/Irda.rb:98
+msgid "Restart the service"
+msgstr "重啟服務"
+
+#. Progress step 1/2
+#: src/modules/Irda.rb:102
+msgid "Writing the settings..."
+msgstr "正在寫入設定..."
+
+#. Progress step 2/2
+#: src/modules/Irda.rb:104
+msgid "Restarting service..."
+msgstr "正在重啟服務..."
+
+#. Progress finished
+#: src/modules/Irda.rb:106
+msgid "Finished"
+msgstr "已完成"
+
+#~ msgid ""
+#~ "If you have a Palm device using an IrDA port,\n"
+#~ "it is useful to have a symbolic link between the IR device and the pilot device.\n"
+#~ "Create it now?"
+#~ msgstr ""
+#~ "如果您有使用 IrDA 埠的 Palm 裝置，\n"
+#~ "最好在 IR 裝置與 Pilot 裝置之間建立符號連結。\n"
+#~ "是否立即創建？"
+

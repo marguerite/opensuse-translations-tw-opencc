@@ -1,0 +1,405 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:41+0200\n"
+"PO-Revision-Date: 2014-06-10 11:47+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the relocation-server module
+#: src/clients/relocation-server.rb:58
+msgid "Configuration of relocation-server"
+msgstr "遷移伺服器配置"
+
+#. yes-no popup
+#: src/include/relocation-server/complex.rb:48
+msgid ""
+"Really exit?\n"
+"All changes will be lost."
+msgstr ""
+"真的要退出嗎？\n"
+"將丟失全部修改。"
+
+#. RelocationServer::SetAbortFunction(PollAbort);
+#: src/include/relocation-server/complex.rb:166
+msgid "Select SSL Key File"
+msgstr "選擇 SSL 金鑰檔案"
+
+#: src/include/relocation-server/complex.rb:175
+msgid "Select SSL Cert File"
+msgstr "選擇 SSL 證書檔案"
+
+#. A popup dialog caption
+#: src/include/relocation-server/complex.rb:303
+msgid "Add New Port"
+msgstr "添加新埠"
+
+#. A popup dialog caption
+#: src/include/relocation-server/complex.rb:305
+msgid "Edit Current Port"
+msgstr "編輯當前埠"
+
+#. A text entry
+#: src/include/relocation-server/complex.rb:309
+msgid "&Port"
+msgstr "埠(&P)"
+
+#: src/include/relocation-server/complex.rb:336
+msgid "Port number must not be empty."
+msgstr "埠號不能為空。"
+
+#: src/include/relocation-server/complex.rb:343
+msgid "Port number out of range."
+msgstr "埠號超出範圍。"
+
+#: src/include/relocation-server/complex.rb:350
+msgid "Port number already exists."
+msgstr "埠號已存在。"
+
+#. encoding: utf-8
+#. ------------------------------------------------------------------------------
+#. Copyright (c) 2006 Novell, Inc. All Rights Reserved.
+#.
+#.
+#. This program is free software; you can redistribute it and/or modify it under
+#. the terms of version 2 of the GNU General Public License as published by the
+#. Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful, but WITHOUT
+#. ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#. FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License along with
+#. this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail, you may find
+#. current contact information at www.novell.com.
+#. ------------------------------------------------------------------------------
+#. File:	include/relocation-server/dialogs.ycp
+#. Package:	Configuration of relocation-server
+#. Summary:	Dialogs definitions
+#. Authors:	Li Dongyang <lidongyang@novell.com>
+#.
+#. $Id: dialogs.ycp 27914 2006-02-13 14:32:08Z locilka $
+#: src/include/relocation-server/dialogs.rb:43
+msgid "Global Settings"
+msgstr "全局設定"
+
+#: src/include/relocation-server/dialogs.rb:49
+msgid "Relocation Address:"
+msgstr "遷移地址："
+
+#: src/include/relocation-server/dialogs.rb:56
+msgid "Allowed Hosts:"
+msgstr "允許主機："
+
+#: src/include/relocation-server/dialogs.rb:59
+msgid "Use SSL as Default"
+msgstr "默認使用 SSL"
+
+#: src/include/relocation-server/dialogs.rb:65
+msgid "non-SSL Server"
+msgstr "非 SSL 伺服器"
+
+#: src/include/relocation-server/dialogs.rb:69
+#: src/include/relocation-server/dialogs.rb:85
+msgid "Port:"
+msgstr "埠："
+
+#: src/include/relocation-server/dialogs.rb:73
+#: src/include/relocation-server/dialogs.rb:124
+msgid "Enable"
+msgstr "啟用"
+
+#: src/include/relocation-server/dialogs.rb:79
+msgid "SSL Server"
+msgstr "SSL 伺服器"
+
+#: src/include/relocation-server/dialogs.rb:97
+msgid "SSL Key File:"
+msgstr "SSL 金鑰檔案："
+
+#: src/include/relocation-server/dialogs.rb:111
+msgid "SSL Cert File:"
+msgstr "SSL 證書檔案："
+
+#: src/include/relocation-server/dialogs.rb:130
+#: src/include/relocation-server/dialogs.rb:187
+msgid "Firewall"
+msgstr "防火牆"
+
+#: src/include/relocation-server/dialogs.rb:137
+msgid "Tunneled migration"
+msgstr "隧道遷移"
+
+#: src/include/relocation-server/dialogs.rb:143
+msgid "Make sure tunneled migration works"
+msgstr "確保隧道遷移正常"
+
+#: src/include/relocation-server/dialogs.rb:149
+msgid "Plain migration"
+msgstr "普通遷移"
+
+#: src/include/relocation-server/dialogs.rb:155
+msgid "Make sure plain migration works"
+msgstr "確保普通遷移正常"
+
+#: src/include/relocation-server/dialogs.rb:159
+msgid "TCP Ports"
+msgstr "TCP 埠"
+
+#. A table header
+#: src/include/relocation-server/dialogs.rb:165
+msgid "Port"
+msgstr "埠"
+
+#. a push button
+#: src/include/relocation-server/dialogs.rb:171
+msgid "&Add..."
+msgstr "添加(&A)..."
+
+#. a push button
+#: src/include/relocation-server/dialogs.rb:173
+msgid "&Edit..."
+msgstr "編輯(&E)..."
+
+#. a push button
+#: src/include/relocation-server/dialogs.rb:175
+msgid "&Delete"
+msgstr "刪除(&D)"
+
+#: src/include/relocation-server/dialogs.rb:182
+msgid "Include default port range"
+msgstr "包含默認埠範圍"
+
+#. Read dialog help 1/2
+#: src/include/relocation-server/helps.rb:36
+msgid ""
+"<p><b><big>Initializing relocation-server Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在啟始化遷移伺服器配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Read dialog help 2/2
+#: src/include/relocation-server/helps.rb:40
+msgid ""
+"<p><b><big>Aborting Initialization:</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>\n"
+msgstr ""
+"<p><b><big>中止啟始化:</big></b><br>\n"
+"現在按<b>中止</b>安全地中斷配置工具。</p>\n"
+
+#. Write dialog help 1/2
+#: src/include/relocation-server/helps.rb:44
+msgid ""
+"<p><b><big>Saving relocation-server Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在儲存遷移伺服器配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Write dialog help 2/2
+#: src/include/relocation-server/helps.rb:48
+msgid ""
+"<p><b><big>Aborting Saving:</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.\n"
+"An additional dialog informs whether it is safe to do so.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>中斷儲存:</big></b><br>\n"
+"按<B>中斷</B>可中斷儲存過程。\n"
+"另一個對話方塊將告之您這樣做是否安全。\n"
+"</p>\n"
+
+#: src/include/relocation-server/helps.rb:54
+msgid ""
+"<p><b>Relocation Address</b><br>\n"
+"Address xend should listen on for relocation-socket connections</p>\n"
+"<p><b>Allowed Hosts</b><br>\n"
+"The hosts allowed to talk to the relocation port. If this is empty, then all "
+"connections are allowed. Otherwise, this should be a space-separated "
+"sequence of regular expressions. Any host with a fully-qualified domain name "
+"or an IP address that matches one of these regular expressions will be "
+"accepted.</p>\n"
+"<p><b>SSL Key File/SSL Cert File</b><br>\n"
+"SSL key and certificate to use for the ssl relocation interface</p>"
+msgstr ""
+"<p><b>遷移地址</b><br>\n"
+"xend 應監聽遷移套接字連線的地址</p>\n"
+"<p><b>允許主機</b><br>\n"
+"允許與遷移埠通訊的主機。若留空則允許全部連線。否則應是一個空格分隔的正則表"
+"達式序列。將允許任意有完全匹配其中一個正規表示式的域名或 IP 地址的主機。</"
+"p>\n"
+"<p><b>SSL 金鑰檔案/SSL 證書檔案</b><br>\n"
+"ssl 遷移介面使用的 SSL 金鑰與證書</p>"
+
+#: src/include/relocation-server/helps.rb:62
+msgid ""
+"<p><b><big>Tunneled migration</big></b><br>\n"
+"The source host libvirtd opens a direct connection to the destination host "
+"libvirtd for sending migration data. This allows the option of encrypting "
+"the data stream.</p>\n"
+"<p><b><big>Plain migration</big></b><br>\n"
+"The source host VM opens a direct unencrypted TCP connection to the "
+"destination host for sending the migration data. Unless a port is manually "
+"specified, libvirt will choose a migration port in the default range.</p>"
+msgstr ""
+"<p><b><big>隧道遷移</big></b><br>\n"
+"源主機的 libvirtd 開啟一個到目標主機的 libvirtd 的直接連線以發送遷移資料。這"
+"樣做允許加密資料流選項。</p>\n"
+"<p><b><big>普通遷移</big></b><br>\n"
+"源主機 VM 開啟一個到目標主機的直接非加密 TCP 連線以發送遷移資料。除非手動指定"
+"埠，libvirtd 將在默認範圍內選擇一個遷移埠。</p>"
+
+#. Main workflow of the relocation-server configuration
+#. @return sequence result
+#: src/include/relocation-server/wizards.rb:104
+msgid "&Xend"
+msgstr "&Xend"
+
+#: src/include/relocation-server/wizards.rb:109
+msgid "&KVM"
+msgstr "&KVM"
+
+#: src/include/relocation-server/wizards.rb:114
+msgid "&Xen Libxl"
+msgstr "&Xen Libxl"
+
+#: src/include/relocation-server/wizards.rb:161
+msgid "Relocation Server Configuration"
+msgstr "遷移伺服器配置"
+
+#. RelocationServer read dialog caption
+#: src/modules/RelocationServer.rb:303
+msgid "Initializing relocation-server Configuration"
+msgstr "正在啟始化遷移伺服器配置"
+
+#. Progress stage 1/3
+#: src/modules/RelocationServer.rb:313
+msgid "Read the current xend configuration"
+msgstr "讀取當前 xend 配置"
+
+#. Progress stage 2/3
+#: src/modules/RelocationServer.rb:315
+msgid "Read the current xend state"
+msgstr "讀取當前 xend 狀態"
+
+#. Progress stage 3/3
+#. Progress stage 1/2
+#: src/modules/RelocationServer.rb:317 src/modules/RelocationServer.rb:333
+msgid "Read firewall settings"
+msgstr "讀取防火牆設定"
+
+#. Progress step 1/3
+#: src/modules/RelocationServer.rb:322
+msgid "Reading the current xend configuration..."
+msgstr "正在讀取當前 xend 配置..."
+
+#. Progress step 2/3
+#: src/modules/RelocationServer.rb:324
+msgid "Reading the current xend state..."
+msgstr "正在讀取當前 xend 狀態..."
+
+#. Progress step 3/3
+#. Progress step 1/2
+#: src/modules/RelocationServer.rb:326 src/modules/RelocationServer.rb:340
+msgid "Reading firewall settings..."
+msgstr "正在讀取防火牆設定..."
+
+#. Progress stage 2/2
+#: src/modules/RelocationServer.rb:335
+msgid "Read the current libvirtd/sshd state"
+msgstr "讀取當前 libvirtd/sshd 狀態"
+
+#. Progress stage 2/2
+#: src/modules/RelocationServer.rb:342
+msgid "Reading the current libvirtd/sshd state..."
+msgstr "正在讀取當前 libvirtd/sshd 狀態..."
+
+#. Error message
+#: src/modules/RelocationServer.rb:364
+msgid "Cannot read the current Xend state."
+msgstr "無法讀取當前 Xend 狀態。"
+
+#. Error message
+#: src/modules/RelocationServer.rb:373
+msgid "Cannot read firewall settings."
+msgstr "無法讀取防火牆設定。"
+
+#. Error message
+#: src/modules/RelocationServer.rb:382
+msgid "Cannot read the current libvirtd/sshd state."
+msgstr "無法讀取當前 libvirtd/sshd 狀態。"
+
+#. RelocationServer read dialog caption
+#: src/modules/RelocationServer.rb:401
+msgid "Saving relocation-server Configuration"
+msgstr "正在儲存遷移伺服器配置"
+
+#. Progress stage 1
+#: src/modules/RelocationServer.rb:411
+msgid "Write the Xend settings"
+msgstr "寫入 Xend 設定"
+
+#. Progress stage 2
+#: src/modules/RelocationServer.rb:413
+msgid "Adjust the Xend service"
+msgstr "調整 Xend 服務"
+
+#. Progress stage 3
+#. Progress stage 2
+#: src/modules/RelocationServer.rb:415 src/modules/RelocationServer.rb:432
+msgid "Write firewall settings"
+msgstr "寫入防火牆設定"
+
+#. Progress step 1
+#: src/modules/RelocationServer.rb:420
+msgid "Writing the Xend settings..."
+msgstr "正在寫入 Xend 設定..."
+
+#. Progress step 2
+#: src/modules/RelocationServer.rb:422
+msgid "Adjusting the Xend service..."
+msgstr "正在調整 Xend 服務..."
+
+#. Progress step 3
+#. Progress stage 2
+#: src/modules/RelocationServer.rb:424 src/modules/RelocationServer.rb:439
+msgid "Writing firewall settings..."
+msgstr "正在寫入防火牆設定..."
+
+#. Progress stage 1
+#: src/modules/RelocationServer.rb:430
+msgid "Adjust the libvirtd/sshd service"
+msgstr "調整 libvirtd/sshd 服務"
+
+#. Progress step 1
+#: src/modules/RelocationServer.rb:437
+msgid "Adjusting the libvirtd/sshd service"
+msgstr "正在調整 libvirtd/sshd 服務..."
+
+#. Error message
+#: src/modules/RelocationServer.rb:454
+msgid "Cannot write the xend settings."
+msgstr "無法寫入 xend 設定。"
+
+#. Error message
+#: src/modules/RelocationServer.rb:475
+msgid "Cannot write firewall settings."
+msgstr "無法寫入防火牆設定。"
+
+

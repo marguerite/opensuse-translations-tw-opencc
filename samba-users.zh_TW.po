@@ -1,0 +1,121 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:41+0200\n"
+"PO-Revision-Date: 2013-10-15 15:54+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. helptext
+#: src/clients/users_plugin_samba.rb:74
+msgid "<p>Here, edit the setting of the user's samba account.</p>"
+msgstr "<p>在此編輯使用者的 Samba 賬戶設定。</p>"
+
+#: src/clients/users_plugin_samba.rb:77
+msgid "<p>If do not enter custom values for "
+msgstr "<p>若未為以下選項輸入自定義值："
+
+#: src/clients/users_plugin_samba.rb:78
+msgid "<b>Home Drive</b>, <b>Home Path</b>, <b>Profile Path</b>, and <b>Logon Script</b> "
+msgstr "<b>主驅動器</b>、<b>主資料夾路徑</b>、<b>方案路徑</b>與<b>登入指令碼</b> "
+
+#: src/clients/users_plugin_samba.rb:81
+msgid "the default values as defined in your local Samba Configuration will be used.</p>"
+msgstr "則將使用您本地 Samba 配置中定義的預設值。</p>"
+
+#: src/clients/users_plugin_samba.rb:96
+msgid "Home Drive"
+msgstr "主驅動器"
+
+#: src/clients/users_plugin_samba.rb:107 src/clients/users_plugin_samba.rb:128
+#: src/clients/users_plugin_samba.rb:149 src/clients/users_plugin_samba.rb:173
+msgid "Use Default Values"
+msgstr "使用預設值"
+
+#: src/clients/users_plugin_samba.rb:117
+msgid "Home Path"
+msgstr "主資料夾路徑"
+
+#: src/clients/users_plugin_samba.rb:138
+msgid "Profile Path"
+msgstr "方案路徑"
+
+#. translators: logon is the Windows synonym for login
+#: src/clients/users_plugin_samba.rb:162
+msgid "Logon Script"
+msgstr "登入指令碼"
+
+#: src/clients/users_plugin_samba.rb:185
+msgid "Samba Account Disabled"
+msgstr "已禁用 Samba 賬戶"
+
+#: src/clients/users_plugin_samba.rb:187
+msgid "No Password Expiration"
+msgstr "密碼永不過期"
+
+#. dialog caption
+#. dialog caption
+#: src/clients/users_plugin_samba.rb:199
+#: src/clients/users_plugin_samba_groups.rb:112
+msgid "Edit Samba Attributes"
+msgstr "編輯 Samba 屬性"
+
+#. help text
+#: src/clients/users_plugin_samba_groups.rb:82
+msgid ""
+"<p>This plugin can be used to enable an LDAP group to be available for Samba.\n"
+"The only setting that you can edit here is the <b>Samba Group Name</b> attribute,\n"
+"which is the Name of the Group as it should appear to Samba-Clients. All other\n"
+"settings are computed automatically. If you leave the <b>Samba Group Name</b>\n"
+"empty, the same name as configured in the Global Settings of this Group will\n"
+"be used.</p>\n"
+msgstr ""
+"<p>此插件可用於啟用一個可用於 Samba 的 LDAP 組。\n"
+"您在此可以編輯的唯一設定就是 <b>Samba 組名稱</b>屬性，是應對 Samba 客戶端呈現的組名稱。\n"
+"全部其它設定都是自動計算的。若您留空了 <b>Samba 組名稱</b>項，將使用與此組全局設定中配置的名稱同名的名稱。</p>\n"
+
+#: src/clients/users_plugin_samba_groups.rb:99
+msgid "Samba Group Name"
+msgstr "Samba 組名稱"
+
+#. plugin name
+#: src/modules/UsersPluginSamba.pm:85 src/modules/UsersPluginSambaGroups.pm:85
+msgid "Samba Attributes"
+msgstr "Samba 屬性"
+
+#. summary
+#: src/modules/UsersPluginSamba.pm:95
+msgid "Manage samba account parameters"
+msgstr "管理 Samba 賬戶參數"
+
+#: src/modules/UsersPluginSamba.pm:203
+msgid "Could not update objectClass attribute."
+msgstr "無法更新物件類屬性。"
+
+#: src/modules/UsersPluginSamba.pm:252
+msgid "Could not initialize Samba SID. Disabling plug-in."
+msgstr "無法啟始化 Samba SID。正在禁用插件。"
+
+#: src/modules/UsersPluginSamba.pm:294
+msgid "Change the password to create the Samba account"
+msgstr "修改用於創建 Samba 賬戶的密碼"
+
+#. summary
+#: src/modules/UsersPluginSambaGroups.pm:95
+msgid "Manage Samba attribute of LDAP groups"
+msgstr "管理 LDAP 組的 Samba 屬性"
+

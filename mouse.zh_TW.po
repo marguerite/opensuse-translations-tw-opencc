@@ -1,0 +1,217 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: mouse\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:35+0200\n"
+"PO-Revision-Date: 2013-02-01 21:48+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <i@marguerite.su>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. test_button = `PushButton( `id(`apply), _("&Test") );
+#: src/clients/inst_mouse.rb:61
+msgid "Choose your &mouse type from the list"
+msgstr "請從列表中選擇滑鼠類型(&M)"
+
+#. ==========================================
+#. help texts
+#. ------------------------------------------
+#: src/clients/inst_mouse.rb:75
+msgid ""
+"<p>\n"
+"Choose the <b>mouse type</b> of the mouse attached to your computer.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"請選擇連線到您計算機上的滑鼠的<b>滑鼠類型</b>。\n"
+"</p>\n"
+
+#: src/clients/inst_mouse.rb:83
+msgid ""
+"<p>\n"
+"Use the arrow keys to select a mouse. If the selection bar does not\n"
+"move, hit the <b><i>Tab</i></b> key (maybe repeatedly) until it does.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"請使用箭頭鍵來選擇滑鼠。若選擇條不移動，\n"
+"請按 <b><i>Tab</i></b> 鍵(可能要按多次)，直到成功為止。\n"
+"</p>\n"
+
+#: src/clients/inst_mouse.rb:93
+msgid ""
+"<p>\n"
+"If you select <b>None</b>, you have to use the keyboard as\n"
+"described in the manual.\n"
+"</p>"
+msgstr ""
+"<p>\n"
+"若您選擇<b>無</b>，則必須使用鍵盤來進行操作，\n"
+"具體操作方法請參考手冊中的相關描述。\n"
+"</p>"
+
+#: src/clients/inst_mouse.rb:102
+msgid "Mouse configuration"
+msgstr "滑鼠配置"
+
+#. ==========================================
+#. the command line description
+#. ------------------------------------------
+#: src/clients/mouse.rb:55
+msgid "Mouse configuration."
+msgstr "滑鼠配置。"
+
+#: src/clients/mouse.rb:62
+msgid "Mouse configuration summary."
+msgstr "滑鼠配置摘要。"
+
+#. ==========================================
+#. print mouse configuration summary
+#. ------------------------------------------
+#: src/clients/mouse.rb:102
+msgid "Current Mouse Type: %1"
+msgstr "當前滑鼠類型：%1"
+
+#. ==========================================
+#. check if no mouse is connected
+#. ------------------------------------------
+#: src/clients/mouse.rb:146
+msgid "No mouse connected to the system..."
+msgstr "沒有與系統相連的滑鼠..."
+
+#. progress step title
+#: src/clients/mouse_finish.rb:88
+msgid "Saving mouse configuration..."
+msgstr "正在儲存滑鼠配置..."
+
+#. ===================================================
+#. Handle proposal description...
+#. ---------------------------------------------------
+#: src/clients/mouse_proposal.rb:83
+msgid "Mouse"
+msgstr "滑鼠"
+
+#: src/clients/mouse_proposal.rb:84
+msgid "&Mouse"
+msgstr "滑鼠(&M)"
+
+#. map <string, list>
+#: src/include/mouse/mouse_raw.rb:16
+msgid "PS/2 mouse (Aux-port)"
+msgstr "PS/2 滑鼠(輔助埠)"
+
+#: src/include/mouse/mouse_raw.rb:27
+msgid "Microsoft compatible serial mouse - (ttyS0 - COM1)"
+msgstr "Microsoft 相容的串列埠滑鼠 - (ttyS0 - COM1)"
+
+#: src/include/mouse/mouse_raw.rb:37
+msgid "Microsoft compatible serial mouse - (ttyS1 - COM2)"
+msgstr "Microsoft 相容的串列埠滑鼠 - (ttyS1 - COM2)"
+
+#: src/include/mouse/mouse_raw.rb:47
+msgid "Microsoft Intellimouse - 3 buttons and wheel - (ttyS0 - COM1)"
+msgstr "Microsoft Intellimouse - 3 個按鍵與 1 個滾輪 - (ttyS0 - COM1)"
+
+#: src/include/mouse/mouse_raw.rb:57
+msgid "Microsoft Intellimouse - 3 buttons and wheel - (ttyS1 - COM2)"
+msgstr "Microsoft Intellimouse - 3 個按鍵與 1 個滾輪 - (ttyS1 - COM2)"
+
+#: src/include/mouse/mouse_raw.rb:67
+msgid "Mouse Systems serial mouse - (ttyS0 - COM1)"
+msgstr "Mouse Systems 串列埠滑鼠 - (ttyS0 - COM1)"
+
+#: src/include/mouse/mouse_raw.rb:77
+msgid "Mouse Systems serial mouse - (ttyS1 - COM2)"
+msgstr "Mouse Systems 串列埠滑鼠 - (ttyS1 - COM2)"
+
+#: src/include/mouse/mouse_raw.rb:87
+msgid "Mouse Man protocol (serial Logitech mouse) - (ttyS0 - COM1)"
+msgstr "Mouse Man 協議(Logitech 串列埠滑鼠)- (ttyS0 - COM1)"
+
+#: src/include/mouse/mouse_raw.rb:97
+msgid "Mouse Man protocol (serial Logitech mouse) - (ttyS1 - COM2)"
+msgstr "Mouse Man 協議(Logitech 串列埠滑鼠)- (ttyS1 - COM2)"
+
+#: src/include/mouse/mouse_raw.rb:107
+msgid "Old Logitech serial mouse (series 9) - (ttyS0 - COM1)"
+msgstr "老式 Logitech 串列埠滑鼠(系列 9)- (ttyS0 - COM1)"
+
+#: src/include/mouse/mouse_raw.rb:117
+msgid "Old Logitech serial mouse (series 9) - (ttyS1 - COM2)"
+msgstr "老式 Logitech 串列埠滑鼠(系列 9)- (ttyS1 - COM2)"
+
+#: src/include/mouse/mouse_raw.rb:127
+msgid "Logitech busmouse"
+msgstr "Logitech 匯流排滑鼠"
+
+#: src/include/mouse/mouse_raw.rb:137
+msgid "Sun Mouse - (/dev/sunmouse)"
+msgstr "Sun 滑鼠 - (/dev/sunmouse)"
+
+#: src/include/mouse/mouse_raw.rb:147
+msgid "Oldest 2-button serial mouse - (ttyS0 - COM1)"
+msgstr "最老式的雙鍵串列埠滑鼠 - (ttyS0 - COM1)"
+
+#: src/include/mouse/mouse_raw.rb:157
+msgid "Oldest 2-button serial mouse - (ttyS1 - COM2)"
+msgstr "最老式的雙鍵串列埠滑鼠 - (ttyS1 - COM2)"
+
+#: src/include/mouse/mouse_raw.rb:167
+msgid "Microsoft busmouse"
+msgstr "Microsoft 匯流排滑鼠"
+
+#: src/include/mouse/mouse_raw.rb:177
+msgid "ATI XL busmouse"
+msgstr "ATI XL 匯流排滑鼠"
+
+#: src/include/mouse/mouse_raw.rb:187
+msgid "Plug-and-Play mice - (ttyS0 - COM1)"
+msgstr "即插即用滑鼠 - (ttyS0 - COM1)"
+
+#: src/include/mouse/mouse_raw.rb:197
+msgid "Plug-and-Play mice - (ttyS1 - COM2)"
+msgstr "即插即用滑鼠 - (ttyS1 - COM2)"
+
+#: src/include/mouse/mouse_raw.rb:207
+msgid "USB mouse"
+msgstr "USB 滑鼠"
+
+#: src/include/mouse/mouse_raw.rb:218
+msgid "Intelli/Wheel mouse (Aux-port)"
+msgstr "智慧/滾輪滑鼠(輔助埠)"
+
+#: src/include/mouse/mouse_raw.rb:229
+msgid "Intelli/Wheel mouse (USB)"
+msgstr "智慧/滾輪滑鼠 (USB)"
+
+#: src/include/mouse/mouse_raw.rb:240
+msgid "IntelliMouse Explorer (ps2)"
+msgstr "IntelliMouse Explorer (ps2)"
+
+#: src/include/mouse/mouse_raw.rb:251
+msgid "IntelliMouse Explorer (USB)"
+msgstr "IntelliMouse Explorer (USB)"
+
+#: src/include/mouse/mouse_raw.rb:262
+msgid "NONE "
+msgstr "無 "
+
+#. save translated label text
+#: src/modules/Mouse.rb:399
+msgid "Probe"
+msgstr "檢測"
+

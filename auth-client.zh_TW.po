@@ -1,0 +1,1413 @@
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: opensuse-i 18n\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:39+0200\n"
+"PO-Revision-Date: 2014-06-25 23:10+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <kde-i18n-doc@kde.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. translators: command line help text for authentication client module
+#: src/clients/auth-client.rb:49
+msgid "Authentication client configuration module"
+msgstr "認證客戶端配置模組"
+
+#. translators: command line help text for summary action
+#: src/clients/auth-client.rb:59
+msgid "Configuration summary of the authentication client"
+msgstr "認證客戶端配置摘要"
+
+#. translators: command line help text for summary action
+#: src/clients/auth-client.rb:64
+msgid "Create autoyast rnc from @parameters"
+msgstr "從 @parameters 創建 autoyast rnc"
+
+#. the auth configuration
+#: src/include/dialogs.rb:33
+msgid "Do you really want to delete the domain '%1'?"
+msgstr "您真的想要刪除域 '%1' 嗎？"
+
+#: src/include/dialogs.rb:49
+msgid "There is no help for this parameter."
+msgstr "此參數沒有幫助。"
+
+#: src/include/dialogs.rb:55
+msgid "Default value: "
+msgstr "預設值："
+
+#: src/include/dialogs.rb:59
+msgid "Available values: "
+msgstr "可用值："
+
+#. No we open the dialog
+#: src/include/dialogs.rb:146
+msgid "Set Parameter Value in Section '%1'"
+msgstr "請在 '%1' 部分設定參數值"
+
+#: src/include/dialogs.rb:148 src/include/dialogs.rb:220
+#: src/include/dialogs.rb:310 src/include/dialogs.rb:371
+msgid "Cancel"
+msgstr "取消"
+
+#: src/include/dialogs.rb:149 src/include/dialogs.rb:222
+#: src/include/dialogs.rb:313 src/include/dialogs.rb:373
+msgid "OK"
+msgstr "好"
+
+#. Waiting for response
+#. Waiting for response
+#: src/include/dialogs.rb:168 src/include/dialogs.rb:338
+msgid "Value for parameter '%1' is invalid."
+msgstr "參數 '%1' 的值無效。"
+
+#: src/include/dialogs.rb:200
+msgid "Section '%1' has no attributes."
+msgstr "部分 '%1' 無屬性。"
+
+#. No we open the dialog
+#: src/include/dialogs.rb:212
+msgid "Select new Parameter for section '%1'"
+msgstr "請為 '%1' 部分選擇新參數"
+
+#: src/include/dialogs.rb:215
+msgid "New Parameter"
+msgstr "新增參數"
+
+#: src/include/dialogs.rb:221 src/include/dialogs.rb:311
+#: src/include/dialogs.rb:372
+msgid "Help"
+msgstr "幫助"
+
+#. No we open the dialog
+#: src/include/dialogs.rb:306
+msgid "Edit sssd section '%1'"
+msgstr "編輯 sssd 的 '%1' 部分"
+
+#: src/include/dialogs.rb:312
+msgid "New"
+msgstr "新建"
+
+#: src/include/dialogs.rb:356
+msgid "Add New Domain"
+msgstr "添加新域"
+
+#: src/include/dialogs.rb:358
+msgid "Name:"
+msgstr "名稱："
+
+#: src/include/dialogs.rb:359
+msgid "Activate Domain"
+msgstr "啟用域"
+
+#: src/include/dialogs.rb:361
+msgid "The identification provider used for the domain"
+msgstr "該域所用的標識提供者"
+
+#: src/include/dialogs.rb:365
+msgid "The authentication provider used for the domain"
+msgstr "該域所用的認證提供者"
+
+#. TODO
+#: src/include/dialogs.rb:387
+msgid "Help for creating new domain"
+msgstr "創建新域的幫助"
+
+#: src/include/dialogs.rb:391
+msgid "You have to provide a domain name!"
+msgstr "您必須提供一個域名！"
+
+#. The default ldap schema rfc2307 is deprecated use rfc2307bis
+#: src/include/dialogs.rb:421
+msgid "Basic Settings:"
+msgstr "基本設定："
+
+#: src/include/dialogs.rb:423
+msgid "Services:"
+msgstr "服務："
+
+#. Count of active domains
+#: src/include/dialogs.rb:463
+msgid ""
+"There are no activated domains in the [sssd] section.\n"
+"sssd will not be started. Only local authentication will be available.\n"
+"Do you want to write this configuration?"
+msgstr ""
+"[sssd] 部分中沒有啟用的域。\n"
+"sssd 將不會啟動。僅有本地認證可用。\n"
+"您想要寫入此配置嗎？"
+
+#. TRANSLATORS: %s stands for list of inactive domains
+#: src/include/dialogs.rb:471
+msgid ""
+"There are some domains you have not activated:\n"
+"%s \n"
+"Do you want to write this configuration?"
+msgstr ""
+"有一些您尚未啟用的域：\n"
+"%s\n"
+"您想要寫入此配置嗎？"
+
+#: src/include/dialogs.rb:486
+msgid ""
+"Your system is configured for using nss_ldap.\n"
+"This module is designed to configure your system via sssd.\n"
+"If you continue, your nss_ldap configuration will be removed.\n"
+"Do you want to continue?"
+msgstr ""
+"您的系統已配置為使用 nss_ldap。\n"
+"此模組設計用於通過 sssd 配置您的系統。\n"
+"若您繼續，您的 nss_ldap 配置將會被移除。\n"
+"您想要繼續嗎？"
+
+#: src/include/dialogs.rb:496
+msgid ""
+"Your system is configured as OES client.\n"
+"This module is designed to configure your system via sssd.\n"
+"If you continue, your OES client configuration will be deactivated.\n"
+"Do you want to continue?"
+msgstr ""
+"您的系統已配置為 OES 客戶端。\n"
+"此模組設計用於通過 sssd 配置您的系統。\n"
+"若您繼續，您的 OES 客戶端配置將被取消啟用。\n"
+"您想要繼續嗎？"
+
+#. Main dialog contents
+#: src/include/dialogs.rb:512
+msgid "SPAM Prevention"
+msgstr "SPAM 防護"
+
+#: src/include/dialogs.rb:526 src/include/dialogs.rb:580
+#: src/include/dialogs.rb:586
+msgid "Configured Authentication Domains"
+msgstr "配置認證域"
+
+#: src/include/dialogs.rb:538
+msgid "Add"
+msgstr "添加"
+
+#: src/include/dialogs.rb:539
+msgid "Edit"
+msgstr "編輯"
+
+#: src/include/dialogs.rb:540
+msgid "Delete"
+msgstr "刪除"
+
+#. Inetd configure dialog caption
+#: src/include/dialogs.rb:547
+msgid "Authentication Client Configuration (sssd)"
+msgstr "認證客戶端配置 (sssd)"
+
+#. initialize GUI
+#: src/include/dialogs.rb:553
+msgid "TODO WRITE HELP"
+msgstr "待辦：撰寫幫助"
+
+#. Define Global Parameters
+#: src/include/sssd-parameters.rb:17
+msgid "Indicates what is the syntax of the config file."
+msgstr "揭示了配置檔案的語法。"
+
+#: src/include/sssd-parameters.rb:22
+msgid ""
+"Comma separated list of services that are started when sssd itself starts."
+msgstr "以逗號分隔的當 sssd 自身啟動時也將啟動的服務列表。"
+
+#: src/include/sssd-parameters.rb:27 src/include/sssd-parameters.rb:80
+msgid ""
+"Number of times services should attempt to reconnect in the event of a Data "
+"Provider crash or restart before they give up"
+msgstr "當資料提供者崩潰或重啟時在放棄前服務應嘗試重連的次數"
+
+#: src/include/sssd-parameters.rb:31
+msgid ""
+"SSSD can use more domains at the same time, but at least one must be "
+"configured or SSSD won't start."
+msgstr "SSSD 可同時使用更多域，但必須配置至少一個否則 SSSD 不會啟動。"
+
+#: src/include/sssd-parameters.rb:32
+msgid ""
+"This parameter contains the list of domains in the order these will be "
+"queried."
+msgstr "此參數包含了以查詢順序排列的域列表。"
+
+#: src/include/sssd-parameters.rb:36
+msgid ""
+"Default regular expression that describes how to parse the string containing "
+"user name and domain into these components"
+msgstr "默認正規表示式描述瞭如何解析包含使用者名與域的字元串到這些元件中"
+
+#: src/include/sssd-parameters.rb:40
+msgid ""
+"The default printf(3)-compatible format that describes how to translate a "
+"(name, domain) tuple into a fully qualified name."
+msgstr "默認的 printf(3) 相容格式，描述瞭如何轉義 (name, domain) 元組為完全限定名稱。"
+
+#: src/include/sssd-parameters.rb:44
+msgid ""
+"SSSD monitors the state of resolv.conf to identify when it needs to update "
+"its internal DNS resolver."
+msgstr "SSSD 監控著 resolv.conf 的狀態來識別它是否需要更新其內部 DNS 解析器。"
+
+#: src/include/sssd-parameters.rb:45
+msgid ""
+"By default, we will attempt to use inotify for this, and will fall back to "
+"polling resolv.conf every five seconds if inotify cannot be used."
+msgstr "默認我們將嘗試使用 inotify，若 inotify 不可用則回退為每五秒輪詢 resolv.conf 一次。"
+
+#: src/include/sssd-parameters.rb:49
+msgid ""
+"Directory on the filesystem where SSSD should store Kerberos replay cache "
+"files."
+msgstr "SSSD 應在檔案系統上存放 Kerberos 回放快取檔案的資料夾。"
+
+#: src/include/sssd-parameters.rb:53
+msgid ""
+"This string will be used as a default domain name for all names without a "
+"domain name component."
+msgstr "此字元串將用作全部沒有域名元件的名稱的默認域名。"
+
+#. Define Global Services Parameters
+#: src/include/sssd-parameters.rb:60
+msgid ""
+"Bit mask that indicates which debug levels will be visible. 0x0010 is the "
+"default value as well as the lowest allowed value, 0xFFF0 is the most "
+"verbose mode."
+msgstr ""
+"表示可見偵錯級別的位掩碼。0x0010 是預設值也是允許的最小值，0xFFF0"
+"是最詳盡模式。"
+
+#: src/include/sssd-parameters.rb:65
+msgid "Add a timestamp to the debug messages"
+msgstr "為偵錯資訊添加時間戳"
+
+#: src/include/sssd-parameters.rb:70
+msgid "Add microseconds to the timestamp in debug messages"
+msgstr "為偵錯資訊中的時間戳添加毫秒"
+
+#: src/include/sssd-parameters.rb:75
+msgid "Timeout in seconds between heartbeats for this service."
+msgstr "此服務心跳間超時秒數。"
+
+#: src/include/sssd-parameters.rb:85
+msgid ""
+"This option specifies the maximum number of file descriptors that may be "
+"opened at one time by this SSSD process."
+msgstr "此選項指定了此 SSSD 程序同一時間可開啟的最大檔案描述符數目。"
+
+#: src/include/sssd-parameters.rb:90
+msgid ""
+"This option specifies the number of seconds that a client of an SSSD process "
+"can hold onto a file descriptor without communicating on it."
+msgstr "此選項指定了 SSSD 程序客戶端可持有檔案描述符而不與之通訊的秒數。"
+
+#: src/include/sssd-parameters.rb:95
+msgid ""
+"If a service is not responding to ping checks (see the “timeout” option), it "
+"is first sent the SIGTERM signal that instructs it to quit gracefully."
+msgstr "若服務不響應 ping 檢查 (參考「超時」選項) ，它將會先發送 SIGTERM 訊號引導服務優雅地退出。"
+
+#. NSS configuration options
+#: src/include/sssd-parameters.rb:103
+msgid ""
+"How many seconds should cache nss_sss enumerations (requests for info about "
+"all users)?"
+msgstr "快取 nss_css 列舉 (對全部使用者資訊的請求) 的秒數"
+
+#: src/include/sssd-parameters.rb:108
+msgid ""
+"The entry cache can be set to automatically update entries in the background "
+"if they are requested beyond a percentage of the entry_cache_timeout value "
+"for the domain."
+msgstr ""
+"若請求條目時間超出了該域 entry_cache_timeout 值的某個百分比，"
+"則可將條目快取設為在後臺自動更新條目。"
+
+#: src/include/sssd-parameters.rb:113
+msgid ""
+"Specifies for how many seconds nss_sss should cache negative cache hits "
+"(that is, queries for invalid database entries, like nonexistent ones) "
+"before asking the back end again."
+msgstr "指定了再次詢問後端前 nss_sss 應快取否定快取次數 (即，針對無效資料庫條目如不存在條目的查詢) 的秒數。"
+
+#: src/include/sssd-parameters.rb:118
+msgid "Exclude certain users from being fetched from the sss NSS database."
+msgstr "從 sss NSS 資料庫擷取使用者時排除特定使用者。"
+
+#: src/include/sssd-parameters.rb:123
+msgid "Exclude certain groups from being fetched from the sss NSS database."
+msgstr "從 sss NSS 資料庫擷取組時排除特定組。"
+
+#: src/include/sssd-parameters.rb:128
+msgid ""
+"If you want filtered user to still be group members set this option to false."
+msgstr "若您想使被過濾的使用者仍留作組成員則請設定此選項為假。"
+
+#: src/include/sssd-parameters.rb:132
+msgid ""
+"Override the user's home directory. You can either provide an absolute value "
+"or a template."
+msgstr "覆蓋使用者主資料夾。您可以提供一個絕對值或一個模板。"
+
+#: src/include/sssd-parameters.rb:136 src/include/sssd-parameters.rb:1103
+msgid ""
+"Set a default template for a user's home directory if one is not specified "
+"explicitly by the domain's data provider."
+msgstr "設定當某域的資料提供者未顯式指定使用者主資料夾時所用的默認模板。"
+
+#: src/include/sssd-parameters.rb:140
+msgid "Override the login shell for all users."
+msgstr "覆蓋全部使用者的登入殼層。"
+
+#: src/include/sssd-parameters.rb:144
+msgid "Restrict user shell to one of the listed values."
+msgstr "限制使用者使用的殼層為列出值其一。"
+
+#: src/include/sssd-parameters.rb:148
+msgid "Replace any instance of these shells with the shell_fallback"
+msgstr "使用 shell_fallback 替換這些殼層中的任何一種"
+
+#: src/include/sssd-parameters.rb:153
+msgid ""
+"The default shell to use if an allowed shell is not installed on the machine."
+msgstr "機器上未安裝獲准使用的殼層時所使用的默認殼層。"
+
+#: src/include/sssd-parameters.rb:157 src/include/sssd-parameters.rb:1107
+msgid ""
+"The default shell to use if the provider does not return one during lookup."
+msgstr "查詢時提供者未返回值時所使用的默認殼層。"
+
+#: src/include/sssd-parameters.rb:162 src/include/sssd-parameters.rb:205
+msgid ""
+"Specifies time in seconds for which the list of subdomains will be "
+"considered valid."
+msgstr "指定了子域列表被認定有效的秒數 。"
+
+#: src/include/sssd-parameters.rb:167
+msgid ""
+"Specifies time in seconds for which records in the in-memory cache will be "
+"valid."
+msgstr "指定了內存快取中記錄的有效秒數。"
+
+#. PAM configuration options
+#: src/include/sssd-parameters.rb:175
+msgid ""
+"If the authentication provider is offline, how long we should allow cached "
+"logins (in days since the last successful online login)."
+msgstr "認證提供者離線時應允許快取登入的天數 (自上次成功線上登入起的天數)"
+
+#: src/include/sssd-parameters.rb:180 src/include/sssd-parameters.rb:185
+msgid ""
+"The time in minutes which has to pass after offline_failed_login_attempts "
+"has been reached before a new login attempt is possible."
+msgstr "觸及 offline_failed_login_attempts 後可進行新登入嘗試前必須等待的以分鐘計的時間。"
+
+#: src/include/sssd-parameters.rb:190
+msgid ""
+"Controls what kind of messages are shown to the user during authentication."
+msgstr "控制在認證期間展示給使用者的訊息類型。"
+
+#: src/include/sssd-parameters.rb:195
+msgid ""
+"For any PAM request while SSSD is online, the SSSD will attempt to "
+"immediately update the cached identity information for the user in order to "
+"ensure that authentication takes place with the latest information."
+msgstr ""
+"SSSD 線上時對於任何 PAM 請求，SSSD 均會嘗試立即更新快取的該使用者身份資訊"
+"以確保認證使用了最新資訊。"
+
+#. The kerberos domain section
+#: src/include/sssd-parameters.rb:200 src/include/sssd-parameters.rb:693
+#: src/include/sssd-parameters.rb:990
+msgid "Display a warning N days before the password expires."
+msgstr "在密碼過期前 N 天展示一條警告。"
+
+#. SUDO configuration options
+#: src/include/sssd-parameters.rb:213
+msgid ""
+"Whether or not to evaluate the sudoNotBefore and sudoNotAfter attributes "
+"that implement time-dependent sudoers entries."
+msgstr "是否評騭實現了隨時間變化的 sudoer 項的 sudoNotBefore 與 sudoNotAfter 屬性。"
+
+#. AUTOFS configuration options
+#: src/include/sssd-parameters.rb:221
+msgid ""
+"Specifies for how many seconds the autofs responder should cache negative "
+"hits before asking the back end again."
+msgstr "指定了再次詢問後端前 autofs 迴應者應快取否定次數的秒數。"
+
+#. SSH configuration options
+#: src/include/sssd-parameters.rb:229
+msgid ""
+"Whether or not to hash host names and addresses in the managed known_hosts "
+"file."
+msgstr "是否在受管 known_hosts 檔案中雜湊化主機名與地址。"
+
+#: src/include/sssd-parameters.rb:234
+msgid ""
+"How many seconds to keep a host in the managed known_hosts file after its "
+"host keys were requested."
+msgstr "已請求主機金鑰後在受管 known_hosts 檔案中儲存主機的秒數。"
+
+#. DOMAIN SECTIONS
+#. These configuration options can be present in a domain configuration section, that is, in a section called “[domain/NAME]”
+#: src/include/sssd-parameters.rb:243 src/include/sssd-parameters.rb:248
+msgid ""
+"UID and GID limits for the domain. If a domain contains an entry that is "
+"outside these limits, it is ignored."
+msgstr "該域的 UID 與 GID 限制。若某域含有一個超出這些限制的項，則忽略該項。"
+
+#: src/include/sssd-parameters.rb:253
+msgid "Determines if a domain can be enumerated."
+msgstr "確定某域是否可列舉。"
+
+#: src/include/sssd-parameters.rb:258
+msgid ""
+"If the service does not terminate after “force_timeout” seconds, the monitor "
+"will forcibly shut it down by sending a SIGKILL signal."
+msgstr "若服務在 \"force_timeout\" 秒後未終止，監控器將發送一個 SIGKILL 訊號強制關閉它。"
+
+#: src/include/sssd-parameters.rb:263
+msgid ""
+"How many seconds nss_sss should consider entries valid before asking the "
+"backend again."
+msgstr "再次詢問後端前 nss_sss 應認定條目有效的秒數。"
+
+#: src/include/sssd-parameters.rb:268
+msgid ""
+"How many seconds nss_sss should consider user entries valid before asking "
+"the backend again."
+msgstr "再次詢問後端前 nss_sss 應認定使用者項有效的秒數。"
+
+#: src/include/sssd-parameters.rb:273
+msgid ""
+"How many seconds nss_sss should consider group entries valid before asking "
+"the backend again."
+msgstr "再次詢問後端前 nss_sss 應認定組項有效的秒數。"
+
+#: src/include/sssd-parameters.rb:278
+msgid ""
+"How many seconds nss_sss should consider netgroup entries valid before "
+"asking the backend again."
+msgstr "再次詢問後端前 nss_sss 應認定網路組項有效的秒數。"
+
+#: src/include/sssd-parameters.rb:283
+msgid ""
+"How many seconds nss_sss should consider service entries valid before asking "
+"the backend again."
+msgstr "再次詢問後端前 nss_sss 應認定服務項有效的秒數。"
+
+#: src/include/sssd-parameters.rb:288
+msgid ""
+"How many seconds sudo should consider rules valid before asking the backend "
+"again."
+msgstr "再次詢問後端前 sudo 應認定規則有效的秒數。"
+
+#: src/include/sssd-parameters.rb:293
+msgid ""
+"How many seconds the autofs service should consider automounter maps valid "
+"before asking the backend again."
+msgstr "再次詢問後端前 autofs 服務應認定自動裝載器對映有效的秒數。"
+
+#: src/include/sssd-parameters.rb:298
+msgid "Determines if user credentials are also cached in the local LDB cache."
+msgstr "確定是否也在本地 LDB 快取中快取使用者機要。"
+
+#: src/include/sssd-parameters.rb:303
+msgid ""
+"Number of days entries are left in cache after last successful login before "
+"being removed during a cleanup of the cache."
+msgstr "在自快取清理期間移除前應在快取中保留條目的從最後成功登入日起計的天數。"
+
+#: src/include/sssd-parameters.rb:308
+msgid "The identification provider used for the domain."
+msgstr "該域所用的標識提供者。"
+
+#: src/include/sssd-parameters.rb:313
+msgid ""
+"Use the full name and domain (as formatted by the domain's full_name_format) "
+"as the user's login name reported to NSS."
+msgstr "使用完整名稱與域 (格式化成該域的完整名稱格式) 作為彙報給 NSS 的該使用者的登入名。"
+
+#: src/include/sssd-parameters.rb:319
+msgid "The authentication provider used for the domain."
+msgstr "該域所用的認證提供者。"
+
+#: src/include/sssd-parameters.rb:325
+msgid "The access control provider used for the domain."
+msgstr "該域所用的訪問控制提供者。"
+
+#: src/include/sssd-parameters.rb:331
+msgid ""
+"The provider which should handle change password operations for the domain."
+msgstr "應受理該域的密碼變更操作的提供者。"
+
+#: src/include/sssd-parameters.rb:337
+msgid "The SUDO provider used for the domain."
+msgstr "該域所用的 SUDO 提供者。"
+
+#: src/include/sssd-parameters.rb:343
+msgid "The provider which should handle loading of selinux settings."
+msgstr "應受理 selinux 設定載入的提供者。"
+
+#: src/include/sssd-parameters.rb:349
+msgid "The provider which should handle fetching of subdomains."
+msgstr "應受理子域擷取的提供者。"
+
+#: src/include/sssd-parameters.rb:355
+msgid "The autofs provider used for the domain."
+msgstr "該域所用的 autofs 提供者。"
+
+#: src/include/sssd-parameters.rb:361
+msgid "The provider used for retrieving host identity information."
+msgstr "用於擷取主機身份資訊的提供者。"
+
+#: src/include/sssd-parameters.rb:366
+msgid ""
+"Regular expression for this domain that describes how to parse the string "
+"containing user name and domain into these components."
+msgstr "用於此域的正規表示式，描述瞭如何解析包含使用者名與域的字元串到這些元件中。"
+
+#: src/include/sssd-parameters.rb:371
+msgid ""
+"A printf(3)-compatible format that describes how to translate a (name, "
+"domain) tuple for this domain into a fully qualified name."
+msgstr "一種 printf(3) 相容格式，描述瞭如何轉義此域的 (name, domain) 元組為完全限定名稱。"
+
+#: src/include/sssd-parameters.rb:377
+msgid ""
+"Provides the ability to select preferred address family to use when "
+"performing DNS lookups."
+msgstr "提供了執行 DNS 查詢時選擇偏好的地址族的能力。"
+
+#: src/include/sssd-parameters.rb:382
+msgid ""
+"Defines the amount of time (in seconds) to wait for a reply from the DNS "
+"resolver before assuming that it is unreachable."
+msgstr "定義了假設其不可達前等待 DNS 解析者回復的以秒計的時間。"
+
+#: src/include/sssd-parameters.rb:386
+msgid "Use the domain part of machine's hostname."
+msgstr "使用機器主機名的域部分。"
+
+#: src/include/sssd-parameters.rb:387
+msgid ""
+"If service discovery is used in the back end, specifies the domain part of "
+"the service discovery DNS query."
+msgstr "若後端使用了服務發現，則指定了服務發現 DNS 查詢的域部分。"
+
+#: src/include/sssd-parameters.rb:391
+msgid "Override the primary GID value with the one specified."
+msgstr "使用指定組 ID 值覆蓋主要組 ID 值。"
+
+#: src/include/sssd-parameters.rb:396
+msgid "Treat user and group names as case sensitive."
+msgstr "視使用者與組名稱為大小寫敏感的。"
+
+#: src/include/sssd-parameters.rb:401
+msgid ""
+"When a user or group is looked up by name in the proxy provider, a second "
+"lookup by ID is performed to 'canonicalize' the name in case the requested "
+"name was an alias."
+msgstr ""
+"當在代理提供者上按名稱查詢某個使用者或組時，也執行按 ID 的二次查詢以 '規範化' 該名稱"
+"以防止所請求的名稱是一個別名。"
+
+#: src/include/sssd-parameters.rb:406
+msgid ""
+"Use this homedir as default value for all subdomains within this domain."
+msgstr "使用此主資料夾作為此域中全部子域的預設值。"
+
+#. Following options will be provided by SSSD's 'simple' access-control provider
+#: src/include/sssd-parameters.rb:412
+msgid "Comma separated list of users who are allowed to log in."
+msgstr "逗號分隔的允許登入使用者列表。"
+
+#: src/include/sssd-parameters.rb:417
+msgid ""
+"Comma separated list of groups who are allowed to log in. This applies only "
+"to groups within this SSSD domain."
+msgstr "逗號分隔的允許登入組列表。這僅應用於此 SSSD 域中的組。"
+
+#: src/include/sssd-parameters.rb:422
+msgid "Comma separated list of users who are explicitly denied access."
+msgstr "逗號分隔的顯式拒絕訪問使用者列表。"
+
+#: src/include/sssd-parameters.rb:427
+msgid ""
+"Comma separated list of groups that are explicitly denied access. This "
+"applies only to groups within this SSSD domain."
+msgstr "逗號分隔的顯式拒絕訪問組列表。這僅應用於此 SSSD 域中的組。"
+
+#: src/include/sssd-parameters.rb:433
+msgid "The default base DN to use for performing LDAP sudo rules."
+msgstr "用於執行 LDAP sudo 規則的默認基本判別名。"
+
+#. The local domain section
+#. This section contains settings for domain that stores users and groups in SSSD native database, that is, a domain that uses id_provider=local.
+#: src/include/sssd-parameters.rb:442
+msgid ""
+"The tools append the login name to base_directory and use that as the home "
+"directory."
+msgstr "此工具會追加登入名到 base_directory 並用其作為主資料夾。"
+
+#: src/include/sssd-parameters.rb:447
+msgid ""
+"Indicate if a home directory should be created by default for new users."
+msgstr "指出是否應為新使用者默認創建主資料夾。"
+
+#: src/include/sssd-parameters.rb:452
+msgid ""
+"Indicate if a home directory should be removed by default for deleted users."
+msgstr "指出是否應默認移除已刪除使用者的主資料夾。"
+
+#: src/include/sssd-parameters.rb:457
+msgid ""
+"Used by sss_useradd(8) to specify the default permissions on a newly created "
+"home directory."
+msgstr "被 sss_useradd(8) 用來指定新創建的主資料夾的默認許可權。"
+
+#: src/include/sssd-parameters.rb:462
+msgid ""
+"The skeleton directory, which contains files and directories to be copied in "
+"the user's home directory, when the home directory is created by "
+"sss_useradd(8)"
+msgstr "骨架資料夾，其收納了當 sss_useradd(8) 創建主資料夾時複製至使用者主資料夾的檔案與資料夾。"
+
+#: src/include/sssd-parameters.rb:467
+msgid "The mail spool directory."
+msgstr "郵件區塊資料夾。"
+
+#: src/include/sssd-parameters.rb:471
+msgid "The command that is run after a user is removed."
+msgstr "移除使用者後運行的命令。"
+
+#. The ldap domain section
+#: src/include/sssd-parameters.rb:480 src/include/sssd-parameters.rb:485
+msgid ""
+"Specifies the comma-separated list of URIs of the LDAP servers to which SSSD "
+"should connect in the order of preference."
+msgstr "指定了逗號分隔的 SSSD 應以優先順序順序連線的 LDAP 伺服器 URI 列表。"
+
+#: src/include/sssd-parameters.rb:491 src/include/sssd-parameters.rb:497
+msgid ""
+"Specifies the comma-separated list of URIs of the LDAP servers to which SSSD "
+"should connect in the order of preference to change the password of a user."
+msgstr "指定了逗號分隔的 LDAP 伺服器 URI 列表，SSSD 應以優先順序順序連線以修改使用者密碼。"
+
+#: src/include/sssd-parameters.rb:503
+msgid "The default base DN to use for performing LDAP user operations."
+msgstr "指定 LDAP 使用者操作所用的默認基本判別名。"
+
+#: src/include/sssd-parameters.rb:509
+msgid "Specifies the Schema Type in use on the target LDAP server."
+msgstr "指定了目標 LDAP 伺服器上使用的方案類型。"
+
+#: src/include/sssd-parameters.rb:513
+msgid "The default bind DN to use for performing LDAP operations."
+msgstr "指定 LDAP 操作所用的默認繫結判別名。"
+
+#: src/include/sssd-parameters.rb:519
+msgid "The type of the authentication token of the default bind DN."
+msgstr "默認繫結判別名的認證 token 的類型。"
+
+#: src/include/sssd-parameters.rb:523
+msgid "The authentication token of the default bind DN."
+msgstr "默認繫結判別名的認證 token。"
+
+#: src/include/sssd-parameters.rb:528
+msgid "The object class of a user entry in LDAP."
+msgstr "LDAP 中使用者項的物件類。"
+
+#: src/include/sssd-parameters.rb:533
+msgid "The LDAP attribute that corresponds to the user's login name."
+msgstr "對應著使用者登入名的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:538
+msgid "The LDAP attribute that corresponds to the user's id."
+msgstr "對應著使用者 ID 的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:543
+msgid "The LDAP attribute that corresponds to the user's primary group id."
+msgstr "對應著使用者的首要組 ID 的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:548
+msgid "The LDAP attribute that corresponds to the user's gecos field."
+msgstr "對應著使用者 gecos 欄位的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:553
+msgid ""
+" The LDAP attribute that contains the name of the user's home directory."
+msgstr "存放使用者主資料夾名稱的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:558
+msgid "The LDAP attribute that contains the path to the user's default shell."
+msgstr "存放使用者默認殼層路徑的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:563
+msgid "The LDAP attribute that contains the UUID/GUID of an LDAP user object."
+msgstr "存放 LDAP 使用者物件的 UUID/GUID 的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:568
+msgid "The LDAP attribute that contains the objectSID of an LDAP user object."
+msgstr "存放 LDAP 使用者物件的 objectSID 的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:573 src/include/sssd-parameters.rb:778
+msgid ""
+"The LDAP attribute that contains timestamp of the last modification of the "
+"parent object."
+msgstr "存放父物件最後修訂時間戳記的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:578
+msgid ""
+"When using ldap_pwd_policy=shadow, this parameter contains the name of an "
+"LDAP attribute corresponding to its shadow(5) counterpart (date of the last "
+"password change)."
+msgstr ""
+"當使用 ldap_pwd_policy=shadow 時，此參數存放了對應著其 shadow(5) 對手方"
+"(上次密碼變更日期) 的 LDAP 屬性名稱。"
+
+#: src/include/sssd-parameters.rb:583
+msgid ""
+"When using ldap_pwd_policy=shadow, this parameter contains the name of an "
+"LDAP attribute corresponding to its shadow(5) counterpart (minimum password "
+"age)."
+msgstr ""
+"當使用 ldap_pwd_policy=shadow 時，此參數存放了對應著其 shadow(5) 對手方"
+"(最小密碼有效期) 的 LDAP 屬性名稱。"
+
+#: src/include/sssd-parameters.rb:588
+msgid ""
+"When using ldap_pwd_policy=shadow, this parameter contains the name of an "
+"LDAP attribute corresponding to its shadow(5) counterpart (maximum password "
+"age)."
+msgstr ""
+"當使用 ldap_pwd_policy=shadow 時，此參數存放了對應著其 shadow(5) 對手方"
+"(最大密碼有效期) 的 LDAP 屬性名稱。"
+
+#: src/include/sssd-parameters.rb:593
+msgid ""
+"When using ldap_pwd_policy=shadow, this parameter contains the name of an "
+"LDAP attribute corresponding to its shadow(5) counterpart (password warning "
+"period)."
+msgstr ""
+"當使用 ldap_pwd_policy=shadow 時，此參數存放了對應著其 shadow(5) 對手方"
+"(密碼告警時間) 的 LDAP 屬性名稱。"
+
+#: src/include/sssd-parameters.rb:598
+msgid ""
+"When using ldap_pwd_policy=shadow, this parameter contains the name of an "
+"LDAP attribute corresponding to its shadow(5) counterpart (password "
+"inactivity period)."
+msgstr ""
+"當使用 ldap_pwd_policy=shadow 時，此參數存放了對應著其 shadow(5) 對手方"
+"(密碼無活動時間) 的 LDAP 屬性名稱。"
+
+#: src/include/sssd-parameters.rb:603
+msgid ""
+"When using ldap_pwd_policy=shadow or ldap_account_expire_policy=shadow, this "
+"parameter contains the name of an LDAP attribute corresponding to its "
+"shadow(5) counterpart (account expiration date)."
+msgstr ""
+"當使用 ldap_pwd_policy=shadow 或 ldap_account_expire_policy=shadow 時，此參數存放了對應著其 "
+"shadow(5) 對手方"
+"(賬戶過期日) 的 LDAP 屬性名稱。"
+
+#: src/include/sssd-parameters.rb:608
+msgid ""
+"When using ldap_pwd_policy=mit_kerberos, this parameter contains the name of "
+"an LDAP attribute storing the date and time of last password change in "
+"kerberos."
+msgstr ""
+"當使用 ldap_pwd_policy=mit_kerberos 時，此參數存放了存儲 kerberos 中"
+"上次密碼變更日期與時間的 LDAP 屬性的名稱。"
+
+#: src/include/sssd-parameters.rb:613
+msgid ""
+"When using ldap_pwd_policy=mit_kerberos, this parameter contains the name of "
+"an LDAP attribute storing the date and time when current password expires."
+msgstr ""
+"當使用 ldap_pwd_policy=mit_kerberos 時，此參數存放了存儲當前密碼過期"
+"日期與時間的 LDAP 屬性的名稱。"
+
+#: src/include/sssd-parameters.rb:618
+msgid ""
+"When using ldap_account_expire_policy=ad, this parameter contains the name "
+"of an LDAP attribute storing the expiration time of the account."
+msgstr ""
+"當使用 ldap_account_expire_policy=ad 時，此參數存放了存儲賬戶過期時間"
+"的 LDAP 屬性的名稱。"
+
+#: src/include/sssd-parameters.rb:623
+msgid ""
+"When using ldap_account_expire_policy=ad, this parameter contains the name "
+"of an LDAP attribute storing the user account control bit field."
+msgstr ""
+"當使用 ldap_account_expire_policy=ad 時，此參數存放了存儲使用者賬戶控制位元組段"
+"的 LDAP 屬性的名稱。"
+
+#: src/include/sssd-parameters.rb:628
+msgid ""
+"When using ldap_account_expire_policy=rhds or equivalent, this parameter "
+"determines if access is allowed or not."
+msgstr "當使用 ldap_account_expire_policy=rhds 或等價物時，此參數確定了是否允許訪問。"
+
+#: src/include/sssd-parameters.rb:633
+msgid ""
+"When using ldap_account_expire_policy=nds, this attribute determines if "
+"access is allowed or not."
+msgstr "當使用 ldap_account_expire_policy=nds 時，此屬性確定了是否允許訪問。"
+
+#: src/include/sssd-parameters.rb:638
+msgid ""
+"When using ldap_account_expire_policy=nds, this attribute determines until "
+"which date access is granted."
+msgstr "當使用 ldap_account_expire_policy=nds 時，此屬性確定了准予訪問至的日期。"
+
+#: src/include/sssd-parameters.rb:643
+msgid ""
+"When using ldap_account_expire_policy=nds, this attribute determines the "
+"hours of a day in a week when access is granted."
+msgstr "當使用 ldap_account_expire_policy=nds 時，此屬性確定了一週中每天准予訪問的小時數。"
+
+#: src/include/sssd-parameters.rb:648
+msgid ""
+"The LDAP attribute that contains the user's Kerberos User Principal Name "
+"(UPN)."
+msgstr "存放使用者的 Kerberos 使用者實體名稱 (UPN) 的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:652
+msgid "The LDAP attribute that contains the user's SSH public keys."
+msgstr "存放使用者 SSH 公鑰的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:657
+msgid ""
+"Some directory servers, for example Active Directory, might deliver the "
+"realm part of the UPN in lower case, which might cause the authentication to "
+"fail."
+msgstr ""
+"某些目錄伺服器，例如活動目錄伺服器，可能會以小寫傳遞 UPN 的領域部分，"
+"這可能造成認證失敗。"
+
+#: src/include/sssd-parameters.rb:658
+msgid "Set this option to true if you want to use an upper-case realm."
+msgstr "若您想要使用大寫領域則請將此選項設為真。"
+
+#: src/include/sssd-parameters.rb:663
+msgid ""
+"Specifies how many seconds SSSD has to wait before refreshing its cache of "
+"enumerated records."
+msgstr "指定了重新整理其列舉記錄快取前 SSSD 必須等待的秒數。"
+
+#: src/include/sssd-parameters.rb:668
+msgid ""
+"Determine how often to check the cache for inactive entries (such as groups "
+"with no members and users who have never logged in) and remove them to save "
+"space."
+msgstr "確定了檢查快取中不活動項 (諸如沒有成員的組與從未登入過的使用者) 並移除它們節省空間的頻率。"
+
+#: src/include/sssd-parameters.rb:673
+msgid "The LDAP attribute that corresponds to the user's full name."
+msgstr "對應著使用者完整名稱的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:678
+msgid "The LDAP attribute that lists the user's group memberships."
+msgstr "列出了使用者的組成員資格的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:683
+msgid ""
+"If access_provider=ldap and ldap_access_order=authorized_service, SSSD will "
+"use the presence of the authorizedService attribute in the user's LDAP entry "
+"to determine access privilege."
+msgstr ""
+"若 access_provider=ldap 且 ldap_access_order=authorized_service，SSSD 將"
+"依據 authorizedService 屬性是否在該使用者 LDAP 項中出現來確定訪問許可權。"
+
+#: src/include/sssd-parameters.rb:688
+msgid ""
+"If access_provider=ldap and ldap_access_order=host, SSSD will use the "
+"presence of the host attribute in the user's LDAP entry to determine access "
+"privilege."
+msgstr ""
+"若 access_provider=ldap 且 ldap_access_order=host，SSSD 將依據主機屬性是否"
+"在該使用者 LDAP 項中出現來確定訪問許可權。"
+
+#: src/include/sssd-parameters.rb:698
+msgid "The object class of a group entry in LDAP."
+msgstr "LDAP 中組項的物件類。"
+
+#: src/include/sssd-parameters.rb:703
+msgid "The LDAP attribute that corresponds to the group name."
+msgstr "對應著組名稱的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:708
+msgid "The LDAP attribute that corresponds to the group's id."
+msgstr "對應著組 ID 的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:713
+msgid "The LDAP attribute that contains the names of the group's members."
+msgstr "存放組成員名稱的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:718
+msgid "The LDAP attribute that contains the UUID/GUID of an LDAP group object."
+msgstr "存放某 LDAP 組物件的 UUID/GUID 的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:723
+msgid "The LDAP attribute that contains the objectSID of an LDAP group object."
+msgstr "存放某 LDAP 組物件的 objectSID 的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:728
+msgid ""
+" The LDAP attribute that contains timestamp of the last modification of the "
+"parent object."
+msgstr "存放父物件最後修訂時間戳記的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:734
+msgid ""
+"If ldap_schema is set to a schema format that supports nested groups (e.g. "
+"RFC2307bis), then this option controls how many levels of nesting SSSD will "
+"follow."
+msgstr ""
+"若 ldap_schema 設為支援巢狀組的方案格式 (例如 RFC2307bis)，"
+"則此選項控制了 SSSD 將跟隨的巢狀級數。"
+
+#: src/include/sssd-parameters.rb:740
+msgid ""
+"This option tells SSSD to take advantage of an Active Directory-specific "
+"feature which may speed up group lookup operations on deployments with "
+"complex or deep nested groups."
+msgstr "此選項告知 SSSD 利用一項活動目錄獨有特性，其可能加速在具有複雜或深度巢狀的組的部署上的組查詢操作。"
+
+#: src/include/sssd-parameters.rb:746
+msgid ""
+"This option tells SSSD to take advantage of an Active Directory-specific "
+"feature which might speed up initgroups operations (most notably when "
+"dealing with complex or deep nested groups)."
+msgstr "此選項告知 SSSD 利用一項活動目錄獨有特性，其可能加速 initgroups 操作 (當處理複雜或深度巢狀的組時最為顯著)。"
+
+#: src/include/sssd-parameters.rb:752
+msgid "           The object class of a netgroup entry in LDAP."
+msgstr "          LDAP 中網路組項的物件類。"
+
+#: src/include/sssd-parameters.rb:758
+msgid "The LDAP attribute that corresponds to the netgroup name."
+msgstr "對應著網路組名稱的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:763
+msgid "The LDAP attribute that contains the names of the netgroup's members."
+msgstr "存放網路組成員名稱的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:768
+msgid ""
+"The LDAP attribute that contains the (host, user, domain) netgroup triples."
+msgstr "存放 (主機，使用者，域) 網路組鐵三角的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:773
+msgid ""
+"The LDAP attribute that contains the UUID/GUID of an LDAP netgroup object."
+msgstr "存放某個 LDAP 網路組物件的 UUID/GUID 的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:783
+msgid "The object class of a service entry in LDAP."
+msgstr "LDAP 中服務項的物件類。"
+
+#: src/include/sssd-parameters.rb:788
+msgid ""
+"The LDAP attribute that contains the name of service attributes and their "
+"aliases."
+msgstr "存放服務屬性名稱與其別名的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:793
+msgid "The LDAP attribute that contains the port managed by this service."
+msgstr "存放此服務管理的埠的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:798
+msgid ""
+"The LDAP attribute that contains the protocols understood by this service."
+msgstr "存放此服務可解析協議的 LDAP 屬性。"
+
+#: src/include/sssd-parameters.rb:804
+msgid ""
+"An optional base DN, search scope and LDAP filter to restrict LDAP searches "
+"for this attribute type."
+msgstr "一個可選的基本判別名/搜索範圍/LDAP 過濾器，可限制 LDAP 搜索僅搜索此屬性類型。"
+
+#: src/include/sssd-parameters.rb:809
+msgid ""
+" Specifies the timeout (in seconds) that ldap searches are allowed to run "
+"before they are cancelled and cached results are returned (and offline mode "
+"is entered)."
+msgstr "指定了取消並返回快取結果 (並進入離線模式) 前 LDAP 搜索允許運行的以秒計超時。"
+
+#: src/include/sssd-parameters.rb:814
+msgid ""
+"Specifies the timeout (in seconds) that ldap searches for user and group "
+"enumerations are allowed to run before they are cancelled and cached results "
+"are returned (and offline mode is entered)."
+msgstr "指定了取消並返回快取結果 (並進入離線模式) 前 LDAP 使用者與組列舉搜索允許運行的以秒計超時。"
+
+#: src/include/sssd-parameters.rb:819
+msgid ""
+"Specifies the timeout (in seconds) after which the poll(2)/select(2) "
+"following a connect(2) returns in case of no activity."
+msgstr "指定了無活動時 poll(2)/select(2) 跟隨 connect(2) 返回的以秒計超時。"
+
+#: src/include/sssd-parameters.rb:824
+msgid ""
+"Specifies a timeout (in seconds) after which calls to synchronous LDAP APIs "
+"will abort if no response is received."
+msgstr "指定了無迴應時同步 LDAP API 呼叫中止的以秒計超時。"
+
+#: src/include/sssd-parameters.rb:829
+msgid ""
+"Specifies a timeout (in seconds) that a connection to an LDAP server will be "
+"maintained."
+msgstr "指定了維持到 LDAP 伺服器連線的以秒計超時。"
+
+#: src/include/sssd-parameters.rb:834
+msgid ""
+"Specify the number of records to retrieve from LDAP in a single request. "
+"Some LDAP servers enforce a maximum limit per-request."
+msgstr ""
+"指定了單一請求從 LDAP 擷取的記錄數。"
+"某些 LDAP 伺服器強制單一請求最大限制。"
+
+#: src/include/sssd-parameters.rb:839
+msgid "Disable the LDAP paging control."
+msgstr "禁用 LDAP 分頁控制。"
+
+#: src/include/sssd-parameters.rb:844
+msgid ""
+"When communicating with an LDAP server using SASL, specify the minimum "
+"security level necessary to establish the connection."
+msgstr "當使用 SASL 與 LDAP 伺服器通訊時，請指定建立連線必需的最小安全級別。"
+
+#: src/include/sssd-parameters.rb:849
+msgid ""
+"Specify the number of group members that must be missing from the internal "
+"cache in order to trigger a dereference lookup."
+msgstr "指定了為觸發解引用查詢內部快取必須缺失的組成員數。"
+
+#: src/include/sssd-parameters.rb:855
+msgid ""
+"Specifies what checks to perform on server certificates in a TLS session, if "
+"any."
+msgstr "指定了若需要檢查則在 TLS 會話中對伺服器證書要進行的檢查。"
+
+#: src/include/sssd-parameters.rb:860
+msgid ""
+"Specifies the file that contains certificates for all of the Certificate "
+"Authorities that sssd will recognize."
+msgstr "指定了包含全部 sssd 應認得的證書授權機構證書的檔案。"
+
+#: src/include/sssd-parameters.rb:865
+msgid ""
+"Specifies the path of a directory that contains Certificate Authority "
+"certificates in separate individual files."
+msgstr "指定了包含以幾個單獨檔案形式存在的證書授權機構證書的資料夾路徑。"
+
+#: src/include/sssd-parameters.rb:869
+msgid "Specifies the file that contains the certificate for the client's key."
+msgstr "指定了包含客戶端金鑰證書的檔案。"
+
+#: src/include/sssd-parameters.rb:873
+msgid "Specifies the file that contains the client's key."
+msgstr "指定了包含客戶端金鑰的檔案。"
+
+#: src/include/sssd-parameters.rb:878
+msgid "Specifies acceptable cipher suites."
+msgstr "指定了可接受的密碼套件。"
+
+#: src/include/sssd-parameters.rb:883
+msgid ""
+"Specifies that the id_provider connection must also use tls to protect the "
+"channel."
+msgstr "指定了 id_provider 連線必須也使用 TLS 來保護通道。"
+
+#: src/include/sssd-parameters.rb:888
+msgid ""
+"Specifies that SSSD should attempt to map user and group IDs from the "
+"ldap_user_objectsid and ldap_group_objectsid attributes instead of relying "
+"on ldap_user_uid_number and ldap_group_gid_number."
+msgstr ""
+"指定了 SSSD 應嘗試從 ldap_user_objectsid 與 ldap_group_objectsid 屬性"
+"對映使用者與組 ID 而不是依賴於 ldap_user_uid_number 與 ldap_group_gid_number。"
+
+#: src/include/sssd-parameters.rb:892
+msgid "Specify the SASL mechanism to use."
+msgstr "指定了要使用的 SASL 機制。"
+
+#: src/include/sssd-parameters.rb:897
+msgid "Specify the SASL authorization id to use."
+msgstr "指定了要使用的 SASL 認證 ID。"
+
+#: src/include/sssd-parameters.rb:902
+msgid "Specify the SASL realm to use."
+msgstr "指定了要使用的 SASL 領域。"
+
+#: src/include/sssd-parameters.rb:907
+msgid ""
+"If set to true, the LDAP library would perform a reverse lookup to "
+"canonicalize the host name during a SASL bind."
+msgstr "若設為真，LDAP 函數庫在 SASL 繫結時應執行一次反向查詢以規範化主機名。"
+
+#: src/include/sssd-parameters.rb:912
+msgid "Specify the keytab to use when using SASL/GSSAPI."
+msgstr "指定了使用 SASL/GSSAPI 時使用的金鑰表。"
+
+#: src/include/sssd-parameters.rb:917
+msgid "Specifies that the id_provider should init Kerberos credentials (TGT)."
+msgstr "指定了 id_provider 應啟始化 Kerberos 機要資料 (票據授權票據)。"
+
+#: src/include/sssd-parameters.rb:922
+msgid "Specifies the lifetime in seconds of the TGT if GSSAPI is used."
+msgstr "指定了使用 GSSAPI 時票據授權票據以秒計的生命週期。"
+
+#: src/include/sssd-parameters.rb:927
+msgid ""
+"Select the policy to evaluate the password expiration on the client side."
+msgstr "選擇客戶端方面用於評估密碼有效期的策略。"
+
+#: src/include/sssd-parameters.rb:932
+msgid "Specifies whether automatic referral chasing should be enabled."
+msgstr "指定了是否應啟用自動引用跟蹤。"
+
+#: src/include/sssd-parameters.rb:937
+msgid "Specifies the service name to use when service discovery is enabled."
+msgstr "制定了當啟用了服務發現時使用的服務名稱。"
+
+#: src/include/sssd-parameters.rb:941
+msgid ""
+"Specifies the service name to use to find an LDAP server which allows "
+"password changes when service discovery is enabled."
+msgstr "指定了當啟用了服務發現時用於查找允許密碼變更的 LDAP 伺服器的服務名稱。"
+
+#: src/include/sssd-parameters.rb:946
+msgid ""
+"Specifies whether to update the ldap_user_shadow_last_change attribute with "
+"days since the Epoch after a password change operation."
+msgstr "指定了在密碼變更操作過後是否使用上次操作天數更新 ldap_user_shadow_last_change 屬性。"
+
+#: src/include/sssd-parameters.rb:951
+msgid ""
+"If using access_provider = ldap and ldap_access_order = filter (default), "
+"this option is mandatory. It specifies an LDAP search filter criterion that "
+"must be met for the user to be granted access on this host."
+msgstr ""
+"若使用了 access_provider = ldap 與 ldap_access_order = filter (默認)，"
+"則此選項是必需的。它指定了一個 LDAP 搜索過濾器標準，使用者想要"
+"獲得此主機的訪問權就必須滿足此標準。"
+
+#: src/include/sssd-parameters.rb:956
+msgid ""
+" With this option a client side evaluation of access control attributes can "
+"be enabled."
+msgstr "使用此選項可啟用客戶端訪問控制屬性評估。"
+
+#: src/include/sssd-parameters.rb:962
+msgid "Comma separated list of access control options."
+msgstr "逗號分隔的訪問控制選項列表。"
+
+#: src/include/sssd-parameters.rb:967
+msgid "Specifies how alias dereferencing is done when performing a search."
+msgstr "指定了執行搜索時如何解引用別名。"
+
+#: src/include/sssd-parameters.rb:972
+msgid ""
+"Allows to retain local users as members of an LDAP group for servers that "
+"use the RFC2307 schema."
+msgstr "針對使用 RFC2307 方案的伺服器允許保留本地使用者作為某個 LDAP 組的成員。"
+
+#: src/include/sssd-parameters.rb:995 src/include/sssd-parameters.rb:999
+msgid ""
+"Specifies the comma-separated list of IP addresses or hostnames of the "
+"Kerberos servers to which SSSD should connect, in the order of preference."
+msgstr "指定了逗號分隔的 SSSD 應以優先順序順序連線的 Kerberos 伺服器 IP 地址或主機名列表。"
+
+#: src/include/sssd-parameters.rb:1004
+msgid "The name of the Kerberos realm."
+msgstr "Kerberos 領域的名稱。"
+
+#: src/include/sssd-parameters.rb:1009 src/include/sssd-parameters.rb:1014
+msgid ""
+"If the change password service is not running on the KDC, alternative "
+"servers can be defined here."
+msgstr "若 KDC 上未運行密碼變更服務，則可在此定義替代伺服器。"
+
+#: src/include/sssd-parameters.rb:1019
+msgid "Directory to store credential caches."
+msgstr "存儲機要快取的資料夾。"
+
+#: src/include/sssd-parameters.rb:1024
+msgid "Location of the user's credential cache."
+msgstr "使用者機要快取的位置。"
+
+#: src/include/sssd-parameters.rb:1029
+msgid ""
+" Timeout in seconds after an online authentication request or change "
+"password request is aborted."
+msgstr "線上認證請求或密碼變更請求以秒計的超時。"
+
+#: src/include/sssd-parameters.rb:1034
+msgid ""
+"Verify with the help of krb5_keytab that the TGT obtained has not been "
+"spoofed."
+msgstr "在 krb5_keytab 的幫助下校驗獲取的票據授權票據未被冒名頂替。"
+
+#: src/include/sssd-parameters.rb:1039
+msgid ""
+"The location of the keytab to use when validating credentials obtained from "
+"KDCs."
+msgstr "當認證從 KDC 獲取的機要資料時所用的金鑰表的位置。"
+
+#: src/include/sssd-parameters.rb:1044
+msgid ""
+"Store the password of the user if the provider is offline and use it to "
+"request a TGT when the provider comes online again."
+msgstr "若提供者離線則存儲使用者密碼並在提供者再次上線時用其請求票據授權票據。"
+
+#: src/include/sssd-parameters.rb:1048
+msgid ""
+"Request a renewable ticket with a total lifetime, given as an integer "
+"immediately followed by a time unit."
+msgstr "請求可續期票據與其完整生命期，以整數後接時間單位的形式給出。"
+
+#: src/include/sssd-parameters.rb:1052
+msgid ""
+"Request ticket with a with a lifetime, given as an integer immediately "
+"followed by a time unit."
+msgstr "請求票據與其生命期，以整數後接時間單位的形式給出。"
+
+#: src/include/sssd-parameters.rb:1056
+msgid "The time in seconds between two checks if the TGT should be renewed."
+msgstr "當票據授權票據應續期時兩次檢查間的秒數。"
+
+#: src/include/sssd-parameters.rb:1061
+msgid ""
+"Enables flexible authentication secure tunneling (FAST) for Kerberos pre-"
+"authentication."
+msgstr "為 Kerberos 預認證啟用靈活認證安全隧道 (FAST)。"
+
+#: src/include/sssd-parameters.rb:1065
+msgid "Specifies the server principal to use for FAST."
+msgstr "指定了用於靈活認證安全隧道的伺服器實體。"
+
+#: src/include/sssd-parameters.rb:1070
+msgid "Specifies if the host and user principal should be canonicalized."
+msgstr "指定了是否應規範化主機與使用者實體。"
+
+#. The Active Directory domain section
+#: src/include/sssd-parameters.rb:1083
+msgid "Specifies the name of the Active Directory domain."
+msgstr "指定了活動目錄域的名稱。"
+
+#: src/include/sssd-parameters.rb:1087 src/include/sssd-parameters.rb:1091
+msgid ""
+"The comma-separated list of IP addresses or hostnames of the AD servers to "
+"which SSSD should connect in order of preference."
+msgstr "以優先順序順序指定了 SSSD 應連線的活動目錄伺服器的以逗號分隔的 IP 地址或主機名列表。"
+
+#: src/include/sssd-parameters.rb:1095
+msgid ""
+"Optional. May be set on machines where the hostname(5) does not reflect the "
+"fully qualified name used in the Active Directory domain to identify this "
+"host."
+msgstr "可選。可以在 hostname(5) 未反映在活動目錄域中用於識別此主機的完全限定名稱的機器上設定。"
+
+#: src/include/sssd-parameters.rb:1099
+msgid "Override the user's home directory."
+msgstr "覆蓋使用者主資料夾。"
+
+#: src/include/sssd-parameters.rb:1112
+msgid ""
+" Specifies the lower bound of the range of POSIX IDs to use for mapping "
+"Active Directory user and group SIDs."
+msgstr "指定了用於對映活動目錄使用者與組 SID 的 POSIX ID 範圍的下界。"
+
+#: src/include/sssd-parameters.rb:1117
+msgid ""
+"Specifies the upper bound of the range of POSIX IDs to use for mapping "
+"Active Directory user and group SIDs."
+msgstr "指定了用於對映活動目錄使用者與組 SID 的 POSIX ID 範圍的上界。"
+
+#: src/include/sssd-parameters.rb:1122
+msgid "Specifies the number of IDs available for each slice."
+msgstr "指定了每一切片可用的 ID 數。"
+
+#: src/include/sssd-parameters.rb:1126
+msgid "Specify the domain SID of the default domain."
+msgstr "指定默認域的域 SID。"
+
+#: src/include/sssd-parameters.rb:1130
+msgid "Specify the name of the default domain."
+msgstr "指定默認域的名稱。"
+
+#: src/include/sssd-parameters.rb:1135
+msgid ""
+"Changes the behavior of the ID-mapping algorithm to behave more similarly to "
+"winbind's “idmap_autorid” algorithm."
+msgstr "修改 ID 對映演算法的行為以與 winbind 的 \"idmap_autorid\" 演算法更加相似。"
+
+#. The Active Directory domain section
+#: src/include/sssd-parameters.rb:1147
+msgid "Specifies the name of the IPA domain."
+msgstr "指定 IPA 域的名稱。"
+
+#: src/include/sssd-parameters.rb:1151
+msgid ""
+"The comma-separated list of IP addresses or hostnames of the IPA servers to "
+"which SSSD should connect in the order of preference."
+msgstr "指定了逗號分隔的 SSSD 應以優先順序順序連線的 IPA 伺服器 IP 地址或主機名列表。"
+
+#: src/include/sssd-parameters.rb:1155
+msgid ""
+"May be set on machines where the hostname(5) does not reflect the fully "
+"qualified name."
+msgstr "可以在 hostname(5) 未反映完全限定名稱的機器上設定。"
+
+#: src/include/sssd-parameters.rb:1160
+msgid ""
+"This option tells SSSD to automatically update the DNS server built into "
+"FreeIPA v2 with the IP address of this client."
+msgstr "此選項告知 SSSD 使用此客戶端的 IP 地址自動更新被構建成 FreeIPA v2 的 DNS 伺服器。"
+
+#: src/include/sssd-parameters.rb:1165
+msgid "The TTL to apply to the client DNS record when updating it."
+msgstr "更新客戶端 DNS 記錄時應用的 TTL。"
+
+#: src/include/sssd-parameters.rb:1169
+msgid ""
+"Choose the interface whose IP address should be used for dynamic DNS updates."
+msgstr "選擇其 IP 地址應用於動態 DNS 更新的介面。"
+
+#. end Export
+#. ################################################################
+#. ################################################################
+#. Summary()
+#. returns html formated configuration summary
+#. @return summary
+#: src/modules/AuthClient.rb:334
+msgid "System is configured for using nss_ldap.\n"
+msgstr "系統配置為使用 nss_ldap。\n"
+
+#: src/modules/AuthClient.rb:337
+msgid "System is configured for using sssd.\n"
+msgstr "系統配置為使用 sssd。\n"
+
+#: src/modules/AuthClient.rb:343
+msgid "System is configured for using OES.\n"
+msgstr "系統配置為使用 OES。\n"
+
+#: src/modules/AuthClient.rb:346
+msgid "System is configured for using /etc/passwd only.\n"
+msgstr "系統配置為僅使用 /etc/passwd。\n"
+
+
+

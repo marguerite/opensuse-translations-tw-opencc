@@ -1,0 +1,846 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Thruth Wang <lihaow@opera.com>, 2007, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kerberos\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:42+0200\n"
+"PO-Revision-Date: 2012-07-13 20:43+0800\n"
+"Last-Translator: Marguerite Su\n"
+"Language-Team: Chinese Simplified <kde-i18n-doc@kde.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.4\n"
+
+#. translators: command line help text for Kerberos client module
+#: src/clients/kerberos.rb:69
+msgid "Kerberos client configuration module"
+msgstr "Kerberos 客戶機配置模組"
+
+#. translators: command line help text for pam action
+#: src/clients/kerberos.rb:82
+msgid "Enable or disable Kerberos authentication"
+msgstr "啟用或禁用 Kerberos 身份驗證"
+
+#. translators: command line help text for summary action
+#: src/clients/kerberos.rb:92
+msgid "Configuration summary of Kerberos client"
+msgstr "Kerberos 客戶機配置摘要"
+
+#. translators: command line help text for configure action
+#: src/clients/kerberos.rb:102
+msgid "Change the global settings of Kerberos client"
+msgstr "變更 Kerberos 客戶機的全局設定"
+
+#. translators: command line help text for pam enable option
+#: src/clients/kerberos.rb:110
+msgid "Enable the service"
+msgstr "啟用服務"
+
+#. translators: command line help text for pam disable option
+#: src/clients/kerberos.rb:116
+msgid "Disable the service"
+msgstr "禁用服務"
+
+#: src/clients/kerberos.rb:121
+msgid "Use DNS to acquire the configuration at runtime"
+msgstr "運行時用 DNS 獲取配置"
+
+#. translators: command line help text for the kdc option
+#: src/clients/kerberos.rb:127
+msgid "The Key Distribution Center (KDC) address"
+msgstr "金鑰釋出中心 (KDC) 地址"
+
+#. translators: command line help text for the domain option
+#: src/clients/kerberos.rb:134
+msgid "Default domain"
+msgstr "默認域"
+
+#. translators: command line help text for the realm option
+#: src/clients/kerberos.rb:141
+msgid "Default realm"
+msgstr "默認領域"
+
+#. translators: command line help text for the minimum_uid option
+#: src/clients/kerberos.rb:148
+msgid "Minimum UID used for Kerberos authentication"
+msgstr "用於 Kerberos 身份驗證的最小 UID"
+
+#. translators: command line help text for the clockskew option
+#: src/clients/kerberos.rb:155
+msgid "Clock skew (in seconds)"
+msgstr "時鐘偏差(單位為秒)"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:162
+msgid "Default ticket lifetime"
+msgstr "默認憑據有效期"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:169
+msgid "Default renewable lifetime"
+msgstr "默認可更新有效期"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:176
+msgid "Forwardable credentials"
+msgstr "可轉發憑據"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:183
+msgid "Proxiable credentials"
+msgstr "可代理憑據"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:190
+msgid "Keytab File Location"
+msgstr "Keytab 檔案位置"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:197
+msgid "Credential Cache Directory"
+msgstr "憑據快取目錄"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:204
+msgid "Credential Cache Template"
+msgstr "憑據快取模板"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:211
+msgid "Mappings"
+msgstr "對映"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:216
+msgid "Accept Existing Ticket"
+msgstr "接受已有憑據"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:223
+msgid "External credentials"
+msgstr "外部憑據"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:230
+msgid "Validate Initial Ticket"
+msgstr "校驗初始憑據"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:237
+msgid "Use Shared Memory"
+msgstr "使用共享內存"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:242
+msgid "Addressless Initial Tickets"
+msgstr "無地址初始憑據"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:249
+msgid "Debug"
+msgstr "偵錯"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:254
+msgid "Sensitive Debug"
+msgstr "敏感偵錯"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:259
+msgid "Initial Prompt"
+msgstr "初始提示"
+
+#. help text for command line option
+#: src/clients/kerberos.rb:264
+msgid "Subsequent Prompt"
+msgstr "稍後提示"
+
+#. help text for command line option
+#. checkbox label
+#: src/clients/kerberos.rb:270 src/include/kerberos-client/dialogs.rb:157
+msgid "Kerberos Support for Open&SSH Client"
+msgstr "OpenSSH 客戶機的 Kerberos 支援(&S)"
+
+#. help text for command line option
+#. checkbox label
+#: src/clients/kerberos.rb:279 src/include/kerberos-client/dialogs.rb:172
+msgid "&Ignore Unknown Users"
+msgstr "忽略未知使用者(&I)"
+
+#. error: wrong input (probably string or negative integer)
+#: src/clients/kerberos.rb:390
+msgid "The value for clock skew must be a positive integer."
+msgstr "時鐘偏差值必須為正整數。"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:59
+msgid "&Default Lifetime"
+msgstr "默認有效期(&D)"
+
+#. help text (do not transl. values "m","h", "d")
+#: src/include/kerberos-client/dialogs.rb:61
+msgid ""
+"<p>By default, the time unit of <b>Default Lifetime</b>, <b>Default "
+"Renewable Lifetime</b>, and <b>Clock Skew</b> is set to seconds. "
+"Alternatively, specify the time unit (<tt>m</tt> for minutes, <tt>h</tt> for "
+"hours, or <tt>d</tt> for days) and use it as a value suffix, as in <tt>1d</"
+"tt> or <tt>24h</tt> for one day.</p>"
+msgstr ""
+"<p>默認情況下，<b>默認有效期</b>、<b>默認可更新有效期</b>與\n"
+"<b>時鐘偏差</b>的值以秒為單位。或者，可以指定時間單位\n"
+"(<tt>m</tt> 表示分鐘、<tt>h</tt> 表示小時、<tt>d</tt> 表示天)並將時間單位用作"
+"值字尾，例如，<tt>1d</tt> 或 <tt>24h</tt> 表示 1 天。</p>"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:86
+msgid "De&fault Renewable Lifetime"
+msgstr "默認可更新有效期(&F)"
+
+#. checkbox label
+#: src/include/kerberos-client/dialogs.rb:113
+msgid "For&wardable"
+msgstr "可轉發(&W)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:115
+msgid ""
+"<p><b>Forwardable</b> lets you transfer your complete identity (TGT) to "
+"another machine. <b>Proxiable</b> only lets you transfer particular tickets. "
+"Select wheter the options should be applied to all PAM services, none of "
+"them or enter a list of services separated by spaces.</p>"
+msgstr ""
+"<p>使用<b>可轉發</b>可以將您完整的身份 (TGT) \n"
+"傳送</b>到另一臺計算機。<b>可代理</b>僅允許傳送\n"
+"特定的憑據。選擇將選項應用到所有 PAM 服務，不應用，還是應用到一個由空格分隔的"
+"服務列表。</p>"
+
+#. checkbox label
+#: src/include/kerberos-client/dialogs.rb:130
+msgid "&Proxiable"
+msgstr "可代理(&P)"
+
+#. checkbox label
+#: src/include/kerberos-client/dialogs.rb:142
+msgid "R&etained"
+msgstr "保留(&E)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:144
+msgid ""
+"<p>If <b>Retained</b> is enabled, a PAM module keeps the tickets after "
+"closing the session.</p>"
+msgstr "<p>如果啟用了<b>保留</b>，則在關閉會話後 PAM 模組</b>將保留憑據。</p>"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:159
+msgid ""
+"<p>To enable Kerberos support for your OpenSSH client, select <b>Kerberos "
+"Support for OpenSSH Client</b>. In this case, Kerberos tickets are used for "
+"user authentication on the SSH server.</p>"
+msgstr ""
+"<p>要對 OpenSSH 客戶機啟用 Kerberos 支援，請選擇<b> OpenSSH 客戶機的 "
+"Kerberos 支援</b>。在這種情況下，Kerberos 憑據將用於 SSH 伺服器上的使用者身份驗"
+"證。</p>"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:174
+msgid ""
+"<p>Check <b>Ignore Unknown Users</b> to have Kerberos ignore authentication "
+"attempts by users it does not know.</p>"
+msgstr "<p>勾選<b>忽略未知使用者</b>使 Kerberos 忽略未知使用者的身份認證請求。</p>"
+
+#. intfield label
+#: src/include/kerberos-client/dialogs.rb:188
+msgid "Minimum &UID"
+msgstr "最小 UID(&U)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:190
+msgid ""
+"<p>When the <b>Minimum UID</b> is greater than 0, authentication attempts by "
+"users with UIDs below the specified number are ignored. This is useful for "
+"disabling Kerberos authentication for the system administrator root.</p>"
+msgstr ""
+"<p>當<b>最小 UID</b> 大於 0 時，將忽略 UID 小於指定數字\n"
+"的使用者試圖進行的身份驗證。這在禁用系統管理員 root \n"
+"的 Kerberos 身份驗證時很有用。</p>"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:203
+msgid "C&lock Skew"
+msgstr "時鐘偏差(&L)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:205
+msgid ""
+"<p>The <b>Clock Skew</b> is the tolerance for time stamps not exactly "
+"matching the host's system clock. The value is in seconds.</p>"
+msgstr "<p><b>時鐘偏差</b>是不完全符合主機系統時鐘的時戳容錯。單位為秒。</p>"
+
+#. push button label
+#: src/include/kerberos-client/dialogs.rb:230
+msgid "&NTP Configuration..."
+msgstr "NTP 配置(&N)..."
+
+#: src/include/kerberos-client/dialogs.rb:231
+msgid ""
+"<p>\n"
+"To synchronize your time with an NTP server, configure your computer\n"
+"as an NTP client. Access the configuration with <b>NTP Configuration</b>.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"要將您的時間與 NTP 伺服器同步，請將計算機配置\n"
+"為 NTP 客戶機。通過 <b>NTP 配置</b>訪問此配置。\n"
+"</p>\n"
+
+#. push button label
+#: src/include/kerberos-client/dialogs.rb:245
+msgid "C&onfigure User Data"
+msgstr "配置使用者資料(&O)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:247
+msgid ""
+"<p>To configure the source of user accounts, select the appropriate "
+"configuration module in <b>Configure User Data</b>.</p>"
+msgstr "<p>要配置使用者帳戶，請在<b>配置使用者資料</b>中選擇合適的配置模組。</p>"
+
+#. menu item
+#: src/include/kerberos-client/dialogs.rb:252
+msgid "LDAP Client"
+msgstr "LDAP 客戶機"
+
+#. menu item
+#: src/include/kerberos-client/dialogs.rb:254
+msgid "NIS Client"
+msgstr "NIS 客戶程式"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:265
+msgid "Credential Cac&he Directory"
+msgstr "憑據快取目錄(&H)"
+
+#. help text for "Credential Cac&he Directory"
+#: src/include/kerberos-client/dialogs.rb:267
+msgid ""
+"<p>Specify the directory where to place credential cache files as "
+"<b>Credential Cache Directory</b>.</p>"
+msgstr "<p>在<b>憑據快取目錄</b>中指定存放憑證快取檔案的目錄。</p>"
+
+#. push button label
+#: src/include/kerberos-client/dialogs.rb:280
+msgid "&Browse..."
+msgstr "瀏覽(&B)..."
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:290
+msgid "Credential Cache &Template"
+msgstr "憑據快取模板(&T)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:292
+msgid ""
+"<p><b>Credential Cache Template</b> specifies the location in which to place "
+"the user's session-specific credential cache.</p>"
+msgstr "<p><b>憑據快取模板</b>指定了存放使用者指定會話的憑據快取的位置。</p>"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:306
+msgid "&Keytab File Location"
+msgstr "Keytab 檔案位置(&K)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:308
+msgid ""
+"<p>Specify the location of the file with the keys of principals in <b>Keytab "
+"File Location</b>.</p>"
+msgstr "<p>在<b>Keytab 檔案位置</b>中指定實體的金鑰檔案位置。</p>"
+
+#. push button label
+#: src/include/kerberos-client/dialogs.rb:321
+msgid "Bro&wse..."
+msgstr "瀏覽(&W)..."
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:331
+msgid "&Mappings"
+msgstr "對映(&M)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:333
+msgid ""
+"<p>With <b>Mappings</b>, specify how the PAM module should derive the "
+"principal's name from the system user name.</p>"
+msgstr "<p>在<b>對映</b>中指定 PAM 模組如何從系統使用者名派生出實體名。</p>"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:346
+msgid "Ba&nner"
+msgstr "標題(&N)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:348
+msgid ""
+"<p>The value of <b>Banner</b> is a text that should be shown before a "
+"password questions.</p>"
+msgstr "<p><b>標題</b>的值是在密碼問題前顯示的文字。</p>"
+
+#. generic help for Services tab
+#: src/include/kerberos-client/dialogs.rb:362
+msgid ""
+"<p>All settings in this dialog can be applied for all PAM services, no "
+"service or a specific list of services separated by commas.</p>"
+msgstr ""
+"<p>所有此對話方塊中的設定可以應用到所有 PAM 服務，不應用，或者一個由逗號分隔的"
+"具體服務列表。</p>"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:370
+msgid "Add&ressless Initial Tickets"
+msgstr "無地址初始憑據(&r)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:372
+msgid ""
+"<p>When <b>Addressless Initial Tickets</b> is set, initial tickets (TGT) "
+"with no address information are requested.</p>"
+msgstr ""
+"<p>當設定了<b>無地址初始憑據</b>時，需要無地址資訊的初始憑據 (TGT)。</p>"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:386
+msgid "&Debug"
+msgstr "偵錯(&D)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:388
+msgid ""
+"<p>Check <b>Debug</b> to turn on debugging for selected services via syslog."
+"</p>"
+msgstr "<p>選中<b>偵錯</b>來啟用通過 syslog 偵錯選定服務。</p>"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:402
+msgid "&Sensitive Debug"
+msgstr "敏感偵錯(&S)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:404
+msgid ""
+"<p><b>Sensitive Debug</b> turns  on  debugging  of  sensitive  information.</"
+"p>"
+msgstr "<p><b>敏感偵錯</b>啟用敏感資訊的偵錯。</p>"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:418
+msgid "Accept &Existing Ticket"
+msgstr "接受已有憑據(&E)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:420
+msgid ""
+"<p>Check <b>Accept Existing Ticket</b> to tell PAM module to accept the "
+"presence of pre-existing Kerberos credentials as sufficient to authenticate "
+"the user.</p>"
+msgstr ""
+"<p>選中 <b>接受已有憑據</b> 來通知 PAM 模組接受預先存在的 Kerberos 憑據以驗證"
+"使用者。</p>"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:435
+msgid "E&xternal Credentials"
+msgstr "外部憑據(&X)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:437
+msgid ""
+"<p>List the services allowed to provide credentials in <b>External "
+"Credentials</b>.</p>"
+msgstr "<p><b>外部憑據</b>列出了允許提供憑據的服務。</p>"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:452
+msgid "Use Shared Mem&ory"
+msgstr "使用共享內存(&o)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:454
+msgid ""
+"<p><b>Use Shared Memory</b> describes the services for which the shared "
+"memory is used during authentication.</p>"
+msgstr "<p><b>使用共享內存</b>描述了驗證時使用共享內存的服務。</p>"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:469
+msgid "&Validate Initial Ticket"
+msgstr "校驗初始憑據(&V)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:471
+msgid ""
+"<p>Select the services for which TGT should be validated by changing the "
+"value of <b>Validate Initial Ticket</b>."
+msgstr "<p>通過變更 <b>校驗初始憑據</b> 的值來選擇應校驗 TGT 的服務。"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:486
+msgid "&Initial Prompt"
+msgstr "初始提示(&I)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:488
+msgid ""
+"<p>With <b>Initial Prompt</b> checked, the PAM module asks for a password "
+"before the authentication attempt.</p>"
+msgstr "<p>若 <b>初始提示</b> 被選中，PAM 模組將在驗證嘗試前詢問密碼。</p>"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:502
+msgid "Subsequent &Prompt"
+msgstr "稍後提示(&P)"
+
+#. help text
+#: src/include/kerberos-client/dialogs.rb:504
+msgid ""
+"<p>If <b>Subsequent Prompt</b> is enabled, the PAM module may ask the user "
+"for a password, in case the previously-entered  password  was  somehow  "
+"insufficient for authentication.</p>"
+msgstr ""
+"<p>如果啟用了<b>稍後提示</b>，PAM 模組在之前輸入的密碼不足以驗證使用者時可能詢"
+"問使用者密碼。</p>"
+
+#. directory location popup label
+#: src/include/kerberos-client/dialogs.rb:602
+msgid "Path to Directory"
+msgstr "目錄路徑"
+
+#. file location popup label
+#: src/include/kerberos-client/dialogs.rb:618
+msgid "Path to File"
+msgstr "檔案路徑"
+
+#. combo box item
+#: src/include/kerberos-client/dialogs.rb:631
+msgid "All services"
+msgstr "所有服務"
+
+#. combo box item
+#: src/include/kerberos-client/dialogs.rb:633
+msgid "No services"
+msgstr "沒有服務"
+
+#. combo box item
+#: src/include/kerberos-client/dialogs.rb:635
+msgid "Not set"
+msgstr "未設定"
+
+#. help text
+#. progress step label
+#: src/include/kerberos-client/dialogs.rb:683 src/modules/Kerberos.rb:665
+msgid "Writing Kerberos client settings..."
+msgstr "正在寫入 Kerberos 客戶機設定..."
+
+#. help text 1/5
+#: src/include/kerberos-client/dialogs.rb:706
+msgid ""
+"<p>\n"
+"<b><big>Authentication with Kerberos</big></b><br>\n"
+"The Kerberos client configuration updates your PAM settings to enable "
+"Kerberos authentication.  Your system needs access to a Kerberos server in "
+"the network for this to work.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"<b><big>使用 Kerberos 身份驗證</big></b><br>\n"
+"Kerberos 客戶機配置更新 PAM 設定以啟用 Kerberos 身份驗證。您的系統需要具有對"
+"網路中 Kerberos 伺服器的訪問權才能實現該功能。\n"
+"</p>\n"
+
+#. help text 2/5
+#: src/include/kerberos-client/dialogs.rb:713
+msgid ""
+"<p>\n"
+"<b>Basic Client Settings</b>:\n"
+"Enter your <b>Default Domain</b>, <b>Default Realm</b>, and the hostname or "
+"address of your Key Distribution Center (<b>KDC Server Address</b>). To "
+"specify more values for KDC, separate them by spaces.</p>"
+msgstr ""
+"<p>\n"
+"<b>基本客戶機設定</b>：\n"
+"輸入<b>默認域</b>、<b>默認領域</b> 與金鑰釋出中心的主機名或地址(<b>KDC 伺服器"
+"地址</b>)。要指定更多 KDC 相關的值，用空格隔開它們。</p>"
+
+#. help text 3/5
+#: src/include/kerberos-client/dialogs.rb:719
+msgid ""
+"<p>\n"
+"It is common practice to use the domain name in uppercase as your default "
+"realm name, but you can select freely. If the realm is not available on the "
+"server, you cannot log in.  Ask your server administrator if you need more "
+"information.</p>\n"
+msgstr ""
+"<p>\n"
+"通常使用大寫域名作為默認領域名，不過您也可以自由選擇。\n"
+"如果該領域在伺服器上不可用，則您將無法登入。如果需要更多資訊，請諮詢伺服器管"
+"理員。</p>\n"
+
+#. help text for Use DNS to acquire the configuration data at runtime
+#: src/include/kerberos-client/dialogs.rb:723
+msgid ""
+"Check <b>Use DNS to Acquire the Configuration Data at Runtime</b> to let "
+"your client use the Kerberos authentication data provided by DNS. This "
+"option cannot be selected if the DNS server does not provide such data.</p>"
+msgstr ""
+"選中 <b>運行時使用 DNS 獲取配置資料</b> 來讓您的客戶端使用 DNS 提供的 "
+"Kerberos 驗證資料。如果 DNS 伺服器不提供類似資料，則不能選擇該選項。</p>"
+
+#. help text 5/5
+#: src/include/kerberos-client/dialogs.rb:727
+msgid "<p>To configure more settings, click <b>Advanced Settings</b>.</p>"
+msgstr "<p>要配置更多設定，請單擊<b>高階設定</b>。</p>"
+
+#. radio button label
+#: src/include/kerberos-client/dialogs.rb:752
+msgid "Do No&t Use Kerberos"
+msgstr "不使用 Kerberos(&T)"
+
+#. radio button label
+#: src/include/kerberos-client/dialogs.rb:761
+msgid "&Use Kerberos"
+msgstr "使用 Kerberos(&U)"
+
+#. checkbox label
+#: src/include/kerberos-client/dialogs.rb:777
+msgid "Use DN&S to acquire the configuration data at runtime"
+msgstr "運行時使用 DNS 獲取配置資料(&S)"
+
+#. frame label
+#: src/include/kerberos-client/dialogs.rb:785
+msgid "Basic Kerberos Settings"
+msgstr "基本 Kerberos 設定"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:792
+msgid "Default &Domain"
+msgstr "默認域(&D)"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:794
+msgid "Default Real&m"
+msgstr "默認領域(&M)"
+
+#. textentry label
+#: src/include/kerberos-client/dialogs.rb:797
+msgid "&KDC Server Address"
+msgstr "KDC 伺服器地址(&K)"
+
+#. pushbutton label
+#: src/include/kerberos-client/dialogs.rb:806
+msgid "Ad&vanced Settings..."
+msgstr "高階設定(&V)..."
+
+#. dialog title
+#. dialog caption
+#: src/include/kerberos-client/dialogs.rb:814
+#: src/include/kerberos-client/wizards.rb:106
+msgid "Kerberos Client Configuration"
+msgstr "Kerberos 客戶機配置"
+
+#. error popup label
+#: src/include/kerberos-client/dialogs.rb:865
+msgid "Enter the default realm name."
+msgstr "請輸入默認領域名。"
+
+#. error popup label
+#: src/include/kerberos-client/dialogs.rb:873
+msgid "Enter the address of the KDC server."
+msgstr "輸入 KDC 伺服器的地址。"
+
+#. error popup label
+#: src/include/kerberos-client/dialogs.rb:886
+msgid "The KDC server address is invalid."
+msgstr "KDC 伺服器地址無效。"
+
+#. tab header
+#: src/include/kerberos-client/dialogs.rb:932
+msgid "PAM Settings"
+msgstr "PAM 設定"
+
+#. frame label
+#: src/include/kerberos-client/dialogs.rb:940
+msgid "Ticket Attributes"
+msgstr "憑據屬性"
+
+#. tab header
+#: src/include/kerberos-client/dialogs.rb:981
+msgid "Expert PAM Settings"
+msgstr "專家 PAM 設定"
+
+#. tab header
+#: src/include/kerberos-client/dialogs.rb:1007
+msgid "PAM Services"
+msgstr "PAM 服務"
+
+#. tab header
+#: src/include/kerberos-client/dialogs.rb:1053
+msgid "Realm Settings"
+msgstr "領域設定"
+
+#. default dialog caption
+#: src/include/kerberos-client/dialogs.rb:1115
+msgid "Advanced Kerberos Client Configuration"
+msgstr "高階 Kerberos 客戶機配置"
+
+#. label (init dialog)
+#: src/include/kerberos-client/wizards.rb:109
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. dialog caption
+#: src/modules/Kerberos.rb:650
+msgid "Saving Kerberos Client Configuration"
+msgstr "正在儲存 Kerberos 客戶機配置"
+
+#. progress stage label
+#: src/modules/Kerberos.rb:655
+msgid "Write PAM settings"
+msgstr "寫入 PAM 設定"
+
+#. progress stage label
+#: src/modules/Kerberos.rb:657
+msgid "Write Kerberos client settings"
+msgstr "寫入 Kerberos 客戶機設定"
+
+#. progress stage label
+#: src/modules/Kerberos.rb:659
+msgid "Write OpenSSH settings"
+msgstr "寫入 OpenSSH 設定"
+
+#. progress step label
+#: src/modules/Kerberos.rb:663
+msgid "Writing PAM settings..."
+msgstr "正在寫入 PAM 設定..."
+
+#. progress step label
+#: src/modules/Kerberos.rb:667
+msgid "Writing OpenSSH settings..."
+msgstr "正在寫入 OpenSSH 設定..."
+
+#. final progress step label
+#: src/modules/Kerberos.rb:669
+msgid "Finished"
+msgstr "已完成"
+
+#. progress stage label
+#: src/modules/Kerberos.rb:673
+msgid "Install required packages"
+msgstr "安裝必需的包"
+
+#. progress step label
+#: src/modules/Kerberos.rb:675
+msgid "Installing required packages..."
+msgstr "正在安裝必需的包..."
+
+#. summary header
+#: src/modules/Kerberos.rb:947
+msgid "PAM Login"
+msgstr "PAM 登入"
+
+#. summary item
+#: src/modules/Kerberos.rb:953
+msgid "Use Kerberos"
+msgstr "使用 Kerberos"
+
+#. summary item
+#: src/modules/Kerberos.rb:955
+msgid "Do Not Use Kerberos"
+msgstr "不使用 Kerberos"
+
+#. summary header
+#: src/modules/Kerberos.rb:959
+msgid "Default Realm"
+msgstr "默認領域"
+
+#. summary header
+#: src/modules/Kerberos.rb:966
+msgid "Default Domain"
+msgstr "默認域"
+
+#. summary header
+#: src/modules/Kerberos.rb:973
+msgid "KDC Server Address"
+msgstr "金鑰分發中心 (KDC) 伺服器地址"
+
+#. summary header
+#: src/modules/Kerberos.rb:977
+msgid "Clock Skew"
+msgstr "時鐘偏差"
+
+#. summary text, %1 is value
+#: src/modules/Kerberos.rb:993
+msgid "<b>KDC Server</b>: %1<br>"
+msgstr "<b>金鑰分發中心伺服器</b>：%1<br>"
+
+#. summary text, %1 is value
+#: src/modules/Kerberos.rb:998
+msgid "<b>Default Domain</b>: %1<br>"
+msgstr "<b>默認域</b>：%1<br>"
+
+#. summary text, %1 is value
+#: src/modules/Kerberos.rb:1004
+msgid "<b>Default Realm</b>: %1<br>"
+msgstr "<b>默認領域</b>：%1<br>"
+
+#. summary text (yes/no follows)
+#: src/modules/Kerberos.rb:1010
+msgid "<b>Kerberos Authentication Enabled</b>: %1"
+msgstr "<b>已啟用 Kerveros 身份驗證</b>：%1"
+
+#. summary value
+#: src/modules/Kerberos.rb:1013
+msgid "Yes"
+msgstr "是"
+
+#. summary value
+#: src/modules/Kerberos.rb:1015
+msgid "No"
+msgstr "否"
+
+#. summary line
+#: src/modules/Kerberos.rb:1022
+msgid "Configuration Acquired via DNS"
+msgstr "通過 DNS 獲得配置"
+
+#. error popup (wrong format of entered value)
+#: src/modules/Kerberos.rb:1050
+msgid ""
+"Clock skew is invalid.\n"
+"Try again.\n"
+msgstr ""
+"時鐘偏差無效。\n"
+"請重試。\n"
+
+#. error popup (wrong format of entered value)
+#: src/modules/Kerberos.rb:1053
+msgid ""
+"Lifetime is invalid.\n"
+"Try again."
+msgstr ""
+"有效期無效。\n"
+"請重試。"
+
+#, fuzzy
+#~ msgid "Sensitive debug"
+#~ msgstr "區分大小寫(&V)"
+

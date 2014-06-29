@@ -1,0 +1,1015 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Thruth Wang <lihaow@opera.com>, 2007, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: Runlevel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:35+0200\n"
+"PO-Revision-Date: 2013-02-01 01:29+0800\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. translators: command line help text for runlevel module
+#: src/clients/runlevel.rb:25
+msgid "Configuration of system services (runlevel)"
+msgstr "系統服務(運行級別)的配置"
+
+#. translators: command line help text for "summary" action
+#: src/clients/runlevel.rb:34
+msgid "Show a list of current system service status"
+msgstr "顯示當前系統服務狀態的列表"
+
+#. translators: command line help text for "add" action
+#: src/clients/runlevel.rb:44
+msgid "Enable the service"
+msgstr "啟用服務"
+
+#. translators: command line help text for "delete" action
+#: src/clients/runlevel.rb:54
+msgid "Disable the service"
+msgstr "禁用服務"
+
+#. translators: command line help text for "set" action
+#: src/clients/runlevel.rb:64
+msgid "Set default runlevel after boot"
+msgstr "設定引導後的默認運行級別"
+
+#. translators: command line help text for "runlevel" option
+#: src/clients/runlevel.rb:76
+msgid "Specify default runlevel"
+msgstr "指定默認運行級別"
+
+#. translators: command line help text for "runlevels" option
+#: src/clients/runlevel.rb:84
+msgid "Comma separated list of runlevels"
+msgstr "逗號分隔的運行級別列表"
+
+#. translators: command line help text for "service" option
+#: src/clients/runlevel.rb:91
+msgid "Comma separated service names"
+msgstr "逗號分隔的服務名"
+
+#. translators: command line help text for "defaults" option
+#: src/clients/runlevel.rb:98
+msgid "List default runlevels instead of current"
+msgstr "列出默認運行級別而非當前運行級別"
+
+#: src/clients/runlevel.rb:136
+msgid "Error: service '%1' not found."
+msgstr "錯誤：找不到服務\"%1\"。"
+
+#. translators: table headers
+#. table header
+#. table header
+#: src/clients/runlevel.rb:252 src/include/runlevel/ui.rb:1068
+#: src/include/runlevel/ui.rb:1365 src/include/runlevel/ui.rb:1592
+msgid "Service"
+msgstr "服務"
+
+#: src/clients/runlevel.rb:252
+msgid "Runlevels"
+msgstr "運行級別"
+
+#. headers in table
+#. headers in table
+#: src/clients/runlevel.rb:252 src/include/runlevel/ui.rb:1077
+#: src/include/runlevel/ui.rb:1365 src/include/runlevel/ui.rb:1601
+msgid "Description"
+msgstr "描述"
+
+#: src/clients/runlevel.rb:267
+msgid "Default Runlevel after Boot: %1"
+msgstr "引導後的默認運行級別：%1"
+
+#: src/clients/runlevel.rb:273
+msgid "Current Runlevel: %1"
+msgstr "當前運行級別：%1"
+
+#. progress step title
+#: src/clients/runlevel_finish.rb:48
+msgid "Saving default runlevel..."
+msgstr "正在儲存默認運行級別..."
+
+#. proposal warning, VNC needs runlevel 5, but the selected one is not 5
+#: src/clients/runlevel_proposal.rb:123
+msgid ""
+"<li>VNC needs runlevel 5 to run correctly.\n"
+"No graphical system login will be available after the computer is rebooted.</li>"
+msgstr ""
+"<li>VNC 需要運行級別 5 才可正確運行。\n"
+"計算機重引導後，將不可使用圖形系統登入。</li>"
+
+#. proposal warning, SSH needs runlevel 3 or 5, but the selected one is neither one of them
+#: src/clients/runlevel_proposal.rb:133
+msgid "<li>SSH needs runlevel 3 or 5, but you have currently selected a non-network one.</li>"
+msgstr "<li>SSH 需要運行級別 3 或 5，但當前選擇的是非網路運行級別。</li>"
+
+#. Rich text title
+#. @return Html formatted configuration summary
+#: src/clients/runlevel_proposal.rb:162 src/modules/RunlevelEd.rb:953
+msgid "Default Runlevel"
+msgstr "默認運行級別"
+
+#. MenuButton title
+#: src/clients/runlevel_proposal.rb:164
+msgid "&Default Runlevel"
+msgstr "默認運行級別(&D)"
+
+#. popup question, %1 means the current runlevel (number)
+#: src/clients/runlevel_proposal.rb:202
+msgid ""
+"VNC needs runlevel 5 to run correctly.\n"
+"No graphical system login will be available\n"
+"after the computer is rebooted.\n"
+"\n"
+"Are you sure you want to use runlevel %1 instead?"
+msgstr ""
+"VNC 需要運行級別 5 才可正確運行。\n"
+"計算機重引導後，\n"
+"將不可使用圖形系統登入。\n"
+"\n"
+"是否確實要使用運行級別 %1？"
+
+#. popup question, %1 means the current runlevel (number)
+#: src/clients/runlevel_proposal.rb:221
+msgid ""
+"SSH needs running network.\n"
+"You have selected a non-network runlevel.\n"
+"Recommended runlevels are 3 or 5.\n"
+"\n"
+"Are you sure you want to use %1 instead?"
+msgstr ""
+"SSH 需要正在運行的網路。\n"
+"您選擇的是非網路運行級別。\n"
+"建議的運行級別是 3 或 5。\n"
+"\n"
+"是否確實要使用 %1？"
+
+#. dialog caption
+#: src/clients/runlevel_proposal.rb:263
+msgid "Set Default Runlevel"
+msgstr "設定默認運行級別"
+
+#. frame label
+#: src/clients/runlevel_proposal.rb:270
+msgid "Available Runlevels"
+msgstr "可用運行級別"
+
+#. made by rwalter@novell.com, bug #206664 comment #8
+#. help for runlevel - installation proposal, part 1
+#: src/clients/runlevel_proposal.rb:278
+msgid "<p><b><big>Selecting the Default Runlevel</big</b></p>"
+msgstr "<p><b><big>選擇默認運行級別</big></b></p>"
+
+#. help for runlevel - installation proposal, part 2
+#: src/clients/runlevel_proposal.rb:280
+msgid ""
+"<p>The runlevel is the setting that helps determine which services are\n"
+"available by default. Select the level that includes the services this system\n"
+"should allow when the system starts.</p>"
+msgstr ""
+"<p>運行級別設定幫助確定默認情況下\n"
+"哪些服務可用。 請選擇包含當系統啟動時\n"
+"應允許運行的服務的級別。</p>"
+
+#. help for runlevel - installation proposal, part 3
+#: src/clients/runlevel_proposal.rb:286
+msgid ""
+"<p>Runlevel <b>2</b> allows multiple users to log in to the system locally, but\n"
+"no network or network services are available.  This setting is rarely used as\n"
+"the default.</p>"
+msgstr ""
+"<p>運行級別 <b>2</b> 允許多個使用者本地登入系統，\n"
+"但無網路或網路服務可用。\n"
+"很少將此設定用作預設值。</p>"
+
+#. help for runlevel - installation proposal, part 4
+#: src/clients/runlevel_proposal.rb:292
+msgid ""
+"<p>Runlevel <b>4</b> is an expert user mode. Don't use it unless you really\n"
+"need it.</p>"
+msgstr ""
+"<p>運行級別 <b>4</b> 是專家使用者模式。除非真的需要，\n"
+"請不要使用這個運行級別。</p>"
+
+#. help for runlevel - installation proposal, part 5
+#: src/clients/runlevel_proposal.rb:296
+msgid ""
+"<p>Runlevel <b>3</b> allows both local and remote logins and enables the\n"
+"network and any configured network services.  This setting does not start the\n"
+"graphical login manager, so graphical user interfaces cannot be used\n"
+"immediately.</p>"
+msgstr ""
+"<p>運行級別 <b>3</b> 允許本地與遠端登入，\n"
+"並啟用網路與任何已配置的網路服務。\n"
+"此設定不啟動圖形登入管理器，\n"
+"所以無法立即使用圖形使用者介面。</p>"
+
+#. help for runlevel - installation proposal, part 6
+#: src/clients/runlevel_proposal.rb:303
+msgid ""
+"<p>Runlevel <b>5</b> is the most common default runlevel for workstations.  In\n"
+"addition to the network, it starts the X display manager, which allows\n"
+"graphical logins.  It also starts any other configured services.</p>"
+msgstr ""
+"<p>運行級別 <b>5</b> 是工作站中最常見的默認運行級別。\n"
+"除了網路，它還啟動 X 顯示管理器，它允許以\n"
+"圖形方式登入，還可啟動任何其它已配置服務。</p>"
+
+#. help for runlevel - installation proposal, part 7
+#: src/clients/runlevel_proposal.rb:309
+msgid ""
+"<p>If you are not sure what to select, runlevel <b>5</b> is generally a good\n"
+"choice for workstations.  Runlevel <b>3</b> is often used on servers that do\n"
+"not have a monitor and should not use graphical interfaces.</p>"
+msgstr ""
+"<p>如果不確定選擇哪個選項，通常運行級別 <b>5</b> 是一個不錯的\n"
+"選擇。運行級別 <b>3</b> 經常在沒有監視器或\n"
+"不應使用圖形介面的伺服器上使用。</p>"
+
+#. RichText label
+#. summary header
+#: src/clients/services_proposal.rb:112 src/modules/RunlevelEd.rb:956
+msgid "Services"
+msgstr "服務"
+
+#. Menu label
+#: src/clients/services_proposal.rb:114
+msgid "&Services"
+msgstr "服務(&S)"
+
+#. There are some ports (services) required to be open and firewall is enabled
+#: src/clients/services_proposal.rb:319
+msgid "Service <i>%1</i> will be <b>enabled</b> and ports in the firewall will be open <a href=\"%2\">(disable)</a>"
+msgstr "服務 <i>%1</i> 將被 <b>啟用</b> 並且防火牆埠將被開啟 <a href=\"%2\">(禁用)</a>"
+
+#: src/clients/services_proposal.rb:327
+msgid "Service <i>%1</i> will be <b>disabled</b> and ports in firewall will be closed <a href=\"%2\">(enable)</a>"
+msgstr "服務 <i>%1</i> 將被 <b>禁用</b> 並且防火牆埠將被關閉 <a href=\"%2\">(啟用)</a>"
+
+#: src/clients/services_proposal.rb:337
+msgid "Service <i>%1</i> will be <b>enabled</b> <a href=\"%2\">(disable)</a>"
+msgstr "服務 <i>%1</i> 將被 <b>啟用</b> <a href=\"%2\">(禁用)</a>"
+
+#: src/clients/services_proposal.rb:345
+msgid "Service <i>%1</i> will be <b>disabled</b> <a href=\"%2\">(enable)</a>"
+msgstr "服務 <i>%1</i> 將被 <b>禁用</b> <a href=\"%2\">(啟用)</a>"
+
+#. Checks which packages from those got as a list are not installed.
+#. Returns list of not installed packages.
+#. Eventually reports unavailable packages one by one.
+#: src/clients/services_proposal.rb:500
+msgid "Required package %1 is not available for installation."
+msgstr "需要的軟體包 %1 無法安裝。"
+
+#. Install them
+#: src/clients/services_proposal.rb:554
+msgid ""
+"Installation of required packages has failed,\n"
+"enabling and starting the services may also fail."
+msgstr ""
+"安裝必需的軟體包失敗。\n"
+"啟用與啟動服務可能也失敗。"
+
+#. a help text, not very helpful though
+#: src/clients/services_proposal.rb:590
+msgid ""
+"<p><big><b>Services</b></big><br>\n"
+"The current setup does not provide any functionality now.</p>"
+msgstr ""
+"<p><big><b>服務</b></big><br>\n"
+"當前設定目前沒有提供任何功能。</p>"
+
+#. a help text, part 1
+#: src/clients/services_proposal.rb:596
+msgid ""
+"<p><big><b>Services</b></big><br>\n"
+"This installation proposal allows you to start and enable a service from the \n"
+"list of services.</p>\n"
+msgstr ""
+"<p><b><big>服務</big></b><br>\n"
+"安全方案允許您從服務列表中啟動與啟用一項服務。</p>\n"
+
+#. a help text, part 2
+#: src/clients/services_proposal.rb:602
+msgid ""
+"<p>It may also open ports in the firewall for a service if firewall is enabled\n"
+"and a particular service requires opening them.</p>\n"
+msgstr "<p>如果啟用了防火牆並且特殊服務需要開啟埠，它或許也會為服務在防火牆中開啟埠。</p>\n"
+
+#. Init script non-status-command return codes
+#. http://www.linuxbase.org/spec/gLSB/gLSB/iniscrptact.html
+#. status code.
+#. Changed "Foo bar." to "foo bar", #25082
+#: src/include/runlevel/ui.rb:241
+msgid "success"
+msgstr "成功"
+
+#. 1: handled as default below
+#. status code.
+#: src/include/runlevel/ui.rb:246
+msgid "invalid or excess arguments"
+msgstr "參數無效或過多"
+
+#. status code.
+#: src/include/runlevel/ui.rb:250
+msgid "unimplemented feature"
+msgstr "功能未實現"
+
+#. status code.
+#: src/include/runlevel/ui.rb:252
+msgid "user had insufficient privileges"
+msgstr "使用者沒有足夠的許可權"
+
+#. status code.
+#: src/include/runlevel/ui.rb:254
+msgid "program is not installed"
+msgstr "程式尚未安裝"
+
+#. status code.
+#: src/include/runlevel/ui.rb:256
+msgid "program is not configured"
+msgstr "程式尚未配置"
+
+#. status code.
+#: src/include/runlevel/ui.rb:258
+msgid "program is not running"
+msgstr "程式未運行"
+
+#. status code.
+#. status code.
+#: src/include/runlevel/ui.rb:261 src/include/runlevel/ui.rb:286
+msgid "unspecified error"
+msgstr "未指定錯誤"
+
+#. Init script "status" command return codes
+#. http://www.linuxbase.org/spec/gLSB/gLSB/iniscrptact.html
+#. status code.
+#. Changed "Foo bar." to "foo bar", #25082
+#: src/include/runlevel/ui.rb:273
+msgid "program is running"
+msgstr "程式正在運行"
+
+#. status code.
+#: src/include/runlevel/ui.rb:277
+msgid "program is dead and /var/run pid file exists"
+msgstr "程式已僵死並且 /var/run 程序檔案存在"
+
+#. status code.
+#: src/include/runlevel/ui.rb:279
+msgid "program is dead and /var/lock lock file exists"
+msgstr "程式已僵死並且 /var/lock 鎖定檔案存在"
+
+#. status code.
+#: src/include/runlevel/ui.rb:281
+msgid "program is stopped"
+msgstr "程式已停止"
+
+#. status code.
+#: src/include/runlevel/ui.rb:283
+msgid "program or service status is unknown"
+msgstr "程式或服務狀態未知"
+
+#. translators: substituted into a message like
+#. "To enable/disable foo IN ALL RUNLEVELS, this must be done..."
+#. (do not include the trailing comma here)
+#: src/include/runlevel/ui.rb:297
+msgid "in all runlevels"
+msgstr "在所有運行級別中"
+
+#. translators: substituted into a message like
+#. "To enable/disable foo IN RUNLEVELS 3, 5, this must be done..."
+#. (do not include the trailing comma here)
+#: src/include/runlevel/ui.rb:304
+msgid "in runlevels %1"
+msgstr "在運行級別 %1 中"
+
+#: src/include/runlevel/ui.rb:305
+msgid "in runlevel %1"
+msgstr "在運行級別 %1 中"
+
+#. is the service started?
+#. TRANSLATORS: Service status presented in table, Enabled: Yes
+#: src/include/runlevel/ui.rb:311 src/include/runlevel/ui.rb:328
+msgid "Yes"
+msgstr "是"
+
+#. is the service started?
+#. TRANSLATORS: Service status presented in table, Enabled: No
+#: src/include/runlevel/ui.rb:314 src/include/runlevel/ui.rb:330
+msgid "No"
+msgstr "否"
+
+#. is the service started?
+#. ???: we do not know yet what is the service state
+#. TRANSLATORS: Unknown service status, presented in table
+#. TRANSLATORS: Unknown service status presented in table
+#: src/include/runlevel/ui.rb:317 src/include/runlevel/ui.rb:321
+#: src/include/runlevel/ui.rb:325
+msgid "???"
+msgstr "???"
+
+#. help text
+#: src/include/runlevel/ui.rb:516
+msgid ""
+"<P><BIG><B>System Service (Runlevel) Initialization</B></BIG><BR>\n"
+"Please wait...</P>\n"
+msgstr ""
+"<P><BIG><B>系統服務(運行級別)啟始化</B></BIG><BR>\n"
+"請稍候...</P>\n"
+
+#. warning
+#: src/include/runlevel/ui.rb:520
+msgid ""
+"<p><b>Note:</b> The system services (runlevel editor) is an expert tool. Only change settings if\n"
+" you know what you are doing.  Otherwise your system might not function properly afterwards.</p>\n"
+msgstr ""
+"<p><b>注意：</b>系統服務(運行級別編輯器)是專家工具。僅有在您瞭解正在執行的操作的情況下，\n"
+"才能變更設定。否則變更後系統可能無法正常運行。</p>\n"
+
+#. continue-cancel popup when enabling a service
+#. %1 is a list of unsatisfied dependencies
+#: src/include/runlevel/ui.rb:588
+msgid ""
+"These required services are missing:\n"
+"%1."
+msgstr ""
+"缺少這些必需的服務：\n"
+"%1。"
+
+#. "-run,-init,..." does not make sense
+#. *disable*
+#. continue-cancel popup
+#. translators: %2 is "in runlevel(s) 3, 5"
+#. or "in all runlevels"
+#: src/include/runlevel/ui.rb:671
+msgid ""
+"To disable service %1 %2,\n"
+"these services must be additionally disabled,\n"
+"because they depend on it:\n"
+"%3."
+msgstr ""
+"要 %2 禁用服務 %1，\n"
+"還必須禁用以下服務，\n"
+"因為這些服務依賴於要禁用的服務：\n"
+"%3。"
+
+#. *enable*
+#. continue-cancel popup
+#. translators: %2 is "in runlevel(s) 3, 5"
+#. or "in all runlevels"
+#: src/include/runlevel/ui.rb:681
+msgid ""
+"To enable service %1 %2,\n"
+"these services must be additionally enabled,\n"
+"because it depends on them:\n"
+"%3."
+msgstr ""
+"要 %2 啟用服務 %1，\n"
+"還必須啟用以下服務，\n"
+"因為要啟用的服務依賴於這些服務：\n"
+"%3。"
+
+#. *stop*
+#. continue-cancel popup
+#: src/include/runlevel/ui.rb:689
+msgid ""
+"To stop service %1,\n"
+"these services must be additionally stopped,\n"
+"because they depend on it:\n"
+"%2."
+msgstr ""
+"要停止服務 %1，\n"
+"還必須停止以下服務，\n"
+"因為這些服務依賴於要停止的服務：\n"
+"%2。"
+
+#. *start*
+#. continue-cancel popup
+#: src/include/runlevel/ui.rb:697
+msgid ""
+"To start service %1,\n"
+"these services must be additionally started,\n"
+"because it depends on them:\n"
+"%2."
+msgstr ""
+"要啟動服務 %1，\n"
+"還必須啟動以下服務，\n"
+"因為要啟動的服務依賴於這些服務：\n"
+"%2。"
+
+#. *stop and disable*
+#. continue-cancel popup
+#. translators: %2 is "in runlevel(s) 3, 5"
+#. or "in all runlevels"
+#: src/include/runlevel/ui.rb:707
+msgid ""
+"To stop service %1 and disable it %2,\n"
+"these services must be additionally stopped\n"
+"and disabled, because they depend on it:\n"
+"%3."
+msgstr ""
+"要停止服務 %1 並 %2 禁用它，\n"
+"還必須停止並禁用以下服務，\n"
+"因為這些服務依賴於要停止並禁用的服務：\n"
+"%3。"
+
+#. *start and enable*
+#. continue-cancel popup
+#. translators: %2 is "in runlevel(s) 3, 5"
+#. or "in all runlevels"
+#: src/include/runlevel/ui.rb:717
+msgid ""
+"To start service %1 and enable it %2,\n"
+"these services must be additionally started\n"
+"and enabled, because it depends on them:\n"
+"%3."
+msgstr ""
+"要啟動服務 %1 並 %2 啟用它，\n"
+"還必須啟動並啟用以下服務，\n"
+"因為要啟動並啟用的服務依賴於這些服務：\n"
+"%3。"
+
+#. popup heading
+#: src/include/runlevel/ui.rb:761
+msgid "An error has occurred."
+msgstr "出現錯誤。"
+
+#. busy message
+#: src/include/runlevel/ui.rb:846
+msgid "Starting service %1 ..."
+msgstr "正在啟動服務 %1..."
+
+#. busy message
+#: src/include/runlevel/ui.rb:849
+msgid "Stopping service %1 ..."
+msgstr "正在停止服務 %1..."
+
+#. busy message
+#: src/include/runlevel/ui.rb:853
+msgid "Checking status of service %1 ..."
+msgstr "正在檢查服務 %1 的狀態..."
+
+#. busy message
+#: src/include/runlevel/ui.rb:859
+msgid "Running command %1 %2 ..."
+msgstr "正在運行命令 %1 %2..."
+
+#. %1 service, %2 command,
+#. %3 exit status, %4 status description, %5 stdout
+#. added a colon
+#: src/include/runlevel/ui.rb:897
+msgid "<p><b>/bin/systemctl %1 %2.service</b> returned %3 (%4):<br>%5</p>"
+msgstr "<p><b>/bin/systemctl %1 %2.service</b> 返回了 %3 (%4)：<br>%5</p>"
+
+#. list of services will follow
+#: src/include/runlevel/ui.rb:974
+msgid ""
+"Following services run in current\n"
+"runlevel although they should not:"
+msgstr ""
+"以下服務在當前運行級別中運行，\n"
+"但它們不應在當前運行級別中運行："
+
+#. list of services will follow
+#: src/include/runlevel/ui.rb:988
+msgid ""
+"Following services do not run in current\n"
+"runlevel although they should:"
+msgstr ""
+"以下服務未在當前運行級別中運行，\n"
+"但它們應該在當前運行級別中運行："
+
+#. radio button label
+#: src/include/runlevel/ui.rb:1014
+msgid "&Simple Mode"
+msgstr "簡單方式(&S)"
+
+#. radio button label
+#: src/include/runlevel/ui.rb:1022
+msgid "&Expert Mode"
+msgstr "專家方式(&E)"
+
+#. help text
+#. help text
+#: src/include/runlevel/ui.rb:1036
+msgid ""
+"<p>Assign system services to runlevels by selecting the list entry of the respective service then\n"
+"checking or unchecking the <b>check boxes B-S</b> for the runlevel.</p>\n"
+msgstr ""
+"<p>為運行級別指派系統服務，方法是選擇相應服務的列表項，\n"
+"然後選中或取消選中運行級別的<b>核取方塊 B-S</b>。</p>\n"
+
+#. help text
+#: src/include/runlevel/ui.rb:1040
+msgid "<p><b>Start/Stop/Refresh:</b> Use this to start or stop services individually.</p>"
+msgstr "<p><b>啟動/停止/重新整理：</b>使用此選項可以單個地啟動或停止服務。</p>"
+
+#. help text
+#: src/include/runlevel/ui.rb:1044
+msgid ""
+"<P><B>Set and Reset:</B>\n"
+"Select runlevels in which to run the currently selected service.<ul>\n"
+"<li><b>Enable the service:</b> Activates the service in the standard runlevels.</li>\n"
+"<li><b>Disable the service:</b> Deactivates service.</li>\n"
+"<li><b>Enable all services:</b> Activates all services in their standard runlevels.</li>\n"
+"</ul></p>\n"
+msgstr ""
+"<P><B>設定與重設定：</B>\n"
+"選擇要在其中運行當前所選服務的運行級別。<ul>\n"
+"<li><b>啟用服務：</b>在標準運行級別中啟用服務。</li>\n"
+"<li><b>禁用服務：</b>取消啟用服務。</li>\n"
+"<li><b>啟用所有服務：</b>在其標準運行級別中啟用所有服務。</li>\n"
+"</ul></p>\n"
+
+#. The change does not occur immediately. After a reboot the system boots into the specified runlevel.
+#: src/include/runlevel/ui.rb:1053
+msgid "<p>Changes to the <b>default runlevel</b> will take effect next time you boot your computer.</p>"
+msgstr "<p>對<b>默認運行級別</b>的變更將在下次引導計算機時生效。</p>"
+
+#. table header. is a service running?
+#: src/include/runlevel/ui.rb:1070
+msgid "Running"
+msgstr "正在運行"
+
+#. `HBox (
+#. // preserve 2 spaces at the end.
+#. `Label (_("Current runlevel:  ")),
+#. `Label (`opt (`outputField, `hstretch), getRunlevelDescr (RunlevelEd::current))
+#. ),
+#. combo box label
+#. combo box label
+#: src/include/runlevel/ui.rb:1097 src/include/runlevel/ui.rb:1608
+msgid "&Set default runlevel after booting to:"
+msgstr "將引導後的默認運行級別設定為(&S)："
+
+#. label above checkboxes
+#. label above checkboxed
+#: src/include/runlevel/ui.rb:1118 src/include/runlevel/ui.rb:1623
+msgid "Service will be started in following runlevels:"
+msgstr "服務將在以下運行級別中啟動："
+
+#. menubutton label
+#: src/include/runlevel/ui.rb:1125
+msgid "S&tart/Stop/Refresh"
+msgstr "啟動/停止/重新整理(&T)"
+
+#. menu item
+#: src/include/runlevel/ui.rb:1128
+msgid "&Start now ..."
+msgstr "立即啟動(&S)..."
+
+#. menu item
+#: src/include/runlevel/ui.rb:1130
+msgid "S&top now ..."
+msgstr "立即停止(&T)..."
+
+#. menu item
+#: src/include/runlevel/ui.rb:1132
+msgid "R&estart now ..."
+msgstr "立即重啟(&e)..."
+
+#. menu item
+#: src/include/runlevel/ui.rb:1134
+msgid "&Refresh status ..."
+msgstr "重新整理狀態(&R)..."
+
+#. menubutton label
+#: src/include/runlevel/ui.rb:1142
+msgid "Set/&Reset"
+msgstr "設定/重置(&R)"
+
+#. `opt (`key_F3),
+#: src/include/runlevel/ui.rb:1150
+msgid "&Enable the service"
+msgstr "啟用服務(&E)"
+
+#. `opt (`key_F5),
+#: src/include/runlevel/ui.rb:1155
+msgid "&Disable the service"
+msgstr "禁用服務(&D)"
+
+#. menu item
+#: src/include/runlevel/ui.rb:1165
+msgid "Enable &all services"
+msgstr "啟用所有服務(&A)"
+
+#. menu item
+#: src/include/runlevel/ui.rb:1172
+msgid "Save Dependency &Graph"
+msgstr "儲存依賴關係示意圖(&G)"
+
+#. dialog caption.
+#. dialog caption.
+#: src/include/runlevel/ui.rb:1181 src/include/runlevel/ui.rb:1641
+msgid "System Services (Runlevel): Details"
+msgstr "系統服務(運行級別)：細節"
+
+#. yes-no popup
+#. yes-no popup
+#: src/include/runlevel/ui.rb:1236 src/include/runlevel/ui.rb:1447
+msgid ""
+"Now the changes to runlevels \n"
+"will be saved."
+msgstr ""
+"現在將儲存對運行級別的\n"
+"變更。"
+
+#. yes-no popup
+#: src/include/runlevel/ui.rb:1279
+msgid "Really enable all services?"
+msgstr "真的啟用所有服務嗎？"
+
+#. message popup
+#: src/include/runlevel/ui.rb:1286
+msgid ""
+"Each service was enabled\n"
+"in the appropriate runlevels."
+msgstr ""
+"已在適當的運行級別中啟用了\n"
+"每個服務。"
+
+#. yes-no popup. the user wants to stop xdm
+#. yes-no popup. the user wants to stop xdm
+#: src/include/runlevel/ui.rb:1299 src/include/runlevel/ui.rb:1466
+msgid ""
+"This may kill your X session.\n"
+"\n"
+"Proceed?"
+msgstr ""
+"這可能會殺死您的 X 會話。\n"
+"\n"
+"是否繼續？"
+
+#. Simple mode dialog
+#. help text
+#: src/include/runlevel/ui.rb:1336
+msgid "<p>Here, specify which system services should be started.</p>"
+msgstr "<p>在此指定應啟動哪些系統服務。</p>"
+
+#. warning
+#: src/include/runlevel/ui.rb:1338
+msgid ""
+"<p><b>Warning:</b> The system services (runlevel editor) is an expert tool. Only change settings if you know\n"
+" what you are doing.  Otherwise your system might not function properly afterwards.</p>\n"
+msgstr ""
+"<p><b>警告：</b>系統服務(運行級別編輯器)是專家工具。僅有在您瞭解正在執行的操作的情況下，\n"
+"才能變更設定。否則變更後系統可能無法正常運行。</p>\n"
+
+#. help text
+#. 'Enable' is a button, 'Disable' is a button
+#: src/include/runlevel/ui.rb:1343
+msgid ""
+"<p><b>Enable</b> starts the selected service and services\n"
+"that it depends on and enables them to start at system boot time.\n"
+"Likewise, <b>Disable</b> stops a service and all depending services\n"
+"and disables their start at system boot time.</p>\n"
+msgstr ""
+"<p><b>啟用</b>可啟動所選服務與它所依賴的\n"
+"所有服務，並使這些服務能夠在系統引導時啟動。\n"
+"與之類似，<b>禁用</b>可停止給定服務與依賴於該服務的\n"
+"所有服務，並使這些服務在系統引導時不能啟動。</p>\n"
+
+#. help text
+#: src/include/runlevel/ui.rb:1350
+msgid "<p>An asterisk (*) after a service status means that the service is enabled but not running or is disabled but running now.</p>"
+msgstr "<p>服務狀態後的星號 (*) 表示服務已啟用但未運行，或服務已禁用但現在正在運行。</p>"
+
+#. help text
+#: src/include/runlevel/ui.rb:1354
+msgid "<p>To change the behavior of runlevels and system services in detail, click <b>Expert Mode</b>.</p>\n"
+msgstr "<p>要詳細變更運行級別與系統服務的行為，請單擊<b>專家方式</b>。</p>\n"
+
+#: src/include/runlevel/ui.rb:1365
+msgid "Enabled"
+msgstr "已啟用"
+
+#. Button label
+#: src/include/runlevel/ui.rb:1377
+msgid "&Enable"
+msgstr "啟用(&E)"
+
+#. Button label
+#: src/include/runlevel/ui.rb:1379
+msgid "&Disable"
+msgstr "禁用(&D)"
+
+#. dialog caption.
+#: src/include/runlevel/ui.rb:1385
+msgid "System Services (Runlevel): Services"
+msgstr "系統服務(運行級別)：服務"
+
+#. help text
+#: src/include/runlevel/ui.rb:1495
+msgid "<p><b>Prepare data for autoinstallation.</b></p>"
+msgstr "<p><b>準備自動安裝的資料。</b></p>"
+
+#. help text
+#: src/include/runlevel/ui.rb:1497
+msgid "<p>Change the services to requested state. Only services marked as changed will really be changed in the target system.</p>"
+msgstr "<p>將服務變更為所請求的狀態。僅有標記為變更的服務才會真正在目標系統中被變更。</p>"
+
+#. help text
+#: src/include/runlevel/ui.rb:1501
+msgid "<p>If you made a mistake and want to undo the change, press <b>Clear</b> or <b>Clear all</b>.</p>"
+msgstr "<p>如果變更錯誤而希望撤消變更，請按<b>清除</b>或<b>全部清除</b>。</p>"
+
+#. dialog heading
+#: src/include/runlevel/ui.rb:1511
+msgid "Add service"
+msgstr "添加服務"
+
+#. text entry
+#: src/include/runlevel/ui.rb:1514
+msgid "Service &name"
+msgstr "服務名稱(&N)"
+
+#. label
+#: src/include/runlevel/ui.rb:1516
+msgid "Starts in these runlevels by default:"
+msgstr "默認在這些運行級別中啟動："
+
+#. text entry
+#: src/include/runlevel/ui.rb:1520
+msgid "&Description (optional)"
+msgstr "描述(可選)(&D)"
+
+#. message popup
+#: src/include/runlevel/ui.rb:1540
+msgid ""
+"Invalid service name. You did not specify service\n"
+"name or the name specified is already in use."
+msgstr ""
+"服務名無效。沒有指定服務名\n"
+"或指定的名稱已在使用。"
+
+#. table header. has the service state changed?
+#: src/include/runlevel/ui.rb:1594
+msgid "Changed"
+msgstr "已變更"
+
+#. button label
+#: src/include/runlevel/ui.rb:1629
+msgid "A&dd"
+msgstr "添加(&D)"
+
+#. button label
+#: src/include/runlevel/ui.rb:1632
+msgid "&Clear"
+msgstr "清除(&C)"
+
+#. button label
+#: src/include/runlevel/ui.rb:1634
+msgid "Clea&r All"
+msgstr "全部清除(&R)"
+
+#. button label
+#: src/include/runlevel/ui.rb:1636
+msgid "D&efault"
+msgstr "預設值(&E)"
+
+#. yes-no popup
+#: src/include/runlevel/ui.rb:1685
+msgid ""
+"Service portmap, which is required by\n"
+"%1, is disabled. Enable\n"
+"portmap if you want to run %1.\n"
+"\n"
+"Leave portmap\n"
+"disabled?\n"
+msgstr ""
+"%1 所必需的服務 portmap 被\n"
+"禁用。如果要運行 %1，\n"
+"則啟用 portmap。\n"
+"\n"
+"是否保持 portmap 為\n"
+"禁用狀態？\n"
+
+#. progress caption
+#: src/modules/RunlevelEd.rb:194
+msgid "Initializing system services (runlevel). Please wait..."
+msgstr "正在啟始化系統服務(運行級別)。請稍候..."
+
+#. TODO: localize the loop, disable it only locally
+#. and say what scripts form it
+#: src/modules/RunlevelEd.rb:304
+msgid ""
+"A dependency loop was detected.\n"
+"Further dependency checking will be disabled."
+msgstr ""
+"已檢測到一個依賴關係迴圈。\n"
+"將禁用進一步的依賴關係檢查。"
+
+#. Check and enable service
+#: src/modules/RunlevelEd.rb:597
+msgid "Cannot enable service %1"
+msgstr "無法啟用服務 %1"
+
+#. Check and start service
+#: src/modules/RunlevelEd.rb:611
+msgid ""
+"Unable to start and enable service %1.\n"
+"Service is not installed."
+msgstr ""
+"無法啟動與啟用服務 %1。\n"
+"服務未安裝。"
+
+#. progress item, %1 is a service (init script) name
+#: src/modules/RunlevelEd.rb:642
+msgid "Service %1"
+msgstr "服務 %1"
+
+#. this can also disable some services
+#: src/modules/RunlevelEd.rb:648
+msgid "Setting %1: %2"
+msgstr "設定 %1：%2"
+
+#. progress item, %1 is a service (init script) name
+#: src/modules/RunlevelEd.rb:655
+msgid "Skipping service %1."
+msgstr "正在跳過服務 %1。"
+
+#: src/modules/RunlevelEd.rb:666
+msgid "Failed services: %1."
+msgstr "失敗的服務：%1。"
+
+#. Enables services in their default runlevels
+#.
+#. @param list <string> list of services to enable
+#. @return [Boolean] if successful
+#: src/modules/RunlevelEd.rb:685
+msgid "Cannot enable service %1."
+msgstr "無法啟用服務 %1。"
+
+#. progress caption
+#: src/modules/RunlevelEd.rb:701
+msgid "Saving changes to runlevels."
+msgstr "正在儲存對運行級別的變更。"
+
+#. descriptions of runlevels. there must be number: description
+#. number is runlevel name
+#. runlevel description
+#: src/modules/RunlevelEd.rb:911
+msgid "0: System halt"
+msgstr "0：系統關閉"
+
+#. runlevel description
+#: src/modules/RunlevelEd.rb:915
+msgid "1: Single user mode"
+msgstr "1：單使用者模式"
+
+#. runlevel description
+#: src/modules/RunlevelEd.rb:917
+msgid "2: Local multiuser without remote network"
+msgstr "2：不帶遠端網路的本地多使用者模式"
+
+#. runlevel description
+#: src/modules/RunlevelEd.rb:921
+msgid "3: Full multiuser with network"
+msgstr "3：帶網路的完全多使用者模式"
+
+#. runlevel description
+#: src/modules/RunlevelEd.rb:923
+msgid "4: User defined"
+msgstr "4：使用者自定義模式"
+
+#. runlevel description
+#: src/modules/RunlevelEd.rb:925
+msgid "5: Full multiuser with network and display manager"
+msgstr "5：完全多使用者網路與顯示管理器模式"
+
+#. runlevel description
+#: src/modules/RunlevelEd.rb:929
+msgid "6: System reboot"
+msgstr "6：系統重啟"
+
+#. runlevel description
+#. internal one: without a number
+#: src/modules/RunlevelEd.rb:932
+msgid "Unchanged"
+msgstr "未變更"
+
+#. summary item: %1 service name,
+#. %2, %3 list of runlevels it starts/stops in
+#: src/modules/RunlevelEd.rb:965
+msgid "<p><b>%1</b><br> Start: %2</p>"
+msgstr "<p><b>%1</b><br> 啟動：%2</p>"
+
+#~ msgid "Cannot start service %1"
+#~ msgstr "無法啟動服務 %1"
+
+#~ msgid "Default &Runlevel"
+#~ msgstr "默認運行級別(&R)"
+

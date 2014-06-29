@@ -1,0 +1,4315 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# margurite <i@marguerite.su>, 2012, 2013.
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:39+0200\n"
+"PO-Revision-Date: 2014-06-18 19:51+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Globalz
+#: src/clients/AA_AddProfile.rb:66
+msgid "Select File to Generate a Profile for"
+msgstr "選擇要生成安全檔案的檔案"
+
+#. Check for cancel in the file choose dialog
+#: src/clients/AA_AddProfile.rb:77
+msgid "Profile for "
+msgstr "安全檔案供"
+
+#: src/clients/AA_AddProfile.rb:78
+msgid " already exists."
+msgstr " 已存在。"
+
+#: src/clients/AA_AddProfile.rb:80
+msgid "Would you like to open this profile in editing mode?"
+msgstr "是否要以編輯模式開啟此安全檔案？"
+
+#. Globalz
+#. TODO ELSE POPUP NO ENTRY SELECTED ERROR
+#: src/clients/AA_DeleteProfile.rb:64
+#: src/include/apparmor/profile_dialogs.rb:1481
+msgid "Delete profile confirmation"
+msgstr "刪除安全檔案確認"
+
+#: src/clients/AA_DeleteProfile.rb:67
+#: src/include/apparmor/profile_dialogs.rb:1484
+msgid "Are you sure you want to delete the profile "
+msgstr "您確定要刪除該安全檔案 "
+
+#: src/clients/AA_DeleteProfile.rb:70
+#: src/include/apparmor/profile_dialogs.rb:1487
+msgid ""
+" ?\n"
+"After this operation the AppArmor module will reload the profile set."
+msgstr ""
+" ?\n"
+"此操作後，AppArmor 模組將重載入安全檔案集。"
+
+#. Read the profiles from the SCR agent
+#: src/clients/AA_DeleteProfile.rb:90
+msgid ""
+"Make a selection from the listed profiles and press Next to delete the "
+"profile."
+msgstr "請從列出的安全檔案中做出選擇，並按“下一步”刪除該檔案。"
+
+#: src/clients/AA_DeleteProfile.rb:93
+msgid "Delete Profile - Choose profile to delete"
+msgstr "刪除安全檔案 - 選擇要刪除的安全檔案"
+
+#. Read the profiles from the SCR agent
+#: src/clients/AA_EditProfile.rb:88
+msgid "Select a listed profile and press Edit to edit it."
+msgstr "請選擇一個列出的安全方案並按編輯編輯。"
+
+#: src/clients/AA_EditProfile.rb:89
+msgid "Edit Profile - Choose profile to edit"
+msgstr "編輯安全檔案 - 選擇要編輯的檔案"
+
+#. no command line support #269891
+#: src/clients/apparmor-settings.rb:52
+msgid "Enable AppArmor Functions"
+msgstr "啟用 AppArmor 功能"
+
+#. AppArmor dialog caption
+#. Network dialog caption
+#: src/clients/apparmor.rb:51 src/include/apparmor/aa-config.rb:440
+msgid "AppArmor Configuration"
+msgstr "AppArmor 配置"
+
+#. AppArmor dialog help
+#: src/clients/apparmor.rb:54
+msgid ""
+"<p>Choose one of the available AppArmor modules to configure\n"
+" the corresponding action and press <b>Launch</b>.</p>\n"
+msgstr "<p>從可選 AppArmor 模組中擇一配置相關的行為，然後按下<b>起動</b>鍵。</p>\n"
+
+#. Selection box label
+#: src/clients/apparmor.rb:69
+msgid "&Available AppArmor Modules:"
+msgstr "可用的 AppArmor 模組(&A)："
+
+#. Selection box items
+#: src/clients/apparmor.rb:72
+msgid "Settings"
+msgstr "設定"
+
+#: src/clients/apparmor.rb:73
+msgid "Manage Existing Profiles"
+msgstr "管理現有安全檔案"
+
+#: src/clients/apparmor.rb:74
+msgid "Manually Add Profile"
+msgstr "手動添加安全檔案"
+
+#. Label::FinishButton()
+#: src/clients/apparmor.rb:90
+msgid "&Launch"
+msgstr "起動(&L)"
+
+#. encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2002 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#: src/include/apparmor/aa-config.rb:52
+msgid ""
+"This operation generated the following error. Check your installation and "
+"AppArmor profile settings."
+msgstr "此操作產生以下錯誤。請檢查安裝與 AppArmor 安全檔案的設定。"
+
+#: src/include/apparmor/aa-config.rb:91 src/include/apparmor/aa-config.rb:103
+#: src/include/apparmor/aa-config.rb:115
+msgid "Disabled"
+msgstr "已禁用"
+
+#: src/include/apparmor/aa-config.rb:92 src/include/apparmor/aa-config.rb:104
+#: src/include/apparmor/aa-config.rb:116
+msgid "1 minute"
+msgstr "1 分鐘"
+
+#: src/include/apparmor/aa-config.rb:93 src/include/apparmor/aa-config.rb:105
+#: src/include/apparmor/aa-config.rb:117
+msgid "5 minutes"
+msgstr "5 分鐘"
+
+#: src/include/apparmor/aa-config.rb:94 src/include/apparmor/aa-config.rb:106
+#: src/include/apparmor/aa-config.rb:118
+msgid "10 minutes"
+msgstr "10 分鐘"
+
+#: src/include/apparmor/aa-config.rb:95 src/include/apparmor/aa-config.rb:107
+#: src/include/apparmor/aa-config.rb:119
+msgid "15 minutes"
+msgstr "15 分鐘"
+
+#: src/include/apparmor/aa-config.rb:96 src/include/apparmor/aa-config.rb:108
+#: src/include/apparmor/aa-config.rb:120
+msgid "30 minutes"
+msgstr "30 分鐘"
+
+#: src/include/apparmor/aa-config.rb:97 src/include/apparmor/aa-config.rb:109
+#: src/include/apparmor/aa-config.rb:121
+msgid "1 hour"
+msgstr "1 小時"
+
+#: src/include/apparmor/aa-config.rb:98 src/include/apparmor/aa-config.rb:110
+#: src/include/apparmor/aa-config.rb:122
+msgid "1 day"
+msgstr "1 天"
+
+#: src/include/apparmor/aa-config.rb:99 src/include/apparmor/aa-config.rb:111
+#: src/include/apparmor/aa-config.rb:123
+msgid "1 week"
+msgstr "1 周"
+
+#: src/include/apparmor/aa-config.rb:131 src/include/apparmor/aa-config.rb:233
+msgid "Security Event Notification"
+msgstr "安全事件通知"
+
+#: src/include/apparmor/aa-config.rb:138
+msgid "Terse Notification"
+msgstr "簡要通知"
+
+#: src/include/apparmor/aa-config.rb:142 src/include/apparmor/aa-config.rb:171
+#: src/include/apparmor/aa-config.rb:200
+msgid "Frequency"
+msgstr "頻率"
+
+#: src/include/apparmor/aa-config.rb:145 src/include/apparmor/aa-config.rb:174
+#: src/include/apparmor/aa-config.rb:203
+msgid "Email Address"
+msgstr "電子郵件地址"
+
+#: src/include/apparmor/aa-config.rb:150 src/include/apparmor/aa-config.rb:179
+#: src/include/apparmor/aa-config.rb:208
+msgid "Severity"
+msgstr "嚴重性"
+
+#: src/include/apparmor/aa-config.rb:159 src/include/apparmor/aa-config.rb:188
+#: src/include/apparmor/aa-config.rb:217
+msgid "Include Unknown Severity Events"
+msgstr "包含未知的安全事件"
+
+#: src/include/apparmor/aa-config.rb:167
+msgid "Summary Notification"
+msgstr "摘要通知"
+
+#: src/include/apparmor/aa-config.rb:196
+msgid "Verbose Notification"
+msgstr "詳細通知"
+
+#: src/include/apparmor/aa-config.rb:270 src/include/apparmor/aa-config.rb:310
+#: src/include/apparmor/aa-config.rb:350
+msgid "An email address is required for each selected notification method."
+msgstr "選擇的每種通知方式都必須有相應的電子郵件地址。"
+
+#: src/include/apparmor/aa-config.rb:394
+msgid "Configuration failed for the following operations: "
+msgstr "以下操作的配置失敗："
+
+#: src/include/apparmor/aa-config.rb:401 src/include/apparmor/aa-config.rb:434
+msgid "Notification is enabled"
+msgstr "通知已啟用"
+
+#. Notification Status
+#: src/include/apparmor/aa-config.rb:403 src/include/apparmor/aa-config.rb:431
+msgid "Notification is disabled"
+msgstr "通知已禁用"
+
+#. AppArmor Status
+#: src/include/apparmor/aa-config.rb:422
+msgid "AppArmor is disabled"
+msgstr "AppArmor 已禁用"
+
+#: src/include/apparmor/aa-config.rb:426
+msgid "AppArmor is enabled"
+msgstr "AppArmor 已啟用"
+
+#: src/include/apparmor/aa-config.rb:441
+msgid ""
+"<p><b>AppArmor Status</b><br>This reports whether the AppArmor policy "
+"enforcement \n"
+"module is loaded and functioning.</p>"
+msgstr ""
+"p><b>AppArmor 狀態</b><br>這裡顯示 AppArmor 安全策略執行模組是否載入並正常工"
+"作。</p>"
+
+#: src/include/apparmor/aa-config.rb:444
+msgid ""
+"<p><b>Security Event Notification</b><br>Configure this tool if you want \n"
+"to be notified by email when access violations have occurred.</p>"
+msgstr "<p><b>安全事件通知</b><br>配置該工具以在發生訪問違規時得到郵件通知。</p>"
+
+#: src/include/apparmor/aa-config.rb:447
+msgid ""
+"<p><b>Profile Modes</b><br>Use this tool to change the way that AppArmor \n"
+"uses individual profiles.</p>"
+msgstr ""
+"<p><b>安全檔案模式</b><br>使用本工具來改變 AppArmor 使用每個安全檔案的方式。"
+"</p>"
+
+#: src/include/apparmor/aa-config.rb:462
+msgid "&Enable AppArmor"
+msgstr "啟用 AppArmor(&E)"
+
+#: src/include/apparmor/aa-config.rb:469
+msgid "Configure AppArmor"
+msgstr "配置 AppArmor"
+
+#. event notification disabled due to changes in AppArmor
+#. `Frame ( _("Security Event Notification"),
+#. `HBox(
+#. `VSpacing(1), `HSpacing(1),
+#. `HVCenter( `Label( `id(`notifyLabel),  evEnStr )),
+#. `PushButton( `id(`ntconf), _("C&onfigure")),
+#. `VSpacing(1), `HSpacing(1)
+#. )
+#. ),
+#. `VSpacing(1), `HSpacing(20),
+#: src/include/apparmor/aa-config.rb:485
+msgid "Configure Profile Modes"
+msgstr "配置安全檔案模式"
+
+#: src/include/apparmor/aa-config.rb:491
+msgid "Set profile modes"
+msgstr "設定安全檔案模式"
+
+#: src/include/apparmor/aa-config.rb:494
+msgid "Co&nfigure"
+msgstr "配置(&N)"
+
+#. May want to replace Wizard() with UI()
+#: src/include/apparmor/aa-config.rb:518
+#: src/include/apparmor/config_complain.rb:187
+#: src/include/apparmor/config_complain.rb:235
+#: src/include/apparmor/config_complain.rb:245
+#: src/include/apparmor/config_complain.rb:274
+#: src/include/apparmor/config_complain.rb:293
+#: src/include/apparmor/profile_dialogs.rb:1112
+msgid "&Done"
+msgstr "完成(&D)"
+
+#. encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2002 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#: src/include/apparmor/apparmor_profile_check.rb:49
+msgid "Errors found in AppArmor profiles"
+msgstr "AppArmor 安全檔案中發現錯誤"
+
+#: src/include/apparmor/apparmor_profile_check.rb:57
+msgid ""
+"<p>These problems must be corrected before AppArmor can be started or the "
+"profile management tools can be used.</p> "
+msgstr "<p>在這些錯誤未修復前 AppArmor 不能啟動、安全檔案管理工具也不能使用。</p>"
+
+#: src/include/apparmor/apparmor_profile_check.rb:64
+msgid "<p>Find a description of the AppArmor profile syntax by running "
+msgstr "<p>運行下面命令以查找 AppArmor 安全檔案語法的描述 "
+
+#: src/include/apparmor/apparmor_profile_check.rb:70
+msgid ""
+"<p>Comprehensive documentation about AppArmor is available in the "
+"Administration guide located in the directory: "
+msgstr "<p>關於 AppArmor 的完整文件包含在《管理指南》中。 在以下目錄中提供："
+
+#. encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2002 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#: src/include/apparmor/apparmor_ycp_utils.rb:35
+msgid "&Allow"
+msgstr "允許(&A)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:36
+msgid "&Deny"
+msgstr "拒絕(&D)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:37
+msgid "Abo&rt"
+msgstr "中止(&R)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:39
+msgid "Audi&t"
+msgstr "審計(&T)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:40
+msgid "Audi&t off"
+msgstr "不審計(&T)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:41
+msgid "Audit &All"
+msgstr "審計全部(&A)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:42
+msgid "&Opts"
+msgstr "選項(&O)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:43
+msgid "&Owner Permissions on"
+msgstr "所有者許可權開(&O)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:44
+msgid "&Owner Permissions off"
+msgstr "所有者許可權關(&O)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:45
+#: src/include/apparmor/apparmor_ycp_utils.rb:63
+msgid "&Inherit"
+msgstr "繼承(&I)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:46
+#: src/include/apparmor/apparmor_ycp_utils.rb:64
+msgid "&Profile"
+msgstr "安全檔案(&P)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:47
+msgid "&Profile Clean Exec"
+msgstr "安全檔案(&P)清潔執行"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:48
+msgid "&Child"
+msgstr "子安全檔案(&C)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:49
+msgid "&Child Clean Exec"
+msgstr "子安全檔案(&C)清潔執行"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:50
+msgid "&Name"
+msgstr "名稱(&N)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:51
+msgid "&Named Clean Exec"
+msgstr "已命名行為(&N)清潔執行"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:52
+#: src/include/apparmor/apparmor_ycp_utils.rb:65
+msgid "&Unconfined"
+msgstr "未受限行為(&U)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:53
+msgid "&Unconfined Clean Exec"
+msgstr "未受限行為(&U)清潔執行"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:54
+msgid "&Profile ix"
+msgstr "安全檔案(&P) ix"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:55
+msgid "&Profile ix Clean Exec"
+msgstr "安全檔案(&P) ix 清潔執行"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:56
+msgid "&Child ix"
+msgstr "子(&C) ix"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:57
+msgid "&Child ix Cx Clean Exec"
+msgstr "子(&C) ix Cx 清潔執行"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:58
+#: src/include/apparmor/apparmor_ycp_utils.rb:59
+msgid "&Name ix"
+msgstr "名稱 ix(&N)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:60
+msgid "i&x fallback on"
+msgstr "i&x 回退開啟"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:61
+msgid "i&x fallback off"
+msgstr "i&x 回退關閉"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:62
+msgid "&Continue Profiling"
+msgstr "繼續(&C)創建安全檔案"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:66
+msgid "&Edit"
+msgstr "編輯(&E)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:67
+msgid "&Glob"
+msgstr "模式匹配(&G)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:68
+msgid "Glob w/E&xt"
+msgstr "模式匹配 w/Ext(&X)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:69
+msgid "&Add Requested Hat"
+msgstr "添加必需的 Hat(&A)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:70
+msgid "&Use Default Hat"
+msgstr "使用默認 Hat(&U)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:71
+msgid "&Scan system log for AppArmor events"
+msgstr "掃描系統日誌以偵測 AppArmor 事件(&S)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:72
+msgid "&View Profile"
+msgstr "檢視安全檔案(&V)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:73
+msgid "&Use Profile"
+msgstr "使用安全檔案(&U)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:74
+msgid "&Create New Profile"
+msgstr "創建新的安全檔案(&C)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:75
+msgid "&Update Profile"
+msgstr "更新安全檔案(&U)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:76
+msgid "&Ignore Update"
+msgstr "忽略更新(&I)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:77
+msgid "&Save Changes"
+msgstr "儲存變更(&S)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:78
+msgid "&Upload Changes"
+msgstr "上傳變更(&U)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:79
+msgid "&View Changes"
+msgstr "顯示變更(&V)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:80
+msgid "&Enable Repository"
+msgstr "啟用軟體源(&E)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:81
+msgid "&Disable Repository"
+msgstr "禁用軟體源(&D)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:82
+msgid "&Never Ask Again"
+msgstr "永不再詢問(&N)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:83
+msgid "Ask Me &Later"
+msgstr "稍後提示我(&L)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:106
+msgid ""
+"Email address format invalid.\n"
+"Email address must be less than 129 characters \n"
+" and of the format \"name@domain\". \n"
+"Enter a valid address.\n"
+msgstr ""
+"Email 地址格式無效。\n"
+"Email 地址必須少於 129 個字元 \n"
+"而且是“名稱@域名”格式。\n"
+"請輸入一個有效地址。\n"
+
+#. UI_RepositorySignInDialog
+#. Dialog to allow users to signin or register with an external AppArmor
+#. profile repository
+#.
+#. @param [Hash] agent_data - data from the backend
+#. [ repo_url - string ]
+#. @return answers - map that contains:
+#. [   newuser     => 1|0 - registering a new user?         ]
+#. [   user        => username                              ]
+#. [   pass        => password                              ]
+#. [   email       => email address - if newuser = 1        ]
+#. [   save_config => true/false - save this information on ]
+#. [                  the system                            ]
+#.
+#: src/include/apparmor/apparmor_ycp_utils.rb:141
+msgid "AppArmor Profile Repository Setup"
+msgstr "AppArmor 安全檔案軟體源配置"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:153
+msgid "Sign in to the repository"
+msgstr "登入到軟體源"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:157
+msgid "Username"
+msgstr "使用者名"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:164
+#: src/include/apparmor/apparmor_ycp_utils.rb:200
+msgid "S&ave configuration"
+msgstr "儲存配置(&S)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:167
+msgid "&Sign in"
+msgstr "登入(&S)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:178
+msgid "&Register new user..."
+msgstr "註冊新使用者(&R)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:186
+msgid "Register New User"
+msgstr "註冊新使用者"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:190
+msgid "Enter Username"
+msgstr "輸入使用者名"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:191
+msgid "Enter Email Address"
+msgstr "輸入電子郵件地址"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:192
+msgid "Enter Password"
+msgstr "輸入密碼"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:193
+msgid "Verify Password"
+msgstr "校驗密碼"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:202
+msgid "&Register"
+msgstr "註冊(&R)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:213
+msgid "&Sign in as existing user..."
+msgstr "以現有使用者登入(&S)..."
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:249
+msgid "Username is required"
+msgstr "使用者名必填"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:251
+msgid "Password is required"
+msgstr "需要密碼"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:290
+msgid "Username required for registration."
+msgstr "註冊需要使用者名。"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:292
+msgid "Email address required for registration."
+msgstr "註冊需要電子郵件地址。"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:294
+msgid "Password is required for registration."
+msgstr "註冊需要密碼。"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:296
+msgid "Passwords do not match. Please re-enter."
+msgstr "密碼不匹配。請重新輸入。"
+
+#. UI_RepositoryViewProfile
+#. Dialog to allow users to view a profile from the repository
+#. and display it in a small scrollable dialog
+#.
+#. @param [Hash] agent_data - map data from the backend
+#. [ user         => string                              ]
+#. [ profile      => string contiaining profile contents ]
+#. [ profile_type => string INACTIVE_LOCAL|REPOSITORY    ]
+#.
+#. @return [void]
+#.
+#: src/include/apparmor/apparmor_ycp_utils.rb:373
+msgid "Local inactive profile"
+msgstr "本地非活動安全檔案"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:375
+msgid "Profile created by user "
+msgstr "由使用者創建的安全檔案"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:377
+msgid "Local profile"
+msgstr "本地安全檔案"
+
+#. UI_ChangeLog_Dialog
+#. Takes a list of profiles and collects one or multiple changelog entries
+#. and returns them
+#.
+#. @param [Hash] agent_data - data from the backend
+#. [ profiles - list of profile names                           ]
+#.
+#. @return   results    - map
+#. [ STATUS            -  string - ok/cancel                    ]
+#. [ SINGLE_CHANGELOG  -  string - set with changelog if user   ]
+#. [                               selects a single changelog   ]
+#.
+#. [ profile 1 name    -  string - changelog 1                  ]
+#. [ profile 2 name    -  string - changelog 2                  ]
+#. ...
+#. [ profile n name    -  string - changelog n                  ]
+#.
+#: src/include/apparmor/apparmor_ycp_utils.rb:449
+msgid "Enter a changelog for the changes for "
+msgstr "輸入這次變更的修訂歷史"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:450
+msgid " the selected profiles"
+msgstr "選定的安全檔案"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:451
+msgid "Individual changelogs per profile"
+msgstr "每個安全檔案自己的修訂歷史"
+
+#. UI_MultiProfileSelectionDialog
+#. Two pane dialog with a multi-selection box on the left
+#. and a long text on the right. Allows a list of profiles
+#. or profile changes to be viewed and selected for further
+#. processing - for example  uploading to the repository
+#.
+#. @param [Hash] agent_data - map - data from backend
+#. [ title               - string - explanation of the forms use ]
+#. [ get_changelog       - string true/false - prompt user to    ]
+#. [                       supply changelogs                     ]
+#. [ never_ask_again     - string true/false - add widget to let ]
+#. [                       user select to never prompt again to  ]
+#. [                       upload unselected profiles to the     ]
+#. [                       repository                            ]
+#. [ default_select      - string true/false - default value for ]
+#. [                       profile selection                     ]
+#. [ profiles            - map<string,string>                    ]
+#.
+#. @return   results    - map
+#. [ STATUS           - string - ok/cancel                       ]
+#. [ PROFILES         - list[string] - list of selected profiles ]
+#. [ NEVER_ASK_AGAIN  - string - true/false - mark unselected    ]
+#. [                    profiles as local only and don't prompt  ]
+#. [                    to upload                                ]
+#. [ CHANGELOG        - map[string,string] - changelog data from ]
+#. [                    UI_ChangeLog_Dialog()                    ]
+#.
+#: src/include/apparmor/apparmor_ycp_utils.rb:600
+msgid "&Do not ask again for unselected profiles"
+msgstr "對沒有選定的安全檔案不再詢問(&D)"
+
+#: src/include/apparmor/apparmor_ycp_utils.rb:671
+msgid "Profiles"
+msgstr "安全檔案"
+
+#. encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2002 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#.
+#. YCP map containing definitons for Capabiltiies
+#: src/include/apparmor/capabilities.rb:35
+msgid ""
+"<ul><li>In a system with the [_POSIX_CHOWN_RESTRICTED] option defined, \n"
+"this overrides the restriction of changing file ownership \n"
+"and group ownership.</li></ul>"
+msgstr ""
+"<ul><li>在定義了 [_POSIX_CHOWN_RESTRICTED] 選項的系統中，這將覆蓋檔案所有權與"
+"組所有權變更的限制。</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:43
+msgid ""
+"<ul><li>Override all DAC access, including ACL execute access if \n"
+"[_POSIX_ACL] is defined. Excluding DAC access covered by CAP_LINUX_IMMUTABLE."
+"</li></ul>"
+msgstr ""
+"<ul><li>覆蓋所有 自主訪問控制 訪問，包括訪問控制列表裡允許的（如果已定義 "
+"[_POSIX_ACL]）。\n"
+"但 CAP_LINUX_IMMUTABLE 表裡的自主訪問除外。</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:49
+msgid ""
+"<ul><li>Overrides all DAC restrictions regarding read and search \n"
+"on files and directories, including ACL restrictions if [_POSIX_ACL] is "
+"defined. \n"
+"Excluding DAC access covered by CAP_LINUX_IMMUTABLE. </li></ul>"
+msgstr ""
+"<ul><li>覆蓋關於讀取與搜索檔案及目錄的所有 自主訪問控制 限制，包括訪問控制列"
+"表裡允許的（如果已定義 [_POSIX_ACL]）。 \n"
+"但在 CAP_LINUX_IMMUTABLE 表裡面的自主訪問除外。 </li></ul>"
+
+#: src/include/apparmor/capabilities.rb:57
+msgid ""
+"<ul><li>Overrides all restrictions on allowed operations on files, where "
+"file\n"
+"owner ID must be equal to the user ID, except where CAP_FSETID is\n"
+"applicable. It does not override MAC and DAC restrictions. </li></ul>"
+msgstr ""
+"<ul><li>覆蓋對檔案所有者 ID 必須等於使用者 ID 的檔案上所允許操作的所有限制，但"
+"適用 CAP_FSETID 的檔案上所允許操作的限制除外。 它不覆蓋 強制訪問控制 與 自主"
+"訪問控制 限制。 </li></ul>"
+
+#: src/include/apparmor/capabilities.rb:65
+msgid ""
+"<ul><li>Overrides the following restrictions: user ID must match the file "
+"owner ID when setting the S_ISUID and S_ISGID bits on that file; the "
+"effective group ID (or one of the supplementary group IDs) must match the "
+"file owner ID when setting the S_ISGID bit on that file; the S_ISUID and "
+"S_ISGID bits are cleared on successful return from chown(2) (not "
+"implemented). </li></ul>"
+msgstr ""
+"<ul><li>覆蓋以下限制：設定檔案上的 S_ISUID 與 S_ISGID 位時，使用者 ID 必須匹配"
+"檔案所有者 ID；設定檔案上的 S_ISGID 位時，有效組 ID（或任一補充組 ID）必須匹"
+"配檔案所有者 ID；S_ISUID 與 S_ISGID 位從 chown(2) 成功返回時被清除（未實"
+"現）。 </li></ul>"
+
+#: src/include/apparmor/capabilities.rb:71
+msgid ""
+"<ul><li>Overrides the restriction that the real or effective user ID \n"
+"of a process sending a signal must match the real or effective user ID of "
+"the process \n"
+"receiving the signal.</li></ul>"
+msgstr ""
+"<ul><li>覆蓋以下限制：發送訊號過程的實際或有效使用者 ID 必須匹配接收訊號過程的"
+"實際或有效使用者 ID。</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:79
+msgid ""
+"<ul><li>Allows setgid(2) manipulation </li> <li> Allows setgroups(2) </li> \n"
+"<li> Allows forged gids on socket credentials passing. </li></ul>"
+msgstr ""
+"<ul><li>允許 setgid(2) 操作 </li> <li>允許 setgroups(2) </li> <li>"
+"允許在套接字機要資料傳遞時偽造組編號</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:85
+msgid ""
+"<ul><li>Allows setuid(2) manipulation (including fsuid) </li> \n"
+"<li> Allows forged pids on socket credentials passing. </li></ul>"
+msgstr ""
+"<ul><li>允許 setuid(2) 操作（包括 fsuid）</li> <li>允許在套接字機要資料傳遞時偽造程序編號</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:91
+msgid ""
+"<ul><li> Transfer any capability in your permitted set to any pid, \n"
+"remove any capability in your permitted set from any pid</li></ul>"
+msgstr ""
+"<ul><li>將使用者允許集中的任何功能傳輸到任何 pid，從任何 pid 去除使用者允許集中的"
+"任何功能</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:97
+msgid ""
+"<ul><li>Allows modification of S_IMMUTABLE and S_APPEND file attributes</"
+"li></ul>"
+msgstr "<ul><li>允許修改  S_IMMUTABLE 與 S_APPEND 檔案屬性</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:103
+msgid ""
+"<ul><li>Allows binding to TCP/UDP sockets below 1024 </li> \n"
+"<li> Allows binding to ATM VCIs below 32</li></ul>"
+msgstr ""
+"<ul><li>允許聯結到低於 1024 的 TCP/UDP 套接字</li> <li>允許聯結到低於 32 的 "
+"ATM VCI</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:109
+msgid "<ul><li> Allows broadcasting, listen to multicast </li></ul>"
+msgstr "<ul><li>允許廣播，收聽多點廣播</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:115
+msgid ""
+"<ul><li> Allows interface configuration</li> \n"
+"<li> Allows administration of IP firewall, masquerading and accounting</"
+"li> \n"
+"<li> Allows setting debug option on sockets</li> \n"
+"<li> Allows modification of routing tables</li>"
+msgstr ""
+"<ul><li>允許介面配置</li>\n"
+"<li>允許管理 IP 防火牆、掩蔽與審計<li>\n"
+"<li>允許設定介面的偵錯選項</li>\n"
+"<li>允許修改路由表</li>"
+
+#: src/include/apparmor/capabilities.rb:121
+msgid ""
+"<li> Allows setting arbitrary process / process group ownership on sockets</"
+"li> \n"
+"<li> Allows binding to any address for transparent proxying</li> \n"
+"<li> Allows setting TOS (type of service)</li> \n"
+"<li> Allows setting promiscuous mode</li> \n"
+"<li> Allows clearing driver statistics</li>"
+msgstr ""
+"<li>允許為套接字使用任意程序/程序組</li>\n"
+"<li>允許繫結到任意地址以實現透明代理</li>\n"
+"<li>允許設定 TOS（服務類型)</li>\n"
+"<li>允許設定亂序模式</li>\n"
+"<li>允許清空驅動統計資料</li>"
+
+#: src/include/apparmor/capabilities.rb:128
+msgid ""
+"<li> Allows multicasting</li> \n"
+"<li> Allows read/write of device-specific registers</li> \n"
+"<li> Allows activation of ATM control sockets </li>\n"
+"</ul>"
+msgstr ""
+"<li>允許多播</li>\n"
+"<li>允許讀取/寫入特定裝置註冊</li>\n"
+"<li>允許啟用 ATM 控制套接字</li>\n"
+"</ul>"
+
+#: src/include/apparmor/capabilities.rb:137
+msgid ""
+"<ul><li> Allows use of RAW sockets</li> \n"
+"<li> Allows use of PACKET sockets </li></ul>"
+msgstr ""
+"<ul><li>允許使用 RAW 套接字</li>\n"
+"<li>允許使用 PACKET 套接字</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:143
+msgid ""
+"<ul><li> Allows locking of shared memory segments</li> <li> Allows mlock "
+"and\n"
+"mlockall (which does not really have anything to do with IPC) </li></ul>"
+msgstr ""
+"<ul><li>允許鎖定共享內存段</li>\n"
+"<li>允許使用 mlock 與 mlockall(與 IPC 確實沒有任何關係)</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:149
+msgid "<ul><li> Override IPC ownership checks </li></ul>"
+msgstr "<ul><li>覆蓋 IPC 所有權檢查</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:153
+msgid ""
+"<ul><li> Insert and remove kernel modules - modify kernel without limit</"
+"li> \n"
+"<li> Modify cap_bset </li></ul>"
+msgstr ""
+"<ul><li>插入與移除核心模組 － 無限制地修改核心</li> \n"
+"<li>修改 cap_bset</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:159
+msgid ""
+"<ul><li> Allows ioperm/iopl access</li> \n"
+"<li> Allows sending USB messages to any device via /proc/bus/usb </li></ul>"
+msgstr ""
+"<ul><li>允許 ioperm/iopl 訪問</li>\n"
+"<li>允許通過 /proc/bus/usb 將 USB 訊息發送到任何裝置</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:165
+msgid "<ul><li> Allows use of chroot() </li></ul>"
+msgstr "<ul><li>允許使用 chroot()</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:169
+msgid "<ul><li> Allows ptrace() of any process </li></ul>"
+msgstr "<ul><li>允許任何程序的 ptrace()</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:173
+msgid "<ul><li> Allows configuration of process accounting </li></ul>"
+msgstr "<ul><li>允許配置程序審計</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:179
+msgid ""
+"<ul><li> Allows configuration of the secure attention key</li> \n"
+"<li> Allows administration of the random device</li> \n"
+"<li> Allows examination and configuration of disk quotas</li> \n"
+"<li> Allows configuring the kernel's syslog (printk behaviour)</li>"
+msgstr ""
+"<ul><li>允許配置安全注意金鑰<li>\n"
+"<li>允許管理隨機裝置</li>\n"
+"<li>允許測試與配置磁碟配額</li>\n"
+"<li>允許配置核心的 syslog 系統日誌(printk 行為)</li>"
+
+#: src/include/apparmor/capabilities.rb:185
+msgid ""
+"<li> Allows setting the domain name</li> \n"
+"<li> Allows setting the hostname</li> \n"
+"<li> Allows calling bdflush()</li> \n"
+"<li> Allows mount() and umount(), setting up new smb connection</li> \n"
+"<li> Allows some autofs root ioctls</li>"
+msgstr ""
+"<li>允許設定域名</li>\n"
+"<li>允許設定主機名<li>\n"
+"<li>允許呼叫 bdflush() 重新整理緩衝區</li>\n"
+"<li>允許 mount() 與 umount()，以及設定新 smb 共享協議連線（smb，伺服器資訊塊"
+"協議，一種共享協議)。</li>\n"
+"<li>允許一些自動裝載裝置的根使用者輸入輸出管理 （autofs root ioctls）</li>"
+
+#: src/include/apparmor/capabilities.rb:192
+msgid ""
+"<li> Allows nfsservctl</li> \n"
+"<li> Allows VM86_REQUEST_IRQ</li> \n"
+"<li> Allows to read/write pci config on alpha</li> \n"
+"<li> Allows irix_prctl on mips (setstacksize)</li> \n"
+"<li> Allows flushing all cache on m68k (sys_cacheflush)</li>"
+msgstr ""
+"<li>允許 nfsservctl NFS 服務控制</li>\n"
+"<li>允許 VM86_REQUEST_IRQ</li>\n"
+"<li>允許在 alpha 上讀寫 pci 配置</li>\n"
+"<li>允許在 mips 上 irix_prctl (設定堆尺寸)</li>\n"
+"<li>允許在 m68k 上重新整理所有快取 (sys_cacheflush)</li>"
+
+#: src/include/apparmor/capabilities.rb:199
+msgid ""
+"<li> Allows removing semaphores</li> \n"
+"<li> Used instead of CAP_CHOWN to \"chown\" IPC message queues, semaphores "
+"and shared memory</li> \n"
+"<li> Allows locking/unlocking of shared memory segment</li> \n"
+"<li> Allows turning swap on/off</li> \n"
+"<li> Allows forged pids on socket credentials passing</li>"
+msgstr ""
+"<li>允許移除訊號</li>\n"
+"<li>允許使用 CAP_CHOWN 來 \"chown\" IPC 訊息佇列，訊號與共享內存</li>\n"
+"<li>允許鎖定/解鎖共享內存段</li>\n"
+"<li>允許開關 swap</li>\n"
+"<li>允許在套接字機要資料傳遞時偽造程序編號</li>"
+
+#: src/include/apparmor/capabilities.rb:206
+msgid ""
+"<li> Allows setting read ahead and flushing buffers on block devices</li> \n"
+"<li> Allows setting geometry in floppy driver</li> \n"
+"<li> Allows turning DMA on/off in xd driver</li> \n"
+"<li> Allows administration of md devices (mostly the above, but some extra "
+"ioctls)</li>"
+msgstr ""
+"<li>允許設定向前讀取並重新整理塊裝置緩衝區</li>\n"
+"<li>允許設定軟盤驅動的幾何結構</li>\n"
+"<li>允許在 xd 驅動中開關 DMA</li>\n"
+"<li>允許管理 md 裝置(基本與上面相同，但有一些額外的輸入輸出管理)</li>"
+
+#: src/include/apparmor/capabilities.rb:212
+msgid ""
+"<li> Allows tuning the ide driver</li> \n"
+"<li> Allows access to the nvram device</li> \n"
+"<li> Allows administration of apm_bios, serial and bttv (TV) device</li> \n"
+"<li> Allows manufacturer commands in iaan CAPI support driver</li>"
+msgstr ""
+"<li>允許調節 ide 驅動</li>\n"
+"<li>允許訪問 nvram 裝置</li>\n"
+"<li>允許管理 apm_bios, 序列與 bbtv (TV) 裝置</li>\n"
+"<li>允許在 iaan CAPI 支援驅動中的廠商命令</li>"
+
+#: src/include/apparmor/capabilities.rb:218
+msgid ""
+"<li> Allows reading non-standardized portions of pci configuration space</"
+"li> \n"
+"<li> Allows DDI debug ioctl on sbpcd driver</li> \n"
+"<li> Allows setting up serial ports</li> \n"
+"<li> Allows sending raw qic-117 commands</li>"
+msgstr ""
+"<li>允許讀取非標準的 pci 配置空間部分</li>\n"
+"<li>允許 sbpcd 驅動上的 DDI 偵錯輸入輸出管理</li>\n"
+"<li>允許設定串列埠</li>\n"
+"<li>允許發送 raw qic-117 命令</li>"
+
+#: src/include/apparmor/capabilities.rb:224
+msgid ""
+"<li> Allows enabling/disabling tagged queuing on SCSI controllers\n"
+" and sending arbitrary SCSI commands</li> \n"
+"<li> Allows setting encryption key on loopback filesystem </li></ul>"
+msgstr ""
+"<li>允許在 SCSI 控制器上啟用/禁用標記的佇列併發送隨意的 SCSI 命令</li>\n"
+"<li>允許在迴路檔案系統上設定加密金鑰</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:232
+msgid "<ul><li> Allows use of reboot() </li></ul>"
+msgstr "<ul><li>允許使用 reboot()</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:236
+msgid ""
+"<ul><li> Allows raising priority and setting priority on other (different "
+"UID) processes</li> \n"
+"<li> Allows use of FIFO and round-robin (realtime) scheduling on own "
+"processes and setting \n"
+"the scheduling algorithm used by another process.</li> \n"
+"<li> Allows setting cpu affinity on other processes </li></ul>"
+msgstr ""
+"<ul><li>允許提高優先順序與設定其它（不同 UID）程序的優先順序</li>\n"
+"<li>允許在自身程序上使用先入先出與迴圈（實時）排程並設定其它程序使用的排程算"
+"法。</li>\n"
+"<li>允許設定其它程序上的 cpu 相似性</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:245
+msgid ""
+"<ul><li> Override resource limits. Set resource limits.</li> \n"
+"<li> Override quota limits.</li> \n"
+"<li> Override reserved space on ext2 filesystem</li> \n"
+"<li> Modify data journaling mode on ext3 filesystem (uses journaling "
+"resources)</li>"
+msgstr ""
+"<ul><li>覆蓋資源限制。設定資源限制。<li>\n"
+"<li>覆蓋配額限制。</li>\n"
+"<li>覆蓋 ext2 檔案系統上的預留空間</li>\n"
+"<li>修改 ext3 檔案系統上的資料日誌模式（省出日誌空間以供使用）</li>"
+
+#: src/include/apparmor/capabilities.rb:251
+msgid ""
+"<li> NOTE: ext2 honors fsuid when checking for resource overrides, so you "
+"can override using fsuid too</li> \n"
+"<li> Override size restrictions on IPC message queues</li> \n"
+"<li> Allows more than 64hz interrupts from the real-time clock</li> \n"
+"<li> Override max number of consoles on console allocation</li> \n"
+"<li> Override max number of keymaps </li></ul>"
+msgstr ""
+"<li>注意： 檢查資源覆蓋時 ext2 尊重 fsuid，因此也可以使用 fsuid 來執行覆蓋</"
+"li>\n"
+"<li>覆蓋 IPC 訊息佇列上的大小限制</li>\n"
+"<li>允許來自實時時鐘的超過 64hz 的中斷</li>\n"
+"<li>覆蓋有關控制檯分配的控制檯最大數</li>\n"
+"<li>覆蓋鍵對映的最大數</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:261
+msgid ""
+"<ul><li> Allows manipulation of system clock</li> \n"
+"<li> Allows irix_stime on mips</li> \n"
+"<li> Allows setting the real-time clock </li></ul>"
+msgstr ""
+"<ul><li>允許系統時鐘</li>\n"
+"<li>允許在 mip 上使用 irix_stime</li>\n"
+"<li>允許設定實時時鐘</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:269
+msgid ""
+"<ul><li> Allows configuration of tty devices</li> \n"
+"<li> Allows vhangup() of tty </li></ul>"
+msgstr ""
+"<ul><li>允許配置 tty 裝置</li>\n"
+"<li>允許使用 tty 的 vhangup()</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:275
+msgid "<ul><li> Allows the privileged aspects of mknod() </li></ul>"
+msgstr "<ul><li>允許 mknod() 的特權操作</li></ul>"
+
+#: src/include/apparmor/capabilities.rb:281
+msgid "<ul><li> Allows taking of leases on files </li></ul>"
+msgstr "<ul><li>允許清空檔案租期</li></ul>"
+
+#. encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2002 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#: src/include/apparmor/config_complain.rb:34
+msgid ""
+"<p><b>Profile Mode Configuration</b><br>This tool allows \n"
+"you to set AppArmor profiles to either complain or enforce mode.</p>"
+msgstr ""
+"<p><b>安全檔案模式設定</b><br> 這個工具可以允許 \n"
+"您設定 AppArmor 的安全檔案為記錄或執行模式。</p>"
+
+#: src/include/apparmor/config_complain.rb:37
+msgid ""
+"<p><b>Complain mode</b> is a profile training state that logs application \n"
+"activity. All the violations of the AppArmor profile rules are logged \n"
+"(into <i>/var/log/audit/audit.log</i> file), but still permitted, so \n"
+"that application's behavior is not restricted.</p>"
+msgstr ""
+"<p><b>記錄模式</b>是一種安全檔案訓練狀態，它會記錄程式活動。\n"
+"所有對的 AppArmor 安全檔案規則的違背都被記錄在案（記錄到<i>/var/log/audit/"
+"audit.log</i>檔案)，\n"
+"但仍會放過它們，所以程式行為並未受限。</p>"
+
+#: src/include/apparmor/config_complain.rb:43
+msgid ""
+"<p>With the profile in <b>enforce mode</b>, application is protected by \n"
+"AppArmor. The profile rules are enforced and their violation is logged,\n"
+"but not permitted (e.g. an application cannot access files, unless it is\n"
+"permitted to do so by the profile).</p>"
+msgstr ""
+"<p>若安全檔案處在<b>執行模式</b>，程式則受 AppArmor 保護。\n"
+"安全檔案規則被執行，對於它們的違規會被記錄，並不允許。\n"
+"（例如程式不能訪問某些檔案，除非安全檔案允許它這麼做。）</p>"
+
+#. Button for showing active or all profiles
+#: src/include/apparmor/config_complain.rb:63
+msgid "Could not recognize profile name: "
+msgstr "無法識別安全檔案名稱："
+
+#. Reverse modes for toggling
+#: src/include/apparmor/config_complain.rb:75
+msgid "Could not recognize mode: "
+msgstr "無法識別模式："
+
+#. translators: string is value in table for mode of apparmor
+#: src/include/apparmor/config_complain.rb:117
+msgid "enforce"
+msgstr "執行"
+
+#: src/include/apparmor/config_complain.rb:118
+msgid "complain"
+msgstr "警告"
+
+#: src/include/apparmor/config_complain.rb:134
+msgid "Show All Profiles"
+msgstr "顯示所有安全檔案"
+
+#: src/include/apparmor/config_complain.rb:135
+msgid "Configure Mode for Active Profiles"
+msgstr "配置活動安全檔案的模式"
+
+#: src/include/apparmor/config_complain.rb:138
+msgid "Show Active Profiles"
+msgstr "顯示活動安全檔案"
+
+#: src/include/apparmor/config_complain.rb:139
+msgid "Configure Mode for All Profiles"
+msgstr "配置所有安全檔案的模式"
+
+#. `Frame( `id(`changeMode), _("Configure Profile Mode"),
+#. TODO switch to variable in a module
+#. TODO plain reread does not work here
+#: src/include/apparmor/config_complain.rb:153
+#: src/include/apparmor/profile_dialogs.rb:1439
+msgid "Profile Name"
+msgstr "安全檔案名稱"
+
+#: src/include/apparmor/config_complain.rb:153
+msgid "Mode"
+msgstr "模式"
+
+#: src/include/apparmor/config_complain.rb:160
+msgid "Toggle Mode"
+msgstr "轉換模式"
+
+#: src/include/apparmor/config_complain.rb:161
+msgid "Set All to Enforce"
+msgstr "全部設定為執行"
+
+#: src/include/apparmor/config_complain.rb:162
+msgid "Set All to Complain"
+msgstr "全部設定為警告"
+
+#. Profile Mode Configuration -- Sets Complain and Enforce Behavior
+#: src/include/apparmor/config_complain.rb:183
+msgid "Profile Mode Configuration"
+msgstr "安全檔案模式配置"
+
+#. We'll need this often - cache it
+#: src/include/apparmor/config_complain.rb:231
+#: src/include/apparmor/config_complain.rb:241
+#: src/include/apparmor/config_complain.rb:270
+#: src/include/apparmor/config_complain.rb:289
+msgid "Configure Profile Mode"
+msgstr "配置安全檔案模式"
+
+#: src/include/apparmor/config_complain.rb:297
+msgid "Select an action to perform."
+msgstr "選擇要執行的操作。"
+
+#. START Help Section
+#. **********************************************************
+#: src/include/apparmor/helps.rb:32
+msgid ""
+"<p>The Security Event Notification screen enables you to setup email \n"
+"alerts for security events. In the following steps, specify how often \n"
+"alerts are sent, who receives the alert, and how severe the security \n"
+"event must be to send an alert.</p>"
+msgstr ""
+"<p>安全事件通知螢幕讓您能夠設定安全事件電子郵件提醒。在如下步驟中，指定提醒發"
+"送的頻率，接收提醒的電子郵件地址，與針對什麼嚴重性級別的安全事件發送提醒。</"
+"p>"
+
+#: src/include/apparmor/helps.rb:38
+msgid ""
+"<p><b>Notification Types</b><br> <b>Terse Notification:</b> \n"
+"Terse notification summarizes the total number of system events without \n"
+"providing details.  <br>For example:<br> <tt>dhcp-101.up.wirex.com has \n"
+"had 10 security events since Tue Oct 12 11:10:00 2004</tt></p>"
+msgstr ""
+"<p><b>提醒類型</b><br> <b>簡要通知：</b>\n"
+"簡要通知彙總了系統事件的條數，而不提供細節。 <br>例如：<br> <tt>dhcp-101.up."
+"wirex.com \n"
+"自從 2004 年十月 12 日星期二 11:10:00 有 10 條安全事件</tt></p>"
+
+#: src/include/apparmor/helps.rb:44
+msgid ""
+"<p><b>Summary Notification:</b> The Summary notification displays \n"
+"the logged AppArmor security events, and lists the number of \n"
+"individual occurrences, including the date of the last occurrence.  \n"
+"<br>For example:<br> <tt>AppArmor: PERMITTING access to capability\n"
+"'setgid' (httpd2-prefork(6347) profile /usr/sbin/httpd2-prefork \n"
+"active /usr/sbin/httpd2-prefork) 2 times, the latest at Sat Oct 9 16:05:54 "
+"2004.</tt>\n"
+"</p>"
+msgstr ""
+"<p><b>摘要通知：</b> 摘要通知顯示記錄的 AppArmor 安全事件，並列出發生的次數，"
+"包括最後發生的日期。\n"
+"<br>例如：<br> <tt>AppArmor: 允許訪問功能 'setgid' (httpd2-prefork(6347) 安全"
+"檔案 /usr/sbin/httpd2-prefork\n"
+"活動 /usr/sbin/httpd2-prefork) 兩次，最後一次於 2004 年十月 9 日星期六 "
+"16:05:54。</tt>\n"
+"</p>"
+
+#: src/include/apparmor/helps.rb:53
+msgid ""
+"<p><b>Verbose Notification:</b> The Verbose notification displays \n"
+"unmodified, logged AppArmor security events. It tells you every time \n"
+"an event occurs and writes a new line in the Verbose log. These \n"
+"security events include the date and time the event occurred, when \n"
+"the application profile permits access as well as rejects access, \n"
+"and the type of file permission access that is permitted or rejected.</p>"
+msgstr ""
+"<p><b>詳細通知：</b> 詳細通知顯示了未修改的，記錄的 AppArmor 安全事件。\n"
+"每次安全事件發生時它都會通知您並在詳細日誌中寫入新的一行。這些安全事件包括\n"
+"事件發生的日期與事件，應用程式安全檔案允許訪問與拒絕訪問的時間，允許或拒絕的"
+"檔案許可權訪問\n"
+"的類型。</p>"
+
+#: src/include/apparmor/helps.rb:61
+msgid ""
+"<p>Verbose Notification also reports several messages that \n"
+"the logprof tool uses to interpret profiles. <br>For example:<br>\n"
+"<tt> Oct  9 15:40:31 AppArmor: PERMITTING r access to\n"
+"/etc/apache2/httpd.conf (httpd2-prefork(6068) profile \n"
+"/usr/sbin/httpd2-prefork active /usr/sbin/httpd2-prefork)</tt></p>"
+msgstr ""
+"<p>詳細通知也報告一些 logprof 工具用來解釋安全檔案的訊息。<br>例如：<br>\n"
+"<tt> 十月 9 日 15:40:31 AppArmor: 允許讀取訪問到 /etc/apache2/httpd.conf "
+"(httpd2-prefork(6068)\n"
+"安全檔案 /usr/sbin/httpd2-prefork 活動 /usr/sbin/httpd2-prefork)</tt></p>"
+
+#: src/include/apparmor/helps.rb:68
+msgid ""
+"<li> For each notification type that you would like \n"
+"enabled, select the frequency of notification that you would \n"
+"like.  For example, if you select <b>1 day</b> from the \n"
+"pull-down list, you will be sent daily notifications of \n"
+"security events, if they occur.</li>"
+msgstr ""
+"<li>為您啟用的每個通知類型，選擇你喜歡的通知頻率。例如，如果您從下拉選單中選"
+"擇 <b>一天</b>，\n"
+"如果有安全事件發生，您將接收到按日彙總的通知。</li>"
+
+#: src/include/apparmor/helps.rb:75
+msgid ""
+"<li> Enter the email address of those who should receive \n"
+"the Terse, Summary, or Verbose notifications.If there is no local \n"
+"SMTP server configured to distribute e-mails from this host to the \n"
+"domain you entered, enter for example <i><user>@localhost</i> \n"
+"and enable <i><user></i> to receive system mail, if it is not \n"
+"a root user. </li>"
+msgstr ""
+"<li>輸入接受簡要、摘要或詳細通知的電子郵件地址。如果此主機沒有配置 SMTP 服務"
+"器以像您輸入的域名發送電子郵件，\n"
+"輸入例如 <i><使用者>@localhost</i> 並啟用 <i><使用者></i> 來接收系統郵件 (如果該"
+"使用者不是根使用者)。</li>"
+
+#: src/include/apparmor/helps.rb:83
+msgid ""
+"<li>Select the lowest <b>severity level</b> for which a notification \n"
+"should be sent. Security events will be logged and the notifications \n"
+"will be sent at the time indicated by the interval when events are \n"
+"equal or greater than the selected severity level. If the interval \n"
+"is 1 day, the notification will be sent daily, if security events \n"
+"occur."
+msgstr ""
+"<li>選擇應發送提醒的最低 <b>嚴重性級別</b>。當事件等於或大於選中的嚴重性級別"
+"時，\n"
+"將記錄安全事件並按指定的週期發送提醒。如果週期是一天，若有安全事件發生，將按"
+"日發送提醒。"
+
+#: src/include/apparmor/helps.rb:91
+msgid ""
+"<b>Severity Levels:</b> These are numbered 1 through 10, \n"
+"10 being the most severe security incident. The <b>severity.db</b> \n"
+"file defines the severity level of potential security events. \n"
+"The severity levels are determined by the importance of \n"
+"different security events, such as certain resources accessed \n"
+"or services denied.</li>"
+msgstr ""
+"<b>嚴重性級別：</b> 從數字一到數字十，數字十是最嚴重的安全事件。<b>severity."
+"db</b>\n"
+"檔案定義了潛在安全事件的嚴重性級別。嚴重性級別是由不同安全事件的重要性決定"
+"的，例如\n"
+"訪問特定資源或拒絕特定服務。</li>"
+
+#: src/include/apparmor/helps.rb:99
+msgid ""
+"<li>Select <b>Include unknown security events</b> if \n"
+"you would like to include events that are not rated with a severity number.</"
+"li>"
+msgstr ""
+"<li>如果您想要包含沒有嚴重性分級數字的事件，請選擇<b>包含未知安全事件</b>。</"
+"li>"
+
+#. ----------------------------
+#: src/include/apparmor/helps.rb:103
+msgid "<b>AppArmor Profiling Wizard</b><br>"
+msgstr "<b>AppArmor 安全檔案嚮導</b><br>"
+
+#: src/include/apparmor/helps.rb:106
+msgid ""
+"This wizard presents entries generated by the AppArmor access control "
+"module. \n"
+"You can generate highly optimized and robust security profiles \n"
+"by using the suggestions made by AppArmor."
+msgstr ""
+"該向導顯示由 AppArmor 訪問控制模組生成的條目。\n"
+"使用 AppArmor 做出的建議，您可以生成高度優化的與強壯的安全檔案。"
+
+#: src/include/apparmor/helps.rb:111
+msgid ""
+"AppArmor suggests that you allow or deny access to specific resources \n"
+"or define execute permission for entries. Questions \n"
+"that display were logged during the normal application \n"
+"execution test previously performed. <br>"
+msgstr ""
+"AppArmor 建議您允許或拒絕訪問指定資源或為條目定義執行許可權。顯示的問題是在之前"
+"執行的正常的程式執行測試中記錄的。<br>"
+
+#: src/include/apparmor/helps.rb:117
+msgid ""
+"The following help text describes the detail of the security profile \n"
+"syntax used by AppArmor. <br><br>At any stage, you may \n"
+"customize the profile entry by changing the suggested response. \n"
+"This overview will assist you in your options. Refer to the \n"
+"Novell AppArmor Administration Guide for step-by-step \n"
+"instructions. <br><br>"
+msgstr ""
+"如下幫助文字描述了 AppArmor 使用的安全檔案語法細節。<br><br>在任何情況下，您"
+"都可以通過修改建議的回答來自定義安全檔案條目。\n"
+"該概覽輔助您修改選項。分步指南請參考 Novell AppArmor 管理指南。<br><br>"
+
+#: src/include/apparmor/helps.rb:125
+msgid "<b>Access Modes</b><br>"
+msgstr "<b>訪問模式</b><br>"
+
+#: src/include/apparmor/helps.rb:126
+msgid ""
+"File permission access modes consists of combinations of the following six "
+"modes:"
+msgstr "檔案許可權訪問模式包含如下六種模式的組合："
+
+#: src/include/apparmor/helps.rb:129
+msgid "<li>r    - read</li>"
+msgstr "<li>r    - 讀取</li>"
+
+#: src/include/apparmor/helps.rb:130
+msgid "<li>w    - write</li>"
+msgstr "<li>w    - 寫入</li>"
+
+#: src/include/apparmor/helps.rb:131
+msgid "<li>m    - mmap PROT_EXEC</li>"
+msgstr "<li>m    - mmap PROT_EXEC</li>"
+
+#: src/include/apparmor/helps.rb:132
+msgid "<li>px   - discrete profile execute</li>"
+msgstr "<li>px    - 離散安全變數執行</li>"
+
+#: src/include/apparmor/helps.rb:133
+msgid "<li>ux   - unconfined execute</li>"
+msgstr "<li>ux - 未受限執行</li>"
+
+#: src/include/apparmor/helps.rb:134
+msgid "<li>ix   - inherit execute</li>"
+msgstr "<li>ix    - 繼承執行</li>"
+
+#: src/include/apparmor/helps.rb:135
+msgid "<li>l    - link</li>"
+msgstr "<li>l    - 連結</li>"
+
+#: src/include/apparmor/helps.rb:136
+msgid "<b>Details for Access Modes</b>"
+msgstr "<b>訪問模式細節</b>"
+
+#: src/include/apparmor/helps.rb:137
+msgid "<b>Read mode</b><br>"
+msgstr "<b>僅讀模式</b><br>"
+
+#: src/include/apparmor/helps.rb:138
+msgid ""
+"Allows the program to have read access to the\n"
+"resource. Read access is required for shell scripts\n"
+"and other interpreted content, and determines if an\n"
+"executing process can core dump or be attached to with\n"
+"ptrace(2).  (ptrace(2) is used by utilities such as\n"
+"strace(1), ltrace(1), and gdb(1).)"
+msgstr ""
+"給予程式資源的僅讀許可權。殼層指令碼與其他解釋性內容需要讀取許可權，決定執行中的過"
+"程是否能夠轉儲核心或者被附加到 ptrace(2)。\n"
+"(ptrace(2) 被像 strace(1)，ltrace(1)，與 gdb(1) 這樣的工具使用。)"
+
+#: src/include/apparmor/helps.rb:146
+msgid "<b>Write mode</b><br>"
+msgstr "<b>寫入模式</b><br>"
+
+#: src/include/apparmor/helps.rb:147
+msgid ""
+"Allows the program to have write access to the\n"
+"resource. Files must have this permission if they are\n"
+"to be unlinked (removed.)"
+msgstr ""
+"給予程式資源的寫入許可權。如果要取消連結檔案 (刪除連結)，那麼必須給予檔案此權"
+"限。"
+
+#: src/include/apparmor/helps.rb:152
+msgid "<b>Mmap PROT_EXEC mode</b><br>"
+msgstr "<b>Mmap 內存地圖的 PROT_EXEC 「使用中的埠」模式</b><br>"
+
+#: src/include/apparmor/helps.rb:153
+msgid ""
+"Allows the program to call mmap with PROT_EXEC on the\n"
+"resource."
+msgstr "允許程式在資源上帶 PROT_EXEC 的呼叫 mmap。"
+
+#: src/include/apparmor/helps.rb:154
+msgid "<b>Unconfined execute mode</b><br>"
+msgstr "<b>未受限執行模式</b><br>"
+
+#: src/include/apparmor/helps.rb:155
+msgid ""
+"Allows the program to execute the resource without any\n"
+"AppArmor profile being applied to the executed\n"
+"resource. Requires listing execute mode as well.\n"
+"Incompatible with Inherit and Discrete Profile execute\n"
+"entries."
+msgstr ""
+"即使沒有任何 AppArmor 的安全檔案應用到被執行的資源，也允許程式執行該資源。\n"
+"需要開啟執行模式。\n"
+"與繼承或離散安全檔案執行條目不相容。"
+
+#: src/include/apparmor/helps.rb:162
+msgid ""
+"This mode is useful when a confined program needs to\n"
+"be able to perform a privileged operation, such as\n"
+"rebooting the machine. By placing the privileged section \n"
+"in another executable and granting unconfined \n"
+"execution rights, it is possible to bypass the mandatory \n"
+"constraints imposed on all confined processes.\n"
+"For more information on what is constrained, see the\n"
+"apparmor(7) man page."
+msgstr ""
+"這種模式在當一個受限的程式需要能夠執行一項特權操作，\n"
+"比如重啟電腦時會很有用。通過替換特權部分為另一個 \n"
+"允許的未受限的執行許可權，就可以繞過施加在所有 \n"
+"受限程序上的強制限制。\n"
+"關於受限的定義，參見 apparmor(7) man 幫助頁面。"
+
+#: src/include/apparmor/helps.rb:172
+msgid "<b>Discrete Profile execute mode</b><br>"
+msgstr "<b>離散安全檔案執行模式</b><br>"
+
+#: src/include/apparmor/helps.rb:173
+msgid ""
+"This mode requires that a discrete security profile is\n"
+"defined for a resource executed at a AppArmor domain\n"
+"transition.  If there is no profile defined then the\n"
+"access will be denied.  Incompatible with Inherit and\n"
+"Unconstrained execute entries."
+msgstr ""
+"該模式要求針對 AppArmor 的域過渡裡執行的資源有定義離散安全檔案。\n"
+"如果沒有定義安全檔案那麼訪問就會被拒絕。與繼承與未受限執行條目不相容。"
+
+#: src/include/apparmor/helps.rb:180
+msgid "<b>Link mode</b><br>"
+msgstr "<b>連結模式</b><br>"
+
+#: src/include/apparmor/helps.rb:181
+msgid ""
+"Allows the program to be able to create and remove a\n"
+"link with this name (including symlinks). When a link\n"
+"is created, the file that is being linked to MUST have\n"
+"the same access permissions as the link being created\n"
+"(with the exception that the destination does not have\n"
+"to have link access.) Link access is required for\n"
+"unlinking a file."
+msgstr ""
+"允許程式能夠創建與刪除一個帶有此名稱的連結 (包括系統連結)。\n"
+"當創建了一個連結時，被連結的檔案必須有與被創建的連結相同的許可權。\n"
+"(例外是目的地目錄沒有連結訪問許可權) 取消連結檔案需要有連結許可權。"
+
+#: src/include/apparmor/helps.rb:190
+msgid "<b>Globbing</b>"
+msgstr "<b>匹配模式中</b>"
+
+#: src/include/apparmor/helps.rb:191
+msgid ""
+"File resources may be specified with a globbing syntax\n"
+"similar to that used by popular shells, such as csh(1),\n"
+"bash(1), zsh(1)."
+msgstr ""
+"可以使用類似流行終端模擬器 csh(1),bash(1),zsh(1)這樣的模式匹配語法來指定檔案"
+"資源。"
+
+#: src/include/apparmor/helps.rb:196
+msgid ""
+"<li><b>*</b>   can substitute for any number of characters, except '/'<li>"
+msgstr "<li<b>*</b>    可替換任何單位的字元，除了 '/'。</li>"
+
+#: src/include/apparmor/helps.rb:199
+msgid ""
+"<li><b>**</b>  can substitute for any number of characters, including '/'</"
+"li>"
+msgstr "<li><b>**</b>  可替換任何單位的字元，包括 '/'</li>"
+
+#: src/include/apparmor/helps.rb:202
+msgid "<li><b>?</b>   can substitute for any single character except '/'</li>"
+msgstr "<li><b>?</b>  可替代任何單個字元除了 '/'</li>"
+
+#: src/include/apparmor/helps.rb:205
+msgid ""
+"<li><b>[abc]</b> will substitute for the single character a, b, or c</li>"
+msgstr "<li><b>[abc]</b> 將替代單獨字元 a, b, 或者 c</li>"
+
+#: src/include/apparmor/helps.rb:208
+msgid ""
+"<li><b>[a-c]</b> will substitute for the single character a, b, or c</li>"
+msgstr "<li><b>[a-c]</b> 將替代單獨字元 a, b, 或 c</li>"
+
+#: src/include/apparmor/helps.rb:211
+msgid ""
+"<li><b>{ab,cd}</b> will expand to one rule to match ab, one rule to match "
+"cd</li>"
+msgstr "<li><b>{ab,cd}</b> 將展開成一條匹配 ab 的規則與一條匹配 cd 的規則</li>"
+
+#: src/include/apparmor/helps.rb:214
+msgid "<b>Clean Exec - for sanitized execution</b>"
+msgstr "<b>清潔執行 - 「消毒」執行</b>"
+
+#: src/include/apparmor/helps.rb:215
+msgid ""
+"The Clean Exec option for the discrete profile and unconstrained \n"
+"execute permissions provide added security by stripping the \n"
+"environment that is inherited by the child program of specific \n"
+"variables. You will be prompted to choose whether you want to sanitize the\n"
+"environment if you choose 'p' or 'u' during the profiling process.\n"
+"The variables are:"
+msgstr ""
+"離散安全檔案的「清潔執行」選項與不受限制的執行許可許可權通過清除由子程式繼承特"
+"定變數的環境而提供了更高的安全性。 \n"
+"如果您在創建安全檔案過程中選擇了 'p' 或 'u' 將提示您選擇是否想要消毒環境。\n"
+"這些變數有："
+
+#. Globalz
+#: src/include/apparmor/profile_dialogs.rb:55
+msgid ""
+"<b>Capability Selection</b>.\n"
+"<br>Select desired capabilities for this profile. \n"
+"Select a Capability name to see information about the capability."
+msgstr ""
+"<b>功能選擇</b>。\n"
+"<br>為此安全檔案選擇所需的功能。\n"
+"選擇一個功能名稱以檢視關於該功能的資訊。"
+
+#: src/include/apparmor/profile_dialogs.rb:62
+msgid "Capabilities enabled for the profile"
+msgstr "啟用的安全檔案功能"
+
+#: src/include/apparmor/profile_dialogs.rb:80
+msgid "Capabilities"
+msgstr "功能"
+
+#. We'll need this often - cache it
+#: src/include/apparmor/profile_dialogs.rb:153
+#: src/include/apparmor/profile_dialogs.rb:179
+msgid "All"
+msgstr "全部"
+
+#: src/include/apparmor/profile_dialogs.rb:199
+msgid "Network Family"
+msgstr "網路家族"
+
+#: src/include/apparmor/profile_dialogs.rb:205
+msgid "Socket Type"
+msgstr "套接字類型"
+
+#. Popup the Edit Profile Entry dialog
+#. return a map containing PERM and FILE
+#. for the updated permissions and filename
+#. for the profile entry
+#: src/include/apparmor/profile_dialogs.rb:292
+msgid "Profile Entry for "
+msgstr "以下條目的安全檔案條目："
+
+#: src/include/apparmor/profile_dialogs.rb:297
+msgid "Enter or Modify Filename"
+msgstr "輸入或修改檔名"
+
+#: src/include/apparmor/profile_dialogs.rb:298
+msgid "&Browse"
+msgstr "瀏覽(&B)"
+
+#: src/include/apparmor/profile_dialogs.rb:306
+#: src/include/apparmor/profile_dialogs.rb:1032
+msgid "Permissions"
+msgstr "許可權"
+
+#: src/include/apparmor/profile_dialogs.rb:310
+msgid "Read"
+msgstr "讀取"
+
+#: src/include/apparmor/profile_dialogs.rb:315
+msgid "Write"
+msgstr "寫入"
+
+#: src/include/apparmor/profile_dialogs.rb:320
+msgid "Link"
+msgstr "連結"
+
+#: src/include/apparmor/profile_dialogs.rb:325
+msgid "Append"
+msgstr "追加"
+
+#: src/include/apparmor/profile_dialogs.rb:330
+msgid "Lock"
+msgstr "鎖定"
+
+#: src/include/apparmor/profile_dialogs.rb:335
+msgid "MMap PROT_EXEC"
+msgstr "MMap PROT_EXEC"
+
+#: src/include/apparmor/profile_dialogs.rb:340
+msgid "Execute"
+msgstr "執行"
+
+#: src/include/apparmor/profile_dialogs.rb:345
+msgid "Inherit"
+msgstr "繼承"
+
+#: src/include/apparmor/profile_dialogs.rb:350
+msgid "Profile"
+msgstr "安全檔案"
+
+#: src/include/apparmor/profile_dialogs.rb:355
+msgid "Profile Clean Exec"
+msgstr "安全檔案清潔執行"
+
+#: src/include/apparmor/profile_dialogs.rb:360
+msgid "Unconstrained"
+msgstr "未限制"
+
+#: src/include/apparmor/profile_dialogs.rb:365
+msgid "Unconstrained Clean Exec"
+msgstr "未受限的清潔執行"
+
+#. Popup a dialog to let a user browse for a file
+#: src/include/apparmor/profile_dialogs.rb:542
+msgid "Select Directory"
+msgstr "選擇目錄"
+
+#: src/include/apparmor/profile_dialogs.rb:545
+msgid "Select File"
+msgstr "選擇檔案"
+
+#. Update table values
+#: src/include/apparmor/profile_dialogs.rb:602
+msgid "Entry will not be added. Entry name or permissions not defined."
+msgstr "將不添加條目。未定義條目的名稱或許可權。"
+
+#. Prompts the user for a hatname
+#. Side-Effect: sets Settings["CURRENT_HAT"]
+#. returns true (hat entered)
+#. false (user aborted)
+#: src/include/apparmor/profile_dialogs.rb:849
+msgid ""
+"Enter the name of the Hat that you would like \n"
+"to add to the profile\n"
+msgstr "請輸入想添加到安全檔案的 Hat 名稱\n"
+
+#: src/include/apparmor/profile_dialogs.rb:859
+msgid "&Hat name to add"
+msgstr "要添加的 Hat 名稱(&H)"
+
+#: src/include/apparmor/profile_dialogs.rb:865
+msgid "&Create Hat"
+msgstr "創建 Hat(&C)"
+
+#. Check for no application entry in the dialog
+#: src/include/apparmor/profile_dialogs.rb:881
+msgid ""
+"You have not given a name for the hat you want to add.\n"
+"Please \n"
+"enter a hat name to create a new hat, or press Abort to cancel this wizard."
+msgstr ""
+"尚未為要添加的 Hat 取名。\n"
+"請\n"
+"輸入 Hat 名稱，以創建 Hat 或按“中止”取消此嚮導。"
+
+#: src/include/apparmor/profile_dialogs.rb:889
+msgid ""
+"The profile already contains the provided hat name. Enter a different name "
+"or press Abort to cancel this wizard."
+msgstr ""
+"此安全檔案已含有給定的 Hat 名稱。請輸入另一個名稱並重試，或按“中止”取消此向"
+"導。"
+
+#. FIXME: format these texts better
+#. help text
+#: src/include/apparmor/profile_dialogs.rb:928
+msgid ""
+"<p>View and modify the contents of an individual profile. For existing "
+"entries double click the permissions to access a modification dialog.</p>"
+msgstr ""
+"<p>在此表單中可以檢視與修改單個安全檔案的內容。 對於現有條目，可以雙擊許可權以"
+"訪問修改對話方塊。</p>"
+
+#. help text
+#: src/include/apparmor/profile_dialogs.rb:933
+msgid ""
+"<p><b>Permission Definitions:</b><br><code> r - read <br> \n"
+"w -write<br>l - link<br>m - mmap PROT_EXEC<br>k - file locking<br>\n"
+"a - file append<br>x - execute<br> i - inherit<br> p - discrete profile<br>\n"
+"P - discrete profile <br> (*clean exec)<br> u - unconstrained<br> \n"
+"U -unconstrained<br> (*clean exec)</code></p>"
+msgstr ""
+"<p><b>許可許可權定義：</b><br><code> r - 讀 <br> w -\n"
+"寫<br>l - 連結<br>m - mmap PROT_EXEC<br>k - 檔案鎖定<br>a - 檔案追加<br>\n"
+"x - 執行<br> i - 繼承<br> p - 離散安全檔案<br> P – 離散安全檔案 <br>（*清潔執"
+"行）<br> u - 不受限制<br> U - 不受限制<br>（*清潔執行）</code></p>"
+
+#. help text
+#: src/include/apparmor/profile_dialogs.rb:942
+msgid ""
+"<p><b>Add Entry:</b><br>Select the type of resource to add from the drop "
+"down list.</p>"
+msgstr "<p><b>添加條目：</b><br>從下拉選單選擇要添加的資源類型。</p>"
+
+#. help text - part x1
+#: src/include/apparmor/profile_dialogs.rb:947
+msgid "<p><ul><li><b>File</b><br>Add a file entry to this profile.</li>"
+msgstr "<p><ul><li><b>檔案</b><br>將檔案條目添加到此安全檔案。</li>"
+
+#. help text - part x2
+#: src/include/apparmor/profile_dialogs.rb:951
+msgid "<li><b>Directory</b><br>Add a directory entry to this profile.</li>"
+msgstr "<li><b>目錄</b><br>將目錄條目添加到此安全檔案。</li>"
+
+#. help text - part x3
+#: src/include/apparmor/profile_dialogs.rb:955
+msgid "<li><b>Capability</b><br>Add a capability entry to this profile.</li>"
+msgstr "<li><b>功能</b><br>將功能條目添加到此安全檔案。</li>"
+
+#. help text - part x4
+#: src/include/apparmor/profile_dialogs.rb:959
+msgid ""
+"<li><b>Include</b><br>Add an include entry to this profile. This option \n"
+"includes the profile entry contents of another file in this profile at load "
+"time.</li>"
+msgstr ""
+"<li><b>包含</b><br>將包含條目添加到此安全檔案。 此選項包括裝載時此安全檔案中"
+"其它檔案的安全檔案條目內容。</li>"
+
+#. help text - part x5
+#: src/include/apparmor/profile_dialogs.rb:963
+msgid ""
+"<li><b>Network Entry</b><br>Add a network rule entry to this profile. \n"
+"This option will allow you to specify network access privileges for the "
+"profile. \n"
+"You may specify a network address family and socket type.</li>"
+msgstr ""
+"<li><b>網路條目</b><br>為此安全檔案添加新的網路規則條目。此選項將讓您可以為安"
+"全檔案指定訪問許可權。\n"
+"您可以指定一個網路地址家族與套接字類型。</li>"
+
+#. help text - part x6
+#: src/include/apparmor/profile_dialogs.rb:969
+msgid ""
+"<li><b>Hat</b><br>Add a sub-profile for this profile, called a Hat. This\n"
+"option is analogous to manually creating a new profile, which can be "
+"selected\n"
+"during execution only in the context of being asked for by a <b>changehat\n"
+"aware</b> application. \n"
+"For more information on changehat, see <b>man changehat</b> on your system "
+"or the Novell AppArmor Administration Guide.</li>"
+msgstr ""
+"<li><b>Hat</b><br> 添加此安全檔案的子安全檔案 － 稱為 Hat。 此選項類似於手動"
+"創建新安全檔案，該選項僅在 <b>changehat aware</b > 應用程式要求此選項的環境中"
+"執行時才能選中。 關於 changehat 的詳細資訊，請參閱系統上或《Novell AppArmor "
+"管理指南》上的  <b>man changehat</b>。</li>"
+
+#. help text - part x7
+#: src/include/apparmor/profile_dialogs.rb:977
+msgid "</ul></p><p><b>Edit Entry:</b><br>Edit the selected entry.</p>"
+msgstr "</ul><p><b>編輯條目：</b><br>編輯選定的條目。<p>"
+
+#. help text
+#: src/include/apparmor/profile_dialogs.rb:982
+msgid ""
+"<p><b>Delete Entry:</b><br>Removes the selected entry from this profile.</p>"
+msgstr "<b>刪除條目：</b><br>從此安全檔案中刪除所選的條目。</p>"
+
+#. help text - part y1
+#: src/include/apparmor/profile_dialogs.rb:987
+msgid ""
+"<p><b>*Clean Exec</b><br>The Clean Exec option for the discrete profile \n"
+"and unconstrained execute permissions provide added security by stripping "
+"the environment \n"
+"that is inherited by the child program of specific variables. These "
+"variables are:"
+msgstr ""
+"<p><b>*清潔執行</b><br>離散安全檔案的“清潔執行”選項與不受限制的執行許可權通過清"
+"除由子程式繼承特定變數的環境而提供了更高的安全性。 這些變數有："
+
+#. help text - part y2
+#: src/include/apparmor/profile_dialogs.rb:998
+msgid "&File"
+msgstr "檔案(&F)"
+
+#: src/include/apparmor/profile_dialogs.rb:999
+msgid "Network &Rule"
+msgstr "網路規則(&R)"
+
+#: src/include/apparmor/profile_dialogs.rb:1000
+msgid "&Directory"
+msgstr "目錄(&D)"
+
+#: src/include/apparmor/profile_dialogs.rb:1001
+msgid "&Capability"
+msgstr "功能(&C)"
+
+#: src/include/apparmor/profile_dialogs.rb:1002
+msgid "&Include File"
+msgstr "包含檔案(&I)"
+
+#: src/include/apparmor/profile_dialogs.rb:1012
+msgid "AppArmor profile "
+msgstr "AppArmor 安全檔案"
+
+#: src/include/apparmor/profile_dialogs.rb:1020
+msgid "&Hat"
+msgstr "Hat(&H)"
+
+#: src/include/apparmor/profile_dialogs.rb:1021
+msgid "AppArmor profile for "
+msgstr "以下條目的 AppArmor 安全檔案"
+
+#. Define the widget contents
+#. for the Wizard
+#: src/include/apparmor/profile_dialogs.rb:1032
+msgid "File Name"
+msgstr "檔名"
+
+#: src/include/apparmor/profile_dialogs.rb:1039
+msgid "Add Entry"
+msgstr "添加條目"
+
+#: src/include/apparmor/profile_dialogs.rb:1040
+msgid "&Edit Entry"
+msgstr "編輯條目(&E)"
+
+#: src/include/apparmor/profile_dialogs.rb:1041
+msgid "&Delete Entry"
+msgstr "刪除條目(&D)"
+
+#: src/include/apparmor/profile_dialogs.rb:1075
+msgid "AppArmor Hat Dialog"
+msgstr "AppArmor Hat 對話方塊"
+
+#: src/include/apparmor/profile_dialogs.rb:1105
+msgid "AppArmor Profile Dialog"
+msgstr "AppArmor 安全檔案對話方塊"
+
+#. Widget activated in the table
+#: src/include/apparmor/profile_dialogs.rb:1145
+msgid ""
+"Include entries can not be edited. Select add or delete to manage Include "
+"entries."
+msgstr "無法編輯包含的條目。請選擇\"添加\"或\"刪除\"來管理包含的條目。"
+
+#. Make sure that the entry doesn't already exist
+#: src/include/apparmor/profile_dialogs.rb:1294
+msgid "Hats can not have embedded hats."
+msgstr "Hat 不能有嵌入的 Hat。"
+
+#: src/include/apparmor/profile_dialogs.rb:1306
+msgid "Select File to Include"
+msgstr "選擇要包含的檔案"
+
+#: src/include/apparmor/profile_dialogs.rb:1335
+msgid ""
+"Invalid #include file. Include files must be located in one of these "
+"directories: \n"
+msgstr "無效的 #include 檔案。包括的檔案必須位於以下目錄之一：\n"
+
+#: src/include/apparmor/profile_dialogs.rb:1379
+msgid "Save changes to the profile"
+msgstr "將變更儲存到安全檔案"
+
+#: src/include/apparmor/profile_dialogs.rb:1380
+msgid ""
+"Save the changes to this profile? \n"
+"(Note: after saving, AppArmor profiles will be reloaded.)\n"
+msgstr ""
+"是否要儲存變更到此安全檔案？\n"
+"(注意：儲存變更之後，AppArmor 安全檔案將重新裝載。)\n"
+
+#. We'll need this often - cache it
+#: src/include/apparmor/profile_dialogs.rb:1476
+msgid "You must select a profile to edit."
+msgstr "必須選擇要編輯的安全檔案。"
+
+#: perl-lib/Notify.pm:51
+#, perl-format
+msgid "Failed copying %s."
+msgstr "複製失敗 %s。"
+
+#~ msgid "Synchronization error between frontend and backend."
+#~ msgstr "前端與後端之間的同步錯誤。"
+
+#~ msgid "AppArmor Profile Wizard"
+#~ msgstr "AppArmor 安全檔案嚮導"
+
+#~ msgid ""
+#~ "<p><h1>Application to Profile</h1>\n"
+#~ "Select the application which you want to profile. Afterwards, when you "
+#~ "run the application, AppArmor will collect\n"
+#~ "information about system resources it accesses.</p>"
+#~ msgstr ""
+#~ "<p><h1>待建檔的應用程式</h1>\n"
+#~ "選擇待建檔的應用程式。之後，當您運行該程式時，AppArmor 會蒐集它訪問的系統"
+#~ "資源的資訊。</p>"
+
+#~ msgid "Application to Profile"
+#~ msgstr "待建檔的應用程式"
+
+#~ msgid "AppArmor backend terminated unexpectedly: %1"
+#~ msgstr "AppArmor 後端不明終止：%1"
+
+#~ msgid ""
+#~ "This is worth reporting bug in Novell Bugzilla:\n"
+#~ "https://bugzilla.novell.com"
+#~ msgstr ""
+#~ "這種現象值得向 Novell Bugzilla 回報：\n"
+#~ "https://bugzilla.novell.com"
+
+#~ msgid "Generate Profile"
+#~ msgstr "生成安全檔案"
+
+#~ msgid "Update Profile"
+#~ msgstr "更新安全檔案"
+
+#~ msgid ""
+#~ "<b>Program Name Pattern:</b><br> When you enter a program name or "
+#~ "pattern \n"
+#~ "that matches the name of the binary executable of the program of \n"
+#~ "interest, the report will display security events that have \n"
+#~ "occurred for a specific program.<br>"
+#~ msgstr ""
+#~ "<b>程式名模式：</b><br> 當您輸入一個匹配感興趣的程式的制式執行檔名稱的程"
+#~ "序名或模式時，\n"
+#~ "報告將顯示指定程式發生的安全事件。<br>"
+
+#~ msgid ""
+#~ "<b>Profile Name Pattern:</b> When you enter the name of the profile, \n"
+#~ "the report will display the security events that are generated for \n"
+#~ "the specified profile.  You can use this to see what is being confined \n"
+#~ "by a specific profile.<br>"
+#~ msgstr ""
+#~ "<b>安全檔案名稱模式：</b>當你輸入安全檔案名時，\n"
+#~ "報告程式會顯示為指定安全檔案生成的安全事件。\n"
+#~ "你可以通過它檢視特定安全檔案限制的內容。</br>"
+
+#~ msgid ""
+#~ "<b>PID Number:</b> Process ID number is a number that uniquely "
+#~ "identifies \n"
+#~ "one specific process or running program (this number is valid only \n"
+#~ "during the lifetime of that process).<br>"
+#~ msgstr ""
+#~ "<b>程序編號：</b>程序編號是標識一個特定程序或運行中程式的獨有數字 (此編號"
+#~ "僅在程序生命期內有效)。<br>"
+
+#~ msgid ""
+#~ "<b>Severity Level:</b>  Select the lowest severity level for security \n"
+#~ "events that you would like to be included in the report. The selected \n"
+#~ "severity level, and above, will be included in the reports.<br>"
+#~ msgstr ""
+#~ "<b>嚴重性級別：</b>選擇您想要收納進報告的最低安全事件嚴重性級別。選中的嚴"
+#~ "重性級別，與比它高的級別，都會被收納進報告。<br>"
+
+#~ msgid ""
+#~ "<b>Detail:</b>  A source to which the profile has denied access.  \n"
+#~ "This includes capabilities and files. You can use this field to \n"
+#~ "report the resources are not allowed to be accessed by profiles.<br>"
+#~ msgstr ""
+#~ "<b>詳情：</b>安全檔案拒絕訪問的源。這包括功能與檔案。您可以使用此欄位來報"
+#~ "告安全檔案拒絕訪問的資源。<br>"
+
+#~ msgid ""
+#~ "<b>Mode:</b> The Mode is the permission that the profile grants \n"
+#~ "to the program or process to which it is applied. The options are: \n"
+#~ "r (read) w (write) l (link) x (execute)<br>"
+#~ msgstr ""
+#~ "<b>模式：</b>模式是安全檔案授予給程式或該程式佔用的程序的許可權 。\n"
+#~ "選項有：r(僅讀) w(寫入) l(連結) x(可執行)<br>"
+
+#~ msgid ""
+#~ "<b>Access Type:</b> The access type describes what is actually "
+#~ "happening \n"
+#~ "with the security event. The options are: PERMITTING, REJECTING, \n"
+#~ "or AUDITING.<br>"
+#~ msgstr ""
+#~ "<b>訪問類型：</b> 訪問類型詳述了伴隨著安全事件究竟發生了什麼。\n"
+#~ "選項有：允許、拒絕或審計。<br>"
+
+#~ msgid ""
+#~ "<b>CSV or HTML:</b> Enables you to export a CSV (comma separated \n"
+#~ "values) or html file. The CSV file separates pieces of data in \n"
+#~ "the log entries with commas using a standard data format for \n"
+#~ "importing into table-oriented applications. You can enter a \n"
+#~ "pathname for your exported report by typing in the full \n"
+#~ "pathname in the field provided.</p>"
+#~ msgstr ""
+#~ "<b>CSV 或 HTML：<b>匯出 CSV 或 html 網頁檔案。\n"
+#~ "CSV 檔案使用英文逗號劃分日誌條目中的資料切片，是用來匯入表格處理程式中的標"
+#~ "準資料格式。 \n"
+#~ "你可以在提供的輸入框中輸入匯出報告的完整路徑來匯出報告到特定目錄。</p>"
+
+#~ msgid ""
+#~ "<p>The Report Configuration dialog enables you to filter the archived \n"
+#~ "report selected in the previous screen. To filter by <b>Date Range:</b>"
+#~ msgstr ""
+#~ "<p>報告配置對話方塊讓您可以通過 <b>日期區間</b> 過濾之前螢幕選定的存檔報告："
+
+#~ msgid ""
+#~ "<ol><li>Click <b>Filter By Date Range</b>. The fields become active.</"
+#~ "li>  \n"
+#~ "<li>Enter the start and end dates that delineate the scope of the report."
+#~ "</li> \n"
+#~ " <li>Enter other filtering parameters. See below for definitions of "
+#~ "parameters.</li></ol></p>"
+#~ msgstr ""
+#~ "<ol><li>點選 <b>按日期範圍過濾</b>。該區域將可用。</li> \n"
+#~ "<li>輸入起止日期來確定報告的範圍。</li>\n"
+#~ "<li>輸入其他過濾參數。見下面的參數定義。</li></ol></p>"
+
+#~ msgid ""
+#~ "The following definitions help you to enter the filtering parameters in "
+#~ "the \n"
+#~ "Report Configuration Dialog:<br>"
+#~ msgstr "下列定義能夠幫助您在報告配置對話方塊中輸入過濾參數：<br>"
+
+#~ msgid ""
+#~ "<b>Executive Security Summary:</b> A combined report, \n"
+#~ "consisting of one or more Security incident reports from \n"
+#~ "one or more machines.  This report provides a single view of \n"
+#~ "security events on multiple machines.<br>"
+#~ msgstr ""
+#~ "<b>彙總安全摘要：</b>一份合計的報告，\n"
+#~ "包含了一個或更多計算機上的一個或多個安全事故報告。\n"
+#~ "本報告提供了一個統一的多電腦保安事件概覽。<br>"
+
+#~ msgid ""
+#~ "<b>Applications Audit Report:</b> An auditing tool that \n"
+#~ "reports which application servers are running and whether \n"
+#~ "the applications are confined by AppArmor. Application \n"
+#~ "servers are applications that accept incoming network connections. <br>"
+#~ msgstr ""
+#~ "<b>應用程式審計報告：</b>一個審計工具，\n"
+#~ "報告有哪些應用程式伺服器正在運行、是否受 AppArmor 節制。\n"
+#~ "應用程式伺服器是指接受外網進站連線的程式。<br>"
+
+#~ msgid ""
+#~ "<b>Security Incident Report:</b> A report that displays application \n"
+#~ "security for a single host.  It reports policy violations for locally \n"
+#~ "confined applications during a specific time period. You can edit and \n"
+#~ "customize this report, or add new versions.</p>"
+#~ msgstr ""
+#~ "<b>安全事故報告：</b>顯示單一主機上的應用程式安全性的報告。\n"
+#~ "它提供了特定時間段內本地受限應用程式的違反安全策略行為。\n"
+#~ "您可以編輯與個性化本報告或者添加新版本。</p>"
+
+#~ msgid ""
+#~ "<p>The AppArmor On-Demand Report screen displays \n"
+#~ "an instantly generated version of one of the following \n"
+#~ "reports:<br>"
+#~ msgstr ""
+#~ "<p>AppArmor 的按需報告頁面顯示了 \n"
+#~ "如下類型報告中的一種的一份實時版本：<br>"
+
+#~ msgid ""
+#~ "<p>The summary of scheduled reports page shows us when reports are "
+#~ "scheduled to run. \n"
+#~ "Reports can be set to run monthly, weekly, daily, or hourly. The default "
+#~ "settings are \n"
+#~ "daily at midnight. The reports can also be emailed, upon completion, to "
+#~ "up to three \n"
+#~ "email recipients.<br>"
+#~ msgstr ""
+#~ "<p>定時報告的彙總頁面顯示將在何時如計劃運行生成安全報告。\n"
+#~ "安全報告可以設定為按月、周、天或小時生成。默認設定是 \n"
+#~ "每天午夜。安全報告也可以在完成時被投遞給不超過三個電郵收信人。<br>"
+
+#~ msgid ""
+#~ "In the Set Schedule section, you can schedule the following three types "
+#~ "of security reports:<br>"
+#~ msgstr "在「定時設定」章節，您可以規劃如下三種安全報告的頻率：<br>"
+
+#~ msgid ""
+#~ "<p>The View Archive Reports form enables you to view previously "
+#~ "generated\n"
+#~ "reports located in the /var/log/apparmor/reports-archived directory. Use "
+#~ "the checkboxes at the top to narrow-down the category of reports shown in "
+#~ "the list to: SIR Reports, AUD Reports or ESS Reports. To see report "
+#~ "details, select a report and click the <b>View</b> button.<br><br> You "
+#~ "can view reports from one or more systems if you move the reports to the /"
+#~ "var/log/apparmor/reports-archived directory.</p>"
+#~ msgstr ""
+#~ "<p>「檢視存檔報告」表單使您能夠檢視以前生成的報告，這些報告在 /var/log/"
+#~ "apparmor/reports-archived 目錄下。表單之上的核取方塊使您能夠將列表中顯示的報"
+#~ "告的種類縮減到以下幾種：SIR 報告、AUD 報告或 ESS 報告。 要檢視報告的細節，"
+#~ "請選擇一份報告並單擊<b>檢視</b>按鈕。<br><br> 如果將報告移動到 /var/log/"
+#~ "apparmor/reports-archived 目錄下，您便可以檢視一個或多個系統中的報告。</p>"
+
+#~ msgid "repConfHelp"
+#~ msgstr "repConfHelp"
+
+#~ msgid ""
+#~ "<p><b>Security Incident Report (SIR):</b> A report that displays "
+#~ "security \n"
+#~ "events of interest to an administrator. The SIR reports policy "
+#~ "violations \n"
+#~ "for locally confined applications during the specified time period. The "
+#~ "SIR \n"
+#~ "reports policy exceptions and policy engine state changes. These two "
+#~ "types \n"
+#~ "of security events are defined as follows:"
+#~ msgstr ""
+#~ "<p><b>安全事件報告(SIR):</b>顯示系統管理員感興趣的安全事件的記錄。SIR 記錄"
+#~ "本地受限程式在特定時間段的違反安全策略的行為。SIR 也記錄針對指定安全策略的"
+#~ "豁免行為與安全策略引擎狀態的變化。豁免行為與安全策略引擎狀態變化這兩種安全"
+#~ "事件的定義如下："
+
+#~ msgid ""
+#~ "<ul> <li><b>Policy Exceptions:</b> When an application requests a "
+#~ "resource \n"
+#~ "that's not defined within its profile, a security event is generated.</"
+#~ "li>  \n"
+#~ "<li><b>Policy Engine State Changes:</b> Enforces policy for applications "
+#~ "and \n"
+#~ "maintains its own state, including when engines start or stop, when a "
+#~ "policy \n"
+#~ "is reloaded, and when global security feature are enabled or disabled.</"
+#~ "li></ul> \n"
+#~ "Select the report from the archive, then <b>View</b> to see the report "
+#~ "details.</p>"
+#~ msgstr ""
+#~ "<ul><li><b>安全策略豁免：</b>當一個程式請求沒有在它的安全檔案裡定義的資源"
+#~ "時，\n"
+#~ "會生成一條安全事件記錄。</li> \n"
+#~ "<li><b>安全策略引擎狀態變化：</b> 執行程式的安全策略，並維護它自身的狀態，"
+#~ "包括 \n"
+#~ "引擎何時啟動或停止，何時載入安全策略，何時啟用或禁用全域安全特性。</li></"
+#~ "ul> \n"
+#~ "從歷史存檔中選擇安全事件報告，點選<b>檢視</b>來檢視詳細內容。</p>"
+
+#~ msgid ""
+#~ "<p><b>Applications Audit Report (AUD):</b> An auditing tool that reports "
+#~ "which application servers are running and whether they are confined by "
+#~ "AppArmor. Application servers are applications that accept incoming "
+#~ "network connections. This report provides the host machine's IP Address, "
+#~ "the date the Applications Audit Report ran, the name and path of the "
+#~ "unconfined program or application server, the suggested profile or a "
+#~ "placeholder for a profile for an unconfined program, the process ID "
+#~ "number, the state of the program (confined or unconfined) and the type of "
+#~ "confinement that the profile is performing (enforce/complain).</p>"
+#~ msgstr ""
+#~ "<p><b>應用程式審計報告 (AUD)：</b>一種審計工具，可以報告正在運行的應用程式"
+#~ "伺服器及其是否被 AppArmor 節制。應用程式伺服器是指接受外網進站連線的應用程"
+#~ "序。此報告提供了主機的 IP 地址、應用程式審計報告運行的日期、未受限程式或應"
+#~ "用程式伺服器的名稱與路徑、建議的安全檔案或未受限程式安全檔案的佔位符、進"
+#~ "程 ID 號、程式狀態(受限或未受限)以及安全檔案正在執行的限制類型(強制/警"
+#~ "告)。</p>"
+
+#~ msgid ""
+#~ "<p><b>Executive Security Summary (ESS):</b> A combined report, \n"
+#~ "consisting of one or more high-level reports from one or more machines. "
+#~ "This \n"
+#~ "report can provide a single view of security events on multiple machines "
+#~ "if each \n"
+#~ "machine's data is copied to the reports archive directory, which is \n"
+#~ "<b>/var/log/apparmor/reports-archived</b>. This report provides the "
+#~ "host \n"
+#~ "machine's IP address, the start and end dates of the polled events, total "
+#~ "number \n"
+#~ "of rejects, total number of events, average of severity levels reported, "
+#~ "and the \n"
+#~ "highest severity level reported. One line of the ESS report represents a "
+#~ "range \n"
+#~ "of SIR reports.</p>"
+#~ msgstr ""
+#~ "<p><b>執行安全性摘要 (ESS)：</b>一份合成的報告，由來自一臺或多臺計算機的一"
+#~ "份或多份高階別報告組成。如果將每臺計算機的資料複製到報告檔案目錄 <b>/var/ "
+#~ "log/apparmor/reports-archived</b>，則此報告將使您能在單個檢視中檢視多臺計"
+#~ "算機上的安全性事件。此報告提供了主機的 IP 地址、輪循事件的開始與結束日期、"
+#~ "拒絕的總次數、事件總數、報告的平均嚴重性級別以及報告的最高嚴重性級別。ESS "
+#~ "報告的一行表示一系列 SIR 報告。</p>"
+
+#~ msgid "Archived Security Incident Report - Page "
+#~ msgstr "存檔安全事故報告 － 頁"
+
+#~ msgid " of "
+#~ msgstr " 的"
+
+#~ msgid "F&irst"
+#~ msgstr "第一個(&I)"
+
+#~ msgid "&Previous"
+#~ msgstr "前一個(&P)"
+
+#~ msgid "&Sort"
+#~ msgstr "排序(&S)"
+
+#~ msgid "&Forward"
+#~ msgstr "後一個(&F)"
+
+#~ msgid "&Last"
+#~ msgstr "最後一個(&L)"
+
+#~ msgid "Filter By Date Range"
+#~ msgstr "按日期範圍過濾"
+
+#~ msgid " Select Date Range "
+#~ msgstr "選擇日期範圍"
+
+#~ msgid "Enter Starting Date/Time"
+#~ msgstr "輸入開始日期/時間"
+
+#~ msgid "Hours"
+#~ msgstr "小時"
+
+#~ msgid "Minutes"
+#~ msgstr "分鐘"
+
+#~ msgid "Day"
+#~ msgstr "天"
+
+#~ msgid "Month"
+#~ msgstr "月"
+
+#~ msgid "Year"
+#~ msgstr "年"
+
+#~ msgid "Enter Ending Date"
+#~ msgstr "輸入結束日期"
+
+#~ msgid "Program name"
+#~ msgstr "程式名"
+
+#~ msgid "Profile name"
+#~ msgstr "安全檔案名稱"
+
+#~ msgid "PID number"
+#~ msgstr "程序編號："
+
+#~ msgid "U"
+#~ msgstr "U"
+
+#~ msgid "Detail"
+#~ msgstr "細節"
+
+#~ msgid "Access Type: R"
+#~ msgstr "訪問類型：R"
+
+#~ msgid "Mode: All"
+#~ msgstr "模式：全部"
+
+#~ msgid "Export Type"
+#~ msgstr "匯出類型"
+
+#~ msgid "None"
+#~ msgstr "無"
+
+#~ msgid "csv"
+#~ msgstr "csv"
+
+#~ msgid "html"
+#~ msgstr "html"
+
+#~ msgid "Both"
+#~ msgstr "兩者"
+
+#~ msgid "Location to store log."
+#~ msgstr "存儲日誌的位置。"
+
+#~ msgid "Report Configuration Dialog"
+#~ msgstr "報告配置對話方塊"
+
+#~ msgid "Illegal start date entered. Retry."
+#~ msgstr "輸入了非法的開始日期。請重新輸入。"
+
+#~ msgid "Illegal end date entered. Retry."
+#~ msgstr "輸入了非法的結束日期。請重新輸入。"
+
+#~ msgid "Access Type: "
+#~ msgstr "訪問類型："
+
+#~ msgid "Mode: "
+#~ msgstr "模式："
+
+#~ msgid "Security Incident Report"
+#~ msgstr "安全事故報告"
+
+#~ msgid "Applications Audit Report"
+#~ msgstr "應用程式審計報告"
+
+#~ msgid "Executive Security Summary"
+#~ msgstr "執行安全摘要"
+
+#~ msgid "Mon"
+#~ msgstr "星期一"
+
+#~ msgid "Tue"
+#~ msgstr "星期二"
+
+#~ msgid "Wed"
+#~ msgstr "星期三"
+
+#~ msgid "Thu"
+#~ msgstr "星期四"
+
+#~ msgid "Fri"
+#~ msgstr "星期五"
+
+#~ msgid "Sat"
+#~ msgstr "星期六"
+
+#~ msgid "Sun"
+#~ msgstr "星期日"
+
+#~ msgid "Unrecognized form request."
+#~ msgstr "未識別的表單請求。"
+
+#~ msgid "On Demand Event Report - Page "
+#~ msgstr "按需事件報告 － 頁"
+
+#~ msgid "F&irst Page"
+#~ msgstr "首頁(&I)"
+
+#~ msgid "&Last Page"
+#~ msgstr "末頁(&L)"
+
+#~ msgid "&Go to Page"
+#~ msgstr "轉到頁(&G)"
+
+#~ msgid "Time"
+#~ msgstr "時間"
+
+#~ msgid "Filter By Program Name"
+#~ msgstr "按程式名過濾"
+
+#~ msgid "Export Report"
+#~ msgstr "匯出報告"
+
+#~ msgid "Export File Location"
+#~ msgstr "匯出檔案位置"
+
+#~ msgid "Select Export Format"
+#~ msgstr "選擇匯出格式"
+
+#~ msgid "CSV"
+#~ msgstr "CSV"
+
+#~ msgid "HTML"
+#~ msgstr "HTML"
+
+#~ msgid "Abort or Back"
+#~ msgstr "中止或返回"
+
+#~ msgid ""
+#~ "<b>AppArmor Security Events</b><p>\n"
+#~ "This table displays the events that match your search criteria.\n"
+#~ msgstr ""
+#~ "<b>AppArmor 安全事件</b><p>\n"
+#~ "此表顯示已找到的符合您的搜索準則的事件。\n"
+
+#~ msgid "AppArmor Event Report Data"
+#~ msgstr "AppArmor 事件報告資料"
+
+#~ msgid "Date"
+#~ msgstr "日期"
+
+#~ msgid "PID"
+#~ msgstr "程序編號"
+
+#~ msgid "AppArmor Message"
+#~ msgstr "AppArmor 訊息"
+
+#~ msgid "AppArmor Security Event Report"
+#~ msgstr "AppArmor 安全事件報告"
+
+#~ msgid "AppArmor Reporting"
+#~ msgstr "AppArmor 報告"
+
+#~ msgid "Schedule Reports"
+#~ msgstr "規劃報告"
+
+#~ msgid "View Archived Reports"
+#~ msgstr "檢視存檔報告"
+
+#~ msgid "Run Reports"
+#~ msgstr "運行報告"
+
+#~ msgid "Choose a Report Type"
+#~ msgstr "選擇報告類型"
+
+#~ msgid "SIR"
+#~ msgstr "SIR"
+
+#~ msgid "App Aud"
+#~ msgstr "App Aud"
+
+#~ msgid "ESS"
+#~ msgstr "ESS"
+
+#~ msgid "Location of Archived Reports"
+#~ msgstr "存檔報告的位置"
+
+#~ msgid "Report"
+#~ msgstr "報告"
+
+#~ msgid "&View"
+#~ msgstr "檢視(&V)"
+
+#~ msgid "View &All"
+#~ msgstr "檢視全部(&A)"
+
+#~ msgid "Events DB Not Initialized."
+#~ msgstr "未啟始化事件資料庫。"
+
+#~ msgid "The events database has not been populated.  No records exist."
+#~ msgstr "事件資料庫被汙染。不存在任何記錄。"
+
+#~ msgid "Query Returned Empty List."
+#~ msgstr "查詢返回空列表。"
+
+#~ msgid "The events database has no records that match the search query."
+#~ msgstr "事件資料庫中沒有符合查詢條件的記錄。"
+
+#~ msgid "Archived Event Report - Page "
+#~ msgstr "存檔事件報告 － 頁"
+
+#~ msgid "Host"
+#~ msgstr "主機"
+
+#~ msgid "Program"
+#~ msgstr "程式"
+
+#~ msgid "State"
+#~ msgstr "狀態"
+
+#~ msgid "Type"
+#~ msgstr "類型"
+
+#~ msgid "Query Results"
+#~ msgstr "查詢結果"
+
+#~ msgid "No event information exists."
+#~ msgstr "不存在事件資訊。"
+
+#~ msgid "Start Date"
+#~ msgstr "開始日期"
+
+#~ msgid "End Date"
+#~ msgstr "結束日期"
+
+#~ msgid "Num Rejects"
+#~ msgstr "拒絕次數"
+
+#~ msgid "Num Events"
+#~ msgstr "事件數"
+
+#~ msgid "Ave. Sev"
+#~ msgstr "平均嚴重性級別"
+
+#~ msgid "High Sev"
+#~ msgstr "高嚴重性級別"
+
+#~ msgid "View Archived SIR Report"
+#~ msgstr "檢視已存檔的 SIR 報告"
+
+#~ msgid "View Archived AUD Report"
+#~ msgstr "檢視已存檔的 AUD 報告"
+
+#~ msgid "View Archived ESS Report"
+#~ msgstr "檢視已存檔的 ESS 報告"
+
+#~ msgid "Executive Security Summary Report"
+#~ msgstr "管理安全性摘要報告"
+
+#~ msgid "No recognized report type selected.  Try again."
+#~ msgstr "沒有選擇已識別的報告類型。 請重試。"
+
+#~ msgid "AppArmor Report"
+#~ msgstr "AppArmor 報告"
+
+#~ msgid "AppArmor On-Demand Report"
+#~ msgstr "AppArmor 按需報告"
+
+#~ msgid "AppArmor - Run Reports"
+#~ msgstr "AppArmor － 運行報告"
+
+#~ msgid "Add Scheduled SIR"
+#~ msgstr "添加計劃 SIR"
+
+#~ msgid "Report Name"
+#~ msgstr "報告名"
+
+#~ msgid "Day of Month"
+#~ msgstr "日期"
+
+#~ msgid "Day of Week"
+#~ msgstr "星期"
+
+#~ msgid "Hour"
+#~ msgstr "小時"
+
+#~ msgid "Minute"
+#~ msgstr "分鐘"
+
+#~ msgid "Email Target 1"
+#~ msgstr "電子郵件目標 1"
+
+#~ msgid "Email Target 2"
+#~ msgstr "電子郵件目標 2"
+
+#~ msgid "Email Target 3"
+#~ msgstr "電子郵件目標 3"
+
+#~ msgid "The specified directory does not exist."
+#~ msgstr "指定目錄不存在。"
+
+#~ msgid "Only one contiguous space allowed in report names."
+#~ msgstr "在報告名稱中僅允許有一個相鄰的空格。"
+
+#~ msgid ""
+#~ "These characters are not allowed in report names:\n"
+#~ "\t\t\t\t\t\"`~!@#$%^&*()[{]};:'\",<>?/|\""
+#~ msgstr ""
+#~ "以下字元不允許出現在報告名中：\n"
+#~ "\t\t\t\t\t“`~!@#$%^&*()[{]};:'\",<>?/|”"
+
+#~ msgid "Only 128 characters are allowed in report names."
+#~ msgstr "報告名僅允許有 128 個字元。"
+
+#~ msgid "Each report name should be unique."
+#~ msgstr "報告名必須唯一。"
+
+#~ msgid "N&ext"
+#~ msgstr "下一步(&E)"
+
+#~ msgid "Edit Report Schedule for "
+#~ msgstr "編輯以下條目的報告日程"
+
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "Error: "
+#~ msgstr "錯誤："
+
+#~ msgid "Delete Confirmation"
+#~ msgstr "刪除確認"
+
+#~ msgid "Are you sure you want to delete: "
+#~ msgstr "是否確定要刪除："
+
+#~ msgid "?"
+#~ msgstr "?"
+
+#~ msgid "Mins"
+#~ msgstr "分鐘"
+
+#~ msgid "View Archive"
+#~ msgstr "檢視存檔"
+
+#~ msgid "Run Now"
+#~ msgstr "立即運行"
+
+#~ msgid "Cannot delete a stock report."
+#~ msgstr "無法刪除庫存報告。"
+
+#~ msgid "No name provided for retrieving SIR report page count."
+#~ msgstr "沒有提供用於檢索 SIR 報告頁數的名稱。"
+
+#~ msgid "Mode Request"
+#~ msgstr "模式請求"
+
+#~ msgid "Mode Deny"
+#~ msgstr "拒絕模式"
+
+#~ msgid "Event Type"
+#~ msgstr "事件類型"
+
+#~ msgid "Operation"
+#~ msgstr "操作"
+
+#~ msgid "Attribute"
+#~ msgstr "屬性"
+
+#~ msgid "Additional Name"
+#~ msgstr "其他名稱"
+
+#~ msgid "Net Family"
+#~ msgstr "網路家族"
+
+#~ msgid "Net Protocol"
+#~ msgstr "網路協議"
+
+#~ msgid "Net Socket Type"
+#~ msgstr "網路套接字類型"
+
+#~ msgid "Enter a Page to Move to."
+#~ msgstr "輸入要跳轉的頁數。"
+
+#~ msgid "Num. Rejects"
+#~ msgstr "拒絕次數"
+
+#~ msgid "Num. Events"
+#~ msgstr "事件數"
+
+#~ msgid "Access Type"
+#~ msgstr "訪問類型"
+
+#~ msgid "MMap"
+#~ msgstr "MMap 內存定位"
+
+#~ msgid "Permit"
+#~ msgstr "允許"
+
+#~ msgid "Reject"
+#~ msgstr "拒絕"
+
+#~ msgid "Audit"
+#~ msgstr "審計"
+
+#~ msgid ""
+#~ "AppArmor does not appear to be started.  Please enable AppArmor and try "
+#~ "again."
+#~ msgstr "AppArmor 似乎未啟動。請啟用 AppArmor 並重試。"
+
+#~ msgid "Can't find apparmor profiles in %s."
+#~ msgstr "在 %s 中找不到 AppArmor 的安全檔案。"
+
+#~ msgid ""
+#~ "This wizard will assist you in creating a new AppArmor security \n"
+#~ "profile for an application, or you can use it to enhance \n"
+#~ "an existing profile by allowing AppArmor to learn new \n"
+#~ "application behavior. \n"
+#~ "\n"
+#~ "Enter the application name for which you would like\n"
+#~ "to create a profile or select Browse to find the \n"
+#~ "application on your system.\n"
+#~ msgstr ""
+#~ "本嚮導將輔助您為某個應用程式創建一個新的 AppArmor 安全檔案，\n"
+#~ "您也可以使用本嚮導來教 AppArmor 學習新的程式行為，擴展現有的安全檔案。\n"
+#~ "\n"
+#~ "輸入您想要創建安全檔案的程式名，或者選擇「瀏覽」在系統上查找該程式。\n"
+
+#~ msgid "&Application to Profile"
+#~ msgstr "待建檔的應用程式(&A)"
+
+#~ msgid "&Create"
+#~ msgstr "創建(&C)"
+
+#~ msgid "&Abort"
+#~ msgstr "中止(&A)"
+
+#~ msgid "Select Program to Profile"
+#~ msgstr "選擇待建檔的程式"
+
+#~ msgid ""
+#~ "The specified file is not executable.\n"
+#~ "\n"
+#~ "Enter an application name to\n"
+#~ "continue generating a profile or press\n"
+#~ "Abort to cancel this wizard.\n"
+#~ msgstr ""
+#~ "指定的檔案不可執行。\n"
+#~ "\n"
+#~ "請輸入應用程式的名稱來繼續生成安全檔案或者按“中止”來取消本嚮導。\n"
+
+#~ msgid ""
+#~ "The specified pathname is a directory.\n"
+#~ "\n"
+#~ "Enter an application name to\n"
+#~ "continue generating a profile or press\n"
+#~ "Abort to cancel this wizard.\n"
+#~ msgstr ""
+#~ "指定的路徑名是一個目錄。\n"
+#~ "\n"
+#~ "請輸入應用程式的名稱來繼續生成安全檔案或者按“中止”來取消本嚮導。\n"
+
+#~ msgid ""
+#~ "The specified file does not exist.\n"
+#~ "\n"
+#~ "Enter an application name to\n"
+#~ "continue generating a profile or press\n"
+#~ "Abort to cancel this wizard.\n"
+#~ msgstr ""
+#~ "指定的檔案不存在。\n"
+#~ "\n"
+#~ "請輸入應用程式的名稱來繼續生成安全檔案或者按“中止”來取消本嚮導。\n"
+
+#~ msgid ""
+#~ "You have not entered or selected an\n"
+#~ "application to profile.\n"
+#~ "\n"
+#~ "Enter an application name to\n"
+#~ "continue generating a profile or press\n"
+#~ "Abort to cancel this wizard.\n"
+#~ msgstr ""
+#~ "您還沒有輸入或者選擇待建檔的應用程式。\n"
+#~ "\n"
+#~ "請輸入應用程式的名稱來繼續生成安全檔案或者按“中止”來取消本嚮導。\n"
+
+#~ msgid "Profiling"
+#~ msgstr "建檔中"
+
+#~ msgid ""
+#~ "Start the application to be profiled in\n"
+#~ "another window and exercise its functionality now.\n"
+#~ "\n"
+#~ "Once completed, select the 'Scan' option below in\n"
+#~ "order to scan the system logs for AppArmor events.\n"
+#~ "\n"
+#~ "For each AppArmor event, you will be given the\n"
+#~ "opportunity to choose whether access should be\n"
+#~ "allowed or denied.\n"
+#~ msgstr ""
+#~ "現在請在新視窗中啟動待建檔的程式並演示它的功能。\n"
+#~ "\n"
+#~ "一旦完成，點選下面的\"掃描\"按鈕，以在系統日誌中掃描 AppArmor 事件。\n"
+#~ "\n"
+#~ "您可以為每個 AppArmor 事件配置允許/拒絕它的系統訪問。\n"
+
+#~ msgid "Are you sure you want to exit?"
+#~ msgstr "確定退出麼？"
+
+#~ msgid "Reloaded AppArmor profiles in enforce mode."
+#~ msgstr "以執行模式重載入 AppArmor 的安全檔案。"
+
+#~ msgid "Finished generating profile for %s."
+#~ msgstr "%s 的安全檔案生成完畢。"
+
+#~ msgid "Unable to open"
+#~ msgstr "無法開啟"
+
+#~ msgid "Couldn't save query."
+#~ msgstr "無法儲存查詢。"
+
+#~ msgid "Couldn't retrieve query."
+#~ msgstr "無法取回查詢結果。"
+
+#~ msgid "# Security Incident Report - Generated by AppArmor\n"
+#~ msgstr "# 安全事故報告 － 由 AppArmor 生成\n"
+
+#~ msgid "# Period: %s - %s\n"
+#~ msgstr "# 時段： %s - %s\n"
+
+#~ msgid "# The following filters were used for report generation:\n"
+#~ msgstr "# 以下過濾器用於生成報告：\n"
+
+#~ msgid ""
+#~ "# Filter: %s, Value: %s\n"
+#~ "\n"
+#~ msgstr ""
+#~ "# 過濾器：%s，值： %s\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "# No filters were used for report generation:\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "# 生成的報告中未使用過濾器：\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "<h3>Security Incident Report - Generated by AppArmor</h3>\n"
+#~ msgstr "<h3>安全事故報告 － 由AppArmor 生成</h3>\n"
+
+#~ msgid "<h4>Period: %s - %s</h4>\n"
+#~ msgstr "<h4>時段：%s - %s</h4>\n"
+
+#~ msgid "ag_reports_confined: Couldn't open %s for writing."
+#~ msgstr "ag_reports_confined：不能開啟 %s 以供寫入。"
+
+#~ msgid "Failure in readMultiAudLog() - couldn't open %s."
+#~ msgstr "readMultiAudLog() 失敗：不能開啟 %s。"
+
+#~ msgid "Problem in readMultiAudLog() - couldn't open %s/%s."
+#~ msgstr "readMultiAudLog() 出現問題：不能開啟 %s/%s。"
+
+#~ msgid "readAudLog() wasn't passed an input file."
+#~ msgstr "readAudLog() 沒有傳遞輸入檔案。"
+
+#~ msgid "readAudLog() couldn't open %s."
+#~ msgstr "readAudLog() 不能開啟 %s。"
+
+#~ msgid "Can't run %s.  Exiting."
+#~ msgstr "無法運行 %s。正在退出。"
+
+#~ msgid "ag_reports_confined: Missing instruction or argument!"
+#~ msgstr "ag_reports_confined: 缺少指令或參數！"
+
+#~ msgid "Failure in readMultiEssLog() - couldn't open"
+#~ msgstr "readMultiEssLog() 失敗－不能開啟"
+
+#~ msgid "Problem in readMultiEssLog() - couldn't open"
+#~ msgstr "readMultiEssLog() 有問題－不能開啟"
+
+#~ msgid "readEssLog() wasn't passed an input file."
+#~ msgstr "readEssLog() 沒有傳遞輸入檔案。"
+
+#~ msgid "readEssLog() couldn't open %s"
+#~ msgstr "readEssLog() 不能開啟 %s"
+
+#~ msgid "ag_logparse: Unknown instruction %s or argument: %s"
+#~ msgstr "ag_logparse：未知指令 %s 或參數：%s"
+
+#~ msgid "ag_reports_parse: Couldn't open %s for writing."
+#~ msgstr "ag_reports_parse：不能開啟 %s 以供寫入。"
+
+#~ msgid "ag_reports_parse: No archived reports found."
+#~ msgstr "ag_reports_parse：沒有找到存檔報告。"
+
+#~ msgid "ag_reports_parse: Can't open directory %s: %s"
+#~ msgstr "ag_reports_parse：不能開啟目錄 %s：%s"
+
+#~ msgid "ag_reports_parse: Unknown instruction %s or argument: %s"
+#~ msgstr "ag_reports_parse：未知指令 %s 或參數：%s"
+
+#~ msgid "Couldn't find %s.  Unable to create crontab.  Exiting."
+#~ msgstr "找不到 %s。無法創建定時任務表。正在退出。"
+
+#~ msgid "Couldn't open %s."
+#~ msgstr "無法開啟 %s。"
+
+#~ msgid "Couldn't open %s.  Unable to add report: %s"
+#~ msgstr "無法開啟 %s。無法添加報告：%s"
+
+#~ msgid "Duplicate report name not allowed. Didn't schedule new report: %s"
+#~ msgstr "不允許重複的報告名稱。沒有規劃新報告：%s"
+
+#~ msgid "Couldn't open %s.  No changes performed."
+#~ msgstr "無法開啟 %s。未做任何變更。"
+
+#~ msgid "ag_reports_sched: Unknown instruction %s or arg: %s"
+#~ msgstr "ag_reports_sched：未知的指令 %s 或參數：%s"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>Please refer to this for more detailed information about AppArmor</p>"
+#~ msgstr "<p>請參閱以瞭解關於 AppArmor 的更多詳細資訊</p>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<ul><li>Overrides all restrictions about allowed operations on files,\n"
+#~ "where file owner ID must be equal to the user ID, except where CAP_FSETID "
+#~ "is \n"
+#~ "applicable. It doesn't override MAC and DAC restrictions. </li></ul>"
+#~ msgstr ""
+#~ "<ul><li>覆蓋對檔案所有者 ID 必須等於使用者 ID 的檔案上所允許操作的所有限制，"
+#~ "但適用 CAP_FSETID 的檔案上所允許操作的限制除外。 它不覆蓋 MAC 與 DAC 限"
+#~ "制。 </li></ul>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<ul><li>Overrides the following restrictions that the effective user \n"
+#~ "ID shall match the file owner ID when setting the S_ISUID and S_ISGID "
+#~ "bits on that \n"
+#~ "file; that the effective group ID (or one of the supplementary group IDs) "
+#~ "shall match \n"
+#~ "the file owner ID when setting the S_ISGID bit on that file; that the "
+#~ "S_ISUID and \n"
+#~ "S_ISGID bits are cleared on successful return from chown(2) (not "
+#~ "implemented). </li></ul>"
+#~ msgstr ""
+#~ "<ul><li>覆蓋以下限制：設定檔案上的 S_ISUID 與 S_ISGID 位時，有效使用者 ID 必"
+#~ "須匹配檔案所有者 ID；設定檔案上的 S_ISGID 位時，有效組 ID（或任一補充組 "
+#~ "ID）必須匹配檔案所有者 ID；S_ISUID 與 S_ISGID 位從 chown(2) 成功返回時被清"
+#~ "除（未實施）。 </li></ul>"
+
+#~ msgid "Please select an action to perform from the buttons below."
+#~ msgstr "請從下面的按鈕中選擇要執行的操作。"
+
+#, fuzzy
+#~ msgid ""
+#~ "The profile already contains the provided hat name.  \n"
+#~ "Please enter a different name to try again, or press Abort to cancel this "
+#~ "wizard."
+#~ msgstr ""
+#~ "此設定存檔已含有給定的 Hat 名稱。  請輸入另一個名稱並重試，或按“中止”取消"
+#~ "此嚮導。"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p><b>Generate Reports Help</b> <p>If there were, in fact, \n"
+#~ "going to be any help for you (which, incidentally, there isn't going to "
+#~ "be), \n"
+#~ "then you would indeed find said help, here.</p><p>Thank you for your "
+#~ "time, \n"
+#~ "and have a nice day.</p>"
+#~ msgstr ""
+#~ "<b>生成報告幫助</b> <p>如果確實存在任何有用的幫助（有時不存在），則在此處"
+#~ "查找該幫助。<p>謝謝您，祝您一切順利。"
+
+#~ msgid "Weds"
+#~ msgstr "星期三"
+
+#~ msgid "Can't find subdomain profiles in %s."
+#~ msgstr "無法在 %s 找到子域存檔。"
+
+#, fuzzy
+#~| msgid "AppArmor Configuration"
+#~ msgid "App Armor Configuration"
+#~ msgstr "AppArmor 配置"
+
+#, fuzzy
+#~| msgid "Report"
+#~ msgid "Repors"
+#~ msgstr "報告"
+
+#, fuzzy
+#~| msgid "Send Profile"
+#~ msgid "Edit Profile"
+#~ msgstr "發送設定存檔"
+
+#, fuzzy
+#~| msgid "&Selected Profile"
+#~ msgid "Delete Profile"
+#~ msgstr "選擇設定存檔(&S)"
+
+#~ msgid "C&onfigure"
+#~ msgstr "配置(&O)"
+
+#~ msgid "Abo(r)t"
+#~ msgstr "中止(R)"
+
+#~ msgid ""
+#~ "<p><b>Profile Mode Configuration</b><br>This tool allows you to set "
+#~ "AppArmor profiles to either complain or enforce mode.</p><p>Complain mode "
+#~ "is a profile training state that logs application activity, but does not "
+#~ "restrict the application's behavior.</p><p>Profiles in enforce mode are "
+#~ "protected by AppArmor.</p>"
+#~ msgstr ""
+#~ "<p><b>設定存檔模式配置</b><br>此工具允許您將 AppArmor 設定存檔設定為抱怨或"
+#~ "強制模式。 </p><p>抱怨模式是一種設定存檔培訓狀態，記錄應用程式活動，但不限"
+#~ "制應用程式的行為。</p><p>強制模式的設定存檔受 AppArmor 保護。</p>"
+
+#, fuzzy
+#~ msgid ""
+#~ "     <b>AppArmor Profiling Wizard</b><br>\n"
+#~ "       This wizard presents entries generated by the AppArmor access "
+#~ "control module. You can generate highly optimized and robust security "
+#~ "profiles by using the suggestions made by AppArmor. AppArmor suggests "
+#~ "that you allow or deny access to specific resources or define execute "
+#~ "permission for entries. These questions that display were logged during "
+#~ "the normal application execution test previously performed. <br>\n"
+#~ "       The following help text describes the detail of the security "
+#~ "profile syntax used by AppArmor. <br><br>At any stage, you may customize "
+#~ "the profile entry by changing the suggested response. This overview will "
+#~ "assist you in your options. Refer to the Novell AppArmor Administration "
+#~ "Guide for step-by-step instructions. <br><br>\n"
+#~ "       <b>Access Modes</b><br>\n"
+#~ "\n"
+#~ "       File permission access modes consists of combinations of\n"
+#~ "       the following six modes:\n"
+#~ "\n"
+#~ "<ul>   <li>r    - read</li>\n"
+#~ "       <li>w    - write</li>\n"
+#~ "       <li>m    - mmap PROT_EXEC</li>\n"
+#~ "       <li>px   - discrete profile execute</li>\n"
+#~ "       <li>ux   - unconfined execute</li>\n"
+#~ "       <li>ix   - inherit execute</li>\n"
+#~ "       <li>l    - link</li>\n"
+#~ "</ul>\n"
+#~ "<p>\n"
+#~ "     <br>  <b>Details for Access Modes</b>\n"
+#~ "<br><br>\n"
+#~ "       <b>Read mode</b><br>\n"
+#~ "           Allows the program to have read access to the\n"
+#~ "           resource. Read access is required for shell scripts\n"
+#~ "           and other interpreted content, and determines if an\n"
+#~ "           executing process can core dump or be attached to with\n"
+#~ "           ptrace(2).  (ptrace(2) is used by utilities such as\n"
+#~ "           strace(1), ltrace(1), and gdb(1).)\n"
+#~ "       <br>\n"
+#~ "       <br>\n"
+#~ "       <b>Write mode</b><br>\n"
+#~ "           Allows the program to have write access to the\n"
+#~ "           resource. Files must have this permission if they are\n"
+#~ "           to be unlinked (removed.)\n"
+#~ "       <br>\n"
+#~ "       <br>\n"
+#~ "       <b>Mmap PROT_EXEC mode</b><br>\n"
+#~ "           Allows the program to call mmap with PROT_EXEC on the\n"
+#~ "           resource. \n"
+#~ "       <br>\n"
+#~ "       <br>\n"
+#~ "       \n"
+#~ "\n"
+#~ "       <b>Unconfined execute mode</b><br>\n"
+#~ "       \n"
+#~ "           Allows the program to execute the resource without any\n"
+#~ "           AppArmor profile being applied to the executed\n"
+#~ "           resource. Requires listing execute mode as well.\n"
+#~ "           Incompatible with Inherit and Discrete Profile execute\n"
+#~ "           entries.\n"
+#~ "       <br><br>\n"
+#~ "\n"
+#~ "           This mode is useful when a confined program needs to\n"
+#~ "           be able to perform a privileged operation, such as\n"
+#~ "           rebooting the machine. By placing the privileged section \n"
+#~ "           in another executable and granting unconfined \n"
+#~ "           execution rights, it is possible to bypass the mandatory \n"
+#~ "           constraints imposed on all confined processes.\n"
+#~ "           For more information on what is constrained, see the\n"
+#~ "           subdomain(7) man page.\n"
+#~ "<br><br>     <b>Discrete Profile execute mode</b><br>\n"
+#~ "           This mode requires that a discrete security profile is\n"
+#~ "           defined for a resource executed at a AppArmor domain\n"
+#~ "           transition.  If there is no profile defined then the\n"
+#~ "           access will be denied.  Incompatible with Inherit and\n"
+#~ "           Unconstrained execute entries.\n"
+#~ "       <br>\n"
+#~ "   <br> \n"
+#~ "    <b>Link mode</b><br>\n"
+#~ "           Allows the program to be able to create and remove a\n"
+#~ "           link with this name (including symlinks). When a link\n"
+#~ "           is created, the file that is being linked to MUST have\n"
+#~ "           the same access permissions as the link being created\n"
+#~ "           (with the exception that the destination does not have\n"
+#~ "           to have link access.) Link access is required for\n"
+#~ "           unlinking a file.\n"
+#~ "       <br>\n"
+#~ "       <br>\n"
+#~ "      <b>Globbing</b>\n"
+#~ "  <br>\n"
+#~ "       <br>\n"
+#~ "       File resources may be specified with a globbing syntax\n"
+#~ "       similar to that used by popular shells, such as csh(1),\n"
+#~ "       bash(1), zsh(1).\n"
+#~ "       <br>\n"
+#~ "\n"
+#~ "       <ul>\n"
+#~ "\t<li><b>*</b>   can substitute for any number of characters, excepting\n"
+#~ "          '/'<li>\n"
+#~ "\n"
+#~ "       \t<li><b>**</b>  can substitute for any number of characters, "
+#~ "including           '/'</li>\n"
+#~ "\n"
+#~ "\n"
+#~ "       <li><b>?</b>   can substitute for any single character excepting "
+#~ "'/'</li>\n"
+#~ "\n"
+#~ "       <li><b>[abc]</b> will substitute for the single character a, b, or "
+#~ "c</li>\n"
+#~ "\n"
+#~ "       <li><b>[a-c]</b> will substitute for the single character a, b, or "
+#~ "c</li>\n"
+#~ "\n"
+#~ "       <li><b>{ab,cd}</b> will expand to one rule to match ab, one rule "
+#~ "to match\n"
+#~ "           cd</li>\n"
+#~ "\n"
+#~ "       </ul>\n"
+#~ "\n"
+#~ "        <br>\n"
+#~ "        <br>\n"
+#~ "       <b>Clean Exec - for sanitized execution</b>\n"
+#~ "   <br>\n"
+#~ "        <br>\n"
+#~ "        The Clean Exec option for the discrete profile and "
+#~ "unconstrained \n"
+#~ "        execute permissions provide added security by stripping the \n"
+#~ "        environment that is inherited by the child program of specific \n"
+#~ "        variables. You will be prompted to choose whether you want to "
+#~ "sanitize the\n"
+#~ "        enviroment if you choose 'p' or 'u' during the profiling "
+#~ "process.\n"
+#~ "        The variables are:\n"
+#~ "        <ul> \n"
+#~ "        <li>GCONV_PATH</li>\n"
+#~ "        <li>GETCONF_DIR</li>\n"
+#~ "        <li>HOSTALIASES</li>\n"
+#~ "        <li>LD_AUDIT</li>\n"
+#~ "        <li>LD_DEBUG</li>\n"
+#~ "        <li>LD_DEBUG_OUTPUT</li>\n"
+#~ "        <li>LD_DYNAMIC_WEAK</li>\n"
+#~ "        <li>LD_LIBRARY_PATH</li>\n"
+#~ "        <li>LD_ORIGIN_PATH</li>\n"
+#~ "        <li>LD_PRELOAD</li>\n"
+#~ "        <li>LD_PROFILE</li>\n"
+#~ "        <li>LD_SHOW_AUXV</li>\n"
+#~ "        <li>LD_USE_LOAD_BIAS</li>\n"
+#~ "        <li>LOCALDOMAIN</li>\n"
+#~ "        <li>LOCPATH</li>\n"
+#~ "        <li>MALLOC_TRACE</li>\n"
+#~ "        <li>NLSPATH</li>\n"
+#~ "        <li>RESOLV_HOST_CONF</li>\n"
+#~ "        <li>RES_OPTION</li>\n"
+#~ "        <li>TMPDIR</li>\n"
+#~ "        <li>TZDIR</li> </ul>\n"
+#~ msgstr ""
+#~ "     <b>AppArmor 設定存檔製作嚮導</b><br>\n"
+#~ "       此嚮導提供由 AppArmor 訪問控制模組生成的條目。 使用者可根據 AppArmor "
+#~ "的建議生成高度優化與非常安全的設定存檔。 AppArmor 建議使用者允許或拒絕對特定"
+#~ "資源的訪問或定義條目的執行許可許可權。 這些顯示的問題已在以前執行的正常應用"
+#~ "程式執行測試中記錄下來。 <br>\n"
+#~ "        以下幫助文字詳細說明了 AppArmor 使用的安全設定存檔的語法。 "
+#~ "<br><br>無論在哪個階段，使用者都可以通過變更建議的響應來自定義設定存檔條"
+#~ "目。 此概述幫助使用者設定選項。 關於逐步指導，請參閱《管理員指南》。\n"
+#~ " <br><br>\n"
+#~ "        <b>訪問方式</b><br>\n"
+#~ " \n"
+#~ "        檔案許可許可權訪問方式由\n"
+#~ " 以下六種方式組合而成：\n"
+#~ " \n"
+#~ " <ul>   <li>r    - 讀</li>\n"
+#~ "        <li>w    - 寫</li>\n"
+#~ "        <li>m    - mmap PROT_EXEC</li>\n"
+#~ "        <li>px   - 離散設定存檔執行</li>\n"
+#~ "        <li>ux   - 未受限執行</li>\n"
+#~ "        <li>ix   - 繼承執行</li>\n"
+#~ "        <li>l    - 連結</li>\n"
+#~ " </ul>\n"
+#~ " <p>\n"
+#~ "      <br>  <b>訪問方式細節</b>\n"
+#~ " <br><br>\n"
+#~ "        <b>讀方式</b><br>\n"
+#~ "            允許程式對資源\n"
+#~ "            有讀訪問許可權。 殼層底稿\n"
+#~ "            與其它解釋的內容均要求有讀訪問權，並且該訪問權決定了\n"
+#~ "            執行程序是否能夠使用\n"
+#~ "            ptrace(2) 來進行核心轉儲與附加。  （ptrace(2) 由實用程式使用，"
+#~ "比如\n"
+#~ "            strace(1)、ltrace(1) 與 gdb(1)。）\n"
+#~ "        <br>\n"
+#~ "        <br>\n"
+#~ "        <b>寫方式</b><br>\n"
+#~ "            允許程式對\n"
+#~ "            資源執行寫訪問。 如果要\n"
+#~ "            取消某個檔案的連結（去除某個檔案），則該檔案必須具有該許可權"
+#~ "限。\n"
+#~ "        <br>\n"
+#~ "        <br>\n"
+#~ "        <b>Mmap PROT_EXEC 模式</b><br>\n"
+#~ "            允許程式對資源使用 PROT_EXEC\n"
+#~ "呼叫 mmap。 \n"
+#~ "        <br>\n"
+#~ "        <br>\n"
+#~ "        \n"
+#~ " \n"
+#~ "        <b>未受限執行方式</b><br>\n"
+#~ "        \n"
+#~ "            允許程式在未對被執行\n"
+#~ "            資源應用任何\n"
+#~ "             AppArmor  設定存檔的情況下執行資源。 同時要求列表執行方式。\n"
+#~ "            與繼承與離散設定存檔執行\n"
+#~ "            條目不相容。\n"
+#~ "        <br><br>\n"
+#~ " \n"
+#~ "            當受限程式需要\n"
+#~ "            能夠執行具有特權的操作（比如\n"
+#~ "            重引導計算機）時，此方式很有用。 通過將具有特權的部分放置 \n"
+#~ "            在另一個可執行部分並賦予未受限的\n"
+#~ "            執行許可權，可以繞過對所有受限程序施加的\n"
+#~ "           強制性限制。\n"
+#~ "            關於受限內容的詳細資訊，請參閱\n"
+#~ "           子域 (7) 手冊頁。\n"
+#~ " <br><br>     <b>離散設定存檔執行方式</b><br>\n"
+#~ "            此方式要求為 AppArmor 域\n"
+#~ "           轉換時執行的資源\n"
+#~ "           定義離散安全設定存檔。   如果未定義任何設定存檔，則\n"
+#~ "           訪問將被拒絕。  與繼承與\n"
+#~ "           未受限執行條目不相容。\n"
+#~ "        <br>\n"
+#~ "    <br> \n"
+#~ "     <b>連結方式</b><br>\n"
+#~ "            允許程式創建與去除\n"
+#~ "           帶有此名稱（包括符號連結）的連結。 創建\n"
+#~ "           連結時，連結的檔案必須具有\n"
+#~ "           與所創建連結相同的訪問許可許可權\n"
+#~ "          （除非目標無須具有連結訪問權。） 要\n"
+#~ "          取消某個檔案的連結，則必須具有連結訪問權。\n"
+#~ "        <br>\n"
+#~ "        <br>\n"
+#~ "       <b>Globbing</b>\n"
+#~ "   <br>\n"
+#~ "        <br>\n"
+#~ "        檔案資源可以使用與常見殼層所用語法類似的 globbing 語法來指定，比"
+#~ "如 csh(1)、\n"
+#~ "        bash(1)、zsh(1)。\n"
+#~ "        <br>\n"
+#~ " \n"
+#~ "        <ul>\n"
+#~ " \t<li><b>*</b> 可用於替代除“/”之外任何數量\n"
+#~ "           的字元，<li>\n"
+#~ " \n"
+#~ "        \t<li><b>**</b> 可用於替代包括 “/”在內任何數量的字元，</li>\n"
+#~ " \n"
+#~ " \n"
+#~ "        <li><b>?</b> 可用於替代除“/”之外的任何單個字元，</li>\n"
+#~ " \n"
+#~ "        <li><b>[abc]</b> 將替代單個字元 a、b 或 c</li>\n"
+#~ " \n"
+#~ "        <li><b>[a-c]</b> 將替代單個字元 a、b 或 c</li>\n"
+#~ " \n"
+#~ "        <li><b>{ab,cd}</b> 將擴展為一條匹配 ab 的規則與一條匹配\n"
+#~ "            cd 的規則</li>\n"
+#~ " \n"
+#~ "        </ul>\n"
+#~ " \n"
+#~ "         <br>\n"
+#~ "         <br>\n"
+#~ "        <b>清潔執行 – 用於清潔地執行</b>\n"
+#~ "    <br>\n"
+#~ "         <br>\n"
+#~ "         離散設定存檔的“清潔執行”選項與不受限制\n"
+#~ "         的執行許可許可權通過清除由子程式繼承\n"
+#~ "         特定變數的環境而提供了更高的\n"
+#~ "         安全性。 如果在儲存線索過程中選擇“p”或“u”，\n"
+#~ "        則將提示您選擇是否要清潔環境。\n"
+#~ "         這些變數有：\n"
+#~ "         <ul> \n"
+#~ "         <li>GCONV_PATH</li>\n"
+#~ "         <li>GETCONF_DIR</li>\n"
+#~ "         <li>HOSTALIASES</li>\n"
+#~ "         <li>LD_AUDIT</li>\n"
+#~ "         <li>LD_DEBUG</li>\n"
+#~ "         <li>LD_DEBUG_OUTPUT</li>\n"
+#~ "         <li>LD_DYNAMIC_WEAK</li>\n"
+#~ "         <li>LD_LIBRARY_PATH</li>\n"
+#~ "         <li>LD_ORIGIN_PATH</li>\n"
+#~ "         <li>LD_PRELOAD</li>\n"
+#~ "         <li>LD_PROFILE</li>\n"
+#~ "         <li>LD_SHOW_AUXV</li>\n"
+#~ "         <li>LD_USE_LOAD_BIAS</li>\n"
+#~ "         <li>LOCALDOMAIN</li>\n"
+#~ "         <li>LOCPATH</li>\n"
+#~ "         <li>MALLOC_TRACE</li>\n"
+#~ "         <li>NLSPATH</li>\n"
+#~ "         <li>RESOLV_HOST_CONF</li>\n"
+#~ "         <li>RES_OPTION</li>\n"
+#~ "         <li>TMPDIR</li>\n"
+#~ "         <li>TZDIR</li> </ul>\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "     <b>AppArmor Profiling Wizard</b><br>\n"
+#~ "       This wizard presents entries generated by the AppArmor access "
+#~ "control module. You can generate highly optimized and robust security "
+#~ "profiles by using the suggestions made by AppArmor. AppArmor suggests "
+#~ "that you allow or deny access to specific resources or define execute "
+#~ "permission for entries. These questions that display were logged during "
+#~ "the normal application execution test previously performed. <br>\n"
+#~ "       The following help text describes the detail of the security "
+#~ "profile syntax used by AppArmor. <br><br>At any stage, you may customize "
+#~ "the profile entry by overriding the suggestion. This overview will assist "
+#~ "you in your options. Refer to the Novell AppArmor Administration Guide "
+#~ "for step-by-step instructions.<br><br>\n"
+#~ "\n"
+#~ "       <b>Access Modes</b><br>\n"
+#~ "\n"
+#~ "       File permission access modes consists of combinations of\n"
+#~ "       the following six modes:\n"
+#~ "\n"
+#~ "<ul>   <li>r    - read</li>\n"
+#~ "       <li>w    - write</li>\n"
+#~ "       <li>m    - mmap PROT_EXEC</li>\n"
+#~ "       <li>px   - discrete profile execute</li>\n"
+#~ "       <li>ux   - unconfined execute</li>\n"
+#~ "       <li>ix   - inherit execute</li>\n"
+#~ "       <li>l    - link</li>\n"
+#~ "</ul>\n"
+#~ "<p><br>\n"
+#~ "       <b>Details for Access Modes</b>\n"
+#~ "<br><br>\n"
+#~ "       <b>Read mode</b><br>\n"
+#~ "           Allows the program to have read access to the\n"
+#~ "           resource. Read access is required for shell scripts\n"
+#~ "           and other interpreted content, and determines if an\n"
+#~ "           executing process can core dump or be attached to with\n"
+#~ "           ptrace(2).  (ptrace(2) is used by utilities such as\n"
+#~ "           strace(1), ltrace(1), and gdb(1).)\n"
+#~ "       <br>\n"
+#~ "       <br>\n"
+#~ "       <b>Write mode</b><br>\n"
+#~ "           Allows the program to have write access to the\n"
+#~ "           resource. Files must have this permission if they are\n"
+#~ "           to be unlinked (removed.)\n"
+#~ "       <br>\n"
+#~ "       <br>\n"
+#~ "       <b>Mmap PROT_EXEC mode</b><br>\n"
+#~ "           Allows the program to call mmap with PROT_EXEC on the\n"
+#~ "           resource. \n"
+#~ "       <br>\n"
+#~ "       <br>\n"
+#~ "\n"
+#~ "\n"
+#~ "       <b>Unconfined execute mode</b><br>\n"
+#~ "\n"
+#~ "           Allows the program to execute the resource without any\n"
+#~ "           AppArmor profile being applied to the executed\n"
+#~ "           resource. Requires listing execute mode as well.\n"
+#~ "           Incompatible with Inherit and Discrete Profile execute\n"
+#~ "           entries.\n"
+#~ "       <br><br>\n"
+#~ "\n"
+#~ "           This mode is useful when a confined program needs to\n"
+#~ "           be able to perform a privileged operation, such as\n"
+#~ "           rebooting the machine. By placing the privileged section\n"
+#~ "           in another executable and granting unconfined execution "
+#~ "rights,\n"
+#~ "\t   it is possible to bypass the mandatory\n"
+#~ "           constraints imposed on all confined processes.\n"
+#~ "           For more information on what is constrained, see the\n"
+#~ "           subdomain(7) man page.\n"
+#~ "<br><br>     <b>Discrete Profile execute mode</b><br>\n"
+#~ "           This mode requires that a discrete security profile is\n"
+#~ "           defined for a resource executed at a AppArmor domain\n"
+#~ "           transition.  If there is no profile defined then the\n"
+#~ "           access will be denied.  Incompatible with Inherit and\n"
+#~ "           Unconstrained execute entries.\n"
+#~ "       <br>\n"
+#~ "   <br>\n"
+#~ "    <b>Link mode</b><br>\n"
+#~ "           Allows the program to be able to create and remove a\n"
+#~ "           link with this name (including symlinks). When a link\n"
+#~ "           is created, the file that is being linked to MUST have\n"
+#~ "           the same access permissions as the link being created\n"
+#~ "           (with the exception that the destination does not have\n"
+#~ "           to have link access.) Link access is required for\n"
+#~ "           unlinking a file.\n"
+#~ "       <br>\n"
+#~ "       <br>\n"
+#~ "                 <b>Globbing</b>\n"
+#~ "  <br>\n"
+#~ "       <br>\n"
+#~ "       File resources may be specified with a globbing syntax\n"
+#~ "       similar to that used by popular shells, such as csh(1),\n"
+#~ "       bash(1), zsh(1).\n"
+#~ "       <br>\n"
+#~ "\n"
+#~ "       <ul>\n"
+#~ "        <li><b>*</b>   can substitute for any number of characters, "
+#~ "excepting\n"
+#~ "          '/'<li>\n"
+#~ "\n"
+#~ "        <li><b>**</b>  can substitute for any number of characters, "
+#~ "including         '/'</li>\n"
+#~ "\n"
+#~ "\n"
+#~ "       <li><b>?</b>   can substitute for any single character excepting "
+#~ "'/'</li>\n"
+#~ "       <li><b>[abc]</b> will substitute for the single character a, b, or "
+#~ "c</li>\n"
+#~ "       <li><b>[a-c]</b> will substitute for the single character a, b, or "
+#~ "c</li>\n"
+#~ "       <li><b>{ab,cd}</b> will expand to one rule to match ab, one rule "
+#~ "to match           cd</li>\n"
+#~ "\n"
+#~ "       </ul>\n"
+#~ "\n"
+#~ "        <br>\n"
+#~ "        <br>\n"
+#~ "       <b>Clean Exec - for sanitized execution</b>\n"
+#~ "   <br>\n"
+#~ "        <br>\n"
+#~ "        The Clean Exec option for the discrete profile and "
+#~ "unconstrained \n"
+#~ "        execute permissions provide added security by stripping the \n"
+#~ "        enviroment that is inherited by the child program of specific \n"
+#~ "        variables. You will be prompted to choose whether you want to "
+#~ "sanitize the\n"
+#~ "        environment if you choose 'p' or 'u' during the profiling "
+#~ "process.\n"
+#~ "        The variables are:\n"
+#~ "        <ul> \n"
+#~ "        <li>GCONV_PATH</li>\n"
+#~ "        <li>GETCONF_DIR</li>\n"
+#~ "        <li>HOSTALIASES</li>\n"
+#~ "        <li>LD_AUDIT</li>\n"
+#~ "        <li>LD_DEBUG</li>\n"
+#~ "        <li>LD_DEBUG_OUTPUT</li>\n"
+#~ "        <li>LD_DYNAMIC_WEAK</li>\n"
+#~ "        <li>LD_LIBRARY_PATH</li>\n"
+#~ "        <li>LD_ORIGIN_PATH</li>\n"
+#~ "        <li>LD_PRELOAD</li>\n"
+#~ "        <li>LD_PROFILE</li>\n"
+#~ "        <li>LD_SHOW_AUXV</li>\n"
+#~ "        <li>LD_USE_LOAD_BIAS</li>\n"
+#~ "        <li>LOCALDOMAIN</li>\n"
+#~ "        <li>LOCPATH</li>\n"
+#~ "        <li>MALLOC_TRACE</li>\n"
+#~ "        <li>NLSPATH</li>\n"
+#~ "        <li>RESOLV_HOST_CONF</li>\n"
+#~ "        <li>RES_OPTION</li>\n"
+#~ "        <li>TMPDIR</li>\n"
+#~ "        <li>TZDIR</li> </ul>\n"
+#~ "\n"
+#~ msgstr ""
+#~ "     <b>AppArmor 設定存檔製作嚮導</b><br>\n"
+#~ "       此嚮導提供由 AppArmor 訪問控制模組生成的條目。 使用者可根據 AppArmor "
+#~ "的建議生成高度優化與非常安全的設定存檔。 AppArmor 建議使用者允許或拒絕對特定"
+#~ "資源的訪問或定義條目的執行許可許可權。 這些顯示的問題已在以前執行的正常應用"
+#~ "程式執行測試中記錄下來。 <br>\n"
+#~ "        以下幫助文字詳細說明了 AppArmor 使用的安全設定存檔的語法。 "
+#~ "<br><br>無論在哪個階段，使用者都可以通過覆蓋建議來自定義設定存檔條目。 此概"
+#~ "述幫助使用者設定選項。 關於逐步指導，請參閱《管理員指南》。\n"
+#~ " <br><br>\n"
+#~ " \n"
+#~ "        <b>訪問方式</b><br>\n"
+#~ " \n"
+#~ "        檔案許可許可權訪問方式由\n"
+#~ " 以下六種方式組合而成：\n"
+#~ " \n"
+#~ " <ul>   <li>r    - 讀</li>\n"
+#~ "        <li>w    - 寫</li>\n"
+#~ "        <li>m    - mmap PROT_EXEC</li>\n"
+#~ "        <li>px   - 離散設定存檔執行</li>\n"
+#~ "        <li>ux   - 未受限執行</li>\n"
+#~ "        <li>ix   - 繼承執行</li>\n"
+#~ "        <li>l    - 連結</li>\n"
+#~ " </ul>\n"
+#~ " <p><br>\n"
+#~ "      <b>訪問方式細節</b>\n"
+#~ " <br><br>\n"
+#~ "        <b>讀方式</b><br>\n"
+#~ "            允許程式對資源\n"
+#~ "            有讀訪問許可權。 殼層底稿\n"
+#~ "            與其它解釋的內容均要求有讀訪問權，並且該訪問權決定了\n"
+#~ "            執行程序是否能夠使用\n"
+#~ "            ptrace(2) 來進行核心轉儲與附加。  （ptrace(2) 由實用程式使用，"
+#~ "比如\n"
+#~ "            strace(1)、ltrace(1) 與 gdb(1)。）\n"
+#~ "        <br>\n"
+#~ "        <br>\n"
+#~ "        <b>寫方式</b><br>\n"
+#~ "            允許程式對\n"
+#~ "            資源執行寫訪問。 如果要\n"
+#~ "            取消某個檔案的連結（去除某個檔案），則該檔案必須具有該許可權"
+#~ "限。\n"
+#~ "        <br>\n"
+#~ "        <br>\n"
+#~ "        <b>Mmap PROT_EXEC 模式</b><br>\n"
+#~ "            允許程式對資源使用 PROT_EXEC\n"
+#~ "呼叫 mmap。 \n"
+#~ "        <br>\n"
+#~ "        <br>\n"
+#~ " \n"
+#~ " \n"
+#~ "        <b>未受限執行方式</b><br>\n"
+#~ "        \n"
+#~ "            允許程式在未對被執行\n"
+#~ "            資源應用任何\n"
+#~ "             AppArmor  設定存檔的情況下執行資源。 同時要求列表執行方式。\n"
+#~ "            與繼承與離散設定存檔執行\n"
+#~ "            條目不相容。\n"
+#~ "        <br><br>\n"
+#~ " \n"
+#~ "            當受限程式需要\n"
+#~ "            能夠執行具有特權的操作（比如\n"
+#~ "            重引導計算機）時，此方式很有用。 通過將具有特權的部分放置 \n"
+#~ "            在另一個可執行部分並賦予未受限的\n"
+#~ "            執行許可權，可以繞過對所有受限程序施加的\n"
+#~ "           強制性限制。\n"
+#~ "            關於受限內容的詳細資訊，請參閱\n"
+#~ "           子域 (7) 手冊頁。\n"
+#~ " <br><br>     <b>離散設定存檔執行方式</b><br>\n"
+#~ "            此方式要求為 AppArmor 域\n"
+#~ "           轉換時執行的資源\n"
+#~ "           定義離散安全設定存檔。   如果未定義任何設定存檔，則\n"
+#~ "           訪問將被拒絕。  與繼承與\n"
+#~ "           未受限執行條目不相容。\n"
+#~ "        <br>\n"
+#~ "    <br>\n"
+#~ "     <b>連結方式</b><br>\n"
+#~ "            允許程式創建與去除\n"
+#~ "           帶有此名稱（包括符號連結）的連結。 創建\n"
+#~ "           連結時，連結的檔案必須具有\n"
+#~ "           與所創建連結相同的訪問許可許可權\n"
+#~ "          （除非目標無須具有連結訪問權。） 要\n"
+#~ "          取消某個檔案的連結，則必須具有連結訪問權。\n"
+#~ "        <br>\n"
+#~ "        <br>\n"
+#~ "                  <b>Globbing</b>\n"
+#~ "   <br>\n"
+#~ "        <br>\n"
+#~ "        檔案資源可以使用與常見殼層所用語法類似的 globbing 語法來指定，比"
+#~ "如 csh(1)、\n"
+#~ "        bash(1)、zsh(1)。\n"
+#~ "        <br>\n"
+#~ " \n"
+#~ "        <ul>\n"
+#~ "         <li><b>*</b> 可用於替代除“/”之外任何數量\n"
+#~ "           的字元，<li>\n"
+#~ " \n"
+#~ "        <li><b>**</b> 可用於替代包括“/”在內的任何數量的字元，</li>\n"
+#~ " \n"
+#~ " \n"
+#~ "       <li><b>?</b> 可用於替代除“/”之外的任何單個字元，</li>\n"
+#~ "        <li><b>[abc]</b> 將替代單個字元 a、b 或 c</li>\n"
+#~ "         <li><b>[a-c]</b> 將替代單個字元 a、b 或 c</li>\n"
+#~ "        <li><b>{ab,cd}</b> 將擴展為一條匹配 ab 的規則與一條匹配\n"
+#~ "            cd 的規則</li>\n"
+#~ " \n"
+#~ "        </ul>\n"
+#~ " \n"
+#~ "         <br>\n"
+#~ "         <br>\n"
+#~ "        <b>清潔執行 – 用於清潔地執行</b>\n"
+#~ "    <br>\n"
+#~ "         <br>\n"
+#~ "         離散設定存檔的“清潔執行”選項與不受限制\n"
+#~ "         的執行許可許可權通過清除由子程式繼承\n"
+#~ "         特定變數的環境而提供了更高的\n"
+#~ "         安全性。 如果在儲存線索過程中選擇“p”或“u”，\n"
+#~ "        則將提示您選擇是否要清潔環境。\n"
+#~ "         這些變數有：\n"
+#~ "         <ul> \n"
+#~ "         <li>GCONV_PATH</li>\n"
+#~ "         <li>GETCONF_DIR</li>\n"
+#~ "         <li>HOSTALIASES</li>\n"
+#~ "         <li>LD_AUDIT</li>\n"
+#~ "         <li>LD_DEBUG</li>\n"
+#~ "         <li>LD_DEBUG_OUTPUT</li>\n"
+#~ "         <li>LD_DYNAMIC_WEAK</li>\n"
+#~ "         <li>LD_LIBRARY_PATH</li>\n"
+#~ "         <li>LD_ORIGIN_PATH</li>\n"
+#~ "         <li>LD_PRELOAD</li>\n"
+#~ "         <li>LD_PROFILE</li>\n"
+#~ "         <li>LD_SHOW_AUXV</li>\n"
+#~ "         <li>LD_USE_LOAD_BIAS</li>\n"
+#~ "         <li>LOCALDOMAIN</li>\n"
+#~ "         <li>LOCPATH</li>\n"
+#~ "         <li>MALLOC_TRACE</li>\n"
+#~ "         <li>NLSPATH</li>\n"
+#~ "         <li>RESOLV_HOST_CONF</li>\n"
+#~ "         <li>RES_OPTION</li>\n"
+#~ "         <li>TMPDIR</li>\n"
+#~ "         <li>TZDIR</li> </ul>\n"
+#~ " \n"
+
+#, fuzzy
+#~ msgid ""
+#~ "<ul><li> Allow configuration of the secure attention key</li> <li> Allow "
+#~ "administration of the random device</li> <li> Allow examination and "
+#~ "configuration of disk quotas</li> <li> Allow configuring the kernel's "
+#~ "syslog (printk behaviour)</li> <li> Allow setting the domain name</li> "
+#~ "<li> Allow setting the hostname</li> <li> Allow calling bdflush()</li> "
+#~ "<li> Allow mount() and umount(), setting up new smb connection</li> <li> "
+#~ "Allow some autofs root ioctls</li> <li> Allow nfsservctl</li> <li> Allow "
+#~ "VM86_REQUEST_IRQ</li> <li> Allow to read/write pci config on alpha</li> "
+#~ "<li> Allow irix_prctl on mips (setstacksize)</li> <li> Allow flushing all "
+#~ "cache on m68k (sys_cacheflush)</li> <li> Allow removing semaphores</li> "
+#~ "<li> Used instead of CAP_CHOWN to \"chown\" IPC message queues, "
+#~ "semaphores and shared memory</li> <li> Allow locking/unlocking of shared "
+#~ "memory segment</li> <li> Allow turning swap on/off</li> <li> Allow forged "
+#~ "pids on socket credentials passing</li> <li> Allow setting read ahead and "
+#~ "flushing buffers on block devices</li> <li> Allow setting geometry in "
+#~ "floppy driver</li> <li> Allow turning DMA on/off in xd driver</li> <li> "
+#~ "Allow administration of md devices (mostly the above, but some extra "
+#~ "ioctls)</li> <li> Allow tuning the ide driver</li> <li> Allow access to "
+#~ "the nvram device</li> <li> Allow administration of apm_bios, serial and "
+#~ "bttv (TV) device</li> <li> Allow manufacturer commands in isdn CAPI "
+#~ "support driver</li> <li> Allow reading non-standardized portions of pci "
+#~ "configuration space</li> <li> Allow DDI debug ioctl on sbpcd driver</li> "
+#~ "<li> Allow setting up serial ports</li> <li> Allow sending raw qic-117 "
+#~ "commands</li> <li> Allow enabling/disabling tagged queuing on SCSI "
+#~ "controllers and sending arbitrary SCSI commands</li> <li> Allow setting "
+#~ "encryption key on loopback filesystem </li></ul>"
+#~ msgstr ""
+#~ "<ul><li> 允許配置安全注意金鑰</li> <li> 允許管理隨機裝置</li> <li> 允許檢"
+#~ "查與配置磁碟配額</li> <li> 允許配置核心的 syslog（printk 行為）</li> <li> "
+#~ "允許設定域名</li> <li> 允許設定主機名</li> <li> 允許呼叫 bdflush()</li> "
+#~ "<li> 允許使用 mount() 與 umount()，設定新的 smb 連線</li> <li> 允許使用某"
+#~ "些 autofs root ioctl</li> <li> 允許使用 nfsservctl</li> <li> 允許使用 "
+#~ "VM86_REQUEST_IRQ</li> <li> 允許讀/寫 alpha 上的 pci config</li> <li> 允許"
+#~ "使用 mip 上的 irix_prctl (setstacksize)</li> <li> 允許清空 m68k 上的所有超"
+#~ "速快取 (sys_cacheflush)</li> <li> 允許去除訊號</li> <li> 用於代替 "
+#~ "CAP_CHOWN以“chown” IPC 訊息佇列、星號與共享內存</li> <li> 允許鎖定/解鎖共"
+#~ "享內存段</li> <li> 允許切換開啟/關閉</li> <li> 允許在傳遞套接字身份憑證時"
+#~ "使用偽造 pid</li> <li> 允許在塊裝置上設定向前讀與清空快取</li> <li> 允許在"
+#~ "軟盤驅動程式中設定幾何屬性</li> <li> 允許在 xd 驅動程式中開啟/關閉 DMA</"
+#~ "li> <li> 允許管理 md 裝置（大多數為上述裝置，但也包括某些其它 ioctl）</"
+#~ "li> <li> 允許對 ide 驅動程式進行調優</li> <li> 允許訪問 nvram 裝置</li> "
+#~ "<li> 允許管理 apm_bios、序列與 bttv (TV) 裝置</li> <li> 允許在 isdn CAPI "
+#~ "支援驅動程式中使用製造商命令</li> <li> 允許讀取 pci 配置空間的非標準化部分"
+#~ "</li> <li> 允許在 sbpcd 驅動程式上使用 DDI 偵錯 ioctl</li> <li> 允許設定串"
+#~ "行埠</li> <li> 允許發送原始 qic-117 命令</li> <li> 允許在 SCSI 控制器上"
+#~ "啟用/禁用帶標籤佇列與發送隨機 SCSI 命令</li> <li> 允許在回送檔案系統上設定"
+#~ "加密金鑰 </li></ul>"
+
+#~ msgid ""
+#~ "The Security Event Notification screen enables you to setup email alerts "
+#~ "for security events. In the following steps, specify how often alerts are "
+#~ "sent, who receives the alert, and how severe the security event must be "
+#~ "to send an alert.  <br><br><b>Notification Types</b><br> <b>Terse "
+#~ "Notification:</b> Terse notification summarizes the total number of "
+#~ "system events without providing details.  <br>For example:<br> dhcp-101."
+#~ "up.wirex.com has had 10 security events since Tue Oct 12 11:10:00 "
+#~ "2004<br><br> <b>Summary Notification:</b> The Summary notification "
+#~ "displays the logged AppArmor security events, and lists the number of "
+#~ "individual occurrences, including the date of the last occurrence.  "
+#~ "<br>For example:<br> SubDomain: PERMITTING access to capability "
+#~ "'setgid' (httpd2-prefork(6347) profile /usr/sbin/httpd2-prefork active /"
+#~ "usr/sbin/httpd2-prefork) 2 times, the latest at Sat Oct  9 16:05:54 2004."
+#~ "<br><br> <b>Verbose Notification:</b> The Verbose notification displays "
+#~ "unmodified, logged AppArmor security events. It tells you every time an "
+#~ "event occurs and writes a new line in the Verbose log. These security "
+#~ "events include the date and time the event occurred, when the "
+#~ "application  profile permits access as well as rejects access, and the "
+#~ "type of file permission access that is permitted or rejected. Verbose "
+#~ "Notification also reports several messages that the logprof tool uses to "
+#~ "interpret profiles.  <br>For example:<br> Oct  9 15:40:31 SubDomain: "
+#~ "PERMITTING r access to /etc/apache2/httpd.conf (httpd2-prefork(6068) "
+#~ "profile /usr/sbin/httpd2-prefork active /usr/sbin/httpd2-prefork) <br<br> "
+#~ "<ol> <li> For each notification type that you would like enabled, select "
+#~ "the frequency of notification that you would like.  For example, if you "
+#~ "select <b>1 day</b> from the pull-down list, you will be sent daily "
+#~ "notifications of security events, if they occur.</li> <br><br> <li> Enter "
+#~ "the email address of those who should receive the Terse, Summary, or "
+#~ "Verbose notifications. </li><br><br> <li>Select the lowest <b>severity "
+#~ "level</b> for which a notification should be sent. Security events will "
+#~ "be logged and the notifications will be sent at the time indicated by the "
+#~ "interval when events are equal or greater than the selected severity "
+#~ "level. If the interval is 1 day, the notification will be sent daily, if "
+#~ "security events occur.<br><br> <b>Severity Levels:</b> These are numbered "
+#~ "one through ten, ten being the most severe security incident. The "
+#~ "<b>severity.db</b> file defines the severity level of potential security "
+#~ "events. The severity levels are determined by the importance of different "
+#~ "security events, such as certain resources accessed or services denied.</"
+#~ "li> <li>Select <b>Include unknown security events</b> if you would like "
+#~ "to include events that are not rated with a severity number.</li> </ol>"
+#~ msgstr ""
+#~ "“安全事件通知”螢幕使您可以為安全事件設定電子郵件警報。在以下步驟中，指定發"
+#~ "送警報的頻率、接收警報的接收人以及必須發送警報的安全事件的嚴重性。"
+#~ "<br><br><b>通知類型</b><br> <b>簡要通知：</b>簡要通知提供總系統事件的總"
+#~ "數，而不提供詳細資訊。<br>例如：<br> dhcp-101.up.wirex.com has had 10 "
+#~ "security events since Tue Oct 12 11:10:00 2004<br><br> <b>摘要通知：</b>摘"
+#~ "要通知顯示所記錄的 AppArmor 安全事件，並列出各自發生的次數，包括上次發生的"
+#~ "日期。<br>例如：<br> SubDomain: PERMITTING access to capability "
+#~ "'setgid' (httpd2-prefork(6347) profile /usr/sbin/httpd2-prefork active /"
+#~ "usr/sbin/httpd2-prefork) 2 times, the latest at Sat Oct  9 16:05:54 2004."
+#~ "<br><br> <b>冗長通知：</b>冗長通知顯示未經修改記錄的 AppArmor 安全事件。它"
+#~ "在每次事件發生時告知您並在詳細日誌中寫入新的一行。這些安全事件包括事件發生"
+#~ "的日期與時間、應用程式設定存檔允許訪問與拒絕訪問的時間以及被允許或拒絕的文"
+#~ "件訪問許可權的類型。冗長通知還報告 logprof 工具用於解釋設定存檔的一些訊息。"
+#~ "<br>例如：<br>Oct  9 15:40:31 SubDomain: PERMITTING r access to /etc/"
+#~ "apache2/httpd.conf (httpd2-prefork(6068) profile /usr/sbin/httpd2-prefork "
+#~ "active /usr/sbin/httpd2-prefork) <br><br> <ol> <li>對於要啟用的每個通知類"
+#~ "型，都請選擇所需的通知頻率。例如，如果從下拉選單中選擇 <b>1 天</b>，則將向"
+#~ "您發送安全事件的每天通知(如果發生安全事件)。</li> <br><br> <li>輸入應接"
+#~ "收“簡要”、“摘要”或“詳細”通知的人的電子郵件地址。</li><br><br> <li>選擇應發"
+#~ "送通知的最低<b>嚴重性級別</b>。當事件大於等於所選的嚴重性級別時，記錄安全"
+#~ "事件與發送通知都按照時間間隔進行。如果時間間隔為 1 天，則通知將每天發送(如"
+#~ "果發生安全事件)。<br><br> <b>嚴重性級別：</b>從 1 到 10，10 是最嚴重的安全"
+#~ "事件。<b>severity.db</b> 檔案定義潛在安全事件的嚴重性級別。嚴重性級別是由"
+#~ "不同安全事件的重要性定義的，如訪問某些資源或拒絕某些服務。</li> <li>如果要"
+#~ "包含沒有安全評級的事件，則選擇<b>包含未知安全事件</b>。</li> </ol>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>The Report Configuration dialog enables you to filter the archived "
+#~ "report selected in the previous screen. To filter by <b>Date Range:</"
+#~ "b><br><br> <ol> <li>Click <b>Filter By Date Range</b>. The fields become "
+#~ "active.  <li>Enter the start and end dates that delineate the scope of "
+#~ "the report.  <li>Enter other filtering parameters. See below for "
+#~ "definitions of parameters.  </ol> The following definitions help you to "
+#~ "enter the filtering parameters in the Report Configuration Dialog: "
+#~ "<br><br> <b>Program Name Pattern:</b> When you enter a program name or "
+#~ "pattern that matches the name of the binary executable of the program of "
+#~ "interest, the report will display security events that have occurred for "
+#~ "a specific program.<br><br> <b>Profile Name Pattern:</b> When you enter "
+#~ "the name of the profile, the report will display the security events that "
+#~ "are generated for the specified profile.  You can use this to see what is "
+#~ "being confined by a specific profile.<br><br> <b>PID Number:</b> Process "
+#~ "ID number is a number that uniquely identifies one specific process or "
+#~ "running program (this number is valid only during the lifetime of that "
+#~ "process).<br><br> <b>Severity Level:</b>  Select the lowest severity "
+#~ "level for security events that you would like to be included in the "
+#~ "report. The selected severity level, and above, will be included in the "
+#~ "reports.<br><br> <b>Detail:</b>  A source to which the profile has denied "
+#~ "access.  This includes capabilities and files. You can use this field to "
+#~ "report the resources are not allowed to be accessed by profiles.<br><br> "
+#~ "<b>Mode:</b> The Mode is the permission that the profile grants to the "
+#~ "program or process to which it is applied. The options are: r (read) w "
+#~ "(write) l (link) x (execute)<br><br> <b>Access Type:</b> The access type "
+#~ "describes what is actually happening with the security event. The options "
+#~ "are: PERMITTING, REJECTING, or AUDITING.<br><br> <b>CSV or HTML:</b> "
+#~ "Enables you to export a CSV (comma separated values) or html file. The "
+#~ "CSV file separates pieces of data in the log entries with commas using a "
+#~ "standard data format for importing into table-oriented applications. You "
+#~ "can enter a pathname for your exported report by typing in the full "
+#~ "pathname in the field provided.</p>"
+#~ msgstr ""
+#~ "“報告配置”對話方塊使您能夠過濾在以前螢幕中選擇的存檔報告。要按<b>日期範圍</"
+#~ "b>過濾：<br><br><ol> <li>請單擊<b>按日期範圍過濾</b>。該欄位變為活動狀態。"
+#~ "<li>輸入描述報告範圍的開始與結束日期。<li>輸入其他過濾參數。參考以下的參數"
+#~ "定義。</ol>以下定義有助於您在“報告配置”對話方塊中輸入過濾參數：<br><br> <b>"
+#~ "程式名稱模式：</b> 當您輸入的程式名稱或模式與所涉及程式的二進位制可執行檔案"
+#~ "的名稱相匹配時，報告將顯示針對特定程式發生的安全性事件。<br><br> <b>設定存"
+#~ "檔名稱模式：</b>當您輸入設定存檔名稱時，報告將顯示針對指定設定存檔生成的安"
+#~ "全性事件。由此您可以看到特定設定存檔所限制的內容。<br><br><b>PID 號：</b> "
+#~ "程序 ID 號是一個編號，用來唯一標識某個特定程序或正在運行的程式（此編號僅在"
+#~ "該程序的有效期內有效）。<br><br> <b>嚴重性級別：</b>請為您要在報告中包含的"
+#~ "安全性事件選擇最低的嚴重性級別。選定的嚴重性級別及更高階別將包含在報告中。"
+#~ "<br><br><b>細節：</b>設定存檔已拒絕訪問的源。這包含功能與檔案。您可以使用"
+#~ "此欄位來報告不允許設定存檔訪問的資源。<br><br><b>方式：</b>“方式”是設定存"
+#~ "檔授予應用該設定存檔的程式或程序的許可許可權。其選項為：r（讀）w（寫）l（鏈"
+#~ "接）x（執行）<br><br> <b>訪問類型：</b>訪問類型描述了安全性事件真正發生的"
+#~ "內容。其選項為：允許、拒絕或審計。<br><br><b>CSV 或 HTML：</b>使您能夠導"
+#~ "出 CSV（逗號分隔值）或 html 檔案。CSV 檔案使用標準資料格式，將日誌條目中的"
+#~ "資料片段用逗號分隔開，以便於匯入面向表的應用程式。您可以輸入已匯出報告的路"
+#~ "徑名，方法是在提供的欄位中輸入它的完整路徑名。"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>The AppArmor On-Demand Report screen displays an instantly generated "
+#~ "version of one of the following reports.  <b>Executive Security Summary:</"
+#~ "b> A combined report, consisting of one or more Security incident reports "
+#~ "from one or more machines.  This report provides a single view of "
+#~ "security events on multiple machines.<br><br> <b>Applications Audit "
+#~ "Report:</b> An auditing tool that reports which application servers are "
+#~ "running and whether the applications are confined by AppArmor. "
+#~ "Application servers are applications that accept incoming network "
+#~ "connections. <br><br> <b>Security Incident Report:</b> A report that "
+#~ "displays application security for a single host.  It reports policy "
+#~ "violations for locally confined applications during a specific time "
+#~ "period. You can edit and customize this report, or add new versions.</p>"
+#~ msgstr ""
+#~ "\"AppArmor 隨選報告\"螢幕顯示了下列一種報告的隨即生成的版本。 <b>執行安全"
+#~ "性摘要：</b>一份合成的報告，由來自一臺或多臺計算機的一份或多份安全性事件報"
+#~ "告組成。 此報告使您能在單個檢視中檢視多臺計算機上的安全性事件。<br><br> "
+#~ "<b>應用程式審計報告：</b>一種審計工具，可以報告正在運行的應用程式伺服器及"
+#~ "這些應用程式是否受 AppArmor 限制。應用程式伺服器是一組應用程式，它們接受進"
+#~ "來的網路連線。<br><br> <b>安全性事件報告：</b>一份顯示單個主機的應用程式安"
+#~ "全性的報告。 報告特定時間段內本地限制的應用程式的策略違例。您可以編輯並自"
+#~ "定義該報告，或添加新的版本。"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>The Report Configuration dialog enables you to filter the report "
+#~ "selected in the previous screen. To filter by <b>Date Range:</b><br><br> "
+#~ "<ol> <li>Click <b>Filter By Date Range</b>. The fields become active.  "
+#~ "<li>Enter the start and end dates that delineate the scope of the "
+#~ "report.  <li>Enter other filtering parameters. See below for definitions "
+#~ "of parameters.  </ol> The following definitions help you to enter the "
+#~ "filtering parameters in the Report Configuration Dialog: <b>Program Name "
+#~ "Pattern:</b> When you enter a program name or pattern that matches the "
+#~ "name of the executable process of interest, the report will display "
+#~ "security events that have occurred for a specific program.<br><br> "
+#~ "<b>Profile Name Pattern:</b> When you enter the name of the security "
+#~ "profile that is applied to the process, the report will display the "
+#~ "security events that are generated for the specified profile. You can use "
+#~ "this to see what is being confined by a specific profile.<br><br> <b>PID "
+#~ "Number:</b> Process ID number is a number that uniquely identifies one "
+#~ "specific process or running program (this number is valid only during the "
+#~ "lifetime of that process).<br><br> <b>Severity Level:</b>  Select the "
+#~ "lowest severity level for security events that you would like to be "
+#~ "included in the report. The selected severity level, and above, will be "
+#~ "included in the reports.<br><br> <b>Detail:</b>  A source to which the "
+#~ "profile has denied access.  This includes capabilities and files. You can "
+#~ "use this field to report the resources are not allowed to be accessed by "
+#~ "profiles.<br><br> <b>Mode:</b> The Mode is the permission that the "
+#~ "profile grants to the program or process to which it is applied. The "
+#~ "options are: r (read) w (write) l (link) x (execute)<br><br> <b>Access "
+#~ "Type:</b> The access type describes what is actually happening with the "
+#~ "security event. The options are: PERMITTING, REJECTING, or AUDITING."
+#~ "<br><br> <b>CSV or HTML:</b> Enables you to export a CSV (comma separated "
+#~ "values) or HTML file. The CSV file separates pieces of data in the log "
+#~ "entries with commas using a standard data format for importing into table-"
+#~ "oriented applications. You can enter a pathname for your exported report "
+#~ "by typing in the full pathname in the field provided.</p>"
+#~ msgstr ""
+#~ "\"報告配置\"對話方塊使您能夠過濾在以前螢幕中選擇的報告。要按<b>日期範圍</b>"
+#~ "過濾：<br><br> <ol> <li>單擊<b>按日期範圍過濾</b>。該欄位變為活動狀態。 "
+#~ "<li>輸入描述報告範圍的開始與結束日期。 <li>輸入其他過濾參數。參考以下的參"
+#~ "數定義。 </ol>以下的定義有助於您在\"報告配置\"對話方塊中輸入過濾參數：<b>程"
+#~ "序名稱模式：</b> 當您輸入的程式名稱或模式與所涉及的可執行程序的名稱相匹"
+#~ "配，報告將顯示針對特定程式發生的安全性事件。<br><br> <b>設定存檔名稱模式："
+#~ "</b>當您輸入應用於程序的安全性設定存檔名稱時，報告將顯示針對特定設定存檔生"
+#~ "成的安全性事件。由此您可以看到特定設定存檔所限制的內容。<br><br> <b>PID "
+#~ "號：</b> 程序 ID 號是一個編號，用來唯一標識某個特定程序或正在運行的程式(此"
+#~ "編號僅在該程序的有效期內有效)。<br><br> <b>嚴重性級別：</b>   請為您想包含"
+#~ "在報告中的安全性事件選擇最低的嚴重性級別。選定的嚴重性級別以及在其之上的級"
+#~ "別將包含在報告中。<br><br> <b>細節：</b>  已被設定存檔拒絕的訪問所針對的"
+#~ "源。 這包含功能與檔案。您可以使用此欄位，以報告設定存檔尚未允許訪問的資"
+#~ "源。<br><br> <b>方式：</b>\"方式\"是設定存檔授予應用程式或程序並在其上應用"
+#~ "的許可許可權。其選項為：r(讀取) w(寫入) l(連結) x(執行)<br><br> <b>訪問類"
+#~ "型：</b> 訪問類型描述了安全性事件真正發生的內容。其選項為：允許、拒絕或審"
+#~ "計。<br><br> <b>CSV 或 HTML：</b>可以能夠您匯出 CSV(逗號分隔值)或 html 文"
+#~ "件。CSV 檔案使用標準資料格式，將日誌項中的資料片段用逗號分隔開，以便於匯入"
+#~ "面向表的應用程式。您可以輸入匯出報告的路徑名，方法是在提供的欄位中輸入它的"
+#~ "完整路徑名。<br><br>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>The summary of scheduled reports page shows us when reports are "
+#~ "scheduled to run. Reports can be set to run monthly, weekly, daily, or "
+#~ "hourly. The default settings are daily at midnight. The reports can also "
+#~ "be emailed, upon completion, to up to three email recipients.<br><br> In "
+#~ "the Set Schedule section, you can schedule the following three types of "
+#~ "security reports:<br><br> <b>Executive Security Summary:</b> A combined "
+#~ "report, consisting of one or more Security incident reports from one or "
+#~ "more machines.  This report provides a single view of security events on "
+#~ "multiple machines.<br><br> <b>Applications Audit Report:</b> An auditing "
+#~ "tool that reports which application servers are running and whether the "
+#~ "applications are confined by AppArmor. Application servers are "
+#~ "applications that accept incoming network connections. <br><br> "
+#~ "<b>Security Incident Report:</b> A report that displays application "
+#~ "security for a single host.  It reports policy violations for locally "
+#~ "confined applications during a specific time period. You can edit and "
+#~ "customize this report, or add new versions.</p>"
+#~ msgstr ""
+#~ "\"日程表報告\"頁摘要顯示將報告安排在何時運行。可以設定每月、每週、每天或每"
+#~ "小時運行報告一次。默認的設定為每天午夜運行。報告也可以在完成後以電子郵件的"
+#~ "形式發出，最多可以發送給三個收件人。<br><br> 在\"設定日程表\"部分中，您可"
+#~ "以安排以下三種類型安全性報告的日程：<br><br> <b>執行安全性摘要：</b>一份合"
+#~ "成的報告，由來自一臺或多臺計算機的一份或多份安全性事件報告組成。 此報告使"
+#~ "您能在單個檢視中檢視多臺計算機上的安全性事件。<br><br> <b>應用程式審計報"
+#~ "告：</b>一種審計工具，可以報告正在運行的應用程式伺服器及這些應用程式是否"
+#~ "受 AppArmor 限制。應用程式伺服器是一組應用程式，它們接受進來的網路連線。"
+#~ "<br><br> <b>安全性事件報告：</b>一份顯示單個主機的應用程式安全性的報告。 "
+#~ "報告特定時間段內本地限制的應用程式的策略違例。您可以編輯並自定義該報告，或"
+#~ "添加新的版本。"
+
+#~ msgid ""
+#~ "<p><b>AppArmor Status</b><br>This reports whether the AppArmor policy "
+#~ "enforcement module is loaded and functioning.</p> <p><b>Security Event "
+#~ "Notification</b><br>Configure this tool if you want to be notified by "
+#~ "email when access violations have occurred.</p> <p><b>Profile Modes</"
+#~ "b><br>Use this tool to change the way that AppArmor uses individual "
+#~ "profiles.</p>"
+#~ msgstr ""
+#~ "<p><b>AppArmor 狀態</b><br>報告 AppArmor 策略強制模組是否已裝載與運作。</"
+#~ "p> <p><b>安全性事件通知</b><br>如果想在發生訪問違例時通過電子郵件收到通"
+#~ "知，請配置該工具。</p> <p><b>設定存檔模式</b><br>使用該工具可變更 "
+#~ "AppArmor 使用單個設定存檔的方式。</p>"
+
+#~ msgid "Email address is too long.  Please enter another address."
+#~ msgstr "電子郵件地址太長。請輸入另一個地址。"
+
+#~ msgid "Error in email address format.  Please use \"name@host\" format."
+#~ msgstr "電子郵件格式出錯。  請使用“name@host”格式。"
+
+#~ msgid "&Yes"
+#~ msgstr "是(&Y)"
+
+#~ msgid "&No"
+#~ msgstr "否(&N)"
+
+#~ msgid "&Okay"
+#~ msgstr "確定(&O)"
+
+#~ msgid "&Cancel"
+#~ msgstr "取消(&C)"
+
+#~ msgid "&Finish"
+#~ msgstr "完成(&F)"
+
+#~ msgid "Password"
+#~ msgstr "密碼"
+
+#~ msgid "&OK"
+#~ msgstr "確定(&O)"
+
+#~ msgid "Back"
+#~ msgstr "後退"
+
+#~ msgid "&Save"
+#~ msgstr "儲存(&S)"
+
+#~ msgid "&Back"
+#~ msgstr "後退(&B)"
+
+#~ msgid "&Accept"
+#~ msgstr "接受(&A)"
+
+#~ msgid "&Next"
+#~ msgstr "下一步(&N)"
+
+#~ msgid "&Delete"
+#~ msgstr "刪除(&D)"
+
+#~ msgid "Add"
+#~ msgstr "添加"
+
+#~ msgid "Edit"
+#~ msgstr "編輯"
+
+#~ msgid "Delete"
+#~ msgstr "刪除"
+
+#~ msgid "February only has 28 days!  Fixing."
+#~ msgstr "二月僅有 28 天！  正在修復。"
+
+#~ msgid "February only has 29 days!  Fixing."
+#~ msgstr "二月僅有 29 天！請修復。"
+
+#~ msgid "Month only has 30 days!  Fixing."
+#~ msgstr "該月僅有 30 天！請修復。"
+
+#~ msgid "February only has 29 days!"
+#~ msgstr "二月僅有 29 天！"
+
+#~ msgid "# Executive Security Summary - Generated by AppArmor\n"
+#~ msgstr "# 執行安全性摘要 － 由 AppArmor 生成\n"
+
+#~ msgid ""
+#~ "# Period: %s to %s\n"
+#~ "\n"
+#~ msgstr ""
+#~ "# 時段：%s 到 %s\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "<tr><th colspan='7'>Executive Security Summary - Generated by AppArmor</"
+#~ "th></tr>"
+#~ msgstr "<tr><th colspan='7'>執行安全性摘要 － 由 AppArmor 生成</th></tr>"
+
+#~ msgid "<tr><th colspan='7'>Period: %s to %s</th></tr>\n"
+#~ msgstr "<tr><th colspan='7'>時段： %s 到 %s</th></tr>\n"
+
+#~ msgid "# Application Audit Report - Generated by AppArmor\n"
+#~ msgstr "# 應用程式審計報告 － 由 AppArmor 生成\n"
+
+#~ msgid ""
+#~ "# Date Run: %s\n"
+#~ "\n"
+#~ msgstr ""
+#~ "# 運行日期： %s\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "<table border='1' cellpadding='2'><tr><th colspan='7'>Applications Audit "
+#~ "Report - Generated by AppArmor</th></tr>\n"
+#~ msgstr ""
+#~ "<table border='1' cellpadding='2'><tr><th colspan='7'>應用程式審計報告 － "
+#~ "由 AppArmor 生成</th></tr>\n"
+
+#~ msgid "<h4>The following filters were used for report generation:</h4>"
+#~ msgstr "<h4>以下過濾器用於生成報告：</h4>"
+
+#~ msgid "<p>Filter: %s, Value: %s</p>"
+#~ msgstr "<p>過濾器：%s，值： %s</p>"
+
+#~ msgid "<h4>No filters were used for report generation.</h4>"
+#~ msgstr "<h4>未使用任何過濾器來生成報告。</h4>"
+
+#~ msgid ""
+#~ "Fatal Error: Couldn't get report configuration information %s.  Exiting."
+#~ msgstr "致命錯誤：無法獲取報告配置資訊 %s。正在退出。"
+
+#~ msgid "Error: Couldn't open (tmp) %s.  ESS report execution not tracked."
+#~ msgstr "錯誤：無法開啟 (tmp) %s。未跟蹤 ESS 報告的執行。"
+
+#~ msgid "Error: Couldn't open %s.  ESS report execution not tracked."
+#~ msgstr "錯誤：無法開啟 %s。未跟蹤 ESS 報告的執行。"
+
+#~ msgid ""
+#~ "Error: Necessary input missing.  Unable to generate report and send mail."
+#~ msgstr "錯誤：缺少必要的輸入。無法生成報告與發送郵件。"
+
+#~ msgid "Error: Couldn't open %s.  No ESS csv report generated."
+#~ msgstr "錯誤：無法開啟 %s。未生成 ESS csv 報告。"
+
+#~ msgid ""
+#~ "<tr bgcolor='edefff'><td>Hostname</td><td>Start Date</td><td>End Date</td>"
+#~ msgstr ""
+#~ "<tr bgcolor='edefff'><td>主機名</td><td>開始日期</td><td>結束日期</td>"
+
+#~ msgid ""
+#~ "<td>Highest Severity</td><td>Mean Severity</td><td>Number of REJECTs</td>"
+#~ msgstr "<td>最高嚴重性</td><td>一般嚴重性</td><td>拒絕次數</td>"
+
+#~ msgid "<td>Number of Events</td></tr>\n"
+#~ msgstr "<td>事件數</td></tr>\n"
+
+#~ msgid "Error: Couldn't open %s.  No ESS html report generated."
+#~ msgstr "錯誤：無法開啟 %s。未生成 ESS html 報告。"
+
+#~ msgid "Error: Couldn't open %s.  No AUD report generated."
+#~ msgstr "錯誤：無法開啟 %s。未生成 AUD 報告。"
+
+#~ msgid "<h3>Applications Audit Report - Generated by AppArmor</h3>\n"
+#~ msgstr "<h3>應用程式審計報告 － 由 AppArmor 生成</h3>\n"
+
+#~ msgid ""
+#~ "<tr bgcolor='edefff'><td>Hostname</td><td>Date</td><td>Application</td>"
+#~ msgstr "<tr bgcolor='edefff'><td>主機名</td><td>日期</td><td>應用程式</td>"
+
+#~ msgid ""
+#~ "<td>Profile</td><td>PID</td><td>State</td><td>AppArmor Profile</td></tr>\n"
+#~ msgstr ""
+#~ "<td>設定存檔</td><td>PID</td><td>狀態</td><td>AppArmor 設定存檔</td></"
+#~ "tr>\n"
+
+#~ msgid "Error: Couldn't open %s.  No SIR report generated."
+#~ msgstr "錯誤：無法開啟 %s。未生成 SIR 報告。"
+
+#~ msgid "Error: No arguments passed--Unable to execute reports.  Exiting."
+#~ msgstr "錯誤：未傳遞自變數 － 無法執行報告。正在退出。"
+
+#~ msgid "Executing Scheduled Report: %s"
+#~ msgstr "正在執行安排好的報告： %s"
+
+#~ msgid "00"
+#~ msgstr "00"
+
+#~ msgid "01"
+#~ msgstr "01"
+
+#~ msgid "02"
+#~ msgstr "02"
+
+#~ msgid "03"
+#~ msgstr "03"
+
+#~ msgid "04"
+#~ msgstr "04"
+
+#~ msgid "05"
+#~ msgstr "05"
+
+#~ msgid "06"
+#~ msgstr "06"
+
+#~ msgid "07"
+#~ msgstr "07"
+
+#~ msgid "08"
+#~ msgstr "08"
+
+#~ msgid "09"
+#~ msgstr "09"
+
+#~ msgid "10"
+#~ msgstr "10"
+
+#~ msgid "Execution Schedule"
+#~ msgstr "執行計劃"
+
+#~ msgid "Monthly"
+#~ msgstr "每月"
+
+#~ msgid "Weekly"
+#~ msgstr "每週"
+
+#~ msgid "Daily"
+#~ msgstr "每日"
+
+#~ msgid "Hourly"
+#~ msgstr "每小時"
+
+#~ msgid "Sunday"
+#~ msgstr "星期日"
+
+#~ msgid "Monday"
+#~ msgstr "星期一"
+
+#~ msgid "Tuesday"
+#~ msgstr "星期二"
+
+#~ msgid "Wednesday"
+#~ msgstr "星期三"
+
+#~ msgid "Thursday"
+#~ msgstr "星期四"
+
+#~ msgid "Friday"
+#~ msgstr "星期五"
+
+#~ msgid "Saturday"
+#~ msgstr "星期六"
+
+#~ msgid "Add AppArmor Report"
+#~ msgstr "添加 AppArmor 報告"
+
+#~ msgid "Edit AppArmor Report"
+#~ msgstr "編輯 AppArmor 報告"
+
+#, fuzzy
+#~ msgid "AppArmor Report Management"
+#~ msgstr "AppArmor 報告"
+
+#~ msgid "Delete "
+#~ msgstr "刪除"
+
+#, fuzzy
+#~ msgid "Unrecognized form request: "
+#~ msgstr "表單請求未被識別。"
+
+#, fuzzy
+#~ msgid "Select Event Type"
+#~ msgstr "選擇類型"
+
+#~ msgid "Scheduled Reports"
+#~ msgstr "已計劃的報告"
+
+#~ msgid "Schedule"
+#~ msgstr "日程"
+
+#~ msgid "Enabled"
+#~ msgstr "已啟用"
+
+#~ msgid "Run Report"
+#~ msgstr "運行報告"
+
+#~ msgid "View Report"
+#~ msgstr "檢視報告"
+
+#~ msgid "Select Mode"
+#~ msgstr "選擇模式"
+
+#, fuzzy
+#~ msgid "Inherit Execute"
+#~ msgstr "執行"
+
+#, fuzzy
+#~ msgid "Profile Execute"
+#~ msgstr "設定存檔清潔執行"
+
+#, fuzzy
+#~ msgid "Profile Execute (clean env)"
+#~ msgstr "設定存檔清潔執行"
+
+#, fuzzy
+#~ msgid "Unconstrained Execute"
+#~ msgstr "不受限制的清潔執行"
+
+#, fuzzy
+#~ msgid "Unconstrained Execute (clean env)"
+#~ msgstr "不受限制的清潔執行"
+
+#~ msgid "Add Report Filters"
+#~ msgstr "添加報告過濾器"
+
+#~ msgid "Create New Report - Set Filters "
+#~ msgstr "創建新報告 － 設定過濾器"
+
+#~ msgid "AppArmor Report Configuration"
+#~ msgstr "AppArmor 報告配置"
+
+#~ msgid "Configuration of AppArmor Reports - Step 1"
+#~ msgstr "AppArmor 報告的配置 - 步驟 1"
+
+#~ msgid "Configuration of AppArmor Reports - Step 2"
+#~ msgstr "AppArmor 報告的配置 - 步驟 2"
+
+#~ msgid "Filter by Date"
+#~ msgstr "按日期範圍過濾"
+
+#~ msgid "Profile Field Filters"
+#~ msgstr "存檔域過濾器"
+
+#~ msgid "Profile Filter Help"
+#~ msgstr "存檔過濾器幫助"
+
+#~ msgid "Date Filters"
+#~ msgstr "日期過濾器"
+
+#~ msgid "Date Filter Help"
+#~ msgstr "日期過濾器幫助"
+
+#~ msgid "Advanced Filters"
+#~ msgstr "高階過濾器"
+
+#~ msgid "Advanced Filter Help"
+#~ msgstr "高階過濾器幫助"
+
+#~ msgid "<p>Help for all tabs</p>"
+#~ msgstr "<p>所有選項卡的幫助</p>"
+
+#~ msgid "AA Reports Configuration"
+#~ msgstr "AA 報告配置"
+
+#~ msgid "Initializing..."
+#~ msgstr "正在啟始化..."
+
+#~ msgid "AppArmor Status"
+#~ msgstr "AppArmor 狀態"
+
+#~ msgid "Enable AppArmor"
+#~ msgstr "啟用 AppArmor"
+
+#~ msgid "&Configure"
+#~ msgstr "配置(&C)"
+
+#~ msgid " Enable Security Event Notification "
+#~ msgstr "啟用安全性事件通知"
+

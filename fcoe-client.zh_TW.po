@@ -1,0 +1,808 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:39+0200\n"
+"PO-Revision-Date: 2014-06-11 13:33+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the Xfcoe-client module
+#: src/clients/fcoe-client.rb:54
+msgid "Configuration of fcoe-client"
+msgstr "乙太網光纖通道 (FCoE) 客戶端配置"
+
+#. progress step title
+#: src/clients/fcoe-client_finish.rb:67
+msgid "Saving fcoe configuration..."
+msgstr "正在儲存乙太網光纖通道 (FCoE) 配置..."
+
+#. Rich text title for FcoeClient in proposals
+#: src/clients/fcoe-client_proposal.rb:82
+msgid "FcoeClient"
+msgstr "乙太網光纖通道 (FCoE) 客戶端"
+
+#. Menu title for FcoeClient in proposals
+#: src/clients/fcoe-client_proposal.rb:86
+msgid "&FcoeClient"
+msgstr "乙太網光纖通道 (&FCoE) 客戶端"
+
+#. setting of config value is 'yes'
+#: src/include/fcoe-client/complex.rb:48
+msgid "yes"
+msgstr "是"
+
+#. setting of config value is 'no'
+#: src/include/fcoe-client/complex.rb:50
+msgid "no"
+msgstr "否"
+
+#. text of an error popup
+#: src/include/fcoe-client/complex.rb:102
+msgid ""
+"Cannot remove the FCoE interface.\n"
+"Command %1 failed."
+msgstr ""
+"無法移除乙太網光纖通道 (FCoE) 介面。\n"
+"命令 %1 失敗。"
+
+#. FCoE is not available on the interface
+#: src/include/fcoe-client/complex.rb:195
+msgid "not available"
+msgstr "不可用"
+
+#. the interface is not configured for FCoE
+#: src/include/fcoe-client/complex.rb:197
+msgid "not configured"
+msgstr "未配置"
+
+#. the flag is 'true'
+#: src/include/fcoe-client/complex.rb:203
+msgid "true"
+msgstr "真"
+
+#. the flag is 'false'
+#: src/include/fcoe-client/complex.rb:205
+msgid "false"
+msgstr "假"
+
+#. the flag is not set at all
+#: src/include/fcoe-client/complex.rb:207
+msgid "not set"
+msgstr "未設定"
+
+#. headline of the edit dialog - configuration of values for a certain network interface
+#: src/include/fcoe-client/complex.rb:306
+msgid "Configuration of VLAN interface %1 on %2"
+msgstr "位於 %2 上的虛擬區域網 (VLAN) 介面 %1 的配置"
+
+#. text of an error popup
+#: src/include/fcoe-client/complex.rb:368
+msgid ""
+"Cannot start FCoE on VLAN interface %1\n"
+"because FCoE is already configured on\n"
+"network interface %2 itself."
+msgstr ""
+"無法在虛擬區域網 (VLAN) 介面 %1 上啟動乙太網光纖通道 (FCoE)\n"
+"因為乙太網光纖通道 (FCoE) 已在網路介面 %2 自身上配置過了。"
+
+#. text of an error popup
+#: src/include/fcoe-client/complex.rb:383
+msgid ""
+"Cannot start FCoE on network interface %1 itself\n"
+"because FCoE is already configured on\n"
+"VLAN interface(s) %2."
+msgstr ""
+"無法在網路介面 %1 自身上啟動乙太網光纖通道 (FCoE)。\n"
+"因為乙太網光纖通道 (FCoE) 已在虛擬區域網 (VLAN) 介面 %2 上配置過了。"
+
+#. headline of a popup: creating and starting Fibre Channel over Ethernet
+#: src/include/fcoe-client/complex.rb:417
+msgid "Creating and Starting FCoE on Detected VLAN Device"
+msgstr "正在檢測到的虛擬區域網 (VLAN) 裝置上創建並啟動乙太網光纖通道 (FCoE)"
+
+#. question to the user: really create and start FCoE
+#: src/include/fcoe-client/complex.rb:420
+msgid ""
+"Do you really want to create a FCoE network\n"
+"interface for discovered VLAN interface %1\n"
+"on %2 and start the FCoE initiator?"
+msgstr ""
+"您真的想要為發現的位於 %2 上的虛擬區域網 (VLAN) 介面 %1\n"
+"創建一個乙太網光纖通道 (FCoE) 網路介面並啟動乙太網光纖通道 (FCoE) 發起端嗎？"
+
+#. text of an error popup
+#: src/include/fcoe-client/complex.rb:443
+msgid "Cannot create and start FCoE on %1."
+msgstr "無法在 %1 上創建並啟動乙太網光纖通道 (FCoE)。"
+
+#. text of an error popup: command failed on the network interface
+#: src/include/fcoe-client/complex.rb:480
+msgid "Command \"%1\" on %2 failed."
+msgstr "%2 上的命令 \"%1\" 失敗。"
+
+#: src/include/fcoe-client/complex.rb:488
+msgid ""
+"Creating FCoE interface failed.\n"
+"Continue because running in test mode"
+msgstr ""
+"創建乙太網光纖通道 (FCoE) 介面失敗。\n"
+"仍將繼續，因為正運行在測試模式下。"
+
+#. popup text: really remove FCoE VLAN interface
+#: src/include/fcoe-client/complex.rb:583
+msgid "Do you really want to remove the FCoE interface %1?"
+msgstr "您真的想要移除乙太網光纖通道 (FCoE) 介面 %1 嗎？"
+
+#. popup text continues
+#: src/include/fcoe-client/complex.rb:591
+msgid ""
+"Attention:\n"
+"Make sure the interface is not essential for a used device.\n"
+"Removing it may result in an unusable system."
+msgstr ""
+"注意：\n"
+"請確保該介面不是一個已用裝置必需的。\n"
+"移除這樣的介面或許會導致系統沒法用。"
+
+#. popup text continues
+#: src/include/fcoe-client/complex.rb:601
+msgid ""
+"Don't remove the interface if it's related\n"
+"to an already activated multipath device."
+msgstr "若介面與一個已啟用的多路徑裝置相關則不要移除該介面。"
+
+#. replace values in table
+#: src/include/fcoe-client/complex.rb:750
+msgid "Removing of interface %1 failed."
+msgstr "移除介面 %1 失敗。"
+
+#: src/include/fcoe-client/complex.rb:762
+msgid "Destroying interface %1 failed."
+msgstr "銷燬介面 %1 失敗。"
+
+#. text of a warning popup
+#: src/include/fcoe-client/complex.rb:794
+msgid ""
+"DCB Required is set to \"yes\" but the\n"
+"interface isn't DCB capable."
+msgstr "需要資料中心橋接 (DCB) 設為了 \"是\" 但介面不可資料中心橋接。"
+
+#. text of an information (notify)  popup
+#: src/include/fcoe-client/complex.rb:831
+msgid ""
+"Service 'fcoe' requires enabled service 'lldpad'.\n"
+"Enabling start on boot of service 'lldpad'."
+msgstr ""
+"服務 'fcoe' 需要啟用的 'lldpad' 服務。\n"
+"正在啟用引導時啟動 'lldpad' 服務。"
+
+#. radio button: start service on boot
+#. radio button: start service on boot
+#: src/include/fcoe-client/dialogs.rb:48 src/include/fcoe-client/dialogs.rb:69
+msgid "When Booting"
+msgstr "引導時"
+
+#. radio button: start service manually
+#. radio button: start service manually
+#: src/include/fcoe-client/dialogs.rb:56 src/include/fcoe-client/dialogs.rb:77
+msgid "Manually"
+msgstr "手動"
+
+#. combo box label: enable FCoE (yes/no)
+#: src/include/fcoe-client/dialogs.rb:109
+msgid "&FCoE Enable"
+msgstr "啟用乙太網光纖通道 (&FCoE)"
+
+#: src/include/fcoe-client/dialogs.rb:110
+#: src/include/fcoe-client/dialogs.rb:118
+#: src/include/fcoe-client/dialogs.rb:125
+#: src/include/fcoe-client/dialogs.rb:230
+#: src/include/fcoe-client/dialogs.rb:241
+msgid "Yes"
+msgstr "是"
+
+#: src/include/fcoe-client/dialogs.rb:110
+#: src/include/fcoe-client/dialogs.rb:118
+#: src/include/fcoe-client/dialogs.rb:125
+#: src/include/fcoe-client/dialogs.rb:230
+#: src/include/fcoe-client/dialogs.rb:241
+msgid "No"
+msgstr "否"
+
+#. combo box label: require DCB (yes/no)
+#: src/include/fcoe-client/dialogs.rb:117
+msgid "&DCB Required"
+msgstr "需要資料中心橋接 (&DCB)"
+
+#. combo box label: AUTO_VLAN setting (yes/no)
+#: src/include/fcoe-client/dialogs.rb:124
+msgid "&AUTO_VLAN"
+msgstr "自動虛擬區域網(&A)"
+
+#. frame containing radio buttons for fcoe service start
+#: src/include/fcoe-client/dialogs.rb:150
+msgid "FCoE Service Start"
+msgstr "啟動乙太網光纖通道 (FCoE) 服務"
+
+#. frame containing radio buttons for lldpad service start
+#: src/include/fcoe-client/dialogs.rb:155
+msgid "Lldpad Service Start"
+msgstr "啟動 Lldpad 服務"
+
+#. column headers of table of network interfaces (keep them short)
+#: src/include/fcoe-client/dialogs.rb:179
+msgid "Device"
+msgstr "裝置"
+
+#: src/include/fcoe-client/dialogs.rb:180
+msgid "MAC Address"
+msgstr "MAC 地址"
+
+#: src/include/fcoe-client/dialogs.rb:181
+msgid "Model"
+msgstr "型號"
+
+#: src/include/fcoe-client/dialogs.rb:182
+msgid "VLAN"
+msgstr "虛擬區域網 (VLAN)"
+
+#: src/include/fcoe-client/dialogs.rb:183
+msgid "FCoE VLAN Interface"
+msgstr "乙太網光纖通道 (FCoE) 虛擬區域網介面"
+
+#: src/include/fcoe-client/dialogs.rb:184
+msgid "FCoE Enable"
+msgstr "乙太網光纖通道 (FCoE) 已啟用"
+
+#: src/include/fcoe-client/dialogs.rb:185
+msgid "DCB Required"
+msgstr "需要資料中心橋接 (DCB)"
+
+#: src/include/fcoe-client/dialogs.rb:186
+msgid "AUTO VLAN"
+msgstr "自動虛擬區域網"
+
+#: src/include/fcoe-client/dialogs.rb:187
+msgid "DCB capable"
+msgstr "可資料中心橋接 (DCB)"
+
+#: src/include/fcoe-client/dialogs.rb:188
+msgid "Driver"
+msgstr "驅動"
+
+#: src/include/fcoe-client/dialogs.rb:189
+msgid "Flag FCoE"
+msgstr "標記 FCoE"
+
+#: src/include/fcoe-client/dialogs.rb:190
+msgid "Flag iSCSI"
+msgstr "標記 iSCSI"
+
+#: src/include/fcoe-client/dialogs.rb:191
+msgid "Storage Only"
+msgstr "僅存儲"
+
+#. button labels
+#: src/include/fcoe-client/dialogs.rb:198
+msgid "Retry &Detection"
+msgstr "重新檢測(&D)"
+
+#: src/include/fcoe-client/dialogs.rb:199
+msgid "Change &Settings"
+msgstr "修改設定(&S)"
+
+#: src/include/fcoe-client/dialogs.rb:200
+msgid "Create &FCoE Interface"
+msgstr "創建乙太網光纖通道 (&FCoE) 介面"
+
+#: src/include/fcoe-client/dialogs.rb:201
+msgid "&Remove Interface"
+msgstr "移除介面(&R)"
+
+#. frame label - configuration settings of FCoE
+#: src/include/fcoe-client/dialogs.rb:222
+msgid "Configuration Settings"
+msgstr "配置設定"
+
+#. combo box label (debug setting yes/no)
+#: src/include/fcoe-client/dialogs.rb:229
+msgid "&Debug"
+msgstr "偵錯(&D)"
+
+#. combo box label (use syslog yes/no)
+#: src/include/fcoe-client/dialogs.rb:240
+msgid "&Use syslog"
+msgstr "使用 syslog(&U)"
+
+#. Read dialog help 1/2
+#: src/include/fcoe-client/helps.rb:35
+msgid ""
+"<p><b><big>Initializing fcoe-client Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在啟始化 fcoe-client 配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Read dialog help 2/2
+#: src/include/fcoe-client/helps.rb:39
+msgid ""
+"<p><b><big>Aborting Initialization:</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>\n"
+msgstr ""
+"<p><b><big>中止啟始化：</big></b><br>\n"
+"現在按<b>中止</b>可安全地中止配置工具。</p>\n"
+
+#. Write dialog help 1/2
+#: src/include/fcoe-client/helps.rb:43
+msgid ""
+"<p><b><big>Saving fcoe-client Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在儲存 fcoe-client 配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Write dialog help 2/2
+#: src/include/fcoe-client/helps.rb:47
+msgid ""
+"<p><b><big>Aborting Saving:</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.\n"
+"An additional dialog informs whether it is safe to do so.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>中止儲存：</big></b><br>\n"
+"按<B>中止</B>中止儲存過程。\n"
+"另一個對話方塊將告之您這樣做是否安全。\n"
+"</p>\n"
+
+#. Summary dialog help 1/3
+#: src/include/fcoe-client/helps.rb:54
+msgid ""
+"<p><b><big>FcoeClient Configuration</big></b><br>\n"
+"Configure fcoe-client here.<br></p>\n"
+msgstr ""
+"<p><b><big>乙太網光纖通道 (FCoE) 客戶端配置</big></b><br>\n"
+"在此配置乙太網光纖通道 (FCoE) 客戶端。<br></p>\n"
+
+#. Summary dialog help 2/3
+#: src/include/fcoe-client/helps.rb:58
+msgid ""
+"<p><b><big>Adding a fcoe-client:</big></b><br>\n"
+"Choose a fcoe-client from the list of detected fcoe-clients.\n"
+"If your fcoe-client was not detected, use <b>Other (not detected)</b>.\n"
+"Then press <b>Configure</b>.</p>\n"
+msgstr ""
+"<p><b><big>添加乙太網光纖通道 (FCoE) 客戶端：</big></b><br>\n"
+"請從已檢測到的乙太網光纖通道 (FCoE) 客戶端列表中選擇一個客戶端。\n"
+"若未檢測到您的乙太網光纖通道 (FCoE) 客戶端，請使用<b>其它 (未檢測到)</b>。\n"
+"然後按<b>配置</b>。</p>\n"
+
+#. Summary dialog help 3/3
+#: src/include/fcoe-client/helps.rb:65
+msgid ""
+"<p><b><big>Editing or Deleting:</big></b><br>\n"
+"If you press <b>Edit</b>, an additional dialog in which to change\n"
+"the configuration opens.</p>\n"
+msgstr ""
+"<p><b><big>編輯或刪除：</big></b><br>\n"
+"您若按<b>編輯</b>，將開啟另一個對話方塊供您修改配置。</p>\n"
+
+#. Services dialog help 1/3
+#: src/include/fcoe-client/helps.rb:71
+msgid ""
+"<p><b><big>Starting of services</big><br></b><br>Enable or disable the start "
+"of the services <b>fcoe</b> and <b>lldpad</b> at boot time.</p>"
+msgstr ""
+"<p><b><big>啟動服務</big><br></b><br>\n"
+"在引導時啟用或禁用服務 <b>fcoe</b> 與 <b>lldpad<b> 的啟動。</p>"
+
+#. Services dialog help 2/3
+#: src/include/fcoe-client/helps.rb:76
+msgid ""
+"<p>Starting the service <b>fcoe</b> means starting the <i>Fibre Channel over "
+"Ethernet</i> service daemon <i>fcoemon</i> which controls the FCoE "
+"interfaces and establishes a connection with the daemon <i>lldpad</i>.</p>"
+msgstr ""
+"<p>啟動服務 <b>fcoe</b> 意味著啟動<i>乙太網光纖通道 (FCoE)</i> 服務守護程序 "
+"<i>fcoemon</i>，其控制了乙太網光纖通道 (FCoE) 介面並與 <i>lldpad</i> 守護程序"
+"建立連線。</p>"
+
+#. Services dialog help 3/3
+#: src/include/fcoe-client/helps.rb:82
+msgid ""
+"<p>The <b>lldpad</b> service provides the <i>Link Layer Discovery Protocol</"
+"i> agent daemon <i>lldpad</i>, which informs <i>fcoemon</i> about DCB (Data "
+"Center Bridging) features and configuration of the interfaces.</p>"
+msgstr ""
+"<p><b>lldpad</b> 服務提供了<i>連結層發現協議</i>代理守護程序 <i>lldpad</i>，"
+"它會將資料中心橋接 (DCB) 功能與介面配置知會給 <i>fcoemon</i>。</p>"
+
+#. Interfaces dialog help 1/5
+#: src/include/fcoe-client/helps.rb:88
+msgid "<p><b><big>Network interface overview</big></b></p>"
+msgstr "<p><b><big>網路介面概覽</big></b></p>"
+
+#. Interfaces dialog help 2/5
+#: src/include/fcoe-client/helps.rb:92
+msgid ""
+"<p>The interfaces dialog shows all detected netcards including the status of "
+"VLAN and FCoE configuration.<br>FCoE is possible if a VLAN interface is "
+"configured for FCoE on the switch.<br>For every netcard (network interface), "
+"this is shown in column <i>FCoE VLAN Interface</i>.</p>"
+msgstr ""
+"<p>介面對話方塊顯示了全部檢測到的網卡包括虛擬區域網的狀態與乙太網光纖通道 (FCoE) 配置。<br>"
+"若交換機上已為乙太網光纖通道 (FCoE) 配置了虛擬區域網介面，乙太網光纖通道 (FCoE) 就是可行的。"
+"每個網卡 (網路介面) 的乙太網光纖通道 (FCoE) 虛擬區域網介面都顯示在 <i>乙太網光纖通道 (FCoE) 虛擬區域網介面</i>列中。</p>"
+
+#. Interfaces dialog help 3/5
+#: src/include/fcoe-client/helps.rb:99
+msgid ""
+"<p>It's possible to retry the check for FCoE services by using <b>Retry "
+"Detection</b>(might be required for interfaces needing some time to get up)."
+"</p>"
+msgstr "<p>可以使用<b>重試檢測</b>來重新檢查 FCoE 服務(對於需要一些時間才能啟動的介面來說可能是必須的)。</p>"
+
+#. Interfaces dialog help 4/5
+#: src/include/fcoe-client/helps.rb:103
+msgid ""
+"<p>The values for <i>FCoE VLAN Interface</i> in detail:<br><b>not available</"
+"b>: Fibre Channel over Ethernet is not possible (must be enabled on the "
+"switch first).<br><b>not configured</b>: FCoE is possible but not yet "
+"activated.<br>Press <b>Create FCoE VLAN Interface</b> to activate.<br>If the "
+"FCoE VLAN interface has already been created, the name is shown in the "
+"column, e.g. eth3.200.</p>"
+msgstr ""
+"<p><i>乙太網光纖通道 (FCoE) 虛擬區域網介面</i>值的細節：<br>"
+"<b>不可用</b>：乙太網光纖通道 (FCoE) 不可用 (必須先在交換機上啟用)。<br>"
+"<b>未配置</b>：乙太網光纖通道 (FCoE) 可用但尚未啟用。<br>按<b>創建乙太網光纖通道 "
+"(FCoE) 虛擬區域網介面</b>啟用之。<br>"
+"若已創建了乙太網光纖通道 (FCoE) 虛擬區域網，其名稱會顯示在列中，如 eth3.200。</p>"
+
+#. Interfaces dialog help 4/5
+#: src/include/fcoe-client/helps.rb:113
+msgid ""
+"<p>To change the configuration of a FCoE VLAN interface, click on <b>Change "
+"Settings</b>.</p>"
+msgstr "<p>要修改一個乙太網光纖通道 (FCoE) 虛擬區域網介面的配置，請點選<b>修改設定</b>。</p>"
+
+#. Configuration dialog help 1/3
+#: src/include/fcoe-client/helps.rb:117
+msgid "<p><b><big>General Configuration of FCoE</big></b></p>"
+msgstr "<p><b><big>乙太網光纖通道 (FCoE) 常規配置</big></b></p>"
+
+#. Configuration dialog help 2/3
+#: src/include/fcoe-client/helps.rb:121
+msgid ""
+"<p>Configure the general settings for the FCoE system service. The settings "
+"are written to '/etc/fcoe/config'.</p>"
+msgstr ""
+"<p>配置乙太網光纖通道 (FCoE) 系統服務的常規設定。設定會被寫入 '/etc/fcoe/"
+"config'。</p>"
+
+#. Configuration dialog help 3/3
+#: src/include/fcoe-client/helps.rb:125
+msgid ""
+"<p>The values are:<br>\n"
+"<b>Debug</b>: <i>yes</i> or <i>no</i><br>This is used to enable or disable "
+"debugging messages from the fcoe service script and <i>fcoemon</i>."
+"<br><b>Use syslog</b>: <i>yes</i> or <i>no</i><br>Messages are sent to the "
+"system log if set to <i>yes</i> (data are logged to /var/log/messages).</p>"
+msgstr ""
+"<p>這些值為：<br>\n"
+"<b>偵錯</b>：<i>是</i>或<i>否</i><br>"
+"這用於啟用或禁用來自 fcoe 服務指令碼與 <i>fcoemon</i> 的偵錯訊息。<br>"
+"<b>使用 syslog</b>：<i>是</i>或<i>否</i><br>"
+"若設為<i>是</i>，訊息會發送給系統日誌 (資料被記錄到 /var/log/messages)。</p>"
+
+#. edit dialog help 1/3
+#: src/include/fcoe-client/helps.rb:133
+msgid "<p>Edit Settings in /etc/fcoe/ethx</p>"
+msgstr "<p>編輯 /etc/fcoe/ethx 中的設定</p>"
+
+#. Edit dialog help 2/3
+#: src/include/fcoe-client/helps.rb:137
+msgid ""
+"<p>The daemon <i>fcoemon</i> reads these configuration files on "
+"initialization.<br>There is a file for every interface and the values "
+"indicate whether FCoE instances should be created and if DCB is required.</p>"
+msgstr ""
+"<p>守護程序 <i>fcoemon</i> 將在啟始化時讀取這些配置檔案。<br>\n"
+"每個介面都有一個檔案，這些值說明了是否應創建乙太網光纖通道 "
+"(FCoE) 例項與是否需要資料中心橋接 (DCB)。</p>"
+
+#. Edit dialog help 3/3
+#: src/include/fcoe-client/helps.rb:143
+msgid ""
+"<p>The values are:<br><b>FCoE Enable</b>: <i>yes</i> or <i>no</i><br>Enable "
+"or disable the creation of FCoE instances.<br><b>DCB Required</b>: <i>yes</"
+"i> or <i>no</i><br>The default is <i>yes</i>, DCB is usually required."
+"<br><b>AUTO VLAN</b>: <i>yes</i> or <i>no</i><br>If set to <i>yes</i> "
+"'fcoemon' will create the VLAN interfaces automatically.</p>"
+msgstr ""
+"<p>這些值為：<br>"
+"<b>啟用乙太網光纖通道 (FCoE)</b>：<i>是</i>或<i>否</i><br>"
+"啟用或禁用乙太網光纖通道 (FCoE) 例項的創建。<br>"
+"<b>需要資料中心橋接 (DCB)</b>：<i>是</i>或<i>否</i><br>"
+"默認為<i>是</i>，資料中心橋接通常都是需要的。<br>"
+"<b>自動創建虛擬區域網</b>：<i>是</i>或<i>否</i><br>"
+"若設為<i>是</i>，'fcoemon' 會自動創建虛擬區域網介面。</p>"
+
+#. Header of tab in tab widget
+#. Header of tab in tab widget
+#: src/include/fcoe-client/wizards.rb:110
+#: src/include/fcoe-client/wizards.rb:133
+msgid "&Interfaces"
+msgstr "介面(&I)"
+
+#. Header of tab in tab widget
+#. Header of tab in tab widget
+#: src/include/fcoe-client/wizards.rb:116
+#: src/include/fcoe-client/wizards.rb:139
+msgid "&Configuration"
+msgstr "配置(&C)"
+
+#. Header of tab in tab widget
+#: src/include/fcoe-client/wizards.rb:127
+msgid "&Services"
+msgstr "服務(&S)"
+
+#. Initialization dialog caption
+#: src/include/fcoe-client/wizards.rb:184
+msgid "Fibre Channel over Ethernet Configuration"
+msgstr "乙太網光纖通道 (FCoE)"
+
+#. TODO: rename icon to yast-fcoe (yast2-theme package)
+#: src/include/fcoe-client/wizards.rb:209
+msgid "Change FCoE Settings"
+msgstr "修改乙太網光纖通道 (FCoE) 設定"
+
+#. Initialization dialog caption
+#: src/include/fcoe-client/wizards.rb:315
+msgid "FcoeClient Configuration"
+msgstr "乙太網光纖通道 (FCoE) 客戶端配置"
+
+#. Initialization dialog contents
+#: src/include/fcoe-client/wizards.rb:317
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. don't check interactively for packages (bnc#367300) -> comment from iscsi-client
+#. skip it during initial and second stage or when create AY profile
+#: src/modules/FcoeClient.rb:413
+msgid ""
+"<p>To continue the FCoE configuration, the <b>%1</b> package must be "
+"installed.</p>"
+msgstr "<p>要繼續配置乙太網光纖通道 (FCoE)，必須安裝 <b>%1</b> 軟體包。</p>"
+
+#: src/modules/FcoeClient.rb:416
+msgid "<p>Install it now?</p>"
+msgstr "<p>現在安裝它嗎？</p>"
+
+#. start service lldpad first
+#: src/modules/FcoeClient.rb:868
+msgid "Cannot start service 'lldpad'"
+msgstr "無法啟動服務 'lldpad'"
+
+#: src/modules/FcoeClient.rb:877
+msgid "Cannot start service 'fcoe'"
+msgstr "無法啟動服務 'fcoe'"
+
+#. first start lldpad
+#: src/modules/FcoeClient.rb:897
+msgid "Cannot start lldpad systemd socket"
+msgstr "無法啟動 lldpad systemd 套接字"
+
+#: src/modules/FcoeClient.rb:910
+msgid "Cannot start lldpad service."
+msgstr "無法啟動 lldpad 服務。"
+
+#: src/modules/FcoeClient.rb:922
+msgid "Cannot start fcoemon systemd socket."
+msgstr "無法啟動 fcoemon systemd 套接字。"
+
+#: src/modules/FcoeClient.rb:935
+msgid "Cannot start fcoe service."
+msgstr "無法啟動 fcoe 服務。"
+
+#. warning if no valid configuration found
+#: src/modules/FcoeClient.rb:1101
+msgid ""
+"Cannot read config file for %1.\n"
+"You may edit the settings and recreate the FCoE\n"
+"VLAN interface to get a valid configuration."
+msgstr ""
+"無法讀取 %1 的配置檔案。\n"
+"您或許可以編輯設定並重新創建乙太網光纖通道 (FCoE) 虛擬區域網介面以獲得一個有"
+"效的配置。"
+
+#. FcoeClient read dialog caption
+#: src/modules/FcoeClient.rb:1466
+msgid "Initializing fcoe-client Configuration"
+msgstr "正在啟始化乙太網光纖通道 (FCoE) 客戶端配置"
+
+#. Progress stage 1/3
+#: src/modules/FcoeClient.rb:1481
+msgid "Check installed packages"
+msgstr "檢查已安裝軟體包"
+
+#. Progress stage 2/3
+#: src/modules/FcoeClient.rb:1483
+msgid "Check services"
+msgstr "檢查服務"
+
+#. Progress stage 3/3
+#: src/modules/FcoeClient.rb:1485
+msgid "Detect network cards"
+msgstr "檢測網卡"
+
+#. Progress stage 4/4
+#: src/modules/FcoeClient.rb:1487
+msgid "Read /etc/fcoe/config"
+msgstr "讀取 /etc/fcoe/config"
+
+#. Progress step 1/3
+#: src/modules/FcoeClient.rb:1491
+msgid "Checking for installed packages..."
+msgstr "正在檢查已安裝軟體包..."
+
+#. Progress step 2/3
+#: src/modules/FcoeClient.rb:1493
+msgid "Checking for services..."
+msgstr "正在檢查服務..."
+
+#. Progress step 3/3
+#: src/modules/FcoeClient.rb:1495
+msgid "Detecting network cards..."
+msgstr "正在檢測網卡..."
+
+#. Progress step 4/4
+#: src/modules/FcoeClient.rb:1497
+msgid "Reading /etc/fcoe/config"
+msgstr "正在讀取 /etc/fcoe/config"
+
+#. Progress finished
+#. Progress finished
+#: src/modules/FcoeClient.rb:1499 src/modules/FcoeClient.rb:1593
+msgid "Finished"
+msgstr "已完成"
+
+#. Error message
+#: src/modules/FcoeClient.rb:1525
+msgid "Starting of services failed."
+msgstr "啟動服務失敗。"
+
+#. Error message
+#: src/modules/FcoeClient.rb:1538
+msgid "Cannot detect devices."
+msgstr "無法檢測裝置。"
+
+#. Error message
+#: src/modules/FcoeClient.rb:1548
+msgid "Cannot read /etc/fcoe/config."
+msgstr "無法讀取 /etc/fcoe/config。"
+
+#. FcoeClient read dialog caption
+#: src/modules/FcoeClient.rb:1564
+msgid "Saving fcoe-client Configuration"
+msgstr "正在儲存乙太網光纖通道 (FCoE) 客戶端配置"
+
+#. Progress stage 1/2
+#: src/modules/FcoeClient.rb:1579
+msgid "Write the settings"
+msgstr "寫入設定"
+
+#. Progress stage 2/3
+#: src/modules/FcoeClient.rb:1581
+msgid "Restart FCoE service"
+msgstr "重啟乙太網光纖通道 (FCoE) 服務"
+
+#. Progress stage 3/3
+#: src/modules/FcoeClient.rb:1583
+msgid "Adjust start of services"
+msgstr "調整服務啟動狀態"
+
+#. Progress step 1/2
+#: src/modules/FcoeClient.rb:1587
+msgid "Writing the settings..."
+msgstr "正在寫入設定..."
+
+#. Progress step 2/3
+#: src/modules/FcoeClient.rb:1589
+msgid "Restarting FCoE service..."
+msgstr "正在重啟乙太網光纖通道 (FCoE) 服務..."
+
+#. Progress sstep 3/3
+#: src/modules/FcoeClient.rb:1591
+msgid "Adjusting start of services..."
+msgstr "正在調整服務啟動狀態..."
+
+#. Error message
+#: src/modules/FcoeClient.rb:1611
+msgid "Cannot write settings to /etc/fcoe/config."
+msgstr "無法將設定寫入 /etc/fcoe/config。"
+
+#: src/modules/FcoeClient.rb:1617
+msgid ""
+"Cannot write settings for FCoE interfaces.\n"
+"For details, see /var/log/YaST2/y2log."
+msgstr ""
+"無法寫入乙太網光纖通道 (FCoE) 介面設定。\n"
+"細節請參考 /var/log/YaST2/y2log。"
+
+#. Error message
+#: src/modules/FcoeClient.rb:1629
+msgid "Restarting of service fcoe failed."
+msgstr "重啟乙太網光纖通道 (FCoE) 服務失敗。"
+
+#. Error message
+#: src/modules/FcoeClient.rb:1636
+msgid "Cannot write /etc/sysconfig/network/ifcfg-files."
+msgstr "無法寫入 /etc/sysconfig/network/ifcfg-files。"
+
+#. Configuration summary text for autoyast
+#: src/modules/FcoeClient.rb:1693
+msgid "<b>General FCoE configuration</b>"
+msgstr "<b>乙太網光纖通道 (FCoE) 常規配置</b>"
+
+#. options from config file, not meant for translation
+#: src/modules/FcoeClient.rb:1707
+msgid "<b>Interfaces</b>"
+msgstr "<b>介面</b>"
+
+#. network card, e.g. eth0
+#: src/modules/FcoeClient.rb:1715
+msgid "<i>Netcard</i>:"
+msgstr "<i>網卡</i>："
+
+#. nothing to translate here (abbreviation for
+#. Fibre Channel over Ethernet Virtual LAN interface)
+#: src/modules/FcoeClient.rb:1725
+msgid "<b>Starting of services</b>"
+msgstr "<b>服務啟動</b>"
+
+#. starting of service "fcoe" at boot time is enabled or disabled
+#. starting of service "lldpad" at boot time is enabled or disabled
+#: src/modules/FcoeClient.rb:1733 src/modules/FcoeClient.rb:1743
+msgid "enabled"
+msgstr "已啟用"
+
+#: src/modules/FcoeClient.rb:1734 src/modules/FcoeClient.rb:1744
+msgid "disabled"
+msgstr "已禁用"
+
+#, fuzzy
+#~| msgid "Cannot read the configuration."
+#~ msgid "Cannot read /etc/fcoe/cfg-file for %1"
+#~ msgstr "無法讀取配置。"
+
+#, fuzzy
+#~| msgid "Command %1 failed"
+#~ msgid "Command: %1 failed"
+#~ msgstr "命令 %1 失敗"
+
+#, fuzzy
+#~| msgid "Deleting the request failed."
+#~ msgid "/etc/init.d/fcoe restart failed."
+#~ msgstr "未能刪除請求。"
+
+#, fuzzy
+#~| msgid "Restarting service..."
+#~ msgid "Removing FCoE VLAN device"
+#~ msgstr "正在重啟動服務..."
+
+#~ msgid "Configuration summary..."
+#~ msgstr "配置摘要..."
+

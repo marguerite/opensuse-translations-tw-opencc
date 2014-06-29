@@ -1,0 +1,3218 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005, 2012.
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: dns server\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:42+0200\n"
+"PO-Revision-Date: 2014-04-16 15:26+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. TRANSLATORS: command line error message, %1 is a missing required parameter
+#. TRANSLATORS: command line error message, %1 is a missing required parameter
+#: src/clients/dns-server.rb:58 src/include/dns-server/cmdline.rb:494
+msgid "Parameter %1 is required."
+msgstr "參數 %1 是必需的。"
+
+#. TRANSLATORS: command line error message, %1 is a parameter name
+#. TRANSLATORS: command line error message, %1 is a parameter name
+#: src/clients/dns-server.rb:71 src/include/dns-server/cmdline.rb:507
+msgid "Unknown value for parameter %1."
+msgstr "參數 %1 的值未知。"
+
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#: src/clients/dns-server.rb:86 src/clients/dns-server.rb:93
+#: src/clients/dns-server.rb:103 src/clients/dns-server.rb:120
+#: src/include/dns-server/cmdline.rb:521 src/include/dns-server/cmdline.rb:528
+#: src/include/dns-server/cmdline.rb:538 src/include/dns-server/cmdline.rb:555
+msgid "Start-Up Settings:"
+msgstr "啟動設定："
+
+#. TRANSLATORS: commandline error message
+#. TRANSLATORS: commandline error message
+#: src/clients/dns-server.rb:88 src/include/dns-server/cmdline.rb:523
+msgid "Only one parameter is allowed."
+msgstr "僅允許一個參數。"
+
+#. TRANSLATORS: commandline progress information
+#. TRANSLATORS: commandline progress information
+#: src/clients/dns-server.rb:95 src/include/dns-server/cmdline.rb:530
+msgid "Enabling DNS server in the boot process..."
+msgstr "正在引導過程中啟用 DNS 伺服器..."
+
+#. TRANSLATORS: commandline progress information
+#. TRANSLATORS: commandline progress information
+#: src/clients/dns-server.rb:105 src/include/dns-server/cmdline.rb:540
+msgid "Removing DNS server from the boot process..."
+msgstr "正在從引導過程中移除 DNS 伺服器..."
+
+#. TRANSLATORS: commandline DNS service status information
+#. TRANSLATORS: commandline DNS service status information
+#: src/clients/dns-server.rb:114 src/include/dns-server/cmdline.rb:549
+msgid "DNS server is enabled in the boot process."
+msgstr "已在引導程序中啟用了 DNS 伺服器。"
+
+#. TRANSLATORS: commandline DNS service status information
+#. TRANSLATORS: commandline DNS service status information
+#: src/clients/dns-server.rb:117 src/include/dns-server/cmdline.rb:552
+msgid "DNS server needs manual starting."
+msgstr "DNS 伺服器需要手動啟動。"
+
+#. TRANSLATORS: commandline section header,
+#. TRANSLATORS: commandline section header,
+#: src/clients/dns-server.rb:138 src/include/dns-server/cmdline.rb:573
+msgid "Forwarding:"
+msgstr "轉發："
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#: src/clients/dns-server.rb:140 src/include/dns-server/cmdline.rb:575
+msgid "Forwarder IP"
+msgstr "轉發物件 IP"
+
+#. TRANSLATORS: commandline error message
+#. Both Add and Remove defined => Error!
+#. TRANSLATORS: commandline error message
+#. Both Add and Remove defined => Error!
+#: src/clients/dns-server.rb:146 src/clients/dns-server.rb:439
+#: src/clients/dns-server.rb:574 src/clients/dns-server.rb:625
+#: src/clients/dns-server.rb:685 src/clients/dns-server.rb:822
+#: src/clients/dns-server.rb:882 src/include/dns-server/cmdline.rb:580
+#: src/include/dns-server/cmdline.rb:867 src/include/dns-server/cmdline.rb:999
+#: src/include/dns-server/cmdline.rb:1049
+#: src/include/dns-server/cmdline.rb:1108
+#: src/include/dns-server/cmdline.rb:1244
+#: src/include/dns-server/cmdline.rb:1303
+msgid "Only one action parameter is allowed."
+msgstr "僅允許一個動作參數。"
+
+#. TRANSLATORS: commandline table item
+#. TRANSLATORS: commandline table item
+#. TRANSLATORS: commandline table item
+#. TRANSLATORS: commandline table item
+#: src/clients/dns-server.rb:220 src/clients/dns-server.rb:230
+#: src/include/dns-server/cmdline.rb:651 src/include/dns-server/cmdline.rb:661
+msgid "Logging destination"
+msgstr "日誌記錄目標"
+
+#. TRANSLATORS: commandline table item
+#. TRANSLATORS: commandline table item
+#: src/clients/dns-server.rb:222 src/include/dns-server/cmdline.rb:653
+msgid "System log"
+msgstr "系統日誌"
+
+#. TRANSLATORS: commandline table item
+#. TRANSLATORS: commandline table item
+#: src/clients/dns-server.rb:232 src/include/dns-server/cmdline.rb:663
+msgid "File"
+msgstr "檔案"
+
+#. TRANSLATORS: commandline table item
+#. TRANSLATORS: commandline table item
+#: src/clients/dns-server.rb:240 src/include/dns-server/cmdline.rb:671
+msgid "Filename"
+msgstr "檔名"
+
+#. TRANSLATORS: commandline table item
+#. TRANSLATORS: commandline table item
+#: src/clients/dns-server.rb:248 src/include/dns-server/cmdline.rb:679
+msgid "Maximum size"
+msgstr "最大大小"
+
+#. TRANSLATORS: commandline table item
+#. TRANSLATORS: commandline table item
+#: src/clients/dns-server.rb:256 src/include/dns-server/cmdline.rb:687
+msgid "Maximum versions"
+msgstr "最大版本數"
+
+#. TRANSLATORS: commandline table item, do not translate named
+#. TRANSLATORS: commandline table item, do not translate named
+#: src/clients/dns-server.rb:269 src/include/dns-server/cmdline.rb:700
+msgid "Log named queries"
+msgstr "記錄命名查詢"
+
+#. TRANSLATORS: commandline table item
+#. TRANSLATORS: commandline table item
+#: src/clients/dns-server.rb:277 src/include/dns-server/cmdline.rb:708
+msgid "Log zone updates"
+msgstr "記錄區域更新"
+
+#. TRANSLATORS: commandline table item
+#. TRANSLATORS: commandline table item
+#: src/clients/dns-server.rb:285 src/include/dns-server/cmdline.rb:716
+msgid "Log zone transfers"
+msgstr "記錄區域傳輸"
+
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#: src/clients/dns-server.rb:292 src/include/dns-server/cmdline.rb:723
+msgid "Logging Settings:"
+msgstr "日誌記錄設定："
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#: src/clients/dns-server.rb:298 src/include/dns-server/cmdline.rb:729
+msgid "Setting"
+msgstr "設定"
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. Table header item - basic-options listing
+#. Table header item - ACL-options
+#. Table menu item - Records listing
+#: src/clients/dns-server.rb:300 src/clients/dns-server.rb:312
+#: src/clients/dns-server.rb:519 src/clients/dns-server.rb:734
+#: src/include/dns-server/cmdline.rb:731 src/include/dns-server/cmdline.rb:743
+#: src/include/dns-server/cmdline.rb:944
+#: src/include/dns-server/cmdline.rb:1157
+#: src/include/dns-server/dialog-main.rb:1220
+#: src/include/dns-server/dialog-main.rb:1813
+#: src/include/dns-server/dialog-masterzone.rb:1419
+msgid "Value"
+msgstr "值"
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#: src/clients/dns-server.rb:310 src/include/dns-server/cmdline.rb:741
+msgid "Logging Rule"
+msgstr "日誌記錄規則"
+
+#. TRANSLATORS: commandline section header,
+#. TRANSLATORS: commandline section header,
+#: src/clients/dns-server.rb:406 src/include/dns-server/cmdline.rb:835
+msgid "DNS Zones:"
+msgstr "DNS 區域："
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. Textentry - DNS adding zone - Name
+#: src/clients/dns-server.rb:411 src/clients/dns-server.rb:515
+#: src/include/dns-server/cmdline.rb:840 src/include/dns-server/cmdline.rb:940
+#: src/include/dns-server/dialog-main.rb:2047
+msgid "Name"
+msgstr "名稱"
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. Combobox - DNS adding zone - Type
+#. Table header item - DNS listing zones
+#. Table menu item - Records listing
+#: src/clients/dns-server.rb:413 src/clients/dns-server.rb:517
+#: src/include/dns-server/cmdline.rb:842 src/include/dns-server/cmdline.rb:942
+#: src/include/dns-server/dialog-main.rb:2053
+#: src/include/dns-server/dialog-main.rb:2095
+#: src/include/dns-server/dialog-masterzone.rb:1417
+msgid "Type"
+msgstr "類型"
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#: src/clients/dns-server.rb:415 src/include/dns-server/cmdline.rb:844
+msgid "Master Server"
+msgstr "主伺服器"
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. Dialog Label - DNS - expert settings
+#. Tree Menu Item - DNS - expert settings
+#: src/clients/dns-server.rb:417 src/include/dns-server/cmdline.rb:846
+#: src/include/dns-server/dialog-main.rb:490
+#: src/include/dns-server/dialog-main.rb:493
+msgid "Forwarders"
+msgstr "轉發物件"
+
+#. TRANSLATORS: table item - ACL type
+#. TRANSLATORS: table item - ACL type
+#: src/clients/dns-server.rb:500 src/include/dns-server/cmdline.rb:925
+msgid "Predefined"
+msgstr "預定義"
+
+#. TRANSLATORS: table item - ACL type
+#. TRANSLATORS: table item - ACL type
+#: src/clients/dns-server.rb:502 src/include/dns-server/cmdline.rb:927
+msgid "Custom"
+msgstr "自定義"
+
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#: src/clients/dns-server.rb:510 src/include/dns-server/cmdline.rb:935
+msgid "ACLs:"
+msgstr "訪問控制列表："
+
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#: src/clients/dns-server.rb:550 src/include/dns-server/cmdline.rb:975
+msgid "Zone Transport:"
+msgstr "區域傳輸："
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. Table header item - DNS listing zones
+#: src/clients/dns-server.rb:555 src/clients/dns-server.rb:607
+#: src/clients/dns-server.rb:665 src/clients/dns-server.rb:797
+#: src/clients/dns-server.rb:862 src/include/dns-server/cmdline.rb:980
+#: src/include/dns-server/cmdline.rb:1032
+#: src/include/dns-server/cmdline.rb:1089
+#: src/include/dns-server/cmdline.rb:1220
+#: src/include/dns-server/cmdline.rb:1284
+#: src/include/dns-server/dialog-main.rb:2093
+msgid "Zone"
+msgstr "區域"
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#: src/clients/dns-server.rb:557 src/include/dns-server/cmdline.rb:982
+msgid "Enabled ACL"
+msgstr "已啟用的訪問控制列表"
+
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#: src/clients/dns-server.rb:602 src/include/dns-server/cmdline.rb:1027
+msgid "Name Servers:"
+msgstr "名稱伺服器："
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#: src/clients/dns-server.rb:609 src/include/dns-server/cmdline.rb:1034
+msgid "Name Server"
+msgstr "名稱伺服器"
+
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#: src/clients/dns-server.rb:660 src/clients/dns-server.rb:792
+#: src/include/dns-server/cmdline.rb:1084
+#: src/include/dns-server/cmdline.rb:1215
+msgid "Mail Servers:"
+msgstr "郵件伺服器："
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. Table header item - listing mail servers
+#: src/clients/dns-server.rb:667 src/include/dns-server/cmdline.rb:1091
+#: src/include/dns-server/dialog-masterzone.rb:739
+msgid "Mail Server"
+msgstr "郵件伺服器"
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#. Table header item - listing mail servers
+#: src/clients/dns-server.rb:669 src/include/dns-server/cmdline.rb:1093
+#: src/include/dns-server/dialog-masterzone.rb:741
+msgid "Priority"
+msgstr "優先順序"
+
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#: src/clients/dns-server.rb:727 src/include/dns-server/cmdline.rb:1150
+msgid "Start of Authority (SOA):"
+msgstr "授權起始記錄 (SOA)："
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#: src/clients/dns-server.rb:732 src/include/dns-server/cmdline.rb:1155
+msgid "Key"
+msgstr "金鑰"
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#: src/clients/dns-server.rb:799 src/include/dns-server/cmdline.rb:1222
+msgid "Record Query"
+msgstr "記錄查詢"
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#: src/clients/dns-server.rb:801 src/include/dns-server/cmdline.rb:1224
+msgid "Record Type"
+msgstr "記錄類型"
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#: src/clients/dns-server.rb:803 src/include/dns-server/cmdline.rb:1226
+msgid "Record Value"
+msgstr "記錄值"
+
+#. TRANSLATORS: commandline section header
+#. TRANSLATORS: commandline section header
+#: src/clients/dns-server.rb:857 src/include/dns-server/cmdline.rb:1279
+msgid "Hostname Record:"
+msgstr "主機名記錄："
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#: src/clients/dns-server.rb:864 src/include/dns-server/cmdline.rb:1286
+msgid "Hostname"
+msgstr "主機名"
+
+#. TRANSLATORS: commandline table header item
+#. TRANSLATORS: commandline table header item
+#: src/clients/dns-server.rb:866 src/include/dns-server/cmdline.rb:1288
+msgid "IP"
+msgstr "IP"
+
+#. TRANSLATORS: commandline general name of the module in help
+#. TRANSLATORS: commandline general name of the module in help
+#: src/clients/dns-server.rb:904 src/include/dns-server/cmdline.rb:24
+msgid "DNS server configuration"
+msgstr "DNS 伺服器配置"
+
+#: src/clients/dns-server.rb:912 src/include/dns-server/cmdline.rb:32
+msgid "Start-up settings"
+msgstr "啟動設定"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:921 src/include/dns-server/cmdline.rb:38
+msgid "DNS forwarders"
+msgstr "DNS 轉發物件"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:933 src/include/dns-server/cmdline.rb:50
+msgid "Logging settings"
+msgstr "日誌記錄設定"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:946 src/include/dns-server/cmdline.rb:63
+msgid "DNS zones"
+msgstr "DNS 區域"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:962 src/include/dns-server/cmdline.rb:79
+msgid "Access control lists"
+msgstr "訪問控制列表"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:973 src/include/dns-server/cmdline.rb:87
+msgid "Zone transport rules"
+msgstr "區域傳輸規則"
+
+#. TRANSLATORS: commandline short help for command, base cmdline command
+#. TRANSLATORS: commandline short help for command, base cmdline command
+#: src/clients/dns-server.rb:988 src/include/dns-server/cmdline.rb:102
+msgid "Zone name servers"
+msgstr "區域名稱伺服器"
+
+#. TRANSLATORS: commandline short help for command, base cmdline command
+#. TRANSLATORS: commandline short help for command, base cmdline command
+#: src/clients/dns-server.rb:1005 src/include/dns-server/cmdline.rb:119
+msgid "Zone mail servers"
+msgstr "區域郵件伺服器"
+
+#. TRANSLATORS: commandline short help for command, base cmdline command
+#. TRANSLATORS: commandline short help for command, base cmdline command
+#: src/clients/dns-server.rb:1019 src/include/dns-server/cmdline.rb:133
+msgid "Start of authority (SOA)"
+msgstr "授權起始記錄 (SOA)"
+
+#. TRANSLATORS: commandline short help for command, base cmdline command
+#. TRANSLATORS: commandline short help for command, base cmdline command
+#: src/clients/dns-server.rb:1034 src/include/dns-server/cmdline.rb:148
+msgid "Zone resource records, such as A, CNAME, NS, MX, or PTR"
+msgstr "區域資源記錄，諸如 A、CNAME、NS、MX 或 PTR"
+
+#. TRANSLATORS: commandline short help for command, base cmdline command, A is record type
+#. TRANSLATORS: commandline short help for command, base cmdline command, A is record type
+#: src/clients/dns-server.rb:1052 src/include/dns-server/cmdline.rb:166
+msgid "Handles A and corresponding PTR record at once"
+msgstr "同時處理 A 與相應的 PTR 記錄"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1066 src/include/dns-server/cmdline.rb:180
+msgid "Show current settings"
+msgstr "顯示當前設定"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1072 src/include/dns-server/cmdline.rb:186
+msgid "Start DNS server in the boot process"
+msgstr "在引導過程中啟動 DNS 伺服器"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1078 src/include/dns-server/cmdline.rb:192
+msgid "Start DNS server manually"
+msgstr "手動啟動 DNS 伺服器"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1084 src/include/dns-server/cmdline.rb:198
+msgid "Add a new record"
+msgstr "添加新記錄"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1090 src/include/dns-server/cmdline.rb:204
+msgid "Remove a record"
+msgstr "移除記錄"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1097 src/include/dns-server/cmdline.rb:211
+msgid "IPv4 address"
+msgstr "IPv4 地址"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1104 src/include/dns-server/cmdline.rb:218
+msgid "Logging destination (syslog|file)"
+msgstr "日誌記錄目標 (syslog|file)"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1110 src/include/dns-server/cmdline.rb:224
+msgid "Set option"
+msgstr "設定選項"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1117 src/include/dns-server/cmdline.rb:231
+msgid "Filename for logging (full path)"
+msgstr "日誌記錄檔名 (完整路徑)"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1124 src/include/dns-server/cmdline.rb:238
+msgid "Maximum log size [0-9]+(KMG)*"
+msgstr "最大日誌大小 [0-9]+(KMG)*"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1131 src/include/dns-server/cmdline.rb:245
+msgid "Maximum number of versions for rotation, '0' means no rotation"
+msgstr "用於輪替的最大版本數，\"0\"表示不輪替"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1138 src/clients/dns-server.rb:1159
+#: src/include/dns-server/cmdline.rb:252 src/include/dns-server/cmdline.rb:273
+msgid "Zone name"
+msgstr "區域名稱"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1145 src/include/dns-server/cmdline.rb:259
+msgid "Zone type, master or slave"
+msgstr "區域類型 (主或從屬)"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1152 src/include/dns-server/cmdline.rb:266
+msgid "DNS zone master server"
+msgstr "DNS 區域主伺服器"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1166 src/include/dns-server/cmdline.rb:280
+msgid "Enable option"
+msgstr "啟用選項"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1173 src/include/dns-server/cmdline.rb:287
+msgid "Disable option"
+msgstr "禁用選項"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1180 src/include/dns-server/cmdline.rb:294
+msgid ""
+"Name server (in fully qualified format finished with a dot or relative name)"
+msgstr "名稱伺服器 (使用以一個點結尾的完全限定格式或相對名稱)"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1187 src/include/dns-server/cmdline.rb:301
+msgid ""
+"Mail server (in fully qualified format finished with a dot or relative name)"
+msgstr "郵件伺服器 (使用以一個點結尾的完全限定格式或相對名稱)"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1194 src/include/dns-server/cmdline.rb:308
+msgid "Mail server priority (number from 0 to 65535)"
+msgstr "郵件伺服器優先順序 (從 0 到 65535 的數字)"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1201 src/include/dns-server/cmdline.rb:315
+msgid "Serial number of zone update"
+msgstr "區域更新序列號"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1208 src/include/dns-server/cmdline.rb:322
+msgid "General time to live of records in zone"
+msgstr "區域中記錄的常規存活時間"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1215 src/include/dns-server/cmdline.rb:329
+msgid "An interval before the zone records should be refreshed"
+msgstr "重新整理區域記錄的週期"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1222 src/include/dns-server/cmdline.rb:336
+msgid "Interval between retries of failed refresh"
+msgstr "重新整理失敗後重試的週期"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1229 src/include/dns-server/cmdline.rb:343
+msgid "Interval after which zone records are no longer authoritative"
+msgstr "區域記錄不再權威的週期"
+
+#. TRANSLATORS: commandline short help for command, TTL is DNS-Specific (Time to Live), shouldn't be translated
+#. TRANSLATORS: commandline short help for command, TTL is DNS-Specific (Time to Live), shouldn't be translated
+#: src/clients/dns-server.rb:1236 src/include/dns-server/cmdline.rb:350
+msgid "Minimum TTL that should be exported with records in this zone"
+msgstr "應與此區域中的記錄一同匯出的最小 TTL"
+
+#. TRANSLATORS: commandline short help for command, Types are DNS-Specific, cannot be translated
+#. TRANSLATORS: commandline short help for command, Types are DNS-Specific, cannot be translated
+#: src/clients/dns-server.rb:1243 src/include/dns-server/cmdline.rb:357
+msgid "DNS resource record type, such as A, CNAME, NS, MX, or PTR"
+msgstr "DNS 資源記錄類型，諸如 A、CNAME、NS、MX 或 PTR"
+
+#. TRANSLATORS: commandline short help for command, DNS query is a question for value when we have a /key/ and type, ('A' record for 'example.org'? -> 192.0.34.166)
+#. TRANSLATORS: commandline short help for command, DNS query is a question for value when we have a /key/ and type, ('A' record for 'example.org'? -> 192.0.34.166)
+#: src/clients/dns-server.rb:1250 src/include/dns-server/cmdline.rb:364
+msgid "DNS query, such as example.org for A record"
+msgstr "DNS 查詢，諸如查詢 example.org 的 A 記錄"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1257 src/include/dns-server/cmdline.rb:371
+msgid ""
+"DNS resource record value, such as 192.0.34.166 for example.org's A record"
+msgstr "DNS 資源記錄值，諸如表示 example.org 的 A 記錄的 192.0.34.166"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1264 src/include/dns-server/cmdline.rb:378
+msgid "Hostname for the DNS record"
+msgstr "DNS 記錄主機名"
+
+#. TRANSLATORS: commandline short help for command, %1 are possible untranlatable parameters "(yes|no)"
+#. TRANSLATORS: commandline short help for command, %1 are possible untranlatable parameters "(yes|no)"
+#: src/clients/dns-server.rb:1272 src/include/dns-server/cmdline.rb:386
+msgid "Log named queries %1"
+msgstr "記錄命名查詢 %1"
+
+#. TRANSLATORS: commandline short help for command, %1 are possible untranlatable parameters "(yes|no)"
+#. TRANSLATORS: commandline short help for command, %1 are possible untranlatable parameters "(yes|no)"
+#: src/clients/dns-server.rb:1280 src/include/dns-server/cmdline.rb:394
+msgid "Log zone updates %1"
+msgstr "記錄區域更新 %1"
+
+#. TRANSLATORS: commandline short help for command, %1 are possible untranlatable parameters "(yes|no)"
+#. TRANSLATORS: commandline short help for command, %1 are possible untranlatable parameters "(yes|no)"
+#: src/clients/dns-server.rb:1288 src/include/dns-server/cmdline.rb:402
+msgid "Log zone transfers %1"
+msgstr "記錄區域傳輸 %1"
+
+#. TRANSLATORS: commandline short help for command
+#. TRANSLATORS: commandline short help for command
+#: src/clients/dns-server.rb:1295 src/include/dns-server/cmdline.rb:409
+msgid "Comma-separated list of zone forwarders"
+msgstr "逗號分隔的區域轉發物件列表"
+
+#. Dialog caption (before a colon)
+#. Dialog caption (before a colon)
+#. Dialog caption (before a colon)
+#: src/include/dns-server/dialog-installwizard.rb:29
+#: src/include/dns-server/dialog-installwizard.rb:77
+#: src/include/dns-server/dialog-installwizard.rb:136
+msgid "DNS Server Installation"
+msgstr "DNS 伺服器安裝"
+
+#. Dialog caption (after a colon)
+#: src/include/dns-server/dialog-installwizard.rb:31
+msgid "Forwarder Settings"
+msgstr "轉發物件設定"
+
+#. Dialog caption (after a colon)
+#. Dialog Label - DNS - expert settings
+#. Tree Menu Item - DNS - expert settings
+#: src/include/dns-server/dialog-installwizard.rb:79
+#: src/include/dns-server/dialog-main.rb:560
+#: src/include/dns-server/dialog-main.rb:563
+msgid "DNS Zones"
+msgstr "DNS 區域"
+
+#. Dialog caption (after a colon)
+#: src/include/dns-server/dialog-installwizard.rb:138
+msgid "Finish Wizard"
+msgstr "完成嚮導"
+
+#. Rich Text Item - Installation overview
+#: src/include/dns-server/dialog-installwizard.rb:152
+msgid "<li>Forwarders: %1</li>"
+msgstr "<li>轉發物件：%1</li>"
+
+#. Rich Text Item - Installation overview
+#: src/include/dns-server/dialog-installwizard.rb:155
+msgid "<li>Domains: %1</li>"
+msgstr "<li>域：%1</li>"
+
+#. check box
+#. TRANSLATORS: checkbox label, turning LDAP support on or off
+#. check box
+#: src/include/dns-server/dialog-installwizard.rb:175
+#: src/include/dns-server/dialog-main.rb:338
+#: src/include/dns-server/dialog-main.rb:597
+msgid "&LDAP Support Active"
+msgstr "啟用 &LDAP 支援"
+
+#. Label for Radiobuttons - DNS starting
+#: src/include/dns-server/dialog-installwizard.rb:188
+msgid "Start-up Behavior"
+msgstr "啟動行為"
+
+#. Radiobutton label - DNS starting
+#: src/include/dns-server/dialog-installwizard.rb:196
+msgid "O&n: Start Now and When Booting"
+msgstr "開啟(&N)：立即啟動與在引導時"
+
+#. Radiobutton label - DNS starting
+#: src/include/dns-server/dialog-installwizard.rb:199
+msgid "O&ff: Only Start Manually"
+msgstr "關閉(&F)：僅手動啟動"
+
+#. Push Button - start expert configuration
+#: src/include/dns-server/dialog-installwizard.rb:208
+msgid "DNS Server &Expert Configuration..."
+msgstr "DNS 伺服器專家配置(&E)..."
+
+#. Dialog label DNS - expert settings
+#: src/include/dns-server/dialog-main.rb:256
+msgid "DNS Server"
+msgstr "DNS 伺服器"
+
+#. radio button (starting DNS service - option 1)
+#: src/include/dns-server/dialog-main.rb:270
+msgid "When &Booting"
+msgstr "引導時(&B)"
+
+#. radio button (starting DNS service - option 2)
+#: src/include/dns-server/dialog-main.rb:274
+msgid "&Manually"
+msgstr "手動(&M)"
+
+#. part of help text, used to describe radiobuttons (matching starting DNS service but without "&")
+#: src/include/dns-server/dialog-main.rb:280
+msgid "When Booting"
+msgstr "引導時"
+
+#. part of help text, used to describe radiobuttons (matching starting DNS service but without "&")
+#: src/include/dns-server/dialog-main.rb:282
+msgid "Manually"
+msgstr "手動"
+
+#. label - service status, informative text
+#. service status - label
+#. service sttus - label
+#: src/include/dns-server/dialog-main.rb:290
+#: src/include/dns-server/dialog-main.rb:612
+#: src/include/dns-server/dialog-main.rb:651
+msgid "DNS server is running."
+msgstr "DNS 伺服器正在運行。"
+
+#. label - service status, informative text
+#. service sttus - label
+#: src/include/dns-server/dialog-main.rb:294
+#: src/include/dns-server/dialog-main.rb:653
+msgid "DNS server is not running."
+msgstr "DNS 伺服器沒有運行。"
+
+#. push button (DNS service handling)
+#. Pushbutton for starting the DNS server
+#: src/include/dns-server/dialog-main.rb:298
+#: src/include/dns-server/dialog-main.rb:620
+msgid "&Start DNS Server Now"
+msgstr "立即啟動 DNS 伺服器(&S)"
+
+#. push button (DNS service handling)
+#. Pushbutton for stopping the DNS server
+#: src/include/dns-server/dialog-main.rb:302
+#: src/include/dns-server/dialog-main.rb:626
+msgid "S&top DNS Server Now"
+msgstr "立即停止 DNS 伺服器(&T)"
+
+#. push button (DNS service handling)
+#: src/include/dns-server/dialog-main.rb:310
+msgid "Save Settings and Reload DNS Server &Now"
+msgstr "儲存設定並立即過載 DNS 伺服器(&N)"
+
+#. part of help text, used to describe pusbuttons (matching DNS service handling but without "&")
+#: src/include/dns-server/dialog-main.rb:316
+msgid "Start DNS Server Now"
+msgstr "立即啟動 DNS 伺服器"
+
+#. part of help text, used to describe pusbuttons (matching DNS service handling but without "&")
+#: src/include/dns-server/dialog-main.rb:318
+msgid "Stop DNS Server Now"
+msgstr "立即停止 DNS 伺服器"
+
+#. part of help text, used to describe pusbuttons (matching DNS service handling but without "&")
+#: src/include/dns-server/dialog-main.rb:320
+msgid "Save Settings and Reload DNS Server Now"
+msgstr "儲存設定並立即過載 DNS 伺服器"
+
+#. Dialog Label - DNS - expert settings
+#. Tree Menu Item - DNS - expert settings
+#. Frame label (DNS starting)
+#: src/include/dns-server/dialog-main.rb:472
+#: src/include/dns-server/dialog-main.rb:475
+#: src/include/dns-server/dialog-main.rb:580
+msgid "Start-Up"
+msgstr "啟動"
+
+#. Dialog Label - DNS - expert settings
+#. Tree Menu Item - DNS - expert settings
+#: src/include/dns-server/dialog-main.rb:503
+#: src/include/dns-server/dialog-main.rb:506
+msgid "Basic Options"
+msgstr "基本選項"
+
+#. Dialog Label - DNS - expert settings
+#: src/include/dns-server/dialog-main.rb:516
+#: src/include/dns-server/dialog-main.rb:518
+msgid "Logging"
+msgstr "日誌記錄"
+
+#. Dialog Label - DNS - expert settings
+#. Tree Menu Item - DNS - expert settings
+#. multi selection box
+#. multi selection box
+#: src/include/dns-server/dialog-main.rb:529
+#: src/include/dns-server/dialog-main.rb:532
+#: src/include/dns-server/dialog-masterzone.rb:163
+#: src/include/dns-server/dialog-masterzone.rb:2729
+msgid "ACLs"
+msgstr "訪問控制列表"
+
+#. Dialog Label - DNS - expert settings
+#. Tree Menu Item - DNS - expert settings
+#: src/include/dns-server/dialog-main.rb:546
+#: src/include/dns-server/dialog-main.rb:549
+msgid "TSIG Keys"
+msgstr "TSIG 金鑰"
+
+#. Radiobutton label
+#: src/include/dns-server/dialog-main.rb:586
+msgid "Now and When Booting"
+msgstr "立即與在引導時"
+
+#. Radiobutton label
+#: src/include/dns-server/dialog-main.rb:588
+msgid "Only Manually"
+msgstr "僅手動"
+
+#. Frame label (stoping starting DNS server)
+#: src/include/dns-server/dialog-main.rb:602
+msgid "Switch On and Off"
+msgstr "開啟與關閉"
+
+#. Current status
+#: src/include/dns-server/dialog-main.rb:608
+msgid "Current Status: "
+msgstr "當前狀態："
+
+#. yes-no popup
+#. if (! Popup::YesNo (
+#: src/include/dns-server/dialog-main.rb:719
+msgid ""
+"All your changes will be lost. Settings will\n"
+"be reread from new data storage.\n"
+"Continue?\n"
+msgstr ""
+"您的全部修改均將不復存在。\n"
+"將從新資料存儲重新讀取設定。\n"
+"繼續嗎？\n"
+
+#. T: ComboBox label
+#: src/include/dns-server/dialog-main.rb:751
+msgid "Local DNS Resolution &Policy"
+msgstr "本地 DNS 解析策略(&P)"
+
+#. T: ComboBox item
+#: src/include/dns-server/dialog-main.rb:754
+msgid "Merging forwarders is disabled"
+msgstr "已禁用了合併轉發物件"
+
+#. T: ComboBox item
+#: src/include/dns-server/dialog-main.rb:756
+msgid "Automatic merging"
+msgstr "自動合併"
+
+#. T: ComboBox item
+#: src/include/dns-server/dialog-main.rb:758
+msgid "Merging forwarders is enabled"
+msgstr "已啟用了合併轉發物件"
+
+#. T: ComboBox item
+#: src/include/dns-server/dialog-main.rb:760
+msgid "Custom configuration"
+msgstr "自定義配置"
+
+#: src/include/dns-server/dialog-main.rb:764
+msgid "Custom policy"
+msgstr "自定義策略"
+
+#. T: ComboBox label
+#: src/include/dns-server/dialog-main.rb:771
+msgid "Local DNS Resolution &Forwarder"
+msgstr "本地 DNS 解析轉發物件(&F)"
+
+#. T: ComboBox item
+#: src/include/dns-server/dialog-main.rb:774
+msgid "Using system name servers"
+msgstr "使用系統名稱伺服器"
+
+#. T: ComboBox item
+#: src/include/dns-server/dialog-main.rb:776
+msgid "This name server (bind)"
+msgstr "此名稱伺服器 (bind)"
+
+#. T: ComboBox item
+#: src/include/dns-server/dialog-main.rb:778
+msgid "Local dnsmasq server"
+msgstr "本地 dnsmasq 伺服器"
+
+#. Frame label for DNS-Forwarders adding IP
+#: src/include/dns-server/dialog-main.rb:788
+msgid "Add IP Address"
+msgstr "添加 IP 地址"
+
+#. Textentry for DNS-Forwarders adding IP
+#: src/include/dns-server/dialog-main.rb:797
+msgid "IPv4 or IPv6 A&ddress"
+msgstr "IPv4 或 IPv6 地址(&D)"
+
+#. Selectionbox for listing current DNS-Forwarders
+#. Selectionbox for listing current DNS-Forwarders
+#: src/include/dns-server/dialog-main.rb:826
+#: src/include/dns-server/dialog-main.rb:857
+msgid "Forwarder &List"
+msgstr "轉發物件列表(&L)"
+
+#. Store settings of a tab of a dialog
+#: src/include/dns-server/dialog-main.rb:1001
+msgid "Cannot set local forwarder to %{forwarder}"
+msgstr "無法將本地轉發物件設為 %{forwarder}"
+
+#. An error message, %1 is replaced with a variable IP
+#: src/include/dns-server/dialog-main.rb:1065
+msgid "Cannot find local equivalent for IP %1."
+msgstr "無法找到 IP %1 的本地等價。"
+
+#. TRANSLATORS: A warning message, %1 is replaced with the input IP, %2 with the output IP
+#: src/include/dns-server/dialog-main.rb:1071
+msgid ""
+"Forwarding DNS queries to itself would create an infinite loop.\n"
+"IP address %1 is currently used by this server, so it has\n"
+"been changed to its local equivalent %2."
+msgstr ""
+"轉發 DNS 查詢到它自身將創建一個無限迴圈。\n"
+"IP 地址 %1 目前正由此伺服器使用，因此它已被修改為它的本地等價 %2。"
+
+#. both IPv4 and IPv6
+#: src/include/dns-server/dialog-main.rb:1099
+msgid "Invalid IPv4 or IPv6 address."
+msgstr "無效的 IPv4 或 IPv6 地址。"
+
+#: src/include/dns-server/dialog-main.rb:1102
+msgid ""
+"A valid IPv6 address consists of letters a-f, numbers,\n"
+"and colons."
+msgstr "有效 IPv6 地址由字母 a 到 f，數字，與冒號組成。"
+
+#. error report
+#: src/include/dns-server/dialog-main.rb:1118
+msgid "The specified forwarder is already present."
+msgstr "指定轉發物件已存在。"
+
+#. Frame label for Basic-Options
+#: src/include/dns-server/dialog-main.rb:1147
+msgid "Add or Change Option"
+msgstr "添加或修改選項"
+
+#. Combobox for choosing the basic-option
+#: src/include/dns-server/dialog-main.rb:1161
+msgid "O&ption"
+msgstr "選項(&P)"
+
+#. Textentry for setting the basic-option value
+#. Textentry - adding ACL-optiopn - value
+#: src/include/dns-server/dialog-main.rb:1171
+#: src/include/dns-server/dialog-main.rb:1776
+msgid "&Value"
+msgstr "值(&V)"
+
+#. Pushbutton for changing the basic-option
+#. Pushbutton - Change Record
+#: src/include/dns-server/dialog-main.rb:1195
+#: src/include/dns-server/dialog-masterzone.rb:1387
+msgid "C&hange"
+msgstr "修改(&H)"
+
+#. Table label for basic-options listing
+#: src/include/dns-server/dialog-main.rb:1209
+msgid "Current Options"
+msgstr "當前選項"
+
+#. Table header item - basic-options listing
+#: src/include/dns-server/dialog-main.rb:1218
+msgid "Option"
+msgstr "選項"
+
+#. TRANSLATORS: Popup question
+#: src/include/dns-server/dialog-main.rb:1349
+msgid ""
+"Really set this\n"
+"option without any value?\n"
+msgstr "真的要設定此選項為沒有任何值嗎？\n"
+
+#. TRANSLATORS: Popup question. Please, do not translate 'yes' and 'no' strings. %1 is a name of the option, %2 is the value of the option.
+#: src/include/dns-server/dialog-main.rb:1361
+msgid ""
+"Option %1 can only have a yes or no value set.\n"
+"Really set it to %2?\n"
+msgstr ""
+"選項 %1 的值僅能設定為 yes 或 no。\n"
+"真的將它設為 %2 嗎？\n"
+
+#. TRANSLATORS: Popup question. %1 is a name of the option, %2 is the value of the option.
+#: src/include/dns-server/dialog-main.rb:1378
+msgid ""
+"Option %1 can only be a number.\n"
+"Really set it to %2?\n"
+msgstr ""
+"選項 %1 的值僅能是數字。\n"
+"真的將它設定為 %2 嗎？\n"
+
+#. TRANSLATORS: Popup question. %1 is the value of the option.
+#: src/include/dns-server/dialog-main.rb:1390
+msgid ""
+"Quotes are not used correctly in this option.\n"
+"Really set it to %1?\n"
+msgstr ""
+"此選項中引號用得不正確。\n"
+"真的將它設為 %1 嗎？\n"
+
+#. TRANSLATORS: Popup question. %1 is the value of the option.
+#: src/include/dns-server/dialog-main.rb:1402
+msgid ""
+"Brackets are not used correctly in this option.\n"
+"Really set it to %1?\n"
+msgstr ""
+"此選項中方括號用得不正確。\n"
+"真的將它設為 %1 嗎？\n"
+
+#. Popup question, %1 is the name of the option
+#: src/include/dns-server/dialog-main.rb:1446
+msgid ""
+"Option %1 should be set only once.\n"
+"Really add another one?\n"
+msgstr ""
+"選項 %1 僅能設定一次。\n"
+"真的要添加另一個嗎？\n"
+
+#. Table header - logging options
+#: src/include/dns-server/dialog-main.rb:1486
+msgid "Log Type"
+msgstr "日誌類型"
+
+#. Radiobutton - log type
+#: src/include/dns-server/dialog-main.rb:1498
+msgid "&System Log"
+msgstr "系統日誌(&S)"
+
+#. Radiobutton - log type
+#: src/include/dns-server/dialog-main.rb:1507
+msgid "&File"
+msgstr "檔案(&F)"
+
+#. IntField - max. log size
+#: src/include/dns-server/dialog-main.rb:1540
+msgid "Maximum &Size (MB)"
+msgstr "最大大小 (MB)(&S)"
+
+#. IntField - max. log age
+#: src/include/dns-server/dialog-main.rb:1551
+msgid "Maximum &Versions"
+msgstr "最大版本數(&V)"
+
+#. Frame label - additional-logging
+#: src/include/dns-server/dialog-main.rb:1569
+msgid "Additional Logging"
+msgstr "額外日誌記錄"
+
+#. Checkbox - additional-logging
+#: src/include/dns-server/dialog-main.rb:1574
+msgid "Log All DNS &Queries"
+msgstr "記錄全部 DNS 查詢(&Q)"
+
+#. Checkbox - additional-logging
+#: src/include/dns-server/dialog-main.rb:1577
+msgid "Log Zone &Updates"
+msgstr "記錄區域更新(&U)"
+
+#. Checkbox - additional-logging
+#: src/include/dns-server/dialog-main.rb:1580
+msgid "Log Zone &Transfers"
+msgstr "記錄區域傳輸(&T)"
+
+#. popup headline
+#: src/include/dns-server/dialog-main.rb:1737
+msgid "Select File for Log"
+msgstr "選擇日誌檔案"
+
+#. Frame label - adding ACL-optiopn
+#: src/include/dns-server/dialog-main.rb:1754
+msgid "Option Setup"
+msgstr "選項設定"
+
+#. Textentry - adding ACL-optiopn - name
+#: src/include/dns-server/dialog-main.rb:1767
+msgid "&Name"
+msgstr "名稱(&N)"
+
+#. Table header - ACL-options listing
+#: src/include/dns-server/dialog-main.rb:1803
+msgid "Current ACL List"
+msgstr "當前訪問控制列表列表"
+
+#. Table header item - ACL-options
+#: src/include/dns-server/dialog-main.rb:1811
+msgid "ACL"
+msgstr "訪問控制列表"
+
+#. A popup question, %1 is number of zones
+#: src/include/dns-server/dialog-main.rb:1931
+msgid ""
+"This ACL is used by %1 zones.\n"
+"Really remove it?\n"
+msgstr ""
+"此訪問控制列表正被 %1 區域使用。\n"
+"真的移除它嗎？\n"
+
+#. An error popup message
+#: src/include/dns-server/dialog-main.rb:2018
+msgid "The specified ACL entry already exists."
+msgstr "指定訪問控制列表項已存在。"
+
+#. frame label
+#: src/include/dns-server/dialog-main.rb:2035
+msgid "Add New Zone "
+msgstr "添加新區域"
+
+#. #-#-#-#-#  dns-server.rxgettext.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Combobox - DNS adding zone - Type Master
+#. TRANSLATORS: Table item - Server type
+#. #-#-#-#-#  dns-server.xgettext.pot  #-#-#-#-#
+#. type of zone to be used in summary
+#: src/include/dns-server/dialog-main.rb:2056
+#: src/include/dns-server/dialog-main.rb:2146 src/modules/DnsServer.pm:1582
+msgid "Master"
+msgstr "主"
+
+#. #-#-#-#-#  dns-server.rxgettext.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Combobox - DNS adding zone - Type Slave
+#. TRANSLATORS: Table item - Server type
+#. TRANSLATORS: Table item - Server type
+#. #-#-#-#-#  dns-server.xgettext.pot  #-#-#-#-#
+#. type of zone to be used in summary
+#: src/include/dns-server/dialog-main.rb:2058
+#: src/include/dns-server/dialog-main.rb:2149
+#: src/include/dns-server/dialog-main.rb:2152 src/modules/DnsServer.pm:1584
+msgid "Slave"
+msgstr "從屬"
+
+#. #-#-#-#-#  dns-server.rxgettext.pot (PACKAGE VERSION)  #-#-#-#-#
+#. Combobox - DNS adding zone - Type Slave
+#. TRANSLATORS: Table item - Server type
+#. #-#-#-#-#  dns-server.xgettext.pot  #-#-#-#-#
+#. type of zone to be used in summary
+#: src/include/dns-server/dialog-main.rb:2060
+#: src/include/dns-server/dialog-main.rb:2155 src/modules/DnsServer.pm:1590
+msgid "Forward"
+msgstr "轉發"
+
+#. Table header - DNS listing zones
+#: src/include/dns-server/dialog-main.rb:2083
+msgid "Configured DNS Zones"
+msgstr "已配置的 DNS 區域"
+
+#. error report
+#: src/include/dns-server/dialog-main.rb:2292
+msgid "A zone with the specified name is already configured."
+msgstr "指定名稱的區域已配置。"
+
+#. Yes-No popup
+#: src/include/dns-server/dialog-main.rb:2347
+msgid ""
+"All changes will be lost.\n"
+"Really leave the DNS server configuration without saving?"
+msgstr ""
+"全部修改均將不復存在。\n"
+"真的不儲存就離開 DNS 伺服器配置嗎？"
+
+#. check box
+#: src/include/dns-server/dialog-masterzone.rb:95
+msgid "A&llow Dynamic Updates"
+msgstr "允許動態更新(&L)"
+
+#. combo box
+#: src/include/dns-server/dialog-masterzone.rb:105
+msgid "TSIG &Key"
+msgstr "TSIG 金鑰(&K)"
+
+#. check box
+#. check box
+#: src/include/dns-server/dialog-masterzone.rb:158
+#: src/include/dns-server/dialog-masterzone.rb:2725
+msgid "Enable &Zone Transport"
+msgstr "啟用區域傳輸(&Z)"
+
+#. check box
+#: src/include/dns-server/dialog-masterzone.rb:178
+msgid "A&utomatically Generate Records From"
+msgstr "自動生成記錄自(&U)"
+
+#. multi selection box
+#: src/include/dns-server/dialog-masterzone.rb:187
+msgid "Zon&e"
+msgstr "區域(&E)"
+
+#. frame label
+#: src/include/dns-server/dialog-masterzone.rb:199
+msgid "Connected Reverse Zones"
+msgstr "連線的反向區域"
+
+#. popup message
+#: src/include/dns-server/dialog-masterzone.rb:465
+msgid ""
+"This function is not available during\n"
+"preparation for autoinstallation.\n"
+msgstr "此功能在自動安裝準備期間不可用。\n"
+
+#. error report
+#: src/include/dns-server/dialog-masterzone.rb:476
+msgid "No TSIG key is defined."
+msgstr "未定義 TSIG 金鑰。"
+
+#. Textentry - adding nameserver
+#: src/include/dns-server/dialog-masterzone.rb:506
+msgid "&Name Server to Add"
+msgstr "要添加的名稱伺服器(&N)"
+
+#. Selectionbox - listing current nameservers
+#. selection box label
+#: src/include/dns-server/dialog-masterzone.rb:529
+#: src/include/dns-server/dialog-masterzone.rb:555
+msgid "Na&me Server List"
+msgstr "名稱伺服器列表(&M)"
+
+#. error message
+#: src/include/dns-server/dialog-masterzone.rb:653
+msgid "The specified name server already exists."
+msgstr "指定名稱伺服器已存在。"
+
+#. Frame label - adding mail server
+#: src/include/dns-server/dialog-masterzone.rb:699
+msgid "Mail Server to Add"
+msgstr "要添加的郵件伺服器"
+
+#. Textentry - addind mail server - Name
+#: src/include/dns-server/dialog-masterzone.rb:709
+msgid "&Address"
+msgstr "地址(&A)"
+
+#. IntField - adding mail server - Priority
+#. IntField - zone settings - Record Value
+#. IntField - zone settings - Record Value
+#. int field
+#: src/include/dns-server/dialog-masterzone.rb:712
+#: src/include/dns-server/dialog-masterzone.rb:1237
+#: src/include/dns-server/dialog-masterzone.rb:1295
+#: src/include/dns-server/options.rb:435
+msgid "&Priority"
+msgstr "優先順序(&P)"
+
+#. Table label - listing mail servers
+#: src/include/dns-server/dialog-masterzone.rb:734
+msgid "Mail Relay List"
+msgstr "郵件中繼列表"
+
+#. A popup error message
+#: src/include/dns-server/dialog-masterzone.rb:871
+msgid "The specified value is not a valid hostname or IP address."
+msgstr "指定值不是一個有效的主機名或 IP 地址。"
+
+#. error message
+#: src/include/dns-server/dialog-masterzone.rb:893
+msgid "The specified mail server already exists."
+msgstr "指定郵件伺服器已存在。"
+
+#. DNS Settings time units (combobox item)
+#: src/include/dns-server/dialog-masterzone.rb:940
+msgid "Seconds"
+msgstr "秒"
+
+#. DNS Settings time units (combobox item)
+#: src/include/dns-server/dialog-masterzone.rb:942
+msgid "Minutes"
+msgstr "分鐘"
+
+#. DNS Settings time units (combobox item)
+#: src/include/dns-server/dialog-masterzone.rb:944
+msgid "Hours"
+msgstr "小時"
+
+#. DNS Settings time units (combobox item)
+#: src/include/dns-server/dialog-masterzone.rb:946
+msgid "Days"
+msgstr "天"
+
+#. DNS Settings time units (combobox item)
+#: src/include/dns-server/dialog-masterzone.rb:948
+msgid "Weeks"
+msgstr "周"
+
+#. Textentry - setting Serial for zone
+#: src/include/dns-server/dialog-masterzone.rb:960
+msgid "Seri&al"
+msgstr "序列號(&A)"
+
+#. Textentry - setting TTL for zone
+#: src/include/dns-server/dialog-masterzone.rb:969
+msgid "TT&L"
+msgstr "TT&L"
+
+#. Combobox - Setting DNS Retry - Unit
+#: src/include/dns-server/dialog-masterzone.rb:974
+#: src/include/dns-server/dialog-masterzone.rb:1011
+msgid "&Unit"
+msgstr "單元(&U)"
+
+#. IntField - Setting DNS Refresh - Value
+#: src/include/dns-server/dialog-masterzone.rb:988
+msgid "Re&fresh"
+msgstr "重新整理(&F)"
+
+#. Combobox - Setting DNS Refresh - Unit
+#: src/include/dns-server/dialog-masterzone.rb:996
+msgid "Un&it"
+msgstr "單元(&I)"
+
+#. IntField - Setting DNS Retry - Value
+#: src/include/dns-server/dialog-masterzone.rb:1005
+msgid "Retr&y"
+msgstr "重試(&Y)"
+
+#. IntField - Setting DNS Expiry - Value
+#: src/include/dns-server/dialog-masterzone.rb:1018
+msgid "Ex&piration"
+msgstr "失效期(&P)"
+
+#. Combobox - Setting DNS Expiry - Unit
+#: src/include/dns-server/dialog-masterzone.rb:1026
+msgid "U&nit"
+msgstr "單元(&N)"
+
+#. IntField - Setting DNS Minimum - Value
+#: src/include/dns-server/dialog-masterzone.rb:1035
+msgid "&Minimum"
+msgstr "最小值(&M)"
+
+#. Combobox - Setting DNS Minimum - Unit
+#: src/include/dns-server/dialog-masterzone.rb:1043
+msgid "Uni&t"
+msgstr "單元(&T)"
+
+#. Handle events in a tab of a dialog
+#: src/include/dns-server/dialog-masterzone.rb:1166
+msgid "The serial number of the zone must be specified."
+msgstr "必須指定該區域的序列號。"
+
+#. error report, %1 is an integer
+#: src/include/dns-server/dialog-masterzone.rb:1174
+msgid "The serial number must be no more than %1 digits long."
+msgstr "序列號的長度不能超過 %1 個數字。"
+
+#. TRANSLATORS: A popup with question, current setting could produce errors
+#: src/include/dns-server/dialog-masterzone.rb:1195
+msgid ""
+"The expiration time-out is higher than the time period\n"
+"of zone refreshes. The zone will not be reachable\n"
+"from slave name servers all the time.\n"
+"Continue?"
+msgstr ""
+"失效超時大於區域重新整理的時間段。\n"
+"從屬名稱伺服器將總是無法訪問該區域。\n"
+"繼續嗎？"
+
+#. Textentry - zone settings - Record Name
+#. Textentry - zone settings - Record Name
+#. Textentry - zone settings - Record Name
+#: src/include/dns-server/dialog-masterzone.rb:1219
+#: src/include/dns-server/dialog-masterzone.rb:1254
+#: src/include/dns-server/dialog-masterzone.rb:1311
+msgid "&Record Key"
+msgstr "記錄鍵(&R)"
+
+#. Combobox - zone settings - Record Type
+#. Combobox - zone settings - Record Type
+#. Combobox - zone settings - Record Type
+#: src/include/dns-server/dialog-masterzone.rb:1227
+#: src/include/dns-server/dialog-masterzone.rb:1286
+#: src/include/dns-server/dialog-masterzone.rb:1319
+msgid "T&ype"
+msgstr "類型(&Y)"
+
+#. Textentry - zone settings - Record Value
+#. IntField - zone settings - Record Value
+#. Textentry - zone settings - Record Value
+#: src/include/dns-server/dialog-masterzone.rb:1245
+#: src/include/dns-server/dialog-masterzone.rb:1292
+#: src/include/dns-server/dialog-masterzone.rb:1324
+msgid "Val&ue"
+msgstr "值(&U)"
+
+#. Textentry - zone settings - Record Name
+#: src/include/dns-server/dialog-masterzone.rb:1261
+msgid "&Service"
+msgstr "服務(&S)"
+
+#. Textentry - zone settings - Record Name
+#: src/include/dns-server/dialog-masterzone.rb:1275
+msgid "&Protocol"
+msgstr "協議(&P)"
+
+#. IntField - zone settings - Record Value
+#: src/include/dns-server/dialog-masterzone.rb:1297
+msgid "&Weight"
+msgstr "權重(&W)"
+
+#. IntField - zone settings - Record Value
+#: src/include/dns-server/dialog-masterzone.rb:1299
+msgid "&Port"
+msgstr "埠(&P)"
+
+#. reverse zone
+#: src/include/dns-server/dialog-masterzone.rb:1344
+msgid "A: IPv4 Domain Name Translation"
+msgstr "A：IPv4 域名轉譯"
+
+#: src/include/dns-server/dialog-masterzone.rb:1345
+msgid "AAAA: IPv6 Domain Name Translation"
+msgstr "AAAA：IPv6 域名轉譯"
+
+#: src/include/dns-server/dialog-masterzone.rb:1346
+msgid "CNAME: Alias for Domain Name"
+msgstr "CNAME：域名別名"
+
+#: src/include/dns-server/dialog-masterzone.rb:1347
+msgid "NS: Name Server"
+msgstr "NS：名稱伺服器"
+
+#: src/include/dns-server/dialog-masterzone.rb:1348
+msgid "MX: Mail Relay"
+msgstr "MX：郵件中繼"
+
+#: src/include/dns-server/dialog-masterzone.rb:1349
+msgid "PTR: Reverse Translation"
+msgstr "PTR：反向轉譯"
+
+#: src/include/dns-server/dialog-masterzone.rb:1350
+msgid "SRV: Services Record"
+msgstr "SRV：服務記錄"
+
+#: src/include/dns-server/dialog-masterzone.rb:1351
+msgid "TXT: Text Record"
+msgstr "TXT：文字記錄"
+
+#: src/include/dns-server/dialog-masterzone.rb:1352
+msgid "SPF: Sender Policy Framework"
+msgstr "SPF：發件人策略框架"
+
+#. Frame label - Adding/Changing IP/CNAME/Type... zone settings
+#: src/include/dns-server/dialog-masterzone.rb:1369
+msgid "Record Settings"
+msgstr "記錄設定"
+
+#. Table label - Records listing
+#: src/include/dns-server/dialog-masterzone.rb:1405
+msgid "Configured Resource Records"
+msgstr "已配置的資源記錄"
+
+#. Table menu item - Records listing
+#: src/include/dns-server/dialog-masterzone.rb:1415
+msgid "Record Key"
+msgstr "記錄鍵"
+
+#. Pop-up error message, %1 is replaced with an example
+#: src/include/dns-server/dialog-masterzone.rb:1845
+msgid ""
+"Invalid IPv6 reverse IP.\n"
+"\n"
+"IPv6 reverse records are supported either in the full form (%1)\n"
+"or in the relative form to the current zone."
+msgstr ""
+"無效的 IPv6 反向 IP。\n"
+"\n"
+"IPv6 反向記錄支援完整格式 (%1) 或當前區域的相對格式。"
+
+#. (hostname or FQ)
+#: src/include/dns-server/dialog-masterzone.rb:1883
+msgid "Invalid IPv6 address."
+msgstr "無效的 IPv6 地址。"
+
+#. TRANSLATORS: Error message
+#. %{type} replaced with record type (TXT or SPF)
+#: src/include/dns-server/dialog-masterzone.rb:1916
+msgid ""
+"Invalid %{type} record key. It should consist of printable US-ASCII "
+"characters excluding '='\n"
+"and must be at least one character long."
+msgstr ""
+"無效的 %{type} 記錄鍵。它應由可列印的除 '=' 外的 US-ASCII 字元組成並且必須至"
+"少有一個字元的長度。"
+
+#. TRANSLATORS: Error message
+#. %{type}    - replaced with record type (TXT or SPF)
+#. %{max}     - replaced with the maximal length
+#. %{current} - replaced with the current length of a new TXT record.
+#: src/include/dns-server/dialog-masterzone.rb:1934
+msgid ""
+"Maximal length of a %{type} record is %{max} characters.\n"
+"This message is %{current} characters long."
+msgstr ""
+"%{type} 記錄的最大長度是 %1 個字元。\n"
+"該訊息的長度為 %{current} 個字元。"
+
+#. TRANSLATORS: a popup message, CNAME (link) points to itself
+#: src/include/dns-server/dialog-masterzone.rb:1965
+msgid "CNAME cannot point to itself."
+msgstr "CNAME 無法指向自身。"
+
+#. When no dialog defined for this tab (software error)
+#: src/include/dns-server/dialog-masterzone.rb:2341
+msgid "An internal error has occurred."
+msgstr "發生了一個內部錯誤。"
+
+#. Dialog Caption - Expert Settings - Zone Editor
+#. dialog caption
+#: src/include/dns-server/dialog-masterzone.rb:2413
+#: src/include/dns-server/dialog-masterzone.rb:2734
+msgid "Zone Editor"
+msgstr "區域編輯器"
+
+#. Menu Item - Zone Editor - Tab
+#. Menu Item - Zone Editor - Tab
+#: src/include/dns-server/dialog-masterzone.rb:2434
+#: src/include/dns-server/dialog-masterzone.rb:2446
+msgid "&Basics"
+msgstr "基礎(&B)"
+
+#. Menu Item - Zone Editor - Tab
+#. Menu Item - Zone Editor - Tab
+#: src/include/dns-server/dialog-masterzone.rb:2436
+#: src/include/dns-server/dialog-masterzone.rb:2448
+msgid "NS Recor&ds"
+msgstr "NS 記錄(&D)"
+
+#. Menu Item - Zone Editor - Tab
+#. Menu Item - Zone Editor - Tab
+#: src/include/dns-server/dialog-masterzone.rb:2438
+#: src/include/dns-server/dialog-masterzone.rb:2452
+msgid "&SOA"
+msgstr "授權起始記錄(SOA)(&S)"
+
+#. Menu Item - Zone Editor - Tab
+#. Menu Item - Zone Editor - Tab
+#: src/include/dns-server/dialog-masterzone.rb:2440
+#: src/include/dns-server/dialog-masterzone.rb:2454
+msgid "R&ecords"
+msgstr "記錄(&E)"
+
+#. Menu Item - Zone Editor - Tab
+#: src/include/dns-server/dialog-masterzone.rb:2450
+msgid "M&X Records"
+msgstr "M&X 記錄"
+
+#. Label - connected with Textentry which shows current edited zone
+#. Label - connected with Textentry which shows current edited zone
+#. Label - connected with Textentry which shows current edited zone
+#: src/include/dns-server/dialog-masterzone.rb:2466
+#: src/include/dns-server/dialog-masterzone.rb:2703
+#: src/include/dns-server/dialog-masterzone.rb:2906
+msgid "Settings for Zone"
+msgstr "區域設定"
+
+#. );
+#. Menu Item - Zone Editor - Tab
+#: src/include/dns-server/dialog-masterzone.rb:2502
+msgid "Ad&vanced"
+msgstr "高階(&V)"
+
+#. at least one NS server must be set
+#: src/include/dns-server/dialog-masterzone.rb:2550
+msgid "At least one NS server must be set."
+msgstr "必須設定至少一個 NS 伺服器。"
+
+#. warning message, %1 is replaced with a zone name
+#.
+#. Automatically Generate Records From is a feature that makes YaST to generate
+#. DNS records manually from selected zone
+#: src/include/dns-server/dialog-masterzone.rb:2612
+msgid ""
+"Current zone records are automatically generated from %1 zone.\n"
+"To change records manually disable the Automatically Generate Records From "
+"feature."
+msgstr ""
+"當前區域記錄自動生成自 %1 區域。\n"
+"要手動修改記錄，請禁用自動生成記錄自這一功能。"
+
+#. TRANSLATORS: Text entry
+#: src/include/dns-server/dialog-masterzone.rb:2717
+msgid "&Master DNS Server IP"
+msgstr "主 DNS 伺服器 IP(&M)"
+
+#. TRANSLATORS: Popup error headline
+#: src/include/dns-server/dialog-masterzone.rb:2781
+msgid "Missing Master Server"
+msgstr "缺少主伺服器"
+
+#. TRANSLATORS: Popup error text
+#: src/include/dns-server/dialog-masterzone.rb:2783
+msgid ""
+"Every slave zone must have its master server IP defined.\n"
+"Configuration of a DNS server without a master server would fail.\n"
+"If you continue, the current zone will be removed."
+msgstr ""
+"每一從屬區域均必須定義其主伺服器 IP。\n"
+"一個沒有主伺服器的 DNS 伺服器配置會失敗。\n"
+"您若繼續，當前區域將被移除。"
+
+#. TRANSLATORS: A popup error message
+#: src/include/dns-server/dialog-masterzone.rb:2803
+msgid "No master DNS server defined."
+msgstr "未定義主 DNS 伺服器。"
+
+#. A popup error message
+#: src/include/dns-server/dialog-masterzone.rb:2815
+msgid "The specified master name server is not a valid IP address."
+msgstr "指定主名稱伺服器不是一個有效的 IP 地址。"
+
+#. Textentry - adding forwarder
+#: src/include/dns-server/dialog-masterzone.rb:2926
+msgid "New &Forwarder IP Address"
+msgstr "新轉發物件 IP 地址(&F)"
+
+#. Selectionbox - listing current forwarders
+#: src/include/dns-server/dialog-masterzone.rb:2951
+msgid "Current &Zone Forwarders"
+msgstr "當前區域轉發物件(&Z)"
+
+#. dialog caption
+#: src/include/dns-server/dialog-masterzone.rb:2973
+msgid "Forward Zone Editor"
+msgstr "轉發區域編輯器"
+
+#. TRANSLATORS: popup question
+#: src/include/dns-server/dialog-masterzone.rb:3009
+msgid ""
+"This forward zone has no forwarders defined, which means\n"
+"that all DNS queries for this zone are denied.\n"
+"Really deny these queries?"
+msgstr ""
+"此轉發區域未定義任何轉發物件，這意味著\n"
+"全部對此區域的 DNS 查詢都將被拒絕。\n"
+"真的拒絕這些查詢嗎？"
+
+#. yes-no popup
+#: src/include/dns-server/dialogs.rb:34
+msgid ""
+"All changes will be lost.\n"
+"Really exit?"
+msgstr ""
+"全部修改均將不復存在。\n"
+"真的退出嗎？"
+
+#. yes-no popup
+#: src/include/dns-server/dialogs.rb:70
+msgid "Saving the configuration failed. Change the settings?"
+msgstr "儲存配置失敗。修改設定嗎？"
+
+#. message popup
+#: src/include/dns-server/dialogs.rb:96
+msgid "A zone of this type cannot be edited with this tool."
+msgstr "此類型的區域不能用此工具編輯。"
+
+#. Read dialog help 1/2
+#: src/include/dns-server/helps.rb:20
+msgid ""
+"<p><b><big>Initializing DNS Server Configuration</big></b><br>\n"
+"Please wait...<br></p>"
+msgstr ""
+"<p><b><big>正在啟始化 DNS 伺服器配置</big></b><br>\n"
+"請稍候...<br></p>"
+
+#. Read dialog help 2/2
+#: src/include/dns-server/helps.rb:24
+msgid ""
+"<p><b><big>Aborting Initialization</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>"
+msgstr ""
+"<p><b><big>中止啟始化</big></b><br>\n"
+"現在按<b>中止</b>可安全地中止配置工具。</p>"
+
+#. Write dialog help 1/2
+#: src/include/dns-server/helps.rb:28
+msgid ""
+"<p><b><big>Saving DNS Server Configuration</big></b><br>\n"
+"Please wait...<br></p>"
+msgstr ""
+"<p><b><big>正在儲存 DNS 伺服器配置</big></b><br>\n"
+"請稍候...<br></p>"
+
+#. Write dialog help 2/2
+#: src/include/dns-server/helps.rb:32
+msgid ""
+"<p><b><big>Aborting Saving</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.\n"
+"An additional dialog informs you whether it is safe to do so.</p>"
+msgstr ""
+"<p><b><big>中止儲存</big></b><br>\n"
+"按<b>中止</b>可中止儲存過程。\n"
+"另一個對話方塊將告知您這樣做是否安全。</p>"
+
+#. main dialog
+#. help 1/4
+#: src/include/dns-server/helps.rb:39
+msgid ""
+"<p><b><big>Start DNS Server</big></b><br>\n"
+"To run the DNS server every time your computer is started, set\n"
+"<b>Start DNS Server</b>.</p>"
+msgstr ""
+"<p><b><big>啟動 DNS 伺服器</big></b><br>\n"
+"要在每次啟動計算機時運行 DNS 伺服器，請設定<b>啟動DNS 伺服器</b>。</p>"
+
+#. help 2/4
+#: src/include/dns-server/helps.rb:45
+msgid ""
+"<p><b><big>Chroot Jail</big></b><br>\n"
+"To run the DNS server in chroot jail, set\n"
+"<b>Run DNS Server in Chroot Jail</b>. Starting any daemon in a chroot jail\n"
+"is more secure and strongly recommended.</p>"
+msgstr ""
+"<p><b><big>Chroot 囚牢</big></b><br>\n"
+"要在 chroot 囚牢中運行 DNS 伺服器，請設定<b>在 Chroot 囚牢中運行 DNS 伺服器</"
+"b>。\n"
+"在 chroot 囚牢中啟動任何守護程序都會更安全，強烈推薦。</p>"
+
+#. help 3/4
+#: src/include/dns-server/helps.rb:52
+msgid ""
+"<p><b><big>Editing DNS Zones</big></b><br>\n"
+"To edit settings of a DNS zone, choose the appropriate\n"
+"entry of the table and click <B>Edit</B>.\n"
+"To add a new DNS zone, use <B>Add</B>. To remove\n"
+"a configured DNS zone, select it and click <B>Delete</B>.</P>"
+msgstr ""
+"<p><b><big>編輯 DNS 區域</big></b><br>\n"
+"要編輯 DNS 區域設定，請在表中選擇適宜的項並點選<B>編輯</B>。\n"
+"要添加新 DNS 區域，請使用<B>添加</B>。\n"
+"要移除已配置的 DNS 區域，請選擇此區域並點選<B>刪除</B>。</P>"
+
+#. help 4/4
+#: src/include/dns-server/helps.rb:60
+msgid ""
+"<p><b><big>Advanced Functions</big></b><br>\n"
+"To edit global options,\n"
+"adjust firewall settings,\n"
+"manage the TSIG keys for dynamic updates of the zones,\n"
+"or display the log of the DNS server,\n"
+"use <b>Advanced</b>.</p>"
+msgstr ""
+"<p><b><big>高階功能</big></b><br>\n"
+"要編輯全局選項、調整防火牆設定、管理用於區域動態更新的 TSIG 金鑰，\n"
+"或顯示 DNS 伺服器日誌，請使用<b>高階</b>。</p>"
+
+#. zone dialog
+#. help 1/5
+#: src/include/dns-server/helps.rb:70
+msgid ""
+"<p><b><big>Zone Name</big></b><br>\n"
+"Enter the name of the zone (domain) in <b>Zone Name</b>.</p>"
+msgstr ""
+"<p><b><big>區域名稱</big></b><br>\n"
+"請在<b>區域名稱</b>中輸入區域(域)名稱。</p>"
+
+#. help 2/5, alt. 1
+#: src/include/dns-server/helps.rb:74
+msgid ""
+"<p><b><big>Dynamic DNS Zone Updates</big></b><br>\n"
+"The zone can be updated automatically, usually because of dynamically\n"
+"assigned IP addresses by DHCP server. To allow DDNS updates, set\n"
+"<b>Allow Dynamic Updates</b> and the <b>TSIG Key</b>\n"
+"to use for authentication. The key must be the same for\n"
+"both DHCP and DNS servers.</p>"
+msgstr ""
+"<p><b><big>動態 DNS 區域更新</big></b><br>\n"
+"區域可以自動更新，通常是因為 DHCP 伺服器動態地指派了 IP 地址。\n"
+"要允許 DDNS 更新，請設定<b>允許動態更新</b>與用於認證的 <b>TSIG 金鑰</b>。\n"
+"用於 DHCP 與 DNS 伺服器的金鑰必須相同。</p>"
+
+#. help 3/5, only for alt. 1
+#: src/include/dns-server/helps.rb:83
+msgid ""
+"<p><b><big>Editing a DNS Zone</big></b><br>\n"
+"To edit the zone settings, choose the appropriate\n"
+"entry of the table then click <b>Edit</b>.</p>"
+msgstr ""
+"<p><b><big>編輯 DNS 區域</big></b><br>\n"
+"要編輯區域設定，請在表中選擇適宜的項然後點選<b>編輯</b>。</p>"
+
+#. help 4/5, only for alt. 1
+#: src/include/dns-server/helps.rb:89
+msgid ""
+"<p>To add a new record to the zone, click <b>Add</b>. To remove\n"
+"a record, select it and click <b>Delete</b>.</p>"
+msgstr ""
+"<p>要向區域添加一條新記錄，請點選<b>添加</b>。\n"
+"要移除某記錄，請選擇它並點選<b>刪除</b>。</p>"
+
+#. help 5/5, only for alt. 1
+#: src/include/dns-server/helps.rb:93
+msgid ""
+"<p><b><big>SOA Record</big></b><br>\n"
+"To edit the SOA (Start of Authority) record of the zone, click\n"
+"<b>Edit SOA</b>.</p>"
+msgstr ""
+"<p><b><big>授權起始記錄 (SOA)</big></b><br>\n"
+"要編輯區域的 SOA (起始授權機構)記錄，請點選<b>編輯 SOA</b>。</p>"
+
+#. help 2/5 alt. 2
+#: src/include/dns-server/helps.rb:99
+msgid ""
+"<p><b><big>Master Servers</big></b><br>\n"
+"Set the IP addresses of the master name servers for this zone. Use <b>Add</"
+"b>\n"
+"to add a new master name server. Select an existing one then click "
+"<b>Delete</b>\n"
+"to remove an existing one.</p>"
+msgstr ""
+"<p><b><big>主伺服器</big></b><br>\n"
+"設定此區域的主名稱伺服器的 IP 地址。\n"
+"使用<b>添加</b>添加新的主名稱伺服器。\n"
+"選擇一個已有主名稱伺服器並點選<b>刪除</b>\n"
+"可移除一個已有主名稱伺服器。</p>"
+
+#. help 1/2
+#: src/include/dns-server/helps.rb:106
+msgid ""
+"<p><b><big>Zone Type</big></b><br>\n"
+"To make this name server the primary source of the data of the zone,\n"
+"select <b>Master</b>. To make it the secondary name server, select <b>Slave</"
+"b>\n"
+"or <b>Stub</b>, so the data of the zone will be mirrored from the master\n"
+"server.</p>"
+msgstr ""
+"<p><b><big>區域類型</big></b><br>\n"
+"要使此名稱伺服器成為區域的主要資料來源，請選擇<b>主</b>。\n"
+"要使它成為二級名稱伺服器，請選擇<b>從屬</b>或<b>存根</b>，\n"
+"那樣該區域的資料將從主伺服器映象而來。</p>"
+
+#. help 2/2
+#: src/include/dns-server/helps.rb:114
+msgid ""
+"<p><b><big>Zone Direction</big></b><br>\n"
+"DNS is used both for translating from domain names to IP addresses and "
+"back.\n"
+"Select if this zone will be used to translate from domain names to IP\n"
+"addresses (<b>Forward</b>) or from IP addresses to domain names\n"
+"(<b>Reverse</b>).</p>\n"
+msgstr ""
+"<p><b><big>區域方向</big></b><br>\n"
+"DNS 用於將域名轉譯為 IP 地址以及將 IP 地址轉譯為域名。\n"
+"選擇此區域將用於將域名轉譯為 IP 地址 (<b>轉發</b>) 還是將 IP 地址轉譯為域名 "
+"(<b>反向</b>)。</p>\n"
+
+#. firewall dialog
+#. help text 1/2
+#: src/include/dns-server/helps.rb:123
+msgid ""
+"<p><b><big>Interface Classes</big></b><br>\n"
+"Select which interface classes should have access to the DNS server. The\n"
+"interface classes are defined in the firewall configuration component.</p>\n"
+msgstr ""
+"<p><b><big>介面類</big></b><br>\n"
+"選擇哪些介面類應可訪問 DNS 伺服器。介面類定義在防火牆配置元件中。</p>\n"
+
+#. help text 2/2
+#: src/include/dns-server/helps.rb:129
+msgid ""
+"<p><b><big>Adapting Firewall Settings</big></b><br>\n"
+"To adapt the firewall settings so that the DNS server can be accessed\n"
+"via all network interfaces to which it listens, check\n"
+"<b>Adapt Firewall Settings</b>.</p>\n"
+msgstr ""
+"<p><b><big>調整防火牆設定</big></b><br>\n"
+"要調整防火牆設定，以便 DNS 伺服器可被全部其監聽的網路介面訪問，請勾選<b>調整"
+"防火牆設定</b>。</p>\n"
+
+#. soa dialog
+#. help text 1/9
+#. Zone Editor - Help for tab - Zone (SOA) 1/7
+#: src/include/dns-server/helps.rb:137 src/include/dns-server/helps.rb:386
+msgid ""
+"<p><b><big>SOA Record Configuration</big></b><br>\n"
+"Set the entries of the SOA record.</p>"
+msgstr ""
+"<p><b><big>SOA 記錄配置</big></b><br>\n"
+"設定 SOA 記錄的項。</p>"
+
+#. help text 2/9 - TTL
+#: src/include/dns-server/helps.rb:141
+msgid ""
+"<p><b>$TTL</b> specifies the time to live for all records in the\n"
+"zone that do not have an explicit TTL.</p>"
+msgstr "<p><b>$TTL</b> 指定了區域中全部沒有顯式 TTL 的記錄的存活時間。</p>"
+
+#. help text 3/9 - Primary source
+#: src/include/dns-server/helps.rb:145
+msgid ""
+"<p><b>Primary Source</b> must contain the fully qualified domain name\n"
+"of the primary name server.</p>"
+msgstr "<p><b>主要資料來源</b>必須包含主名稱伺服器的完全限定域名。</p>"
+
+#. help text 4/9 - Administrator's mail
+#: src/include/dns-server/helps.rb:149
+msgid ""
+"<p><b>Administrator's Mail</b> must contain the e-mail address of\n"
+"the administrator responsible for the zone.</p>\n"
+msgstr ""
+"<p><b>管理員郵件地址</b>必須包含負責該區域的管理員的電子郵件地址。</p>\n"
+
+#. help text 5/9 - Serial
+#: src/include/dns-server/helps.rb:153
+msgid ""
+"<p><b>Serial</b> number is used for determining if the zone has changed on\n"
+"the master servers (so that slave servers do not always need to synchronize "
+"the\n"
+"entire zone).</p>\n"
+msgstr ""
+"<p><b>序列號</b>用於確定該區域在主伺服器上是否有所修改\n"
+"(因此從屬伺服器不必總是需要同步整個區域)。</p>\n"
+
+#. help text 6/9 - Refresh
+#. Zone Editor - Help for tab - Zone (SOA) 4/7
+#: src/include/dns-server/helps.rb:159 src/include/dns-server/helps.rb:401
+msgid ""
+"<p><b>Refresh</b> sets how often the zone should be synchronized from\n"
+"master name server to slave name servers.</p>"
+msgstr ""
+"<p><b>重新整理</b>設定了該區域在主名稱伺服器與從屬名稱伺服器之間同步的頻率。</p>"
+
+#. help text 7/9 - Retry
+#. Zone Editor - Help for tab - Zone (SOA) 5/7
+#: src/include/dns-server/helps.rb:163 src/include/dns-server/helps.rb:405
+msgid ""
+"<p><b>Retry</b> sets how often slave servers try to synchronize\n"
+"the zone from the master server if synchronization fails.</p>"
+msgstr ""
+"<p><b>重試</b>設定了若同步失敗從屬伺服器嘗試從主伺服器同步該區域的頻率。</p>"
+
+#. help text 8/9 - Expiry
+#: src/include/dns-server/helps.rb:167
+msgid ""
+"<p><b>Expiry</b> means the period after which the zone expires on slave\n"
+"servers and slave servers stop answering replies until it is synchronized.\n"
+"</p>"
+msgstr ""
+"<p><b>失效</b>是指該區域在從屬伺服器上失效的時間，\n"
+"超過該時間後，從屬伺服器將停止對該區域的應答，直到被同步為止。\n"
+"</p>"
+
+#. help text 9/9 - Minimum
+#. Zone Editor - Help for tab - Zone (SOA) 7/7
+#: src/include/dns-server/helps.rb:173 src/include/dns-server/helps.rb:415
+msgid ""
+"<p><b>Minimum</b> sets for how long the slave servers should cache\n"
+"negative answers (name resolution failed).</p>"
+msgstr ""
+"<p><b>最小值</b>設定了從屬伺服器應快取否定應答 (名稱解析失敗) 的時間。</p>"
+
+#. ddns keys dialog
+#. help text 1/1
+#: src/include/dns-server/helps.rb:178
+msgid ""
+"<p><b><big>TSIG Key Management</big></b><br>\n"
+"Define TSIG keys used for dynamic zone updates.\n"
+"To add a new TSIG key, use the \n"
+"<b>File Name</b> text field or the <b>Browse</b> button then click <b>Add</"
+"b>.\n"
+"To delete an existing TSIG key, select it in the list and click <b>Delete</"
+"b>.\n"
+"</p>"
+msgstr ""
+"<p><b><big>TSIG 金鑰管理</big></b><br>\n"
+"定義了用於動態區域更新的 TSIG 金鑰。\n"
+"要添加新的 TSIG 金鑰，請使用\n"
+"<b>檔名</b>文字欄位或<b>瀏覽</b>按鈕然後點選<b>添加</b>。\n"
+"要刪除一個已有 TSIG 金鑰，請在列表中選擇它並點選<b>刪除</b>。\n"
+"</p>"
+
+#. Expert Mode Configuration - Start Up 1/3
+#: src/include/dns-server/helps.rb:187
+msgid ""
+"<p><b><big>Booting</big></b><br>\n"
+"To start the DNS server every time your computer is booted, set\n"
+"<b>On</b>. Otherwise set <b>Off</b>.</p> "
+msgstr ""
+"<p><b><big>引導</big></b><br>\n"
+"要在每次引導計算機時啟動 DNS 伺服器，請設為<b>開</b>。否則設為<b>關</b>。</"
+"p> "
+
+#. Expert Mode Configuration - Start Up 1/3
+#: src/include/dns-server/helps.rb:194
+msgid ""
+"<p><b><big>LDAP Support</big></b><br>\n"
+"To store the DNS zones in LDAP instead of native configuration files,\n"
+"set <b>LDAP Support Active</b>.</p>"
+msgstr ""
+"<p><b><big>LDAP 支援</big></b><br>\n"
+"要在 LDAP 而不是原生配置檔案中存儲 DNS 區域，\n"
+"請設定 <b>啟用 LDAP 支援</b>。</p>"
+
+#. Expert Mode Configuration - Start Up 3/3
+#: src/include/dns-server/helps.rb:201
+msgid ""
+"<p><b><big>Switch On or Off</big></b><br>\n"
+"To start or stop the DNS server immediately, use \n"
+"<b>Start DNS Server Now</b> or\n"
+"<b>Stop DNS Server Now</b>.</p>\n"
+msgstr ""
+"<p><b><big>開啟或關閉</big></b><br>\n"
+"要立即啟動或停止 DNS 伺服器，請使用\n"
+"<b>立即啟動 DNS 伺服器</b>或\n"
+"<b>立即停止 DNS 伺服器</b>。</p>\n"
+
+#. Expert Mode Configuration - Forwarders 1/3
+#: src/include/dns-server/helps.rb:208
+msgid ""
+"<p><b><big>Forwarders</big></b><br>\n"
+"Forwarders are DNS servers to which your DNS server should send queries\n"
+"it cannot answer.</p>\n"
+msgstr ""
+"<p><b><big>轉發物件</big></b><br>\n"
+"轉發物件是您的 DNS 伺服器應將其無法應答的查詢發送至的 DNS 伺服器。</p>\n"
+
+#. Expert Mode Configuration - Forwarders 2/3
+#. _("<p>To ask forwarders during name resolution and in case of fail do full
+#. DNS lookup, set <b>Forward First</b>. To ask forwarders only, set
+#. <b>Forwarders Only</b>. To do full DNS lookup always, do not check any
+#. of these check boxes.</p>
+#. ") +
+#. Expert Mode Configuration - Forwarders 3/3
+#: src/include/dns-server/helps.rb:221
+msgid ""
+"<p>To add a new forwarder, set its <b>IP Address</b> and click <b>Add</b>.\n"
+"To delete a configured forwarder, select it and click <b>Delete</b>.</p>"
+msgstr ""
+"<p>要添加新的轉發物件，請設定其 <b>IP 地址</b>並點選<b>添加</b>。\n"
+"要刪除一個已配置的轉發物件，請選擇它並點選<b>刪除</b>。</p>"
+
+#. Expert Mode Configuration - Basic Options 1/2
+#: src/include/dns-server/helps.rb:225
+msgid ""
+"<p><b><big>Edit DNS Server Options</big></b><br>\n"
+"Use this dialog to edit options of the DNS server.</p>"
+msgstr ""
+"<p><b><big>編輯 DNS 伺服器選項</big></b><br>\n"
+"使用此對話方塊編輯 DNS 伺服器選項。</p>"
+
+#. Expert Mode Configuration - Basic Options 2/3
+#: src/include/dns-server/helps.rb:229
+msgid ""
+"<p>To add new options, select the <b>Option</b>,\n"
+"enter its <b>Value</b>, and click <b>Add</b>.</p>\n"
+"<p>To modify a configured option, select it in the table,\n"
+"change the <b>Value</b>, and click <b>Change</b>.</p>\n"
+msgstr ""
+"<p>要添加新選項，請選擇<b>選項</b>，\n"
+"輸入選項的<b>值</b>，並點選<b>添加</b>。</p>\n"
+"<p>要修改已配置的選項，請在表中選擇它，\n"
+"修改<b>值</b>，並點選<b>修改</b>。</p>\n"
+
+#. Expert Mode Configuration - Basic Options 3/3
+#: src/include/dns-server/helps.rb:236
+msgid "<p>To remove an option, select it and click <b>Delete</b>.</p>"
+msgstr "<p>要移除某選項，請選擇它並點選<b>刪除</b>。</p>"
+
+#. Expert Mode Configuration - Logging 1/3
+#: src/include/dns-server/helps.rb:238
+msgid ""
+"<p><b><big>Logging</big></b><br>\n"
+"Use this dialog to define various options of the DNS server logging.</p>"
+msgstr ""
+"<p><b><big>日誌記錄</big></b><br>\n"
+"使用此對話方塊定義 DNS 伺服器日誌記錄的各種選項。</p>"
+
+#. Expert Mode Configuration - Logging 2/3
+#: src/include/dns-server/helps.rb:242
+msgid ""
+"<p>\n"
+"Select <b>Log to System Log</b> to save DNS server log messages to the "
+"system log. \n"
+"To save the DNS server log messages to a separate file, select \n"
+"<b>Log to File</b> and set the <b>Filename</b> to which to save the log "
+"and \n"
+"the <b>Maximum Size</b> of the log file.\n"
+"The DNS server automatically rotates the log files. Use <b>Maximum Versions</"
+"b>\n"
+"to specify how many log files should be saved.</p>\n"
+msgstr ""
+"<p>\n"
+"選擇<b>記錄到系統日誌</b>可將 DNS 伺服器日誌訊息儲存至系統日誌。\n"
+"要將 DNS 伺服器日誌訊息儲存至一個獨立檔案，請選擇\n"
+"<b>記錄到檔案</b>並設定儲存日誌的<b>檔名</b>與日誌的<b>最大大小</b>。\n"
+"DNS 伺服器將自動輪替日誌檔案。使用<b>最大版本數</b>可指定應儲存多少個日誌文"
+"件。</p>\n"
+
+#. Expert Mode Configuration - Logging 3/3
+#: src/include/dns-server/helps.rb:252
+msgid ""
+"<p>In <b>Additional Logging</b>,\n"
+"set which actions should be logged. Common actions are always logged.\n"
+"<b>Log All DNS Queries</b> logs all queries from clients to the DNS server.\n"
+"<b>Log Zone Updates</b> logs when DNS has been updated.\n"
+"<b>Log Zone Transfers</b> logs when zone is completely transferred to the \n"
+"secondary\n"
+"name server.</p>\n"
+msgstr ""
+"<p>在<b>額外日誌記錄</b>中，設定應記錄哪些動作。常見動作總是會被記錄的。\n"
+"<b>記錄全部 DNS 查詢</b>記錄了客戶端發給 DNS 伺服器的全部查詢。\n"
+"<b>記錄區域更新</b>記錄了 DNS 的更新時間。\n"
+"<b>記錄區域傳送</b> 記錄了區域完整傳輸到二級名稱伺服器的時間。</p>\n"
+
+#. Expert Mode Configuration - ACLs 1/2
+#: src/include/dns-server/helps.rb:262
+msgid ""
+"<p><b><big>ACLs</big></b><br>\n"
+"In this dialog, define access control lists to control\n"
+"access to zones.</p>\n"
+msgstr ""
+"<p><b><big>訪問控制列表</big></b><br>\n"
+"在此對話方塊中，定義控制區域訪問的訪問控制列表。</p>\n"
+
+#. Expert Mode Configuration - ACLs 2/2
+#: src/include/dns-server/helps.rb:268
+msgid ""
+"<p>To add a new ACL entry, just enter the option's <b>Name</b>\n"
+"and <b>Value</b> then click <b>Add</b>.  To remove an \n"
+"ACL entry, select it and click <b>Delete</b>.</p>\n"
+msgstr ""
+"<p>要添加新的訪問控制列表項，僅需輸入選項的<b>名稱</b>與<b>值</b>然後點選<b>"
+"添加</b>。\n"
+"要移除一個訪問控制列表項，請選擇它並點選<b>刪除</b>。</p>\n"
+
+#. Expert Mode Configuration - Keys 1/3
+#: src/include/dns-server/helps.rb:274
+msgid ""
+"<p><b><big>TSIG Keys</big></b><br>\n"
+"TSIG keys are used for authentication when remotely\n"
+"changing the configuration of the DNS server. This is needed\n"
+"for the dynamic updates of DNS zones (DDNS).</p>\n"
+msgstr ""
+"<p><b><big>TSIG 金鑰</big></b><br>\n"
+"TSIG 金鑰用於在遠端修改 DNS 伺服器配置時認證。\n"
+"這時動態更新 DNS 區域 (DDNS) 所需的。</p>\n"
+
+#. Expert Mode Configuration - Keys 2/3
+#: src/include/dns-server/helps.rb:281
+msgid ""
+"<p>To add an already created key, set the <b>Filename</b>\n"
+"(or use the <b>Browse</b> button to select it) and click <b>Add</b>.\n"
+"To generate a new key, enter the <b>Filename</b> and the <b>Key ID</b>\n"
+"then click <b>Generate</b>. The new key will be generated and also added.</"
+"p>\n"
+msgstr ""
+"<p>要添加已創建的金鑰，請設定<b>檔名</b>\n"
+"(或使用<b>瀏覽</b>按鈕來選擇檔名)並點選<b>添加</b>。\n"
+"要生成新的金鑰，請輸入<b>檔名</b>與<b>金鑰 ID</b>\n"
+"然後點選<b>生成</b>。這樣，將生成並添加新的金鑰。</p>\n"
+
+#. Expert Mode Configuration - Keys 3/3
+#: src/include/dns-server/helps.rb:288
+msgid ""
+"<p>To remove an existing key, select it and\n"
+"click <b>Delete</b>.</p>"
+msgstr "<p>要移除一個已有金鑰，請選擇它並點選<b>刪除</b>。</p>"
+
+#. Expert Mode Configuration - Zones #1
+#: src/include/dns-server/helps.rb:294
+msgid ""
+"<p><b><big>DNS Zones</big></b><br>\n"
+"Use this dialog to manage the DNS zones.</p>\n"
+msgstr ""
+"<p><b><big>DNS 區域</big></b><br>\n"
+"使用此對話方塊管理 DNS 區域。</p>\n"
+
+#. Expert Mode Configuration - Zones #2
+#: src/include/dns-server/helps.rb:298
+msgid ""
+"<p>To add a new zone, enter its <b>Zone Name</b>, select the <b>Zone Type</"
+"b>,\n"
+"and click <b>Add</b>.</p>\n"
+msgstr ""
+"<p>要添加新的區域，請輸入它的<b>區域名稱</b>，選擇<b>區域類型</b>，並點選<b>"
+"添加</b>。</p>\n"
+
+#. Expert Mode Configuration - Zones #3
+#: src/include/dns-server/helps.rb:302
+msgid ""
+"<p>To add a new IPv4 reverse zone, enter a part of the reverse IPv4 address "
+"followed by\n"
+"<tt>.in-addr.arpa</tt> as its <b>Zone Name</b> (for example, zone name\n"
+"<tt>0.168.192.in-addr.arpa</tt> for network <tt>192.168.0.0/24</tt>), "
+"select\n"
+"the <b>Zone Type</b>, and click <b>Add</b>.</p>\n"
+msgstr ""
+"<p>要添加新 IPv4 反向區域，請輸入一部分反向 IPv4 地址，加上 <tt>.in-addr."
+"arpa</tt> 作為它的<b>區域名稱</b>\n"
+"(例如，網路 <tt>192.168.0.0/24</tt> 的區域名稱為 <tt>0.168.192.in-addr.arpa</"
+"tt>)，選擇<b>區域類型</t>，並點選 <b>添加</b>。</p>\n"
+
+#. Expert Mode Configuration - Zones #4
+#. %1, %2, %3, and %4 are replaced with examples
+#: src/include/dns-server/helps.rb:311
+msgid ""
+"<p>To add a new IPv6 reverse zone, enter a part of the reverse IPv6 address "
+"followed by\n"
+"<tt>%1</tt> as its <b>Zone Name</b>. Several formats for entering the zone "
+"name are\n"
+"supported: Standard form: <tt>%2</tt>;\n"
+"Forward form: <tt>%3</tt>;\n"
+"Forward form without netmask bits: <tt>%4</tt>\n"
+"(by default <tt>64</tt> netmask bits are used).</p>\n"
+msgstr ""
+"<p>要添加新 IPv6 反向區域，請輸入一部分反向 IPv6 地址，加上 <tt>%1</tt> 作為"
+"其<b>區域名稱</b>。\n"
+"支援以這些格式輸入區域名稱：\n"
+"標準格式：<tt>%2</tt>;\n"
+"轉發格式：<tt>%3</tt>;\n"
+"無網路掩碼位的轉發格式：<tt>%4</tt>\n"
+"(默認使用 <tt>64</tt> 位網路掩碼位)。</p>\n"
+
+#. Expert Mode Configuration - Zones #5
+#: src/include/dns-server/helps.rb:326
+msgid ""
+"<p>To modify settings for a zone, such as zone transport and name and\n"
+"mail servers, select it, and click <b>Edit</b>.\n"
+"To remove a configured zone, select it and click <b>Delete</b>.</p>\n"
+msgstr ""
+"<p>要修改一個區域的設定，如區域傳輸以及名稱與郵件伺服器，\n"
+"請選擇它，並點選<b>編輯</b>。\n"
+"要移除一個已配置的區域，請選擇它並點選<b>刪除</b>。</p>\n"
+
+#. Zone Editor - Help for tab - Basics  1/3
+#: src/include/dns-server/helps.rb:334
+msgid ""
+"<p><b><big>DDNS and Zone Transport</big></b><br>\n"
+"Use this dialog to change dynamic DNS settings of the zone and control "
+"access\n"
+"to the zone.</p>\n"
+msgstr ""
+"<p><b><big>DDNS 與區域傳輸</big></b><br>\n"
+"使用此對話方塊修改區域動態 DNS 設定並控制對該區域的訪問。</p>\n"
+
+#. Zone Editor - Help for tab - Basics  2/3
+#: src/include/dns-server/helps.rb:342
+msgid ""
+"<p>\n"
+"To allow dynamic updates of the zone, set <b>Allow Dynamic Updates</b>\n"
+"and select the <b>TSIG Key</b>. At least one TSIG key must be defined\n"
+"before the zone can be updated dynamically.</p>\n"
+msgstr ""
+"<p>\n"
+"要允許動態更新區域，請設定<b>允許動態更新</b>並選擇 <b>TSIG 金鑰</b>。\n"
+"必須定義至少一個 TSIG 金鑰才能動態更新區域。</p>\n"
+
+#. Zone Editor - Help for tab - Basics  3/3
+#: src/include/dns-server/helps.rb:350
+msgid ""
+"<p>\n"
+"To allow transports of the zone, set <b>Enable Zone Transport</b>\n"
+"and select the <b>ACLs</b> to check when a remote host\n"
+"attempts to transfer the zone. At least one ACL must be defined\n"
+"to allow zone transports.</p>"
+msgstr ""
+"<p>\n"
+"要允許區域傳輸，請設定<b>啟用區域傳輸</b>\n"
+"並選擇當遠端主機嘗試傳輸區域時需要檢查的\n"
+"<b>訪問控制列表</b>。\n"
+"必須定義至少一個訪問控制列表才能允許區域傳輸。</p>"
+
+#. Zone Editor - Help
+#: src/include/dns-server/helps.rb:358
+msgid ""
+"<p>\n"
+"Reverse zone records can be generated from another master zone.\n"
+"Select the <b>Automatically Generate Records From</b>\n"
+"check-box and choose the zone to generate the records from.</p>\n"
+msgstr ""
+"<p>\n"
+"反向區域記錄可以從另一個主區域生成。\n"
+"選擇 <b>自動生成記錄自</b>核取方塊並選擇要生成記錄自的區域。</p>\n"
+
+#. Zone Editor - Help
+#: src/include/dns-server/helps.rb:365
+msgid ""
+"<p>\n"
+"If this is not a reverse zone, you can see which zones are generated\n"
+"from the current on in the <b>Connected Reverse Zones</b> field.</p>"
+msgstr ""
+"<p>\n"
+"若這不是一個反向區域，您可以在<b>連線的反向區域</b>欄位中檢視當前區域生成的反"
+"向區域。</p>"
+
+#. Zone Editor - Help for tab - Name Servers
+#: src/include/dns-server/helps.rb:371
+msgid ""
+"<p><b><big>NS Records</big></b><br>\n"
+"To add a new name server, enter the name server address and click <b>Add</"
+"b>.\n"
+"To remove one of the listed name servers, select it and click\n"
+"<b>Delete</b>.</p>\n"
+msgstr ""
+"<p><b><big>NS 記錄</big></b><br>\n"
+"要添加新的名稱伺服器，請輸入該名稱伺服器的地址並點選<b>添加</b>。\n"
+"要移除一個列出的名稱伺服器，請選擇它並點選<b>刪除</b>。</p>\n"
+
+#. Zone Editor - Help for tab - Mail Servers
+#: src/include/dns-server/helps.rb:378
+msgid ""
+"<p><b><big>MX Records</big></b><br>\n"
+"To add a new mail server, enter the <b>Address</b> and <b>Priority</b>\n"
+"and click <b>Add</b>.\n"
+"To remove one of the listed mail servers, select it and click\n"
+"<b>Delete</b>.</p>\n"
+msgstr ""
+"<p><b><big>MX 記錄</big></b><br>\n"
+"要添加新郵件伺服器，請輸入<b>地址</b>與<b>優先順序</b>並點選<b>添加</b>。\n"
+"要移除一個列出的郵件伺服器，請選擇它並點選<b>刪除</b>。</p>\n"
+
+#. Zone Editor - Help for tab - Zone (SOA) 2/7
+#: src/include/dns-server/helps.rb:390
+msgid ""
+"<p><b>Serial</b> is the number used for determining if the zone has \n"
+"changed on\n"
+"the master servers (then slave servers do not always need to synchronize "
+"the\n"
+"entire zone).</p>\n"
+msgstr ""
+"<p><b>序列號</b>是用於確定該區域在主伺服器上是否有所修改的數字\n"
+"(因而從屬伺服器不必總是需要同步整個區域)。</p>\n"
+
+#. Zone Editor - Help for tab - Zone (SOA) 3/7
+#: src/include/dns-server/helps.rb:397
+msgid ""
+"<p><b>TTL</b> specifies the time to live for all records in the\n"
+"zone that do not have an explicit TTL.</p>"
+msgstr "<p><b>TTL</b> 指定了區域中全部沒有顯式 TTL 的記錄的存活時間。</p>"
+
+#. Zone Editor - Help for tab - Zone (SOA) 6/7
+#: src/include/dns-server/helps.rb:409
+msgid ""
+"<p><b>Expiration</b> means the period after which the zone expires on slave\n"
+"servers and slave servers stop answering replies until it is synchronized.\n"
+"</p>"
+msgstr ""
+"<p><b>失效期</b>是指區域在從屬伺服器上失效的時間，\n"
+"超過該時間後，從屬伺服器將停止對該區域的應答，直到被同步為止。\n"
+"</p>"
+
+#. Zone Editor - Help for tab - Records 1/7  or 1/5
+#: src/include/dns-server/helps.rb:419
+msgid ""
+"<p><b><big>Records</big></b><br>\n"
+"In this dialog, edit the resource records of the zone. To add new resource\n"
+"records, set the <b>Record Key</b>, <b>Type</b>, and <b>Value</b> then\n"
+"click <b>Add</b>.</p>"
+msgstr ""
+"<p><b><big>記錄</big></b><br>\n"
+"在此對話方塊中，編輯區域的資源記錄。\n"
+"要添加新的資源記錄，請設定<b>記錄鍵</b>、<b>類型</b>與<b>值</b>，\n"
+"然後點選<b>添加</b>。</p>"
+
+#. Zone Editor - Help for tab - Records 2/7 or 2/5
+#: src/include/dns-server/helps.rb:426
+msgid ""
+"<p>To change an existing record, select it, modify the desired entries,\n"
+"and click <b>Change</b>. To delete a record, select it and click\n"
+"<b>Delete</b>.</p>"
+msgstr ""
+"<p>要修改已有記錄，請選擇它，修改期望的項，並點選<b>修改</b>。\n"
+"要刪除一條記錄，請選擇它並點選<b>刪除</b>。</p>"
+
+#. Zone Editor - Help for tab - Records 3/7 or 3/5
+#: src/include/dns-server/helps.rb:432
+msgid ""
+"<p>\n"
+"Each type of record has its own syntax defined in the RFC.</p>\n"
+msgstr ""
+"<p>\n"
+"RFC 中定義了每種類型記錄的自有語法。</p>\n"
+
+#. Zone Editor - Help for tab - Records 4/7 (alt. 1)
+#: src/include/dns-server/helps.rb:436
+msgid ""
+"<p><b>A: Domain Name Translation</b>:\n"
+"<b>Record Key</b> is a hostname without domain or a fully qualified \n"
+"hostname followed by a dot.\n"
+" <b>Value</b> is an IP address.</p>"
+msgstr ""
+"<p><b>A：域名轉譯</b>：\n"
+"<b>記錄鍵</b>是沒有域的主機名或是完全限定主機名後跟一個點。\n"
+"<b>值</b>是一個 IP 地址。</p>"
+
+#. Zone Editor - Help for tab - Records 5/7 (alt. 1)
+#: src/include/dns-server/helps.rb:443
+msgid ""
+"<p><b>CNAME: Alias for Domain Name</b>:\n"
+"<b>Record Key</b> is a hostname relative to the current zone or a fully\n"
+"qualified hostname followed by a dot.\n"
+"<b>Value</b> is a hostname relative to the current zone or a fully\n"
+"qualified hostname followed by a dot. It must be represented by\n"
+"an A record.</p>\n"
+msgstr ""
+"<p><b>CNAME：域名別名</b>：\n"
+"</b>記錄鍵</b>是相對於當前區域的主機名或是完全限定主機名後跟一個點。\n"
+"<b>值</b>是相對於當前區域的主機名或是完全限定主機名後跟一個點。它必須用 A 記"
+"錄表示。</p>\n"
+
+#. Zone Editor - Help for tab - Records 6/7 (alt. 1)
+#. Zone Editor - Help for tab - Records 5/5 (alt. 2)
+#: src/include/dns-server/helps.rb:452 src/include/dns-server/helps.rb:479
+msgid ""
+"<p><b>NS: Name Server</b>:\n"
+"<b>Record Key</b> is a zone name relative to the current zone or an "
+"absolute\n"
+"domain name followed by a dot.\n"
+"<b>Value</b> is a hostname relative to the current zone or fully qualified\n"
+"hostname followed by a dot.  It must be represented by an A record.</p>\n"
+msgstr ""
+"<p><b>NS：名稱伺服器</b>：\n"
+"<b>記錄鍵</b>是相對於當前區域的區域名稱或是絕對域名後跟一個點。\n"
+"<b>值</b>是相對於當前區域的主機名或完全限定主機名後跟一個點。它必須用 A 記錄"
+"表示。</p>\n"
+
+#. Zone Editor - Help for tab - Records 7/7 (alt. 1)
+#: src/include/dns-server/helps.rb:460
+msgid ""
+"<p><b>MX: Mail Relay</b>:\n"
+"<b>Record Key</b> is a hostname or zone name relative to the current zone\n"
+"or an absolute hostname or zone name followed by a dot.\n"
+"<b>Value</b> is a hostname relative to the current zone or fully qualified\n"
+"hostname followed by a dot.  It must be represented by an A record.</p>\n"
+msgstr ""
+"<p><b>MX：郵件中繼</b>：\n"
+"<b>記錄鍵</b>是相對於當前區域的主機名或區域名稱或是絕對主機名或區域名稱後跟一"
+"個點。\n"
+"<b>值</b>是相對於當前區域的主機名或完全限定主機名後跟一個點。它必須用 A 記錄"
+"表示。</p>\n"
+
+#. Zone Editor - Help for tab - Records 4/5 (alt. 2)
+#: src/include/dns-server/helps.rb:468
+msgid ""
+"<p><b>PTR: Reverse Translation</b>:\n"
+"<b>Record Key</b> is a full reverse zone name (derived from the IP address)\n"
+"followed by a dot\n"
+"(such as <tt>1.0.168.192.in-addr.arpa.</tt> for IP address <tt>192.168.0.1</"
+"tt>)\n"
+" or a part of reverse zone name relative to the current zone\n"
+"(such as <tt>1</tt> for IP address <tt>192.168.0.1</tt> in zone\n"
+"<tt>0.168.192.in-addr.arpa.</tt>).\n"
+"<b>Value</b> is a fully qualified hostname followed by a dot.</p>\n"
+msgstr ""
+"<p><b>PTR：反向轉譯</b>：\n"
+"<b>記錄鍵</b>是完整反向區域名稱 (派生自 IP 地址) 後跟一個點\n"
+"(例如，IP 地址為 <tt>192.168.0.1</tt>，則記錄鍵為 </tt>1.0.168.192.in-addr."
+"arpa.<tt>)\n"
+"或者是相對於當前區域的反向區域名稱的一部分\n"
+"(例如，區域 <tt>0.168.192.in-addr.arpa.</tt> 中 IP 地址 <tt>192.168.0.1</tt> "
+"的記錄鍵為 <tt>1</tt>)。\n"
+"<b>值</b>是完全限定主機名後跟一個點。</p>\n"
+
+#. Final step of the installation wizard - 1/5
+#: src/include/dns-server/helps.rb:487
+msgid ""
+"<p><b><big>Finishing the Configuration</big></b></p>\n"
+"<p>Check the entered settings before finishing the configuration.</p> \n"
+msgstr ""
+"<p><b><big>完成配置</big></b></p>\n"
+"<p>完成配置之前請檢查輸入的設定。</p> \n"
+
+#. Final step of the installation wizard - 2/5
+#: src/include/dns-server/helps.rb:491
+msgid ""
+"<p>Select <b>Open Port in Firewall</b> to adapt the\n"
+"SuSEfirewall2 settings to allow all connections to your DNS server.</p>"
+msgstr ""
+"<p>選擇<b>開啟防火牆中的埠</b>以調整 SuSEfirewall2 設定以允許到您 DNS 服務"
+"器的全部連線。</p>"
+
+#. Final step of the installation wizard - 3/5
+#: src/include/dns-server/helps.rb:495
+msgid ""
+"<p>\n"
+"To start the DNS server every time your computer is booted, set the \n"
+"start-up behavior to <b>On</b>. Otherwise set it to <b>Off</b>.</p> \n"
+msgstr ""
+"<p>\n"
+"要在每次引導計算機時啟動 DNS 伺服器，請將啟動行為設為<b>開</b>。否則設為<b>關"
+"</b>。</p> \n"
+
+#. Final step of the installation wizard - 4/5
+#: src/include/dns-server/helps.rb:502
+msgid ""
+"<p>\n"
+"To store the DNS zones in LDAP instead of native configuration files,\n"
+"set <b>LDAP Support Active</b>.</p>"
+msgstr ""
+"<p>\n"
+"要在 LDAP 而不是原生配置檔案中存儲 DNS 區域，請設定 <b>啟用 LDAP 支援</b>。</"
+"p>"
+
+#. Final step of the installation wizard - 5/5
+#: src/include/dns-server/helps.rb:509
+msgid ""
+"<p>\n"
+"To enter the expert mode of the DNS server configuration, click\n"
+"<b>DNS Server Expert Configuration</b>.</p>"
+msgstr ""
+"<p>\n"
+"要進入 DNS 伺服器配置的專家方式，請點選 <b>DNS 伺服器專家配置</b>。</p>"
+
+#. slave zone help text 1/2
+#: src/include/dns-server/helps.rb:515
+msgid ""
+"<p><big><b>Slave DNS Zone</b></big><br>\n"
+"Each slave zone must have the master name server defined. Use\n"
+"<b>Master DNS Server IP</b> to define the master name server.</p>"
+msgstr ""
+"<p><big><b>從屬 DNS 區域</b></big><br>\n"
+"每一從屬區域均必須定義其主名稱伺服器。\n"
+"使用<b>主 DNS 伺服器 IP</b> 定義其主名稱伺服器。</p>"
+
+#. slave zone help text 2/2
+#: src/include/dns-server/helps.rb:521
+msgid ""
+"<p><big><b>Zone Transport</b></big><br>\n"
+"To allow transports of the zone, set <b>Enable Zone Transport</b>\n"
+"and select the <b>ACLs</b> to check when a remote host\n"
+"attempts to transfer the zone. At least one ACL must be defined\n"
+"to allow zone transports.</p>"
+msgstr ""
+"<p><big><b>區域傳輸</b></big><br>\n"
+"要允許區域傳輸，請設定<b>啟用區域傳輸</b>\n"
+"並選擇當遠端主機嘗試傳輸區域時需要檢查的\n"
+"<b>訪問控制列表</b>。必須至少定義一個訪問控制列表才能允許區域傳輸。</p>"
+
+#. forward zone help text 1/2
+#: src/include/dns-server/helps.rb:529
+msgid ""
+"<p><big><b>Forward DNS Zone</b></big><br>\n"
+"This type of DNS zone only forwards DNS queries to forwarders\n"
+"defined in it.</p>"
+msgstr ""
+"<p><big><b>轉發 DNS 區域</b></big><br>\n"
+"這類 DNS 區域僅向其中定義的轉發物件轉發 DNS 查詢。</p>"
+
+#. forward zone help text 2/2
+#: src/include/dns-server/helps.rb:535
+msgid ""
+"<p>If there are no forwarders defined, all DNS queries\n"
+"for the respective zone are denied, because there is no DNS\n"
+"server to which that query should be forwarded.</p>"
+msgstr ""
+"<p>若未定義轉發物件，則全部對相關區域的 DNS 查詢都將被拒絕，\n"
+"因為沒有查詢應被轉發給的 DNS 伺服器。</p>"
+
+#. %1 is usually an IP address
+#: src/include/dns-server/options.rb:159
+msgid "Unknown Record Type: %1"
+msgstr "未知記錄類型：%1"
+
+#. table entry, %1 is IP address
+#: src/include/dns-server/options.rb:180
+msgid "Host %1"
+msgstr "主機 %1"
+
+#. combo box item, A is more technical description
+#: src/include/dns-server/options.rb:188
+msgid "A -- Domain Name Translation"
+msgstr "A -- 域名轉譯"
+
+#. text entry
+#: src/include/dns-server/options.rb:201
+msgid "&IP Addresses"
+msgstr "&IP 地址"
+
+#. table entry, %1 is host name
+#: src/include/dns-server/options.rb:218
+msgid "Alias for %1"
+msgstr "%1 的別名"
+
+#. combo box item, CNAME is more technical description
+#: src/include/dns-server/options.rb:226
+msgid "CNAME -- Alias for Domain Name"
+msgstr "CNAME -- 域名別名"
+
+#. text entry
+#: src/include/dns-server/options.rb:237
+msgid "&Alias"
+msgstr "別名(&A)"
+
+#. text entry
+#: src/include/dns-server/options.rb:240
+msgid "&Base Host Name"
+msgstr "基本主機名(&B)"
+
+#. table entry, %1 is host name
+#: src/include/dns-server/options.rb:257
+msgid "Pointer to %1"
+msgstr "指向 %1 的指針"
+
+#. combo box item, PTR is more technical description
+#: src/include/dns-server/options.rb:265
+msgid "PTR -- Reverse Translation"
+msgstr "PTR -- 反向轉譯"
+
+#. text entry
+#: src/include/dns-server/options.rb:276
+msgid "&IP Address"
+msgstr "&IP 地址"
+
+#. table entry, %1 is host name
+#: src/include/dns-server/options.rb:295
+msgid "Name Server %1"
+msgstr "名稱伺服器 %1"
+
+#. combo box item, NS is more technical description
+#: src/include/dns-server/options.rb:303
+msgid "NS -- Name Server"
+msgstr "NS -- 名稱伺服器"
+
+#. text entry
+#: src/include/dns-server/options.rb:314
+msgid "&Domain"
+msgstr "域(&D)"
+
+#. text entry
+#: src/include/dns-server/options.rb:317
+msgid "&Name Server"
+msgstr "名稱伺服器(&N)"
+
+#. table entry, %1 is host name, %2 is integer
+#: src/include/dns-server/options.rb:337
+msgid "Mail Relay %1, Priority %2"
+msgstr "郵件中繼 %1，優先順序 %2"
+
+#. combo box item, MX is more technical description
+#: src/include/dns-server/options.rb:416
+msgid "MX -- Mail Relay"
+msgstr "MX -- 郵件中繼"
+
+#. text entry
+#: src/include/dns-server/options.rb:429
+msgid "&Domain Name"
+msgstr "域名(&D)"
+
+#. text entry
+#: src/include/dns-server/options.rb:432
+msgid "&Mail Relay"
+msgstr "郵件中繼(&M)"
+
+#. DNS server read dialog caption
+#: src/modules/DnsServer.pm:934
+msgid "Initializing DNS Server Configuration"
+msgstr "正在啟始化 DNS 伺服器配置"
+
+#. progress stage
+#: src/modules/DnsServer.pm:938
+msgid "Check the environment"
+msgstr "檢查環境"
+
+#. progress stage
+#: src/modules/DnsServer.pm:940 src/modules/DnsServer.pm:1275
+msgid "Flush caches of the DNS daemon"
+msgstr "重新整理 DNS 守護程序的快取"
+
+#. progress stage
+#: src/modules/DnsServer.pm:942
+msgid "Read the firewall settings"
+msgstr "讀取防火牆設定"
+
+#. progress stage
+#: src/modules/DnsServer.pm:944
+msgid "Read the settings"
+msgstr "讀取設定"
+
+#. progress step
+#: src/modules/DnsServer.pm:948
+msgid "Checking the environment..."
+msgstr "正在檢查環境..."
+
+#. progress step
+#: src/modules/DnsServer.pm:950 src/modules/DnsServer.pm:1291
+msgid "Flushing caches of the DNS daemon..."
+msgstr "正在重新整理 DNS 守護程序的快取..."
+
+#. progress step
+#: src/modules/DnsServer.pm:952
+msgid "Reading the firewall settings..."
+msgstr "正在讀取防火牆設定..."
+
+#. progress step
+#: src/modules/DnsServer.pm:954
+msgid "Reading the settings..."
+msgstr "正在讀取設定..."
+
+#. progress step
+#: src/modules/DnsServer.pm:956 src/modules/DnsServer.pm:1305
+msgid "Finished"
+msgstr "已完成"
+
+#: src/modules/DnsServer.pm:1233
+msgid ""
+"Error occurred while calling netconfig.\n"
+"Error: "
+msgstr ""
+"呼叫 netconfig 時出錯。\n"
+"錯誤："
+
+#. DNS server read dialog caption
+#: src/modules/DnsServer.pm:1271
+msgid "Saving DNS Server Configuration"
+msgstr "正在儲存 DNS 伺服器配置"
+
+#. progress stage
+#: src/modules/DnsServer.pm:1277
+msgid "Save configuration files"
+msgstr "儲存配置檔案"
+
+#. progress stage
+#: src/modules/DnsServer.pm:1279
+msgid "Restart the DNS daemon"
+msgstr "重啟 DNS 守護程序"
+
+#. progress stage
+#: src/modules/DnsServer.pm:1281
+msgid "Update zone files"
+msgstr "更新區域檔案"
+
+#. progress stage
+#: src/modules/DnsServer.pm:1283
+msgid "Adjust the DNS service"
+msgstr "調整 DNS 服務"
+
+#. progress stage
+#: src/modules/DnsServer.pm:1285
+msgid "Call netconfig"
+msgstr "呼叫 netconfig"
+
+#. progress stage
+#: src/modules/DnsServer.pm:1287
+msgid "Write the firewall settings"
+msgstr "寫入防火牆設定"
+
+#. progress step
+#: src/modules/DnsServer.pm:1293
+msgid "Saving configuration files..."
+msgstr "正在儲存配置檔案..."
+
+#. progress step
+#: src/modules/DnsServer.pm:1295
+msgid "Restarting the DNS daemon..."
+msgstr "正在重啟 DNS 守護程序..."
+
+#. progress step
+#: src/modules/DnsServer.pm:1297
+msgid "Updating zone files..."
+msgstr "正在更新區域檔案..."
+
+#. progress step
+#: src/modules/DnsServer.pm:1299
+msgid "Adjusting the DNS service..."
+msgstr "正在調整 DNS 服務..."
+
+#. progress step
+#: src/modules/DnsServer.pm:1301
+msgid "Calling netconfig..."
+msgstr "正在呼叫 netconfig..."
+
+#. progress step
+#: src/modules/DnsServer.pm:1303
+msgid "Writing the firewall settings..."
+msgstr "正在寫入防火牆設定..."
+
+#. Cannot start service 'named', because of error that follows Error:.  Do not translate named.
+#: src/modules/DnsServer.pm:1475
+msgid ""
+"Error occurred while starting service named.\n"
+"\n"
+msgstr ""
+"啟動 named 服務時出錯。\n"
+"\n"
+
+#. type of zone to be used in summary
+#: src/modules/DnsServer.pm:1586
+msgid "Stub"
+msgstr "存根"
+
+#. type of zone to be used in summary
+#: src/modules/DnsServer.pm:1588
+msgid "Hint"
+msgstr "提示"
+
+#. summary string
+#: src/modules/DnsServer.pm:1597
+msgid "The DNS server starts when booting the system."
+msgstr "在引導系統時啟動 DNS 伺服器。"
+
+#. summary string
+#: src/modules/DnsServer.pm:1603
+msgid "The DNS server does not start when booting the system."
+msgstr "在引導系統時不啟動 DNS 伺服器。"
+
+#. summary string, %s is list of DNS zones (their names), coma separated
+#: src/modules/DnsServer.pm:1632
+#, perl-format
+msgid "Configured Zones: %s"
+msgstr "已配置的區域：%s"
+
+#. error message
+#: src/modules/DnsServer.pm:1646
+msgid "Invalid LDAP configuration. Cannot use LDAP."
+msgstr "無效的 LDAP 配置。無法使用 LDAP。"
+
+#. yes-no popup
+#: src/modules/DnsServer.pm:1727
+msgid "Enable LDAP support?"
+msgstr "啟用 LDAP 支援嗎？"
+
+#. error popup
+#: src/modules/DnsServer.pm:1815
+msgid ""
+"Installation of required packages failed.\n"
+"LDAP support will not be active."
+msgstr ""
+"安裝所需軟體包失敗。\n"
+"LDAP 支援將不會啟用。"
+
+#. BNC #679960
+#: src/modules/DnsServer.pm:1874
+msgid "Unknown LDAP initialization error."
+msgstr "未知的 LDAP 啟始化錯誤。"
+
+#. TRANSLATORS: Popup error message, %1 is an LDAP object whose creation failed
+#: src/modules/DnsServer.pm:1910
+msgid "Error occurred while creating %1."
+msgstr "創建 %1 時出錯。"
+
+#. error report, %1 is ldap object
+#: src/modules/DnsServer.pm:1946
+msgid "Error occurred while creating cn=defaultDNS,%1. Not using LDAP."
+msgstr "創建 cn=defaultDNS,%1 時出錯。未在使用 LDAP。"
+
+#. error report, %1 is LDAP record DN
+#: src/modules/DnsServer.pm:1972
+msgid "Error occurred while updating %1."
+msgstr "更新 %1 時出錯。"
+
+#. error report, %1 is LDAP record DN
+#: src/modules/DnsServer.pm:2007
+msgid "Error occurred while creating %1. Not using LDAP."
+msgstr "創建 %1 時出錯。未在使用 LDAP。"
+
+#~ msgid "Netconfig DNS policy"
+#~ msgstr "Netconfig DNS 策略"
+
+#~ msgid "&Start DNS Server"
+#~ msgstr "啟動 DNS 伺服器(&S)"
+
+#~ msgid "&Run DNS Server in Chroot Jail"
+#~ msgstr "在 Chroot 囚牢中運行 DNS 伺服器(&R)"
+
+#~ msgid "For&ward"
+#~ msgstr "正向(&W)"
+
+#~ msgid "Re&verse"
+#~ msgstr "反向(&V)"
+
+#~ msgid "Zone Direction"
+#~ msgstr "區域方向"
+
+#~ msgid "&Master"
+#~ msgstr "主(&M)"
+
+#~ msgid "&Slave"
+#~ msgstr "從屬(&S)"
+
+#~ msgid "S&tub"
+#~ msgstr "存根(&T)"
+
+#~ msgid "$TT&L"
+#~ msgstr "$TTL(&L)"
+
+#~ msgid "Primary &Source"
+#~ msgstr "主要源(&S)"
+
+#~ msgid "&Administrator's Mail"
+#~ msgstr "管理員的郵件地址(&A)"
+
+#~ msgid "Serial"
+#~ msgstr "序列號"
+
+#~ msgid "Re&try"
+#~ msgstr "重試(&T)"
+
+#~ msgid "E&xpiration"
+#~ msgstr "失效(&X)"
+
+#~ msgid "Mi&nimum"
+#~ msgstr "最小值(&N)"
+
+#~ msgid "Edit &SOA"
+#~ msgstr "編輯 SOA(&S)"
+
+#~ msgid "Edit &NS and MX Records"
+#~ msgstr "編輯 NS 與 MX 記錄(&N)"
+
+#~ msgid "No zone is selected."
+#~ msgstr "未選中任何區域。"
+
+#~ msgid "Delete selected zone?"
+#~ msgstr "是否刪除選定的區域？"
+
+#~ msgid "&Edit Global Options"
+#~ msgstr "編輯全局選項(&E)"
+
+#~ msgid "&Firewall Configuration"
+#~ msgstr "防火牆配置(&F)"
+
+#~ msgid "Manage &TSIG Keys"
+#~ msgstr "管理 TSIG 金鑰(&T)"
+
+#~ msgid "&Display Log"
+#~ msgstr "顯示日誌(&D)"
+
+#~ msgid "Reload DNS Server"
+#~ msgstr "重新裝載 DNS 伺服器"
+
+#~ msgid "Save Settings and Reload DNS Server"
+#~ msgstr "儲存設定並重新裝載 DNS 伺服器"
+
+#~ msgid "No name server selected."
+#~ msgstr "沒有選中任何名稱伺服器。"
+
+#~ msgid "&Name Servers"
+#~ msgstr "名稱伺服器(&N)"
+
+#~ msgid "&Mail Relays"
+#~ msgstr "郵件中繼(&M)"
+
+#~ msgid "Set &Priority"
+#~ msgstr "設定優先順序(&P)"
+
+#~ msgid "Delete selected resource record?"
+#~ msgstr "是否刪除選定的資源記錄？"
+
+#~ msgid "Address of &Master"
+#~ msgstr "主伺服器地址(&M)"
+
+#~ msgid "Master Name Servers"
+#~ msgstr "主名稱伺服器"
+
+#~ msgid "Interface Classes"
+#~ msgstr "介面類"
+
+#~ msgid "Allow &Internal Interfaces"
+#~ msgstr "允許使用內部介面(&I)"
+
+#~ msgid "Allow &External Interfaces"
+#~ msgstr "允許使用外部介面(&E)"
+
+#~ msgid "Allow &Demilitarized Zone"
+#~ msgstr "允許使用隔離區域(&D)"
+
+#~ msgid "No TSIG key is defined. Define it now?"
+#~ msgstr "未定義 TSIG 金鑰。是否立即定義？"
+
+#~ msgid ""
+#~ "Required LDAP schemas (yast, dnszone) are not included.\n"
+#~ "Cannot write to LDAP."
+#~ msgstr ""
+#~ "未包含所需的 LDAP 方案 (yast, dnszone)。\n"
+#~ "不能寫到 LDAP。"
+
+#~ msgid "The DNS server starts when booting the system"
+#~ msgstr "在引導系統時啟動 DNS 伺服器"
+
+#~ msgid "The DNS server does not start when booting the system"
+#~ msgstr "在引導系統時不啟動 DNS 伺服器。"
+
+#~ msgid "Start-Up Behavior"
+#~ msgstr "啟動行為"
+
+#~ msgid "DNS server is running"
+#~ msgstr "DNS 伺服器正在運行"
+
+#~ msgid "DNS server is not running"
+#~ msgstr "DNS 伺服器未運行"
+
+#~ msgid "IP A&ddress"
+#~ msgstr "IP 地址(&D)"
+
+#~ msgid "&PPP Daemon Sets Forwarders"
+#~ msgstr "&PPP 守護程式設定轉發器"
+
+#~ msgid "Set Forwarders &Manually"
+#~ msgstr "手動設定轉發器(&M)"
+
+#~ msgid ""
+#~ "<p><b><big>Forwarders</big></b><br>\n"
+#~ "Forwarders are DNS servers to which your DNS server should send queries\n"
+#~ "it cannot answer.\n"
+#~ "For a dial-up connection, it can be useful\n"
+#~ "to allow the PPP daemon to update the forwarders after the connection\n"
+#~ "is established. For this, select <b>PPP Daemon Sets Forwarders</b>. To "
+#~ "update forwarders\n"
+#~ "only manually, select <b>Set Forwarders Manually</b>.</p>\n"
+#~ msgstr ""
+#~ "<p><b><big>轉發器</big></b><br>\n"
+#~ "轉發器是您的 DNS 伺服器將它無法回答的查詢\n"
+#~ "發送所往的 DNS 伺服器。\n"
+#~ "對於撥號連線，允許 PPP 守護程式在\n"
+#~ "連線建立之後更新轉發器\n"
+#~ "會很有用。要執行此操作，請選擇 <b>PPP 守護程式設定轉發器</b>。要僅手動更新"
+#~ "轉發器，\n"
+#~ "請選擇<b>手動設定轉發器</b>。</p>\n"
+
+#~ msgid "%1 is not a valid IPv4 address."
+#~ msgstr "%1 不是有效的 Ipv4 地址。"
+
+#~ msgid "The zone name must be defined."
+#~ msgstr "必須定義區域名。"
+
+#~ msgid "DNS zone %1 does not exist."
+#~ msgstr "DNS 區域 %1 不存在。"
+
+#~ msgid "DNS zone %1 is not type master."
+#~ msgstr "DNS 區域 %1 不是主類型"
+
+#~ msgid "The zone type must be defined."
+#~ msgstr "必須定義區域類型。"
+
+#~ msgid "Zone type %1 is not supported."
+#~ msgstr "不支援區域類型 %1。"
+
+#~ msgid "The ACL name must be defined."
+#~ msgstr "必須定義 ACL 名稱。"
+
+#~ msgid "An ACL named %1 does not exist."
+#~ msgstr "不存在名為 %1 的 ACL。"
+
+#~ msgid "The hostname must be defined."
+#~ msgstr "必須定義主機名。"
+
+#~ msgid "The hostname must be in the fully qualified domain name format."
+#~ msgstr "主機名必須使用完全限定的域名格式。"
+
+#~ msgid "The fully qualified hostname must end with a dot."
+#~ msgstr "完全限定的主機名必須以一個點結束。"
+
+#~ msgid "The hostname is invalid."
+#~ msgstr "主機名無效。"
+
+#~ msgid "The mail exchange priority must be defined."
+#~ msgstr "必須定義郵件交換優先順序。"
+
+#~ msgid ""
+#~ "The mail exchange priority is invalid.\n"
+#~ "It must be a number from 0 to 65535.\n"
+#~ msgstr ""
+#~ "郵件交換優先順序無效。\n"
+#~ "它必須是一個從 0 到 65535 的數字。\n"
+
+#~ msgid ""
+#~ "The hostname %1 is not part of the zone %2.\n"
+#~ "\n"
+#~ "The hostname must be relative to the zone or must end \n"
+#~ "with the zone name followed by a dot, for example,\n"
+#~ "'dhcp1' or 'dhcp1.example.org.' for the zone 'dhcp.org'.\n"
+#~ msgstr ""
+#~ "主機名 %1 不是區域 %2 的一部分。\n"
+#~ "\n"
+#~ "主機名必須相對於區域或必須以\n"
+#~ "區域名後跟一個點結束，例如，\n"
+#~ "區域 'dhcp.org' 的名稱應為 'dhcp1' 或 'dhcp1.example.org.'。\n"
+
+#~ msgid ""
+#~ "The reverse IPv4 address %1 is invalid.\n"
+#~ "\n"
+#~ "A valid reverse IPv4 consists of four integers in the range 0-255\n"
+#~ "separated by a dot then followed by the string '.in-addr.arpa.'.\n"
+#~ "For example, '1.32.168.192.in-addr.arpa.' for the IPv4 address "
+#~ "'192.168.32.1'.\n"
+#~ msgstr ""
+#~ "該反向 IPv4 地址 %1 無效。\n"
+#~ "\n"
+#~ "有效的反向 IPv4 包含由點分隔的 4 個範圍在 0-255\n"
+#~ "之間的整數，再後跟字元串 '.in-addr.arpa.'。\n"
+#~ "例如，IPv4 地址 '192.168.32.1' 的反向地址是 '1.32.168.192.in-addr."
+#~ "arpa.'。\n"
+
+#~ msgid ""
+#~ "The relative hostname %1 cannot be used with zone %2.\n"
+#~ "Use a fully qualified hostname finished with a dot instead,\n"
+#~ "such as 'host.example.org.'.\n"
+#~ msgstr ""
+#~ "不能對區域 %2 使用相對主機名 %1。\n"
+#~ "請使用以點結束的完全限定的主機名，\n"
+#~ "諸如 'host.example.org.'。\n"
+
+#~ msgid ""
+#~ "Invalid MX record.\n"
+#~ "Use the format 'priority server-name'.\n"
+#~ msgstr ""
+#~ "MX 記錄無效。\n"
+#~ "請使用格式\"priority server-name\"。\n"
+
+#~ msgid ""
+#~ "Invalid SOA record.\n"
+#~ "%1 must be from %2 to %3 seconds.\n"
+#~ msgstr ""
+#~ "無效 SOA 記錄。\n"
+#~ "%1 必須在 %2 到 %3 秒之間。\n"
+
+#~ msgid ""
+#~ "Invalid SOA record.\n"
+#~ "%1 must be a BIND time type.\n"
+#~ "A BIND time type consists of numbers and the case-insensitive\n"
+#~ "suffixes W, D, H, M, and S. Time in seconds is allowed without the "
+#~ "suffix.\n"
+#~ "Enter values such as 12H15m, 86400, or 1W30M.\n"
+#~ msgstr ""
+#~ "無效 SOA 記錄。\n"
+#~ "%1 必須是 BIND 時間類型。\n"
+#~ "BIND 時間類型由數字與不區分大小寫的\n"
+#~ "字尾 W、D、H、M 與 S 組成。以秒為單位的時間允許不帶字尾。\n"
+#~ "請輸入諸如這樣的值，12H15m、86400 或 1W30M。\n"
+
+#~ msgid ""
+#~ "Invalid SOA record.\n"
+#~ "%1 must be a number from %2 to %3.\n"
+#~ msgstr ""
+#~ "無效 SOA 記錄。\n"
+#~ "%1 必須是 %2 到 %2 之間的一個數字。\n"
+
+#~ msgid "The filename must be defined when logging to a file."
+#~ msgstr "要記錄到檔案，必須定義檔名。"
+
+#~ msgid ""
+#~ "Invalid file size.\n"
+#~ "\n"
+#~ "It must be set in the format 'number[suffix]'.\n"
+#~ "\n"
+#~ "Possible suffixes are k, K, m, M, g, and G.\n"
+#~ msgstr ""
+#~ "無效檔案大小。\n"
+#~ "這必須以格式 'number[suffix]' 設\n"
+#~ "置。可以使用字尾 k、K、m、M、g 與 G。\n"
+
+#~ msgid "The count of file versions must be a number."
+#~ msgstr "檔案版本的計數必須是一個數字。"
+
+#~ msgid ""
+#~ "Only slave zones have a master server defined.\n"
+#~ "Zone %1 is type %2.\n"
+#~ msgstr ""
+#~ "僅有從屬區域有一個已定義的主伺服器。\n"
+#~ "區域 %1 的類型是 %2。\n"
+
+#~ msgid "Zone name %1 already exists."
+#~ msgstr "區域名 %1 已存在。"
+
+#~ msgid "Option masterserver is needed for slave zones."
+#~ msgstr "masterserver 選項對於從屬區域是必需的。"
+
+#~ msgid "Host's IP cannot be empty."
+#~ msgstr "主機 IP 不能為空。"
+
+#~ msgid ""
+#~ "There is no reverse zone for %1 administered by your DNS server.\n"
+#~ "Hostname %2 cannot be added."
+#~ msgstr ""
+#~ "DNS 伺服器管理的 %1 沒有反向區域。\n"
+#~ "無法添加主機名 %2."
+
+#~ msgid "Error occurred while configuring firewall settings."
+#~ msgstr "配置防火牆設定時出錯。"
+
+#~ msgid "Adapt &Firewall Settings"
+#~ msgstr "調整防火牆設定(&F)"
+

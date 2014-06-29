@@ -1,0 +1,7044 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Thruth Wang <lihaow@opera.com>, 2007, 2008.
+# Eric Shan <ericalways@gmail.com>, 2008, 2012, 2013.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: network\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:42+0200\n"
+"PO-Revision-Date: 2014-06-24 15:05+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Commandline help title
+#: src/clients/dns.rb:63
+msgid "DNS Configuration"
+msgstr "DNS 配置"
+
+#. Commandline command help
+#. Commandline command help
+#. Commandline command help
+#. Commandline command help
+#. Commandline command help
+#: src/clients/dns.rb:71 src/clients/host.rb:67 src/clients/lan.rb:65
+#: src/clients/lan.rb:76 src/clients/remote.rb:64
+msgid "Display configuration summary"
+msgstr "顯示配置摘要"
+
+#: src/clients/dns.rb:80
+msgid "Edit current settings"
+msgstr "編輯當前設定"
+
+#: src/clients/dns.rb:89
+msgid "Used machine hostname"
+msgstr "所用計算機主機名"
+
+#: src/clients/dns.rb:94
+msgid "IP address of first nameserver."
+msgstr "第一個名稱伺服器的 IP 地址。"
+
+#: src/clients/dns.rb:99
+msgid "IP address of second nameserver."
+msgstr "第二個名稱伺服器的 IP 地址。"
+
+#: src/clients/dns.rb:104
+msgid "IP address of third nameserver."
+msgstr "第三個名稱伺服器的 IP 地址。"
+
+#. Command line output Headline
+#: src/clients/dns.rb:163
+msgid "DNS Configuration Summary:"
+msgstr "DNS 配置摘要："
+
+#. validator: a reference to boolean( string) is expected
+#. setter: a reference to void( any) is expected
+#. fail message: a string is expected
+#: src/clients/dns.rb:188
+msgid "InvalidHostname. "
+msgstr "無效主機名。"
+
+#: src/clients/dns.rb:194 src/clients/dns.rb:202 src/clients/dns.rb:210
+msgid "Invalid IP. "
+msgstr "無效 IP。"
+
+#: src/clients/dns.rb:225
+msgid "Cannot set "
+msgstr "無法設定"
+
+#: src/clients/dns.rb:226
+msgid ". Network is managed by NetworkManager."
+msgstr "。網路正由 NetworkManager 管理。"
+
+#: src/clients/dns.rb:245
+msgid "Invalid option value."
+msgstr "無效選項值。"
+
+#: src/clients/dns.rb:254
+msgid "Internal error"
+msgstr "內部錯誤"
+
+#. progress step title
+#: src/clients/firewall_stage1_finish.rb:67
+msgid "Writing Firewall Configuration..."
+msgstr "正在寫入防火牆配置..."
+
+#. Summary is visible only if installing over VNC
+#. and if firewall is enabled - otherwise port could not be blocked
+#: src/clients/firewall_stage1_proposal.rb:102
+msgid "VNC ports will be open (<a href=\"%s\">close</a>)"
+msgstr "將開啟 VNC 埠 (<a href=\"%s\">關閉</a>)"
+
+#: src/clients/firewall_stage1_proposal.rb:104
+msgid "VNC ports will be blocked (<a href=\"%s\">open</a>)"
+msgstr "將遮蔽 VNC 埠 (<a href=\"%s\">開啟</a>)"
+
+#: src/clients/firewall_stage1_proposal.rb:110
+msgid "Firewall will be enabled (<a href=\"%s\">disable</a>)"
+msgstr "將啟用防火牆 (<a href=\"%s\">禁用</a>)"
+
+#: src/clients/firewall_stage1_proposal.rb:114
+msgid "Firewall will be disabled (<a href=\"%s\">enable</a>)"
+msgstr "將禁用防火牆 (<a href=\"%s\">啟用</a>)"
+
+#: src/clients/firewall_stage1_proposal.rb:119
+msgid "SSH port will be open (<a href=\"%s\">block</a>)"
+msgstr "將開啟 SSH 埠 (<a href=\"%s\">遮蔽</a>)"
+
+#: src/clients/firewall_stage1_proposal.rb:123
+msgid "SSH port will be blocked (<a href=\"%s\">open</a>)"
+msgstr "將遮蔽 SSH 埠 (<a href=\"%s\">開啟</a>)"
+
+#: src/clients/firewall_stage1_proposal.rb:128
+msgid "SSH service will be enabled (<a href=\"%s\">disable</a>)"
+msgstr "將啟用 SSH 服務 (<a href=\"%s\">禁用</a>)"
+
+#: src/clients/firewall_stage1_proposal.rb:132
+msgid "SSH service will be disabled (<a href=\"%s\">enable</a>)"
+msgstr "將禁用 SSH 服務 (<a href=\"%s\">啟用</a>)"
+
+#. Proposal title
+#: src/clients/firewall_stage1_proposal.rb:218
+msgid "Firewall and SSH"
+msgstr "防火牆與 SSH"
+
+#. Menu entry label
+#: src/clients/firewall_stage1_proposal.rb:220
+msgid "&Firewall and SSH"
+msgstr "防火牆與 SSH(&F)"
+
+#: src/clients/firewall_stage1_proposal.rb:231
+msgid "Basic Firewall and SSH Configuration"
+msgstr "基本防火牆與 SSH 配置"
+
+#. TRANSLATORS: check-box label
+#: src/clients/firewall_stage1_proposal.rb:237
+msgid "Open &VNC Ports"
+msgstr "開啟 &VNC 埠"
+
+#. frame label
+#: src/clients/firewall_stage1_proposal.rb:245
+msgid "Firewall and SSH service"
+msgstr "防火牆與 SSH 服務"
+
+#. TRANSLATORS: check-box label
+#: src/clients/firewall_stage1_proposal.rb:256
+msgid "Enable Firewall"
+msgstr "啟用防火牆"
+
+#. TRANSLATORS: check-box label
+#: src/clients/firewall_stage1_proposal.rb:264
+msgid "Open SSH Port"
+msgstr "開啟 SSH 埠"
+
+#. TRANSLATORS: check-box label
+#: src/clients/firewall_stage1_proposal.rb:272
+msgid "Enable SSH Service"
+msgstr "啟用 SSH 服務"
+
+#: src/clients/firewall_stage1_proposal.rb:284
+msgid ""
+"<p><b><big>Firewall and SSH</big></b><br>\n"
+"Firewall is a defensive mechanism that protects your computer from network "
+"attacks.\n"
+"SSH is a service that allows logging into this computer remotely via "
+"dedicated\n"
+"SSH client</p>"
+msgstr ""
+"<p><b><big>防火牆與 SSH</big></b><br />\n"
+"防火牆是保護您的計算機免受網路攻擊的防禦機制。\n"
+"SSH 是允許通過專用 SSH 客戶端遠端登入此計算機的服務。</p>"
+
+#: src/clients/firewall_stage1_proposal.rb:290
+msgid ""
+"<p>Here you can choose whether the firewall will be enabled or disabled "
+"after\n"
+"the installation. It is recommended to keep it enabled.</p>"
+msgstr "<p>在此您可以選擇在安裝後啟用或禁用防火牆。推薦保持啟用。</p>"
+
+#: src/clients/firewall_stage1_proposal.rb:293
+msgid ""
+"<p>With enabled firewall, you can decide whether to open firewall port for "
+"SSH\n"
+"service and allow remote SSH logins. Independently you can also enable SSH "
+"service (i.e. it\n"
+"will be started on computer boot).</p>"
+msgstr ""
+"<p>若啟用了防火牆，您可以決定是否為 SSH 服務開啟防火牆埠並允許遠端 SSH 登"
+"入。\n"
+"另外您也可以決定是否啟用 SSH 服務(即，它將在計算機引導時啟動)。</p>"
+
+#. TRANSLATORS: help text
+#: src/clients/firewall_stage1_proposal.rb:300
+msgid ""
+"<p>You can also open VNC ports in firewall. It will not enable\n"
+"the remote administration service on a running system but it is\n"
+"started by the installer automatically if needed.</p>"
+msgstr ""
+"<p>您也可在防火牆上開啟 VNC 埠。\n"
+"它不會啟用運行中系統上的遠端管理服務但如有需要服務可被安裝程式自動啟動。</p>"
+
+#. Commandline help title
+#. configuration of hosts
+#. Hosts dialog caption
+#: src/clients/host.rb:57 src/include/network/services/host.rb:75
+msgid "Host Configuration"
+msgstr "主機配置"
+
+#. Command line output Headline
+#. configuration of hosts
+#: src/clients/host.rb:125
+msgid "Host Configuration Summary:"
+msgstr "主機配置摘要："
+
+#. Progress step 1/3
+#: src/clients/inst_do_net_test.rb:110
+msgid "Connecting to Internet..."
+msgstr "正在連線到網際網路..."
+
+#. Progress step 2/3
+#: src/clients/inst_do_net_test.rb:112
+msgid "Downloading the latest release notes..."
+msgstr "正在下載最新的版本資訊..."
+
+#. Progress step 3/3
+#: src/clients/inst_do_net_test.rb:114
+msgid "Closing connection..."
+msgstr "正在關閉連線..."
+
+#. Test dialog caption
+#: src/clients/inst_do_net_test.rb:245
+msgid "Running Internet Connection Test"
+msgstr "正在運行網際網路連線測試"
+
+#. help for dialog "Running Internet Connection Test"
+#: src/clients/inst_do_net_test.rb:248
+msgid ""
+"<p>Here, view the progress of the\n"
+"Internet connection test.</p>\n"
+msgstr "<p>在此檢視網際網路連線測試的進度。</p>\n"
+
+#. help for dialog "Running Internet Connection Test"
+#: src/clients/inst_do_net_test.rb:252
+msgid ""
+"<p>The test can be aborted by pressing\n"
+"<b>Abort Test</b>.</p>\n"
+msgstr "<p>可以按<b>中止測試</b>來中止測試。</p>\n"
+
+#. help for dialog "Running Internet Connection Test"
+#: src/clients/inst_do_net_test.rb:260
+msgid ""
+"<p>If the test fails, return to the network configuration\n"
+"and correct the settings.</p>\n"
+msgstr "<p>若測試失敗，請返回網路配置並修正設定。</p>\n"
+
+#. Label for result of internet test
+#: src/clients/inst_do_net_test.rb:296
+msgid "Test Result:"
+msgstr "測試結果："
+
+#. Push Button to abort internet test
+#: src/clients/inst_do_net_test.rb:307
+msgid "&Abort Test"
+msgstr "中止測試(&A)"
+
+#. Frame label: status of internet test
+#: src/clients/inst_do_net_test.rb:312
+msgid "Test Status"
+msgstr "測試狀態"
+
+#. Push Button to see logs of internet test
+#: src/clients/inst_do_net_test.rb:322
+msgid "&View Logs..."
+msgstr "檢視日誌(&V)..."
+
+#. result of internet test
+#: src/clients/inst_do_net_test.rb:361
+msgid "Success"
+msgstr "成功"
+
+#. result of internet test
+#: src/clients/inst_do_net_test.rb:365
+msgid "Failure"
+msgstr "失敗"
+
+#. label of combobox where the log is selected
+#: src/clients/inst_do_net_test.rb:380
+msgid "Kernel Network Interfaces"
+msgstr "核心網路介面"
+
+#. label of combobox where the log is selected
+#: src/clients/inst_do_net_test.rb:402
+msgid "Kernel Routing Table"
+msgstr "核心路由表"
+
+#. label of combobox where the log is selected
+#: src/clients/inst_do_net_test.rb:422
+msgid "Hostname Lookup"
+msgstr "主機名查詢"
+
+#. label of combobox where the log is selected
+#: src/clients/inst_do_net_test.rb:446
+msgid "Kernel Messages"
+msgstr "核心訊息"
+
+#. label of combobox where the log is selected
+#: src/clients/inst_do_net_test.rb:593
+msgid "Download of Release Notes"
+msgstr "下載版本資訊"
+
+#. popup error message
+#: src/clients/inst_do_net_test.rb:736
+msgid ""
+"Cannot install downloaded release notes.\n"
+"RPM signature check failed."
+msgstr ""
+"無法安裝下載好的版本資訊。\n"
+"RPM 簽名檢查失敗。"
+
+#. popup error message
+#: src/clients/inst_do_net_test.rb:763
+msgid "Installation of downloaded release notes failed."
+msgstr "安裝下載好的版本資訊失敗。"
+
+#. label of combobox where the log is selected
+#: src/clients/inst_do_net_test.rb:800
+msgid "Opening of Connection"
+msgstr "開啟連線"
+
+#. popup to inform user about the failure
+#. popup to inform user about the failure
+#: src/clients/inst_do_net_test.rb:808 src/clients/inst_do_net_test.rb:834
+msgid ""
+"Connecting to the Internet failed. View\n"
+"the logs for details.\n"
+msgstr ""
+"連線到網際網路失敗。\n"
+"細節請檢視日誌。\n"
+
+#. Fallback for situation that mustn't exist
+#: src/clients/inst_do_net_test.rb:892
+msgid ""
+"No URL for the release notes defined. Internet test cannot be performed."
+msgstr "未定義版本資訊的 URL。無法執行網際網路測試。"
+
+#. popup informing user about the failure to retrieve release notes
+#. most likely due to server-side error
+#: src/clients/inst_do_net_test.rb:905
+msgid ""
+"Download of latest release notes failed due to server-side error. \n"
+"This does not necessarily imply a faulty network configuration.\n"
+"\n"
+"Click 'Continue' to proceed to the next installation step. To skip any "
+"steps\n"
+"requiring an internet connection or to get back to your network "
+"configuration,\n"
+"click 'Cancel'.\n"
+msgstr ""
+"由於伺服器端錯誤，下載最新的版本資訊失敗。\n"
+"這不一定意味著網路配置不正確。\n"
+"\n"
+"繼續下一個安裝步驟，請點選 '繼續'。要跳過\n"
+"任何需要網路連線的步驟或者回到網路配置，\n"
+"請點選 '取消'。\n"
+
+#. popup to inform user about the failure
+#: src/clients/inst_do_net_test.rb:917
+msgid ""
+"Download of latest release notes failed. View\n"
+"the logs for details."
+msgstr ""
+"下載最新的版本資訊失敗。\n"
+"細節請檢視日誌。"
+
+#. label of combobox where the log is selected
+#: src/clients/inst_do_net_test.rb:965
+msgid "Check for Patches"
+msgstr "檢查補丁"
+
+#. popup to inform user about the failure
+#: src/clients/inst_do_net_test.rb:974
+msgid ""
+"Check for latest updates failed. View\n"
+"the logs for details.\n"
+msgstr ""
+"檢查最新的更新失敗。\n"
+"細節請檢視日誌。\n"
+
+#. label of combobox where the log is selected
+#: src/clients/inst_do_net_test.rb:1001
+msgid "Closing of Connection"
+msgstr "關閉連線"
+
+#. Commandline help title
+#. Whole configuration of network but without reading and writing.
+#. For use with autoinstallation and proposal
+#. @param [String] mode if "proposal", NM dialog may be skipped
+#. @return sequence result
+#: src/clients/lan.rb:57 src/include/network/lan/wizards.rb:96
+msgid "Network Card Configuration"
+msgstr "網卡配置"
+
+#. Commandline command help
+#: src/clients/lan.rb:87
+msgid "Add a network card"
+msgstr "添加網卡"
+
+#: src/clients/lan.rb:99
+msgid "Change existing configuration"
+msgstr "修改已有配置"
+
+#. Commandline command help
+#: src/clients/lan.rb:107
+msgid "Delete a network card"
+msgstr "刪除網卡"
+
+#. Commandline option help
+#: src/clients/lan.rb:117
+msgid "List only configured cards"
+msgstr "僅列出已配置的網卡"
+
+#. Commandline option help
+#: src/clients/lan.rb:121
+msgid "List only unconfigured cards"
+msgstr "僅列出未配置的網卡"
+
+#. Commandline option help
+#: src/clients/lan.rb:127
+msgid "Device identifier"
+msgstr "裝置標識符"
+
+#. Commandline option help
+#: src/clients/lan.rb:132
+msgid "Config identifier"
+msgstr "配置標識符"
+
+#: src/clients/lan.rb:136
+msgid "Use static or dynamic configuration"
+msgstr "使用靜態或動態配置"
+
+#: src/clients/lan.rb:140
+msgid "Configuration Name"
+msgstr "配置名稱"
+
+#. Commandline option help
+#: src/clients/lan.rb:145
+msgid "Device boot protocol"
+msgstr "裝置引導協議"
+
+#. Commandline option help
+#: src/clients/lan.rb:150
+msgid "Device IP address"
+msgstr "裝置 IP 地址"
+
+#. Commandline option help
+#: src/clients/lan.rb:155
+msgid "Network mask"
+msgstr "網路掩碼"
+
+#. Commandline option help
+#: src/clients/lan.rb:160
+msgid "Prefix length"
+msgstr "字首長度"
+
+#. Commandline option help
+#: src/clients/lan.rb:165
+msgid "Bond Slaves"
+msgstr "繫結從屬"
+
+#. Commandline option help
+#: src/clients/lan.rb:170
+msgid "Ethernet Device for VLAN"
+msgstr "虛擬區域網以太裝置"
+
+#. Commandline option help
+#: src/clients/lan.rb:175
+msgid "Interfaces for Bridging"
+msgstr "橋接用介面"
+
+#. Lan::PrepareForAutoinst();
+#. Lan::Autoinstall();
+#: src/clients/lan_auto.rb:173
+msgid "Configuration Error: uninitialized interface."
+msgstr "配置錯誤：未啟始化的介面。"
+
+#. translators: command line help for network module
+#: src/clients/network.rb:60
+msgid ""
+"Configuration of network.\n"
+"This is only a delegator to network sub-modules.\n"
+"You can run these network modules:\n"
+"\n"
+"lan\t"
+msgstr ""
+"網路配置。\n"
+"這隻是網路子模組的執行程式。\n"
+"您可以運行這些網路模組：\n"
+"\n"
+"lan\t"
+
+#. Selection box item
+#: src/clients/network.rb:67 src/clients/network.rb:110
+msgid "Network Card"
+msgstr "網卡"
+
+#. Network dialog caption
+#: src/clients/network.rb:90
+msgid "Network Configuration"
+msgstr "網路配置"
+
+#. Network dialog help
+#: src/clients/network.rb:93
+msgid ""
+"<p>Choose one of the available network modules to configure\n"
+" the corresponding devices and press <b>Launch</b>.</p>"
+msgstr "<p>選擇一個可用網路模組配置相關裝置並按<b>啟動</b>。</p>"
+
+#. Selection box label
+#: src/clients/network.rb:107
+msgid "&Available Network Modules:"
+msgstr "可用網路模組(&A)："
+
+#: src/clients/network.rb:125
+msgid "&Launch"
+msgstr "啟動(&L)"
+
+#. Commandline help title
+#: src/clients/remote.rb:54
+msgid "Remote Access Configuration"
+msgstr "遠端訪問配置"
+
+#. Commandline command help
+#: src/clients/remote.rb:74
+msgid "Allow remote access"
+msgstr "允許遠端訪問"
+
+#. Commandline command help
+#: src/clients/remote.rb:85
+msgid "Set 'yes' to allow or 'no' to disallow the remote administration"
+msgstr "請設為 \"yes\" 允許遠端管理或 \"no\" 不允許遠端管理"
+
+#. Command line output Headline
+#: src/clients/remote.rb:128
+msgid "Remote Access Configuration Summary:"
+msgstr "遠端訪問配置摘要："
+
+#. Command line error message
+#: src/clients/remote.rb:148
+msgid ""
+"Please set 'yes' to allow the remote administration\n"
+"or 'no' to disallow it."
+msgstr "請設為 'yes' 允許遠端管理或 'no' 不允許遠端管理。"
+
+#. RichText label
+#: src/clients/remote_proposal.rb:78
+msgid "VNC Remote Administration"
+msgstr "VNC 遠端管理"
+
+#. Menu label
+#: src/clients/remote_proposal.rb:80
+msgid "VNC &Remote Administration"
+msgstr "VNC 遠端管理(&R)"
+
+#. Commandline help title
+#. Main routing dialog
+#. @return dialog result
+#: src/clients/routing.rb:57 src/include/network/services/routing.rb:479
+msgid "Routing Configuration"
+msgstr "路由配置"
+
+#. FIXME
+#: src/clients/routing.rb:64
+msgid "Show complete routing table"
+msgstr "顯示完整路由表"
+
+#: src/clients/routing.rb:71
+msgid "Show routing table entry for selected destination"
+msgstr "顯示所選目的地的路由表項"
+
+#: src/clients/routing.rb:79
+msgid "IPv4 and IPv6 forwarding settings"
+msgstr "IPv4 與 IPv6 轉發設定"
+
+#: src/clients/routing.rb:87
+msgid "IPv4 only forwarding settings"
+msgstr "IPv4 轉發設定"
+
+#: src/clients/routing.rb:95
+msgid "IPv6 only forwarding settings"
+msgstr "IPv6 轉發設定"
+
+#: src/clients/routing.rb:103
+msgid "Add new route"
+msgstr "添加新路由"
+
+#: src/clients/routing.rb:111
+msgid "Edit an existing route"
+msgstr "編輯已有路由"
+
+#: src/clients/routing.rb:119
+msgid "Delete an existing route"
+msgstr "刪除已有路由"
+
+#: src/clients/routing.rb:130
+msgid "Destination IP address"
+msgstr "目的地 IP 地址"
+
+#: src/clients/routing.rb:132
+msgid "Gateway IP address"
+msgstr "閘道器 IP 地址"
+
+#: src/clients/routing.rb:133
+msgid "Subnet mask"
+msgstr "子網掩碼"
+
+#: src/clients/routing.rb:134
+msgid "Network device"
+msgstr "網路裝置"
+
+#: src/clients/routing.rb:135
+msgid "Additional options"
+msgstr "附加選項"
+
+#: src/clients/routing.rb:136
+msgid "Show current settings"
+msgstr "顯示當前設定"
+
+#: src/clients/routing.rb:137
+msgid "Enable IP forwarding"
+msgstr "啟用 IP 轉發"
+
+#: src/clients/routing.rb:138
+msgid "Disable IP forwarding"
+msgstr "禁用 IP 轉發"
+
+#. main ui function
+#. Frame label
+#: src/clients/routing.rb:205 src/include/network/services/routing.rb:77
+msgid "Routing Table"
+msgstr "路由表"
+
+#. Table header 1/4
+#: src/clients/routing.rb:208 src/include/network/services/routing.rb:85
+msgid "Destination"
+msgstr "目的地"
+
+#. Table header 2/4
+#: src/clients/routing.rb:209 src/include/network/services/routing.rb:87
+msgid "Gateway"
+msgstr "閘道器"
+
+#. Table header label
+#: src/clients/routing.rb:210 src/include/network/lan/address.rb:100
+msgid "Netmask"
+msgstr "網路掩碼"
+
+#. Table header 4/4
+#: src/clients/routing.rb:211 src/include/network/lan/complex.rb:75
+#: src/include/network/services/routing.rb:68
+#: src/include/network/services/routing.rb:72
+#: src/include/network/services/routing.rb:91
+msgid "Device"
+msgstr "裝置"
+
+#: src/clients/routing.rb:212 src/include/network/lan/hardware.rb:416
+msgid "Options"
+msgstr "選項"
+
+#. Handler for action "list"
+#. @param [Hash{String => String}] options action options
+#: src/clients/routing.rb:242 src/clients/routing.rb:383
+#: src/clients/routing.rb:427
+msgid "No entry for destination '%1' in routing table"
+msgstr "路由表中無目的地 '%1' 項"
+
+#. translators: %s is "IPv4" or "IPv6"
+#: src/clients/routing.rb:265
+msgid "%s forwarding is enabled"
+msgstr "已啟用 %s 轉發"
+
+#. translators: %s is "IPv4" or "IPv6"
+#: src/clients/routing.rb:268
+msgid "%s forwarding is disabled"
+msgstr "已禁用 %s 轉發"
+
+#. translators: %s is "IPv4" or "IPv6"
+#: src/clients/routing.rb:272
+msgid "Enabling %s forwarding..."
+msgstr "正在啟用 %s 轉發..."
+
+#. translators: %s is "IPv4" or "IPv6"
+#: src/clients/routing.rb:276
+msgid "Disabling %s forwarding..."
+msgstr "正在禁用 %s 轉發..."
+
+#: src/clients/routing.rb:282
+msgid "IPv4 Forwarding:"
+msgstr "IPv4 轉發："
+
+#: src/clients/routing.rb:292
+msgid "IPv6 Forwarding:"
+msgstr "IPv6 轉發："
+
+#: src/clients/routing.rb:302
+msgid "IPv4 and IPv6 Forwarding:"
+msgstr "IPv4 與 IPv6 轉發："
+
+#: src/clients/routing.rb:324
+msgid "At least destination and gateway IP addresses must be specified."
+msgstr "必須至少指定目的地與閘道器 IP 地址。"
+
+#: src/clients/routing.rb:333
+msgid "Adding '%1' destination to routing table ..."
+msgstr "正在將目的地 '%1' 添加到路由表中..."
+
+#: src/clients/routing.rb:349
+msgid "Destination IP address must be specified."
+msgstr "必須指定目的地 IP 地址。"
+
+#: src/clients/routing.rb:354
+msgid ""
+"At least one of the following parameters (gateway, netmask, device, options) "
+"must be specified"
+msgstr "必須指定至少一個以下參數 (閘道器、網路掩碼、裝置、選項)"
+
+#: src/clients/routing.rb:376
+msgid "Updating '%1' destination in routing table ..."
+msgstr "正在更新路由表中的目的地 '%1'..."
+
+#: src/clients/routing.rb:419
+msgid "Deleting '%1' destination from routing table ..."
+msgstr "正在從路由表中刪除目的地 '%1'..."
+
+#. interface summary: WiFi without encryption
+#. interface summary: WiFi without encryption
+#: src/include/network/complex.rb:101 src/modules/LanItems.rb:1348
+msgid "Warning: no encryption is used."
+msgstr "警告：未使用加密。"
+
+#. Hyperlink: Change the configuration of an interface
+#. Hyperlink: Change the configuration of an interface
+#: src/include/network/complex.rb:107 src/modules/LanItems.rb:1350
+msgid "Change."
+msgstr "修改。"
+
+#. Table item
+#. this is what used to be Virtual Interface
+#. (eth0:1)
+#: src/include/network/complex.rb:121
+msgid "Additional Address"
+msgstr "附加地址"
+
+#. Summary text
+#: src/include/network/complex.rb:171
+msgid "Already Configured Devices:"
+msgstr "已配置裝置："
+
+#. Summary text
+#: src/include/network/complex.rb:176
+msgid "Nothing is configured"
+msgstr "未作任何配置"
+
+#. Device type label
+#: src/include/network/complex.rb:204
+msgid "PCMCIA ISDN Card"
+msgstr "PCMCIA ISDN 卡"
+
+#. Device type label
+#: src/include/network/complex.rb:206
+msgid "USB ISDN Card"
+msgstr "USB ISDN 卡"
+
+#. Device type label
+#: src/include/network/complex.rb:208
+msgid "PCMCIA Ethernet Network Card"
+msgstr "PCMCIA Ethernet 網卡"
+
+#. Device type label
+#: src/include/network/complex.rb:210
+msgid "USB Ethernet Network Card"
+msgstr "USB Ethernet 網卡"
+
+#. Device type label
+#: src/include/network/complex.rb:212
+msgid "PCMCIA FDDI Network Card"
+msgstr "PCMCIA FDDI 網卡"
+
+#. Device type label
+#: src/include/network/complex.rb:214
+msgid "USB FDDI Network Card"
+msgstr "USB FDDI 網卡"
+
+#. Device type label
+#. Device type label
+#: src/include/network/complex.rb:216 src/include/network/complex.rb:220
+msgid "PCMCIA ISDN Connection"
+msgstr "PCMCIA ISDN 連線"
+
+#. Device type label
+#. Device type label
+#: src/include/network/complex.rb:218 src/include/network/complex.rb:222
+msgid "USB ISDN Connection"
+msgstr "USB ISDN 連線"
+
+#. Device type label
+#. Device type label
+#: src/include/network/complex.rb:224 src/include/network/complex.rb:228
+msgid "PCMCIA Modem"
+msgstr "PCMCIA 調變解調器"
+
+#. Device type label
+#. Device type label
+#: src/include/network/complex.rb:226 src/include/network/complex.rb:230
+msgid "USB Modem"
+msgstr "USB 調變解調器"
+
+#. Device type label
+#: src/include/network/complex.rb:232
+msgid "PCMCIA Token Ring Network Card"
+msgstr "PCMCIA 令牌環網卡"
+
+#. Device type label
+#: src/include/network/complex.rb:236
+msgid "USB Token Ring Network Card"
+msgstr "USB 令牌環網卡"
+
+#. Device type label
+#: src/include/network/complex.rb:238
+msgid "USB Network Device"
+msgstr "USB 網路裝置"
+
+#. Device type label
+#: src/include/network/complex.rb:240
+msgid "PCMCIA Wireless Network Card"
+msgstr "PCMCIA 無線網卡"
+
+#. Device type label
+#: src/include/network/complex.rb:242
+msgid "USB Wireless Network Card"
+msgstr "USB 無線網卡"
+
+#. Device type label
+#: src/include/network/complex.rb:259
+msgid "Unknown Network Device"
+msgstr "未知網路裝置"
+
+#. Modem status (%1 is device)
+#. ISDN device status (%1 is device)
+#. Network card status (%1 is device)
+#: src/include/network/complex.rb:313 src/include/network/complex.rb:325
+#: src/include/network/complex.rb:384
+msgid "Configured as %1"
+msgstr "已配置為 %1"
+
+#. Modem status (%1 is device, %2 is provider)
+#: src/include/network/complex.rb:317
+msgid "Configured as %1 with provider %2"
+msgstr "已配置為 %1，服務提供商 %2"
+
+#. ISDN status (%1 is device, %2 is provider, %3 protocol)
+#: src/include/network/complex.rb:334
+msgid "Configured as %1 with provider %2 (protocol %3)"
+msgstr "已配置為%1，服務提供商 %2 (協議 %3)"
+
+#: src/include/network/complex.rb:349
+msgid "Configured without address (NONE)"
+msgstr "已配置為不帶地址 (NONE)"
+
+#. Network card status
+#: src/include/network/complex.rb:352
+msgid "Configured without an address"
+msgstr "已配置為不帶地址"
+
+#. Network card status (%1 is address)
+#: src/include/network/complex.rb:356
+msgid "Configured with address %1"
+msgstr "已配置為地址 %1"
+
+#. Network card status (%1 is address, %2 is address)
+#: src/include/network/complex.rb:362
+msgid "Configured with address %1 (remote %2)"
+msgstr "已配置為地址 %1 (遠端 %2)"
+
+#. Network card status (%1 is protocol)
+#: src/include/network/complex.rb:370
+msgid "Configured with %1"
+msgstr "已配置為 %1"
+
+#. Network card status (%1 is device, %2 is address)
+#: src/include/network/complex.rb:388
+msgid "Configured as %1 with address %2"
+msgstr "已配置為 %1，地址 %2"
+
+#. Network card status (%1 is device, %2 is address, %3 is address)
+#: src/include/network/complex.rb:395
+msgid "Configured as %1 with address %2 (remote %3)"
+msgstr "已配置為 %1，地址 %2 (遠端 %3)"
+
+#. Network card status (%1 is device, %2 is protocol)
+#: src/include/network/complex.rb:404
+msgid "Configured as %1 with %2"
+msgstr "已配置為 %1, %2"
+
+#. Abbreviation for "The interface is Managed by NetworkManager"
+#. ComboBox item
+#: src/include/network/complex.rb:420 src/include/network/lan/wireless.rb:440
+msgid "Managed"
+msgstr "受管"
+
+#. Heading text
+#: src/include/network/installation/dialogs.rb:59
+msgid "Enter Provider Password"
+msgstr "請輸入服務提供商密碼"
+
+#. Steps dialog caption
+#: src/include/network/installation/dialogs.rb:121
+msgid "Test Internet Connection"
+msgstr "測試網際網路連線"
+
+#. Steps dialog caption 1/2
+#: src/include/network/installation/dialogs.rb:124
+msgid ""
+"<p>Here, validate the Internet connection just\n"
+"configured. The test is entirely optional.</p>"
+msgstr "<p>在此校驗剛配置的網際網路連線。該測試完全是可選的。</p>"
+
+#. Steps dialog caption 2/2
+#: src/include/network/installation/dialogs.rb:132
+msgid ""
+"<p>A successful result enables you to run\n"
+"the YaST Online Update.</p>"
+msgstr "<p>成功的測試結果意味著您可以運行 YaST 線上更新。</p>"
+
+#. Label text (keep lines max. 65 chars long)
+#: src/include/network/installation/dialogs.rb:139
+msgid ""
+"To validate your Internet access,\n"
+"activate the test procedure."
+msgstr "要校驗網際網路訪問，請啟用測試過程。"
+
+#. Label text (keep lines max. 65 chars long)
+#: src/include/network/installation/dialogs.rb:145
+msgid ""
+"To validate your DSL Internet access,\n"
+"activate the test procedure."
+msgstr "要校驗 DSL 網際網路訪問，請啟用測試過程。"
+
+#. Label text (keep lines max. 65 chars long)
+#: src/include/network/installation/dialogs.rb:149
+msgid ""
+"To validate your ISDN Internet access,\n"
+"activate the test procedure."
+msgstr "要校驗 ISDN 網際網路訪問，請啟用測試過程。"
+
+#. Label text (keep lines max. 65 chars long)
+#: src/include/network/installation/dialogs.rb:153
+msgid ""
+"To validate your modem Internet access,\n"
+"activate the test procedure."
+msgstr "要校驗調變解調器網際網路訪問，請啟用測試過程。"
+
+#. RadioButton label
+#: src/include/network/installation/dialogs.rb:175
+msgid "&Yes, Test Connection to the Internet Via"
+msgstr "好的，測試網際網路連線。通過(&Y)"
+
+#. RadioButton label
+#: src/include/network/installation/dialogs.rb:185
+msgid "N&o, Skip This Test"
+msgstr "不要，跳過此測試(&O)"
+
+#. label text - one step of during network test
+#: src/include/network/installation/dialogs.rb:196
+msgid "- Connect to the Internet"
+msgstr "- 連線到網際網路"
+
+#. label text - one step of during network test
+#: src/include/network/installation/dialogs.rb:202
+msgid "- Download latest release notes"
+msgstr "- 下載最新的版本資訊"
+
+#. label text - one step of during network test
+#: src/include/network/installation/dialogs.rb:209
+msgid "- Check for latest updates"
+msgstr "- 檢查最新的更新"
+
+#. label text - one step of during network test
+#: src/include/network/installation/dialogs.rb:214
+msgid "- Close connection"
+msgstr "- 關閉連線"
+
+#. Heading text
+#: src/include/network/installation/dialogs.rb:225
+msgid "The following steps will be performed:"
+msgstr "將執行以下步驟："
+
+#. Frame label
+#: src/include/network/installation/dialogs.rb:233
+msgid "Select:"
+msgstr "選擇："
+
+#. RadioButton label
+#: src/include/network/installation/dialogs.rb:286
+msgid "&Yes, Run Online Update Now"
+msgstr "是，立即運行線上更新(&Y)"
+
+#. RadioButton label
+#: src/include/network/installation/dialogs.rb:288
+msgid "N&o, Skip Update"
+msgstr "否，跳過更新(&O)"
+
+#. Heading text
+#: src/include/network/installation/dialogs.rb:298
+msgid "Online Updates Available"
+msgstr "線上更新可用"
+
+#. Label text
+#: src/include/network/installation/dialogs.rb:301
+msgid "Download and install them via the YaST Online Update?"
+msgstr "通過 YaST 線上更新下載並安裝它們嗎？"
+
+#. Heading
+#: src/include/network/installation/dialogs.rb:347
+msgid "Internet Connection Test Logs:"
+msgstr "網際網路連線測試日誌："
+
+#. ComboBox label
+#: src/include/network/installation/dialogs.rb:355
+msgid "&Select Log:"
+msgstr "選擇日誌(&S)："
+
+#. Frame label
+#: src/include/network/lan/address.rb:84
+msgid "Additional Addresses"
+msgstr "附加地址"
+
+#. Table header label
+#: src/include/network/lan/address.rb:96
+msgid "IPv4 Address Label"
+msgstr "IPv4 地址標籤"
+
+#. Table header label
+#. Table header label
+#: src/include/network/lan/address.rb:98 src/include/network/lan/complex.rb:75
+#: src/include/network/services/host.rb:128
+msgid "IP Address"
+msgstr "IP 地址"
+
+#. PushButton label
+#. PushButton label
+#. PushButton label
+#: src/include/network/lan/address.rb:107
+#: src/include/network/services/host.rb:139
+#: src/include/network/services/routing.rb:100
+msgid "Ad&d"
+msgstr "添加(&D)"
+
+#. PushButton label
+#. PushButton label
+#. PushButton label
+#. Pushbutton label
+#: src/include/network/lan/address.rb:109
+#: src/include/network/services/host.rb:141
+#: src/include/network/services/routing.rb:102
+#: src/include/network/summary.rb:69
+msgid "&Edit"
+msgstr "編輯(&E)"
+
+#. PushButton label
+#. PushButton label
+#. PushButton label
+#. Pushbutton label
+#: src/include/network/lan/address.rb:111
+#: src/include/network/services/host.rb:143
+#: src/include/network/services/routing.rb:104
+#: src/include/network/summary.rb:71
+msgid "De&lete"
+msgstr "刪除(&L)"
+
+#: src/include/network/lan/address.rb:132
+msgid "&Name of Interface"
+msgstr "介面名稱(&N)"
+
+#: src/include/network/lan/address.rb:134
+msgid "<p>TODO kind of vague!</p>"
+msgstr "<p>要執行的操作不明確！</p>"
+
+#. Combo Box label
+#: src/include/network/lan/address.rb:139
+msgid "Assign Interface to Firewall &Zone"
+msgstr "將介面指派到防火牆區域(&Z)"
+
+#. check box label
+#: src/include/network/lan/address.rb:147
+msgid "&Mandatory Interface"
+msgstr "必備介面(&M)"
+
+#. ComboBox label
+#. ComboBox label
+#: src/include/network/lan/address.rb:155
+#: src/include/network/lan/hardware.rb:367
+msgid "&Device Type"
+msgstr "裝置類型(&D)"
+
+#. ComboBox label
+#. TextEntry label
+#: src/include/network/lan/address.rb:174
+#: src/include/network/lan/hardware.rb:353
+msgid "&Configuration Name"
+msgstr "配置名稱(&C)"
+
+#: src/include/network/lan/address.rb:183
+msgid "Tunnel owner"
+msgstr "隧道所有者"
+
+#: src/include/network/lan/address.rb:184
+msgid "Tunnel group"
+msgstr "隧道組"
+
+#: src/include/network/lan/address.rb:193
+#: src/include/network/lan/address.rb:1316
+msgid "Bridged Devices"
+msgstr "橋接裝置"
+
+#: src/include/network/lan/address.rb:213
+msgid "Real Interface for &VLAN"
+msgstr "虛擬區域網的真實介面(&V)"
+
+#: src/include/network/lan/address.rb:216
+msgid "VLAN ID"
+msgstr "虛擬區域網 ID"
+
+#: src/include/network/lan/address.rb:233
+msgid "Bond Slaves and Order"
+msgstr "繫結從屬與順序"
+
+#: src/include/network/lan/address.rb:237
+msgid "Up"
+msgstr "向上"
+
+#: src/include/network/lan/address.rb:238
+msgid "Down"
+msgstr "向下"
+
+#: src/include/network/lan/address.rb:242
+msgid "Bond &Slaves"
+msgstr "繫結從屬(&S)"
+
+#. ComboBox label
+#: src/include/network/lan/address.rb:258
+msgid "&Bond Driver Options"
+msgstr "繫結驅動選項(&B)"
+
+#: src/include/network/lan/address.rb:260
+msgid "<p>Select the bond driver options and edit them if necessary. </p>"
+msgstr "<p>選擇繫結驅動選項並在需要時加以編輯。</p>"
+
+#. if (LanItems::type=="br") UI::ReplaceWidget(`rp, `Empty());
+#. else
+#: src/include/network/lan/address.rb:285
+#: src/include/network/lan/address.rb:811
+msgid "No Link and IP Setup (Bonding Slaves)"
+msgstr "無連結與 IP 設定 (繫結從屬)"
+
+#: src/include/network/lan/address.rb:288
+msgid "Use iBFT Values"
+msgstr "使用 iBFT 值"
+
+#: src/include/network/lan/address.rb:294
+msgid "Dynamic Address"
+msgstr "動態地址"
+
+#: src/include/network/lan/address.rb:310
+msgid "DHCP both version 4 and 6"
+msgstr "DHCP 版本 4 與 6"
+
+#: src/include/network/lan/address.rb:311
+msgid "DHCP version 4 only"
+msgstr "僅 DHCP 版本 4"
+
+#: src/include/network/lan/address.rb:312
+msgid "DHCP version 6 only"
+msgstr "僅 DHCP 版本 6"
+
+#. TODO : Stat ... Assigned
+#: src/include/network/lan/address.rb:323
+msgid "Statically Assigned IP Address"
+msgstr "靜態指派的 IP 地址"
+
+#. TextEntry label
+#. TextEntry label
+#: src/include/network/lan/address.rb:327
+#: src/include/network/lan/virtual.rb:218
+#: src/include/network/services/host.rb:356
+msgid "&IP Address"
+msgstr "&IP 地址"
+
+#: src/include/network/lan/address.rb:329
+msgid "&Subnet Mask"
+msgstr "子網掩碼(&S)"
+
+#: src/include/network/lan/address.rb:331
+msgid "&Hostname"
+msgstr "主機名(&H)"
+
+#. Text entry label
+#: src/include/network/lan/address.rb:364
+msgid "R&emote IP Address"
+msgstr "遠端 IP 地址(&E)"
+
+#. validation error popup
+#: src/include/network/lan/address.rb:373
+msgid "The remote IP address is invalid."
+msgstr "遠端 IP 地址無效。"
+
+#. push button label
+#: src/include/network/lan/address.rb:381
+msgid "&S/390"
+msgstr "&S/390"
+
+#. validate device type, misdetection
+#: src/include/network/lan/address.rb:1037
+msgid ""
+"You have changed the interface type from the one\n"
+"that has been detected. This only makes sense\n"
+"if you know that the detection is wrong."
+msgstr ""
+"您修改了某個檢測到的介面類型。\n"
+"這隻有在您知道檢測有誤時才有意義。"
+
+#. Popup text
+#: src/include/network/lan/address.rb:1057
+msgid "Configuration %1 already present."
+msgstr "配置 %1 已存在。"
+
+#. If firewall is active and interface in no zone, nothing
+#. gets through (#62309) so warn and redirect to details
+#: src/include/network/lan/address.rb:1081
+msgid ""
+"The firewall is active, but this interface is not\n"
+"in any zone. All its traffic would be blocked.\n"
+"Assign it to a zone now?"
+msgstr ""
+"防火牆處於活動狀態，但此介面尚不屬於任何區域。\n"
+"其全部流量均將被阻擋。\n"
+"現在將其指派到某個區域嗎？"
+
+#. Validator for network masks adresses
+#. @param [String] key	the widget being validated
+#. @param [Hash] event	the event being handled
+#. @return whether valid
+#: src/include/network/lan/address.rb:1101
+msgid "No valid IP address."
+msgstr "無效的 IP 地址。"
+
+#: src/include/network/lan/address.rb:1108
+msgid "No valid netmask or prefix length."
+msgstr "無效的網路掩碼或字首長度。"
+
+#: src/include/network/lan/address.rb:1116
+msgid "Invalid hostname."
+msgstr "無效的主機名。"
+
+#. There'll be no 127.0.0.2 -> remind user to define some hostname
+#: src/include/network/lan/address.rb:1124
+msgid ""
+"No hostname has been specified. We recommend to associate \n"
+"a hostname with a static IP, otherwise the machine name will \n"
+"not be resolvable without an active network connection.\n"
+"\n"
+"Really leave the hostname blank?\n"
+msgstr ""
+"未指定主機名。我們推薦為每個主機名繫結一個靜態 IP，\n"
+"否則機器名在沒有活動網路連線時將不能解析。\n"
+"\n"
+"真的要把主機名留空嗎？\n"
+
+#. Popup text
+#: src/include/network/lan/address.rb:1143
+msgid ""
+"Duplicate IP address detected.\n"
+"Really continue?\n"
+msgstr ""
+"檢測到重複的 IP 地址。\n"
+"真的繼續嗎？\n"
+
+#. @param [Array<String>] types network card types
+#. @return their descriptions for CWM
+#: src/include/network/lan/address.rb:1197
+msgid "&General"
+msgstr "常規(&G)"
+
+#. TODO:
+#. "MANDATORY",
+#: src/include/network/lan/address.rb:1209
+msgid "Device Activation"
+msgstr "裝置啟用"
+
+#: src/include/network/lan/address.rb:1213
+msgid "Firewall Zone"
+msgstr "防火牆區域"
+
+#: src/include/network/lan/address.rb:1218
+msgid "Maximum Transfer Unit (MTU)"
+msgstr "最大傳輸單元 (MTU)"
+
+#. FIXME we have helps per widget and for the whole
+#. tab set but not for one tab
+#: src/include/network/lan/address.rb:1228
+msgid "<p>Configure the detailed network card settings here.</p>"
+msgstr "<p>在此配置詳細網卡設定。</p>"
+
+#. FIXME: here it does not complain about missing
+#. shortcuts
+#: src/include/network/lan/address.rb:1293
+msgid "&Address"
+msgstr "地址(&A)"
+
+#. Address tab help
+#: src/include/network/lan/address.rb:1296
+msgid "<p>Configure your IP address.</p>"
+msgstr "<p>配置您的 IP 地址。</p>"
+
+#: src/include/network/lan/address.rb:1302
+msgid "&Hardware"
+msgstr "硬體(&H)"
+
+#: src/include/network/lan/address.rb:1309
+msgid "&Bond Slaves"
+msgstr "繫結從屬(&B)"
+
+#: src/include/network/lan/address.rb:1323
+msgid "&Wireless"
+msgstr "無線(&W)"
+
+#. Combo box label - when to activate device (e.g. on boot, manually, never,..)
+#: src/include/network/lan/address.rb:1408
+msgid "Ifplugd Priority"
+msgstr "Ifplugd 優先順序"
+
+#. Device activation main help. The individual parts will be
+#. substituted as %1
+#: src/include/network/lan/address.rb:1414
+msgid ""
+"<p><b><big>IFPLUGD PRIORITY</big></b></p> \n"
+"<p> All interfaces configured with <b>On Cable Connection</b> and with "
+"IFPLUGD_PRIORITY != 0 will be\n"
+" used mutually exclusive. If more then one of these interfaces is <b>On "
+"Cable Connection</b>\n"
+" then we need a way to decide which interface to take up. Therefore we have "
+"to\n"
+" set the priority of each interface.  </p>\n"
+msgstr ""
+"<p><b><big>IFPLUGD 優先順序</big></b></p>\n"
+"<p>全部配置為<b>在網線連線時</b>與 IFPLUGD_PRIORITY != 0 的介面都將是互斥"
+"的。\n"
+"若大於一個這樣的介面是<b>在網線連線時</b>那麼我們需要一種方法決定啟用哪個接"
+"口。\n"
+"因此我們需要設定每個介面的優先順序。</p>\n"
+
+#. Address dialog caption
+#: src/include/network/lan/address.rb:1499
+msgid "Network Card Setup"
+msgstr "網卡設定"
+
+#. when using wicked every device which can be bridged
+#. can be set to BOOTPROTO=none. No workaround with
+#. BOOTPROTO=static required anymore
+#: src/include/network/lan/bridge.rb:89
+msgid ""
+"At least one selected device is already configured.\n"
+"Adapt the configuration for bridge?\n"
+msgstr ""
+"至少有一個所選裝置已經配置過了。\n"
+"為網橋調整配置嗎？\n"
+
+#. Network card name (wireless)
+#: src/include/network/lan/cards.rb:55
+msgid "Cisco/Aironet 802.11 wireless ISA/PCI and PCMCIA ethernet cards"
+msgstr "Cisco/Aironet 802.11 無線 ISA/PCI 及 PCMCIA Ethernet 網卡"
+
+#. Network card name (wireless)
+#: src/include/network/lan/cards.rb:62
+msgid "Lucent Orinoco, Prism II based, and similar wireless cards"
+msgstr "Lucent Orinoco、基於 Prism II 以及類似的無線網卡"
+
+#. Network card name (wireless)
+#: src/include/network/lan/cards.rb:69
+msgid "PCMCIA Lucent Orinoco, Prism II based, and similar wireless cards"
+msgstr "PCMCIA Lucent Orinoco、基於 Prism II 以及類似的無線網卡"
+
+#. Network card name (wireless)
+#: src/include/network/lan/cards.rb:76
+msgid "Wireless LAN cards using direct PCI interface"
+msgstr "使用直接 PCI 介面的無線 LAN 卡"
+
+#. Network card name (wireless)
+#: src/include/network/lan/cards.rb:83
+msgid "Wireless LAN cards using the PLX9052 PCI bridge"
+msgstr "使用 PLX9052 PCI 橋的無線 LAN 卡"
+
+#. Network card name (wireless)
+#: src/include/network/lan/cards.rb:90
+msgid "Wireless device using kernel module p80211.o"
+msgstr "使用核心模組 p80211.o 的無線裝置"
+
+#. Network card name (wireless)
+#: src/include/network/lan/cards.rb:97
+msgid "Wireless device using kernel module prism2_cs.o"
+msgstr "使用核心模組 prism2_cs.o 的無線裝置"
+
+#. Network card name (wireless)
+#: src/include/network/lan/cards.rb:104
+msgid "Wireless device using kernel module prism2_pci.o"
+msgstr "使用核心模組 prism2_pci.o 的無線裝置"
+
+#. Network card name (wireless)
+#: src/include/network/lan/cards.rb:111
+msgid "Wireless device using kernel module prism2_plx.o"
+msgstr "使用核心模組 prism2_plx.o 的無線裝置"
+
+#. Network card name (wireless)
+#: src/include/network/lan/cards.rb:118
+msgid "Wireless device using kernel module prism2_usb.o"
+msgstr "使用核心模組 prism2_usb.o 的無線裝置"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:126
+msgid "Apple onboard Ethernet mace"
+msgstr "Apple 板載 Ethernet mace"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:132
+msgid "Apple onboard Ethernet bmac"
+msgstr "Apple 板載 Ethernet bmac"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:138
+msgid "Apple onboard Ethernet gmac"
+msgstr "Apple 板載 Ethernet gmac"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:171
+msgid "3Com 3c90x/3c980 B/C series"
+msgstr "3Com 3c90x/3c980 B/C 系列"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:202
+msgid "Apricot Xen-II onboard ethernet"
+msgstr "Apricot Xen-II 板載 Ethernet"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:208
+msgid "AT-LAN-TEC/RealTek pocket adapter"
+msgstr "AT-LAN-TEC/RealTek 口袋介面卡"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:231
+msgid "D-Link DE600 pocket adapter"
+msgstr "D-Link DE600 口袋介面卡"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:237
+msgid "D-Link DE620 pocket adapter"
+msgstr "D-Link DE620 口袋介面卡"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:299
+msgid "ICL EtherTeam 16i/32 (experimental)"
+msgstr "ICL EtherTeam 16i/32 (實驗性)"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:320
+msgid "Intel PRO/100 / EtherExpress PRO/100 (alternate driver)"
+msgstr "Intel PRO/100/EtherExpress PRO/100 (備用驅動)"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:440
+msgid "iSeries Virtual Network"
+msgstr "iSeries 虛擬網路"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:448
+msgid "IBM Tropic chipset token ring"
+msgstr "IBM Tropic 晶片組令牌環"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:454
+msgid "IBM Olympic chipset PCI Token Ring"
+msgstr "IBM Olympic 晶片組 PCI 令牌環"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:460
+msgid "IBM OSA Token Ring"
+msgstr "IBM OSA 令牌環"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:473
+msgid "ARCnet COM90xx (standard)"
+msgstr "ARCnet COM90xx (標準)"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:479
+msgid "ARCnet COM90xx (in IO-mapped mode)"
+msgstr "ARCnet COM90xx (IO 對映模式下)"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:510
+msgid "Digital Equipment Corporation FDDI controller"
+msgstr "Digital Equipment Corporation FDDI 控制器"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:516
+msgid "SysKonnect FDDI adapter (SK-55xx, SK-58xx, Netelligent 100)"
+msgstr "SysKonnect FDDI 介面卡 (SK-55xx、SK-58xx、Netelligent 100)"
+
+#. Network subsystem name
+#: src/include/network/lan/cards.rb:533
+msgid "Channel-to-Channel (CTC) network"
+msgstr "通道到通道 (CTC) 網路"
+
+#. Network subsystem name
+#: src/include/network/lan/cards.rb:541
+msgid "Hipersockets (HSI) Network"
+msgstr "超速套接字 (HSI) 網路"
+
+#. Network subsystem name
+#: src/include/network/lan/cards.rb:548
+msgid "IBM OSA LCS"
+msgstr "IBM OSA LCS"
+
+#. Network subsystem name
+#: src/include/network/lan/cards.rb:553
+msgid "Enterprise System Connector (ESCON) network"
+msgstr "企業系統連線器 (ESCON) 網路"
+
+#. Network subsystem name
+#: src/include/network/lan/cards.rb:561
+msgid "Fiberchannel System Connector (FICON) Network"
+msgstr "光纖通道系統連線器 (FICON) 網路"
+
+#. Network subsystem name
+#: src/include/network/lan/cards.rb:569
+msgid "Inter User Communication Vehicle (IUCV)"
+msgstr "使用者間通訊載體 (IUCV)"
+
+#. Network card name
+#: src/include/network/lan/cards.rb:577
+msgid "CI7000 adapter"
+msgstr "CI7000 介面卡"
+
+#. list<map<string,any> > overview = (list<map<string,any> >)LanItems::Overview();
+#: src/include/network/lan/cmdline.rb:92
+msgid "Use \"id\" option to determine device."
+msgstr "使用 \"id\" 選項確定裝置。"
+
+#: src/include/network/lan/cmdline.rb:101
+msgid ""
+"Value of \"id\" is out of range. Use \"list\" option to check max. value of "
+"\"id\"."
+msgstr "\"id\" 的值超出範圍。請使用 \"list\" 選項檢查 \"id\" 的最大值。"
+
+#. Handler for action "add"
+#. @param [Hash{String => String}] options action options
+#. Handler for action "edit"
+#. @param [Hash{String => String}] options action options
+#: src/include/network/lan/cmdline.rb:219
+#: src/include/network/lan/cmdline.rb:270
+msgid "Impossible value for bootproto."
+msgstr "bootproto 的值非法。"
+
+#: src/include/network/lan/cmdline.rb:228
+#: src/include/network/lan/cmdline.rb:294
+msgid "Impossible value for startmode."
+msgstr "startmode 的值非法。"
+
+#: src/include/network/lan/cmdline.rb:276
+msgid "For static configuration, the \"ip\" option is needed."
+msgstr "靜態配置需要 \"ip\" 選項。"
+
+#. Handler for action "delete"
+#. @param [Hash{String => String}] options action options
+#: src/include/network/lan/cmdline.rb:322
+msgid "The device was deleted."
+msgstr "該裝置已刪除。"
+
+#. , :gw6dev encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. **************************************************************************
+#. File:	include/network/lan/dialogs.ycp
+#. Package:	Network configuration
+#. Summary:	Summary, overview and IO dialogs for network cards config
+#. Authors:	Michal Svec <msvec@suse.cz>
+#: src/include/network/lan/complex.rb:75
+msgid "Name"
+msgstr "名稱"
+
+#: src/include/network/lan/complex.rb:75
+msgid "Note"
+msgstr "注"
+
+#: src/include/network/lan/complex.rb:116
+msgid "Global Options"
+msgstr "全局選項"
+
+#: src/include/network/lan/complex.rb:126
+msgid "Overview"
+msgstr "概覽"
+
+#. continue-cancel popup, #178848
+#. %1 is a (long) path to a README file
+#: src/include/network/lan/complex.rb:154
+msgid ""
+"A Xen network bridge was detected.\n"
+"Due to the renaming of network interfaces by the bridge script,\n"
+"network interfaces should not be configured or restarted.\n"
+"See %1 for details."
+msgstr ""
+"檢測到一個 Xen 網橋。\n"
+"由於網橋指令碼對網路介面的重新命名，不應配置或重啟網路介面。\n"
+"細節參考 %1。"
+
+#. Write settings dialog
+#. @return `abort if aborted and `next otherwise
+#: src/include/network/lan/complex.rb:200
+msgid ""
+"Firmware is needed. Install it from \n"
+"the add-on CD.\n"
+"First add the add-on CD to your YaST software repositories then return \n"
+"to this configuration dialog.\n"
+msgstr ""
+"需要固件。請從附加 CD 安裝之。\n"
+"首先將附加 CD 添加到 YaST 軟體源，然後返回此配置對話方塊。\n"
+
+#: src/include/network/lan/complex.rb:214
+msgid ""
+"The device needs a firmware to function properly. Usually, it can be\n"
+"downloaded from your driver vendor's Web page. \n"
+"If you have already downloaded and installed the firmware, click\n"
+"<b>Continue</b> to configure the device. Otherwise click <b>Cancel</b> and\n"
+"return to this dialog once you have installed the firmware.\n"
+msgstr ""
+"該裝置需要固件才能正常運行。固件通常可從驅動製造商網頁下載。\n"
+"若您已下載並安裝了固件，請點選<b>繼續</b>配置裝置。\n"
+"否則請點選<b>取消</b>並在安裝固件後返回到此對話方塊。\n"
+
+#. this is one of 2 places to install packages :-(
+#. - kernel modules (InstallKernel): before loaded
+#. - wlan firmware: here, just because it is copied from modems
+#. #45960
+#: src/include/network/lan/complex.rb:233
+msgid "Installing firmware"
+msgstr "正在安裝固件"
+
+#: src/include/network/lan/complex.rb:234
+msgid ""
+"For successful firmware installation, the 'install_bcm43xx_firmware' script "
+"needs to be executed. Execute it now?"
+msgstr "為了順利安裝固件，需要執行 'install_bcm43xx_firmware' 指令碼。現在執行它嗎？"
+
+#: src/include/network/lan/complex.rb:248
+msgid "An error occurred during firmware installation."
+msgstr "固件安裝時出錯。"
+
+#. Continue-Cancel popup
+#: src/include/network/lan/complex.rb:403
+msgid ""
+"The interface is currently set to be managed\n"
+"by the NetworkManager applet.\n"
+"\n"
+"If you edit the settings for this interface here,\n"
+"the interface will no longer be managed by NetworkManager.\n"
+msgstr ""
+"該介面目前設為由 NetworkManager 掛件管理。\n"
+"\n"
+"若您在此處編輯了此介面的設定，\n"
+"該介面將不再由 NetworkManager 管理。\n"
+
+#. warn user when device to delete has STARTMODE=nfsroot (bnc#433867)
+#: src/include/network/lan/complex.rb:457
+msgid "Device you select has STARTMODE=nfsroot. Really delete?"
+msgstr "您選擇的裝置有 STARTMODE=nfsroot。真的刪除嗎？"
+
+#. Network setup method dialog caption
+#: src/include/network/lan/complex.rb:493 src/include/network/widgets.rb:376
+msgid "Network Setup Method"
+msgstr "網路設定方法"
+
+#. Evaluates if user should be asked again according dialogs result value
+#.
+#. it is basically useful if user aborts dialog and he has done some
+#. changes already. Calling this function may results in confirmation
+#. popup.
+#: src/include/network/lan/complex.rb:523
+msgid "Network Settings"
+msgstr "網路設定"
+
+#. Frame label
+#: src/include/network/lan/dhcp.rb:48
+msgid "DHCP Client Options"
+msgstr "DHCP 客戶端選項"
+
+#. CheckBox label
+#. `Left(`CheckBox(`id(`broadcast), _("Request Broad&cast Response"))),
+#. `VSpacing(0.49),
+#. TextEntry label
+#: src/include/network/lan/dhcp.rb:58
+msgid "DHCP Client &Identifier"
+msgstr "DHCP 客戶端標識符(&I)"
+
+#. TextEntry label
+#: src/include/network/lan/dhcp.rb:64
+msgid "&Hostname to Send"
+msgstr "要發送的主機名(&H)"
+
+#: src/include/network/lan/dhcp.rb:71
+msgid "Change Default Route via DHCP"
+msgstr "通過 DHCP 修改默認路由"
+
+#. Manual network card setup help 1/4
+#: src/include/network/lan/hardware.rb:81
+msgid ""
+"<p>Set up hardware-specific options for \n"
+"your network device here.</p>\n"
+msgstr "<p>在此設定網路裝置硬體相關的選項。</p>\n"
+
+#. Manual network card setup help 2/4
+#. translators: do not translated udev, MAC, BusID
+#: src/include/network/lan/hardware.rb:90
+msgid ""
+"<p><b>Device Type</b>. Various device types are available, select \n"
+"one according your needs.</p>"
+msgstr "<p><b>裝置類型</b>。根據您的需要從多種可用裝置類型中擇一。</p>"
+
+#: src/include/network/lan/hardware.rb:98
+msgid ""
+"<p><b>Udev Rules</b> are rules for the kernel device manager that allow\n"
+"associating the MAC address or BusID of the network device with its name "
+"(for\n"
+"example, eth1, wlan0 ) and assures a persistent device name upon reboot.\n"
+msgstr ""
+"<p><b>Udev 規則</b> 是核心裝置管理器的規則，\n"
+"它允許把網路裝置的 MAC 地址或者 BusID 與其名稱(例如，eth1, wlan0 ) 相關聯，\n"
+"並保證了重啟後裝置名稱的一致。\n"
+
+#: src/include/network/lan/hardware.rb:104
+msgid ""
+"<p><b>Show visible port identification</b> allows you to physically identify "
+"now configured NIC. \n"
+"Set appropriate time, click <b>Blink</b> and LED diodes on you NIC will "
+"start blinking for selected time.\n"
+"</p>"
+msgstr ""
+"<p><b>顯示可見埠標識</b>允許您物理識別現在正配置的 NIC。\n"
+"設定適宜的時間，點選<b>閃爍</b>然後您 NIC 上的 LED 二極體將每隔所選時間就閃爍"
+"一次。\n"
+"</p>"
+
+#. Manual network card setup help 2/4
+#: src/include/network/lan/hardware.rb:117
+msgid ""
+"<p><b>Kernel Module</b>. Enter the kernel module (driver) name \n"
+"for your network device here. If the device is already configured, see if "
+"there is more than one driver available for\n"
+"your device in the drop-down list. If necessary, choose a driver from the "
+"list, but usually the default value works.</p>\n"
+msgstr ""
+"<p><b>核心模組</b>。在此為您的網路裝置輸入核心模組 (驅動) 名稱。\n"
+"若裝置已經配置過了，請在下拉選單中檢視是否有多個驅動可用於您的裝置。\n"
+"若有必要，從列表中選擇一個驅動，但通常預設值就可以。</p>\n"
+
+#. Manual networ card setup help 3/4
+#: src/include/network/lan/hardware.rb:124
+msgid ""
+"<p>Additionally, specify <b>Options</b> for the kernel module. Use this\n"
+"format: <i>option</i>=<i>value</i>. Each entry should be space-separated, "
+"for example: <i>io=0x300 irq=5</i>. <b>Note:</b> If two cards are \n"
+"configured with the same module name, the options will be merged while "
+"saving.</p>\n"
+msgstr ""
+"<p>另外，也可以指定核心模組的<b>選項</b>。 \n"
+"使用此格式：<i>選項</i>=<i>值</i>。每項之間以空格分隔，例如 <i>io=0x300 "
+"irq=5</i>。\n"
+"<b>注意：</b>若用同一個模組名稱配置了兩塊網卡，則儲存時將合併這些選項。</p>\n"
+
+#: src/include/network/lan/hardware.rb:130
+msgid ""
+"<p>If you specify options via <b>Ethtool options</b>, ifup will call ethtool "
+"with these options.</p>\n"
+msgstr ""
+"<p>若您通過 <b>Ethtool 選項</b>指定了選項，ifup 將使用這些選項呼叫 ethtool。"
+"</p>\n"
+
+#. Manual dialog help 4/4
+#: src/include/network/lan/hardware.rb:139
+msgid ""
+"<p>If you have a <b>PCMCIA</b> network card, select PCMCIA.\n"
+"If you have a <b>USB</b> network card, select USB.</p>\n"
+msgstr ""
+"<p>若您有 <b>PCMCIA</b> 網卡，請選擇 PCMCIA。\n"
+"若您有 <b>USB</b> 網卡，請選擇 USB。</p>\n"
+
+#. overwrite help
+#. Manual dialog help 5/4
+#: src/include/network/lan/hardware.rb:148
+msgid ""
+"<p>Here, set up your networking device. The values will be\n"
+"written to <i>/etc/modprobe.conf</i> or <i>/etc/chandev.conf</i>.</p>\n"
+msgstr ""
+"<p>在此設定您的聯網裝置。這些值將被寫入 <i>/etc/modprobe.conf</i> 或 <i>/etc/"
+"chandev.conf</i>。</p>\n"
+
+#. Manual dialog help 6/4
+#: src/include/network/lan/hardware.rb:152
+msgid ""
+"<p>Options for the module should be written in the format specified\n"
+"in the <b>IBM Device Drivers and Installation Commands</b> manual.</p>"
+msgstr "<p>模組選項應遵照 <b>IBM 裝置驅動與安裝命令</b>手冊中指定的格式填寫。</p>"
+
+#. Manual dialog caption
+#: src/include/network/lan/hardware.rb:269
+msgid "Manual Network Card Configuration"
+msgstr "手動網卡配置"
+
+#. CheckBox label
+#: src/include/network/lan/hardware.rb:282
+msgid "&PCMCIA"
+msgstr "&PCMCIA"
+
+#. CheckBox label
+#: src/include/network/lan/hardware.rb:291
+msgid "&USB"
+msgstr "&USB"
+
+#. ComboBox label
+#: src/include/network/lan/hardware.rb:300
+msgid "&Hotplug Type"
+msgstr "熱插拔類型(&H)"
+
+#. CheckBox label
+#: src/include/network/lan/hardware.rb:305
+msgid "P&CI"
+msgstr "P&CI"
+
+#. #116211 - allow user to change modules from list
+#. Frame label
+#: src/include/network/lan/hardware.rb:317
+msgid "&Kernel Module"
+msgstr "核心模組(&K)"
+
+#. Text entry label
+#: src/include/network/lan/hardware.rb:327
+msgid "&Module Name"
+msgstr "模組名稱(&M)"
+
+#. TODO: Ud ... Rules
+#: src/include/network/lan/hardware.rb:382
+msgid "Udev Rules"
+msgstr "Udev 規則"
+
+#: src/include/network/lan/hardware.rb:384
+msgid "Device Name"
+msgstr "裝置名稱"
+
+#: src/include/network/lan/hardware.rb:385
+msgid "Change"
+msgstr "修改"
+
+#: src/include/network/lan/hardware.rb:396
+msgid "Show Visible Port Identification"
+msgstr "顯示可見埠標識"
+
+#. translators: how many seconds will card be blinking
+#: src/include/network/lan/hardware.rb:401
+msgid "Seconds"
+msgstr "秒"
+
+#: src/include/network/lan/hardware.rb:406
+msgid "Blink"
+msgstr "閃爍"
+
+#: src/include/network/lan/hardware.rb:411
+msgid "Ethtool Options"
+msgstr "Ethtool 選項"
+
+#. Manual selection caption
+#: src/include/network/lan/hardware.rb:491
+msgid "Manual Network Card Selection"
+msgstr "手動網卡選擇"
+
+#. Manual selection help
+#: src/include/network/lan/hardware.rb:494
+msgid ""
+"<p>Select the network card to configure. Search\n"
+"for a particular network card by entering the name in the search entry.</p>"
+msgstr "<p>選擇要配置的網卡。可在搜索項中輸入名稱搜索特定網卡。</p>"
+
+#. Selection box label
+#. Selection box title
+#: src/include/network/lan/hardware.rb:504
+#: src/include/network/lan/hardware.rb:559
+msgid "&Network Card"
+msgstr "網卡(&N)"
+
+#. Text entry field
+#: src/include/network/lan/hardware.rb:508
+msgid "&Search"
+msgstr "搜索(&S)"
+
+#. Remember current device number (#308763)
+#. see also bnc#391802
+#: src/include/network/lan/hardware.rb:824
+msgid ""
+"Configuration name %1 already exists.\n"
+"Choose a different one."
+msgstr ""
+"配置名稱 %1 已存在。\n"
+"請選擇一個不同的名稱。"
+
+#. S/390 dialog caption
+#: src/include/network/lan/hardware.rb:868
+msgid "S/390 Network Card Configuration"
+msgstr "S/390 網卡配置"
+
+#. Frame label
+#. Frame label
+#. Frame label
+#. Frame label
+#: src/include/network/lan/hardware.rb:888
+#: src/include/network/lan/hardware.rb:990
+#: src/include/network/lan/hardware.rb:1057
+#: src/include/network/lan/hardware.rb:1094
+msgid "S/390 Device Settings"
+msgstr "S/390 裝置設定"
+
+#. TextEntry label
+#: src/include/network/lan/hardware.rb:898
+msgid "&Port Name"
+msgstr "埠名稱(&P)"
+
+#: src/include/network/lan/hardware.rb:903
+msgid "Port Number"
+msgstr "埠號"
+
+#. CheckBox label
+#: src/include/network/lan/hardware.rb:917
+msgid "&Enable IPA Takeover"
+msgstr "啟用 IPA 接管(&E)"
+
+#. CheckBox label
+#: src/include/network/lan/hardware.rb:924
+msgid "Enable &Layer 2 Support"
+msgstr "啟用第 2 層支援(&L)"
+
+#. TextEntry label
+#: src/include/network/lan/hardware.rb:931
+msgid "Layer2 &MAC Address"
+msgstr "第 2 層 MAC 地址(&M)"
+
+#: src/include/network/lan/hardware.rb:939
+#: src/include/network/lan/hardware.rb:1015
+#: src/include/network/lan/hardware.rb:1069
+msgid "Read Channel"
+msgstr "讀取通道"
+
+#: src/include/network/lan/hardware.rb:945
+#: src/include/network/lan/hardware.rb:1021
+#: src/include/network/lan/hardware.rb:1075
+msgid "Write Channel"
+msgstr "寫入通道"
+
+#: src/include/network/lan/hardware.rb:951
+msgid "Control Channel"
+msgstr "控制通道"
+
+#. S/390 dialog help: QETH Port name
+#: src/include/network/lan/hardware.rb:962
+msgid "<p>Enter the <b>Port Name</b> for this interface (case-sensitive).</p>"
+msgstr "<p>輸入此介面的<b>埠名稱</b>(大小寫敏感)。</p>"
+
+#. S/390 dialog help: QETH Options
+#: src/include/network/lan/hardware.rb:966
+msgid ""
+"<p>Enter any additional <b>Options</b> for this interface (separated by "
+"spaces).</p>"
+msgstr "<p>輸入此介面的任何附加<b>選項</b> (以空格分隔)。</p>"
+
+#: src/include/network/lan/hardware.rb:969
+msgid ""
+"<p>Select <b>Enable IPA Takeover</b> if IP address takeover should be "
+"enabled for this interface.</p>"
+msgstr "<p>若應為此介面啟用 IP 地址接管，請選擇<b>啟用 IPA 接管</b>。</p>"
+
+#: src/include/network/lan/hardware.rb:972
+msgid ""
+"<p>Select <b>Enable Layer 2 Support</b> if this card has been configured "
+"with layer 2 support.</p>"
+msgstr "<p>若此卡已配置了第 2 層支援，請選擇<b>啟用第 2 層支援</b>。</p>"
+
+#: src/include/network/lan/hardware.rb:975
+msgid ""
+"<p>Enter the <b>Layer 2 MAC Address</b> if this card has been configured "
+"with layer 2 support.</p>"
+msgstr "<p>若此卡已配置了第 2 層支援，請輸入<b>第 2 層 MAC 地址</b>。</p>"
+
+#. TextEntry label
+#: src/include/network/lan/hardware.rb:999
+msgid "&Port Number"
+msgstr "埠號(&P)"
+
+#. TextEntry label
+#: src/include/network/lan/hardware.rb:1007
+msgid "&LANCMD Time-Out"
+msgstr "&LANCMD 超時"
+
+#. S/390 dialog help: LCS
+#: src/include/network/lan/hardware.rb:1032
+msgid "<p>Choose the <b>Port Number</b> for this interface.</p>"
+msgstr "<p>選擇此介面的<b>埠號</b>。</p>"
+
+#: src/include/network/lan/hardware.rb:1033
+msgid "<p>Specify the <b>LANCMD Time-Out</b> for this interface.</p>"
+msgstr "<p>為此介面指定 <b>LANCMD 超時</b>。</p>"
+
+#. ComboBox item: CTC device protocol
+#: src/include/network/lan/hardware.rb:1038
+msgid "Compatibility Mode"
+msgstr "相容模式"
+
+#. ComboBox item: CTC device protocol
+#: src/include/network/lan/hardware.rb:1040
+msgid "Extended Mode"
+msgstr "擴展模式"
+
+#. ComboBox item: CTC device protocol
+#: src/include/network/lan/hardware.rb:1042
+msgid "CTC-Based tty (Linux to Linux Connections)"
+msgstr "基於 CTC 的控制檯 (Linux 到 Linux 連線)"
+
+#. ComboBox item: CTC device protocol
+#: src/include/network/lan/hardware.rb:1044
+msgid "Compatibility Mode with OS/390 and z/OS"
+msgstr "OS/390 與 z/OS 相容模式"
+
+#. TextEntry label
+#: src/include/network/lan/hardware.rb:1063
+msgid "&Protocol"
+msgstr "協議(&P)"
+
+#. S/390 dialog help: CTC
+#: src/include/network/lan/hardware.rb:1086
+msgid "<p>Choose the <b>Protocol</b> for this interface.</p>"
+msgstr "<p>選擇此介面的<b>協議</b>。</p>"
+
+#. TextEntry label, #42789
+#: src/include/network/lan/hardware.rb:1103
+msgid "&Peer Name"
+msgstr "對等點名稱(&P)"
+
+#. S/390 dialog help: IUCV, #42789
+#: src/include/network/lan/hardware.rb:1114
+msgid ""
+"<p>Enter the name of the IUCV peer,\n"
+"for example, the z/VM user name with which to connect (case-sensitive).</p>\n"
+msgstr ""
+"<p>請輸入 IUCV 對等點的名稱，\n"
+"例如，要連線的 z/VM 使用者名 (大小寫敏感)。</p>\n"
+
+#. #176330, must be static
+#: src/include/network/lan/hardware.rb:1238
+msgid ""
+"An error occurred while creating device.\n"
+"See YaST log for details."
+msgstr ""
+"創建裝置時出錯。\n"
+"細節參考 YaST 日誌。"
+
+#. Manual network card configuration dialog
+#. @return dialog result
+#: src/include/network/lan/hardware.rb:1260
+msgid "Hardware Dialog"
+msgstr "硬體對話方塊"
+
+#. Network cards read dialog help 1/2
+#: src/include/network/lan/help.rb:32
+msgid ""
+"<p><b><big>Initializing Network Card\n"
+"Configuration</big></b><br>Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在啟始化網卡配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Network cards read dialog help 2/2
+#: src/include/network/lan/help.rb:36
+msgid ""
+"<p><b><big>Aborting the Initialization:</big></b><br>\n"
+"Safely abort the configuration utility by pressing <B>Abort</B> now.</p>\n"
+msgstr ""
+"<p><b><big>中止啟始化：</big></b><br>\n"
+"現在按<B>中止</B>可安全地中止配置工具。</p>\n"
+
+#. Network cards write dialog help 1/2
+#: src/include/network/lan/help.rb:41
+msgid ""
+"<p><b><big>Saving Network Card\n"
+"Configuration</big></b><br>Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在儲存網卡配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Network cards write dialog help 2/2
+#: src/include/network/lan/help.rb:45
+msgid ""
+"<p><b><big>Aborting Saving:</big></b><br>\n"
+"Abort saving by pressing <b>Abort</b>.</p>\n"
+msgstr ""
+"<p><b><big>中止儲存：</big></b><br>\n"
+"按<b>中止</b>可中止儲存。</p>\n"
+
+#. Network setup method help
+#. NetworkManager and ifup are programs
+#: src/include/network/lan/help.rb:51
+msgid ""
+"<p><b><big>Network Setup Method</big></b></p>\n"
+"<p>Use the <b>NetworkManager</b> as a desktop applet\n"
+"managing connections for all interfaces. It is well suited\n"
+"for switching among wired and wireless networks.</p>\n"
+msgstr ""
+"<p><b><big>網路設定方法</big></b></p>\n"
+"<p>使用 <b>NetworkManager</b> 桌面掛件管理全部介面的連線。\n"
+"它很適合於要在有線與無線網路間切換的場景。</p>\n"
+
+#. Network setup method help
+#. NetworkManager and wicked are programs
+#: src/include/network/lan/help.rb:59
+msgid ""
+"<p>Use <b>wicked</b> if you do not run a desktop environment\n"
+"or need to use multiple interfaces at the same time.</p>\n"
+msgstr ""
+"<p>若您未運行桌面環境或需要同時使用多個介面，\n"
+"請使用<b>怪獸方法</b>。</p>\n"
+
+#: src/include/network/lan/help.rb:63
+msgid ""
+"<p><b><big>Network Card Overview</big></b><br>\n"
+"Obtain an overview of installed network cards. Additionally,\n"
+"edit their configuration.<br></p>\n"
+msgstr ""
+"<p><b><big>網卡概覽</big></b><br>\n"
+"獲得已安裝網卡的概覽。\n"
+"此外，還可編輯其配置。<br></p>\n"
+
+#: src/include/network/lan/help.rb:68
+msgid ""
+"<p><b><big>Adding a Network Card:</big></b><br>\n"
+"Press <b>Add</b> to configure a new network card manually.</p>\n"
+msgstr ""
+"<p><b><big>添加網卡：</big></b><br>\n"
+"按<b>添加</b>手動配置新網卡。</p>\n"
+
+#: src/include/network/lan/help.rb:71
+msgid ""
+"<p><b><big>Configuring or Deleting:</big></b><br>\n"
+"Choose a network card to change or remove.\n"
+"Then press <b>Edit</b> or <b>Delete</b> respectively.</p>\n"
+msgstr ""
+"<p><b><big>編輯或刪除：</big></b><br>\n"
+"選擇要修改或移除的網卡。\n"
+"然後分別按<b>編輯</b>或<b>刪除</b>。</p>\n"
+
+#. IPv6 help
+#: src/include/network/lan/help.rb:78
+msgid ""
+"<p><b><big>IPv6 Protocol Settings</big></b></p>\n"
+"<p>Check <b>Enable IPv6</b> to enable the ipv6 module in the kernel.\n"
+"It is possible to use IPv6 together with IPv4. This is the default option.\n"
+"To disable IPv6, uncheck this option. This will blacklist the kernel \n"
+"module for ipv6. If the IPv6 protocol is not used on your network, the "
+"response \n"
+"time can be faster.</p>\n"
+msgstr ""
+"<p><b><big>IPv6 協議設定</big></b></p>\n"
+"<p>勾選<b>啟用 IPv6</b>啟用核心中的 ipv6 模組。\n"
+"IPv6 可以與 IPv4 同時使用。這是默認選項。\n"
+"要禁用 IPv6，請反選此選項。這將遮蔽 ipv6 核心模組。\n"
+"若您的網路未使用 ipv6 協議，這樣做響應時間會更短。</p>\n"
+
+#: src/include/network/lan/help.rb:86
+msgid "<p>All changes will be applied after reboot.</p>"
+msgstr "<p>全部修改都將在重啟後應用。</p>"
+
+#. Routing dialog help 1/2
+#: src/include/network/lan/help.rb:89
+msgid ""
+"<p>The routing can be set up in this dialog.\n"
+"The <b>Default Gateway</b> matches every possible destination, but poorly. \n"
+"If any other entry exists that matches the required address, it is\n"
+"used instead of the default route. The idea of the default route is simply\n"
+"to enable you to say \"and everything else should go here.\"</p>\n"
+msgstr ""
+"<p>在此對話方塊中可以設定路由。\n"
+"<b>默認閘道器</b>會匹配每個可能的目的地，但匹配度較差。\n"
+"若存在任何其它匹配要求地址的項，則將使用該項而不使用默認路由。\n"
+"設計默認路由的目的僅是為了提供一個 \"萬一沒有目的地時的目的地\"。</p>\n"
+
+#: src/include/network/lan/help.rb:96
+msgid ""
+"<p>For each route, enter destination network IP address, gateway address,\n"
+"and netmask. To omit any of these values, use a dash sign \"-\". Select\n"
+"the device through which the traffic to the defined network will be routed."
+"\"-\" is an alias for any interface.</p>\n"
+msgstr ""
+"<p>請為每條路由輸入目的地網路的 IP 地址、閘道器地址與網路掩碼。\n"
+"要忽略這些值中的任何一個，請使用破折號 \"-\"。\n"
+"也請選擇到定義網路的流量應經哪個裝置中轉。\n"
+"\"-\" 表示任何介面。</p>\n"
+
+#. Routing dialog help 2/2
+#: src/include/network/lan/help.rb:102
+msgid ""
+"<p>Enable <b>IPv4 Forwarding</b> (forwarding packets from external networks\n"
+"to the internal one) if this system is a router.\n"
+msgstr ""
+"<p>若此係統是一個路由器則請啟用<b>IPv4 轉發</b> (轉發外部網路的資料包到內部網"
+"絡)。\n"
+
+#: src/include/network/lan/help.rb:106
+msgid ""
+"<p>Enable <b>IPv6 Forwarding</b> (forwarding packets from external networks\n"
+"to the internal one) if this system is a router.\n"
+"<b>Warning:</b> IPv6 forwarding disables IPv6 stateless address\n"
+"autoconfiguration (SLAAC)."
+msgstr ""
+"<p>若此係統是一個路由器則請啟用<b>IPv6 轉發</b>(轉發外部網路的資料包到內部網"
+"絡)。\n"
+"<b>警告：</b>IPv6 轉發將禁用自動配置 IPv6 無狀態地址(SLAAC)。"
+
+#: src/include/network/lan/help.rb:112
+msgid ""
+"<p><b>Important:</b> if the firewall is enabled, allowing forwarding alone "
+"is not enough. \n"
+"You should enable masquerading and/or set at least one redirect rule in the\n"
+"firewall configuration. Use the YaST firewall module.</p>\n"
+msgstr ""
+"<p><b>重要：</b>若啟用了防火牆，單單允許轉發是不夠的。\n"
+"您應該啟用偽裝與/或在防火牆配置中設定至少一條重定向規則。\n"
+"請使用 YaST 防火牆模組。</p>\n"
+
+#: src/include/network/lan/help.rb:117
+msgid ""
+"<p>If you are using DHCP to get an IP address, check whether you get\n"
+"also a hostname via DHCP.  The hostname will be set automatically by the "
+"DHCP client.\n"
+"However, changing the hostname at runtime may confuse the graphical "
+"desktop. \n"
+"Therefore, disable this option if you connect to different networks that "
+"assign \n"
+"different hostnames.</p> "
+msgstr ""
+"<p>若您正在使用 DHCP 獲得 IP 地址，請檢查您是否也能通過 DHCP 獲得一個主機"
+"名。\n"
+"主機名將被 DHCP 客戶端自動設定。\n"
+"然而，運行時修改主機名可能會讓圖形桌面無所適從。\n"
+"因此，若您要連線到指派了不同主機名的不同網路，請禁用此選項。\n"
+"</p>"
+
+#: src/include/network/lan/help.rb:124
+msgid ""
+"<p><b>Assign Hostname to Loopback IP</b> associates your hostname with \n"
+"the IP address <tt>127.0.0.2</tt> (loopback) in <tt>/etc/hosts</tt>. This is "
+"a \n"
+"useful option if you want to have the hostname resolvable at all times, "
+"even \n"
+"without an active network. In all other cases, use it carefully, "
+"especially \n"
+"if this computer provides some network services.</p>\n"
+msgstr ""
+"<p><b>指派主機名到迴路 IP</b> 在 <tt>/etc/hosts</tt> 中將您的主機名與 IP 地"
+"址 <tt>127.0.0.2</tt> 關聯了起來，這種行為就叫回路。\n"
+"若您想要在任何情況下都能解析主機名，即使在沒有活動網路的情況下也能，那麼這是"
+"一個有用的選項。\n"
+"在其它任何情況下，請謹慎使用之，尤其是當此計算機提供了一些網路服務時。</p>\n"
+
+#: src/include/network/lan/help.rb:131
+msgid ""
+"<p>Enter the name servers and domain search list for resolving \n"
+"hostnames. Usually they can be obtained by DHCP.</p>\n"
+msgstr ""
+"<p>輸入名稱伺服器與域搜索列表以便解析主機名。\n"
+"通常它們可由 DHCP 獲得。</p>\n"
+
+#. resolver dialog help
+#: src/include/network/lan/help.rb:135
+msgid ""
+"<p>A name server is a computer that translates hostnames into\n"
+"IP addresses. This value must be entered as an <b>IP address</b>\n"
+"(for example, 192.168.0.42), not as a hostname.</p>\n"
+msgstr ""
+"<p>名稱伺服器是一臺負責將主機名轉譯為 IP 地址的計算機。\n"
+"該值必須輸入為一個 <b>IP 地址</b>\n"
+"(例如 192.168.0.42)，而不是主機名。</p>\n"
+
+#. resolver dialog help
+#: src/include/network/lan/help.rb:141
+msgid ""
+"<p>Search domain is the domain name where hostname searching starts.\n"
+"The primary search domain is usually the same as the domain name of\n"
+"your computer (for example, suse.de). There may be additional search "
+"domains\n"
+"(such as suse.com). Separate the domains with commas or white space.</p>\n"
+msgstr ""
+"<p>搜索域是開始主機名搜索時搜索的域名稱。\n"
+"主搜索域通常與您計算機的域名稱 (例如 suse.de) 相同。\n"
+"還可能有額外的搜索域 (諸如 suse.com)。請用逗號或空格分隔這些域。</p>\n"
+
+#: src/include/network/lan/help.rb:147
+msgid ""
+"<p>Enter the short name for this computer (e.g. <i>mymachine</i>) and the "
+"DNS domain\n"
+"(e.g. <i>example.com</i>) that it belongs to. The domain is especially "
+"important if this \n"
+"computer is a mail server. You can view the hostname of you computer using "
+"the <i>hostname</i> \n"
+"command.</p>"
+msgstr ""
+"<p>請輸入此計算機的短名稱 (例如 <i>甜軟萌的殼醬</i>) 與它所屬的 DNS 域 (例如 "
+"<i>marguerite.su</i>)。\n"
+"若此計算機是一個郵件伺服器，那麼域尤其關鍵。您可以使用 <i>hostname</i> 命令查"
+"看您計算機的主機名。</p>"
+
+#: src/include/network/lan/help.rb:153
+msgid ""
+"<p>Select the way how the DNS configuration will be modified (name servers,\n"
+"search list, the content of <i>/etc/resolv.conf</i>). Normally, it is "
+"handled\n"
+"by the <i>netconfig</i> script, which merges statically defined data with\n"
+"dynamically obtained data (e.g. from the DHCP client, NetworkManager,\n"
+"etc.). This is the default. <b>Use Default Policy</b> is sufficient for "
+"most\n"
+"configurations.</p>\n"
+msgstr ""
+"<p>選擇修改 DNS 配置的方式 (名稱伺服器，搜索列表，<i>/etc/resolv.conf</i> 內"
+"容)。\n"
+"通常由 <i>netconfig</i> 指令碼處理，該指令碼會合並靜態定義的資料與動態獲得的資料 "
+"(例如，從 DHCP 客戶端、NetworkManager 等)。\n"
+"這是默認設定。<b>使用默認策略</b>可以滿足大多數配置的需要。</p>\n"
+
+#: src/include/network/lan/help.rb:161
+msgid ""
+"<p>By choosing <b>Only Manually</b>, <i>netconfig</i> will no longer be\n"
+"allowed to modify <i>/etc/resolv.conf</i>. You can however edit the file\n"
+"manually. By choosing <b>Use Custom Policy</b>, you may specify a custom\n"
+"policy string, which consists of a comma-separated list of interface names,\n"
+"including wildcards, with STATIC and STATIC_FALLBACK as predefined special\n"
+"values. For more information, see the <i>netconfig</i> manual page. Note:\n"
+"Leaving the field blank is the same as using the <b> Only Manually</b>\n"
+"policy.</p>\n"
+msgstr ""
+"<p>若選擇<b>僅手動</b>，<i>netconfig</i> 將不再允許修改 <i>/etc/resolv.conf</"
+"i>。\n"
+"但您可以手動編輯該檔案。若選擇<b>使用自定義策略</b>，您可以指定一個自定義策略"
+"字元串，\n"
+"其由一個以逗號分隔的介面名列表組成，可包括通配符以及 STATIC 與 "
+"STATIC_FALLBACK 預定義特殊值。\n"
+"更多資訊請參考 <i>netconfig</i> 手冊頁。注意：該處留空等同於使用<b>僅手動</b>"
+"策略。</p>\n"
+
+#. Address dialog help 1-6/8: dynamic address preferred
+#. Address dialog help 1/8
+#: src/include/network/lan/help.rb:174
+msgid ""
+"<p><b><big>Address Setup</big></b></p>\n"
+"<p>Select <b>No Address Setup</b> if you do not want to assign an IP address "
+"to this device.\n"
+"This is particularly useful for bonding ethernet devices.</p>\n"
+msgstr ""
+"<p><b><big>地址設定</big></b></p>\n"
+"<p>若您不想為此裝置指派一個 IP 地址，則請選擇<b>無地址設定</b>。\n"
+"這在繫結乙太網裝置時特別有用。</p>\n"
+
+#: src/include/network/lan/help.rb:179
+msgid ""
+"<p>Check <b>iBFT</b> if you want to keep the network configured in your BIOS."
+"</p>\n"
+msgstr "<p>若您想要保留在 BIOS 中配置的網路，請勾選 <b>iBFT</b>。</p>\n"
+
+#. Address dialog help 2/8
+#: src/include/network/lan/help.rb:183
+msgid ""
+"<p>Select <b>Dynamic Address</b> if you do not have a static IP address \n"
+"assigned by the system administrator or your Internet provider.</p>\n"
+msgstr ""
+"<p>若您沒有系統管理員或網際網路服務提供商指派的靜態 IP 地址，請選擇<b>動態地址"
+"</b>。</p>\n"
+
+#. Address dialog help 3/8
+#: src/include/network/lan/help.rb:187
+msgid ""
+"<p>Choose one of the dynamic address assignment methods. Select <b>DHCP</b>\n"
+"if you have a DHCP server running on your local network. Network addresses \n"
+"are then automatically obtained from the server.</p>\n"
+msgstr ""
+"<p>請選擇一種動態地址指派方法。\n"
+"若您的本地網路上有運行 DHCP 伺服器，請選擇 <b>DHCP</b>。\n"
+"之後將自動從伺服器獲得網路地址。</p>\n"
+
+#. Address dialog help 4/8
+#: src/include/network/lan/help.rb:193
+msgid ""
+"<p>To search for an IP address and assign it statically, select \n"
+"<b>Zeroconf</b>. To use DHCP and fall back to zeroconf, select <b>DHCP + "
+"Zeroconf\n"
+"</b>. Otherwise, the network addresses must be assigned <b>Statically</b>.</"
+"p>\n"
+msgstr ""
+"<p>要搜索並靜態指派 IP 地址，請選擇<b>Zeroconf</b>。\n"
+"要使用 DHCP，不行再回到 zeroconf，請選擇 <b>DHCP + Zeroconf</b>。\n"
+"否則，必須<b>靜態</b>指派網路地址。</p>\n"
+
+#. Address dialog help 5/8
+#: src/include/network/lan/help.rb:199
+msgid ""
+"<p>Enter the <b>IP Address</b> (for example: <tt>192.168.100.99</tt>) for "
+"your computer, and the \n"
+" <b>Remote IP Address</b> (for example: <tt>192.168.100.254</tt>)\n"
+"for your peer.</p>\n"
+msgstr ""
+"<p>請輸入您計算機的 <b>IP 地址</b> (例如，<tt>192.168.100.99</tt>)\n"
+"與對等點的<b>遠端 IP 地址</b> (例如，<tt>192.168.100.254</tt>)。</p>\n"
+
+#. Address dialog help 6/8
+#: src/include/network/lan/help.rb:205
+msgid ""
+"<p>For <b>Static Address Setup</b> enter the static IP address for your "
+"computer (for example: <tt>192.168.100.99</tt>) and\n"
+"the network mask (usually <tt>255.255.255.0</tt> or just length of prefix "
+"<tt>/24</tt>).Optionally, you can enter\n"
+"a fully qualified hostname for this IP address. The hostname will be written "
+"to <tt>/etc/hosts</tt>.</p>\n"
+msgstr ""
+"<p>對於<b>靜態地址設定</b>， 請輸入您計算機的靜態 IP 地址 (例如，"
+"<tt>192.168.100.99</tt>) 與\n"
+"網路掩碼 (通常是 <tt>255.255.255.0</tt>或字首長度 <tt>/24</tt>)。此外，您還可"
+"以為此 IP 地址\n"
+"輸入一個完全限定主機名。主機名將被寫入<tt>/etc/hosts</tt>。</p>\n"
+
+#. Address dialog help 8/8
+#: src/include/network/lan/help.rb:211
+msgid ""
+"<p>Contact your <b>network administrator</b> for more information about\n"
+"the network configuration.</p>"
+msgstr "<p>有關網路配置的更多資訊，請垂詢您的<b>網路管理員</b>。</p>"
+
+#: src/include/network/lan/help.rb:214
+msgid ""
+"<p>DHCP configuration is not recommended for this product.\n"
+"Components of this product might not work with DHCP.</p>"
+msgstr ""
+"<p>此產品不推薦 DHCP 配置。\n"
+"此產品的元件可能無法與 DHCP 協作。</p>"
+
+#: src/include/network/lan/help.rb:217
+msgid ""
+"<p><b><big>Firewall Zone</big></b></p>\n"
+"<p>Select the firewall zone to put the interface into. If you\n"
+"select a zone, the firewall will be enabled. If you do not and other \n"
+"firewalled interfaces exist, the firewall\n"
+"will stay enabled but all traffic will be blocked for this\n"
+"interface. If you do not select a zone and no others exist, \n"
+"the firewall will be disabled.</p>"
+msgstr ""
+"<p><b><big>防火牆區域</big></b></p>\n"
+"<p>請選擇要將該介面放進的防火牆區域。\n"
+"若您選擇了某個區域，則將啟用防火牆。\n"
+"若您雖未選擇，但仍存在其它位於此防火牆中的介面，\n"
+"則防火牆仍將保持啟用，但將阻擋此介面的全部流量。\n"
+"若您未選擇區域且不存在其它位於此防火牆中的介面，\n"
+"則將禁用防火牆。</p>"
+
+#: src/include/network/lan/help.rb:226
+msgid ""
+"<p><b>Mandatory Interface</b> specifies whether the network service reports "
+"failure if the interface fails to start at boot time.</p>"
+msgstr "<p><b>必備介面</b>指定了若引導時介面未能啟動，網路服務是否報告失敗。</p>"
+
+#: src/include/network/lan/help.rb:229
+msgid ""
+"<p><b><big>Maximum Transfer Unit</big></b></p>\n"
+"<p>Maximum transfer unit (<b>MTU</b>) is the maximum size of the packet,\n"
+"transferred over the network in one frame. Usually, you do not need to\n"
+"set a MTU, but using lower MTU values may improve the network performance,\n"
+"especially on slow dial-up connections. Either select one of the "
+"recommended\n"
+"values or define another one.</p>\n"
+msgstr ""
+"<p><b><big>最大傳輸單元</big></b></p>\n"
+"<p>最大傳輸單元 (<b>MTU</b>) 是網路中一幀能夠傳輸的資料包最大大小。\n"
+"通常，您不需要設定 MTU，但使用較小的 MTU 或許會改善網路效能，尤其是在慢速撥號"
+"連線下。\n"
+"您可從推薦值中擇一，或定義另一個值。</p>\n"
+
+#: src/include/network/lan/help.rb:237
+msgid ""
+"<p>Select the slave devices for the bond device.\n"
+"Only devices with the device activation set to <b>Never</b> and with <b>No "
+"Address Setup</b> are available.</p>"
+msgstr ""
+"<p>請選擇繫結裝置的從屬裝置。\n"
+"僅有裝置啟用設為<b>從不</b>與設定了<b>無地址設定</b>的裝置才可用。</p>"
+
+#. DHCP dialog help 1/7
+#: src/include/network/lan/help.rb:242
+msgid "<p><b><big>DHCP Client Options</big></b></p>"
+msgstr "<p><b><big>DHCP 客戶端選項</big></b></p>"
+
+#. DHCP dialog help 2/7
+#: src/include/network/lan/help.rb:244
+msgid ""
+"<p>The <b>DHCP Client Identifier</b>, if left empty, defaults to\n"
+"the hardware address of the network interface. It must be different for "
+"each\n"
+"DHCP client on a single network. Therefore, specify a unique free-form\n"
+"identifier here if you have several (virtual) machines using the same\n"
+"network interface and thus the same hardware address.</p>"
+msgstr ""
+"<p>若 <b>DHCP 客戶端標識符</b>為空，則默認其為網路介面的硬體地址。\n"
+"必須為同一網路上的每個 DHCP 客戶端使用不同的標識符。\n"
+"因此，若您有幾臺使用相同網路介面因而硬體地址相同的 (虛擬) 機器，\n"
+"請在此指定一個唯一的格式自由的標識符。</p>"
+
+#. DHCP dialog help 3/7
+#: src/include/network/lan/help.rb:252
+msgid ""
+"<p>The <b>Hostname to Send</b> specifies a string used for the\n"
+"hostname option field when the DHCP client sends messages to the DHCP "
+"server. Some \n"
+"DHCP servers update name server zones (forward and reverse records) \n"
+"according to this hostname (dynamic DNS).</p>\n"
+"Some DHCP servers require the <b>Hostname to Send</b> option field to\n"
+"contain a specific string in the DHCP messages from clients. Leave <b>AUTO</"
+"b>\n"
+"to send the current hostname (for example, the one defined in <tt>/etc/"
+"HOSTNAME</tt>). \n"
+"If you do not want to send a hostname, leave the field empty.</p>\n"
+msgstr ""
+"<p><b>要發送的主機名</b>指定了 DHCP 客戶端發送訊息到 DHCP 伺服器時主機名選項"
+"欄位所用的字元串。\n"
+"某些 DHCP 伺服器 (動態 DNS) 會根據此主機名來更新名稱伺服器區域 (轉發與反向記"
+"錄)。</p>\n"
+"某些 DHCP 伺服器則要求客戶端發來的 DHCP 訊息中的<b>要發送的主機名</b>選項欄位"
+"包含某個指定字元串。\n"
+"保持<b>自動</b>則會發送當前主機名 (例如 <tt>/etc/HOSTNAME</tt> 中定義的主機"
+"名)。\n"
+"若您不想要發送主機名，請將該欄位留空。</p>\n"
+
+#. Aliases dialog help 1/4
+#: src/include/network/lan/help.rb:264
+msgid ""
+"<p><b><big>Additional Addresses</big></b></p>\n"
+"<p>Configure additional addresses of an interface in this table.</p>\n"
+msgstr ""
+"<p><b><big>附加地址</big></b></p>\n"
+"<p>在此表中配置介面的附加地址。</p>\n"
+
+#. Aliases dialog help 2/4
+#: src/include/network/lan/help.rb:268
+msgid ""
+"<p>Enter an <b>IPv4 Address Label</b>, an <b>IP Address</b>, and\n"
+"the <b>Netmask</b>.</p>"
+msgstr ""
+"<p>請輸入一個 <b>IPv4 地址標籤</b>、一個 <b>IP 地址</b>與<b>網路掩碼</b>。</"
+"p>"
+
+#. Aliases dialog help 3/4
+#: src/include/network/lan/help.rb:272
+msgid ""
+"<p><b>IPv4 Address Label</b>, formerly known as Alias Name, is optional and "
+"legacy. The total\n"
+"              length of interface name (inclusive of the colon and label) "
+"is\n"
+"              limited to 15 characters and the obsolete ifconfig utility "
+"truncates it after 9 characters.</p>"
+msgstr ""
+"<p><b>IPv4 地址標籤</b>，之前叫做別名，是可選的，並且使用別名是很久以前的事"
+"了。\n"
+"介面名全長 (包括冒號與標籤) 的限制為 15 個字元，並且過時的 ifconfig 工具會把"
+"它截斷為 9 個字元。</p>"
+
+#. Aliases dialog help 3/4, #83766
+#: src/include/network/lan/help.rb:278
+msgid ""
+"<p>Do not include the interface name in the alias name. For example, enter "
+"<b>foo</b> instead of <b>eth0:foo</b>.</p>"
+msgstr ""
+"<p>不要在別名中包含介面名稱。例如，請輸入 <b>foo</b> 而不是 <b>eth0:foo</b>。"
+"</p>"
+
+#. shared between WirelessDialog and WirelessKeyPopup
+#. this is suited to the button-switched key typing
+#. Translators: dialog help
+#: src/include/network/lan/help.rb:284
+msgid ""
+"<p>Choose between three <b>Key Input Types</b> for your key.\n"
+"<br><b>Passphrase</b>: The key is generated from the phrase entered.\n"
+"<br><b>ASCII</b>: The ASCII values of the characters entered constitute the\n"
+"key. Enter 5 characters for 64-bit keys, up to 13\n"
+"characters for 128-bit keys, up to 16 characters for 156-bit keys, and\n"
+"up to 29 characters for 256-bit keys.\n"
+"<br><b>Hexadecimal</b>: Enter the hex codes of the key directly. Enter\n"
+"10 hex digits for 64-bit keys, 26 digits for 128-bit keys, 32 digits\n"
+"for 156-bit keys, and 58 digits for 256-bit keys. You can\n"
+"use hyphens <tt>-</tt> to separate pairs or groups of digits, for example,\n"
+"<tt>0a5f-41e6-48</tt>.\n"
+"</p> \n"
+msgstr ""
+"<p>在三種<b>金鑰輸入類型</b>中，為您的金鑰選擇一種。\n"
+"<br><b>密碼短語</b>：金鑰是根據輸入的短語生成的。\n"
+"<br><b>ASCII</b>：輸入字元的 ASCII 值形成金鑰。\n"
+"64 位金鑰要輸入 5 個字元，128 位金鑰最多可輸入 13 個字元。\n"
+"156 位金鑰最多可輸入 16 個字元，256 位金鑰最多可輸入 29 個字元。\n"
+"<br><b>十六進位制</b>：直接輸入金鑰的十六進位制程式碼。\n"
+"64 位金鑰要輸入 10 個十六進位制數字，128 位金鑰要輸入 26 個十六進位制數字，\n"
+"156 位金鑰要輸入 32 個十六進位制數字，256 位金鑰要輸入 58 個十六進位制數字。\n"
+"您可使用破折號 <tt>-</tt> 分隔數字對或數字組，例如，<tt>0a5f-41e6-48</tt>。\n"
+"</p>\n"
+
+#. Wireless dialog help
+#: src/include/network/lan/help.rb:299
+msgid ""
+"<p>Here, set the most important settings\n"
+"for wireless networking.</p>"
+msgstr "<p>在此設定無線聯網最重要的設定。</p>"
+
+#. Wireless dialog help
+#: src/include/network/lan/help.rb:303
+msgid ""
+"<p>The <b>Operating Mode</b> depends on the network topology. The mode\n"
+"can be <b>Ad-Hoc</b> (peer-to-peer network without an access point),\n"
+"<b>Managed</b> (network managed by an access point, sometimes also\n"
+"called <i>Infrastructure Mode</i>), or <b>Master</b> (the network card\n"
+"acts as an access point).</p>\n"
+msgstr ""
+"<p><b>運行模式</b>取決於網路拓撲結構。\n"
+"運行模式可為 <b>點對點 (Ad-Hoc)</b> (沒有訪問點的點對點網路)、\n"
+"<b>受管</b> (由訪問點管理的網路，有時也稱為<i>基礎模式</i>)\n"
+"或<b>主控</b> (網卡作為訪問點使用)。</p>\n"
+
+#. Wireless dialog help
+#: src/include/network/lan/help.rb:311
+msgid ""
+"<p>Set the <b>Network Name (ESSID)</b> used to identify\n"
+"cells that are part of the same virtual network. All stations in a\n"
+"wireless LAN need the same ESSID to communicate with each other. If\n"
+"you choose the operation mode <b>Managed</b> and no <b>WPA</b> "
+"authentication mode,\n"
+"you can leave this field empty or set it to <tt>any</tt>. In this\n"
+"case, your WLAN card associates with the access point with the best\n"
+"signal strength.</p>\n"
+msgstr ""
+"<p>設定用於識別屬於同一虛擬網路的各單元的<b>網路名稱 (ESSID)</b>。\n"
+"無線區域網中的全部基站都需要同樣的 ESSID 來互相通訊。\n"
+"若您選擇了運行模式為<b>受管</b>且無 <b>WPA</b> 認證模式，\n"
+"則可以留空此處，或將其設為<tt>任意</tt>。\n"
+"在此情況下，您的 WLAN 卡將關聯到訊號強度最好的訪問點。</p>\n"
+
+#. Wireless dialog help
+#: src/include/network/lan/help.rb:321
+msgid ""
+"<p>In some networks, you need to set an <b>Authentication Mode</b>.\n"
+"It depends on the protection technology used, WEP or WPA. <b>WEP</b>\n"
+"(Wired Equivalent Privacy) is a system to encrypt wireless network\n"
+"traffic with an optional authentication, based on the encryption\n"
+"key used. In most cases where WEP is used, the <b>WEP-Open</b> mode (no\n"
+"authentication at all) is fine. This does not mean that you cannot\n"
+"use WEP encryption (in that case use <b>No Encryption</b>). \n"
+"Some networks may require <b>WEP-Shared Key</b> authentication. \n"
+"NOTE: Shared key authentication makes it easier for a\n"
+"potential attacker to break into your network. Unless you have\n"
+"specific needs for shared key authentication, use the <b>Open</b>\n"
+"mode. Because WEP has been proven insecure, <b>WPA</b> (Wi-Fi Protected "
+"Access)\n"
+"was defined to close its security holes, but not all hardware supports\n"
+"WPA. If you want to use WPA, select <b>WPA-PSK</b> or <b>WPA-EAP</b> as the\n"
+"authentication mode. This is only possible in the operation mode\n"
+"<b>Managed</b>.</p>\n"
+msgstr ""
+"<p>在某些網路中，您需要設定<b>認證模式</b>。\n"
+"認證模式取決於所用的保護技術是 WEP 還是 WPA。<b>WEP</b>\n"
+"(有線等效隱私，Wired Equivalent Privacy) 是一種基於所用的加密金鑰\n"
+"使用可選認證來加密無線網路流量的系統。\n"
+"在大多數使用 WEP 的情況下，選擇 <b>WEP 開放式</b>模式 (根本無需認證) 就可"
+"以。\n"
+"這並不意味著您沒有使用 WEP 加密 (那種情況請用<b>無加密</b>)。\n"
+"某些網路可能要求 <b>WEP 共享金鑰</b> 認證。\n"
+"注意：共享金鑰認證使得潛在攻擊者更加容易侵入您的網路。\n"
+"除非您對共享金鑰認證有特殊需求，否則應使用<b>開放式</b>模式。\n"
+"由於 WEP 已被證明是不安全的了，所以定義了 <b>WPA</b> (Wi-Fi 保護訪問)\n"
+"彌補其安全漏洞，但並非全部硬體都支援 WPA。\n"
+"若您想要使用 WPA，請選擇 <b>WPA-PSK</b> 或 <b>WPA-EAP</b> 作為認證模式。\n"
+"僅有在運行模式為 <b>受管</b> 時才能這樣做。</p>\n"
+
+#. Wireless dialog help
+#: src/include/network/lan/help.rb:340
+msgid ""
+"<p>To use WEP, enter the\n"
+"WEP encryption key to use. It can have a key\n"
+"length of 64, 128, 156, or 256 bits, but not all sizes are\n"
+"supported by all devices. Of these keys, 24 bits\n"
+"are dynamically generated, so you only need to enter 40 to 232 bits.</p>\n"
+msgstr ""
+"<p>要使用 WEP，請輸入要使用的 WEP 加密金鑰。金鑰長度可以為 64、128、156 或 "
+"256 位，但並非全部裝置都支援全部長度。\n"
+"在這些金鑰中，有 24 位是動態生成的，所以您僅需輸入 40 到 232 位。</p>\n"
+
+#. Wireless dialog help
+#: src/include/network/lan/help.rb:348
+msgid ""
+"<p>To use WPA-PSK (sometimes referred to as WPA Home),\n"
+"enter the preshared key. This\n"
+"key is used for authentication and encryption keys are generated from\n"
+"it. These are not vulnerable to known attacks against WEP keys, but\n"
+"dictionary attacks are still possible. Do not use a word that is\n"
+"easy to guess as the passphrase.</p>\n"
+msgstr ""
+"<p>要使用 WPA-PSK (有時也叫做 WPA 家庭版)，請輸入預共享金鑰。\n"
+"該金鑰用於認證與生成加密金鑰。\n"
+"這些加密金鑰不易受到已知的針對 WEP 金鑰的攻擊攻擊，\n"
+"但仍可能受到字典攻擊。\n"
+"請不要使用易猜出的詞作為密碼短語。</p>\n"
+
+#. Wireless dialog help
+#: src/include/network/lan/help.rb:357
+msgid ""
+"<p>To use WPA-EAP (sometimes referred to as WPA Enterprise),\n"
+"enter some additional parameters in the next dialog.</p>\n"
+msgstr ""
+"<p>要使用 WPA-EAP (有時也叫做 WPA 企業版)，\n"
+"請在下一個對話方塊中輸入一些額外參數。</p>\n"
+
+#. Wireless dialog help
+#: src/include/network/lan/help.rb:361
+msgid ""
+"<p>These values will be written to the interface configuration file\n"
+"'ifcfg-*' in '/etc/sysconfig/network'. If you need additional settings,\n"
+"add them manually. Refer to the file 'wireless' in the same directory for "
+"all\n"
+"available options.</p>"
+msgstr ""
+"<p>這些值將被寫入 '/etc/sysconfig/network' 中的介面配置檔案 \"ifcfg-*\"。\n"
+"若您需要額外設定，請手動添加它們。\n"
+"全部可用選項請參考同名資料夾中的 'wireless' 檔案。</p>"
+
+#. TextEntry label
+#: src/include/network/lan/virtual.rb:214
+msgid "IPv4 &Address Label"
+msgstr "IPv4 地址標籤(&A)"
+
+#. TextEntry label
+#: src/include/network/lan/virtual.rb:222
+msgid "Net&mask"
+msgstr "網路掩碼(&M)"
+
+#. Popup::Error text
+#: src/include/network/lan/virtual.rb:254
+msgid "Label is too long."
+msgstr "標籤太長。"
+
+#. Popup::Error text
+#. Popup::Error text
+#: src/include/network/lan/virtual.rb:264
+#: src/include/network/services/host.rb:401
+msgid "The IP address is invalid."
+msgstr "IP 地址無效。"
+
+#. Popup::Error text
+#: src/include/network/lan/virtual.rb:273
+msgid "The subnet mask is invalid."
+msgstr "子網掩碼無效。"
+
+#. Translators: input type for a wireless key
+#. radio button group label
+#: src/include/network/lan/wireless.rb:54
+msgid "Key Input Type"
+msgstr "金鑰輸入類型"
+
+#. Translators: input type for a wireless key
+#: src/include/network/lan/wireless.rb:58
+msgid "&Passphrase"
+msgstr "密碼短語(&P)"
+
+#. Translators: input type for a wireless key
+#: src/include/network/lan/wireless.rb:61
+msgid "&ASCII"
+msgstr "&ASCII"
+
+#. Translators: input type for a wireless key
+#. (Hexadecimal)
+#: src/include/network/lan/wireless.rb:65
+msgid "&Hexadecimal"
+msgstr "十六進位制(&H)"
+
+#. combo box label
+#: src/include/network/lan/wireless.rb:76
+msgid "EAP &Mode"
+msgstr "EAP 模式(&M)"
+
+#. combo box item, one of WPA EAP modes
+#: src/include/network/lan/wireless.rb:80
+msgid "TTLS"
+msgstr "TTLS"
+
+#. combo box item, one of WPA EAP modes
+#: src/include/network/lan/wireless.rb:82
+msgid "PEAP"
+msgstr "PEAP"
+
+#. combo box item, one of WPA EAP modes
+#: src/include/network/lan/wireless.rb:84
+msgid "TLS"
+msgstr "TLS"
+
+#: src/include/network/lan/wireless.rb:86
+msgid ""
+"<p>WPA-EAP uses a RADIUS server to authenticate users. There\n"
+"are different methods in EAP to connect to the server and\n"
+"perform the authentication, namely TLS, TTLS, and PEAP.</p>\n"
+msgstr ""
+"<p>WPA-EAP 使用 RADIUS 伺服器認證使用者。\n"
+"EAP 中有一些不同的連線到伺服器並執行認證的方法，\n"
+"即 TLS，TTLS 與 PEAP。</p>\n"
+
+#. text entry label
+#: src/include/network/lan/wireless.rb:99
+msgid "&Identity"
+msgstr "身份(&I)"
+
+#: src/include/network/lan/wireless.rb:101
+msgid ""
+"<p>For TTLS and PEAP, enter your <b>Identity</b>\n"
+"and <b>Password</b> as configured on the server.\n"
+"If you have special requirements to set the username used as\n"
+"<b>Anonymous Identity</b>, you may set it here. This is usually not needed.</"
+"p>\n"
+msgstr ""
+"<p>對 TTLS 與 PEAP，請按伺服器上的配置輸入您的<b>身份</b>與<b>密碼</b>。\n"
+"若您有特殊需要，要把使用的使用者名設為<b>匿名身份</b>，您可以在這裡設定。\n"
+"這通常是不需要的。</p>\n"
+
+#. text entry label
+#: src/include/network/lan/wireless.rb:111
+msgid "&Anonymous Identity"
+msgstr "匿名身份(&A)"
+
+#. or password?
+#. text entry label
+#: src/include/network/lan/wireless.rb:119
+msgid "&Password"
+msgstr "密碼(&P)"
+
+#. text entry label
+#: src/include/network/lan/wireless.rb:126
+msgid "&Client Certificate"
+msgstr "客戶證書(&C)"
+
+#: src/include/network/lan/wireless.rb:128
+msgid ""
+"<p>TLS uses a <b>Client Certificate</b> instead of a username and\n"
+"password combination for authentication. It uses a public and private key "
+"pair\n"
+"to encrypt negotiation communication, therefore you will additionally need\n"
+"a <b>Client Key</b> file that contains your private key and\n"
+"the appropriate <b>Client Key Password</b> for that file.</p>\n"
+msgstr ""
+"<p>TLS 使用<b>客戶證書</b>進行認證，而非使用者名與密碼的組合。\n"
+"它使用一個公共與私用金鑰對來加密協商通訊，因此您另外還需要\n"
+"一個<b>客戶金鑰</b>檔案，該檔案包含您的私用金鑰與適宜該檔案\n"
+"的<b>客戶金鑰密碼</b>。</p>\n"
+
+#. text entry label
+#: src/include/network/lan/wireless.rb:144
+msgid "Client &Key"
+msgstr "客戶金鑰(&K)"
+
+#. or password?
+#. text entry label
+#: src/include/network/lan/wireless.rb:157
+msgid "Client Key Pass&word"
+msgstr "客戶金鑰密碼(&W)"
+
+#. text entry label
+#. aka certificate of the CA (certification authority)
+#: src/include/network/lan/wireless.rb:167
+msgid "&Server Certificate"
+msgstr "伺服器證書(&S)"
+
+#: src/include/network/lan/wireless.rb:171
+msgid ""
+"<p>To increase security, it is recommended to configure\n"
+"a <b>Server Certificate</b>. It is used\n"
+"to validate the server's authenticity.</p>\n"
+msgstr ""
+"<p>為提高安全性，推薦配置一個<b>伺服器證書</b>。\n"
+"它用於驗證伺服器真偽。</p>\n"
+
+#. push button label
+#: src/include/network/lan/wireless.rb:212
+msgid "&Details"
+msgstr "細節(&D)"
+
+#: src/include/network/lan/wireless.rb:221
+msgid ""
+"If you do not know your ID and password or you do not have\n"
+"any certificate or key files, contact your system administrator.\n"
+msgstr "若您不知道您的 ID 與密碼，或者沒有證書或金鑰檔案，請垂詢您的系統管理員。\n"
+
+#. combo box label
+#: src/include/network/lan/wireless.rb:239
+msgid "&Authentication Method"
+msgstr "認證方法(&A)"
+
+#: src/include/network/lan/wireless.rb:240
+msgid ""
+"<p>Here you can configure the inner authentication (also known as phase 2)\n"
+"method. By default, all methods are allowed. If you want to restrict the\n"
+"allowed methods or in case you have encountered difficulties regarding\n"
+"authentication, choose your inner authentication method.</p>\n"
+msgstr ""
+"<p>您可在此處配置內部認證 (也稱為第 2 階段) 方法。\n"
+"默認允許全部方法。\n"
+"若您想要限制允許的方法，或者遇到了認證方面的困難，\n"
+"請在此選擇您想要使用的內部認證方法。</p>\n"
+
+#. radio button group label
+#: src/include/network/lan/wireless.rb:250
+msgid "&PEAP Version"
+msgstr "&PEAP 版本"
+
+#: src/include/network/lan/wireless.rb:251
+msgid ""
+"<p>If you are using PEAP, you can also force the use of a specific PEAP\n"
+"implementation (version 0 or 1). Normally this should not be necessary.</p>\n"
+msgstr ""
+"<p>若您正在使用 PEAP，您也可以強制使用特定的 PEAP 實現 (版本 0 或 1)。\n"
+"正常情況下這不應該是必須的。</p>\n"
+
+#. radio button: any version of PEAP
+#: src/include/network/lan/wireless.rb:256
+msgid "&Any"
+msgstr "任意(&A)"
+
+#. Wireless authentication modes:
+#. ComboBox item
+#: src/include/network/lan/wireless.rb:359
+msgid "No Encryption"
+msgstr "無加密"
+
+#. ComboBox item
+#: src/include/network/lan/wireless.rb:363
+msgid "WEP - Open"
+msgstr "WEP - 開放式"
+
+#. ComboBox item
+#: src/include/network/lan/wireless.rb:365
+msgid "WEP - Shared Key"
+msgstr "WEP - 共享金鑰"
+
+#. ComboBox item
+#. Ask me what it means, I don't know yet
+#: src/include/network/lan/wireless.rb:368
+msgid "WPA-PSK (WPA version 1 or 2)"
+msgstr "WPA-PSK (WPA 版本 1 或 2)"
+
+#. ComboBox item
+#: src/include/network/lan/wireless.rb:372
+msgid "WPA-EAP (WPA version 1 or 2)"
+msgstr "WPA-EAP (WPA 版本 1 或 2)"
+
+#. Wireless dialog caption
+#: src/include/network/lan/wireless.rb:396
+msgid "Wireless Network Card Configuration"
+msgstr "無線網卡配置"
+
+#. Frame label
+#: src/include/network/lan/wireless.rb:426
+msgid "Wireless Device Settings"
+msgstr "無線裝置設定"
+
+#. ComboBox label
+#: src/include/network/lan/wireless.rb:435
+msgid "O&perating Mode"
+msgstr "運行模式(&P)"
+
+#. ComboBox item
+#: src/include/network/lan/wireless.rb:438
+msgid "Ad-Hoc"
+msgstr "點對點 (Ad-Hoc)"
+
+#. ComboBox item
+#: src/include/network/lan/wireless.rb:442
+msgid "Master"
+msgstr "主控"
+
+#. Text entry label
+#: src/include/network/lan/wireless.rb:451
+msgid "Ne&twork Name (ESSID)"
+msgstr "網路名稱 (ESSID)(&T)"
+
+#: src/include/network/lan/wireless.rb:454
+msgid "Scan Network"
+msgstr "掃描網路"
+
+#. ComboBox label
+#: src/include/network/lan/wireless.rb:461
+msgid "&Authentication Mode"
+msgstr "認證模式(&A)"
+
+#. Text entry label
+#: src/include/network/lan/wireless.rb:468
+msgid "&Encryption Key"
+msgstr "加密金鑰(&E)"
+
+#. PushButton label
+#: src/include/network/lan/wireless.rb:477
+msgid "E&xpert Settings"
+msgstr "專家設定(&X)"
+
+#. PushButton label, keys for WEP encryption
+#: src/include/network/lan/wireless.rb:480
+msgid "&WEP Keys"
+msgstr "&WEP 金鑰"
+
+#. Popup text
+#: src/include/network/lan/wireless.rb:562
+msgid "WPA authentication mode is only possible in managed operating mode."
+msgstr "WPA 認證模式僅能在受管運行模式下使用。"
+
+#. Popup text
+#. modes: combination of operation and authentication
+#: src/include/network/lan/wireless.rb:573
+msgid "Specify the network name for this mode."
+msgstr "請指定此模式的網路名稱。"
+
+#. Popup text
+#: src/include/network/lan/wireless.rb:580
+msgid "The network name must be shorter than 32 characters."
+msgstr "網路名稱必須短於 32 個字元。"
+
+#. Error popup
+#: src/include/network/lan/wireless.rb:600
+msgid "The passphrase must have between 8 and 63 characters (inclusively)."
+msgstr "密碼短語的長度必須在 8 到 63 (包括兩者) 個字元之間。"
+
+#. Error popup
+#: src/include/network/lan/wireless.rb:611
+msgid "The key must have %1 hexadecimal digits."
+msgstr "金鑰必須有 %1 個十六進位制數字。"
+
+#. Popup text
+#. Popup text
+#: src/include/network/lan/wireless.rb:623
+#: src/include/network/lan/wireless.rb:963
+msgid "The encryption key is invalid."
+msgstr "加密金鑰無效。"
+
+#. error
+#. Popup text
+#: src/include/network/lan/wireless.rb:631
+msgid "The encryption key must be specified for this authentication mode."
+msgstr "必須為此認證模式指定加密金鑰。"
+
+#. warning only
+#. Popup text
+#: src/include/network/lan/wireless.rb:638
+msgid ""
+"Using no encryption is a security risk.\n"
+"Really continue?\n"
+msgstr ""
+"不使用加密存在安全風險。\n"
+"真的繼續嗎？\n"
+
+#. Wireless expert dialog caption
+#. Frame label
+#: src/include/network/lan/wireless.rb:696
+#: src/include/network/lan/wireless.rb:799
+msgid "Wireless Expert Settings"
+msgstr "無線專家設定"
+
+#. Wireless expert dialog help 1/5
+#: src/include/network/lan/wireless.rb:699
+msgid ""
+"<p>Here, set additional configuration parameters\n"
+"(rarely needed).</p>"
+msgstr "<p>在此設定額外配置參數 (極少需要)。</p>"
+
+#. Wireless expert dialog help 2/5
+#: src/include/network/lan/wireless.rb:703
+msgid ""
+"<p>To use your wireless LAN card in master or ad-hoc mode,\n"
+"set the <b>Channel</b> the card should use here. This is not needed\n"
+"for managed mode--the card will hop through the channels searching for "
+"access\n"
+"points in that case.</p>\n"
+msgstr ""
+"<p>要以主控或點對點模式使用您的無線區域網卡，請在此設定該卡應使用的<b>通道</"
+"b>。\n"
+"受管模式下無需這樣做 -- 該模式下該卡將在各通道間跳躍以搜索訪問點。</p>\n"
+
+#. Wireless expert dialog help 3/5
+#: src/include/network/lan/wireless.rb:710
+msgid ""
+"<p>In some rare cases, you may want to set a transmission\n"
+"<b>Bit Rate</b> explicitly. The default is to go as fast as possible.</p>"
+msgstr ""
+"<p>在極少數情況下，您可能需要顯式設定一個傳輸<b>位元率</b>。\n"
+"預設值為傳輸得越快越好。</p>"
+
+#. Wireless expert dialog help 4/5
+#: src/include/network/lan/wireless.rb:714
+msgid ""
+"<p>In an environment with multiple <b>Access Points</b>, you may want to\n"
+"define the one to which to connect by entering its MAC address.</p>"
+msgstr ""
+"<p>在有多個<b>訪問點</b>的環境中，您可能想要通過輸入訪問點的 MAC 地址定義要連"
+"接的訪問點。</p>"
+
+#. Wireless expert dialog help 5/5
+#: src/include/network/lan/wireless.rb:718
+msgid ""
+"<p><b>Use Power Management</b> enables power saving mechanisms.\n"
+"This is generally a good idea, especially if you are a laptop user and may\n"
+"be disconnected from AC power.</p>\n"
+msgstr ""
+"<p><b>使用電源管理</b>可啟用省電機制。\n"
+"這通常是一個好主意，尤其是當您正在使用行動式計算機且可能未連線交流電源供電"
+"時。</p>\n"
+
+#. Wireless expert dialog help 2b/5
+#: src/include/network/lan/wireless.rb:726
+msgid ""
+"<p>To specify the <b>Frequency</b> instead of\n"
+"the channel, select the desired value.</p>\n"
+msgstr "<p>要指定<b>頻率</b>而不是通道，請選擇期望的值。</p>\n"
+
+#. Combobox label
+#: src/include/network/lan/wireless.rb:734
+msgid "&Frequency"
+msgstr "頻率(&F)"
+
+#. Combobox item
+#. Combobox item
+#. Combobox item
+#: src/include/network/lan/wireless.rb:737
+#: src/include/network/lan/wireless.rb:768
+#: src/include/network/lan/wireless.rb:790
+msgid "Automatic"
+msgstr "自動"
+
+#. Combobox label
+#: src/include/network/lan/wireless.rb:805
+msgid "&Channel"
+msgstr "通道(&C)"
+
+#. Combobox label
+#: src/include/network/lan/wireless.rb:808
+msgid "B&it Rate"
+msgstr "位元率(&I)"
+
+#. Text entry label
+#: src/include/network/lan/wireless.rb:814
+msgid "&Access Point"
+msgstr "訪問點(&A)"
+
+#. CheckBox label
+#: src/include/network/lan/wireless.rb:822
+msgid "Use &Power Management"
+msgstr "使用電源管理(&P)"
+
+#: src/include/network/lan/wireless.rb:831
+msgid "AP ScanMode"
+msgstr "訪問點掃描模式"
+
+#. Translators: popup dialog heading
+#: src/include/network/lan/wireless.rb:921
+msgid "Enter Encryption Key"
+msgstr "輸入加密金鑰"
+
+#. Translators: text entry label
+#: src/include/network/lan/wireless.rb:925
+msgid "&Key"
+msgstr "金鑰(&K)"
+
+#. Translators: popup title
+#: src/include/network/lan/wireless.rb:949
+msgid "Help"
+msgstr "幫助"
+
+#. Wireless keys dialog caption
+#: src/include/network/lan/wireless.rb:998
+msgid "Wireless Keys"
+msgstr "無線金鑰"
+
+#. Wireless keys dialog help 1/3
+#: src/include/network/lan/wireless.rb:1001
+msgid ""
+"<p>In this dialog, define your WEP keys used\n"
+"to encrypt your data before it is transmitted. You can have up to four "
+"keys,\n"
+"although only one key is used to encrypt the data. This is the default key.\n"
+"The other keys can be used to decrypt data. Usually you have only\n"
+"one key.</p>"
+msgstr ""
+"<p>在此對話方塊中，定義用於在傳輸資料前對其進行加密的 WEP 金鑰。\n"
+"您最多可以有四個金鑰，但僅會使用一個金鑰來加密資料。這將是默認金鑰。\n"
+"其它金鑰可用於解密資料。通常，您僅需要一個金鑰。</p>"
+
+#. Wireless keys dialog help 2/3
+#: src/include/network/lan/wireless.rb:1009
+msgid ""
+"<p><b>Key Length</b> defines the bit length of your WEP keys.\n"
+"Possible are 64 and 128 bit, sometimes also referred to as 40 and 104 bit.\n"
+"Some older hardware might not be able to handle 128 bit keys, so if your\n"
+"wireless LAN connection does not establish, you may need to set this\n"
+"value to 64.</p>"
+msgstr ""
+"<p><b>金鑰長度</b>定義了 WEP 金鑰的位長度。\n"
+"可行的長度為 64 或 128 位，有時也稱為 40 與 104 位。\n"
+"某些較老的硬體可能無法處理 128 位金鑰，因此，若\n"
+"無法建立無線區域網連線，您或許需要將此值設為 64。</p>"
+
+#. Frame label
+#: src/include/network/lan/wireless.rb:1034
+msgid "WEP Keys"
+msgstr "WEP 金鑰"
+
+#. ComboBox label
+#: src/include/network/lan/wireless.rb:1040
+msgid "&Key Length"
+msgstr "金鑰長度(&K)"
+
+#. Table header label
+#. Abbreviation of Number
+#: src/include/network/lan/wireless.rb:1048
+msgid "No."
+msgstr "編號"
+
+#. Table header label
+#: src/include/network/lan/wireless.rb:1050
+msgid "Key"
+msgstr "金鑰"
+
+#. Table header label
+#: src/include/network/lan/wireless.rb:1052
+msgid "Default"
+msgstr "默認"
+
+#. PushButton label
+#: src/include/network/lan/wireless.rb:1062
+msgid "&Set as Default"
+msgstr "設為默認(&S)"
+
+#. file browser dialog headline
+#: src/include/network/lan/wireless.rb:1234
+msgid "Choose a Certificate"
+msgstr "選擇證書"
+
+#. validated in ValidateWpaEap
+#: src/include/network/lan/wireless.rb:1281
+msgid ""
+"Not using a Certificate Authority (CA) certificate can result in "
+"connections\n"
+"to insecure, rogue wireless networks. Continue without CA ?"
+msgstr ""
+"不使用數字證書認證機構 (CA) 證書可能導致連線到不安全、流氓的無線網路。不使用 "
+"CA 繼續嗎？"
+
+#. error popup text
+#: src/include/network/lan/wireless.rb:1310
+msgid ""
+"Enter either the identity and password\n"
+"or the client certificate."
+msgstr "請輸入身份與密碼或客戶證書。"
+
+#. dialog caption
+#: src/include/network/lan/wireless.rb:1357
+msgid "WPA-EAP"
+msgstr "WPA-EAP"
+
+#. combo box item, any of EAP authentication methods
+#: src/include/network/lan/wireless.rb:1380
+msgid "Any"
+msgstr "任意"
+
+#. combo box item, an EAP authentication method
+#: src/include/network/lan/wireless.rb:1384
+msgid "MD5"
+msgstr "MD5"
+
+#. combo box item, an EAP authentication method
+#: src/include/network/lan/wireless.rb:1386
+msgid "GTC"
+msgstr "GTC"
+
+#. combo box item, an EAP authentication method
+#: src/include/network/lan/wireless.rb:1388
+msgid "CHAP"
+msgstr "CHAP"
+
+#. combo box item, an EAP authentication method
+#: src/include/network/lan/wireless.rb:1390
+msgid "PAP"
+msgstr "PAP"
+
+#. combo box item, an EAP authentication method
+#: src/include/network/lan/wireless.rb:1392
+msgid "MSCHAPv1"
+msgstr "MSCHAPv1"
+
+#. combo box item, an EAP authentication method
+#: src/include/network/lan/wireless.rb:1396
+msgid "MSCHAPv2"
+msgstr "MSCHAPv2"
+
+#. dialog caption
+#: src/include/network/lan/wireless.rb:1420
+msgid "WPA-EAP Details"
+msgstr "WPA-EAP 細節"
+
+#: src/include/network/lan/wizards.rb:97
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. Ramote Administration dialog caption
+#: src/include/network/remote/dialogs.rb:56
+msgid "Remote Administration"
+msgstr "遠端管理"
+
+#. RadioButton label
+#: src/include/network/remote/dialogs.rb:64
+msgid "&Allow Remote Administration"
+msgstr "允許遠端管理(&A)"
+
+#. RadioButton label
+#: src/include/network/remote/dialogs.rb:72
+msgid "&Do Not Allow Remote Administration"
+msgstr "不允許遠端管理(&D)"
+
+#. Remote Administration dialog help
+#. %1 and %2 are port numbers for vnc and vnchttp, eg. 5901, 5801
+#: src/include/network/remote/dialogs.rb:89
+msgid ""
+"<p><b><big>Remote Administration Settings</big></b></p>\n"
+"<p>If this feature is enabled, you can\n"
+"administer this machine remotely from another machine. Use a VNC\n"
+"client, such as krdc (connect to <tt>&lt;hostname&gt;:%1</tt>), or\n"
+"a Java-capable Web browser (connect to <tt>http://&lt;hostname&gt;:%2/</"
+"tt>).\n"
+"This form of remote administration is less secure than using SSH.</p>\n"
+msgstr ""
+"<p><b><big>遠端管理設定</big></b></p>\n"
+"<p>若啟用了此功能，您將可以從另一臺計算機遠端管理這臺計算機。\n"
+"可以使用 VNC 客戶端管理，例如 krdc (連線到 <i>&lt;hostname&gt;:%1</i>)，\n"
+"或者使用支援 Java 的網路瀏覽器管理 (連線到 <i>http://&lt;hostname&gt;:%2/</"
+"i>)。\n"
+"與使用 SSH 相比，使用這種形式的遠端管理安全性較差。</p>\n"
+
+#. Dialog frame title
+#: src/include/network/remote/dialogs.rb:109
+msgid "Remote Administration Settings"
+msgstr "遠端管理設定"
+
+#. Popup text
+#: src/include/network/routines.rb:143
+msgid "These packages need to be installed:"
+msgstr "需要安裝這些軟體包："
+
+#. Popup text
+#: src/include/network/routines.rb:161
+msgid ""
+"The required packages are not installed.\n"
+"The configuration will be aborted.\n"
+"\n"
+"Try again?\n"
+msgstr ""
+"未安裝所需軟體包。\n"
+"配置將中止。\n"
+"\n"
+"重試嗎？\n"
+
+#. Translators: Appended after a network card name to indicate that
+#. there is no carrier, no link to the network, the cable is not
+#. plugged in. Preferably a short string.
+#: src/include/network/routines.rb:253
+msgid "unplugged"
+msgstr "拔出"
+
+#. Table field (Unknown device)
+#: src/include/network/routines.rb:259
+msgid "Unknown"
+msgstr "未知"
+
+#. Popup headline
+#: src/include/network/routines.rb:287
+msgid "Configuration Successfully Saved"
+msgstr "已成功儲存配置"
+
+#. Popup headline
+#: src/include/network/routines.rb:292
+msgid "DNS Configuration Successfully Saved"
+msgstr "已成功儲存 DNS 配置"
+
+#. Popup headline
+#: src/include/network/routines.rb:294
+msgid "DSL Configuration Successfully Saved"
+msgstr "已成功儲存 DSL 配置"
+
+#. Popup headline
+#: src/include/network/routines.rb:296
+msgid "Hosts Configuration Successfully Saved"
+msgstr "已成功儲存主機配置"
+
+#. Popup headline
+#: src/include/network/routines.rb:300
+msgid "ISDN Configuration Successfully Saved"
+msgstr "已成功儲存 ISDN 配置"
+
+#. Popup headline
+#: src/include/network/routines.rb:304
+msgid "Network Card Configuration Successfully Saved"
+msgstr "已成功儲存網卡配置"
+
+#. Popup headline
+#: src/include/network/routines.rb:308
+msgid "Modem Configuration Successfully Saved"
+msgstr "已成功儲存調變解調器配置"
+
+#. Popup headline
+#: src/include/network/routines.rb:312
+msgid "Proxy Configuration Successfully Saved"
+msgstr "已成功儲存代理配置"
+
+#. Popup headline
+#: src/include/network/routines.rb:316
+msgid "Provider Configuration Successfully Saved"
+msgstr "已成功儲存服務提供商配置"
+
+#. Popup headline
+#: src/include/network/routines.rb:320
+msgid "Routing Configuration Successfully Saved"
+msgstr "已成功儲存路由配置"
+
+#. Popup text
+#: src/include/network/routines.rb:329
+msgid "Configure mail now?"
+msgstr "現在配置郵件嗎？"
+
+#. Popup text
+#: src/include/network/routines.rb:334
+msgid "Run configuration of %1?"
+msgstr "運行 %1 的配置嗎？"
+
+#. Confirmation: label text (detecting hardware: xxx)
+#: src/include/network/routines.rb:682
+msgid "Network Cards"
+msgstr "網卡"
+
+#. Confirmation: label text (detecting hardware: xxx)
+#: src/include/network/routines.rb:686
+msgid "Modems"
+msgstr "調變解調器"
+
+#. Confirmation: label text (detecting hardware: xxx)
+#: src/include/network/routines.rb:690
+msgid "ISDN Cards"
+msgstr "ISDN 卡"
+
+#. Confirmation: label text (detecting hardware: xxx)
+#: src/include/network/routines.rb:694
+msgid "DSL Devices"
+msgstr "DSL 裝置"
+
+#. Confirmation: label text (detecting hardware: xxx)
+#: src/include/network/routines.rb:700
+msgid "All Network Devices"
+msgstr "全部網路裝置"
+
+#. Disables all widgets which cannot be configured with current network service
+#.
+#. see bnc#433084
+#. if listed any items, disable them, if show_popup, show warning popup
+#.
+#. returns true if items were disabled
+#: src/include/network/routines.rb:1109
+msgid ""
+"Network is currently handled by an unsupported network service\n"
+"or completely disabled. YaST is unable to configure some options."
+msgstr ""
+"目前網路正由一種不支援的網路服務管理，或者完全禁用著。\n"
+"YaST 無法配置一些選項。"
+
+#. validation error popup
+#. Popup::Error text
+#: src/include/network/services/dns.rb:93
+#: src/include/network/services/host.rb:413
+msgid "The hostname is invalid."
+msgstr "主機名無效。"
+
+#. textentry label
+#: src/include/network/services/dns.rb:112
+msgid "&Domain Name"
+msgstr "域名(&D)"
+
+#. validation error popup
+#: src/include/network/services/dns.rb:128
+msgid "The domain name is invalid."
+msgstr "域名無效。"
+
+#: src/include/network/services/dns.rb:135
+msgid "&Change Hostname via DHCP"
+msgstr "通過 DHCP 修改主機名(&C)"
+
+#. checkbox label
+#: src/include/network/services/dns.rb:145
+msgid "&Assign Hostname to Loopback IP"
+msgstr "指定主機名到迴路 IP(&A)"
+
+#. help
+#: src/include/network/services/dns.rb:152
+msgid "&Modify DNS Configuration"
+msgstr "修改 DNS 配置(&M)"
+
+#: src/include/network/services/dns.rb:155
+msgid "Only Manually"
+msgstr "僅手動"
+
+#: src/include/network/services/dns.rb:156
+msgid "Use Default Policy"
+msgstr "使用默認策略"
+
+#: src/include/network/services/dns.rb:157
+msgid "Use Custom Policy"
+msgstr "使用自定義策略"
+
+#: src/include/network/services/dns.rb:168
+msgid "&Custom Policy Rule"
+msgstr "自定義策略規則(&C)"
+
+#. textentry label
+#: src/include/network/services/dns.rb:178
+msgid "Name Server &1"
+msgstr "名稱伺服器 &1"
+
+#. validation error popup
+#: src/include/network/services/dns.rb:194
+msgid "The IP address of the name server is invalid."
+msgstr "名稱伺服器的 IP 地址無效。"
+
+#. textentry label
+#: src/include/network/services/dns.rb:202
+msgid "Do&main Search"
+msgstr "域搜索(&M)"
+
+#. text entry label
+#: src/include/network/services/dns.rb:229
+msgid "Name Server &2"
+msgstr "名稱伺服器 &2"
+
+#. text entry label
+#: src/include/network/services/dns.rb:231
+msgid "Name Server &3"
+msgstr "名稱伺服器 &3"
+
+#. Frame label
+#. dialog caption
+#: src/include/network/services/dns.rb:235
+#: src/include/network/services/dns.rb:694
+#: src/include/network/services/dns.rb:708
+msgid "Hostname and Domain Name"
+msgstr "主機名與域名"
+
+#. Frame label
+#: src/include/network/services/dns.rb:252
+msgid "Name Servers and Domain Search List"
+msgstr "名稱伺服器與域搜索列表"
+
+#: src/include/network/services/dns.rb:269
+msgid "Hostname/DNS"
+msgstr "主機名/DNS"
+
+#. Init handler for DHCP_HOSTNAME.
+#. enable or disable: is DHCP available?
+#. @param [String] key	the widget receiving the event
+#. @param event	the event being handled
+#. @return nil so that the dialog loops on
+#: src/include/network/services/dns.rb:445
+msgid "No interface with dhcp"
+msgstr "沒有使用 dhcp 的介面"
+
+#. Validator for domain name, no_popup
+#. @param [String] key	the widget being validated
+#. @param [Hash] event	the event being handled
+#. @return whether valid
+#: src/include/network/services/dns.rb:502
+msgid ""
+"It's not recommended to use .local as domainname due to Multicast DNS. Use "
+"it at your own risk?"
+msgstr "由於多播 DNS 的原因，不推薦使用 .local 作為域名。風險自擔嗎？"
+
+#. Popup::Error text
+#: src/include/network/services/dns.rb:527
+msgid "The search list can have at most %1 domains."
+msgstr "搜索列表最多可有 %1 個域。"
+
+#. Popup::Error text
+#: src/include/network/services/dns.rb:533
+msgid "The search list can have at most %1 characters."
+msgstr "搜索列表最多可有 %1 個字元。"
+
+#. Popup::Error text
+#: src/include/network/services/dns.rb:542
+msgid "The search domain '%1' is invalid."
+msgstr "搜索域 '%1' 無效。"
+
+#. Standalone dialog only - embedded one is handled separately
+#. via CWMTab
+#: src/include/network/services/dns.rb:737
+msgid "Hostname and Name Server Configuration"
+msgstr "主機名與名稱伺服器配置"
+
+#. Warning popup text 1/2
+#: src/include/network/services/host.rb:57
+msgid "The host %1 is a system host."
+msgstr "主機 %1 是系統主機。"
+
+#. Warning popup text 2/2
+#: src/include/network/services/host.rb:61
+msgid "Really delete it?"
+msgstr "真的刪除它嗎？"
+
+#. Warning popup text 2/2
+#: src/include/network/services/host.rb:64
+msgid "Really change it?"
+msgstr "真的修改它嗎？"
+
+#. Hosts dialog help 1/2
+#: src/include/network/services/host.rb:78
+msgid "<p>The hosts can be set up in this dialog.</p>"
+msgstr "<p>可在此對話方塊中設定主機。</p>"
+
+#. Hosts dialog help 2/2
+#: src/include/network/services/host.rb:80
+msgid ""
+"<p>Enter a host <b>IP Address</b>, a <b>Hostname</b>, and optional\n"
+"<b>Host Aliases</b>, separated by spaces.</p>\n"
+msgstr ""
+"<p>輸入一個主機 <b>IP 地址</b>、<b>主機名</b>與可選的<b>主機別名</b>，以空格"
+"分隔。</p>\n"
+
+#. Frame label
+#: src/include/network/services/host.rb:118
+msgid "Current Hosts"
+msgstr "當前主機"
+
+#. Table header label
+#: src/include/network/services/host.rb:130
+msgid "Hostnames"
+msgstr "主機名"
+
+#. Table header label
+#: src/include/network/services/host.rb:132
+msgid "Host Aliases"
+msgstr "主機別名"
+
+#. TextEntry label
+#: src/include/network/services/host.rb:366
+msgid "Hos&t Aliases"
+msgstr "主機別名(&T)"
+
+#. Popup::Error text
+#: src/include/network/services/host.rb:429
+msgid "Alias name \"%1\" is invalid."
+msgstr "別名 \"%1\" 無效。"
+
+#. ComboBox label
+#: src/include/network/services/routing.rb:67
+msgid "Default IPv4 &Gateway"
+msgstr "默認 IPv4 閘道器(&G)"
+
+#: src/include/network/services/routing.rb:71
+msgid "Default IPv6 &Gateway"
+msgstr "默認 IPv6 閘道器(&G)"
+
+#. Table header 3/4
+#: src/include/network/services/routing.rb:89
+msgid "Genmask"
+msgstr "網路掩碼"
+
+#. CheckBox label
+#: src/include/network/services/routing.rb:110
+msgid "Enable &IPv4 Forwarding"
+msgstr "啟用 &IPv4 轉發"
+
+#: src/include/network/services/routing.rb:111
+msgid "Enable I&Pv6 Forwarding"
+msgstr "啟用 I&Pv6 轉發"
+
+#: src/include/network/services/routing.rb:136
+msgid "Routing"
+msgstr "路由"
+
+#. Route edit dialog
+#. @param [Fixnum] id id of the edited route
+#. @param [Yast::Term] entry edited entry
+#. @param [Array] devs available devices
+#. @return route or nil, if canceled
+#: src/include/network/services/routing.rb:161
+msgid "&Destination"
+msgstr "目的地(&D)"
+
+#: src/include/network/services/routing.rb:167
+msgid "Ge&nmask"
+msgstr "網路掩碼(&N)"
+
+#: src/include/network/services/routing.rb:175
+msgid "&Gateway"
+msgstr "閘道器(&G)"
+
+#: src/include/network/services/routing.rb:181
+msgid "De&vice"
+msgstr "裝置(&V)"
+
+#. Popup::Error text
+#: src/include/network/services/routing.rb:240
+msgid "Destination is invalid."
+msgstr "目的地無效。"
+
+#. Popup::Error text
+#: src/include/network/services/routing.rb:248
+msgid "Gateway IP address is invalid."
+msgstr "閘道器 IP 地址無效。"
+
+#. Popup::Error text
+#: src/include/network/services/routing.rb:256
+msgid "Subnetmask is invalid."
+msgstr "子網掩碼無效。"
+
+#. #178538 - disable routing dialog when NetworkManager is used
+#. but instead of default route (#299448) - NM reads it
+#: src/include/network/services/routing.rb:420
+msgid "The default gateway is invalid."
+msgstr "默認閘道器無效。"
+
+#. Pushbutton label
+#: src/include/network/summary.rb:67
+msgid "A&dd"
+msgstr "添加(&D)"
+
+#. Pushbutton label (different shortcut)
+#: src/include/network/summary.rb:74
+msgid "&Add"
+msgstr "添加(&A)"
+
+#. Pushbutton label (different shortcut)
+#: src/include/network/summary.rb:76
+msgid "Ed&it"
+msgstr "編輯(&I)"
+
+#. Pushbutton label (different shortcut)
+#: src/include/network/summary.rb:78
+msgid "Dele&te"
+msgstr "刪除(&T)"
+
+#. TextEntry label
+#: src/include/network/widgets.rb:55
+msgid "&Dial Prefix Regular Expression"
+msgstr "撥號字首正規表示式(&D)"
+
+#. dial prefix regex help
+#: src/include/network/widgets.rb:58
+msgid ""
+"<p>When <b>Dial Prefix Regular Expression</b> is set, users can\n"
+"change the dial prefix in KInternet provided that it matches the "
+"expression.\n"
+"A recommended value is <tt>[09]?</tt>, allowing <tt>0</tt>, <tt>9</tt>,\n"
+"and the empty prefix. If the expression is empty, users are not allowed\n"
+"to change the prefix.</p>\n"
+msgstr ""
+"<p>設定<b>撥號字首正規表示式</b>後，使用者可在 KInternet 中\n"
+"修改撥號字首，僅要改動後的字首仍與表示式匹配就可以。\n"
+"推薦值為 <tt>[09]?</tt>，同時允許 <tt>0</tt>、<tt>9</tt> 與空白字首。\n"
+"若該表示式為空，則不允許使用者修改撥號字首。</p>\n"
+
+#. radio button group label,method of setup
+#: src/include/network/widgets.rb:70
+msgid "Setup Method"
+msgstr "設定方法"
+
+#. radio button label
+#: src/include/network/widgets.rb:76
+msgid "A&utomatic Address Setup (via DHCP)"
+msgstr "自動地址設定 (通過 DHCP)(&U)"
+
+#. radio button label
+#: src/include/network/widgets.rb:78
+msgid "S&tatic Address Setup"
+msgstr "靜態地址設定(&T)"
+
+#: src/include/network/widgets.rb:81
+msgid "<p>H</p>"
+msgstr "<p>H</p>"
+
+#. Combo box option for Device Activation
+#: src/include/network/widgets.rb:96
+msgid "At Boot Time"
+msgstr "在引導時"
+
+#. is a part of the static help text
+#: src/include/network/widgets.rb:103
+msgid "Never"
+msgstr "從不"
+
+#. Combo box option for Device Activation
+#. DO NOT TRANSLATE NetworkManager, it is a program name
+#: src/include/network/widgets.rb:107
+msgid "By NetworkManager"
+msgstr "由 NetworkManager"
+
+#. help text for Device Activation
+#. DO NOT TRANSLATE NetworkManager, it is a program name
+#: src/include/network/widgets.rb:112
+msgid ""
+"<b>By NetworkManager</b>: a desktop applet\n"
+"controls the interface. There is no need to set it up in YaST."
+msgstr "<b>由 NetworkManager</b>：由一個桌面小程式來控制介面。無需在 YaST 中設定它。"
+
+#. Combo box option for Device Activation
+#: src/include/network/widgets.rb:118
+msgid "Manually"
+msgstr "手動"
+
+#. help text for Device Activation
+#: src/include/network/widgets.rb:120
+msgid ""
+"<p><b>Manually</b>: You control the interface manually\n"
+"via 'ifup' or 'qinternet' (see 'User Controlled' below).</p>\n"
+msgstr ""
+"<p><b>手動</b>：通過 'ifup' 或 'qinternet' 手動控制介面\n"
+"(參考下面的 '使用者控制的')。</p>\n"
+
+#. Combo box option for Device Activation
+#: src/include/network/widgets.rb:126
+msgid "On Cable Connection"
+msgstr "在網線連線時"
+
+#. help text for Device Activation
+#: src/include/network/widgets.rb:130
+msgid ""
+"<b>On Cable Connection</b>:\n"
+"The interface is watched for whether there is a physical\n"
+"network connection. That means either the cable is connected or the\n"
+"wireless interface can connect to an access point.\n"
+msgstr ""
+"<b>在網線連線時</b>：\n"
+"監視介面是否存在物理網路連線。\n"
+"物理意味著要麼連線了網線，要麼無線介面可連線到一個訪問點。\n"
+
+#. Combo box option for Device Activation
+#: src/include/network/widgets.rb:139
+msgid "On Hotplug"
+msgstr "在熱插拔時"
+
+#. help text for Device Activation
+#: src/include/network/widgets.rb:141
+msgid ""
+"With <b>On Hotplug</b>,\n"
+"the interface is set up as soon as it is available. This is\n"
+"nearly the same as 'At Boot Time', but does not result in an error at\n"
+"boot time if the interface is not present.\n"
+msgstr ""
+"使用<b>在熱插拔時</b>，僅要介面可用就會立即設定它。\n"
+"這幾乎與 '在引導時' 相同，但若介面不存在，該選項不會導致引導時出錯。\n"
+
+#. Combo box option for Device Activation
+#. Combo box option for Device Activation
+#: src/include/network/widgets.rb:150 src/include/network/widgets.rb:160
+msgid "On NFSroot"
+msgstr "在 NFSroot 時"
+
+#. help text for Device Activation
+#: src/include/network/widgets.rb:152
+msgid ""
+"Using <b>On NFSroot</b> is similar to <tt>auto</tt>. Interfaces with this "
+"startmode will never\n"
+"be shut down via <tt>rcnetwork stop</tt>. <tt>ifdown <iface></tt> is still "
+"available.\n"
+"Use this if you have an NFS or iSCSI root filesystem.\n"
+msgstr ""
+"使用<b>在 NFSroot 時</b>與使用<tt>自動</tt>相似。\n"
+"但使用此啟動模式的介面將永遠不能通過 <tt>rcnetwork stop</tt> 關閉。\n"
+"<tt>ifdown <iface></tt> 仍然有效。\n"
+"若您有 NFS 或 iSCSI 根檔案系統請使用此啟動模式。\n"
+
+#. help text for Device Activation
+#: src/include/network/widgets.rb:162
+msgid ""
+"Using <b>On NFSroot</b> is nearly like 'auto'. But interfaces with this "
+"startmode will never\n"
+"be shut down via 'rcnetwork stop'. 'ifdown <iface>' still works.\n"
+"Use this when you have a nfs or iscsi root filesystem.\n"
+msgstr ""
+"使用<b>在 NFSroot 時</b>與使用 '自動' 相似。\n"
+"但使用此啟動模式的介面將永遠不能通過 'rcnetwork stop' 關閉。\n"
+"'ifdown <iface>' 仍然有效。\n"
+"當您有 nfs 或 iscsi 根檔案系統時請使用此啟動模式。\n"
+
+#. Combo box label - when to activate device (e.g. on boot, manually, never,..)
+#: src/include/network/widgets.rb:195
+msgid "Activate &Device"
+msgstr "啟用裝置(&D)"
+
+#. Device activation main help. The individual parts will be
+#. substituted as %1
+#: src/include/network/widgets.rb:201
+msgid ""
+"<p><b><big>Device Activation</big></b></p> \n"
+"<p>Choose when to bring up the network interface. <b>At Boot Time</b> "
+"activates it during system boot, \n"
+"<b>Never</b> does not start the device.\n"
+"%1</p>\n"
+msgstr ""
+"<p><b><big>裝置啟用</big></b></p> \n"
+"<p>選擇何時啟用網路介面。\n"
+"<b>在引導時</b>會在系統引導期間啟用裝置。\n"
+"<b>從不</b>將不啟動裝置。\n"
+"%1</p>\n"
+
+#: src/include/network/widgets.rb:247
+msgid "IPoIB Device Mode"
+msgstr "IPoIB 裝置模式"
+
+#: src/include/network/widgets.rb:258
+msgid "Firewall is not installed."
+msgstr "防火牆尚未安裝。"
+
+#. translators: MTU value description (size in bytes, desc)
+#: src/include/network/widgets.rb:266
+msgid "1500 (Ethernet, DSL broadband)"
+msgstr "1500 (乙太網，DSL 寬頻)"
+
+#: src/include/network/widgets.rb:267
+msgid "1492 (PPPoE broadband)"
+msgstr "1492 (PPPoE 寬頻)"
+
+#: src/include/network/widgets.rb:268
+msgid "576 (dial-up)"
+msgstr "576 (撥號)"
+
+#. translators: MTU value description (size in bytes, desc)
+#: src/include/network/widgets.rb:275
+msgid "65520 (IPoIB in connected mode)"
+msgstr "65520 (連線模式下的 IPoIB)"
+
+#: src/include/network/widgets.rb:276
+msgid "2044 (IPoIB in datagram mode)"
+msgstr "2044 (資料包模式下的 IPoIB)"
+
+#. textentry label, Maximum Transfer Unit
+#: src/include/network/widgets.rb:284
+msgid "Set &MTU"
+msgstr "設定 &MTU"
+
+#. the user can control the network with the NetworkManager program
+#: src/include/network/widgets.rb:300
+msgid "NetworkManager Service"
+msgstr "NetworkManager 服務"
+
+#. ifup is a program name
+#: src/include/network/widgets.rb:308
+msgid "Traditional ifup"
+msgstr "傳統的 ifup 方法"
+
+#. wicked is network configuration backend like netconfig
+#: src/include/network/widgets.rb:316
+msgid "Wicked Service"
+msgstr "怪獸 (Wicked) 服務"
+
+#. used when no network service is active or to disable network service
+#: src/include/network/widgets.rb:324
+msgid "Network Services Disabled"
+msgstr "禁用的網路服務"
+
+#. Store the NetworkManager widget
+#. @param [String] key	id of the widget
+#. @param [Hash] event	the event being handled
+#: src/include/network/widgets.rb:355
+msgid "Applet needed"
+msgstr "需要掛件"
+
+#: src/include/network/widgets.rb:356
+msgid ""
+"NetworkManager is controlled by desktop applet\n"
+"(KDE plasma widget and nm-applet for GNOME).\n"
+"Be sure it's running and if not, start it manually."
+msgstr ""
+"NetworkManager 由桌面小掛件 (KDE 是 Plasma 掛件，GNOME 是 nm-applet) 控制。\n"
+"請確保該掛件正在運行，若未運行請手動啟動之。"
+
+#: src/include/network/widgets.rb:371
+msgid "General Network Settings"
+msgstr "常規網路設定"
+
+#: src/include/network/widgets.rb:417
+msgid "IPv6 Protocol Settings"
+msgstr "IPn6 協議設定"
+
+#. enable ipv6 support
+#: src/include/network/widgets.rb:418 src/modules/Lan.rb:815
+msgid "Enable IPv6"
+msgstr "啟用 IPv6"
+
+#. TRANSLATORS: Informs that device name is not known
+#: src/include/network/widgets.rb:435
+msgid "Unknown device"
+msgstr "未知裝置"
+
+#. TRANSLATORS: Part of label, device with IP address assigned by DHCP
+#: src/include/network/widgets.rb:447
+msgid "DHCP address"
+msgstr "DHCP 地址"
+
+#. TRANSLATORS: Informs that no IP has been assigned to the device
+#: src/include/network/widgets.rb:452
+msgid "No IP address assigned"
+msgstr "未指派 IP 地址"
+
+#: src/include/network/widgets.rb:455
+msgid ""
+"%1 \n"
+"%2 - %3"
+msgstr ""
+"%1 \n"
+"%2 - %3"
+
+#. #186102
+#: src/include/network/widgets.rb:510
+msgid "&Change Device"
+msgstr "修改裝置(&C)"
+
+#. popup dialog title
+#: src/include/network/widgets.rb:544
+msgid "Network Device Select"
+msgstr "網路裝置選擇"
+
+#. Shows a confirmation timed dialogue
+#.
+#. Returns :ok when user agreed, :cancel otherwise
+#: src/lib/network/confirm_virt_proposal.rb:25
+msgid "Confirm Network Restart"
+msgstr "確認重啟網路"
+
+#: src/lib/network/confirm_virt_proposal.rb:26
+msgid ""
+"Because of the bridged network, YaST2 needs to restart the network to apply "
+"the settings."
+msgstr "由於是橋接網路，YaST2 需要重啟網路以應用設定。"
+
+#. Opens dialog for editing NIC name
+#: src/lib/network/edit_nic_name.rb:95
+msgid "Device Name:"
+msgstr "裝置名稱："
+
+#: src/lib/network/edit_nic_name.rb:101
+msgid "Base Udev Rule On"
+msgstr "將 udev 規則基於"
+
+#. make sure there is enough space (#367239)
+#: src/lib/network/edit_nic_name.rb:110
+msgid "MAC address: %s"
+msgstr "MAC 地址：%s"
+
+#: src/lib/network/edit_nic_name.rb:116
+msgid "BusID: %s"
+msgstr "BusID：%s"
+
+#. check if the name is assigned to another device already
+#: src/lib/network/edit_nic_name.rb:153
+msgid "Configuration name already exists."
+msgstr "配置名稱已存在。"
+
+#: src/lib/network/edit_nic_name.rb:157
+msgid "Invalid configuration name."
+msgstr "無效配置檔名稱。"
+
+#. Progress stage 1
+#: src/modules/DNS.rb:371
+msgid "Write hostname"
+msgstr "寫入主機名"
+
+#. Progress stage 2
+#. Progress stage 10
+#: src/modules/DNS.rb:373 src/modules/Lan.rb:538
+msgid "Update configuration"
+msgstr "更新配置"
+
+#. Progress stage 3
+#: src/modules/DNS.rb:375
+msgid "Update /etc/resolv.conf"
+msgstr "更新 /etc/resolv.conf"
+
+#. Write dialog caption
+#: src/modules/DNS.rb:379
+msgid "Saving Hostname and DNS Configuration"
+msgstr "正在儲存主機名與 DNS 配置..."
+
+#. Allow to set hostname even if it's modified by DHCP (#13427)
+#. if(NetworkConfig::DHCP["DHCLIENT_SET_HOSTNAME"]:false != true) {
+#. Progress step 1/3
+#: src/modules/DNS.rb:388
+msgid "Writing hostname..."
+msgstr "正在寫入主機名..."
+
+#. Progress step 2/3
+#. Progress step 10
+#: src/modules/DNS.rb:405 src/modules/Lan.rb:630
+msgid "Updating configuration..."
+msgstr "正在更新配置..."
+
+#. if(SCR::Read(.target.size, resolv_conf) < 0)
+#. SCR::Write(.target.string, resolv_conf, "");
+#. Progress step 3/3
+#: src/modules/DNS.rb:416
+msgid "Updating /etc/resolv.conf ..."
+msgstr "正在更新 /etc/resolv.conf ..."
+
+#. Summary text
+#: src/modules/DNS.rb:533
+msgid "Hostname: Set by DHCP"
+msgstr "主機名：由 DHCP 設定"
+
+#. Summary text
+#: src/modules/DNS.rb:539
+msgid "Hostname: %1"
+msgstr "主機名：%1"
+
+#: src/modules/DNS.rb:547
+msgid "Hostname will not be written to /etc/hosts"
+msgstr "主機名將不會寫入 /etc/hosts"
+
+#. Summary text
+#: src/modules/DNS.rb:569
+msgid "Name Servers: %1"
+msgstr "名稱伺服器：%1"
+
+#. Summary text
+#: src/modules/DNS.rb:579
+msgid "Search List: %1"
+msgstr "搜索列表：%1"
+
+#. Check if there is anything to do
+#: src/modules/Host.rb:138
+msgid "Update /etc/hosts"
+msgstr "更新 /etc/hosts"
+
+#: src/modules/Host.rb:140
+msgid "Saving Hostname Configuration"
+msgstr "正在儲存主機名配置"
+
+#. sleep for longer time, so that progress does not disappear right afterwards
+#: src/modules/Host.rb:145
+msgid "Updating /etc/hosts ..."
+msgstr "正在更新 /etc/hosts ..."
+
+#. Read dialog caption
+#: src/modules/Lan.rb:275
+msgid "Initializing Network Configuration"
+msgstr "正在啟始化網路配置"
+
+#. Progress stage 1/9
+#: src/modules/Lan.rb:288
+msgid "Detect network devices"
+msgstr "檢測網路裝置"
+
+#. Progress stage 2/9
+#: src/modules/Lan.rb:290
+msgid "Read driver information"
+msgstr "讀取驅動資訊"
+
+#. Progress stage 3/9 - multiple devices may be present, really plural
+#: src/modules/Lan.rb:292
+msgid "Read device configuration"
+msgstr "讀取裝置配置"
+
+#. Progress stage 4/9
+#: src/modules/Lan.rb:294
+msgid "Read network configuration"
+msgstr "讀取網路配置"
+
+#. Progress stage 5/9
+#: src/modules/Lan.rb:296
+msgid "Read firewall settings"
+msgstr "讀取防火牆設定"
+
+#. Progress stage 6/9
+#: src/modules/Lan.rb:298
+msgid "Read hostname and DNS configuration"
+msgstr "讀取主機名與 DNS 配置"
+
+#. Progress stage 7/9
+#: src/modules/Lan.rb:300
+msgid "Read installation information"
+msgstr "讀取安裝資訊"
+
+#. Progress stage 8/9
+#: src/modules/Lan.rb:302
+msgid "Read routing configuration"
+msgstr "讀取路由配置"
+
+#. Progress stage 9/9
+#: src/modules/Lan.rb:304
+msgid "Detect current status"
+msgstr "檢測當前狀態"
+
+#. Progress step 1/9
+#: src/modules/Lan.rb:318
+msgid "Detecting ndiswrapper..."
+msgstr "正在檢測 ndiswrapper..."
+
+#. modprobe ndiswrapper before hwinfo when needed (#343893)
+#: src/modules/Lan.rb:337
+msgid ""
+"Detected a ndiswrapper configuration,\n"
+"but the kernel module was not modprobed.\n"
+"Do you want to modprobe ndiswrapper?\n"
+msgstr ""
+"檢測到了 ndiswrapper 配置，\n"
+"但核心模組尚未載入。\n"
+"您想要載入 ndiswrapper 模組嗎？\n"
+
+#: src/modules/Lan.rb:345
+msgid ""
+"ndiswrapper kernel module has not been loaded.\n"
+"Check configuration manually.\n"
+msgstr ""
+"ndiswrapper 核心模組尚未載入。\n"
+"請手動檢查配置。\n"
+
+#. Progress step 2/9
+#: src/modules/Lan.rb:359
+msgid "Detecting network devices..."
+msgstr "正在檢測網路裝置..."
+
+#. Progress step 3/9 - multiple devices may be present, really plural
+#: src/modules/Lan.rb:367
+msgid "Reading device configuration..."
+msgstr "正在讀取裝置配置..."
+
+#. Progress step 4/9
+#: src/modules/Lan.rb:373
+msgid "Reading network configuration..."
+msgstr "正在讀取網路配置..."
+
+#. Progress step 5/9
+#: src/modules/Lan.rb:382
+msgid "Reading firewall settings..."
+msgstr "正在讀取防火牆設定..."
+
+#. Progress step 6/9
+#: src/modules/Lan.rb:390
+msgid "Reading hostname and DNS configuration..."
+msgstr "正在讀取主機名與 DNS 配置..."
+
+#. Progress step 7/9
+#: src/modules/Lan.rb:397
+msgid "Reading installation information..."
+msgstr "正在讀取安裝資訊..."
+
+#. Progress step 8/9
+#: src/modules/Lan.rb:403
+msgid "Reading routing configuration..."
+msgstr "正在讀取路由配置..."
+
+#. Progress step 9/9
+#: src/modules/Lan.rb:409
+msgid "Detecting current status..."
+msgstr "正在檢測當前狀態..."
+
+#. Final progress step
+#. Final progress step
+#: src/modules/Lan.rb:415 src/modules/Lan.rb:651
+msgid "Finished"
+msgstr "已完成"
+
+#. (a specialization used when a parameterless function is needed)
+#. @return Read(`cache)
+#: src/modules/Lan.rb:441
+msgid "To apply this change, a reboot is needed."
+msgstr "要應用此改動，需要重啟。"
+
+#. Write dialog caption
+#: src/modules/Lan.rb:510
+msgid "Saving Network Configuration"
+msgstr "正在儲存網路配置"
+
+#. Progress stage 2
+#: src/modules/Lan.rb:517
+msgid "Write drivers information"
+msgstr "寫入驅動資訊"
+
+#. Progress stage 3 - multiple devices may be present,really plural
+#: src/modules/Lan.rb:519
+msgid "Write device configuration"
+msgstr "寫入裝置配置"
+
+#. Progress stage 4
+#: src/modules/Lan.rb:521
+msgid "Write network configuration"
+msgstr "寫入網路配置"
+
+#. Progress stage 5
+#: src/modules/Lan.rb:523
+msgid "Write routing configuration"
+msgstr "寫入路由配置"
+
+#. Progress stage 6
+#: src/modules/Lan.rb:525
+msgid "Write hostname and DNS configuration"
+msgstr "寫入主機名與 DNS 配置"
+
+#. Progress stage 7
+#: src/modules/Lan.rb:527
+msgid "Set up network services"
+msgstr "設定網路服務"
+
+#. Progress stage 8
+#. Progress stage 1
+#: src/modules/Lan.rb:531 src/modules/Remote.rb:289
+msgid "Write firewall settings"
+msgstr "寫入防火牆設定"
+
+#. Progress stage 9
+#: src/modules/Lan.rb:535
+msgid "Activate network services"
+msgstr "啟用網路服務"
+
+#. Progress step 2
+#: src/modules/Lan.rb:552
+msgid "Writing /etc/modprobe.conf..."
+msgstr "正在寫入 /etc/modprobe.conf..."
+
+#. Progress step 3 - multiple devices may be present, really plural
+#: src/modules/Lan.rb:557
+msgid "Writing device configuration..."
+msgstr "正在寫入裝置配置..."
+
+#. Progress step 4
+#: src/modules/Lan.rb:563
+msgid "Writing network configuration..."
+msgstr "正在寫入網路配置..."
+
+#. Progress step 5
+#: src/modules/Lan.rb:569
+msgid "Writing routing configuration..."
+msgstr "正在寫入路由配置..."
+
+#. Progress step 6
+#: src/modules/Lan.rb:577
+msgid "Writing hostname and DNS configuration..."
+msgstr "正在寫入主機名與 DNS 配置..."
+
+#. Progress step 7
+#: src/modules/Lan.rb:590
+msgid "Setting up network services..."
+msgstr "正在設定網路服務..."
+
+#. Progress step 8
+#: src/modules/Lan.rb:598 src/modules/Remote.rb:303
+msgid "Writing firewall settings..."
+msgstr "正在寫入防火牆設定..."
+
+#. Progress step 9
+#: src/modules/Lan.rb:608
+msgid "Activating network services..."
+msgstr "正在啟用網路服務..."
+
+#: src/modules/Lan.rb:647
+msgid "No network running"
+msgstr "無網路運行"
+
+#. Create a textual summary for the general network settings
+#. proposal (NetworkManager + ipv6)
+#. @return [rich text, links]
+#: src/modules/Lan.rb:787
+msgid "Network Mode"
+msgstr "網路模式"
+
+#. network mode: the interfaces are controlled by the user
+#: src/modules/Lan.rb:792
+msgid "Interfaces controlled by NetworkManager"
+msgstr "由 NetworkManager 控制的介面"
+
+#. disable NetworkManager applet
+#: src/modules/Lan.rb:794
+msgid "Disable NetworkManager"
+msgstr "禁用 NetworkManager"
+
+#. network mode
+#: src/modules/Lan.rb:798
+msgid "Traditional network setup with NetControl - ifup"
+msgstr "使用 NetControl 的傳統網路設定 - ifup"
+
+#. enable NetworkManager applet
+#. for virtual network proposal (bridged) don't show hyperlink to enable networkmanager
+#: src/modules/Lan.rb:801
+msgid "Enable NetworkManager"
+msgstr "啟用 NetworkManager"
+
+#. ipv6 support is enabled
+#: src/modules/Lan.rb:807
+msgid "Support for IPv6 protocol is enabled"
+msgstr "已啟用 IPv6 協議支援"
+
+#. disable ipv6 support
+#: src/modules/Lan.rb:809
+msgid "Disable IPv6"
+msgstr "禁用 IPv6"
+
+#. ipv6 support is disabled
+#: src/modules/Lan.rb:813
+msgid "Support for IPv6 protocol is disabled"
+msgstr "禁用了對 IPv6 協議的支援"
+
+#. translators: a possible value for: IPoIB device mode
+#: src/modules/LanItems.rb:182
+msgid "connected"
+msgstr "已連線"
+
+#: src/modules/LanItems.rb:183
+msgid "datagram"
+msgstr "資料包"
+
+#. summary description of STARTMODE=auto
+#. summary description of STARTMODE=auto
+#. summary description of STARTMODE=hotplug
+#: src/modules/LanItems.rb:1238 src/modules/LanItems.rb:1242
+#: src/modules/LanItems.rb:1246
+msgid "Started automatically at boot"
+msgstr "引導時自動啟動"
+
+#. summary description of STARTMODE=ifplugd
+#: src/modules/LanItems.rb:1250
+msgid "Started automatically on cable connection"
+msgstr "連線網線時自動啟動"
+
+#. summary description of STARTMODE=managed
+#: src/modules/LanItems.rb:1254
+msgid "Managed by NetworkManager"
+msgstr "由 NetworkManager 管理"
+
+#. summary description of STARTMODE=off
+#: src/modules/LanItems.rb:1258
+msgid "Will not be started at all"
+msgstr "根本不會啟動"
+
+#: src/modules/LanItems.rb:1263
+msgid "Started manually"
+msgstr "手動啟動"
+
+#. do nothing
+#: src/modules/LanItems.rb:1275
+msgid "IP address assigned using"
+msgstr "IP 地址指派自"
+
+#: src/modules/LanItems.rb:1279
+msgid "IP address: %s/%s"
+msgstr "IP 地址：%s/%s"
+
+#: src/modules/LanItems.rb:1282
+msgid "IP address: %s, subnet mask %s"
+msgstr "IP 地址：%s，子網掩碼 %s"
+
+#. FIXME:
+#. - side effect: sets @type. No reason for that. It should only build item
+#. overview. Check and remove.
+#: src/modules/LanItems.rb:1313
+msgid "Not configured"
+msgstr "未配置"
+
+#. display it only if we need it, don't duplicate "ifcfg_name" above
+#: src/modules/LanItems.rb:1336 src/modules/LanItems.rb:1402
+msgid "Device Name: %s"
+msgstr "裝置名稱：%s"
+
+#: src/modules/LanItems.rb:1356
+msgid "Bonding slaves"
+msgstr "繫結從屬"
+
+#: src/modules/LanItems.rb:1370
+msgid "enslaved in %s"
+msgstr "從屬於 %s"
+
+#: src/modules/LanItems.rb:1371
+msgid "Bonding master"
+msgstr "繫結主體"
+
+#: src/modules/LanItems.rb:1385
+msgid "Not connected"
+msgstr "未連線"
+
+#: src/modules/LanItems.rb:1388
+msgid "No hwinfo"
+msgstr "無硬體資訊"
+
+#: src/modules/LanItems.rb:1408
+msgid ""
+"Unable to configure the network card because the kernel device (eth0, wlan0) "
+"is not present. This is mostly caused by missing firmware (for wlan "
+"devices). See dmesg output for details."
+msgstr ""
+"由於沒有核心裝置 (eth0, wlan0)，無法配置網卡。這大多是缺少固件 (對於 wlan 設"
+"備) 造成的。細節請參考 dmesg 輸出。"
+
+#: src/modules/LanItems.rb:1414
+msgid ""
+"The device is not configured. Press <b>Edit</b>\n"
+"to configure.\n"
+msgstr "裝置尚未配置。請按<b>編輯</b>配置。\n"
+
+#: src/modules/LanItems.rb:1421
+msgid "Needed firmware"
+msgstr "所需固件"
+
+#: src/modules/LanItems.rb:1421
+msgid "unknown"
+msgstr "未知"
+
+#. Package containing SuSEfirewall2 services has to be installed before
+#. reading SuSEFirewall, otherwise exception is thrown by firewall
+#: src/modules/Remote.rb:239
+msgid ""
+"Package %{package} is not installed\n"
+"firewall settings will be disabled."
+msgstr ""
+"未安裝軟體包 %{package}\n"
+"將禁用防火牆設定。"
+
+#. Progress stage 2
+#: src/modules/Remote.rb:291
+msgid "Configure display manager"
+msgstr "配置顯示管理器"
+
+#. Progress stage 3
+#: src/modules/Remote.rb:296
+msgid "Restart the services"
+msgstr "重啟服務"
+
+#: src/modules/Remote.rb:299
+msgid "Saving Remote Administration Configuration"
+msgstr "正在儲存遠端管理配置"
+
+#: src/modules/Remote.rb:308
+msgid "Configuring display manager..."
+msgstr "正在配置顯示管理器..."
+
+#. Enable xinetd
+#. Enable XDM
+#: src/modules/Remote.rb:327 src/modules/Remote.rb:335
+msgid "Enabling service %{service} has failed"
+msgstr "啟動服務 %{service} 失敗"
+
+#. Do this only if package xinetd is installed (#256385)
+#: src/modules/Remote.rb:359
+msgid "Restarting the service..."
+msgstr "正在重啟服務..."
+
+#. description in proposal
+#: src/modules/Remote.rb:393
+msgid "Remote administration is enabled."
+msgstr "已啟用遠端管理。"
+
+#: src/modules/Remote.rb:393
+msgid "Remote administration is disabled."
+msgstr "已禁用遠端管理。"
+
+#. Progress stage 1
+#: src/modules/Routing.rb:221
+msgid "Write IP forwarding settings"
+msgstr "寫入 IP  轉發設定"
+
+#. Progress stage 2
+#: src/modules/Routing.rb:223
+msgid "Write routing settings"
+msgstr "寫入路由設定"
+
+#: src/modules/Routing.rb:226
+msgid "Saving Routing Configuration"
+msgstr "正在儲存路由配置"
+
+#. Progress stage 1/2
+#: src/modules/Routing.rb:232
+msgid "Writing IP forwarding settings..."
+msgstr "正在寫入 IP 轉發設定..."
+
+#. at first stop the running routes
+#. FIXME SCR::Execute(.target.bash, "/etc/init.d/route stop");
+#. sysconfig does not support restarting routes only,
+#. so we let our caller do it together with other things
+#. Progress stage 2/2
+#: src/modules/Routing.rb:243
+msgid "Writing routing settings..."
+msgstr "正在寫入路由設定..."
+
+#. Summary text
+#: src/modules/Routing.rb:353
+msgid "Gateway: %s"
+msgstr "閘道器：%s"
+
+#. Summary text
+#: src/modules/Routing.rb:357
+msgid "IP Forwarding for IPv4: %s"
+msgstr "IPv4 轉發：%s"
+
+#. Summary text
+#: src/modules/Routing.rb:361
+msgid "IP Forwarding for IPv6: %s"
+msgstr "IPv6 轉發：%s"
+
+#. item in combo box Firewall Zone
+#: src/modules/SuSEFirewall4Network.rb:82
+msgid "Automatically Assigned Zone"
+msgstr "自動指派的區域"
+
+#. item in combo box Firewall Zone
+#: src/modules/SuSEFirewall4Network.rb:84
+msgid "Firewall Disabled"
+msgstr "已禁用防火牆"
+
+#. TRANSLATORS: Part of combo box item -> "Internal Zone (Unprotected)"
+#: src/modules/SuSEFirewall4Network.rb:96
+msgid "(Unprotected)"
+msgstr "(無保護的)"
+
+#~ msgid ""
+#~ "Network is currently controlled by NetworkManager and its settings \n"
+#~ "cannot be edited by YaST.\n"
+#~ "\n"
+#~ "To edit the settings, use the NetworkManager connection editor or\n"
+#~ "switch the network setup method to Traditional with ifup.\n"
+#~ msgstr ""
+#~ "網路目前由 NetworkManager 控制，它的設定不能被 YaST 編輯。\n"
+#~ "\n"
+#~ "要編輯設定，請使用 NetworkManager 連線編輯器或切換網路設定方法為傳統的 "
+#~ "ifup 方法。\n"
+
+#~ msgid "Device name:"
+#~ msgstr "裝置名稱："
+
+#~ msgid ""
+#~ "SSH service will be enabled, SSH port will be open (<a href="
+#~ "\"%1\">disable and close</a>)"
+#~ msgstr "將啟用 SSH 服務並開啟 SSH 埠 (<a href=\"%1\">禁用並關閉</a>)"
+
+#~ msgid ""
+#~ "SSH service will be disabled, SSH port will be blocked (<a href="
+#~ "\"%1\">enable and open</a>)"
+#~ msgstr "將禁用 SSH 服務並遮蔽 SSH 埠 (<a href=\"%1\">啟用並開啟</a>)"
+
+#~ msgid "General &Network Settings"
+#~ msgstr "常規網路設定(&N)"
+
+#~ msgid "Internal error. Please report a bug."
+#~ msgstr "內部錯誤。請彙報故障。"
+
+#~ msgid "Detecting network cards..."
+#~ msgstr "正在檢測網卡..."
+
+#~ msgid "Network Interfaces"
+#~ msgstr "網路介面"
+
+#~ msgid "&Network Interfaces"
+#~ msgstr "網路介面(&N)"
+
+#~ msgid "Alias Name"
+#~ msgstr "別名"
+
+#~ msgid "Persistent Tunnel"
+#~ msgstr "永續性隧道"
+
+#~ msgid "&User Controlled with NetworkManager"
+#~ msgstr "由使用者通過 NetworkManager 控制(&U)"
+
+#~ msgid "Controlled by &wicked"
+#~ msgstr "由 &wicked 控制"
+
+#~ msgid "Alias &Name"
+#~ msgstr "別名(&N)"
+
+#~ msgid "Proposed bridged configuration for virtual machine network"
+#~ msgstr "為虛擬機器網路提議的橋接配置"
+
+#~ msgid "Use non-bridged configuration"
+#~ msgstr "使用非橋接配置"
+
+#~ msgid "Proposed non-bridged network configuration"
+#~ msgstr "提議的非橋接網路配置"
+
+#~ msgid "Use bridged configuration"
+#~ msgstr "使用橋接配置"
+
+#~ msgid "There is no user interface available for this module."
+#~ msgstr "此模組沒有可用的使用者介面。"
+
+#~ msgid "Detecting DSL devices..."
+#~ msgstr "正在檢測 DSL裝置..."
+
+#~ msgid "DSL Connections"
+#~ msgstr "DSL 連線"
+
+#~ msgid "&DSL Connections"
+#~ msgstr "&DSL 連線"
+
+#~ msgid "PPP Daemon"
+#~ msgstr "PPP 守護程序"
+
+#~ msgid "Detecting ISDN cards..."
+#~ msgstr "正在檢測 ISDN 卡..."
+
+#~ msgid "ISDN Adapters"
+#~ msgstr "ISDN 介面卡"
+
+#~ msgid "&ISDN Adapters"
+#~ msgstr "&ISDN 介面卡"
+
+#~ msgid "Detecting modems..."
+#~ msgstr "正在檢測調變解調器..."
+
+#~ msgid "&Modems"
+#~ msgstr "調變解調器(&M)"
+
+#~ msgid "ISDN Card"
+#~ msgstr "ISDN 卡"
+
+#~ msgid "Modem"
+#~ msgstr "調變解調器"
+
+#~ msgid "DSL Connection"
+#~ msgstr "DSL 連線"
+
+#~ msgid "(not connected)"
+#~ msgstr "(未連線)"
+
+#~ msgid "Mode: %1"
+#~ msgstr "模式：%1"
+
+#~ msgid "IP address assigned using DHCP"
+#~ msgstr "由 DHCP 指派的 IP 地址"
+
+#~ msgid "Bond slaves"
+#~ msgstr "繫結從屬"
+
+#~ msgid ""
+#~ "<p>The device is not configured. Press <b>Edit</b> for configuration.</p>"
+#~ msgstr "<p>裝置尚未配置。請按<b>編輯</b>進行配置。</p>"
+
+#~ msgid ""
+#~ "<P><B><BIG>Initializing DSL Configuration\n"
+#~ "</BIG></B><BR>Please wait...<BR></P>"
+#~ msgstr ""
+#~ "<P><B><BIG>正在啟始化 DSL 配置\n"
+#~ "</BIG></B><BR>請稍候...<BR></P>"
+
+#~ msgid ""
+#~ "<P><B><BIG>Aborting the Initialization\n"
+#~ "</BIG></B><BR>You can safely abort the configuration utility by pressing\n"
+#~ "<B>Abort</B> now.</P>\n"
+#~ msgstr ""
+#~ "<P><B><BIG>中止啟始化\n"
+#~ "</BIG></B><BR>現在按<B>中止</B>可安全地中止配置工具。</P>\n"
+
+#~ msgid ""
+#~ "<P><B><BIG>Saving DSL Configuration</BIG></B><BR>\n"
+#~ "Please wait...<BR></P>"
+#~ msgstr ""
+#~ "<P><B><BIG>正在儲存 DSL 配置</BIG></B><BR>\n"
+#~ "請稍候...<BR></P>"
+
+#~ msgid ""
+#~ "<P><B><BIG>Aborting Saving</BIG></B><BR>\n"
+#~ "You can abort the save process by pressing <B>Abort</B>. An additional\n"
+#~ "dialog may inform you whether it is safe to do so.</P>\n"
+#~ msgstr ""
+#~ "<P><B><BIG>中止儲存</BIG></B><BR>\n"
+#~ "您可按<B>中止</B>中止儲存過程。\n"
+#~ "另一個對話方塊將告知您這樣做是否安全。</P>\n"
+
+#~ msgid "The provider %1 is in use."
+#~ msgstr "服務提供商 %1 已在使用。"
+
+#~ msgid "The provider %1 is in use. Really delete it?"
+#~ msgstr "服務提供商 %1 已在使用。真的刪除它嗎？"
+
+#~ msgid "DSL Configuration Overview"
+#~ msgstr "DSL 配置概覽"
+
+#~ msgid ""
+#~ "<P><B><BIG>DSL Overview</BIG></B><BR>\n"
+#~ "Here, get an overview of installed DSL devices. Additionally,\n"
+#~ "edit their configuration.<BR></P>"
+#~ msgstr ""
+#~ "<P><B><BIG>DSL 概覽</BIG></B><BR>\n"
+#~ "在此獲取已安裝 DSL 裝置的概覽。\n"
+#~ "此外，還可編輯其配置。<BR></P>"
+
+#~ msgid ""
+#~ "<P><B><BIG>Adding a DSL Device:</BIG></B><BR>\n"
+#~ "If you press <B>Add</B>, you can manually configure a DSL device.</P>"
+#~ msgstr ""
+#~ "<P><B><BIG>添加 DSL 裝置：</BIG></B><BR>\n"
+#~ "您可按<B>添加</B>手動配置 DSL 裝置。</P>"
+
+#~ msgid ""
+#~ "<P><B><BIG>Editing or Deleting:</BIG></B><BR>\n"
+#~ "Choose a DSL device for which to change or remove the configuration.\n"
+#~ "Then press the appropriate button: <B>Edit</B> or <B>Delete</B>.</P>"
+#~ msgstr ""
+#~ "<P><B><BIG>編輯或刪除：</BIG></B><BR>\n"
+#~ "選擇要修改或移除配置的 DSL 裝置。\n"
+#~ "然後按相應的按鈕：<B>編輯</B>或<B>刪除</B>。</P>"
+
+#~ msgid "Type"
+#~ msgstr "類型"
+
+#~ msgid "Provider"
+#~ msgstr "服務提供商"
+
+#~ msgid "Providers"
+#~ msgstr "服務提供商"
+
+#~ msgid "DSL Configuration"
+#~ msgstr "DSL 配置"
+
+#~ msgid ""
+#~ "<p>Here, set the most important settings\n"
+#~ "for the DSL connection.</p>\n"
+#~ msgstr "<p>在此設定 DSL 連線最重要的設定。</p>\n"
+
+#~ msgid ""
+#~ "<p>First, choose your <b>PPP mode</b>. This is either\n"
+#~ "<i>PPP over Ethernet</i> (PPPoE), <i>PPP over ATM</i> (PPPoATM),\n"
+#~ "<i>CAPI for ADSL</i> or <i>Point to Point Tunneling Protocol</i> (PPTP).\n"
+#~ "Use <i>PPP over Ethernet</i> if your DSL modem is connected via ethernet "
+#~ "to your computer.\n"
+#~ "Use <i>Point to Point Tunneling Protocol</i> if you want to connect to a "
+#~ "VPN server.\n"
+#~ "If you are not sure which mode to use, ask your provider. </p>"
+#~ msgstr ""
+#~ "<p>首先，請選擇您的 <b>PPP 模式</b>。\n"
+#~ "這可以是 <i>PPP over Ethernet</i> (PPPoE)，<i>PPP over ATM</i> "
+#~ "(PPPoATM)，\n"
+#~ "<i>用於 ADSL 的 CAPI</i> 或者<i>點對點隧道協議</i> (PPTP)。\n"
+#~ "若您的 DSL 調變解調器通過乙太網與計算機連線，請用 <i>PPP over Ethernet</"
+#~ "i>。\n"
+#~ "若您想要連線到一個 VPN 伺服器，請用<i>點對點隧道協議</i>。\n"
+#~ "若您不確定使用哪種模式，請垂詢您的服務提供商。</p>"
+
+#~ msgid ""
+#~ "<p>If you are using <i>PPP over Ethernet</i>, first configure your\n"
+#~ "ethernet card.</p>"
+#~ msgstr "<p>若您正在使用 <i>PPP over Ethernet</i>，則請先配置乙太網卡。</p>"
+
+#~ msgid ""
+#~ "<p>The <b>PPP Mode-Dependent Settings</b> are settings required to set "
+#~ "up\n"
+#~ "your DSL connection. <b>VPI/VCI</b> makes sense only for <i>PPP over ATM</"
+#~ "i>\n"
+#~ "connections, <b>Ethernet Card</b> is needed for <i>PPP over Ethernet</i>\n"
+#~ "connections.</p>\n"
+#~ msgstr ""
+#~ "<p><b>PPP 模式相關設定</b>是設定 DSL 連線所需的設定。\n"
+#~ "<b>VPI/VCI</b> 僅適用於 <i>PPP over ATM</i> 連線，\n"
+#~ "<i>PPP over Ethernet</i> 連線需要 <b>乙太網卡</b>。</p>\n"
+
+#~ msgid ""
+#~ "<p><b>For PPPoATM, enter your VPI/VCI pair, for example, <i>0.38</i>\n"
+#~ "for British Telecom. If unsure, ask your provider.</p>"
+#~ msgstr ""
+#~ "<p><b>對於 PPPoATM，請輸入您的 VPI/VCI 對，例如，\n"
+#~ "英國電信請輸入 <i>0.38</i>。若不確定，請垂詢您的服務提供商。</p>"
+
+#~ msgid ""
+#~ "<p>For PPPoE, enter the device of the ethernet card to which your DSL\n"
+#~ "modem is connected. If you did not set up your ethernet card yet, do\n"
+#~ "so by pressing <b>Configure Network Cards</b>.</p>"
+#~ msgstr ""
+#~ "<p>對於 PPPoE，請輸入您的 DSL 調變解調器連線的乙太網卡裝置。\n"
+#~ "若尚未設定乙太網卡，請按<b>配置網卡</b>配置一個乙太網卡。</p>"
+
+#~ msgid "<p>For PPTP, enter the server name or IP address.</p>"
+#~ msgstr "<p>對於 PPTP，請輸入伺服器名稱或 IP 地址。</P>"
+
+#~ msgid ""
+#~ "<p>Activation during boot may\n"
+#~ "be appropriate for dial-on-demand connections.</p>"
+#~ msgstr "<p>引導時啟用可能適用於按需撥號連線。</p>"
+
+#~ msgid "PPP over Ethernet"
+#~ msgstr "PPP over Ethernet"
+
+#~ msgid "PPP over ATM"
+#~ msgstr "PPP over ATM"
+
+#~ msgid "CAPI for ADSL"
+#~ msgstr "用於 ADSL 的 CAPI"
+
+#~ msgid "Point to Point Tunneling Protocol"
+#~ msgstr "點對點隧道協議"
+
+#~ msgid "PPP &Mode"
+#~ msgstr "PPP 模式(&M)"
+
+#~ msgid "DSL Connection Settings"
+#~ msgstr "DSL 連線設定"
+
+#~ msgid "PPP Mode-Dependent Settings"
+#~ msgstr "PPP 模式相關設定"
+
+#~ msgid "&VPI/VCI"
+#~ msgstr "&VPI/VCI"
+
+#~ msgid "&Ethernet Card"
+#~ msgstr "乙太網卡(&E)"
+
+#~ msgid "&Configure Network Cards"
+#~ msgstr "配置網卡(&C)"
+
+#~ msgid "&Server Name or IP Address"
+#~ msgstr "伺服器名稱或 IP 地址(&S)"
+
+#~ msgid "Enter the VPI/VCI."
+#~ msgstr "請輸入 VPI/VCI。"
+
+#~ msgid "At least one ethernet interface must be configured."
+#~ msgstr "至少要配置一個以太介面。"
+
+#~ msgid "Server IP address or domain name is invalid."
+#~ msgstr "伺服器 IP 地址或域名稱無效。"
+
+#~ msgid ""
+#~ "<P><B><BIG>Initializing ISDN Card Configuration\n"
+#~ "</BIG></B><BR>Please wait...<BR></P>\n"
+#~ msgstr ""
+#~ "<P><B><BIG>正在啟始化 ISDN 卡配置\n"
+#~ "</BIG></B><BR>請稍候...<BR></P>\n"
+
+#~ msgid ""
+#~ "<P><B><BIG>Saving ISDN Card Configuration\n"
+#~ "</BIG></B><BR>Please wait...<BR></P>\n"
+#~ msgstr ""
+#~ "<P><B><BIG>正在儲存 ISDN 卡配置\n"
+#~ "</BIG></B><BR>請稍候...<BR></P>\n"
+
+#~ msgid ""
+#~ "<P><B><BIG>Aborting Saving:</BIG></B><BR>\n"
+#~ "You can abort the save procedure by pressing <B>Abort</B>.\n"
+#~ "An additional dialog informs you whether it is safe to do so.</P>\n"
+#~ msgstr ""
+#~ "<P><B><BIG>中止儲存：</BIG></B><BR>\n"
+#~ "您可以按<B>中止</B>中止儲存過程。\n"
+#~ "另一個對話方塊將告知您這樣做是否安全。</P>\n"
+
+#~ msgid "Select the item to edit."
+#~ msgstr "選擇要編輯的項。"
+
+#~ msgid "Select the item to delete."
+#~ msgstr "選擇要刪除的項。"
+
+#~ msgid "&Interface"
+#~ msgstr "介面(&I)"
+
+#~ msgid "&Provider"
+#~ msgstr "服務提供商(&P)"
+
+#~ msgid ""
+#~ "You tried to delete a provider that\n"
+#~ "is the default provider for interface\n"
+#~ "%1. First select another\n"
+#~ "default provider for interface %2\n"
+#~ "or delete the interface itself.\n"
+#~ msgstr ""
+#~ "您嘗試刪除介面 %1 的默認服務提供商。\n"
+#~ "首先請為介面 %2 選擇另一個默認伺服器提供商，或者刪除該介面本身。\n"
+
+#~ msgid "ISDN Configuration Overview"
+#~ msgstr "ISDN 配置概覽"
+
+#~ msgid ""
+#~ "<P><B><BIG>ISDN Card Overview</BIG></B><BR>\n"
+#~ "Here, get an overview of installed ISDN cards and connection setups.\n"
+#~ "Additionally you can edit their configurations.<BR></P>\n"
+#~ msgstr ""
+#~ "<P><B><BIG>ISDN 卡概覽</BIG></B><BR>\n"
+#~ "在此獲取已安裝 ISDN 卡與連線設定的概覽。\n"
+#~ "此外，還可編輯其配置。<BR></P>\n"
+
+#~ msgid ""
+#~ "<P><B><BIG>Adding an ISDN Card:</BIG></B><BR>\n"
+#~ "Press <B>Add</B> to configure an ISDN card manually.</P>\n"
+#~ msgstr ""
+#~ "<P><B><BIG>添加 ISDN 卡：</BIG></B><BR>\n"
+#~ "按<B>添加</B>手動配置 ISDN 卡。</P>\n"
+
+#~ msgid ""
+#~ "<P><B><BIG>Test an ISDN Card Setup:</BIG></B><BR>\n"
+#~ "If you press <B>Test</B>, the system tries to load the driver for the\n"
+#~ "selected card.</P>\n"
+#~ msgstr ""
+#~ "<P><B><BIG>測試 ISDN 卡設定：</BIG></B><BR>\n"
+#~ "您若按<B>測試</B>，系統將嘗試為所選網卡載入驅動。</P>\n"
+
+#~ msgid ""
+#~ "<P><B><BIG>Adding an ISDN Connection:</BIG></B><BR>\n"
+#~ "If you press <B>Add</B>, you can configure an ISDN dial-up connection.</"
+#~ "P>\n"
+#~ msgstr ""
+#~ "<P><B><BIG>添加 ISDN 連線：</BIG></B><BR>\n"
+#~ "按<B>添加</B>可以配置 ISDN 撥號連線。</P>\n"
+
+#~ msgid ""
+#~ "<P><B><BIG>Editing or Deleting:</BIG></B><BR>\n"
+#~ "Choose an ISDN card or connection to change or remove.\n"
+#~ "Then press the appropriate button: <B>Edit</B> or <B>Delete</B>.</P>\n"
+#~ msgstr ""
+#~ "<P><B><BIG>編輯或刪除：</BIG></B><BR>\n"
+#~ "選擇要修改或移除的 ISDN 卡或連線。\n"
+#~ "然後按相應的按鈕：<B>編輯</B>或<B>刪除</B>。</P>\n"
+
+#~ msgid "Hardware"
+#~ msgstr "硬體"
+
+#~ msgid "Phone"
+#~ msgstr "電話"
+
+#~ msgid "ISDN Devices"
+#~ msgstr "ISDN 裝置"
+
+#~ msgid "ISDN Detail Settings"
+#~ msgstr "ISDN 細節設定"
+
+#~ msgid ""
+#~ "<p>The <b>Remote Phone Number List</b> controls which remote machines "
+#~ "are\n"
+#~ "allowed to connect to this interface.</p>\n"
+#~ msgstr ""
+#~ "<p><b>遠端電話號碼列表</b>控制了允許哪些遠端計算機連線到此介面。</p>\n"
+
+#~ msgid ""
+#~ "<p>Deselect <b>Only Listed Numbers Allowed</b> \n"
+#~ "to allow all caller IDs.</p>\n"
+#~ msgstr "<p>反選<b>僅允許列出的號碼</b>可允許全部來電 ID。</p>\n"
+
+#~ msgid ""
+#~ "<p>If the callback mode is <b>off</b>,  calls  are handled normally "
+#~ "without special \n"
+#~ "processing.</p>\n"
+#~ msgstr ""
+#~ "<p>若回撥模式為<b>關閉</b>，則將以正常方式處理呼叫，而不進行特殊處理。</"
+#~ "p>\n"
+
+#~ msgid ""
+#~ "<p>If the callback mode is <b>server</b>, after getting an incoming call, "
+#~ "a callback \n"
+#~ "is triggered.</p>\n"
+#~ msgstr "<p>若回撥模式為<b>伺服器</b>，則將在收到來電後觸發回撥。</p>\n"
+
+#~ msgid ""
+#~ "<p>If the callback mode is <b>client</b>, the local system does the "
+#~ "initial call then \n"
+#~ "waits for callback from the remote machine.</p>\n"
+#~ msgstr ""
+#~ "<p>若回撥模式為<b>客戶端</b>，則本地系統將進行初始呼叫，然後等待來自遠端計"
+#~ "算機的回撥。</p>\n"
+
+#~ msgid ""
+#~ "<p><b>Callback Delay</b> is the number of seconds between the initial "
+#~ "call and the\n"
+#~ "callback (server) or the hang-up (client). It should be greater on the "
+#~ "server than on\n"
+#~ "the client.</p>\n"
+#~ msgstr ""
+#~ "<p><b>回撥延遲</b>是指在初始呼叫與回撥 (伺服器) 或掛斷 (客戶端) 之間的秒"
+#~ "數。\n"
+#~ "這段時間在伺服器上比在客戶端上要長。</p>\n"
+
+#~ msgid ""
+#~ "<p>In <b>Additional ipppd Options</b>, add extra options for ipppd,\n"
+#~ "for example, +pap +chap for the dial-in server authentication.</p>\n"
+#~ msgstr ""
+#~ "<p>在<b>額外 ipppd 選項</b>中，為 ipppd 添加額外選項，\n"
+#~ "例如用於撥入伺服器認證的 +pap +chap。</p>\n"
+
+#~ msgid "&Additional ipppd Options"
+#~ msgstr "額外 ipppd 選項(&A)"
+
+#~ msgid "Callback Functions"
+#~ msgstr "回撥功能"
+
+#~ msgid "Callback Of&f"
+#~ msgstr "回撥關閉(&F)"
+
+#~ msgid "Callback &Server"
+#~ msgstr "回撥伺服器(&S)"
+
+#~ msgid "Callback &Client"
+#~ msgstr "回撥客戶端(&C)"
+
+#~ msgid "Callback &Delay"
+#~ msgstr "回撥延遲(&D)"
+
+#~ msgid "Remote &Phone Number List"
+#~ msgstr "遠端電話號碼列表(&P)"
+
+#~ msgid "Only &Listed Numbers Allowed"
+#~ msgstr "僅允許列出的號碼(&L)"
+
+#~ msgid "ISDN Service Selection"
+#~ msgstr "ISDN 服務選擇"
+
+#~ msgid ""
+#~ "<p>If you have a combined ISDN and DSL CAPI controller, configure your "
+#~ "DSL\n"
+#~ "connection via <b>Add DSL CAPI Interface</b>. You can also do this later\n"
+#~ "in the DSL configuration dialog.</p>\n"
+#~ msgstr ""
+#~ "<p>若您有一個組合式 ISDN 與 DSL CAPI 控制器，請通過<b>添加 DSL CAPI 介面</"
+#~ "b>配置您的 DSL 連線。\n"
+#~ "您也可以稍後在 DSL 配置對話方塊中這麼做。</p>\n"
+
+#~ msgid ""
+#~ "<p>For networking over ISDN, there are two types of interfaces:\n"
+#~ "<b>RawIP</b> and <b>SyncPPP</b>. In most cases, use SyncPPP. It is\n"
+#~ "the default for all common Internet providers.</p>\n"
+#~ msgstr ""
+#~ "<p>通過 ISDN 上網有兩種類型的介面：<b>RawIP</b> 與 <b>SyncPPP</b>。\n"
+#~ "大多數情況下使用 SyncPPP。全部常見網際網路服務提供商默認均使用 SyncPPP。</"
+#~ "p>\n"
+
+#~ msgid ""
+#~ "<p>To switch between various Internet providers, an\n"
+#~ "interface for each provider is not required. Simply add multiple "
+#~ "providers to the\n"
+#~ "same interface.</p>\n"
+#~ msgstr ""
+#~ "<p>要在多個網際網路服務提供商間切換，不需要為每個服務提供商都指定一個接"
+#~ "口。\n"
+#~ "僅需要將多個服務提供商添加到同一介面即可。</p>\n"
+
+#~ msgid ""
+#~ "<p>To avoid adding an interface now, use\n"
+#~ "<b>Skip</b> not to enter the interface and provider dialogs.</p>"
+#~ msgstr ""
+#~ "<p>要避免現在添加介面，可使用<b>跳過</b>，\n"
+#~ "這樣就不會進入介面與服務提供商對話方塊。</p>"
+
+#~ msgid ""
+#~ "<p>You have a DSL CAPI controller.  Configure your DSL\n"
+#~ "connection via <b>Add DSL CAPI Interface</b>. You can also do this later\n"
+#~ "in the DSL configuration dialog.</p>"
+#~ msgstr ""
+#~ "<p>您有一個 DSL CAPI 控制器。\n"
+#~ "請通過<b>添加 DSL CAPI 介面</b>配置您的 DSL 連線。\n"
+#~ "您也可以稍後在 DSL 配置對話方塊中這麼做。</p>"
+
+#~ msgid "Add &DSL CAPI Interface"
+#~ msgstr "添加 &DSL CAPI 介面"
+
+#~ msgid "Add New &SyncPPP Network Interface"
+#~ msgstr "添加新的 &SyncPPP 網路介面"
+
+#~ msgid "Add New Raw&IP Network Interface"
+#~ msgstr "添加新的 Raw&IP 網路介面"
+
+#~ msgid "Add &Provider to Existing Interface"
+#~ msgstr "添加服務提供商到已有介面(&P)"
+
+#~ msgid "S&kip"
+#~ msgstr "跳過(&K)"
+
+#~ msgid "Edit %1 Interface %2"
+#~ msgstr "編輯 %1 介面 %2"
+
+#~ msgid "Add %1 Interface %2"
+#~ msgstr "添加 %1 介面 %2"
+
+#~ msgid ""
+#~ "<p>My phone number --  As your own telephone number (MSN), put in your \n"
+#~ "telephone number (without area code) if your ISDN card is connected "
+#~ "directly\n"
+#~ "to the phone company-provided socket. If it is connected to a PBX, put in "
+#~ "the\n"
+#~ "MSN stored in the PBX (e.g., your phone extension or the last digit or "
+#~ "digits\n"
+#~ "of your phone extension) . If this fails, try using 0, which normally "
+#~ "means\n"
+#~ "the default MSN is actually used.</p>"
+#~ msgstr ""
+#~ "<p>我的電話號碼 -- 作為您自己的電話號碼 (MSN)，\n"
+#~ "若您的 ISDN 卡直接與電話公司提供的插口相連，則請輸入您的電話號碼 (不帶區"
+#~ "號)。\n"
+#~ "若您的 ISDN 卡與 PBX 相連，則請輸入存儲在 PBX 中的 MSN (例如，您的分機或\n"
+#~ "分機的最後一位或幾位數字)。\n"
+#~ "若這麼做失敗了，可嘗試使用 0，其通常表示使用默認的 MSN。</p>"
+
+#~ msgid ""
+#~ "<p>If you select manual, start and stop the service manually by\n"
+#~ "issuing the following commands (while logged in as 'root'):\n"
+#~ "<tt>\n"
+#~ " <br> <b>start: </b>ifup ippp0\n"
+#~ " <br> <b>stop : </b>ifdown ippp0\n"
+#~ " <br>\n"
+#~ "</tt>\n"
+#~ "Note: ippp0 is an example</p>"
+#~ msgstr ""
+#~ "<p>若您選擇了手動方式，可以發出以下命令啟動與停止服務 (當以 'root' 登入"
+#~ "時)：\n"
+#~ "<tt>\n"
+#~ " <br> <b>啟動：</b>ifup ippp0\n"
+#~ " <br> <b>停止：</b>ifdown ippp0\n"
+#~ " <br>\n"
+#~ "</tt>\n"
+#~ "注意：ippp0 是一個示例</p>"
+
+#~ msgid ""
+#~ "<p>Selecting <b>channel bundling</b> sets up a 128-kBit connection\n"
+#~ "also known as Multilink PPP. To activate or deactivate the second "
+#~ "channel,\n"
+#~ "use the following commands:\n"
+#~ "<tt>\n"
+#~ " <br> isdnctrl addlink ippp0\n"
+#~ " <br> isdnctrl removelink ippp0\n"
+#~ " <br>\n"
+#~ "</tt>\n"
+#~ "You can also install the package <b>xibod</b> to have this happen "
+#~ "automatically. If\n"
+#~ "there is a demand for more bandwidth, it adds a channel. If the traffic "
+#~ "goes down, it \n"
+#~ "removes a channel.\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p>選擇<b>通道捆綁</b>設定 128 kBit 連線也稱為 Multilink PPP。\n"
+#~ "要啟用或取消啟用第二個通道，請使用以下命令：\n"
+#~ "<tt>\n"
+#~ " <br> isdnctrl addlink ippp0\n"
+#~ " <br> isdnctrl removelink ippp0\n"
+#~ " <br>\n"
+#~ "</tt>\n"
+#~ "您也可以安裝軟體包 <b>xibod</b> 來自動執行此操作。\n"
+#~ "若需要更多頻寬，它就會增加一個通道。\n"
+#~ "若流量減少，它就會移除一個通道。\n"
+#~ "</p>\n"
+
+#~ msgid ""
+#~ "<p>Selecting\n"
+#~ "<b>External Firewall Interface</b> activates the firewall\n"
+#~ "and sets this interface as external.\n"
+#~ "<b>Restart Firewall</b> restarts the firewall if a connection is "
+#~ "established.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>選擇<b>外部防火牆介面</b>可啟用防火牆並將此介面設為外部介面。\n"
+#~ "若已建立了連線可使用<b>重啟防火牆</b>重啟防火牆。\n"
+#~ "</p>"
+
+#~ msgid "D&efault Provider"
+#~ msgstr "默認服務提供商(&E)"
+
+#~ msgid "External Fire&wall Interface"
+#~ msgstr "外部防火牆介面(&W)"
+
+#~ msgid "Restart Fire&wall"
+#~ msgstr "重啟防火牆(&W)"
+
+#~ msgid "Connection Settings"
+#~ msgstr "連線設定"
+
+#~ msgid "My &Phone Number"
+#~ msgstr "我的電話號碼(&P)"
+
+#~ msgid "Charge&HUP"
+#~ msgstr "Charge&HUP"
+
+#~ msgid "Ch&annel Bundling"
+#~ msgstr "通道捆綁(&A)"
+
+#~ msgid "&Details..."
+#~ msgstr "細節(&D)..."
+
+#~ msgid "ISDN IP Address Settings"
+#~ msgstr "ISDN IP 地址設定"
+
+#~ msgid ""
+#~ "<p>Enter the IP addresses if you received a fixed IP address\n"
+#~ "from your provider for syncppp or you use raw IP.</p>\n"
+#~ msgstr ""
+#~ "<p>若您從服務提供商處收到了一個用於 syncppp 的固定 IP 地址或您使用裸 IP 請"
+#~ "輸入 IP 地址。</p>\n"
+
+#~ msgid ""
+#~ "<p>Check <b>Dynamic IP Address</b> if your provider\n"
+#~ "assigns you one temporary address per connection. In this case, the\n"
+#~ "outgoing address is unknown until the moment the link is established.\n"
+#~ "This is the default with most providers.\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p>若服務提供商在每次連線時為您指派一個臨時地址則請勾選<b>動態 IP 地址</"
+#~ "b>。\n"
+#~ "在這種情況下，外發地址直到連結建立前的那個時刻前都是未知的。\n"
+#~ "這時多數服務提供商的默認設定。\n"
+#~ "</p>\n"
+
+#~ msgid ""
+#~ "<p>Check <b>Default Route</b> to use this interface as the\n"
+#~ "default route. Only one interface can be the default\n"
+#~ "route.</p>\n"
+#~ msgstr ""
+#~ "<p>勾選<b>默認路由</b>將此介面作為默認路由使用。\n"
+#~ "僅有一個介面可以是默認路由。</p>\n"
+
+#~ msgid "IP Address Settings"
+#~ msgstr "IP 地址設定"
+
+#~ msgid "&Dynamic IP Address"
+#~ msgstr "動態 IP 地址(&D)"
+
+#~ msgid "&Local IP Address of Your Machine"
+#~ msgstr "您計算機的本地 IP 地址(&L)"
+
+#~ msgid "Re&mote IP Address"
+#~ msgstr "遠端 IP 地址(&M)"
+
+#~ msgid "D&efault Route"
+#~ msgstr "默認路由(&E)"
+
+#~ msgid "Local and remote IP addresses must be completed correctly."
+#~ msgstr "必須正確完成本地與遠端 IP 地址。"
+
+#~ msgid "Manual ISDN Card Selection"
+#~ msgstr "手動 ISDN 卡選擇"
+
+#~ msgid ""
+#~ "<p>Select the ISDN card to configure. Filter cards for \n"
+#~ "particular vendors by selecting a vendor.</p>"
+#~ msgstr "<p>選擇要配置的 ISDN 卡。可通過選擇製造商過濾特定製造商的網卡。</p>"
+
+#~ msgid "All"
+#~ msgstr "全部"
+
+#~ msgid "Select &Vendor"
+#~ msgstr "選擇製造商(&V)"
+
+#~ msgid "Se&lect ISDN Card"
+#~ msgstr "選擇 ISDN 卡(&L)"
+
+#~ msgid "&T1B Version"
+#~ msgstr "&T1B 版本"
+
+#~ msgid "&IO Address"
+#~ msgstr "&IO 地址"
+
+#~ msgid "IR&Q"
+#~ msgstr "IR&Q"
+
+#~ msgid "&Membase"
+#~ msgstr "&Membase"
+
+#~ msgid "Parameter"
+#~ msgstr "參數"
+
+#~ msgid "Dri&ver"
+#~ msgstr "驅動(&V)"
+
+#~ msgid "ISDN Low-Level Configuration for %1%2"
+#~ msgstr "%1%2 的 ISDN 低階配置"
+
+#~ msgid ""
+#~ "<p>If you have an old legacy ISA card, you can enter values for\n"
+#~ "IO port or memory addresses and the used interrupt.\n"
+#~ "For the correct values, check with your technical manual or contact your "
+#~ "salesman.</p>\n"
+#~ msgstr ""
+#~ "<p>若您有一塊舊版 ISA 卡，您可以輸入 IO 埠號或內存地址以及所用中斷的"
+#~ "值。\n"
+#~ "要獲得正確的值，請閱讀您 ISA 卡的技術手冊或與銷售商聯繫。</p>\n"
+
+#~ msgid ""
+#~ "<p><b>Start Mode: </b>  With <b>OnBoot</b>, the driver is loaded during\n"
+#~ "system boot. For <b>Manual</b>, the driver must be started with the\n"
+#~ "<b>rcisdn start</b> command. Only the user root can do this.\n"
+#~ "<b>HotPlug</b> is a special case for PCMCIA and USB devices.</p>\n"
+#~ msgstr ""
+#~ "<p><b>啟動模式：</b>使用<b>引導時</b>則在系統引導時載入驅動。\n"
+#~ "<b>手動</b>則必須使用 <b>rcisdn start</b> 命令啟動驅動。\n"
+#~ "僅有根使用者才能這麼做。\n"
+#~ "<b>熱插拔</b>是一種特殊情況，用於 PCMCIA 與 USB 裝置。</p>\n"
+
+#~ msgid ""
+#~ "<p>Multiple drivers exist for your ISDN card.\n"
+#~ "Select one from the list.</p>\n"
+#~ msgstr ""
+#~ "<p>您的 ISDN 卡存在多個驅動。\n"
+#~ "請從列表中選擇一個。</p>\n"
+
+#~ msgid ""
+#~ "<p><b>ISDN Protocol: </b>In most cases, the protocol is Euro-ISDN.</p>"
+#~ msgstr "<p><b>ISDN 協議：</b>在多數情況下，此協議為 Euro-ISDN。</p>"
+
+#~ msgid ""
+#~ "<p><b>Area Code: </b> Enter your local area code for the ISDN\n"
+#~ "line here, without a leading zero and without a country prefix.</p>\n"
+#~ msgstr ""
+#~ "<p><b>區號：</b>在此輸入 ISDN 線路的本地區號，不包括最前面的 0 與國家/地區"
+#~ "字首。</p>\n"
+
+#~ msgid ""
+#~ "<p><b>Dial Prefix: </b> If you need a prefix to get an public line, \n"
+#~ "enter it here. This is only used on a internal S0 bus and the most common "
+#~ "one is \"0\".</p>\n"
+#~ msgstr ""
+#~ "<p><b>撥號字首：</b>若您需要字首以獲取公用線路，請在此輸入。\n"
+#~ "此字首僅在內部 S0 匯流排上使用，最常見的是 \"0\"。</p>\n"
+
+#~ msgid ""
+#~ "<p>If you do not want to log all your ISDN traffic, uncheck <b>Start ISDN "
+#~ "Log</b>.</p>"
+#~ msgstr "<p>若您不想要記錄全部 ISDN 流量，請反選<b>啟動 ISDN 日誌</b>。</p>"
+
+#~ msgid "ISDN Protocol"
+#~ msgstr "ISDN 協議"
+
+#~ msgid "&Euro-ISDN (EDSS1)"
+#~ msgstr "&Euro-ISDN (EDSS1)"
+
+#~ msgid "1TR&6"
+#~ msgstr "1TR&6"
+
+#~ msgid "&Leased Line"
+#~ msgstr "專線(&L)"
+
+#~ msgid "NI&1"
+#~ msgstr "NI&1"
+
+#~ msgid "Austria"
+#~ msgstr "奧地利"
+
+#~ msgid "Germany"
+#~ msgstr "德國"
+
+#~ msgid "Luxemburg"
+#~ msgstr "盧森堡"
+
+#~ msgid "Netherlands"
+#~ msgstr "荷蘭"
+
+#~ msgid "Norway"
+#~ msgstr "挪威"
+
+#~ msgid "Poland"
+#~ msgstr "波蘭"
+
+#~ msgid "Slovakia"
+#~ msgstr "斯洛伐克"
+
+#~ msgid "Switzerland"
+#~ msgstr "瑞士"
+
+#~ msgid "Czech Republic"
+#~ msgstr "捷克共與國"
+
+#~ msgid "North America"
+#~ msgstr "北美洲"
+
+#~ msgid "Other"
+#~ msgstr "其它"
+
+#~ msgid "&Country"
+#~ msgstr "國家/地區(&C)"
+
+#~ msgid "Co&de"
+#~ msgstr "程式碼(&D)"
+
+#~ msgid "&Area Code"
+#~ msgstr "區號(&A)"
+
+#~ msgid "&Dial Prefix"
+#~ msgstr "撥號字首(&D)"
+
+#~ msgid "Start &ISDN Log"
+#~ msgstr "啟動 &ISDN 日誌"
+
+#~ msgid "binary only CAPI with FAX G3"
+#~ msgstr "支援 FAX G3 的制式 CAPI"
+
+#~ msgid "under development"
+#~ msgstr "開發中"
+
+#~ msgid "OpenSource without FAX G3"
+#~ msgstr "不支援 FAX G3 的開源 CAPI"
+
+#~ msgid "binary only CAPI with FAX G3 and DSL"
+#~ msgstr "支援 FAX G3 與 DSL 的制式 CAPI"
+
+#~ msgid "DSL only card with CAPI2.0"
+#~ msgstr "支援 CAPI 2.0 的 DSL 單功能卡"
+
+#~ msgid "Bluetooth Dongle, need ISDN Access point"
+#~ msgstr "藍芽加密狗，需要 ISDN 訪問點"
+
+#~ msgid "ISDN Card Information"
+#~ msgstr "ISDN 卡資訊"
+
+#~ msgid "Vendor"
+#~ msgstr "製造商"
+
+#~ msgid ""
+#~ " WARNING\n"
+#~ "\n"
+#~ "You have selected a binary-only driver that is not\n"
+#~ "part of our distribution. You can only use this driver\n"
+#~ "after installing additional packages from AVM manually.\n"
+#~ "\n"
+#~ "Continue?\n"
+#~ msgstr ""
+#~ " 警告\n"
+#~ "\n"
+#~ "您選擇了不屬於我們發行版一部分的制式驅動。\n"
+#~ "僅有從 AVM 手動安裝好額外軟體包後才能使用此驅動。\n"
+#~ "\n"
+#~ "繼續嗎？\n"
+
+#~ msgid "The test was successful."
+#~ msgstr "測試已成功。"
+
+#~ msgid ""
+#~ "The test was not successful.\n"
+#~ " ReturnValue: %1\n"
+#~ msgstr ""
+#~ "測試未成功。\n"
+#~ " 返回值：%1\n"
+
+#~ msgid "ISDN Configuration"
+#~ msgstr "ISDN 配置"
+
+#~ msgid "&Advanced..."
+#~ msgstr "高階(&A)..."
+
+#~ msgid "Detailed Settings"
+#~ msgstr "詳細設定"
+
+#~ msgid "Device Control"
+#~ msgstr "裝置控制"
+
+#~ msgid ""
+#~ "All additional addresses belonging to the interface %1\n"
+#~ "will be deleted as well.\n"
+#~ "\n"
+#~ "Really continue?\n"
+#~ msgstr ""
+#~ "全部屬於介面 %1 的附加地址也將被刪除。\n"
+#~ "\n"
+#~ "真的繼續嗎？\n"
+
+#~ msgid "Rule by:"
+#~ msgstr "規則："
+
+#~ msgid "Change DeviceName"
+#~ msgstr "修改裝置名稱"
+
+#~ msgid ""
+#~ "<P><B><BIG>Initializing Modem Configuration\n"
+#~ "</BIG></B><BR>Please wait...<BR></P>"
+#~ msgstr ""
+#~ "<P><B><BIG>正在啟始化調變解調器配置\n"
+#~ "</BIG></B><BR>請稍候...<BR></P>"
+
+#~ msgid ""
+#~ "<P><B><BIG>Saving Modem Configuration</BIG></B><BR>\n"
+#~ "Please wait...<BR></P>"
+#~ msgstr ""
+#~ "<P><B><BIG>正在儲存調變解調器配置</BIG></B><BR>\n"
+#~ "請稍候...<BR></P>"
+
+#~ msgid "Modem Configuration Overview"
+#~ msgstr "調變解調器配置概覽"
+
+#~ msgid ""
+#~ "<P><B><BIG>Modem Overview</BIG></B><BR>\n"
+#~ "Here, get an overview of installed modems. Additionally,\n"
+#~ "edit their configuration.<BR></P>"
+#~ msgstr ""
+#~ "<P><B><BIG>調變解調器概覽</BIG></B><BR>\n"
+#~ "在此獲得已安裝的調變解調器的概覽。\n"
+#~ "此外，還可編輯其配置。<BR></P>"
+
+#~ msgid ""
+#~ "<P><B><BIG>Adding a Modem:</BIG></B><BR>\n"
+#~ "If you press <B>Add</B>, you can manually configure a modem.</P>\n"
+#~ msgstr ""
+#~ "<P><B><BIG>添加調變解調器：</BIG></B><BR>\n"
+#~ "按<B>添加</B>可手動配置調變解調器。</P>\n"
+
+#~ msgid ""
+#~ "<P><B><BIG>Editing or Deleting:</BIG></B><BR>\n"
+#~ "Choose a modem for which to change or remove the configuration.\n"
+#~ "Then press the appropriate button: <B>Edit</B> or <B>Delete</B>.</P>"
+#~ msgstr ""
+#~ "<P><B><BIG>編輯或刪除：</BIG></B><BR>\n"
+#~ "選擇要修改或移除配置的調變解調器。\n"
+#~ "然後按相應的按鈕：<B>編輯</B>或<B>刪除</B>。</P>"
+
+#~ msgid "Modem Devices"
+#~ msgstr "調變解調器裝置"
+
+#~ msgid "Modem Parameters"
+#~ msgstr "調變解調器參數"
+
+#~ msgid "<p>Enter all modem configuration values.</p>"
+#~ msgstr "<p>請輸入全部調變解調器配置值。</p>"
+
+#~ msgid ""
+#~ "<p><b>Modem Device</b> specifies to which port your modem is connected. "
+#~ "ttyS0,\n"
+#~ "ttyS1, etc., refer to serial ports and usually correspond to COM1, COM2, "
+#~ "etc.,\n"
+#~ "in DOS/Windows. ttyACM0 and ttyACM1 refer to USB ports.</p>"
+#~ msgstr ""
+#~ "<p><b>調變解調器裝置</b>指定了您調變解調器連線的埠。\n"
+#~ "ttyS0、ttyS1 等指串列埠，通常與 DOS/Windows 中的 COM1、COM2 等相對應。\n"
+#~ "ttyACM0 與 ttyACM1 指 USB 埠。</p>"
+
+#~ msgid ""
+#~ "<p>If you are on a PBX, you probably need to enter a <b>Dial Prefix</b>.\n"
+#~ "Often, this is <i>9</i> or <i>0</i>.</p>\n"
+#~ msgstr ""
+#~ "<p>若您位於 PBX 上，您可能需要輸入一個<b>撥號字首</b>，通常是 <i>9</i> 或 "
+#~ "<i>0</i>。</p>\n"
+
+#~ msgid ""
+#~ "<p>Choose <b>Dial Mode</b> according to your phone link. Most telephone\n"
+#~ "companies use <i>Tone Dial</i> as the <b>Dial Mode</b>. Check the "
+#~ "additional\n"
+#~ "check boxes to turn on your modem speaker (<i>Speaker On</i>) or for "
+#~ "your\n"
+#~ "modem to wait until it detects a dial tone (<i>Detect Dial Tone</i>).</"
+#~ "p>\n"
+#~ msgstr ""
+#~ "<p>根據您的電話連線方式選擇<b>撥號模式</b>。\n"
+#~ "大多數電話公司使用<i>音訊撥號</i>作為<b>撥號模式</b>。\n"
+#~ "勾選附加核取方塊開啟您調變解調器的揚聲器 (<i>開啟揚聲器</i>)，\n"
+#~ "或讓調變解調器保持等待，直到檢測到撥號音 (<i>檢測撥號音</i>)。</p>\n"
+
+#~ msgid ""
+#~ "<p>Press <b>Details</b> to configure the baud rate and the modem \n"
+#~ "initialization strings.</p>"
+#~ msgstr "<p>按<b>細節</b>配置波特率與調變解調器啟始化字元串。</p>"
+
+#~ msgid "Modem Device:"
+#~ msgstr "調變解調器裝置："
+
+#~ msgid "Modem De&vice"
+#~ msgstr "調變解調器裝置(&V)"
+
+#~ msgid "Dial Prefi&x (if needed)"
+#~ msgstr "撥號字首 (若需要)(&X)"
+
+#~ msgid "Dial Mode"
+#~ msgstr "撥號模式"
+
+#~ msgid "&Tone Dialing"
+#~ msgstr "音訊撥號(&T)"
+
+#~ msgid "&Pulse Dialing"
+#~ msgstr "脈衝撥號(&P)"
+
+#~ msgid "Special Settings"
+#~ msgstr "特殊設定"
+
+#~ msgid "&Speaker On"
+#~ msgstr "開啟揚聲器(&S)"
+
+#~ msgid "D&etect Dial Tone"
+#~ msgstr "檢測撥號音(&E)"
+
+#~ msgid "Modem Parameter Details"
+#~ msgstr "調變解調器參數細節"
+
+#~ msgid ""
+#~ "<p><b>Baud Rate</b> is a transmission speed that tells\n"
+#~ "how many bits per second your computer communicates with your modem.</p>\n"
+#~ msgstr ""
+#~ "<p><b>波特率</b>表示傳輸速度，\n"
+#~ "即您的計算機與調變解調器間通訊時每秒傳輸的位元組。</p>\n"
+
+#~ msgid ""
+#~ "<p>All the relevant information about <b>Init Strings</b>\n"
+#~ "should be in your modem manual.</p>\n"
+#~ msgstr ""
+#~ "<p><b>啟始化字元串</b>的全部相關資訊應該在您的調變解調器手冊中。</p>\n"
+
+#~ msgid "B&aud Rate"
+#~ msgstr "波特率(&A)"
+
+#~ msgid "Modem Initialization Strings"
+#~ msgstr "調變解調器啟始化字元串"
+
+#~ msgid "Init &1"
+#~ msgstr "啟始化字元串 &1"
+
+#~ msgid "Init &2"
+#~ msgstr "啟始化字元串 &2"
+
+#~ msgid "Init &3"
+#~ msgstr "啟始化字元串 &3"
+
+#~ msgid "Modem Configuration"
+#~ msgstr "調變解調器配置"
+
+#~ msgid "Provider Type"
+#~ msgstr "服務提供商類型"
+
+#~ msgid "&Available Provider Types:"
+#~ msgstr "可用服務提供商類型(&A)："
+
+#~ msgid "Modem Provider"
+#~ msgstr "調變解調器服務提供商"
+
+#~ msgid "ISDN Provider"
+#~ msgstr "ISDN 服務提供商"
+
+#~ msgid "DSL Provider"
+#~ msgstr "DSL 服務提供商"
+
+#~ msgid "Provider Overview"
+#~ msgstr "服務提供商概覽"
+
+#~ msgid "Connection Parameters"
+#~ msgstr "連線參數"
+
+#~ msgid ""
+#~ "<p><b>Dial on Demand</b> means that the Internet\n"
+#~ "connection will be established automatically when data from the Internet "
+#~ "is\n"
+#~ "requested. To use this feature, specify at least one <i>name server</i>. "
+#~ "Use\n"
+#~ "this feature only if your Internet connection is inexpensive, because "
+#~ "there are\n"
+#~ "programs that periodically request data from the Internet.</p>"
+#~ msgstr ""
+#~ "<p><b>按需撥號</b>意味著當請求來自網際網路的資料時自動建立網際網路連線。\n"
+#~ "要使用此功能，請指定至少一個<i>名稱伺服器</i>。\n"
+#~ "僅有當您的網際網路連線收費不貴時才能使用此功能，\n"
+#~ "因為有些程式會定期從網際網路請求資料。</p>"
+
+#~ msgid ""
+#~ "<p>When <b>Modify DNS</b> is enabled, the <i>name server</i> will be\n"
+#~ "changed automatically when connected to the Internet.</p>"
+#~ msgstr ""
+#~ "<p>若啟用了<b>修改 DNS</b>，則會在連線到網際網路時自動修改<i>名稱伺服器</"
+#~ "i>。</p>"
+
+#~ msgid ""
+#~ "<p>If the provider does not transmit its domain name server (DNS)\n"
+#~ "after connecting, disable <b>Automatically Retrieve DNS</b> and\n"
+#~ "manually enter the DNS.</p>"
+#~ msgstr ""
+#~ "<p>若在建立連線後服務提供商未傳輸其域名伺服器 (DNS)，\n"
+#~ "請禁用<b>自動擷取 DNS</b> 並手動輸入 DNS。</p>"
+
+#~ msgid ""
+#~ "<p><b>Name Servers</b> are required to convert hostnames\n"
+#~ "(such as www.suse.com) to IP addresses (for example, 213.95.15.200). You "
+#~ "only\n"
+#~ "need to specify the name servers if you enable dial on demand or\n"
+#~ "disable <b>DNS Modification</b> when connected.</p>\n"
+#~ msgstr ""
+#~ "<p><b>名稱伺服器</b>是將主機名 (諸如 www.suse.com)\n"
+#~ "轉譯為 IP 地址 (例如 213.95.15.200) 所必需的。\n"
+#~ "您若啟用了按需撥號或禁用了<b>連線後修正 DNS </b>，\n"
+#~ "則僅需指定名稱伺服器。</p>\n"
+
+#~ msgid ""
+#~ "<p><b>Ignore Prompts</b> disables the detection of any prompts from the "
+#~ "dial-up\n"
+#~ "server. If the connection build-up is slow or does not work at all, try "
+#~ "this\n"
+#~ "option.</p>\n"
+#~ msgstr ""
+#~ "<p><b>忽略提示</b>禁用了對來自撥號伺服器的任何提示的檢測。\n"
+#~ "若建立連線速度很慢，或根本不能建立連線，可嘗試此選項。</p>\n"
+
+#~ msgid ""
+#~ "<p>Selecting <b>External Firewall Interface</b> activates the firewall\n"
+#~ "and sets this interface as external.\n"
+#~ "Choosing this option makes dial-up connections\n"
+#~ "to the Internet safe from external attacks.</p>"
+#~ msgstr ""
+#~ "<p>選擇<b>外部防火牆介面</b>將啟用防火牆並將此介面設為外部介面。\n"
+#~ "選擇此選項使得網際網路撥號連線更加安全，不會受到外部攻擊。</p>"
+
+#~ msgid ""
+#~ "<p>The <b>Idle Time-Out</b> specifies the time after which an idle\n"
+#~ "connection will be shut down (0 means the connection will not time-out).</"
+#~ "p>\n"
+#~ msgstr ""
+#~ "<p><b>空閒超時</b>指定了在多長時間後將關閉空閒連線 (0 意味著連線永不超"
+#~ "時)。</p>\n"
+
+#~ msgid "min"
+#~ msgstr "分鐘"
+
+#~ msgid "I&gnore Prompts"
+#~ msgstr "忽略提示(&G)"
+
+#~ msgid "&Connection Details"
+#~ msgstr "連線細節(&C)"
+
+#~ msgid "I&P Details"
+#~ msgstr "I&P 細節"
+
+#~ msgid "How the interface should be set up"
+#~ msgstr "介面設定方式"
+
+#~ msgid "Automatically"
+#~ msgstr "自動"
+
+#~ msgid "Off"
+#~ msgstr "關"
+
+#~ msgid "Provider:"
+#~ msgstr "服務提供商："
+
+#~ msgid "Dial on D&emand"
+#~ msgstr "按需撥號(&E)"
+
+#~ msgid "&Modify DNS When Connected"
+#~ msgstr "連線後修正 DNS(&M)"
+
+#~ msgid "&Automatically Retrieve DNS"
+#~ msgstr "自動擷取 DNS(&A)"
+
+#~ msgid "Name Servers"
+#~ msgstr "名稱伺服器"
+
+#~ msgid "F&irst"
+#~ msgstr "主要(&I)"
+
+#~ msgid "&Second"
+#~ msgstr "次要(&S)"
+
+#~ msgid "I&dle Time-Out (seconds)"
+#~ msgstr "空閒超時 (秒)(&D)"
+
+#~ msgid "Set the idle time-out."
+#~ msgstr "設定空閒超時。"
+
+#~ msgid "The primary name server is invalid."
+#~ msgstr "主名稱伺服器無效。"
+
+#~ msgid "The secondary name server is invalid."
+#~ msgstr "次名稱伺服器無效。"
+
+#~ msgid ""
+#~ "<p>Enter the IP addresses if you received fixed\n"
+#~ "IP addresses from your provider.</p>"
+#~ msgstr "<p>若您從服務提供商處收到了固定 IP 地址，請輸入這些 IP 地址。</p>"
+
+#~ msgid ""
+#~ "<p>Check <b>Dynamic IP Address</b>\n"
+#~ "if your provider assigns one temporary address per connection. In this "
+#~ "case,\n"
+#~ "the outgoing address is unknown until the moment the link is "
+#~ "established.\n"
+#~ "This is the default with most providers.</p>"
+#~ msgstr ""
+#~ "<p>若您的服務提供商在每次連線時都指派一個臨時地址，則請勾選<b>動態 IP 地址"
+#~ "</b>。\n"
+#~ "在這種情況下，外發地址直到連線建立前都是未知的。\n"
+#~ "這是大多數服務提供商的默認設定。</p>"
+
+#~ msgid ""
+#~ "<p>Check <b>Use Peer DNS</b> to change\n"
+#~ "your domain name servers after the connection is made. This replaces your "
+#~ "static\n"
+#~ "DNS configuration with the obtained DNS server IP addresses. Today, "
+#~ "almost all\n"
+#~ "providers support <b>Use Peer DNS</b>.</p>\n"
+#~ msgstr ""
+#~ "<p>連線後，勾選<b>使用對等點 DNS</b> 來修改您的域名伺服器。\n"
+#~ "這將用獲取到的 DNS 伺服器 IP 地址替換您的靜態 DNS 配置。\n"
+#~ "現在幾乎全部服務提供商都支援<b>使用對等點 DNS</b>。</p>\n"
+
+#~ msgid ""
+#~ "<p>If callback mode is off,  calls  are handled normally without "
+#~ "special \n"
+#~ "processing.</p>"
+#~ msgstr "<p>若回撥模式為關，則將正常處理呼叫不作特殊處理。</p>"
+
+#~ msgid ""
+#~ "<p>If callback mode is server, after getting an incoming call, a "
+#~ "callback \n"
+#~ "is triggered.</p>"
+#~ msgstr "<p>若回撥模式為伺服器，則將在收到來電後觸發回撥。</p>"
+
+#~ msgid ""
+#~ "If callback mode is client, the local system does the initial call then \n"
+#~ "waits for callback from the remote machine.\n"
+#~ msgstr ""
+#~ "若回撥模式為客戶端，則本地系統將進行初始呼叫，然後等待來自遠端計算機的回"
+#~ "撥。\n"
+
+#~ msgid ""
+#~ "<p>Check <b>Default Route</b> to set the default\n"
+#~ "route for this provider. This is most likely correct unless you want to "
+#~ "reach\n"
+#~ "single machines or subnetworks through this provider.</p>"
+#~ msgstr ""
+#~ "<p>勾選<b>默認路由</b>為此服務提供商設定默認路由。\n"
+#~ "這通常都是正確的，除非您想要通過此服務提供商連線單一計算機或子網。</p>"
+
+#~ msgid "Select Internet Service Provider (ISP)"
+#~ msgstr "選擇網際網路服務提供商 (ISP)"
+
+#~ msgid "C&ustom Providers"
+#~ msgstr "自定義服務提供商(&U)"
+
+#~ msgid "&Countries"
+#~ msgstr "國家/地區(&C)"
+
+#~ msgid "C&ountry:"
+#~ msgstr "國家/地區(&O)："
+
+#~ msgid "Ne&w"
+#~ msgstr "新建(&W)"
+
+#~ msgid "&Providers"
+#~ msgstr "服務提供商(&P)"
+
+#~ msgid "Home Page: %1"
+#~ msgstr "主頁：%1"
+
+#~ msgid "Hot Line: %1"
+#~ msgstr "熱線：%1"
+
+#~ msgid ""
+#~ "<p><b><big>Initializing Provider\n"
+#~ "Configuration</big></b><br>Please wait...<br></p>\n"
+#~ msgstr ""
+#~ "<p><b><big>正在啟始化服務提供商配置</big></b><br>\n"
+#~ "請稍候...<br></p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Saving Provider\n"
+#~ "Configuration</big></b><br>Please wait...<br></p>\n"
+#~ msgstr ""
+#~ "<p><b><big>正在儲存服務提供商配置</big></b><br>\n"
+#~ "請稍候...<br></p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Provider Setup</big></b><br>\n"
+#~ "Configure your provider here.<br></p>\n"
+#~ msgstr ""
+#~ "<p><b><big>服務提供商設定</big></b><br>\n"
+#~ "在此配置您的服務提供商。<br></p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Adding a Provider:</big></b><br>\n"
+#~ "Choose a provider from the list of available providers\n"
+#~ "then press <b>Edit</b>.</p>\n"
+#~ msgstr ""
+#~ "<p><b><big>添加服務提供商：</big></b><br>\n"
+#~ "從可用服務提供商列表中選擇一個服務提供商，\n"
+#~ "然後按<b>編輯</b>。</p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Editing or Deleting:</big></b><br>\n"
+#~ "If you press <b>Edit</b>, an additional dialog in which\n"
+#~ "to change the configuration opens.</p>\n"
+#~ msgstr ""
+#~ "<p><b><big>編輯或刪除：</big></b><br>\n"
+#~ "若您按<b>編輯</b>，會開啟另一個對話方塊供您修改配置。</p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Provider Overview</big></b><br>\n"
+#~ "Obtain an overview of installed providers. Additionally,\n"
+#~ "edit their configurations.<br></p>\n"
+#~ msgstr ""
+#~ "<p><b><big>服務提供商概覽</big></b><br>\n"
+#~ "獲得已安裝的服務提供商的概覽。\n"
+#~ "此外，還可編輯其配置。<br></p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Adding a Provider:</big></b><br>\n"
+#~ "Press <b>Add</b> to configure a new provider manually.</p>\n"
+#~ msgstr ""
+#~ "<p><b><big>添加服務提供商：</big></b><br>\n"
+#~ "按<b>添加</b>手動配置一個新的服務提供商。</p>\n"
+
+#~ msgid ""
+#~ "<p><b><big>Editing or Deleting:</big></b><br>\n"
+#~ "Choose a provider to change or remove.\n"
+#~ "Then press <b>Edit</b> or <b>Delete</b> as desired.</p>\n"
+#~ msgstr ""
+#~ "<p><b><big>編輯或刪除：</big></b><br>\n"
+#~ "選擇要修改或移除的服務提供商。\n"
+#~ "然後根據需要按<b>編輯</b>或<b>刪除</b>。</p>\n"
+
+#~ msgid "<p>Select the appropriate <b>provider</b>.</p>"
+#~ msgstr "<p>請選擇合適的<b>服務提供商</b>。</p>"
+
+#~ msgid ""
+#~ "<p>Choose the country or region where you are\n"
+#~ "located then choose one of the listed providers.</p>"
+#~ msgstr ""
+#~ "<p>請選擇您所在的國家/地區或區域，\n"
+#~ "然後從列出的服務提供商中選擇一個。</p>"
+
+#~ msgid "<p>Use <b>New</b> to add a provider not in the list.</p>"
+#~ msgstr "<p>可使用<b>新建</b>添加一個列表中沒有的服務提供商。</p>"
+
+#~ msgid "<p>Choose one of the available provider types.</p>"
+#~ msgstr "<p>請從可用服務提供商類型中擇一。</p>"
+
+#~ msgid "<p>Home Page: %1</p>"
+#~ msgstr "<p>主頁：%1</p>"
+
+#~ msgid "<p>Hot Line: %1</p>"
+#~ msgstr "<p>熱線：%1</p>"
+
+#~ msgid ""
+#~ "<p>To register for <b>%1</b> and find the best\n"
+#~ "dialing number, connect to the home page <b>%2</b> or call the hot line\n"
+#~ "<b>%3</b>.</p>\n"
+#~ msgstr ""
+#~ "<p>要註冊 <b>%1</b> 並找到最佳撥號號碼，\n"
+#~ "請訪問主頁 <b>%2</b> 或撥打熱線 <b>%3</b>。</p>\n"
+
+#~ msgid ""
+#~ "<p>To register for <b>%1</b> and find the best\n"
+#~ "dialing number, connect to the home page <b>%2</b>.</p>"
+#~ msgstr "<p>要註冊 <b>%1</b> 並找到最佳撥號號碼，請訪問主頁 <b>%2</b>。</p>"
+
+#~ msgid ""
+#~ "<p>To register for <b>%1</b> and find the best\n"
+#~ "dialing number, call the hot line <b>%2</b>.</p>\n"
+#~ msgstr ""
+#~ "<p>要註冊 <b>%1</b> 並找到最佳撥號號碼，請撥打熱線 <b>%2</b>。</p>\n"
+
+#~ msgid "Provider Parameters"
+#~ msgstr "服務提供商參數"
+
+#~ msgid ""
+#~ "<p>Configure access to your Internet provider. If you have\n"
+#~ "selected your provider from the  list, these values are provided.</p>\n"
+#~ msgstr ""
+#~ "<p>配置您的網際網路提供商連線。\n"
+#~ "若您已從列表中選出了您的服務提供商，則這些值已經提供過了。</p>\n"
+
+#~ msgid "<p>Enter a <b>Provider Name</b> for the provider.</p>"
+#~ msgstr "<p>請為服務提供商輸入一個<b>服務提供商名稱</b>。</p>"
+
+#~ msgid ""
+#~ "<p>Enter a <b>Provider Name</b> for the provider and a <b>Phone Number</"
+#~ "b>\n"
+#~ "to access your provider.</p>"
+#~ msgstr ""
+#~ "<p>請為服務提供商輸入一個<b>服務提供商名稱</b>與一個<b>電話號碼</b>以訪問"
+#~ "您的服務提供商。</p>"
+
+#~ msgid ""
+#~ "<p>Select the type of packet encapsulation.\n"
+#~ "<b>RawIP</b> means that MAC headers are stripped. <b>SyncPPP</b> stands "
+#~ "for\n"
+#~ "Synchronous PPP.</p>"
+#~ msgstr ""
+#~ "<p>選擇包封裝類型。\n"
+#~ "<b>RawIP</b> 意味著截去了 MAC 報頭。<b>SyncPPP</b> 代表同步 PPP。</p>"
+
+#~ msgid ""
+#~ "<p>Enter the <b>Line ID</b>\n"
+#~ "(e.g., 00056780362), the <b>T-Online Number</b> (e.g., 870008594732),\n"
+#~ "the <b>User Code</b> (typically 0001), and the <b>Password</b>\n"
+#~ "to use as the login (ask your provider if unsure).</p>"
+#~ msgstr ""
+#~ "<p>請輸入<b>線路 ID</b>\n"
+#~ "(例如 00056780362)、<b>T-Online 號碼</b> (例如 870008594732)、\n"
+#~ "<b>使用者程式碼</b> (典型的是 0001) 與登入時所用的<b>密碼</b>\n"
+#~ "(若不確定請垂詢您的服務提供商)。</p>"
+
+#~ msgid ""
+#~ "<p>Enter the <b>User Name</b> and the\n"
+#~ "<b>Password</b> to use as the login (ask your provider if unsure).</p>"
+#~ msgstr ""
+#~ "<p>請輸入登入時所用的<b>使用者名</b>與<b>密碼</b> (若不確定請垂詢您的服務提"
+#~ "供商)。</p>"
+
+#~ msgid ""
+#~ "<p>The <b>User Name</b> will be extended\n"
+#~ "with the <i>t-online-com/</i> at the start and with <i>@t-online-com.de</"
+#~ "i>\n"
+#~ "at the end.</p>"
+#~ msgstr ""
+#~ "<p><b>使用者名</b>開頭將擴展為 <i>t-online-com/</i>，\n"
+#~ "結尾將擴展為 <i>@t-online-com.de</i>。</p>"
+
+#~ msgid ""
+#~ "<p>Check <b>Always Ask for Password</b> to be asked for the password "
+#~ "every time.\n"
+#~ "Your\n"
+#~ "Internet service provider might not allow passwords to be saved on\n"
+#~ "disk. If you enter the password here, it is saved in clear text on disk\n"
+#~ "(readable by root only).\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p>勾選<b>始終詢問密碼</b>以每次都詢問密碼。\n"
+#~ "您的網際網路服務提供商可能不允許將密碼儲存在磁碟上。\n"
+#~ "若您在此處輸入了密碼，它將以明文儲存在磁碟上 (僅 root 可讀)。\n"
+#~ "</p>\n"
+
+#~ msgid "Authorization"
+#~ msgstr "認證"
+
+#~ msgid "&User Name"
+#~ msgstr "使用者名(&U)"
+
+#~ msgid "&Always Ask for Password"
+#~ msgstr "始終詢問密碼(&A)"
+
+#~ msgid "Packet &Encapsulation"
+#~ msgstr "包封裝(&E)"
+
+#~ msgid "Synchronous PPP"
+#~ msgstr "同步 PPP"
+
+#~ msgid "Raw IP"
+#~ msgstr "裸 IP"
+
+#~ msgid "Pr&ovider Name"
+#~ msgstr "服務提供商名稱(&O)"
+
+#~ msgid "P&hone Number"
+#~ msgstr "電話號碼(&H)"
+
+#~ msgid "&Info"
+#~ msgstr "服務提供商資訊(&I)"
+
+#~ msgid "&Line ID"
+#~ msgstr "線路 ID(&L)"
+
+#~ msgid "&T-Online Number"
+#~ msgstr "&T-Online 號碼"
+
+#~ msgid "&User Code"
+#~ msgstr "使用者程式碼(&U)"
+
+#~ msgid "Name for Dialing:"
+#~ msgstr "撥號名稱："
+
+#~ msgid "Provider Information"
+#~ msgstr "服務提供商資訊"
+
+#~ msgid "Enter the line ID."
+#~ msgstr "請輸入線路 ID。"
+
+#~ msgid "Enter the T-Online number."
+#~ msgstr "請輸入 T-Online 號碼。"
+
+#~ msgid "Enter the user code."
+#~ msgstr "請輸入使用者程式碼。"
+
+#~ msgid "Provider name %1 already exists."
+#~ msgstr "服務提供商名稱 %1 已存在。"
+
+#~ msgid "Enter the provider name."
+#~ msgstr "請輸入服務提供商名稱。"
+
+#~ msgid "Enter the phone number."
+#~ msgstr "請輸入電話號碼。"
+
+#~ msgid "Enter the user name."
+#~ msgstr "請輸入使用者名。"
+
+#~ msgid ""
+#~ "NetworkManager cannot ask for the password.\n"
+#~ "Use KInternet (without NetworkManager) or store passwords on the system.\n"
+#~ msgstr ""
+#~ "NetworkManager 無法詢問密碼。\n"
+#~ "請使用 KInternet (不用 NetworkManager)，或將密碼儲存在系統上。\n"
+
+#~ msgid ""
+#~ "You have entered some characters that are not numbers in the phone "
+#~ "field.\n"
+#~ "\n"
+#~ "Continue?"
+#~ msgstr ""
+#~ "您在電話號碼欄位輸入了一些不是數字的字元。\n"
+#~ "\n"
+#~ "繼續嗎？"
+
+#~ msgid "<p>Access to Kamp DSL.</p>"
+#~ msgstr "<p>Kamp DSL 連線</p>"
+
+#~ msgid ""
+#~ "<p>In the <b>User Name</b> field, replace the blank space\n"
+#~ "(after the <b>/</b>) with your Kamp login. Then enter your password\n"
+#~ "and click <b>Next</b>. Contact your provider if you have difficulties.</"
+#~ "p>\n"
+#~ msgstr ""
+#~ "<p>在<b>使用者名</b>欄位中，用您的 Kamp 登入名替換空格 (<b>/</b> 後面)。\n"
+#~ "然後輸入您的密碼並點選<b>下一步</b>。若遇到困難請垂詢您的服務提供商。</"
+#~ "p>\n"
+
+#~ msgid "<p>Access AOL-DSL.</p>"
+#~ msgstr "<p>AOL-DSL 連線</p>"
+
+#~ msgid ""
+#~ "<p>In the <b>User Name</b> field, replace the blank space (before\n"
+#~ "the <b>@</b>) with your AOL login. Then enter your password and click "
+#~ "<b>Next</b>.\n"
+#~ "If you are a new AOL customer and want to dial up for the first time, you "
+#~ "need\n"
+#~ "to enter your AOL PIN number once. If you have a Windows system, you can "
+#~ "enter\n"
+#~ "the PIN in the AOL dial-up software. If not, call the AOL hot line and "
+#~ "request\n"
+#~ "the AOL staff to enter the PIN number for you.</p>\n"
+#~ msgstr ""
+#~ "<p>在<b>使用者名</b>欄位中，用您的 AOL 登入名替換空格 (<b>@</b> 前面)。\n"
+#~ "然後您的輸入密碼並點選<b>下一步</b>。\n"
+#~ "您若是 AOL 新客戶並想要進行首次撥號，則需要輸入一次您的 AOL PIN 號碼。\n"
+#~ "您若有 Windows 系統，則可在 AOL 撥號軟體中輸入 PIN。\n"
+#~ "若沒有 Windows 系統，則可撥打 AOL 熱線並請求 AOL 工作人員為您輸入 PIN 號"
+#~ "碼。</p>\n"
+
+#~ msgid "<p>Access to Kamp 1&1 DSL.</p>"
+#~ msgstr "<p>Kamp 1&1 DSL 連線</p>"
+
+#~ msgid ""
+#~ "<p>In the <b>User Name</b> field, replace the blank space (after\n"
+#~ "the <b>/</b>) with your 1&1 login. Then enter your password and click "
+#~ "<b>Next</b>.\n"
+#~ "Contact your provider if you have difficulties.</p>\n"
+#~ msgstr ""
+#~ "<p>在<b>使用者名</b>欄位中，用您的 1&1 登入名替換空格 (<b>/</b> 後面)。\n"
+#~ "然後輸入您的密碼並點選<b>下一步</b>。若遇到困難請垂詢您的服務提供商。</"
+#~ "p>\n"
+
+#~ msgid "<p>Access to Kamp Eggenet DSL.</p>"
+#~ msgstr "<p>Kamp Eggenet DSL 連線</p>"
+
+#~ msgid ""
+#~ "<p>Enter your password and click <b>Next</b>.\n"
+#~ "Contact your provider if you have difficulties.</p>\n"
+#~ msgstr ""
+#~ "<p>輸入您的密碼並點選<b>下一步</b>。\n"
+#~ "若遇到困難請垂詢您的服務提供商。</p>\n"
+
+#~ msgid "<p>Access to Kamp T-Online Business DSL.</p>"
+#~ msgstr "<p>Kamp T-Online Business DSL 連線</p>"
+
+#~ msgid ""
+#~ "<p>In the <b>User Name</b> field, replace the blank space (after\n"
+#~ "the <b>/</b>) with your T-Online Business login. Then enter your password "
+#~ "and\n"
+#~ "click <b>Next</b>. Contact your provider if you have difficulties.</p>\n"
+#~ msgstr ""
+#~ "<p>在<b>使用者名</b>欄位中，用您的 T-Online Business 登入名替換空格 (<b>/</"
+#~ "b> 後面)。\n"
+#~ "然後輸入您的密碼並點選<b>下一步</b>。若遇到困難請垂詢您的服務提供商。</"
+#~ "p>\n"
+
+#~ msgid "Provider Configuration"
+#~ msgstr "服務提供商配置"
+
+#~ msgid "E&nable Device Control for Non-root User Via QInternet"
+#~ msgstr "通過 QInternet 為非 root 使用者啟用裝置控制(&N)"
+
+#~ msgid ""
+#~ "<p><b><big>Device Control</big></b></p>\n"
+#~ "<p>Usually, only the system administrator is allowed to activate and\n"
+#~ "deactivate a network interface. With <b>Enable Device Control for Non-"
+#~ "root User\n"
+#~ "Via QInternet</b>, any user may control the interface via QInternet.This "
+#~ "will require\n"
+#~ "<b>smpppd</b> installed and running.</p>\n"
+#~ msgstr ""
+#~ "<p><b><big>裝置控制</big></b></p>\n"
+#~ "<p>通常僅允許系統管理員啟用與取消啟用網路介面。\n"
+#~ "啟用<b>通過 QInternet 為非 root 使用者啟用裝置控制</b>後，\n"
+#~ "任何使用者都可以通過 QInternet 控制介面。這需要安裝與運行 <b>smpppd</b>。</"
+#~ "p>\n"
+
+#~ msgid "Initializing DSL Configuration"
+#~ msgstr "正在啟始化 DSL 配置"
+
+#~ msgid "Detect DSL devices"
+#~ msgstr "檢測 DSL 裝置"
+
+#~ msgid "Read current configuration"
+#~ msgstr "讀取當前配置"
+
+#~ msgid "Read firewall configuration"
+#~ msgstr "讀取防火牆配置"
+
+#~ msgid "Read providers"
+#~ msgstr "讀取服務提供商"
+
+#~ msgid "Read network card configuration"
+#~ msgstr "讀取網卡配置"
+
+#~ msgid "Reading current configuration..."
+#~ msgstr "正在讀取當前配置..."
+
+#~ msgid "Reading firewall configuration..."
+#~ msgstr "正在讀取防火牆配置..."
+
+#~ msgid "Reading providers..."
+#~ msgstr "正在讀取服務提供商..."
+
+#~ msgid "Reading network card configuration..."
+#~ msgstr "正在讀取網卡配置..."
+
+#~ msgid "PPPoE DSL Devices"
+#~ msgstr "PPPoE DSL 裝置"
+
+#~ msgid "Saving DSL Configuration"
+#~ msgstr "正在儲存 DSL 配置"
+
+#~ msgid "Write configuration"
+#~ msgstr "寫入配置"
+
+#~ msgid "Write network card configuration"
+#~ msgstr "寫入網卡配置"
+
+#~ msgid "Write providers"
+#~ msgstr "寫入服務提供商"
+
+#~ msgid "Set up smpppd"
+#~ msgstr "設定 smpppd"
+
+#~ msgid "Writing configuration..."
+#~ msgstr "正在寫入配置..."
+
+#~ msgid "Writing network card configuration..."
+#~ msgstr "正在寫入網卡配置..."
+
+#~ msgid "Writing providers..."
+#~ msgstr "正在寫入服務提供商..."
+
+#~ msgid "Setting up smpppd(8)..."
+#~ msgstr "正在設定 smpppd(8)..."
+
+#~ msgid "Unknown (PPPoE-style) DSL Device Detected"
+#~ msgstr "檢測到未知 (PPPoE 式) DSL 裝置"
+
+#~ msgid "Initializing ISDN Card Configuration"
+#~ msgstr "正在啟始化 ISDN 卡配置"
+
+#~ msgid "Detect devices"
+#~ msgstr "檢測裝置"
+
+#~ msgid "Read current device configuration"
+#~ msgstr "讀取當前裝置配置"
+
+#~ msgid "Read current connection setup"
+#~ msgstr "讀取當前連線設定"
+
+#~ msgid "Reading current device configuration..."
+#~ msgstr "正在讀取當前裝置配置..."
+
+#~ msgid "Reading current connection setup..."
+#~ msgstr "正在讀取當前連線設定..."
+
+#~ msgid "Saving ISDN Configuration"
+#~ msgstr "正在儲存 ISDN 配置"
+
+#~ msgid "Stop ISDN networking"
+#~ msgstr "停止 ISDN 聯網"
+
+#~ msgid "Stop ISDN subsystem"
+#~ msgstr "停止 ISDN 子系統"
+
+#~ msgid "Write controller configuration"
+#~ msgstr "寫入控制器配置"
+
+#~ msgid "Write interface configuration"
+#~ msgstr "寫入介面配置"
+
+#~ msgid "Write firewall"
+#~ msgstr "寫入防火牆"
+
+#~ msgid "Start ISDN subsystem"
+#~ msgstr "啟動 ISDN 子系統"
+
+#~ msgid "Run drdsl"
+#~ msgstr "運行 drdsl"
+
+#~ msgid "Start ISDN networking"
+#~ msgstr "啟動 ISDN 聯網"
+
+#~ msgid "Stopping ISDN networking..."
+#~ msgstr "正在停止 ISDN 聯網..."
+
+#~ msgid "Stopping ISDN subsystem..."
+#~ msgstr "正在停止 ISDN 子系統..."
+
+#~ msgid "Writing controller configuration..."
+#~ msgstr "正在寫入控制器配置..."
+
+#~ msgid "Writing interface configuration..."
+#~ msgstr "正在寫入介面配置..."
+
+#~ msgid "Loading ISDN driver..."
+#~ msgstr "正在載入 ISDN 驅動..."
+
+#~ msgid "Running drdsl (could take over a minute)..."
+#~ msgstr "正在運行 drdsl (可能要一分鐘)..."
+
+#~ msgid "Loading ISDN network..."
+#~ msgstr "正在載入 ISDN 網路..."
+
+#~ msgid "Testing ISDN Configuration %1"
+#~ msgstr "正在測試 ISDN 配置 %1"
+
+#~ msgid "Stop ISDN network"
+#~ msgstr "停止 ISDN 網路"
+
+#~ msgid "Unload ISDN driver"
+#~ msgstr "解除安裝 ISDN 驅動"
+
+#~ msgid "Load controller"
+#~ msgstr "載入控制器"
+
+#~ msgid "Unload controller"
+#~ msgstr "解除安裝控制器"
+
+#~ msgid "Stopping ISDN network..."
+#~ msgstr "正在停止 ISDN 網路..."
+
+#~ msgid "Unloading ISDN driver..."
+#~ msgstr "正在解除安裝 ISDN 驅動..."
+
+#~ msgid "Loading controller..."
+#~ msgstr "正在載入控制器..."
+
+#~ msgid "Unloading controller..."
+#~ msgstr "正在解除安裝控制器..."
+
+#~ msgid "&Select Interface"
+#~ msgstr "選擇介面(&S)"
+
+#~ msgid "Initializing Modem Configuration"
+#~ msgstr "正在啟始化調變解調器配置"
+
+#~ msgid "Detect modems"
+#~ msgstr "檢測調變解調器"
+
+#~ msgid "Read routing"
+#~ msgstr "讀取路由"
+
+#~ msgid "Reading routes..."
+#~ msgstr "正在讀取路由..."
+
+#~ msgid "Saving Modem Configuration"
+#~ msgstr "正在儲存調變解調器配置"
+
+#~ msgid "No home page"
+#~ msgstr "無主頁"
+
+#~ msgid "Product Name: %1"
+#~ msgstr "產品名稱：%1"
+
+#~ msgid "Username: %1"
+#~ msgstr "使用者名：%1"
+
+#~ msgid "Nothing is configured."
+#~ msgstr "未配置任何內容。"
+
+#~ msgid "Configured Providers:"
+#~ msgstr "已配置的服務提供商："
+
+#~ msgid "Configured as %1 (phone %2)"
+#~ msgstr "已配置為 %1 (電話 %2)"
+
+#~ msgid "IP Forwarding: on"
+#~ msgstr "IP 轉發：開"
+
+#~ msgid "IP Forwarding: off"
+#~ msgstr "IP 轉發：關"
+
+#~ msgid "Run SuSEconfig"
+#~ msgstr "運行 SuSEconfig"
+
+#~ msgid "Running SuSEconfig..."
+#~ msgstr "正在運行 SuSEconfig..."
+
+#~ msgid "Firewall Settings"
+#~ msgstr "防火牆設定"
+
+#~ msgid "Password:"
+#~ msgstr "密碼："
+
+#~ msgid "Proxy Configuration"
+#~ msgstr "代理配置"
+
+#~ msgid "Enable proxy settings"
+#~ msgstr "啟用代理設定"
+
+#~ msgid "Disable proxy settings"
+#~ msgstr "禁用代理設定"
+
+#~ msgid "Change the current proxy settings"
+#~ msgstr "變更當前代理設定"
+
+#~ msgid "Set the authentication for proxy"
+#~ msgstr "設定代理身份驗證"
+
+#~ msgid "Show the summary of the current settings"
+#~ msgstr "顯示當前設定的摘要"
+
+#~ msgid "Set HTTP proxy"
+#~ msgstr "設定 HTTP 代理"
+
+#~ msgid "Set HTTPS proxy"
+#~ msgstr "設定 HTTPS 代理"
+
+#~ msgid "Set FTP proxy"
+#~ msgstr "設定 FTP 代理"
+
+#~ msgid "Clear all options listed"
+#~ msgstr "清除所有列出的選項"
+
+#~ msgid "Set domains for not using the proxy settings"
+#~ msgstr "設定域以便不使用代理設定"
+
+#~ msgid "The username to be used for proxy authentication"
+#~ msgstr "將用於代理身份驗證的使用者名"
+
+#~ msgid "The password to be used for proxy authentication"
+#~ msgstr "將用於代理身份驗證的密碼"
+
+#~ msgid "Status of Proxy Configuration"
+#~ msgstr "代理配置狀態"
+
+#~ msgid "Enabled"
+#~ msgstr "已啟用"
+
+#~ msgid "HTTP"
+#~ msgstr "HTTP"
+
+#~ msgid "HTTPS"
+#~ msgstr "HTTPS"
+
+#~ msgid "FTP"
+#~ msgstr "FTP"
+
+#~ msgid "Proxy"
+#~ msgstr "代理"
+
+#~ msgid "&Proxy"
+#~ msgstr "代理(&P)"
+
+#, fuzzy
+#~ msgid "It is recommended to relogin to make new proxy settings effective."
+#~ msgstr "建議恢復 RPM 資料庫。"
+
+#~ msgid "Saving Proxy Configuration"
+#~ msgstr "正在儲存代理配置"
+
+#~ msgid "Proxy is disabled."
+#~ msgstr "已禁用代理。"
+
+#~ msgid "Proxy is enabled."
+#~ msgstr "已啟用代理。"
+
+#~ msgid "HTTP Proxy: %1"
+#~ msgstr "HTTP 代理：%1"
+
+#~ msgid "HTTPS Proxy: %1"
+#~ msgstr "HTTPS 代理：%1"
+
+#~ msgid "FTP Proxy: %1"
+#~ msgstr "FTP 代理：%1"
+
+#~ msgid "No details available."
+#~ msgstr "無可用的細節。"
+
+#~ msgid "&Details <<"
+#~ msgstr "細節 <<(&D)"
+
+#~ msgid "&Details >>"
+#~ msgstr "細節 >>(&D)"
+
+#~ msgid "Unknown Error Code"
+#~ msgstr "未知的錯誤程式碼"
+
+#~ msgid ""
+#~ "An error occurred during the %1 proxy test.\n"
+#~ "Proxy return code: %2.\n"
+#~ msgstr ""
+#~ "在 %1 代理測試時出現錯誤。\n"
+#~ "代理返回程式碼：%2.\n"
+
+#~ msgid ""
+#~ "An unknown error occurred during the %1 proxy test.\n"
+#~ "Proxy return code: %2.\n"
+#~ msgstr ""
+#~ "在 %1 代理測試時出現未知錯誤。\n"
+#~ "代理返回程式碼：%2.\n"
+
+#~ msgid "Testing the current proxy settings..."
+#~ msgstr "正在測試當前代理設定..."
+
+#~ msgid "An error occurred during the HTTP proxy test."
+#~ msgstr "在 HTTP 代理測試時出現錯誤。"
+
+#~ msgid "An error occurred during the HTTPS proxy test."
+#~ msgstr "在 HTTPS 代理測試時出現錯誤。"
+
+#~ msgid "An error occurred during the FTP proxy test."
+#~ msgstr "在 FTP 代理測試時出現錯誤。"
+
+#~ msgid "Proxy settings work correctly."
+#~ msgstr "代理設定正確運行。"
+
+#~ msgid ""
+#~ "<p><b>HTTP Proxy URL</b> is the name of the proxy server for your access\n"
+#~ "to the World Wide Web (WWW).</p>\n"
+#~ msgstr ""
+#~ "<p><b>HTTP 代理 URL</b> 是您訪問\n"
+#~ "全球資訊網 (WWW) 的代理伺服器的名稱。</p>\n"
+
+#~ msgid ""
+#~ "<p><b>HTTPS Proxy URL</b> is the name of the proxy server for your "
+#~ "secured access\n"
+#~ "to the World Wide Web (WWW).</p>\n"
+#~ msgstr ""
+#~ "<p><b>HTTP 代理 URL</b> 是代理伺服器的名稱，\n"
+#~ "您可以通過該代理伺服器安全訪問全球資訊網 (WWW)。</p>\n"
+
+#~ msgid "<p>Example: <i>http://proxy.example.com:3128/</i></p>"
+#~ msgstr "<p>示例：<i>http://proxy.example.com:3128/</i></p>"
+
+#~ msgid ""
+#~ "<p><b>FTP Proxy URL</b> is the name of the proxy server for your access\n"
+#~ "to the file transfer services (FTP).</p>"
+#~ msgstr ""
+#~ "<p><b>FTP 代理 URL</b> 是代理伺服器的名稱，\n"
+#~ "您可以通過該代理伺服器訪問檔案傳送服務 (FTP)。</p>"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>If you have the <b>Use the Same Proxy for All Protocols</b> option "
+#~| "checked, it is\n"
+#~| "enough to fill in the HTTP proxy URL. It will be used for all protocols\n"
+#~| "(HTTP, HTTPS and FTP).\n"
+#~ msgid ""
+#~ "<p>If you check <b>Use the Same Proxy for All Protocols</b>, it is\n"
+#~ "enough to fill in the HTTP proxy URL. It will be used for all protocols\n"
+#~ "(HTTP, HTTPS and FTP).\n"
+#~ msgstr ""
+#~ "<p>在選中<b>對所有協議使用同一代理</b>選項的情況下，\n"
+#~ "僅需填寫 HTTP 代理 URL，然後該 URL 將用於所有協議\n"
+#~ "（HTTP、HTTPS 與 FTP）。\n"
+
+#~ msgid ""
+#~ "<p><b>No Proxy Domains</b> is a comma-separated list of domains\n"
+#~ "for which the requests should be made directly without caching,\n"
+#~ "for example, <i>%1</i>.</p>\n"
+#~ msgstr ""
+#~ "<p><b>無代理域</b>是不進行快取而直接對其進行請求的域的列表，\n"
+#~ "列表中各域用逗號分隔，例如\n"
+#~ " <i>%1</i>。</p>\n"
+
+#, fuzzy
+#~| msgid ""
+#~| "<p>If you are using a proxy server with authorization, enter\n"
+#~| "the <b>Proxy User Name</b> and <b>Proxy Password</b>. A valid username\n"
+#~| "consists of printable ASCII characters (except for quotation marks) only."
+#~| "</p>\n"
+#~ msgid ""
+#~ "<p>If you are using a proxy server with authorization, enter\n"
+#~ "the <b>Proxy User Name</b> and <b>Proxy Password</b>. A valid username\n"
+#~ "consists of printable ASCII characters only (except for quotation marks)."
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p>如果使用的代理伺服器需要授權，則輸入\n"
+#~ "<b>代理使用者名</b>與<b>代理口令</b>。有效使用者名\n"
+#~ "僅由可列印的 ASCII 字元組成（引號除外）。</p>\n"
+
+#~ msgid ""
+#~ "<p>Press <b>Test Proxy Settings</b> to test\n"
+#~ "the current configuration for HTTP, HTTPS, and FTP proxy.</p> \n"
+#~ msgstr ""
+#~ "<p>按<b>測試代理設定</b>，以測試\n"
+#~ "HTTP、HTTPS 與 FTP 代理的當前配置。</p> \n"
+
+#~ msgid "&Enable Proxy"
+#~ msgstr "啟用代理(&E)"
+
+#~ msgid "Proxy Settings"
+#~ msgstr "代理設定"
+
+#~ msgid "&HTTP Proxy URL"
+#~ msgstr "HTTP 代理 URL(&H)"
+
+#~ msgid "HTTP&S Proxy URL"
+#~ msgstr "HTTPS 代理 URL(&S)"
+
+#~ msgid "F&TP Proxy URL"
+#~ msgstr "FTP 代理 URL(&T)"
+
+#~ msgid "Us&e the Same Proxy for All Protocols"
+#~ msgstr "對所有協議使用同一代理(&E)"
+
+#~ msgid "No Proxy &Domains"
+#~ msgstr "無代理域(&D)"
+
+#~ msgid "Proxy Authentication"
+#~ msgstr "代理身份驗證"
+
+#~ msgid "Proxy &User Name"
+#~ msgstr "代理使用者名(&U)"
+
+#~ msgid "Proxy &Password"
+#~ msgstr "代理密碼(&P)"
+
+#~ msgid "Test Pr&oxy Settings"
+#~ msgstr "測試代理設定(&O)"
+
+#~ msgid ""
+#~ "Proxy is enabled, but no proxy URL has been specified.\n"
+#~ "Really use these settings?"
+#~ msgstr ""
+#~ "代理已啟用，但未指定代理 URL。\n"
+#~ "確實要使用這些設定嗎？"
+
+#~ msgid "You cannot enter a password and leave the user name empty."
+#~ msgstr "不能僅輸入密碼而將使用者名留空。"
+
+#~ msgid "HTTP proxy URL is invalid."
+#~ msgstr "HTTP 代理 URL 無效。"
+
+#~ msgid "HTTP proxy URL must contain a scheme specification (http)."
+#~ msgstr "HTTP 代理 URL 必須包含模式指定 (http)。"
+
+#~ msgid "The HTTPS proxy URL is invalid."
+#~ msgstr "HTTPS 代理 URL 無效。"
+
+#~ msgid "The HTTPS proxy URL must contain a scheme specification (http)."
+#~ msgstr "HTTPS 代理 URL 必須包含模式指定 (http)。"
+
+#~ msgid "FTP proxy URL is invalid."
+#~ msgstr "FTP 代理 URL 無效。"
+
+#~ msgid "FTP proxy URL must contain a scheme specification (http)."
+#~ msgstr "FTP 代理 URL 必須包含模式指定 (http)。"
+
+#~ msgid "No IP Address (for Bonding Devices)"
+#~ msgstr "沒有 IP 地址（對於繫結裝置）"
+
+#, fuzzy
+#~| msgid "VLAN"
+#~ msgid "VLAN id"
+#~ msgstr "VLAN"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p><b>Udev Rules</b> are rules for the Kernel device manager that allow\n"
+#~ "associating MAC address or BusID of the network device with its name (for "
+#~ "example,\n"
+#~ "eth1, wlan0 ) and assures a persistent device name upon reboot.\n"
+#~ msgstr ""
+#~ "<p><b>Udev 規則</b> 用於核心裝置管理器的規則，這允許\n"
+#~ "把網路裝置的 MAC 地址或者 BusID 與名稱(比如，\n"
+#~ "eth1, wlan0 ) 相關聯，並保證重啟後裝置名稱的一致。\n"
+
+#~ msgid "Providers to Configure"
+#~ msgstr "要配置的提供程式"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>For <b>Static Address Setup</b> enter the static IP address for your "
+#~ "computer (for example: <tt>192.168.100.99</tt>) and\n"
+#~ "the network mask (usually <tt>255.255.255.0</tt> or just lenght of prefix "
+#~ "<tt>/24</tt>). For special case - unconfigured interface use <tt>0.0.0.0</"
+#~ "tt> and <tt>/32</tt>.Optionally, you can enter\n"
+#~ "a fully qualified hostname for this IP address. The hostname will be "
+#~ "written to <tt>/etc/hosts</tt>.</p>\n"
+#~ msgstr ""
+#~ "<p>對於<b>靜態地址設定</b>， 請輸入您的計算機的 IP 地址(例如，"
+#~ "<tt>192.168.100.99</tt>)、\n"
+#~ "網路掩碼(通常是 <tt>255.255.255.0</tt>)。此外，您可以為這個 IP 地址\n"
+#~ "輸入一個合格的主機名。主機名將被寫入<tt>/etc/hosts</tt>。</p>\n"
+
+#~ msgid "No valid hostname."
+#~ msgstr "主機名無效。"
+
+#~ msgid ""
+#~ "<p>If <b>Automatically Reconnect</b> is enabled, the connection will\n"
+#~ "be reestablished automatically after failure.</p>\n"
+#~ msgstr ""
+#~ "<p>如果啟用了<b>自動重新連線<b>， 在連線失敗後，\n"
+#~ "會自動重新建立連線。</p>\n"
+
+#~ msgid "Automatically &Reconnect"
+#~ msgstr "自動重新連線 (&R)"
+
+#~ msgid "&Netmask"
+#~ msgstr "網路掩碼(&N)"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>Enable <b>IP Forwarding</b> if the system is a router. This will apply "
+#~ "on both IPv4 and IPv6.</p>"
+#~ msgstr "<p>如果系統是路由器，請啟用 <b>IP 轉發</b>。</p>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>Your hostname will be written to <tt>/etc/hosts</tt> and will be \n"
+#~ "resolvable as <tt>127.0.0.2</tt> IP address. To disable this "
+#~ "modification, \n"
+#~ "uncheck <b>Write Hostname to /etc/hosts</b> box. In that case your \n"
+#~ "hostname will not be resolvable without an active network.\n"
+#~ "</p> \n"
+#~ msgstr ""
+#~ "<p>如果使用 DHCP 來獲取 IP 地址，則將把主機名\n"
+#~ "寫到 <tt>/etc/hosts</tt> 並可解析為 IP 地址 <tt>127.0.0.2</tt>。\n"
+#~ "這是默認的操作。如果要禁用該操作，請取消選中此框。\n"
+#~ "這樣主機名在無活動網路時將不可解析。 </p>\n"
+
+#~ msgid "&Write Hostname to /etc/hosts"
+#~ msgstr "將主機名寫到 /etc/hosts(&W)"
+
+#~ msgid "Firewall"
+#~ msgstr "防火牆"
+
+#~ msgid ""
+#~ "<p><b>Request Broadcast Response</b> causes the DHCP client\n"
+#~ "to ask the server always to broadcast its responses. You may need this,\n"
+#~ "for example, if your machine is a mobile client moving between different\n"
+#~ "networks.</p>"
+#~ msgstr ""
+#~ "<p><b>請求廣播響應</b>設定 DHCP 客戶機請求伺服器始終\n"
+#~ "廣播其響應。例如，如果您的計算機是\n"
+#~ "在不同網路之間切換的移動客戶機，\n"
+#~ "則需要此設定。</p>"
+
+#~ msgid "Request Broad&cast Response"
+#~ msgstr "請求廣播響應(&C)"
+
+#~ msgid "WPA-PSK"
+#~ msgstr "WPA-PSK"
+
+#~ msgid "IP address %1 is already present."
+#~ msgstr "IP 地址 %1 已存在。"
+
+#~ msgid ""
+#~ "<p>Configure your Internet proxy (caching) settings here.</p>\n"
+#~ "<p><b>Note:</b> In some cases you may need to relogin for the settings to "
+#~ "take effect</p>"
+#~ msgstr ""
+#~ "<p>在此設定網際網路代理(快取)。</p>\n"
+#~ "<p><b>注意：</b>在某些情況下，您需要重新登入才能讓設定生效</p>"
+
+#~ msgid ""
+#~ "NetworkManager is enabled. Some features, such as\n"
+#~ "multiple providers for one modem, will not work.\n"
+#~ "You may want to use kinternet instead."
+#~ msgstr ""
+#~ "已啟用 NetworkManager。某些功能將不起作用，例如\n"
+#~ "一臺調變解調器用於多個供應方。\n"
+#~ "您需要使用 kinternet 替代。"
+
+#~ msgid "Run KInternet"
+#~ msgstr "運行 KInternet"
+
+#~ msgid "Running KInternet..."
+#~ msgstr "正在運行 KInternet..."
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>The <b>%1</b> packages must be installed because device control for "
+#~ "non-root users has been established.</p>"
+#~ msgstr ""
+#~ "<p>由於要讓非 root 使用者也能夠控制裝置，必須安裝 <b>%1</b> 軟體包。</p>"
+
+#~ msgid "<p>Do you want to install it now?</p>"
+#~ msgstr "<p>是否要立即安裝？</p>"
+
+#, fuzzy
+#~ msgid ""
+#~ "Download of latest release notes failed due to server-side error. \n"
+#~ "This does not necessarily mean misconfigured network.\n"
+#~ "\n"
+#~ "Click <b>Continue</b> to proceed to the next installation step. To skip "
+#~ "any steps\n"
+#~ "requiring internet connection or to get back to your network "
+#~ "configuration,\n"
+#~ "click <b>Cancel</b>."
+#~ msgstr ""
+#~ "由於伺服器方面的錯誤，下載最新的發行說明失敗。\n"
+#~ "這不一定意味著網路配置不正確。\n"
+#~ "\n"
+#~ "繼續下一個安裝步驟，請點選“繼續”。要跳過\n"
+#~ "任何需要網路連線的步驟或者回到網路配置，\n"
+#~ "請點選“取消”。"
+
+#, fuzzy
+#~ msgid "Destination addresss IP"
+#~ msgstr "目標 IP 地址。"
+
+#~ msgid "Propose a configuration"
+#~ msgstr "建議配置"
+
+#~ msgid "Routing Configuration Summary:"
+#~ msgstr "路由選擇配置摘要："
+
+#~ msgid ""
+#~ "<p>If you plan to use a dial-up Internet connection and have set up your\n"
+#~ "connection to use dynamic DNS assignment, these values will be "
+#~ "temporarily\n"
+#~ "disabled during the connection.</p>"
+#~ msgstr ""
+#~ "<p>如果要使用撥號因特網連線並已建立連線來使用\n"
+#~ "動態 DNS 指派，則在連線過程中，\n"
+#~ "這些值將被臨時禁用。</p>"
+
+#~ msgid "<p>Optionally enter the name server list and domain search list.</p>"
+#~ msgstr "<p>(可選)輸入名稱伺服器列表與域搜索列表。</p>"
+
+#~ msgid ""
+#~ "<p>Note that the hostname is global--it applies to all\n"
+#~ "interfaces, not just this one.</p>"
+#~ msgstr ""
+#~ "<p>請注意，主機名是全局的--它會應用到所有\n"
+#~ "介面，而不僅僅是此介面。</p>"
+
+#~ msgid ""
+#~ "<p>The resolver configuration file (/etc/resolv.conf)\n"
+#~ "has been temporarily modified by %1. You have two options:</p>"
+#~ msgstr ""
+#~ "<p>%1 臨時修改瞭解析程式配置檔案 (/etc/resolv.conf)。\n"
+#~ "您有兩種選擇：</p>"
+
+#~ msgid ""
+#~ "<p>Modify the current version of the file.</p>\n"
+#~ "<p>Press <b>Accept</b> and continue editing other data. You are able to "
+#~ "return to this dialog at a later time, \n"
+#~ "when the above service has terminated.</p>\n"
+#~ msgstr ""
+#~ "<p>修改檔案的當前版本。</p>\n"
+#~ "<p>按<b>接受</b>並繼續編輯其它資料。\n"
+#~ "在以上服務終止時您可以返回此對話方塊。</p>\n"
+
+#~ msgid "Name Servers: Set by DHCP"
+#~ msgstr "名稱伺服器：由 DHCP 設定"
+
+#~ msgid "Search List: Set by DHCP"
+#~ msgstr "搜索列表：由 DHCP 設定"
+
+#~ msgid ""
+#~ "<p>Enter the name for this computer and the DNS domain that it belongs to."
+#~ "</p>"
+#~ msgstr "<p>輸入此計算機的名稱以及所屬的 DNS 域。</p>"
+
+#~ msgid ""
+#~ "<p>The domain is especially important if this computer is a mail server.</"
+#~ "p>"
+#~ msgstr "<p>如果此計算機是郵件伺服器，則該域特別重要。</p>"
+
+#~ msgid "&Change /etc/resolv.conf manually"
+#~ msgstr "手動修改 /etc/resolv.conf(&C)"
+
+#~ msgid "&Update DNS data via DHCP"
+#~ msgstr "通過 DHCP 更新 DNS 資料(&U)"
+
+#~ msgid "Device type"
+#~ msgstr "裝置類型"
+
+#~ msgid "Impossible value for type!"
+#~ msgstr "類型的值非法！"
+
+#~ msgid "Device Type"
+#~ msgstr "裝置類型"
+
+#~ msgid "Bootproto"
+#~ msgstr "Bootproto"
+
+#~ msgid "Mask"
+#~ msgstr "掩碼"
+
+#~ msgid "Updating <tt>/etc/resolv.conf</tt>..."
+#~ msgstr "正在更新 <tt>/etc/resolv.conf</tt>..."
+
+#~ msgid "Updating <tt>/etc/hosts</tt>..."
+#~ msgstr "正在更新 <tt>/etc/horts</tt>..."
+
+#~ msgid ""
+#~ "<p>Press <b>Manually</b> tocontrol the interface manually\n"
+#~ "via ifup or KInternet (See <b>User Controlled</b> below).\n"
+#~ msgstr ""
+#~ "<p>點選<b>手動</b>以通過 ifup 或者 KInternet\n"
+#~ "手動控制介面(請參見下面的<b>使用者控制</b>)。\n"
+
+#~ msgid "No Zone, All Traffic Blocked"
+#~ msgstr "無區域，阻塞所有交通"
+

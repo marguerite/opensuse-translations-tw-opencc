@@ -1,0 +1,1762 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Thruth Wang <lihaow@opera.com>, 2007, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: http server\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:38+0200\n"
+"PO-Revision-Date: 2012-07-20 05:03+0800\n"
+"Last-Translator: Marguerite Su\n"
+"Language-Team: Chinese Simplified <kde-i18n-doc@kde.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.4\n"
+
+#. translators: command line help for HTTP server module
+#: src/clients/http-server.rb:36
+msgid "Configuration of HTTP server (Apache2)"
+msgstr "HTTP 伺服器 (Apache2) 的配置"
+
+#. translators: help text for configure command line action
+#: src/clients/http-server.rb:45
+msgid "Configure host settings"
+msgstr "配置主機設定"
+
+#. translators: help text for modules command line action
+#: src/clients/http-server.rb:55
+msgid "Configure the Apache2 server modules"
+msgstr "配置 Apache2 伺服器模組"
+
+#. translators: help text for listen command line action
+#: src/clients/http-server.rb:65
+msgid "Set up the ports and network addresses where the server should listen."
+msgstr "設定伺服器應監聽的埠與網路地址。"
+
+#: src/clients/http-server.rb:74
+msgid "Configure virtual hosts"
+msgstr "配置虛擬主機"
+
+#: src/clients/http-server.rb:81
+msgid "Enable or disable wizard mode."
+msgstr "啟用或禁用嚮導模式。"
+
+#. translators: help text for servername option (configure command line action)
+#: src/clients/http-server.rb:92
+msgid "Server name, for example, www.example.com"
+msgstr "伺服器名，例如 www.example.com"
+
+#. translators: help text for serveradmin option (configure command line action)
+#: src/clients/http-server.rb:99
+msgid "E-mail address of the server administrator"
+msgstr "伺服器管理員的電子郵件地址"
+
+#. translators: help text for documentroot option (configure command line action)
+#: src/clients/http-server.rb:106
+msgid "Directory where the documents of the server are stored"
+msgstr "存儲伺服器文件的目錄"
+
+#. translators: help text for host option (configure command line action)
+#: src/clients/http-server.rb:113
+msgid "Name of the host to configure."
+msgstr "要配置的主機的名稱。"
+
+#. translators: help text for add subcommand (listen command line action)
+#: src/clients/http-server.rb:121
+msgid "Add a new listen entry ([address:]port)"
+msgstr "添加新監聽項([地址:]埠)"
+
+#. translators: help text for delete subcommand (listen command line action)
+#: src/clients/http-server.rb:129
+msgid "Delete an existing listen entry ([address:]port)"
+msgstr "刪除現有的監聽項([地址:]埠)"
+
+#. translators: help text for list subcommand (listen command line action)
+#: src/clients/http-server.rb:135
+msgid "List configured entries"
+msgstr "列出已配置的項"
+
+#. translators: help text for enable subcommand (modules command line action)
+#: src/clients/http-server.rb:143
+msgid "Comma-separated list of modules to enable"
+msgstr "逗號分隔的要啟用模組的列表"
+
+#. translators: help text for disable subcommand (modules command line action)
+#: src/clients/http-server.rb:151
+msgid "Comma-separated list of modules to disable"
+msgstr "逗號分隔的要禁用模組的列表"
+
+#: src/clients/http-server.rb:155
+msgid "Create new virtual host"
+msgstr "創建新的虛擬主機"
+
+#: src/clients/http-server.rb:158
+msgid "Delete existing virtual host"
+msgstr "刪除現有虛擬主機"
+
+#: src/clients/http-server.rb:162
+msgid "Set selected virtual host as default host"
+msgstr "將選中的虛擬主機設定為默認主機"
+
+#: src/clients/http-server.rb:166
+msgid "Set wizard mode \"on\" or \"off\"."
+msgstr "設定向導模式\"開\"或\"關\"。"
+
+#. translators: error message in configure command line action
+#: src/clients/http-server.rb:238
+msgid "Configured host not specified"
+msgstr "沒有指定已配置的主機"
+
+#. translators: error message in configure command line action
+#: src/clients/http-server.rb:242
+msgid "Only existing hosts can be specified as the host to configure"
+msgstr "僅能將現有主機指定為要配置的主機"
+
+#. translators: popup error message when validate servername
+#: src/clients/http-server.rb:275 src/modules/HttpServerWidgets.rb:885
+msgid "Invalid server name."
+msgstr "無效的伺服器名。"
+
+#: src/clients/http-server.rb:288
+msgid "Invalid server admin."
+msgstr "無效的伺服器管理。"
+
+#: src/clients/http-server.rb:311 src/clients/http-server.rb:500
+msgid "Validate error "
+msgstr "驗證錯誤"
+
+#. translators: heading for the "modules list" command line action output
+#. please, try to align the texts if possible.
+#: src/clients/http-server.rb:339
+msgid ""
+"Status \tModule\n"
+"=================="
+msgstr ""
+"狀態 \t模組\n"
+"=================="
+
+#. translators: server module status
+#. translators: service status radio button label
+#. if ((mod["default"]:"0" == "1") && (!contains(modules, name))) YaST::HTTPDData::ModifyModuleList ([name], true);
+#. translators: server module status
+#. string status = (string) select( (term) UI::QueryWidget( `id(`modules), `Item(ci) ), 2, _("Enabled") );
+#. string name = (string) select( (term) UI::QueryWidget( `id(`modules), `Item(ci) ), 1, nil );
+#: src/clients/http-server.rb:350 src/modules/HttpServerWidgets.rb:357
+#: src/modules/HttpServerWidgets.rb:3068 src/modules/HttpServerWidgets.rb:3091
+#: src/modules/HttpServerWidgets.rb:3138 src/modules/HttpServerWidgets.rb:3147
+#: src/modules/HttpServerWidgets.rb:3150 src/modules/HttpServerWidgets.rb:3154
+#: src/modules/HttpServerWidgets.rb:3183
+msgid "Enabled"
+msgstr "已啟用"
+
+#. translators: server module status
+#. translators: service status radio button label
+#. translators: server module status
+#: src/clients/http-server.rb:352 src/modules/HttpServerWidgets.rb:355
+#: src/modules/HttpServerWidgets.rb:3070 src/modules/HttpServerWidgets.rb:3148
+#: src/modules/HttpServerWidgets.rb:3170
+msgid "Disabled"
+msgstr "已禁用"
+
+#. y2milestone("Ruby support %1", enable_ruby);
+#. create list of all standard modules
+#. create temporary list of maps from modules
+#. translators: list of known and unknown modules
+#. translators: server module status unknown
+#. list of all installed modules
+#: src/clients/http-server.rb:353 src/include/http-server/wizard-dialog.rb:167
+#: src/modules/HttpServerWidgets.rb:3041 src/modules/HttpServerWidgets.rb:3051
+#: src/modules/HttpServerWidgets.rb:3052 src/modules/HttpServerWidgets.rb:3061
+#: src/modules/HttpServerWidgets.rb:3210
+msgid "unknown"
+msgstr "未知"
+
+#. translators: heading for the "listen list" command line action output
+#. please, try to align the texts if possible.
+#: src/clients/http-server.rb:376
+msgid "Listen Statements:"
+msgstr "監聽語句："
+
+#: src/clients/http-server.rb:382
+msgid "All interfaces"
+msgstr "所有介面"
+
+#. FIXME:  check, if new address and port are correct values (if address is from machine's interfaces)
+#: src/clients/http-server.rb:416
+msgid "Can use only existing interfaces"
+msgstr "僅能使用現有介面"
+
+#. translators: error message in "listen add" command line action
+#: src/clients/http-server.rb:423
+msgid "The listen statement '%1' is already configured."
+msgstr "監聽語句\"%1\"已配置。"
+
+#. translators: error message in "listen delete" command line action
+#: src/clients/http-server.rb:438
+msgid "Can remove only existing listeners"
+msgstr "僅能刪除現有監聽器"
+
+#. check the command to be present exactly once
+#: src/clients/http-server.rb:460
+msgid "Hosts list:"
+msgstr "主機列表："
+
+#. create
+#: src/clients/http-server.rb:471
+msgid "Some parameter missing"
+msgstr "缺少某些參數"
+
+#. remove and setdefault
+#: src/clients/http-server.rb:520
+msgid "Argument can be only existing host"
+msgstr "參數僅能為現有主機"
+
+#. popup - it is already the default host
+#: src/clients/http-server.rb:526 src/modules/HttpServerWidgets.rb:1324
+msgid "The host is already default."
+msgstr "該主機已是默認主機。"
+
+#. remove the old non-default host
+#. translators: popup error message - default host cannot be deleted
+#: src/clients/http-server.rb:559 src/modules/HttpServerWidgets.rb:1242
+msgid "Cannot delete the default host."
+msgstr "無法刪除默認主機。"
+
+#. encoding: utf-8
+#. File:	include/http-server/wizards.ycp
+#. Package:	Configuration of http-server
+#. Summary:	Wizards definitions
+#. Authors:	Stanislav Visnovsky <visnov@suse.cz>
+#.
+#. $Id$
+#: src/include/http-server/dialogs.rb:32
+msgid "Listen Ports and Addresses"
+msgstr "監聽埠與地址"
+
+#. `HSpacing (1),
+#: src/include/http-server/dialogs.rb:57
+msgid "Server Modules"
+msgstr "伺服器模組"
+
+#. translators: human-readable "default host"
+#: src/include/http-server/dialogs.rb:66
+#: src/include/http-server/dialogs.rb:172
+msgid "Main Host"
+msgstr "主要主機"
+
+#: src/include/http-server/dialogs.rb:75
+msgid "Hosts"
+msgstr "主機"
+
+#. Run server overview dialog
+#. @return [Symbol] for wizard sequencer
+#. translators: initialization dialog caption
+#: src/include/http-server/dialogs.rb:108
+#: src/include/http-server/wizards.rb:200
+msgid "HTTP Server Configuration"
+msgstr "HTTP 伺服器配置"
+
+#. translators: dialog caption
+#: src/include/http-server/dialogs.rb:169
+msgid "Host '%1' Configuration"
+msgstr "主機\"%1\"配置"
+
+#. dialog caption
+#: src/include/http-server/dialogs.rb:212
+msgid "Configured Hosts"
+msgstr "已配置的主機"
+
+#. translators: dialog caption
+#: src/include/http-server/dialogs.rb:243
+msgid "New Host Information"
+msgstr "新主機資訊"
+
+#. translators: dialog caption
+#: src/include/http-server/dialogs.rb:269
+msgid "Virtual Host Details"
+msgstr "虛擬主機細節"
+
+#. translators: dialog caption, %1 is the host name
+#: src/include/http-server/dialogs.rb:299
+msgid "SSL Configuration for '%1'"
+msgstr "\"%1\"的 SSL 配置"
+
+#. translators: human-readable "default host"
+#. translators: human-readable "default host"
+#. translators: human-readable "default host"
+#: src/include/http-server/dialogs.rb:302
+#: src/include/http-server/dialogs.rb:357
+#: src/modules/HttpServerWidgets.rb:1273
+msgid "Default Host"
+msgstr "默認主機"
+
+#. translators: pop up menu
+#: src/include/http-server/dialogs.rb:324
+msgid "Certificates"
+msgstr "證書"
+
+#. translators: Certificates pop-up menu item
+#: src/include/http-server/dialogs.rb:327
+msgid "&Import Server Certificate..."
+msgstr "匯入伺服器證書(&I)..."
+
+#. translators: Certificates pop-up menu item
+#: src/include/http-server/dialogs.rb:329
+msgid "&Use Common Server Certificate"
+msgstr "使用通用伺服器證書(&U)"
+
+#. translators: dialog caption, %1 is the host name
+#: src/include/http-server/dialogs.rb:354
+msgid "Dir Configuration for '%1'"
+msgstr "\"%1\"的目錄配置"
+
+#. Read dialog help 1/2
+#: src/include/http-server/helps.rb:18
+msgid ""
+"<p><b><big>Initializing HTTP Server Configuration</big></b>\n"
+"<br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在啟始化 HTTP 伺服器配置</big></b>\n"
+"<br>\n"
+"請稍候...<br></p>\n"
+
+#. Read dialog help 2/2
+#: src/include/http-server/helps.rb:24
+msgid ""
+"<p><b><big>Aborting Initialization</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>\n"
+msgstr ""
+"<p><b><big>正在中止啟始化</big></b><br>\n"
+"可以按<b>中止</b>立即安全地中止配置工具。</p>\n"
+
+#. Write dialog help 1/2
+#: src/include/http-server/helps.rb:28
+msgid ""
+"<p><b><big>Saving HTTP Server Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在儲存 HTTP 伺服器配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#. Write dialog help 2/2
+#: src/include/http-server/helps.rb:32
+msgid ""
+"<p><b><big>Aborting Saving</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.\n"
+"An additional dialog informs you whether it is safe to do so.</p>\n"
+msgstr ""
+"<p><b><big>中止儲存</big></b><br>\n"
+"按<b>中止</b>中止儲存過程。\n"
+" 另一個對話方塊將指示這樣操作是否安全。</p>\n"
+
+#. translators: Wizard dialog 1/5
+#: src/include/http-server/helps.rb:38
+msgid "<p>The <b>Port</b> value defines the port on which Apache2 listens. The default is 80.</p>"
+msgstr "<p><b>埠</b>值定義了 Apache2 監聽的埠。預設值是 80。</p>"
+
+#. translators: Wizard dialog 1/5
+#: src/include/http-server/helps.rb:42
+msgid "<p><b>Listen on Interfaces</b> contains the list of all IP addresses configured for this host. Checked IP addresses are those on which Apache2 listens. If you are unsure, check all.</p>"
+msgstr "<p><b>監聽介面</b>包含為此主機配置的所有 IP 地址的列表。Apache2 將監聽被選中的 IP 地址。如果不能確定，可將其全部選中。</p>"
+
+#. translators: Wizard dialog 2/5
+#: src/include/http-server/helps.rb:46
+msgid "<p>Here, enable the script languages the Apache2 server should support.</p>"
+msgstr "<p>在此啟用 Apache2 伺服器應支援的指令碼語言。</p>"
+
+#. translators: Wizard dialog 5/5
+#: src/include/http-server/helps.rb:50
+msgid "<p>The summary displays the settings that will be written to the Apache2 configuration when you press <b>Finish</b>.</p>"
+msgstr "<p>摘要將顯示按<b>完成</b>時將被寫入到 Apache2 配置的設定。</p>"
+
+#. translators: Wizard dialog 5/5
+#: src/include/http-server/helps.rb:54
+msgid ""
+"<p>Press <b>HTTP Server Expert Configuration</b> \n"
+"\t\tto create a more detailed configuration before writing the configuration.</p>"
+msgstr ""
+"<p>按 <b>HTTP 伺服器專家配置</b>\n"
+"\t\t在寫入配置前創建更詳細的配置。</p>"
+
+#. module dialog help 1/3
+#: src/include/http-server/helps.rb:58
+msgid ""
+"<p><b><big>Editing HTTP Server Modules</big></b><br>\n"
+"The table contains a list of all available Apache2 modules.\n"
+"The first column contains the name of the module. \n"
+"The second column shows whether the module should be\n"
+"loaded by the server. Enabled modules will be loaded. The last column displays a short description\n"
+"of the module.</p>"
+msgstr ""
+"<p><b><big>編輯 HTTP 伺服器模組</big></b><br>\n"
+"此表包含所有可用 Apache2 模組的列表。\n"
+"第一列包含模組的名稱。\n"
+"第二列顯示是否應由伺服器\n"
+"裝載模組。將裝載已啟用的模組。最後一列顯示模組的\n"
+"簡短描述。</p>"
+
+#. module dialog help 2/3
+#: src/include/http-server/helps.rb:67
+msgid ""
+"<p>To change the status of a module, \n"
+"choose the appropriate entry of the table and click <b>Toggle Status</b>.</p>\n"
+msgstr ""
+"<p>要變更模組的狀態，\n"
+"請在表中選擇適當的項，然後單擊<b>轉換狀態</b>。</p>\n"
+
+#. module dialog help 3/3
+#: src/include/http-server/helps.rb:71
+msgid ""
+"<p>If you need to add a module not listed in the table, \n"
+"use <b>Add Module</b>.</p>\n"
+msgstr ""
+"<p>如果需要添加表中未列出的模組，\n"
+"請使用<b>添加模組</b>。</p>\n"
+
+#. apache service enabling help 1/1
+#: src/include/http-server/helps.rb:75
+msgid ""
+"<p><b><big>HTTP Server Settings</big></b><br>\n"
+"Activate the HTTP server by choosing <b>Enabled</b>. To deactivate it, choose\n"
+"<b>Disabled</b>.</p>\n"
+msgstr ""
+"<p><b><big>HTTP 伺服器設定</big></b><br>\n"
+"通過選擇<b>已啟用</b>啟用 HTTP 伺服器。要取消啟用它，請選擇\n"
+"<b>已禁用</b>。</p>\n"
+
+#. firewall adapting help 1/1
+#: src/include/http-server/helps.rb:81
+msgid ""
+"<p>By enabling <b>Open Firewall on Selected Ports</b>, \n"
+"adapt the firewall according the ports on which Apache2 listens. \n"
+"The interfaces of the firewall are not added or deleted. \n"
+"This option is only available if the firewall is enabled.</p>\n"
+msgstr ""
+"<p>啟用<b>開啟所選埠上的防火牆</b>，\n"
+"從而根據 Apache2 監聽的埠來變更防火牆。\n"
+"防火牆的介面不會被添加或刪除。\n"
+"此選項僅當啟用了防火牆時才可用。</p>\n"
+
+#. server configuration overview help 1/2
+#: src/include/http-server/helps.rb:88
+msgid ""
+"<p>The list of options presents\n"
+"several parts of the server configuration. <b>Listen On</b>\n"
+"contains a list of ports and IP addresses on which the\n"
+"server should listen for the incoming requests. \n"
+"<b>Modules</b> allows configuring the modules loaded by the\n"
+"server.\n"
+"<b>Default Host</b> is a server name of a host used as a\n"
+"default (fallback) host. If the server name of the default\n"
+"host is not specified, a path to the document root of the\n"
+"default host is displayed.\n"
+"<b>Hosts</b> contains a list of hosts configured for the server.</p>\n"
+msgstr ""
+"<p>該選項列表提供了\n"
+"伺服器配置的幾部分。<b>監聽</b>\n"
+"包含伺服器應用於監聽\n"
+"進來請求的埠與 IP 地址的列表。。\n"
+" <b>模組</b>允許您配置伺服器裝載的\n"
+"模組。\n"
+" <b>默認主機</b>是用作默認(後備)\n"
+"主機的伺服器名。如果未指定默認\n"
+"主機的伺服器名稱，則顯示指向該默認主機的\n"
+"文件根的路徑。\n"
+" <b>主機</b>包含為伺服器配置的主機列表。</p>\n"
+
+#. server configuration overview help 2/2
+#: src/include/http-server/helps.rb:102
+msgid "<p>Choose an appropriate entry from the table and click <b>Edit</b> to change settings.</p>"
+msgstr "<p>從表中選擇適當的項，然後單擊<b>編輯</b>變更設定。</p>"
+
+#. help of menu button for server configuration 1/1
+#: src/include/http-server/helps.rb:106
+msgid "<p><b>Log Files</b> displays server log files.</p>"
+msgstr "<p><b>日誌檔案</b>顯示伺服器日誌檔案。</p>"
+
+#. hosts list help 1/2
+#: src/include/http-server/helps.rb:108
+msgid ""
+"<p><b><big>Configured Hosts</big></b><br>\n"
+"This is a list of already configured hosts. One of the hosts is \n"
+"marked as default (the asterisk next to the server name). A default host is used if no other host\n"
+"matches for an incoming request. To set a host as default,\n"
+"press <b>Set as Default</b>.</p>\n"
+msgstr ""
+"<p><b><big>已配置的主機</big></b><br>\n"
+"這是已配置主機的列表。其中一個主機被標記為\n"
+"默認(伺服器名旁邊有星號)。如果其它主機無法匹配進來的請求，\n"
+"則使用默認主機。要將某個主機設定為默認主機，\n"
+"請按<b>設定為預設值</b>。</p>\n"
+
+#. hosts list help 2/2
+#: src/include/http-server/helps.rb:116
+msgid ""
+"<p>Choose an appropriate entry of the table and click <b>Edit</b> to change the host.\n"
+"To add a host, click <b>Add</b>. To remove a host, select it and click <b>Delete</b>.</p>"
+msgstr ""
+"<p>在表中選擇適當的項，然後單擊<b>編輯</b>變更主機。\n"
+"要添加主機，請單擊<b>添加</b>。要刪除某主機，請選擇該主機，然後單擊<b>刪除</b>。</p>"
+
+#. host editing help 1/2
+#: src/include/http-server/helps.rb:120
+msgid ""
+"<p><b><big>Host Configuration</big></b><br>\n"
+"To edit the host settings, choose the appropriate entry of the table then click <b>Edit</b>.\n"
+"To add a new option, click <b>Add</b>. To remove an option, select it and click <b>Delete</b>.</p>"
+msgstr ""
+"<p><b><big>主機配置</big></b><br>\n"
+"要編輯主機設定，請在表中選擇適當的項，然後單擊<b>編輯</b>。\n"
+"要添加新選項，請單擊<b>添加</b>。要刪除某選項，請先選擇該選項，然後單擊<b>刪除</b>。</p>"
+
+#. host editing help 2/2
+#: src/include/http-server/helps.rb:126
+msgid ""
+"<p>The <b>Server Resolution</b> options set the resolution when using\n"
+"\tvirtual hosts. However, when you choose <b>Resolution via HTTP Headers</b>,\n"
+"\tthe default server will never be served requests to the IP address of\n"
+"\ta name-based virtual host. If you plan to configure a SSL based vhost, use <b>Resolution via IP address</b></p>"
+msgstr ""
+"<p><b>伺服器解析</b>選項在使用\n"
+"\t虛擬主機時設定解析。但是，如果選擇<b>通過 HTTP 報頭解析</p>，\n"
+"\t默認伺服器將永遠不會為請求基於名稱的虛擬主機的 IP 地址提供服務。\n"
+"\t如果您計劃配置基於 SSL 的虛擬主機，請使用 <b>通過 IP 地址解析</b></p>"
+
+#. listen dialog editor help 1/2
+#: src/include/http-server/helps.rb:133
+msgid ""
+"<p><b><big><i>Listen</i> Settings for a Host</big></b><br>\n"
+"The <i>Listen</i> directive allows selection of ports and network interfaces\n"
+"where the HTTP server should listen for incoming requests.</p>\n"
+msgstr ""
+"<p><b><big><i>監聽</i>主機的設定</big></b><br>\n"
+"<i>監聽</i>指令允許選擇 HTTP 伺服器應監聽進來請求\n"
+"的埠與網路介面。</p>\n"
+
+#. listen dialog editor help 2/2
+#: src/include/http-server/helps.rb:139
+msgid ""
+"<p>Choose an appropriate entry of the table and click <b>Edit</b> to change the entry.\n"
+"To add a new entry, click <b>Add</b>. To remove an entry, select it and click <b>Delete</b>.</p>"
+msgstr ""
+"<p>在表中選擇適當的項，然後單擊<b>編輯</b>變更此項。\n"
+"要添加新項，請單擊<b>添加</b>。要刪除某個項，請選擇該項，然後單擊<b>刪除</b>。</p>"
+
+#. ssl options dialog help 1/4
+#: src/include/http-server/helps.rb:143
+msgid ""
+"<p><b><big>SSL Configuration</big></b><br>\n"
+"This is a list of options related to the SSL (Secure Socket Layer) settings\n"
+"of the host. SSL allows communicating securely with the host by \n"
+"encrypting communication.</p>\n"
+msgstr ""
+"<p><b><big>SSL 配置</big></b><br>\n"
+"這是與主機的 SSL(安全套接字層)設定\n"
+"相關的選項的列表。SSL 允許通過加密通訊安全地\n"
+"與主機進行通訊。</p>\n"
+
+#. ssl options dialog help 2/4
+#: src/include/http-server/helps.rb:150
+msgid ""
+"<p>General behavior is determined by the SSL option. The host can\n"
+"not support SSL at all (<tt>No SSL</tt>), allow both non-SSL and SSL access (<tt>Allowed</tt>),\n"
+"or accept only connections encrypted via SSL (<tt>Required</tt>).\n"
+"</p>\n"
+msgstr ""
+"<p>一般行為由 SSL 選項確定。主機可以\n"
+"完全不支援 SSL(<tt>無 SSL</tt>)、同時允許非 SSL 與 SSL 訪問(<tt>允許</tt>)\n"
+"或僅接受通過 SSL 加密的連線 (<tt>必需</tt>)。\n"
+" </p>\n"
+
+#. ssl options dialog help 3/4
+#: src/include/http-server/helps.rb:157
+msgid ""
+"<p>Choose an appropriate option of the table and click <b>Edit</b> to change the option.\n"
+"To add a new option, click <b>Add</b>. To remove an option, select it and click <b>Delete</b>.</p>"
+msgstr ""
+"<p>在表中選擇適當的選項，然後單擊<b>編輯</b>變更選項。\n"
+"要添加新選項，請單擊<b>添加</b>。要刪除某選項，請先選擇該選項，然後單擊<b>刪除</b>。</p>"
+
+#. ssl options dialog help 3/4 (empty in simple mode)
+#: src/include/http-server/helps.rb:162
+msgid ""
+"<p>The <b>Certificates</b> menu allows \n"
+"importing server certificates. <b>Import Server Certificate</b> \n"
+"allows use of a special purpose certificate. \n"
+"<b>Use Common Certificate</b> configures usage of the\n"
+"common certificate issued for this host.</p>\n"
+msgstr ""
+"<p><b>證書</b>選單用於\n"
+"匯入伺服器證書。<b>匯入伺服器證書</b> \n"
+"允許使用特殊用途的證書。\n"
+"<b>使用通用證書</b>配置使用為此主機頒發的\n"
+"通用證書。</p>\n"
+
+#. ssl options dialog help 4/4
+#: src/include/http-server/helps.rb:171
+msgid ""
+"<p><b>Note:</b> If you enable use of SSL for a host, the <tt>mod_ssl</tt> \n"
+"module should be loaded by the server.</p>\n"
+msgstr ""
+"<p><b>注意：</b>如果您對某主機啟用了 SSL，則應由伺服器裝載 <tt>mod_ssl</tt> \n"
+"模組。</p>\n"
+
+#. new host dialog help 1/3
+#: src/include/http-server/helps.rb:175
+msgid ""
+"<p><b><big>New Host</big></b><br>\n"
+"This dialog allows you to enter a basic information about a new virtual host.</p>"
+msgstr ""
+"<p><b><big>新主機</big></b><br>\n"
+"此對話方塊允許您輸入有關新虛擬主機的基本資訊。</p>"
+
+#. new host dialog help 2/3
+#: src/include/http-server/helps.rb:179
+msgid ""
+"<p><b>Server Identification</b> specifies the content and\n"
+"the presentation of the the new virtual host. <b>Server Name</b> is the DNS name returned as a part\n"
+"of the HTTP headers of the server response. <b>Server Contents Root</b>\n"
+"is an absolute path to a directory containing all documents provided by\n"
+"this virtual host. <b>Administrator E-Mail</b> allows setup of an e-mail\n"
+"address for feedback about this host.</p>\n"
+msgstr ""
+"<p><b>伺服器標識</b>指定新虛擬主機的內容與\n"
+"顯示情況。<b>伺服器名稱</b>是作為伺服器響應的 HTTP 報頭的一部分\n"
+"返回的 DNS 名稱。<b>伺服器內容根目錄</b>\n"
+"是一個絕對路徑，指向的目錄包含此虛擬主機\n"
+"提供的所有文件。<b>管理員電子郵件</b>允許您設定用於對此主機\n"
+"進行反饋的電子郵件地址。</p>\n"
+
+#. new host dialog help 3/3
+#: src/include/http-server/helps.rb:188
+msgid ""
+"<p><big><b>Server Resolution</b></big><br>\n"
+"Apache2 must be able to determine which virtual host\n"
+"settings it should use to create a response for an HTTP request. \n"
+"There are two basic approaches. If using HTTP headers\n"
+"from the incoming request, the server looks up the host name specified by\n"
+"the HTTP request headers. The other possibility is to determine the virtual host\n"
+"by the IP address used by the client when connecting to the server.\n"
+"If you plan to configure SSL-based vhost, use <b>Resolution via IP address</b>\n"
+"Consult the Apache2 manual for further details.</p>\n"
+msgstr ""
+"<p><big><b>伺服器解析</b></big><br>\n"
+"Apache2 必須能夠確定應將哪些虛擬主機\n"
+"設定用於創建對 HTTP 請求的響應。\n"
+"原則上有兩種基本方法。如果使用進來的請求中的 HTTP 報頭，伺服器會查詢由\n"
+"HTTP 請求報頭指定的主機名稱。另一種可行方法是通過客戶機連線到伺服器時使用的\n"
+"IP 地址來確定虛擬主機。\n"
+"如果您計劃配置基於 SSL 的虛擬主機，使用 <b>通過 IP 地址解析</b>\n"
+"有關進一步的細節，請查詢 Apache2 手冊。</p>\n"
+
+#. advanced new host dialog 1/5
+#: src/include/http-server/helps.rb:200
+msgid ""
+"<p><b><big>Details for New Host</big></b><br>\n"
+"This dialog allows you to specify additional information about a new virtual host.</p>"
+msgstr ""
+"<p><b><big>新主機的細節</big></b><br>\n"
+"此對話方塊允許您指定有關新虛擬主機的其它資訊。</p>"
+
+#. advanced new host dialog 2/5
+#: src/include/http-server/helps.rb:204
+msgid ""
+"<p>Select <b>Enable CGI Support</b>\n"
+"to run CGI scripts in the path in <b>CGI Directory Path</b> using the alias <tt>/cgi-bin/</tt>.</p>"
+msgstr ""
+"<p>選擇<b>啟用 CGI 支援</b>\n"
+"以使用別名 <tt>/cgi-bin/</tt> 運行 <b>CGI 目錄路徑</b>中的 CGI 指令碼。</p>"
+
+#. advanced new host dialog 3/5
+#: src/include/http-server/helps.rb:208
+msgid ""
+"<p>For HTTPS access to this virtual host, select <b>Enable SSL Support</b>.\n"
+"\n"
+"Then enter the path for the certificate file in <b>Certificate File\n"
+"Path</b>.This option is only available for IP-based vhosts.</p>\n"
+msgstr ""
+"<p>對於此虛擬主機的 HTTPS 訪問，請選擇<b>啟用 SSL 支援</b>。\n"
+"\n"
+"然後在<b>證書檔案路徑<b>中輸入證書檔案的路徑。此選項僅適用於基於 IP 的虛擬主機。</p>\n"
+
+#. advanced new host dialog 4/5
+#: src/include/http-server/helps.rb:215
+msgid "<p>In <b>Directory Index</b>, enter a space-separated list of files that Apache should look for and provide when a URL for a directory (one that ends in <tt>/</tt>) is requested.  The first matching file found is provided.</p>"
+msgstr "<p>在<b>目錄索引</b>中，輸入 Apache 應查找的以空格隔開的檔案列表，並在請求目錄的(以 <tt>/</tt> 結尾的目錄)的 URL 時提供該列表。將提供找到的首個匹配檔案。</p>"
+
+#. advanced new host dialog 5/5
+#: src/include/http-server/helps.rb:219
+msgid ""
+"<p><b>Public HTML</b>\n"
+"\n"
+"enables access to <tt>.public_html</tt> directories of all users.</p>"
+msgstr ""
+"<p><b>公共 HTML</b>\n"
+"\n"
+"使您能夠訪問所有使用者的 <tt>.public_html</tt> 目錄。</p>"
+
+#. Convert a Listen string to an item for table. Splits by the colon.
+#.
+#. @param [String] arg		the Listen string
+#. @param [Fixnum] id		the id of this item
+#. @return [Yast::Term]		term for the table
+#. translators: all network addresses Listen type
+#. translators: all network addresses Listen type
+#. translators: all network addresses Listen type
+#. translators: Listen type for all addresses;
+#. translators: all network addresses Listen type
+#. translators: all network addresses Listen type
+#: src/include/http-server/routines.rb:59
+#: src/modules/HttpServerWidgets.rb:2397 src/modules/HttpServerWidgets.rb:2399
+#: src/modules/HttpServerWidgets.rb:2413 src/modules/HttpServerWidgets.rb:2417
+#: src/modules/HttpServerWidgets.rb:3297 src/modules/HttpServerWidgets.rb:3302
+msgid "All Addresses"
+msgstr "全部地址"
+
+#. Sequention used for determining on which ip adresses and port apache2 will listen and if firewall is enebled
+#. whether to open firewall on this port.
+#. @return [Symbol] (`back, `abort, `next)
+#: src/include/http-server/wizard-dialog.rb:24
+msgid "HTTP Server Wizard (1/5)--Network Device Selection"
+msgstr "HTTP 伺服器嚮導 (1/5)--網路裝置選擇"
+
+#: src/include/http-server/wizard-dialog.rb:41
+msgid "Network Device Selection"
+msgstr "網路裝置選擇"
+
+#. Sequence to choose some script language modules
+#. @return [Symbol] (`back, `abort, `next)
+#: src/include/http-server/wizard-dialog.rb:125
+msgid "HTTP Server Wizard (2/5)--Modules"
+msgstr "HTTP 伺服器嚮導 (2/5)--模組"
+
+#: src/include/http-server/wizard-dialog.rb:130
+msgid "Modules"
+msgstr "模組"
+
+#: src/include/http-server/wizard-dialog.rb:168
+msgid "0"
+msgstr "0"
+
+#. Sequence to configure default host parameters
+#. @return [Symbol] (`back, `abort, `next)
+#: src/include/http-server/wizard-dialog.rb:186
+msgid "HTTP Server Wizard (3/5)--Default Host"
+msgstr "HTTP 伺服器嚮導 (3/5)--默認主機"
+
+#. Sequence to cunfigure virtual hosts (add, remove, edit) and to change default host status
+#. @return [Symbol] (`back, `abort, `next)
+#: src/include/http-server/wizard-dialog.rb:260
+msgid "HTTP Server Wizard (4/5)--Virtual Hosts"
+msgstr "HTTP 伺服器嚮導 (4/5)--虛擬主機"
+
+#. Sequence to configure whether apache2 starts on boot or not (manually). Here is possible
+#. save all settings and exit or start expert configuration.
+#. @return [Symbol] (`back, `abort, `next)
+#: src/include/http-server/wizard-dialog.rb:291
+msgid "HTTP Server Wizard (5/5)--Summary"
+msgstr "HTTP 伺服器嚮導 (5/5)--摘要"
+
+#. translators: initialization dialog message
+#: src/include/http-server/wizards.rb:202
+msgid "Initializing ..."
+msgstr "正在啟始化..."
+
+#. HttpServer read dialog caption
+#: src/modules/HttpServer.rb:116
+msgid "Initializing HTTP Server Configuration"
+msgstr "正在啟始化 HTTP 伺服器配置"
+
+#. translators: progress stage
+#: src/modules/HttpServer.rb:127
+msgid "Check the environment"
+msgstr "檢查環境"
+
+#. translators: progress stage
+#: src/modules/HttpServer.rb:129
+msgid "Read Apache2 configuration"
+msgstr "讀取 Apache2 配置"
+
+#. translators: progress stage
+#: src/modules/HttpServer.rb:131
+msgid "Read network configuration"
+msgstr "讀取網路配置"
+
+#. translators: progress step
+#: src/modules/HttpServer.rb:135
+msgid "Checking the environment..."
+msgstr "正在檢查環境..."
+
+#. translators: progress step
+#: src/modules/HttpServer.rb:137
+msgid "Reading Apache2 configuration..."
+msgstr "正在讀取 Apache2 配置..."
+
+#. translators: progress step
+#: src/modules/HttpServer.rb:139
+msgid "Reading network configuration..."
+msgstr "正在讀取網路配置..."
+
+#. translators: progress finished
+#. on();
+#. translators: progress step
+#. translators: progress finished
+#. translators: progress finished
+#: src/modules/HttpServer.rb:141 src/modules/HttpServer.rb:367
+#: src/modules/HttpServer.rb:408 src/modules/HttpServer.rb:489
+msgid "Finished"
+msgstr "已完成"
+
+#. notification about package needed 1/2
+#: src/modules/HttpServer.rb:170
+msgid "<p>To configure the HTTP server, the <b>%1</b> packages must be installed.</p>"
+msgstr "<p>要配置該 HTTP 伺服器，必須安裝 <b>%1</b> 包。</p>"
+
+#. notification about package needed 2/2
+#: src/modules/HttpServer.rb:174
+msgid "<p>Do you want to install it now?</p>"
+msgstr "<p>是否要立即安裝？</p>"
+
+#. translators: error popup before aborting the module
+#: src/modules/HttpServer.rb:180
+msgid ""
+"The package %1 is not available.\n"
+"\n"
+"Configuration cannot continue\n"
+"\n"
+"without installing the package."
+msgstr ""
+"程式包 %1 不可用。\n"
+"\n"
+"配置無法在未安裝該程式包\n"
+" \n"
+"的情況下繼續。"
+
+#. translators: error message, %1 is the file name of expected configuration file
+#. translators: warning message, %1 is the file name of expected configuration file
+#: src/modules/HttpServer.rb:208 src/modules/HttpServer.rb:232
+msgid "The configuration file '%1' does not exist."
+msgstr "配置檔案\"%1\"不存在。"
+
+#. off();
+#: src/modules/HttpServer.rb:264
+msgid "There is no DNS server running on this machine."
+msgstr "沒有 DNS 伺服器在此機器上運行。"
+
+#. HttpServer read dialog caption
+#: src/modules/HttpServer.rb:381
+msgid "Saving HTTP Server Configuration"
+msgstr "正在儲存 HTTP 伺服器配置"
+
+#. translators: progress stage 1/3
+#: src/modules/HttpServer.rb:392
+msgid "Write the Apache2 settings"
+msgstr "寫入 Apache2 設定"
+
+#. translators: progress stage 2/3
+#: src/modules/HttpServer.rb:395
+msgid "Enable Apache2 service"
+msgstr "啟用 Apache2 服務"
+
+#. translators: progress stage 3/3
+#: src/modules/HttpServer.rb:397
+msgid "Disable Apache2 service"
+msgstr "禁用 Apache2 服務"
+
+#. translators: progress step 1/3
+#: src/modules/HttpServer.rb:401
+msgid "Writing the settings..."
+msgstr "正在寫入設定..."
+
+#. translators: progress step 2/3
+#: src/modules/HttpServer.rb:404
+msgid "Enabling Apache2 service..."
+msgstr "正在啟用 Apache2 服務..."
+
+#. translators: progress step 3/3
+#: src/modules/HttpServer.rb:406
+msgid "Disabling Apache2 service..."
+msgstr "正在禁用 Apache2 服務..."
+
+#. install required RPMs for modules
+#: src/modules/HttpServer.rb:420
+msgid ""
+"The enabled modules require\n"
+"installation of some of these additional packages:\n"
+"%1\n"
+"Install them now?\n"
+msgstr ""
+"已啟用的模組要求\n"
+"安裝這些附加包中的幾個包：\n"
+"%1\n"
+"是否立即安裝？\n"
+
+#. translators: warning in autoyast loading the configuration description.
+#: src/modules/HttpServer.rb:529
+msgid "Module description does not have a name specified, ignoring."
+msgstr "模組描述沒有指定名稱，可以將其忽略。"
+
+#. translators: warning in autoyast loading the configuration description.
+#: src/modules/HttpServer.rb:541
+msgid "Unknown change of a module for autoinstallation: %1"
+msgstr "在自動安裝中模組出現未知的變更：%1"
+
+#. translators: warning in autoyast loading the configuration description.
+#: src/modules/HttpServer.rb:560
+msgid ""
+"Default value for module %1 does not match.\n"
+"This can cause inconsistent module configuration."
+msgstr ""
+"模組 %1 的預設值不匹配。\n"
+"這可能導致不一致的模組配置。"
+
+#. translators: error in autoyast loading the configuration description.
+#: src/modules/HttpServer.rb:575
+msgid "Listen statement without port found."
+msgstr "找到無埠的監聽語句。"
+
+#. "Listen on " information (interfaces, port)
+#: src/modules/HttpServer.rb:678
+msgid "<h3>Listen On</h3>"
+msgstr "<h3>監聽</h3>"
+
+#. "Default host" information
+#: src/modules/HttpServer.rb:698
+msgid "<h3>Default Host</h3>"
+msgstr "<h3>默認主機</h3>"
+
+#. translators: assiciation server name with document root
+#. translators: assiciation server name with document root
+#: src/modules/HttpServer.rb:717 src/modules/HttpServer.rb:747
+msgid " in "
+msgstr " 於 "
+
+#. translators: whether SSL is enabled or disabled
+#. translators: whether SSL is enabled or disable
+#: src/modules/HttpServer.rb:722 src/modules/HttpServer.rb:751
+msgid "enabled"
+msgstr "已啟用"
+
+#: src/modules/HttpServer.rb:722 src/modules/HttpServer.rb:751
+msgid "disabled"
+msgstr "已禁用"
+
+#. the same information as in default host but for other virtual hosts
+#: src/modules/HttpServer.rb:726
+msgid "<h3>Virtual Hosts</h3>"
+msgstr "<h3>虛擬主機</h3>"
+
+#. menu button label
+#: src/modules/HttpServerWidgets.rb:63
+msgid "&Log Files"
+msgstr "日誌檔案(&L)"
+
+#. menu button item
+#: src/modules/HttpServerWidgets.rb:66
+msgid "Show &Access Log"
+msgstr "顯示訪問日誌(&A)"
+
+#. menu button item
+#: src/modules/HttpServerWidgets.rb:68
+msgid "Show &Error Log"
+msgstr "顯示錯誤日誌(&E)"
+
+#. table cell description
+#. table cell description
+#: src/modules/HttpServerWidgets.rb:121 src/modules/HttpServerWidgets.rb:127
+msgid "Server Name"
+msgstr "伺服器名"
+
+#. table cell description
+#: src/modules/HttpServerWidgets.rb:134
+msgid "Document Root"
+msgstr "文件根"
+
+#. table cell description
+#: src/modules/HttpServerWidgets.rb:143
+msgid "Server Administrator E-Mail"
+msgstr "伺服器管理員電子郵件地址"
+
+#. table cell description
+#. translators: frame title for method of incoming request resolution
+#: src/modules/HttpServerWidgets.rb:154 src/modules/HttpServerWidgets.rb:664
+msgid "Server Resolution"
+msgstr "伺服器解析"
+
+#. translators: radio button for name-based virtual hosts
+#. translators: radio button for name-based virtual hosts
+#: src/modules/HttpServerWidgets.rb:162 src/modules/HttpServerWidgets.rb:679
+msgid "Determine Request Server by HTTP &Headers"
+msgstr "通過 HTTP 報頭確定請求伺服器(&H)"
+
+#. translators: radio button for IP-based virtual hosts
+#. translators: radio button for IP-based virtual hosts
+#: src/modules/HttpServerWidgets.rb:164 src/modules/HttpServerWidgets.rb:688
+msgid "Determine Request Server by Server IP &Address"
+msgstr "通過伺服器 IP 地址確定請求伺服器(&A)"
+
+#. table cell description
+#: src/modules/HttpServerWidgets.rb:171
+msgid "IP Address"
+msgstr "IP 地址"
+
+#. translator: server enable/disable radio button group
+#: src/modules/HttpServerWidgets.rb:350
+msgid "HTTP &Service"
+msgstr "HTTP 服務(&S)"
+
+#. translators: radio button group label
+#: src/modules/HttpServerWidgets.rb:387
+msgid "Listen on Ports:"
+msgstr "監聽埠："
+
+#. table header
+#: src/modules/HttpServerWidgets.rb:392
+msgid "Network Address"
+msgstr "網路地址"
+
+#. table header
+#: src/modules/HttpServerWidgets.rb:394
+msgid "Port"
+msgstr "埠"
+
+#. table header: module name
+#: src/modules/HttpServerWidgets.rb:422
+msgid "Name"
+msgstr "名稱"
+
+#. table header: module status
+#: src/modules/HttpServerWidgets.rb:424
+msgid "Status"
+msgstr "狀態"
+
+#. table header: module description
+#: src/modules/HttpServerWidgets.rb:426
+msgid "Description"
+msgstr "描述"
+
+#. translators: toggle button label
+#: src/modules/HttpServerWidgets.rb:434
+msgid "&Toggle Status"
+msgstr "轉換狀態(&T)"
+
+#. translators: add user-defined module button label
+#: src/modules/HttpServerWidgets.rb:440
+msgid "&Add Module"
+msgstr "添加模組(&A)"
+
+#: src/modules/HttpServerWidgets.rb:552
+msgid "Directory"
+msgstr "目錄"
+
+#. translators: text entry
+#: src/modules/HttpServerWidgets.rb:558
+msgid "&Port:"
+msgstr "埠(&P)："
+
+#. translators: multi selection box
+#. translators: multi selection box
+#: src/modules/HttpServerWidgets.rb:572 src/modules/HttpServerWidgets.rb:3476
+msgid "&Listen on Interfaces"
+msgstr "監聽介面(&L)"
+
+#. translators: radiobutton - to start Apache2 service automatically
+#: src/modules/HttpServerWidgets.rb:596
+msgid "Start Apache2 Server When Booting"
+msgstr "在引導時啟動 Apache2 伺服器"
+
+#. translators: radiobutton - to don't start Apache2 service
+#: src/modules/HttpServerWidgets.rb:600
+msgid "Start Apache2 Server Manually"
+msgstr "手動啟動 Apache2 伺服器"
+
+#. translators: button to enter expert configuration
+#: src/modules/HttpServerWidgets.rb:608
+msgid "&HTTP Server Expert Configuration..."
+msgstr "HTTP 伺服器專家配置(&H)..."
+
+#. translators: frame title for new hsot identification details
+#: src/modules/HttpServerWidgets.rb:631
+msgid "Server Identification"
+msgstr "伺服器標識"
+
+#. translators: textentry, new host server name
+#. translators: textentry to set the host name
+#: src/modules/HttpServerWidgets.rb:634 src/modules/HttpServerWidgets.rb:1180
+msgid "Server &Name:"
+msgstr "伺服器名(&N)："
+
+#. translators: textentry, document root for the new host
+#: src/modules/HttpServerWidgets.rb:637
+msgid "Server &Contents Root:"
+msgstr "伺服器內容根(&C)："
+
+#. translators: textentry, administrator's e-mail for the new host
+#: src/modules/HttpServerWidgets.rb:641
+msgid "&Administrator E-Mail:"
+msgstr "管理員電子郵件地址(&A)："
+
+#. translators: IP address for the new host
+#: src/modules/HttpServerWidgets.rb:668
+msgid "VirtualHost"
+msgstr "虛擬主機"
+
+#: src/modules/HttpServerWidgets.rb:669
+msgid "Change VirtualHost ID"
+msgstr "變更虛擬主機 ID"
+
+#. translators: frame title for virtual host identification details
+#: src/modules/HttpServerWidgets.rb:716
+msgid "CGI Options"
+msgstr "CGI 選項"
+
+#: src/modules/HttpServerWidgets.rb:722
+msgid "Enable &CGI for This Virtual Host"
+msgstr "為此虛擬主機啟用 CGI(&C)"
+
+#. translators: textentry, certificate file path
+#: src/modules/HttpServerWidgets.rb:727
+msgid "CGI &Directory Path"
+msgstr "CGI 目錄路徑(&D)"
+
+#: src/modules/HttpServerWidgets.rb:737
+msgid "SSL Support"
+msgstr "SSL 支援"
+
+#: src/modules/HttpServerWidgets.rb:743
+msgid "Enable &SSL Support for This Virtual Host"
+msgstr "為此虛擬主機啟用 SSL 支援(&S)"
+
+#. translators: textentry, certificate file path
+#: src/modules/HttpServerWidgets.rb:750
+msgid "&Certificate File Path"
+msgstr "證書檔案路徑(&C)"
+
+#: src/modules/HttpServerWidgets.rb:755
+msgid "&Certificate Key File Path"
+msgstr "證書金鑰檔案路徑(&C)"
+
+#: src/modules/HttpServerWidgets.rb:763
+msgid "Directory Options"
+msgstr "目錄選項"
+
+#: src/modules/HttpServerWidgets.rb:764
+msgid "&Directory Index"
+msgstr "目錄索引(&D)"
+
+#: src/modules/HttpServerWidgets.rb:768
+msgid "Public HTML"
+msgstr "公用 HTML"
+
+#: src/modules/HttpServerWidgets.rb:769
+msgid "Enable &Public HTML"
+msgstr "啟用公用 HTML(&P)"
+
+#. these are for future use:
+#. error message - the entered ip address is not found
+#: src/modules/HttpServerWidgets.rb:803
+msgid ""
+"The IP address is not configured\n"
+"on this machine."
+msgstr ""
+"沒有配置此計算機的\n"
+"IP 地址。"
+
+#. translators: popup error message when validate server ip
+#: src/modules/HttpServerWidgets.rb:923
+msgid "Invalid IP address."
+msgstr "無效的 IP 地址。"
+
+#. translators: popup error message when validate server
+#: src/modules/HttpServerWidgets.rb:943
+msgid "The default host cannot be configured with SSL support."
+msgstr "無法為默認主機配置 SSL 支援。"
+
+#. for apache2.2 ServerName is not forced (if not - hostname will be used)
+#: src/modules/HttpServerWidgets.rb:966
+msgid "When no Server name is defined, hostname will be used instead."
+msgstr "如果沒有定義伺服器名稱，將使用主機名。"
+
+#. translators: popup error message when validate server
+#: src/modules/HttpServerWidgets.rb:971
+msgid "Server name cannot be empty."
+msgstr "伺服器名不能為空。"
+
+#. error message - the entered server name is already configured
+#. in another virtual host
+#: src/modules/HttpServerWidgets.rb:991
+msgid "The server name entered is already configured on another virtual host."
+msgstr "輸入的伺服器名稱已配置在另一臺虛擬主機上。"
+
+#. error message - the entered ip address is already
+#. configured for another virtual host
+#: src/modules/HttpServerWidgets.rb:1010
+msgid "The IP address is already configured on another virtual host"
+msgstr "此 IP 地址已配置在另一臺虛擬主機上。"
+
+#. translators: popup error message when validate ServerAdmin
+#: src/modules/HttpServerWidgets.rb:1026
+msgid "Administrator E-Mail is invalid."
+msgstr "管理員電子郵件地址無效。"
+
+#. menubutton entry, try to keep short
+#. menubutton entry, try to keep short
+#: src/modules/HttpServerWidgets.rb:1073 src/modules/HttpServerWidgets.rb:1117
+msgid "&Reload HTTP Server"
+msgstr "重灌載 HTTP 伺服器(&R)"
+
+#. menubutton entry, try to keep short
+#. menubutton entry, try to keep short
+#: src/modules/HttpServerWidgets.rb:1078 src/modules/HttpServerWidgets.rb:1122
+msgid "Save Settings and Re&start HTTP Server"
+msgstr "儲存設定並重啟動 HTTP 伺服器(&S)"
+
+#. translators: popup description on changing the default host
+#. the old default host is changed to a virtual one, but it may
+#. miss some needed information. the popup asks to set them.
+#: src/modules/HttpServerWidgets.rb:1166
+msgid ""
+"The current default host will be replaced by \n"
+"the new host and will become a virtual host.\n"
+"\n"
+"However, the current default host does not have\n"
+"the IP address or the server name specified.\n"
+"Therefore, it is not possible to use it as \n"
+"a virtual host. Verify the suggested values below \n"
+"and click OK to continue with the default host\n"
+"switch. Otherwise click Cancel not to change\n"
+"the default host.\n"
+msgstr ""
+"當前默認主機將被新主機替換\n"
+"並將成為虛擬主機。\n"
+"\n"
+"但是，當前默認主機沒有\n"
+"指定 IP 地址或伺服器名。\n"
+"因此，無法將它用作\n"
+"虛擬主機。請校驗下面的建議值，\n"
+"然後單擊\"確定\"繼續進行默認\n"
+"主機切換。否則，單擊\"取消\"\n"
+"不變更默認主機。\n"
+
+#. translators: textentry to set the host IP address
+#: src/modules/HttpServerWidgets.rb:1183
+msgid "Server &IP Address:"
+msgstr "伺服器 IP 地址(&I)："
+
+#. message popup
+#: src/modules/HttpServerWidgets.rb:1246
+msgid "Delete selected host?"
+msgstr "是否刪除選定的主機？"
+
+#. menu button label
+#: src/modules/HttpServerWidgets.rb:1380
+msgid "Set as De&fault"
+msgstr "設定為預設值(&F)"
+
+#. options = add(options, $["VALUE":newlist]);
+#: src/modules/HttpServerWidgets.rb:1639
+msgid "Choose Document Root"
+msgstr "選擇文件根"
+
+#. translators: error popup
+#: src/modules/HttpServerWidgets.rb:1662
+msgid "Administrator E-Mail cannot be empty."
+msgstr "管理員電子郵件地址不能為空。"
+
+#: src/modules/HttpServerWidgets.rb:1710
+msgid "All addresses (*)"
+msgstr "全部地址(*)"
+
+#: src/modules/HttpServerWidgets.rb:1715
+msgid "IP Addresses"
+msgstr "IP 地址"
+
+#: src/modules/HttpServerWidgets.rb:1717
+msgid "ServerName"
+msgstr "伺服器名稱"
+
+#: src/modules/HttpServerWidgets.rb:1804
+msgid "Name for VirtualHost ID cannot be empty."
+msgstr "虛擬主機 ID 的名稱不能為空。"
+
+#. regexp matches '*' and '*:80'
+#: src/modules/HttpServerWidgets.rb:1819
+msgid ""
+"To use name-based virtual hosting,\n"
+"you must designate the IP address on the server\n"
+"that will be accepting requests for the hosts.\n"
+"Also * for all addresses and *:port are acceptable."
+msgstr ""
+"要使用基於名稱的虛擬主機，\n"
+"您必須在伺服器上指定為\n"
+"主機接受請求的 IP 地址。\n"
+" * 為全部地址，*:port 可接受。"
+
+#: src/modules/HttpServerWidgets.rb:1855
+msgid "Master Zone %1"
+msgstr "主區域 %1"
+
+#: src/modules/HttpServerWidgets.rb:1873
+msgid "Record %1 already exists in zone %2."
+msgstr "記錄 %1 已存在於區域 %2 中。"
+
+#: src/modules/HttpServerWidgets.rb:1881 src/modules/HttpServerWidgets.rb:1926
+msgid "DNS Settings"
+msgstr "DNS 設定"
+
+#: src/modules/HttpServerWidgets.rb:1885
+msgid "Add to Zone"
+msgstr "添加到區域"
+
+#: src/modules/HttpServerWidgets.rb:1930
+msgid "Zone Name"
+msgstr "區域名"
+
+#: src/modules/HttpServerWidgets.rb:1931
+msgid "Create New Zone"
+msgstr "創建新的區域"
+
+#. disable using SSL for name-based virtual host
+#: src/modules/HttpServerWidgets.rb:2022
+msgid "CGI Directory"
+msgstr "CGI 目錄"
+
+#: src/modules/HttpServerWidgets.rb:2029
+msgid "Choose Certificate File"
+msgstr "選擇證書檔案"
+
+#. translators: error popup
+#: src/modules/HttpServerWidgets.rb:2040
+msgid "Enter the certificate file."
+msgstr "輸入證書檔案。"
+
+#: src/modules/HttpServerWidgets.rb:2046
+msgid "Choose Certificate Key File"
+msgstr "選擇證書金鑰檔案"
+
+#. translators: error popup
+#: src/modules/HttpServerWidgets.rb:2058
+msgid "Enter the key file."
+msgstr "輸入金鑰檔案。"
+
+#. translators: dialog to set *.pem file with certificate
+#. translators: dialog to set *.pem file with certificate
+#: src/modules/HttpServerWidgets.rb:2194 src/modules/HttpServerWidgets.rb:2232
+msgid "Select Certificate"
+msgstr "選擇證書"
+
+#. translators: error message un failed certificate import
+#: src/modules/HttpServerWidgets.rb:2224
+msgid ""
+"Cannot import certificate\n"
+"%1"
+msgstr ""
+"無法匯入證書\n"
+"%1"
+
+#. translators: combo box label for list of configured IPs
+#: src/modules/HttpServerWidgets.rb:2431
+msgid "Network &Address:"
+msgstr "網路地址(&A)："
+
+#. translators: error message when validating Listen statement
+#. translators: popup error
+#: src/modules/HttpServerWidgets.rb:2476 src/modules/HttpServerWidgets.rb:3444
+msgid "Invalid port number."
+msgstr "無效的埠號。"
+
+#. translators: table entry text for name-based vhosts
+#: src/modules/HttpServerWidgets.rb:2942
+msgid "Resolution via HTTP Headers"
+msgstr "通過 HTTP 報頭解析"
+
+#. translators: table entry text for IP-based vhosts
+#: src/modules/HttpServerWidgets.rb:2945
+msgid "Resolution via IP Address Used"
+msgstr "通過使用的 IP 地址解析"
+
+#: src/modules/HttpServerWidgets.rb:3109
+msgid "Modules dependency problem"
+msgstr "模組依賴性問題"
+
+#: src/modules/HttpServerWidgets.rb:3111
+msgid "requires"
+msgstr "需要"
+
+#: src/modules/HttpServerWidgets.rb:3113
+msgid "Enable required module or disable first one."
+msgstr "啟用需要的模組或禁用第一個模組。"
+
+#. translators: combo box for selsect module from installed unknown modules
+#: src/modules/HttpServerWidgets.rb:3223
+msgid "New Module &Name:"
+msgstr "新模組名(&N)"
+
+#. translators: error message
+#: src/modules/HttpServerWidgets.rb:3241
+msgid "A name for the module to add is required."
+msgstr "要添加的模組必須有名稱。"
+
+#. translators: error message
+#: src/modules/HttpServerWidgets.rb:3244
+msgid "The module is already in the list."
+msgstr "模組已在列表中。"
+
+#. FIXME: CreateListen error reporting
+#. translators: error message for adding a new Listen statement
+#: src/modules/HttpServerWidgets.rb:3307
+msgid "The entry '%1' already exists."
+msgstr "項\"%1\"已存在。"
+
+#. translators: error message
+#: src/modules/HttpServerWidgets.rb:3328
+msgid ""
+"The list of the ports to which the server should\n"
+"listen cannot be empty."
+msgstr ""
+"伺服器應監聽的埠列表\n"
+"不能為空。"
+
+#. translators: popup error - multi selection box with server network adresses
+#: src/modules/HttpServerWidgets.rb:3495
+msgid "At least one interface must be selected."
+msgstr "至少必須選擇一個介面。"
+
+#. translators: checkbox - support for php script language
+#: src/modules/HttpServerWidgets.rb:3522
+msgid "Enable &PHP5 Scripting"
+msgstr "啟用 PHP5 指令碼編制(&P)"
+
+#. translators: checkbox - support for perl script language
+#: src/modules/HttpServerWidgets.rb:3530
+msgid "Enable P&erl Scripting"
+msgstr "啟用 Perl 指令碼(&E)"
+
+#. translators: checkbox - support for python script language
+#: src/modules/HttpServerWidgets.rb:3538
+msgid "Enable P&ython Scripting"
+msgstr "啟用 Python 指令碼(&Y)"
+
+#. illegal keys in vhost
+#: src/modules/YaPI/HTTPD.pm:679 src/modules/YaPI/HTTPD.pm:762
+#, perl-format
+msgid "Illegal key in virtual host '%s'."
+msgstr "虛擬主機\"%s\"中金鑰非法。"
+
+#: src/modules/YaPI/HTTPD.pm:748
+#, perl-format
+msgid "Internal Error: Data must be an array ref and not %s."
+msgstr "內部錯誤：資料必須是 array ref 而不能是 %s。"
+
+#: src/modules/YaPI/HTTPD.pm:773
+msgid "Illegal host ID."
+msgstr "非法主機 ID。"
+
+#: src/modules/YaPI/HTTPD.pm:795
+msgid "hostid already exists"
+msgstr "主機 ID 已存在"
+
+#: src/modules/YaPI/HTTPD.pm:834
+msgid "can not delete default host"
+msgstr "無法刪除默認主機"
+
+#: src/modules/YaPI/HTTPD.pm:855
+msgid "hostid not found"
+msgstr "未找到主機 ID"
+
+#: src/modules/YaPI/HTTPD.pm:1270
+msgid "illegal port"
+msgstr "非法埠"
+
+#: src/modules/YaPI/HTTPD.pm:1287
+msgid "writing the firewall rules failed"
+msgstr "寫入防火牆規則失敗"
+
+#: src/modules/YaPI/HTTPD.pm:1334
+msgid "listen value to delete not found"
+msgstr "未找到要刪除的監聽值"
+
+#: src/modules/YaPI/HTTPD.pm:1587 src/modules/YaPI/HTTPD.pm:1635
+#: src/modules/YaPI/HTTPD.pm:1680 src/modules/YaPI/HTTPD.pm:1763
+#: src/modules/YaPI/HTTPD.pm:1807
+msgid "Unable to fetch a host with the specified ID."
+msgstr "無法提取具有指定 ID 的主機。"
+
+#: src/modules/YaPI/HTTPD.pm:1596 src/modules/YaPI/HTTPD.pm:1643
+#: src/modules/YaPI/HTTPD.pm:1690
+msgid "Corrupt PEM data."
+msgstr "PEM 資料已損壞。"
+
+#: src/modules/YaPI/HTTPD.pm:1770
+msgid "No certificate key file configured for this host ID."
+msgstr "沒有為此主機 ID 配置任何證書金鑰檔案。"
+
+#: src/modules/YaPI/HTTPD.pm:1779
+msgid "Parsing the key file failed."
+msgstr "解析金鑰檔案失敗。"
+
+#: src/modules/YaPI/HTTPD.pm:1812
+msgid "No CA certificate file configured for this host ID."
+msgstr "沒有為此主機 ID 配置任何 CA 證書檔案。"
+
+#: src/modules/YaPI/HTTPDModules.pm:13
+msgid "Provides access control based on client host name, IP address, etc."
+msgstr "根據客戶機主機名、IP 地址等提供訪問控制。"
+
+#: src/modules/YaPI/HTTPDModules.pm:23
+msgid "Executing CGI scripts based on media type or request method"
+msgstr "根據媒體類型或請求方法執行 CGI 指令碼"
+
+#: src/modules/YaPI/HTTPDModules.pm:32
+msgid "Mapping different parts of the host file system in the document tree and for URL redirection"
+msgstr "在文件樹中對映主機檔案系統的不同部分與 URL 重定向"
+
+#: src/modules/YaPI/HTTPDModules.pm:47
+msgid "Basic authentication"
+msgstr "基礎身份驗證"
+
+#: src/modules/YaPI/HTTPDModules.pm:56
+msgid "User authentication using text files"
+msgstr "使用文字檔案進行使用者驗證"
+
+#: src/modules/YaPI/HTTPDModules.pm:64
+msgid "User Authorization"
+msgstr "使用者驗證"
+
+#: src/modules/YaPI/HTTPDModules.pm:72
+msgid "Group authorization using plaintext files"
+msgstr "使用純文字檔案進行組驗證"
+
+#: src/modules/YaPI/HTTPDModules.pm:81
+msgid "User authentication using DBM files"
+msgstr "使用 DBM 檔案進行驗證"
+
+#: src/modules/YaPI/HTTPDModules.pm:96
+msgid "Generates directory indices, automatically, similar to the Unix ls command"
+msgstr "自動生成與 Unix ls 命令類似的目錄索引"
+
+#: src/modules/YaPI/HTTPDModules.pm:117
+msgid "Execution of CGI scripts"
+msgstr "執行 CGI 指令碼"
+
+#: src/modules/YaPI/HTTPDModules.pm:127
+msgid "Provides for trailing slash redirects and serving directory index files"
+msgstr "提供尾部反斜線重定向與目錄索引檔案服務"
+
+#: src/modules/YaPI/HTTPDModules.pm:136
+msgid "Modifies the environment passed to CGI scripts and SSI pages"
+msgstr "修改傳遞給 CGI 指令碼與 SSI 頁的環境"
+
+#: src/modules/YaPI/HTTPDModules.pm:146
+msgid "Generation of Expires HTTP headers according to user-specified criteria"
+msgstr "根據使用者指定的條件生成 HTTP 報頭的失效資訊"
+
+#: src/modules/YaPI/HTTPDModules.pm:161
+msgid "Server-parsed HTML documents (Server Side Includes)"
+msgstr "伺服器解析的 HTML 文件（伺服器端包含）"
+
+#: src/modules/YaPI/HTTPDModules.pm:175
+msgid "Logging of the requests made to the server"
+msgstr "記錄發往伺服器的請求"
+
+#: src/modules/YaPI/HTTPDModules.pm:187
+msgid "Associates the requested file name's extensions with the file's behavior and content"
+msgstr "將被請求檔名的副檔名與檔案的行為與內容相關聯"
+
+#: src/modules/YaPI/HTTPDModules.pm:212
+msgid "Provides for content negotiation"
+msgstr "提供用於內容協商"
+
+#: src/modules/YaPI/HTTPDModules.pm:222
+msgid "Allows the setting of environment variables based on characteristics of the request"
+msgstr "允許根據請求的特徵設定環境變數"
+
+#: src/modules/YaPI/HTTPDModules.pm:233
+msgid "Provides information about server activity and performance"
+msgstr "提供有關伺服器活動與效能的資訊"
+
+#: src/modules/YaPI/HTTPDModules.pm:241
+msgid "Allows CGI scripts to run as a specified user and group"
+msgstr "允許以指定使用者與組的身份運行 CGI 指令碼"
+
+#: src/modules/YaPI/HTTPDModules.pm:252
+msgid "User-specific directories"
+msgstr "使用者特定的目錄"
+
+#: src/modules/YaPI/HTTPDModules.pm:260
+msgid "Sends files that contain their own HTTP headers"
+msgstr "發送包含它們自己的 HTTP 報頭的檔案"
+
+#: src/modules/YaPI/HTTPDModules.pm:266
+msgid "Allows \"anonymous\" user access to authenticated areas"
+msgstr "允許\"匿名\"使用者訪問已驗證的區域"
+
+#: src/modules/YaPI/HTTPDModules.pm:287
+msgid "User authentication using MD5 Digest Authentication"
+msgstr "使用 MD5 摘要驗證進行驗證"
+
+#: src/modules/YaPI/HTTPDModules.pm:302
+msgid "Allows an LDAP directory to be used to store the database for HTTP Basic authentication"
+msgstr "允許 LDAP 目錄用於儲存 HTTP 基本驗證的資料庫"
+
+#: src/modules/YaPI/HTTPDModules.pm:320 src/modules/YaPI/HTTPDModules.pm:495
+msgid "Content cache keyed to URIs"
+msgstr "用 URI 索引的內容快取"
+
+#: src/modules/YaPI/HTTPDModules.pm:337
+msgid "Specify character set translation or recoding"
+msgstr "指定字符集轉換或重編碼"
+
+#: src/modules/YaPI/HTTPDModules.pm:347
+msgid "Distributed Authoring and Versioning (WebDAV) functionality"
+msgstr "分散式創作與版本控制 (WebDAV) 功能"
+
+#: src/modules/YaPI/HTTPDModules.pm:362
+msgid "File system provider for mod_dav"
+msgstr "mod_dav 的檔案系統提供程式"
+
+#: src/modules/YaPI/HTTPDModules.pm:373
+msgid "Compress content before it is delivered to the client"
+msgstr "在將內容提供給客戶機前壓縮內容"
+
+#: src/modules/YaPI/HTTPDModules.pm:392
+msgid "Content cache storage manager keyed to URIs"
+msgstr "用 URI 索引的內容快取儲存管理器"
+
+#: src/modules/YaPI/HTTPDModules.pm:405
+msgid "A simple echo server to illustrate protocol modules"
+msgstr "用於說明協議模組的簡單迴應伺服器"
+
+#: src/modules/YaPI/HTTPDModules.pm:413
+msgid "Pass the response body through an external program before delivery to the client"
+msgstr "在提供給客戶機前，通過外部程式傳遞響應正文"
+
+#: src/modules/YaPI/HTTPDModules.pm:426
+msgid "Caches a static list of files in memory"
+msgstr "在內存中快取檔案的靜態列表"
+
+#: src/modules/YaPI/HTTPDModules.pm:436
+msgid "Customization of HTTP request and response headers"
+msgstr "自定義 HTTP 請求與響應報頭"
+
+#: src/modules/YaPI/HTTPDModules.pm:449
+msgid "Server-side image map processing"
+msgstr "伺服器端圖象對映處理"
+
+#: src/modules/YaPI/HTTPDModules.pm:460
+msgid "Provides a comprehensive overview of the server configuration"
+msgstr "提供伺服器配置的全面概覽"
+
+#: src/modules/YaPI/HTTPDModules.pm:469
+msgid "LDAP connection pooling and result caching services for use by other LDAP modules"
+msgstr "由其他 LDAP 模組使用的 LDAP 連線池與結果快取服務"
+
+#: src/modules/YaPI/HTTPDModules.pm:489
+msgid "Logging of input and output bytes per request"
+msgstr "記錄每個請求的輸入與輸出位元組"
+
+#: src/modules/YaPI/HTTPDModules.pm:509
+msgid "Determines the MIME type of a file by looking at a few bytes of its contents"
+msgstr "通過檢視檔案內容的幾個位元組確定它的 MIME 類型"
+
+#: src/modules/YaPI/HTTPDModules.pm:518
+msgid "HTTP/1.1 proxy/gateway server"
+msgstr "HTTP/1.1 代理/閘道器伺服器"
+
+#: src/modules/YaPI/HTTPDModules.pm:566
+msgid "AJP support module for mod_proxy"
+msgstr "mod_proxy 的 AJP 支援模組"
+
+#: src/modules/YaPI/HTTPDModules.pm:573
+msgid "mod_proxy extension for CONNECT request handling"
+msgstr "CONNECT 請求處理的 mod_proxy 擴展"
+
+#: src/modules/YaPI/HTTPDModules.pm:580
+msgid "FTP support module for mod_proxy"
+msgstr "mod_proxy 的 FTP 支援模組"
+
+#: src/modules/YaPI/HTTPDModules.pm:586
+msgid "HTTP support module for mod_proxy"
+msgstr "mod_proxy 的 HTTP 支援模組"
+
+#: src/modules/YaPI/HTTPDModules.pm:592
+msgid "Provides a rule-based rewriting engine to rewrite requested URLs on the fly"
+msgstr "提供一個基於規則的重寫引擎來動態重寫請求的 URL"
+
+#: src/modules/YaPI/HTTPDModules.pm:619
+msgid "Attempts to correct mistaken URLs that users might have entered"
+msgstr "嘗試更正使用者可能輸入的錯誤 URL"
+
+#: src/modules/YaPI/HTTPDModules.pm:628
+msgid "Strong cryptography using the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols"
+msgstr "使用安全套接字層 (SSL) 與傳輸層安全 (TLS) 協議的強加密"
+
+#: src/modules/YaPI/HTTPDModules.pm:668
+msgid "Provides an environment variable with a unique identifier for each request"
+msgstr "為每個請求提供一個有唯一標識符的環境變數"
+
+#: src/modules/YaPI/HTTPDModules.pm:674
+msgid "Clickstream logging of user activity on a site"
+msgstr "站點上使用者活動的點選流日誌記錄 "
+
+#: src/modules/YaPI/HTTPDModules.pm:694
+msgid "Provides support for dynamically configured mass virtual hosting"
+msgstr "提供對動態配置的大量虛擬主機的支援"
+
+#: src/modules/YaPI/HTTPDModules.pm:711
+msgid "Provides support for PHP5 dynamically generated pages"
+msgstr "提供對 PHP5 動態生成頁的支援"
+
+#: src/modules/YaPI/HTTPDModules.pm:717
+msgid "Provides support for Perl dynamically generated pages"
+msgstr "提供對 Perl 動態生成頁的支援"
+
+#: src/modules/YaPI/HTTPDModules.pm:723
+msgid "Provides support for Python dynamically generated pages"
+msgstr "提供對 Python 動態生成頁的支援"
+
+#: src/modules/YaPI/HTTPDModules.pm:729
+msgid "Provides support for AppArmor subprocess confinement within apache"
+msgstr "提供在 apache 限制 AppArmor 子程序支援"
+
+#: src/modules/YaPI/HTTPDModules.pm:735 src/modules/YaPI/HTTPDModules.pm:742
+msgid "Provides support for subversion"
+msgstr "提供對 subversion 的支援"
+
+#: src/modules/YaST/httpdUtils.pm:22
+msgid "Host not found"
+msgstr "未找到主機"
+
+#: src/modules/YaST/httpdUtils.pm:58
+#, perl-format
+msgid "Illegal '%s' parameter"
+msgstr "非法的“%s”參數"
+
+#: src/modules/YaST/httpdUtils.pm:62
+msgid "ssl together with \"virtual by name\" is not possible"
+msgstr "不能對“基於名稱的虛擬介面”使用 ssl"
+
+#~ msgid "Open &Firewall for Selected Ports"
+#~ msgstr "開啟所選埠的防火牆(&F)"
+
+#~ msgid "<p>When the firewall is enabled, you can check whether to enable Apache2 ports on the firewall.</p>"
+#~ msgstr "<p>啟用防火牆後，可以選擇是否在防火牆上啟用 Apache2 埠。</p>"
+
+#~ msgid "IP Adresses"
+#~ msgstr "IP 地址"
+
+#~ msgid "Enable &Ruby Scripting"
+#~ msgstr "啟用 Ruby 指令碼(&R)"
+
+#~ msgid "Open &Firewall on Selected Ports"
+#~ msgstr "開啟所選埠上的防火牆(&F)"
+

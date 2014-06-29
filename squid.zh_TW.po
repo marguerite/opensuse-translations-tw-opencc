@@ -1,0 +1,1644 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012, 2013.
+# 瑪格麗特 · 蘇 <marguerite@opensuse.org>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-06 16:40+0200\n"
+"PO-Revision-Date: 2014-06-10 11:37+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. Command line help text for the Xsquid module
+#: src/clients/squid.rb:57
+msgid "Configuration of Squid cache proxy"
+msgstr "Squid 快取代理配置"
+
+#. *****************  SRC  ************************
+#. *****************  SRC END  ********************
+#. *****************  DST  ************************
+#: src/include/squid/SquidACL_local_functions.rb:150
+#: src/include/squid/SquidACL_local_functions.rb:197
+msgid "Invalid values."
+msgstr "無效的值。"
+
+#. *****************  DST END  ********************
+#. *****************  MYIP  ************************
+#. * Uses same functions as DST
+#. /******************  MYIP END  *******************
+#. ***************  SRCDOMAIN  ********************
+#: src/include/squid/SquidACL_local_functions.rb:244
+msgid "Domain Name must not be empty."
+msgstr "域名不能為空。"
+
+#. ***************  SRCDOMAIN END  ****************
+#. ***************  DSTDOMAIN  *********************
+#. * Uses same functions as SRCDOMAIN.
+#. /****************  DSTDOMAIN END  ****************
+#. ***************  REGEXP  ***********************
+#. Returns universal widget for setting a regular expression.
+#: src/include/squid/SquidACL_local_functions.rb:264
+#: src/include/squid/dialogs.rb:63 src/include/squid/popup_dialogs.rb:104
+msgid "Regular Expression"
+msgstr "正規表示式"
+
+#: src/include/squid/SquidACL_local_functions.rb:268
+#: src/include/squid/popup_dialogs.rb:106 src/modules/SquidACL.rb:319
+#: src/modules/SquidACL.rb:342
+msgid "Case Insensitive"
+msgstr "不區分大小寫"
+
+#. Universal verification function for regular expression.
+#: src/include/squid/SquidACL_local_functions.rb:305
+msgid "Regular Expression must not be empty."
+msgstr "正規表示式不能為空。"
+
+#. ***************  REGEXP END  *******************
+#. ***************  TIME  *************************
+#: src/include/squid/SquidACL_local_functions.rb:369
+msgid "You must select at least one day."
+msgstr "您必須至少選擇一天。"
+
+#: src/include/squid/SquidACL_local_functions.rb:372
+msgid "Time is not set in correct format."
+msgstr "時間格式設定不正確。"
+
+#: src/include/squid/SquidACL_local_functions.rb:375
+msgid "From must be less than To."
+msgstr "“從”必須小於“到”。"
+
+#. ***************  TIME END  *********************
+#. ***************  PORT  *************************
+#. ***************  PORT END  *********************
+#. *************  MYPORT  *************************
+#: src/include/squid/SquidACL_local_functions.rb:432
+#: src/include/squid/SquidACL_local_functions.rb:463
+msgid "Invalid value."
+msgstr "無效的值。"
+
+#. *************  MYPORT END  *********************
+#. **************  PROTO  *************************
+#: src/include/squid/SquidACL_local_functions.rb:495
+msgid "Protocol must not be empty."
+msgstr "協議不能為空。"
+
+#. **************  MAXCONN END  *******************
+#. **************  HEADER  ************************
+#: src/include/squid/SquidACL_local_functions.rb:587
+msgid "Header Name and Regular Expression must not be empty."
+msgstr "標題名與正規表示式不能為空。"
+
+#. error report
+#: src/include/squid/SquidACL_local_functions.rb:630
+msgid "MAC Address must not be empty."
+msgstr "MAC 地址不能為空。"
+
+#. error report
+#: src/include/squid/SquidACL_local_functions.rb:634
+msgid "Incorrect format of MAC Address."
+msgstr "MAC 地址格式不對。"
+
+#. encoding: utf-8
+#. ------------------------------------------------------------------------------
+#. Copyright (c) 2006 Novell, Inc. All Rights Reserved.
+#.
+#.
+#. This program is free software; you can redistribute it and/or modify it under
+#. the terms of version 2 of the GNU General Public License as published by the
+#. Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful, but WITHOUT
+#. ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#. FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License along with
+#. this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail, you may find
+#. current contact information at www.novell.com.
+#. ------------------------------------------------------------------------------
+#. File:	include/squid/complex.ycp
+#. Package:	Configuration of squid
+#. Summary:	Dialogs definitions
+#. Authors:	Daniel Fiser <dfiser@suse.cz>
+#.
+#. $Id: complex.ycp 29363 2006-03-24 08:20:43Z mzugec $
+#: src/include/squid/complex.rb:51
+msgid "Squid"
+msgstr "Squid"
+
+#: src/include/squid/complex.rb:64
+msgid "When &Booting"
+msgstr "引導時(&B)"
+
+#: src/include/squid/complex.rb:65
+msgid "&Manually"
+msgstr "手動(&M)"
+
+#: src/include/squid/complex.rb:68
+msgid "When Booting"
+msgstr "引導時"
+
+#: src/include/squid/complex.rb:69 src/modules/Squid.rb:1591
+msgid "Manually"
+msgstr "手動"
+
+#: src/include/squid/complex.rb:76
+msgid "Squid is running"
+msgstr "Squid 正在運行"
+
+#: src/include/squid/complex.rb:77
+msgid "Squid is not running"
+msgstr "Squid 沒有運行"
+
+#: src/include/squid/complex.rb:78
+msgid "&Start Squid Now"
+msgstr "立即啟動 Squid(&S)"
+
+#: src/include/squid/complex.rb:79
+msgid "S&top Squid Now"
+msgstr "立即停止 Squid(&T)"
+
+#: src/include/squid/complex.rb:84
+msgid "Sa&ve Settings and Restart Squid Now"
+msgstr "立即儲存設定並重啟動 Squid(&V)"
+
+#. TRANSLATORS: part of help text - push button label, NO SHORTCUT!!!
+#: src/include/squid/complex.rb:92
+msgid "Start Squid Now"
+msgstr "立即啟動 Squid"
+
+#. TRANSLATORS: part of help text - push button label, NO SHORTCUT!!!
+#: src/include/squid/complex.rb:94
+msgid "Stop Squid Now"
+msgstr "立即停止 Squid"
+
+#. TRANSLATORS: part of help text - push button label, NO SHORTCUT!!!
+#: src/include/squid/complex.rb:96
+msgid "Save Settings and Restart Squid Now"
+msgstr "立即儲存設定並重啟動 Squid"
+
+#: src/include/squid/complex.rb:104
+msgid "Open Ports in Firewall"
+msgstr "在防火牆中開啟埠"
+
+#: src/include/squid/complex.rb:261
+msgid "Firewall Settings"
+msgstr "防火牆設定"
+
+#: src/include/squid/complex.rb:268 src/include/squid/complex.rb:270
+msgid "Start-Up"
+msgstr "啟動"
+
+#: src/include/squid/complex.rb:277
+msgid "HTTP Ports Setting"
+msgstr "HTTP 埠設定"
+
+#. encoding: utf-8
+#. ------------------------------------------------------------------------------
+#. Copyright (c) 2006 Novell, Inc. All Rights Reserved.
+#.
+#.
+#. This program is free software; you can redistribute it and/or modify it under
+#. the terms of version 2 of the GNU General Public License as published by the
+#. Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful, but WITHOUT
+#. ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+#. FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License along with
+#. this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail, you may find
+#. current contact information at www.novell.com.
+#. ------------------------------------------------------------------------------
+#. File:	include/squid/dialogs.ycp
+#. Package:	Configuration of squid
+#. Summary:	Dialogs definitions
+#. Authors:	Daniel Fiser <dfiser@suse.cz>
+#.
+#. $Id: dialogs.ycp 27914 2006-02-13 14:32:08Z locilka $
+#: src/include/squid/complex.rb:279 src/include/squid/dialogs.rb:40
+msgid "HTTP Ports"
+msgstr "HTTP 埠"
+
+#: src/include/squid/complex.rb:286
+msgid "Refresh Patterns Setting"
+msgstr "重新整理模式設定"
+
+#: src/include/squid/complex.rb:288 src/include/squid/dialogs.rb:57
+msgid "Refresh Patterns"
+msgstr "重新整理模式"
+
+#: src/include/squid/complex.rb:295 src/include/squid/complex.rb:297
+#: src/include/squid/dialogs.rb:92
+msgid "Cache Setting"
+msgstr "快取設定"
+
+#: src/include/squid/complex.rb:304
+msgid "Cache Directory Setting"
+msgstr "快取目錄設定"
+
+#. `HBox(
+#. `HSpacing(3),
+#. `Frame(_("Cache Setting"),
+#. `HBox(
+#. `HWeight(1,`VBox(
+#. `VWeight(1, `HBox(
+#. `IntField(`id("cache_mem"), _("C&ache Memory"), 1, 99999, 10),
+#. sizeUnitWidget("cache_mem_units")
+#. )),
+#. `VSpacing(0.4),
+#. `VWeight(1, `HBox(
+#. `IntField(`id("cache_max_object_size"), _("Ma&x Object Size"), 0, 99999, 0),
+#. sizeUnitWidget("cache_max_object_size_units")
+#. )),
+#. `VSpacing(0.4),
+#. `VWeight(1, `HBox(
+#. `IntField(`id("cache_swap_low"), _("Swap &Low-Water Mark (in percents)"), 0, 100, 0)
+#. )),
+#. `VSpacing(0.4),
+#. `Left(`VWeight(1, `HBox(
+#. `ComboBox(`id("cache_replacement_policy"),
+#. _("&Cache Replacement Policy"),
+#. [`item("lru"), `item("heap GDSF"), `item("heap LFUDA"), `item("heap LRU")])
+#. )))
+#. )),
+#. `HSpacing(3),
+#. `HWeight(1,`VBox(
+#. `VWeight(1, `HBox(`Empty())),
+#. `VSpacing(0.4),
+#. `VWeight(1, `HBox(
+#. `IntField(`id("cache_min_object_size"), _("M&in Object Size"), 0, 99999, 0),
+#. sizeUnitWidget("cache_min_object_size_units")
+#. )),
+#. `VSpacing(0.4),
+#. `VWeight(1, `HBox(
+#. `IntField(`id("cache_swap_high"), _("Swap &High-Water Mark (in percents)"), 0, 100, 0)
+#. )),
+#. `VSpacing(0.4),
+#. `Left(`VWeight(1, `HBox(
+#. `ComboBox(`id("memory_replacement_policy"),
+#. _("&Memory Replacement Policy"),
+#. [`item("lru"), `item("heap GDSF"), `item("heap LFUDA"), `item("heap LRU")])
+#. )))
+#. ))
+#. )
+#. ),
+#. `HSpacing(3)
+#. );
+#. cache_swap_low <= cache_swap_high
+#: src/include/squid/complex.rb:306 src/include/squid/dialogs.rb:249
+#: src/include/squid/handlers.rb:224
+msgid "Cache Directory"
+msgstr "快取目錄"
+
+#: src/include/squid/complex.rb:317
+msgid "Access Control Setting"
+msgstr "訪問控制設定"
+
+#: src/include/squid/complex.rb:319 src/include/squid/dialogs.rb:290
+msgid "Access Control"
+msgstr "訪問控制"
+
+#: src/include/squid/complex.rb:330
+msgid "Logging and Timeouts Setting"
+msgstr "日誌與超時設定"
+
+#: src/include/squid/complex.rb:332
+msgid "Logging and Timeouts"
+msgstr "日誌與超時"
+
+#: src/include/squid/complex.rb:339 src/include/squid/dialogs.rb:370
+msgid "Miscellaneous Setting"
+msgstr "雜項設定"
+
+#: src/include/squid/complex.rb:341
+msgid "Miscellaneous"
+msgstr "雜項"
+
+#: src/include/squid/dialogs.rb:44 src/include/squid/popup_dialogs.rb:53
+msgid "Host"
+msgstr "主機"
+
+#: src/include/squid/dialogs.rb:44 src/include/squid/popup_dialogs.rb:54
+msgid "Port"
+msgstr "埠"
+
+#: src/include/squid/dialogs.rb:44
+msgid "Options"
+msgstr "選項"
+
+#. , _("Options")
+#. table header, stands for minimum
+#: src/include/squid/dialogs.rb:65
+msgid "Min"
+msgstr "最短"
+
+#. table header
+#: src/include/squid/dialogs.rb:67 src/include/squid/popup_dialogs.rb:111
+msgid "Percent"
+msgstr "百分比"
+
+#. table header, stands for maximum
+#: src/include/squid/dialogs.rb:69
+msgid "Max"
+msgstr "最長"
+
+#: src/include/squid/dialogs.rb:97
+msgid "C&ache Memory"
+msgstr "快取內存(&A)"
+
+#: src/include/squid/dialogs.rb:107
+msgid "Ma&x Object Size"
+msgstr "最大物件尺寸(&X)"
+
+#: src/include/squid/dialogs.rb:121
+msgid "M&in Object Size"
+msgstr "最小物件尺寸(&I)"
+
+#: src/include/squid/dialogs.rb:135
+msgid "Swap &Low-Water Mark (percentage)"
+msgstr "Swap 低水位 (百分比)(&L)"
+
+#: src/include/squid/dialogs.rb:148
+msgid "Swap &High-Water Mark (percentage)"
+msgstr "Swap 高水位 (百分比)(&H)"
+
+#: src/include/squid/dialogs.rb:162
+msgid "&Cache Replacement Policy"
+msgstr "快取替換策略(&C)"
+
+#: src/include/squid/dialogs.rb:180
+msgid "&Memory Replacement Policy"
+msgstr "內存替換策略(&M)"
+
+#: src/include/squid/dialogs.rb:253
+msgid "&Directory Name"
+msgstr "目錄名(&D)"
+
+#: src/include/squid/dialogs.rb:258
+msgid "&Size (in MB)"
+msgstr "大小(單位 MB)(&S)"
+
+#: src/include/squid/dialogs.rb:260
+msgid "L&evel 1 Directories"
+msgstr "第一層目錄(&E)"
+
+#: src/include/squid/dialogs.rb:262
+msgid "Le&vel 2 Directories"
+msgstr "第二層目錄(&V)"
+
+#: src/include/squid/dialogs.rb:273 src/include/squid/dialogs.rb:295
+msgid "ACL Groups"
+msgstr "訪問控制表組"
+
+#: src/include/squid/dialogs.rb:277 src/include/squid/popup_dialogs.rb:330
+msgid "Name"
+msgstr "名稱"
+
+#: src/include/squid/dialogs.rb:277 src/include/squid/popup_dialogs.rb:335
+msgid "Type"
+msgstr "類型"
+
+#: src/include/squid/dialogs.rb:277
+msgid "Description"
+msgstr "描述"
+
+#: src/include/squid/dialogs.rb:295 src/include/squid/popup_dialogs.rb:232
+msgid "Allow/Deny"
+msgstr "允許/拒絕"
+
+#: src/include/squid/dialogs.rb:317
+msgid "Logging"
+msgstr "日誌"
+
+#: src/include/squid/dialogs.rb:321
+msgid "&Access Log"
+msgstr "訪問日誌(&A)"
+
+#: src/include/squid/dialogs.rb:327
+msgid "&Cache Log"
+msgstr "快取日誌(&C)"
+
+#: src/include/squid/dialogs.rb:333
+msgid "Cache &Store Log"
+msgstr "快取存儲日誌(&S)"
+
+#: src/include/squid/dialogs.rb:339
+msgid "&Emulate httpd Log?"
+msgstr "模擬 httpd 日誌？(&E)"
+
+#: src/include/squid/dialogs.rb:346
+msgid "Timeouts"
+msgstr "超時"
+
+#: src/include/squid/dialogs.rb:351
+msgid "Connection &Timeout"
+msgstr "連線超時(&T)"
+
+#: src/include/squid/dialogs.rb:359
+msgid "Client &Lifetime"
+msgstr "客戶端生命期(&L)"
+
+#: src/include/squid/dialogs.rb:372
+msgid "&Language of error messages"
+msgstr "錯誤資訊語言(&L)"
+
+#: src/include/squid/dialogs.rb:374
+msgid "&Administrator's email"
+msgstr "管理員的電子郵件(&A)"
+
+#: src/include/squid/dialogs.rb:376
+msgid "&Use FTP Passive Mode"
+msgstr "使用 FTP 被動模式(&U)"
+
+#: src/include/squid/handlers.rb:294
+msgid "Access Log"
+msgstr "訪問日誌"
+
+#: src/include/squid/handlers.rb:297
+msgid "Cache Log"
+msgstr "快取日誌"
+
+#: src/include/squid/handlers.rb:300
+msgid "Cache Store Log"
+msgstr "快取存儲日誌"
+
+#. Returns a widget with setting of units
+#: src/include/squid/helper_functions.rb:38
+msgid "&Units"
+msgstr "單位(&U)"
+
+#. Returns a widget with setting of units
+#: src/include/squid/helper_functions.rb:56
+msgid "seconds"
+msgstr "秒"
+
+#: src/include/squid/helper_functions.rb:57
+msgid "minutes"
+msgstr "分鐘"
+
+#: src/include/squid/helper_functions.rb:58
+msgid "hours"
+msgstr "小時"
+
+#: src/include/squid/helper_functions.rb:59
+msgid "days"
+msgstr " 天"
+
+#. Read dialog help 1/2
+#: src/include/squid/helps.rb:34
+msgid ""
+"<p><b><big>Initializing Squid Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在啟始化 squid 配置</big></b><br>\n"
+"</p>\n"
+
+#. Read dialog help 2/2
+#: src/include/squid/helps.rb:38
+msgid ""
+"<p><b><big>Aborting Initialization:</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>\n"
+msgstr ""
+"<p><b><big>終止啟始化:</big></b><br>\n"
+"請您現在點選<b>終止</b>, 以便安全中斷配置工具。</p>\n"
+
+#. Write dialog help 1/2
+#: src/include/squid/helps.rb:42
+msgid ""
+"<p><b><big>Saving Squid Configuration</big></b><br>\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>正在儲存 Squid 配置</big></b><br>\n"
+"</p>\n"
+
+#. Write dialog help 2/2
+#: src/include/squid/helps.rb:46
+msgid ""
+"<p><b><big>Aborting Saving:</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.\n"
+"An additional dialog informs whether it is safe to do so.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>中斷儲存:</big></b><br>\n"
+"請點選<B>中斷</B>,以便中斷儲存.\n"
+"一個附加對話方塊將告訴您這樣做是否安全.\n"
+"</p>\n"
+
+#. Summary dialog help
+#: src/include/squid/helps.rb:53
+msgid ""
+"<p><b><big>Squid Configuration</big></b><br>\n"
+"Configure Squid here.<br></p>\n"
+msgstr ""
+"<p><b><big>Squid 配置</big></b><br>\n"
+"請在此配置 squid。<br></p>\n"
+
+#. Ovreview dialog help
+#: src/include/squid/helps.rb:57
+msgid ""
+"<p><b><big>Squid Configuration Overview</big></b><br>\n"
+"Obtain an overview of installed squids and\n"
+"edit their configurations if necessary.<br></p>\n"
+msgstr ""
+"<p><b><big>Squid 配置概覽</big></b><br>\n"
+"獲取已安裝的 squid 的概覽。 此外，\n"
+"對它們的配置進行編輯。<br></p>\n"
+
+#. Http Ports Dialog
+#: src/include/squid/helps.rb:63
+msgid ""
+"<p>Define all ports where Squid will\n"
+"listen for clients' http requests.</p>\n"
+msgstr "<p>定義所有 Squid 監聽客戶端 http 請求的埠。</p>\n"
+
+#: src/include/squid/helps.rb:66
+msgid ""
+"<p><b>Host</b> can contain a hostname or IP address\n"
+"or remain empty.</p>\n"
+msgstr "<p><b>主機</b>可以包含主機名或 IP 地址或留空。</p>\n"
+
+#. Cache Dialog
+#: src/include/squid/helps.rb:70
+msgid ""
+"<p><b>Refresh Patterns</b> define how Squid treats the objects in the cache."
+"</p>\n"
+msgstr "<p><b>重新整理模式</b>定義了 Squid 如何處理快取中的物件。</p>\n"
+
+#: src/include/squid/helps.rb:73
+msgid ""
+"<p>The refresh patterns are checked in the order listed here.\n"
+"The first matching entry is used.</p>\n"
+msgstr ""
+"<p>重新整理模式在此以有序列表方式顯示。\n"
+"正使用第一個匹配的項。</p>\n"
+
+#: src/include/squid/helps.rb:76
+msgid ""
+"<p><b>Min</b> determines how long (in minutes) an object should be\n"
+"considered fresh if no explicit expiry time is given.\n"
+msgstr "<p><b>最短</b>決定了未給定失效時間的情況下物件被視為鮮活的時間(以分鐘計)。\n"
+
+#: src/include/squid/helps.rb:79
+msgid ""
+"<p><b>Percent</b> is the percentage of the object's age (time since last\n"
+"modification). An object without explicit expiry time will be\n"
+"considered fresh.</p>\n"
+msgstr ""
+"<p><b>百分比</b>是物件壽命的百分比(自從上一次修改)。一個沒有明確失效時間的對"
+"象將被認為是鮮活的。</p>\n"
+
+#: src/include/squid/helps.rb:84
+msgid ""
+"<p><b>Max</b> is the upper limit of how long objects without an explicit\n"
+"expiry time will be considered fresh.</p>\n"
+msgstr "<p><b>最大時間</b>是沒有明確失效時間的物件被視為鮮活的上限時間。</p>\n"
+
+#. Cache 2 Dialog
+#: src/include/squid/helps.rb:88
+msgid ""
+"<p><b>Cache memory</b> defines the ideal amount of memory to be used for "
+"objects.</p>"
+msgstr "<p><b>快取內存</b>定義了用於物件的理想內存大小。</p>"
+
+#: src/include/squid/helps.rb:91
+msgid ""
+"<p><b>Max Object Size</b> defines the maximum size for objects to be stored\n"
+"on the disk. Objects larger than this size will not be saved on disk.</p>\n"
+msgstr ""
+"<p><b>最大物件尺寸</b>定義了存儲在磁碟上的物件的最大大小。大於此尺寸的物件將"
+"不被儲存在磁碟上。</p>\n"
+
+#: src/include/squid/helps.rb:94
+msgid ""
+"<p><b>Min Object Size</b> specifies the minimum size for objects. Smaller \n"
+"objects will not be saved to the disk.</p>\n"
+msgstr ""
+"<p><b>最小物件尺寸</b>指定了物件的最小尺寸。小於此尺寸的物件將不被儲存到磁碟"
+"上。</p>\n"
+
+#: src/include/squid/helps.rb:97
+msgid ""
+"<p>Replacement begins when the swap (disk) usage is above the\n"
+"<b>Swap Low-Water Mark</b> and attempts to maintain utilization near the\n"
+"<b>Swap Low-Water Mark</b>. As swap utilization gets close to\n"
+"<b>Swap High-Water Mark</b>, object eviction becomes more aggressive.\n"
+"If utilization is close to the <b>Swap Low-Water Mark</b>, less replacement\n"
+"is done each time.\n"
+msgstr ""
+"<p>替換開始於 swap (磁碟) 使用量超過 <b>Swap 低水位</b> 並試圖維持 <b>Swap 低"
+"水位</b>時。\n"
+"隨著 swap 利用接近 <b>Swap 高水位</b>，物件驅逐會更加激進。\n"
+"如果利用接近 <b>Swap 低水位</b>，將逐步減少替換。\n"
+
+#: src/include/squid/helps.rb:105
+msgid ""
+"<p><b>Cache Replacement Policy</b> determines which objects are to be "
+"replaced\n"
+"when disk space is needed.\n"
+"<b>Memory Replacement Policy</b> specifies the policy for object replacement "
+"in\n"
+"memory when space for new objects is not available.\n"
+"Policies could be:\n"
+"<table>\n"
+"    <tr>\n"
+"      <td>lru</td>\n"
+"      <td>least recently used</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"      <td>heap GDSF</td>\n"
+"      <td>Greedy-Dual Size Frequency</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"      <td>heap LFUDA</td>\n"
+"      <td>Least Frequently Used with Dynamic Aging</td>\n"
+"    <tr>\n"
+"    <tr>\n"
+"      <td>heap LRU</td>\n"
+"      <td>lru policy implemented using a heap</td>\n"
+"    </tr>\n"
+"</table>\n"
+"</p>"
+msgstr ""
+"<p><b>快取替換策略</b>決定當磁碟空間近滿時替換哪些物件。\n"
+"<b>內存替換策略</b>指定當沒有空間存儲新物件時使用的內存物件替換策略。\n"
+"策略有：\n"
+"<table>\n"
+"    <tr>\n"
+"       <td>lru</td>\n"
+"       <td>最近最少使用</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"       <td>heap GDSF</td>\n"
+"       <td>貪婪的雙倍頻率</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"       <td>heap LFUDA</td>\n"
+"       <td>動態老化模式下最不常使用</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"       <td>heap LRU</td>\n"
+"       <td>用堆實現的最近最少使用策略。</td>\n"
+"    </tr>\n"
+"</table>\n"
+"</p>"
+
+#. Cache Directory
+#: src/include/squid/helps.rb:132
+msgid ""
+"<p><b>Directory Name</b> defines a top-level directory where cache swap "
+"files will be stored.</p>"
+msgstr "<p><b>目錄名稱</b>定義了存儲快取 swap 檔案的頂層目錄。</p>"
+
+#: src/include/squid/helps.rb:135
+msgid ""
+"<p><b>Size</b> defines the amount of disk space (in MB) to use under this "
+"directory.</p>"
+msgstr "<p><b>大小</b>定義了此目錄使用的磁碟空間大小 (以 MB 計)。</p>"
+
+#: src/include/squid/helps.rb:138
+msgid ""
+"<p><b>Level 1 Directories</b> defines a number of first-level "
+"subdirectories, \n"
+"which will be created under the <b>Directory Name</b> directory.</p>\n"
+msgstr "<p><b>一級目錄</b>定義了一級子目錄數，將在 <b>目錄名稱</b> 目錄下創建。</p>\n"
+
+#: src/include/squid/helps.rb:141
+msgid ""
+"<p><b>Level 2 Directories</b> defines a number of second-level "
+"subdirectories,\n"
+"which will be created under each first-level directory.</p>\n"
+msgstr "<p><b>第二級目錄</b>定義了二級子目錄數，將在每個一級目錄下創建。</p>\n"
+
+#. ACL Groups
+#: src/include/squid/helps.rb:145
+msgid ""
+"<p>Access to the Squid server can be controlled via <b>ACL Groups</b>.</p>"
+msgstr "<p>可以通過<b>訪問控制表組</b>控制對 Squid 伺服器的訪問。</p>"
+
+#: src/include/squid/helps.rb:148
+msgid ""
+"<p><b>ACL Group</b> has various types and the description of ACL Group "
+"depends\n"
+"on the particular type.</p>\n"
+msgstr "<p><b>訪問控制表組</b>有多種類型，訪問控制表組的描述取決於特定類型。</p>\n"
+
+#: src/include/squid/helps.rb:151
+msgid ""
+"<p>In the <b>Access Control</b> table, access can be denied or allowed to "
+"ACL Groups.\n"
+"If there are more ACL Groups in one line, it means that access will be "
+"allowed\n"
+"or denied to members who belong to all ACL Groups at the same time.</p>\n"
+msgstr ""
+"<p>在<b>訪問控制</b>表中，可以以訪問控制表組的形式允許或拒絕訪問。\n"
+"如果一行裡有多個訪問控制表組，意味著將同時允許或拒絕所有訪問控制表組成員的訪"
+"問。</p>\n"
+
+#: src/include/squid/helps.rb:156
+msgid ""
+"<p>The <b>Access Control</b> table is checked in the order listed here.\n"
+"The first matching entry is used.</p>\n"
+msgstr "<p><b>訪問控制</b>表在此以有序列表的方式顯示。正使用第一個匹配的條目。</p>\n"
+
+#. Logging and Timeouts Dialog
+#: src/include/squid/helps.rb:160
+msgid ""
+"<p><b>Access Log</b> defines the file in which client activities are logged."
+"</p>"
+msgstr "<p><b>訪問日誌</b>定義記錄客戶機活動的檔案。</p>"
+
+#: src/include/squid/helps.rb:163
+msgid ""
+"<p><b>Cache Log</b> defines the file in which general information about "
+"your\n"
+"cache's behavior is logged.</p>\n"
+msgstr "<p><b>快取日誌</b>定義了記錄您的快取行為的常規資訊的檔案。</p>\n"
+
+#: src/include/squid/helps.rb:166
+msgid ""
+"<p><b>Cache Store Log</b> defines the location of the transaction log of "
+"all\n"
+"objects that are stored in the object store, as well as the time when an "
+"object\n"
+"gets deleted. This option can be left empty.</p>\n"
+msgstr ""
+"<p><b>快取存儲日誌</b>定義了所有存儲在物件存儲中的操作日誌的位置，與物件的刪"
+"除時間。該選項可以留空。</p>\n"
+
+#: src/include/squid/helps.rb:171
+msgid ""
+"<p>With <b>Emulate httpd Log</b> specify that Squid writes its\n"
+"<b>Access Log</b> in HTTPD common log file format.</p>\n"
+msgstr ""
+"<p>通過 <b>模擬 httpd 日誌</b> 指定 Squid 以 HTTPD 通用日誌檔案格式記錄它的 "
+"<b>訪問日誌</b>。</p>\n"
+
+#: src/include/squid/helps.rb:174
+msgid ""
+"<p><b>Connection Timeout</b> is an option to force Squid to close\n"
+"connections after a specified time.</p>"
+msgstr "<p><b>連線超時</b>是在指定時間後強制 Squid 關閉連線的選項。</p>"
+
+#: src/include/squid/helps.rb:177
+msgid ""
+"<p><b>Client Lifetime</b> defines the maximum amount of time that a client\n"
+"(browser) is allowed to remain connected to the cache process.</p>"
+msgstr ""
+"<p><b>客戶機有效期</b>定義了客戶機(瀏覽器)允許保持到快取程序的連線的最長時"
+"間。</p>"
+
+#. Miscellaneous Dialog
+#: src/include/squid/helps.rb:181
+msgid ""
+"<p><b>Administrator's email</b> is the address which will be added to any\n"
+"error pages that are displayed to clients. Defaults to webmaster.</p>\n"
+msgstr ""
+"<p><b>管理員電子郵件</b>是添加到任何顯示給客戶機的錯誤頁面的郵件地址。默認是 "
+"webmaster。</p>\n"
+
+#. table cell
+#: src/include/squid/inits.rb:73 src/include/squid/popup_dialogs.rb:55
+msgid "Transparent"
+msgstr "透明"
+
+#. ****************  HTTP PORT  *******************
+#. returns true if something added/edited otherwise false
+#: src/include/squid/popup_dialogs.rb:48
+msgid "Add New HTTP Port"
+msgstr "添加新的 HTTP 埠"
+
+#: src/include/squid/popup_dialogs.rb:49
+msgid "Edit Current HTTP Port"
+msgstr "編輯當前 HTTP 埠"
+
+#. ****************  HTTP PORT END  ***************
+#. ****************  CACHE  ***********************
+#: src/include/squid/popup_dialogs.rb:95
+msgid "Add New Refresh Pattern"
+msgstr "添加新重新整理模式"
+
+#: src/include/squid/popup_dialogs.rb:96
+msgid "Edit Current refresh Pattern"
+msgstr "編輯當前重新整理模式"
+
+#: src/include/squid/popup_dialogs.rb:110
+msgid "Min (in minutes)"
+msgstr "最短(分鐘)"
+
+#: src/include/squid/popup_dialogs.rb:112
+msgid "Max (in minutes)"
+msgstr "最長(分鐘)"
+
+#. ****************  CACHE END  *******************
+#. ****************  ACCESS CONTROL  **************
+#: src/include/squid/popup_dialogs.rb:226
+msgid "Add New HTTP Access"
+msgstr "增加新的 HTTP 訪問許可權"
+
+#: src/include/squid/popup_dialogs.rb:226
+msgid "Edit HTTP Access"
+msgstr "編輯 HTTP 訪問許可權"
+
+#: src/include/squid/popup_dialogs.rb:233
+msgid "Allow"
+msgstr "允許"
+
+#: src/include/squid/popup_dialogs.rb:233
+msgid "Deny"
+msgstr "拒絕"
+
+#. `VSpacing(),
+#: src/include/squid/popup_dialogs.rb:239
+msgid "ACL"
+msgstr "訪問控制列表"
+
+#: src/include/squid/popup_dialogs.rb:244
+msgid "O&pposite"
+msgstr "相反(&P)"
+
+#: src/include/squid/popup_dialogs.rb:251
+msgid "Add ACL"
+msgstr "添加訪問控制列表"
+
+#: src/include/squid/popup_dialogs.rb:254
+msgid "not"
+msgstr "否"
+
+#: src/include/squid/popup_dialogs.rb:322
+msgid "Add New ACL Group"
+msgstr "添加新的訪問控制列表組"
+
+#: src/include/squid/popup_dialogs.rb:322
+msgid "Edit ACL Group"
+msgstr "編輯訪問控制列表組"
+
+#. ****************  HTTP_PORT  *******************
+#: src/include/squid/store_del.rb:64
+msgid "Port number must not be empty."
+msgstr "埠號不能為空。"
+
+#: src/include/squid/store_del.rb:74
+msgid "Host must contain valid IP address or hostname."
+msgstr "主機必須包含有效 IP 地址或主機名。"
+
+#. ****************  HTTP_PORT END  ***************
+#. *************  REFRESH_PATTERNS  ***************
+#: src/include/squid/store_del.rb:129
+msgid "Regular expression must not be empty."
+msgstr "正規表示式不能為空。"
+
+#. *************  REFRESH_PATTERNS END  ***********
+#. *************  CACHE DIALOG  *******************
+#: src/include/squid/store_del.rb:202 src/include/squid/store_del.rb:292
+msgid ""
+"Cache Memory + Size of Cache Directory\n"
+"must be higher than Max Object Size.\n"
+msgstr "快取內存 + 快取目錄大小必須比最大物件大小大。\n"
+
+#: src/include/squid/store_del.rb:264
+msgid "Cache directory must not be empty."
+msgstr "快取目錄不能為空。"
+
+#. *************  CACHE DIALOG END  ***************
+#. *************  HTTP_ACCESS  ********************
+#: src/include/squid/store_del.rb:351
+msgid "ACL table must not be empty."
+msgstr "訪問控制列表表不能為空。"
+
+#. test, if exists ACL with same name but different type
+#: src/include/squid/store_del.rb:429
+msgid "ACL Group '%1' already exists with different type.\n"
+msgstr "已經存在一個不同類型的訪問控制列表組 '%1'。\n"
+
+#: src/include/squid/store_del.rb:433
+msgid "ACL Group '%1' must have type '%2'.\n"
+msgstr "訪問控制列表組 '%1' 的類型必須是 '%2'。\n"
+
+#: src/include/squid/store_del.rb:438
+msgid ""
+"If you want to change the type of this ACL Group, you must\n"
+"delete other ACL Groups with the same name before that.\n"
+msgstr ""
+"如果您想要修改此訪問控制列表組的類型，您必須在此之前刪除同名的其他訪問控制列"
+"表組。\n"
+
+#. test if changed ACL is used in http_access option.
+#: src/include/squid/store_del.rb:453
+msgid ""
+"You can not change the name of this ACL Group, because \n"
+"it is used in the Access Control table.\n"
+msgstr ""
+"您不能修改這個訪問控制列表組的名稱。\n"
+"因為訪問控制表使用著它。\n"
+
+#: src/include/squid/store_del.rb:456 src/include/squid/store_del.rb:517
+msgid ""
+"If you want to change name of this ACL Group you must\n"
+"delete all of its occurrences in Access Control table."
+msgstr "如果您想要修改此訪問控制列表組名稱，您必須從訪問控制標中刪除它。"
+
+#. test if changed ACL is used in other option (not managed by thid module)
+#: src/include/squid/store_del.rb:467
+msgid ""
+"If you change the name of this ACL Group, these options might be affected: \n"
+msgstr "如果您修改這個訪問控制列表組名稱，這些選項可能會受到影響：\n"
+
+#: src/include/squid/store_del.rb:474
+msgid "Change name anyway"
+msgstr "還是要變更名稱"
+
+#: src/include/squid/store_del.rb:475
+msgid "Do not change name"
+msgstr "不變更名稱"
+
+#. test, if name is filled
+#: src/include/squid/store_del.rb:485
+msgid "Name must not be empty."
+msgstr "名稱不能為空。"
+
+#. Report::Error( _("This ACL Group can't be deleted.\nIt's used in Access Control table."));
+#: src/include/squid/store_del.rb:514
+msgid ""
+"You must not delete this ACL Group, because \n"
+"it is used in the Access Control table.\n"
+msgstr ""
+"您不能刪除這個訪問控制列表組。\n"
+"因為訪問控制表使用著它。\n"
+
+#: src/include/squid/store_del.rb:524
+msgid "If you delete this ACL Group, these options might be affected: \n"
+msgstr "如果您刪除這個訪問控制列表組，這些選項可能會受到影響：\n"
+
+#. +
+#. _("Are you sure you want to delete this ACL Group?");
+#: src/include/squid/store_del.rb:535
+msgid "Delete anyway"
+msgstr "還是要刪除"
+
+#. Label::YesButton(),
+#: src/include/squid/store_del.rb:536
+msgid "Do not delete"
+msgstr "不刪除"
+
+#. *************  ACL END  ************************
+#. *******  LOGGING AND TIMEOUTS DIALOG  **********
+#: src/include/squid/store_del.rb:581
+msgid "Access Log must not be empty."
+msgstr "訪問日誌不能為空。"
+
+#: src/include/squid/store_del.rb:591
+msgid "Cache Log must not be empty."
+msgstr "快取日誌不能為空。"
+
+#: src/include/squid/store_del.rb:602
+msgid "Incorrect pathname in Access Log field."
+msgstr "錯誤的訪問日誌路徑名"
+
+#: src/include/squid/store_del.rb:613
+msgid "Incorrect pathname in Cache Log field."
+msgstr "錯誤的快取日誌路徑名。"
+
+#: src/include/squid/store_del.rb:624
+msgid "Incorrect pathname in Cache Store Log field."
+msgstr "錯誤的快取存儲日誌路徑名。"
+
+#. *******  LOGGING AND TIMEOUTS DIALOG END  ******
+#: src/include/squid/store_del.rb:691
+msgid "Administrator's email must not contain any white spaces."
+msgstr "管理員電子郵件地址不能包含任何空格。"
+
+#. Initialization dialog caption
+#: src/include/squid/wizards.rb:85
+msgid "Squid Configuration"
+msgstr "Squid 配置"
+
+#. Initialization dialog contents
+#: src/include/squid/wizards.rb:87
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. Read all squid settings
+#. @return true on success
+#: src/modules/Squid.rb:1089
+msgid "Initializing Squid Configuration"
+msgstr "正在啟始化 squid 配置"
+
+#: src/modules/Squid.rb:1093
+msgid "Read HTTP Ports from Config File."
+msgstr "從配置檔案中讀取 HTTP 埠。"
+
+#: src/modules/Squid.rb:1094
+msgid "Read Refresh Patterns from Config File."
+msgstr "從配置檔案中讀取重新整理模式。"
+
+#: src/modules/Squid.rb:1095
+msgid "Read ACL Groups from Config File."
+msgstr "從配置檔案中讀取訪問控制列表組。"
+
+#: src/modules/Squid.rb:1096
+msgid "Read Access Control Table from Config File."
+msgstr "從配置檔案中讀取訪問控制表。"
+
+#: src/modules/Squid.rb:1097
+msgid "Read Other Settings."
+msgstr "讀取其他設定。"
+
+#: src/modules/Squid.rb:1098
+msgid "Read Service Status."
+msgstr "讀取服務狀態。"
+
+#: src/modules/Squid.rb:1099
+msgid "Read Firewall Settings."
+msgstr "讀取防火牆設定。"
+
+#: src/modules/Squid.rb:1102
+msgid "Reading HTTP Ports ..."
+msgstr "正在讀取 HTTP 埠..."
+
+#: src/modules/Squid.rb:1103
+msgid "Reading Refresh Patterns ..."
+msgstr "正在讀取重新整理模式..."
+
+#: src/modules/Squid.rb:1104
+msgid "Reading ACL Groups ..."
+msgstr "正在讀取訪問控制列表組..."
+
+#: src/modules/Squid.rb:1105
+msgid "Reading Access Control Table ..."
+msgstr "正在讀取訪問控制表..."
+
+#: src/modules/Squid.rb:1106
+msgid "Reading Other Settings ..."
+msgstr "正在讀取其他設定..."
+
+#: src/modules/Squid.rb:1107
+msgid "Reading Service Status ..."
+msgstr "正在讀取服務狀態..."
+
+#: src/modules/Squid.rb:1108
+msgid "Reading Firewall Settings ..."
+msgstr "正在讀取防火牆設定..."
+
+#: src/modules/Squid.rb:1118
+msgid "Cannot read configuration file."
+msgstr "無法讀取配置檔案。"
+
+#: src/modules/Squid.rb:1123
+msgid "Cannot read service status."
+msgstr "無法讀取服務狀態。"
+
+#. We do not set help text here, because it was set outside
+#: src/modules/Squid.rb:1466
+msgid "Saving Squid Configuration"
+msgstr "正在儲存 Squid 配置"
+
+#. Progress stage 1/2
+#: src/modules/Squid.rb:1471
+msgid "Write the settings"
+msgstr "寫入設定"
+
+#. Progress stage 1/2
+#: src/modules/Squid.rb:1473
+msgid "Write firewall settings"
+msgstr "寫入防火牆設定"
+
+#. Progress stage 2/2
+#: src/modules/Squid.rb:1475
+msgid "Start Service"
+msgstr "啟動服務"
+
+#. Progress step 1/2
+#: src/modules/Squid.rb:1479
+msgid "Writing the settings..."
+msgstr "正在寫入設定..."
+
+#. Progress step 1/2
+#: src/modules/Squid.rb:1481
+msgid "Writing firewall settings..."
+msgstr "正在寫入防火牆設定..."
+
+#. Progress step 2/2
+#: src/modules/Squid.rb:1483
+msgid "Starting Service..."
+msgstr "正在啟動服務..."
+
+#. Progress finished
+#: src/modules/Squid.rb:1485
+msgid "Finished"
+msgstr "已完成"
+
+#. write settings
+#: src/modules/Squid.rb:1495
+msgid "Cannot write settings."
+msgstr "無法寫入設定。"
+
+#. firewall
+#: src/modules/Squid.rb:1501
+msgid "Cannot write firewall settings."
+msgstr "無法寫入防火牆設定。"
+
+#. Header
+#: src/modules/Squid.rb:1585
+msgid "Squid Cache Proxy"
+msgstr "Squid 快取代理"
+
+#. Start daemon
+#: src/modules/Squid.rb:1590
+msgid "Start daemon: "
+msgstr "啟動守護精靈："
+
+#: src/modules/Squid.rb:1591
+msgid "When booting"
+msgstr "引導時"
+
+#. Http Ports
+#: src/modules/Squid.rb:1595
+msgid "Configured ports:"
+msgstr "已配置的埠："
+
+#: src/modules/Squid.rb:1612
+msgid " (transparent)"
+msgstr " (透明)"
+
+#. Cache directory
+#: src/modules/Squid.rb:1626
+msgid "Cache directory: "
+msgstr "快取目錄："
+
+#. **
+#. Unsupported ACLS:
+#. * * * * * * * * * * *
+#. ident, ident_regex,
+#. src_as, dst_as,
+#. proxy_auth, proxy_auth_regex,
+#. snmp_community,
+#. max_user_ip,
+#. external,
+#. urllogin, urlgroup
+#. user_cert, ca_cert
+#. ext_user
+#. map of acl definition. format:
+#. $[
+#. "type" : $[ "name" : "Name shown in dialogs",
+#. "widget" : `WidgetDescribingThisType,
+#. "widget_init" : FunctionWithInitsOfWidget,
+#. "verification" : FunctionCalledToVerificateContentsOfWidget,
+#. "options" : FunctionThatReturnsListOfOptions
+#. ]
+#. ]
+#.
+#. widget_init prototype: void FuncName(integer id_item)
+#. verification prototype: boolean FuncName()
+#. options prototype: list<string> FuncName()
+#: src/modules/SquidACL.rb:68
+msgid "src"
+msgstr "來源"
+
+#. `TextEntry(`id("acl_addr1"), _("IP Address 1"), ""),
+#. `Label(" - "),
+#: src/modules/SquidACL.rb:74
+msgid "IP Address or Range of IP Addresses"
+msgstr "IP 地址或者 IP 地址範圍"
+
+#. `Label("/"),
+#: src/modules/SquidACL.rb:78 src/modules/SquidACL.rb:92
+#: src/modules/SquidACL.rb:106
+msgid "Network Mask"
+msgstr "網路掩碼"
+
+#: src/modules/SquidACL.rb:84
+msgid "The IP address of the requesting client."
+msgstr "發出請求的客戶機 IP 地址。"
+
+#: src/modules/SquidACL.rb:89
+msgid "dst"
+msgstr "目標"
+
+#: src/modules/SquidACL.rb:91
+msgid "IP Address"
+msgstr "IP 地址"
+
+#: src/modules/SquidACL.rb:98
+msgid "Destination IP Address."
+msgstr "目標 IP 地址。"
+
+#: src/modules/SquidACL.rb:103
+msgid "myip"
+msgstr "我的 IP"
+
+#: src/modules/SquidACL.rb:105
+msgid "Local IP Address"
+msgstr "本地 IP 地址"
+
+#: src/modules/SquidACL.rb:112
+msgid "The local IP address on which the client connection exists."
+msgstr "客戶端連線所在的本地 IP 地址已存在。"
+
+#: src/modules/SquidACL.rb:119
+msgid "srcdomain"
+msgstr "來源域"
+
+#: src/modules/SquidACL.rb:120
+msgid "Clients Domain Name"
+msgstr "客戶機域名"
+
+#: src/modules/SquidACL.rb:131
+msgid "This type matches the client's domain name."
+msgstr "此類型匹配客戶機域名。"
+
+#: src/modules/SquidACL.rb:136
+msgid "dstdomain"
+msgstr "目標域"
+
+#: src/modules/SquidACL.rb:137
+msgid "Destination Domain"
+msgstr "目標域"
+
+#: src/modules/SquidACL.rb:148
+msgid ""
+"This refers to the destination domain, i.e. the source domain where the "
+"origin server is located."
+msgstr "這指向目標域，例如，原始伺服器所在的源域。"
+
+#: src/modules/SquidACL.rb:155
+msgid "Matches the client domain name."
+msgstr "匹配客戶機域名。"
+
+#: src/modules/SquidACL.rb:160
+msgid "Provides match for destination domain."
+msgstr "提供目標域匹配。"
+
+#: src/modules/SquidACL.rb:165
+msgid "time"
+msgstr "時間"
+
+#: src/modules/SquidACL.rb:173
+msgid "Days"
+msgstr "天"
+
+#: src/modules/SquidACL.rb:175
+msgid "Monday"
+msgstr "星期一"
+
+#: src/modules/SquidACL.rb:176
+msgid "Tuesday"
+msgstr "星期二"
+
+#: src/modules/SquidACL.rb:177
+msgid "Wednesday"
+msgstr "星期三"
+
+#: src/modules/SquidACL.rb:178
+msgid "Thursday"
+msgstr "星期四"
+
+#: src/modules/SquidACL.rb:179
+msgid "Friday"
+msgstr "星期五"
+
+#: src/modules/SquidACL.rb:180
+msgid "Saturday"
+msgstr "星期六"
+
+#: src/modules/SquidACL.rb:181
+msgid "Sunday"
+msgstr "星期日"
+
+#: src/modules/SquidACL.rb:192
+msgid "From (H:M)"
+msgstr "從(H:M)"
+
+#: src/modules/SquidACL.rb:195
+msgid "To (H:M)"
+msgstr "到(H:M)"
+
+#: src/modules/SquidACL.rb:208
+msgid "Matches using a regular expression on the complete URL."
+msgstr "在完整 URL 上使用正規表示式的匹配"
+
+#: src/modules/SquidACL.rb:213
+msgid ""
+"Matches the URL path minus any protocol, port, and host name information"
+msgstr "匹配 URL 路徑去掉任何協議，埠與主機名資訊"
+
+#: src/modules/SquidACL.rb:220
+msgid "port"
+msgstr "埠"
+
+#: src/modules/SquidACL.rb:221
+msgid "Port Number or Range of Ports"
+msgstr "埠號或者埠範圍"
+
+#: src/modules/SquidACL.rb:226
+msgid "Matches the destination port for the request."
+msgstr "匹配請求的目標埠。"
+
+#: src/modules/SquidACL.rb:231
+msgid "myport"
+msgstr "我的埠"
+
+#: src/modules/SquidACL.rb:232
+msgid "Port Number"
+msgstr "埠號"
+
+#: src/modules/SquidACL.rb:237
+msgid "Provides match for local TCP port number."
+msgstr "提供本地 TCP 埠號的匹配。"
+
+#: src/modules/SquidACL.rb:242
+msgid "proto"
+msgstr "協議"
+
+#: src/modules/SquidACL.rb:243
+msgid "Protocol"
+msgstr "協議"
+
+#: src/modules/SquidACL.rb:248
+msgid "Matches the protocol of the request."
+msgstr "匹配請求的協議。"
+
+#: src/modules/SquidACL.rb:253
+msgid "method"
+msgstr "方式"
+
+#: src/modules/SquidACL.rb:256
+msgid "HTTP Method"
+msgstr "HTTP 方式"
+
+#: src/modules/SquidACL.rb:271
+msgid "This type matches the HTTP method in the request headers."
+msgstr "此類型匹配請求頭部的 HTTP 方式。"
+
+#: src/modules/SquidACL.rb:278
+msgid ""
+"A regular expression that matches the client's browser type based on the "
+"user agent header."
+msgstr "匹配基於使用者代理頭部的客戶機瀏覽器類型的正規表示式。"
+
+#: src/modules/SquidACL.rb:288
+msgid "Maximum Number of HTTP Connections"
+msgstr "最大 HTTP 連線數"
+
+#: src/modules/SquidACL.rb:300
+msgid ""
+"Matches when the client's IP address has more than the specified number of "
+"HTTP connections established."
+msgstr "當客戶機 IP 地址建立了大於指定數字的 HTTP 連線的匹配。"
+
+#: src/modules/SquidACL.rb:307
+msgid "Matches Referer header."
+msgstr "匹配引用者頭部。"
+
+#: src/modules/SquidACL.rb:314 src/modules/SquidACL.rb:337
+msgid "Header Name"
+msgstr "標題名"
+
+#: src/modules/SquidACL.rb:315 src/modules/SquidACL.rb:338
+msgid "Regular Expression(s)"
+msgstr "正規表示式(s)"
+
+#: src/modules/SquidACL.rb:328
+msgid "Regular expression matching any of the known request headers."
+msgstr "匹配任何已知的請求頭部的正規表示式。"
+
+#: src/modules/SquidACL.rb:351
+msgid ""
+"Regular expression matching the mime type of the reply received by squid. "
+"Can\n"
+"be used to detect file download or some types of HTTP tunnelling requests.\n"
+msgstr ""
+"匹配 Squid 收到的應答的 mime 類型的正規表示式。\n"
+"可用來檢測檔案下載或某些類型的 HTTP 隧道請求。\n"
+
+#: src/modules/SquidACL.rb:358
+msgid "Match the mime type of the request generated by the client."
+msgstr "匹配客戶機生成的請求的 mime 類型。"
+
+#: src/modules/SquidACL.rb:363
+msgid "Match the mime type of the reply received by Squid."
+msgstr "匹配 Squid 收到的應答的 mime 類型。"
+
+#: src/modules/SquidACL.rb:369
+msgid "MAC Address"
+msgstr "MAC 地址"
+
+#: src/modules/SquidACL.rb:374
+msgid "Ethernet (MAC) address matching."
+msgstr "乙太網 (MAC) 地址匹配。"
+
+#. TRANSLATORS: language name - combo box entry
+#: src/modules/SquidErrorMessages.rb:53
+msgid "Afrikaans"
+msgstr "南非荷蘭語"
+
+#: src/modules/SquidErrorMessages.rb:54
+msgid "Arabic"
+msgstr "阿拉伯語"
+
+# AM
+#: src/modules/SquidErrorMessages.rb:55
+msgid "Armenian"
+msgstr "亞美尼亞語"
+
+#: src/modules/SquidErrorMessages.rb:56
+msgid "Azerbaijani"
+msgstr "亞塞拜然語"
+
+#: src/modules/SquidErrorMessages.rb:57
+msgid "Bulgarian"
+msgstr "保加利亞語"
+
+#: src/modules/SquidErrorMessages.rb:58
+msgid "Catalan"
+msgstr "加泰羅尼亞語"
+
+#: src/modules/SquidErrorMessages.rb:59
+msgid "Czech"
+msgstr "捷克語"
+
+#: src/modules/SquidErrorMessages.rb:60
+msgid "Danish"
+msgstr "丹麥語"
+
+#: src/modules/SquidErrorMessages.rb:61
+msgid "German"
+msgstr "德語"
+
+#: src/modules/SquidErrorMessages.rb:62
+msgid "Greek"
+msgstr "希臘語"
+
+#: src/modules/SquidErrorMessages.rb:63
+msgid "English"
+msgstr "英語"
+
+#: src/modules/SquidErrorMessages.rb:64
+msgid "Spanish"
+msgstr "西班牙語"
+
+#: src/modules/SquidErrorMessages.rb:65
+msgid "Estonian"
+msgstr "愛沙尼亞語"
+
+#: src/modules/SquidErrorMessages.rb:66
+msgid "Persian"
+msgstr "波斯語"
+
+#: src/modules/SquidErrorMessages.rb:67
+msgid "Finnish"
+msgstr "芬蘭語"
+
+#: src/modules/SquidErrorMessages.rb:68
+msgid "French"
+msgstr "法語"
+
+#: src/modules/SquidErrorMessages.rb:69
+msgid "Hebrew"
+msgstr "希伯來語"
+
+#: src/modules/SquidErrorMessages.rb:70
+msgid "Hungarian"
+msgstr "匈牙利語"
+
+#: src/modules/SquidErrorMessages.rb:71
+msgid "Indonesian"
+msgstr "印度尼西亞語"
+
+#: src/modules/SquidErrorMessages.rb:72
+msgid "Italian"
+msgstr "義大利語"
+
+#: src/modules/SquidErrorMessages.rb:73
+msgid "Japanese"
+msgstr "日語"
+
+#: src/modules/SquidErrorMessages.rb:74
+msgid "Korean"
+msgstr "韓語"
+
+#: src/modules/SquidErrorMessages.rb:75
+msgid "Latvian"
+msgstr "拉脫維亞語"
+
+#: src/modules/SquidErrorMessages.rb:76
+msgid "Lithuanian"
+msgstr "立陶宛語"
+
+#: src/modules/SquidErrorMessages.rb:77
+msgid "Malay"
+msgstr "馬來西亞語"
+
+#: src/modules/SquidErrorMessages.rb:78
+msgid "Dutch"
+msgstr "荷蘭語"
+
+#: src/modules/SquidErrorMessages.rb:79
+msgid "Occitan"
+msgstr "奧克語"
+
+#: src/modules/SquidErrorMessages.rb:80
+msgid "Polish"
+msgstr "波蘭語"
+
+#: src/modules/SquidErrorMessages.rb:81
+msgid "Portuguese"
+msgstr "葡萄牙語"
+
+#: src/modules/SquidErrorMessages.rb:82
+msgid "Brazilian Portuguese"
+msgstr "巴西葡萄牙語"
+
+#: src/modules/SquidErrorMessages.rb:83
+msgid "Romanian"
+msgstr "羅馬尼亞語"
+
+#: src/modules/SquidErrorMessages.rb:84
+msgid "Russian"
+msgstr "俄語"
+
+#: src/modules/SquidErrorMessages.rb:85
+msgid "Slovak"
+msgstr "斯洛伐克語"
+
+#: src/modules/SquidErrorMessages.rb:86
+msgid "Slovenian"
+msgstr "斯洛維尼亞語"
+
+#: src/modules/SquidErrorMessages.rb:87
+msgid "Serbian Cyrillic"
+msgstr "塞爾維亞西里爾語"
+
+#: src/modules/SquidErrorMessages.rb:88
+msgid "Serbian Latin"
+msgstr "塞爾維亞拉丁語"
+
+#: src/modules/SquidErrorMessages.rb:89
+msgid "Swedish"
+msgstr "瑞典語"
+
+#: src/modules/SquidErrorMessages.rb:90
+msgid "Thai"
+msgstr "泰語"
+
+#: src/modules/SquidErrorMessages.rb:91
+msgid "Turkish"
+msgstr "土耳其語"
+
+#: src/modules/SquidErrorMessages.rb:92
+msgid "Ukrainian"
+msgstr "烏克蘭語"
+
+#: src/modules/SquidErrorMessages.rb:93
+msgid "Uzbek"
+msgstr "烏茲別克語"
+
+#: src/modules/SquidErrorMessages.rb:94
+msgid "Vietnamese"
+msgstr "越南語"
+
+#: src/modules/SquidErrorMessages.rb:95
+msgid "Simplified Chinese"
+msgstr "簡體中文"
+
+#: src/modules/SquidErrorMessages.rb:96
+msgid "Traditional Chinese"
+msgstr "繁體中文"
+
+#~ msgid "Russian-koi8-r"
+#~ msgstr "俄語-koi8-r"
+
+#~ msgid "Ukrainian-koi8-u"
+#~ msgstr "烏克蘭語-koi8-u"
+
+#~ msgid "Ukrainian-utf8"
+#~ msgstr "烏克蘭語-utf8"
+
+#~ msgid "Cannot read firewall settings."
+#~ msgstr "無法讀取防火牆設定。"
+
+#~ msgid ""
+#~ "<p><b><big>Saving squid Configuration</big></b><br>\n"
+#~ "Please wait...<br></p>\n"
+#~ msgstr ""
+#~ "<p><b><big>正在儲存 squid 配置</big></b><br>\n"
+#~ "請等待...<br></p>\n"
+
+#, fuzzy
+#~ msgid "Simplify Chinese"
+#~ msgstr "簡體中文"
+

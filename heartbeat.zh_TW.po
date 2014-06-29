@@ -1,0 +1,1354 @@
+# Chinese message file for YaST2 (@memory@)
+# Copyright (C) 2005 SUSE Linux Products GmbH.
+# Copyright (C) 2002 SuSE Linux AG.
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Marguerite Su, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-10 10:38+0200\n"
+"PO-Revision-Date: 2012-07-19 01:22+0800\n"
+"Last-Translator: Marguerite Su\n"
+"Language-Team: Chinese Simplified <kde-i18n-doc@kde.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.4\n"
+
+#. Command line help text for the Heartbeat module
+#: src/clients/heartbeat.rb:76
+msgid "Configuration of high availability (HA) cluster using Heartbeat service."
+msgstr "使用 Heartbeat 服務配置高可用性(HA)叢集。"
+
+#. translators: command line help text for add action
+#: src/clients/heartbeat.rb:87
+msgid "Configure a list of servers for the cluster."
+msgstr "為叢集配置伺服器列表。"
+
+#. translators: command line help text for add action
+#: src/clients/heartbeat.rb:94
+msgid "Set the communication between the nodes of the cluster."
+msgstr "設定叢集節點間的通訊。"
+
+#. translators: command line help text for add action
+#: src/clients/heartbeat.rb:101
+msgid "Configure authentication of the nodes."
+msgstr "配置節點認證方式。"
+
+#. translators: command line help text for add action
+#: src/clients/heartbeat.rb:108
+msgid "Configure automatic start of the service at boot."
+msgstr "配置開機自動啟動服務。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:117
+msgid "Add a new item to the list."
+msgstr "向列表中添加新項。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:123
+msgid "Delete an item from the list."
+msgstr "從列表中刪除一項。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:129
+msgid "Display the configuration."
+msgstr "顯示配置。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:135
+msgid "Name of the node in the cluster."
+msgstr "叢集中的節點名稱。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:142
+msgid "Set the communication mode to 'bcast' for broadcast or 'mcast' for multicast."
+msgstr "設定通訊模式，可以是廣播“bcast”或者多播“mcast”。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:149
+msgid "Network device (e.g. eth0) used for communication."
+msgstr "用於通訊的網路裝置(比如，eth0)。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:156
+msgid "IP address of the multicast group (224.0.0.0 - 239.255.255.255)."
+msgstr "多址廣播組的 IP 地址 (224.0.0.0 - 239.255.255.255)。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:163
+msgid "TTL value (1-255, default is 2)."
+msgstr "TTL 值(1-255，默認是 2)。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:170
+msgid "UDP port number (default is 694)."
+msgstr "UDP 埠號(默認是 694)。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:177
+msgid "Set authentication method to 'crc' (no security), 'sha1' or 'md5'."
+msgstr "設定認證方法，可以是“crc”(沒有安全性)、“sha1”或者“md5”。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:184
+msgid "The authentication key."
+msgstr "驗證金鑰。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:191
+msgid "Enable automatic start of the service at boot."
+msgstr "啟用開機自動啟動服務。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:197
+msgid "Disable automatic start of the service at boot."
+msgstr "禁用開機自動啟動服務。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:203
+msgid "Set the configuration."
+msgstr "設定配置。"
+
+#. translators: command line help text for the 'play' option
+#: src/clients/heartbeat.rb:209
+msgid "Print status of the automatic start at boot."
+msgstr "列印開機自動啟動狀態。"
+
+#. encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2000 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#. ***************************************************************************
+#.
+#. Copyright (c) 2000 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#. File:	clients/heartbeat.ycp
+#. Package:	Configuration of heartbeat
+#. Summary:	Main file
+#. Authors:	Martin Lazar <mlazar@suse.cz>
+#.
+#. $Id$
+#.
+#. Main file for heartbeat configuration. Uses all other files.
+#: src/include/heartbeat/auth_conf.rb:79
+msgid "Authentication Method"
+msgstr "驗證方法"
+
+#: src/include/heartbeat/auth_conf.rb:85
+msgid "CRC (No security)"
+msgstr "CRC(無安全性)"
+
+#: src/include/heartbeat/auth_conf.rb:87
+msgid "SHA1"
+msgstr "SHA1"
+
+#: src/include/heartbeat/auth_conf.rb:88
+msgid "MD5"
+msgstr "MD5"
+
+#: src/include/heartbeat/auth_conf.rb:94
+msgid "Authentication Key"
+msgstr "驗證金鑰"
+
+#: src/include/heartbeat/auth_conf.rb:120
+msgid "Missing authentication key."
+msgstr "缺少驗證金鑰。"
+
+#. command line status message, %1 is name of the node
+#: src/include/heartbeat/commandline.rb:87
+msgid "Added node '%1'"
+msgstr "添加節點“%1”"
+
+#. command line status message, %1 is name of the node
+#: src/include/heartbeat/commandline.rb:106
+msgid "Removed node '%1'"
+msgstr "已刪除節點“%1”"
+
+#. Command line handler for List action: list available configurations
+#: src/include/heartbeat/commandline.rb:141
+msgid "Broadcast device: %1"
+msgstr "廣播裝置：%1"
+
+#: src/include/heartbeat/commandline.rb:150
+msgid "Multicast device: %1, address: %2, UDP: %3, TTL: %4"
+msgstr "多播裝置：%1，地址：%2，UDP：%3，TTL：%4"
+
+#: src/include/heartbeat/commandline.rb:183
+msgid "Setting UDP port to %1"
+msgstr "設定 UDP 埠到 %1"
+
+#. Command line handler for List action: list available configurations
+#: src/include/heartbeat/commandline.rb:282
+msgid "Missing or invalid 'udp' option"
+msgstr "缺少或無效的 'udp' 選項"
+
+#: src/include/heartbeat/commandline.rb:321
+msgid "Authentication method: %1"
+msgstr "驗證方法：%1"
+
+#: src/include/heartbeat/commandline.rb:326
+msgid "Authentication key: %1"
+msgstr "驗證金鑰：%1"
+
+#. %1 is "enabled" or "disabled"
+#: src/include/heartbeat/commandline.rb:377
+msgid "Start Heartbeat service at boot: %1"
+msgstr "開機時啟動 Heartbeat 服務：%1"
+
+#. Automatic start at boot is either "enableb" or "disabled"
+#: src/include/heartbeat/commandline.rb:380
+msgid "enabled"
+msgstr "已啟用"
+
+#: src/include/heartbeat/commandline.rb:381
+msgid "disabled"
+msgstr "已禁用"
+
+#. "stonith_conf",
+#. "resources_conf",
+#. "timeouts_conf",
+#. "ipfail_conf",
+#. "group_conf"
+#: src/include/heartbeat/common.rb:77
+msgid "Start-up Configuration"
+msgstr "啟動配置"
+
+#: src/include/heartbeat/common.rb:78
+msgid "Node Configuration"
+msgstr "節點配置"
+
+#: src/include/heartbeat/common.rb:79
+msgid "Media Configuration"
+msgstr "媒體配置"
+
+#: src/include/heartbeat/common.rb:80
+msgid "Authentication Keys"
+msgstr "驗證金鑰"
+
+#: src/include/heartbeat/common.rb:81
+msgid "Resources"
+msgstr "資源"
+
+#: src/include/heartbeat/common.rb:82
+msgid "STONITH Configuration"
+msgstr "STONITH 配置"
+
+#: src/include/heartbeat/common.rb:83
+msgid "Time-outs"
+msgstr "超時"
+
+#: src/include/heartbeat/common.rb:84
+msgid "IP Fail"
+msgstr "IP 失敗"
+
+#: src/include/heartbeat/common.rb:85
+msgid "Ping Groups"
+msgstr "Ping 組"
+
+#. All helps are here
+#: src/include/heartbeat/helps.rb:56
+msgid ""
+"<p><b><big>Initializing Heartbeat Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在啟始化 Heartbeat 配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#: src/include/heartbeat/helps.rb:59
+msgid ""
+"<p><b><big>Aborting Initialization:</big></b><br>\n"
+"Safely abort the configuration utility by pressing <b>Abort</b> now.</p>\n"
+msgstr ""
+"<p><b><big>終止啟始化:</big></b><br>\n"
+"請您現在點選<b>終止</b>, 以便安全中斷配置工具。</p>\n"
+
+#: src/include/heartbeat/helps.rb:62
+msgid ""
+"<p><b><big>Saving Heartbeat Configuration</big></b><br>\n"
+"Please wait...<br></p>\n"
+msgstr ""
+"<p><b><big>正在儲存 Heartbeat 配置</big></b><br>\n"
+"請稍候...<br></p>\n"
+
+#: src/include/heartbeat/helps.rb:65
+msgid ""
+"<p><b><big>Aborting Saving:</big></b><br>\n"
+"Abort the save procedure by pressing <b>Abort</b>.\n"
+"An additional dialog informs whether it is safe to do so.\n"
+"</p>\n"
+msgstr ""
+"<p><b><big>中斷儲存:</big></b><br>\n"
+"請點選<B>中斷</B>,以便中斷儲存.\n"
+"一個附加對話方塊將告訴您這樣做是否安全.\n"
+"</p>\n"
+
+#: src/include/heartbeat/helps.rb:71
+msgid ""
+"<p><b>Node Configuration</b> lets you specify and\n"
+"add nodes to your cluster. This installation program lets you create\n"
+"a new cluster or add nodes to an existing cluster. To add new nodes\n"
+"to an existing cluster, you must run this installation program from a\n"
+"node that is already in the cluster, not on a node that you want to add\n"
+"to the cluster.</p>\n"
+msgstr ""
+"<p><b>節點配置</b>使您能夠向叢集\n"
+"指定與添加節點。此安裝程式使您能夠創建新叢集\n"
+"或向現有叢集添加節點。要向現有叢集\n"
+"添加新節點，您必須從叢集中已有的節點\n"
+"(而非要添加到叢集的節點)\n"
+"運行此安裝程式。</p>\n"
+
+#: src/include/heartbeat/helps.rb:79
+msgid ""
+"<p>This cluster installation program does not copy the Heartbeat\n"
+"software package to cluster nodes. Prior to running this installation program, the\n"
+"Heartbeat software package must be installed on all nodes that will be\n"
+"part of your cluster.</p>"
+msgstr ""
+"<p>此叢集安裝程式不向\n"
+"叢集節點複製 Heartbeat 軟體包。在運行此安裝程式之前，\n"
+"必須將 Heartbeat 軟體包安裝在叢集的\n"
+"所有節點上。</p>"
+
+#: src/include/heartbeat/helps.rb:85
+msgid ""
+"<p>To add a node to the cluster, enter the name of the node\n"
+"then click <b>Add</b>. Repeat this process for each\n"
+"node to add to the cluster. Find node names for servers\n"
+"by entering the <tt>uname -n</tt> command on each node.</p>\n"
+msgstr ""
+"<p>要向叢集添加節點，請輸入該節點的名稱，\n"
+"然後單擊<b>添加</b>。請對要添加到叢集的每個節點\n"
+"重複此過程。通過在每個節點上輸入\n"
+"<tt>uname -n</tt> 命令可查找伺服器的節點名稱。</p>\n"
+
+#: src/include/heartbeat/helps.rb:91
+msgid ""
+"<p>If you need to specify a different node name after adding a node to the cluster,\n"
+"double-click the node to edit, change its name, then click <b>Edit</b>.</p>\n"
+msgstr ""
+"<p>如果向叢集添加節點後，需要為該節點指定\n"
+"其它節點名稱，請雙擊要編輯的\n"
+"節點，變更節點名稱，然後單擊<b>編輯</b>。</p>\n"
+
+#: src/include/heartbeat/helps.rb:94
+msgid ""
+"<p><b>Heartbeat Media Configuration</b> lets you\n"
+" specify the method Heartbeat should use for internal communication\n"
+"between cluster nodes. This provides a way for cluster nodes to signal\n"
+"that they are alive to other nodes in the cluster. For proper redundancy,\n"
+"you should specify more than one heartbeat medium if possible.</p>\n"
+msgstr ""
+"<p><b>Heartbeat 媒體配置</b>使您可以\n"
+"指定 Heartbeat 在叢集節點之間進行內部通訊\n"
+"應使用的方法。這提供了一種途徑，使得叢集節點可將自身的活動狀態\n"
+"通知給叢集中的其它節點。為了有適當的冗餘，\n"
+"應該指定一個以上的 heartbeat 媒體(如果可能)。</p>\n"
+
+#: src/include/heartbeat/helps.rb:101
+msgid ""
+"<p>Choose at least one <b>Heartbeat Medium</b> and, if possible,\n"
+" two or more. After specifying a heartbeat medium, click <b>Add</b> to add\n"
+"that medium type to Heartbeat.</p>\n"
+msgstr ""
+"<p>選擇至少一個 <b>Heartbeat 媒體</b>，如果可以請選擇兩個\n"
+"或更多。指定 heartbeat 媒體之後，單擊<b>添加</b>將\n"
+"該媒體類型添加給 Heartbeat。</p>\n"
+
+#: src/include/heartbeat/helps.rb:106
+msgid ""
+"<p>If you choose <b>Broadcast</b>, select one of the available network\n"
+"devices in the device list.</p>\n"
+msgstr ""
+"<p>如果選擇<b>廣播</b>，請在裝置列表中選擇一個\n"
+"可用的網路裝置。</p>\n"
+
+#: src/include/heartbeat/helps.rb:109
+msgid ""
+"<p>For <b>Multicast</b>, choose a network device, multicast\n"
+"group to join (class D multicast address 224.0.0.0-239.255.255.255), and\n"
+"the ttl value (1-255).</p>\n"
+msgstr ""
+"<p>對於<b>多路廣播</b>，選擇一個網路裝置、要加入的多路廣播組(D 類多路廣播地址 224.0.0.0-239.255.255.255)\n"
+"與 ttl 值 (1-255)。</p>\n"
+
+#: src/include/heartbeat/helps.rb:114
+msgid ""
+"<p><b>UDP Port</b> sets the UDP port that is used for the\n"
+"broadcast media. Leave this set to the default value (694)\n"
+"unless you are running multiple Heartbeat clusters on the same network\n"
+"segment, in which case you need to run each cluster on a different port\n"
+"number.</p>\n"
+msgstr ""
+"<p><b>UDP 埠</b>設定用於廣播媒體的\n"
+"UDP 埠。保留該設定的預設值 (694)\n"
+"除非您正在同一網路段中運行多個 Heartbeat 叢集\n"
+"在此情況下，需要在另一個埠號上運行\n"
+"每個叢集。</p>\n"
+
+#: src/include/heartbeat/helps.rb:121
+msgid ""
+"<p>Specify the authentication method to\n"
+" use for network communication between cluster nodes. Choosing\n"
+"an authentication method protects against network attacks.</p>\n"
+msgstr ""
+"<p>指定用於在叢集節點間進行\n"
+"網路通訊的驗證方法。選擇\n"
+"一種驗證方法來防止網路攻擊。</p>\n"
+
+#: src/include/heartbeat/helps.rb:126
+msgid ""
+"<p>Both the <b>md5</b> and <b>sha1</b> methods require a\n"
+" <i>shared secret</i>, which is used to protect and authenticate\n"
+" messages. The <b>crc</b> method does not perform message authentication\n"
+" and only protects against corruption, not against attacks.</p>\n"
+msgstr ""
+"<p><b>md5</b> 與 <b>sha1</b> 方法都需要\n"
+"<i>共享機密</i>，用於保護與驗證\n"
+"訊息。<b>crc</b> 方法不執行訊息驗證\n"
+" 並且僅防止損壞，不防止攻擊。</p>\n"
+
+#: src/include/heartbeat/helps.rb:132
+msgid ""
+"<p>The <b>sha1</b> method is recommended because it provides the\n"
+"    strongest authentication scheme available. The authentication key\n"
+"(password) specified is used on all nodes in the cluster.</p>\n"
+msgstr ""
+"<p>建議使用 <b>sha1</b> 方法，因為它提供\n"
+" 可用的最強身份驗證模式。指定的身份驗證金鑰\n"
+"(密碼)用於叢集中的所有節點。</p>\n"
+
+#: src/include/heartbeat/helps.rb:137
+msgid ""
+"<p><b>Resources</b> -- specify which resources are handled by Heartbeat\n"
+"and how Heartbeat should handle failback (migration of resources back to\n"
+"a node after a failure has been resolved).</p>\n"
+msgstr ""
+"<p><b>資源</b> － 指定 Heartbeat 處理哪些資源\n"
+"以及 Heartbeat 應如何處理故障回覆(故障解決後，資源遷移回\n"
+"節點)。</p>\n"
+
+#: src/include/heartbeat/helps.rb:142
+msgid ""
+"<p>If you set <b>Automatic Failback</b> to <i>on</i>, Heartbeat \n"
+"migrates resources back to the primary owner as soon as it becomes\n"
+"available again. This automatically restores the balancing of\n"
+"resources between the nodes, but requires that the resources are briefly\n"
+"stopped so they can be cleanly started, leading to a minor\n"
+"interruption of service.</p>\n"
+msgstr ""
+"<p>如果您將<b>自動故障回覆</b>設定為<i>開</i>，Heartbeat \n"
+"將在主擁有者又可用後立即把資源遷移回\n"
+"主擁有者。這樣，就能自動恢復\n"
+"節點之間的資源平衡，但需要短暫停止資源，\n"
+"以便能完全啟動資源，因此會導致服務\n"
+"短暫中斷。</p>\n"
+
+#: src/include/heartbeat/helps.rb:150
+msgid ""
+"<p>For most scenarios, <i>off</i> is the correct choice. It requires \n"
+"the administrator to trigger the failback of resources manually\n"
+"(using the hb_standby command line tool) as soon as the failure is\n"
+"resolved. This allows him to schedule a maintenance window and not\n"
+"interrupt the service even more.</p>\n"
+msgstr ""
+"<p>在大多數情況下，<i>關</i>是正確的選擇。它要求\n"
+"管理員在故障解決後立即手動觸發資源的故障回覆\n"
+"(使用 hb_standby 命令列\n"
+"工具)。這樣，管理員就可以安排維護時間段，而不用再\n"
+"中斷服務。</p>\n"
+
+#: src/include/heartbeat/helps.rb:157
+msgid ""
+"<p><i>legacy</i> is the old default for compatibility with former\n"
+"Heartbeat releases. It activates the automatic failback if not all\n"
+"nodes support the new directive yet. Explicitly choosing either \n"
+"<i>on</i> or <i>off</i> is recommended for new deployments.</p>\n"
+msgstr ""
+"<p><i>遺留設定</i>是可與先前的 Heartbeat 版本相容的\n"
+"舊的默認設定。如果尚不是所有節點都支援\n"
+"新指令，它將啟用自動故障回覆。對於新部署，建議顯式選擇\n"
+"<i>開</i>或<i>關</i>。</p>\n"
+
+#: src/include/heartbeat/helps.rb:163
+msgid ""
+"<p>Adding a resource to a given node places the resource under\n"
+"Heartbeat's control. It will be started and stopped automatically by\n"
+"Heartbeat. Make sure the resource is not started by anything\n"
+"else.</p>\n"
+msgstr ""
+"<p>在給定的節點上添加資源會將該資源置於\n"
+" Heartbeat 的控制之下。它將由 Heartbeat 自動啟動與\n"
+"停止。請確保此資源不會被其它程式\n"
+"啟動。</p>\n"
+
+#: src/include/heartbeat/helps.rb:169
+msgid ""
+"<p>Heartbeat primarily starts the resource on the node to which it is\n"
+"assigned if both nodes are healthy and up. See the <b>auto_failback</b>\n"
+"setting above.</p>\n"
+msgstr ""
+"<p>當兩個節點都運轉正常且已啟動時，Heartbeat 主要啟動\n"
+"指派給它的那個節點上的資源。請檢視上述 <b>auto_failback</b>\n"
+"的設定。</p>\n"
+
+#: src/include/heartbeat/helps.rb:174
+msgid ""
+"<p>Specify any init script name as a resource or a specify a special \n"
+"Heartbeat resource script (provided in the <i>/etc/ha.d/resource.d</i>\n"
+"directory). Some of the latter take additional arguments, which are\n"
+"separated from the resource script name itself by <i>::</i>, for\n"
+"example, <i>Filesystem::/dev/sda1::/mnt::reiserfs</i>. Check the\n"
+"documentation for the resource scripts.</p>\n"
+msgstr ""
+"<p>指定任何啟始化指令碼名作為資源或指定特殊的\n"
+" Heartbeat 資源指令碼(<i>/etc/ha.d/resource.d</i>\n"
+"目錄中會提供)。後者的某些部分可接受附加參數，\n"
+"這些參數與資源指令碼名本身之間用 <i>::</i> 分隔開，\n"
+"例如，<i>Filesystem::/dev/sda1::/mnt::reiserfs</i>。請查閱\n"
+"有關資源指令碼的文件。</p>\n"
+
+#: src/include/heartbeat/helps.rb:182
+msgid ""
+"<p>To protect the shared data, <b>STONITH</b>\n"
+" must be configured. Heartbeat is capable of driving a number of\n"
+"serial and network power switches to prevent a potentially faulty\n"
+"node from corrupting shared data.</p>\n"
+msgstr ""
+"<p>要保護共享資料，必須配置 <b>STONITH</b>\n"
+"。Heartbeat 能驅動多個\n"
+"序列與網路電源開關，以防止節點故障，\n"
+"避免損壞共享資料。</p>\n"
+
+#: src/include/heartbeat/helps.rb:188
+msgid ""
+"<p>STONITH needs to know which nodes can access the power\n"
+" switch. Enter or select the name of the node in <b>Host From</b>.\n"
+" For a serial power switch, this is a specific node name.\n"
+" For a network power switch, you should typically enter an asterisk\n"
+" (*) to indicate that it is accessible from all nodes.</p>\n"
+msgstr ""
+"<p>STONITH 需要了解可以訪問電源開關的\n"
+"節點。在<b>主機來自</b>中輸入或選擇節點的名稱。\n"
+"  對於序列電源開關，這是特定的節點名稱。\n"
+"  對於網路電源開關，通常應該輸入一個星號\n"
+"  (*)，表明可從所有節點訪問該開關。</p>\n"
+
+#: src/include/heartbeat/helps.rb:195
+msgid ""
+"<p>The <b>STONITH Type</b> is the name of the module that\n"
+" is used to control the power switch. <b>Parameters</b> are\n"
+" specific to the module specified. See the <tt>stonith -h</tt>\n"
+" command line tool for a list of supported modules and\n"
+" the parameters they accept.</p>\n"
+msgstr ""
+"<p><b>STONITH Type</b> 是用於控制電源開關的\n"
+"模組的名稱。<b>參數</b>是\n"
+" 特定於指定模組的。請參見 <tt>stonith -h</tt>\n"
+" 命令列工具，以獲得支援的模組及其接受的參數\n"
+"的列表。</p>\n"
+
+#: src/include/heartbeat/helps.rb:202
+msgid ""
+"<p><b><big>Booting</big></b><br>\n"
+"To start the Heartbeat software each time this cluster server\n"
+"is booted, select <b>On</b>. If you select <b>Off</b>, you \n"
+"must start Heartbeat manually each time this cluster server\n"
+"is booted. You can start the Heartbeat server manually using\n"
+"the <tt>/etc/init.d/heartbeat start</tt> command.</p>\n"
+"<p>To propagate the configuration to all nodes of the cluster and \n"
+"to enable heartbeat service on them, run the command line utility \n"
+"<tt>/usr/lib/heartbeat/ha_propagate</tt> on this node after the \n"
+"configuration is saved.</p>\n"
+msgstr ""
+"<p><b><big>引導</big></b><br>\n"
+"要在每次引導此叢集伺服器時啟動 Heartbeat 軟體，\n"
+"請選擇<b>開啟</b>。如果選擇<b>關閉</b>，您必須\n"
+" 在每次引導此叢集伺服器時，手動\n"
+"啟動 Heartbeat。可以使用\n"
+"<tt>/etc/init.d/heartbeat start</tt> 命令手動啟動 Heartbeat 伺服器。</p>\n"
+"<p>要傳播配置到此叢集中的所有節點並在它們上啟用心跳服務，在儲存配置後在\n"
+"此節點上運行 <tt>/usr/lib/heartbeat/ha_propagate</tt> 命令列工具。</p>\n"
+
+#: src/include/heartbeat/helps.rb:214
+msgid ""
+"<p>Heartbeat uses a variety of timers to tune and configure its behavior.\n"
+"All timers are specified in seconds.</p>\n"
+msgstr ""
+"<p>Heartbeat 使用各種計時器來調節與配置其行為。\n"
+"所有計時器都指定為以秒為單位。</p>\n"
+
+#: src/include/heartbeat/helps.rb:217
+msgid ""
+"<p><b>Keep Alive</b> specifies the interval at which a node announces itself on\n"
+"the network.</p>\n"
+msgstr ""
+"<p><b>保活</b>指定節點在網路上宣佈自己的\n"
+"時間間隔。</p>\n"
+
+#: src/include/heartbeat/helps.rb:220
+msgid ""
+"<p><b>Dead Time</b> is the time after which a node is presumed to be dead.\n"
+"It should probably default to five times the Keep Alive interval.</p>\n"
+msgstr ""
+"<p><b>死亡時間</b>在此時間後，節點將被認為已\"死\"。\n"
+"其預設值約為\"保活\"時間間隔的五倍。</p>\n"
+
+#: src/include/heartbeat/helps.rb:223
+msgid ""
+"<p><b>Warn Time</b> is the time after which Heartbeat warns in the log files\n"
+"that a node has been slow in sending its heartbeats. This should\n"
+"probably default to three times the Keep Alive interval.</p>\n"
+msgstr ""
+"<p><b>警告時間</b>在此時間後，Heartbeat 將在日誌檔案中發出警告，\n"
+"指出節點發送其心跳次數的速度已降低。其預設值\n"
+"約為\"保活\"時間間隔的三倍。</p>\n"
+
+#: src/include/heartbeat/helps.rb:228
+msgid ""
+"<p><b>Init Dead Time</b> is the time a node waits after start-up for the other\n"
+"nodes, given that sometimes network interfaces, routing, etc., take a\n"
+"while to stabilize. It should default to at least twice the Dead Time.</p>\n"
+msgstr ""
+"<p><b>啟始化死亡時間</b>是指某節點啟動後等待其它節點的時間，\n"
+"這是因為網路介面、路由等有時\n"
+"需要一段時間才能穩定下來。其預設值至少應為\"死亡時間\"的兩倍。</p>\n"
+
+#: src/include/heartbeat/helps.rb:233
+msgid ""
+"If the <b>Watchdog Timer</b> is enabled, Heartbeat uses\n"
+"the in-kernel watchdog for monitoring the local node itself. If\n"
+"Heartbeat does not write to that file every sixty seconds, the kernel \n"
+"forcibly reboots the node.</p>\n"
+msgstr ""
+"如果啟用了<b>看門狗計時器</b>，則 Heartbeat 將使用\n"
+"核心內看門狗來監視本地節點本身。如果\n"
+"Heartbeat 不每隔六十秒鐘就寫入該檔案一次，核心\n"
+"將強制重引導此節點。</p>\n"
+
+#: src/include/heartbeat/helps.rb:239
+msgid ""
+"<p><b>IP Fail</b> allows monitoring of external\n"
+"hosts and moving the resources accordingly (i.e., to the host with the\n"
+"<i>best</i> connectivity).</p>\n"
+msgstr ""
+"<p><b>IP 失敗</b>允許監視外部主機\n"
+"並相應地移動資源(即移到\n"
+"連線性<i>最好</i>的主機)。</p>\n"
+
+#: src/include/heartbeat/helps.rb:244
+msgid ""
+"<p>If enabled, Heartbeat needs a <b>Ping List</b> of external nodes to ping.\n"
+"The minimum if IP fail is enabled is one. A maximum of four to eight nodes seems sensible.</p>\n"
+msgstr ""
+"<p>如果啟用，Heartbeat 需要那些要 Ping 的外部節點的 <b>Ping 列表</b>。\n"
+"如果\"IP 失敗\"已啟用，最小值為一。而最大值為四到八個節點似乎比較可行。</p>\n"
+
+#: src/include/heartbeat/helps.rb:247
+msgid "<p>For more complex configurations, Heartbeat also supports <i>Ping Groups</i>."
+msgstr "<p>對於更復雜的配置，Heartbeat 還支援 <i>Ping 組</i>。"
+
+#: src/include/heartbeat/helps.rb:250
+msgid ""
+"A list of IP addresses is grouped together and if any\n"
+"of them is reachable, the node is deemed able to communicate with\n"
+"the <i>Ping Group</i>.</p>\n"
+msgstr ""
+"將一系列 IP 地址分組，如果\n"
+"其中任何一個可訪問，則認為此節點能夠與\n"
+"<i>Ping 組</i>通訊。</p>\n"
+
+#. encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2000 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#. ***************************************************************************
+#.
+#. Copyright (c) 2000 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#. File:	clients/heartbeat.ycp
+#. Package:	Configuration of heartbeat
+#. Summary:	Main file
+#. Authors:	Martin Lazar <mlazar@suse.cz>
+#.
+#. $Id$
+#.
+#. Main file for heartbeat configuration. Uses all other files.
+#: src/include/heartbeat/ipfail_conf.rb:141
+msgid "Node List"
+msgstr "節點列表"
+
+#. term TEnab = `Left(`CheckBox(`id("enable"), _("Enable IP Fail")));
+#: src/include/heartbeat/ipfail_conf.rb:161
+#: src/include/heartbeat/timeouts_conf.rb:191
+msgid "Enable"
+msgstr "啟用"
+
+#: src/include/heartbeat/ipfail_conf.rb:166
+#: src/include/heartbeat/timeouts_conf.rb:197
+msgid "Disable"
+msgstr "禁用"
+
+#: src/include/heartbeat/ipfail_conf.rb:179
+msgid "Ping to Node"
+msgstr "Ping 至節點"
+
+#: src/include/heartbeat/ipfail_conf.rb:180
+msgid "IP Address"
+msgstr "IP 地址"
+
+#: src/include/heartbeat/ipfail_conf.rb:278
+msgid "Specified IP address is already present."
+msgstr "指定的 IP 地址已存在。"
+
+#. ping group configuration
+#: src/include/heartbeat/ipfail_conf.rb:441
+msgid "Ping Group"
+msgstr "Ping 組"
+
+#: src/include/heartbeat/ipfail_conf.rb:443
+#: src/include/heartbeat/ipfail_conf.rb:466
+msgid "Group Name"
+msgstr "組名"
+
+#: src/include/heartbeat/ipfail_conf.rb:445
+msgid "List of IP Addresses"
+msgstr "IP 地址列表"
+
+#: src/include/heartbeat/ipfail_conf.rb:466
+msgid "IP Addresses"
+msgstr "IP 地址"
+
+#: src/include/heartbeat/ipfail_conf.rb:509
+#: src/include/heartbeat/ipfail_conf.rb:538
+msgid "Group name is required."
+msgstr "組名是必填項。"
+
+#: src/include/heartbeat/ipfail_conf.rb:514
+msgid "Specified group name is already present."
+msgstr "指定的組名已存在。"
+
+#: src/include/heartbeat/ipfail_conf.rb:523
+#: src/include/heartbeat/ipfail_conf.rb:547
+msgid "Bad list of IP addresses."
+msgstr "IP 地址列表錯誤。"
+
+#. media["baud"] = Heartbeat::config["baud"]:"57600";
+#: src/include/heartbeat/media_conf.rb:98
+msgid ""
+"Warning: No redundancy in the Heartbeat communication channels.\n"
+"Multiple media should be configured to reduce the likelihood of\n"
+"critical split brain scenarios.\n"
+msgstr ""
+"警告：Heartbeat 通訊通道沒有冗餘。\n"
+"應該配置多個媒體，以便減少\n"
+"危險的\"裂腦\"情況。\n"
+
+#. set as modified also if ha.cf does not exist yet
+#. so the data get written (#235834)
+#: src/include/heartbeat/media_conf.rb:228
+msgid "UDP Port"
+msgstr "UDP 埠"
+
+#. `Left(`HBox(
+#. `RadioButton( `id ("media_type_serial"), `opt(`notify), _("Serial Port"), true),
+#. `HSpacing(2),
+#. `ComboBox(`id("serial_port"), `opt(`editable), _("Serial Port Name"), serial_ports))),
+#: src/include/heartbeat/media_conf.rb:250
+msgid "Broadcast"
+msgstr "廣播"
+
+#: src/include/heartbeat/media_conf.rb:257
+#: src/include/heartbeat/media_conf.rb:287
+msgid "Device"
+msgstr "裝置"
+
+#. `Left(`HBox(
+#. `RadioButton(`id("media_type_ucast"), `opt(`notify), _("Unicast"), false),
+#. `HSpacing(2),
+#. `TextEntry(`id("ucast_address"), _("IP Address"), "" ),
+#. `HSpacing(1),
+#. `ComboBox(`id("ucast_device"), `opt(`editable), _("Device"), net_devices))),
+#: src/include/heartbeat/media_conf.rb:273
+msgid "Multicast"
+msgstr "多址廣播"
+
+#: src/include/heartbeat/media_conf.rb:280
+msgid "Multicast Group"
+msgstr "多址廣播組"
+
+#: src/include/heartbeat/media_conf.rb:291
+msgid "TTL"
+msgstr "TTL"
+
+#: src/include/heartbeat/media_conf.rb:300
+msgid "Heartbeat Medium"
+msgstr "Heartbeat 媒體"
+
+#: src/include/heartbeat/media_conf.rb:319
+msgid "Medium"
+msgstr "媒體"
+
+#: src/include/heartbeat/media_conf.rb:319
+msgid "Options"
+msgstr "選項"
+
+#. new["baud"] = (string)UI::QueryWidget(`id("baud"), `Value);
+#: src/include/heartbeat/media_conf.rb:388
+msgid "Specified media is already present."
+msgstr "指定的媒體已存在。"
+
+#. } else if (mn=="media_type_ucast") {
+#. string dev = (string)UI::QueryWidget(`id("ucast_device"), `Value);
+#. string address = (string)UI::QueryWidget(`id("ucast_address"), `Value);
+#. if (! IP::Check4(address)) {
+#. Report::Error (IP::Valid4 ());
+#. return cur;
+#. }
+#. string all = dev + " " + address;
+#. if (!edit && contains(cur["ucast"]:[], all)) {
+#. media_already();
+#. return cur;
+#. }
+#. cur["ucast"] = add(cur["ucast"]:[], all);
+#: src/include/heartbeat/media_conf.rb:452
+msgid "Multicast group address must be class D (224.0.0.0 - 239.255.255.255)."
+msgstr "多址廣播組地址必須為 D 類 (224.0.0.0 - 239.255.255.255)。"
+
+#. if (newnode == nil || newnode == "") {
+#. Report::Error(_("The other node name is required."));
+#. return false;
+#. }
+#. if (newnode == thisnode) {
+#. Report::Error(_("The other node name cannot be same as this node name."));
+#. return false;
+#. }
+#. list<string> onodes = Heartbeat::config["node"]:[];
+#. if (size(onodes) != 2 || onodes[0]:"" != thisnode || onodes[1]:"" != newnode) {
+#. Heartbeat::config["node"] = nodes;
+#. Heartbeat::config["modified"] = true;
+#. }
+#: src/include/heartbeat/node_conf.rb:121
+msgid "This Node"
+msgstr "此節點"
+
+#. `HStretch(),
+#: src/include/heartbeat/node_conf.rb:137
+msgid "Add Nodes"
+msgstr "添加節點"
+
+#: src/include/heartbeat/node_conf.rb:143
+#: src/include/heartbeat/node_conf.rb:168
+msgid "Node Name"
+msgstr "節點名"
+
+#: src/include/heartbeat/node_conf.rb:253
+msgid "Specify the node name."
+msgstr "指定節點名稱。"
+
+#: src/include/heartbeat/node_conf.rb:257
+#: src/include/heartbeat/node_conf.rb:264
+msgid "The specified node is already in the cluster."
+msgstr "指定的節點已在叢集中。"
+
+#. encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2000 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#. ***************************************************************************
+#.
+#. Copyright (c) 2000 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#. Package:	Configuration of heartbeat
+#. Authors:	Martin Lazar <mlazar@suse.cz>
+#.
+#. $Id$
+#: src/include/heartbeat/resources_conf.rb:209
+msgid "Automatic Failback"
+msgstr "自動故障回覆"
+
+#: src/include/heartbeat/resources_conf.rb:219
+msgid "Add Resource"
+msgstr "添加資源"
+
+#: src/include/heartbeat/resources_conf.rb:221
+msgid "Add to Node"
+msgstr "添加到節點"
+
+#: src/include/heartbeat/resources_conf.rb:223
+msgid "Resource"
+msgstr "資源"
+
+#: src/include/heartbeat/resources_conf.rb:389
+msgid "Heartbeat resource manager only supports two nodes."
+msgstr "Heartbeat 資源管理器僅支援兩個節點。"
+
+#: src/include/heartbeat/resources_conf.rb:390
+msgid "Configure nodes first."
+msgstr "首先配置節點。"
+
+#: src/include/heartbeat/resources_conf.rb:446
+msgid "Resource name is required."
+msgstr "資源名是必填項。"
+
+#: src/include/heartbeat/resources_conf.rb:448
+msgid "The specified resource is already present."
+msgstr "指定的資源已存在。"
+
+#. encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2000 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#. ***************************************************************************
+#.
+#. Copyright (c) 2000 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#. File:	clients/heartbeat.ycp
+#. Package:	Configuration of heartbeat
+#. Summary:	Main file
+#. Authors:	Martin Lazar <mlazar@suse.cz>
+#.
+#. $Id$
+#.
+#. Main file for heartbeat configuration. Uses all other files.
+#: src/include/heartbeat/startup_conf.rb:71
+msgid "Booting"
+msgstr "引導"
+
+#: src/include/heartbeat/startup_conf.rb:79
+msgid "On -- Start Heartbeat Server Now and when Booting"
+msgstr "開 － 立即啟動 Heartbeat 伺服器與引導時啟動心跳伺服器"
+
+#: src/include/heartbeat/startup_conf.rb:83
+msgid "Off -- Server Only Starts Manually"
+msgstr "關 － 僅手動啟動伺服器"
+
+#: src/include/heartbeat/startup_conf.rb:92
+msgid "Switch On and Off"
+msgstr "開啟與關閉"
+
+#: src/include/heartbeat/startup_conf.rb:97
+msgid "Current Status: "
+msgstr "當前狀態："
+
+#: src/include/heartbeat/startup_conf.rb:104
+msgid "Start Heartbeat Server Now"
+msgstr "立即啟動 Heartbeat 伺服器"
+
+#: src/include/heartbeat/startup_conf.rb:109
+msgid "Stop Heartbeat Server Now"
+msgstr "立即停止 Heartbeat 伺服器"
+
+#: src/include/heartbeat/startup_conf.rb:140
+msgid "Heartbeat server is running."
+msgstr "Heartbeat 伺服器正在運行。"
+
+#: src/include/heartbeat/startup_conf.rb:141
+msgid "Heartbeat server is not running."
+msgstr "Heartbeat 伺服器沒有運行。"
+
+#. encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2000 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#. ***************************************************************************
+#.
+#. Copyright (c) 2000 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#. File:	clients/heartbeat.ycp
+#. Package:	Configuration of heartbeat
+#. Summary:	Main file
+#. Authors:	Martin Lazar <mlazar@suse.cz>
+#.
+#. $Id$
+#.
+#. Main file for heartbeat configuration. Uses all other files.
+#: src/include/heartbeat/stonith_conf.rb:65
+msgid "Specified STONITH host is already present."
+msgstr "指定的 STONITH 主機已存在。"
+
+#: src/include/heartbeat/stonith_conf.rb:102
+msgid "Add STONITH Host"
+msgstr "添加 STONITH 主機"
+
+#: src/include/heartbeat/stonith_conf.rb:105
+msgid "Host from"
+msgstr "主機來自"
+
+#: src/include/heartbeat/stonith_conf.rb:112
+msgid "STONITH Type"
+msgstr "STONITH 類型"
+
+#: src/include/heartbeat/stonith_conf.rb:117
+msgid "Parameters"
+msgstr "參數"
+
+#: src/include/heartbeat/stonith_conf.rb:245
+msgid "Specify the host name."
+msgstr "指定主機名。"
+
+#: src/include/heartbeat/stonith_conf.rb:249
+msgid "Specify the STONITH type."
+msgstr "指定 STONITH 類型。"
+
+#: src/include/heartbeat/stonith_conf.rb:256
+msgid "The specified STONITH is already present."
+msgstr "指定的 STONITH 已存在。"
+
+#. encoding: utf-8
+#. ***************************************************************************
+#.
+#. Copyright (c) 2000 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#. ***************************************************************************
+#.
+#. Copyright (c) 2000 - 2012 Novell, Inc.
+#. All Rights Reserved.
+#.
+#. This program is free software; you can redistribute it and/or
+#. modify it under the terms of version 2 of the GNU General Public License as
+#. published by the Free Software Foundation.
+#.
+#. This program is distributed in the hope that it will be useful,
+#. but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   See the
+#. GNU General Public License for more details.
+#.
+#. You should have received a copy of the GNU General Public License
+#. along with this program; if not, contact Novell, Inc.
+#.
+#. To contact Novell about this file by physical or electronic mail,
+#. you may find current contact information at www.novell.com
+#.
+#. ***************************************************************************
+#. Package:	Configuration of heartbeat
+#. Authors:	Martin Lazar <mlazar@suse.cz>
+#.
+#. $Id$
+#: src/include/heartbeat/timeouts_conf.rb:149
+msgid "Keep Alive"
+msgstr "保活"
+
+#: src/include/heartbeat/timeouts_conf.rb:157
+msgid "Dead Time"
+msgstr "死亡時間"
+
+#: src/include/heartbeat/timeouts_conf.rb:165
+msgid "Warn Time"
+msgstr "警告時間"
+
+#: src/include/heartbeat/timeouts_conf.rb:173
+msgid "Init Dead Time"
+msgstr "啟始化死亡時間"
+
+#: src/include/heartbeat/timeouts_conf.rb:183
+msgid "Watchdog Timer"
+msgstr "看門狗計時器"
+
+#: src/include/heartbeat/timeouts_conf.rb:206
+msgid "Watchdog Device"
+msgstr "看門狗裝置"
+
+#. Initialization dialog caption
+#: src/include/heartbeat/wizards.rb:203
+msgid "Heartbeat Configuration"
+msgstr "Heartbeat 配置"
+
+#. Initialization dialog contents
+#: src/include/heartbeat/wizards.rb:205
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. Heartbeat read dialog caption
+#: src/modules/Heartbeat.rb:123
+msgid "Initializing Heartbeat Configuration"
+msgstr "正在啟始化 Heartbeat 配置"
+
+#. We do not set help text here, because it was set outside
+#: src/modules/Heartbeat.rb:131
+msgid "Read previous settings"
+msgstr "讀取以前的設定"
+
+#: src/modules/Heartbeat.rb:132
+msgid "Read resources"
+msgstr "讀取資源"
+
+#: src/modules/Heartbeat.rb:133
+msgid "Read authentication keys"
+msgstr "讀取驗證金鑰"
+
+#: src/modules/Heartbeat.rb:134
+msgid "Read daemon status"
+msgstr "讀取守護精靈狀態"
+
+#: src/modules/Heartbeat.rb:137
+msgid "Reading previous settings..."
+msgstr "正在讀取以前的設定..."
+
+#: src/modules/Heartbeat.rb:138
+msgid "Reading resources..."
+msgstr "正在讀取資源..."
+
+#: src/modules/Heartbeat.rb:139
+msgid "Reading authentication keys..."
+msgstr "正在讀取驗證金鑰..."
+
+#: src/modules/Heartbeat.rb:140
+msgid "Reading daemon status..."
+msgstr "正在讀取守護精靈狀態..."
+
+#: src/modules/Heartbeat.rb:141 src/modules/Heartbeat.rb:343
+msgid "Finished"
+msgstr "已完成"
+
+#. Heartbeat read dialog caption
+#: src/modules/Heartbeat.rb:325
+msgid "Saving Heartbeat Configuration"
+msgstr "正在儲存 Heartbeat 配置"
+
+#. We do not set help text here, because it was set outside
+#: src/modules/Heartbeat.rb:333
+msgid "Write settings"
+msgstr "寫入設定"
+
+#: src/modules/Heartbeat.rb:334
+msgid "Write resources"
+msgstr "寫入資源"
+
+#: src/modules/Heartbeat.rb:335
+msgid "Write authentication keys"
+msgstr "寫入驗證金鑰"
+
+#: src/modules/Heartbeat.rb:336
+msgid "Restart services"
+msgstr "重啟動服務"
+
+#: src/modules/Heartbeat.rb:339
+msgid "Writing settings..."
+msgstr "正在寫入設定..."
+
+#: src/modules/Heartbeat.rb:340
+msgid "Writing resources..."
+msgstr "正在寫入資源..."
+
+#: src/modules/Heartbeat.rb:341
+msgid "Writing authentication keys..."
+msgstr "正在寫入驗證金鑰..."
+
+#: src/modules/Heartbeat.rb:342
+msgid "Restarting services..."
+msgstr "正在重啟動服務..."
+
+#. TODO FIXME: your code here...
+#. Configuration summary text for autoyast
+#: src/modules/Heartbeat.rb:561
+msgid "Configuration Summary..."
+msgstr "配置摘要..."
+
+#~ msgid "Propagate Configuration"
+#~ msgstr "傳播配置"
+
+#~ msgid ""
+#~ "To propagate this configuration to the rest of the nodes,\n"
+#~ "run the command line utility ha_propagate."
+#~ msgstr ""
+#~ "要將此配置傳播到剩餘的節點，\n"
+#~ "請運行命令列實用程式 ha_propagate。"
+

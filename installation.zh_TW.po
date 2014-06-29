@@ -1,0 +1,2957 @@
+# Translation of YaST to Simplified Chinese
+# LANGUAGE message file for YaST2
+# Copyright (C) 2001 SuSE GmbH.
+#
+# Xinwei Hu <xwhu@novell.com>, 2004.
+# James Su <suzhe@tsinghua.org.cn>, 2004.
+# Novell Language <language@novell.com>, 2004, 2005.
+# Thruth Wang <lihaow@opera.com>, 2007.
+# Eric Shan <ericalways@gmail.com>, 2008, 2012, 2013.
+# 瑪格麗特 · 蘇 <i@marguerite.su>, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: installation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-23 15:42+0200\n"
+"PO-Revision-Date: 2014-06-08 16:41+0800\n"
+"Last-Translator: 瑪格麗特 · 蘇 <marguerite@opensuse.org>\n"
+"Language-Team: Chinese Simplified <opensuse-zh@opensuse.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. this is a heading
+#: doc/proposal/dummy_proposal.rb:61
+msgid "Dummy"
+msgstr "演示"
+
+#. this is a menu entry
+#: doc/proposal/dummy_proposal.rb:63
+msgid "&Dummy"
+msgstr "演示(&D)"
+
+#. progress step title
+#: src/clients/clone_finish.rb:47
+msgid "Generating AutoYaST profile if needed..."
+msgstr "若需要則生成 AutoYaST 方案..."
+
+#. TRANSLATORS: help text
+#: src/clients/clone_proposal.rb:39
+msgid ""
+"<p>Use <b>Clone System Settings</b> if you want to create an AutoYaST "
+"profile.\n"
+"AutoYaST is a way to do a complete SUSE Linux installation without user "
+"interaction. AutoYaST\n"
+"needs a profile to know what the installed system should look like. If this "
+"option is\n"
+"selected, a profile of the current system is stored in <tt>/root/autoinst."
+"xml</tt>.</p>"
+msgstr ""
+"<p>若您想要創建一個 AutoYaST 方案請使用<b>複製系統設定</b>。\n"
+"AutoYaST 是一種無需使用者干預即可完整安裝 SUSE Linux 的方式。\n"
+"AutoYaST 需要一個方案來獲知安裝後的系統應該長什麼樣子。\n"
+"若選擇了此選項，將把當前 系統的方案存儲到 <tt>/root/autoinst.xml</tt>。</p>"
+
+#. this is a heading
+#: src/clients/clone_proposal.rb:68
+msgid "Clone System Configuration"
+msgstr "複製系統配置"
+
+#. this is a menu entry
+#: src/clients/clone_proposal.rb:70
+msgid "&Clone System Configuration"
+msgstr "複製系統配置(&C)"
+
+#. TRANSLATORS: Installation overview
+#. IMPORTANT: Please, do not change the HTML link <a href="...">...</a>, only visible text
+#: src/clients/clone_proposal.rb:98
+msgid ""
+"The AutoYaST profile will be written under /root/autoinst.xml (<a href="
+"\"%1\">do not write it</a>)."
+msgstr ""
+"AutoYaST 方案將被寫入在 /root/autoinst.xml 下(<a href=\"%1\">不寫入</a>)。"
+
+#. TRANSLATORS: Installation overview
+#. IMPORTANT: Please, do not change the HTML link <a href="...">...</a>, only visible text
+#: src/clients/clone_proposal.rb:107
+msgid "The AutoYaST profile will not be saved (<a href=\"%1\">write it</a>)."
+msgstr "將不會儲存 AutoYaST 方案(<a href=\"%1\">寫入</a>)。"
+
+#: src/clients/clone_proposal.rb:119
+msgid "Write AutoYaST profile to /root/autoinst.xml"
+msgstr "寫入 AutoYaST 方案到 /root/autoinst.xml"
+
+#. progress step title
+#: src/clients/copy_files_finish.rb:78
+msgid "Copying files to installed system..."
+msgstr "正在將檔案複製到安裝好的系統..."
+
+#. progress step title
+#: src/clients/copy_logs_finish.rb:65
+msgid "Copying log files to installed system..."
+msgstr "正在將日誌檔案複製到安裝好的系統..."
+
+#. progress step title
+#: src/clients/copy_systemfiles_finish.rb:61
+msgid "Copying system files to the installed system..."
+msgstr "正在將系統檔案複製到安裝好的系統..."
+
+#. Create a summary
+#. return string
+#: src/clients/deploy_image_auto.rb:90
+msgid "Installation from images is: <b>enabled</b>"
+msgstr "從映像安裝已<b>啟用</b>"
+
+#: src/clients/deploy_image_auto.rb:91
+msgid "Installation from images is: <b>disabled</b>"
+msgstr "從映像安裝已<b>禁用</b>"
+
+#. TRANSLATORS: dialog caption
+#. this is a heading
+#: src/clients/deploy_image_auto.rb:111 src/clients/deploy_image_auto.rb:116
+#: src/clients/deploying_proposal.rb:133
+msgid "Installation from Images"
+msgstr "從映像安裝"
+
+#: src/clients/deploy_image_auto.rb:119
+msgid ""
+"Here you can choose to use Novell pre-defined images to speed up RPM "
+"installation."
+msgstr "在此您可以選擇使用 Novell 預製映像來加速 RPM 安裝。"
+
+#: src/clients/deploy_image_auto.rb:133
+msgid "&Install from Images"
+msgstr "從映像安裝(&I)"
+
+#: src/clients/deploy_image_auto.rb:142
+msgid "&Do not Install from Images"
+msgstr "不從映像安裝(&D)"
+
+#: src/clients/deploy_image_auto.rb:153
+msgid ""
+"Custom images deployment - this needs a URL to be configured as installation "
+"source"
+msgstr "自定義映像部署 - 這需要配置一個 URL 作為安裝來源"
+
+#. Image name, Image location
+#: src/clients/deploy_image_auto.rb:162
+msgid "Here you can create custom images.\n"
+msgstr "在此您可以創建自定義映像。\n"
+
+#: src/clients/deploy_image_auto.rb:163
+msgid ""
+"You have to configure the software selection first before you can create an "
+"image here"
+msgstr "您必須先配置軟體選集才能在此創建映像"
+
+#: src/clients/deploy_image_auto.rb:174
+msgid ""
+"Create an image file (AutoYaST will fetch it from the given location during "
+"installation)"
+msgstr "創建一個映像檔案 (AutoYaST 將在安裝時從給定位置擷取它)"
+
+#: src/clients/deploy_image_auto.rb:181
+msgid "Create Image"
+msgstr "創建映像"
+
+#: src/clients/deploy_image_auto.rb:186
+msgid "Where will AutoYaST find the image? (e.g. http://host/)"
+msgstr "AutoYaST 查找映像位置 (例如 http://主機名/)"
+
+#: src/clients/deploy_image_auto.rb:198
+msgid "What is the name of the image? (e.g. my_image)"
+msgstr "映像名稱 (例如 my_image)"
+
+#: src/clients/deploy_image_auto.rb:211
+msgid "Create ISO (image and autoinst.xml will be on the media)"
+msgstr "創建 ISO (介質上會有映像與 autoinst.xml)"
+
+#. TRANSLATORS: help text
+#. TRANSLATORS: help text
+#: src/clients/deploy_image_auto.rb:227 src/clients/deploying_proposal.rb:69
+msgid ""
+"<p><b>Installation from Images</b> is used to speed the installation up.\n"
+"Images contain compressed snapshots of an installed system matching your\n"
+"selection of patterns. The rest of the packages which are not contained in "
+"the\n"
+"images will be installed from packages the standard way.</p>\n"
+msgstr ""
+"<p><b>從映像安裝</b>用於加快安裝速度。\n"
+"映像包含了一份匹配您的軟體選集的已安裝系統的壓縮快照。\n"
+"其餘映像未包含的軟體包將按標準方法從軟體包安裝。</p>\n"
+
+#: src/clients/deploy_image_auto.rb:233
+msgid ""
+"<p><b>Creating own Images</b> is used if you\n"
+"want to skip the complete step of RPM installation. Instead AutoYaST will "
+"dump an\n"
+"image on the harddisk which is a lot faster and can be pre-configured "
+"already.\n"
+"Everything else than RPM installation is done like during a normal auto-"
+"installation.</p>"
+msgstr ""
+"<p>若您想要跳過整個 RPM 安裝步驟可使用<b>創建自用映像</b>。\n"
+"AutoYaST 將轉儲一個安裝更快、可預配置好的映像到硬碟。\n"
+"除了 RPM 安裝步驟其他都跟正常的自動安裝一樣。</p>"
+
+#: src/clients/deploy_image_auto.rb:336 src/clients/deploy_image_auto.rb:347
+msgid "you need to do the software selection before creating an image"
+msgstr "您在創建映像前需要選擇一些軟體"
+
+#. TRANSLATORS: help text
+#: src/clients/deploying_proposal.rb:76
+msgid ""
+"<p>Note that when installing from images, the time stamps of all packages "
+"originating from the images will\n"
+"not match the installation date but rather the date the image was created.</"
+"p>"
+msgstr ""
+"<p>注意當從映像安裝時，全部源自映像的軟體包的時間戳記將不會匹配安裝日期，而是"
+"映像創建日期。</p>"
+
+#. TRANSLATORS: help text
+#: src/clients/deploying_proposal.rb:80
+msgid ""
+"<p>Installation from images is disabled by default if the current\n"
+"pattern selection does not fit any set of images.</p>"
+msgstr "<p>若當前軟體選集不匹配任何一組映像，將默認禁用從映像安裝。</p>"
+
+#: src/clients/deploying_proposal.rb:90
+msgid "Error: Images should not be used for mode: %1."
+msgstr "錯誤：映像不應用於模式：%1。"
+
+#. changed to true
+#: src/clients/deploying_proposal.rb:119
+msgid ""
+"Cannot enable installation from images.\n"
+"\n"
+"Currently selected patterns do not fit the images\n"
+"stored on the installation media.\n"
+msgstr ""
+"無法啟用從映像安裝。\n"
+"\n"
+"當前所選軟體集不匹配安裝介質上存儲的映像。\n"
+
+#. this is a menu entry
+#: src/clients/deploying_proposal.rb:135
+msgid "Installation from &Images"
+msgstr "從映像安裝(&I)"
+
+#. TRANSLATORS: Installation overview
+#: src/clients/deploying_proposal.rb:155
+msgid "No installation images are available"
+msgstr "沒有可用安裝映像"
+
+#. TRANSLATORS: Installation overview
+#. IMPORTANT: Please, do not change the HTML link <a href="...">...</a>, only visible text
+#: src/clients/deploying_proposal.rb:166
+msgid "Installation from images is enabled (<a href=\"%1\">disable</a>)."
+msgstr "從映像安裝已啟用 (<a href=\"%1\">禁用</a>)。"
+
+#. TRANSLATORS: Installation overview
+#. IMPORTANT: Please, do not change the HTML link <a href="...">...</a>, only visible text
+#: src/clients/deploying_proposal.rb:181
+msgid "Installation from images is disabled (<a href=\"%1\">enable</a>)."
+msgstr "從映像安裝已禁用 (<a href=\"%1\">啟用</a>)。"
+
+#. progress step title
+#: src/clients/desktop_finish.rb:73
+msgid "Initializing default window manager..."
+msgstr "正在啟始化默認視窗管理器..."
+
+#. feedback heading
+#: src/clients/inst_addon_update_sources.rb:52
+msgid "Add-on Product Installation"
+msgstr "附加產品安裝"
+
+#. feedback message
+#: src/clients/inst_addon_update_sources.rb:54
+msgid "Reading packages available in the repositories..."
+msgstr "正在讀取軟體源中可用的軟體包..."
+
+#. popup error message
+#. %1 represents the the error message details
+#: src/clients/inst_addon_update_sources.rb:110
+msgid ""
+"An error occurred while connecting to the server.\n"
+"Details: %1\n"
+"\n"
+"Try again?"
+msgstr ""
+"連線到伺服器時出錯。\n"
+"細節：%1\n"
+"\n"
+"重試嗎？"
+
+#. bnc #542792
+#. Repository name must be generated from product details
+#: src/clients/inst_addon_update_sources.rb:166
+msgid "Updates for %1 %2"
+msgstr "%1 的更新 %2"
+
+#: src/clients/inst_addon_update_sources.rb:173
+msgid "Unknown Product"
+msgstr "未知產品"
+
+#. strings for "ask for online update"-popup
+#: src/clients/inst_ask_online_update.rb:71
+msgid "Run Update"
+msgstr "運行更新"
+
+#: src/clients/inst_ask_online_update.rb:72
+msgid "Skip Update"
+msgstr "跳過更新"
+
+#: src/clients/inst_ask_online_update.rb:74
+msgid "Online Update"
+msgstr "線上更新"
+
+#: src/clients/inst_ask_online_update.rb:75
+msgid "Run Online Update now?"
+msgstr "立即運行線上更新嗎？"
+
+#: src/clients/inst_ask_online_update.rb:77
+msgid ""
+"Select whether to run an online update now.\n"
+"You may skip this step and run an online update later.\n"
+msgstr ""
+"選擇是否立即運行線上更新。\n"
+"您可以跳過該步驟，稍後再運行線上更新。\n"
+
+#. ----------------------------------------------------------------------
+#. Build dialog
+#. ----------------------------------------------------------------------
+#. heading text
+#: src/clients/inst_complex_welcome.rb:86
+msgid "Language, Keyboard and License Agreement"
+msgstr "語言、鍵盤與許可協議"
+
+#. combo box label
+#. combobox
+#. TRANSLATORS: Combo box
+#: src/clients/inst_complex_welcome.rb:92
+#: src/clients/inst_release_notes.rb:218 src/clients/inst_release_notes.rb:437
+msgid "&Language"
+msgstr "語言(&L)"
+
+#. combo box label
+#: src/clients/inst_complex_welcome.rb:100
+msgid "&Keyboard Layout"
+msgstr "鍵盤佈局(&K)"
+
+#. bnc #359456
+#. TRANSLATORS: check-box
+#: src/clients/inst_complex_welcome.rb:112
+msgid "I &Agree to the License Terms."
+msgstr "我同意許可條款。(&A)"
+
+#. this type of contents will be shown only for initial installation dialog
+#. TRANSLATORS: dialog caption
+#: src/clients/inst_complex_welcome.rb:137
+#: src/clients/inst_complex_welcome.rb:312
+msgid "License Agreement"
+msgstr "許可協議"
+
+#. TRANSLATORS: button label
+#: src/clients/inst_complex_welcome.rb:143
+msgid "License &Translations..."
+msgstr "許可譯文(&T)..."
+
+#. help text for initial (first time) language screen
+#: src/clients/inst_complex_welcome.rb:172
+msgid ""
+"<p>\n"
+"Choose the <b>Language</b> and the <b>Keyboard layout</b> to be used during\n"
+"installation and for the installed system.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"選擇要在安裝過程中與安裝好的系統中使用的<b>語言</b>與<b>鍵盤佈局</b>。\n"
+"</p>\n"
+
+#. help text, continued
+#. Describes the #ICW_B1 button
+#: src/clients/inst_complex_welcome.rb:180
+msgid ""
+"<p>\n"
+"The license must be accepted before the installation continues.\n"
+"Use <b>License Translations...</b> to show the license in all available "
+"translations.\n"
+"</p>\n"
+msgstr ""
+"<P>\n"
+"繼續安裝前必須接受許可。\n"
+"使用<b>許可譯文</b>來顯示全部可用的許可譯文。\n"
+"</p>\n"
+
+#. help text, continued
+#: src/clients/inst_complex_welcome.rb:187
+msgid ""
+"<p>\n"
+"Click <b>Next</b> to proceed to the next dialog.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"點選<b>下一步</b>前往下一個對話方塊。\n"
+"</p>\n"
+
+#. help text, continued
+#: src/clients/inst_complex_welcome.rb:193
+msgid ""
+"<p>\n"
+"Nothing will happen to your computer until you confirm\n"
+"all your settings in the last installation dialog.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"在最後一個安裝對話方塊中確認全部設定後才會真正執行安裝。\n"
+"</p>\n"
+
+#. help text, continued
+#: src/clients/inst_complex_welcome.rb:200
+msgid ""
+"<p>\n"
+"Select <b>Abort</b> to abort the\n"
+"installation process at any time.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"您可以隨時選擇<b>中止</b>來中止安裝程序。\n"
+"</p>\n"
+
+#: src/clients/inst_complex_welcome.rb:336
+msgid "You must accept the license to install this product"
+msgstr "您必須接受許可才能安裝本產品"
+
+#. TRANSLATORS: check box, see #ZMD
+#: src/clients/inst_congratulate.rb:107
+msgid "&Disable ZMD Service"
+msgstr "禁用 ZMD 服務(&D)"
+
+#. TRANSLATORS: help text, see #ZMD
+#: src/clients/inst_congratulate.rb:114
+msgid ""
+"<p>Select <b>Disable ZMD Service</b> to stop and disable\n"
+"the ZMD service during system start.</p>\n"
+msgstr ""
+"<p>選擇<b>禁用 ZMD 服務</b>來停止與禁用在系統啟動時運行 ZMD 服務。</p>\n"
+
+#. Check box: start the clone process and store the AutoYaST
+#. profile in /root/autoinst.xml
+#: src/clients/inst_congratulate.rb:149
+msgid "&Clone This System for AutoYaST"
+msgstr "為 Autoyast 克隆本系統(&C)"
+
+#. caption for dialog "Congratulation Dialog"
+#: src/clients/inst_congratulate.rb:155
+msgid "Installation Completed"
+msgstr "安裝完成"
+
+#. congratulation text 1/4
+#: src/clients/inst_congratulate.rb:163
+msgid "<p><b>Congratulations!</b></p>"
+msgstr "<p><b>願原力與你同在！德瑪西亞！</b></p>"
+
+#. congratulation text 2/4
+#: src/clients/inst_congratulate.rb:165
+msgid ""
+"<p>The installation of &product; on your machine is complete.\n"
+"After clicking <b>Finish</b>, you can log in to the system.</p>\n"
+msgstr ""
+"<p>您計算機上的 &product; 已安裝完畢。\n"
+"點選<b>完成</b>後，您就可以登入該系統了。</p>\n"
+
+#. congratulation text 3/4
+#: src/clients/inst_congratulate.rb:169
+msgid "<p>Visit us at %1.</p>"
+msgstr "<p>歡迎訪問我們的官網 %1。</p>"
+
+#. congratulation text 4/4
+#: src/clients/inst_congratulate.rb:172
+msgid "<p>Have a lot of fun!<br>Your SUSE Development Team</p>"
+msgstr "<p>祝您使用愉快！<br>您的 SUSE 開發團隊</p>"
+
+#. help 1/4 for dialog "Congratulation Dialog"
+#: src/clients/inst_congratulate.rb:197
+msgid "<p>Your system is ready for use.</p>"
+msgstr "<p>您的系統可以使用了。</p>"
+
+#. help 2/4 for dialog "Congratulation Dialog"
+#: src/clients/inst_congratulate.rb:199
+msgid ""
+"<p><b>Finish</b> will close the YaST installation and take you\n"
+"to the login screen.</p>\n"
+msgstr "<p><b>完成</b>將關閉 YaST 安裝程式並帶您到登入螢幕。</p>\n"
+
+#. help 3/4 for dialog "Congratulation Dialog"
+#: src/clients/inst_congratulate.rb:204
+msgid ""
+"<p>If you choose the default graphical desktop KDE, you can\n"
+"adjust some KDE settings to your hardware. Also notice\n"
+"our SUSE Welcome Dialog.</p>\n"
+msgstr ""
+"<p>若您選擇了默認的圖形桌面 KDE，您可以針對您的硬體調整一些 KDE 設定。\n"
+"也請留意我們的 SUSE 歡迎介面。</p>\n"
+
+#. Show this help only in case of KDE as the default windowmanager
+#: src/clients/inst_congratulate.rb:214
+msgid ""
+"<p>Use <b>Clone</b> if you want to create an AutoYaST profile.\n"
+"AutoYaST is a way to do a complete SUSE Linux installation without user "
+"interaction. AutoYaST\n"
+"needs a profile to know what the installed system should look like. If this "
+"option is\n"
+"selected, a profile of the current system is stored in <tt>/root/autoinst."
+"xml</tt>.</p>"
+msgstr ""
+"<p>若您想要創建一個 AutoYaST 方案請使用<b>克隆</b>。\n"
+"AutoYaST 是一種無需使用者干預即可完整安裝 SUSE Linux 的方式。\n"
+"AutoYaST 需要一個方案來了解安裝好的系統應該是怎樣的。\n"
+"若選中此選項，將把一份匹配當前系統的方案匯出到 <tt>/root/autoyast.xml</tt>。"
+"</p>"
+
+#. Dialog busy message
+#. TRANSLATORS: busy message
+#: src/clients/inst_congratulate.rb:265
+#: src/include/installation/inst_inc_all.rb:126
+msgid "Finishing the installation..."
+msgstr "正在完成安裝..."
+
+#. #187558
+#. Load Add-On products configured in the fist stage
+#: src/clients/inst_congratulate.rb:308
+msgid ""
+"<p>To clone the current system, the <b>%1</b> package must be installed.</p>"
+msgstr "<p>要克隆當前系統，您必須安裝 <b>%1</b> 軟體包。</p>"
+
+#: src/clients/inst_congratulate.rb:311
+msgid "<p>Install it now?</p>"
+msgstr "<p>立即安裝它嗎？</p>"
+
+#: src/clients/inst_congratulate.rb:313
+msgid "autoyast2 package not installed. Cloning disabled."
+msgstr "未安裝 autoyast2 軟體包。克隆已禁用。"
+
+#. OEM image if target disk is defined
+#: src/clients/inst_deploy_image.rb:46
+msgid "The system will reboot now..."
+msgstr "系統將立即重新引導..."
+
+#. bnc #395030
+#. Use less memory
+#. twice more steps
+#. FIXME: 2 minutes
+#. own workflow for OEM image deployment
+#: src/clients/inst_deploy_image.rb:106 src/clients/inst_deploy_image.rb:351
+#: src/clients/inst_prepareprogress.rb:110
+#: src/clients/inst_prepareprogress.rb:151
+msgid "Deploying Images..."
+msgstr "正在部署映像..."
+
+#. BNC #444209
+#. false == error
+#: src/clients/inst_deploy_image.rb:167
+msgid ""
+"Deploying images has failed.\n"
+"Aborting the installation...\n"
+msgstr ""
+"部署映像失敗。\n"
+"正在中止安裝...\n"
+
+#. TRANSLATORS: pop-up message
+#: src/clients/inst_deploy_image.rb:199
+msgid ""
+"Debugging has been turned on.\n"
+"YaST will open a software manager for you to check the current status of "
+"packages."
+msgstr ""
+"已經開啟偵錯功能。\n"
+"YaST 將開啟一個軟體包管理器來讓您檢查軟體包當前狀態。"
+
+#. unknown image
+#: src/clients/inst_deploy_image.rb:375
+msgid "Downloading image at speed %1/s"
+msgstr "正在下載映像，速度：%1/秒"
+
+#: src/clients/inst_deploy_image.rb:380
+msgid "Downloading image %1 at speed %2/s"
+msgstr "正在下載映像 %1，速度：%2/秒"
+
+#. reset the label
+#: src/clients/inst_deploy_image.rb:442
+msgid "Deploying image..."
+msgstr "正在部署映像..."
+
+#: src/clients/inst_deploy_image.rb:445
+msgid "Deploying image %1..."
+msgstr "正在部署映像 %1..."
+
+#. FIXME: move blacklist to Storage
+#: src/clients/inst_disk_for_image.rb:84
+msgid "Select the disk to deploy the image to."
+msgstr "選擇要部署映像的磁碟。"
+
+#: src/clients/inst_disk_for_image.rb:85
+msgid "All data on the disk will be lost!!!"
+msgstr "該磁碟上的全部資料均將被摧毀！！！"
+
+#: src/clients/inst_disk_for_image.rb:87
+msgid "&Disk to Use"
+msgstr "要使用的磁碟(&D)"
+
+#: src/clients/inst_disk_for_image.rb:93
+msgid ""
+"Select the disk, which the image will be deployed to. All data on the disk "
+"will be lost and the disk will be partitioned as defined in the image."
+msgstr ""
+"請選擇將部署映像的磁碟。該磁碟上的全部資料均將被摧毀，磁碟將以映像中定義的方"
+"式被重新分割區。"
+
+#: src/clients/inst_disk_for_image.rb:100
+msgid "Hard Disk for Image Deployment"
+msgstr "用於部署映像的硬碟"
+
+#. popup label
+#: src/clients/inst_disks_activate.rb:60
+msgid "Detecting Available Controllers"
+msgstr "正在檢測可用控制器"
+
+#. dialog caption
+#: src/clients/inst_disks_activate.rb:77
+msgid "Disk Activation"
+msgstr "磁碟啟用"
+
+#: src/clients/inst_disks_activate.rb:87
+msgid "Configure &DASD Disks"
+msgstr "配置 &DASD 磁碟"
+
+#: src/clients/inst_disks_activate.rb:93
+msgid "Configure &ZFCP Disks"
+msgstr "配置 &ZFCP 磁碟"
+
+#: src/clients/inst_disks_activate.rb:99
+msgid "Configure &FCoE Interfaces"
+msgstr "配置乙太網絡光纖通道介面(&F)"
+
+#: src/clients/inst_disks_activate.rb:112
+msgid "Configure &iSCSI Disks"
+msgstr "配置 &iSCSI 磁碟"
+
+#: src/clients/inst_disks_activate.rb:113
+msgid "Change Net&work Configuration"
+msgstr "修改網路配置(&W)"
+
+#. TRANSLATORS: dialog caption
+#: src/clients/inst_doit.rb:63
+msgid "Installation - Warming Up"
+msgstr "安裝 - 熱身"
+
+#. TRANSLATORS: starting the installation process
+#. dialog cotent (progress information)
+#. popup headline (#x1)
+#: src/clients/inst_doit.rb:67 src/include/installation/inst_inc_second.rb:379
+msgid "Starting Installation..."
+msgstr "正在啟動安裝..."
+
+#. TRANSLATORS: dialog help
+#: src/clients/inst_doit.rb:70
+msgid "<p>Installation is just about to start!</p>"
+msgstr "<p>安裝即將開始！</p>"
+
+#. download release notes now
+#. push button
+#: src/clients/inst_download_release_notes.rb:135
+#: src/clients/inst_system_analysis.rb:356
+msgid "Re&lease Notes..."
+msgstr "版本資訊(&L)..."
+
+#. popup message, list of repositores is appended to the text
+#: src/clients/inst_extrasources.rb:150
+msgid "Package updates have been found in these additional repositories:"
+msgstr "在這些額外的軟體源中找到了軟體包更新："
+
+#. yes/no popup question
+#: src/clients/inst_extrasources.rb:168
+msgid "Start the software manager to check and install the updates?"
+msgstr "啟動軟體包管理器來檢查與安裝這些更新嗎？"
+
+#. check box
+#: src/clients/inst_extrasources.rb:512
+msgid "Show &package updates"
+msgstr "顯示軟體包更新(&P)"
+
+#. Adjust a SlideShow dialog if not configured
+#. kilobytes
+#. just make it longer than inst_finish, TODO: better value later
+#: src/clients/inst_finish.rb:85 src/clients/inst_prepareprogress.rb:139
+#: src/clients/inst_prepareprogress.rb:157
+msgid "Finishing Basic Installation"
+msgstr "正在完成基礎安裝"
+
+#. Might be left from the previous stage
+#: src/clients/inst_finish.rb:111
+msgid "Creating list of finish scripts to call..."
+msgstr "正在創建要呼叫的收尾指令碼列表..."
+
+#. progress stage
+#: src/clients/inst_finish.rb:127
+msgid "Copy files to installed system"
+msgstr "複製檔案到安裝好的系統"
+
+#. progress stage
+#: src/clients/inst_finish.rb:142
+msgid "Save configuration"
+msgstr "儲存配置"
+
+#. progress stage
+#: src/clients/inst_finish.rb:168
+msgid "Save installation settings"
+msgstr "儲存安裝設定"
+
+#. progress stage
+#: src/clients/inst_finish.rb:187
+msgid "Install boot manager"
+msgstr "安裝引導管理器"
+
+#. progress stage
+#: src/clients/inst_finish.rb:199
+msgid "Prepare system for initial boot"
+msgstr "為首次引導準備系統"
+
+#. merge steps from add-on products
+#. bnc #438678
+#: src/clients/inst_finish.rb:304
+msgid "Checking stage: %1..."
+msgstr "正在檢查階段：%1..."
+
+#. a fallback busy message
+#: src/clients/inst_finish.rb:393
+msgid "Calling step %1..."
+msgstr "正在呼叫步驟 %1..."
+
+#. use as ' * %1' -> ' * One of the finish steps...' in the SlideShow log
+#: src/clients/inst_finish.rb:413
+msgid " * %1"
+msgstr " * %1"
+
+#. Anything else
+#: src/clients/inst_finish.rb:450
+msgid "Finished"
+msgstr "已完成"
+
+#. get the latest errors
+#: src/clients/inst_finish.rb:581
+msgid "Installation Error"
+msgstr "安裝出錯"
+
+#. Button to accept a license agreement
+#: src/clients/inst_info.rb:63
+msgid "I &Agree"
+msgstr "我願意(&A)"
+
+#. Button to reject a license agreement
+#: src/clients/inst_info.rb:67
+msgid "I Do &Not Agree"
+msgstr "我當時就不幹了(&N)"
+
+#. TRANSLATORS: dialog help
+#: src/clients/inst_initialization.rb:42
+msgid "Installation is being initialized."
+msgstr "正在啟始化安裝。"
+
+#. TRANSLATORS: dialog progress message
+#: src/clients/inst_initialization.rb:44
+msgid "Initializing the installation..."
+msgstr "正在啟始化安裝..."
+
+#. TRANSLATORS: dialog help
+#. help for the dialog - busy message
+#: src/clients/inst_initialization.rb:48
+#: src/include/installation/inst_inc_all.rb:59
+msgid "<p>Please wait...</p>"
+msgstr "<p>請稍候...</p>"
+
+#. TRANSLATORS: dialog progress message
+#: src/clients/inst_initialization.rb:50
+msgid "Preparing the initial system configuration..."
+msgstr "正在準備初始系統配置..."
+
+#. TRANSLATORS: dialog caption
+#. bug #302384
+#: src/clients/inst_initialization.rb:56
+#: src/clients/inst_installation_options.rb:151
+msgid "Initializing"
+msgstr "正在啟始化"
+
+#. dialog caption
+#: src/clients/inst_installation_options.rb:83
+msgid "Installation Options"
+msgstr "安裝選項"
+
+#. TRANSLATORS: progress message
+#. dialog caption
+#: src/clients/inst_installation_options.rb:153
+#: src/include/installation/inst_inc_all.rb:64
+msgid "Initializing..."
+msgstr "正在啟始化..."
+
+#. check box
+#: src/clients/inst_installation_options.rb:180
+msgid "&Add Online Repositories Before Installation"
+msgstr "在安裝前添加線上軟體源(&A)"
+
+#. check box
+#: src/clients/inst_installation_options.rb:190
+msgid "In&clude Add-on Products from Separate Media"
+msgstr "包括獨立介質中的附加產品(&C)"
+
+#. help text for installation method
+#: src/clients/inst_installation_options.rb:201
+msgid "<p><big><b>Installation Options</b></big></p>"
+msgstr "<p><big><b>安裝選項</b></big></p>"
+
+#. help text for installation option
+#: src/clients/inst_installation_options.rb:204
+msgid ""
+"<p>\n"
+"To use suggested remote repositories during installation or update, select\n"
+"<b>Add Online Repositories Before Installation</b>.</p>"
+msgstr ""
+"<p>\n"
+"要在安裝或者更新時使用建議的遠端軟體源，請選擇<b>在安裝前添加線上軟體源</b>。"
+"</p>"
+
+#. help text for installation method
+#: src/clients/inst_installation_options.rb:208
+msgid ""
+"<p>\n"
+"To install an add-on product from separate media together with &product;, "
+"select\n"
+"<b>Include Add-on Products from Separate Media</b>.</p>\n"
+msgstr ""
+"<p>\n"
+"要在安裝 &product; 時從獨立介質安裝附加產品，請選擇<b>包括獨立介質中的附加產"
+"品</b>。</p>\n"
+
+#. help text: additional help for installation
+#: src/clients/inst_installation_options.rb:211
+msgid ""
+"<p>If you need specific hardware drivers for installation, see <i>http://"
+"drivers.suse.com</i> site.</p>"
+msgstr ""
+"<p>若您需要安裝特種硬體驅動，請參考 <i>http://drivers.suse.com</i> 站點。</p>"
+
+#. Error message
+#: src/clients/inst_license.rb:128
+msgid "Internal error: Missing license to show"
+msgstr "內部錯誤：缺少應顯示的許可"
+
+#. TRANSLATORS: dialog caption
+#: src/clients/inst_network_check.rb:82
+msgid "Network Setup"
+msgstr "網路設定"
+
+#. TRANSLATORS: dialog label
+#: src/clients/inst_network_check.rb:97
+msgid ""
+"No network setup has been found.\n"
+"It is important if using remote repositories,\n"
+"otherwise you can safely skip it.\n"
+msgstr ""
+"未找到網路設定。\n"
+"若您使用遠端軟體源那這很重要。\n"
+"否則您可以放心地跳過該步驟。\n"
+
+#. TRANSLATORS: dialog label
+#: src/clients/inst_network_check.rb:107
+msgid "Configure your network card now?"
+msgstr "立即配置您的網卡嗎？"
+
+#. TRANSLATORS: frame label
+#: src/clients/inst_network_check.rb:111
+msgid "Select"
+msgstr "選擇"
+
+#. TRANSLATORS: radio button
+#: src/clients/inst_network_check.rb:120
+msgid "&Yes, Run the Network Setup"
+msgstr "是，運行網路設定(&Y)"
+
+#. TRANSLATORS: radio button
+#: src/clients/inst_network_check.rb:128
+msgid "No, &Skip the Network Setup"
+msgstr "否，跳過網路設定(&S)"
+
+#. TRANSLATORS: help text, part 1/2
+#: src/clients/inst_network_check.rb:141
+msgid ""
+"<p>The current installation system does not\n"
+"have a configured network.</p>\n"
+msgstr "<p>當前安裝的系統沒有配置好的網路。</p>\n"
+
+#. TRANSLATORS: help text, part 2/2
+#: src/clients/inst_network_check.rb:145
+msgid ""
+"<p>A configured network is needed for using remote repositories\n"
+"or add-on products. If you do not use remote repositories, skip the "
+"configuration.</p>\n"
+msgstr ""
+"<p>您需要配置一個網路連線來使用遠端的軟體源或附加產品。\n"
+"若您不使用遠端軟體源也可以跳過該配置。</p>\n"
+
+#. error popup
+#: src/clients/inst_network_check.rb:187
+msgid ""
+"Network configuration has failed.\n"
+"Check the log file %1 for details."
+msgstr ""
+"網路配置失敗。\n"
+"詳情請檢視日誌檔案 %1。"
+
+#. TRANSLATORS: help text, part 1
+#: src/clients/inst_new_desktop.rb:57
+msgid ""
+"<p>At Linux <b>choice</b> is a top priority. <i>openSUSE</i> offers a "
+"number \n"
+"of different desktop environments. Below you see a list of the 2 major "
+"ones \n"
+"<b>GNOME</b> and <b>KDE</b>.</p>"
+msgstr ""
+"<p>對於 Linux，<b>選擇</b>至關重要。<i>openSUSE</i> 提供了幾種不同的桌面環"
+"境。\n"
+"下面您可以看到兩種主流的桌面：<b>GNOME</b> 與 <b>KDE</b>。</p>"
+
+#. TRANSLATORS: help text, part 3
+#: src/clients/inst_new_desktop.rb:63
+msgid ""
+"<p>You may select alternative desktop environments (or one of minimal "
+"installation patterns)\n"
+"that could fit your needs better using the <b>Other</b> option . Later in "
+"the software \n"
+"selection or after installation, you can change your selection or add "
+"additional desktop \n"
+"environments. This screen allows you to set the default.</p>"
+msgstr ""
+"<p>您也可以使用<b>其它</b>選項選擇更滿足您需要的其它桌面環境 (或者選擇一個極"
+"簡安裝軟體集)。\n"
+"稍後在軟體選擇中或安裝後，您仍可以修改您的選擇或添加額外桌面環境。本螢幕允許"
+"您設定默認桌面環境。</p>"
+
+#. TRANSLATORS: dialog caption
+#: src/clients/inst_new_desktop.rb:121
+msgid "Desktop Selection"
+msgstr "桌面選擇"
+
+#. UI wait loop
+#: src/clients/inst_new_desktop.rb:190
+msgid ""
+"No desktop type was selected.\n"
+"Select the desired desktop environment."
+msgstr ""
+"未選擇桌面類型。\n"
+"請選擇中意的桌面環境。"
+
+#. BNC #449818
+#: src/clients/inst_new_desktop.rb:380
+msgid "Other"
+msgstr "其它"
+
+#. hide the RN button and set the release notes for SlideShow (bnc#871158)
+#: src/clients/inst_prepareprogress.rb:56
+msgid "Cannot find base product. Release notes will not be shown."
+msgstr "無法找到基礎產品。將不會顯示版本資訊。"
+
+#. 1 GB is a good approximation
+#: src/clients/inst_prepareprogress.rb:104
+msgid "Preparing disks..."
+msgstr "正在準備磁碟..."
+
+#. kilobytes
+#: src/clients/inst_prepareprogress.rb:125
+msgid "Installing Packages..."
+msgstr "正在安裝軟體包..."
+
+#. question in a popup box
+#: src/clients/inst_proposal.rb:214
+msgid "Really reset everything to default values?"
+msgstr "真的全部重置為預設值嗎？"
+
+#. explain consequences of a decision
+#: src/clients/inst_proposal.rb:216
+msgid "You will lose all changes."
+msgstr "您將丟失全部修改。"
+
+#. force_reset
+#: src/clients/inst_proposal.rb:220
+msgid "Location of Stored Configuration"
+msgstr "已存儲配置位置"
+
+#. force write, so it always write profile even if user do not want
+#. to store profile after installation
+#: src/clients/inst_proposal.rb:227
+msgid "Failed to store configuration. Details can be found in log."
+msgstr "存儲配置失敗。可在日誌中找到細節。"
+
+#. message show when user has disabled the configuration
+#: src/clients/inst_proposal.rb:238
+msgid "Skipping configuration upon user request"
+msgstr "根據使用者請求跳過配置"
+
+#. error message is a popup
+#: src/clients/inst_proposal.rb:255
+msgid ""
+"The proposal contains an error that must be\n"
+"resolved before continuing.\n"
+msgstr "提案存在一處錯誤，繼續前必須解決掉它。\n"
+
+#. not using tabs
+#. heading in proposal, in case the module doesn't create one
+#. heading in proposal, in case the module doesn't create one
+#: src/clients/inst_proposal.rb:496 src/clients/inst_proposal.rb:498
+#: src/clients/inst_proposal.rb:512 src/clients/inst_proposal.rb:555
+#: src/clients/inst_proposal.rb:557 src/clients/inst_proposal.rb:567
+msgid "ERROR: Missing Title"
+msgstr "錯誤：缺少標題"
+
+#. busy message
+#: src/clients/inst_proposal.rb:523
+msgid "Adapting the proposal to the current settings..."
+msgstr "正在調整提案到當前設定..."
+
+#. busy message;
+#. Initial contents of proposal subwindow while proposals are calculated
+#: src/clients/inst_proposal.rb:527 src/clients/inst_proposal.rb:1029
+msgid "Analyzing your system..."
+msgstr "正在分析您的系統..."
+
+#. fallback proposal, means usually an internal error
+#: src/clients/inst_proposal.rb:698
+msgid "ERROR: No proposal"
+msgstr "錯誤：無提案"
+
+#. Submodules handle their own error reporting
+#. text for a message box
+#: src/clients/inst_proposal.rb:743
+msgid ""
+"Configuration saved.\n"
+"There were errors."
+msgstr ""
+"配置已儲存，\n"
+"但存在錯誤。"
+
+#. dialog headline
+#: src/clients/inst_proposal.rb:947
+msgid "Installation Overview"
+msgstr "安裝概覽"
+
+#. Check box: Skip all the configurations in this dialog -
+#. do this later manually or not at all
+#. Translators: About 40 characters max,
+#. use newlines for longer translations.
+#. radio button
+#: src/clients/inst_proposal.rb:971
+msgid "&Skip Configuration"
+msgstr "跳過配置(&S)"
+
+#. radio button
+#: src/clients/inst_proposal.rb:980
+msgid "&Use Following Configuration"
+msgstr "使用以下配置(&U)"
+
+#. menu button
+#. menu button
+#. TRANSLATORS: Push button
+#: src/clients/inst_proposal.rb:992 src/clients/inst_proposal.rb:1176
+#: src/clients/inst_upgrade_urls.rb:236
+msgid "&Change..."
+msgstr "修改(&C)..."
+
+#. menu button
+#: src/clients/inst_proposal.rb:998 src/clients/inst_proposal.rb:1171
+msgid "&Export Configuration"
+msgstr "匯出配置(&E)"
+
+#. Help message between headline and installation proposal / settings summary.
+#. May contain newlines, but don't make it very much longer than the original.
+#: src/clients/inst_proposal.rb:1069
+msgid "Click a headline to make changes or use the \"Change...\" menu below."
+msgstr "點選任一標題或使用下面的 \"修改...\" 選單進行修改。"
+
+#: src/clients/inst_proposal.rb:1073
+msgid "Click a headline to make changes."
+msgstr "點選標題作出修改。"
+
+#. menu button item
+#: src/clients/inst_proposal.rb:1170
+msgid "&Reset to defaults"
+msgstr "重置為預設值(&R)"
+
+#. General part of the help text for all types of proposals
+#: src/clients/inst_proposal.rb:1206
+msgid ""
+"<p>\n"
+"Change the values by clicking on the respective headline\n"
+"or by using the <b>Change...</b> menu.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"點選相應的標題或使用<b>修改...</b>選單修改這些值。\n"
+"</p>\n"
+
+#. Help text for installation proposal
+#. General part ("You can change values...") is added as the next paragraph.
+#: src/clients/inst_proposal.rb:1217
+msgid ""
+"<p>\n"
+"Select <b>Install</b> to perform a new installation with the values "
+"displayed.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"選擇<b>安裝</b>用顯示的值執行全新安裝。\n"
+"</p>\n"
+
+#. kicking out, bug #203811
+#. no such headline
+#. // Help text for installation proposal, continued
+#. help_text_string = help_text_string + _("<p>
+#. To update an existing &product; system instead of doing a new install,
+#. click the <b>Mode</b> headline or select <b>Mode</b> in the
+#. <b>Change...</b> menu.
+#. </p>
+#. ");
+#. Deliberately omitting "boot installed system" here to avoid
+#. confusion: The user will be prompted for that if Linux
+#. partitions are found.
+#. - sh@suse.de 2002-02-26
+#.
+#. Help text for installation proposal, continued
+#. Deliberately omitting "boot installed system" here to avoid
+#. confusion: The user will be prompted for that if Linux
+#. partitions are found.
+#. - sh@suse.de 2002-02-26
+#.
+#. Help text for installation proposal, continued
+#: src/clients/inst_proposal.rb:1243 src/clients/inst_proposal.rb:1270
+msgid ""
+"<p>\n"
+"Your hard disk has not been modified yet. You can still safely abort.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"尚未改動您的硬碟。您仍可以安全地中止。\n"
+"</p>\n"
+
+#. Help text for update proposal
+#. General part ("You can change values...") is added as the next paragraph.
+#: src/clients/inst_proposal.rb:1253
+msgid ""
+"<p>\n"
+"Select <b>Update</b> to perform an update with the values displayed.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"選擇<b>更新</b>用顯示的值執行更新。\n"
+"</p>\n"
+
+#. Help text for network configuration proposal
+#. General part ("You can change values...") is added as the next paragraph.
+#: src/clients/inst_proposal.rb:1280
+msgid ""
+"<p>\n"
+"Put the network settings into effect by pressing <b>Next</b>.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"按<b>下一步</b>使網路設定生效。\n"
+"</p>\n"
+
+#. Help text for service configuration proposal
+#. General part ("You can change values...") is added as the next paragraph.
+#: src/clients/inst_proposal.rb:1291
+msgid ""
+"<p>\n"
+"Put the service settings into effect by pressing <b>Next</b>.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"按<b>下一步</b>使服務設定生效。\n"
+"</p>\n"
+
+#. Help text for hardware configuration proposal
+#. General part ("You can change values...") is added as the next paragraph.
+#: src/clients/inst_proposal.rb:1302
+msgid ""
+"<p>\n"
+"Put the hardware settings into effect by pressing <b>Next</b>.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"按<b>下一步</b>使硬體設定生效。\n"
+"</p>\n"
+
+#. Proposal in uml module
+#: src/clients/inst_proposal.rb:1311
+msgid "<P><B>UML Installation Proposal</B></P>"
+msgstr "<P><B>UML 安裝提案</B></P>"
+
+#. help text
+#: src/clients/inst_proposal.rb:1313
+msgid ""
+"<P>UML (User Mode Linux) installation allows you to start independent\n"
+"Linux virtual machines in the host system.</P>"
+msgstr ""
+"<P>UML (使用者模式 Linux) 安裝允許您在主機系統中啟動獨立的 Linux 虛擬機器。</P>"
+
+#. Generic help text for other proposals (not basic installation or
+#. hardhware configuration.
+#. General part ("You can change values...") is added as the next paragraph.
+#: src/clients/inst_proposal.rb:1330
+msgid ""
+"<p>\n"
+"To use the settings as displayed, press <b>Next</b>.\n"
+"</p>\n"
+msgstr ""
+"<p>\n"
+"要使用顯示的設定，請按<b>下一步</b>。\n"
+"</p>\n"
+
+#. help text
+#: src/clients/inst_proposal.rb:1343
+msgid ""
+"<p>Some proposals might be\n"
+"locked by the system administrator and therefore cannot be changed. If a\n"
+"locked proposal needs to be changed, ask your system administrator.</p>\n"
+msgstr ""
+"<p>系統管理員可能鎖定了某些提案，因而您無法修改它們。\n"
+"若需要修改鎖定的提案，請垂詢您的系統管理員。</p>\n"
+
+#. FATE #120373
+#: src/clients/inst_proposal.rb:1369
+msgid "&Update"
+msgstr "更新(&U)"
+
+#: src/clients/inst_proposal.rb:1370
+msgid "&Install"
+msgstr "安裝(&I)"
+
+#. TRANSLATORS: error message - the module does not provide command line interface
+#: src/clients/inst_release_notes.rb:59
+msgid "There is no user interface available for this module."
+msgstr "該模組沒有可用的使用者介面。"
+
+#. combobox item
+#: src/clients/inst_release_notes.rb:159
+msgid "Language: %1"
+msgstr "語言：%1"
+
+#. caption for dialog "Release Notes"
+#: src/clients/inst_release_notes.rb:207
+msgid "Release Notes"
+msgstr "版本資訊"
+
+#. +2 thingies on the right
+#: src/clients/inst_release_notes.rb:249
+msgid "&Product"
+msgstr "產品(&P)"
+
+#. help text for dialog "Release Notes"
+#: src/clients/inst_release_notes.rb:261
+msgid ""
+"<p>The <b>release notes</b> for the installed Linux system provide a brief\n"
+"summary of new features and changes.</p>\n"
+msgstr ""
+"<p>安裝好的 Linux 系統的<b>版本資訊</b>摘要說明了其新功能與改動。</p>\n"
+
+#. informative message in RichText widget
+#: src/clients/inst_release_notes.rb:463
+msgid "<p>No release notes have been installed.</p>"
+msgstr "<p>未安裝版本資訊。</p>"
+
+#. TRANSLATORS: busy message
+#. TRANSLATORS: progress stage, %1 stands for service name
+#: src/clients/inst_restore_settings.rb:47
+#: src/include/installation/inst_inc_second.rb:283
+msgid "Starting service %1..."
+msgstr "正在啟動服務 %1..."
+
+#. TRANSLATORS: help text
+#: src/clients/inst_scenarios.rb:108
+msgid ""
+"<p>Select the scenario that meets your needs best.\n"
+"Additional software can be selected later in software proposal.</p>\n"
+msgstr ""
+"<p>請選擇一個最適合您的使用場景。\n"
+"稍後可在軟體提案中選擇額外需要的軟體。</p>\n"
+
+#. TRANSLATORS: pop-up message
+#: src/clients/inst_scenarios.rb:138
+msgid "Choose one scenario, please."
+msgstr "請選擇一個使用場景。"
+
+#. TRANSLATORS: frame label
+#: src/clients/inst_scenarios.rb:298
+msgid "Choose Scenario"
+msgstr "選擇使用場景"
+
+#. This dialog in not interactive
+#. always return `back when came from the previous dialog
+#: src/clients/inst_system_analysis.rb:80
+msgid "Analyzing the Computer"
+msgstr "正在分析計算機"
+
+#. TRANSLATORS: progress steps in system probing
+#: src/clients/inst_system_analysis.rb:99
+msgid "Probe USB devices"
+msgstr "檢測 USB 裝置"
+
+#: src/clients/inst_system_analysis.rb:100
+msgid "Probing USB devices..."
+msgstr "正在檢測 USB 裝置..."
+
+#: src/clients/inst_system_analysis.rb:103
+msgid "Probe FireWire devices"
+msgstr "檢測火線裝置..."
+
+#: src/clients/inst_system_analysis.rb:104
+msgid "Probing FireWire devices..."
+msgstr "正在檢測火線裝置..."
+
+#: src/clients/inst_system_analysis.rb:107
+msgid "Probe floppy disk devices"
+msgstr "檢測軟盤裝置"
+
+#: src/clients/inst_system_analysis.rb:108
+msgid "Probing floppy disk devices..."
+msgstr "正在檢測軟盤裝置..."
+
+#: src/clients/inst_system_analysis.rb:112
+msgid "Probe hard disk controllers"
+msgstr "檢測硬碟控制器"
+
+#: src/clients/inst_system_analysis.rb:113
+msgid "Probing hard disk controllers..."
+msgstr "正在檢測硬碟控制器..."
+
+#: src/clients/inst_system_analysis.rb:116
+msgid "Load kernel modules for hard disk controllers"
+msgstr "為硬碟控制器載入核心模組"
+
+#: src/clients/inst_system_analysis.rb:117
+msgid "Loading kernel modules for hard disk controllers..."
+msgstr "正在為硬碟控制器載入核心模組..."
+
+#: src/clients/inst_system_analysis.rb:120
+msgid "Probe hard disks"
+msgstr "檢測硬碟"
+
+#: src/clients/inst_system_analysis.rb:121
+msgid "Probing hard disks..."
+msgstr "正在檢測硬碟..."
+
+#: src/clients/inst_system_analysis.rb:127
+msgid "Search for Linux partitions"
+msgstr "搜索 Linux 分割區"
+
+#: src/clients/inst_system_analysis.rb:128
+msgid "Searching for Linux partitions..."
+msgstr "正在搜索 Linux 分割區..."
+
+#. FATE #302980: Simplified user config during installation
+#: src/clients/inst_system_analysis.rb:132
+msgid "Search for system files"
+msgstr "搜索系統檔案"
+
+#: src/clients/inst_system_analysis.rb:133
+msgid "Searching for system files..."
+msgstr "正在搜索系統檔案..."
+
+#: src/clients/inst_system_analysis.rb:136
+msgid "Initialize software manager"
+msgstr "啟始化軟體包管理器"
+
+#: src/clients/inst_system_analysis.rb:137
+msgid "Initializing software manager..."
+msgstr "正在啟始化軟體包管理器..."
+
+#: src/clients/inst_system_analysis.rb:140
+msgid "Evaluate update possibility"
+msgstr "評估更新可能性"
+
+#: src/clients/inst_system_analysis.rb:141
+msgid "Evaluating update possibility..."
+msgstr "正在評估更新可能性..."
+
+#. TRANSLATORS: dialog caption
+#: src/clients/inst_system_analysis.rb:146
+msgid "System Probing"
+msgstr "系統檢測"
+
+#. TRANSLATORS: dialog help
+#: src/clients/inst_system_analysis.rb:152
+msgid "YaST is probing computer hardware and installed systems now."
+msgstr "YaST 現在正在檢測計算機硬體與已安裝的系統。"
+
+#. additonal error when HW was not found
+#: src/clients/inst_system_analysis.rb:255
+msgid ""
+"\n"
+"Check 'drivers.suse.com' if you need specific hardware drivers for "
+"installation."
+msgstr ""
+"\n"
+"若您需要安裝特種硬體驅動請檢視 'drivers.suse.com'。"
+
+#. pop-up error report
+#: src/clients/inst_system_analysis.rb:269
+msgid ""
+"No hard disks were found for the installation.\n"
+"Please check your hardware!\n"
+"%1\n"
+msgstr ""
+"未找到可用於安裝的硬碟。\n"
+"請檢查您的硬體！\n"
+"%1\n"
+
+#: src/clients/inst_system_analysis.rb:279
+msgid ""
+"No hard disks were found for the installation.\n"
+"During an automatic installation, they might be detected later.\n"
+"(especially on S/390 or iSCSI systems)\n"
+msgstr ""
+"未找到可用於安裝的磁碟。\n"
+"在自動安裝過程中，稍後可能會檢測到它們。\n"
+"(尤其是在 S/390 或 iSCSI 系統上)\n"
+
+#. pop-up error report
+#: src/clients/inst_system_analysis.rb:290
+msgid ""
+"No hard disks and no hard disk controllers were\n"
+"found for the installation.\n"
+"Check your hardware.\n"
+"%1\n"
+msgstr ""
+"未找到可用於安裝的硬碟與硬碟控制器。\n"
+"請檢查您的硬體。\n"
+"%1\n"
+
+#. popup message
+#: src/clients/inst_system_analysis.rb:343
+msgid ""
+"Failed to initialize the software repositories.\n"
+"Aborting the installation."
+msgstr ""
+"啟始化軟體源失敗。\n"
+"即將中止安裝。"
+
+#. TRANSLATORS: Table item status (repository)
+#: src/clients/inst_upgrade_urls.rb:104
+msgid "Removed"
+msgstr "已移除"
+
+#. TRANSLATORS: Table item status (repository)
+#: src/clients/inst_upgrade_urls.rb:108
+msgid "Enabled"
+msgstr "已啟用"
+
+#. TRANSLATORS: Table item status (repository)
+#: src/clients/inst_upgrade_urls.rb:112
+msgid "Disabled"
+msgstr "已禁用"
+
+#. TRANSLATORS: dialog caption
+#. TRANSLATORS: dialog caption
+#. TRANSLATORS: dialog caption
+#: src/clients/inst_upgrade_urls.rb:209 src/clients/inst_upgrade_urls.rb:677
+#: src/clients/inst_upgrade_urls.rb:736
+msgid "Previously Used Repositories"
+msgstr "之前用過的軟體源"
+
+#. TRANSLATORS: dialog text, possibly multiline,
+#. Please, do not use more than 50 characters per line.
+#: src/clients/inst_upgrade_urls.rb:215
+msgid ""
+"These repositories were found on the system\n"
+"you are upgrading:"
+msgstr "在您正在升級的系統中發現以下軟體源："
+
+#. TRANSLATORS: Table header item
+#: src/clients/inst_upgrade_urls.rb:225
+msgid "Current Status"
+msgstr "當前狀態"
+
+#. TRANSLATORS: Table header item
+#: src/clients/inst_upgrade_urls.rb:227
+msgid "Repository"
+msgstr "軟體源"
+
+#. TRANSLATORS: Table header item
+#: src/clients/inst_upgrade_urls.rb:229
+msgid "URL"
+msgstr "URL"
+
+#. TRANSLATORS: Push button
+#: src/clients/inst_upgrade_urls.rb:239
+msgid "&Toggle Status"
+msgstr "切換狀態(&T)"
+
+#. TRANSLATORS: help text 1/3
+#: src/clients/inst_upgrade_urls.rb:245
+msgid ""
+"<p>Here you see all software repositories found\n"
+"on the system you are upgrading. Enable the ones you want to include in the "
+"upgrade process.</p>"
+msgstr ""
+"<p>在此您可以看到從您正在升級的系統中發現的全部軟體源。\n"
+"請啟用您想要在升級過程中使用的軟體源。</p>"
+
+#. TRANSLATORS: help text 2/3
+#: src/clients/inst_upgrade_urls.rb:249
+msgid ""
+"<p>To enable, remove or disable an URL, click on the\n"
+"<b>Toggle Status</b> button or double-click on the respective table item.</p>"
+msgstr ""
+"<p>要啟用、移除或禁用一個 URL，請點選\n"
+"<b>切換狀態</b>按鈕或雙擊相應的表格項。</p>"
+
+#. TRANSLATORS: help text 3/3
+#: src/clients/inst_upgrade_urls.rb:253
+msgid "<p>To change the URL, click on the <b>Change...</b> button.</p>"
+msgstr "<p>要修改 URL，請點選<b>修改...</b>按鈕。</p>"
+
+#. one_url already has "id" and some items might be deleted
+#. looking to id_to_name is done via the original key
+#. TRANSLATORS: Fallback name for a repository
+#: src/clients/inst_upgrade_urls.rb:275 src/clients/inst_upgrade_urls.rb:282
+#: src/clients/inst_upgrade_urls.rb:288
+msgid "Unknown"
+msgstr "未知"
+
+#. TRANSLATORS: textentry
+#: src/clients/inst_upgrade_urls.rb:383
+msgid "&Repository URL"
+msgstr "軟體源 URL(&R)"
+
+#. TRANSLATORS: popup header
+#: src/clients/inst_upgrade_urls.rb:647
+msgid "Network is not Configured"
+msgstr "網路尚未配置"
+
+#. TRANSLATORS: popup question
+#: src/clients/inst_upgrade_urls.rb:649
+msgid ""
+"Remote repositories require an Internet connection.\n"
+"Configure it?"
+msgstr ""
+"遠端軟體源需要網際網路連線。\n"
+"配置網際網路連線嗎？"
+
+#. TRANSLATORS: Progress text
+#: src/clients/inst_upgrade_urls.rb:680 src/clients/inst_upgrade_urls.rb:737
+msgid "Adding and removing repositories..."
+msgstr "正在添加與移除軟體源..."
+
+#. TRANSLATORS: help text
+#. TRANSLATORS: help text
+#: src/clients/inst_upgrade_urls.rb:683 src/clients/inst_upgrade_urls.rb:742
+msgid "<p>Repositories are being added and removed.</p>"
+msgstr "<p>正在添加與移除軟體源。</p>"
+
+#: src/clients/inst_upgrade_urls.rb:702
+msgid "Remove unused repositories"
+msgstr "移除無用的軟體源"
+
+#. force reloading the libzypp repomanager to notice the removed files
+#: src/clients/inst_upgrade_urls.rb:706 src/clients/inst_upgrade_urls.rb:859
+msgid "Removing unused repositories..."
+msgstr "正在移除無用的軟體源..."
+
+#: src/clients/inst_upgrade_urls.rb:713
+msgid "Add enabled repositories"
+msgstr "添加已啟用的軟體源"
+
+#. Adds selected repositories as <tt>enabled</tt>
+#: src/clients/inst_upgrade_urls.rb:716 src/clients/inst_upgrade_urls.rb:925
+msgid "Adding enabled repositories..."
+msgstr "正在添加已啟用的軟體源..."
+
+#: src/clients/inst_upgrade_urls.rb:725
+msgid "Add disabled repositories"
+msgstr "添加已禁用的軟體源"
+
+#. Adds selected repositories as <tt>disabled</tt>
+#: src/clients/inst_upgrade_urls.rb:729 src/clients/inst_upgrade_urls.rb:1082
+msgid "Adding disabled repositories..."
+msgstr "正在添加已禁用的軟體源..."
+
+#. true - OK, continue
+#: src/clients/inst_upgrade_urls.rb:899
+msgid "Correct Media Requested"
+msgstr "需要正確的介質"
+
+#: src/clients/inst_upgrade_urls.rb:901
+msgid ""
+"Make sure that media with label %1\n"
+"is in the CD/DVD drive.\n"
+"\n"
+"If you skip it, the repository will not be added.\n"
+msgstr ""
+"請確保 CD/DVD 驅動器中有標籤為 %1 的介質。\n"
+"\n"
+"若您選擇跳過，將不會添加軟體源。\n"
+
+#. Adding repositories in a disabled state, then enable them
+#. for the system upgrade
+#: src/clients/inst_upgrade_urls.rb:964
+msgid ""
+"Cannot add repository %1\n"
+"URL: %2\n"
+"\n"
+"\n"
+"Repository will be added in disabled state."
+msgstr ""
+"無法添加軟體源 %1\n"
+"URL：%2\n"
+"\n"
+"該軟體源將以已禁用模式添加。"
+
+#. bnc #543468, do not check aliases of repositories stored in Installation::destdir
+#: src/clients/inst_upgrade_urls.rb:1001
+msgid ""
+"Cannot add enabled repository\n"
+"Name: %1\n"
+"URL: %2"
+msgstr ""
+"無法添加已啟用的軟體源\n"
+"名稱：%1\n"
+"URL：%2"
+
+#. TRANSLATORS: error report
+#. %1 is replaced with repo-name, %2 with repo-URL
+#: src/clients/inst_upgrade_urls.rb:1021
+msgid ""
+"An error occurred while refreshing repository\n"
+"Name: %1\n"
+"URL: %2"
+msgstr ""
+"重新整理軟體源時出錯\n"
+"名稱：%1\n"
+"URL：%2"
+
+#. TRANSLATORS: error report
+#. %1 is replaced with repo-name, %2 with repo-URL
+#: src/clients/inst_upgrade_urls.rb:1041
+msgid ""
+"An error occurred while enabling repository\n"
+"Name: %1\n"
+"URL: %2\n"
+msgstr ""
+"啟用軟體源時出錯\n"
+"名稱：%1\n"
+"URL：%2\n"
+
+#. do not probe! adding as disabled!
+#: src/clients/inst_upgrade_urls.rb:1122
+msgid ""
+"Cannot add disabled repository\n"
+"Name: %1\n"
+"URL: %2"
+msgstr ""
+"無法添加已禁用的軟體源\n"
+"名稱：%1\n"
+"URL：%2"
+
+#. dialog caption
+#: src/clients/inst_welcome.rb:69
+msgid "Welcome"
+msgstr "歡迎"
+
+#. welcome text 1/4
+#: src/clients/inst_welcome.rb:72
+msgid "<p><b>Welcome!</b></p>"
+msgstr "<p><b>歡迎！</b></p>"
+
+#. welcome text 2/4
+#: src/clients/inst_welcome.rb:74
+msgid ""
+"<p>There are a few more steps to take before your system is ready to\n"
+"use. YaST will now guide you through some basic configuration.  Click\n"
+"<b>Next</b> to continue. </p>\n"
+"            \n"
+msgstr ""
+"<p>還需要完成幾個步驟，您的系統就可以使用了。\n"
+"YaST 現在將指引您進行一些基本配置。 \n"
+"請點選<b>下一步</b>繼續。</p>\n"
+"            \n"
+
+#. help ttext
+#: src/clients/inst_welcome.rb:88
+msgid ""
+"<p>Click <b>Next</b> to perform the\n"
+"basic configuration of the system.</p>\n"
+msgstr "<p>請點選<b>下一步</b>執行基本系統配置。</p>\n"
+
+#. TRANSLATORS: error message
+#: src/clients/installation.rb:83
+msgid "No workflow defined for this kind of installation."
+msgstr "沒有為此類安裝方式定義安裝流程。"
+
+#. progress step title
+#: src/clients/installation_settings_finish.rb:60
+msgid "Writing automatic configuration..."
+msgstr "正在寫入自動配置..."
+
+#. progress step title
+#: src/clients/kernel_finish.rb:64
+msgid "Updating kernel module dependencies..."
+msgstr "正在更新核心模組依賴關係..."
+
+#. progress step title
+#: src/clients/ldconfig_finish.rb:61
+msgid "Setting up linker cache..."
+msgstr "正在設定連結器超速快取..."
+
+#. progress step title
+#: src/clients/network_finish.rb:69
+msgid "Saving network configuration..."
+msgstr "正在儲存網路配置..."
+
+#. progress step title
+#: src/clients/pre_umount_finish.rb:65
+msgid "Checking the installed system..."
+msgstr "正在檢查安裝好的系統..."
+
+#. progress step title
+#: src/clients/proxy_finish.rb:63
+msgid "Saving proxy configuration..."
+msgstr "正在儲存代理配置..."
+
+#. progress step title
+#: src/clients/save_config_finish.rb:134
+msgid "Saving time zone..."
+msgstr "正在儲存時區設定..."
+
+#. progress step title
+#: src/clients/save_config_finish.rb:143
+msgid "Saving language..."
+msgstr "正在儲存語言設定..."
+
+#. progress step title
+#: src/clients/save_config_finish.rb:148
+msgid "Saving console configuration..."
+msgstr "正在儲存控制檯配置..."
+
+#. progress step title
+#: src/clients/save_config_finish.rb:167
+msgid "Saving keyboard configuration..."
+msgstr "正在儲存鍵盤配置..."
+
+#. progress step title
+#: src/clients/save_config_finish.rb:172
+msgid "Saving product information..."
+msgstr "正在儲存產品資訊..."
+
+#. progress step title
+#: src/clients/save_config_finish.rb:177
+msgid "Saving automatic installation settings..."
+msgstr "正在儲存自動安裝設定..."
+
+#. progress step title
+#: src/clients/save_config_finish.rb:183
+msgid "Saving security settings..."
+msgstr "正在儲存安全設定..."
+
+#. progress step title
+#: src/clients/save_config_finish.rb:192
+msgid "Saving boot scripts settings..."
+msgstr "正在儲存引導指令碼設定..."
+
+#. progress step title
+#: src/clients/save_hw_status_finish.rb:70
+msgid "Saving hardware configuration..."
+msgstr "正在儲存硬體配置..."
+
+#. progress step title
+#: src/clients/ssh_settings_finish.rb:65
+msgid "Copying SSH settings to installed system..."
+msgstr "正在將 SSH 設定複製到安裝好的系統..."
+
+#. progress step title
+#: src/clients/switch_scr_finish.rb:65
+msgid "Moving to installed system..."
+msgstr "正在移動到安裝好的系統..."
+
+#. progress step title
+#: src/clients/umount_finish.rb:71
+msgid "Unmounting all mounted devices..."
+msgstr "正在解除安裝全部已裝載的裝置..."
+
+#. progress step title
+#: src/clients/x11_finish.rb:66
+msgid "Copying X Window System configuration into system..."
+msgstr "正在將 X 視窗系統配置複製進系統..."
+
+#. progress step title
+#. TRANSLATORS: busy message
+#: src/clients/yast_inf_finish.rb:74
+#: src/include/installation/inst_inc_all.rb:112
+msgid "Writing YaST configuration..."
+msgstr "正在寫入 YaST 配置..."
+
+#. call command
+#: src/clients/yast_inf_finish.rb:109
+msgid ""
+"\n"
+"**************************************************************\n"
+"\n"
+"Loading installed kernel using kexec.\n"
+"\n"
+"Trying to load installed kernel via kexec instead of rebooting\n"
+"Please, wait.\n"
+"\n"
+"**************************************************************\n"
+"\t\t"
+msgstr ""
+"\n"
+"**************************************************************\n"
+"\n"
+"正在使用 kexec 載入安裝好的核心。\n"
+"\n"
+"正在嘗試不重啟而使用 kexec 載入安裝好的核心\n"
+"請稍候。\n"
+"\n"
+"**************************************************************\n"
+"\t\t"
+
+#. dialog content - busy message
+#: src/include/installation/inst_inc_all.rb:50
+msgid "Initializing the installation environment..."
+msgstr "正在啟始化安裝環境..."
+
+#. help for the dialog - busy message
+#: src/include/installation/inst_inc_all.rb:52
+msgid "<p>Initializing the installation...</p>"
+msgstr "<p>正在啟始化安裝...</p>"
+
+#. dialog content - busy message
+#: src/include/installation/inst_inc_all.rb:57
+msgid "Preparing the 1st system configuration..."
+msgstr "正在準備首次系統配置..."
+
+#. TRANSLATORS: Error message
+#: src/include/installation/inst_inc_all.rb:77
+msgid ""
+"No installation control file has been found,\n"
+"the installer cannot continue."
+msgstr "未找到安裝控制檔案，安裝器無法繼續。"
+
+#. Somehow the graphical frontend failed and we're running in
+#. text mode. Inform the user about this fact.
+#: src/include/installation/inst_inc_all.rb:174
+msgid ""
+"Your computer does not fulfill all requirements for\n"
+"a graphical installation. There is either less than %1 MB\n"
+"memory or the X server could not be started.\n"
+"\n"
+"As fallback, the text front-end of YaST2 will guide you\n"
+"through the installation. This front-end offers the\n"
+"same functionality as the graphical one, but the screens\n"
+"differ from those in the manual.\n"
+msgstr ""
+"您的計算機不滿足圖形安裝的全部要求。\n"
+"要麼您的內存小於 %1 MB，要麼系統無法啟動 X 伺服器。\n"
+"\n"
+"作為後備措施，YaST2 的文字前端將指引您完成安裝過程。\n"
+"該前端與圖形前端提供了相同的功能，僅不過看到的螢幕與手\n"
+"冊中的螢幕有所不同。\n"
+
+#. The script YaST2 wants to inform about a problem with the
+#. option no_x11 but it's broken.
+#. else if (Installation::no_x11 ())
+#. Somehow the graphical frontend failed and we're running in
+#. text mode. Inform the user about this fact.
+#: src/include/installation/inst_inc_all.rb:193
+msgid ""
+"The graphical interface could not be started.\n"
+"\n"
+"Either the required packages were not installed (minimal installation) \n"
+"or the graphics card is not properly supported.\n"
+"\n"
+"As fallback, the text front-end of YaST2 will guide you\n"
+"through the installation. This front-end offers the\n"
+"same functionality as the graphical one, but the screens\n"
+"differ from those in the manual.\n"
+msgstr ""
+"無法啟動圖形介面。\n"
+"\n"
+"要麼沒有安裝必需的包 (極簡安裝)，要麼顯示卡支援不夠好。\n"
+"\n"
+"作為後備措施，YaST2 的文字前端將指引您完成安裝過程。\n"
+"該前端與圖形前端提供了相同的功能，僅不過看到的螢幕\n"
+"與手冊中的螢幕有所不同。\n"
+
+#. TRANSLATORS: progress stage, %1 stands for service name
+#: src/include/installation/inst_inc_second.rb:278
+msgid "Start service %1"
+msgstr "啟動服務 %1"
+
+#. TRANSLATORS: dialog caption
+#: src/include/installation/inst_inc_second.rb:298
+msgid "Adjusting Network Settings"
+msgstr "正在調整網路設定"
+
+#. TRANSLATORS: dialog help
+#: src/include/installation/inst_inc_second.rb:304
+msgid "Network settings are being adjusted."
+msgstr "正在調整網路設定。"
+
+#. popup question (#x1)
+#: src/include/installation/inst_inc_second.rb:357
+msgid ""
+"The previous installation has failed.\n"
+"Would you like it to continue?\n"
+"\n"
+"Note: You may have to enter some information again."
+msgstr ""
+"上一次安裝失敗了。\n"
+"您希望繼續上一次安裝嗎？\n"
+"\n"
+"注意：您可能需要再次輸入一些資訊。"
+
+#. popup question (#x1)
+#: src/include/installation/inst_inc_second.rb:365
+msgid ""
+"The previous installation has been aborted.\n"
+"Would you like it to continue?\n"
+"\n"
+"Note: You may have to enter some information again."
+msgstr ""
+"上一次安裝被中止了。\n"
+"您希望繼續上一次安裝嗎？\n"
+"\n"
+"注意：您可能需要再次輸入一些資訊。"
+
+#. Heading for confirmation popup before the installation really starts
+#: src/include/installation/misc.rb:199
+msgid "Confirm Installation"
+msgstr "確認安裝"
+
+#. Text for confirmation popup before the installation really starts 1/3
+#: src/include/installation/misc.rb:202
+msgid "<p>Information required for the base installation is now complete.</p>"
+msgstr "<p>現在已完成了基本安裝所需的資訊。</p>"
+
+#. Text for confirmation popup before the installation really starts 2/3
+#: src/include/installation/misc.rb:214
+msgid ""
+"<p>If you continue now, <b>existing\n"
+"partitions</b> on your hard disk will be <b>deleted</b> or <b>formatted</b>\n"
+"(<b>erasing any existing data</b> in those partitions) according to the\n"
+"installation settings in the previous dialogs.</p>"
+msgstr ""
+"<p>現在您若繼續，則會根據之前對話方塊中的安裝設定<b>刪除</b>或<b>格式化</b>\n"
+"您硬碟上的<b>已有分割區</b>。(這些分割區將被<b>擦除任何已有資料</b>)</p>"
+
+#. Text for confirmation popup before the installation really starts 2/3
+#: src/include/installation/misc.rb:225
+msgid ""
+"<p>If you continue now, partitions on your\n"
+"hard disk will be modified according to the installation settings in the\n"
+"previous dialogs.</p>"
+msgstr ""
+"<p>現在您若繼續，則會根據之前對話方塊中的安裝設定修改您硬碟上的分割區。</p>"
+
+#. Text for confirmation popup before the installation really starts 3/3
+#. Text for confirmation popup before the update really starts 3/3
+#: src/include/installation/misc.rb:236 src/include/installation/misc.rb:254
+msgid "<p>Go back and check the settings if you are unsure.</p>"
+msgstr "<p>若您不確定請返回並檢查設定。</p>"
+
+#. Heading for confirmation popup before the update really starts
+#: src/include/installation/misc.rb:242
+msgid "Confirm Update"
+msgstr "確認更新"
+
+#. Text for confirmation popup before the update really starts 1/3
+#: src/include/installation/misc.rb:246
+msgid "<p>Information required to perform an update is now complete.</p>"
+msgstr "<p>現在已完成了執行更新所需的資訊。</p>"
+
+#. Text for confirmation popup before the update really starts 2/3
+#: src/include/installation/misc.rb:248
+msgid ""
+"\n"
+"<p>If you continue now, data on your hard disk will be overwritten\n"
+"according to the settings in the previous dialogs.</p>"
+msgstr ""
+"\n"
+"<p>現在您若繼續，則會根據之前對話方塊中的設定覆蓋您硬碟上的資料。</p>"
+
+#. Label for the button that confirms startint the installation
+#: src/include/installation/misc.rb:258
+msgid "Start &Update"
+msgstr "開始更新(&U)"
+
+#. this is a heading
+#: src/lib/installation/cio_ignore.rb:42
+msgid "Blacklist Devices"
+msgstr "遮蔽裝置"
+
+#. this is a menu entry
+#: src/lib/installation/cio_ignore.rb:44
+msgid "B&lacklist Devices"
+msgstr "遮蔽裝置(&L)"
+
+#. TRANSLATORS: Installation overview
+#. IMPORTANT: Please, do not change the HTML link <a href="...">...</a>, only visible text
+#: src/lib/installation/cio_ignore.rb:63
+msgid "Blacklist devices enabled (<a href=\"%s\">disable</a>)."
+msgstr "已啟用遮蔽裝置功能 (<a href=\"%s\">禁用</a>)。"
+
+#. TRANSLATORS: Installation overview
+#. IMPORTANT: Please, do not change the HTML link <a href="...">...</a>, only visible text
+#: src/lib/installation/cio_ignore.rb:69
+msgid "Blacklist devices disabled (<a href=\"%s\">enable</a>)."
+msgstr "已禁用遮蔽裝置功能 (<a href=\"%s\">啟用</a>)。"
+
+#. TRANSLATORS: help text
+#: src/lib/installation/cio_ignore.rb:78
+msgid ""
+"<p>Use <b>Blacklist devices</b> if you want to create blacklist channels to "
+"such devices which will reduce kernel memory footprint.</p>"
+msgstr ""
+"<p>若您想要為某些裝置創建黑名單通道以降低核心內存佔用，請使用<b>遮蔽裝置</"
+"b>。</p>"
+
+#. progress step title
+#: src/lib/installation/cio_ignore.rb:135
+msgid "Blacklisting Devices..."
+msgstr "正在遮蔽裝置..."
+
+#. progress step title
+#: src/lib/installation/prep_shrink.rb:35
+msgid "Shrinking PREP partition..."
+msgstr "正在收縮 PREP (PowerPC 參考平臺) 分割區..."
+
+#. checking whether images are supported
+#. BNC #409927
+#. Checking files for signatures
+#: src/modules/ImageInstallation.rb:845
+msgid "Failed to read information about installation images"
+msgstr "無法讀取安裝映像資訊"
+
+#. sleep in order not to kill -USR1 to dd too early, otherwise it finishes
+#: src/modules/ImageInstallation.rb:1193
+msgid "Deploying..."
+msgstr "正在部署..."
+
+#. Function stores all new/requested states of all handled/supported types.
+#.
+#. @see #all_supported_types
+#. @see #objects_state
+#: src/modules/ImageInstallation.rb:1216
+msgid "Storing user preferences..."
+msgstr "正在儲存使用者偏好..."
+
+#. Restores packages statuses from 'objects_state': Selects packages for removal, installation, upgrade.
+#.
+#. @return [Boolean] if successful
+#: src/modules/ImageInstallation.rb:1348
+msgid "Restoring user preferences..."
+msgstr "正在恢復使用者偏好..."
+
+#. Error message
+#: src/modules/ImageInstallation.rb:1446
+msgid ""
+"Installation was unable to solve package dependencies automatically.\n"
+"Software manager will be opened for you to solve them manually."
+msgstr ""
+"安裝未能自動解決軟體包依賴關係。\n"
+"將開啟軟體包管理器來讓您手動解決那些依賴關係。"
+
+#~ msgid "Enabling random number generator..."
+#~ msgstr "正在啟用隨機數字生成器..."
+
+#~ msgid "License needs to be accepted"
+#~ msgstr "需要接受許可"
+
+#~ msgid "Network Device: %1"
+#~ msgstr "網路裝置：%1"
+
+#~ msgid "Network type: %1"
+#~ msgstr "網路類型：%1"
+
+#~ msgid "Wireless"
+#~ msgstr "無線"
+
+#~ msgid "Wired"
+#~ msgstr "有線"
+
+#~ msgid "Model: %1"
+#~ msgstr "型號：%1"
+
+#~ msgid "MAC Address: %1"
+#~ msgstr "MAC 地址：%1"
+
+#~ msgid "Hardware Vendor: %1"
+#~ msgstr "硬體廠商：%1"
+
+#~ msgid "Link is: %1"
+#~ msgstr "連線狀態：%1"
+
+#~ msgid "Connected"
+#~ msgstr "已連線"
+
+#~ msgid "Disconnected"
+#~ msgstr "已斷開"
+
+#~ msgid "Network Setup Wizard: Probing Hardware..."
+#~ msgstr "網路安裝嚮導：正在檢測硬體..."
+
+#~ msgid "Probing network cards..."
+#~ msgstr "正在檢測網卡..."
+
+#~ msgid "Network cards are being probed now."
+#~ msgstr "正在檢測網卡。"
+
+#~ msgid "Unknown Network Card"
+#~ msgstr "未知網卡"
+
+#~ msgid "No additional information"
+#~ msgstr "無額外資訊"
+
+#~ msgid ""
+#~ "No network card has been selected.\n"
+#~ "\n"
+#~ "Select a network card to configure it later.\n"
+#~ msgstr ""
+#~ "沒有選擇網卡。\n"
+#~ "\n"
+#~ "請選擇一個網卡，稍後將對它進行配置。\n"
+
+#~ msgid "Warning"
+#~ msgstr "警告"
+
+#~ msgid ""
+#~ "The link of the selected interface %1 is disconnected.\n"
+#~ "It needs to be connected for a proper network configuration.\n"
+#~ "Are you sure you want to use it?"
+#~ msgstr ""
+#~ "所選介面 %1 的連線已斷開。\n"
+#~ "正確配置網路需要連線上該連線。\n"
+#~ "您確定您想要使用該連線嗎？"
+
+#~ msgid "&Yes, Use it"
+#~ msgstr "是的，就用它(&Y)"
+
+#~ msgid "Select a network card to be configured."
+#~ msgstr "請選擇要配置的網卡。"
+
+#~ msgid "Network Card"
+#~ msgstr "網卡"
+
+#~ msgid "Device"
+#~ msgstr "裝置"
+
+#~ msgid "Hardware Information of the Selected Network Card"
+#~ msgstr "所選網卡的硬體資訊"
+
+#~ msgid ""
+#~ "<p>Here you can configure your network cards to be used immediately.</p>"
+#~ msgstr "<p>在此您可以配置您要立即使用的網卡。</p>"
+
+#~ msgid ""
+#~ "<p>If you do not need a network connection now,\n"
+#~ "you can safely skip the configuration.</p>"
+#~ msgstr ""
+#~ "<p>若您現在不需要網路連線，\n"
+#~ "您可以放心地跳過該配置。</p>"
+
+#~ msgid ""
+#~ "<p>To configure a network card, select it from the list\n"
+#~ "and click the <b>Next</b> button.\n"
+#~ "Otherwise, click <b>Cancel</b>.</p>\n"
+#~ msgstr ""
+#~ "<p>要配置網卡請從列表中選中網卡並點選<b>下一步</b>按鈕。\n"
+#~ "否則，請點選<b>取消</b>。</p>\n"
+
+#~ msgid "IP address cannot be empty."
+#~ msgstr "IP 地址不能為空。"
+
+#~ msgid "'%1' is an invalid IP address."
+#~ msgstr "'%1' 不是一個有效的 IP 地址。"
+
+#~ msgid "Netmask cannot be empty."
+#~ msgstr "網路掩碼不能為空。"
+
+#~ msgid "'%1' is an invalid netmask."
+#~ msgstr "'%1' 不是一個有效的網路掩碼。"
+
+#~ msgid "Gateway IP address cannot be empty."
+#~ msgstr "閘道器 IP 地址不能為空。"
+
+#~ msgid "'%1' is an invalid IP address of the gateway."
+#~ msgstr "'%1' 不是一個有效的閘道器 IP 地址。"
+
+#~ msgid "DNS server IP address cannot be empty."
+#~ msgstr "DNS 伺服器 IP 地址不能為空。"
+
+#~ msgid "'%1' is an invalid IP address of the DNS server."
+#~ msgstr "'%1' 不是一個有效的 DNS 伺服器 IP 地址。"
+
+#~ msgid "Proxy server name or IP address must be set."
+#~ msgstr "必須設定代理伺服器名稱或 IP 地址。"
+
+#~ msgid ""
+#~ "'%1' is an invalid IP address or invalid hostname\n"
+#~ "of a proxy server."
+#~ msgstr "'%1' 不是一個有效的 IP 地址或代理伺服器主機名。"
+
+#~ msgid "Proxy port must be set."
+#~ msgstr "必須設定代理埠。"
+
+#~ msgid ""
+#~ "'%1' is an invalid proxy port number.\n"
+#~ "\n"
+#~ "Port number must be between 1 and 65535 inclusive."
+#~ msgstr ""
+#~ "'%1' 不是一個有效的代理埠號。\n"
+#~ "\n"
+#~ "埠號僅能介於 1 與 65535 之間。"
+
+#~ msgid "Select your network setup type for %1"
+#~ msgstr "請為 %1 選擇網路設定類型"
+
+#~ msgid "Automatic Address Setup (via &DHCP)"
+#~ msgstr "自動地址設定 (通過 &DHCP)"
+
+#~ msgid "&Static Address Setup"
+#~ msgstr "靜態地址設定(&S)"
+
+#~ msgid "Static Address Settings"
+#~ msgstr "靜態地址設定"
+
+#~ msgid "&IP Address"
+#~ msgstr "&IP 地址"
+
+#~ msgid "Net&mask"
+#~ msgstr "網路掩碼(&M)"
+
+#~ msgid "Default &Gateway IP"
+#~ msgstr "默認閘道器 IP(&G)"
+
+#~ msgid "D&NS Server IP"
+#~ msgstr "D&NS 伺服器 IP"
+
+#~ msgid "&Use Proxy for Accessing the Internet"
+#~ msgstr "使用代理訪問網際網路(&U)"
+
+#~ msgid "&HTTP Proxy Server"
+#~ msgstr "&HTTP 代理伺服器"
+
+#~ msgid "&Port"
+#~ msgstr "埠(&P)"
+
+#~ msgid "Us&er (optional)"
+#~ msgstr "使用者名 (可選) (&E)"
+
+#~ msgid "Pass&word (optional)"
+#~ msgstr "密碼 (可選) (&W)"
+
+#~ msgid ""
+#~ "<p><big><b>Network Setup</b></big>\n"
+#~ "<br>Configure your network card.\n"
+#~ "Select either DHCP or static setup. DHCP fits for most cases.\n"
+#~ "For details contact your Internet provider or your network\n"
+#~ "administrator.</p>\n"
+#~ msgstr ""
+#~ "<p><big><b>網路設定</b></big>\n"
+#~ "<br>配置您的網卡。\n"
+#~ "選擇 DHCP 或者靜態設定。DHCP 適合大多數情況。\n"
+#~ "詳情請垂詢您的網路提供商或者您的網路管理員。</p>\n"
+
+#~ msgid ""
+#~ "<p><big><b>Proxy</b></big>\n"
+#~ "<br>Proxy is a server-based cache for accessing the web.\n"
+#~ "In most cases, if you have a direct connection to the Internet,\n"
+#~ "you do not need to use one.</p>\n"
+#~ msgstr ""
+#~ "<p><big><b>代理</b></big>\n"
+#~ "<br>代理是一個基於伺服器的網路訪問快取。\n"
+#~ "在大多數情況下，若您能直接連線到網際網路，就沒有必要使用代理。(注意，這不是"
+#~ "科學上網代理。科學上網的軟體需要您另裝，具體垂詢https://forum.suse.org.cn "
+#~ "請以暗號形式轉義掉敏感詞！)</p>\n"
+
+#~ msgid ""
+#~ "<p>Command: <tt>%1</tt> has failed.</p>\n"
+#~ "<p>The output of the command was:\n"
+#~ "<pre>%2</pre></p>"
+#~ msgstr ""
+#~ "<p>命令：<tt>%1</tt> 失敗了。</p>\n"
+#~ "<p>命令輸出為：\n"
+#~ "<pre>%2</pre></p>"
+
+#~ msgid "Setting up Network Failed"
+#~ msgstr "設定網路失敗"
+
+#~ msgid ""
+#~ "A failure occurred during preparing\n"
+#~ "the installation system for writing the proxy configuration."
+#~ msgstr "在準備安裝系統以寫入代理配置時失敗。"
+
+#~ msgid "Internet Test Failed"
+#~ msgstr "網際網路測試失敗"
+
+#~ msgid ""
+#~ "The Internet connection test failed. You should be\n"
+#~ "redirected to the previous dialog to change the configuration.\n"
+#~ "Go back and change it?"
+#~ msgstr ""
+#~ "網際網路連線測試失敗。\n"
+#~ "您應該返回到之前的對話方塊修改配置。\n"
+#~ "返回並修改設定嗎？"
+
+#~ msgid "Go Back"
+#~ msgstr "返回"
+
+#~ msgid "Skip"
+#~ msgstr "跳過"
+
+#~ msgid "Adjust automatic network setup (via DHCP)"
+#~ msgstr "調整自動網路設定 (通過 DHCP)"
+
+#~ msgid "Adjusting automatic network setup (via DHCP)..."
+#~ msgstr "正在調整自動網路設定 (通過 DHCP)..."
+
+#~ msgid "Adjust static network setup"
+#~ msgstr "調整靜態網路設定"
+
+#~ msgid "Adjusting static network setup..."
+#~ msgstr "正在調整靜態網路設定..."
+
+#~ msgid ""
+#~ "Unknown network setup.\n"
+#~ "\n"
+#~ "Please, go back and provide a valid network setup."
+#~ msgstr ""
+#~ "未知的網路設定。\n"
+#~ "\n"
+#~ "請返回並提供一個有效的網路設定。"
+
+#~ msgid "Write proxy settings"
+#~ msgstr "寫入代理設定"
+
+#~ msgid "Writing proxy settings..."
+#~ msgstr "正在寫入代理設定..."
+
+#~ msgid "Adjust installation system"
+#~ msgstr "調整安裝系統"
+
+#~ msgid "Adjusting installation system..."
+#~ msgstr "正在調整安裝系統..."
+
+#~ msgid "Test Internet connection"
+#~ msgstr "測試網際網路連線"
+
+#~ msgid "Testing Internet connection..."
+#~ msgstr "正在測試網際網路連線..."
+
+#~ msgid "Writing Network Setup..."
+#~ msgstr "正在寫入網路設定..."
+
+#~ msgid ""
+#~ "<p>Please, wait while network configuration is being written and tested..."
+#~ "</p>"
+#~ msgstr "<p>正在寫入與測試網路配置, 請稍候...</p>"
+
+#~ msgid ""
+#~ "Writing the network settings failed.\n"
+#~ "You will be returned to the previous dialog to either\n"
+#~ "change the settings or cancel the network setup.\n"
+#~ msgstr ""
+#~ "寫入網路設定失敗。\n"
+#~ "您將返回到之前的對話方塊，可以修改設定或取消網路設定。\n"
+
+#~ msgid "Enabling SSH service on installed system..."
+#~ msgstr "正在安裝好的系統上啟用 SSH 服務..."
+
+#~ msgid "Creating automatic configuration..."
+#~ msgstr "正在創建自動配置..."
+
+#~ msgid "Automatic configuration..."
+#~ msgstr "自動配置..."
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "******************************************************\n"
+#~ "\n"
+#~ " Do not panic!\n"
+#~ "\n"
+#~ " X11 Configuration must switch to console for a while\n"
+#~ " to detect your videocard properly...\n"
+#~ "\n"
+#~ "******************************************************\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "******************************************************\n"
+#~ "\n"
+#~ "別慌！我會自己回家的...\n"
+#~ "\n"
+#~ "X11 配置必須切換到控制檯一會兒來正確檢測您的顯示卡...\n"
+#~ "\n"
+#~ "******************************************************\n"
+
+#~ msgid "Preparing configuration..."
+#~ msgstr "正在準備配置..."
+
+#~ msgid "<p>Writing automatic configuration...</p>"
+#~ msgstr "<p>正在寫入自動配置...</p>"
+
+#~ msgid "An error has occurred while calling '%1' AC script."
+#~ msgstr "呼叫 '%1' AC 指令碼時出錯。"
+
+#~ msgid ""
+#~ "YaST was unable to find the correct control file.\n"
+#~ "We are using a fall-back one. This should not happen\n"
+#~ "and it is worth reporting a bug."
+#~ msgstr ""
+#~ "YaST 未能找到正確的控制檔案。\n"
+#~ "現在正在使用備用檔案。\n"
+#~ "這不應該發生，值得您上報故障。"
+
+#~ msgid ""
+#~ "<p>A fallback control file contains installation and update\n"
+#~ "workflows unified for all products.</p>"
+#~ msgstr "<p>備用控制檔案包含了全部產品統一的安裝與更新流程。</p>"
+
+#~ msgid ""
+#~ "Choose one of the\n"
+#~ "options to continue."
+#~ msgstr "請選擇其中一個選項並繼續。"
+
+#~ msgid "Select Mode"
+#~ msgstr "選擇模式"
+
+#~ msgid "New &Installation"
+#~ msgstr "全新安裝(&I)"
+
+#~ msgid "&Update an Existing System"
+#~ msgstr "更新已有系統(&U)"
+
+#~ msgid "&Use Automatic Configuration"
+#~ msgstr "使用自動配置(&U)"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "Select <b>New Installation</b> if there is no existing Linux system on "
+#~ "your\n"
+#~ "machine or if you want to replace an existing Linux system completely,\n"
+#~ "discarding all its configuration data.\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "若您的計算機上還沒有 Linux 系統，\n"
+#~ "或者您想要完全替換已有系統，丟棄其全部配置資料，\n"
+#~ "請選擇<b>全新安裝</b>。\n"
+#~ "</p>\n"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "Select <b>Update an Existing System</b> to update a Linux system already\n"
+#~ "installed on your machine. This option preserves configuration settings\n"
+#~ "from your existing system whenever possible.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "選擇<b>更新已有系統</b>可更新您計算機上已安裝的 Linux 系統。\n"
+#~ "該選項將盡可能保留已有系統的配置設定。\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "Select <b>Use Automatic Configuration</b> to let the installation "
+#~ "program\n"
+#~ "configure your network and hardware automatically. Otherwise you will\n"
+#~ "be offered a configuration proposal with the possibility to tune all the\n"
+#~ "settings manually. Inexperienced users are advised to use automatic\n"
+#~ "configuration.</p>\n"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "選擇<b>使用自動配置</b>可以讓安裝程式自動配置您的網路與硬體。\n"
+#~ "否則，系統將提供您一個可以手動調節全部設定的配置提案。\n"
+#~ "建議缺乏經驗的使用者使用自動配置。</p>\n"
+
+#~ msgid "<p>Update mode does not support automatic configuration.</p>"
+#~ msgstr "<p>更新模式不支援自動配置。</p>"
+
+#~ msgid ""
+#~ "<p>The feature <b>Update</b> is only\n"
+#~ "available if an existing Linux system has been detected.\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p><b>更新</b>功能僅在檢測到已有 Linux 系統時才可以使用。\n"
+#~ "</p>\n"
+
+#~ msgid "&Show Release Notes"
+#~ msgstr "顯示版本資訊(&S)"
+
+#~ msgid "Cannot load release notes."
+#~ msgstr "無法載入版本資訊。"
+
+#~ msgid ""
+#~ "<p><b>These are the release notes for the initial release. They are\n"
+#~ "part of the installation media. During installation, if a connection\n"
+#~ "to the Internet is available, you can download updated release notes\n"
+#~ "from the SUSE Linux Web server.</b></p>\n"
+#~ msgstr ""
+#~ "<p><b>這是初始釋出時的版本資訊。它們是安裝介質的一部分。\n"
+#~ "安裝期間若網際網路連線可用，您可從 SUSE Linux 網路伺服器下載\n"
+#~ "更新的版本資訊。</b></p>\n"
+
+#~ msgid "Configuring the superuser's environment..."
+#~ msgstr "正在配置超級使用者環境..."
+
+#~ msgid "Passed"
+#~ msgstr "通過"
+
+#~ msgid "Switching to the Installed System Failed"
+#~ msgstr "切換到安裝好的系統失敗"
+
+#~ msgid ""
+#~ "Switching to the installed system has failed.\n"
+#~ "Find more information near the end of the '%1' file.\n"
+#~ "\n"
+#~ "This is worth reporting a bug at %2.\n"
+#~ "Please, attach all YaST logs stored in the '%3' directory.\n"
+#~ "See %4 for more information about YaST logs.\n"
+#~ msgstr ""
+#~ "切換到安裝好的系統失敗。\n"
+#~ "可在檔案 '%1' 接近結尾處找到更多資訊。\n"
+#~ "\n"
+#~ "這值得去 %2 上報故障。\n"
+#~ "請附上存儲在 '%3' 資料夾中的全部 YaST 日誌。\n"
+#~ "關於 YaST 日誌的更多資訊請參考 %4。\n"
+
+#~ msgid "http://en.opensuse.org/openSUSE:Report_a_YaST_bug"
+#~ msgstr "http://zh.opensuse.org/openSUSE:Report_a_YaST_bug"
+
+#~ msgid "&Checking the Installed System..."
+#~ msgstr "檢查安裝好的系統(&C)..."
+
+#~ msgid ""
+#~ "This is worth reporting a bug at %1.\n"
+#~ "Please, attach all YaST logs stored in the '%2' directory.\n"
+#~ msgstr ""
+#~ "這值得去 %1 上報故障。\n"
+#~ "請附上存儲在 '%2' 資料夾中的全部 YaST 日誌。\n"
+
+#~ msgid "Checking for %1 binary..."
+#~ msgstr "正在檢查可執行檔案 %1..."
+
+#~ msgid "Checking for chroot directory %1..."
+#~ msgstr "正在檢查 chroot 資料夾 %1..."
+
+#~ msgid "Checking for chroot directory content (%1)..."
+#~ msgstr "正在檢查 chroot 資料夾內容 (%1)..."
+
+#~ msgid "Checking for binary %1..."
+#~ msgstr "正在檢查可執行檔案 %1..."
+
+#~ msgid "Trying to chroot..."
+#~ msgstr "正在嘗試 chroot..."
+
+#~ msgid "Checking for %1 in %2..."
+#~ msgstr "正在檢查 %2 中的 %1..."
+
+#~ msgid "Checking free space"
+#~ msgstr "正在檢查空閒空間"
+
+#~ msgid "Checking for free space in the %1 directory: %2"
+#~ msgstr "正在檢查資料夾 %1 中的空閒空間：%2"
+
+#~ msgid "Unable to find out"
+#~ msgstr "未能找到"
+
+#~ msgid "Checking for installed RPM packages..."
+#~ msgstr "正在檢查已安裝的 RPM 包..."
+
+#~ msgid "Checking whether RPM package %1 is installed..."
+#~ msgstr "正在檢查是否安裝了 RPM 包 %1..."
+
+#~ msgid "Checking what requires RPM package %1..."
+#~ msgstr "正在檢查需要 RPM 包 %1 的物件..."
+
+#~ msgid "Running complex check on package %1..."
+#~ msgstr "正在對軟體包 %1 運行綜合檢查..."
+
+#~ msgid "Checking YaST log file %1..."
+#~ msgstr "正在檢查 YaST 日誌檔案 %1..."
+
+#~ msgid "Opening file..."
+#~ msgstr "正在開啟檔案..."
+
+#~ msgid "SCR process has died, printing the last log lines..."
+#~ msgstr "SCR 程序已死，正在列印其最後幾行日誌..."
+
+#~ msgid "YaST process got killed."
+#~ msgstr "YaST 程序被謀殺了。"
+
+#~ msgid "Checking YaST log..."
+#~ msgstr "正在檢查 YaST 日誌..."
+
+#~ msgid "System Checking"
+#~ msgstr "系統檢查"
+
+#~ msgid "Unknown chroot path. The debugger cannot continue."
+#~ msgstr "未知 chroot 路徑。偵錯工具無法繼續。"
+
+#~ msgid "Connecting to the inst-sys failed. Debugger cannot continue."
+#~ msgstr "連線 inst-sys 失敗，偵錯工具無法繼續。"
+
+#~ msgid ""
+#~ "<p>To access the X11 system, the <b>%1</b> package must be installed.</p>"
+#~ msgstr "<p>要訪問 X11 系統，必須安裝 <b>%1</b> 軟體包。</p>"
+
+#~ msgid "<p>Do you want to install it now?</p>"
+#~ msgstr "<p>您希望立即安裝它嗎？</p>"
+
+#~ msgid ""
+#~ "No system type was selected.\n"
+#~ "Select the default type."
+#~ msgstr ""
+#~ "沒有選擇系統類型。\n"
+#~ "使用默認的類型。"
+
+#~ msgid ""
+#~ "<p><tt>SuSEconfig</tt> must write the configuration\n"
+#~ "of your &product; system. Depending on the CPU and the amount of memory,\n"
+#~ "this process can take some time.</p>\n"
+#~ msgstr ""
+#~ "<p><tt>SuSEconfig</tt> 必須寫入 &product; 系統的配置。\n"
+#~ "本過程所花費的時間取決於 CPU 與內存量。</p>\n"
+
+#~ msgid "Progress"
+#~ msgstr "進度"
+
+#~ msgid "Running SuSEconfig.%1"
+#~ msgstr "正在運行 SuSEconfig。%1"
+
+#~ msgid "Finishing SuSEconfig"
+#~ msgstr "正在完成 SuSEconfig"
+
+#~ msgid "SuSEconfig disabled in /etc/sysconfig/suseconfig"
+#~ msgstr "在 /etc/sysconfig/suseconfig 中已禁用 SuSEconfig"
+
+#~ msgid "Done."
+#~ msgstr "已完成。"
+
+#~ msgid ""
+#~ "Reboot your system\n"
+#~ "to activate the new kernel.\n"
+#~ msgstr "請重新引導您的系統以啟用新核心。\n"
+
+#~ msgid ""
+#~ "Cannot add repository %1\n"
+#~ "URL: %2"
+#~ msgstr ""
+#~ "無法添加軟體倉庫 %1\n"
+#~ "URL：%2"
+
+#~ msgid "Initializing fonts..."
+#~ msgstr "正在啟始化字型..."
+
+#~ msgid ""
+#~ "<p><b>Installation from Images</b> is used to speed the installation "
+#~ "up. \n"
+#~ "Images contain compressed snapshots of installed system matching your "
+#~ "selection \n"
+#~ "of patterns. The rest of packages which are not in images will be "
+#~ "installed from \n"
+#~ "packages the standard way.</p>"
+#~ msgstr ""
+#~ "<p><b>從映像安裝</b>可以用來加快安裝速度。\n"
+#~ "映像中包含壓縮的安裝系統快照，與您選擇的模式相匹配。\n"
+#~ "其他不在映像中的軟體包將以標準方法安裝。</p>"
+
+#~ msgid ""
+#~ "<p>Installation is currently writing the automatic configuration. Please "
+#~ "wait...</p>"
+#~ msgstr "<p>安裝程式正在寫入自動安裝配置。請稍等...</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "Select <b>New Installation</b> if there is no existing Linux system on "
+#~ "your\n"
+#~ "machine or if you want to replace an existing Linux system completely,\n"
+#~ "abandoning all its configuration data.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "如果您的計算機沒有安裝 Linux 系統，\n"
+#~ "或者希望完全替換現有的 Linux 系統\n"
+#~ "並放棄所有配置資料，請選擇<b>全新安裝</b>。\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "To install an add-on product from separate media together with &product;, "
+#~ "select\n"
+#~ "<b>Include Add-On Products from Separate Media</b>.</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "要安裝 &product; 並從另外的介質安裝附加產品，請選擇\n"
+#~ "<b>包括個別媒體中的附加產品</b>。</p>"
+
+#~ msgid "Please wait while the installation is probing the network cards..."
+#~ msgstr "安裝程式正在檢測網卡，請稍候..."
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "Your hard disk has not been modified in any way, so you can still safely "
+#~ "abort.\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "您的硬碟沒有進行任何修改，因此仍可安全中止。\n"
+#~ "</p>\n"
+
+#~ msgid "Probe floppy disks devices"
+#~ msgstr "檢測軟盤裝置"
+
+#~ msgid "Probing floppy disks devices..."
+#~ msgstr "正在檢測軟盤裝置..."
+
+#~ msgid "Reading Repositories Used on the System"
+#~ msgstr "正在讀取系統使用過的安裝源"
+
+#~ msgid "Read previously used repositories"
+#~ msgstr "讀取之前使用的源"
+
+#~ msgid "Reading previously used repositories..."
+#~ msgstr "正在讀取之前使用的安裝源..."
+
+#~ msgid "<p>Reading repositories. Please wait...</p>"
+#~ msgstr "<p>正在讀取安裝源。請稍候...</p>"
+
+#~ msgid "Re&pair Installed System"
+#~ msgstr "修復已安裝系統(&P)"
+
+#~ msgid ""
+#~ "<p>Select <b>Repair Installed System</b> if you have a damaged Linux "
+#~ "system on\n"
+#~ "your hard disk. This option can try to fix problems automatically.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>如果硬碟上的 Linux 系統損壞，請選擇<b>修復已安裝系統</b>\n"
+#~ "此選項會嘗試自動解決問題。\n"
+#~ "</p>"
+
+#~ msgid ""
+#~ "The selected language cannot be used in text mode. English is used for\n"
+#~ "installation, but the selected language will be used for the new system."
+#~ msgstr ""
+#~ "選擇的語言無法在文字方式中使用。安裝過程將使用英文，\n"
+#~ "但是新系統將使用選擇的語言。"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>Selecting <b>Other</b>, you can chose a minimal installation that\n"
+#~ "could fit your needs better.</p>"
+#~ msgstr ""
+#~ "另外，除了選擇桌面，您可以選擇最小化安裝，\n"
+#~ "以便更好的符合您的要求。"
+
+#~ msgid ""
+#~ "Accessing the YaST module %1 has failed.\n"
+#~ "More information can be found in the '%2' file.\n"
+#~ "Please report this bug at %3 and attach the YaST logs stored in the '%4' "
+#~ "directory."
+#~ msgstr ""
+#~ "訪問 YaST 模組 %1 失敗。\n"
+#~ "更多資訊可以在檔案“%2”中找到。\n"
+#~ "請到 %3 報告這個問題，並附上在目錄“%4”中的 YaST 日誌。"
+
+#~ msgid ""
+#~ "<p>\n"
+#~ "Please wait while the base system is being installed.\n"
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>\n"
+#~ "正在安裝基本系統，請稍候。\n"
+#~ "</p>"
+
+#~ msgid "Preparing installation finish-scripts..."
+#~ msgstr "正在準備安裝結束指令碼..."
+
+#~ msgid "Finished."
+#~ msgstr "已完成。"
+
+#~ msgid "New installation"
+#~ msgstr "全新安裝"
+
+#~ msgid "Update"
+#~ msgstr "更新"
+
+#~ msgid "Mode"
+#~ msgstr "方式"
+
+#~ msgid "M&ode"
+#~ msgstr "方式(&O)"
+
+#~ msgid "Saving mouse configuration..."
+#~ msgstr "正在儲存滑鼠配置..."
+
+#~ msgid "Failed"
+#~ msgstr "已失敗"
+
+#~ msgid "Running the debugger..."
+#~ msgstr "正在運行偵錯程式..."
+
+#~ msgid ""
+#~ "<p>At Linux <b>choice</b> is a top priority. <i>openSUSE</i> offers a "
+#~ "number\n"
+#~ "of different desktop environments. Below you see a list of the 2 major "
+#~ "ones\n"
+#~ "<b>GNOME</b> and <b>KDE</b>. Both provide an easy to use desktop with a "
+#~ "large number\n"
+#~ "of desktop applications such as email, file browser, games and many "
+#~ "others.</p>"
+#~ msgstr ""
+#~ "<p>對於 Linux，<b>選擇</b>至關重要。<i>openSUSE</i>提供了幾種\n"
+#~ " 不同的桌面環境。下面您可以看到兩種主流的桌面：\n"
+#~ "<b>GNOME</b> 與 <b>KDE</b>。兩者都簡單好用，\n"
+#~ "帶有很多桌面軟體，比如 Email、檔案瀏覽器、遊戲等。</p>"
+
+#~ msgid ""
+#~ "<p>As desktop selection is a matter of taste a clear <i>recommendation "
+#~ "can't be\n"
+#~ "given</i>.</p>"
+#~ msgstr "<p>桌面選擇，在於品味，所以並<i>沒有明確的推薦</i>。</p>"
+
+#~ msgid ""
+#~ "Additionally, not only desktop but you can also chose a minimalistic\n"
+#~ "installation that could fit your needs better."
+#~ msgstr ""
+#~ "另外，除了選擇桌面，您可以選擇最小化安裝，\n"
+#~ "以便更好的符合您的要求。"
+
+#~ msgid "Select a system to get its description."
+#~ msgstr "選中一個系統可以獲得關於它的說明"
+
+#~ msgid "No description available..."
+#~ msgstr "無可用的描述..."
+
+#~ msgid "Select a System Type"
+#~ msgstr "選擇系統類型"
+
+#~ msgid "Description"
+#~ msgstr "描述"
+
+#~ msgid "System Type"
+#~ msgstr "系統類型"
+
+#~ msgid "Image deployed"
+#~ msgstr "映像已部署"
+
+#~ msgid "Deploying Installation Images"
+#~ msgstr "正在部署安裝映像"
+
+#~ msgid "<p>Please wait, while system images are just being deployed...</p>"
+#~ msgstr "<p>正在部署系統映像，請稍候...</p>"
+
+#~ msgid "<p>Installation images are part of the installation media.</p>"
+#~ msgstr "<p>安裝映像是安裝介質的一部分。</p>"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>Installation from images is faster than installation from RPM "
+#~ "packages\n"
+#~ "because it does not need to handle with RPM database, locks etc.\n"
+#~ "One of the images also contains the joint RPM database and other metadata."
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>從映像安裝比從 RPM 軟體包安裝的速度塊。\n"
+#~ "因為不需要處理 RPM 資料庫，比如鎖定等。\n"
+#~ "映像之一也包括了聯合的 RPM 資料庫與其他元資訊。</p>"
+
+#~ msgid ""
+#~ "<p>If there is no direct access to installation images,\n"
+#~ "installation program has to download them first before they are deployed."
+#~ "</p>"
+#~ msgstr ""
+#~ "<p>如果不能直接訪問到安裝映像，\n"
+#~ "安裝程式必須先下載它們，然後才能部署。<p>"
+
+#~ msgid ""
+#~ "<p>At Linux <b>choice</b> is a top priority. <i>openSUSE</i> offers a "
+#~ "number \n"
+#~ "of different desktop environments. Below you see a list of the 2 major "
+#~ "ones \n"
+#~ "<b>GNOME</b> and <b>KDE</b> (in two different versions). Both provide an "
+#~ "easy to use desktop\n"
+#~ "with a large number of desktop applications such as email, file browser, "
+#~ "games and many others.</p>"
+#~ msgstr ""
+#~ "<p>對於 Linux，<b>選擇</b>至關重要。<i>openSUSE</i>提供了\n"
+#~ "幾種不同的桌面環境。下面您可以看到兩種主流的桌面：\n"
+#~ "<b>GNOME</b> 與 <b>KDE</b> (有兩個不同的版本)。兩者都容易使用，\n"
+#~ "帶有很多桌面軟體，比如 Email、檔案瀏覽器、遊戲等。</p>"
+
+#~ msgid ""
+#~ "openSUSE offers you a choice of user interfaces. The two major complete \n"
+#~ "desktops are KDE and GNOME. Both provide an easy-to-use desktop with a "
+#~ "full \n"
+#~ "suite of applications including email, a file manager, games and "
+#~ "utilities.\n"
+#~ "\n"
+#~ "As desktop selection is a matter of taste, we do not give a "
+#~ "recommendation."
+#~ msgstr ""
+#~ "openSUSE 給您使用者介面的選擇。兩種主流桌面 KDE 與 GNOME\n"
+#~ "都容易使用，並帶有一整套應用程式，包括 Email、檔案管理器、\n"
+#~ "遊戲與工具等。\n"
+#~ "\n"
+#~ "桌面選擇，事關品味，我們不給推薦。"
+
+#~ msgid "<p>Please wait while repositories are being read...</p>"
+#~ msgstr "<p>正在讀取軟體源，請稍候...</p>"
+
+#~ msgid ""
+#~ "An error occurred while switching to the installed system\n"
+#~ "and no recovery is possible.\n"
+#~ "Run the automatic debugger to find out why it has failed?"
+#~ msgstr ""
+#~ "切換到已安裝系統時\n"
+#~ "發生錯誤，不可恢復。\n"
+#~ "是否運行自動偵錯程式找出失敗的原因？"
+
+#~ msgid "&Show License..."
+#~ msgstr "顯示許可(&B)..."
+
+#~ msgid "Initialization..."
+#~ msgstr "啟始化..."
+
+#~ msgid "Configuring network..."
+#~ msgstr "正在配置網路..."
+
+#~ msgid "Configuring hardware..."
+#~ msgstr "正在配置硬體..."
+
+#~ msgid "Finishing configuration..."
+#~ msgstr "正在完成配置..."
+
+#~ msgid "Deploying mages..."
+#~ msgstr "正在部署映像..."
+
+#~ msgid ""
+#~ "Fasten your seatbelts, please,\n"
+#~ "we are taking off in a few seconds..."
+#~ msgstr ""
+#~ "請繫好您的安全帶，\n"
+#~ "幾秒鐘之後，我們就要起飛..."
+
